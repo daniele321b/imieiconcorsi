@@ -1,0 +1,9 @@
+# Copia in terraform.tfvars (non versionato).
+# Finché non c'è un dominio il mittente è un tuo indirizzo: arriva un'email di conferma da AWS.
+sender_email = "tuo.indirizzo@esempio.it"
+
+# Con SES in sandbox si può scrivere solo a indirizzi verificati: metti qui l'admin e i tester.
+sandbox_recipients = []
+
+# Quando comprerai il dominio:
+# domain = "imieiconcorsi.it"

@@ -1,0 +1,15 @@
+{
+  "name": "@imieiconcorsi/core",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./*": "./src/*.ts"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3",
+    "@aws-sdk/lib-dynamodb": "^3",
+    "zod": "^4",
+    "@aws-sdk/client-cognito-identity-provider": "^3",
+    "@aws-sdk/client-sesv2": "^3"
+  }
+}

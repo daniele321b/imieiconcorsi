@@ -1,0 +1,17 @@
+# iMieiConcorsi
+
+Web app per prepararsi ai concorsi pubblici: bandi da inPA, studio per materia e
+simulazioni d'esame. Il piano di prodotto è nel documento "App Concorsi — Piano MVP in 8 settimane".
+
+- **Infrastruttura:** Terraform, in `infra/terraform`. Per ora c'è solo l'ambiente `dev`.
+- **Applicazione:** TypeScript. Le Lambda sono in `packages/functions` e il sito React in `packages/web`.
+- **Comandi:** sono tutti in `scripts/deploy.sh`.
+
+```bash
+export AWS_PROFILE=<il-tuo-profilo>
+scripts/deploy.sh bootstrap   # una volta sola
+scripts/deploy.sh all
+```
+
+- [docs/COMANDI-RAPIDI.md](docs/COMANDI-RAPIDI.md): i comandi pronti da copiare
+- [docs/DEPLOY.md](docs/DEPLOY.md): architettura e runbook

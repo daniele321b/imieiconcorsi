@@ -1,0 +1,13 @@
+# Copia in terraform.tfvars (non versionato).
+
+# Avvisi per l'admin (nuovi bandi con banca dati, scraper fermo).
+# Finché SES è in sandbox l'indirizzo va verificato: mettilo anche in
+# environments/shared (sender_email o sandbox_recipients).
+admin_email = ""
+
+# Login social: URI di reindirizzamento da registrare su Google/Facebook con
+# scripts/deploy.sh urls (guida: docs/LOGIN-SOCIAL.md).
+google_client_id     = ""
+google_client_secret = ""
+facebook_app_id      = ""
+facebook_app_secret  = ""

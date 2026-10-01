@@ -1,0 +1,24 @@
+variable "name" {
+  type = string
+}
+
+variable "dist_dir" {
+  description = "Build del frontend (packages/web/dist)"
+  type        = string
+}
+
+variable "app_config" {
+  description = "Contenuto di /config.json, letto dal browser all'avvio (URL API, id Cognito…)"
+  type        = any
+}
+
+variable "api_domain" {
+  description = "Host dell'API Gateway (senza https://), servito sotto /api"
+  type        = string
+}
+
+variable "web_acl_arn" {
+  description = "ARN del WAF (scope CLOUDFRONT, in us-east-1). null in dev: nessun WAF."
+  type        = string
+  default     = null
+}

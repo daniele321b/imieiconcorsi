@@ -1,0 +1,13 @@
+{
+  "name": "@imieiconcorsi/functions",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@imieiconcorsi/core": "*",
+    "@aws-sdk/client-dynamodb": "^3",
+    "@aws-sdk/lib-dynamodb": "^3",
+    "zod": "^4",
+    "@aws-sdk/client-cognito-identity-provider": "^3",
+    "@aws-sdk/client-sesv2": "^3"
+  }
+}
