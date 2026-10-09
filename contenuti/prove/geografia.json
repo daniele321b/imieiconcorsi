@@ -1,0 +1,1007 @@
+[
+  {
+    "id": "geo-001",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "Punto più elevato: Monte Bianco (AO)"
+  },
+  {
+    "id": "geo-002",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "Il più lungo fiume italiano è il Po (652 km)"
+  },
+  {
+    "id": "geo-003",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "che sgorga dal Monviso"
+  },
+  {
+    "id": "geo-004",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "Il terzo fiume più lungo in Italia è il Tevere (405 km)"
+  },
+  {
+    "id": "geo-005",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "il Lago di Garda (il più vasto d'Italia)"
+  },
+  {
+    "id": "geo-006",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "l'Etna vicino a Catania che con i suoi 3.343 m è il vulcano più alto d'Europa"
+  },
+  {
+    "id": "geo-007",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "le due maggiori isole del Mediterraneo, la Sardegna e la Sicilia"
+  },
+  {
+    "id": "geo-008",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "della Repubblica italiana (302 073 km2)"
+  },
+  {
+    "id": "geo-009",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "confinando ad ovest con la Francia, a nord con la Svizzera e l'Austria e ad est con la Slovenia"
+  },
+  {
+    "id": "geo-010",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "i microstati San Marino e Città del Vaticano sono enclavi"
+  },
+  {
+    "id": "geo-011",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "Predoi, il comune più a nord"
+  },
+  {
+    "id": "geo-012",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "Otranto, il comune più a est"
+  },
+  {
+    "id": "geo-013",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "Lampedusa e Linosa, il comune più a sud"
+  },
+  {
+    "id": "geo-014",
+    "file": "Wikipedia_Regioni-d-Italia.txt",
+    "frase": "Sono 20, di cui 15 a statuto ordinario e 5 a statuto speciale"
+  },
+  {
+    "id": "geo-015",
+    "file": "Wikipedia_Regioni-d-Italia.txt",
+    "frase": "Abruzzi e Molise"
+  },
+  {
+    "id": "geo-016",
+    "file": "ISTAT_Annuario2025_cap3_Popolazione.txt",
+    "frase": "la popolazione residente in Italia è pari a 58.934.177 individui"
+  },
+  {
+    "id": "geo-017",
+    "file": "ISTAT_Annuario2025_cap3_Popolazione.txt",
+    "frase": "circa 37 mila unità in meno"
+  },
+  {
+    "id": "geo-018",
+    "file": "Wikipedia_Unione-europea.txt",
+    "frase": "che comprende 27 Stati membri"
+  },
+  {
+    "id": "geo-019",
+    "file": "Wikipedia_Unione-europea.txt",
+    "frase": "Lingua ufficiale 24 lingue"
+  },
+  {
+    "id": "geo-020",
+    "file": "Wikipedia_Unione-europea.txt",
+    "frase": "Francoforte sul Meno"
+  },
+  {
+    "id": "geo-021",
+    "file": "Wikipedia_Unione-europea.txt",
+    "frase": "Lisbona del 2007"
+  },
+  {
+    "id": "geo-022",
+    "file": "Wikipedia_Alpi.txt",
+    "frase": "Le Alpi sono la catena montuosa più importante d'Europa"
+  },
+  {
+    "id": "geo-023",
+    "file": "Wikipedia_Alpi.txt",
+    "frase": "La montagna più alta è il Monte Bianco, posto al confine tra Italia e Francia"
+  },
+  {
+    "id": "geo-024",
+    "file": "Wikipedia_Alpi.txt",
+    "frase": "L'intero sistema montuoso si distende per circa 1300 km"
+  },
+  {
+    "id": "geo-025",
+    "file": "Wikipedia_Alpi.txt",
+    "frase": "il limite occidentale delle Alpi è la Bocchetta di Altare o colle di Cadibona"
+  },
+  {
+    "id": "geo-026",
+    "file": "Wikipedia_Alpi.txt",
+    "frase": "Alpi Occidentali, Alpi Centrali e Alpi Orientali"
+  },
+  {
+    "id": "geo-027",
+    "file": "Wikipedia_Alpi.txt",
+    "frase": "le Alpi Centrali dal col Ferret al passo del Brennero"
+  },
+  {
+    "id": "geo-028",
+    "file": "Wikipedia_Alpi.txt",
+    "frase": "Alpi Orientali: Alpi Noriche, Dolomiti"
+  },
+  {
+    "id": "geo-029",
+    "file": "Wikipedia_Alpi.txt",
+    "frase": "Alpi Occidentali: Alpi Marittime, Alpi Cozie"
+  },
+  {
+    "id": "geo-030",
+    "file": "Wikipedia_Alpi.txt",
+    "frase": "l'uomo di Similaun (detto anche \"Ötzi\")"
+  },
+  {
+    "id": "geo-031",
+    "file": "Wikipedia_Alpi.txt",
+    "frase": "istituito nelle Alpi svizzere nel 1914"
+  },
+  {
+    "id": "geo-032",
+    "file": "Wikipedia_Appennini.txt",
+    "frase": "Gli Appennini sono il sistema montuoso lungo circa 1200 km"
+  },
+  {
+    "id": "geo-033",
+    "file": "Wikipedia_Appennini.txt",
+    "frase": "spina dorsale della penisola italiana"
+  },
+  {
+    "id": "geo-034",
+    "file": "Wikipedia_Appennini.txt",
+    "frase": "La cima più alta è il Corno Grande, nel massiccio del Gran Sasso"
+  },
+  {
+    "id": "geo-035",
+    "file": "Wikipedia_Appennini.txt",
+    "frase": "È presente un solo ghiacciaio, quello del Calderone"
+  },
+  {
+    "id": "geo-036",
+    "file": "Wikipedia_Appennini.txt",
+    "frase": "solamente la Sila e l'Aspromonte sono costituiti da rocce granitiche"
+  },
+  {
+    "id": "geo-037",
+    "file": "Wikipedia_Appennini.txt",
+    "frase": "con l'eccezione del Monte Titano, appartenente alla Repubblica di San Marino"
+  },
+  {
+    "id": "geo-038",
+    "file": "Wikipedia_Appennini.txt",
+    "frase": "Golfo di Sant'Eufemia sul Tirreno e il Golfo di Squillace sullo Ionio"
+  },
+  {
+    "id": "geo-039",
+    "file": "Wikipedia_Appennini.txt",
+    "frase": "la linea Gustav e la linea Barbara"
+  },
+  {
+    "id": "geo-040",
+    "file": "Wikipedia_Appennini.txt",
+    "frase": "ancora attivi il Vesuvio e i Campi Flegrei"
+  },
+  {
+    "id": "geo-041",
+    "file": "Wikipedia_Po.txt",
+    "frase": "La sua lunghezza, 652 km"
+  },
+  {
+    "id": "geo-042",
+    "file": "Wikipedia_Po.txt",
+    "frase": "Ha origine in Piemonte, sul Monviso, al Pian del Re"
+  },
+  {
+    "id": "geo-043",
+    "file": "Wikipedia_Po.txt",
+    "frase": "bagna direttamente un capoluogo di regione (Torino)"
+  },
+  {
+    "id": "geo-044",
+    "file": "Wikipedia_Po.txt",
+    "frase": "sfociare nel mare Adriatico in un vasto delta"
+  },
+  {
+    "id": "geo-045",
+    "file": "Wikipedia_Po.txt",
+    "frase": "Attraversa tredici province"
+  },
+  {
+    "id": "geo-046",
+    "file": "Wikipedia_Po.txt",
+    "frase": "in italiano letterario Eridano"
+  },
+  {
+    "id": "geo-047",
+    "file": "Wikipedia_Po.txt",
+    "frase": "segna per lunghi tratti il confine tra Lombardia e Emilia-Romagna"
+  },
+  {
+    "id": "geo-048",
+    "file": "Wikipedia_Fiumi-d-Italia.txt",
+    "frase": "lungo la quale si eleva la catena degli Appennini che divide le acque in due versanti opposti"
+  },
+  {
+    "id": "geo-049",
+    "file": "Wikipedia_Fiumi-d-Italia.txt",
+    "frase": "l'asta fluviale più lunga d'Italia è il Negrone-Tanaro-Po, con 712 km"
+  },
+  {
+    "id": "geo-050",
+    "file": "Wikipedia_Fiumi-d-Italia.txt",
+    "frase": "è invece la Drava, con i suoi 749 km"
+  },
+  {
+    "id": "geo-051",
+    "file": "Wikipedia_Fiumi-d-Italia.txt",
+    "frase": "soggetti a piene nella stagione primaverile ed estiva"
+  },
+  {
+    "id": "geo-052",
+    "file": "Wikipedia_Fiumi-d-Italia.txt",
+    "frase": "I fiumi Sardi e Siciliani sono di carattere torrentizio"
+  },
+  {
+    "id": "geo-053",
+    "file": "Wikipedia_Fiumi-d-Italia.txt",
+    "frase": "l'Adige, lungo circa 410 km, è il secondo fiume d'Italia per lunghezza"
+  },
+  {
+    "id": "geo-054",
+    "file": "Wikipedia_Fiumi-d-Italia.txt",
+    "frase": "Nasce presso il Passo di Resia"
+  },
+  {
+    "id": "geo-055",
+    "file": "Wikipedia_Fiumi-d-Italia.txt",
+    "frase": "il Brenta nasce nell'alta Valsugana dai laghi di Caldonazzo e di Levico"
+  },
+  {
+    "id": "geo-056",
+    "file": "Wikipedia_Fiumi-d-Italia.txt",
+    "frase": "il Sile, tipico fiume di risorgiva"
+  },
+  {
+    "id": "geo-057",
+    "file": "Wikipedia_Fiumi-d-Italia.txt",
+    "frase": "il Piave nasce dalle Alpi Carniche (Monte Peralba)"
+  },
+  {
+    "id": "geo-058",
+    "file": "Wikipedia_Fiumi-d-Italia.txt",
+    "frase": "l'Isonzo nasce dalle Alpi Giulie in Slovenia"
+  },
+  {
+    "id": "geo-059",
+    "file": "Wikipedia_Fiumi-d-Italia.txt",
+    "frase": "l'alluvione che avvenne in Polesine nel novembre del 1951"
+  },
+  {
+    "id": "geo-060",
+    "file": "Wikipedia_Laghi-d-Italia.txt",
+    "frase": "Il lago di Garda o Benaco è il più esteso lago d'Italia"
+  },
+  {
+    "id": "geo-061",
+    "file": "Wikipedia_Laghi-d-Italia.txt",
+    "frase": "è il più profondo fra i laghi italiani (418 m)"
+  },
+  {
+    "id": "geo-062",
+    "file": "Wikipedia_Laghi-d-Italia.txt",
+    "frase": "Il lago Maggiore è chiamato anche Verbano"
+  },
+  {
+    "id": "geo-063",
+    "file": "Wikipedia_Laghi-d-Italia.txt",
+    "frase": "Immissario ed emissario del Lario è il fiume Adda"
+  },
+  {
+    "id": "geo-064",
+    "file": "Wikipedia_Laghi-d-Italia.txt",
+    "frase": "l'isola più estesa dei laghi italiani: Monte Isola"
+  },
+  {
+    "id": "geo-065",
+    "file": "Wikipedia_Laghi-d-Italia.txt",
+    "frase": "emergono le isole Borromee"
+  },
+  {
+    "id": "geo-066",
+    "file": "Wikipedia_Laghi-d-Italia.txt",
+    "frase": "Dei laghi appenninici, il Trasimeno è il più grande"
+  },
+  {
+    "id": "geo-067",
+    "file": "Wikipedia_Laghi-d-Italia.txt",
+    "frase": "fu prosciugato da Alessandro Torlonia"
+  },
+  {
+    "id": "geo-068",
+    "file": "Wikipedia_Laghi-d-Italia.txt",
+    "frase": "I laghi prealpini, di origine morenica"
+  },
+  {
+    "id": "geo-069",
+    "file": "Wikipedia_Laghi-d-Italia.txt",
+    "frase": "Il lago di Lesina, il lago di Varano"
+  },
+  {
+    "id": "geo-070",
+    "file": "Wikipedia_Isole-dell-Italia.txt",
+    "frase": "Il patrimonio insulare italiano consta di oltre 800 isole"
+  },
+  {
+    "id": "geo-071",
+    "file": "Wikipedia_Isole-dell-Italia.txt",
+    "frase": "Isole Eolie o Isole Lipari Isola Alicudi"
+  },
+  {
+    "id": "geo-072",
+    "file": "Wikipedia_Isole-dell-Italia.txt",
+    "frase": "Isole Egadi Isola di Favignana"
+  },
+  {
+    "id": "geo-073",
+    "file": "Wikipedia_Parchi-nazionali-d-Italia.txt",
+    "frase": "sono ventisei (di cui uno istituito ma non operativo)"
+  },
+  {
+    "id": "geo-074",
+    "file": "Wikipedia_Parchi-nazionali-d-Italia.txt",
+    "frase": "la competenza in materia di parchi nazionali spetta esclusivamente allo Stato"
+  },
+  {
+    "id": "geo-075",
+    "file": "Wikipedia_Parchi-nazionali-d-Italia.txt",
+    "frase": "il Parco nazionale dell'Isola di Pantelleria"
+  },
+  {
+    "id": "geo-076",
+    "file": "Wikipedia_Città-metropolitane-d-Italia.txt",
+    "frase": "Le città metropolitane d'Italia sono quindici"
+  },
+  {
+    "id": "geo-077",
+    "file": "Wikipedia_Città-metropolitane-d-Italia.txt",
+    "frase": "la legge 7 aprile 2014, n. 56"
+  },
+  {
+    "id": "geo-078",
+    "file": "Wikipedia_Mar-Mediterraneo.txt",
+    "frase": "connesso a ovest tramite lo stretto di Gibilterra"
+  },
+  {
+    "id": "geo-079",
+    "file": "Wikipedia_Mar-Mediterraneo.txt",
+    "frase": "il canale di Suez, artificiale, lo collega a sud-est al Mar Rosso"
+  },
+  {
+    "id": "geo-080",
+    "file": "Wikipedia_Mar-Mediterraneo.txt",
+    "frase": "La sua superficie approssimativa è di 2,51 milioni di km²"
+  },
+  {
+    "id": "geo-081",
+    "file": "Wikipedia_Mar-Mediterraneo.txt",
+    "frase": "quella massima di 5270 m presso le coste del Peloponneso"
+  },
+  {
+    "id": "geo-082",
+    "file": "Wikipedia_Mar-Mediterraneo.txt",
+    "frase": "che significa 'in mezzo alle terre'"
+  },
+  {
+    "id": "geo-083",
+    "file": "Wikipedia_Mar-Mediterraneo.txt",
+    "frase": "Gli antichi Romani lo chiamavano, ad esempio, Mare nostrum"
+  },
+  {
+    "id": "geo-084",
+    "file": "Wikipedia_Mar-Mediterraneo.txt",
+    "frase": "gli stretti dei Dardanelli e del Bosforo è collegato al Mar Nero"
+  },
+  {
+    "id": "geo-085",
+    "file": "Wikipedia_Continente.txt",
+    "frase": "Modello più seguito in Italia: sei continenti"
+  },
+  {
+    "id": "geo-086",
+    "file": "Wikipedia_Continente.txt",
+    "frase": "In esso non si include l'Antartide"
+  },
+  {
+    "id": "geo-087",
+    "file": "Wikipedia_Continente.txt",
+    "frase": "la Groenlandia è parte integrante del continente americano"
+  },
+  {
+    "id": "geo-088",
+    "file": "Wikipedia_Continente.txt",
+    "frase": "dal latino continere, \"tenere insieme\""
+  },
+  {
+    "id": "geo-089",
+    "file": "Wikipedia_Continente.txt",
+    "frase": "il Madagascar e le Seychelles si considerano parte dell'Africa"
+  },
+  {
+    "id": "geo-090",
+    "file": "Wikipedia_Oceano.txt",
+    "frase": "circa il 70% della superficie totale"
+  },
+  {
+    "id": "geo-091",
+    "file": "Wikipedia_Oceano.txt",
+    "frase": "è dunque consuetudine identificare tre oceani"
+  },
+  {
+    "id": "geo-092",
+    "file": "Wikipedia_Oceano.txt",
+    "frase": "Oceano Pacifico, 179000000 km²"
+  },
+  {
+    "id": "geo-093",
+    "file": "Wikipedia_Oceano.txt",
+    "frase": "è considerato nella letteratura geografica italiana un mare dipendente dall'Oceano Atlantico"
+  },
+  {
+    "id": "geo-094",
+    "file": "Wikipedia_Coordinate-geografiche.txt",
+    "frase": "Esse sono la latitudine, la longitudine e l'altitudine"
+  },
+  {
+    "id": "geo-095",
+    "file": "Wikipedia_Coordinate-geografiche.txt",
+    "frase": "La latitudine è la distanza angolare di un punto dall'equatore"
+  },
+  {
+    "id": "geo-096",
+    "file": "Wikipedia_Coordinate-geografiche.txt",
+    "frase": "Dal 1884 il meridiano fondamentale di riferimento è convenzionalmente fissato a Greenwich"
+  },
+  {
+    "id": "geo-097",
+    "file": "Wikipedia_Coordinate-geografiche.txt",
+    "frase": "è generalmente attribuita a Eratostene di Cirene"
+  },
+  {
+    "id": "geo-098",
+    "file": "Wikipedia_Coordinate-geografiche.txt",
+    "frase": "avremo valori negativi per latitudini nell'emisfero sud"
+  },
+  {
+    "id": "geo-099",
+    "file": "Wikipedia_Fuso-orario.txt",
+    "frase": "ciascuna delle quali copriva 15° di longitudine"
+  },
+  {
+    "id": "geo-100",
+    "file": "Wikipedia_Fuso-orario.txt",
+    "frase": "Roma: UTC+1"
+  },
+  {
+    "id": "geo-101",
+    "file": "Wikipedia_Fuso-orario.txt",
+    "frase": "Los Angeles: UTC-8"
+  },
+  {
+    "id": "geo-102",
+    "file": "Wikipedia_Fuso-orario.txt",
+    "frase": "si crearono 39 fusi orari, tuttora in uso"
+  },
+  {
+    "id": "geo-103",
+    "file": "Wikipedia_Europa.txt",
+    "frase": "la penisola italiana, quella balcanica, quella iberica e quella finno-scandinava"
+  },
+  {
+    "id": "geo-104",
+    "file": "Wikipedia_Europa.txt",
+    "frase": "l'Oceania, il continente più piccolo della Terra"
+  },
+  {
+    "id": "geo-105",
+    "file": "Wikipedia_Europa.txt",
+    "frase": "lungo gli Urali e attraverso l'istmo ponto-caspico"
+  },
+  {
+    "id": "geo-106",
+    "file": "Wikipedia_Asia.txt",
+    "frase": "È il continente più vasto al mondo"
+  },
+  {
+    "id": "geo-107",
+    "file": "Wikipedia_Africa.txt",
+    "frase": "il terzo per superficie e secondo per popolazione"
+  },
+  {
+    "id": "geo-108",
+    "file": "Wikipedia_Africa.txt",
+    "frase": "È separata dall'Europa dallo Stretto di Gibilterra"
+  },
+  {
+    "id": "geo-109",
+    "file": "Wikipedia_Africa.txt",
+    "frase": "L'Africa è attraversata dall'Equatore e dai tropici del Cancro e del Capricorno"
+  },
+  {
+    "id": "geo-110",
+    "file": "Wikipedia_Africa.txt",
+    "frase": "Insieme all'Europa e all'Asia, forma il cosiddetto Continente Antico"
+  },
+  {
+    "id": "geo-111",
+    "file": "Wikipedia_Asia.txt",
+    "frase": "derivante da una voce semitica significante \"oriente\""
+  },
+  {
+    "id": "geo-112",
+    "file": "Wikipedia_America.txt",
+    "frase": "chiamata anche Continente Nuovo o Nuovo Mondo"
+  },
+  {
+    "id": "geo-113",
+    "file": "Wikipedia_America.txt",
+    "frase": "catene montuose delle Montagne Rocciose e delle Ande"
+  },
+  {
+    "id": "geo-114",
+    "file": "Wikipedia_America.txt",
+    "frase": "i paesi più popolosi sono gli Stati Uniti d'America, il Brasile e il Messico"
+  },
+  {
+    "id": "geo-115",
+    "file": "Wikipedia_America.txt",
+    "frase": "separati dall'istmo di Panama"
+  },
+  {
+    "id": "geo-116",
+    "file": "Wikipedia_Oceania.txt",
+    "frase": "Melanesia (inclusa la Nuova Guinea) Micronesia e Polinesia"
+  },
+  {
+    "id": "geo-117",
+    "file": "Wikipedia_Oceania.txt",
+    "frase": "fu l'ultimo a essere scoperto dagli europei"
+  },
+  {
+    "id": "geo-118",
+    "file": "Wikipedia_Antartide.txt",
+    "frase": "L'Antartide ha dunque il 98% del territorio coperto dai ghiacci"
+  },
+  {
+    "id": "geo-119",
+    "file": "Wikipedia_Antartide.txt",
+    "frase": "esclusivamente per scopi pacifici e scientifici"
+  },
+  {
+    "id": "geo-120",
+    "file": "Wikipedia_Antartide.txt",
+    "frase": "è il quarto continente più vasto della Terra dopo Asia, America e Africa"
+  },
+  {
+    "id": "geo-121",
+    "file": "Wikipedia_Antartide.txt",
+    "frase": "\"opposto all'Artico\""
+  },
+  {
+    "id": "geo-122",
+    "file": "Wikipedia_Etna.txt",
+    "frase": "L'Etna o Mongibello"
+  },
+  {
+    "id": "geo-123",
+    "file": "Wikipedia_Etna.txt",
+    "frase": "Il 21 giugno 2013, la XXXVII sessione del Comitato UNESCO ha inserito l'Etna"
+  },
+  {
+    "id": "geo-124",
+    "file": "Wikipedia_Etna.txt",
+    "frase": "entro il territorio della città metropolitana di Catania"
+  },
+  {
+    "id": "geo-125",
+    "file": "Wikipedia_Vesuvio.txt",
+    "frase": "la fusione con un vulcano più antico, il Monte Somma"
+  },
+  {
+    "id": "geo-126",
+    "file": "Wikipedia_Vesuvio.txt",
+    "frase": "in posizione dominante rispetto al golfo di Napoli"
+  },
+  {
+    "id": "geo-127",
+    "file": "Wikipedia_Vesuvio.txt",
+    "frase": "a causa dell'elevata popolazione delle zone circostanti e delle sue caratteristiche esplosive"
+  },
+  {
+    "id": "geo-128",
+    "file": "Wikipedia_Stretto-di-Messina.txt",
+    "frase": "Collega il mar Tirreno, che si trova a nord, con il mar Ionio"
+  },
+  {
+    "id": "geo-129",
+    "file": "Wikipedia_Stretto-di-Messina.txt",
+    "frase": "la larghezza minima è di circa 3,14 km"
+  },
+  {
+    "id": "geo-130",
+    "file": "Wikipedia_Stretto-di-Messina.txt",
+    "frase": "Stretto di Scilla e Cariddi"
+  },
+  {
+    "id": "geo-131",
+    "file": "Wikipedia_Pianura-Padana.txt",
+    "frase": "è una delle più grandi pianure europee e la più grande dell'Europa meridionale"
+  },
+  {
+    "id": "geo-132",
+    "file": "Wikipedia_Pianura-Padana.txt",
+    "frase": "La Pianura Padana è una pianura alluvionale"
+  },
+  {
+    "id": "geo-133",
+    "file": "Wikipedia_Pianura-Padana.txt",
+    "frase": "derivante dall'idronimo Padus, cioè il nome del Po"
+  },
+  {
+    "id": "geo-134",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "l'Italia continentale, tra le Alpi e l'istmo La Spezia-Rimini"
+  },
+  {
+    "id": "geo-135",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "Lampedusa e Lampione, appartengono geograficamente al continente africano"
+  },
+  {
+    "id": "geo-136",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "il comune di Campione d'Italia costituisce una exclave"
+  },
+  {
+    "id": "geo-137",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "L'Italia presenta una prevalenza di zone collinari (il 41,6% del territorio)"
+  },
+  {
+    "id": "geo-138",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "Punto meno elevato: le Contane (FE)"
+  },
+  {
+    "id": "geo-139",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "il comune italiano più lontano dal mare è Madesimo (SO)"
+  },
+  {
+    "id": "geo-140",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "Svizzera 744 km"
+  },
+  {
+    "id": "geo-141",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "intercorrono solo 140 km: tanti ne misura il canale di Sicilia"
+  },
+  {
+    "id": "geo-142",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "nel punto più stretto del canale d'Otranto, 70 km"
+  },
+  {
+    "id": "geo-143",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "a settentrione la Testa Gemella Occidentale"
+  },
+  {
+    "id": "geo-144",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "a occidente la Rocca Bernauda nelle Alpi Cozie"
+  },
+  {
+    "id": "geo-145",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "Narni (TR)"
+  },
+  {
+    "id": "geo-146",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "Punta La Marmora, di 1.834 metri"
+  },
+  {
+    "id": "geo-147",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "La seconda pianura italiana per estensione è il Tavoliere delle Puglie"
+  },
+  {
+    "id": "geo-148",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "ad esempio la Pianura campana, sono di origine vulcanica"
+  },
+  {
+    "id": "geo-149",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "Le pianure costituiscono solamente il 23,2% del territorio nazionale"
+  },
+  {
+    "id": "geo-150",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "Le Langhe, il Monferrato, il Chianti e le Murge sono colline sedimentarie"
+  },
+  {
+    "id": "geo-151",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "I Colli Euganei e numerose altre formazioni in Toscana, Lazio, Campania sono di origine vulcanica"
+  },
+  {
+    "id": "geo-152",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "Il Mar Adriatico bagna le coste orientali della penisola"
+  },
+  {
+    "id": "geo-153",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "tra la Sardegna e la Corsica le Bocche di Bonifacio"
+  },
+  {
+    "id": "geo-154",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "Stretta tra due placche, la placca africana e la placca eurasiatica"
+  },
+  {
+    "id": "geo-155",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "gigantesco vulcano sottomarino Marsili"
+  },
+  {
+    "id": "geo-156",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "laghi vulcanici (Lago di Bolsena, Lago di Vico, Lago di"
+  },
+  {
+    "id": "geo-157",
+    "file": "Wikipedia_Geografia-dell-Italia.txt",
+    "frase": "la Laguna di Venezia"
+  },
+  {
+    "id": "geo-158",
+    "file": "Wikipedia_Regioni-d-Italia.txt",
+    "frase": "Abruzzo L'Aquila"
+  },
+  {
+    "id": "geo-159",
+    "file": "Wikipedia_Regioni-d-Italia.txt",
+    "frase": "Basilicata Potenza"
+  },
+  {
+    "id": "geo-160",
+    "file": "Wikipedia_Regioni-d-Italia.txt",
+    "frase": "Calabria Catanzaro"
+  },
+  {
+    "id": "geo-161",
+    "file": "Wikipedia_Regioni-d-Italia.txt",
+    "frase": "Molise Campobasso"
+  },
+  {
+    "id": "geo-162",
+    "file": "Wikipedia_Regioni-d-Italia.txt",
+    "frase": "Marche Ancona"
+  },
+  {
+    "id": "geo-163",
+    "file": "Wikipedia_Regioni-d-Italia.txt",
+    "frase": "Milano 10 033 918"
+  },
+  {
+    "id": "geo-164",
+    "file": "Wikipedia_Regioni-d-Italia.txt",
+    "frase": "Valle d'Aosta Aosta 122 532"
+  },
+  {
+    "id": "geo-165",
+    "file": "Wikipedia_Regioni-d-Italia.txt",
+    "frase": "Le prime regioni a essere costituite furono le regioni autonome Sicilia"
+  },
+  {
+    "id": "geo-166",
+    "file": "Wikipedia_Regioni-d-Italia.txt",
+    "frase": "Nel 1963 la regione Abruzzi e Molise venne scorporata"
+  },
+  {
+    "id": "geo-167",
+    "file": "Wikipedia_Regioni-d-Italia.txt",
+    "frase": "Le prime elezioni regionali per gli organi delle regioni a statuto ordinario si tennero nel 1970"
+  },
+  {
+    "id": "geo-168",
+    "file": "Wikipedia_Regioni-d-Italia.txt",
+    "frase": "eccettuate la Valle d'Aosta (dove il presidente è eletto dal consiglio regionale)"
+  },
+  {
+    "id": "geo-169",
+    "file": "Wikipedia_Regioni-d-Italia.txt",
+    "frase": "L'Alto Adige capeggia la classifica del PIL pro capite"
+  },
+  {
+    "id": "geo-170",
+    "file": "Wikipedia_Regioni-d-Italia.txt",
+    "frase": "La Legge 20 marzo 1865, n. 2248 (\"Legge Ricasoli\")"
+  },
+  {
+    "id": "geo-171",
+    "file": "ISTAT_Annuario2025_cap1_Territorio.txt",
+    "frase": "sono presenti 7.896 Comuni al 31 dicembre 2024"
+  },
+  {
+    "id": "geo-172",
+    "file": "ISTAT_Annuario2025_cap1_Territorio.txt",
+    "frase": "il 69,9 per cento del totale ha meno di 5 mila abitanti"
+  },
+  {
+    "id": "geo-173",
+    "file": "ISTAT_Annuario2025_cap1_Territorio.txt",
+    "frase": "A contare oltre 250 mila abitanti sono solo undici Comuni"
+  },
+  {
+    "id": "geo-174",
+    "file": "ISTAT_Annuario2025_cap1_Territorio.txt",
+    "frase": "Le regioni con il maggior numero di Comuni sono la Lombardia e il Piemonte"
+  },
+  {
+    "id": "geo-175",
+    "file": "ISTAT_Annuario2025_cap1_Territorio.txt",
+    "frase": "le regioni con meno Comuni sono la Valle d'Aosta (74) e l'Umbria (92)"
+  },
+  {
+    "id": "geo-176",
+    "file": "ISTAT_Annuario2025_cap1_Territorio.txt",
+    "frase": "Nel 2024 quasi la metà della popolazione vive nelle aree di pianura"
+  },
+  {
+    "id": "geo-177",
+    "file": "ISTAT_Annuario2025_cap1_Territorio.txt",
+    "frase": "la sezione con la popolazione più numerosa è quella padana"
+  },
+  {
+    "id": "geo-178",
+    "file": "ISTAT_Annuario2025_cap1_Territorio.txt",
+    "frase": "Nel nostro Paese sono presenti 515 sistemi locali del lavoro"
+  },
+  {
+    "id": "geo-179",
+    "file": "ISTAT_Annuario2025_cap1_Territorio.txt",
+    "frase": "dalle 107 Unità territoriali sovracomunali e dalle 20 regioni italiane"
+  },
+  {
+    "id": "geo-180",
+    "file": "ISTAT_Annuario2025_cap1_Territorio.txt",
+    "frase": "Nelle Aree interne risiede il 22,7 per cento della popolazione"
+  },
+  {
+    "id": "geo-181",
+    "file": "ISTAT_Annuario2025_cap3_Popolazione.txt",
+    "frase": "rappresenta il 9,2 per cento della popolazione totale"
+  },
+  {
+    "id": "geo-182",
+    "file": "ISTAT_Annuario2025_cap3_Popolazione.txt",
+    "frase": "Il numero medio di figli per donna è pari, nel 2024, a 1,18"
+  },
+  {
+    "id": "geo-183",
+    "file": "ISTAT_Annuario2025_cap3_Popolazione.txt",
+    "frase": "l'età media della popolazione, stimata pari a 46,8 anni"
+  },
+  {
+    "id": "geo-184",
+    "file": "ISTAT_Annuario2025_cap3_Popolazione.txt",
+    "frase": "La popolazione di 65 anni e più rappresenta il 24,7 per cento"
+  },
+  {
+    "id": "geo-185",
+    "file": "ISTAT_Annuario2025_cap3_Popolazione.txt",
+    "frase": "81,4 anni per gli uomini e in 85,5 anni per le donne"
+  },
+  {
+    "id": "geo-186",
+    "file": "ISTAT_Annuario2025_cap3_Popolazione.txt",
+    "frase": "un saldo naturale negativo (-280.665 unità"
+  },
+  {
+    "id": "geo-187",
+    "file": "ISTAT_Annuario2025_cap3_Popolazione.txt",
+    "frase": "in atto senza interruzioni dal 2014"
+  },
+  {
+    "id": "geo-188",
+    "file": "ISTAT_Annuario2025_cap3_Popolazione.txt",
+    "frase": "è l'unica ripartizione a registrare una variazione positiva"
+  },
+  {
+    "id": "geo-189",
+    "file": "Wikipedia_Unione-europea.txt",
+    "frase": "Unita nella diversità"
+  },
+  {
+    "id": "geo-190",
+    "file": "Wikipedia_Unione-europea.txt",
+    "frase": "Inno alla gioia"
+  },
+  {
+    "id": "geo-191",
+    "file": "Wikipedia_Unione-europea.txt",
+    "frase": "un cerchio di dodici stelle dorate in campo blu"
+  },
+  {
+    "id": "geo-192",
+    "file": "Wikipedia_Unione-europea.txt",
+    "frase": "Festa dell'Unione 9 maggio"
+  },
+  {
+    "id": "geo-193",
+    "file": "Wikipedia_Unione-europea.txt",
+    "frase": "Strasburgo: Storia Parlamento europeo"
+  },
+  {
+    "id": "geo-194",
+    "file": "Wikipedia_Unione-europea.txt",
+    "frase": "Regno Unito (1973-2020)"
+  },
+  {
+    "id": "geo-195",
+    "file": "Wikipedia_Unione-europea.txt",
+    "frase": "Il 12 ottobre 2012 è stata insignita del premio Nobel per la pace"
+  },
+  {
+    "id": "geo-196",
+    "file": "Wikipedia_Unione-europea.txt",
+    "frase": "Nata come Comunità economica europea con il trattato di Roma del 25 marzo 1957"
+  },
+  {
+    "id": "geo-197",
+    "file": "Wikipedia_Unione-europea.txt",
+    "frase": "grazie all'accordo di Schengen"
+  },
+  {
+    "id": "geo-198",
+    "file": "Wikipedia_Unione-europea.txt",
+    "frase": "con una politica monetaria comune governata dalla Banca centrale europea (BCE)"
+  },
+  {
+    "id": "geo-199",
+    "file": "Wikipedia_Unione-europea.txt",
+    "frase": "La sua popolazione ammonta a circa 450 milioni di abitanti"
+  },
+  {
+    "id": "geo-200",
+    "file": "Wikipedia_Unione-europea.txt",
+    "frase": "Nel 1995, Austria, Finlandia e Svezia hanno aderito all'UE"
+  },
+  {
+    "id": "geo-201",
+    "file": "Wikipedia_Unione-europea.txt",
+    "frase": "L'euro è stato introdotto nel 2002"
+  }
+]

@@ -7,7 +7,18 @@ const ses = new SESv2Client({});
  * Email transazionale con SES (identità e configuration set dall'ambiente "shared").
  * In sandbox SES consegna solo agli indirizzi verificati.
  */
-export async function inviaEmail({ a, oggetto, testo }: { a: string | string[]; oggetto: string; testo: string }) {
+export async function inviaEmail({
+  a,
+  oggetto,
+  testo,
+  intestazioni,
+}: {
+  a: string | string[];
+  oggetto: string;
+  testo: string;
+  /** Intestazioni in più, es. List-Unsubscribe */
+  intestazioni?: { Name: string; Value: string }[];
+}) {
   await ses.send(
     new SendEmailCommand({
       FromEmailAddress: `iMieiConcorsi <${env("SES_SENDER")}>`,
@@ -15,8 +26,9 @@ export async function inviaEmail({ a, oggetto, testo }: { a: string | string[]; 
       ConfigurationSetName: env("SES_CONFIGURATION_SET"),
       Content: {
         Simple: {
-          Subject: { Data: oggetto, Charset: "UTF-8" },
+          Subject: { Data: `${process.env.EMAIL_SUBJECT_PREFIX ?? ""}${oggetto}`, Charset: "UTF-8" },
           Body: { Text: { Data: testo, Charset: "UTF-8" } },
+          ...(intestazioni?.length ? { Headers: intestazioni } : {}),
         },
       },
     }),

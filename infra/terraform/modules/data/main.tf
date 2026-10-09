@@ -104,3 +104,48 @@ resource "aws_dynamodb_table" "attempts" {
     enabled = true
   }
 }
+
+# Servizio billing: codici sconto generati dall'admin (pannello di controllo).
+resource "aws_dynamodb_table" "codici" {
+  name         = "${var.name}-codici"
+  billing_mode = "PAY_PER_REQUEST"
+  hash_key     = "codice"
+
+  attribute {
+    name = "codice"
+    type = "S"
+  }
+
+  point_in_time_recovery {
+    enabled = true
+  }
+}
+
+# Servizio billing: ordini dei piani a pagamento (uno per ogni tentativo di acquisto).
+# Niente dati personali: l'email si legge da Cognito quando serve.
+resource "aws_dynamodb_table" "ordini" {
+  name         = "${var.name}-ordini"
+  billing_mode = "PAY_PER_REQUEST"
+  hash_key     = "id"
+
+  attribute {
+    name = "id"
+    type = "S"
+  }
+
+  point_in_time_recovery {
+    enabled = true
+  }
+}
+
+# Pannello admin: banche dati ufficiali caricate in PDF (stato dell'estrazione, riepilogo).
+resource "aws_dynamodb_table" "banche_dati" {
+  name         = "${var.name}-banche-dati"
+  billing_mode = "PAY_PER_REQUEST"
+  hash_key     = "id"
+
+  attribute {
+    name = "id"
+    type = "S"
+  }
+}

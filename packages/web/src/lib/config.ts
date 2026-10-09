@@ -11,6 +11,11 @@ export interface AppConfig {
   userPoolClientId: string;
   cognitoDomain: string;
   social: SocialProvider[];
+  /**
+   * Annunci del piano Free. Senza AdSense configurato si vedono annunci interni
+   * (promozione dei piani), che non usano cookie di terze parti.
+   */
+  pubblicita?: { adsenseClient?: string; adsenseSlot?: string };
 }
 
 export let config: AppConfig;

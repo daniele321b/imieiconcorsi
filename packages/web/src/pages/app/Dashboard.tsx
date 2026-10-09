@@ -6,7 +6,7 @@ import { ConcorsoCard } from "../../components/ConcorsoCard";
 import { Alert, Badge, Button, ButtonLink, Card, EmptyState, ProgressBar, Spinner, UpgradeBanner } from "../../components/ui";
 import { useApi, type ConcorsoApi, type Statistiche } from "../../lib/api";
 import { useUtente } from "../../lib/auth";
-import { dataBreve, giorniA } from "../../lib/format";
+import { dataBreve, durata, giorniA } from "../../lib/format";
 import { useAvviaSessione } from "../../lib/sessioni";
 
 export function Dashboard() {
@@ -71,8 +71,8 @@ export function Dashboard() {
         ))}
 
       <div className="grid gap-8 lg:grid-cols-[1.4fr_1fr]">
-        {/* Concorsi seguiti */}
-        <section>
+        {/* Concorsi seguiti (min-w-0: sul telefono la colonna non si allarga oltre lo schermo) */}
+        <section className="min-w-0">
           <div className="mb-4 flex items-center justify-between">
             <h2 className="text-lg font-bold text-slate-900">I tuoi concorsi</h2>
             <Link to="/app/concorsi" className="inline-flex items-center gap-1 text-sm font-semibold text-brand-600 hover:text-brand-700">
@@ -99,7 +99,7 @@ export function Dashboard() {
         </section>
 
         {/* Progressi */}
-        <section className="space-y-4">
+        <section className="min-w-0 space-y-4">
           <h2 className="text-lg font-bold text-slate-900">I tuoi progressi</h2>
           {stats.loading ? (
             <Spinner />
@@ -127,9 +127,9 @@ export function Dashboard() {
                       return (
                         <li key={m.materia} className="flex items-center gap-3">
                           <IconaMateria icona={info.icona} materia={m.materia} className="size-8" />
-                          <div className="flex-1">
-                            <div className="flex justify-between text-sm">
-                              <span className="font-medium">{info.nome}</span>
+                          <div className="min-w-0 flex-1">
+                            <div className="flex justify-between gap-2 text-sm">
+                              <span className="truncate font-medium">{info.nome}</span>
                               <span className="font-semibold text-slate-600">{m.percentuale}%</span>
                             </div>
                             <ProgressBar value={m.percentuale} tone={m.percentuale >= 70 ? "green" : m.percentuale >= 50 ? "amber" : "red"} className="mt-1" />
@@ -150,11 +150,20 @@ export function Dashboard() {
                     {stats.data.recenti.map((s) => (
                       <li key={s.id}>
                         <Link to={`/app/sessione/${s.id}`} className="flex items-center gap-3 py-2.5 text-sm hover:text-brand-700">
-                          <Clock className="size-4 text-slate-400" />
-                          <span className="flex-1 truncate">
-                            {s.tipo === "simulazione" ? "Simulazione" : "Studio"} · {s.materie.map(nomeMateria).join(", ")}
+                          <Clock className="size-4 shrink-0 text-slate-400" />
+                          <span className="min-w-0 flex-1">
+                            <span className="block truncate">
+                              {s.bancaDati
+                                ? `${s.tipo === "simulazione" ? "Prova finale" : "Studio"} · ${s.bancaDati}`
+                                : s.tipo === "simulazione"
+                                  ? "Prova finale"
+                                  : `Studio · ${s.materie.map(nomeMateria).join(", ")}`}
+                            </span>
+                            <span className="block text-xs text-slate-400">
+                              {dataBreve(s.data)}
+                              {s.tipo === "simulazione" && s.durataMs !== undefined && ` · ${durata(s.durataMs)}`}
+                            </span>
                           </span>
-                          <span className="text-slate-400">{dataBreve(s.data)}</span>
                           <Badge tone={s.percentuale >= 70 ? "green" : "slate"}>{s.percentuale}%</Badge>
                         </Link>
                       </li>

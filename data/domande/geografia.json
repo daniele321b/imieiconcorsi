@@ -1,0 +1,3419 @@
+[
+  {
+    "materia": "geografia",
+    "id": "geo-001",
+    "argomento": "Italia fisica",
+    "livello": 1,
+    "testo": "Qual è il punto più elevato d'Italia?",
+    "opzioni": [
+      "Il Monte Bianco",
+      "Il Cervino",
+      "Il Monte Rosa",
+      "Il Gran Paradiso"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il Monte Bianco, in Valle d'Aosta, è il punto più alto del Paese (oltre 4.800 m).",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-002",
+    "argomento": "Italia fisica",
+    "livello": 1,
+    "testo": "Qual è il fiume più lungo d'Italia?",
+    "opzioni": [
+      "L'Arno",
+      "Il Po",
+      "Il Tevere",
+      "L'Adige"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il Po (652 km) nasce dal Monviso, attraversa la Pianura Padana e sfocia con un delta nell'Adriatico.",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-003",
+    "argomento": "Italia fisica",
+    "livello": 2,
+    "testo": "Da quale monte nasce il Po?",
+    "opzioni": [
+      "Dal Monte Fumaiolo",
+      "Dal Gran Sasso",
+      "Dal Monviso",
+      "Dal Monte Bianco"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il Po sgorga dal Monviso, nelle Alpi Cozie; il Tevere invece nasce dal Monte Fumaiolo.",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-004",
+    "argomento": "Italia fisica",
+    "livello": 3,
+    "testo": "Qual è il terzo fiume più lungo d'Italia, che nasce dal Monte Fumaiolo?",
+    "opzioni": [
+      "Il Piave",
+      "L'Arno",
+      "Il Volturno",
+      "Il Tevere"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il Tevere (405 km) è il terzo per lunghezza e il secondo per ampiezza del bacino idrografico.",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-005",
+    "argomento": "Italia fisica",
+    "livello": 1,
+    "testo": "Qual è il lago più vasto d'Italia?",
+    "opzioni": [
+      "Il Lago di Garda",
+      "Il Lago di Como",
+      "Il Lago Maggiore",
+      "Il Lago Trasimeno"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il Lago di Garda è il più esteso dei laghi italiani, di origine glaciale.",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-006",
+    "argomento": "Italia fisica",
+    "livello": 2,
+    "testo": "Qual è il vulcano attivo più alto d'Europa?",
+    "opzioni": [
+      "Lo Stromboli",
+      "L'Etna",
+      "Il Vesuvio",
+      "Vulcano"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'Etna, vicino a Catania, con circa 3.343 m è il vulcano più alto d'Europa.",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-007",
+    "argomento": "Italia fisica",
+    "livello": 2,
+    "testo": "Quali sono le due isole più grandi del Mediterraneo, entrambe italiane?",
+    "opzioni": [
+      "Sardegna e Creta",
+      "Sicilia e Corsica",
+      "Sicilia e Sardegna",
+      "Sicilia e Cipro"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'Italia insulare comprende le due maggiori isole del Mediterraneo, la Sardegna e la Sicilia.",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-008",
+    "argomento": "Italia fisica",
+    "livello": 3,
+    "testo": "Qual è la superficie della Repubblica italiana, in cifra tonda?",
+    "opzioni": [
+      "Circa 360.000 km²",
+      "Circa 210.000 km²",
+      "Circa 250.000 km²",
+      "Circa 302.000 km²"
+    ],
+    "corretta": 3,
+    "spiegazione": "La superficie della Repubblica italiana è di 302.073 km².",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-009",
+    "argomento": "Confini",
+    "livello": 2,
+    "testo": "Con quali Stati confina l'Italia via terra (esclusi i microstati)?",
+    "opzioni": [
+      "Francia, Svizzera, Austria e Slovenia",
+      "Francia, Austria, Croazia e Slovenia",
+      "Francia, Svizzera, Germania e Slovenia",
+      "Svizzera, Austria, Ungheria e Slovenia"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'Italia confina a ovest con la Francia, a nord con Svizzera e Austria, a est con la Slovenia.",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-010",
+    "argomento": "Confini",
+    "livello": 2,
+    "testo": "Quali microstati sono enclavi interamente comprese nel territorio italiano?",
+    "opzioni": [
+      "Liechtenstein e Città del Vaticano",
+      "San Marino e Città del Vaticano",
+      "Monaco e San Marino",
+      "Andorra e San Marino"
+    ],
+    "corretta": 1,
+    "spiegazione": "San Marino e Città del Vaticano sono enclavi interamente circondate dall'Italia.",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-011",
+    "argomento": "Confini",
+    "livello": 3,
+    "testo": "Qual è il comune più a nord d'Italia?",
+    "opzioni": [
+      "Sesto",
+      "Bardonecchia",
+      "Predoi",
+      "Livigno"
+    ],
+    "corretta": 2,
+    "spiegazione": "Comuni estremi: Predoi a nord, Lampedusa e Linosa a sud, Otranto a est, Bardonecchia a ovest.",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-012",
+    "argomento": "Confini",
+    "livello": 3,
+    "testo": "Qual è il comune più a est d'Italia?",
+    "opzioni": [
+      "Lecce",
+      "Santa Maria di Leuca",
+      "Trieste",
+      "Otranto"
+    ],
+    "corretta": 3,
+    "spiegazione": "Otranto, in Puglia, è il comune più orientale; Bardonecchia il più occidentale.",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-013",
+    "argomento": "Confini",
+    "livello": 2,
+    "testo": "Qual è il comune più a sud d'Italia?",
+    "opzioni": [
+      "Lampedusa e Linosa",
+      "Pantelleria",
+      "Pachino",
+      "Portopalo di Capo Passero"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il comune più meridionale è Lampedusa e Linosa, nelle isole Pelagie.",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-014",
+    "argomento": "Regioni",
+    "livello": 1,
+    "testo": "Quante sono le regioni italiane e quante di queste sono a statuto speciale?",
+    "opzioni": [
+      "20 regioni, di cui 3 a statuto speciale",
+      "20 regioni, di cui 5 a statuto speciale",
+      "19 regioni, di cui 6 a statuto speciale",
+      "21 regioni, di cui 5 a statuto speciale"
+    ],
+    "corretta": 1,
+    "spiegazione": "Le regioni sono 20: 15 a statuto ordinario e 5 a statuto speciale.",
+    "fonte": "Wikipedia, «Regioni d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-015",
+    "argomento": "Regioni",
+    "livello": 3,
+    "testo": "Come compariva il Molise nel testo originario dell'art. 131 della Costituzione?",
+    "opzioni": [
+      "Come regione autonoma",
+      "Insieme alla Campania",
+      "Insieme all'Abruzzo, nella regione «Abruzzi e Molise»",
+      "Non compariva: è stato creato dalle Province"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'art. 131 nel testo originario elencava «Abruzzi e Molise»; il Molise è diventato regione autonoma nel 1963.",
+    "fonte": "Wikipedia, «Regioni d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-016",
+    "argomento": "Popolazione",
+    "livello": 2,
+    "testo": "Quanti residenti contava l'Italia al 1° gennaio 2025, secondo l'ISTAT (dati provvisori)?",
+    "opzioni": [
+      "Circa 61,5 milioni",
+      "Circa 55 milioni",
+      "Circa 64 milioni",
+      "Circa 58,9 milioni"
+    ],
+    "corretta": 3,
+    "spiegazione": "ISTAT, Annuario 2025: 58.934.177 residenti al 1° gennaio 2025, circa 37 mila in meno rispetto all'anno prima.",
+    "fonte": "ISTAT, Annuario statistico italiano 2025, cap. 3 (CC BY)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-017",
+    "argomento": "Popolazione",
+    "livello": 3,
+    "testo": "Rispetto all'anno precedente, come è cambiata la popolazione residente al 1° gennaio 2025?",
+    "opzioni": [
+      "È diminuita di circa 37 mila persone",
+      "È rimasta identica",
+      "È diminuita di oltre un milione",
+      "È aumentata di circa 100 mila persone"
+    ],
+    "corretta": 0,
+    "spiegazione": "Secondo l'ISTAT la popolazione è calata di circa 37 mila unità rispetto alla stessa data del 2024.",
+    "fonte": "ISTAT, Annuario statistico italiano 2025, cap. 3 (CC BY)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-018",
+    "argomento": "Unione europea",
+    "livello": 1,
+    "testo": "Quanti Stati membri ha l'Unione europea?",
+    "opzioni": [
+      "25",
+      "27",
+      "28",
+      "30"
+    ],
+    "corretta": 1,
+    "spiegazione": "Dopo l'uscita del Regno Unito l'Unione europea comprende 27 Stati membri.",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-019",
+    "argomento": "Unione europea",
+    "livello": 2,
+    "testo": "Quante sono le lingue ufficiali dell'Unione europea?",
+    "opzioni": [
+      "27",
+      "12",
+      "24",
+      "3"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'Unione europea ha 24 lingue ufficiali.",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-020",
+    "argomento": "Unione europea",
+    "livello": 3,
+    "testo": "In quale città ha sede la Banca centrale europea?",
+    "opzioni": [
+      "Lussemburgo",
+      "Bruxelles",
+      "Strasburgo",
+      "Francoforte sul Meno"
+    ],
+    "corretta": 3,
+    "spiegazione": "La BCE ha sede a Francoforte sul Meno; Commissione e Consiglio a Bruxelles; il Parlamento a Strasburgo; la Corte di giustizia a Lussemburgo.",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-021",
+    "argomento": "Unione europea",
+    "livello": 3,
+    "testo": "Con quale trattato l'Unione europea ha assunto la struttura attuale?",
+    "opzioni": [
+      "Il trattato di Lisbona del 2007",
+      "Il trattato di Nizza del 2001",
+      "I Trattati di Roma del 1957",
+      "Il trattato di Maastricht del 1992"
+    ],
+    "corretta": 0,
+    "spiegazione": "Nata come CEE nel 1957 e trasformata a Maastricht (1992), l'Unione ha la struttura attuale dal trattato di Lisbona del 2007.",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-022",
+    "argomento": "Montagne",
+    "livello": 1,
+    "testo": "Qual è la catena montuosa più importante d'Europa, che racchiude a nord la regione italiana?",
+    "opzioni": [
+      "Gli Appennini",
+      "Le Alpi",
+      "I Carpazi",
+      "I Pirenei"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Alpi».",
+    "fonte": "Wikipedia, «Alpi» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-023",
+    "argomento": "Montagne",
+    "livello": 2,
+    "testo": "Qual è la montagna più alta delle Alpi?",
+    "opzioni": [
+      "Il Gran Paradiso",
+      "Il Cervino",
+      "Il Monte Bianco",
+      "Il Monte Rosa"
+    ],
+    "corretta": 2,
+    "spiegazione": "Si trova al confine tra Italia e Francia.",
+    "fonte": "Wikipedia, «Alpi» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-024",
+    "argomento": "Montagne",
+    "livello": 3,
+    "testo": "Per quanti chilometri circa si estende l'arco alpino?",
+    "opzioni": [
+      "Circa 300 km",
+      "Circa 600 km",
+      "Circa 3000 km",
+      "Circa 1300 km"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Alpi».",
+    "fonte": "Wikipedia, «Alpi» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-025",
+    "argomento": "Montagne",
+    "livello": 3,
+    "testo": "Quale valico segna convenzionalmente il limite occidentale delle Alpi (e il punto d'unione con gli Appennini)?",
+    "opzioni": [
+      "La Bocchetta di Altare o colle di Cadibona",
+      "Il colle del Moncenisio",
+      "Il passo dello Stelvio",
+      "Il passo del Brennero"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Alpi».",
+    "fonte": "Wikipedia, «Alpi» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-026",
+    "argomento": "Montagne",
+    "livello": 3,
+    "testo": "In quali tre grandi parti la «Partizione delle Alpi» divide la catena?",
+    "opzioni": [
+      "Prealpi, Alpi e Dolomiti",
+      "Alpi Occidentali, Centrali e Orientali",
+      "Alpi Alte, Medie e Basse",
+      "Alpi Italiane, Francesi e Svizzere"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Alpi».",
+    "fonte": "Wikipedia, «Alpi» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-027",
+    "argomento": "Montagne",
+    "livello": 4,
+    "testo": "Quale passo separa le Alpi Centrali dalle Alpi Orientali secondo la Partizione delle Alpi?",
+    "opzioni": [
+      "Il passo di Vrata",
+      "Il col Ferret",
+      "Il passo del Brennero",
+      "Il colle di Cadibona"
+    ],
+    "corretta": 2,
+    "spiegazione": "Le Centrali vanno dal col Ferret al Brennero.",
+    "fonte": "Wikipedia, «Alpi» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-028",
+    "argomento": "Montagne",
+    "livello": 3,
+    "testo": "A quale grande parte delle Alpi appartengono le Dolomiti?",
+    "opzioni": [
+      "Alle Alpi Occidentali",
+      "Alle Alpi Centrali",
+      "Agli Appennini",
+      "Alle Alpi Orientali"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Alpi».",
+    "fonte": "Wikipedia, «Alpi» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-029",
+    "argomento": "Montagne",
+    "livello": 3,
+    "testo": "A quale grande parte delle Alpi appartengono le Alpi Marittime e le Cozie?",
+    "opzioni": [
+      "Alle Alpi Occidentali",
+      "Alle Prealpi",
+      "Alle Alpi Orientali",
+      "Alle Alpi Centrali"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Alpi».",
+    "fonte": "Wikipedia, «Alpi» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-030",
+    "argomento": "Montagne",
+    "livello": 2,
+    "testo": "Come si chiama la celebre mummia dell'età del rame ritrovata sulle Alpi (uomo di Similaun)?",
+    "opzioni": [
+      "Lucy",
+      "Ötzi",
+      "Tutankhamon",
+      "Uomo di Neanderthal"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Alpi».",
+    "fonte": "Wikipedia, «Alpi» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-031",
+    "argomento": "Montagne",
+    "livello": 3,
+    "testo": "In che anno fu istituito nelle Alpi svizzere il primo parco nazionale d'Europa?",
+    "opzioni": [
+      "Nel 1960",
+      "Nel 1872",
+      "Nel 1914",
+      "Nel 1922"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Alpi».",
+    "fonte": "Wikipedia, «Alpi» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-032",
+    "argomento": "Montagne",
+    "livello": 2,
+    "testo": "Per quanti chilometri circa si estendono gli Appennini (senza l'Appennino siculo)?",
+    "opzioni": [
+      "Circa 600 km",
+      "Circa 400 km",
+      "Circa 2500 km",
+      "Circa 1200 km"
+    ],
+    "corretta": 3,
+    "spiegazione": "Comprendendo l'Appennino siculo si arriva a 1400 km.",
+    "fonte": "Wikipedia, «Appennini» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-033",
+    "argomento": "Montagne",
+    "livello": 1,
+    "testo": "Come sono spesso chiamati gli Appennini?",
+    "opzioni": [
+      "La «spina dorsale» della penisola italiana",
+      "Le «montagne bianche»",
+      "Il «muro del Nord»",
+      "Il «tetto d'Europa»"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Appennini».",
+    "fonte": "Wikipedia, «Appennini» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-034",
+    "argomento": "Montagne",
+    "livello": 2,
+    "testo": "Qual è la cima più alta degli Appennini?",
+    "opzioni": [
+      "Il Monte Vettore",
+      "Il Corno Grande, nel Gran Sasso",
+      "La Maiella (Monte Amaro)",
+      "Il Monte Cimone"
+    ],
+    "corretta": 1,
+    "spiegazione": "Raggiunge 2912 m in Abruzzo.",
+    "fonte": "Wikipedia, «Appennini» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-035",
+    "argomento": "Montagne",
+    "livello": 3,
+    "testo": "Qual è l'unico ghiacciaio degli Appennini, il più meridionale d'Europa?",
+    "opzioni": [
+      "Il ghiacciaio del Terminillo",
+      "Il ghiacciaio della Marmolada",
+      "Il Calderone, sul Gran Sasso",
+      "Il ghiacciaio del Pollino"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Appennini».",
+    "fonte": "Wikipedia, «Appennini» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-036",
+    "argomento": "Montagne",
+    "livello": 3,
+    "testo": "Quali rilievi appenninici sono costituiti da rocce granitiche?",
+    "opzioni": [
+      "Il Pollino e gli Alburni",
+      "Il Gran Sasso e la Maiella",
+      "Le Alpi Apuane e i Sibillini",
+      "La Sila e l'Aspromonte"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il resto degli Appennini è formato in prevalenza da calcari e argille.",
+    "fonte": "Wikipedia, «Appennini» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-037",
+    "argomento": "Montagne",
+    "livello": 3,
+    "testo": "Quale vetta appenninica appartiene alla Repubblica di San Marino?",
+    "opzioni": [
+      "Il Monte Titano",
+      "Il Monte Carpegna",
+      "Il Monte Fumaiolo",
+      "Il Monte Falterona"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Appennini».",
+    "fonte": "Wikipedia, «Appennini» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-038",
+    "argomento": "Montagne",
+    "livello": 4,
+    "testo": "Dov'è più stretta la catena appenninica (circa 30 km)?",
+    "opzioni": [
+      "Tra Ancona e Piombino",
+      "All'istmo di Catanzaro, tra i golfi di Sant'Eufemia e di Squillace",
+      "Tra Roma e Pescara",
+      "Tra Napoli e Bari"
+    ],
+    "corretta": 1,
+    "spiegazione": "Anche tra Genova Voltri e Gavi la larghezza è di circa 30 km.",
+    "fonte": "Wikipedia, «Appennini» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-039",
+    "argomento": "Montagne",
+    "livello": 3,
+    "testo": "Quali linee difensive tedesche della Seconda guerra mondiale sfruttavano gli Appennini?",
+    "opzioni": [
+      "Linea Mannerheim",
+      "Linea Maginot e Linea Sigfrido",
+      "Linea Gustav e Linea Gotica",
+      "Vallo Atlantico"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Appennini».",
+    "fonte": "Wikipedia, «Appennini» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-040",
+    "argomento": "Montagne",
+    "livello": 3,
+    "testo": "Quali vulcani sono ancora attivi nell'Antiappennino campano?",
+    "opzioni": [
+      "I Colli Albani",
+      "Il Vulture",
+      "L'Amiata",
+      "Il Vesuvio e i Campi Flegrei"
+    ],
+    "corretta": 3,
+    "spiegazione": "I vulcani dei Colli Albani sono invece spenti.",
+    "fonte": "Wikipedia, «Appennini» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-041",
+    "argomento": "Fiumi",
+    "livello": 2,
+    "testo": "Quanto è lungo il Po?",
+    "opzioni": [
+      "652 km",
+      "405 km",
+      "1000 km",
+      "241 km"
+    ],
+    "corretta": 0,
+    "spiegazione": "È il fiume più lungo interamente compreso nel territorio italiano.",
+    "fonte": "Wikipedia, «Po» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-042",
+    "argomento": "Fiumi",
+    "livello": 3,
+    "testo": "Dove nasce il Po?",
+    "opzioni": [
+      "Sul Monte Rosa",
+      "Sul Monviso, al Pian del Re (Piemonte)",
+      "Sul Monte Fumaiolo",
+      "Sul Gran Paradiso"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Po».",
+    "fonte": "Wikipedia, «Po» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-043",
+    "argomento": "Fiumi",
+    "livello": 3,
+    "testo": "Quale capoluogo di regione è attraversato dal Po?",
+    "opzioni": [
+      "Bologna",
+      "Milano",
+      "Torino",
+      "Venezia"
+    ],
+    "corretta": 2,
+    "spiegazione": "Bagna anche i capoluoghi di provincia Piacenza e Cremona.",
+    "fonte": "Wikipedia, «Po» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-044",
+    "argomento": "Fiumi",
+    "livello": 3,
+    "testo": "In quale mare sfocia il Po e in che modo?",
+    "opzioni": [
+      "Nel Ligure, con una sola foce",
+      "Nello Ionio, con un delta",
+      "Nel Tirreno, con un estuario",
+      "Nell'Adriatico, con un vasto delta"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Po».",
+    "fonte": "Wikipedia, «Po» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-045",
+    "argomento": "Fiumi",
+    "livello": 4,
+    "testo": "Quante province attraversa il Po?",
+    "opzioni": [
+      "Tredici",
+      "Venti",
+      "Otto",
+      "Cinque"
+    ],
+    "corretta": 0,
+    "spiegazione": "Da Cuneo a Rovigo.",
+    "fonte": "Wikipedia, «Po» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-046",
+    "argomento": "Fiumi",
+    "livello": 4,
+    "testo": "Con quale nome letterario è indicato il Po, derivato dalla mitologia greca?",
+    "opzioni": [
+      "Padania",
+      "Eridano",
+      "Spinetico",
+      "Bodinkòs"
+    ],
+    "corretta": 1,
+    "spiegazione": "In latino era Padus.",
+    "fonte": "Wikipedia, «Po» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-047",
+    "argomento": "Fiumi",
+    "livello": 3,
+    "testo": "Quale regione è separata dalla Lombardia, per lunghi tratti, dal corso del Po?",
+    "opzioni": [
+      "La Liguria",
+      "Il Piemonte",
+      "L'Emilia-Romagna",
+      "Il Trentino"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il Po segna anche il confine tra Emilia-Romagna e Veneto.",
+    "fonte": "Wikipedia, «Po» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-048",
+    "argomento": "Fiumi",
+    "livello": 3,
+    "testo": "Perché i fiumi italiani sono generalmente più brevi di quelli delle altre regioni europee?",
+    "opzioni": [
+      "Perché piove pochissimo",
+      "Perché sono tutti artificiali",
+      "Perché nascono tutti dalle Alpi",
+      "Perché l'Italia è in parte una penisola, divisa dagli Appennini in due versanti"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Fiumi d'Italia».",
+    "fonte": "Wikipedia, «Fiumi d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-049",
+    "argomento": "Fiumi",
+    "livello": 4,
+    "testo": "Qual è l'asta fluviale più lunga d'Italia, considerando anche il Tanaro e il Negrone?",
+    "opzioni": [
+      "Negrone-Tanaro-Po, con 712 km",
+      "Ticino-Po, con 900 km",
+      "Adige-Po, con 1000 km",
+      "Tevere-Aniene, con 500 km"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Fiumi d'Italia».",
+    "fonte": "Wikipedia, «Fiumi d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-050",
+    "argomento": "Fiumi",
+    "livello": 4,
+    "testo": "Qual è il fiume più lungo tra quelli che scorrono almeno in parte in Italia?",
+    "opzioni": [
+      "Il Po",
+      "La Drava",
+      "Il Danubio",
+      "Il Rodano"
+    ],
+    "corretta": 1,
+    "spiegazione": "La Drava misura 749 km.",
+    "fonte": "Wikipedia, «Fiumi d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-051",
+    "argomento": "Fiumi",
+    "livello": 3,
+    "testo": "Quando sono soggetti a piene i fiumi alpini?",
+    "opzioni": [
+      "Solo in inverno",
+      "Mai, hanno portata costante",
+      "In primavera ed estate, per lo scioglimento dei ghiacciai",
+      "In autunno, per le piogge"
+    ],
+    "corretta": 2,
+    "spiegazione": "I fiumi appenninici hanno invece piene improvvise in primavera e autunno.",
+    "fonte": "Wikipedia, «Fiumi d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-052",
+    "argomento": "Fiumi",
+    "livello": 3,
+    "testo": "Che regime hanno, in generale, i fiumi sardi e siciliani?",
+    "opzioni": [
+      "Costante tutto l'anno",
+      "Glaciale, con piene estive",
+      "Carsico, con portata uniforme",
+      "Torrentizio: pieni d'inverno e quasi secchi d'estate"
+    ],
+    "corretta": 3,
+    "spiegazione": "Fanno eccezione Tirso, Flumendosa, Coghinas e Simeto.",
+    "fonte": "Wikipedia, «Fiumi d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-053",
+    "argomento": "Fiumi",
+    "livello": 2,
+    "testo": "Qual è il secondo fiume d'Italia per lunghezza?",
+    "opzioni": [
+      "L'Adige",
+      "L'Arno",
+      "Il Tevere",
+      "Il Piave"
+    ],
+    "corretta": 0,
+    "spiegazione": "È lungo circa 410 km e nasce presso il Passo di Resia.",
+    "fonte": "Wikipedia, «Fiumi d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-054",
+    "argomento": "Fiumi",
+    "livello": 3,
+    "testo": "Dove nasce l'Adige?",
+    "opzioni": [
+      "Sul Monviso",
+      "Presso il Passo di Resia",
+      "Sulla Marmolada",
+      "Al Passo del Brennero"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Fiumi d'Italia».",
+    "fonte": "Wikipedia, «Fiumi d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-055",
+    "argomento": "Fiumi",
+    "livello": 4,
+    "testo": "Quale fiume nasce dai laghi di Caldonazzo e Levico, in Valsugana?",
+    "opzioni": [
+      "L'Adige",
+      "Il Sile",
+      "Il Brenta",
+      "Il Piave"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Fiumi d'Italia».",
+    "fonte": "Wikipedia, «Fiumi d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-056",
+    "argomento": "Fiumi",
+    "livello": 4,
+    "testo": "Quale fiume veneto è un tipico fiume di risorgiva, con la maggiore sorgente italiana?",
+    "opzioni": [
+      "Il Brenta",
+      "Il Tagliamento",
+      "La Livenza",
+      "Il Sile"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Fiumi d'Italia».",
+    "fonte": "Wikipedia, «Fiumi d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-057",
+    "argomento": "Fiumi",
+    "livello": 3,
+    "testo": "Da quale montagna nasce il Piave?",
+    "opzioni": [
+      "Dal Monte Peralba, nelle Alpi Carniche",
+      "Dal Monte Bianco",
+      "Dalla Marmolada",
+      "Dal Monte Grappa"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Fiumi d'Italia».",
+    "fonte": "Wikipedia, «Fiumi d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-058",
+    "argomento": "Fiumi",
+    "livello": 3,
+    "testo": "Dove nasce l'Isonzo?",
+    "opzioni": [
+      "Nelle Alpi Carniche, in Italia",
+      "Nelle Alpi Giulie, in Slovenia",
+      "Nelle Dolomiti",
+      "Nel Carso triestino"
+    ],
+    "corretta": 1,
+    "spiegazione": "Sfocia presso Monfalcone.",
+    "fonte": "Wikipedia, «Fiumi d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-059",
+    "argomento": "Fiumi",
+    "livello": 4,
+    "testo": "Quale grande alluvione del Po colpì il Polesine nel 1951?",
+    "opzioni": [
+      "L'alluvione di Firenze",
+      "L'alluvione del Vajont",
+      "L'alluvione del Polesine del novembre 1951",
+      "L'alluvione di Sarno"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il tratto finale del Po scorre in argini pensili.",
+    "fonte": "Wikipedia, «Fiumi d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-060",
+    "argomento": "Laghi",
+    "livello": 1,
+    "testo": "Qual è il lago più esteso d'Italia?",
+    "opzioni": [
+      "Il lago Trasimeno",
+      "Il lago di Como",
+      "Il lago Maggiore",
+      "Il lago di Garda (Benaco)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Misura 370 km².",
+    "fonte": "Wikipedia, «Laghi d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-061",
+    "argomento": "Laghi",
+    "livello": 2,
+    "testo": "Qual è il lago più profondo d'Italia?",
+    "opzioni": [
+      "Il lago di Como (Lario)",
+      "Il lago di Garda",
+      "Il lago Maggiore",
+      "Il lago di Bolsena"
+    ],
+    "corretta": 0,
+    "spiegazione": "Raggiunge 418 m di profondità.",
+    "fonte": "Wikipedia, «Laghi d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-062",
+    "argomento": "Laghi",
+    "livello": 2,
+    "testo": "Con quale altro nome è noto il lago Maggiore?",
+    "opzioni": [
+      "Benaco",
+      "Verbano",
+      "Lario",
+      "Sebino"
+    ],
+    "corretta": 1,
+    "spiegazione": "Lario è il lago di Como, Benaco il Garda, Sebino il lago d'Iseo.",
+    "fonte": "Wikipedia, «Laghi d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-063",
+    "argomento": "Laghi",
+    "livello": 3,
+    "testo": "Quale fiume è immissario ed emissario del lago di Como?",
+    "opzioni": [
+      "L'Oglio",
+      "Il Mincio",
+      "L'Adda",
+      "Il Ticino"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Laghi d'Italia».",
+    "fonte": "Wikipedia, «Laghi d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-064",
+    "argomento": "Laghi",
+    "livello": 3,
+    "testo": "Quale isola, la più estesa dei laghi italiani, sorge nel lago d'Iseo?",
+    "opzioni": [
+      "Isola Comacina",
+      "Isola Maggiore",
+      "Isola Bella",
+      "Monte Isola"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Laghi d'Italia».",
+    "fonte": "Wikipedia, «Laghi d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-065",
+    "argomento": "Laghi",
+    "livello": 3,
+    "testo": "Quali isole sorgono nel lago Maggiore?",
+    "opzioni": [
+      "Le isole Borromee (Madre, Bella, dei Pescatori)",
+      "Le isole Egadi",
+      "Le isole Eolie",
+      "Le isole Tremiti"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Laghi d'Italia».",
+    "fonte": "Wikipedia, «Laghi d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-066",
+    "argomento": "Laghi",
+    "livello": 3,
+    "testo": "Qual è il più grande lago appenninico?",
+    "opzioni": [
+      "Il lago di Bracciano",
+      "Il Trasimeno",
+      "Il lago di Scanno",
+      "Il lago di Bolsena"
+    ],
+    "corretta": 1,
+    "spiegazione": "Con 128 km² è il quarto lago d'Italia ed è di origine tettonica.",
+    "fonte": "Wikipedia, «Laghi d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-067",
+    "argomento": "Laghi",
+    "livello": 4,
+    "testo": "Chi prosciugò il lago del Fucino, in Abruzzo?",
+    "opzioni": [
+      "I Borbone",
+      "Mussolini",
+      "Alessandro Torlonia",
+      "Napoleone"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Laghi d'Italia».",
+    "fonte": "Wikipedia, «Laghi d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-068",
+    "argomento": "Laghi",
+    "livello": 3,
+    "testo": "Di che origine sono i grandi laghi prealpini?",
+    "opzioni": [
+      "Tettonica",
+      "Artificiale",
+      "Vulcanica",
+      "Morenica (glaciale)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Laghi d'Italia».",
+    "fonte": "Wikipedia, «Laghi d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-069",
+    "argomento": "Laghi",
+    "livello": 4,
+    "testo": "Quali sono i laghi costieri più estesi della penisola, a nord del Gargano?",
+    "opzioni": [
+      "I laghi di Lesina e di Varano",
+      "I laghi di Fogliano e Sabaudia",
+      "Il lago di Ganzirri",
+      "I laghi Alimini"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Laghi d'Italia».",
+    "fonte": "Wikipedia, «Laghi d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-070",
+    "argomento": "Isole",
+    "livello": 2,
+    "testo": "Quante isole conta all'incirca il patrimonio insulare italiano?",
+    "opzioni": [
+      "Circa 50",
+      "Oltre 800, di cui solo un'ottantina abitate",
+      "Esattamente 100",
+      "Circa 5.000"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Isole dell'Italia».",
+    "fonte": "Wikipedia, «Isole dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-071",
+    "argomento": "Isole",
+    "livello": 3,
+    "testo": "A quale arcipelago appartengono Alicudi e Filicudi?",
+    "opzioni": [
+      "Alle Isole Pelagie",
+      "Alle Isole Tremiti",
+      "Alle Isole Eolie",
+      "Alle Isole Egadi"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Isole dell'Italia».",
+    "fonte": "Wikipedia, «Isole dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-072",
+    "argomento": "Isole",
+    "livello": 3,
+    "testo": "A quale arcipelago appartengono Favignana, Levanzo e Marettimo?",
+    "opzioni": [
+      "Alle Isole Eolie",
+      "All'arcipelago della Maddalena",
+      "Alle Isole Pelagie",
+      "Alle Isole Egadi"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Isole dell'Italia».",
+    "fonte": "Wikipedia, «Isole dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-073",
+    "argomento": "Parchi",
+    "livello": 3,
+    "testo": "Quanti sono i parchi nazionali iscritti nell'Elenco ufficiale delle aree protette?",
+    "opzioni": [
+      "Ventisei (uno non ancora operativo)",
+      "Cento",
+      "Dieci",
+      "Cinquanta"
+    ],
+    "corretta": 0,
+    "spiegazione": "Coprono circa il 5,3% del territorio nazionale.",
+    "fonte": "Wikipedia, «Parchi nazionali d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-074",
+    "argomento": "Parchi",
+    "livello": 4,
+    "testo": "A chi spetta la competenza sui parchi nazionali, anche nelle regioni a statuto speciale, secondo la Corte costituzionale?",
+    "opzioni": [
+      "Alle regioni",
+      "Esclusivamente allo Stato",
+      "Ai comuni",
+      "All'Unione europea"
+    ],
+    "corretta": 1,
+    "spiegazione": "Sentenza n. 12 del 2009.",
+    "fonte": "Wikipedia, «Parchi nazionali d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-075",
+    "argomento": "Parchi",
+    "livello": 3,
+    "testo": "Quale parco nazionale siciliano è stato istituito nel 2016?",
+    "opzioni": [
+      "Il Parco dei Nebrodi",
+      "Il Parco dell'Etna",
+      "Il Parco nazionale dell'Isola di Pantelleria",
+      "Il Parco delle Madonie"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Parchi nazionali d'Italia».",
+    "fonte": "Wikipedia, «Parchi nazionali d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-076",
+    "argomento": "Città metropolitane",
+    "livello": 2,
+    "testo": "Quante sono le città metropolitane in Italia?",
+    "opzioni": [
+      "Venti",
+      "Dieci",
+      "Ventisette",
+      "Quindici"
+    ],
+    "corretta": 3,
+    "spiegazione": "Sono subentrate alle province con la L. 56/2014.",
+    "fonte": "Wikipedia, «Città metropolitane d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-077",
+    "argomento": "Città metropolitane",
+    "livello": 3,
+    "testo": "Quale legge del 2014 ha disposto il subentro delle città metropolitane alle province?",
+    "opzioni": [
+      "La legge 7 aprile 2014, n. 56 (legge Delrio)",
+      "La legge costituzionale 3/2001",
+      "La legge 142/1990",
+      "Il D.Lgs. 267/2000"
+    ],
+    "corretta": 0,
+    "spiegazione": "Erano state previste per la prima volta dalla L. 142/1990.",
+    "fonte": "Wikipedia, «Città metropolitane d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-078",
+    "argomento": "Mediterraneo",
+    "livello": 2,
+    "testo": "Attraverso quale stretto il Mediterraneo comunica con l'Oceano Atlantico?",
+    "opzioni": [
+      "Lo stretto di Messina",
+      "Lo stretto di Gibilterra",
+      "Il canale di Suez",
+      "Lo stretto del Bosforo"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il Bosforo lo collega al Mar Nero, il canale di Suez al Mar Rosso.",
+    "fonte": "Wikipedia, «Mar Mediterraneo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-079",
+    "argomento": "Mediterraneo",
+    "livello": 2,
+    "testo": "Quale opera artificiale collega il Mediterraneo al Mar Rosso?",
+    "opzioni": [
+      "Lo stretto dei Dardanelli",
+      "Il canale di Corinto",
+      "Il canale di Suez",
+      "Il canale di Panama"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Mar Mediterraneo».",
+    "fonte": "Wikipedia, «Mar Mediterraneo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-080",
+    "argomento": "Mediterraneo",
+    "livello": 3,
+    "testo": "Qual è la superficie approssimativa del Mar Mediterraneo?",
+    "opzioni": [
+      "Circa 500.000 km²",
+      "Circa 250.000 km²",
+      "Circa 25 milioni di km²",
+      "Circa 2,5 milioni di km²"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Mar Mediterraneo».",
+    "fonte": "Wikipedia, «Mar Mediterraneo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-081",
+    "argomento": "Mediterraneo",
+    "livello": 3,
+    "testo": "Dove si trova il punto più profondo del Mediterraneo (oltre 5.000 m)?",
+    "opzioni": [
+      "Presso le coste del Peloponneso",
+      "Nel Golfo del Leone",
+      "Al largo di Malta",
+      "Nel Tirreno meridionale"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Mar Mediterraneo».",
+    "fonte": "Wikipedia, «Mar Mediterraneo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-082",
+    "argomento": "Mediterraneo",
+    "livello": 1,
+    "testo": "Cosa significa la parola latina «mediterraneus»?",
+    "opzioni": [
+      "«Mare del sole»",
+      "«In mezzo alle terre»",
+      "«Mare profondo»",
+      "«Mare dei Romani»"
+    ],
+    "corretta": 1,
+    "spiegazione": "I Romani lo chiamavano Mare nostrum.",
+    "fonte": "Wikipedia, «Mar Mediterraneo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-083",
+    "argomento": "Mediterraneo",
+    "livello": 2,
+    "testo": "Come chiamavano i Romani il Mediterraneo?",
+    "opzioni": [
+      "Mare internum soltanto",
+      "Mare magnum",
+      "Mare nostrum",
+      "Pontus Euxinus"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Mar Mediterraneo».",
+    "fonte": "Wikipedia, «Mar Mediterraneo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-084",
+    "argomento": "Mediterraneo",
+    "livello": 3,
+    "testo": "Attraverso quali stretti il Mediterraneo comunica con il Mar Nero?",
+    "opzioni": [
+      "Gibilterra e Messina",
+      "Otranto e Bonifacio",
+      "Kerč e Hormuz",
+      "Dardanelli e Bosforo, attraverso il Mar di Marmara"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Mar Mediterraneo».",
+    "fonte": "Wikipedia, «Mar Mediterraneo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-085",
+    "argomento": "Continenti",
+    "livello": 2,
+    "testo": "Quanti continenti prevede il modello più seguito in Italia?",
+    "opzioni": [
+      "Sei: Africa, Asia, Europa, America, Oceania, Antartide",
+      "Quattro",
+      "Cinque, senza l'Antartide",
+      "Sette, con due Americhe"
+    ],
+    "corretta": 0,
+    "spiegazione": "È anche il criterio del geoschema delle Nazioni Unite.",
+    "fonte": "Wikipedia, «Continente» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-086",
+    "argomento": "Continenti",
+    "livello": 3,
+    "testo": "Quale continente manca nel modello a cinque continenti dei cerchi olimpici?",
+    "opzioni": [
+      "L'Oceania",
+      "L'Antartide",
+      "L'America",
+      "L'Africa"
+    ],
+    "corretta": 1,
+    "spiegazione": "Si considerano solo i continenti abitati.",
+    "fonte": "Wikipedia, «Continente» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-087",
+    "argomento": "Continenti",
+    "livello": 3,
+    "testo": "A quale continente appartiene la Groenlandia, pur essendo politicamente legata alla Danimarca?",
+    "opzioni": [
+      "All'Asia",
+      "All'Antartide",
+      "All'America",
+      "All'Europa"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'appartenenza politica non conta ai fini del continente.",
+    "fonte": "Wikipedia, «Continente» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-088",
+    "argomento": "Continenti",
+    "livello": 2,
+    "testo": "Da quale verbo latino deriva la parola «continente»?",
+    "opzioni": [
+      "Contendere, «lottare»",
+      "Continuare, «proseguire»",
+      "Contemnere, «disprezzare»",
+      "Continere, «tenere insieme»"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Continente».",
+    "fonte": "Wikipedia, «Continente» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-089",
+    "argomento": "Continenti",
+    "livello": 2,
+    "testo": "A quale continente si considera appartenente il Madagascar?",
+    "opzioni": [
+      "All'Africa",
+      "All'Oceania",
+      "All'Europa",
+      "All'Asia"
+    ],
+    "corretta": 0,
+    "spiegazione": "Le isole si attribuiscono generalmente al continente più vicino.",
+    "fonte": "Wikipedia, «Continente» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-090",
+    "argomento": "Oceani",
+    "livello": 1,
+    "testo": "Quale percentuale circa della superficie terrestre è coperta dall'oceano?",
+    "opzioni": [
+      "Circa il 90%",
+      "Circa il 70%",
+      "Circa il 50%",
+      "Circa il 30%"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Oceano».",
+    "fonte": "Wikipedia, «Oceano» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-091",
+    "argomento": "Oceani",
+    "livello": 2,
+    "testo": "Quanti oceani si identificano per consuetudine in Italia?",
+    "opzioni": [
+      "Sette",
+      "Quattro, con l'Artico",
+      "Tre: Pacifico, Atlantico e Indiano",
+      "Cinque"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il Mar Glaciale Artico è considerato un mare dipendente dall'Atlantico.",
+    "fonte": "Wikipedia, «Oceano» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-092",
+    "argomento": "Oceani",
+    "livello": 1,
+    "testo": "Qual è l'oceano più esteso?",
+    "opzioni": [
+      "L'Oceano Indiano",
+      "Il Mar Glaciale Artico",
+      "L'Oceano Atlantico",
+      "L'Oceano Pacifico"
+    ],
+    "corretta": 3,
+    "spiegazione": "Circa 179 milioni di km².",
+    "fonte": "Wikipedia, «Oceano» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-093",
+    "argomento": "Oceani",
+    "livello": 3,
+    "testo": "Come è considerato il «Mar Glaciale Artico» nella geografia italiana?",
+    "opzioni": [
+      "Un mare dipendente dall'Oceano Atlantico",
+      "Parte del Pacifico",
+      "Un oceano autonomo",
+      "Un lago salato"
+    ],
+    "corretta": 0,
+    "spiegazione": "Nei paesi anglosassoni si parla invece di Oceano Artico.",
+    "fonte": "Wikipedia, «Oceano» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-094",
+    "argomento": "Cartografia",
+    "livello": 2,
+    "testo": "Quali sono le coordinate geografiche di un punto?",
+    "opzioni": [
+      "Altezza, larghezza e profondità",
+      "Latitudine, longitudine e altitudine",
+      "Solo latitudine e longitudine",
+      "Nord, sud, est, ovest"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Coordinate geografiche».",
+    "fonte": "Wikipedia, «Coordinate geografiche» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-095",
+    "argomento": "Cartografia",
+    "livello": 2,
+    "testo": "Cos'è la latitudine?",
+    "opzioni": [
+      "La distanza dal meridiano di Greenwich",
+      "La distanza dal polo nord in km",
+      "La distanza angolare di un punto dall'equatore",
+      "L'altezza sul livello del mare"
+    ],
+    "corretta": 2,
+    "spiegazione": "La longitudine è invece la distanza angolare da un meridiano di riferimento.",
+    "fonte": "Wikipedia, «Coordinate geografiche» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-096",
+    "argomento": "Cartografia",
+    "livello": 2,
+    "testo": "Quale meridiano è convenzionalmente il riferimento zero della longitudine dal 1884?",
+    "opzioni": [
+      "Il meridiano di Parigi",
+      "Il meridiano di Washington",
+      "Il meridiano di Roma (Monte Mario)",
+      "Il meridiano di Greenwich"
+    ],
+    "corretta": 3,
+    "spiegazione": "Fu deciso alla International Meridian Conference di Washington.",
+    "fonte": "Wikipedia, «Coordinate geografiche» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-097",
+    "argomento": "Cartografia",
+    "livello": 3,
+    "testo": "A chi è attribuita l'invenzione di un sistema di coordinate geografiche?",
+    "opzioni": [
+      "A Eratostene di Cirene",
+      "A Mercatore",
+      "A Galileo Galilei",
+      "A Tolomeo"
+    ],
+    "corretta": 0,
+    "spiegazione": "Tolomeo fu il primo ad adottare il sistema di latitudine e longitudine.",
+    "fonte": "Wikipedia, «Coordinate geografiche» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-098",
+    "argomento": "Cartografia",
+    "livello": 3,
+    "testo": "Le latitudini dell'emisfero sud, in gradi decimali, si indicano con:",
+    "opzioni": [
+      "Valori sempre positivi",
+      "Valori negativi",
+      "Valori superiori a 90",
+      "La lettera E"
+    ],
+    "corretta": 1,
+    "spiegazione": "Anche le longitudini a ovest di Greenwich sono negative.",
+    "fonte": "Wikipedia, «Coordinate geografiche» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-099",
+    "argomento": "Fusi orari",
+    "livello": 2,
+    "testo": "Quanti gradi di longitudine copre idealmente un fuso orario?",
+    "opzioni": [
+      "10°",
+      "30°",
+      "15°",
+      "24°"
+    ],
+    "corretta": 2,
+    "spiegazione": "360° diviso 24 ore.",
+    "fonte": "Wikipedia, «Fuso orario» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-100",
+    "argomento": "Fusi orari",
+    "livello": 2,
+    "testo": "Rispetto all'UTC, in quale fuso si trova Roma (ora solare)?",
+    "opzioni": [
+      "UTC+2",
+      "UTC",
+      "UTC-1",
+      "UTC+1"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Fuso orario».",
+    "fonte": "Wikipedia, «Fuso orario» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-101",
+    "argomento": "Fusi orari",
+    "livello": 3,
+    "testo": "Se a Roma (UTC+1) sono le 13:00, che ora è a Los Angeles (UTC-8), in ora solare?",
+    "opzioni": [
+      "Le 4:00",
+      "Le 5:00",
+      "Le 22:00",
+      "Le 21:00"
+    ],
+    "corretta": 0,
+    "spiegazione": "La differenza è di 9 ore: 13 − 9 = 4. Con UTC 12:00 a Los Angeles sono le 04:00.",
+    "fonte": "Wikipedia, «Fuso orario» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-102",
+    "argomento": "Fusi orari",
+    "livello": 3,
+    "testo": "Quanti fusi orari esistono oggi, per ragioni anche politiche?",
+    "opzioni": [
+      "48",
+      "39",
+      "24",
+      "12"
+    ],
+    "corretta": 1,
+    "spiegazione": "In origine erano 24 zone di 15°.",
+    "fonte": "Wikipedia, «Fuso orario» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-103",
+    "argomento": "Europa",
+    "livello": 2,
+    "testo": "Quali sono le principali penisole europee?",
+    "opzioni": [
+      "Malese e indocinese",
+      "Kamčatka e Alaska",
+      "Italiana, balcanica, iberica e finno-scandinava",
+      "Arabica, indiana e coreana"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Europa».",
+    "fonte": "Wikipedia, «Europa» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-104",
+    "argomento": "Europa",
+    "livello": 2,
+    "testo": "Qual è il continente più piccolo della Terra?",
+    "opzioni": [
+      "L'Africa",
+      "L'Antartide",
+      "L'Europa",
+      "L'Oceania"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'Europa (circa 10 milioni di km²) è di poco più grande.",
+    "fonte": "Wikipedia, «Europa» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-105",
+    "argomento": "Europa",
+    "livello": 3,
+    "testo": "Lungo quale catena montuosa corre convenzionalmente il confine tra Europa e Asia?",
+    "opzioni": [
+      "Gli Urali",
+      "Le Alpi",
+      "I Carpazi",
+      "L'Himalaya"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il confine segue poi il fiume Ural e la depressione del Kuma-Manyč o il Caucaso, secondo le convenzioni.",
+    "fonte": "Wikipedia, «Europa» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-106",
+    "argomento": "Continenti",
+    "livello": 2,
+    "testo": "Qual è il continente più vasto e più popolato del mondo?",
+    "opzioni": [
+      "L'Africa",
+      "L'Asia",
+      "L'Europa",
+      "L'America"
+    ],
+    "corretta": 1,
+    "spiegazione": "Ha circa un terzo delle terre emerse e circa 4,8 miliardi di abitanti.",
+    "fonte": "Wikipedia, «Asia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-107",
+    "argomento": "Continenti",
+    "livello": 3,
+    "testo": "Quale posto occupa l'Africa tra i continenti per superficie e per popolazione?",
+    "opzioni": [
+      "Quarto per entrambi",
+      "Primo per entrambi",
+      "Terzo per superficie e secondo per popolazione",
+      "Secondo per superficie e terzo per popolazione"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Africa».",
+    "fonte": "Wikipedia, «Africa» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-108",
+    "argomento": "Continenti",
+    "livello": 2,
+    "testo": "Quale stretto separa l'Africa dall'Europa?",
+    "opzioni": [
+      "Lo stretto di Bab el-Mandeb",
+      "Lo stretto di Messina",
+      "Il Bosforo",
+      "Lo stretto di Gibilterra"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Africa».",
+    "fonte": "Wikipedia, «Africa» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-109",
+    "argomento": "Continenti",
+    "livello": 3,
+    "testo": "Quali linee notevoli attraversano l'Africa?",
+    "opzioni": [
+      "L'Equatore e i tropici del Cancro e del Capricorno",
+      "Il circolo polare artico",
+      "Il meridiano del cambiamento di data",
+      "Solo il tropico del Cancro"
+    ],
+    "corretta": 0,
+    "spiegazione": "Gran parte del territorio ricade nella zona torrida.",
+    "fonte": "Wikipedia, «Africa» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-110",
+    "argomento": "Continenti",
+    "livello": 3,
+    "testo": "Quali continenti formano il cosiddetto «Continente Antico»?",
+    "opzioni": [
+      "Europa e America",
+      "Europa, Asia e Africa",
+      "Asia e Oceania",
+      "America e Oceania"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Africa».",
+    "fonte": "Wikipedia, «Africa» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-111",
+    "argomento": "Continenti",
+    "livello": 3,
+    "testo": "Secondo un'ipotesi etimologica fenicia, cosa significherebbe «Asia»?",
+    "opzioni": [
+      "«Terra fertile»",
+      "«Occidente»",
+      "«Oriente» (le terre dove sorge il Sole)",
+      "«Grande montagna»"
+    ],
+    "corretta": 2,
+    "spiegazione": "«Europa» deriverebbe invece da ereb, «occidente».",
+    "fonte": "Wikipedia, «Asia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-112",
+    "argomento": "Continenti",
+    "livello": 2,
+    "testo": "Con quale altro nome è chiamata l'America?",
+    "opzioni": [
+      "Continente Nuovissimo",
+      "Continente Antico",
+      "Terra Australis",
+      "Nuovo Mondo (Continente Nuovo)"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'Oceania è detta invece Continente Nuovissimo.",
+    "fonte": "Wikipedia, «America» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-113",
+    "argomento": "Continenti",
+    "livello": 3,
+    "testo": "Quali catene montuose dominano il lato occidentale dell'America?",
+    "opzioni": [
+      "Le Montagne Rocciose e le Ande",
+      "Le Alpi e i Pirenei",
+      "Gli Urali e il Caucaso",
+      "Gli Appalachi e l'Himalaya"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «America».",
+    "fonte": "Wikipedia, «America» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-114",
+    "argomento": "Continenti",
+    "livello": 3,
+    "testo": "Quali sono i paesi più popolosi dell'America?",
+    "opzioni": [
+      "Canada, Argentina e Cile",
+      "Stati Uniti, Brasile e Messico",
+      "Venezuela, Bolivia e Uruguay",
+      "Perù, Colombia e Cuba"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «America».",
+    "fonte": "Wikipedia, «America» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-115",
+    "argomento": "Continenti",
+    "livello": 3,
+    "testo": "Quale istmo separa, secondo la letteratura anglosassone, America del Nord e del Sud?",
+    "opzioni": [
+      "L'istmo di Corinto",
+      "L'istmo di Suez",
+      "L'istmo di Panama",
+      "Lo stretto di Bering"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «America».",
+    "fonte": "Wikipedia, «America» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-116",
+    "argomento": "Continenti",
+    "livello": 3,
+    "testo": "In quali grandi regioni insulari si suddivide tradizionalmente l'Oceania?",
+    "opzioni": [
+      "Indonesia, Malesia e Filippine",
+      "Antille e Bahamas",
+      "Australia e Antartide",
+      "Melanesia, Micronesia e Polinesia"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Oceania».",
+    "fonte": "Wikipedia, «Oceania» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-117",
+    "argomento": "Continenti",
+    "livello": 3,
+    "testo": "Perché l'Oceania è detta «Continente Nuovissimo»?",
+    "opzioni": [
+      "Perché, Antartide a parte, fu l'ultimo a essere scoperto dagli europei e popolato dall'uomo",
+      "Perché è stato colonizzato dopo il 1900",
+      "Perché è il più giovane geologicamente",
+      "Perché è emerso da poco dal mare"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Oceania».",
+    "fonte": "Wikipedia, «Oceania» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-118",
+    "argomento": "Continenti",
+    "livello": 2,
+    "testo": "Quale percentuale del territorio antartico è coperta dai ghiacci?",
+    "opzioni": [
+      "Circa il 50%",
+      "Circa il 98%",
+      "Circa il 75%",
+      "Il 100%"
+    ],
+    "corretta": 1,
+    "spiegazione": "È il continente più freddo del pianeta.",
+    "fonte": "Wikipedia, «Antartide» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-119",
+    "argomento": "Continenti",
+    "livello": 3,
+    "testo": "Cosa stabilisce il Trattato Antartico del 1959?",
+    "opzioni": [
+      "La spartizione del continente tra sette Stati",
+      "L'estrazione di minerali da parte dell'ONU",
+      "Che l'Antartide sia usata solo per scopi pacifici e scientifici, senza attività militari né sfruttamento economico",
+      "La costruzione di basi militari NATO"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Antartide».",
+    "fonte": "Wikipedia, «Antartide» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-120",
+    "argomento": "Continenti",
+    "livello": 3,
+    "testo": "Quale posto occupa l'Antartide tra i continenti per estensione?",
+    "opzioni": [
+      "Secondo, dopo l'Asia",
+      "Primo",
+      "Ultimo",
+      "Quarto, dopo Asia, America e Africa"
+    ],
+    "corretta": 3,
+    "spiegazione": "Misura circa 14 milioni di km².",
+    "fonte": "Wikipedia, «Antartide» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-121",
+    "argomento": "Continenti",
+    "livello": 4,
+    "testo": "Cosa significa l'aggettivo greco da cui deriva «Antartide»?",
+    "opzioni": [
+      "«Opposto all'Artico»",
+      "«Fine del mondo»",
+      "«Terra dei ghiacci»",
+      "«Sotto le stelle»"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Antartide».",
+    "fonte": "Wikipedia, «Antartide» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-122",
+    "argomento": "Vulcani",
+    "livello": 2,
+    "testo": "Con quale altro nome è noto l'Etna?",
+    "opzioni": [
+      "Stromboli",
+      "Mongibello",
+      "Somma",
+      "Vulture"
+    ],
+    "corretta": 1,
+    "spiegazione": "È il più alto vulcano attivo della placca euroasiatica.",
+    "fonte": "Wikipedia, «Etna» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-123",
+    "argomento": "Vulcani",
+    "livello": 3,
+    "testo": "In quale anno l'UNESCO ha inserito l'Etna nel Patrimonio dell'umanità?",
+    "opzioni": [
+      "Nel 2020",
+      "Nel 2005",
+      "Nel 2013",
+      "Nel 1997"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Etna».",
+    "fonte": "Wikipedia, «Etna» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-124",
+    "argomento": "Vulcani",
+    "livello": 3,
+    "testo": "Nel territorio di quale città metropolitana si trova l'Etna?",
+    "opzioni": [
+      "Palermo",
+      "Messina",
+      "Siracusa",
+      "Catania"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Etna».",
+    "fonte": "Wikipedia, «Etna» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-125",
+    "argomento": "Vulcani",
+    "livello": 3,
+    "testo": "Quale vulcano più antico si è fuso con il Vesuvio, formando la caldera in cui si è sviluppato il cono attuale?",
+    "opzioni": [
+      "Il Monte Somma",
+      "L'Epomeo",
+      "Il Monte Nuovo",
+      "I Campi Flegrei"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Vesuvio».",
+    "fonte": "Wikipedia, «Vesuvio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-126",
+    "argomento": "Vulcani",
+    "livello": 2,
+    "testo": "Su quale golfo domina il Vesuvio?",
+    "opzioni": [
+      "Il golfo di Taranto",
+      "Il golfo di Napoli",
+      "Il golfo di Gaeta",
+      "Il golfo di Salerno"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Vesuvio».",
+    "fonte": "Wikipedia, «Vesuvio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-127",
+    "argomento": "Vulcani",
+    "livello": 3,
+    "testo": "Perché il Vesuvio è considerato uno dei vulcani più pericolosi al mondo?",
+    "opzioni": [
+      "Perché erutta ogni anno",
+      "Perché è sottomarino",
+      "Per l'elevata popolazione delle zone circostanti e le sue caratteristiche esplosive",
+      "Perché è il più alto d'Europa"
+    ],
+    "corretta": 2,
+    "spiegazione": "Circa 700.000 residenti sono potenzialmente in pericolo.",
+    "fonte": "Wikipedia, «Vesuvio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-128",
+    "argomento": "Mari e stretti",
+    "livello": 2,
+    "testo": "Quali mari collega lo stretto di Messina?",
+    "opzioni": [
+      "L'Adriatico e lo Ionio",
+      "Il Tirreno e il Ligure",
+      "Lo Ionio e il Mediterraneo orientale soltanto",
+      "Il Tirreno a nord e lo Ionio a sud"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Stretto di Messina».",
+    "fonte": "Wikipedia, «Stretto di Messina» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-129",
+    "argomento": "Mari e stretti",
+    "livello": 3,
+    "testo": "Qual è la larghezza minima dello stretto di Messina?",
+    "opzioni": [
+      "Circa 3,14 km",
+      "Circa 800 m",
+      "Circa 30 km",
+      "Circa 12 km"
+    ],
+    "corretta": 0,
+    "spiegazione": "Tra Villa San Giovanni e Messina.",
+    "fonte": "Wikipedia, «Stretto di Messina» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-130",
+    "argomento": "Mari e stretti",
+    "livello": 3,
+    "testo": "Con quale nome mitologico era noto anticamente lo stretto di Messina?",
+    "opzioni": [
+      "Colonne d'Ercole",
+      "Stretto di Scilla e Cariddi",
+      "Mare di Ulisse",
+      "Stretto delle Sirene"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Stretto di Messina».",
+    "fonte": "Wikipedia, «Stretto di Messina» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-131",
+    "argomento": "Pianure",
+    "livello": 2,
+    "testo": "Qual è la più grande pianura dell'Europa meridionale?",
+    "opzioni": [
+      "Il Tavoliere delle Puglie",
+      "L'Agro Pontino",
+      "La Pianura Padana",
+      "La Maremma"
+    ],
+    "corretta": 2,
+    "spiegazione": "Ha una superficie di circa 47.820 km².",
+    "fonte": "Wikipedia, «Pianura Padana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-132",
+    "argomento": "Pianure",
+    "livello": 3,
+    "testo": "Di che tipo è la Pianura Padana?",
+    "opzioni": [
+      "Vulcanica",
+      "Glaciale costiera",
+      "Carsica",
+      "Alluvionale"
+    ],
+    "corretta": 3,
+    "spiegazione": "Si è formata dai depositi del Po e dei suoi affluenti.",
+    "fonte": "Wikipedia, «Pianura Padana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-133",
+    "argomento": "Pianure",
+    "livello": 3,
+    "testo": "Da dove deriva l'aggettivo «padano»?",
+    "opzioni": [
+      "Dal latino Padus, nome del Po",
+      "Da Padova",
+      "Da Parma e Piacenza",
+      "Dal greco «pados», pianura"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Pianura Padana».",
+    "fonte": "Wikipedia, «Pianura Padana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-134",
+    "argomento": "Italia fisica",
+    "livello": 2,
+    "testo": "In quali tre parti si suddivide geograficamente l'Italia?",
+    "opzioni": [
+      "Alpina, padana e appenninica",
+      "Continentale, peninsulare e insulare",
+      "Tirrenica, adriatica e ionica",
+      "Nord, centro e sud soltanto"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il confine tra continentale e peninsulare è la linea La Spezia-Rimini.",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-135",
+    "argomento": "Italia fisica",
+    "livello": 3,
+    "testo": "Quali isole italiane appartengono geograficamente al continente africano?",
+    "opzioni": [
+      "Ustica e Favignana",
+      "Pantelleria e Linosa",
+      "Lampedusa e Lampione",
+      "Malta e Gozo"
+    ],
+    "corretta": 2,
+    "spiegazione": "Fanno parte delle Pelagie.",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-136",
+    "argomento": "Italia fisica",
+    "livello": 3,
+    "testo": "Quale comune italiano costituisce un'exclave in territorio svizzero?",
+    "opzioni": [
+      "Livigno",
+      "Como",
+      "Domodossola",
+      "Campione d'Italia"
+    ],
+    "corretta": 3,
+    "spiegazione": "Si trova nel Canton Ticino.",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-137",
+    "argomento": "Italia fisica",
+    "livello": 2,
+    "testo": "Qual è la zona altimetrica prevalente in Italia?",
+    "opzioni": [
+      "La collina (circa il 41,6% del territorio)",
+      "La montagna",
+      "Le zone sotto il livello del mare",
+      "La pianura"
+    ],
+    "corretta": 0,
+    "spiegazione": "Le montagne sono il 35,2%, le pianure il 23,2%.",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-138",
+    "argomento": "Italia fisica",
+    "livello": 4,
+    "testo": "Dove si trova il punto meno elevato d'Italia, sotto il livello del mare?",
+    "opzioni": [
+      "Il delta del Po a Rovigo",
+      "Le Contane (Ferrara)",
+      "La laguna di Venezia",
+      "Le paludi pontine"
+    ],
+    "corretta": 1,
+    "spiegazione": "Circa −3,44 m.",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-139",
+    "argomento": "Italia fisica",
+    "livello": 4,
+    "testo": "Qual è il comune italiano più lontano dal mare?",
+    "opzioni": [
+      "Livigno (SO)",
+      "Bormio (SO)",
+      "Madesimo (SO)",
+      "Aosta"
+    ],
+    "corretta": 2,
+    "spiegazione": "Dista 294 km dal Mar Ligure.",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-140",
+    "argomento": "Italia fisica",
+    "livello": 3,
+    "testo": "Con quale Stato l'Italia ha il confine terrestre più lungo?",
+    "opzioni": [
+      "L'Austria",
+      "La Slovenia",
+      "La Francia",
+      "La Svizzera (744 km)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Francia 515 km, Austria 430 km, Slovenia 232 km.",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-141",
+    "argomento": "Italia fisica",
+    "livello": 3,
+    "testo": "Quanto misura il canale di Sicilia tra la Sicilia e la penisola tunisina?",
+    "opzioni": [
+      "Circa 140 km",
+      "Circa 70 km",
+      "Circa 500 km",
+      "Circa 14 km"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Geografia dell'Italia».",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-142",
+    "argomento": "Italia fisica",
+    "livello": 3,
+    "testo": "Quanto dista la penisola salentina dalla costa albanese nel punto più stretto (canale d'Otranto)?",
+    "opzioni": [
+      "Circa 7 km",
+      "Circa 70 km",
+      "Circa 200 km",
+      "Circa 140 km"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Geografia dell'Italia».",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-143",
+    "argomento": "Italia fisica",
+    "livello": 3,
+    "testo": "Quale località è il punto più a nord d'Italia?",
+    "opzioni": [
+      "Il Monte Bianco",
+      "Il passo dello Stelvio",
+      "La Testa Gemella Occidentale, nel massiccio della Vetta d'Italia",
+      "Il Brennero"
+    ],
+    "corretta": 2,
+    "spiegazione": "Fino al 1997 si considerava tale la Vetta d'Italia.",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-144",
+    "argomento": "Italia fisica",
+    "livello": 3,
+    "testo": "Quale punto è l'estremo occidentale d'Italia?",
+    "opzioni": [
+      "Il Monte Bianco",
+      "Ventimiglia",
+      "Capo Teulada",
+      "La Rocca Bernauda nelle Alpi Cozie"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il comune più a ovest è Bardonecchia.",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-145",
+    "argomento": "Italia fisica",
+    "livello": 4,
+    "testo": "Quale località rivendica, tra le altre, il titolo di centro geografico d'Italia?",
+    "opzioni": [
+      "Narni",
+      "Bologna",
+      "Firenze",
+      "Roma"
+    ],
+    "corretta": 0,
+    "spiegazione": "Lo rivendicano anche Orvieto, Rieti e Spoleto; secondo l'IGM non è determinabile univocamente.",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-146",
+    "argomento": "Italia fisica",
+    "livello": 3,
+    "testo": "Qual è la vetta più alta della Sardegna?",
+    "opzioni": [
+      "Punta Corrasi",
+      "Punta La Marmora, nel Gennargentu",
+      "Monte Arci",
+      "Monte Limbara"
+    ],
+    "corretta": 1,
+    "spiegazione": "Raggiunge 1.834 m.",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-147",
+    "argomento": "Italia fisica",
+    "livello": 3,
+    "testo": "Qual è la seconda pianura italiana per estensione?",
+    "opzioni": [
+      "La Maremma",
+      "Il Campidano",
+      "Il Tavoliere delle Puglie",
+      "La Piana di Catania"
+    ],
+    "corretta": 2,
+    "spiegazione": "È una pianura di sollevamento.",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-148",
+    "argomento": "Italia fisica",
+    "livello": 3,
+    "testo": "Di che origine è la Pianura campana?",
+    "opzioni": [
+      "Alluvionale",
+      "Glaciale",
+      "Di sollevamento",
+      "Vulcanica"
+    ],
+    "corretta": 3,
+    "spiegazione": "Le ceneri dei vulcani hanno riempito le valli.",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-149",
+    "argomento": "Italia fisica",
+    "livello": 3,
+    "testo": "Quale percentuale del territorio nazionale è costituita da pianure?",
+    "opzioni": [
+      "Circa il 23%",
+      "Circa il 50%",
+      "Circa il 40%",
+      "Circa il 10%"
+    ],
+    "corretta": 0,
+    "spiegazione": "La Pianura Padana ne costituisce più di due terzi.",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-150",
+    "argomento": "Italia fisica",
+    "livello": 3,
+    "testo": "Di che origine sono le colline delle Langhe, del Monferrato e del Chianti?",
+    "opzioni": [
+      "Morenica",
+      "Sedimentaria (sollevamento del fondo marino)",
+      "Vulcanica",
+      "Carsica"
+    ],
+    "corretta": 1,
+    "spiegazione": "Le colline della Brianza sono invece moreniche, i Colli Euganei vulcanici.",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-151",
+    "argomento": "Italia fisica",
+    "livello": 3,
+    "testo": "Di che origine sono i Colli Euganei?",
+    "opzioni": [
+      "Morenica",
+      "Alluvionale",
+      "Vulcanica",
+      "Sedimentaria"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Geografia dell'Italia».",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-152",
+    "argomento": "Italia fisica",
+    "livello": 3,
+    "testo": "Quale mare bagna le coste orientali della penisola dal Friuli-Venezia Giulia a Santa Maria di Leuca?",
+    "opzioni": [
+      "Il mar Tirreno",
+      "Il mar Ligure",
+      "Il mar Ionio",
+      "Il mar Adriatico"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Geografia dell'Italia».",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-153",
+    "argomento": "Italia fisica",
+    "livello": 3,
+    "testo": "Quale braccio di mare separa la Sardegna dalla Corsica?",
+    "opzioni": [
+      "Le Bocche di Bonifacio",
+      "Lo stretto di Messina",
+      "Il canale di Piombino",
+      "Il canale di Corsica"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il canale di Piombino separa l'Elba dalla Toscana.",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-154",
+    "argomento": "Italia fisica",
+    "livello": 2,
+    "testo": "Tra quali placche si trova l'Italia, che spiega l'elevata sismicità?",
+    "opzioni": [
+      "Placca pacifica e nordamericana",
+      "Placca africana e placca eurasiatica",
+      "Placca sudamericana e africana",
+      "Placca indiana e araba"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Geografia dell'Italia».",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-155",
+    "argomento": "Italia fisica",
+    "livello": 4,
+    "testo": "Come si chiama il grande vulcano sottomarino a nord della Sicilia, tra i più estesi d'Europa?",
+    "opzioni": [
+      "Ferdinandea",
+      "Empedocle",
+      "Marsili",
+      "Palinuro"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Geografia dell'Italia».",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-156",
+    "argomento": "Italia fisica",
+    "livello": 3,
+    "testo": "Quali laghi del Lazio occupano crateri di vulcani spenti?",
+    "opzioni": [
+      "Garda e Iseo",
+      "Lesina e Varano",
+      "Trasimeno e Scanno",
+      "Bolsena, Vico e Bracciano"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Geografia dell'Italia».",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-157",
+    "argomento": "Italia fisica",
+    "livello": 3,
+    "testo": "Quali sono le lagune più importanti dell'Adriatico settentrionale?",
+    "opzioni": [
+      "Venezia, Grado e Marano",
+      "Orbetello e Lesina",
+      "Comacchio e Varano",
+      "Cagliari e Oristano"
+    ],
+    "corretta": 0,
+    "spiegazione": "La laguna di Orbetello è invece sulla costa toscana.",
+    "fonte": "Wikipedia, «Geografia dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-158",
+    "argomento": "Regioni",
+    "livello": 3,
+    "testo": "Qual è il capoluogo dell'Abruzzo?",
+    "opzioni": [
+      "Chieti",
+      "L'Aquila",
+      "Teramo",
+      "Pescara"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Regioni d'Italia».",
+    "fonte": "Wikipedia, «Regioni d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-159",
+    "argomento": "Regioni",
+    "livello": 2,
+    "testo": "Qual è il capoluogo della Basilicata?",
+    "opzioni": [
+      "Melfi",
+      "Matera",
+      "Potenza",
+      "Lagonegro"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Regioni d'Italia».",
+    "fonte": "Wikipedia, «Regioni d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-160",
+    "argomento": "Regioni",
+    "livello": 2,
+    "testo": "Qual è il capoluogo della Calabria?",
+    "opzioni": [
+      "Reggio Calabria",
+      "Crotone",
+      "Cosenza",
+      "Catanzaro"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Regioni d'Italia».",
+    "fonte": "Wikipedia, «Regioni d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-161",
+    "argomento": "Regioni",
+    "livello": 2,
+    "testo": "Qual è il capoluogo del Molise?",
+    "opzioni": [
+      "Campobasso",
+      "Venafro",
+      "Termoli",
+      "Isernia"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Regioni d'Italia».",
+    "fonte": "Wikipedia, «Regioni d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-162",
+    "argomento": "Regioni",
+    "livello": 2,
+    "testo": "Qual è il capoluogo delle Marche?",
+    "opzioni": [
+      "Pesaro",
+      "Ancona",
+      "Ascoli Piceno",
+      "Macerata"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Regioni d'Italia».",
+    "fonte": "Wikipedia, «Regioni d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-163",
+    "argomento": "Regioni",
+    "livello": 3,
+    "testo": "Qual è la regione italiana più popolosa?",
+    "opzioni": [
+      "Il Lazio",
+      "La Sicilia",
+      "La Lombardia",
+      "La Campania"
+    ],
+    "corretta": 2,
+    "spiegazione": "Supera i 10 milioni di abitanti (dati al 1° gennaio 2025).",
+    "fonte": "Wikipedia, «Regioni d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-164",
+    "argomento": "Regioni",
+    "livello": 3,
+    "testo": "Qual è la regione meno popolosa d'Italia?",
+    "opzioni": [
+      "La Basilicata",
+      "Il Molise",
+      "L'Umbria",
+      "La Valle d'Aosta"
+    ],
+    "corretta": 3,
+    "spiegazione": "Circa 122 mila abitanti al 1° gennaio 2025.",
+    "fonte": "Wikipedia, «Regioni d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-165",
+    "argomento": "Regioni",
+    "livello": 3,
+    "testo": "Quale fu la prima regione autonoma a essere costituita, nel 1947?",
+    "opzioni": [
+      "La Sicilia",
+      "Il Trentino-Alto Adige",
+      "La Valle d'Aosta",
+      "La Sardegna"
+    ],
+    "corretta": 0,
+    "spiegazione": "Seguirono Sardegna, Trentino-Alto Adige e Valle d'Aosta nel 1948.",
+    "fonte": "Wikipedia, «Regioni d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-166",
+    "argomento": "Regioni",
+    "livello": 3,
+    "testo": "In che anno la regione «Abruzzi e Molise» fu divisa in due regioni?",
+    "opzioni": [
+      "Nel 2001",
+      "Nel 1963",
+      "Nel 1948",
+      "Nel 1970"
+    ],
+    "corretta": 1,
+    "spiegazione": "Così le regioni diventarono 20.",
+    "fonte": "Wikipedia, «Regioni d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-167",
+    "argomento": "Regioni",
+    "livello": 3,
+    "testo": "Quando si tennero le prime elezioni regionali per le regioni a statuto ordinario?",
+    "opzioni": [
+      "Nel 1995",
+      "Nel 1963",
+      "Nel 1970",
+      "Nel 1948"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Regioni d'Italia».",
+    "fonte": "Wikipedia, «Regioni d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-168",
+    "argomento": "Regioni",
+    "livello": 4,
+    "testo": "In quale regione il presidente è eletto dal consiglio regionale e non direttamente?",
+    "opzioni": [
+      "Toscana",
+      "Lombardia",
+      "Sicilia",
+      "Valle d'Aosta"
+    ],
+    "corretta": 3,
+    "spiegazione": "In Trentino-Alto Adige la presidenza ruota tra i presidenti delle due province autonome.",
+    "fonte": "Wikipedia, «Regioni d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-169",
+    "argomento": "Regioni",
+    "livello": 4,
+    "testo": "Quale regione ha il PIL pro capite più alto (dati ISTAT 2022)?",
+    "opzioni": [
+      "L'Alto Adige (provincia di Bolzano)",
+      "La Lombardia",
+      "Il Lazio",
+      "L'Emilia-Romagna"
+    ],
+    "corretta": 0,
+    "spiegazione": "La Lombardia ha invece il PIL totale più alto.",
+    "fonte": "Wikipedia, «Regioni d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-170",
+    "argomento": "Regioni",
+    "livello": 4,
+    "testo": "Quale legge del 1865 disciplinò gli enti locali del Regno d'Italia (province, circondari, mandamenti, comuni)?",
+    "opzioni": [
+      "La legge Tatarella",
+      "La legge Ricasoli (L. 20 marzo 1865, n. 2248)",
+      "La legge Delrio",
+      "La legge Crispi del 1890"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Regioni d'Italia».",
+    "fonte": "Wikipedia, «Regioni d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-171",
+    "argomento": "Popolazione",
+    "livello": 3,
+    "testo": "Quanti Comuni c'erano in Italia al 31 dicembre 2024 secondo l'ISTAT?",
+    "opzioni": [
+      "6.500",
+      "9.200",
+      "7.896",
+      "8.101"
+    ],
+    "corretta": 2,
+    "spiegazione": "Erano 8.101 nel 2001: le fusioni ne hanno ridotto il numero.",
+    "fonte": "ISTAT, Annuario statistico italiano 2025 (CC BY 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-172",
+    "argomento": "Popolazione",
+    "livello": 3,
+    "testo": "Che quota dei Comuni italiani ha meno di 5 mila abitanti (fine 2024)?",
+    "opzioni": [
+      "Circa il 20%",
+      "Circa il 50%",
+      "Circa il 90%",
+      "Circa il 70% (69,9%)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Annuario statistico italiano 2025.",
+    "fonte": "ISTAT, Annuario statistico italiano 2025 (CC BY 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-173",
+    "argomento": "Popolazione",
+    "livello": 4,
+    "testo": "Quanti Comuni italiani superano i 250 mila abitanti (fine 2024)?",
+    "opzioni": [
+      "Undici",
+      "Ventuno",
+      "Cinque",
+      "Trentacinque"
+    ],
+    "corretta": 0,
+    "spiegazione": "Ospitano il 14,7% dei residenti.",
+    "fonte": "ISTAT, Annuario statistico italiano 2025 (CC BY 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-174",
+    "argomento": "Popolazione",
+    "livello": 3,
+    "testo": "Quali regioni hanno più Comuni?",
+    "opzioni": [
+      "Sicilia e Sardegna",
+      "Lombardia e Piemonte",
+      "Veneto ed Emilia-Romagna",
+      "Lazio e Campania"
+    ],
+    "corretta": 1,
+    "spiegazione": "Rispettivamente 1.502 e 1.180 Comuni.",
+    "fonte": "ISTAT, Annuario statistico italiano 2025 (CC BY 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-175",
+    "argomento": "Popolazione",
+    "livello": 3,
+    "testo": "Quali regioni hanno meno Comuni?",
+    "opzioni": [
+      "Friuli-Venezia Giulia e Trentino-Alto Adige",
+      "Liguria e Marche",
+      "Valle d'Aosta e Umbria",
+      "Molise e Basilicata"
+    ],
+    "corretta": 2,
+    "spiegazione": "74 e 92 Comuni.",
+    "fonte": "ISTAT, Annuario statistico italiano 2025 (CC BY 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-176",
+    "argomento": "Popolazione",
+    "livello": 3,
+    "testo": "Dove vive quasi la metà della popolazione italiana (2024)?",
+    "opzioni": [
+      "In collina",
+      "In montagna",
+      "Sulle isole minori",
+      "Nelle aree di pianura"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il 38,6% vive in collina e il 12,1% in montagna.",
+    "fonte": "ISTAT, Annuario statistico italiano 2025 (CC BY 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-177",
+    "argomento": "Popolazione",
+    "livello": 4,
+    "testo": "Quale ecoregione italiana è la più popolata?",
+    "opzioni": [
+      "Quella padana",
+      "Quella adriatica",
+      "Quella alpina",
+      "Quella tirrenica meridionale"
+    ],
+    "corretta": 0,
+    "spiegazione": "Oltre 19 milioni di abitanti.",
+    "fonte": "ISTAT, Annuario statistico italiano 2025 (CC BY 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-178",
+    "argomento": "Popolazione",
+    "livello": 4,
+    "testo": "Quanti sistemi locali del lavoro individua l'ISTAT in Italia?",
+    "opzioni": [
+      "107",
+      "515",
+      "7.896",
+      "20"
+    ],
+    "corretta": 1,
+    "spiegazione": "Annuario statistico italiano 2025.",
+    "fonte": "ISTAT, Annuario statistico italiano 2025 (CC BY 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-179",
+    "argomento": "Popolazione",
+    "livello": 4,
+    "testo": "Quante sono le Unità territoriali sovracomunali (province, città metropolitane e simili)?",
+    "opzioni": [
+      "20",
+      "80",
+      "107",
+      "110"
+    ],
+    "corretta": 2,
+    "spiegazione": "Annuario statistico italiano 2025.",
+    "fonte": "ISTAT, Annuario statistico italiano 2025 (CC BY 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-180",
+    "argomento": "Popolazione",
+    "livello": 3,
+    "testo": "Quale quota della popolazione italiana risiede nelle Aree interne?",
+    "opzioni": [
+      "Circa il 50%",
+      "Circa il 5%",
+      "Circa il 70%",
+      "Circa il 22,7%"
+    ],
+    "corretta": 3,
+    "spiegazione": "Le Aree interne occupano la maggior parte della superficie di Isole e Sud.",
+    "fonte": "ISTAT, Annuario statistico italiano 2025 (CC BY 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-181",
+    "argomento": "Popolazione",
+    "livello": 3,
+    "testo": "Qual era la quota di stranieri residenti in Italia al 1° gennaio 2025 (stime ISTAT)?",
+    "opzioni": [
+      "Il 9,2% della popolazione",
+      "Il 2%",
+      "Il 15%",
+      "Il 20%"
+    ],
+    "corretta": 0,
+    "spiegazione": "Circa 5,4 milioni di persone.",
+    "fonte": "ISTAT, Annuario statistico italiano 2025 (CC BY 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-182",
+    "argomento": "Popolazione",
+    "livello": 3,
+    "testo": "Quale fu il numero medio di figli per donna nel 2024 (stima ISTAT)?",
+    "opzioni": [
+      "1,5",
+      "1,18",
+      "2,1",
+      "0,9"
+    ],
+    "corretta": 1,
+    "spiegazione": "È inferiore anche al precedente minimo storico del 1995 (1,19).",
+    "fonte": "ISTAT, Annuario statistico italiano 2025 (CC BY 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-183",
+    "argomento": "Popolazione",
+    "livello": 3,
+    "testo": "Quale era l'età media della popolazione italiana al 1° gennaio 2025 (stima)?",
+    "opzioni": [
+      "41,2 anni",
+      "38 anni",
+      "46,8 anni",
+      "52 anni"
+    ],
+    "corretta": 2,
+    "spiegazione": "In aumento di circa tre mesi rispetto all'anno precedente.",
+    "fonte": "ISTAT, Annuario statistico italiano 2025 (CC BY 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-184",
+    "argomento": "Popolazione",
+    "livello": 3,
+    "testo": "Quale quota della popolazione aveva 65 anni e più al 1° gennaio 2025?",
+    "opzioni": [
+      "Il 35%",
+      "Il 10%",
+      "Il 50%",
+      "Il 24,7%"
+    ],
+    "corretta": 3,
+    "spiegazione": "Continua l'invecchiamento della popolazione.",
+    "fonte": "ISTAT, Annuario statistico italiano 2025 (CC BY 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-185",
+    "argomento": "Popolazione",
+    "livello": 3,
+    "testo": "Quale era la speranza di vita alla nascita delle donne nel 2024 (stima ISTAT)?",
+    "opzioni": [
+      "85,5 anni",
+      "81,4 anni",
+      "90 anni",
+      "79 anni"
+    ],
+    "corretta": 0,
+    "spiegazione": "Per gli uomini era 81,4 anni.",
+    "fonte": "ISTAT, Annuario statistico italiano 2025 (CC BY 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-186",
+    "argomento": "Popolazione",
+    "livello": 4,
+    "testo": "Come fu il saldo naturale (nati meno morti) in Italia nel 2024?",
+    "opzioni": [
+      "Positivo, circa +100 mila",
+      "Negativo, circa −281 mila",
+      "Positivo, circa +243 mila",
+      "Nullo"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il saldo migratorio positivo (+243 mila) lo compensa quasi del tutto.",
+    "fonte": "ISTAT, Annuario statistico italiano 2025 (CC BY 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-187",
+    "argomento": "Popolazione",
+    "livello": 4,
+    "testo": "Da quando la popolazione residente in Italia diminuisce senza interruzioni?",
+    "opzioni": [
+      "Dal 1990",
+      "Dal 2020",
+      "Dal 2014",
+      "Dal 2001"
+    ],
+    "corretta": 2,
+    "spiegazione": "Annuario statistico italiano 2025.",
+    "fonte": "ISTAT, Annuario statistico italiano 2025 (CC BY 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-188",
+    "argomento": "Popolazione",
+    "livello": 4,
+    "testo": "Qual è l'unica ripartizione territoriale con popolazione in crescita nel 2024?",
+    "opzioni": [
+      "Il Centro",
+      "Il Sud",
+      "Le Isole",
+      "Il Nord"
+    ],
+    "corretta": 3,
+    "spiegazione": "Nel Mezzogiorno il calo è più intenso.",
+    "fonte": "ISTAT, Annuario statistico italiano 2025 (CC BY 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-189",
+    "argomento": "Unione europea",
+    "livello": 2,
+    "testo": "Qual è il motto dell'Unione europea?",
+    "opzioni": [
+      "«Unita nella diversità»",
+      "«Dio salvi l'Europa»",
+      "«E pluribus unum»",
+      "«Libertà, uguaglianza, fraternità»"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Unione europea».",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-190",
+    "argomento": "Unione europea",
+    "livello": 2,
+    "testo": "Qual è l'inno dell'Unione europea?",
+    "opzioni": [
+      "La Marsigliese",
+      "L'Inno alla gioia di Beethoven",
+      "Il Canto degli Italiani",
+      "Va' pensiero di Verdi"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Unione europea».",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-191",
+    "argomento": "Unione europea",
+    "livello": 2,
+    "testo": "Cosa raffigura la bandiera europea?",
+    "opzioni": [
+      "Un cerchio di stelle blu su fondo bianco",
+      "Una croce bianca su fondo rosso",
+      "Un cerchio di dodici stelle dorate in campo blu",
+      "Ventisette stelle gialle"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il dodici simboleggia la completezza; non corrisponde al numero degli Stati.",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-192",
+    "argomento": "Unione europea",
+    "livello": 2,
+    "testo": "Quale giorno si celebra la Festa dell'Europa?",
+    "opzioni": [
+      "Il 1° gennaio",
+      "Il 2 giugno",
+      "Il 25 marzo",
+      "Il 9 maggio"
+    ],
+    "corretta": 3,
+    "spiegazione": "Ricorda la dichiarazione Schuman del 1950.",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-193",
+    "argomento": "Unione europea",
+    "livello": 3,
+    "testo": "In quale città ha sede principale il Parlamento europeo?",
+    "opzioni": [
+      "Strasburgo",
+      "Bruxelles",
+      "Francoforte",
+      "Lussemburgo"
+    ],
+    "corretta": 0,
+    "spiegazione": "Bruxelles ospita la Commissione, Lussemburgo la Corte di giustizia.",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-194",
+    "argomento": "Unione europea",
+    "livello": 3,
+    "testo": "Quale Stato è uscito dall'Unione europea, dopo esserne stato membro dal 1973 al 2020?",
+    "opzioni": [
+      "La Svizzera",
+      "Il Regno Unito",
+      "La Groenlandia",
+      "La Norvegia"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Unione europea».",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-195",
+    "argomento": "Unione europea",
+    "livello": 3,
+    "testo": "In che anno l'Unione europea ha ricevuto il premio Nobel per la pace?",
+    "opzioni": [
+      "Nel 1957",
+      "Nel 1992",
+      "Nel 2012",
+      "Nel 2002"
+    ],
+    "corretta": 2,
+    "spiegazione": "Per il contributo a pace, riconciliazione, democrazia e diritti umani.",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-196",
+    "argomento": "Unione europea",
+    "livello": 3,
+    "testo": "Con quale trattato del 25 marzo 1957 nacque la Comunità economica europea?",
+    "opzioni": [
+      "Il trattato di Lisbona",
+      "Il trattato di Maastricht",
+      "Il trattato di Parigi",
+      "Il trattato di Roma"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Unione europea».",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-197",
+    "argomento": "Unione europea",
+    "livello": 3,
+    "testo": "Quale accordo ha creato uno spazio «senza frontiere interne» tra molti Stati europei?",
+    "opzioni": [
+      "L'accordo di Schengen",
+      "Il trattato di Nizza",
+      "Il Patto di stabilità",
+      "L'Atto unico europeo"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Unione europea».",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-198",
+    "argomento": "Unione europea",
+    "livello": 3,
+    "testo": "Quale istituzione governa la politica monetaria dell'eurozona?",
+    "opzioni": [
+      "La Banca europea per gli investimenti",
+      "La Banca centrale europea (BCE)",
+      "La Commissione europea",
+      "Il Consiglio europeo"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Unione europea».",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-199",
+    "argomento": "Unione europea",
+    "livello": 3,
+    "testo": "Qual è la popolazione approssimativa dell'Unione europea?",
+    "opzioni": [
+      "Circa 1 miliardo",
+      "Circa 150 milioni",
+      "Circa 450 milioni di abitanti",
+      "Circa 800 milioni"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Unione europea».",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-200",
+    "argomento": "Unione europea",
+    "livello": 4,
+    "testo": "Quali Stati aderirono all'UE nel 1995?",
+    "opzioni": [
+      "Spagna e Portogallo",
+      "Polonia e Ungheria",
+      "Croazia e Slovenia",
+      "Austria, Finlandia e Svezia"
+    ],
+    "corretta": 3,
+    "spiegazione": "La Norvegia rifiutò di nuovo l'adesione.",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-201",
+    "argomento": "Unione europea",
+    "livello": 4,
+    "testo": "In quale anno è stato introdotto l'euro come moneta circolante?",
+    "opzioni": [
+      "Nel 2002",
+      "Nel 1999",
+      "Nel 2007",
+      "Nel 1992"
+    ],
+    "corretta": 0,
+    "spiegazione": "Sostituì dodici valute nazionali.",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  }
+]

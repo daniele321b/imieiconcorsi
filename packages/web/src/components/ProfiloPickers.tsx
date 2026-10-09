@@ -1,7 +1,7 @@
 import { COMPARTI, MATERIE, type CompartoId, type FrequenzaAvvisi, type MateriaId } from "@imieiconcorsi/core/domain";
 import { Check } from "lucide-react";
 import { IconaMateria } from "./brand";
-import { Badge, cx } from "./ui";
+import { cx } from "./ui";
 
 export function InteressiPicker({ value, onChange }: { value: CompartoId[]; onChange: (v: CompartoId[]) => void }) {
   const toggle = (id: CompartoId) => onChange(value.includes(id) ? value.filter((v) => v !== id) : [...value, id]);
@@ -32,11 +32,6 @@ export function InteressiPicker({ value, onChange }: { value: CompartoId[]; onCh
               </span>
             </div>
             <p className="mt-1 text-sm text-slate-500">{c.descrizione}</p>
-            {!c.contenuti && (
-              <Badge tone="slate" className="mt-2">
-                Solo avvisi per ora
-              </Badge>
-            )}
           </button>
         );
       })}

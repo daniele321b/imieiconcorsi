@@ -1,0 +1,3402 @@
+[
+  {
+    "materia": "informatica",
+    "id": "inf-001",
+    "argomento": "Sistemi operativi",
+    "livello": 1,
+    "testo": "Quale di questi è un sistema operativo per dispositivi mobili?",
+    "opzioni": [
+      "Android",
+      "Excel",
+      "Firefox",
+      "HTML"
+    ],
+    "corretta": 0,
+    "spiegazione": "Tra i sistemi operativi per smartphone e tablet ci sono iOS e Android; Excel è un'applicazione, Firefox un browser, HTML un linguaggio di markup.",
+    "fonte": "Wikipedia, «Sistema operativo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-002",
+    "argomento": "Sistemi operativi",
+    "livello": 2,
+    "testo": "Quale componente del sistema operativo gestisce l'organizzazione dei file sui dischi?",
+    "opzioni": [
+      "Il BIOS",
+      "Il file system",
+      "Il browser",
+      "Lo spooler di stampa"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il sistema operativo è composto da kernel, scheduler, file system, gestore della memoria, gestore delle periferiche, interfaccia utente e spooler.",
+    "fonte": "Wikipedia, «Sistema operativo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-003",
+    "argomento": "Sistemi operativi",
+    "livello": 2,
+    "testo": "Come si chiama la capacità di un sistema operativo di eseguire più processi in parallelo?",
+    "opzioni": [
+      "Compilazione",
+      "Multiutenza",
+      "Multitasking",
+      "Virtualizzazione"
+    ],
+    "corretta": 2,
+    "spiegazione": "Un sistema multitasking può svolgere più compiti parallelamente attraverso una politica di scheduling.",
+    "fonte": "Wikipedia, «Sistema operativo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-004",
+    "argomento": "Sistemi operativi",
+    "livello": 1,
+    "testo": "Quale di questi NON è un sistema operativo per computer?",
+    "opzioni": [
+      "Linux",
+      "macOS",
+      "Microsoft Windows",
+      "Microsoft Word"
+    ],
+    "corretta": 3,
+    "spiegazione": "Windows, macOS e le distribuzioni Linux sono sistemi operativi per computer; Word è un programma di videoscrittura.",
+    "fonte": "Wikipedia, «Sistema operativo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-005",
+    "argomento": "Reti",
+    "livello": 2,
+    "testo": "Quale sigla indica una rete locale, ad esempio quella di un ufficio?",
+    "opzioni": [
+      "LAN",
+      "VPN",
+      "WAN",
+      "GAN"
+    ],
+    "corretta": 0,
+    "spiegazione": "LAN (Local Area Network) è la rete locale; WAN e GAN coprono aree geografiche più ampie. Dalla loro interconnessione nasce Internet.",
+    "fonte": "Wikipedia, «Rete informatica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-006",
+    "argomento": "Reti",
+    "livello": 2,
+    "testo": "A cosa serve il DNS (Domain Name System)?",
+    "opzioni": [
+      "A cifrare le email",
+      "A convertire i nomi di dominio in indirizzi IP e viceversa",
+      "Ad assegnare la posta certificata",
+      "A misurare la velocità della connessione"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il DNS risolve i nomi (es. www.esempio.it) negli indirizzi IP dei server, tramite un database distribuito.",
+    "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-007",
+    "argomento": "Reti",
+    "livello": 3,
+    "testo": "Quanti bit ha un indirizzo IPv4?",
+    "opzioni": [
+      "128",
+      "64",
+      "32",
+      "16"
+    ],
+    "corretta": 2,
+    "spiegazione": "IPv4 gestisce indirizzi a 32 bit (es. 192.168.1.10); IPv6 usa indirizzi a 128 bit.",
+    "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-008",
+    "argomento": "Reti",
+    "livello": 3,
+    "testo": "A quale livello appartengono i protocolli TCP e UDP?",
+    "opzioni": [
+      "Al livello applicazione",
+      "Al livello fisico",
+      "Al livello di collegamento",
+      "Al livello di trasporto"
+    ],
+    "corretta": 3,
+    "spiegazione": "TCP e UDP sono protocolli del livello trasporto; IP lavora al livello rete.",
+    "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-009",
+    "argomento": "Hardware",
+    "livello": 2,
+    "testo": "Che cosa significa che la memoria ROM è «non volatile»?",
+    "opzioni": [
+      "Che il contenuto non si cancella quando manca l'alimentazione",
+      "Che è più veloce della RAM",
+      "Che si può riscrivere all'infinito",
+      "Che si trova all'esterno del computer"
+    ],
+    "corretta": 0,
+    "spiegazione": "La ROM mantiene i dati senza alimentazione; la RAM invece è volatile.",
+    "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-010",
+    "argomento": "Hardware",
+    "livello": 3,
+    "testo": "A cosa serve la memoria cache in un calcolatore?",
+    "opzioni": [
+      "A stampare più velocemente",
+      "A tenere vicino al processore i dati usati più spesso, per velocizzare l'accesso",
+      "A collegare il computer alla rete",
+      "A conservare i file in modo permanente"
+    ],
+    "corretta": 1,
+    "spiegazione": "La cache è una memoria piccola e veloce tra processore e memoria principale, che migliora le prestazioni.",
+    "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-011",
+    "argomento": "PA digitale",
+    "livello": 2,
+    "testo": "Cosa significa la sigla SPID?",
+    "opzioni": [
+      "Servizio postale integrato digitale",
+      "Servizio pubblico di informazione dati",
+      "Sistema pubblico di identità digitale",
+      "Sistema protetto di identificazione documentale"
+    ],
+    "corretta": 2,
+    "spiegazione": "Lo SPID, insieme a carta d'identità elettronica e carta nazionale dei servizi, consente di identificarsi online con la PA.",
+    "fonte": "D.Lgs. 82/2005 (CAD)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-012",
+    "argomento": "PA digitale",
+    "livello": 3,
+    "testo": "Che cos'è il «domicilio digitale» secondo il CAD?",
+    "opzioni": [
+      "La casella email fornita dal comune",
+      "L'indirizzo del sito web personale",
+      "La residenza anagrafica registrata online",
+      "Un indirizzo elettronico eletto presso un servizio di PEC o di recapito certificato qualificato"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il CAD definisce il domicilio digitale come indirizzo elettronico presso un servizio di posta elettronica certificata o di recapito certificato qualificato.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-013",
+    "argomento": "PA digitale",
+    "livello": 3,
+    "testo": "Su cosa si basa la firma digitale?",
+    "opzioni": [
+      "Su un sistema di chiavi crittografiche, una pubblica e una privata",
+      "Su una password scelta dall'utente",
+      "Su un codice inviato via SMS",
+      "Sulla scansione della firma autografa"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il CAD definisce la firma digitale come firma qualificata basata su un sistema di chiavi crittografiche, una pubblica e una privata, correlate tra loro.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-014",
+    "argomento": "PA digitale",
+    "livello": 4,
+    "testo": "Quando un documento informatico soddisfa il requisito della forma scritta con l'efficacia della scrittura privata (art. 2702 c.c.)?",
+    "opzioni": [
+      "Quando è salvato in PDF",
+      "Quando vi è apposta una firma digitale (o altra firma qualificata/avanzata nei casi previsti)",
+      "Quando è inviato per email ordinaria",
+      "Quando è stampato e scansionato"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 20 CAD: il documento informatico soddisfa la forma scritta e ha l'efficacia dell'art. 2702 c.c. quando vi è apposta una firma digitale o le altre firme previste.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 20",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-015",
+    "argomento": "PA digitale",
+    "livello": 2,
+    "testo": "Cos'è la carta d'identità elettronica (CIE) secondo il CAD?",
+    "opzioni": [
+      "Un'app per pagare la PA",
+      "Una tessera per i servizi sanitari",
+      "Il documento d'identità su supporto informatico, con elementi per l'identificazione fisica del titolare",
+      "Una copia scansionata della carta cartacea"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il CAD definisce la CIE come documento d'identità rilasciato su supporto informatico e munito di elementi per l'identificazione fisica del titolare.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-016",
+    "argomento": "PA digitale",
+    "livello": 3,
+    "testo": "Cosa può attestare la posta elettronica certificata (PEC)?",
+    "opzioni": [
+      "L'identità di chi apre il messaggio",
+      "Il contenuto del messaggio senza bisogno di firme",
+      "Solo la lettura del messaggio da parte del destinatario",
+      "L'invio e l'avvenuta consegna di un messaggio"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il CAD definisce la PEC come sistema di comunicazione in grado di attestare l'invio e l'avvenuta consegna di un messaggio, con ricevute opponibili ai terzi.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-017",
+    "argomento": "Hardware",
+    "livello": 1,
+    "testo": "Che cos'è l'hardware?",
+    "opzioni": [
+      "L'insieme delle parti fisiche e tangibili di un computer",
+      "La rete Internet",
+      "Il sistema operativo",
+      "L'insieme dei programmi installati"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il software è invece la parte intangibile.",
+    "fonte": "Wikipedia, «Hardware» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-018",
+    "argomento": "Hardware",
+    "livello": 1,
+    "testo": "Qual è il componente principale di un computer, che collega tra loro tutte le altre componenti?",
+    "opzioni": [
+      "L'alimentatore",
+      "La scheda madre",
+      "Il monitor",
+      "La scheda audio"
+    ],
+    "corretta": 1,
+    "spiegazione": "Sulla scheda madre si trovano processore, RAM, ROM con il BIOS.",
+    "fonte": "Wikipedia, «Hardware» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-019",
+    "argomento": "Hardware",
+    "livello": 2,
+    "testo": "In quale tipo di memoria si trova il BIOS?",
+    "opzioni": [
+      "Cache",
+      "RAM",
+      "ROM",
+      "Disco rigido"
+    ],
+    "corretta": 2,
+    "spiegazione": "Sulla scheda madre sono alloggiate le unità di memoria ROM che contengono il BIOS.",
+    "fonte": "Wikipedia, «Hardware» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-020",
+    "argomento": "Hardware",
+    "livello": 2,
+    "testo": "Che cos'è una scheda d'espansione?",
+    "opzioni": [
+      "La scheda madre",
+      "Un programma di installazione",
+      "Un modulo di memoria ROM",
+      "Una scheda non compresa di serie che, installata, aggiunge funzionalità al computer"
+    ],
+    "corretta": 3,
+    "spiegazione": "Esempi: scheda video, scheda audio, scheda di rete.",
+    "fonte": "Wikipedia, «Hardware» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-021",
+    "argomento": "Hardware",
+    "livello": 1,
+    "testo": "Cosa significa la sigla CPU?",
+    "opzioni": [
+      "Central Processing Unit",
+      "Control Power Unit",
+      "Computer Personal Unit",
+      "Central Program Utility"
+    ],
+    "corretta": 0,
+    "spiegazione": "È l'unità di elaborazione centrale, il processore.",
+    "fonte": "Wikipedia, «CPU» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-022",
+    "argomento": "Hardware",
+    "livello": 2,
+    "testo": "Quali sono i due blocchi fondamentali riuniti nella CPU?",
+    "opzioni": [
+      "La RAM e la ROM",
+      "L'ALU e l'unità di controllo",
+      "La tastiera e il monitor",
+      "Il disco e la cache"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'ALU esegue le operazioni aritmetico-logiche; l'unità di controllo coordina.",
+    "fonte": "Wikipedia, «CPU» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-023",
+    "argomento": "Hardware",
+    "livello": 3,
+    "testo": "A quale italiano si deve l'implementazione dell'Intel 4004, il primo microprocessore commerciale (1971)?",
+    "opzioni": [
+      "Guglielmo Marconi",
+      "Enrico Fermi",
+      "Federico Faggin",
+      "Adriano Olivetti"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «CPU».",
+    "fonte": "Wikipedia, «CPU» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-024",
+    "argomento": "Hardware",
+    "livello": 1,
+    "testo": "La RAM è una memoria:",
+    "opzioni": [
+      "Non volatile, a sola lettura",
+      "Sequenziale, come un nastro",
+      "Permanente, come un disco",
+      "Volatile, ad accesso casuale"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il contenuto si perde allo spegnimento.",
+    "fonte": "Wikipedia, «Random Access Memory» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-025",
+    "argomento": "Hardware",
+    "livello": 1,
+    "testo": "Cosa succede alle modifiche a un documento non salvate quando si spegne il computer?",
+    "opzioni": [
+      "Si perdono, perché si trovano nella RAM",
+      "Vengono salvate automaticamente nel BIOS",
+      "Restano nella CPU",
+      "Restano nella RAM"
+    ],
+    "corretta": 0,
+    "spiegazione": "Vanno salvate su disco o altra memoria non volatile.",
+    "fonte": "Wikipedia, «Random Access Memory» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-026",
+    "argomento": "Hardware",
+    "livello": 2,
+    "testo": "In quale memoria vengono caricati i programmi che la CPU deve eseguire?",
+    "opzioni": [
+      "Nella ROM",
+      "Nella RAM",
+      "Nella stampante",
+      "Nel BIOS"
+    ],
+    "corretta": 1,
+    "spiegazione": "La RAM è la memoria primaria dei computer.",
+    "fonte": "Wikipedia, «Random Access Memory» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-027",
+    "argomento": "Codifica",
+    "livello": 1,
+    "testo": "Quanti bit compongono un byte?",
+    "opzioni": [
+      "16",
+      "2",
+      "8",
+      "10"
+    ],
+    "corretta": 2,
+    "spiegazione": "Definizione stabilita dal 1964.",
+    "fonte": "Wikipedia, «Byte» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-028",
+    "argomento": "Codifica",
+    "livello": 2,
+    "testo": "Quanti valori diversi può assumere un byte?",
+    "opzioni": [
+      "255",
+      "8",
+      "1.024",
+      "256"
+    ],
+    "corretta": 3,
+    "spiegazione": "2⁸ = 256 (da 0 a 255).",
+    "fonte": "Wikipedia, «Byte» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-029",
+    "argomento": "Codifica",
+    "livello": 2,
+    "testo": "Qual è il simbolo del byte come unità di misura?",
+    "opzioni": [
+      "B (maiuscola)",
+      "bt",
+      "b (minuscola)",
+      "By"
+    ],
+    "corretta": 0,
+    "spiegazione": "La b minuscola indica generalmente il bit.",
+    "fonte": "Wikipedia, «Byte» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-030",
+    "argomento": "Codifica",
+    "livello": 4,
+    "testo": "Chi coniò il termine «byte» nel 1956?",
+    "opzioni": [
+      "Alan Turing",
+      "Werner Buchholz",
+      "John von Neumann",
+      "Claude Shannon"
+    ],
+    "corretta": 1,
+    "spiegazione": "All'inizio del progetto IBM Stretch.",
+    "fonte": "Wikipedia, «Byte» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-031",
+    "argomento": "Codifica",
+    "livello": 1,
+    "testo": "In quale base è il sistema numerico binario?",
+    "opzioni": [
+      "8",
+      "16",
+      "2",
+      "10"
+    ],
+    "corretta": 2,
+    "spiegazione": "Usa solo le cifre 0 e 1.",
+    "fonte": "Wikipedia, «Sistema numerico binario» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-032",
+    "argomento": "Codifica",
+    "livello": 2,
+    "testo": "Quanto vale in decimale il numero binario 1001?",
+    "opzioni": [
+      "17",
+      "1001",
+      "5",
+      "9"
+    ],
+    "corretta": 3,
+    "spiegazione": "1·8 + 0·4 + 0·2 + 1·1 = 9.",
+    "fonte": "Wikipedia, «Sistema numerico binario» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-033",
+    "argomento": "Codifica",
+    "livello": 2,
+    "testo": "Quanto vale in decimale il numero binario 1111?",
+    "opzioni": [
+      "15",
+      "1.111",
+      "4",
+      "16"
+    ],
+    "corretta": 0,
+    "spiegazione": "8 + 4 + 2 + 1 = 15.",
+    "fonte": "Wikipedia, «Sistema numerico binario» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-034",
+    "argomento": "Codifica",
+    "livello": 3,
+    "testo": "Come si scrive in binario il numero decimale 10?",
+    "opzioni": [
+      "1001",
+      "1010",
+      "0110",
+      "1100"
+    ],
+    "corretta": 1,
+    "spiegazione": "8 + 2 = 10.",
+    "fonte": "Wikipedia, «Sistema numerico binario» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-035",
+    "argomento": "Codifica",
+    "livello": 2,
+    "testo": "Perché i computer usano il sistema binario?",
+    "opzioni": [
+      "Perché è più compatto del decimale",
+      "Perché i numeri binari occupano meno memoria",
+      "Perché i circuiti digitali gestiscono facilmente due soli valori, due livelli di tensione",
+      "Per una convenzione commerciale"
+    ],
+    "corretta": 2,
+    "spiegazione": "0 e 1 corrispondono anche a falso e vero della logica booleana.",
+    "fonte": "Wikipedia, «Sistema numerico binario» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-036",
+    "argomento": "Hardware",
+    "livello": 2,
+    "testo": "Attraverso quale software il sistema operativo controlla una periferica?",
+    "opzioni": [
+      "Il browser",
+      "Il firewall",
+      "Il compilatore",
+      "Il driver"
+    ],
+    "corretta": 3,
+    "spiegazione": "Driver e controller di periferica.",
+    "fonte": "Wikipedia, «Periferica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-037",
+    "argomento": "Hardware",
+    "livello": 2,
+    "testo": "Come si chiama la capacità di una periferica di funzionare appena collegata, senza installazioni manuali?",
+    "opzioni": [
+      "Plug and play",
+      "Autorun",
+      "Streaming",
+      "Backup"
+    ],
+    "corretta": 0,
+    "spiegazione": "Tipica delle periferiche USB.",
+    "fonte": "Wikipedia, «Periferica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-038",
+    "argomento": "Hardware",
+    "livello": 3,
+    "testo": "Con quale meccanismo il sistema operativo gestisce tipicamente le periferiche?",
+    "opzioni": [
+      "Defrag",
+      "Interrupt",
+      "Overclock",
+      "Phishing"
+    ],
+    "corretta": 1,
+    "spiegazione": "La periferica segnala alla CPU che richiede attenzione.",
+    "fonte": "Wikipedia, «Periferica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-039",
+    "argomento": "Hardware",
+    "livello": 1,
+    "testo": "Quale di queste è una periferica di input?",
+    "opzioni": [
+      "Il monitor",
+      "Gli altoparlanti",
+      "La tastiera",
+      "La stampante"
+    ],
+    "corretta": 2,
+    "spiegazione": "Ogni periferica può essere di input, di output o di input/output.",
+    "fonte": "Wikipedia, «Periferica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-040",
+    "argomento": "Hardware",
+    "livello": 1,
+    "testo": "Cosa significa la sigla USB?",
+    "opzioni": [
+      "Universal Storage Box",
+      "User Service Bridge",
+      "Unique System Board",
+      "Universal Serial Bus"
+    ],
+    "corretta": 3,
+    "spiegazione": "È uno standard di comunicazione seriale.",
+    "fonte": "Wikipedia, «Universal Serial Bus» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-041",
+    "argomento": "Hardware",
+    "livello": 2,
+    "testo": "Come si chiama il connettore USB reversibile più recente, diffuso dal 2014?",
+    "opzioni": [
+      "USB-C",
+      "USB Tipo-A",
+      "Mini-USB",
+      "USB Tipo-B"
+    ],
+    "corretta": 0,
+    "spiegazione": "È anche più veloce.",
+    "fonte": "Wikipedia, «Universal Serial Bus» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-042",
+    "argomento": "Hardware",
+    "livello": 1,
+    "testo": "Qual è la caratteristica principale di una memoria di massa?",
+    "opzioni": [
+      "Si cancella allo spegnimento",
+      "È non volatile: conserva i dati anche a computer spento",
+      "Contiene solo il BIOS",
+      "È più veloce della RAM"
+    ],
+    "corretta": 1,
+    "spiegazione": "Esempi: dischi, DVD, chiavette USB.",
+    "fonte": "Wikipedia, «Memoria di massa» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-043",
+    "argomento": "Hardware",
+    "livello": 3,
+    "testo": "Perché i computer non usano solo memoria di massa al posto della RAM?",
+    "opzioni": [
+      "Perché è volatile",
+      "Perché costa di più della RAM",
+      "Perché la memoria di massa è molto più lenta nell'accesso ai dati",
+      "Perché non può contenere programmi"
+    ],
+    "corretta": 2,
+    "spiegazione": "La memoria di massa costa meno ma è più lenta.",
+    "fonte": "Wikipedia, «Memoria di massa» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-044",
+    "argomento": "Hardware",
+    "livello": 3,
+    "testo": "Quali furono le prime memorie di massa?",
+    "opzioni": [
+      "Le chiavette USB",
+      "I dischi a stato solido",
+      "I DVD",
+      "Le unità a nastro magnetico"
+    ],
+    "corretta": 3,
+    "spiegazione": "Diffuse dalla seconda metà del XX secolo.",
+    "fonte": "Wikipedia, «Memoria di massa» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-045",
+    "argomento": "Software",
+    "livello": 1,
+    "testo": "Che cos'è il software?",
+    "opzioni": [
+      "L'insieme delle componenti intangibili di elaborazione (programmi)",
+      "Il cavo di rete",
+      "La parte fisica del computer",
+      "La scheda madre"
+    ],
+    "corretta": 0,
+    "spiegazione": "È contrapposto all'hardware.",
+    "fonte": "Wikipedia, «Software» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-046",
+    "argomento": "Software",
+    "livello": 4,
+    "testo": "Chi usò per primo, nel 1957, il termine «software» nel senso moderno?",
+    "opzioni": [
+      "Charles Babbage",
+      "John Wilder Tukey",
+      "Alan Turing",
+      "Bill Gates"
+    ],
+    "corretta": 1,
+    "spiegazione": "Statistico statunitense.",
+    "fonte": "Wikipedia, «Software» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-047",
+    "argomento": "Hardware",
+    "livello": 3,
+    "testo": "Nell'architettura di von Neumann, con «memoria» si intende:",
+    "opzioni": [
+      "La memoria cache della scheda video",
+      "Le periferiche di input",
+      "La memoria principale, dove si caricano programmi e dati",
+      "Il disco rigido"
+    ],
+    "corretta": 2,
+    "spiegazione": "La memoria secondaria è trattata come un dispositivo di I/O.",
+    "fonte": "Wikipedia, «Memoria di massa» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-048",
+    "argomento": "Internet",
+    "livello": 1,
+    "testo": "Che cos'è Internet?",
+    "opzioni": [
+      "Il sito web di un'azienda",
+      "Un browser",
+      "Un singolo grande server",
+      "L'interconnessione globale tra reti di computer"
+    ],
+    "corretta": 3,
+    "spiegazione": "Da «interconnected networks».",
+    "fonte": "Wikipedia, «Internet» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-049",
+    "argomento": "Internet",
+    "livello": 2,
+    "testo": "Quale suite di protocolli costituisce la «lingua comune» di Internet?",
+    "opzioni": [
+      "TCP/IP",
+      "USB",
+      "HTML/CSS",
+      "PDF"
+    ],
+    "corretta": 0,
+    "spiegazione": "Prende il nome dai due protocolli principali, TCP e IP.",
+    "fonte": "Wikipedia, «Internet» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-050",
+    "argomento": "Internet",
+    "livello": 3,
+    "testo": "Quale progetto è considerato il precursore di Internet (1969)?",
+    "opzioni": [
+      "Minitel",
+      "ARPANET",
+      "Ethernet",
+      "World Wide Web"
+    ],
+    "corretta": 1,
+    "spiegazione": "Finanziato dalla DARPA statunitense.",
+    "fonte": "Wikipedia, «Internet» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-051",
+    "argomento": "Internet",
+    "livello": 2,
+    "testo": "Web e Internet sono la stessa cosa?",
+    "opzioni": [
+      "Sì, sono sinonimi",
+      "Sì, ma solo in Europa",
+      "No: il Web è uno dei servizi di Internet",
+      "No: Internet è un servizio del Web"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il WWW si basa sul protocollo HTTP ed è nato nel 1991.",
+    "fonte": "Wikipedia, «World Wide Web» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-052",
+    "argomento": "Internet",
+    "livello": 2,
+    "testo": "Chi pubblicò il primo sito web, il 6 agosto 1991?",
+    "opzioni": [
+      "Steve Jobs",
+      "Bill Gates",
+      "Vint Cerf",
+      "Tim Berners-Lee"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'idea nacque al CERN di Ginevra nel 1989.",
+    "fonte": "Wikipedia, «World Wide Web» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-053",
+    "argomento": "Internet",
+    "livello": 2,
+    "testo": "In quale centro di ricerca nacque l'idea del World Wide Web?",
+    "opzioni": [
+      "Il CERN di Ginevra",
+      "Lo Xerox PARC",
+      "La NASA",
+      "Il MIT di Boston"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'idea risale al 1989.",
+    "fonte": "Wikipedia, «World Wide Web» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-054",
+    "argomento": "Internet",
+    "livello": 2,
+    "testo": "Come si chiamano i collegamenti che uniscono tra loro i contenuti del Web?",
+    "opzioni": [
+      "Pacchetti",
+      "Collegamenti ipertestuali (link)",
+      "Driver",
+      "Cookie"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il Web è un grande ipertesto.",
+    "fonte": "Wikipedia, «World Wide Web» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-055",
+    "argomento": "Internet",
+    "livello": 1,
+    "testo": "Che cos'è l'HTTP?",
+    "opzioni": [
+      "Un tipo di virus",
+      "Un formato di immagine",
+      "Il protocollo per il trasferimento di ipertesti sul Web",
+      "Un linguaggio di programmazione"
+    ],
+    "corretta": 2,
+    "spiegazione": "HyperText Transfer Protocol.",
+    "fonte": "Wikipedia, «Hypertext Transfer Protocol» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-056",
+    "argomento": "Internet",
+    "livello": 3,
+    "testo": "Su quale porta TCP resta generalmente in ascolto un server HTTP?",
+    "opzioni": [
+      "25",
+      "21",
+      "8",
+      "80"
+    ],
+    "corretta": 3,
+    "spiegazione": "HTTPS usa invece la porta 443.",
+    "fonte": "Wikipedia, «Hypertext Transfer Protocol» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-057",
+    "argomento": "Internet",
+    "livello": 2,
+    "testo": "Cosa indica il codice di stato HTTP 404?",
+    "opzioni": [
+      "La risorsa richiesta non è stata trovata",
+      "Reindirizzamento permanente",
+      "Errore interno del server",
+      "Accesso consentito"
+    ],
+    "corretta": 0,
+    "spiegazione": "Di solito l'indirizzo è sbagliato o il contenuto è stato rimosso.",
+    "fonte": "Wikipedia, «Hypertext Transfer Protocol» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-058",
+    "argomento": "Internet",
+    "livello": 2,
+    "testo": "Con quale architettura lavora il protocollo HTTP?",
+    "opzioni": [
+      "Mainframe",
+      "Client/server",
+      "Peer-to-peer obbligatorio",
+      "Ad anello"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il client invia la richiesta, il server restituisce la risposta.",
+    "fonte": "Wikipedia, «Hypertext Transfer Protocol» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-059",
+    "argomento": "Internet",
+    "livello": 1,
+    "testo": "Che cos'è un browser?",
+    "opzioni": [
+      "Un antivirus",
+      "Un motore di ricerca",
+      "Un'applicazione per navigare e visualizzare risorse sul Web",
+      "Un sistema operativo"
+    ],
+    "corretta": 2,
+    "spiegazione": "Esempi: Chrome, Firefox, Edge, Safari.",
+    "fonte": "Wikipedia, «Browser» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-060",
+    "argomento": "Internet",
+    "livello": 1,
+    "testo": "Quale di questi è un browser?",
+    "opzioni": [
+      "Microsoft Word",
+      "Excel",
+      "Linux",
+      "Mozilla Firefox"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Browser».",
+    "fonte": "Wikipedia, «Browser» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-061",
+    "argomento": "Internet",
+    "livello": 3,
+    "testo": "Qual è stato il primo browser a raggiungere una grande popolarità internazionale?",
+    "opzioni": [
+      "Mosaic",
+      "Opera",
+      "Google Chrome",
+      "Internet Explorer"
+    ],
+    "corretta": 0,
+    "spiegazione": "Sviluppato dall'NCSA, poi seguito da Netscape Navigator.",
+    "fonte": "Wikipedia, «Browser» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-062",
+    "argomento": "Internet",
+    "livello": 1,
+    "testo": "Che cos'è un URL?",
+    "opzioni": [
+      "Un programma di posta",
+      "L'indirizzo che identifica una risorsa sulla rete",
+      "Un tipo di cavo",
+      "Un formato di file compresso"
+    ],
+    "corretta": 1,
+    "spiegazione": "Uniform Resource Locator, es. https://www.esempio.it/pagina.",
+    "fonte": "Wikipedia, «Uniform Resource Locator» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-063",
+    "argomento": "Internet",
+    "livello": 3,
+    "testo": "Quale sistema traduce il nome di un URL nell'indirizzo IP del server?",
+    "opzioni": [
+      "L'USB",
+      "L'HTML",
+      "Il DNS",
+      "Il DHCP"
+    ],
+    "corretta": 2,
+    "spiegazione": "Domain Name System.",
+    "fonte": "Wikipedia, «Uniform Resource Locator» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-064",
+    "argomento": "Internet",
+    "livello": 3,
+    "testo": "Perché è rischioso inserire username e password direttamente in un URL?",
+    "opzioni": [
+      "Perché il DNS non funziona",
+      "Perché l'URL diventa troppo lungo",
+      "Perché il browser le cancella",
+      "Perché le credenziali viaggiano in chiaro e la tecnica si presta al phishing"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Uniform Resource Locator».",
+    "fonte": "Wikipedia, «Uniform Resource Locator» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-065",
+    "argomento": "Posta elettronica",
+    "livello": 1,
+    "testo": "Qual è la forma di un indirizzo di posta elettronica?",
+    "opzioni": [
+      "nomeutente@dominio",
+      "nomeutente://dominio",
+      "dominio#nomeutente",
+      "www.nomeutente.it"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il dominio è un nome DNS.",
+    "fonte": "Wikipedia, «Posta elettronica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-066",
+    "argomento": "Posta elettronica",
+    "livello": 2,
+    "testo": "Chi ideò la posta elettronica nel 1971?",
+    "opzioni": [
+      "Linus Torvalds",
+      "Ray Tomlinson",
+      "Tim Berners-Lee",
+      "Steve Wozniak"
+    ],
+    "corretta": 1,
+    "spiegazione": "Fu implementata su ARPANET.",
+    "fonte": "Wikipedia, «Posta elettronica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-067",
+    "argomento": "Posta elettronica",
+    "livello": 2,
+    "testo": "Quali sono i principali protocolli usati per la posta elettronica su Internet?",
+    "opzioni": [
+      "HTTP, FTP e SSH",
+      "TCP, UDP e ICMP",
+      "SMTP, POP e IMAP",
+      "USB, HDMI e VGA"
+    ],
+    "corretta": 2,
+    "spiegazione": "SMTP per l'invio, POP e IMAP per la ricezione.",
+    "fonte": "Wikipedia, «Posta elettronica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-068",
+    "argomento": "Posta elettronica",
+    "livello": 2,
+    "testo": "In un'email, cosa contiene il campo «Ccn»?",
+    "opzioni": [
+      "Il mittente",
+      "I destinatari principali",
+      "Gli allegati",
+      "I destinatari in copia nascosta, invisibili agli altri"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il campo «Cc» contiene i destinatari in copia conoscenza, visibili.",
+    "fonte": "Wikipedia, «Posta elettronica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-069",
+    "argomento": "Posta elettronica",
+    "livello": 2,
+    "testo": "Perché la posta elettronica è un servizio «asincrono»?",
+    "opzioni": [
+      "Perché mittente e destinatario non devono essere collegati contemporaneamente",
+      "Perché funziona solo di notte",
+      "Perché i messaggi arrivano in ordine casuale",
+      "Perché richiede una videochiamata"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il messaggio resta nella casella finché non viene letto.",
+    "fonte": "Wikipedia, «Posta elettronica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-070",
+    "argomento": "Posta elettronica",
+    "livello": 3,
+    "testo": "La consegna di una normale email è garantita?",
+    "opzioni": [
+      "Solo se c'è un allegato",
+      "No, la consegna non è garantita",
+      "Sì, sempre",
+      "Sì, con valore legale"
+    ],
+    "corretta": 1,
+    "spiegazione": "Per avere valore legale si usa la PEC.",
+    "fonte": "Wikipedia, «Posta elettronica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-071",
+    "argomento": "Reti",
+    "livello": 1,
+    "testo": "Che cos'è un indirizzo IP?",
+    "opzioni": [
+      "Il nome di un sito web",
+      "Il numero di serie del computer",
+      "Un numero che identifica un dispositivo in una rete che usa il protocollo Internet",
+      "La password del Wi-Fi"
+    ],
+    "corretta": 2,
+    "spiegazione": "È simile a un indirizzo postale.",
+    "fonte": "Wikipedia, «Indirizzo IP» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-072",
+    "argomento": "Reti",
+    "livello": 3,
+    "testo": "Da quanti bit è composto un indirizzo IPv6?",
+    "opzioni": [
+      "32",
+      "64",
+      "256",
+      "128"
+    ],
+    "corretta": 3,
+    "spiegazione": "IPv4 usa invece 32 bit.",
+    "fonte": "Wikipedia, «Indirizzo IP» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-073",
+    "argomento": "Reti",
+    "livello": 3,
+    "testo": "Quali sono le due parti di un indirizzo IP?",
+    "opzioni": [
+      "Indicatore di rete (Net_ID) e indicatore di host (Host_ID)",
+      "Protocollo e porta",
+      "Dominio e sottodominio",
+      "Nome e cognome"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il Net_ID serve all'instradamento tra reti.",
+    "fonte": "Wikipedia, «Indirizzo IP» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-074",
+    "argomento": "Reti",
+    "livello": 1,
+    "testo": "Che cos'è il Wi-Fi?",
+    "opzioni": [
+      "Un sistema operativo",
+      "Una tecnologia per reti locali senza fili",
+      "Un tipo di cavo di rete",
+      "Un protocollo di posta"
+    ],
+    "corretta": 1,
+    "spiegazione": "Basato sugli standard IEEE 802.11.",
+    "fonte": "Wikipedia, «Wi-Fi» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-075",
+    "argomento": "Reti",
+    "livello": 2,
+    "testo": "Come si chiama il dispositivo che permette ai dispositivi Wi-Fi di collegarsi a una rete?",
+    "opzioni": [
+      "Scanner",
+      "Webcam",
+      "Access point",
+      "Stampante"
+    ],
+    "corretta": 2,
+    "spiegazione": "Detto anche punto di accesso wireless.",
+    "fonte": "Wikipedia, «Wi-Fi» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-076",
+    "argomento": "Cloud",
+    "livello": 1,
+    "testo": "Che cos'è il cloud computing?",
+    "opzioni": [
+      "Un computer senza schermo",
+      "Un formato di file",
+      "Un tipo di virus",
+      "L'erogazione di servizi (archiviazione, elaborazione) via Internet su richiesta"
+    ],
+    "corretta": 3,
+    "spiegazione": "Le risorse sono in remoto, presso il fornitore.",
+    "fonte": "Wikipedia, «Cloud computing» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-077",
+    "argomento": "Cloud",
+    "livello": 2,
+    "testo": "Cosa significa SaaS?",
+    "opzioni": [
+      "Software as a Service: software usato via Internet",
+      "Storage and archive System",
+      "Security as a Service",
+      "Server and access Switch"
+    ],
+    "corretta": 0,
+    "spiegazione": "Esempi: posta web, suite per ufficio online.",
+    "fonte": "Wikipedia, «Cloud computing» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-078",
+    "argomento": "Cloud",
+    "livello": 3,
+    "testo": "Cosa significa PaaS nel cloud computing?",
+    "opzioni": [
+      "Personal area System",
+      "Platform as a Service: una piattaforma software eseguita in remoto",
+      "Printer and access Service",
+      "Password as a Service"
+    ],
+    "corretta": 1,
+    "spiegazione": "Fornisce servizi, programmi, librerie per sviluppare.",
+    "fonte": "Wikipedia, «Cloud computing» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-079",
+    "argomento": "Sicurezza",
+    "livello": 2,
+    "testo": "Quali sono i tre obiettivi della sicurezza informatica secondo la triade CIA?",
+    "opzioni": [
+      "Hardware, software e rete",
+      "Backup, antivirus e firewall",
+      "Riservatezza, integrità e disponibilità",
+      "Velocità, costo e capacità"
+    ],
+    "corretta": 2,
+    "spiegazione": "Confidentiality, Integrity, Availability.",
+    "fonte": "Wikipedia, «Sicurezza informatica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-080",
+    "argomento": "Sicurezza",
+    "livello": 2,
+    "testo": "Cosa garantisce la «riservatezza» delle informazioni?",
+    "opzioni": [
+      "Che siano pubbliche",
+      "Che non vengano mai cancellate",
+      "Che siano sempre raggiungibili",
+      "Che siano accessibili solo ai soggetti autorizzati"
+    ],
+    "corretta": 3,
+    "spiegazione": "Strumenti: crittografia e controlli di accesso.",
+    "fonte": "Wikipedia, «Sicurezza informatica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-081",
+    "argomento": "Sicurezza",
+    "livello": 3,
+    "testo": "Cosa garantisce l'«integrità» dei dati?",
+    "opzioni": [
+      "Che non vengano modificati o distrutti in modo non autorizzato",
+      "Che siano accessibili sempre",
+      "Che siano duplicati",
+      "Che siano cifrati"
+    ],
+    "corretta": 0,
+    "spiegazione": "Si usano funzioni di hash, firme digitali e controlli delle modifiche.",
+    "fonte": "Wikipedia, «Sicurezza informatica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-082",
+    "argomento": "Sicurezza",
+    "livello": 3,
+    "testo": "Quali misure aumentano la «disponibilità» di un sistema?",
+    "opzioni": [
+      "Disattivare il firewall",
+      "Aggiornamenti, patch, backup e ridondanza delle risorse",
+      "Usare una sola password per tutto",
+      "Spegnere il server di notte"
+    ],
+    "corretta": 1,
+    "spiegazione": "Si riducono i single point of failure.",
+    "fonte": "Wikipedia, «Sicurezza informatica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-083",
+    "argomento": "Sicurezza",
+    "livello": 1,
+    "testo": "Che cos'è il malware?",
+    "opzioni": [
+      "Un componente hardware difettoso",
+      "Un tipo di cavo",
+      "Un software malevolo che danneggia o disturba l'utente",
+      "Un programma antivirus"
+    ],
+    "corretta": 2,
+    "spiegazione": "Da malicious software.",
+    "fonte": "Wikipedia, «Malware» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-084",
+    "argomento": "Sicurezza",
+    "livello": 2,
+    "testo": "Quale tipo di malware cifra i dati della vittima e chiede un riscatto?",
+    "opzioni": [
+      "Worm",
+      "Keylogger",
+      "Adware",
+      "Ransomware"
+    ],
+    "corretta": 3,
+    "spiegazione": "Esempio: CryptoLocker.",
+    "fonte": "Wikipedia, «Malware» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-085",
+    "argomento": "Sicurezza",
+    "livello": 2,
+    "testo": "Che cosa fa un keylogger?",
+    "opzioni": [
+      "Registra ciò che l'utente digita sulla tastiera",
+      "Fa il backup dei file",
+      "Blocca le pubblicità",
+      "Cifra il disco"
+    ],
+    "corretta": 0,
+    "spiegazione": "Rende possibile il furto di password e dati.",
+    "fonte": "Wikipedia, «Malware» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-086",
+    "argomento": "Sicurezza",
+    "livello": 3,
+    "testo": "Chi coniò il termine «malware» nel 1990?",
+    "opzioni": [
+      "Kevin Mitnick",
+      "Yisrael Radai",
+      "John McAfee",
+      "Fred Cohen"
+    ],
+    "corretta": 1,
+    "spiegazione": "Prima si parlava di virus per computer.",
+    "fonte": "Wikipedia, «Malware» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-087",
+    "argomento": "Sicurezza",
+    "livello": 1,
+    "testo": "Che cos'è il phishing?",
+    "opzioni": [
+      "Un protocollo di rete",
+      "Un sistema di backup",
+      "Una truffa in cui ci si finge un ente affidabile per ottenere dati personali o password",
+      "Un antivirus gratuito"
+    ],
+    "corretta": 2,
+    "spiegazione": "Avviene soprattutto via email, ma anche via SMS.",
+    "fonte": "Wikipedia, «Phishing» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-088",
+    "argomento": "Sicurezza",
+    "livello": 2,
+    "testo": "Su quale tecnica si basa il phishing?",
+    "opzioni": [
+      "Overclock",
+      "Compressione dei dati",
+      "Crittografia asimmetrica",
+      "Ingegneria sociale"
+    ],
+    "corretta": 3,
+    "spiegazione": "Sfrutta la fiducia della vittima con messaggi che imitano quelli legittimi.",
+    "fonte": "Wikipedia, «Phishing» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-089",
+    "argomento": "Sicurezza",
+    "livello": 3,
+    "testo": "Come si chiama il phishing mirato verso una specifica persona o azienda?",
+    "opzioni": [
+      "Spear phishing",
+      "Pharming",
+      "Vishing",
+      "Spam"
+    ],
+    "corretta": 0,
+    "spiegazione": "Gli attaccanti raccolgono informazioni sull'obiettivo.",
+    "fonte": "Wikipedia, «Phishing» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-090",
+    "argomento": "Sicurezza",
+    "livello": 3,
+    "testo": "Come si chiama il phishing effettuato tramite telefonate?",
+    "opzioni": [
+      "Spoofing",
+      "Vishing",
+      "Spear phishing",
+      "Smishing"
+    ],
+    "corretta": 1,
+    "spiegazione": "Da voice phishing.",
+    "fonte": "Wikipedia, «Phishing» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-091",
+    "argomento": "Sicurezza",
+    "livello": 1,
+    "testo": "Che cos'è un firewall?",
+    "opzioni": [
+      "Un programma di videoscrittura",
+      "Un browser sicuro",
+      "Un componente hardware o software di difesa perimetrale della rete",
+      "Un tipo di memoria"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il nome deriva dal muro tagliafuoco.",
+    "fonte": "Wikipedia, «Firewall» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-092",
+    "argomento": "Sicurezza",
+    "livello": 2,
+    "testo": "A cosa serve la crittografia?",
+    "opzioni": [
+      "A velocizzare la rete",
+      "A comprimere i file",
+      "A stampare documenti",
+      "A rendere un messaggio incomprensibile a chi non è autorizzato a leggerlo"
+    ],
+    "corretta": 3,
+    "spiegazione": "Garantisce la riservatezza.",
+    "fonte": "Wikipedia, «Crittografia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-093",
+    "argomento": "Sicurezza",
+    "livello": 3,
+    "testo": "Nella crittografia simmetrica:",
+    "opzioni": [
+      "Si usa un'unica chiave per cifrare e decifrare",
+      "Non si usano chiavi",
+      "Si usano due chiavi diverse",
+      "La chiave è sempre pubblica"
+    ],
+    "corretta": 0,
+    "spiegazione": "Nella crittografia asimmetrica si usano chiavi diverse (pubblica e privata).",
+    "fonte": "Wikipedia, «Crittografia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-094",
+    "argomento": "Sicurezza",
+    "livello": 3,
+    "testo": "Nella crittografia asimmetrica:",
+    "opzioni": [
+      "Il messaggio non è cifrato",
+      "Si usano chiavi diverse per cifrare e per decifrare",
+      "Si usa la stessa chiave",
+      "Serve una password condivisa a voce"
+    ],
+    "corretta": 1,
+    "spiegazione": "Chi vuole ricevere un messaggio segreto diffonde la chiave pubblica.",
+    "fonte": "Wikipedia, «Crittografia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-095",
+    "argomento": "Sicurezza",
+    "livello": 2,
+    "testo": "A quale personaggio storico si attribuisce un celebre cifrario a sostituzione?",
+    "opzioni": [
+      "Napoleone",
+      "Carlo Magno",
+      "Giulio Cesare",
+      "Cristoforo Colombo"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il cifrario di Cesare.",
+    "fonte": "Wikipedia, «Crittografia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-096",
+    "argomento": "Sicurezza",
+    "livello": 1,
+    "testo": "Che cos'è un backup?",
+    "opzioni": [
+      "Un aggiornamento del sistema operativo",
+      "Un tipo di firewall",
+      "Un virus",
+      "Una copia di riserva dei dati per poterli ripristinare"
+    ],
+    "corretta": 3,
+    "spiegazione": "Protegge anche dai ransomware.",
+    "fonte": "Wikipedia, «Backup» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-097",
+    "argomento": "Sicurezza",
+    "livello": 3,
+    "testo": "Cosa prevede la regola del backup «3-2-1»?",
+    "opzioni": [
+      "Tre copie dei dati, su due tipi di supporto, di cui una offline",
+      "Tre dischi, due server, un cloud",
+      "Tre backup al giorno per due settimane",
+      "Tre password, due utenti, un amministratore"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Backup».",
+    "fonte": "Wikipedia, «Backup» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-098",
+    "argomento": "Sicurezza",
+    "livello": 2,
+    "testo": "Quali tipi di backup si distinguono in base ai dati copiati?",
+    "opzioni": [
+      "Locale, nazionale e globale",
+      "Completo, differenziale e incrementale",
+      "Testuale, grafico e audio",
+      "Rapido, lento e medio"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il backup incrementale copia solo le modifiche dall'ultimo backup.",
+    "fonte": "Wikipedia, «Backup» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-099",
+    "argomento": "Software",
+    "livello": 2,
+    "testo": "Cosa caratterizza il software libero?",
+    "opzioni": [
+      "È prodotto solo da aziende",
+      "Non ha licenza",
+      "La licenza ne consente studio, uso, modifica e redistribuzione",
+      "È sempre gratuito ma non modificabile"
+    ],
+    "corretta": 2,
+    "spiegazione": "Si contrappone al software proprietario.",
+    "fonte": "Wikipedia, «Software libero» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-100",
+    "argomento": "Software",
+    "livello": 3,
+    "testo": "Chi fondò nel 1983 il progetto GNU?",
+    "opzioni": [
+      "Bill Gates",
+      "Steve Jobs",
+      "Linus Torvalds",
+      "Richard Stallman"
+    ],
+    "corretta": 3,
+    "spiegazione": "Obiettivo: un sistema operativo completamente libero.",
+    "fonte": "Wikipedia, «Software libero» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-101",
+    "argomento": "Software",
+    "livello": 4,
+    "testo": "Quante sono le «libertà fondamentali» del software libero secondo la Free Software Foundation?",
+    "opzioni": [
+      "Quattro",
+      "Cinque",
+      "Due",
+      "Tre"
+    ],
+    "corretta": 0,
+    "spiegazione": "Eseguire, studiare/modificare, ridistribuire, migliorare e diffondere.",
+    "fonte": "Wikipedia, «Software libero» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-102",
+    "argomento": "Produttività",
+    "livello": 1,
+    "testo": "Che cos'è un foglio elettronico (foglio di calcolo)?",
+    "opzioni": [
+      "Un tipo di stampante",
+      "Un software per eseguire calcoli su dati organizzati in celle",
+      "Un programma di posta",
+      "Un sistema operativo"
+    ],
+    "corretta": 1,
+    "spiegazione": "Esempi: Microsoft Excel, LibreOffice Calc.",
+    "fonte": "Wikipedia, «Foglio elettronico» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-103",
+    "argomento": "Produttività",
+    "livello": 2,
+    "testo": "Con quale simbolo deve iniziare una formula in una cella di un foglio di calcolo?",
+    "opzioni": [
+      "@",
+      "$",
+      "=",
+      "#"
+    ],
+    "corretta": 2,
+    "spiegazione": "Ad esempio =A1+B1.",
+    "fonte": "Wikipedia, «Foglio elettronico» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-104",
+    "argomento": "Produttività",
+    "livello": 3,
+    "testo": "In un foglio di calcolo, cosa indica il simbolo $ in un riferimento come $A$1?",
+    "opzioni": [
+      "Una cella vuota",
+      "Un errore",
+      "Una valuta",
+      "Un riferimento assoluto, che non cambia copiando la formula"
+    ],
+    "corretta": 3,
+    "spiegazione": "Senza $ i riferimenti sono relativi.",
+    "fonte": "Wikipedia, «Foglio elettronico» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-105",
+    "argomento": "Produttività",
+    "livello": 3,
+    "testo": "Qual è stato il primo foglio elettronico, ideato da Dan Bricklin?",
+    "opzioni": [
+      "VisiCalc",
+      "Excel",
+      "Lotus 1-2-3",
+      "Calc"
+    ],
+    "corretta": 0,
+    "spiegazione": "Trasformò il personal computer in strumento di lavoro.",
+    "fonte": "Wikipedia, «Foglio elettronico» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-106",
+    "argomento": "Produttività",
+    "livello": 2,
+    "testo": "Cosa significa WYSIWYG nei programmi di videoscrittura?",
+    "opzioni": [
+      "Un formato di file",
+      "What You See Is What You Get: ciò che vedi è ciò che ottieni",
+      "Un linguaggio di programmazione",
+      "Un comando di stampa"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'interfaccia grafica mostra il testo come sarà stampato.",
+    "fonte": "Wikipedia, «Videoscrittura» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-107",
+    "argomento": "Programmazione",
+    "livello": 1,
+    "testo": "Che cos'è un algoritmo?",
+    "opzioni": [
+      "Un tipo di file",
+      "Un componente hardware",
+      "Una sequenza finita di istruzioni che risolve una classe di problemi",
+      "Un linguaggio di programmazione"
+    ],
+    "corretta": 2,
+    "spiegazione": "Deve essere finito, deterministico, non ambiguo e generale.",
+    "fonte": "Wikipedia, «Algoritmo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-108",
+    "argomento": "Programmazione",
+    "livello": 2,
+    "testo": "Quale proprietà NON è richiesta a un algoritmo?",
+    "opzioni": [
+      "Essere deterministico",
+      "Essere finito",
+      "Essere non ambiguo",
+      "Essere scritto in un linguaggio specifico"
+    ],
+    "corretta": 3,
+    "spiegazione": "Un algoritmo può essere descritto anche con diagrammi di flusso o pseudocodice.",
+    "fonte": "Wikipedia, «Algoritmo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-109",
+    "argomento": "Programmazione",
+    "livello": 3,
+    "testo": "Da quale matematico deriva il termine «algoritmo»?",
+    "opzioni": [
+      "Al-Khwarizmi",
+      "Euclide",
+      "Al-Biruni",
+      "Fibonacci"
+    ],
+    "corretta": 0,
+    "spiegazione": "Matematico persiano del IX secolo.",
+    "fonte": "Wikipedia, «Algoritmo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-110",
+    "argomento": "Programmazione",
+    "livello": 2,
+    "testo": "Con quali strumenti si può descrivere un algoritmo prima di programmarlo?",
+    "opzioni": [
+      "BIOS o driver",
+      "Diagramma di flusso o pseudocodice",
+      "Firewall o antivirus",
+      "Foglio elettronico o email"
+    ],
+    "corretta": 1,
+    "spiegazione": "Poi viene tradotto in un linguaggio di programmazione.",
+    "fonte": "Wikipedia, «Algoritmo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-111",
+    "argomento": "Programmazione",
+    "livello": 3,
+    "testo": "Quando un problema si dice «calcolabile»?",
+    "opzioni": [
+      "Quando ha infinite soluzioni",
+      "Quando si risolve con una calcolatrice",
+      "Quando è risolvibile mediante un algoritmo",
+      "Quando ha una soluzione numerica"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'algoritmo è alla base della teoria della calcolabilità.",
+    "fonte": "Wikipedia, «Algoritmo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-112",
+    "argomento": "Programmazione",
+    "livello": 1,
+    "testo": "Che cos'è un linguaggio di programmazione?",
+    "opzioni": [
+      "Un protocollo di rete",
+      "Un sistema operativo",
+      "Una lingua straniera",
+      "Un sistema di notazione per scrivere programmi per computer"
+    ],
+    "corretta": 3,
+    "spiegazione": "È definito da sintassi e semantica.",
+    "fonte": "Wikipedia, «Linguaggio di programmazione» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-113",
+    "argomento": "Programmazione",
+    "livello": 3,
+    "testo": "Chi è considerata autrice del primo linguaggio di programmazione, per la macchina di Babbage?",
+    "opzioni": [
+      "Ada Lovelace",
+      "Hedy Lamarr",
+      "Grace Hopper",
+      "Marie Curie"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Linguaggio di programmazione».",
+    "fonte": "Wikipedia, «Linguaggio di programmazione» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-114",
+    "argomento": "Programmazione",
+    "livello": 2,
+    "testo": "Che cos'è l'assembly?",
+    "opzioni": [
+      "Un browser",
+      "Una rappresentazione simbolica del linguaggio macchina",
+      "Un linguaggio ad altissimo livello",
+      "Un database"
+    ],
+    "corretta": 1,
+    "spiegazione": "È un linguaggio a basso livello.",
+    "fonte": "Wikipedia, «Linguaggio di programmazione» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-115",
+    "argomento": "Programmazione",
+    "livello": 3,
+    "testo": "Quale fu uno dei primi linguaggi ad alto livello, creato nel 1957 da John Backus?",
+    "opzioni": [
+      "Java",
+      "Python",
+      "Fortran",
+      "HTML"
+    ],
+    "corretta": 2,
+    "spiegazione": "Da esso derivò il BASIC (1964).",
+    "fonte": "Wikipedia, «Linguaggio di programmazione» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-116",
+    "argomento": "Programmazione",
+    "livello": 2,
+    "testo": "Come si classificano i linguaggi in base alla vicinanza al linguaggio macchina o a quello umano?",
+    "opzioni": [
+      "Pubblici e privati",
+      "Compressi e non compressi",
+      "Grafici e sonori",
+      "A basso livello e ad alto livello"
+    ],
+    "corretta": 3,
+    "spiegazione": "Si distinguono anche linguaggi compilati e interpretati.",
+    "fonte": "Wikipedia, «Linguaggio di programmazione» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-117",
+    "argomento": "Programmazione",
+    "livello": 3,
+    "testo": "In che anno nacque il linguaggio Java?",
+    "opzioni": [
+      "1995",
+      "1972",
+      "2005",
+      "1985"
+    ],
+    "corretta": 0,
+    "spiegazione": "Linguaggio orientato agli oggetti.",
+    "fonte": "Wikipedia, «Linguaggio di programmazione» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-118",
+    "argomento": "Basi di dati",
+    "livello": 1,
+    "testo": "Che cos'è una base di dati (database)?",
+    "opzioni": [
+      "Un tipo di processore",
+      "Una collezione organizzata di dati in forma elettronica",
+      "Un programma di videoscrittura",
+      "Una rete wireless"
+    ],
+    "corretta": 1,
+    "spiegazione": "Si gestisce con un DBMS.",
+    "fonte": "Wikipedia, «Base di dati» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-119",
+    "argomento": "Basi di dati",
+    "livello": 2,
+    "testo": "Cosa indica la sigla DBMS?",
+    "opzioni": [
+      "Un linguaggio di markup",
+      "Un protocollo di posta",
+      "Il sistema software per gestire una base di dati",
+      "Un tipo di disco"
+    ],
+    "corretta": 2,
+    "spiegazione": "Database Management System.",
+    "fonte": "Wikipedia, «Base di dati» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-120",
+    "argomento": "Basi di dati",
+    "livello": 3,
+    "testo": "Chi ideò il modello relazionale delle basi di dati?",
+    "opzioni": [
+      "Charles Bachman",
+      "Larry Ellison",
+      "Donald Knuth",
+      "Edgar F. Codd"
+    ],
+    "corretta": 3,
+    "spiegazione": "Ricercatore IBM.",
+    "fonte": "Wikipedia, «Base di dati» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-121",
+    "argomento": "Basi di dati",
+    "livello": 2,
+    "testo": "Come si rappresentano i dati nel modello relazionale?",
+    "opzioni": [
+      "Mediante tabelle e relazioni tra esse",
+      "Mediante un unico file di testo",
+      "Mediante cartelle e sottocartelle",
+      "Mediante grafici a torta"
+    ],
+    "corretta": 0,
+    "spiegazione": "È il modello attualmente più diffuso.",
+    "fonte": "Wikipedia, «Base di dati» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-122",
+    "argomento": "Basi di dati",
+    "livello": 3,
+    "testo": "Nel modello relazionale, cos'è la chiave di un record?",
+    "opzioni": [
+      "La password del database",
+      "Un identificatore univoco della riga",
+      "Il nome della tabella",
+      "Un campo sempre vuoto"
+    ],
+    "corretta": 1,
+    "spiegazione": "Serve a collegare le tabelle.",
+    "fonte": "Wikipedia, «Base di dati» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-123",
+    "argomento": "Basi di dati",
+    "livello": 1,
+    "testo": "Che cos'è SQL?",
+    "opzioni": [
+      "Un sistema operativo",
+      "Un formato di immagine",
+      "Un linguaggio standard per database relazionali",
+      "Un protocollo di rete"
+    ],
+    "corretta": 2,
+    "spiegazione": "Structured Query Language.",
+    "fonte": "Wikipedia, «Structured Query Language» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-124",
+    "argomento": "Basi di dati",
+    "livello": 2,
+    "testo": "In SQL, quale clausola serve a definire criteri di ricerca?",
+    "opzioni": [
+      "ORDER",
+      "FROM",
+      "INSERT",
+      "WHERE"
+    ],
+    "corretta": 3,
+    "spiegazione": "Esempio: SELECT * FROM utenti WHERE eta > 30.",
+    "fonte": "Wikipedia, «Structured Query Language» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-125",
+    "argomento": "Basi di dati",
+    "livello": 2,
+    "testo": "Quale comando SQL inserisce una nuova riga in una tabella?",
+    "opzioni": [
+      "INSERT",
+      "SELECT",
+      "DROP",
+      "WHERE"
+    ],
+    "corretta": 0,
+    "spiegazione": "SELECT serve per interrogare.",
+    "fonte": "Wikipedia, «Structured Query Language» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-126",
+    "argomento": "Basi di dati",
+    "livello": 3,
+    "testo": "Quale sottoinsieme di SQL serve a creare e modificare lo schema del database?",
+    "opzioni": [
+      "HTML",
+      "DDL (Data Definition Language)",
+      "DQL (Data Query Language)",
+      "DML (Data Manipulation Language)"
+    ],
+    "corretta": 1,
+    "spiegazione": "DML per gestire i dati, DQL per interrogarli, DCL per i permessi.",
+    "fonte": "Wikipedia, «Structured Query Language» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-127",
+    "argomento": "Basi di dati",
+    "livello": 4,
+    "testo": "Dove e quando nacque SQL?",
+    "opzioni": [
+      "Al MIT nel 1960",
+      "Alla Microsoft nel 1985",
+      "Nei laboratori IBM nel 1974",
+      "Al CERN nel 1989"
+    ],
+    "corretta": 2,
+    "spiegazione": "Inizialmente si chiamava SEQUEL.",
+    "fonte": "Wikipedia, «Structured Query Language» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-128",
+    "argomento": "Intelligenza artificiale",
+    "livello": 1,
+    "testo": "Che cosa si intende per intelligenza artificiale?",
+    "opzioni": [
+      "Un nuovo tipo di processore",
+      "La rete Internet",
+      "Un programma antivirus",
+      "La capacità di un sistema artificiale di simulare capacità tipiche dell'intelletto umano"
+    ],
+    "corretta": 3,
+    "spiegazione": "Esempi: riconoscimento vocale, traduzione, visione artificiale.",
+    "fonte": "Wikipedia, «Intelligenza artificiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-129",
+    "argomento": "Intelligenza artificiale",
+    "livello": 3,
+    "testo": "In che anno l'intelligenza artificiale fu istituita come campo accademico, con la conferenza di Dartmouth?",
+    "opzioni": [
+      "1956",
+      "1946",
+      "1969",
+      "1991"
+    ],
+    "corretta": 0,
+    "spiegazione": "Le radici risalgono al lavoro di Alan Turing.",
+    "fonte": "Wikipedia, «Intelligenza artificiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-130",
+    "argomento": "Intelligenza artificiale",
+    "livello": 3,
+    "testo": "Quale regolamento europeo disciplina l'intelligenza artificiale?",
+    "opzioni": [
+      "La Direttiva NIS2",
+      "Il Regolamento UE 2024/1689 (AI Act)",
+      "Il Regolamento UE 2016/679 (GDPR)",
+      "Il Regolamento eIDAS 910/2014"
+    ],
+    "corretta": 1,
+    "spiegazione": "Definisce i sistemi di IA come sistemi automatizzati con un certo grado di autonomia.",
+    "fonte": "Wikipedia, «Intelligenza artificiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-131",
+    "argomento": "Intelligenza artificiale",
+    "livello": 2,
+    "testo": "Quale di questi è un paradigma di apprendimento dell'IA?",
+    "opzioni": [
+      "Phishing",
+      "Defragmentazione",
+      "Machine learning",
+      "Overclocking"
+    ],
+    "corretta": 2,
+    "spiegazione": "Altri: deep learning, reinforcement learning, apprendimento supervisionato.",
+    "fonte": "Wikipedia, «Intelligenza artificiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-132",
+    "argomento": "Privacy",
+    "livello": 2,
+    "testo": "Qual è il numero ufficiale del GDPR, il Regolamento generale sulla protezione dei dati?",
+    "opzioni": [
+      "Direttiva 95/46/CE",
+      "D.Lgs. 196/2003",
+      "Regolamento (UE) 2024/1689",
+      "Regolamento (UE) 2016/679"
+    ],
+    "corretta": 3,
+    "spiegazione": "Operativo dal 25 maggio 2018.",
+    "fonte": "Wikipedia, «Regolamento generale sulla protezione dei dati» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-133",
+    "argomento": "Privacy",
+    "livello": 2,
+    "testo": "Da quando è operativo il GDPR?",
+    "opzioni": [
+      "Dal 25 maggio 2018",
+      "Dal 1° gennaio 2016",
+      "Dal 30 giugno 2003",
+      "Dal 24 maggio 2020"
+    ],
+    "corretta": 0,
+    "spiegazione": "Entrato in vigore il 24 maggio 2016.",
+    "fonte": "Wikipedia, «Regolamento generale sulla protezione dei dati» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-134",
+    "argomento": "Privacy",
+    "livello": 3,
+    "testo": "Entro quanto tempo il titolare deve notificare un data breach all'autorità?",
+    "opzioni": [
+      "Una settimana",
+      "72 ore da quando ne viene a conoscenza",
+      "30 giorni",
+      "24 ore"
+    ],
+    "corretta": 1,
+    "spiegazione": "GDPR, art. 33.",
+    "fonte": "Wikipedia, «Regolamento generale sulla protezione dei dati» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-135",
+    "argomento": "Privacy",
+    "livello": 3,
+    "testo": "Quale diritto consente all'interessato di ricevere i propri dati in formato strutturato e leggibile da dispositivo automatico?",
+    "opzioni": [
+      "Il diritto di accesso civico",
+      "Il diritto di rettifica",
+      "Il diritto alla portabilità",
+      "Il diritto all'oblio"
+    ],
+    "corretta": 2,
+    "spiegazione": "GDPR, art. 20.",
+    "fonte": "Wikipedia, «Regolamento generale sulla protezione dei dati» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-136",
+    "argomento": "Privacy",
+    "livello": 2,
+    "testo": "Come si chiama la figura del «responsabile della protezione dei dati» prevista dal GDPR?",
+    "opzioni": [
+      "RUP",
+      "CIO",
+      "CEO",
+      "DPO (Data Protection Officer)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Obbligatoria, ad esempio, per le autorità pubbliche.",
+    "fonte": "Wikipedia, «Regolamento generale sulla protezione dei dati» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-137",
+    "argomento": "Privacy",
+    "livello": 2,
+    "testo": "Un indirizzo IP può essere un dato personale secondo la definizione richiamata dal GDPR?",
+    "opzioni": [
+      "Sì, come nomi, foto, email e dati bancari",
+      "Solo se pubblico",
+      "Solo per le aziende",
+      "No, mai"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il dato personale è qualunque informazione relativa a una persona identificata o identificabile.",
+    "fonte": "Wikipedia, «Regolamento generale sulla protezione dei dati» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-138",
+    "argomento": "PA digitale",
+    "livello": 2,
+    "testo": "In quale registro pubblico sono iscritti gli indirizzi PEC dei soggetti obbligati ad averla?",
+    "opzioni": [
+      "IPA-MAIL",
+      "INI-PEC",
+      "SPID",
+      "ANPR"
+    ],
+    "corretta": 1,
+    "spiegazione": "Indice nazionale degli indirizzi PEC.",
+    "fonte": "Wikipedia, «Posta elettronica certificata» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-139",
+    "argomento": "PA digitale",
+    "livello": 2,
+    "testo": "Quale ricevuta fornisce al mittente il gestore PEC del destinatario?",
+    "opzioni": [
+      "La ricevuta fiscale",
+      "Il protocollo informatico",
+      "La ricevuta di avvenuta consegna",
+      "La conferma di lettura"
+    ],
+    "corretta": 2,
+    "spiegazione": "Indica il momento della consegna nella casella del destinatario.",
+    "fonte": "Wikipedia, «Posta elettronica certificata» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-140",
+    "argomento": "PA digitale",
+    "livello": 3,
+    "testo": "Quale ente vigila sui gestori PEC e ne pubblica l'elenco?",
+    "opzioni": [
+      "Il Garante privacy",
+      "L'ANAC",
+      "La Consob",
+      "L'Agenzia per l'Italia digitale (AgID)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Posta elettronica certificata».",
+    "fonte": "Wikipedia, «Posta elettronica certificata» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-141",
+    "argomento": "PA digitale",
+    "livello": 2,
+    "testo": "A cosa serve SPID?",
+    "opzioni": [
+      "Ad accedere con un'unica identità digitale ai servizi online della PA e dei privati aderenti",
+      "A firmare digitalmente i documenti",
+      "A inviare PEC",
+      "A pagare le tasse in contanti"
+    ],
+    "corretta": 0,
+    "spiegazione": "Sistema Pubblico di Identità Digitale.",
+    "fonte": "Wikipedia, «SPID» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-142",
+    "argomento": "PA digitale",
+    "livello": 3,
+    "testo": "Quale regolamento europeo ha consentito il riconoscimento di SPID a livello UE?",
+    "opzioni": [
+      "L'AI Act 2024/1689",
+      "Il regolamento eIDAS n. 910/2014",
+      "La direttiva NIS2",
+      "Il GDPR 2016/679"
+    ],
+    "corretta": 1,
+    "spiegazione": "Permette l'accesso ai servizi delle PA di tutta l'Unione.",
+    "fonte": "Wikipedia, «SPID» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-143",
+    "argomento": "PA digitale",
+    "livello": 2,
+    "testo": "Secondo il CAD, che cos'è il «documento informatico»?",
+    "opzioni": [
+      "La scansione di un documento cartaceo non firmato",
+      "Un documento stampato da un computer",
+      "Il documento elettronico che contiene la rappresentazione informatica di atti, fatti o dati giuridicamente rilevanti",
+      "Qualsiasi file salvato su un computer"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il documento analogico è invece la rappresentazione non informatica.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-144",
+    "argomento": "PA digitale",
+    "livello": 2,
+    "testo": "Secondo il CAD, cos'è il «documento analogico»?",
+    "opzioni": [
+      "Un documento firmato digitalmente",
+      "Un file PDF",
+      "Una copia informatica",
+      "La rappresentazione non informatica di atti, fatti o dati giuridicamente rilevanti"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 1, lett. p-bis).",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-145",
+    "argomento": "PA digitale",
+    "livello": 3,
+    "testo": "Secondo il CAD, cos'è il «duplicato informatico»?",
+    "opzioni": [
+      "Il documento ottenuto memorizzando la medesima sequenza di valori binari del documento originario",
+      "La stampa di un documento informatico",
+      "Una copia con diversa sequenza di valori binari",
+      "Una fotocopia del documento"
+    ],
+    "corretta": 0,
+    "spiegazione": "La copia informatica di documento informatico ha invece una diversa sequenza di valori binari.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-146",
+    "argomento": "PA digitale",
+    "livello": 3,
+    "testo": "Secondo il CAD, cos'è un «formato aperto»?",
+    "opzioni": [
+      "Un formato utilizzabile solo con software a pagamento",
+      "Un formato di dati reso pubblico, documentato e neutro rispetto agli strumenti tecnologici",
+      "Un file non protetto da password",
+      "Un formato compresso"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 1, lett. l-bis).",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-147",
+    "argomento": "PA digitale",
+    "livello": 4,
+    "testo": "Quale caratteristica NON è propria dei «dati di tipo aperto» secondo il CAD?",
+    "opzioni": [
+      "Sono gratuiti o a costi marginali",
+      "Sono disponibili con licenza che ne permette l'uso a chiunque",
+      "Possono essere usati solo per finalità non commerciali",
+      "Sono in formato aperto e adatti all'uso automatico"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'uso è consentito a chiunque, anche per finalità commerciali.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-148",
+    "argomento": "PA digitale",
+    "livello": 2,
+    "testo": "Cosa definisce il CAD come «identità digitale»?",
+    "opzioni": [
+      "La firma autografa scansionata",
+      "Il codice fiscale",
+      "La password della posta elettronica",
+      "La rappresentazione informatica della corrispondenza tra un utente e i suoi attributi identificativi"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 1, lett. u-quater).",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-149",
+    "argomento": "PA digitale",
+    "livello": 3,
+    "testo": "Secondo il CAD, cos'è l'«interoperabilità»?",
+    "opzioni": [
+      "La capacità di un sistema informativo con interfacce pubbliche e aperte di interagire automaticamente con altri sistemi",
+      "L'obbligo di usare un solo fornitore",
+      "La compatibilità tra stampanti",
+      "La possibilità di lavorare da casa"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 1, lett. dd).",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-150",
+    "argomento": "PA digitale",
+    "livello": 2,
+    "testo": "Cos'è la carta nazionale dei servizi (CNS) secondo il CAD?",
+    "opzioni": [
+      "Un abbonamento ai trasporti",
+      "Il documento su supporto informatico per accedere per via telematica ai servizi della PA",
+      "La tessera elettorale",
+      "Una carta di credito della PA"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 1, lett. d).",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-151",
+    "argomento": "PA digitale",
+    "livello": 2,
+    "testo": "Chi ha diritto di usare le soluzioni e gli strumenti del CAD nei rapporti con la PA?",
+    "opzioni": [
+      "Solo le imprese",
+      "Solo i cittadini maggiorenni",
+      "Chiunque",
+      "Solo i dipendenti pubblici"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 3: diritto all'uso delle tecnologie.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 3",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-152",
+    "argomento": "PA digitale",
+    "livello": 3,
+    "testo": "Chi ha l'obbligo di dotarsi di un domicilio digitale secondo il CAD?",
+    "opzioni": [
+      "Solo i dipendenti pubblici",
+      "Tutti i cittadini maggiorenni",
+      "Solo le grandi imprese",
+      "PA, professionisti iscritti in albi ed elenchi e imprese iscritte nel registro delle imprese"
+    ],
+    "corretta": 3,
+    "spiegazione": "Per gli altri è una facoltà.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 3-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-153",
+    "argomento": "PA digitale",
+    "livello": 2,
+    "testo": "Le pubbliche amministrazioni devono accettare pagamenti elettronici?",
+    "opzioni": [
+      "Sì, tramite la piattaforma prevista dal CAD (pagoPA)",
+      "Solo dalle imprese",
+      "Solo per importi superiori a 1.000 euro",
+      "No, solo contanti"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 5 CAD.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 5",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-154",
+    "argomento": "PA digitale",
+    "livello": 3,
+    "testo": "Come si chiama la figura che, presso l'AgID, riceve le segnalazioni di violazioni del CAD da parte delle PA?",
+    "opzioni": [
+      "Responsabile del procedimento",
+      "Difensore civico per il digitale",
+      "Responsabile della transizione digitale",
+      "Garante della privacy"
+    ],
+    "corretta": 1,
+    "spiegazione": "Le segnalazioni si presentano in un'area del sito AgID.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 17",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-155",
+    "argomento": "PA digitale",
+    "livello": 3,
+    "testo": "A chi ciascuna PA affida la transizione alla modalità operativa digitale?",
+    "opzioni": [
+      "Al sindaco",
+      "Al Garante privacy",
+      "A un unico ufficio dirigenziale generale (Responsabile per la transizione digitale)",
+      "A un consulente esterno"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 17 CAD.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 17",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-156",
+    "argomento": "PA digitale",
+    "livello": 2,
+    "testo": "Come formano le PA gli originali dei propri documenti?",
+    "opzioni": [
+      "Solo tramite PEC",
+      "Su carta, con firma autografa",
+      "Indifferentemente",
+      "Con mezzi informatici"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 40 CAD.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 40",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-157",
+    "argomento": "PA digitale",
+    "livello": 3,
+    "testo": "Dove la PA raccoglie atti, documenti e dati di un procedimento?",
+    "opzioni": [
+      "In un fascicolo informatico",
+      "Nel sito istituzionale",
+      "In un registro cartaceo",
+      "Nella casella email del funzionario"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 41 CAD.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 41",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-158",
+    "argomento": "PA digitale",
+    "livello": 3,
+    "testo": "Una copia cartacea di un documento informatico firmato digitalmente ha la stessa efficacia dell'originale se:",
+    "opzioni": [
+      "È firmata a mano da chiunque",
+      "La conformità all'originale è attestata da un pubblico ufficiale autorizzato",
+      "Riporta la data di stampa",
+      "È stampata a colori"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 23 CAD.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 23",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-159",
+    "argomento": "PA digitale",
+    "livello": 3,
+    "testo": "Le istanze presentate per via telematica alla PA sono valide anche quando l'istante è identificato con:",
+    "opzioni": [
+      "Una foto del documento",
+      "Il numero di telefono",
+      "SPID, carta d'identità elettronica o carta nazionale dei servizi",
+      "Un indirizzo email qualsiasi"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 65 CAD.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 65",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-160",
+    "argomento": "PA digitale",
+    "livello": 2,
+    "testo": "Chi ha istituito il sistema SPID secondo il CAD?",
+    "opzioni": [
+      "L'INPS",
+      "La Banca d'Italia",
+      "Il Ministero dell'interno",
+      "L'Agenzia per l'Italia digitale (AgID)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 64, comma 2-bis.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 64",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-161",
+    "argomento": "PA digitale",
+    "livello": 3,
+    "testo": "Presso quale ministero è istituita l'Anagrafe nazionale della popolazione residente (ANPR)?",
+    "opzioni": [
+      "Ministero dell'interno",
+      "Ministero della giustizia",
+      "Presidenza del Consiglio",
+      "Ministero dell'economia"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 62 CAD.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 62",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-162",
+    "argomento": "PA digitale",
+    "livello": 3,
+    "testo": "Tra le soluzioni che la PA deve valutare prima di acquistare software, quale compare espressamente nel CAD?",
+    "opzioni": [
+      "Solo software sviluppato all'estero",
+      "Software libero o a codice sorgente aperto",
+      "Solo software proprietario",
+      "Software pirata"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 68: valutazione comparativa tecnica ed economica.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 68",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-163",
+    "argomento": "PA digitale",
+    "livello": 4,
+    "testo": "Cosa devono fare le PA titolari di programmi realizzati su loro specifiche?",
+    "opzioni": [
+      "Brevettarli",
+      "Distruggerne il codice",
+      "Rendere disponibile il codice sorgente sotto licenza aperta ad altre PA",
+      "Venderli all'estero"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 69: riuso delle soluzioni.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 69",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-164",
+    "argomento": "PA digitale",
+    "livello": 3,
+    "testo": "Chi adotta le Linee guida con le regole tecniche per l'attuazione del CAD?",
+    "opzioni": [
+      "Il Garante privacy",
+      "Il Parlamento",
+      "La Corte dei conti",
+      "L'AgID"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 71 CAD.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 71",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-165",
+    "argomento": "PA digitale",
+    "livello": 3,
+    "testo": "Qual è il nome dell'Indice nazionale dei domicili digitali delle imprese e dei professionisti?",
+    "opzioni": [
+      "INI-PEC",
+      "SPID",
+      "ANPR",
+      "IPA"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 6-bis CAD.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 6-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-166",
+    "argomento": "Privacy",
+    "livello": 3,
+    "testo": "Qual è in Italia l'autorità di controllo prevista dal GDPR?",
+    "opzioni": [
+      "L'ANAC",
+      "Il Garante per la protezione dei dati personali",
+      "L'AgID",
+      "L'AGCOM"
+    ],
+    "corretta": 1,
+    "spiegazione": "Codice privacy, art. 2-bis.",
+    "fonte": "D.Lgs. 196/2003, art. 2-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-167",
+    "argomento": "Privacy",
+    "livello": 4,
+    "testo": "Da quanti componenti è costituito il Collegio del Garante privacy?",
+    "opzioni": [
+      "Sette, eletti dal Parlamento in seduta comune",
+      "Cinque, nominati dal Governo",
+      "Quattro, eletti due dalla Camera e due dal Senato",
+      "Tre, nominati dal Presidente della Repubblica"
+    ],
+    "corretta": 2,
+    "spiegazione": "Codice privacy, art. 153.",
+    "fonte": "D.Lgs. 196/2003, art. 153",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-168",
+    "argomento": "Privacy",
+    "livello": 4,
+    "testo": "Per i minori di quale età il consenso ai servizi della società dell'informazione deve essere prestato da chi esercita la responsabilità genitoriale?",
+    "opzioni": [
+      "Meno di 16 anni",
+      "Meno di 18 anni",
+      "Meno di 12 anni",
+      "Meno di 14 anni"
+    ],
+    "corretta": 3,
+    "spiegazione": "Codice privacy, art. 2-quinquies.",
+    "fonte": "D.Lgs. 196/2003, art. 2-quinquies",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-169",
+    "argomento": "PA digitale",
+    "livello": 3,
+    "testo": "Secondo il CAD, cos'è la «copia per immagine su supporto informatico di documento analogico»?",
+    "opzioni": [
+      "Un documento informatico con contenuto e forma identici a quelli del documento cartaceo da cui è tratto",
+      "Un documento con lo stesso contenuto ma forma diversa",
+      "Una fotografia qualsiasi del documento",
+      "Una stampa del documento informatico"
+    ],
+    "corretta": 0,
+    "spiegazione": "La copia informatica di documento analogico ha invece solo il contenuto identico.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-170",
+    "argomento": "PA digitale",
+    "livello": 3,
+    "testo": "Le copie informatiche di atti originariamente cartacei, rilasciate da pubblici ufficiali nelle forme previste, sostituiscono l'originale?",
+    "opzioni": [
+      "Solo per atti privati",
+      "Sì, la loro esibizione sostituisce quella dell'originale",
+      "No, mai",
+      "Solo se stampate"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 22 CAD.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 22",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-171",
+    "argomento": "Reti",
+    "livello": 3,
+    "testo": "A cosa serve il protocollo ARP?",
+    "opzioni": [
+      "A cifrare i pacchetti",
+      "A tradurre nomi di dominio",
+      "A conoscere l'indirizzo MAC di una destinazione partendo dal suo indirizzo IP",
+      "Ad assegnare indirizzi IP"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il mittente invia una ARP request in broadcast.",
+    "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-172",
+    "argomento": "Reti",
+    "livello": 2,
+    "testo": "Quale protocollo assegna automaticamente a un host l'indirizzo IP e altri parametri di rete?",
+    "opzioni": [
+      "ARP",
+      "FTP",
+      "DNS",
+      "DHCP"
+    ],
+    "corretta": 3,
+    "spiegazione": "Dynamic Host Configuration Protocol.",
+    "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-173",
+    "argomento": "Reti",
+    "livello": 3,
+    "testo": "A cosa serve il NAT (Network Address Translation)?",
+    "opzioni": [
+      "A collegare più host a Internet usando un unico indirizzo IP pubblico",
+      "A risolvere i nomi di dominio",
+      "A bloccare i virus",
+      "A cifrare il traffico"
+    ],
+    "corretta": 0,
+    "spiegazione": "Gli host hanno indirizzi privati; il router ha l'indirizzo pubblico.",
+    "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-174",
+    "argomento": "Reti",
+    "livello": 3,
+    "testo": "Cosa fa un hub con il segnale ricevuto da un nodo?",
+    "opzioni": [
+      "Lo cifra",
+      "Lo replica su tutte le altre interfacce",
+      "Lo scarta",
+      "Lo invia solo al destinatario"
+    ],
+    "corretta": 1,
+    "spiegazione": "Lo switch invece inoltra in base alla destinazione.",
+    "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-175",
+    "argomento": "Reti",
+    "livello": 3,
+    "testo": "Quale caratteristica ha il protocollo UDP?",
+    "opzioni": [
+      "Cifra i dati",
+      "Apre la connessione con il three-way handshake",
+      "È non connesso e privo di controllo di flusso e congestione",
+      "Garantisce la consegna ordinata"
+    ],
+    "corretta": 2,
+    "spiegazione": "Ha basso overhead e ritardi bassi: adatto a streaming e voce.",
+    "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-176",
+    "argomento": "Reti",
+    "livello": 3,
+    "testo": "Con quale procedura il TCP apre una connessione?",
+    "opzioni": [
+      "DHCP discover",
+      "Ping ICMP",
+      "Broadcast ARP",
+      "Three-way handshake (SYN, SYN-ACK, ACK)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Tre messaggi tra client e server.",
+    "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-177",
+    "argomento": "Reti",
+    "livello": 2,
+    "testo": "Come si chiama il router che un host usa per uscire dalla propria rete logica?",
+    "opzioni": [
+      "Default gateway",
+      "Server DNS",
+      "Access point",
+      "Proxy di stampa"
+    ],
+    "corretta": 0,
+    "spiegazione": "La consegna tra reti logiche diverse è affidata al router.",
+    "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-178",
+    "argomento": "Reti",
+    "livello": 2,
+    "testo": "Quale di questi indirizzi IPv4 NON è valido?",
+    "opzioni": [
+      "192.168.1.30",
+      "192.168.1.300",
+      "8.8.8.8",
+      "10.0.0.1"
+    ],
+    "corretta": 1,
+    "spiegazione": "Ogni numero dell'indirizzo è compreso tra 0 e 255.",
+    "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-179",
+    "argomento": "Reti",
+    "livello": 3,
+    "testo": "Quale protocollo fornisce funzioni di controllo e segnalazione degli errori sul livello IP (usato anche dal ping)?",
+    "opzioni": [
+      "DHCP",
+      "SMTP",
+      "ICMP",
+      "HTTP"
+    ],
+    "corretta": 2,
+    "spiegazione": "Internet Control Message Protocol.",
+    "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-180",
+    "argomento": "Reti",
+    "livello": 2,
+    "testo": "Qual è il livello più basso del modello OSI, che trasporta fisicamente i bit?",
+    "opzioni": [
+      "Il livello di trasporto",
+      "Il livello di rete",
+      "Il livello applicazione",
+      "Il livello fisico"
+    ],
+    "corretta": 3,
+    "spiegazione": "Livello 1.",
+    "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-181",
+    "argomento": "Reti",
+    "livello": 2,
+    "testo": "Cosa identifica l'indirizzo MAC?",
+    "opzioni": [
+      "La scheda di rete",
+      "L'utente",
+      "Il sito web",
+      "Il sistema operativo"
+    ],
+    "corretta": 0,
+    "spiegazione": "È un indirizzo di livello 2.",
+    "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-182",
+    "argomento": "Reti",
+    "livello": 4,
+    "testo": "Un indirizzo IP con tutti 0 nel campo host cosa identifica?",
+    "opzioni": [
+      "Il router",
+      "L'intera rete",
+      "Un host qualsiasi",
+      "Il broadcast"
+    ],
+    "corretta": 1,
+    "spiegazione": "Con tutti 1 nel campo host si identifica invece il broadcast.",
+    "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-183",
+    "argomento": "Hardware",
+    "livello": 3,
+    "testo": "Quale registro della CPU contiene l'indirizzo della prossima istruzione da leggere?",
+    "opzioni": [
+      "L'Instruction Register",
+      "Il registro di stato",
+      "Il Program Counter (PC)",
+      "L'accumulatore"
+    ],
+    "corretta": 2,
+    "spiegazione": "Usato nella fase di fetch.",
+    "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-184",
+    "argomento": "Hardware",
+    "livello": 2,
+    "testo": "Che cos'è l'«instruction set» di un processore?",
+    "opzioni": [
+      "La memoria cache",
+      "L'elenco dei programmi installati",
+      "Il manuale d'uso",
+      "L'insieme delle operazioni che il processore è in grado di eseguire"
+    ],
+    "corretta": 3,
+    "spiegazione": "A ogni operazione corrisponde un'istruzione (es. ADD).",
+    "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-185",
+    "argomento": "Hardware",
+    "livello": 3,
+    "testo": "Cosa caratterizza i processori RISC rispetto ai CISC?",
+    "opzioni": [
+      "Completano un'istruzione in un colpo di clock, con un set di istruzioni più semplice",
+      "Hanno istruzioni più complesse e lente",
+      "Funzionano solo in parallelo a un CISC",
+      "Non usano la memoria"
+    ],
+    "corretta": 0,
+    "spiegazione": "I CISC richiedono più colpi di clock per istruzione.",
+    "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-186",
+    "argomento": "Hardware",
+    "livello": 4,
+    "testo": "Quale tecnica usano i processori RISC per eseguire in parallelo le fasi di più istruzioni?",
+    "opzioni": [
+      "Il DMA",
+      "La pipeline",
+      "Il multitasking",
+      "La memoria virtuale"
+    ],
+    "corretta": 1,
+    "spiegazione": "Fasi standard: fetch, decode, operate, write.",
+    "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-187",
+    "argomento": "Hardware",
+    "livello": 3,
+    "testo": "Cosa contengono le celle di una memoria RAM dinamica (DRAM)?",
+    "opzioni": [
+      "Flip-flop",
+      "Dischi magnetici",
+      "Condensatori collegati tramite transistor",
+      "Fusibili"
+    ],
+    "corretta": 2,
+    "spiegazione": "La SRAM usa invece flip-flop.",
+    "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-188",
+    "argomento": "Hardware",
+    "livello": 3,
+    "testo": "Cosa indica un «hit» in una memoria cache?",
+    "opzioni": [
+      "Che il dato va letto dal disco",
+      "Che la cache è piena",
+      "Un errore di lettura",
+      "Che il dato richiesto è stato trovato in cache"
+    ],
+    "corretta": 3,
+    "spiegazione": "In caso di miss si accede alla memoria principale.",
+    "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-189",
+    "argomento": "Hardware",
+    "livello": 2,
+    "testo": "Cosa fa il processore nella fase di «fetch»?",
+    "opzioni": [
+      "Legge dalla memoria la prossima istruzione",
+      "Scrive il risultato su disco",
+      "Esegue l'istruzione",
+      "Spegne le periferiche"
+    ],
+    "corretta": 0,
+    "spiegazione": "Seguono le fasi di decodifica ed esecuzione.",
+    "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-190",
+    "argomento": "Hardware",
+    "livello": 4,
+    "testo": "Con quale rappresentazione i processori come l'8086 eseguono il calcolo binario degli interi con segno?",
+    "opzioni": [
+      "Esadecimale",
+      "Complemento a 2",
+      "Codice Gray",
+      "Virgola mobile"
+    ],
+    "corretta": 1,
+    "spiegazione": "Supporta anche il formato BCD.",
+    "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-191",
+    "argomento": "Sistemi operativi",
+    "livello": 1,
+    "testo": "Qual è il compito principale di un sistema operativo?",
+    "opzioni": [
+      "Navigare in Internet",
+      "Proteggere solo dai virus",
+      "Gestire le risorse hardware e software e fornire servizi ai programmi applicativi",
+      "Scrivere documenti"
+    ],
+    "corretta": 2,
+    "spiegazione": "Esempi: Windows, macOS, Linux.",
+    "fonte": "Wikipedia, «Sistema operativo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-192",
+    "argomento": "Sistemi operativi",
+    "livello": 2,
+    "testo": "Un sistema operativo «monotasking»:",
+    "opzioni": [
+      "Funziona solo in rete",
+      "Esegue più processi in parallelo",
+      "Non ha file system",
+      "Esegue un solo processo alla volta"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il multitasking esegue più compiti con una politica di scheduling.",
+    "fonte": "Wikipedia, «Sistema operativo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-193",
+    "argomento": "Sistemi operativi",
+    "livello": 2,
+    "testo": "Quale celebre sistema operativo a riga di comando di Microsoft era alla base di Windows 95/98?",
+    "opzioni": [
+      "MS-DOS",
+      "OS/2",
+      "Unix",
+      "CP/M"
+    ],
+    "corretta": 0,
+    "spiegazione": "Ne esiste una versione libera, FreeDOS.",
+    "fonte": "Wikipedia, «Sistema operativo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-194",
+    "argomento": "Sistemi operativi",
+    "livello": 2,
+    "testo": "Come si chiama l'interprete di comandi che fa da interfaccia tra utente e sistema operativo?",
+    "opzioni": [
+      "Kernel",
+      "Shell",
+      "BIOS",
+      "Driver"
+    ],
+    "corretta": 1,
+    "spiegazione": "Può interpretare anche un semplice linguaggio di scripting.",
+    "fonte": "Wikipedia, «Sistema operativo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-195",
+    "argomento": "Sistemi operativi",
+    "livello": 4,
+    "testo": "Un kernel che integra al suo interno gestione della memoria, scheduler, file system e driver si dice:",
+    "opzioni": [
+      "Microkernel",
+      "Distribuito",
+      "Monolitico",
+      "Esokernel"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il microkernel delega molte funzioni a moduli esterni.",
+    "fonte": "Wikipedia, «Sistema operativo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-196",
+    "argomento": "Reti",
+    "livello": 2,
+    "testo": "Come si chiama una rete che si estende all'interno di una città?",
+    "opzioni": [
+      "PAN",
+      "LAN",
+      "WAN",
+      "MAN (Metropolitan Area Network)"
+    ],
+    "corretta": 3,
+    "spiegazione": "La LAN è locale, la WAN geografica.",
+    "fonte": "Wikipedia, «Rete informatica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-197",
+    "argomento": "Reti",
+    "livello": 2,
+    "testo": "Come si chiama una rete che copre un'area geografica molto estesa?",
+    "opzioni": [
+      "WAN (Wide Area Network)",
+      "MAN",
+      "LAN",
+      "WLAN"
+    ],
+    "corretta": 0,
+    "spiegazione": "Internet è l'interconnessione globale di reti.",
+    "fonte": "Wikipedia, «Rete informatica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-198",
+    "argomento": "Reti",
+    "livello": 2,
+    "testo": "In un'architettura peer-to-peer:",
+    "opzioni": [
+      "Solo un nodo può trasmettere",
+      "Tutti i dispositivi hanno le stesse capacità e possono inviare e ricevere dati",
+      "Non serve alcuna rete",
+      "Un server centrale serve tutti i client"
+    ],
+    "corretta": 1,
+    "spiegazione": "Si contrappone all'architettura client-server.",
+    "fonte": "Wikipedia, «Rete informatica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-199",
+    "argomento": "Reti",
+    "livello": 3,
+    "testo": "Cosa rappresenta la topologia di una rete?",
+    "opzioni": [
+      "Il costo dei cavi",
+      "La velocità della rete",
+      "Il modello geometrico delle connessioni tra i nodi",
+      "Il numero di utenti connessi"
+    ],
+    "corretta": 2,
+    "spiegazione": "Esempi: a stella, ad anello, a bus, a maglia.",
+    "fonte": "Wikipedia, «Rete informatica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-200",
+    "argomento": "Reti",
+    "livello": 2,
+    "testo": "In un'architettura client-server, chi fornisce il servizio?",
+    "opzioni": [
+      "Il client, su richiesta del server",
+      "Il router",
+      "Tutti i nodi allo stesso modo",
+      "Il server, su richiesta del client"
+    ],
+    "corretta": 3,
+    "spiegazione": "Esempio: browser (client) e server web.",
+    "fonte": "Wikipedia, «Rete informatica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  }
+]

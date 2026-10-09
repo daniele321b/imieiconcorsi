@@ -1,0 +1,3419 @@
+[
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-001",
+    "argomento": "Contratti di lavoro",
+    "livello": 1,
+    "testo": "Qual è, secondo il D.Lgs. 81/2015, la forma comune di rapporto di lavoro?",
+    "opzioni": [
+      "Il contratto di lavoro subordinato a tempo indeterminato",
+      "La collaborazione coordinata e continuativa",
+      "Il contratto a tempo determinato",
+      "Il contratto di somministrazione"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 1 D.Lgs. 81/2015: il contratto di lavoro subordinato a tempo indeterminato costituisce la forma comune di rapporto di lavoro.",
+    "fonte": "D.Lgs. 81/2015, art. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-002",
+    "argomento": "Contratti di lavoro",
+    "livello": 2,
+    "testo": "Senza condizioni particolari, quale durata massima può avere un contratto a tempo determinato?",
+    "opzioni": [
+      "6 mesi",
+      "12 mesi",
+      "24 mesi",
+      "36 mesi"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 19 D.Lgs. 81/2015: il termine non può superare dodici mesi; fino a ventiquattro solo in presenza delle condizioni previste.",
+    "fonte": "D.Lgs. 81/2015, art. 19",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-003",
+    "argomento": "Contratti di lavoro",
+    "livello": 3,
+    "testo": "Fino a quale durata massima può arrivare un contratto a termine in presenza delle condizioni previste dalla legge?",
+    "opzioni": [
+      "48 mesi",
+      "36 mesi",
+      "24 mesi",
+      "18 mesi"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 19 D.Lgs. 81/2015: oltre i dodici mesi, ma comunque non oltre i ventiquattro, solo con le condizioni indicate (es. casi previsti dai contratti collettivi).",
+    "fonte": "D.Lgs. 81/2015, art. 19",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-004",
+    "argomento": "Contratti di lavoro",
+    "livello": 3,
+    "testo": "Il rifiuto di un lavoratore part-time di concordare variazioni dell'orario di lavoro giustifica il licenziamento?",
+    "opzioni": [
+      "Solo nei primi sei mesi",
+      "Sì, sempre",
+      "Sì, se il contratto collettivo lo prevede",
+      "No, non costituisce giustificato motivo di licenziamento"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 6 D.Lgs. 81/2015: il rifiuto del lavoratore di concordare variazioni dell'orario non costituisce giustificato motivo di licenziamento.",
+    "fonte": "D.Lgs. 81/2015, art. 6",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-005",
+    "argomento": "Diritti sindacali",
+    "livello": 1,
+    "testo": "Secondo lo Statuto dei lavoratori, a chi è garantito il diritto di costituire associazioni sindacali e di svolgere attività sindacale nei luoghi di lavoro?",
+    "opzioni": [
+      "A tutti i lavoratori",
+      "Solo nelle aziende con più di 15 dipendenti",
+      "Solo ai rappresentanti sindacali",
+      "Solo ai lavoratori a tempo indeterminato"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 14 L. 300/1970: il diritto è garantito a tutti i lavoratori all'interno dei luoghi di lavoro.",
+    "fonte": "L. 300/1970, art. 14",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-006",
+    "argomento": "Diritti sindacali",
+    "livello": 2,
+    "testo": "Quante ore annue retribuite di assemblea durante l'orario di lavoro garantisce lo Statuto dei lavoratori?",
+    "opzioni": [
+      "5 ore",
+      "10 ore",
+      "20 ore",
+      "12 ore"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 20 L. 300/1970: assemblee durante l'orario di lavoro nei limiti di dieci ore annue retribuite; i contratti collettivi possono migliorare.",
+    "fonte": "L. 300/1970, art. 20",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-007",
+    "argomento": "Diritti sindacali",
+    "livello": 3,
+    "testo": "Quale strumento offre l'art. 28 dello Statuto contro il datore di lavoro che impedisce o limita l'attività sindacale?",
+    "opzioni": [
+      "La denuncia all'Ispettorato del lavoro, unica via possibile",
+      "L'arbitrato obbligatorio",
+      "Il ricorso per la repressione della condotta antisindacale",
+      "Il ricorso al TAR"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 28 L. 300/1970: procedimento di repressione della condotta antisindacale davanti al giudice del lavoro.",
+    "fonte": "L. 300/1970, art. 28",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-008",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 2,
+    "testo": "Quale di queste attività il datore di lavoro NON può delegare, secondo il D.Lgs. 81/2008?",
+    "opzioni": [
+      "La gestione delle emergenze",
+      "La sorveglianza sanitaria",
+      "La formazione dei lavoratori",
+      "La valutazione di tutti i rischi e l'elaborazione del relativo documento"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 17 D.Lgs. 81/2008: sono indelegabili la valutazione dei rischi con il DVR (art. 28) e la designazione del responsabile del servizio di prevenzione e protezione.",
+    "fonte": "D.Lgs. 81/2008, art. 17",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-009",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 2,
+    "testo": "Oltre alla valutazione dei rischi, quale altra attività è indelegabile per il datore di lavoro?",
+    "opzioni": [
+      "La designazione del responsabile del servizio di prevenzione e protezione (RSPP)",
+      "La tenuta del registro infortuni",
+      "L'acquisto dei dispositivi di protezione",
+      "La nomina del medico competente"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 17 D.Lgs. 81/2008: le due attività non delegabili sono il DVR e la designazione dell'RSPP.",
+    "fonte": "D.Lgs. 81/2008, art. 17",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-010",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 2,
+    "testo": "Chi è il rappresentante dei lavoratori per la sicurezza (RLS)?",
+    "opzioni": [
+      "Il dirigente responsabile della sicurezza",
+      "Una persona eletta o designata per rappresentare i lavoratori sugli aspetti di salute e sicurezza",
+      "Un ispettore del lavoro",
+      "Un medico nominato dall'ASL"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 2 D.Lgs. 81/2008: l'RLS è eletto o designato per rappresentare i lavoratori per la salute e la sicurezza.",
+    "fonte": "D.Lgs. 81/2008, art. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-011",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 3,
+    "testo": "Qual è la prima misura generale di tutela della salute e sicurezza elencata dal D.Lgs. 81/2008?",
+    "opzioni": [
+      "L'acquisto dei dispositivi di protezione individuale",
+      "L'informazione ai lavoratori",
+      "La valutazione di tutti i rischi per la salute e sicurezza",
+      "La sorveglianza sanitaria"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 15 D.Lgs. 81/2008: la prima misura generale di tutela è la valutazione di tutti i rischi.",
+    "fonte": "D.Lgs. 81/2008, art. 15",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-012",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 3,
+    "testo": "Chi è il «medico competente» secondo il D.Lgs. 81/2008?",
+    "opzioni": [
+      "Qualsiasi medico scelto dal lavoratore",
+      "Il medico dell'ASL che effettua le ispezioni",
+      "Il medico di base del lavoratore",
+      "Un medico con i titoli previsti che collabora con il datore di lavoro alla valutazione dei rischi e alla sorveglianza sanitaria"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 2 D.Lgs. 81/2008: il medico competente ha titoli e requisiti specifici (art. 38) e collabora con il datore di lavoro.",
+    "fonte": "D.Lgs. 81/2008, art. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-013",
+    "argomento": "Contratti di lavoro",
+    "livello": 5,
+    "testo": "Un'azienda propone a un neoassunto un contratto a termine di 18 mesi senza alcuna delle condizioni previste dalla legge. Cosa succede?",
+    "opzioni": [
+      "Il termine oltre i 12 mesi non è legittimo: senza le condizioni previste il limite è 12 mesi",
+      "È valido se il lavoratore firma per accettazione",
+      "È valido, perché il limite generale è 24 mesi",
+      "Il contratto è nullo e il lavoratore non ha diritto a nulla"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 19 D.Lgs. 81/2015: oltre i dodici mesi servono le condizioni indicate dalla legge; altrimenti il superamento del limite non è consentito.",
+    "fonte": "D.Lgs. 81/2015, art. 19",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-014",
+    "argomento": "Statuto dei lavoratori",
+    "livello": 1,
+    "testo": "Quale diritto riconosce l'art. 1 dello Statuto dei lavoratori?",
+    "opzioni": [
+      "Il diritto alle ferie",
+      "La libertà di manifestare il proprio pensiero nei luoghi di lavoro",
+      "Il diritto allo sciopero",
+      "Il diritto alla pensione"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 1: senza distinzione di opinioni politiche, sindacali e di fede religiosa.",
+    "fonte": "L. 300/1970, art. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-015",
+    "argomento": "Statuto dei lavoratori",
+    "livello": 2,
+    "testo": "Per quali scopi il datore di lavoro può impiegare guardie particolari giurate?",
+    "opzioni": [
+      "Per verificare le assenze per malattia",
+      "Per controllare la produttività dei dipendenti",
+      "Solo per la tutela del patrimonio aziendale",
+      "Per qualsiasi scopo"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 2: non possono vigilare sull'attività lavorativa.",
+    "fonte": "L. 300/1970, art. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-016",
+    "argomento": "Statuto dei lavoratori",
+    "livello": 3,
+    "testo": "Per quali esigenze possono essere installati impianti da cui derivi un possibile controllo a distanza dei lavoratori?",
+    "opzioni": [
+      "Mai",
+      "Per misurare la produttività individuale in ogni caso",
+      "Per qualsiasi motivo, se il datore lo comunica",
+      "Esigenze organizzative e produttive, sicurezza del lavoro e tutela del patrimonio aziendale"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 4, c. 1: serve un accordo sindacale o, in mancanza, l'autorizzazione dell'Ispettorato.",
+    "fonte": "L. 300/1970, art. 4",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-017",
+    "argomento": "Statuto dei lavoratori",
+    "livello": 4,
+    "testo": "In mancanza di accordo sindacale, chi autorizza l'installazione di strumenti di controllo a distanza?",
+    "opzioni": [
+      "L'Ispettorato nazionale del lavoro",
+      "Il Garante privacy",
+      "Il sindaco",
+      "Il prefetto"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 4, c. 1.",
+    "fonte": "L. 300/1970, art. 4",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-018",
+    "argomento": "Statuto dei lavoratori",
+    "livello": 4,
+    "testo": "La disciplina sui controlli a distanza si applica agli strumenti usati dal lavoratore per rendere la prestazione (es. PC aziendale)?",
+    "opzioni": [
+      "Solo nel settore pubblico",
+      "No, non si applica a tali strumenti né a quelli di registrazione delle presenze",
+      "Sì, sempre",
+      "Solo per i dirigenti"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 4, c. 2; le informazioni sono utilizzabili se il lavoratore è adeguatamente informato.",
+    "fonte": "L. 300/1970, art. 4",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-019",
+    "argomento": "Statuto dei lavoratori",
+    "livello": 3,
+    "testo": "Chi può controllare le assenze per malattia del lavoratore?",
+    "opzioni": [
+      "I colleghi del reparto",
+      "Il datore di lavoro direttamente",
+      "Solo i servizi ispettivi degli istituti previdenziali competenti",
+      "Un medico scelto dal datore"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 5: sono vietati gli accertamenti sanitari diretti del datore.",
+    "fonte": "L. 300/1970, art. 5",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-020",
+    "argomento": "Statuto dei lavoratori",
+    "livello": 4,
+    "testo": "Quando sono ammesse le visite personali di controllo sul lavoratore?",
+    "opzioni": [
+      "Sempre, a discrezione del datore",
+      "Mai",
+      "Solo su richiesta della polizia",
+      "Solo se indispensabili per tutelare il patrimonio aziendale, all'uscita, con selezione automatica e nel rispetto della dignità"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 6 L. 300/1970.",
+    "fonte": "L. 300/1970, art. 6",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-021",
+    "argomento": "Sanzioni disciplinari",
+    "livello": 2,
+    "testo": "Cosa deve fare il datore di lavoro prima di adottare un provvedimento disciplinare?",
+    "opzioni": [
+      "Contestare preventivamente l'addebito e sentire il lavoratore a sua difesa",
+      "Chiedere il permesso al sindacato",
+      "Nulla, può sanzionare subito",
+      "Informare il prefetto"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 7, c. 2 L. 300/1970.",
+    "fonte": "L. 300/1970, art. 7",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-022",
+    "argomento": "Sanzioni disciplinari",
+    "livello": 3,
+    "testo": "Qual è l'importo massimo della multa disciplinare secondo lo Statuto?",
+    "opzioni": [
+      "Una giornata",
+      "Quattro ore della retribuzione base",
+      "Un mese di stipendio",
+      "Dieci ore"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 7, c. 4; la sospensione non può superare dieci giorni.",
+    "fonte": "L. 300/1970, art. 7",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-023",
+    "argomento": "Sanzioni disciplinari",
+    "livello": 3,
+    "testo": "Per quanti giorni al massimo può essere disposta la sospensione dal servizio e dalla retribuzione?",
+    "opzioni": [
+      "Cinque giorni",
+      "Trenta giorni",
+      "Dieci giorni",
+      "Tre mesi"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 7, c. 4.",
+    "fonte": "L. 300/1970, art. 7",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-024",
+    "argomento": "Sanzioni disciplinari",
+    "livello": 3,
+    "testo": "Quanto tempo deve passare dalla contestazione scritta prima di applicare una sanzione più grave del rimprovero verbale?",
+    "opzioni": [
+      "Un giorno",
+      "Trenta giorni",
+      "Due mesi",
+      "Cinque giorni"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 7, c. 5.",
+    "fonte": "L. 300/1970, art. 7",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-025",
+    "argomento": "Sanzioni disciplinari",
+    "livello": 4,
+    "testo": "Dopo quanto tempo non si può più tenere conto di una sanzione disciplinare?",
+    "opzioni": [
+      "Decorsi due anni dalla sua applicazione",
+      "Dopo cinque anni",
+      "Dopo sei mesi",
+      "Mai, resta per sempre"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 7, ultimo comma.",
+    "fonte": "L. 300/1970, art. 7",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-026",
+    "argomento": "Statuto dei lavoratori",
+    "livello": 2,
+    "testo": "Il datore di lavoro può indagare sulle opinioni politiche o religiose di un candidato all'assunzione?",
+    "opzioni": [
+      "Sì, tramite terzi",
+      "No, è vietato",
+      "Solo per i dirigenti",
+      "Sì, se il candidato acconsente"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 8 L. 300/1970.",
+    "fonte": "L. 300/1970, art. 8",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-027",
+    "argomento": "Statuto dei lavoratori",
+    "livello": 2,
+    "testo": "Quale diritto hanno i lavoratori studenti che devono sostenere esami?",
+    "opzioni": [
+      "Un mese di ferie aggiuntivo",
+      "Nessuno",
+      "Permessi giornalieri retribuiti",
+      "Il pagamento delle tasse universitarie"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 10: hanno anche diritto a turni che agevolino la frequenza e non sono obbligati agli straordinari.",
+    "fonte": "L. 300/1970, art. 10",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-028",
+    "argomento": "Diritti sindacali",
+    "livello": 3,
+    "testo": "Quali atti sono nulli secondo l'art. 15 dello Statuto?",
+    "opzioni": [
+      "Gli accordi di straordinario",
+      "I trasferimenti motivati da esigenze tecniche",
+      "I contratti part-time",
+      "Patti o atti che discriminano il lavoratore per la sua attività sindacale o per motivi politici, religiosi, razziali, di sesso e altri"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 15 (atti discriminatori).",
+    "fonte": "L. 300/1970, art. 15",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-029",
+    "argomento": "Diritti sindacali",
+    "livello": 3,
+    "testo": "Come si chiamano i sindacati costituiti o sostenuti dal datore di lavoro, vietati dall'art. 17?",
+    "opzioni": [
+      "Sindacati di comodo",
+      "Sindacati confederali",
+      "Sindacati autonomi",
+      "Rappresentanze unitarie"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 17 L. 300/1970.",
+    "fonte": "L. 300/1970, art. 17",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-030",
+    "argomento": "Licenziamento",
+    "livello": 3,
+    "testo": "In caso di licenziamento discriminatorio dichiarato nullo, cosa ordina il giudice ai sensi dell'art. 18?",
+    "opzioni": [
+      "Solo un'indennità di due mensilità",
+      "La reintegrazione nel posto di lavoro, qualunque sia il numero dei dipendenti",
+      "Il trasferimento in altra sede",
+      "Nulla, il licenziamento resta valido"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 18, c. 1 (tutela reale piena).",
+    "fonte": "L. 300/1970, art. 18",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-031",
+    "argomento": "Licenziamento",
+    "livello": 4,
+    "testo": "Qual è la misura minima del risarcimento in caso di licenziamento nullo ex art. 18, c. 1-2?",
+    "opzioni": [
+      "Una mensilità",
+      "Nessun minimo",
+      "Cinque mensilità della retribuzione globale di fatto",
+      "Ventiquattro mensilità"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 18, c. 2.",
+    "fonte": "L. 300/1970, art. 18",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-032",
+    "argomento": "Licenziamento",
+    "livello": 4,
+    "testo": "In sostituzione della reintegrazione, quale indennità può chiedere il lavoratore?",
+    "opzioni": [
+      "Trenta mensilità",
+      "Sei mensilità",
+      "Un anno di contributi",
+      "Quindici mensilità dell'ultima retribuzione globale di fatto"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 18, c. 3: la richiesta va fatta entro trenta giorni e risolve il rapporto.",
+    "fonte": "L. 300/1970, art. 18",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-033",
+    "argomento": "Licenziamento",
+    "livello": 5,
+    "testo": "Nelle «altre ipotesi» di mancanza di giusta causa o giustificato motivo soggettivo, quale indennità prevede l'art. 18, c. 5?",
+    "opzioni": [
+      "Tra dodici e ventiquattro mensilità",
+      "Sempre la reintegrazione",
+      "Tra trenta e quaranta mensilità",
+      "Tra due e sei mensilità"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 18, c. 5 (tutela indennitaria forte), nel testo successivo alla L. 92/2012.",
+    "fonte": "L. 300/1970, art. 18",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-034",
+    "argomento": "Licenziamento",
+    "livello": 5,
+    "testo": "A quali datori di lavoro si applicano, di regola, i commi 4-7 dell'art. 18?",
+    "opzioni": [
+      "Solo alle imprese con più di mille dipendenti",
+      "A chi occupa più di quindici dipendenti nell'unità produttiva o nel comune, o più di sessanta in totale",
+      "Solo alle pubbliche amministrazioni",
+      "A tutti i datori, anche con un solo dipendente"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 18, c. 8 (per l'imprenditore agricolo la soglia è cinque).",
+    "fonte": "L. 300/1970, art. 18",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-035",
+    "argomento": "Licenziamento",
+    "livello": 4,
+    "testo": "Se il datore revoca il licenziamento entro quindici giorni dall'impugnazione, cosa accade?",
+    "opzioni": [
+      "Il lavoratore perde l'anzianità",
+      "Il lavoratore deve essere riassunto con nuovo contratto",
+      "Il rapporto si intende ripristinato senza soluzione di continuità",
+      "Il datore paga comunque 24 mensilità"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 18, c. 10.",
+    "fonte": "L. 300/1970, art. 18",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-036",
+    "argomento": "Diritti sindacali",
+    "livello": 3,
+    "testo": "Nell'ambito di quali associazioni possono essere costituite le rappresentanze sindacali aziendali (RSA), secondo il testo dell'art. 19?",
+    "opzioni": [
+      "Solo delle confederazioni con un milione di iscritti",
+      "Di qualsiasi associazione, anche non sindacale",
+      "Solo dei sindacati dei dirigenti",
+      "Delle associazioni firmatarie di contratti collettivi applicati nell'unità produttiva"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 19, come risultante dal referendum del 1995; la Corte costituzionale (sent. 231/2013 e 156/2025) ha esteso la possibilità ad altre associazioni.",
+    "fonte": "L. 300/1970, art. 19",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-037",
+    "argomento": "Diritti sindacali",
+    "livello": 3,
+    "testo": "Chi indice le assemblee dei lavoratori nell'unità produttiva?",
+    "opzioni": [
+      "Le rappresentanze sindacali aziendali",
+      "Il medico competente",
+      "Il prefetto",
+      "Il datore di lavoro"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 20, c. 2.",
+    "fonte": "L. 300/1970, art. 20",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-038",
+    "argomento": "Diritti sindacali",
+    "livello": 3,
+    "testo": "Quando si svolgono i referendum sindacali in azienda (art. 21)?",
+    "opzioni": [
+      "Solo con il consenso del datore",
+      "Fuori dell'orario di lavoro",
+      "Solo di domenica",
+      "Durante l'orario di lavoro, retribuiti"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 21 L. 300/1970.",
+    "fonte": "L. 300/1970, art. 21",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-039",
+    "argomento": "Diritti sindacali",
+    "livello": 4,
+    "testo": "Il trasferimento di un dirigente RSA dall'unità produttiva richiede:",
+    "opzioni": [
+      "Solo una comunicazione scritta",
+      "Il voto dei colleghi",
+      "Il previo nulla osta dell'associazione sindacale di appartenenza",
+      "L'autorizzazione del prefetto"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 22 L. 300/1970.",
+    "fonte": "L. 300/1970, art. 22",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-040",
+    "argomento": "Diritti sindacali",
+    "livello": 4,
+    "testo": "Quanti giorni annui minimi di permessi non retribuiti spettano ai dirigenti sindacali aziendali per trattative e congressi?",
+    "opzioni": [
+      "Nessuno",
+      "Trenta giorni",
+      "Due giorni",
+      "Otto giorni"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 24 L. 300/1970.",
+    "fonte": "L. 300/1970, art. 24",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-041",
+    "argomento": "Diritti sindacali",
+    "livello": 3,
+    "testo": "In quali unità produttive il datore deve mettere permanentemente a disposizione delle RSA un locale?",
+    "opzioni": [
+      "In quelle con almeno 200 dipendenti",
+      "In quelle con almeno 1.000 dipendenti",
+      "In quelle con almeno 15 dipendenti",
+      "In tutte"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 27: nelle unità più piccole le RSA possono usare un locale su richiesta.",
+    "fonte": "L. 300/1970, art. 27",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-042",
+    "argomento": "Diritti sindacali",
+    "livello": 2,
+    "testo": "Cosa garantisce l'art. 25 dello Statuto alle RSA?",
+    "opzioni": [
+      "Il diritto di nominare i dirigenti",
+      "Il diritto di affissione di comunicati sindacali in appositi spazi",
+      "Il diritto di gestire le buste paga",
+      "Il diritto di firmare i contratti individuali"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 25 L. 300/1970.",
+    "fonte": "L. 300/1970, art. 25",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-043",
+    "argomento": "Diritti sindacali",
+    "livello": 4,
+    "testo": "Entro quanti giorni il giudice decide sul ricorso per condotta antisindacale (art. 28)?",
+    "opzioni": [
+      "Entro un anno",
+      "Entro trenta giorni",
+      "Nei due giorni successivi, sentite le parti",
+      "Entro sei mesi"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 28: il decreto motivato è immediatamente esecutivo.",
+    "fonte": "L. 300/1970, art. 28",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-044",
+    "argomento": "Statuto dei lavoratori",
+    "livello": 3,
+    "testo": "Il lavoratore eletto al Parlamento può essere collocato in aspettativa?",
+    "opzioni": [
+      "Sì, con stipendio pieno",
+      "No, deve dimettersi",
+      "Solo per un anno",
+      "Sì, aspettativa non retribuita per tutta la durata del mandato, su richiesta"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 31 L. 300/1970, applicabile anche ai dipendenti pubblici.",
+    "fonte": "L. 300/1970, art. 31",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-045",
+    "argomento": "Statuto dei lavoratori",
+    "livello": 3,
+    "testo": "Chi gestisce le attività culturali, ricreative e assistenziali promosse in azienda?",
+    "opzioni": [
+      "Organismi formati a maggioranza da rappresentanti dei lavoratori",
+      "Il comune",
+      "Solo il datore di lavoro",
+      "L'INPS"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 11 L. 300/1970.",
+    "fonte": "L. 300/1970, art. 11",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-046",
+    "argomento": "Contratti di lavoro",
+    "livello": 4,
+    "testo": "A quali collaborazioni si applica la disciplina del lavoro subordinato secondo l'art. 2 del D.Lgs. 81/2015?",
+    "opzioni": [
+      "Solo ai contratti di appalto",
+      "A quelle prevalentemente personali, continuative e organizzate dal committente, anche tramite piattaforme digitali",
+      "A nessuna collaborazione",
+      "A tutte le partite IVA"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 2, c. 1 (collaborazioni etero-organizzate).",
+    "fonte": "D.Lgs. 81/2015, art. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-047",
+    "argomento": "Mansioni",
+    "livello": 4,
+    "testo": "Secondo l'art. 2103 c.c., come riscritto dal D.Lgs. 81/2015, a quali mansioni può essere adibito il lavoratore?",
+    "opzioni": [
+      "Solo a mansioni superiori",
+      "A qualsiasi mansione, anche inferiore, senza limiti",
+      "A quelle di assunzione, a quelle dell'inquadramento superiore acquisito o a mansioni dello stesso livello e categoria legale",
+      "Solo a quelle indicate nel contratto iniziale"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 3 D.Lgs. 81/2015, che ha sostituito l'art. 2103 c.c.",
+    "fonte": "D.Lgs. 81/2015, art. 3",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-048",
+    "argomento": "Part-time",
+    "livello": 2,
+    "testo": "In quale forma va stipulato il contratto di lavoro a tempo parziale?",
+    "opzioni": [
+      "Con autorizzazione del sindacato",
+      "Anche oralmente, senza prova",
+      "Per atto notarile",
+      "Per iscritto, ai fini della prova"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 5, c. 1.",
+    "fonte": "D.Lgs. 81/2015, art. 5",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-049",
+    "argomento": "Part-time",
+    "livello": 3,
+    "testo": "Cosa deve indicare il contratto part-time?",
+    "opzioni": [
+      "La durata della prestazione e la collocazione temporale dell'orario (giorno, settimana, mese, anno)",
+      "Solo la retribuzione annua",
+      "Solo il nome del responsabile",
+      "Il numero di ferie"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 5, c. 2.",
+    "fonte": "D.Lgs. 81/2015, art. 5",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-050",
+    "argomento": "Part-time",
+    "livello": 3,
+    "testo": "Come si chiamano le prestazioni svolte dal lavoratore part-time oltre l'orario concordato ma entro l'orario normale?",
+    "opzioni": [
+      "Lavoro accessorio",
+      "Lavoro supplementare",
+      "Lavoro straordinario",
+      "Lavoro intermittente"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 6, c. 1.",
+    "fonte": "D.Lgs. 81/2015, art. 6",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-051",
+    "argomento": "Part-time",
+    "livello": 3,
+    "testo": "Il rifiuto del lavoratore di trasformare il rapporto da tempo pieno a part-time costituisce giustificato motivo di licenziamento?",
+    "opzioni": [
+      "Solo nelle aziende con più di 15 dipendenti",
+      "Solo nel settore pubblico",
+      "No",
+      "Sì, sempre"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 8, c. 1.",
+    "fonte": "D.Lgs. 81/2015, art. 8",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-052",
+    "argomento": "Part-time",
+    "livello": 4,
+    "testo": "Quali lavoratori hanno diritto alla trasformazione del rapporto in part-time ai sensi dell'art. 8, c. 3?",
+    "opzioni": [
+      "Solo i dirigenti",
+      "Tutti i lavoratori over 50",
+      "Solo i neoassunti",
+      "Quelli affetti da patologie oncologiche o gravi patologie cronico-degenerative ingravescenti"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 8, c. 3: vale sia nel settore pubblico sia privato.",
+    "fonte": "D.Lgs. 81/2015, art. 8",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-053",
+    "argomento": "Lavoro intermittente",
+    "livello": 3,
+    "testo": "Che cos'è il contratto di lavoro intermittente?",
+    "opzioni": [
+      "Il contratto con cui il lavoratore si mette a disposizione di un datore che ne usa la prestazione in modo discontinuo",
+      "Un tirocinio formativo",
+      "Un contratto di appalto",
+      "Un contratto di lavoro autonomo occasionale"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 13, c. 1.",
+    "fonte": "D.Lgs. 81/2015, art. 13",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-054",
+    "argomento": "Lavoro intermittente",
+    "livello": 3,
+    "testo": "È ammesso il lavoro intermittente per sostituire lavoratori in sciopero?",
+    "opzioni": [
+      "Sì, sempre",
+      "No, è vietato",
+      "Solo nel settore pubblico",
+      "Solo per un giorno"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 14, c. 1, lett. a).",
+    "fonte": "D.Lgs. 81/2015, art. 14",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-055",
+    "argomento": "Contratti a termine",
+    "livello": 3,
+    "testo": "Come possono essere prorogati e rinnovati i contratti a termine nei primi dodici mesi?",
+    "opzioni": [
+      "Mai",
+      "Solo con autorizzazione dell'Ispettorato",
+      "Liberamente; dopo i dodici mesi solo in presenza delle condizioni dell'art. 19",
+      "Solo con il consenso del sindacato"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 21, c. 01; in caso di violazione il contratto si trasforma a tempo indeterminato.",
+    "fonte": "D.Lgs. 81/2015, art. 21",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-056",
+    "argomento": "Contratti a termine",
+    "livello": 4,
+    "testo": "Qual è il limite legale (salvo diversa previsione dei contratti collettivi) dei contratti a termine rispetto ai lavoratori a tempo indeterminato?",
+    "opzioni": [
+      "Il 10 per cento",
+      "Il 50 per cento",
+      "Nessun limite",
+      "Il 20 per cento"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 23, c. 1.",
+    "fonte": "D.Lgs. 81/2015, art. 23",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-057",
+    "argomento": "Contratti a termine",
+    "livello": 4,
+    "testo": "Dopo quanti mesi di lavoro a termine nella stessa azienda matura il diritto di precedenza nelle assunzioni a tempo indeterminato?",
+    "opzioni": [
+      "Più di sei mesi (diritto valido nei dodici mesi successivi)",
+      "Un mese",
+      "Tre anni",
+      "Due anni"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 24, c. 1.",
+    "fonte": "D.Lgs. 81/2015, art. 24",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-058",
+    "argomento": "Contratti a termine",
+    "livello": 4,
+    "testo": "Entro quanto va impugnato un contratto a tempo determinato?",
+    "opzioni": [
+      "Entro sessanta giorni dall'assunzione",
+      "Entro centottanta giorni dalla cessazione del singolo contratto",
+      "Entro dieci giorni",
+      "Entro cinque anni"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 28, c. 1.",
+    "fonte": "D.Lgs. 81/2015, art. 28",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-059",
+    "argomento": "Somministrazione",
+    "livello": 3,
+    "testo": "Nel contratto di somministrazione, sotto la direzione di chi lavora il lavoratore durante la missione?",
+    "opzioni": [
+      "Del centro per l'impiego",
+      "Dell'agenzia di somministrazione",
+      "Dell'utilizzatore, pur essendo dipendente dell'agenzia",
+      "Di nessuno"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 30 D.Lgs. 81/2015.",
+    "fonte": "D.Lgs. 81/2015, art. 30",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-060",
+    "argomento": "Somministrazione",
+    "livello": 4,
+    "testo": "Salvo diversa previsione dei contratti collettivi, qual è il limite dei somministrati a tempo indeterminato presso l'utilizzatore?",
+    "opzioni": [
+      "Nessun limite",
+      "Il 50 per cento",
+      "Il 5 per cento",
+      "Il 20 per cento dei lavoratori a tempo indeterminato"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 31, c. 1.",
+    "fonte": "D.Lgs. 81/2015, art. 31",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-061",
+    "argomento": "Apprendistato",
+    "livello": 2,
+    "testo": "Che tipo di contratto è l'apprendistato?",
+    "opzioni": [
+      "Un contratto di lavoro a tempo indeterminato finalizzato alla formazione e all'occupazione dei giovani",
+      "Un tirocinio non retribuito",
+      "Un contratto a termine di sei mesi",
+      "Una borsa di studio"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 41, c. 1.",
+    "fonte": "D.Lgs. 81/2015, art. 41",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-062",
+    "argomento": "Apprendistato",
+    "livello": 3,
+    "testo": "Quale di queste NON è una tipologia di apprendistato prevista dal D.Lgs. 81/2015?",
+    "opzioni": [
+      "Apprendistato di alta formazione e ricerca",
+      "Apprendistato di reinserimento per pensionati",
+      "Apprendistato per la qualifica e il diploma professionale",
+      "Apprendistato professionalizzante"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 41, c. 2.",
+    "fonte": "D.Lgs. 81/2015, art. 41",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-063",
+    "argomento": "Apprendistato",
+    "livello": 3,
+    "testo": "Quale documento deve contenere, in forma sintetica, il contratto di apprendistato?",
+    "opzioni": [
+      "Il DVR",
+      "Il curriculum del datore",
+      "Il piano formativo individuale",
+      "Il codice disciplinare"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 42, c. 1: il contratto è in forma scritta ai fini della prova.",
+    "fonte": "D.Lgs. 81/2015, art. 42",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-064",
+    "argomento": "Apprendistato",
+    "livello": 3,
+    "testo": "Qual è l'età per l'apprendistato professionalizzante?",
+    "opzioni": [
+      "Tra i 30 e i 40 anni",
+      "Nessun limite",
+      "Tra i 14 e i 16 anni",
+      "Tra i 18 e i 29 anni"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 44, c. 1 (dai 17 anni con qualifica professionale).",
+    "fonte": "D.Lgs. 81/2015, art. 44",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-065",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 2,
+    "testo": "Chi è «lavoratore» ai fini del D.Lgs. 81/2008?",
+    "opzioni": [
+      "Chi svolge un'attività nell'organizzazione di un datore pubblico o privato, indipendentemente dal contratto, anche senza retribuzione",
+      "Solo chi ha un contratto a tempo indeterminato",
+      "Solo il dipendente privato",
+      "Solo chi lavora più di 20 ore a settimana"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 2, c. 1, lett. a); sono esclusi gli addetti ai servizi domestici e familiari.",
+    "fonte": "D.Lgs. 81/2008, art. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-066",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 3,
+    "testo": "Chi è il «preposto» secondo il D.Lgs. 81/2008?",
+    "opzioni": [
+      "Il rappresentante sindacale",
+      "Chi sovrintende all'attività lavorativa e garantisce l'attuazione delle direttive, controllandone la corretta esecuzione",
+      "Il datore di lavoro",
+      "Il medico competente"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 2, c. 1, lett. e).",
+    "fonte": "D.Lgs. 81/2008, art. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-067",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 3,
+    "testo": "Come definisce il D.Lgs. 81/2008 il «dirigente»?",
+    "opzioni": [
+      "Chi certifica i DPI",
+      "Chi effettua la sorveglianza sanitaria",
+      "Chi attua le direttive del datore di lavoro organizzando l'attività lavorativa e vigilando su di essa",
+      "Chi elegge il RLS"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 2, c. 1, lett. d).",
+    "fonte": "D.Lgs. 81/2008, art. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-068",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 3,
+    "testo": "Qual è la differenza tra «pericolo» e «rischio»?",
+    "opzioni": [
+      "Sono sinonimi",
+      "Il rischio è sempre più grave del pericolo",
+      "Il pericolo riguarda solo gli incendi",
+      "Il pericolo è la proprietà intrinseca di un fattore di causare danni; il rischio è la probabilità che il danno si verifichi"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 2, c. 1, lett. r) e s).",
+    "fonte": "D.Lgs. 81/2008, art. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-069",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 3,
+    "testo": "Da chi è designato e a chi risponde il responsabile del servizio di prevenzione e protezione (RSPP)?",
+    "opzioni": [
+      "È designato dal datore di lavoro, a cui risponde",
+      "È scelto dal sindacato",
+      "È nominato dall'ASL",
+      "È eletto dai lavoratori"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 2, c. 1, lett. f); la sua designazione è indelegabile (art. 17).",
+    "fonte": "D.Lgs. 81/2008, art. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-070",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 2,
+    "testo": "Cosa distingue l'«addestramento» dalla «formazione» nel D.Lgs. 81/2008?",
+    "opzioni": [
+      "Non c'è differenza",
+      "L'addestramento insegna l'uso corretto di attrezzature, macchine, dispositivi e procedure",
+      "L'addestramento è solo teorico",
+      "L'addestramento riguarda solo i dirigenti"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 2, c. 1, lett. aa)-cc).",
+    "fonte": "D.Lgs. 81/2008, art. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-071",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 3,
+    "testo": "Come definisce la «salute» il D.Lgs. 81/2008?",
+    "opzioni": [
+      "Assenza di malattie croniche",
+      "Assenza di infortuni nell'ultimo anno",
+      "Stato di completo benessere fisico, mentale e sociale, non solo assenza di malattia",
+      "Idoneità alla mansione certificata"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 2, c. 1, lett. o), che riprende la definizione dell'OMS.",
+    "fonte": "D.Lgs. 81/2008, art. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-072",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 2,
+    "testo": "Chi deve nominare il medico competente, nei casi previsti?",
+    "opzioni": [
+      "Il lavoratore",
+      "L'INAIL",
+      "Il RLS",
+      "Il datore di lavoro (e i dirigenti secondo le loro attribuzioni)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 18, c. 1, lett. a).",
+    "fonte": "D.Lgs. 81/2008, art. 18",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-073",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 2,
+    "testo": "Quale obbligo ha ogni lavoratore secondo l'art. 20 del D.Lgs. 81/2008?",
+    "opzioni": [
+      "Prendersi cura della propria salute e sicurezza e di quella delle altre persone presenti sul luogo di lavoro",
+      "Redigere il DVR",
+      "Acquistare i propri DPI",
+      "Nominare l'RSPP"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 20, c. 1.",
+    "fonte": "D.Lgs. 81/2008, art. 20",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-074",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 3,
+    "testo": "La valutazione dei rischi deve considerare anche lo stress lavoro-correlato?",
+    "opzioni": [
+      "Solo nelle aziende con più di 100 dipendenti",
+      "Sì, deve riguardare tutti i rischi, compresi quelli collegati allo stress lavoro-correlato",
+      "No, solo i rischi fisici",
+      "Solo su richiesta del sindacato"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 28, c. 1.",
+    "fonte": "D.Lgs. 81/2008, art. 28",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-075",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 3,
+    "testo": "Con chi collabora il datore di lavoro per effettuare la valutazione dei rischi?",
+    "opzioni": [
+      "Da solo, senza consultare nessuno",
+      "Con il sindaco",
+      "Con l'RSPP e il medico competente, previa consultazione del RLS",
+      "Con i vigili del fuoco obbligatoriamente"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 29, c. 1-2.",
+    "fonte": "D.Lgs. 81/2008, art. 29",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-076",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 4,
+    "testo": "Quando la valutazione dei rischi va immediatamente rielaborata?",
+    "opzioni": [
+      "Ogni dieci anni",
+      "Mai",
+      "Solo su ordine del giudice",
+      "In occasione di modifiche significative del processo produttivo o dell'organizzazione del lavoro (e dopo infortuni significativi)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 29, c. 3.",
+    "fonte": "D.Lgs. 81/2008, art. 29",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-077",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 4,
+    "testo": "Quale titolo di studio minimo serve per svolgere le funzioni di RSPP o addetto al servizio di prevenzione?",
+    "opzioni": [
+      "Diploma di istruzione secondaria superiore, più un attestato di frequenza a corsi specifici",
+      "Licenza media",
+      "Laurea in medicina",
+      "Nessuno"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 32, c. 2.",
+    "fonte": "D.Lgs. 81/2008, art. 32",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-078",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 4,
+    "testo": "Nelle aziende con più di 15 lavoratori, quante volte all'anno almeno si tiene la riunione periodica sulla sicurezza?",
+    "opzioni": [
+      "Mai, è facoltativa",
+      "Almeno una volta all'anno",
+      "Ogni mese",
+      "Ogni cinque anni"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 35, c. 1: partecipano datore, RSPP, medico competente e RLS.",
+    "fonte": "D.Lgs. 81/2008, art. 35",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-079",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 2,
+    "testo": "Su cosa deve ricevere informazione ogni lavoratore (art. 36)?",
+    "opzioni": [
+      "Sugli stipendi dei colleghi",
+      "Sui contratti con i fornitori",
+      "Su rischi, procedure di primo soccorso, antincendio ed evacuazione, e sui nominativi degli incaricati",
+      "Sul bilancio dell'azienda"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 36, c. 1.",
+    "fonte": "D.Lgs. 81/2008, art. 36",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-080",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 3,
+    "testo": "Chi effettua la sorveglianza sanitaria?",
+    "opzioni": [
+      "L'RSPP",
+      "Il preposto",
+      "Il medico di base del lavoratore",
+      "Il medico competente"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 41: comprende visita preventiva, periodica e altre visite.",
+    "fonte": "D.Lgs. 81/2008, art. 41",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-081",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 4,
+    "testo": "A cosa serve la visita medica preventiva nella sorveglianza sanitaria?",
+    "opzioni": [
+      "A constatare l'assenza di controindicazioni e valutare l'idoneità alla mansione specifica",
+      "A verificare le assenze per malattia",
+      "A stabilire lo stipendio",
+      "A scegliere il contratto"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 41, c. 2, lett. a); può avvenire anche in fase preassuntiva.",
+    "fonte": "D.Lgs. 81/2008, art. 41",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-082",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 3,
+    "testo": "Un lavoratore che si allontana dal posto di lavoro per un pericolo grave, immediato e inevitabile può subire conseguenze?",
+    "opzioni": [
+      "Sì, è abbandono del posto",
+      "No, non può subire pregiudizio e va protetto da conseguenze dannose",
+      "Sì, una multa",
+      "Solo se non avvisa il preposto per iscritto"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 44, c. 1.",
+    "fonte": "D.Lgs. 81/2008, art. 44",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-083",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 3,
+    "testo": "In aziende fino a 15 lavoratori, come si individua di norma il RLS?",
+    "opzioni": [
+      "È nominato dal datore",
+      "È designato dal medico competente",
+      "È eletto direttamente dai lavoratori al loro interno o individuato a livello territoriale/di comparto",
+      "Non è previsto"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 47, c. 3.",
+    "fonte": "D.Lgs. 81/2008, art. 47",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-084",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 3,
+    "testo": "Quale di queste è un'attribuzione del RLS?",
+    "opzioni": [
+      "Effettuare le visite mediche",
+      "Redigere il DVR al posto del datore",
+      "Firmare i contratti di lavoro",
+      "Essere consultato preventivamente sulla valutazione dei rischi"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 50, c. 1, lett. b).",
+    "fonte": "D.Lgs. 81/2008, art. 50",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-085",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 2,
+    "testo": "Cos'è un DPI (dispositivo di protezione individuale)?",
+    "opzioni": [
+      "Un'attrezzatura indossata dal lavoratore per proteggerlo da rischi per la sicurezza o la salute",
+      "Un piano di evacuazione",
+      "Un documento di valutazione",
+      "Un estintore fisso"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 74 D.Lgs. 81/2008.",
+    "fonte": "D.Lgs. 81/2008, art. 74",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-086",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 4,
+    "testo": "Per quali rischi il datore di lavoro deve ricorrere ai DPI?",
+    "opzioni": [
+      "Solo su richiesta del lavoratore",
+      "Per i rischi che non possono essere evitati con altri mezzi",
+      "Solo per il rischio incendio",
+      "Per tutti i rischi, prima di ogni altra misura"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 77, c. 1, lett. a): le misure collettive hanno priorità.",
+    "fonte": "D.Lgs. 81/2008, art. 77",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-087",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 3,
+    "testo": "Cos'è un videoterminale secondo il D.Lgs. 81/2008?",
+    "opzioni": [
+      "Solo la tastiera",
+      "Un telefono fisso",
+      "Uno schermo alfanumerico o grafico, qualunque sia il procedimento di visualizzazione",
+      "Solo il computer portatile"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 173, c. 1, lett. a).",
+    "fonte": "D.Lgs. 81/2008, art. 173",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-088",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 4,
+    "testo": "Quale compito ha il preposto quando rileva comportamenti non conformi dei lavoratori?",
+    "opzioni": [
+      "Licenziare subito il lavoratore",
+      "Nessuno, deve solo segnalarli all'INAIL",
+      "Sospendere la produzione dell'azienda",
+      "Sovrintendere e vigilare, intervenendo per modificarli"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 19, c. 1, lett. a), come riscritto nel 2021.",
+    "fonte": "D.Lgs. 81/2008, art. 19",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-089",
+    "argomento": "Previdenza",
+    "livello": 2,
+    "testo": "Qual è il fine della previdenza sociale?",
+    "opzioni": [
+      "Tutelare il lavoratore dai rischi derivanti dalla menomazione o perdita della capacità lavorativa per eventi predeterminati",
+      "Gestire le scuole pubbliche",
+      "Finanziare le imprese in crisi",
+      "Riscuotere le imposte sul reddito"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Previdenza sociale».",
+    "fonte": "Wikipedia, «Previdenza sociale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-090",
+    "argomento": "Previdenza",
+    "livello": 3,
+    "testo": "Quale Paese introdusse per primo le assicurazioni sociali obbligatorie contro malattie, infortuni e vecchiaia (1883-1889)?",
+    "opzioni": [
+      "Il Regno Unito",
+      "La Germania di Bismarck",
+      "L'Italia",
+      "La Francia"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Previdenza sociale».",
+    "fonte": "Wikipedia, «Previdenza sociale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-091",
+    "argomento": "Previdenza",
+    "livello": 3,
+    "testo": "Chi elaborò nel 1942 il piano di sicurezza sociale «dalla culla alla tomba»?",
+    "opzioni": [
+      "John Maynard Keynes",
+      "Otto von Bismarck",
+      "William Beveridge",
+      "Franklin D. Roosevelt"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Previdenza sociale».",
+    "fonte": "Wikipedia, «Previdenza sociale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-092",
+    "argomento": "Previdenza",
+    "livello": 3,
+    "testo": "In che anno l'Italia introdusse l'assicurazione obbligatoria contro gli infortuni sul lavoro?",
+    "opzioni": [
+      "Nel 1861",
+      "Nel 1970",
+      "Nel 1948",
+      "Nel 1898"
+    ],
+    "corretta": 3,
+    "spiegazione": "Nello stesso anno nacque la Cassa nazionale di previdenza per l'invalidità e la vecchiaia degli operai (oggi INPS).",
+    "fonte": "Wikipedia, «Previdenza sociale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-093",
+    "argomento": "Previdenza",
+    "livello": 4,
+    "testo": "Con quale provvedimento del 1919 l'assicurazione per invalidità e vecchiaia divenne obbligatoria in Italia?",
+    "opzioni": [
+      "Il D.l.lgt. 21 aprile 1919, n. 603",
+      "Il D.L. 201/2011",
+      "La legge 335/1995",
+      "La legge 20 maggio 1970, n. 300"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Previdenza sociale».",
+    "fonte": "Wikipedia, «Previdenza sociale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-094",
+    "argomento": "Previdenza",
+    "livello": 3,
+    "testo": "Quale legge del 1978 istituì il Servizio sanitario nazionale?",
+    "opzioni": [
+      "La legge 300/1970",
+      "La legge 23 dicembre 1978, n. 833",
+      "La legge 335/1995",
+      "La legge 241/1990"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Previdenza sociale».",
+    "fonte": "Wikipedia, «Previdenza sociale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-095",
+    "argomento": "Previdenza",
+    "livello": 3,
+    "testo": "Cosa distingue l'assistenza sociale dalla previdenza in senso stretto?",
+    "opzioni": [
+      "Non c'è alcuna differenza",
+      "L'assistenza riguarda solo i lavoratori autonomi",
+      "L'assistenza ha vocazione universalistica ed è finanziata integralmente dallo Stato; la previdenza ha base mutualistica nel mondo del lavoro",
+      "La previdenza è finanziata solo dallo Stato"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Previdenza sociale».",
+    "fonte": "Wikipedia, «Previdenza sociale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-096",
+    "argomento": "Previdenza",
+    "livello": 2,
+    "testo": "Quale ente gestisce la tutela contro infortuni sul lavoro e malattie professionali?",
+    "opzioni": [
+      "L'ISTAT",
+      "L'ARAN",
+      "L'INPS",
+      "L'INAIL"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Previdenza sociale».",
+    "fonte": "Wikipedia, «Previdenza sociale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-097",
+    "argomento": "Previdenza",
+    "livello": 1,
+    "testo": "Qual è il principale ente previdenziale del sistema pensionistico pubblico italiano?",
+    "opzioni": [
+      "L'INPS",
+      "L'INAIL",
+      "La Banca d'Italia",
+      "La Cassa depositi e prestiti"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Istituto Nazionale della Previdenza Sociale».",
+    "fonte": "Wikipedia, «Istituto Nazionale della Previdenza Sociale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-098",
+    "argomento": "Previdenza",
+    "livello": 2,
+    "testo": "Sotto la vigilanza di quale Ministero opera l'INPS?",
+    "opzioni": [
+      "Ministero dell'interno",
+      "Ministero del lavoro e delle politiche sociali",
+      "Ministero dell'istruzione",
+      "Ministero della salute"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Istituto Nazionale della Previdenza Sociale».",
+    "fonte": "Wikipedia, «Istituto Nazionale della Previdenza Sociale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-099",
+    "argomento": "Previdenza",
+    "livello": 3,
+    "testo": "Quale banca dati gestisce l'INPS per l'accesso alle prestazioni sociali agevolate?",
+    "opzioni": [
+      "Il registro delle imprese",
+      "L'anagrafe tributaria",
+      "Quella dell'ISEE (indicatore della situazione economica equivalente)",
+      "Il casellario giudiziale"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Istituto Nazionale della Previdenza Sociale».",
+    "fonte": "Wikipedia, «Istituto Nazionale della Previdenza Sociale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-100",
+    "argomento": "Previdenza",
+    "livello": 4,
+    "testo": "In che anno l'ente assunse la denominazione di Istituto nazionale della previdenza sociale?",
+    "opzioni": [
+      "Nel 1898",
+      "Nel 1995",
+      "Nel 1970",
+      "Nel 1943"
+    ],
+    "corretta": 3,
+    "spiegazione": "In precedenza era l'Istituto nazionale fascista della previdenza sociale (INFPS).",
+    "fonte": "Wikipedia, «Istituto Nazionale della Previdenza Sociale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-101",
+    "argomento": "Previdenza",
+    "livello": 4,
+    "testo": "Quale prestazione e quale ammortizzatore nacquero nel 1968?",
+    "opzioni": [
+      "La pensione sociale e la Cassa integrazione guadagni straordinaria (CIGS)",
+      "Il TFR e la quattordicesima",
+      "La NASpI e il reddito di cittadinanza",
+      "L'ISEE e l'assegno unico"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Istituto Nazionale della Previdenza Sociale».",
+    "fonte": "Wikipedia, «Istituto Nazionale della Previdenza Sociale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-102",
+    "argomento": "Previdenza",
+    "livello": 4,
+    "testo": "Quale legge del 1989 ristrutturò l'INPS separando finanziariamente assistenza e previdenza?",
+    "opzioni": [
+      "La legge 335/1995",
+      "La legge 9 marzo 1989, n. 88",
+      "La legge 146/1990",
+      "La legge 92/2012"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Istituto Nazionale della Previdenza Sociale».",
+    "fonte": "Wikipedia, «Istituto Nazionale della Previdenza Sociale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-103",
+    "argomento": "Pensioni",
+    "livello": 3,
+    "testo": "Con quale provvedimento è stata introdotta la riforma Fornero delle pensioni?",
+    "opzioni": [
+      "Con la L. 335/1995 (riforma Dini)",
+      "Con il D.Lgs. 165/2001",
+      "Con l'art. 24 del D.L. 6 dicembre 2011, n. 201 («Salva Italia»)",
+      "Con la L. 300/1970"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Riforma delle pensioni Fornero».",
+    "fonte": "Wikipedia, «Riforma delle pensioni Fornero» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-104",
+    "argomento": "Pensioni",
+    "livello": 3,
+    "testo": "Quale riforma del 1995 aveva introdotto il metodo contributivo?",
+    "opzioni": [
+      "La riforma Fornero",
+      "La riforma Sacconi",
+      "La riforma Brunetta",
+      "La riforma Dini"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Riforma delle pensioni Fornero»: la Fornero estese il contributivo pro-rata dal 2012.",
+    "fonte": "Wikipedia, «Riforma delle pensioni Fornero» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-105",
+    "argomento": "Pensioni",
+    "livello": 4,
+    "testo": "Cosa fece la riforma Fornero con le pensioni di anzianità?",
+    "opzioni": [
+      "Le ridenominò «anticipate» e abolì il sistema delle quote",
+      "Le raddoppiò",
+      "Le trasferì all'INAIL",
+      "Le rese tutte calcolate col retributivo"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Riforma delle pensioni Fornero».",
+    "fonte": "Wikipedia, «Riforma delle pensioni Fornero» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-106",
+    "argomento": "Pensioni",
+    "livello": 4,
+    "testo": "Da quando la riforma Fornero ha esteso il metodo contributivo pro-rata a chi ne era escluso?",
+    "opzioni": [
+      "Dal 1° gennaio 2020",
+      "Dal 1° gennaio 2012",
+      "Dal 1° gennaio 2008",
+      "Dal 1° gennaio 1996"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Riforma delle pensioni Fornero».",
+    "fonte": "Wikipedia, «Riforma delle pensioni Fornero» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-107",
+    "argomento": "Pensioni",
+    "livello": 3,
+    "testo": "Quale articolo della Costituzione riguarda i rapporti tra lavoratori in stato di bisogno ed enti previdenziali?",
+    "opzioni": [
+      "L'art. 21",
+      "L'art. 117",
+      "L'art. 38",
+      "L'art. 81"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Riforma delle pensioni Fornero».",
+    "fonte": "Wikipedia, «Riforma delle pensioni Fornero» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-108",
+    "argomento": "TFR",
+    "livello": 2,
+    "testo": "Che cos'è il TFR?",
+    "opzioni": [
+      "Un'imposta sul lavoro",
+      "Una pensione integrativa pubblica",
+      "Un premio di produzione annuale",
+      "Una porzione di retribuzione differita, pagata dal datore alla cessazione del rapporto"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Trattamento di fine rapporto».",
+    "fonte": "Wikipedia, «Trattamento di fine rapporto» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-109",
+    "argomento": "TFR",
+    "livello": 3,
+    "testo": "Quale legge ha sostituito l'indennità di anzianità con il TFR, dal 1° giugno 1982?",
+    "opzioni": [
+      "La legge 29 maggio 1982, n. 297",
+      "La legge 300/1970",
+      "Il D.Lgs. 252/2005",
+      "La legge 92/2012"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Trattamento di fine rapporto».",
+    "fonte": "Wikipedia, «Trattamento di fine rapporto» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-110",
+    "argomento": "TFR",
+    "livello": 4,
+    "testo": "Come si calcola la quota annua di TFR secondo l'art. 2120 c.c.?",
+    "opzioni": [
+      "Il 10% dello stipendio",
+      "Retribuzione annua divisa per 13,5",
+      "Retribuzione annua divisa per 10",
+      "Retribuzione mensile per 12"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Trattamento di fine rapporto».",
+    "fonte": "Wikipedia, «Trattamento di fine rapporto» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-111",
+    "argomento": "TFR",
+    "livello": 4,
+    "testo": "Come si rivaluta il TFR ogni anno?",
+    "opzioni": [
+      "Del 5% fisso",
+      "Non si rivaluta",
+      "Con un tasso dell'1,5% fisso più il 75% dell'aumento dell'indice ISTAT dei prezzi",
+      "In base al PIL"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Trattamento di fine rapporto».",
+    "fonte": "Wikipedia, «Trattamento di fine rapporto» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-112",
+    "argomento": "TFR",
+    "livello": 4,
+    "testo": "Quale fondo garantisce il TFR ai lavoratori di imprese insolventi o fallite?",
+    "opzioni": [
+      "L'INAIL",
+      "La Cassa depositi e prestiti",
+      "Il Fondo di riserva dello Stato",
+      "Il Fondo di garanzia gestito dall'INPS"
+    ],
+    "corretta": 3,
+    "spiegazione": "Istituito dall'art. 2 della L. 297/1982.",
+    "fonte": "Wikipedia, «Trattamento di fine rapporto» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-113",
+    "argomento": "TFR",
+    "livello": 5,
+    "testo": "Quale decreto del 2005 ha regolato la destinazione del TFR ai fondi pensione con il meccanismo del silenzio-assenso?",
+    "opzioni": [
+      "Il D.Lgs. 5 dicembre 2005, n. 252",
+      "Il D.Lgs. 81/2008",
+      "La L. 297/1982",
+      "Il D.L. 201/2011"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Trattamento di fine rapporto».",
+    "fonte": "Wikipedia, «Trattamento di fine rapporto» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-114",
+    "argomento": "TFR",
+    "livello": 4,
+    "testo": "Quali dipendenti pubblici contrattualizzati hanno il TFR invece del trattamento di fine servizio?",
+    "opzioni": [
+      "Nessuno",
+      "Quelli assunti dopo il 31 dicembre 2000",
+      "Solo i dirigenti",
+      "Tutti quelli assunti prima del 1990"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Trattamento di fine rapporto».",
+    "fonte": "Wikipedia, «Trattamento di fine rapporto» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-115",
+    "argomento": "Contrattazione collettiva",
+    "livello": 2,
+    "testo": "Chi rappresenta legalmente le pubbliche amministrazioni nella contrattazione collettiva nazionale?",
+    "opzioni": [
+      "L'INPS",
+      "La Corte dei conti",
+      "L'ARAN",
+      "Il CNEL"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Agenzia per la rappresentanza negoziale delle pubbliche amministrazioni».",
+    "fonte": "Wikipedia, «Agenzia per la rappresentanza negoziale delle pubbliche amministrazioni» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-116",
+    "argomento": "Contrattazione collettiva",
+    "livello": 3,
+    "testo": "Da quale decreto fu istituita l'ARAN?",
+    "opzioni": [
+      "Dal D.Lgs. 150/2009",
+      "Dalla L. 300/1970",
+      "Dal D.Lgs. 165/2001",
+      "Dal D.Lgs. 3 febbraio 1993, n. 29"
+    ],
+    "corretta": 3,
+    "spiegazione": "Poi confermata dai D.Lgs. 165/2001 e 150/2009.",
+    "fonte": "Wikipedia, «Agenzia per la rappresentanza negoziale delle pubbliche amministrazioni» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-117",
+    "argomento": "Contrattazione collettiva",
+    "livello": 4,
+    "testo": "A quali atti si attiene l'ARAN nello svolgere la contrattazione?",
+    "opzioni": [
+      "Agli atti di indirizzo dei Comitati di settore",
+      "Alle circolari INPS",
+      "Alle direttive della Banca d'Italia",
+      "Alle sentenze del TAR"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Agenzia per la rappresentanza negoziale delle pubbliche amministrazioni».",
+    "fonte": "Wikipedia, «Agenzia per la rappresentanza negoziale delle pubbliche amministrazioni» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-118",
+    "argomento": "Contrattazione collettiva",
+    "livello": 3,
+    "testo": "Dove sono raccolti e conservati i contratti collettivi nazionali?",
+    "opzioni": [
+      "Presso l'Agenzia delle entrate",
+      "Nell'archivio nazionale del CNEL",
+      "Presso la Corte costituzionale",
+      "Presso le prefetture"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Contratto collettivo nazionale di lavoro».",
+    "fonte": "Wikipedia, «Contratto collettivo nazionale di lavoro» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-119",
+    "argomento": "Contrattazione collettiva",
+    "livello": 4,
+    "testo": "Perché i CCNL non hanno efficacia erga omnes secondo il meccanismo dell'art. 39 Cost.?",
+    "opzioni": [
+      "Perché li vieta la Costituzione",
+      "Perché sono atti privati senza valore",
+      "Perché il riconoscimento giuridico dei sindacati previsto dall'art. 39 non è mai stato attuato",
+      "Perché l'art. 39 è stato abrogato"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Contratto collettivo nazionale di lavoro».",
+    "fonte": "Wikipedia, «Contratto collettivo nazionale di lavoro» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-120",
+    "argomento": "Sciopero",
+    "livello": 2,
+    "testo": "Cos'è lo sciopero?",
+    "opzioni": [
+      "La sospensione del lavoro decisa dal datore",
+      "Il licenziamento collettivo",
+      "Un congedo per motivi familiari",
+      "L'astensione collettiva dal lavoro dei lavoratori subordinati per ottenere migliori condizioni"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Sciopero»; la sospensione decisa dal datore si chiama serrata.",
+    "fonte": "Wikipedia, «Sciopero» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-121",
+    "argomento": "Sciopero",
+    "livello": 3,
+    "testo": "Quale legge disciplina lo sciopero nei servizi pubblici essenziali?",
+    "opzioni": [
+      "La legge 12 giugno 1990, n. 146",
+      "La legge 241/1990",
+      "La legge 92/2012",
+      "La legge 300/1970"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Sciopero».",
+    "fonte": "Wikipedia, «Sciopero» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-122",
+    "argomento": "Sciopero",
+    "livello": 3,
+    "testo": "Come si chiama la sospensione dal lavoro disposta dal datore per fare pressione sui lavoratori?",
+    "opzioni": [
+      "Picchettaggio",
+      "Serrata",
+      "Precettazione",
+      "Sciopero bianco"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Sciopero».",
+    "fonte": "Wikipedia, «Sciopero» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-123",
+    "argomento": "Sciopero",
+    "livello": 3,
+    "testo": "Cos'è lo «sciopero bianco»?",
+    "opzioni": [
+      "Astenersi dal lavoro per un'intera settimana",
+      "Scioperare indossando abiti bianchi",
+      "Applicare alla lettera i regolamenti causando rallentamenti, senza astenersi dal lavoro",
+      "Uno sciopero proclamato dal datore"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Sciopero».",
+    "fonte": "Wikipedia, «Sciopero» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-124",
+    "argomento": "Sciopero",
+    "livello": 4,
+    "testo": "Qual è l'unico limite esterno che la giurisprudenza riconosce, in termini di danno, al diritto di sciopero?",
+    "opzioni": [
+      "Qualsiasi perdita economica del datore",
+      "Il fastidio per gli utenti",
+      "La durata superiore a un giorno",
+      "Il danno alla produttività (impossibilità di riprendere l'attività), non il semplice danno alla produzione"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Sciopero», che richiama Cass. n. 711/1980.",
+    "fonte": "Wikipedia, «Sciopero» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-125",
+    "argomento": "Sciopero",
+    "livello": 4,
+    "testo": "Il mancato rispetto della precettazione costituisce giusta causa di licenziamento?",
+    "opzioni": [
+      "No, anche se può integrare il reato di interruzione di pubblico servizio",
+      "Sì, ma solo nel settore privato",
+      "Sì, sempre",
+      "Sì, dopo tre violazioni"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Sciopero».",
+    "fonte": "Wikipedia, «Sciopero» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-126",
+    "argomento": "Sciopero",
+    "livello": 3,
+    "testo": "Che effetto ha lo sciopero sul contratto di lavoro?",
+    "opzioni": [
+      "Lo risolve",
+      "Lo sospende temporaneamente: niente prestazione e niente retribuzione",
+      "Nessun effetto, la retribuzione è dovuta",
+      "Lo trasforma a tempo determinato"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Sciopero».",
+    "fonte": "Wikipedia, «Sciopero» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-127",
+    "argomento": "Lavoro pubblico",
+    "livello": 2,
+    "testo": "Da quali norme sono disciplinati i rapporti di lavoro dei dipendenti pubblici «privatizzati»?",
+    "opzioni": [
+      "Solo dal codice penale",
+      "Dal testo unico del 1957, in via esclusiva",
+      "Dal codice civile (libro V) e dalle leggi sul lavoro subordinato nell'impresa, salve le diverse disposizioni del D.Lgs. 165/2001",
+      "Dai regolamenti dei singoli ministeri"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 2, c. 2.",
+    "fonte": "D.Lgs. 165/2001, art. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-128",
+    "argomento": "Lavoro pubblico",
+    "livello": 3,
+    "testo": "Quale di queste categorie resta in regime di diritto pubblico (art. 3)?",
+    "opzioni": [
+      "Gli impiegati comunali",
+      "Gli infermieri delle ASL",
+      "I dipendenti dei ministeri non dirigenti",
+      "I magistrati, gli avvocati dello Stato, militari e forze di polizia, diplomatici e prefetti"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 3, c. 1 D.Lgs. 165/2001.",
+    "fonte": "D.Lgs. 165/2001, art. 3",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-129",
+    "argomento": "Lavoro pubblico",
+    "livello": 3,
+    "testo": "Con quale strumento le amministrazioni programmano le assunzioni?",
+    "opzioni": [
+      "Il piano triennale dei fabbisogni di personale",
+      "Il DUP",
+      "Il conto annuale",
+      "Il piano della performance individuale"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 6, c. 2.",
+    "fonte": "D.Lgs. 165/2001, art. 6",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-130",
+    "argomento": "Dirigenza",
+    "livello": 3,
+    "testo": "In quante fasce si articola la dirigenza statale?",
+    "opzioni": [
+      "Una fascia unica",
+      "Due fasce",
+      "Cinque fasce",
+      "Tre fasce"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 15, c. 1 e art. 23.",
+    "fonte": "D.Lgs. 165/2001, art. 15",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-131",
+    "argomento": "Dirigenza",
+    "livello": 4,
+    "testo": "Come si accede alla qualifica di dirigente di seconda fascia nelle amministrazioni statali?",
+    "opzioni": [
+      "Per nomina politica diretta",
+      "Per sorteggio tra i funzionari",
+      "Per corso-concorso della Scuola nazionale dell'amministrazione, per concorso delle singole amministrazioni o concorso unico",
+      "Per sola anzianità di servizio"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 28, c. 1 (con quota anche per sviluppo di carriera).",
+    "fonte": "D.Lgs. 165/2001, art. 28",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-132",
+    "argomento": "Dirigenza",
+    "livello": 3,
+    "testo": "Quale di questi è un compito dei dirigenti (art. 17)?",
+    "opzioni": [
+      "Giudicare i ricorsi gerarchici del TAR",
+      "Nominare i ministri",
+      "Approvare le leggi di spesa",
+      "Dirigere, coordinare e controllare l'attività degli uffici e dei responsabili dei procedimenti"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 17, c. 1, lett. d).",
+    "fonte": "D.Lgs. 165/2001, art. 17",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-133",
+    "argomento": "Dirigenza",
+    "livello": 4,
+    "testo": "A chi formulano proposte ed esprimono pareri i dirigenti degli uffici dirigenziali generali?",
+    "opzioni": [
+      "Al Ministro, nelle materie di sua competenza",
+      "Ai sindacati",
+      "Al Parlamento",
+      "Al Presidente della Repubblica"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 16, c. 1, lett. a).",
+    "fonte": "D.Lgs. 165/2001, art. 16",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-134",
+    "argomento": "Dirigenza",
+    "livello": 4,
+    "testo": "Di cosa si tiene conto nel conferire un incarico dirigenziale (art. 19)?",
+    "opzioni": [
+      "Dell'appartenenza politica",
+      "Attitudini e capacità professionali, risultati conseguiti e relativa valutazione, competenze organizzative",
+      "Solo dell'età anagrafica",
+      "Del luogo di residenza"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 19, c. 1.",
+    "fonte": "D.Lgs. 165/2001, art. 19",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-135",
+    "argomento": "Reclutamento",
+    "livello": 3,
+    "testo": "Quale di questi è un principio delle procedure di reclutamento (art. 35, c. 3)?",
+    "opzioni": [
+      "Segretezza delle prove",
+      "Preferenza per i residenti del comune",
+      "Adeguata pubblicità della selezione e modalità che garantiscano l'imparzialità",
+      "Scelta discrezionale del sindaco"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 35, c. 3, lett. a).",
+    "fonte": "D.Lgs. 165/2001, art. 35",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-136",
+    "argomento": "Reclutamento",
+    "livello": 4,
+    "testo": "Come devono essere composte le commissioni di concorso secondo l'art. 35, c. 3?",
+    "opzioni": [
+      "Dai consiglieri comunali",
+      "Da qualsiasi dipendente volontario",
+      "Da rappresentanti sindacali",
+      "Esclusivamente da esperti di provata competenza, senza componenti degli organi politici o rappresentanti sindacali"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 35, c. 3, lett. e).",
+    "fonte": "D.Lgs. 165/2001, art. 35",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-137",
+    "argomento": "Reclutamento",
+    "livello": 3,
+    "testo": "Con quali contratti le PA soddisfano il proprio fabbisogno ordinario di personale?",
+    "opzioni": [
+      "Esclusivamente con contratti a tempo indeterminato, tramite le procedure dell'art. 35",
+      "Con collaborazioni coordinate",
+      "Con stage gratuiti",
+      "Solo con contratti a termine"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 36, c. 1; il lavoro flessibile è ammesso solo nei limiti previsti.",
+    "fonte": "D.Lgs. 165/2001, art. 36",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-138",
+    "argomento": "Contrattazione collettiva",
+    "livello": 4,
+    "testo": "Quali materie sono escluse dalla contrattazione collettiva nel pubblico impiego?",
+    "opzioni": [
+      "Le ferie",
+      "L'organizzazione degli uffici, le prerogative dirigenziali e il conferimento degli incarichi dirigenziali",
+      "I permessi sindacali",
+      "La retribuzione"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 40, c. 1.",
+    "fonte": "D.Lgs. 165/2001, art. 40",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-139",
+    "argomento": "Contrattazione collettiva",
+    "livello": 4,
+    "testo": "Quale soglia di rappresentatività serve a un sindacato per essere ammesso alla contrattazione nazionale?",
+    "opzioni": [
+      "Il 20 per cento",
+      "Il 51 per cento",
+      "Non inferiore al 5 per cento (media tra dato associativo ed elettorale)",
+      "L'1 per cento"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 43, c. 1.",
+    "fonte": "D.Lgs. 165/2001, art. 43",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-140",
+    "argomento": "Contrattazione collettiva",
+    "livello": 4,
+    "testo": "Chi emana gli indirizzi per la contrattazione collettiva nazionale prima di ogni rinnovo?",
+    "opzioni": [
+      "La Corte dei conti",
+      "Il Parlamento",
+      "Il CNEL",
+      "I Comitati di settore"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 47, c. 1.",
+    "fonte": "D.Lgs. 165/2001, art. 47",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-141",
+    "argomento": "Contrattazione collettiva",
+    "livello": 3,
+    "testo": "Chi rappresenta legalmente le PA agli effetti della contrattazione collettiva nazionale secondo l'art. 46?",
+    "opzioni": [
+      "L'ARAN",
+      "Il Ministro per la pubblica amministrazione",
+      "La Funzione pubblica regionale",
+      "Il Presidente del Consiglio"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 46, c. 1.",
+    "fonte": "D.Lgs. 165/2001, art. 46",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-142",
+    "argomento": "Lavoro pubblico",
+    "livello": 3,
+    "testo": "Lo Statuto dei lavoratori si applica alle PA anche se hanno pochi dipendenti?",
+    "opzioni": [
+      "No, solo sopra 15 dipendenti",
+      "Sì, a prescindere dal numero dei dipendenti",
+      "Solo sopra 60 dipendenti",
+      "No, mai"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 51, c. 2.",
+    "fonte": "D.Lgs. 165/2001, art. 51",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-143",
+    "argomento": "Lavoro pubblico",
+    "livello": 4,
+    "testo": "Quale testo regola ancora le incompatibilità dei dipendenti pubblici, richiamato dall'art. 53?",
+    "opzioni": [
+      "La L. 300/1970",
+      "Il D.Lgs. 81/2008",
+      "Il DPR 10 gennaio 1957, n. 3 (artt. 60 e seguenti)",
+      "Il codice civile del 1942"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 53, c. 1.",
+    "fonte": "D.Lgs. 165/2001, art. 53",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-144",
+    "argomento": "Lavoro pubblico",
+    "livello": 3,
+    "testo": "Quali doveri costituzionali richiama l'art. 54 tra le finalità del codice di comportamento?",
+    "opzioni": [
+      "Fedeltà al dirigente",
+      "Obbedienza al partito di governo",
+      "Riservatezza verso i cittadini",
+      "Diligenza, lealtà, imparzialità e servizio esclusivo all'interesse pubblico"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 54, c. 1.",
+    "fonte": "D.Lgs. 165/2001, art. 54",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-145",
+    "argomento": "Procedimento disciplinare",
+    "livello": 4,
+    "testo": "Che natura hanno le norme disciplinari degli artt. 55-55-octies del D.Lgs. 165/2001?",
+    "opzioni": [
+      "Norme imperative, che prevalgono sui contratti collettivi",
+      "Norme regionali",
+      "Norme facoltative",
+      "Raccomandazioni"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 55, c. 1.",
+    "fonte": "D.Lgs. 165/2001, art. 55",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-146",
+    "argomento": "Procedimento disciplinare",
+    "livello": 4,
+    "testo": "Quale pena prevede l'art. 55-quinquies per il dipendente che attesta falsamente la presenza in servizio?",
+    "opzioni": [
+      "Reclusione fino a sei mesi",
+      "Reclusione da uno a cinque anni e multa da 400 a 1.600 euro",
+      "Solo una sanzione disciplinare",
+      "Ammenda di 50 euro"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 55-quinquies, c. 1; la stessa pena si applica al medico che concorre.",
+    "fonte": "D.Lgs. 165/2001, art. 55-quinquies",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-147",
+    "argomento": "Assenze",
+    "livello": 4,
+    "testo": "Quando l'assenza per malattia va giustificata con certificato di struttura pubblica o medico convenzionato SSN?",
+    "opzioni": [
+      "Sempre, dal primo giorno",
+      "Mai",
+      "Se supera dieci giorni e, in ogni caso, dopo il secondo evento di malattia nell'anno solare",
+      "Solo oltre trenta giorni"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 55-septies, c. 1.",
+    "fonte": "D.Lgs. 165/2001, art. 55-septies",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-148",
+    "argomento": "Assenze",
+    "livello": 3,
+    "testo": "A chi è inviato telematicamente il certificato di malattia del dipendente pubblico?",
+    "opzioni": [
+      "Al sindaco",
+      "Al dirigente via posta ordinaria",
+      "Al Ministero dell'interno",
+      "All'INPS, direttamente dal medico o dalla struttura sanitaria"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 55-septies, c. 2.",
+    "fonte": "D.Lgs. 165/2001, art. 55-septies",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-149",
+    "argomento": "Procedimento disciplinare",
+    "livello": 5,
+    "testo": "Se la violazione degli obblighi del dipendente porta alla condanna della PA al risarcimento, quale sanzione minima si applica?",
+    "opzioni": [
+      "Sospensione dal servizio con privazione della retribuzione da tre giorni a tre mesi",
+      "Nessuna sanzione",
+      "Licenziamento immediato",
+      "Rimprovero verbale"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 55-sexies, c. 1.",
+    "fonte": "D.Lgs. 165/2001, art. 55-sexies",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-150",
+    "argomento": "Controversie",
+    "livello": 3,
+    "testo": "Quale giudice decide le controversie sui rapporti di lavoro dei dipendenti pubblici contrattualizzati?",
+    "opzioni": [
+      "Il giudice di pace",
+      "Il giudice ordinario in funzione di giudice del lavoro",
+      "La Corte dei conti",
+      "Il TAR"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 63, c. 1: incluse quelle su incarichi dirigenziali e indennità di fine rapporto.",
+    "fonte": "D.Lgs. 165/2001, art. 63",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-151",
+    "argomento": "Controversie",
+    "livello": 4,
+    "testo": "Quale giudice decide sulle controversie relative alle procedure concorsuali per l'assunzione nelle PA?",
+    "opzioni": [
+      "La Corte costituzionale",
+      "Il giudice penale",
+      "Il giudice amministrativo",
+      "Il giudice del lavoro"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 63, c. 4.",
+    "fonte": "D.Lgs. 165/2001, art. 63",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-152",
+    "argomento": "Mobilità",
+    "livello": 3,
+    "testo": "Come si chiama il passaggio di un dipendente da un'amministrazione a un'altra su sua domanda (art. 30)?",
+    "opzioni": [
+      "Comando obbligatorio",
+      "Distacco sindacale",
+      "Licenziamento collettivo",
+      "Mobilità volontaria (passaggio diretto di personale)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 30, c. 1.",
+    "fonte": "D.Lgs. 165/2001, art. 30",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-153",
+    "argomento": "Mobilità",
+    "livello": 4,
+    "testo": "Chi forma e gestisce, per le amministrazioni statali, l'elenco del personale in disponibilità?",
+    "opzioni": [
+      "Il Dipartimento della funzione pubblica",
+      "Il CNEL",
+      "L'INPS",
+      "La Corte dei conti"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 34, c. 2.",
+    "fonte": "D.Lgs. 165/2001, art. 34",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-154",
+    "argomento": "Costituzione e lavoro",
+    "livello": 1,
+    "testo": "Su cosa è fondata la Repubblica italiana secondo l'art. 1 della Costituzione?",
+    "opzioni": [
+      "Sulla religione cattolica",
+      "Sul lavoro",
+      "Sull'iniziativa economica",
+      "Sulla proprietà privata"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 1 Cost.",
+    "fonte": "Costituzione, art. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-155",
+    "argomento": "Costituzione e lavoro",
+    "livello": 2,
+    "testo": "Cosa riconosce l'art. 4 della Costituzione a tutti i cittadini?",
+    "opzioni": [
+      "Il diritto a un reddito minimo garantito",
+      "Il diritto a un posto pubblico",
+      "Il diritto al lavoro, promuovendo le condizioni che lo rendano effettivo",
+      "Il diritto a non lavorare mai"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 4 Cost.: prevede anche il dovere di svolgere un'attività che concorra al progresso della società.",
+    "fonte": "Costituzione, art. 4",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-156",
+    "argomento": "Costituzione e lavoro",
+    "livello": 2,
+    "testo": "Secondo l'art. 35 Cost., come tutela la Repubblica il lavoro?",
+    "opzioni": [
+      "Solo il lavoro pubblico",
+      "Solo il lavoro agricolo",
+      "Solo il lavoro subordinato",
+      "In tutte le sue forme ed applicazioni"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 35 Cost.: cura anche la formazione professionale e riconosce la libertà di emigrazione.",
+    "fonte": "Costituzione, art. 35",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-157",
+    "argomento": "Costituzione e lavoro",
+    "livello": 2,
+    "testo": "Quali caratteristiche deve avere la retribuzione secondo l'art. 36 Cost.?",
+    "opzioni": [
+      "Proporzionata a quantità e qualità del lavoro e sufficiente ad assicurare un'esistenza libera e dignitosa",
+      "Pari al salario minimo europeo",
+      "Decisa liberamente dal datore senza limiti",
+      "Uguale per tutti i lavoratori"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 36, c. 1 Cost.",
+    "fonte": "Costituzione, art. 36",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-158",
+    "argomento": "Costituzione e lavoro",
+    "livello": 2,
+    "testo": "Il lavoratore può rinunciare al riposo settimanale e alle ferie annuali retribuite?",
+    "opzioni": [
+      "Solo se dirigente",
+      "No, non può rinunziarvi",
+      "Sì, con accordo scritto",
+      "Sì, in cambio di denaro"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 36, c. 3 Cost.",
+    "fonte": "Costituzione, art. 36",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-159",
+    "argomento": "Costituzione e lavoro",
+    "livello": 3,
+    "testo": "Chi stabilisce la durata massima della giornata lavorativa?",
+    "opzioni": [
+      "Il singolo contratto individuale",
+      "Il datore di lavoro",
+      "La legge",
+      "Il prefetto"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 36, c. 2 Cost.",
+    "fonte": "Costituzione, art. 36",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-160",
+    "argomento": "Costituzione e lavoro",
+    "livello": 2,
+    "testo": "Cosa garantisce l'art. 37 Cost. alla donna lavoratrice?",
+    "opzioni": [
+      "Una retribuzione ridotta",
+      "Il pensionamento obbligatorio a 50 anni",
+      "L'esclusione dai lavori pubblici",
+      "Gli stessi diritti e, a parità di lavoro, le stesse retribuzioni del lavoratore"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 37 Cost.",
+    "fonte": "Costituzione, art. 37",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-161",
+    "argomento": "Costituzione e lavoro",
+    "livello": 3,
+    "testo": "Chi stabilisce il limite minimo di età per il lavoro salariato?",
+    "opzioni": [
+      "La legge",
+      "I contratti collettivi",
+      "Le regioni con regolamento",
+      "Le famiglie"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 37, c. 2 Cost.",
+    "fonte": "Costituzione, art. 37",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-162",
+    "argomento": "Costituzione e lavoro",
+    "livello": 3,
+    "testo": "Per quali eventi l'art. 38 Cost. garantisce ai lavoratori mezzi adeguati alle esigenze di vita?",
+    "opzioni": [
+      "Solo vecchiaia",
+      "Infortunio, malattia, invalidità e vecchiaia, disoccupazione involontaria",
+      "Solo disoccupazione volontaria",
+      "Solo maternità"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 38, c. 2 Cost.",
+    "fonte": "Costituzione, art. 38",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-163",
+    "argomento": "Costituzione e lavoro",
+    "livello": 3,
+    "testo": "Chi ha diritto al mantenimento e all'assistenza sociale secondo l'art. 38 Cost.?",
+    "opzioni": [
+      "Solo i minori",
+      "Solo i dipendenti pubblici",
+      "Ogni cittadino inabile al lavoro e sprovvisto dei mezzi necessari per vivere",
+      "Ogni lavoratore in pensione"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 38, c. 1 Cost.",
+    "fonte": "Costituzione, art. 38",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-164",
+    "argomento": "Costituzione e lavoro",
+    "livello": 2,
+    "testo": "L'organizzazione sindacale, secondo l'art. 39 Cost., è:",
+    "opzioni": [
+      "Obbligatoria per tutti i lavoratori",
+      "Vietata nel pubblico impiego",
+      "Riservata ai dipendenti di grandi imprese",
+      "Libera"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 39, c. 1 Cost.",
+    "fonte": "Costituzione, art. 39",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-165",
+    "argomento": "Costituzione e lavoro",
+    "livello": 4,
+    "testo": "Quale requisito prevede l'art. 39 Cost. per la registrazione dei sindacati?",
+    "opzioni": [
+      "Statuti che sanciscano un ordinamento interno a base democratica",
+      "Almeno un milione di iscritti",
+      "L'approvazione del Governo",
+      "L'affiliazione a un partito"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 39, c. 3 Cost. (disposizione mai attuata).",
+    "fonte": "Costituzione, art. 39",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-166",
+    "argomento": "Costituzione e lavoro",
+    "livello": 2,
+    "testo": "Come si esercita il diritto di sciopero secondo l'art. 40 Cost.?",
+    "opzioni": [
+      "Solo con autorizzazione del prefetto",
+      "Nell'ambito delle leggi che lo regolano",
+      "Senza alcun limite",
+      "Solo nel settore privato"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 40 Cost.",
+    "fonte": "Costituzione, art. 40",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-167",
+    "argomento": "Costituzione e lavoro",
+    "livello": 3,
+    "testo": "Quale diritto riconosce ai lavoratori l'art. 46 Cost.?",
+    "opzioni": [
+      "Il diritto di nominare l'amministratore delegato",
+      "Il diritto alla proprietà dell'azienda",
+      "Il diritto a collaborare alla gestione delle aziende, nei modi stabiliti dalla legge",
+      "Il diritto di vendere l'azienda"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 46 Cost.",
+    "fonte": "Costituzione, art. 46",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-168",
+    "argomento": "Costituzione e pubblico impiego",
+    "livello": 2,
+    "testo": "Come si accede, di regola, agli impieghi nelle pubbliche amministrazioni (art. 97 Cost.)?",
+    "opzioni": [
+      "Per chiamata diretta",
+      "Per anzianità di iscrizione al collocamento",
+      "Per sorteggio",
+      "Mediante concorso, salvo i casi stabiliti dalla legge"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 97 Cost.",
+    "fonte": "Costituzione, art. 97",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-169",
+    "argomento": "Costituzione e pubblico impiego",
+    "livello": 2,
+    "testo": "Al servizio di chi sono i pubblici impiegati secondo l'art. 98 Cost.?",
+    "opzioni": [
+      "Al servizio esclusivo della Nazione",
+      "Al servizio del Governo in carica",
+      "Al servizio del proprio dirigente",
+      "Al servizio del partito di maggioranza"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 98 Cost.",
+    "fonte": "Costituzione, art. 98",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-170",
+    "argomento": "Costituzione e pubblico impiego",
+    "livello": 4,
+    "testo": "Un pubblico impiegato eletto in Parlamento può ottenere promozioni?",
+    "opzioni": [
+      "Sì, per merito, senza limiti",
+      "Solo per anzianità",
+      "No, mai",
+      "Solo con decreto del Presidente della Repubblica"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 98, c. 2 Cost.",
+    "fonte": "Costituzione, art. 98",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-171",
+    "argomento": "Costituzione e pubblico impiego",
+    "livello": 3,
+    "testo": "Per quali categorie la legge può limitare il diritto di iscriversi ai partiti politici (art. 98 Cost.)?",
+    "opzioni": [
+      "Tutti i dipendenti pubblici",
+      "I medici del SSN",
+      "Magistrati, militari di carriera in servizio attivo, funzionari e agenti di polizia, diplomatici e consoli all'estero",
+      "Gli insegnanti"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 98, c. 3 Cost.",
+    "fonte": "Costituzione, art. 98",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-172",
+    "argomento": "Costituzione e pubblico impiego",
+    "livello": 3,
+    "testo": "Cosa garantisce l'art. 51 Cost. a chi è chiamato a funzioni pubbliche elettive?",
+    "opzioni": [
+      "L'esonero dalle tasse",
+      "Uno stipendio doppio",
+      "La promozione automatica",
+      "Il diritto di disporre del tempo necessario e di conservare il posto di lavoro"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 51, c. 3 Cost.",
+    "fonte": "Costituzione, art. 51",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-173",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 2,
+    "testo": "A quali settori si applica il D.Lgs. 81/2008?",
+    "opzioni": [
+      "A tutti i settori di attività, privati e pubblici, e a tutte le tipologie di rischio",
+      "Solo all'industria",
+      "Solo al settore privato",
+      "Solo ai cantieri edili"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 3, c. 1.",
+    "fonte": "D.Lgs. 81/2008, art. 3",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-174",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 3,
+    "testo": "In assenza di disposizioni contrattuali, che pausa spetta a chi lavora al videoterminale?",
+    "opzioni": [
+      "Nessuna pausa",
+      "Quindici minuti ogni centoventi minuti di applicazione continuativa",
+      "Un'ora ogni quattro ore",
+      "Cinque minuti ogni ora"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 175, c. 3 D.Lgs. 81/2008.",
+    "fonte": "D.Lgs. 81/2008, art. 175",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-175",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 3,
+    "testo": "Che natura ha la prevenzione incendi secondo l'art. 46 del D.Lgs. 81/2008?",
+    "opzioni": [
+      "Attività facoltativa delle imprese",
+      "Materia dei contratti collettivi",
+      "Funzione di preminente interesse pubblico, di esclusiva competenza statale",
+      "Competenza esclusiva dei comuni"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 46, c. 1.",
+    "fonte": "D.Lgs. 81/2008, art. 46",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-176",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 4,
+    "testo": "Il datore di lavoro può svolgere direttamente i compiti del servizio di prevenzione e protezione?",
+    "opzioni": [
+      "No, mai",
+      "Sì, sempre e senza informare nessuno",
+      "Solo con autorizzazione del prefetto",
+      "Sì, nelle ipotesi dell'allegato 2, informandone prima il RLS"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 34, c. 1.",
+    "fonte": "D.Lgs. 81/2008, art. 34",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-177",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 4,
+    "testo": "Quali obblighi ha il datore che affida lavori a un'impresa appaltatrice all'interno della propria azienda (art. 26)?",
+    "opzioni": [
+      "Verificarne l'idoneità tecnico-professionale e cooperare e coordinarsi sui rischi da interferenze",
+      "Solo pagare il corrispettivo",
+      "Nessuno, la sicurezza è tutta dell'appaltatore",
+      "Solo comunicare il nome dell'appaltatore all'INPS"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 26 D.Lgs. 81/2008 (DUVRI).",
+    "fonte": "D.Lgs. 81/2008, art. 26",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-178",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 4,
+    "testo": "Quale sanzione rischia il datore che non effettua la valutazione dei rischi o non nomina l'RSPP?",
+    "opzioni": [
+      "La chiusura definitiva automatica dell'azienda",
+      "L'arresto o l'ammenda (sanzione penale contravvenzionale)",
+      "Nessuna sanzione",
+      "Solo un richiamo verbale"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 55, c. 1 D.Lgs. 81/2008.",
+    "fonte": "D.Lgs. 81/2008, art. 55",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-179",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 3,
+    "testo": "Chi deve designare preventivamente i lavoratori addetti alle emergenze (antincendio, evacuazione, primo soccorso)?",
+    "opzioni": [
+      "I vigili del fuoco",
+      "Il RLS",
+      "Il datore di lavoro e i dirigenti",
+      "Il medico di base"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 18, c. 1, lett. b).",
+    "fonte": "D.Lgs. 81/2008, art. 18",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-180",
+    "argomento": "Sicurezza sul lavoro",
+    "livello": 3,
+    "testo": "Quali misure prevalgono, secondo le misure generali di tutela, sui dispositivi di protezione individuale?",
+    "opzioni": [
+      "Le assicurazioni private",
+      "I DPI vengono sempre prima",
+      "Le sanzioni disciplinari",
+      "Le misure di protezione collettiva"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 15, c. 1, lett. i): priorità delle misure di protezione collettiva rispetto a quelle individuali.",
+    "fonte": "D.Lgs. 81/2008, art. 15",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-181",
+    "argomento": "Statuto dei lavoratori",
+    "livello": 4,
+    "testo": "Per le imprese industriali e commerciali, il titolo III dello Statuto (attività sindacale) si applica alle unità produttive con:",
+    "opzioni": [
+      "Più di quindici dipendenti (più di cinque per le imprese agricole)",
+      "Più di cento dipendenti",
+      "Più di mille dipendenti",
+      "Qualsiasi numero di dipendenti"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 35 L. 300/1970.",
+    "fonte": "L. 300/1970, art. 35",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-182",
+    "argomento": "Statuto dei lavoratori",
+    "livello": 4,
+    "testo": "Lo Statuto si applica ai dipendenti degli enti pubblici economici?",
+    "opzioni": [
+      "Solo se lo prevede lo statuto dell'ente",
+      "Sì, a quelli che svolgono esclusivamente o prevalentemente attività economica",
+      "Solo ai dirigenti",
+      "No, mai"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 37 L. 300/1970.",
+    "fonte": "L. 300/1970, art. 37",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-183",
+    "argomento": "Diritti sindacali",
+    "livello": 4,
+    "testo": "Quanti permessi retribuiti minimi spettano ai dirigenti RSA nelle unità produttive con più di 200 dipendenti?",
+    "opzioni": [
+      "Quaranta ore settimanali",
+      "Un'ora l'anno",
+      "Otto ore mensili",
+      "Due giorni al mese"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 23 L. 300/1970.",
+    "fonte": "L. 300/1970, art. 23",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-184",
+    "argomento": "Diritti sindacali",
+    "livello": 3,
+    "testo": "Con quanto preavviso, di regola, il dirigente RSA comunica l'uso dei permessi retribuiti?",
+    "opzioni": [
+      "Un mese prima",
+      "Non serve preavviso",
+      "Una settimana prima",
+      "24 ore prima, per iscritto, tramite le RSA"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 23 L. 300/1970.",
+    "fonte": "L. 300/1970, art. 23",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-185",
+    "argomento": "Statuto dei lavoratori",
+    "livello": 3,
+    "testo": "Il datore di lavoro può far controllare l'idoneità fisica del lavoratore?",
+    "opzioni": [
+      "Sì, ma da enti pubblici e istituti specializzati di diritto pubblico",
+      "Sì, ma solo dai colleghi",
+      "No, mai",
+      "Sì, dal proprio medico di fiducia"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 5, c. 3 L. 300/1970.",
+    "fonte": "L. 300/1970, art. 5",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-186",
+    "argomento": "Statuto dei lavoratori",
+    "livello": 3,
+    "testo": "Chi controlla la qualità del servizio di mensa aziendale secondo l'art. 11?",
+    "opzioni": [
+      "L'ASL in via esclusiva",
+      "Le rappresentanze sindacali aziendali",
+      "Il datore di lavoro",
+      "Il comune"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 11 L. 300/1970.",
+    "fonte": "L. 300/1970, art. 11",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-187",
+    "argomento": "Statuto dei lavoratori",
+    "livello": 3,
+    "testo": "Possono gli istituti di patronato operare all'interno dell'azienda?",
+    "opzioni": [
+      "Solo nel settore pubblico",
+      "No, mai",
+      "Sì, su un piano di parità, secondo accordi aziendali",
+      "Solo con autorizzazione del prefetto"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 12 L. 300/1970.",
+    "fonte": "L. 300/1970, art. 12",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-188",
+    "argomento": "Statuto dei lavoratori",
+    "livello": 3,
+    "testo": "Il lavoratore eletto sindaco o assessore comunale che diritto ha, oltre ai permessi?",
+    "opzioni": [
+      "Il doppio dello stipendio",
+      "Un anno sabbatico retribuito",
+      "Nessun diritto",
+      "Permessi non retribuiti per un minimo di trenta ore mensili"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 32 L. 300/1970 (in parte sostituito da leggi successive).",
+    "fonte": "L. 300/1970, art. 32",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-189",
+    "argomento": "Contratti di lavoro",
+    "livello": 3,
+    "testo": "Il contratto part-time può essere stipulato anche per un rapporto a tempo determinato?",
+    "opzioni": [
+      "Sì, l'assunzione a tempo parziale è possibile anche nei contratti a termine",
+      "Solo per i dirigenti",
+      "Solo nel pubblico impiego",
+      "No, solo a tempo indeterminato"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 4 D.Lgs. 81/2015.",
+    "fonte": "D.Lgs. 81/2015, art. 4",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-190",
+    "argomento": "Contratti di lavoro",
+    "livello": 4,
+    "testo": "Se il datore non eroga la formazione all'apprendista per sua esclusiva responsabilità, cosa deve versare?",
+    "opzioni": [
+      "Il TFR in anticipo",
+      "La differenza contributiva rispetto al livello superiore, maggiorata del 100%",
+      "Nulla",
+      "Una multa fissa di 100 euro"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 47, c. 1 D.Lgs. 81/2015.",
+    "fonte": "D.Lgs. 81/2015, art. 47",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-191",
+    "argomento": "Contratti di lavoro",
+    "livello": 4,
+    "testo": "Su accordo delle parti, come può essere trasformato un rapporto da tempo pieno a part-time?",
+    "opzioni": [
+      "Oralmente",
+      "Solo con sentenza del giudice",
+      "Con accordo risultante da atto scritto",
+      "Con decisione unilaterale del datore"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 8, c. 2.",
+    "fonte": "D.Lgs. 81/2015, art. 8",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-192",
+    "argomento": "Contratti di lavoro",
+    "livello": 4,
+    "testo": "Il lavoro intermittente è vietato presso unità produttive che, nei sei mesi precedenti, hanno effettuato:",
+    "opzioni": [
+      "Assunzioni di apprendisti",
+      "Promozioni interne",
+      "Elezioni della RSU",
+      "Licenziamenti collettivi di lavoratori con le stesse mansioni"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 14, c. 1, lett. b).",
+    "fonte": "D.Lgs. 81/2015, art. 14",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-193",
+    "argomento": "Lavoro pubblico",
+    "livello": 3,
+    "testo": "Quale principio sull'organizzazione degli uffici fissa l'art. 2 del D.Lgs. 165/2001?",
+    "opzioni": [
+      "Funzionalità rispetto ai compiti e ai programmi, con obiettivi di efficienza, efficacia ed economicità",
+      "Gerarchia militare",
+      "Rotazione annuale obbligatoria di tutti gli uffici",
+      "Massimizzazione del numero di dipendenti"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 2, c. 1, lett. a).",
+    "fonte": "D.Lgs. 165/2001, art. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-194",
+    "argomento": "Lavoro pubblico",
+    "livello": 4,
+    "testo": "Cosa devono garantire le PA oltre alle pari opportunità, secondo l'art. 7 del D.Lgs. 165/2001?",
+    "opzioni": [
+      "La settimana corta",
+      "Un ambiente di lavoro improntato al benessere organizzativo, contrastando la violenza morale o psichica",
+      "Il lavoro notturno obbligatorio",
+      "Un premio annuale uguale per tutti"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 7, c. 1.",
+    "fonte": "D.Lgs. 165/2001, art. 7",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-195",
+    "argomento": "Dirigenza",
+    "livello": 4,
+    "testo": "Come si accede alla qualifica di dirigente di prima fascia?",
+    "opzioni": [
+      "Per elezione dei dipendenti",
+      "Per sola anzianità come dirigente di seconda fascia",
+      "Con i meccanismi dell'art. 28-bis (concorso e incarichi)",
+      "Per nomina del sindacato"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 23, c. 1 D.Lgs. 165/2001.",
+    "fonte": "D.Lgs. 165/2001, art. 23",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-196",
+    "argomento": "Contrattazione collettiva",
+    "livello": 4,
+    "testo": "Come si calcola la rappresentatività sindacale ai fini dell'art. 43?",
+    "opzioni": [
+      "Solo numero di iscritti nazionali",
+      "Numero di scioperi proclamati",
+      "Solo voti alle elezioni politiche",
+      "Media tra dato associativo (deleghe) e dato elettorale (voti nelle RSU)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 43, c. 1.",
+    "fonte": "D.Lgs. 165/2001, art. 43",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-197",
+    "argomento": "Contrattazione collettiva",
+    "livello": 4,
+    "testo": "Entro quanti giorni il Governo può esprimere valutazioni sugli atti di indirizzo dei comitati di settore regionali e locali?",
+    "opzioni": [
+      "Venti giorni",
+      "Sessanta giorni",
+      "Cinque giorni",
+      "Un anno"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 47, c. 2.",
+    "fonte": "D.Lgs. 165/2001, art. 47",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-198",
+    "argomento": "Procedimento disciplinare",
+    "livello": 3,
+    "testo": "Oltre alla pena, a cosa è obbligato il dipendente che attesta falsamente la presenza in servizio?",
+    "opzioni": [
+      "A nulla",
+      "A risarcire il danno patrimoniale pari alla retribuzione dei periodi non lavorati, oltre al danno d'immagine",
+      "A pagare una tassa di 10 euro",
+      "A lavorare gratis un mese"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 55-quinquies, c. 2.",
+    "fonte": "D.Lgs. 165/2001, art. 55-quinquies",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-199",
+    "argomento": "Lavoro pubblico",
+    "livello": 4,
+    "testo": "Le disposizioni di legge applicabili solo ai dipendenti pubblici possono essere derogate dai contratti collettivi?",
+    "opzioni": [
+      "No, mai",
+      "Sì, sempre e in ogni materia",
+      "Sì, nelle materie affidate alla contrattazione collettiva e nei limiti previsti",
+      "Solo con decreto ministeriale"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 2, c. 2 D.Lgs. 165/2001.",
+    "fonte": "D.Lgs. 165/2001, art. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-200",
+    "argomento": "Lavoro pubblico",
+    "livello": 3,
+    "testo": "Cosa prevede l'art. 52 sull'esercizio di fatto di mansioni non corrispondenti alla qualifica?",
+    "opzioni": [
+      "Dà diritto all'inquadramento dopo tre mesi",
+      "Comporta la perdita del posto",
+      "Comporta la nullità del contratto",
+      "Non ha effetto ai fini dell'inquadramento né dell'assegnazione di incarichi di direzione"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 52, c. 1.",
+    "fonte": "D.Lgs. 165/2001, art. 52",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-201",
+    "argomento": "Lavoro pubblico",
+    "livello": 4,
+    "testo": "In quante aree almeno sono inquadrati i dipendenti pubblici non dirigenti (art. 52, c. 1-bis)?",
+    "opzioni": [
+      "Almeno tre aree funzionali",
+      "Due fasce",
+      "Dieci aree",
+      "Una sola area"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 52, c. 1-bis D.Lgs. 165/2001.",
+    "fonte": "D.Lgs. 165/2001, art. 52",
+    "versione": "v1"
+  }
+]

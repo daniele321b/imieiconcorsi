@@ -11,3 +11,12 @@ google_client_id     = ""
 google_client_secret = ""
 facebook_app_id      = ""
 facebook_app_secret  = ""
+
+# Pubblicità del piano Free (facoltativa). Vuoti = annunci interni sui piani.
+# Prima di attivare AdSense serve il banner di consenso ai cookie.
+adsense_client = ""
+adsense_slot   = ""
+
+# Pagamenti con Stripe (docs/GUIDA-PAGAMENTI.md). Vuoti = cambio piano gratuito ("mock").
+stripe_secret_key     = ""   # sk_test_... (Dashboard Stripe -> Developers -> API keys)
+stripe_webhook_secret = ""   # whsec_...  (Developers -> Webhooks -> il tuo endpoint)

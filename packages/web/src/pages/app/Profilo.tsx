@@ -1,6 +1,8 @@
 import { PIANI, type CompartoId, type FrequenzaAvvisi, type MateriaId } from "@imieiconcorsi/core/domain";
-import { LogOut, ShieldCheck } from "lucide-react";
+import { LogOut, ShieldCheck, Trash2 } from "lucide-react";
 import { useState } from "react";
+import { useNavigate } from "react-router";
+import { FeedbackApp } from "../../components/FeedbackApp";
 import { AvvisiPicker, InteressiPicker, LivelliPicker } from "../../components/ProfiloPickers";
 import { Alert, Badge, Button, ButtonLink, Card, Field, PageHeader } from "../../components/ui";
 import { api } from "../../lib/api";
@@ -16,6 +18,24 @@ export function Profilo() {
   const [avvisi, setAvvisi] = useState<FrequenzaAvvisi>(utente.avvisi);
   const [salvataggio, setSalvataggio] = useState(false);
   const [esito, setEsito] = useState<{ tone: "success" | "error"; testo: string }>();
+  const navigate = useNavigate();
+  const [conferma, setConferma] = useState("");
+  const [eliminazione, setEliminazione] = useState(false);
+  const [erroreEliminazione, setErroreEliminazione] = useState<string>();
+
+  async function eliminaAccount() {
+    setEliminazione(true);
+    setErroreEliminazione(undefined);
+    try {
+      await api("/me", { method: "DELETE" });
+      // L'utente Cognito non esiste più: si chiude la sessione locale e si torna alla home.
+      await esci().catch(() => {});
+      navigate("/", { replace: true });
+    } catch (err) {
+      setErroreEliminazione(messaggioErrore(err));
+      setEliminazione(false);
+    }
+  }
 
   async function salva() {
     setSalvataggio(true);
@@ -55,22 +75,34 @@ export function Profilo() {
           <p className="text-xs font-semibold text-slate-500 uppercase">Email</p>
           <p className="mt-1 truncate font-medium">{utente.email ?? "—"}</p>
         </div>
-        <div>
-          <p className="text-xs font-semibold text-slate-500 uppercase">Piano</p>
-          <p className="mt-1 flex items-center gap-2 font-medium">
-            {PIANI[utente.piano].nome} {utente.periodo && <Badge>{utente.periodo}</Badge>}
-            {utente.admin && <Badge tone="amber">admin</Badge>}
-            <ButtonLink to="/app/piani" variant="ghost" size="sm">
-              Cambia
-            </ButtonLink>
-          </p>
-        </div>
+        {utente.admin ? (
+          <div>
+            <p className="text-xs font-semibold text-slate-500 uppercase">Ruolo</p>
+            <p className="mt-1 flex items-center gap-2 font-medium">
+              <Badge tone="amber">Admin</Badge> tutte le funzioni
+            </p>
+          </div>
+        ) : (
+          <div>
+            <p className="text-xs font-semibold text-slate-500 uppercase">Piano</p>
+            <p className="mt-1 flex items-center gap-2 font-medium">
+              {PIANI[utente.piano].nome} {utente.periodo && <Badge>{utente.periodo}</Badge>}
+              <ButtonLink to="/app/piani" variant="ghost" size="sm">
+                Cambia
+              </ButtonLink>
+            </p>
+          </div>
+        )}
         <div>
           <p className="text-xs font-semibold text-slate-500 uppercase">
-            {utente.piano !== "free" ? "Piano valido fino al" : "Iscritto dal"}
+            {!utente.admin && utente.piano !== "free" ? "Piano valido fino al" : "Iscritto dal"}
           </p>
           <p className="mt-1 font-medium">
-            {utente.piano !== "free" ? (utente.scadenzaPiano ? data(utente.scadenzaPiano) : "Senza scadenza") : data(utente.createdAt)}
+            {!utente.admin && utente.piano !== "free"
+              ? utente.scadenzaPiano
+                ? data(utente.scadenzaPiano)
+                : "Senza scadenza"
+              : data(utente.createdAt)}
           </p>
         </div>
       </Card>
@@ -107,6 +139,31 @@ export function Profilo() {
           Salva modifiche
         </Button>
       </div>
+
+      <FeedbackApp />
+
+      <section className="space-y-3 rounded-2xl p-5 ring-1 ring-rose-200">
+        <h2 className="flex items-center gap-2 text-lg font-bold text-rose-700">
+          <Trash2 className="size-5" /> Elimina account
+        </h2>
+        <p className="text-sm text-slate-600">
+          Cancella email, nome, profilo di studio, concorsi seguiti e sessioni. L'operazione non si può annullare e un eventuale
+          piano attivo non viene rimborsato.
+        </p>
+        {erroreEliminazione && <Alert tone="error">{erroreEliminazione}</Alert>}
+        <div className="flex flex-wrap items-end gap-3">
+          <Field
+            label='Per confermare scrivi "ELIMINA"'
+            name="conferma-eliminazione"
+            value={conferma}
+            onChange={(e) => setConferma(e.target.value)}
+            className="max-w-xs"
+          />
+          <Button variant="danger" disabled={conferma !== "ELIMINA"} loading={eliminazione} onClick={() => void eliminaAccount()}>
+            Elimina definitivamente
+          </Button>
+        </div>
+      </section>
     </div>
   );
 }

@@ -1,4 +1,18 @@
-import { BookOpen, Hourglass, Landmark, Monitor, Puzzle, Scale, type LucideIcon } from "lucide-react";
+import {
+  BookOpen,
+  Briefcase,
+  Calculator,
+  Coins,
+  Gavel,
+  Globe,
+  Hourglass,
+  Landmark,
+  Languages,
+  Monitor,
+  Puzzle,
+  Scale,
+  type LucideIcon,
+} from "lucide-react";
 import type { MateriaApi } from "../lib/api";
 import { cx } from "./ui";
 
@@ -23,6 +37,12 @@ const ICONE: Record<MateriaApi["icona"], LucideIcon> = {
   hourglass: Hourglass,
   puzzle: Puzzle,
   monitor: Monitor,
+  coins: Coins,
+  briefcase: Briefcase,
+  gavel: Gavel,
+  globe: Globe,
+  calculator: Calculator,
+  languages: Languages,
 };
 
 export const COLORI_MATERIA: Record<string, string> = {
@@ -32,6 +52,12 @@ export const COLORI_MATERIA: Record<string, string> = {
   storia: "bg-amber-50 text-amber-600",
   logica: "bg-emerald-50 text-emerald-600",
   informatica: "bg-violet-50 text-violet-600",
+  "contabilita-pubblica": "bg-teal-50 text-teal-600",
+  "diritto-lavoro": "bg-orange-50 text-orange-600",
+  "diritto-penale": "bg-red-50 text-red-600",
+  geografia: "bg-lime-50 text-lime-700",
+  matematica: "bg-cyan-50 text-cyan-600",
+  inglese: "bg-fuchsia-50 text-fuchsia-600",
 };
 
 export function IconaMateria({ icona, materia, className }: { icona: MateriaApi["icona"]; materia: string; className?: string }) {

@@ -1,0 +1,3402 @@
+[
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-001",
+    "argomento": "Principi fondamentali",
+    "livello": 1,
+    "testo": "Secondo l'art. 1 della Costituzione, a chi appartiene la sovranità?",
+    "opzioni": [
+      "Al popolo",
+      "Al Presidente della Repubblica",
+      "Allo Stato",
+      "Al Parlamento"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'art. 1 afferma che la sovranità appartiene al popolo, che la esercita nelle forme e nei limiti della Costituzione.",
+    "fonte": "Costituzione, art. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-002",
+    "argomento": "Principi fondamentali",
+    "livello": 1,
+    "testo": "L'Italia, secondo l'art. 1 della Costituzione, è una Repubblica democratica fondata:",
+    "opzioni": [
+      "sulla solidarietà",
+      "sul lavoro",
+      "sulla libertà",
+      "sulla famiglia"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il primo comma dell'art. 1 recita: «L'Italia è una Repubblica democratica, fondata sul lavoro».",
+    "fonte": "Costituzione, art. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-003",
+    "argomento": "Principi fondamentali",
+    "livello": 2,
+    "testo": "Il principio di eguaglianza sostanziale, che impegna la Repubblica a rimuovere gli ostacoli di ordine economico e sociale, è previsto:",
+    "opzioni": [
+      "dall'art. 2",
+      "dall'art. 4",
+      "dal secondo comma dell'art. 3",
+      "dal primo comma dell'art. 3"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il primo comma dell'art. 3 sancisce l'eguaglianza formale; il secondo comma l'eguaglianza sostanziale, con il compito di rimuovere gli ostacoli che la limitano.",
+    "fonte": "Costituzione, art. 3",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-004",
+    "argomento": "Principi fondamentali",
+    "livello": 2,
+    "testo": "Come descrive l'art. 12 della Costituzione la bandiera della Repubblica?",
+    "opzioni": [
+      "La Costituzione non descrive la bandiera",
+      "Tricolore rosso, bianco e verde, a bande verticali di larghezza diversa",
+      "Tricolore verde, bianco e rosso, a tre bande orizzontali",
+      "Tricolore verde, bianco e rosso, a tre bande verticali di eguali dimensioni"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'art. 12 fissa colori, ordine e forma: bande verticali di eguali dimensioni.",
+    "fonte": "Costituzione, art. 12",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-005",
+    "argomento": "Principi fondamentali",
+    "livello": 2,
+    "testo": "Secondo l'art. 7 della Costituzione, i rapporti tra Stato e Chiesa cattolica sono regolati:",
+    "opzioni": [
+      "dai Patti Lateranensi",
+      "dallo Statuto Albertino",
+      "da una legge costituzionale del 1948",
+      "dal Concordato di Worms"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'art. 7 dichiara Stato e Chiesa indipendenti e sovrani, ciascuno nel proprio ordine, e rinvia ai Patti Lateranensi.",
+    "fonte": "Costituzione, art. 7",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-006",
+    "argomento": "Principi fondamentali",
+    "livello": 3,
+    "testo": "Dopo la riforma costituzionale del 2022, l'art. 9 tutela anche:",
+    "opzioni": [
+      "il diritto alla connessione a internet",
+      "l'ambiente, la biodiversità e gli ecosistemi, anche nell'interesse delle future generazioni",
+      "il diritto allo sport",
+      "la parità di genere nelle cariche elettive"
+    ],
+    "corretta": 1,
+    "spiegazione": "La legge costituzionale 1/2022 ha aggiunto all'art. 9 la tutela di ambiente, biodiversità ed ecosistemi.",
+    "fonte": "Costituzione, art. 9",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-007",
+    "argomento": "Principi fondamentali",
+    "livello": 1,
+    "testo": "Che cosa afferma l'art. 11 della Costituzione a proposito della guerra?",
+    "opzioni": [
+      "L'Italia può dichiarare guerra solo con referendum",
+      "L'Italia rinuncia a dotarsi di forze armate",
+      "L'Italia ripudia la guerra come strumento di offesa alla libertà degli altri popoli",
+      "L'Italia ammette la guerra solo se decisa dall'ONU"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'art. 11 ripudia la guerra come strumento di offesa e come mezzo di risoluzione delle controversie internazionali.",
+    "fonte": "Costituzione, art. 11",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-008",
+    "argomento": "Diritti e libertà",
+    "livello": 3,
+    "testo": "In caso di fermo da parte dell'autorità di pubblica sicurezza, entro quanto tempo il provvedimento va comunicato all'autorità giudiziaria?",
+    "opzioni": [
+      "Entro 24 ore",
+      "Entro 5 giorni",
+      "Entro 72 ore",
+      "Entro 48 ore"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 13: i provvedimenti provvisori vanno comunicati entro 48 ore all'autorità giudiziaria; se questa non li convalida nelle successive 48 ore, si intendono revocati.",
+    "fonte": "Costituzione, art. 13",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-009",
+    "argomento": "Diritti e libertà",
+    "livello": 2,
+    "testo": "Secondo l'art. 21 della Costituzione, la stampa:",
+    "opzioni": [
+      "non può essere soggetta ad autorizzazioni o censure",
+      "è soggetta ad autorizzazione del Ministero dell'interno",
+      "può essere censurata dal Governo in caso di necessità",
+      "è sottoposta al controllo preventivo del Garante"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'art. 21 tutela la libertà di manifestazione del pensiero e vieta autorizzazioni o censure sulla stampa.",
+    "fonte": "Costituzione, art. 21",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-010",
+    "argomento": "Diritti e libertà",
+    "livello": 1,
+    "testo": "Che cosa stabilisce l'art. 27 della Costituzione sulla pena di morte?",
+    "opzioni": [
+      "È ammessa per i reati più gravi",
+      "Non è ammessa",
+      "È ammessa solo con referendum",
+      "È ammessa solo in tempo di guerra"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'art. 27 afferma che la responsabilità penale è personale e che non è ammessa la pena di morte.",
+    "fonte": "Costituzione, art. 27",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-011",
+    "argomento": "Diritti e libertà",
+    "livello": 2,
+    "testo": "Secondo l'art. 27, l'imputato è considerato:",
+    "opzioni": [
+      "innocente solo se assolto in appello",
+      "colpevole fino a prova contraria",
+      "non colpevole sino alla condanna definitiva",
+      "non colpevole fino alla sentenza di primo grado"
+    ],
+    "corretta": 2,
+    "spiegazione": "La presunzione di non colpevolezza dura fino alla condanna definitiva.",
+    "fonte": "Costituzione, art. 27",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-012",
+    "argomento": "Rapporti economici",
+    "livello": 2,
+    "testo": "Secondo l'art. 36, il lavoratore può rinunciare alle ferie annuali retribuite?",
+    "opzioni": [
+      "Solo nei contratti a termine",
+      "Sì, se lo concorda con il datore di lavoro",
+      "Sì, in cambio di un compenso",
+      "No, non può rinunciarvi"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'art. 36 riconosce il diritto al riposo settimanale e a ferie annuali retribuite, a cui il lavoratore non può rinunziare.",
+    "fonte": "Costituzione, art. 36",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-013",
+    "argomento": "Rapporti politici",
+    "livello": 1,
+    "testo": "Secondo l'art. 48, il voto è:",
+    "opzioni": [
+      "personale ed eguale, libero e segreto",
+      "personale, palese e obbligatorio",
+      "segreto solo per le elezioni politiche",
+      "libero ma delegabile"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'art. 48 definisce le caratteristiche del voto e lo qualifica come dovere civico.",
+    "fonte": "Costituzione, art. 48",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-014",
+    "argomento": "Parlamento",
+    "livello": 2,
+    "testo": "Quanti sono i deputati dopo la riduzione del numero dei parlamentari?",
+    "opzioni": [
+      "630",
+      "400",
+      "600",
+      "315"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'art. 56, modificato dalla legge costituzionale 1/2020, fissa il numero dei deputati a quattrocento, di cui otto eletti nella circoscrizione Estero.",
+    "fonte": "Costituzione, art. 56",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-015",
+    "argomento": "Parlamento",
+    "livello": 2,
+    "testo": "Quanti senatori sono eletti a suffragio universale e diretto?",
+    "opzioni": [
+      "100",
+      "315",
+      "200",
+      "400"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'art. 57, dopo la riforma del 2020, fissa i senatori elettivi a duecento, di cui quattro eletti nella circoscrizione Estero.",
+    "fonte": "Costituzione, art. 57",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-016",
+    "argomento": "Parlamento",
+    "livello": 2,
+    "testo": "Qual è l'età minima per essere eletti deputati?",
+    "opzioni": [
+      "18 anni",
+      "40 anni",
+      "21 anni",
+      "25 anni"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 56: sono eleggibili a deputati gli elettori che nel giorno delle elezioni hanno compiuto i venticinque anni di età.",
+    "fonte": "Costituzione, art. 56",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-017",
+    "argomento": "Parlamento",
+    "livello": 3,
+    "testo": "Qual è l'età minima per essere eletti senatori?",
+    "opzioni": [
+      "40 anni",
+      "25 anni",
+      "50 anni",
+      "30 anni"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 58: sono eleggibili a senatori gli elettori che hanno compiuto il quarantesimo anno.",
+    "fonte": "Costituzione, art. 58",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-018",
+    "argomento": "Parlamento",
+    "livello": 1,
+    "testo": "Quanto dura la legislatura di ciascuna Camera?",
+    "opzioni": [
+      "Quattro anni",
+      "Cinque anni",
+      "Sette anni",
+      "Sei anni"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 60: la Camera dei deputati e il Senato della Repubblica sono eletti per cinque anni.",
+    "fonte": "Costituzione, art. 60",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-019",
+    "argomento": "Parlamento",
+    "livello": 4,
+    "testo": "Quanti senatori a vita può nominare, al massimo, il Presidente della Repubblica?",
+    "opzioni": [
+      "Tre",
+      "Nessuno: sono senatori a vita solo gli ex Presidenti",
+      "In tutto non più di cinque in carica contemporaneamente",
+      "Cinque per ogni mandato presidenziale"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 59, come modificato nel 2020: il numero complessivo dei senatori in carica nominati dal Presidente non può in alcun caso essere superiore a cinque.",
+    "fonte": "Costituzione, art. 59",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-020",
+    "argomento": "Parlamento",
+    "livello": 3,
+    "testo": "Che cosa significa che ogni membro del Parlamento esercita le sue funzioni «senza vincolo di mandato»?",
+    "opzioni": [
+      "Non può essere rieletto",
+      "Non può cambiare gruppo parlamentare",
+      "Non ha un'indennità fissata dalla legge",
+      "Non è obbligato a seguire istruzioni di elettori o partiti"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'art. 67 stabilisce che ogni parlamentare rappresenta la Nazione ed esercita le sue funzioni senza vincolo di mandato.",
+    "fonte": "Costituzione, art. 67",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-021",
+    "argomento": "Formazione delle leggi",
+    "livello": 2,
+    "testo": "Quante firme di elettori servono per presentare una proposta di legge di iniziativa popolare?",
+    "opzioni": [
+      "Almeno 50.000",
+      "Almeno 100.000",
+      "Almeno 5.000",
+      "Almeno 500.000"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 71: il popolo esercita l'iniziativa delle leggi mediante la proposta di un progetto redatto in articoli da parte di almeno cinquantamila elettori.",
+    "fonte": "Costituzione, art. 71",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-022",
+    "argomento": "Formazione delle leggi",
+    "livello": 3,
+    "testo": "Chi può chiedere un referendum abrogativo?",
+    "opzioni": [
+      "Un quinto dei parlamentari",
+      "500.000 elettori o cinque Consigli regionali",
+      "Il Presidente della Repubblica",
+      "50.000 elettori o tre Consigli regionali"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'art. 75 attribuisce la richiesta a cinquecentomila elettori o a cinque Consigli regionali.",
+    "fonte": "Costituzione, art. 75",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-023",
+    "argomento": "Formazione delle leggi",
+    "livello": 4,
+    "testo": "Per quale di queste leggi NON è ammesso il referendum abrogativo?",
+    "opzioni": [
+      "Le leggi sul divorzio",
+      "Le leggi elettorali",
+      "Le leggi tributarie e di bilancio",
+      "Le leggi sulla caccia"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'art. 75 esclude il referendum per leggi tributarie e di bilancio, di amnistia e di indulto, e di autorizzazione a ratificare trattati internazionali.",
+    "fonte": "Costituzione, art. 75",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-024",
+    "argomento": "Formazione delle leggi",
+    "livello": 4,
+    "testo": "Quando è approvata la proposta sottoposta a referendum abrogativo?",
+    "opzioni": [
+      "Se votano almeno due terzi degli aventi diritto",
+      "Se si raggiunge la maggioranza dei voti validi, qualunque sia l'affluenza",
+      "Se partecipa almeno un terzo degli elettori",
+      "Se partecipa la maggioranza degli aventi diritto e si raggiunge la maggioranza dei voti validi"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 75: la proposta è approvata se ha partecipato alla votazione la maggioranza degli aventi diritto e se è raggiunta la maggioranza dei voti validamente espressi.",
+    "fonte": "Costituzione, art. 75",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-025",
+    "argomento": "Fonti del diritto",
+    "livello": 2,
+    "testo": "Entro quanti giorni dalla pubblicazione il decreto-legge deve essere convertito in legge?",
+    "opzioni": [
+      "60 giorni",
+      "90 giorni",
+      "30 giorni",
+      "45 giorni"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 77: i decreti perdono efficacia sin dall'inizio se non sono convertiti in legge entro sessanta giorni dalla loro pubblicazione.",
+    "fonte": "Costituzione, art. 77",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-026",
+    "argomento": "Fonti del diritto",
+    "livello": 4,
+    "testo": "Con quale maggioranza sono approvate le leggi di amnistia e di indulto?",
+    "opzioni": [
+      "Maggioranza assoluta dei componenti in seduta comune",
+      "Due terzi dei componenti di ciascuna Camera, in ogni articolo e nella votazione finale",
+      "Maggioranza semplice dei presenti",
+      "Tre quinti dei componenti di ciascuna Camera"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'art. 79 richiede la maggioranza dei due terzi dei componenti di ciascuna Camera, in ogni suo articolo e nella votazione finale.",
+    "fonte": "Costituzione, art. 79",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-027",
+    "argomento": "Presidente della Repubblica",
+    "livello": 2,
+    "testo": "Chi elegge il Presidente della Repubblica?",
+    "opzioni": [
+      "I Consigli regionali",
+      "I cittadini con voto diretto",
+      "Il Parlamento in seduta comune, integrato dai delegati regionali",
+      "Il Senato su proposta del Governo"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 83: il Presidente è eletto dal Parlamento in seduta comune dei suoi membri, con tre delegati per ogni Regione (uno per la Valle d'Aosta).",
+    "fonte": "Costituzione, art. 83",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-028",
+    "argomento": "Presidente della Repubblica",
+    "livello": 3,
+    "testo": "Dopo quale scrutinio per eleggere il Presidente della Repubblica basta la maggioranza assoluta?",
+    "opzioni": [
+      "Fin dal primo scrutinio",
+      "Dopo il secondo scrutinio",
+      "Dopo il quarto scrutinio",
+      "Dopo il terzo scrutinio"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 83: nei primi tre scrutini serve la maggioranza di due terzi dell'assemblea; dopo il terzo è sufficiente la maggioranza assoluta.",
+    "fonte": "Costituzione, art. 83",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-029",
+    "argomento": "Presidente della Repubblica",
+    "livello": 1,
+    "testo": "Qual è l'età minima per essere eletti Presidente della Repubblica?",
+    "opzioni": [
+      "50 anni",
+      "40 anni",
+      "45 anni",
+      "35 anni"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 84: può essere eletto ogni cittadino che abbia compiuto cinquanta anni d'età e goda dei diritti civili e politici.",
+    "fonte": "Costituzione, art. 84",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-030",
+    "argomento": "Presidente della Repubblica",
+    "livello": 1,
+    "testo": "Per quanti anni è eletto il Presidente della Repubblica?",
+    "opzioni": [
+      "Nove",
+      "Sette",
+      "Sei",
+      "Cinque"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 85: il Presidente della Repubblica è eletto per sette anni.",
+    "fonte": "Costituzione, art. 85",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-031",
+    "argomento": "Presidente della Repubblica",
+    "livello": 2,
+    "testo": "Chi esercita le funzioni del Presidente della Repubblica se questi non può adempierle?",
+    "opzioni": [
+      "Il Presidente della Camera",
+      "Il Presidente della Corte costituzionale",
+      "Il Presidente del Senato",
+      "Il Presidente del Consiglio dei ministri"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 86: le funzioni sono esercitate dal Presidente del Senato in ogni caso in cui il Presidente della Repubblica non possa adempierle.",
+    "fonte": "Costituzione, art. 86",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-032",
+    "argomento": "Presidente della Repubblica",
+    "livello": 3,
+    "testo": "In quale periodo il Presidente della Repubblica non può sciogliere le Camere (il cosiddetto «semestre bianco»)?",
+    "opzioni": [
+      "Nei sei mesi successivi alle elezioni",
+      "Durante lo stato di guerra",
+      "Nei primi sei mesi del suo mandato",
+      "Negli ultimi sei mesi del suo mandato"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'art. 88 vieta lo scioglimento negli ultimi sei mesi del mandato, salvo che coincidano in tutto o in parte con gli ultimi sei mesi della legislatura.",
+    "fonte": "Costituzione, art. 88",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-033",
+    "argomento": "Presidente della Repubblica",
+    "livello": 3,
+    "testo": "Per quali atti compiuti nell'esercizio delle sue funzioni il Presidente della Repubblica è responsabile?",
+    "opzioni": [
+      "Solo per alto tradimento o attentato alla Costituzione",
+      "Per tutti i reati comuni",
+      "Solo per gli atti non controfirmati",
+      "Per nessun atto, in nessun caso"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'art. 90 esclude la responsabilità del Presidente per gli atti nell'esercizio delle funzioni, tranne alto tradimento e attentato alla Costituzione.",
+    "fonte": "Costituzione, art. 90",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-034",
+    "argomento": "Governo",
+    "livello": 2,
+    "testo": "Entro quanto tempo dalla sua formazione il Governo deve presentarsi alle Camere per ottenere la fiducia?",
+    "opzioni": [
+      "Entro trenta giorni",
+      "Entro dieci giorni",
+      "Entro cinque giorni",
+      "Entro sessanta giorni"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 94: entro dieci giorni dalla sua formazione il Governo si presenta alle Camere per ottenerne la fiducia.",
+    "fonte": "Costituzione, art. 94",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-035",
+    "argomento": "Governo",
+    "livello": 4,
+    "testo": "Da quanti componenti della Camera deve essere firmata la mozione di sfiducia?",
+    "opzioni": [
+      "La maggioranza assoluta",
+      "Almeno un terzo",
+      "Almeno un decimo",
+      "Almeno un quinto"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 94: la mozione di sfiducia deve essere firmata da almeno un decimo dei componenti della Camera e non può essere messa in discussione prima di tre giorni dalla presentazione.",
+    "fonte": "Costituzione, art. 94",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-036",
+    "argomento": "Magistratura",
+    "livello": 3,
+    "testo": "Chi presiede il Consiglio superiore della magistratura?",
+    "opzioni": [
+      "Il Presidente della Corte costituzionale",
+      "Il Ministro della giustizia",
+      "Il Primo presidente della Corte di cassazione",
+      "Il Presidente della Repubblica"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 104: il CSM è presieduto dal Presidente della Repubblica; ne fanno parte di diritto il primo presidente e il procuratore generale della Cassazione.",
+    "fonte": "Costituzione, art. 104",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-037",
+    "argomento": "Ordinamento della Repubblica",
+    "livello": 2,
+    "testo": "Quali enti costituiscono la Repubblica secondo l'art. 114 della Costituzione?",
+    "opzioni": [
+      "Comuni, Province, Città metropolitane, Regioni e Stato",
+      "Stato, Regioni e Comuni",
+      "Stato, Regioni, Province e Comunità montane",
+      "Solo lo Stato e le Regioni"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'art. 114, riscritto nel 2001, elenca gli enti che costituiscono la Repubblica, partendo dai Comuni.",
+    "fonte": "Costituzione, art. 114",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-038",
+    "argomento": "Corte costituzionale",
+    "livello": 2,
+    "testo": "Per quanti anni sono nominati i giudici della Corte costituzionale?",
+    "opzioni": [
+      "Sette anni",
+      "Nove anni",
+      "Dodici anni",
+      "Cinque anni"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 135: i giudici sono nominati per nove anni, decorrenti dal giorno del giuramento, e non possono essere nuovamente nominati.",
+    "fonte": "Costituzione, art. 135",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-039",
+    "argomento": "Corte costituzionale",
+    "livello": 4,
+    "testo": "Da quando una norma di legge dichiarata incostituzionale cessa di avere efficacia?",
+    "opzioni": [
+      "Dal giorno della sentenza",
+      "Dall'abrogazione da parte del Parlamento",
+      "Dal giorno successivo alla pubblicazione della decisione",
+      "Dopo sessanta giorni dalla pubblicazione"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 136: la norma cessa di avere efficacia dal giorno successivo alla pubblicazione della decisione della Corte.",
+    "fonte": "Costituzione, art. 136",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-040",
+    "argomento": "Revisione costituzionale",
+    "livello": 5,
+    "testo": "Una legge di revisione costituzionale approvata in seconda votazione da ciascuna Camera con la maggioranza dei due terzi dei componenti:",
+    "opzioni": [
+      "deve essere sempre sottoposta a referendum",
+      "entra in vigore solo dopo il parere della Corte costituzionale",
+      "può essere sottoposta a referendum su richiesta di 50.000 elettori",
+      "non può essere sottoposta a referendum"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 138: il referendum non si fa se la legge è stata approvata nella seconda votazione da ciascuna Camera a maggioranza di due terzi dei suoi componenti.",
+    "fonte": "Costituzione, art. 138",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-041",
+    "argomento": "Revisione costituzionale",
+    "livello": 3,
+    "testo": "Quale elemento, secondo l'art. 139, non può essere oggetto di revisione costituzionale?",
+    "opzioni": [
+      "La forma repubblicana",
+      "La durata del mandato presidenziale",
+      "Il numero dei parlamentari",
+      "L'elenco delle Regioni"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'art. 139 è il limite espresso alla revisione: la forma repubblicana non può essere oggetto di revisione costituzionale.",
+    "fonte": "Costituzione, art. 139",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-042",
+    "argomento": "Revisione costituzionale",
+    "livello": 5,
+    "testo": "Chi può chiedere il referendum su una legge costituzionale approvata con maggioranza inferiore ai due terzi?",
+    "opzioni": [
+      "Un milione di elettori",
+      "Un quinto dei membri di una Camera, 500.000 elettori o cinque Consigli regionali",
+      "Un decimo dei membri di ciascuna Camera",
+      "Solo il Presidente della Repubblica"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 138: il referendum può essere chiesto entro tre mesi dalla pubblicazione da un quinto dei membri di una Camera o da cinquecentomila elettori o da cinque Consigli regionali.",
+    "fonte": "Costituzione, art. 138",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-043",
+    "argomento": "Storia costituzionale",
+    "livello": 1,
+    "testo": "Quando è entrata in vigore la Costituzione?",
+    "opzioni": [
+      "Il 25 aprile 1945",
+      "Il 27 dicembre 1947",
+      "Il 1° gennaio 1948",
+      "Il 2 giugno 1946"
+    ],
+    "corretta": 2,
+    "spiegazione": "La disposizione transitoria XVIII fissa l'entrata in vigore al 1° gennaio 1948; la promulgazione era avvenuta il 27 dicembre 1947.",
+    "fonte": "Costituzione, disp. trans. XVIII",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-044",
+    "argomento": "Principi fondamentali",
+    "livello": 5,
+    "testo": "Un comune vuole introdurre una «lingua ufficiale locale» che sostituisca l'italiano negli atti. Quale principio costituzionale lo esclude, pur tutelando le minoranze?",
+    "opzioni": [
+      "Nessuno: i comuni sono liberi di scegliere la lingua",
+      "L'art. 33 sulla libertà di insegnamento",
+      "L'art. 21 sulla libertà di stampa",
+      "L'art. 6 tutela le minoranze linguistiche con apposite norme, ma resta nell'unità della Repubblica (art. 5)"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'art. 6 affida alla Repubblica la tutela delle minoranze linguistiche con apposite norme; l'art. 5 afferma la Repubblica una e indivisibile. Non è il singolo comune a stabilire la lingua degli atti.",
+    "fonte": "Costituzione, artt. 5 e 6",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-045",
+    "argomento": "Principi fondamentali",
+    "livello": 2,
+    "testo": "Secondo l'art. 2, quali doveri la Repubblica richiede di adempiere?",
+    "opzioni": [
+      "I doveri inderogabili di solidarietà politica, economica e sociale",
+      "I doveri di difesa armata",
+      "I doveri fiscali verso lo Stato",
+      "I doveri di fedeltà al Governo"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'art. 2 riconosce i diritti inviolabili e richiede i doveri inderogabili di solidarietà.",
+    "fonte": "Costituzione, art. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-046",
+    "argomento": "Principi fondamentali",
+    "livello": 2,
+    "testo": "L'art. 4 riconosce a tutti i cittadini il diritto:",
+    "opzioni": [
+      "alla proprietà",
+      "al lavoro",
+      "al reddito minimo",
+      "all'abitazione"
+    ],
+    "corretta": 1,
+    "spiegazione": "La Repubblica riconosce il diritto al lavoro e promuove le condizioni che lo rendano effettivo.",
+    "fonte": "Costituzione, art. 4",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-047",
+    "argomento": "Principi fondamentali",
+    "livello": 2,
+    "testo": "Secondo l'art. 5, la Repubblica è:",
+    "opzioni": [
+      "una e centralizzata, senza autonomie",
+      "federale",
+      "una e indivisibile, e riconosce e promuove le autonomie locali",
+      "divisa in Stati regionali sovrani"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'art. 5 unisce unità della Repubblica e valorizzazione delle autonomie locali e del decentramento.",
+    "fonte": "Costituzione, art. 5",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-048",
+    "argomento": "Principi fondamentali",
+    "livello": 3,
+    "testo": "Le modificazioni dei Patti Lateranensi accettate da Stato e Chiesa richiedono una revisione costituzionale?",
+    "opzioni": [
+      "Sì, sempre",
+      "Sì, con referendum",
+      "Solo se riguardano l'insegnamento",
+      "No, non richiedono procedimento di revisione costituzionale"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'art. 7 esclude la revisione costituzionale per modifiche dei Patti accettate dalle due parti.",
+    "fonte": "Costituzione, art. 7",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-049",
+    "argomento": "Principi fondamentali",
+    "livello": 3,
+    "testo": "Come sono regolati i rapporti tra lo Stato e le confessioni religiose diverse dalla cattolica?",
+    "opzioni": [
+      "Per legge sulla base di intese con le relative rappresentanze",
+      "Con decreto del Ministro dell'interno",
+      "Con trattati internazionali",
+      "Con i Patti Lateranensi"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 8: le confessioni acattoliche si organizzano con propri statuti e i rapporti con lo Stato sono regolati per legge sulla base di intese.",
+    "fonte": "Costituzione, art. 8",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-050",
+    "argomento": "Principi fondamentali",
+    "livello": 3,
+    "testo": "Dopo la riforma del 2022, l'art. 9 affida alla legge dello Stato la disciplina della tutela:",
+    "opzioni": [
+      "delle lingue regionali",
+      "degli animali",
+      "dei consumatori",
+      "dei dati personali"
+    ],
+    "corretta": 1,
+    "spiegazione": "La L. cost. 1/2022 ha aggiunto che la legge dello Stato disciplina modi e forme di tutela degli animali.",
+    "fonte": "Costituzione, art. 9",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-051",
+    "argomento": "Principi fondamentali",
+    "livello": 3,
+    "testo": "Lo straniero a cui nel suo paese è impedito l'esercizio delle libertà democratiche ha diritto:",
+    "opzioni": [
+      "alla cittadinanza italiana automatica",
+      "a un permesso di lavoro illimitato",
+      "d'asilo nel territorio della Repubblica, alle condizioni di legge",
+      "solo a un soggiorno di transito"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 10: diritto d'asilo secondo le condizioni stabilite dalla legge.",
+    "fonte": "Costituzione, art. 10",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-052",
+    "argomento": "Principi fondamentali",
+    "livello": 4,
+    "testo": "È ammessa l'estradizione dello straniero per reati politici?",
+    "opzioni": [
+      "Solo per i cittadini UE",
+      "Sì, se lo chiede l'ONU",
+      "Sì, sempre",
+      "No, salvo che per i delitti di genocidio"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'art. 10 la esclude per reati politici; la L. cost. 1/1967 ha previsto che il divieto non si applica ai delitti di genocidio.",
+    "fonte": "Costituzione, art. 10",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-053",
+    "argomento": "Principi fondamentali",
+    "livello": 3,
+    "testo": "A quali condizioni l'art. 11 consente limitazioni di sovranità?",
+    "opzioni": [
+      "In condizioni di parità con gli altri Stati, per un ordinamento che assicuri la pace e la giustizia",
+      "Su richiesta di qualunque Stato alleato",
+      "Solo in caso di guerra",
+      "Mai"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'art. 11 è la base costituzionale della partecipazione all'ONU e all'Unione europea.",
+    "fonte": "Costituzione, art. 11",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-054",
+    "argomento": "Diritti e libertà",
+    "livello": 2,
+    "testo": "Il domicilio, secondo l'art. 14, è:",
+    "opzioni": [
+      "inviolabile solo di notte",
+      "inviolabile",
+      "sempre ispezionabile dalla polizia",
+      "tutelato solo se di proprietà"
+    ],
+    "corretta": 1,
+    "spiegazione": "Ispezioni, perquisizioni e sequestri sono ammessi solo nei casi e modi stabiliti dalla legge.",
+    "fonte": "Costituzione, art. 14",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-055",
+    "argomento": "Diritti e libertà",
+    "livello": 2,
+    "testo": "Chi può limitare la libertà e la segretezza della corrispondenza?",
+    "opzioni": [
+      "Il sindaco",
+      "Il datore di lavoro",
+      "Solo l'autorità giudiziaria con atto motivato",
+      "La polizia senza autorizzazione"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 15: la limitazione può avvenire soltanto per atto motivato dell'autorità giudiziaria.",
+    "fonte": "Costituzione, art. 15",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-056",
+    "argomento": "Diritti e libertà",
+    "livello": 3,
+    "testo": "La libertà di circolazione può essere limitata per ragioni politiche?",
+    "opzioni": [
+      "Solo per i dipendenti pubblici",
+      "Sì, in periodo elettorale",
+      "Sì, con decreto del Governo",
+      "No, nessuna restrizione può essere determinata da ragioni politiche"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 16: limiti solo in via generale per sanità o sicurezza.",
+    "fonte": "Costituzione, art. 16",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-057",
+    "argomento": "Diritti e libertà",
+    "livello": 3,
+    "testo": "Per una riunione in luogo pubblico, cosa prevede l'art. 17?",
+    "opzioni": [
+      "Deve essere dato preavviso alle autorità",
+      "Serve il permesso del sindaco",
+      "Non serve nulla",
+      "Serve l'autorizzazione del prefetto"
+    ],
+    "corretta": 0,
+    "spiegazione": "Per le riunioni in luogo aperto al pubblico non serve preavviso; per quelle in luogo pubblico sì, e possono essere vietate solo per comprovati motivi di sicurezza o incolumità.",
+    "fonte": "Costituzione, art. 17",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-058",
+    "argomento": "Diritti e libertà",
+    "livello": 2,
+    "testo": "Per le riunioni in luogo aperto al pubblico è richiesto il preavviso?",
+    "opzioni": [
+      "Sì, sempre",
+      "No, non è richiesto",
+      "Sì, almeno tre giorni prima",
+      "Solo oltre cento partecipanti"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 17: il preavviso serve solo per le riunioni in luogo pubblico.",
+    "fonte": "Costituzione, art. 17",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-059",
+    "argomento": "Diritti e libertà",
+    "livello": 3,
+    "testo": "Quali associazioni sono vietate dall'art. 18?",
+    "opzioni": [
+      "Tutte le associazioni non registrate",
+      "I sindacati non riconosciuti",
+      "Le associazioni segrete e quelle con scopi politici perseguiti mediante organizzazioni di carattere militare",
+      "Le associazioni religiose"
+    ],
+    "corretta": 2,
+    "spiegazione": "La libertà di associazione non richiede autorizzazione, ma sono proibite associazioni segrete e paramilitari.",
+    "fonte": "Costituzione, art. 18",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-060",
+    "argomento": "Diritti e libertà",
+    "livello": 2,
+    "testo": "Quale limite pone l'art. 19 alla libertà di culto?",
+    "opzioni": [
+      "Che sia una religione riconosciuta",
+      "Nessun limite",
+      "Che si svolga solo in luoghi autorizzati",
+      "Che non si tratti di riti contrari al buon costume"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 19: tutti possono professare la propria fede, purché non con riti contrari al buon costume.",
+    "fonte": "Costituzione, art. 19",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-061",
+    "argomento": "Diritti e libertà",
+    "livello": 4,
+    "testo": "In caso di sequestro urgente di stampa periodica da parte della polizia giudiziaria, entro quanto deve essere fatta denuncia all'autorità giudiziaria?",
+    "opzioni": [
+      "Immediatamente, e non oltre 24 ore",
+      "Entro 48 ore",
+      "Entro un mese",
+      "Entro 5 giorni"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 21: denuncia entro 24 ore; senza convalida nelle 24 ore successive il sequestro è revocato.",
+    "fonte": "Costituzione, art. 21",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-062",
+    "argomento": "Diritti e libertà",
+    "livello": 2,
+    "testo": "Per motivi politici, si può essere privati della cittadinanza?",
+    "opzioni": [
+      "Sì, con sentenza penale",
+      "No: nessuno può essere privato per motivi politici della capacità giuridica, della cittadinanza, del nome",
+      "Solo in tempo di guerra",
+      "Sì, con decreto del Presidente della Repubblica"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'art. 22 vieta queste privazioni per motivi politici.",
+    "fonte": "Costituzione, art. 22",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-063",
+    "argomento": "Diritti e libertà",
+    "livello": 3,
+    "testo": "Quale principio fissa l'art. 23 («Nessuna prestazione personale o patrimoniale può essere imposta se non in base alla legge»)?",
+    "opzioni": [
+      "La libertà d'impresa",
+      "Il principio di progressività",
+      "La riserva di legge per le prestazioni imposte",
+      "Il principio di sussidiarietà"
+    ],
+    "corretta": 2,
+    "spiegazione": "Tributi e altre prestazioni imposte richiedono una base legislativa.",
+    "fonte": "Costituzione, art. 23",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-064",
+    "argomento": "Diritti e libertà",
+    "livello": 2,
+    "testo": "Secondo l'art. 24, la difesa è:",
+    "opzioni": [
+      "un servizio a pagamento",
+      "un diritto solo nel processo penale",
+      "garantita solo in appello",
+      "diritto inviolabile in ogni stato e grado del procedimento"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'art. 24 garantisce anche ai non abbienti i mezzi per agire e difendersi.",
+    "fonte": "Costituzione, art. 24",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-065",
+    "argomento": "Diritti e libertà",
+    "livello": 3,
+    "testo": "Il principio del «giudice naturale precostituito per legge» è sancito:",
+    "opzioni": [
+      "dall'art. 25",
+      "dall'art. 101",
+      "dall'art. 13",
+      "dall'art. 111"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'art. 25 afferma che nessuno può essere distolto dal giudice naturale precostituito per legge.",
+    "fonte": "Costituzione, art. 25",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-066",
+    "argomento": "Diritti e libertà",
+    "livello": 3,
+    "testo": "L'irretroattività della legge penale è garantita dall'art. 25, secondo cui nessuno può essere punito:",
+    "opzioni": [
+      "se non con sentenza di Cassazione",
+      "se non in forza di una legge entrata in vigore prima del fatto commesso",
+      "se non dopo tre gradi di giudizio",
+      "senza il parere della Corte costituzionale"
+    ],
+    "corretta": 1,
+    "spiegazione": "È il principio di legalità e irretroattività della norma penale.",
+    "fonte": "Costituzione, art. 25",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-067",
+    "argomento": "Diritti e libertà",
+    "livello": 4,
+    "testo": "Quando è consentita l'estradizione del cittadino italiano?",
+    "opzioni": [
+      "Mai",
+      "Solo con referendum",
+      "Solo ove espressamente prevista dalle convenzioni internazionali, mai per reati politici",
+      "Sempre, se lo chiede un altro Stato"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 26; anche qui il divieto per reati politici non si applica al genocidio.",
+    "fonte": "Costituzione, art. 26",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-068",
+    "argomento": "Diritti e libertà",
+    "livello": 2,
+    "testo": "A cosa devono tendere le pene secondo l'art. 27?",
+    "opzioni": [
+      "Al risarcimento dello Stato",
+      "All'esclusione sociale",
+      "Alla sola punizione",
+      "Alla rieducazione del condannato"
+    ],
+    "corretta": 3,
+    "spiegazione": "Le pene non possono essere contrarie al senso di umanità e devono tendere alla rieducazione.",
+    "fonte": "Costituzione, art. 27",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-069",
+    "argomento": "Diritti e libertà",
+    "livello": 4,
+    "testo": "Per gli atti compiuti in violazione di diritti, i dipendenti pubblici sono:",
+    "opzioni": [
+      "direttamente responsabili, e la responsabilità civile si estende allo Stato e agli enti pubblici",
+      "mai responsabili personalmente",
+      "responsabili solo disciplinarmente",
+      "responsabili solo se dirigenti"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 28: responsabilità diretta del dipendente con estensione della responsabilità civile all'ente.",
+    "fonte": "Costituzione, art. 28",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-070",
+    "argomento": "Rapporti etico-sociali",
+    "livello": 2,
+    "testo": "Come definisce la famiglia l'art. 29?",
+    "opzioni": [
+      "Nucleo di persone conviventi",
+      "Società naturale fondata sul matrimonio",
+      "Unione registrata presso il Comune",
+      "Istituzione di diritto pubblico"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il matrimonio è ordinato sull'eguaglianza morale e giuridica dei coniugi.",
+    "fonte": "Costituzione, art. 29",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-071",
+    "argomento": "Rapporti etico-sociali",
+    "livello": 2,
+    "testo": "Secondo l'art. 30, mantenere, istruire ed educare i figli è:",
+    "opzioni": [
+      "dovere solo per i figli nati nel matrimonio",
+      "dovere solo del padre",
+      "dovere e diritto dei genitori, anche se i figli sono nati fuori del matrimonio",
+      "compito esclusivo dello Stato"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'art. 30 non distingue tra figli nati nel e fuori del matrimonio quanto a questo dovere.",
+    "fonte": "Costituzione, art. 30",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-072",
+    "argomento": "Rapporti etico-sociali",
+    "livello": 2,
+    "testo": "Come qualifica la salute l'art. 32?",
+    "opzioni": [
+      "Servizio a pagamento",
+      "Competenza esclusiva delle Regioni",
+      "Diritto solo dei lavoratori",
+      "Fondamentale diritto dell'individuo e interesse della collettività"
+    ],
+    "corretta": 3,
+    "spiegazione": "La Repubblica garantisce anche cure gratuite agli indigenti.",
+    "fonte": "Costituzione, art. 32",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-073",
+    "argomento": "Rapporti etico-sociali",
+    "livello": 3,
+    "testo": "Si può essere obbligati a un trattamento sanitario?",
+    "opzioni": [
+      "Solo per disposizione di legge, nel rispetto della persona umana",
+      "Sì, su ordinanza del sindaco senza limiti",
+      "Sì, su decisione del medico",
+      "Mai"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 32: trattamenti obbligatori solo per legge e mai in violazione del rispetto della persona.",
+    "fonte": "Costituzione, art. 32",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-074",
+    "argomento": "Rapporti etico-sociali",
+    "livello": 2,
+    "testo": "Secondo l'art. 33, privati ed enti possono istituire scuole?",
+    "opzioni": [
+      "Solo scuole religiose",
+      "Sì, senza oneri per lo Stato",
+      "No, solo lo Stato",
+      "Sì, con finanziamento statale obbligatorio"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 33: diritto di istituire scuole ed istituti di educazione senza oneri per lo Stato.",
+    "fonte": "Costituzione, art. 33",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-075",
+    "argomento": "Rapporti etico-sociali",
+    "livello": 3,
+    "testo": "Quale valore dell'attività sportiva riconosce l'art. 33 dopo la riforma del 2023?",
+    "opzioni": [
+      "Nessuno: lo sport non è in Costituzione",
+      "Solo il valore economico",
+      "Il valore educativo, sociale e di promozione del benessere psicofisico",
+      "Il valore agonistico olimpico"
+    ],
+    "corretta": 2,
+    "spiegazione": "La L. cost. 1/2023 ha aggiunto il riconoscimento dell'attività sportiva in tutte le sue forme.",
+    "fonte": "Costituzione, art. 33",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-076",
+    "argomento": "Rapporti etico-sociali",
+    "livello": 2,
+    "testo": "Per quanti anni almeno l'istruzione inferiore è obbligatoria e gratuita secondo l'art. 34?",
+    "opzioni": [
+      "Dodici",
+      "Cinque",
+      "Dieci",
+      "Otto"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 34: istruzione inferiore impartita per almeno otto anni, obbligatoria e gratuita.",
+    "fonte": "Costituzione, art. 34",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-077",
+    "argomento": "Rapporti etico-sociali",
+    "livello": 3,
+    "testo": "Chi ha diritto di raggiungere i gradi più alti degli studi secondo l'art. 34?",
+    "opzioni": [
+      "I capaci e meritevoli, anche se privi di mezzi",
+      "Solo i figli dei dipendenti pubblici",
+      "Tutti, senza alcun requisito",
+      "Solo chi può pagare le tasse universitarie"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il diritto è reso effettivo con borse di studio e assegni attribuiti per concorso.",
+    "fonte": "Costituzione, art. 34",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-078",
+    "argomento": "Rapporti economici",
+    "livello": 2,
+    "testo": "Secondo l'art. 36, la retribuzione del lavoratore deve essere:",
+    "opzioni": [
+      "uguale per tutti",
+      "proporzionata alla quantità e qualità del lavoro e sufficiente per un'esistenza libera e dignitosa",
+      "libera, senza limiti costituzionali",
+      "fissata dal Governo"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'art. 36 fissa i criteri di proporzionalità e sufficienza.",
+    "fonte": "Costituzione, art. 36",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-079",
+    "argomento": "Rapporti economici",
+    "livello": 2,
+    "testo": "Chi stabilisce la durata massima della giornata lavorativa?",
+    "opzioni": [
+      "Il contratto individuale",
+      "Il datore di lavoro",
+      "La legge",
+      "Il sindacato"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 36: la durata massima della giornata lavorativa è stabilita dalla legge.",
+    "fonte": "Costituzione, art. 36",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-080",
+    "argomento": "Rapporti economici",
+    "livello": 2,
+    "testo": "A parità di lavoro, la donna lavoratrice ha diritto:",
+    "opzioni": [
+      "a una retribuzione ridotta",
+      "a una retribuzione maggiore",
+      "solo al minimo contrattuale",
+      "alle stesse retribuzioni del lavoratore"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 37: stessi diritti e stesse retribuzioni a parità di lavoro.",
+    "fonte": "Costituzione, art. 37",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-081",
+    "argomento": "Rapporti economici",
+    "livello": 3,
+    "testo": "Secondo l'art. 38, chi ha diritto al mantenimento e all'assistenza sociale?",
+    "opzioni": [
+      "Ogni cittadino inabile al lavoro e sprovvisto dei mezzi necessari per vivere",
+      "Solo i dipendenti pubblici",
+      "Solo i pensionati",
+      "Ogni disoccupato"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'art. 38 fonda assistenza e previdenza sociale.",
+    "fonte": "Costituzione, art. 38",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-082",
+    "argomento": "Rapporti economici",
+    "livello": 4,
+    "testo": "Quale condizione pone l'art. 39 per la registrazione dei sindacati?",
+    "opzioni": [
+      "L'autorizzazione del Ministro del lavoro",
+      "Che gli statuti sanciscano un ordinamento interno a base democratica",
+      "L'adesione a una confederazione",
+      "Un numero minimo di iscritti"
+    ],
+    "corretta": 1,
+    "spiegazione": "La norma sulla registrazione (art. 39) non è mai stata attuata, ma prevede questa condizione.",
+    "fonte": "Costituzione, art. 39",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-083",
+    "argomento": "Rapporti economici",
+    "livello": 1,
+    "testo": "Dove si esercita il diritto di sciopero secondo l'art. 40?",
+    "opzioni": [
+      "Solo nel settore privato",
+      "Senza alcun limite",
+      "Nell'ambito delle leggi che lo regolano",
+      "Solo con autorizzazione del prefetto"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 40: il diritto di sciopero si esercita nell'ambito delle leggi che lo regolano.",
+    "fonte": "Costituzione, art. 40",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-084",
+    "argomento": "Rapporti economici",
+    "livello": 3,
+    "testo": "Dopo la riforma del 2022, l'iniziativa economica privata non può svolgersi in modo da recare danno anche:",
+    "opzioni": [
+      "al turismo",
+      "al bilancio dello Stato",
+      "alle imprese concorrenti",
+      "alla salute e all'ambiente"
+    ],
+    "corretta": 3,
+    "spiegazione": "La L. cost. 1/2022 ha aggiunto salute e ambiente ai limiti dell'art. 41.",
+    "fonte": "Costituzione, art. 41",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-085",
+    "argomento": "Rapporti economici",
+    "livello": 3,
+    "testo": "Quando la proprietà privata può essere espropriata?",
+    "opzioni": [
+      "Nei casi previsti dalla legge, salvo indennizzo, per motivi d'interesse generale",
+      "Solo in tempo di guerra",
+      "Mai",
+      "Su decisione del sindaco senza indennizzo"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 42: espropriazione per interesse generale, con indennizzo.",
+    "fonte": "Costituzione, art. 42",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-086",
+    "argomento": "Rapporti economici",
+    "livello": 2,
+    "testo": "Come tratta il risparmio l'art. 47?",
+    "opzioni": [
+      "Non se ne occupa",
+      "La Repubblica lo incoraggia e tutela in tutte le sue forme",
+      "Lo tassa in modo speciale",
+      "Lo vieta oltre una soglia"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'art. 47 disciplina anche l'esercizio del credito.",
+    "fonte": "Costituzione, art. 47",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-087",
+    "argomento": "Rapporti politici",
+    "livello": 2,
+    "testo": "In quali casi il diritto di voto può essere limitato?",
+    "opzioni": [
+      "Per opinioni politiche",
+      "Per mancata iscrizione a un partito",
+      "Per incapacità civile, sentenza penale irrevocabile o indegnità morale indicata dalla legge",
+      "Per mancato pagamento delle tasse"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'art. 48 elenca tassativamente i casi di limitazione.",
+    "fonte": "Costituzione, art. 48",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-088",
+    "argomento": "Rapporti politici",
+    "livello": 2,
+    "testo": "Secondo l'art. 49, i partiti concorrono a determinare la politica nazionale:",
+    "opzioni": [
+      "con il finanziamento obbligatorio pubblico",
+      "solo durante le elezioni",
+      "con il controllo dello Stato",
+      "con metodo democratico"
+    ],
+    "corretta": 3,
+    "spiegazione": "Tutti i cittadini possono associarsi liberamente in partiti.",
+    "fonte": "Costituzione, art. 49",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-089",
+    "argomento": "Rapporti politici",
+    "livello": 2,
+    "testo": "A chi possono essere rivolte le petizioni dei cittadini secondo l'art. 50?",
+    "opzioni": [
+      "Alle Camere",
+      "Al Consiglio di Stato",
+      "Al Presidente della Repubblica",
+      "Alla Corte costituzionale"
+    ],
+    "corretta": 0,
+    "spiegazione": "Le petizioni chiedono provvedimenti legislativi o espongono comuni necessità.",
+    "fonte": "Costituzione, art. 50",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-090",
+    "argomento": "Rapporti politici",
+    "livello": 3,
+    "testo": "Chi è chiamato a funzioni pubbliche elettive, secondo l'art. 51, ha diritto:",
+    "opzioni": [
+      "a non pagare le tasse",
+      "di disporre del tempo necessario e di conservare il posto di lavoro",
+      "a un'indennità doppia",
+      "alla promozione automatica"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 51, ultimo comma.",
+    "fonte": "Costituzione, art. 51",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-091",
+    "argomento": "Rapporti politici",
+    "livello": 2,
+    "testo": "Come definisce l'art. 52 la difesa della Patria?",
+    "opzioni": [
+      "Facoltà riservata ai militari",
+      "Compito esclusivo della NATO",
+      "Sacro dovere del cittadino",
+      "Obbligo solo maschile"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'ordinamento delle Forze armate si informa allo spirito democratico della Repubblica.",
+    "fonte": "Costituzione, art. 52",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-092",
+    "argomento": "Rapporti politici",
+    "livello": 2,
+    "testo": "Secondo l'art. 53, il sistema tributario è informato a criteri di:",
+    "opzioni": [
+      "regressività",
+      "uguaglianza dell'importo",
+      "proporzionalità fissa",
+      "progressività"
+    ],
+    "corretta": 3,
+    "spiegazione": "Tutti concorrono alle spese pubbliche in ragione della capacità contributiva.",
+    "fonte": "Costituzione, art. 53",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-093",
+    "argomento": "Rapporti politici",
+    "livello": 3,
+    "testo": "Come devono adempiere le funzioni pubbliche i cittadini a cui sono affidate (art. 54)?",
+    "opzioni": [
+      "Con disciplina ed onore, prestando giuramento nei casi stabiliti dalla legge",
+      "Con imparzialità politica assoluta e senza giuramento",
+      "Secondo le indicazioni del partito",
+      "Solo su delega del Governo"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'art. 54 impone anche a tutti i cittadini la fedeltà alla Repubblica.",
+    "fonte": "Costituzione, art. 54",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-094",
+    "argomento": "Parlamento",
+    "livello": 1,
+    "testo": "Da quali Camere si compone il Parlamento?",
+    "opzioni": [
+      "Senato e Consiglio regionale",
+      "Camera dei deputati e Senato della Repubblica",
+      "Camera alta e Camera dei comuni",
+      "Camera e Consiglio di Stato"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 55: bicameralismo paritario.",
+    "fonte": "Costituzione, art. 55",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-095",
+    "argomento": "Parlamento",
+    "livello": 3,
+    "testo": "Quanti deputati sono eletti nella circoscrizione Estero?",
+    "opzioni": [
+      "Dodici",
+      "Sei",
+      "Otto",
+      "Quattro"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 56: 400 deputati, otto dei quali eletti all'estero; al Senato i senatori eletti all'estero sono quattro.",
+    "fonte": "Costituzione, art. 56",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-096",
+    "argomento": "Parlamento",
+    "livello": 3,
+    "testo": "Su quale base è eletto il Senato della Repubblica?",
+    "opzioni": [
+      "Su base nazionale unica",
+      "Su base comunale",
+      "Su base provinciale",
+      "Su base regionale, salvi i seggi della circoscrizione Estero"
+    ],
+    "corretta": 3,
+    "spiegazione": "Lo stabilisce l'art. 57 della Costituzione.",
+    "fonte": "Costituzione, art. 57",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-097",
+    "argomento": "Parlamento",
+    "livello": 4,
+    "testo": "Quanti senatori ha almeno ciascuna Regione (escluse Molise e Valle d'Aosta)?",
+    "opzioni": [
+      "Tre",
+      "Due",
+      "Sette",
+      "Cinque"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 57: nessuna Regione o Provincia autonoma può avere meno di tre senatori; il Molise ne ha due, la Valle d'Aosta uno.",
+    "fonte": "Costituzione, art. 57",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-098",
+    "argomento": "Parlamento",
+    "livello": 3,
+    "testo": "Chi è senatore di diritto e a vita, salvo rinunzia?",
+    "opzioni": [
+      "Chi è stato presidente della Corte costituzionale",
+      "Chi è stato Presidente della Repubblica",
+      "Chi è stato Presidente del Senato",
+      "Chi è stato Presidente del Consiglio"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 59, primo comma.",
+    "fonte": "Costituzione, art. 59",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-099",
+    "argomento": "Parlamento",
+    "livello": 4,
+    "testo": "In quale caso può essere prorogata la durata delle Camere?",
+    "opzioni": [
+      "Mai",
+      "Per accordo tra i partiti",
+      "Solo per legge e soltanto in caso di guerra",
+      "Con decreto del Presidente della Repubblica"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 60, secondo comma.",
+    "fonte": "Costituzione, art. 60",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-100",
+    "argomento": "Parlamento",
+    "livello": 3,
+    "testo": "Entro quanti giorni dalla fine delle precedenti hanno luogo le elezioni delle nuove Camere?",
+    "opzioni": [
+      "Trenta",
+      "Sessanta",
+      "Novanta",
+      "Settanta"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 61: elezioni entro settanta giorni; prima riunione non oltre il ventesimo giorno dalle elezioni.",
+    "fonte": "Costituzione, art. 61",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-101",
+    "argomento": "Parlamento",
+    "livello": 4,
+    "testo": "Quando si riuniscono di diritto le Camere?",
+    "opzioni": [
+      "Il primo giorno non festivo di febbraio e di ottobre",
+      "Il 2 giugno di ogni anno",
+      "Solo su convocazione del Governo",
+      "Il primo lunedì di gennaio e luglio"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 62: riunioni di diritto; convocazione straordinaria su iniziativa del Presidente della Camera, del Presidente della Repubblica o di un terzo dei componenti.",
+    "fonte": "Costituzione, art. 62",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-102",
+    "argomento": "Parlamento",
+    "livello": 3,
+    "testo": "Quando il Parlamento si riunisce in seduta comune, chi lo presiede?",
+    "opzioni": [
+      "Il Presidente della Repubblica",
+      "Il Presidente e l'Ufficio di presidenza della Camera dei deputati",
+      "Il più anziano dei parlamentari",
+      "Il Presidente del Senato"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 63, secondo comma.",
+    "fonte": "Costituzione, art. 63",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-103",
+    "argomento": "Parlamento",
+    "livello": 3,
+    "testo": "Con quale maggioranza ciascuna Camera adotta il proprio regolamento?",
+    "opzioni": [
+      "Maggioranza semplice dei presenti",
+      "Due terzi dei componenti",
+      "Maggioranza assoluta dei suoi componenti",
+      "Unanimità"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 64, primo comma.",
+    "fonte": "Costituzione, art. 64",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-104",
+    "argomento": "Parlamento",
+    "livello": 4,
+    "testo": "Quando sono valide le deliberazioni delle Camere?",
+    "opzioni": [
+      "Sempre, qualunque sia il numero dei presenti",
+      "Se votano almeno due terzi dei componenti",
+      "Solo se presente il Governo",
+      "Se è presente la maggioranza dei componenti e sono adottate a maggioranza dei presenti, salvo maggioranze speciali"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 64, terzo comma: numero legale e maggioranza.",
+    "fonte": "Costituzione, art. 64",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-105",
+    "argomento": "Parlamento",
+    "livello": 2,
+    "testo": "Si può essere contemporaneamente deputato e senatore?",
+    "opzioni": [
+      "No, nessuno può appartenere contemporaneamente alle due Camere",
+      "Solo i senatori a vita",
+      "Sì, sempre",
+      "Sì, per non più di un anno"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 65, secondo comma.",
+    "fonte": "Costituzione, art. 65",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-106",
+    "argomento": "Parlamento",
+    "livello": 3,
+    "testo": "Chi giudica dei titoli di ammissione dei componenti di ciascuna Camera?",
+    "opzioni": [
+      "La Corte costituzionale",
+      "La Camera stessa",
+      "La Corte di cassazione",
+      "Il Presidente della Repubblica"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 66: verifica dei poteri interna a ciascuna Camera.",
+    "fonte": "Costituzione, art. 66",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-107",
+    "argomento": "Parlamento",
+    "livello": 4,
+    "testo": "Per quali condotte i parlamentari non possono essere chiamati a rispondere?",
+    "opzioni": [
+      "Per qualsiasi reato commesso durante il mandato",
+      "Per i reati commessi prima dell'elezione",
+      "Per le opinioni espresse e i voti dati nell'esercizio delle loro funzioni",
+      "Per le violazioni stradali"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 68: insindacabilità; per arresti, perquisizioni e intercettazioni serve l'autorizzazione della Camera di appartenenza.",
+    "fonte": "Costituzione, art. 68",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-108",
+    "argomento": "Parlamento",
+    "livello": 5,
+    "testo": "Un parlamentare viene sorpreso a commettere un delitto per il quale è previsto l'arresto obbligatorio in flagranza. Serve l'autorizzazione della Camera per arrestarlo?",
+    "opzioni": [
+      "Sì, ma basta quella del Presidente della Camera",
+      "Sì, sempre",
+      "No, ma serve quella del Presidente della Repubblica",
+      "No: in questo caso l'arresto è possibile senza autorizzazione"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'art. 68 esclude l'autorizzazione per l'esecuzione di una sentenza irrevocabile e per la flagranza di delitti con arresto obbligatorio.",
+    "fonte": "Costituzione, art. 68",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-109",
+    "argomento": "Formazione delle leggi",
+    "livello": 2,
+    "testo": "A chi appartiene l'iniziativa delle leggi?",
+    "opzioni": [
+      "Al Governo, a ciascun membro delle Camere, agli organi ed enti previsti da legge costituzionale e al popolo",
+      "Solo ai parlamentari",
+      "Solo al Governo",
+      "Solo al Presidente della Repubblica"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 71: tra gli altri enti ci sono CNEL e Consigli regionali.",
+    "fonte": "Costituzione, art. 71",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-110",
+    "argomento": "Formazione delle leggi",
+    "livello": 4,
+    "testo": "Per quali disegni di legge è sempre obbligatoria la procedura normale di esame e approvazione diretta da parte della Camera?",
+    "opzioni": [
+      "Per le leggi regionali",
+      "In materia costituzionale ed elettorale, di delegazione legislativa, di ratifica dei trattati, di approvazione di bilanci",
+      "Per tutti i decreti-legge",
+      "Per le leggi di spesa inferiore a un milione"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 72, ultimo comma: riserva d'assemblea.",
+    "fonte": "Costituzione, art. 72",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-111",
+    "argomento": "Formazione delle leggi",
+    "livello": 2,
+    "testo": "Entro quanto tempo dall'approvazione le leggi sono promulgate dal Presidente della Repubblica?",
+    "opzioni": [
+      "Entro una settimana",
+      "Entro tre mesi",
+      "Entro un mese",
+      "Entro sessanta giorni"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 73: termine più breve se le Camere ne dichiarano l'urgenza a maggioranza assoluta.",
+    "fonte": "Costituzione, art. 73",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-112",
+    "argomento": "Formazione delle leggi",
+    "livello": 1,
+    "testo": "Quando entrano in vigore, di regola, le leggi?",
+    "opzioni": [
+      "Il primo gennaio successivo",
+      "Il giorno stesso della pubblicazione",
+      "Dopo trenta giorni",
+      "Il quindicesimo giorno successivo alla pubblicazione"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 73: salvo che le leggi stabiliscano un termine diverso (vacatio legis).",
+    "fonte": "Costituzione, art. 73",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-113",
+    "argomento": "Formazione delle leggi",
+    "livello": 3,
+    "testo": "Il Presidente della Repubblica può rifiutarsi di promulgare una legge?",
+    "opzioni": [
+      "Può chiedere una nuova deliberazione con messaggio motivato; se le Camere la riapprovano, deve promulgarla",
+      "Sì, se la Corte costituzionale è d'accordo",
+      "Sì, definitivamente",
+      "No, mai"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 74: rinvio presidenziale.",
+    "fonte": "Costituzione, art. 74",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-114",
+    "argomento": "Formazione delle leggi",
+    "livello": 3,
+    "testo": "Chi ha diritto di partecipare al referendum abrogativo?",
+    "opzioni": [
+      "I cittadini con più di 25 anni",
+      "Tutti i cittadini chiamati ad eleggere la Camera dei deputati",
+      "Solo i firmatari della richiesta",
+      "Solo gli iscritti ai partiti"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 75, terzo comma.",
+    "fonte": "Costituzione, art. 75",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-115",
+    "argomento": "Fonti del diritto",
+    "livello": 3,
+    "testo": "Quali limiti deve contenere la legge delega al Governo?",
+    "opzioni": [
+      "Nessuno",
+      "Solo l'indicazione della materia",
+      "Principi e criteri direttivi, tempo limitato e oggetti definiti",
+      "Solo il termine"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 76: limiti del decreto legislativo delegato.",
+    "fonte": "Costituzione, art. 76",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-116",
+    "argomento": "Fonti del diritto",
+    "livello": 4,
+    "testo": "Un decreto-legge presentato quando le Camere sono sciolte: cosa prevede l'art. 77?",
+    "opzioni": [
+      "Si attendono le nuove Camere",
+      "Lo converte il Presidente della Repubblica",
+      "Il decreto decade subito",
+      "Le Camere sono appositamente convocate e si riuniscono entro cinque giorni"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il decreto va presentato il giorno stesso alle Camere, anche se sciolte.",
+    "fonte": "Costituzione, art. 77",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-117",
+    "argomento": "Fonti del diritto",
+    "livello": 4,
+    "testo": "Cosa accade ai rapporti giuridici sorti sulla base di un decreto-legge non convertito?",
+    "opzioni": [
+      "Le Camere possono regolarli con legge",
+      "Restano validi automaticamente",
+      "Sono sempre nulli senza rimedio",
+      "Li regola il Governo con un nuovo decreto"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il decreto perde efficacia ex tunc, ma la legge può regolare i rapporti sorti.",
+    "fonte": "Costituzione, art. 77",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-118",
+    "argomento": "Fonti del diritto",
+    "livello": 2,
+    "testo": "Chi delibera lo stato di guerra?",
+    "opzioni": [
+      "Il Consiglio supremo di difesa",
+      "Le Camere",
+      "Il Governo",
+      "Il Presidente della Repubblica da solo"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 78: le Camere deliberano e conferiscono al Governo i poteri necessari; il Presidente lo dichiara (art. 87).",
+    "fonte": "Costituzione, art. 78",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-119",
+    "argomento": "Fonti del diritto",
+    "livello": 4,
+    "testo": "A quali reati non possono applicarsi amnistia e indulto?",
+    "opzioni": [
+      "A nessun reato: si applicano a tutti",
+      "Ai reati contro la PA",
+      "Ai reati commessi dopo la presentazione del disegno di legge",
+      "Ai reati commessi da minorenni"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 79, ultimo periodo.",
+    "fonte": "Costituzione, art. 79",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-120",
+    "argomento": "Fonti del diritto",
+    "livello": 3,
+    "testo": "Quali trattati internazionali richiedono una legge di autorizzazione alla ratifica?",
+    "opzioni": [
+      "Solo quelli con Stati extra UE",
+      "Nessuno: ratifica sempre il Governo",
+      "Tutti i trattati, senza eccezioni",
+      "Quelli politici, che prevedono arbitrati, variazioni del territorio, oneri finanziari o modifiche di leggi"
+    ],
+    "corretta": 3,
+    "spiegazione": "Lo stabilisce l'art. 80 della Costituzione.",
+    "fonte": "Costituzione, art. 80",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-121",
+    "argomento": "Bilancio",
+    "livello": 4,
+    "testo": "Per quanto tempo al massimo può essere concesso l'esercizio provvisorio del bilancio?",
+    "opzioni": [
+      "Per periodi non superiori complessivamente a quattro mesi",
+      "Un anno",
+      "Sei mesi",
+      "Due mesi"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 81: solo per legge e per non più di quattro mesi complessivi.",
+    "fonte": "Costituzione, art. 81",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-122",
+    "argomento": "Bilancio",
+    "livello": 4,
+    "testo": "Quando è consentito il ricorso all'indebitamento secondo l'art. 81?",
+    "opzioni": [
+      "Mai",
+      "Solo per considerare gli effetti del ciclo economico e, con autorizzazione a maggioranza assoluta, per eventi eccezionali",
+      "Sempre, se lo decide il Governo",
+      "Solo per le Regioni"
+    ],
+    "corretta": 1,
+    "spiegazione": "Riforma del 2012 (equilibrio di bilancio).",
+    "fonte": "Costituzione, art. 81",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-123",
+    "argomento": "Parlamento",
+    "livello": 3,
+    "testo": "Con quali poteri procede una commissione parlamentare d'inchiesta?",
+    "opzioni": [
+      "Con i poteri del Governo",
+      "Con poteri illimitati",
+      "Con gli stessi poteri e le stesse limitazioni dell'autorità giudiziaria",
+      "Solo con poteri consultivi"
+    ],
+    "corretta": 2,
+    "spiegazione": "Lo stabilisce l'art. 82 della Costituzione.",
+    "fonte": "Costituzione, art. 82",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-124",
+    "argomento": "Presidente della Repubblica",
+    "livello": 3,
+    "testo": "Quanti delegati per Regione partecipano all'elezione del Presidente della Repubblica?",
+    "opzioni": [
+      "Uno per Regione",
+      "Cinque per Regione",
+      "Due per Regione",
+      "Tre per Regione, uno solo per la Valle d'Aosta"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 83: delegati eletti dal Consiglio regionale garantendo la rappresentanza delle minoranze.",
+    "fonte": "Costituzione, art. 83",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-125",
+    "argomento": "Presidente della Repubblica",
+    "livello": 2,
+    "testo": "Con quale tipo di votazione è eletto il Presidente della Repubblica?",
+    "opzioni": [
+      "Scrutinio segreto",
+      "Voto palese per appello nominale",
+      "Alzata di mano",
+      "Voto elettronico pubblico"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 83: scrutinio segreto, maggioranza di due terzi nei primi tre scrutini.",
+    "fonte": "Costituzione, art. 83",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-126",
+    "argomento": "Presidente della Repubblica",
+    "livello": 3,
+    "testo": "L'ufficio di Presidente della Repubblica è compatibile con altre cariche?",
+    "opzioni": [
+      "Solo con incarichi universitari",
+      "No, è incompatibile con qualsiasi altra carica",
+      "Sì, con quella di sindaco",
+      "Sì, con quella di senatore"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 84, secondo comma.",
+    "fonte": "Costituzione, art. 84",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-127",
+    "argomento": "Presidente della Repubblica",
+    "livello": 4,
+    "testo": "Chi convoca il Parlamento in seduta comune per eleggere il nuovo Presidente della Repubblica, trenta giorni prima della scadenza?",
+    "opzioni": [
+      "Il Presidente uscente",
+      "Il Presidente del Consiglio",
+      "Il Presidente della Camera dei deputati",
+      "Il Presidente del Senato"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 85, secondo comma.",
+    "fonte": "Costituzione, art. 85",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-128",
+    "argomento": "Presidente della Repubblica",
+    "livello": 5,
+    "testo": "Il mandato presidenziale scade quando mancano meno di tre mesi alla cessazione delle Camere. Quando si elegge il nuovo Presidente?",
+    "opzioni": [
+      "Lo nomina il Presidente del Senato",
+      "Dopo un anno",
+      "Subito, dalle Camere uscenti",
+      "Entro quindici giorni dalla riunione delle Camere nuove, con proroga dei poteri del Presidente in carica"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 85, terzo comma.",
+    "fonte": "Costituzione, art. 85",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-129",
+    "argomento": "Presidente della Repubblica",
+    "livello": 4,
+    "testo": "In caso di morte o dimissioni del Presidente della Repubblica, entro quanti giorni il Presidente della Camera indice l'elezione del successore?",
+    "opzioni": [
+      "Quindici",
+      "Sette",
+      "Sessanta",
+      "Trenta"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 86, secondo comma.",
+    "fonte": "Costituzione, art. 86",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-130",
+    "argomento": "Presidente della Repubblica",
+    "livello": 2,
+    "testo": "Chi ha il comando delle Forze armate?",
+    "opzioni": [
+      "Il Capo di Stato maggiore della difesa",
+      "Il Presidente della Repubblica",
+      "Il Ministro della difesa",
+      "Il Presidente del Consiglio"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 87: il Presidente ha il comando delle Forze armate e presiede il Consiglio supremo di difesa.",
+    "fonte": "Costituzione, art. 87",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-131",
+    "argomento": "Presidente della Repubblica",
+    "livello": 2,
+    "testo": "Quale di questi poteri spetta al Presidente della Repubblica?",
+    "opzioni": [
+      "Votare la fiducia al Governo",
+      "Nominare i giudici ordinari",
+      "Concedere la grazia e commutare le pene",
+      "Approvare il bilancio dello Stato"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 87, tra le attribuzioni presidenziali.",
+    "fonte": "Costituzione, art. 87",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-132",
+    "argomento": "Presidente della Repubblica",
+    "livello": 3,
+    "testo": "Prima di sciogliere le Camere, il Presidente della Repubblica deve:",
+    "opzioni": [
+      "avere il voto del Consiglio dei ministri",
+      "ottenere il parere della Corte costituzionale",
+      "indire un referendum",
+      "sentire i loro Presidenti"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 88: può sciogliere le Camere o una sola di esse, sentiti i loro Presidenti.",
+    "fonte": "Costituzione, art. 88",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-133",
+    "argomento": "Presidente della Repubblica",
+    "livello": 3,
+    "testo": "Quando è valido un atto del Presidente della Repubblica?",
+    "opzioni": [
+      "Solo se è controfirmato dai ministri proponenti, che ne assumono la responsabilità",
+      "Sempre, con la sola firma presidenziale",
+      "Solo con il visto della Corte dei conti",
+      "Solo se approvato dalle Camere"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 89: controfirma ministeriale.",
+    "fonte": "Costituzione, art. 89",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-134",
+    "argomento": "Presidente della Repubblica",
+    "livello": 4,
+    "testo": "Da chi è messo in stato di accusa il Presidente della Repubblica per alto tradimento o attentato alla Costituzione?",
+    "opzioni": [
+      "Dal Governo",
+      "Dal Parlamento in seduta comune, a maggioranza assoluta dei membri",
+      "Dal Senato a maggioranza semplice",
+      "Dalla Corte di cassazione"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 90; il giudizio spetta poi alla Corte costituzionale integrata.",
+    "fonte": "Costituzione, art. 90",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-135",
+    "argomento": "Presidente della Repubblica",
+    "livello": 2,
+    "testo": "Dinanzi a chi presta giuramento il Presidente della Repubblica?",
+    "opzioni": [
+      "Nelle mani del Presidente del Senato",
+      "Dinanzi al Consiglio dei ministri",
+      "Dinanzi al Parlamento in seduta comune",
+      "Dinanzi alla Corte costituzionale"
+    ],
+    "corretta": 2,
+    "spiegazione": "Lo stabilisce l'art. 91 della Costituzione.",
+    "fonte": "Costituzione, art. 91",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-136",
+    "argomento": "Governo",
+    "livello": 1,
+    "testo": "Da chi è composto il Governo?",
+    "opzioni": [
+      "Dai sottosegretari",
+      "Solo dai ministri",
+      "Dal Presidente della Repubblica e dai ministri",
+      "Dal Presidente del Consiglio e dai ministri"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 92: insieme costituiscono il Consiglio dei ministri.",
+    "fonte": "Costituzione, art. 92",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-137",
+    "argomento": "Governo",
+    "livello": 2,
+    "testo": "Chi nomina i ministri?",
+    "opzioni": [
+      "Il Presidente della Repubblica, su proposta del Presidente del Consiglio",
+      "Il Presidente del Consiglio da solo",
+      "I partiti di maggioranza",
+      "Il Parlamento"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 92, secondo comma.",
+    "fonte": "Costituzione, art. 92",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-138",
+    "argomento": "Governo",
+    "livello": 2,
+    "testo": "Nelle mani di chi giurano il Presidente del Consiglio e i ministri?",
+    "opzioni": [
+      "Del Presidente della Camera",
+      "Del Presidente della Repubblica",
+      "Del Presidente della Corte costituzionale",
+      "Del Parlamento in seduta comune"
+    ],
+    "corretta": 1,
+    "spiegazione": "Lo stabilisce l'art. 93 della Costituzione.",
+    "fonte": "Costituzione, art. 93",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-139",
+    "argomento": "Governo",
+    "livello": 3,
+    "testo": "Come accordano o revocano la fiducia le Camere?",
+    "opzioni": [
+      "Con decreto del Presidente",
+      "Per acclamazione",
+      "Con mozione motivata e votata per appello nominale",
+      "Con voto segreto"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 94, secondo comma.",
+    "fonte": "Costituzione, art. 94",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-140",
+    "argomento": "Governo",
+    "livello": 4,
+    "testo": "Se una Camera vota contro una proposta del Governo, il Governo deve dimettersi?",
+    "opzioni": [
+      "Sì, sempre",
+      "Sì, entro dieci giorni",
+      "Sì, se il voto è al Senato",
+      "No, non c'è obbligo di dimissioni"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 94: il voto contrario su una proposta del Governo non importa obbligo di dimissioni (diverso dalla mozione di sfiducia).",
+    "fonte": "Costituzione, art. 94",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-141",
+    "argomento": "Governo",
+    "livello": 3,
+    "testo": "Chi dirige la politica generale del Governo e ne è responsabile?",
+    "opzioni": [
+      "Il Presidente del Consiglio dei ministri",
+      "Il Consiglio di Stato",
+      "Il Presidente della Repubblica",
+      "Il Ministro dell'economia"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 95: mantiene l'unità di indirizzo politico e amministrativo.",
+    "fonte": "Costituzione, art. 95",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-142",
+    "argomento": "Governo",
+    "livello": 4,
+    "testo": "Per quali atti i ministri sono responsabili individualmente?",
+    "opzioni": [
+      "Solo per i decreti-legge",
+      "Per gli atti dei loro dicasteri",
+      "Per nessun atto",
+      "Per tutti gli atti del Consiglio dei ministri"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 95: responsabilità collegiale per gli atti del Consiglio, individuale per quelli del proprio ministero.",
+    "fonte": "Costituzione, art. 95",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-143",
+    "argomento": "Governo",
+    "livello": 5,
+    "testo": "Un ministro commette un reato nell'esercizio delle sue funzioni. Quale giudice è competente?",
+    "opzioni": [
+      "La Corte costituzionale",
+      "Un tribunale speciale ministeriale senza autorizzazione",
+      "La giurisdizione ordinaria, previa autorizzazione della Camera competente",
+      "Il Senato in funzione di giudice"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 96 come riformato nel 1989.",
+    "fonte": "Costituzione, art. 96",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-144",
+    "argomento": "Pubblica amministrazione",
+    "livello": 1,
+    "testo": "Secondo l'art. 97, come si accede agli impieghi nelle pubbliche amministrazioni?",
+    "opzioni": [
+      "Per sorteggio",
+      "Per nomina politica",
+      "Per chiamata diretta",
+      "Mediante concorso, salvo i casi stabiliti dalla legge"
+    ],
+    "corretta": 3,
+    "spiegazione": "È il fondamento costituzionale dei concorsi pubblici.",
+    "fonte": "Costituzione, art. 97",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-145",
+    "argomento": "Pubblica amministrazione",
+    "livello": 2,
+    "testo": "Quali principi devono assicurare i pubblici uffici secondo l'art. 97?",
+    "opzioni": [
+      "Buon andamento e imparzialità dell'amministrazione",
+      "Gerarchia e obbedienza",
+      "Efficienza e profitto",
+      "Riservatezza e segretezza"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 97, secondo comma.",
+    "fonte": "Costituzione, art. 97",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-146",
+    "argomento": "Pubblica amministrazione",
+    "livello": 2,
+    "testo": "Secondo l'art. 98, i pubblici impiegati sono al servizio:",
+    "opzioni": [
+      "dell'ente che li paga",
+      "esclusivo della Nazione",
+      "del partito di maggioranza",
+      "del Governo in carica"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 98, primo comma.",
+    "fonte": "Costituzione, art. 98",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-147",
+    "argomento": "Pubblica amministrazione",
+    "livello": 4,
+    "testo": "Per quali categorie la legge può limitare l'iscrizione ai partiti politici?",
+    "opzioni": [
+      "I medici del servizio sanitario",
+      "Tutti i dipendenti pubblici",
+      "Magistrati, militari di carriera in servizio, funzionari e agenti di polizia, diplomatici e consoli all'estero",
+      "Gli insegnanti"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 98, terzo comma.",
+    "fonte": "Costituzione, art. 98",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-148",
+    "argomento": "Organi ausiliari",
+    "livello": 3,
+    "testo": "Quale organo ausiliario è composto da esperti e rappresentanti delle categorie produttive?",
+    "opzioni": [
+      "Il CSM",
+      "La Corte dei conti",
+      "Il Consiglio di Stato",
+      "Il CNEL (Consiglio nazionale dell'economia e del lavoro)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 99: il CNEL è consulente di Camere e Governo e ha iniziativa legislativa.",
+    "fonte": "Costituzione, art. 99",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-149",
+    "argomento": "Organi ausiliari",
+    "livello": 2,
+    "testo": "Come definisce il Consiglio di Stato l'art. 100?",
+    "opzioni": [
+      "Organo di consulenza giuridico-amministrativa e di tutela della giustizia nell'amministrazione",
+      "Organo legislativo",
+      "Organo di governo delle Regioni",
+      "Organo di controllo contabile"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 100, primo comma.",
+    "fonte": "Costituzione, art. 100",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-150",
+    "argomento": "Organi ausiliari",
+    "livello": 3,
+    "testo": "Quale controllo esercita la Corte dei conti sugli atti del Governo?",
+    "opzioni": [
+      "Nessun controllo",
+      "Il controllo preventivo di legittimità",
+      "Il controllo di costituzionalità",
+      "Il controllo di merito politico"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 100: oltre al controllo successivo sulla gestione del bilancio.",
+    "fonte": "Costituzione, art. 100",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-151",
+    "argomento": "Magistratura",
+    "livello": 1,
+    "testo": "In nome di chi è amministrata la giustizia?",
+    "opzioni": [
+      "In nome del Presidente della Repubblica",
+      "In nome della legge",
+      "In nome del popolo",
+      "In nome dello Stato"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 101: i giudici sono soggetti soltanto alla legge.",
+    "fonte": "Costituzione, art. 101",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-152",
+    "argomento": "Magistratura",
+    "livello": 3,
+    "testo": "Possono essere istituiti giudici straordinari o speciali?",
+    "opzioni": [
+      "Sì, per i reati politici",
+      "Sì, con decreto del Governo",
+      "Sì, in tempo di pace",
+      "No; si possono istituire solo sezioni specializzate presso gli organi giudiziari ordinari"
+    ],
+    "corretta": 3,
+    "spiegazione": "Lo stabilisce l'art. 102 della Costituzione.",
+    "fonte": "Costituzione, art. 102",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-153",
+    "argomento": "Magistratura",
+    "livello": 3,
+    "testo": "A tutela di quali situazioni hanno giurisdizione il Consiglio di Stato e gli altri organi di giustizia amministrativa?",
+    "opzioni": [
+      "Degli interessi legittimi e, nelle materie indicate dalla legge, anche dei diritti soggettivi",
+      "Solo dei reati dei pubblici ufficiali",
+      "Solo dei diritti soggettivi",
+      "Delle controversie tra privati"
+    ],
+    "corretta": 0,
+    "spiegazione": "Lo stabilisce l'art. 103 della Costituzione.",
+    "fonte": "Costituzione, art. 103",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-154",
+    "argomento": "Magistratura",
+    "livello": 4,
+    "testo": "In tempo di pace, su quali reati hanno giurisdizione i tribunali militari?",
+    "opzioni": [
+      "Sui reati contro lo Stato",
+      "Solo sui reati militari commessi da appartenenti alle Forze armate",
+      "Su tutti i reati commessi da militari",
+      "Su nessun reato"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 103, ultimo comma.",
+    "fonte": "Costituzione, art. 103",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-155",
+    "argomento": "Magistratura",
+    "livello": 4,
+    "testo": "Come sono eletti i membri elettivi del CSM?",
+    "opzioni": [
+      "Metà dal Governo, metà dai magistrati",
+      "Tutti dal Parlamento",
+      "Due terzi dai magistrati ordinari, un terzo dal Parlamento in seduta comune",
+      "Tutti dai magistrati"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 104: i membri di nomina parlamentare sono professori di diritto e avvocati con quindici anni di esercizio.",
+    "fonte": "Costituzione, art. 104",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-156",
+    "argomento": "Magistratura",
+    "livello": 3,
+    "testo": "Quanto durano in carica i membri elettivi del CSM?",
+    "opzioni": [
+      "Due anni",
+      "Nove anni",
+      "Sei anni, rieleggibili",
+      "Quattro anni, e non sono immediatamente rieleggibili"
+    ],
+    "corretta": 3,
+    "spiegazione": "Lo stabilisce l'art. 104 della Costituzione.",
+    "fonte": "Costituzione, art. 104",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-157",
+    "argomento": "Magistratura",
+    "livello": 3,
+    "testo": "Come avvengono le nomine dei magistrati?",
+    "opzioni": [
+      "Per concorso",
+      "Per nomina ministeriale",
+      "Per elezione popolare",
+      "Per cooptazione"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 106; sono ammesse nomine di magistrati onorari per le funzioni di giudici singoli.",
+    "fonte": "Costituzione, art. 106",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-158",
+    "argomento": "Magistratura",
+    "livello": 3,
+    "testo": "Cosa significa che i magistrati sono «inamovibili»?",
+    "opzioni": [
+      "Non possono mai cambiare sede",
+      "Non possono essere trasferiti o sospesi se non per decisione del CSM con le garanzie previste o con il loro consenso",
+      "Restano in carica a vita senza limiti di età",
+      "Non possono essere giudicati"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 107; il Ministro della giustizia può promuovere l'azione disciplinare.",
+    "fonte": "Costituzione, art. 107",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-159",
+    "argomento": "Magistratura",
+    "livello": 2,
+    "testo": "Chi dispone direttamente della polizia giudiziaria?",
+    "opzioni": [
+      "Il Ministro dell'interno",
+      "Il prefetto",
+      "L'autorità giudiziaria",
+      "Il questore"
+    ],
+    "corretta": 2,
+    "spiegazione": "Lo stabilisce l'art. 109 della Costituzione.",
+    "fonte": "Costituzione, art. 109",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-160",
+    "argomento": "Magistratura",
+    "livello": 3,
+    "testo": "Quali caratteristiche deve avere il giudice nel giusto processo (art. 111)?",
+    "opzioni": [
+      "Elettivo e politico",
+      "Nominato dalle parti",
+      "Unico per tutto il processo",
+      "Terzo e imparziale"
+    ],
+    "corretta": 3,
+    "spiegazione": "Ogni processo si svolge nel contraddittorio tra le parti, in condizioni di parità.",
+    "fonte": "Costituzione, art. 111",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-161",
+    "argomento": "Magistratura",
+    "livello": 4,
+    "testo": "Contro le sentenze e i provvedimenti sulla libertà personale è sempre ammesso:",
+    "opzioni": [
+      "ricorso in Cassazione per violazione di legge",
+      "appello al Consiglio di Stato",
+      "ricorso alla Corte costituzionale",
+      "ricorso al Presidente della Repubblica"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 111, con deroga solo per le sentenze dei tribunali militari in tempo di guerra.",
+    "fonte": "Costituzione, art. 111",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-162",
+    "argomento": "Magistratura",
+    "livello": 2,
+    "testo": "Cosa stabilisce l'art. 112 sul pubblico ministero?",
+    "opzioni": [
+      "Può scegliere liberamente se agire",
+      "Ha l'obbligo di esercitare l'azione penale",
+      "Esercita l'azione solo su querela",
+      "Dipende dal Ministro della giustizia"
+    ],
+    "corretta": 1,
+    "spiegazione": "È il principio di obbligatorietà dell'azione penale.",
+    "fonte": "Costituzione, art. 112",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-163",
+    "argomento": "Magistratura",
+    "livello": 3,
+    "testo": "Contro gli atti della pubblica amministrazione la tutela giurisdizionale:",
+    "opzioni": [
+      "è ammessa solo per gli atti dei ministeri",
+      "richiede l'autorizzazione del prefetto",
+      "è sempre ammessa e non può essere esclusa o limitata per determinate categorie di atti",
+      "è esclusa per gli atti politici dei Comuni"
+    ],
+    "corretta": 2,
+    "spiegazione": "Lo stabilisce l'art. 113 della Costituzione.",
+    "fonte": "Costituzione, art. 113",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-164",
+    "argomento": "Regioni ed enti locali",
+    "livello": 1,
+    "testo": "Qual è la capitale della Repubblica secondo la Costituzione?",
+    "opzioni": [
+      "Firenze",
+      "Nessuna: non è indicata",
+      "Torino",
+      "Roma"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 114: Roma è la capitale; la legge dello Stato ne disciplina l'ordinamento.",
+    "fonte": "Costituzione, art. 114",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-165",
+    "argomento": "Regioni ed enti locali",
+    "livello": 2,
+    "testo": "Quali sono le Regioni a statuto speciale?",
+    "opzioni": [
+      "Friuli Venezia Giulia, Sardegna, Sicilia, Trentino-Alto Adige/Südtirol, Valle d'Aosta",
+      "Solo Sicilia e Sardegna",
+      "Sicilia, Sardegna, Calabria, Valle d'Aosta, Veneto",
+      "Lombardia, Veneto, Sicilia, Sardegna, Trentino"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 116: statuti speciali adottati con legge costituzionale.",
+    "fonte": "Costituzione, art. 116",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-166",
+    "argomento": "Regioni ed enti locali",
+    "livello": 3,
+    "testo": "Da quali Province autonome è costituita la Regione Trentino-Alto Adige/Südtirol?",
+    "opzioni": [
+      "Trento e Belluno",
+      "Trento e Bolzano",
+      "Bolzano e Sondrio",
+      "Trento e Verona"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 116, secondo comma.",
+    "fonte": "Costituzione, art. 116",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-167",
+    "argomento": "Regioni ed enti locali",
+    "livello": 3,
+    "testo": "Quale di queste materie è di legislazione esclusiva dello Stato?",
+    "opzioni": [
+      "Governo del territorio",
+      "Tutela della salute",
+      "Moneta e tutela del risparmio",
+      "Protezione civile"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 117, secondo comma, lett. e). Salute, governo del territorio e protezione civile sono materie concorrenti.",
+    "fonte": "Costituzione, art. 117",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-168",
+    "argomento": "Regioni ed enti locali",
+    "livello": 3,
+    "testo": "Quale di queste materie è di legislazione concorrente tra Stato e Regioni?",
+    "opzioni": [
+      "Ordinamento civile e penale",
+      "Immigrazione",
+      "Difesa e Forze armate",
+      "Tutela della salute"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 117, terzo comma: nelle materie concorrenti lo Stato fissa i principi fondamentali.",
+    "fonte": "Costituzione, art. 117",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-169",
+    "argomento": "Regioni ed enti locali",
+    "livello": 4,
+    "testo": "A chi spetta la potestà legislativa nelle materie non espressamente riservate allo Stato?",
+    "opzioni": [
+      "Alle Regioni (competenza residuale)",
+      "All'Unione europea",
+      "Allo Stato",
+      "Ai Comuni"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 117, quarto comma.",
+    "fonte": "Costituzione, art. 117",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-170",
+    "argomento": "Regioni ed enti locali",
+    "livello": 4,
+    "testo": "Nelle materie di legislazione concorrente, cosa spetta allo Stato?",
+    "opzioni": [
+      "Tutta la disciplina di dettaglio",
+      "La determinazione dei principi fondamentali",
+      "Nulla",
+      "Solo i regolamenti"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 117, terzo comma.",
+    "fonte": "Costituzione, art. 117",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-171",
+    "argomento": "Regioni ed enti locali",
+    "livello": 3,
+    "testo": "Con quali principi le funzioni amministrative sono attribuite ai diversi livelli di governo (art. 118)?",
+    "opzioni": [
+      "Legalità, imparzialità e buon andamento",
+      "Efficienza, efficacia ed economicità",
+      "Sussidiarietà, differenziazione e adeguatezza",
+      "Gerarchia, competenza e territorialità"
+    ],
+    "corretta": 2,
+    "spiegazione": "Le funzioni spettano ai Comuni, salvo conferimento ad enti più ampi per l'esercizio unitario.",
+    "fonte": "Costituzione, art. 118",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-172",
+    "argomento": "Regioni ed enti locali",
+    "livello": 4,
+    "testo": "Cosa prevede l'ultimo comma dell'art. 118 sull'iniziativa dei cittadini?",
+    "opzioni": [
+      "La riserva alle associazioni registrate",
+      "La vieta senza autorizzazione",
+      "La affida ai partiti",
+      "Gli enti favoriscono l'autonoma iniziativa dei cittadini per attività di interesse generale (sussidiarietà orizzontale)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 118, quarto comma.",
+    "fonte": "Costituzione, art. 118",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-173",
+    "argomento": "Regioni ed enti locali",
+    "livello": 4,
+    "testo": "Per quali spese Comuni, Province, Città metropolitane e Regioni possono indebitarsi?",
+    "opzioni": [
+      "Solo per finanziare spese di investimento",
+      "Mai",
+      "Solo per pagare stipendi",
+      "Per qualsiasi spesa"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 119: con piani di ammortamento e senza garanzia dello Stato.",
+    "fonte": "Costituzione, art. 119",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-174",
+    "argomento": "Regioni ed enti locali",
+    "livello": 3,
+    "testo": "Quale riconoscimento è stato aggiunto all'art. 119 nel 2022?",
+    "opzioni": [
+      "La tutela delle montagne",
+      "Le peculiarità delle Isole e la rimozione degli svantaggi dell'insularità",
+      "L'abolizione delle Province",
+      "Il federalismo fiscale integrale"
+    ],
+    "corretta": 1,
+    "spiegazione": "L. cost. 2/2022.",
+    "fonte": "Costituzione, art. 119",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-175",
+    "argomento": "Regioni ed enti locali",
+    "livello": 3,
+    "testo": "Una Regione può istituire dazi sul transito di merci tra Regioni?",
+    "opzioni": [
+      "Solo le Regioni speciali",
+      "Sì, con il consenso del Governo",
+      "No, l'art. 120 lo vieta",
+      "Sì, con legge regionale"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 120: vietati anche provvedimenti che ostacolino la libera circolazione.",
+    "fonte": "Costituzione, art. 120",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-176",
+    "argomento": "Regioni ed enti locali",
+    "livello": 2,
+    "testo": "Quali sono gli organi della Regione?",
+    "opzioni": [
+      "Il Presidente e la Corte dei conti regionale",
+      "Il Consiglio regionale e il prefetto",
+      "La Giunta e il commissario di Governo",
+      "Il Consiglio regionale, la Giunta e il suo presidente"
+    ],
+    "corretta": 3,
+    "spiegazione": "Lo stabilisce l'art. 121 della Costituzione.",
+    "fonte": "Costituzione, art. 121",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-177",
+    "argomento": "Regioni ed enti locali",
+    "livello": 3,
+    "testo": "Come è eletto, di regola, il Presidente della Giunta regionale?",
+    "opzioni": [
+      "A suffragio universale e diretto, salvo diversa previsione dello statuto",
+      "Dal Governo",
+      "Dal Consiglio regionale",
+      "Dai sindaci della Regione"
+    ],
+    "corretta": 0,
+    "spiegazione": "Lo stabilisce l'art. 122 della Costituzione.",
+    "fonte": "Costituzione, art. 122",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-178",
+    "argomento": "Regioni ed enti locali",
+    "livello": 4,
+    "testo": "Come è approvato lo statuto di una Regione ordinaria?",
+    "opzioni": [
+      "Con decreto del Presidente della Repubblica",
+      "Con legge regionale a maggioranza assoluta, con due deliberazioni a distanza di almeno due mesi",
+      "Con legge costituzionale",
+      "Con legge dello Stato"
+    ],
+    "corretta": 1,
+    "spiegazione": "Lo stabilisce l'art. 123 della Costituzione.",
+    "fonte": "Costituzione, art. 123",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-179",
+    "argomento": "Regioni ed enti locali",
+    "livello": 4,
+    "testo": "Entro quanti giorni il Governo può impugnare una legge regionale davanti alla Corte costituzionale?",
+    "opzioni": [
+      "Trenta giorni",
+      "Novanta giorni",
+      "Sessanta giorni dalla pubblicazione",
+      "Un anno"
+    ],
+    "corretta": 2,
+    "spiegazione": "Lo stabilisce l'art. 127 della Costituzione.",
+    "fonte": "Costituzione, art. 127",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-180",
+    "argomento": "Regioni ed enti locali",
+    "livello": 4,
+    "testo": "Con quale maggioranza il Consiglio regionale approva la sfiducia al Presidente della Giunta?",
+    "opzioni": [
+      "Due terzi",
+      "Unanimità",
+      "Maggioranza semplice",
+      "Maggioranza assoluta dei componenti, con mozione firmata da almeno un quinto"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 126: l'approvazione comporta dimissioni della Giunta e scioglimento del Consiglio.",
+    "fonte": "Costituzione, art. 126",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-181",
+    "argomento": "Regioni ed enti locali",
+    "livello": 5,
+    "testo": "Quale minimo di abitanti serve per creare una nuova Regione secondo l'art. 132?",
+    "opzioni": [
+      "Un milione",
+      "Trecentomila",
+      "Due milioni",
+      "Cinquecentomila"
+    ],
+    "corretta": 0,
+    "spiegazione": "Serve legge costituzionale, richiesta di Consigli comunali e referendum delle popolazioni interessate.",
+    "fonte": "Costituzione, art. 132",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-182",
+    "argomento": "Regioni ed enti locali",
+    "livello": 4,
+    "testo": "Chi può istituire nuovi Comuni nel proprio territorio?",
+    "opzioni": [
+      "Lo Stato con decreto",
+      "La Regione, con sue leggi, sentite le popolazioni interessate",
+      "La Provincia",
+      "Il prefetto"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 133, secondo comma.",
+    "fonte": "Costituzione, art. 133",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-183",
+    "argomento": "Corte costituzionale",
+    "livello": 2,
+    "testo": "Su cosa giudica la Corte costituzionale?",
+    "opzioni": [
+      "Controversie di lavoro privato",
+      "Elezioni comunali",
+      "Legittimità delle leggi, conflitti di attribuzione e accuse contro il Presidente della Repubblica",
+      "Ricorsi contro le multe"
+    ],
+    "corretta": 2,
+    "spiegazione": "Lo stabilisce l'art. 134 della Costituzione.",
+    "fonte": "Costituzione, art. 134",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-184",
+    "argomento": "Corte costituzionale",
+    "livello": 3,
+    "testo": "Chi nomina i giudici della Corte costituzionale?",
+    "opzioni": [
+      "Metà Governo, metà CSM",
+      "Tutti il Presidente della Repubblica",
+      "Tutti il Parlamento",
+      "Un terzo il Presidente della Repubblica, un terzo il Parlamento in seduta comune, un terzo le supreme magistrature"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 135, primo comma.",
+    "fonte": "Costituzione, art. 135",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-185",
+    "argomento": "Corte costituzionale",
+    "livello": 4,
+    "testo": "Dopo quanti anni di esercizio un avvocato può essere scelto come giudice costituzionale?",
+    "opzioni": [
+      "Venti",
+      "Dieci",
+      "Trenta",
+      "Quindici"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 135: magistrati delle giurisdizioni superiori, professori ordinari di diritto e avvocati dopo venti anni.",
+    "fonte": "Costituzione, art. 135",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-186",
+    "argomento": "Corte costituzionale",
+    "livello": 3,
+    "testo": "Quanto dura in carica il Presidente della Corte costituzionale?",
+    "opzioni": [
+      "Un anno",
+      "Tre anni, ed è rieleggibile",
+      "Sette anni",
+      "Nove anni"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 135: eletto dalla Corte tra i suoi componenti.",
+    "fonte": "Costituzione, art. 135",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-187",
+    "argomento": "Corte costituzionale",
+    "livello": 5,
+    "testo": "Quanti membri si aggiungono ai giudici ordinari della Corte nei giudizi d'accusa contro il Presidente della Repubblica?",
+    "opzioni": [
+      "Nessuno",
+      "Cinque, nominati dal Senato",
+      "Sedici, tratti a sorte da un elenco compilato dal Parlamento",
+      "Dieci, designati dal CSM"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 135, ultimo comma.",
+    "fonte": "Costituzione, art. 135",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-188",
+    "argomento": "Corte costituzionale",
+    "livello": 3,
+    "testo": "Contro le decisioni della Corte costituzionale è ammessa impugnazione?",
+    "opzioni": [
+      "Sì, con referendum",
+      "Sì, alla Corte di cassazione",
+      "Sì, alla Corte europea dei diritti dell'uomo",
+      "No, non è ammessa alcuna impugnazione"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 137, ultimo comma.",
+    "fonte": "Costituzione, art. 137",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-189",
+    "argomento": "Revisione costituzionale",
+    "livello": 4,
+    "testo": "Una legge costituzionale sottoposta a referendum quando non è promulgata?",
+    "opzioni": [
+      "Se non è approvata dalla maggioranza dei voti validi",
+      "Mai: è sempre promulgata",
+      "Se non è approvata dai due terzi dei votanti",
+      "Se non vota la maggioranza degli aventi diritto"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 138: per il referendum costituzionale non c'è quorum di partecipazione.",
+    "fonte": "Costituzione, art. 138",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-190",
+    "argomento": "Revisione costituzionale",
+    "livello": 4,
+    "testo": "Entro quanto tempo dalla pubblicazione si può chiedere il referendum su una legge costituzionale?",
+    "opzioni": [
+      "Sei mesi",
+      "Tre mesi",
+      "Un anno",
+      "Sessanta giorni"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 138, secondo comma.",
+    "fonte": "Costituzione, art. 138",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-191",
+    "argomento": "Disposizioni transitorie",
+    "livello": 3,
+    "testo": "Cosa vieta la XII disposizione transitoria e finale?",
+    "opzioni": [
+      "Il ritorno dei Savoia in Italia",
+      "I titoli nobiliari",
+      "La riorganizzazione, sotto qualsiasi forma, del disciolto partito fascista",
+      "Le leggi razziali"
+    ],
+    "corretta": 2,
+    "spiegazione": "XII disposizione transitoria e finale.",
+    "fonte": "Costituzione, disp. trans. XII",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-192",
+    "argomento": "Disposizioni transitorie",
+    "livello": 2,
+    "testo": "I titoli nobiliari sono riconosciuti dalla Costituzione?",
+    "opzioni": [
+      "Sì, tutti",
+      "Sì, se registrati presso la Consulta araldica",
+      "Sì, solo quelli anteriori al 1861",
+      "No, non sono riconosciuti"
+    ],
+    "corretta": 3,
+    "spiegazione": "XIV disposizione: i predicati anteriori al 28 ottobre 1922 valgono come parte del nome.",
+    "fonte": "Costituzione, disp. trans. XIV",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-193",
+    "argomento": "Disposizioni transitorie",
+    "livello": 3,
+    "testo": "Con l'entrata in vigore della Costituzione, chi assunse il titolo di Presidente della Repubblica?",
+    "opzioni": [
+      "Il Capo provvisorio dello Stato",
+      "Il Re",
+      "Il Presidente dell'Assemblea Costituente",
+      "Il Presidente del Consiglio"
+    ],
+    "corretta": 0,
+    "spiegazione": "I disposizione transitoria: il Capo provvisorio dello Stato (Enrico De Nicola) ne assume le attribuzioni e il titolo.",
+    "fonte": "Costituzione, disp. trans. I",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-194",
+    "argomento": "Disposizioni transitorie",
+    "livello": 4,
+    "testo": "Dove fu depositato il testo della Costituzione durante tutto il 1948, perché ogni cittadino potesse leggerlo?",
+    "opzioni": [
+      "Nelle prefetture",
+      "Nella sala comunale di ciascun Comune",
+      "Nelle parrocchie",
+      "In ogni scuola"
+    ],
+    "corretta": 1,
+    "spiegazione": "XVIII disposizione transitoria e finale.",
+    "fonte": "Costituzione, disp. trans. XVIII",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-195",
+    "argomento": "Storia costituzionale",
+    "livello": 2,
+    "testo": "In che data fu promulgata la Costituzione?",
+    "opzioni": [
+      "Il 2 giugno 1946",
+      "Il 1° gennaio 1948",
+      "Il 27 dicembre 1947",
+      "Il 22 dicembre 1948"
+    ],
+    "corretta": 2,
+    "spiegazione": "La Costituzione fu data a Roma il 27 dicembre 1947 ed entrò in vigore il 1° gennaio 1948.",
+    "fonte": "Costituzione, disp. trans. XVIII",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-196",
+    "argomento": "Principi fondamentali",
+    "livello": 5,
+    "testo": "Una legge regionale prevede che per accedere a un concorso regionale serva la residenza da dieci anni nella Regione. Con quale principio costituzionale contrasta più direttamente?",
+    "opzioni": [
+      "Il diritto di sciopero",
+      "Il principio di progressività tributaria",
+      "La libertà di stampa",
+      "Il divieto per le Regioni di limitare il diritto al lavoro in qualunque parte del territorio nazionale (art. 120)"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'art. 120 vieta alla Regione di limitare l'esercizio del diritto al lavoro in qualunque parte del territorio nazionale; rilevano anche artt. 3 e 51.",
+    "fonte": "Costituzione, art. 120",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-197",
+    "argomento": "Parlamento",
+    "livello": 5,
+    "testo": "Un disegno di legge è assegnato a una commissione in sede deliberante. Chi può chiedere che torni all'esame dell'Assemblea?",
+    "opzioni": [
+      "Il Governo, un decimo dei componenti della Camera o un quinto della commissione",
+      "Nessuno: la commissione decide in via definitiva",
+      "Solo il Presidente della Camera",
+      "Solo il Presidente della Repubblica"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 72, terzo comma.",
+    "fonte": "Costituzione, art. 72",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-198",
+    "argomento": "Formazione delle leggi",
+    "livello": 5,
+    "testo": "Le Camere dichiarano l'urgenza di una legge a maggioranza assoluta dei componenti. Cosa cambia per la promulgazione?",
+    "opzioni": [
+      "Non serve più la promulgazione",
+      "La legge è promulgata nel termine stabilito dalla legge stessa",
+      "Entra in vigore senza pubblicazione",
+      "La promulga il Presidente del Senato"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 73, secondo comma.",
+    "fonte": "Costituzione, art. 73",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-199",
+    "argomento": "Diritti e libertà",
+    "livello": 5,
+    "testo": "Il questore dispone una perquisizione domiciliare d'urgenza nei casi previsti dalla legge. Quali garanzie costituzionali si applicano?",
+    "opzioni": [
+      "Solo l'autorizzazione del sindaco",
+      "Nessuna, perché è un atto di polizia",
+      "Quelle previste per la libertà personale: comunicazione e convalida dell'autorità giudiziaria nei termini di 48 ore",
+      "Solo la notifica al proprietario entro un mese"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'art. 14 rinvia alle garanzie prescritte per la libertà personale (art. 13).",
+    "fonte": "Costituzione, art. 14",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-200",
+    "argomento": "Rapporti politici",
+    "livello": 4,
+    "testo": "A quale scopo la Repubblica, secondo l'art. 51, adotta appositi provvedimenti?",
+    "opzioni": [
+      "Per favorire i cittadini residenti",
+      "Per garantire posti riservati ai partiti",
+      "Per limitare l'accesso ai pubblici uffici",
+      "Per promuovere le pari opportunità tra donne e uomini"
+    ],
+    "corretta": 3,
+    "spiegazione": "Comma aggiunto dalla L. cost. 1/2003.",
+    "fonte": "Costituzione, art. 51",
+    "versione": "v1"
+  }
+]

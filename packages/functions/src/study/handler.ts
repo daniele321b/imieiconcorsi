@@ -1,9 +1,11 @@
-import { GetCommand, PutCommand, QueryCommand, UpdateCommand } from "@aws-sdk/lib-dynamodb";
+import { GetCommand, PutCommand, QueryCommand, ScanCommand, UpdateCommand } from "@aws-sdk/lib-dynamodb";
 import { batchGet, db, getProfilo, tables } from "@imieiconcorsi/core/db";
 import {
   MATERIA_IDS,
   MATERIE,
+  PREFISSO_BANCA_DATI,
   REGOLE_DEFAULT,
+  type BancaDati,
   type Concorso,
   type Domanda,
   type MateriaId,
@@ -21,14 +23,36 @@ const NuovaSessione = z.object({
   tipo: z.enum(["studio", "simulazione"]),
   materie: z.array(z.enum(MATERIA_IDS)).min(1).optional(),
   concorsoId: z.string().optional(),
+  /** Sessione sulle domande di una banca dati ufficiale (piani Medium e Pro) */
+  bancaDatiId: z.string().optional(),
   numero: z.number().int().min(5).max(60).optional(),
 });
+
+/** Banche dati pubblicate, per la sezione Banche dati (poche righe: basta uno Scan). */
+async function bancheDatiPubblicate() {
+  const out: BancaDati[] = [];
+  let ExclusiveStartKey: Record<string, unknown> | undefined;
+  do {
+    const res = await db.send(
+      new ScanCommand({
+        TableName: tables.bancheDati,
+        FilterExpression: "stato = :p",
+        ExpressionAttributeValues: { ":p": "pubblicata" },
+        ExclusiveStartKey,
+      }),
+    );
+    out.push(...((res.Items ?? []) as BancaDati[]));
+    ExclusiveStartKey = res.LastEvaluatedKey;
+  } while (ExclusiveStartKey);
+  return out;
+}
 
 const Consegna = z.object({
   risposte: z.array(z.number().int().min(0).max(9).nullable()).max(60),
 });
 
-async function domandeDiMateria(materia: MateriaId) {
+/** Domande di una materia della banca statica, o di una banca dati ufficiale (bd#<id>). */
+async function domandeDiMateria(materia: MateriaId | string) {
   const items: Domanda[] = [];
   let start: Record<string, unknown> | undefined;
   do {
@@ -98,8 +122,38 @@ export const handler = service({
         ),
       ),
     );
+    // La versione della banca è la stessa per tutte le domande: basta leggerne una.
+    const una = await db.send(
+      new QueryCommand({
+        TableName: tables.questions,
+        KeyConditionExpression: "materia = :m",
+        ExpressionAttributeValues: { ":m": MATERIE[0].id },
+        ProjectionExpression: "versione",
+        Limit: 1,
+      }),
+    );
     return {
       materie: MATERIE.map((m, i) => ({ ...m, domande: conteggi[i].Count ?? 0, livello: profilo?.livelli[m.id] })),
+      versione: (una.Items?.[0]?.versione as string | undefined) ?? "v1",
+    };
+  },
+
+  /** Catalogo per comparto. Lo vedono tutti; aprire una banca dati richiede Medium o Pro. */
+  "GET /banche-dati": async () => {
+    const banche = await bancheDatiPubblicate();
+    return {
+      banche: banche
+        .map((b) => ({
+          id: b.id,
+          titolo: b.titolo,
+          comparto: b.comparto ?? "altro",
+          anno: b.anno,
+          materia: b.materia,
+          domande: b.domande ?? 0,
+          concorsoId: b.concorsoId,
+          concorsoTitolo: b.concorsoTitolo,
+        }))
+        .sort((a, b) => (b.anno ?? 0) - (a.anno ?? 0) || a.titolo.localeCompare(b.titolo)),
     };
   },
 
@@ -110,12 +164,31 @@ export const handler = service({
     const { limiti } = ctx;
 
     let materie = input.materie;
+    /** Domande ufficiali: banca dati scelta dalla sezione Banche dati, o quella del concorso. */
+    let bancaDati: string | undefined;
+    let infoBanca: Sessione["bancaDati"];
+    if (input.bancaDatiId) {
+      if (!limiti.bancheDati) {
+        throw new HttpError(403, "Le banche dati ufficiali sono incluse nei piani Medium e Pro.", "LIMITE_PIANO");
+      }
+      const res = await db.send(new GetCommand({ TableName: tables.bancheDati, Key: { id: input.bancaDatiId } }));
+      const banca = res.Item as BancaDati | undefined;
+      if (!banca || banca.stato !== "pubblicata") throw notFound("Banca dati");
+      bancaDati = `${PREFISSO_BANCA_DATI}${banca.id}`;
+      infoBanca = { id: banca.id, titolo: banca.titolo };
+      materie ??= banca.materia ? [banca.materia] : [];
+    }
     if (input.concorsoId) {
       const res = await db.send(new GetCommand({ TableName: tables.concorsi, Key: { id: input.concorsoId } }));
       if (!res.Item) throw notFound("Concorso");
-      materie ??= (res.Item as Concorso).materie;
+      const concorso = res.Item as Concorso;
+      materie ??= concorso.materie;
+      if (!bancaDati && input.tipo === "simulazione" && limiti.bancheDati && concorso.bancaDatiId && !input.materie) {
+        bancaDati = `${PREFISSO_BANCA_DATI}${concorso.bancaDatiId}`;
+        infoBanca = { id: concorso.bancaDatiId, titolo: "Banca dati ufficiale" };
+      }
     }
-    if (!materie?.length) throw new HttpError(400, "Indica le materie o un concorso");
+    if (!materie?.length && !bancaDati) throw new HttpError(400, "Indica le materie, un concorso o una banca dati");
 
     let numero: number;
     if (input.tipo === "simulazione") {
@@ -134,7 +207,10 @@ export const handler = service({
       numero = Math.min(input.numero ?? 10, limiti.domandePerSessioneStudio);
     }
 
-    const perMateria = new Map(await Promise.all(materie.map(async (m) => [m, await domandeDiMateria(m)] as const)));
+    const fonti: string[] = bancaDati ? [bancaDati] : (materie ?? []);
+    const perMateria = new Map(
+      await Promise.all(fonti.map(async (m) => [m as MateriaId, await domandeDiMateria(m)] as const)),
+    );
     const domande = selezionaDomande(perMateria, numero, profilo.livelli);
     if (!domande.length) throw new HttpError(409, "Non ci sono ancora domande per queste materie", "NESSUNA_DOMANDA");
 
@@ -144,7 +220,8 @@ export const handler = service({
       id: sortableId(now),
       tipo: input.tipo,
       concorsoId: input.concorsoId,
-      materie,
+      materie: materie ?? [],
+      ...(infoBanca ? { bancaDati: infoBanca } : {}),
       domande: domande.map(({ materia, id }) => ({ materia, id })),
       stato: "in-corso",
       regole: REGOLE_DEFAULT,
@@ -228,9 +305,12 @@ export const handler = service({
         id: s.id,
         tipo: s.tipo,
         materie: s.materie,
+        bancaDati: s.bancaDati?.titolo,
         concorsoId: s.concorsoId,
         data: s.consegnataIl!,
         percentuale: s.esito!.percentuale,
+        // Tempo impiegato (le simulazioni hanno un limite; lo studio no).
+        durataMs: Date.parse(s.consegnataIl!) - Date.parse(s.creataIl),
       })),
     };
   },

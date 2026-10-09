@@ -31,8 +31,9 @@ resource "aws_apigatewayv2_authorizer" "cognito" {
 
 locals {
   routes = merge([
-    for service, cfg in var.services : { for route in cfg.routes : route => service }
+    for service, cfg in var.services : { for route in concat(cfg.routes, cfg.public_routes) : route => service }
   ]...)
+  public_routes = toset(flatten([for cfg in values(var.services) : cfg.public_routes]))
 }
 
 module "service" {
@@ -44,7 +45,7 @@ module "service" {
   environment       = merge(var.environment, each.value.environment)
   write_tables      = each.value.write_tables
   read_tables       = each.value.read_tables
-  policy_statements = each.value.policies
+  policy_statements = jsondecode(each.value.policies)
 }
 
 resource "aws_apigatewayv2_integration" "service" {
@@ -62,8 +63,8 @@ resource "aws_apigatewayv2_route" "service" {
   api_id             = aws_apigatewayv2_api.main.id
   route_key          = each.key
   target             = "integrations/${aws_apigatewayv2_integration.service[each.value].id}"
-  authorization_type = "JWT"
-  authorizer_id      = aws_apigatewayv2_authorizer.cognito.id
+  authorization_type = contains(local.public_routes, each.key) ? "NONE" : "JWT"
+  authorizer_id      = contains(local.public_routes, each.key) ? null : aws_apigatewayv2_authorizer.cognito.id
 }
 
 resource "aws_lambda_permission" "api" {

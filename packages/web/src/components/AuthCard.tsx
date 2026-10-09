@@ -8,8 +8,10 @@ import {
   signInWithRedirect,
   signUp,
 } from "aws-amplify/auth";
+import { emailConsentita, MESSAGGIO_EMAIL_NON_CONSENTITA } from "@imieiconcorsi/core/registrazione";
 import { ArrowLeft, Mail } from "lucide-react";
 import { useState, type FormEvent } from "react";
+import { Link } from "react-router";
 import { messaggioErrore } from "../lib/auth";
 import { config, type SocialProvider } from "../lib/config";
 import { FacebookIcon, GoogleIcon } from "./brand";
@@ -23,6 +25,7 @@ export function AuthCard() {
   const [password, setPassword] = useState("");
   const [nome, setNome] = useState("");
   const [codice, setCodice] = useState("");
+  const [accetto, setAccetto] = useState(false);
   const [errore, setErrore] = useState<string>();
   const [info, setInfo] = useState<string>();
   const [inCorso, setInCorso] = useState(false);
@@ -66,6 +69,11 @@ export function AuthCard() {
 
   const onRegistrati = (e: FormEvent) => {
     e.preventDefault();
+    // Lo stesso controllo lo rifà il server (trigger pre sign-up): qui serve a rispondere subito.
+    if (!emailConsentita(email)) {
+      setErrore(MESSAGGIO_EMAIL_NON_CONSENTITA);
+      return;
+    }
     void esegui(async () => {
       await signUp({
         username: email,
@@ -168,7 +176,17 @@ export function AuthCard() {
       {modo === "registrati" && (
         <form onSubmit={onRegistrati} className="mt-5 space-y-4">
           <Field label="Nome" name="name" autoComplete="given-name" value={nome} onChange={(e) => setNome(e.target.value)} placeholder="Come ti chiami?" />
-          <Field label="Email" name="email" type="email" autoComplete="email" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder="nome@esempio.it" />
+          <Field
+            label="Email"
+            name="email"
+            type="email"
+            autoComplete="email"
+            required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="nome@gmail.com"
+            hint="Gmail, Outlook/Hotmail, Yahoo, iCloud, Libero, Virgilio, Alice/TIM e altri provider diffusi."
+          />
           <Field
             label="Password"
             name="password"
@@ -180,7 +198,27 @@ export function AuthCard() {
             onChange={(e) => setPassword(e.target.value)}
             hint="Almeno 8 caratteri, con una maiuscola, una minuscola e un numero."
           />
-          <Button type="submit" size="lg" className="w-full" loading={inCorso}>
+          <label className="flex items-start gap-2.5 text-sm text-slate-600">
+            <input
+              type="checkbox"
+              required
+              checked={accetto}
+              onChange={(e) => setAccetto(e.target.checked)}
+              className="mt-0.5 size-4 rounded border-slate-300 text-brand-600 focus:ring-brand-500"
+            />
+            <span>
+              Accetto i{" "}
+              <Link to="/termini" target="_blank" className="font-semibold text-brand-600 underline">
+                Termini e condizioni
+              </Link>{" "}
+              e ho letto l'
+              <Link to="/privacy" target="_blank" className="font-semibold text-brand-600 underline">
+                Informativa privacy
+              </Link>
+              .
+            </span>
+          </label>
+          <Button type="submit" size="lg" className="w-full" loading={inCorso} disabled={!accetto}>
             Crea account gratuito
           </Button>
         </form>
@@ -259,9 +297,17 @@ export function AuthCard() {
         </>
       )}
 
-      {modo === "registrati" && (
+      {(modo === "accedi" || modo === "registrati") && config.social.length > 0 && (
         <p className="mt-6 text-center text-xs text-slate-400">
-          Registrandoti accetti i termini del servizio e l'informativa privacy.
+          Continuando con {config.social.map((p) => (p === "google" ? "Google" : "Facebook")).join(" o ")} accetti i{" "}
+          <Link to="/termini" target="_blank" className="underline">
+            Termini
+          </Link>{" "}
+          e l'
+          <Link to="/privacy" target="_blank" className="underline">
+            Informativa privacy
+          </Link>
+          .
         </p>
       )}
     </div>

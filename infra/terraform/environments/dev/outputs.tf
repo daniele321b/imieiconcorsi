@@ -38,3 +38,7 @@ output "function_names" {
 output "web_config" {
   value = local.app_config
 }
+
+output "contenuti_bucket" {
+  value = module.contenuti.bucket
+}

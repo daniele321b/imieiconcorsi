@@ -1,0 +1,3402 @@
+[
+  {
+    "materia": "logica",
+    "id": "log-001",
+    "argomento": "Connettivi",
+    "livello": 1,
+    "testo": "Quando è vera la congiunzione «p e q»?",
+    "opzioni": [
+      "Solo quando p e q sono entrambe vere",
+      "Quando sono entrambe false",
+      "Quando p è vera, qualunque sia q",
+      "Quando almeno una delle due è vera"
+    ],
+    "corretta": 0,
+    "spiegazione": "La congiunzione è vera solo se le due proposizioni sono contestualmente vere; basta una falsa perché sia falsa.",
+    "fonte": "MatematicaC3, Logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-002",
+    "argomento": "Connettivi",
+    "livello": 2,
+    "testo": "Quando è falsa la disgiunzione inclusiva «p o q»?",
+    "opzioni": [
+      "Mai",
+      "Solo se entrambe le proposizioni sono false",
+      "Se entrambe sono vere",
+      "Se almeno una è falsa"
+    ],
+    "corretta": 1,
+    "spiegazione": "La disgiunzione inclusiva è vera quando almeno una delle due è vera ed è falsa solo se entrambe sono false.",
+    "fonte": "MatematicaC3, Logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-003",
+    "argomento": "Connettivi",
+    "livello": 3,
+    "testo": "Quando è vera la disgiunzione esclusiva «o p o q»?",
+    "opzioni": [
+      "Quando almeno una è vera",
+      "Quando sono entrambe vere",
+      "Quando soltanto una delle due è vera",
+      "Quando sono entrambe false"
+    ],
+    "corretta": 2,
+    "spiegazione": "La disgiunzione esclusiva (aut) è vera solo se una delle due è vera; è falsa se sono entrambe vere o entrambe false. Esempio: «oggi il Milan vince o pareggia».",
+    "fonte": "MatematicaC3, Logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-004",
+    "argomento": "Connettivi",
+    "livello": 2,
+    "testo": "Nella frase «100 è minore di 1 o maggiore di 10», la «o» è usata in senso:",
+    "opzioni": [
+      "esclusivo, e la frase è falsa",
+      "esclusivo, e la frase è vera",
+      "inclusivo, e la frase è falsa",
+      "inclusivo, e la frase è vera"
+    ],
+    "corretta": 3,
+    "spiegazione": "È una disgiunzione inclusiva ed è vera perché una delle due affermazioni è vera: 100 è maggiore di 10.",
+    "fonte": "MatematicaC3, Logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-005",
+    "argomento": "Implicazione",
+    "livello": 2,
+    "testo": "Nell'implicazione «se p allora q», come si chiamano p e q?",
+    "opzioni": [
+      "p è l'antecedente (ipotesi), q il conseguente (tesi)",
+      "p è il termine medio, q la conclusione",
+      "p è la tesi, q l'ipotesi",
+      "p e q sono entrambe premesse"
+    ],
+    "corretta": 0,
+    "spiegazione": "Nella scrittura p ⇒ q, p è l'antecedente o ipotesi e q il conseguente o tesi.",
+    "fonte": "MatematicaC3, Logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-006",
+    "argomento": "Implicazione",
+    "livello": 3,
+    "testo": "Se vale «p implica q», allora:",
+    "opzioni": [
+      "p e q sono sempre equivalenti",
+      "p è condizione sufficiente per q e q è condizione necessaria per p",
+      "q è condizione sufficiente per p",
+      "p è condizione necessaria per q"
+    ],
+    "corretta": 1,
+    "spiegazione": "Da p ⇒ q: p è sufficiente per q, q è necessaria per p.",
+    "fonte": "MatematicaC3, Logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-007",
+    "argomento": "Implicazione",
+    "livello": 4,
+    "testo": "«Studiare è condizione necessaria per essere promossi, ma non sufficiente». Quale affermazione è sicuramente vera?",
+    "opzioni": [
+      "Chi ha studiato è stato promosso",
+      "Chi è stato bocciato non ha studiato",
+      "Chi non ha studiato non è stato promosso",
+      "Studiare e essere promossi sono la stessa cosa"
+    ],
+    "corretta": 2,
+    "spiegazione": "Se q (studiare) è necessaria per p (promozione), vale p ⇒ q e quindi anche ¬q ⇒ ¬p: senza studio, niente promozione.",
+    "fonte": "MatematicaC3, Logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-008",
+    "argomento": "Implicazione",
+    "livello": 4,
+    "testo": "Data l'implicazione «se p allora q», quale altra implicazione ha sempre gli stessi valori di verità?",
+    "opzioni": [
+      "Se p allora non q",
+      "Se q allora p",
+      "Se non p allora non q",
+      "Se non q allora non p"
+    ],
+    "corretta": 3,
+    "spiegazione": "La contronominale ¬q ⇒ ¬p è equivalente a p ⇒ q; l'inversa (q ⇒ p) e la contraria (¬p ⇒ ¬q) no.",
+    "fonte": "MatematicaC3, Logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-009",
+    "argomento": "Tautologie",
+    "livello": 2,
+    "testo": "Come si chiama una proposizione sempre vera, qualunque sia il valore di verità dei suoi elementi?",
+    "opzioni": [
+      "Tautologia",
+      "Implicazione",
+      "Contraddizione",
+      "Sillogismo"
+    ],
+    "corretta": 0,
+    "spiegazione": "Esempio di tautologia: «Quest'anno la Juve vince il campionato oppure non lo vince».",
+    "fonte": "MatematicaC3, Logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-010",
+    "argomento": "Tautologie",
+    "livello": 2,
+    "testo": "Come si chiama una proposizione sempre falsa, come «un numero è multiplo di 2 ed è dispari»?",
+    "opzioni": [
+      "Tautologia",
+      "Contraddizione",
+      "Disgiunzione",
+      "Negazione"
+    ],
+    "corretta": 1,
+    "spiegazione": "Una proposizione sempre falsa, qualunque sia la verità dei suoi elementi, è una contraddizione.",
+    "fonte": "MatematicaC3, Logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-011",
+    "argomento": "Leggi di De Morgan",
+    "livello": 3,
+    "testo": "Secondo le leggi di De Morgan, la negazione di «p e q» equivale a:",
+    "opzioni": [
+      "non p e non q",
+      "p o q",
+      "non p o non q",
+      "non (p o q)"
+    ],
+    "corretta": 2,
+    "spiegazione": "Leggi di De Morgan: ¬(p ∧ q) = ¬p ∨ ¬q e ¬(p ∨ q) = ¬p ∧ ¬q.",
+    "fonte": "MatematicaC3, Logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-012",
+    "argomento": "Leggi di De Morgan",
+    "livello": 4,
+    "testo": "Qual è la negazione di «Marco parla inglese o francese»?",
+    "opzioni": [
+      "Marco parla solo una delle due lingue",
+      "Marco non parla inglese o non parla francese",
+      "Marco parla inglese e francese",
+      "Marco non parla né inglese né francese"
+    ],
+    "corretta": 3,
+    "spiegazione": "Per De Morgan ¬(p ∨ q) = ¬p ∧ ¬q: non parla inglese E non parla francese.",
+    "fonte": "MatematicaC3, Logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-013",
+    "argomento": "Quantificatori",
+    "livello": 3,
+    "testo": "Qual è la negazione di «Tutti i gatti fanno le fusa»?",
+    "opzioni": [
+      "C'è almeno un gatto che non fa le fusa",
+      "Tutti i gatti non fanno le fusa",
+      "Nessun gatto fa le fusa",
+      "Alcuni gatti fanno le fusa"
+    ],
+    "corretta": 0,
+    "spiegazione": "La negazione di un enunciato universale è un enunciato esistenziale: «esiste almeno un… che non…».",
+    "fonte": "MatematicaC3, Logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-014",
+    "argomento": "Quantificatori",
+    "livello": 2,
+    "testo": "Quale simbolo indica il quantificatore universale «per ogni»?",
+    "opzioni": [
+      "∃",
+      "∀",
+      "∨",
+      "¬"
+    ],
+    "corretta": 1,
+    "spiegazione": "∀ si legge «per ogni»; ∃ «esiste»; ¬ è la negazione; ∨ la disgiunzione.",
+    "fonte": "MatematicaC3, Logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-015",
+    "argomento": "Sillogismo",
+    "livello": 2,
+    "testo": "Nel sillogismo «Tutti gli uomini sono mortali; tutti i greci sono uomini; quindi tutti i greci sono mortali», qual è il termine medio?",
+    "opzioni": [
+      "mortali",
+      "greci",
+      "uomini",
+      "tutti"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il termine medio compare in entrambe le premesse e non nella conclusione: qui è «uomini».",
+    "fonte": "Wikipedia, «Sillogismo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-016",
+    "argomento": "Sillogismo",
+    "livello": 4,
+    "testo": "Quante sono le forme valide del sillogismo categorico, sulle 256 combinazioni possibili?",
+    "opzioni": [
+      "4",
+      "64",
+      "256",
+      "19"
+    ],
+    "corretta": 3,
+    "spiegazione": "Le combinazioni sono 256, ma le forme valide solo 19, tra cui le quattro «perfette» della prima figura (Barbara, Celarent, Darii, Ferio).",
+    "fonte": "Wikipedia, «Sillogismo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-017",
+    "argomento": "Sillogismo",
+    "livello": 5,
+    "testo": "Premesse false possono portare a una conclusione vera?",
+    "opzioni": [
+      "Sì: «tutti i pesci sono uomini; Socrate è un pesce; quindi Socrate è un uomo»",
+      "Solo con premesse particolari",
+      "Solo se il sillogismo non è valido",
+      "No, mai"
+    ],
+    "corretta": 0,
+    "spiegazione": "La validità riguarda la forma: da premesse false si può ricavare una conclusione vera, come nell'esempio di Socrate.",
+    "fonte": "Wikipedia, «Sillogismo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-018",
+    "argomento": "Inferenza",
+    "livello": 2,
+    "testo": "«Se piove, la strada è bagnata. Piove.» Cosa si può concludere?",
+    "opzioni": [
+      "Non piove",
+      "La strada è bagnata",
+      "Nulla",
+      "La strada non è bagnata"
+    ],
+    "corretta": 1,
+    "spiegazione": "È il modus ponens: da «p implica q» e «p» segue «q».",
+    "fonte": "Wikipedia, «Modus ponens» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-019",
+    "argomento": "Inferenza",
+    "livello": 3,
+    "testo": "«Se piove, la strada è bagnata. La strada non è bagnata.» Cosa si può concludere?",
+    "opzioni": [
+      "Piove",
+      "La strada è asciutta perché c'è il sole",
+      "Non piove",
+      "Nulla"
+    ],
+    "corretta": 2,
+    "spiegazione": "È il modus tollens: da «p implica q» e «non q» segue «non p».",
+    "fonte": "Wikipedia, «Modus tollens» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-020",
+    "argomento": "Inferenza",
+    "livello": 4,
+    "testo": "«Se studio, passo l'esame. Ho passato l'esame. Quindi ho studiato.» Il ragionamento è:",
+    "opzioni": [
+      "Valido per modus ponens",
+      "Valido perché le premesse sono vere",
+      "Valido per modus tollens",
+      "Non valido: è la fallacia dell'affermazione del conseguente"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il conseguente può essere vero anche se l'antecedente è falso.",
+    "fonte": "Wikipedia, «Fallacia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-021",
+    "argomento": "Inferenza",
+    "livello": 4,
+    "testo": "«Se è italiano, è europeo. Non è italiano. Quindi non è europeo.» Il ragionamento è:",
+    "opzioni": [
+      "Non valido: è la negazione dell'antecedente",
+      "Un sillogismo valido",
+      "Valido per modus tollens",
+      "Valido per modus ponens"
+    ],
+    "corretta": 0,
+    "spiegazione": "Si può essere europei senza essere italiani.",
+    "fonte": "Wikipedia, «Fallacia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-022",
+    "argomento": "Inferenza",
+    "livello": 3,
+    "testo": "Cosa significa letteralmente «modus ponens»?",
+    "opzioni": [
+      "«Modo che toglie»",
+      "«Modo che afferma»",
+      "«Modo del dubbio»",
+      "«Modo della prova»"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Modus ponens».",
+    "fonte": "Wikipedia, «Modus ponens» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-023",
+    "argomento": "Condizioni",
+    "livello": 3,
+    "testo": "Quando una condizione Q è «necessaria» per P?",
+    "opzioni": [
+      "Quando P e Q sono sempre false",
+      "Quando Q implica P",
+      "Quando P implica Q",
+      "Quando Q è vera solo a volte"
+    ],
+    "corretta": 2,
+    "spiegazione": "Esempio: respirare è necessario per vivere, ma non sufficiente.",
+    "fonte": "Wikipedia, «Condizione necessaria e sufficiente» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-024",
+    "argomento": "Condizioni",
+    "livello": 3,
+    "testo": "Quando una condizione Q è «sufficiente» per P?",
+    "opzioni": [
+      "Quando P è falsa",
+      "Quando Q è falsa",
+      "Quando P implica Q",
+      "Quando Q implica P"
+    ],
+    "corretta": 3,
+    "spiegazione": "Esempio: essere divisibile per 6 è sufficiente per essere pari, ma non necessario.",
+    "fonte": "Wikipedia, «Condizione necessaria e sufficiente» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-025",
+    "argomento": "Condizioni",
+    "livello": 3,
+    "testo": "Essere divisibile per 6, per un numero, rispetto all'essere pari, è condizione:",
+    "opzioni": [
+      "Sufficiente ma non necessaria",
+      "Necessaria e sufficiente",
+      "Necessaria ma non sufficiente",
+      "Né necessaria né sufficiente"
+    ],
+    "corretta": 0,
+    "spiegazione": "Esistono numeri pari non divisibili per 6 (es. 4).",
+    "fonte": "Wikipedia, «Condizione necessaria e sufficiente» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-026",
+    "argomento": "Condizioni",
+    "livello": 3,
+    "testo": "Per un numero primo maggiore di 2, essere dispari è condizione:",
+    "opzioni": [
+      "Necessaria e sufficiente",
+      "Necessaria ma non sufficiente",
+      "Né necessaria né sufficiente",
+      "Sufficiente ma non necessaria"
+    ],
+    "corretta": 1,
+    "spiegazione": "Tutti i primi maggiori di 2 sono dispari, ma non tutti i dispari sono primi (es. 9).",
+    "fonte": "Wikipedia, «Condizione necessaria e sufficiente» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-027",
+    "argomento": "Condizioni",
+    "livello": 4,
+    "testo": "«Solo se hai il biglietto puoi entrare». Quale affermazione è sicuramente vera?",
+    "opzioni": [
+      "Se non sei entrato, non hai il biglietto",
+      "Se hai il biglietto, entri sicuramente",
+      "Se sei entrato, hai il biglietto",
+      "Chi ha il biglietto deve entrare"
+    ],
+    "corretta": 2,
+    "spiegazione": "«Solo se» indica la condizione necessaria: entrare implica avere il biglietto.",
+    "fonte": "Wikipedia, «Condizione necessaria e sufficiente» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-028",
+    "argomento": "Opposizioni",
+    "livello": 2,
+    "testo": "Qual è la proposizione di tipo «A» nel quadrato aristotelico?",
+    "opzioni": [
+      "L'universale negativa",
+      "La particolare negativa",
+      "La particolare affermativa",
+      "L'universale affermativa («ogni S è P»)"
+    ],
+    "corretta": 3,
+    "spiegazione": "E = universale negativa, I = particolare affermativa, O = particolare negativa.",
+    "fonte": "Wikipedia, «Quadrato delle opposizioni» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-029",
+    "argomento": "Opposizioni",
+    "livello": 3,
+    "testo": "Quale tipo di proposizione è «alcuni S non sono P»?",
+    "opzioni": [
+      "O, particolare negativa",
+      "I, particolare affermativa",
+      "A, universale affermativa",
+      "E, universale negativa"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Quadrato delle opposizioni».",
+    "fonte": "Wikipedia, «Quadrato delle opposizioni» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-030",
+    "argomento": "Opposizioni",
+    "livello": 3,
+    "testo": "Qual è la contraddittoria di «ogni uomo è bianco»?",
+    "opzioni": [
+      "«Qualche uomo è bianco»",
+      "«Qualche uomo non è bianco»",
+      "«Ogni uomo è nero»",
+      "«Nessun uomo è bianco»"
+    ],
+    "corretta": 1,
+    "spiegazione": "Tra contraddittorie una è sempre vera e l'altra falsa.",
+    "fonte": "Wikipedia, «Quadrato delle opposizioni» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-031",
+    "argomento": "Opposizioni",
+    "livello": 4,
+    "testo": "«Ogni uomo è bianco» e «nessun uomo è bianco» sono proposizioni:",
+    "opzioni": [
+      "Subalterne",
+      "Equivalenti",
+      "Contrarie: non possono essere entrambe vere",
+      "Contraddittorie"
+    ],
+    "corretta": 2,
+    "spiegazione": "Possono però essere entrambe false.",
+    "fonte": "Wikipedia, «Quadrato delle opposizioni» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-032",
+    "argomento": "Fallacie",
+    "livello": 3,
+    "testo": "Come si chiama l'argomento che attacca chi sostiene una tesi invece della tesi stessa?",
+    "opzioni": [
+      "Petitio principii",
+      "Ad verecundiam",
+      "Modus tollens",
+      "Argumentum ad hominem"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Fallacia».",
+    "fonte": "Wikipedia, «Fallacia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-033",
+    "argomento": "Fallacie",
+    "livello": 4,
+    "testo": "Come si chiama la fallacia in cui la conclusione è già contenuta nella premessa?",
+    "opzioni": [
+      "Petitio principii",
+      "Ad verecundiam",
+      "Ad hominem",
+      "Falso dilemma"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Fallacia».",
+    "fonte": "Wikipedia, «Fallacia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-034",
+    "argomento": "Fallacie",
+    "livello": 4,
+    "testo": "La domanda «Hai smesso di rapinare banche?» è un esempio di:",
+    "opzioni": [
+      "Tautologia",
+      "Domanda complessa (multipla)",
+      "Sillogismo valido",
+      "Modus ponens"
+    ],
+    "corretta": 1,
+    "spiegazione": "Dà per scontato qualcosa non dimostrato.",
+    "fonte": "Wikipedia, «Fallacia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-035",
+    "argomento": "Paradossi",
+    "livello": 3,
+    "testo": "Quale celebre paradosso nasce dalla frase «questa frase è falsa»?",
+    "opzioni": [
+      "Il paradosso del barbiere",
+      "Il paradosso di Zenone",
+      "Il paradosso del mentitore",
+      "Il paradosso del sorite"
+    ],
+    "corretta": 2,
+    "spiegazione": "È attribuito al megarico Eubulide; una versione è legata a Epimenide.",
+    "fonte": "Wikipedia, «Paradosso del mentitore» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-036",
+    "argomento": "Paradossi",
+    "livello": 4,
+    "testo": "A quale filosofo è tradizionalmente attribuita l'ideazione del paradosso del mentitore («io sto mentendo»)?",
+    "opzioni": [
+      "Aristotele",
+      "Socrate",
+      "Zenone di Elea",
+      "Eubulide di Mileto"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Paradosso del mentitore».",
+    "fonte": "Wikipedia, «Paradosso del mentitore» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-037",
+    "argomento": "Insiemi",
+    "livello": 1,
+    "testo": "Cos'è l'intersezione di due insiemi A e B?",
+    "opzioni": [
+      "L'insieme degli elementi che appartengono sia ad A sia a B",
+      "L'insieme degli elementi di A o di B",
+      "L'insieme degli elementi di A non in B",
+      "L'insieme vuoto"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'unione è invece l'insieme degli elementi di A o di B.",
+    "fonte": "Wikipedia, «Insieme» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-038",
+    "argomento": "Insiemi",
+    "livello": 1,
+    "testo": "Come si chiama l'insieme che non contiene alcun elemento?",
+    "opzioni": [
+      "Insieme unitario",
+      "Insieme vuoto",
+      "Insieme complementare",
+      "Insieme universo"
+    ],
+    "corretta": 1,
+    "spiegazione": "Si indica con ∅ o { }.",
+    "fonte": "Wikipedia, «Insieme» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-039",
+    "argomento": "Insiemi",
+    "livello": 2,
+    "testo": "Quando A è sottoinsieme di B?",
+    "opzioni": [
+      "Quando A ha più elementi di B",
+      "Quando A e B non hanno elementi in comune",
+      "Quando tutti gli elementi di A appartengono anche a B",
+      "Quando B è vuoto"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Insieme».",
+    "fonte": "Wikipedia, «Insieme» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-040",
+    "argomento": "Insiemi",
+    "livello": 3,
+    "testo": "A = {1, 2, 3, 4}, B = {3, 4, 5}. Quanto vale A ∩ B?",
+    "opzioni": [
+      "{1, 2}",
+      "{5}",
+      "{1, 2, 3, 4, 5}",
+      "{3, 4}"
+    ],
+    "corretta": 3,
+    "spiegazione": "Intersezione: elementi comuni.",
+    "fonte": "Wikipedia, «Insieme» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-041",
+    "argomento": "Insiemi",
+    "livello": 3,
+    "testo": "A = {1, 2, 3, 4}, B = {3, 4, 5}. Quanto vale A ∪ B?",
+    "opzioni": [
+      "{1, 2, 3, 4, 5}",
+      "{1, 2}",
+      "{1, 2, 5}",
+      "{3, 4}"
+    ],
+    "corretta": 0,
+    "spiegazione": "Unione: tutti gli elementi di A o di B.",
+    "fonte": "Wikipedia, «Insieme» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-042",
+    "argomento": "Insiemi",
+    "livello": 3,
+    "testo": "In una classe di 30 studenti, 18 studiano inglese, 15 francese e 7 entrambe. Quanti non studiano nessuna delle due lingue?",
+    "opzioni": [
+      "7",
+      "4",
+      "0",
+      "12"
+    ],
+    "corretta": 1,
+    "spiegazione": "Inglese o francese = 18 + 15 − 7 = 26; 30 − 26 = 4. Il diagramma di Venn aiuta a visualizzarlo.",
+    "fonte": "Wikipedia, «Diagramma di Venn» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-043",
+    "argomento": "Insiemi",
+    "livello": 4,
+    "testo": "Su 100 dipendenti, 60 usano l'auto, 50 il treno e 25 entrambi. Quanti usano solo il treno?",
+    "opzioni": [
+      "15",
+      "35",
+      "25",
+      "50"
+    ],
+    "corretta": 2,
+    "spiegazione": "Solo treno = 50 − 25 = 25.",
+    "fonte": "Wikipedia, «Diagramma di Venn» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-044",
+    "argomento": "Insiemi",
+    "livello": 2,
+    "testo": "Chi propose nel 1880 il diagramma che porta il suo nome per rappresentare relazioni tra insiemi?",
+    "opzioni": [
+      "Gottlob Frege",
+      "George Boole",
+      "Leonhard Euler da solo",
+      "John Venn"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Diagramma di Venn».",
+    "fonte": "Wikipedia, «Diagramma di Venn» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-045",
+    "argomento": "Combinatoria",
+    "livello": 3,
+    "testo": "In un cassetto ci sono calzini neri e bianchi mescolati al buio. Quanti calzini bisogna prendere, come minimo, per essere sicuri di averne due dello stesso colore?",
+    "opzioni": [
+      "3",
+      "4",
+      "5",
+      "2"
+    ],
+    "corretta": 0,
+    "spiegazione": "Principio dei cassetti: con 2 colori («cassetti»), 3 calzini garantiscono una coppia.",
+    "fonte": "Wikipedia, «Principio dei cassetti» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-046",
+    "argomento": "Combinatoria",
+    "livello": 3,
+    "testo": "In un gruppo di 13 persone, cosa si può dire con certezza?",
+    "opzioni": [
+      "Tutte sono nate in mesi diversi",
+      "Almeno due sono nate nello stesso mese",
+      "Almeno due sono nate lo stesso giorno",
+      "Nessuna conclusione"
+    ],
+    "corretta": 1,
+    "spiegazione": "13 persone in 12 mesi: per il principio dei cassetti almeno un mese ne contiene due.",
+    "fonte": "Wikipedia, «Principio dei cassetti» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-047",
+    "argomento": "Combinatoria",
+    "livello": 4,
+    "testo": "A chi si attribuisce la prima formulazione esplicita del principio dei cassetti (1834)?",
+    "opzioni": [
+      "Gauss",
+      "Pascal",
+      "Dirichlet",
+      "Fermat"
+    ],
+    "corretta": 2,
+    "spiegazione": "In russo è noto come principio di Dirichlet.",
+    "fonte": "Wikipedia, «Principio dei cassetti» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-048",
+    "argomento": "Serie numeriche",
+    "livello": 1,
+    "testo": "Completa la serie: 2, 5, 8, 11, ...",
+    "opzioni": [
+      "16",
+      "15",
+      "13",
+      "14"
+    ],
+    "corretta": 3,
+    "spiegazione": "Progressione aritmetica di ragione 3.",
+    "fonte": "Wikipedia, «Progressione aritmetica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-049",
+    "argomento": "Serie numeriche",
+    "livello": 2,
+    "testo": "Completa la serie: 100, 93, 86, 79, ...",
+    "opzioni": [
+      "72",
+      "71",
+      "73",
+      "69"
+    ],
+    "corretta": 0,
+    "spiegazione": "Progressione aritmetica di ragione −7.",
+    "fonte": "Wikipedia, «Progressione aritmetica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-050",
+    "argomento": "Serie numeriche",
+    "livello": 1,
+    "testo": "Completa la serie: 3, 6, 12, 24, ...",
+    "opzioni": [
+      "42",
+      "48",
+      "36",
+      "30"
+    ],
+    "corretta": 1,
+    "spiegazione": "Progressione geometrica di ragione 2.",
+    "fonte": "Wikipedia, «Progressione geometrica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-051",
+    "argomento": "Serie numeriche",
+    "livello": 2,
+    "testo": "Completa la serie: 81, 27, 9, 3, ...",
+    "opzioni": [
+      "0",
+      "2",
+      "1",
+      "1/3"
+    ],
+    "corretta": 2,
+    "spiegazione": "Progressione geometrica di ragione 1/3.",
+    "fonte": "Wikipedia, «Progressione geometrica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-052",
+    "argomento": "Serie numeriche",
+    "livello": 2,
+    "testo": "Completa la serie: 2, 6, 18, 54, ...",
+    "opzioni": [
+      "216",
+      "72",
+      "108",
+      "162"
+    ],
+    "corretta": 3,
+    "spiegazione": "Ogni termine è il triplo del precedente.",
+    "fonte": "Wikipedia, «Progressione geometrica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-053",
+    "argomento": "Serie numeriche",
+    "livello": 2,
+    "testo": "Completa la serie: 64, 32, 16, 8, ...",
+    "opzioni": [
+      "4",
+      "0",
+      "2",
+      "6"
+    ],
+    "corretta": 0,
+    "spiegazione": "Progressione geometrica di ragione 1/2.",
+    "fonte": "Wikipedia, «Progressione geometrica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-054",
+    "argomento": "Serie numeriche",
+    "livello": 3,
+    "testo": "In una progressione aritmetica il primo termine è 4 e la ragione è 5. Quanto vale il decimo termine?",
+    "opzioni": [
+      "50",
+      "49",
+      "45",
+      "54"
+    ],
+    "corretta": 1,
+    "spiegazione": "a₁₀ = a₁ + 9·d = 4 + 45 = 49.",
+    "fonte": "Wikipedia, «Progressione aritmetica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-055",
+    "argomento": "Serie numeriche",
+    "livello": 3,
+    "testo": "Quanto vale la somma dei numeri interi da 1 a 100?",
+    "opzioni": [
+      "5000",
+      "4950",
+      "5050",
+      "10100"
+    ],
+    "corretta": 2,
+    "spiegazione": "Somma di una progressione aritmetica: n·(a₁ + aₙ)/2 = 100·101/2 = 5050.",
+    "fonte": "Wikipedia, «Progressione aritmetica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-056",
+    "argomento": "Serie numeriche",
+    "livello": 3,
+    "testo": "Completa la serie: 1, 4, 9, 16, 25, ...",
+    "opzioni": [
+      "30",
+      "35",
+      "49",
+      "36"
+    ],
+    "corretta": 3,
+    "spiegazione": "Sono i quadrati; le differenze 3, 5, 7, 9 formano una progressione aritmetica di ragione 2, quindi la successiva è 11.",
+    "fonte": "Wikipedia, «Progressione aritmetica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-057",
+    "argomento": "Serie numeriche",
+    "livello": 3,
+    "testo": "Completa la serie: 1, 2, 4, 7, 11, 16, ...",
+    "opzioni": [
+      "22",
+      "20",
+      "21",
+      "23"
+    ],
+    "corretta": 0,
+    "spiegazione": "Le differenze crescono di 1 (1, 2, 3, 4, 5): la successiva è 6.",
+    "fonte": "Wikipedia, «Progressione aritmetica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-058",
+    "argomento": "Serie numeriche",
+    "livello": 4,
+    "testo": "Completa la serie: 1, 3, 2, 4, 3, 5, ...",
+    "opzioni": [
+      "2",
+      "4",
+      "6",
+      "5"
+    ],
+    "corretta": 1,
+    "spiegazione": "Due progressioni alternate: 1, 2, 3, 4… (posti dispari) e 3, 4, 5… (posti pari). Il settimo termine è 4.",
+    "fonte": "Wikipedia, «Progressione aritmetica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-059",
+    "argomento": "Serie numeriche",
+    "livello": 2,
+    "testo": "Completa la serie: 1, 1, 2, 3, 5, 8, 13, ...",
+    "opzioni": [
+      "20",
+      "26",
+      "21",
+      "18"
+    ],
+    "corretta": 2,
+    "spiegazione": "È la successione di Fibonacci: ogni termine è la somma dei due precedenti.",
+    "fonte": "Wikipedia, «Successione di Fibonacci» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-060",
+    "argomento": "Serie numeriche",
+    "livello": 3,
+    "testo": "Completa la serie: 2, 3, 5, 8, 13, ...",
+    "opzioni": [
+      "26",
+      "18",
+      "19",
+      "21"
+    ],
+    "corretta": 3,
+    "spiegazione": "Ogni termine è la somma dei due precedenti (8 + 13).",
+    "fonte": "Wikipedia, «Successione di Fibonacci» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-061",
+    "argomento": "Serie numeriche",
+    "livello": 3,
+    "testo": "Completa la serie: 4, 7, 11, 18, 29, ...",
+    "opzioni": [
+      "47",
+      "36",
+      "58",
+      "40"
+    ],
+    "corretta": 0,
+    "spiegazione": "Ogni termine è la somma dei due precedenti (18 + 29), come nella successione di Fibonacci.",
+    "fonte": "Wikipedia, «Successione di Fibonacci» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-062",
+    "argomento": "Serie numeriche",
+    "livello": 2,
+    "testo": "In quale opera Leonardo Fibonacci presentò nel 1202 il problema da cui nasce la sua successione?",
+    "opzioni": [
+      "Ars conjectandi",
+      "Liber abbaci",
+      "Summa de arithmetica",
+      "Elementi"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Successione di Fibonacci».",
+    "fonte": "Wikipedia, «Successione di Fibonacci» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-063",
+    "argomento": "Serie numeriche",
+    "livello": 2,
+    "testo": "Completa la serie: 5, 10, 20, 40, ...",
+    "opzioni": [
+      "50",
+      "60",
+      "80",
+      "45"
+    ],
+    "corretta": 2,
+    "spiegazione": "Progressione geometrica di ragione 2.",
+    "fonte": "Wikipedia, «Progressione geometrica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-064",
+    "argomento": "Serie numeriche",
+    "livello": 3,
+    "testo": "Completa la serie: 3, 5, 9, 17, 33, ...",
+    "opzioni": [
+      "57",
+      "49",
+      "66",
+      "65"
+    ],
+    "corretta": 3,
+    "spiegazione": "Le differenze raddoppiano (2, 4, 8, 16): la successiva è 32, quindi 33 + 32 = 65.",
+    "fonte": "Wikipedia, «Progressione geometrica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-065",
+    "argomento": "Serie numeriche",
+    "livello": 2,
+    "testo": "Come si chiama la costante che si somma a ogni termine di una progressione aritmetica per ottenere il successivo?",
+    "opzioni": [
+      "Ragione",
+      "Esponente",
+      "Base",
+      "Modulo"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Progressione aritmetica».",
+    "fonte": "Wikipedia, «Progressione aritmetica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-066",
+    "argomento": "Calcolo combinatorio",
+    "livello": 1,
+    "testo": "Quanto vale 5! (5 fattoriale)?",
+    "opzioni": [
+      "720",
+      "120",
+      "25",
+      "60"
+    ],
+    "corretta": 1,
+    "spiegazione": "5! = 5·4·3·2·1 = 120.",
+    "fonte": "Wikipedia, «Fattoriale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-067",
+    "argomento": "Calcolo combinatorio",
+    "livello": 2,
+    "testo": "Quanto vale 0! per convenzione?",
+    "opzioni": [
+      "Infinito",
+      "0",
+      "1",
+      "Non è definito"
+    ],
+    "corretta": 2,
+    "spiegazione": "Per la convenzione del prodotto vuoto 0! = 1.",
+    "fonte": "Wikipedia, «Fattoriale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-068",
+    "argomento": "Calcolo combinatorio",
+    "livello": 3,
+    "testo": "Quanto vale 6! / 4!?",
+    "opzioni": [
+      "720",
+      "24",
+      "2",
+      "30"
+    ],
+    "corretta": 3,
+    "spiegazione": "6!/4! = 6·5 = 30.",
+    "fonte": "Wikipedia, «Fattoriale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-069",
+    "argomento": "Calcolo combinatorio",
+    "livello": 4,
+    "testo": "Chi introdusse nel 1807 la notazione n! con il punto esclamativo?",
+    "opzioni": [
+      "Christian Kramp",
+      "Leonhard Euler",
+      "Antoine Arbogast",
+      "Blaise Pascal"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il nome «fattoriale» si deve invece ad Arbogast (1800).",
+    "fonte": "Wikipedia, «Fattoriale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-070",
+    "argomento": "Calcolo combinatorio",
+    "livello": 2,
+    "testo": "Quanti anagrammi (anche senza significato) si possono formare con le lettere della parola MONTE?",
+    "opzioni": [
+      "60",
+      "120",
+      "5",
+      "25"
+    ],
+    "corretta": 1,
+    "spiegazione": "5 lettere distinte: 5! = 120 permutazioni.",
+    "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-071",
+    "argomento": "Calcolo combinatorio",
+    "livello": 2,
+    "testo": "In quanti modi diversi si possono sedere 4 persone su 4 sedie in fila?",
+    "opzioni": [
+      "12",
+      "16",
+      "24",
+      "4"
+    ],
+    "corretta": 2,
+    "spiegazione": "Permutazioni di 4 elementi: 4! = 24.",
+    "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-072",
+    "argomento": "Calcolo combinatorio",
+    "livello": 3,
+    "testo": "In una gara con 8 atleti, quanti sono i possibili podi (oro, argento, bronzo) diversi?",
+    "opzioni": [
+      "56",
+      "24",
+      "512",
+      "336"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'ordine conta, senza ripetizioni: 8·7·6 = 336 disposizioni.",
+    "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-073",
+    "argomento": "Calcolo combinatorio",
+    "livello": 3,
+    "testo": "Quante coppie diverse si possono formare scegliendo 2 persone da un gruppo di 5?",
+    "opzioni": [
+      "10",
+      "25",
+      "20",
+      "5"
+    ],
+    "corretta": 0,
+    "spiegazione": "Combinazioni: (5·4)/2 = 10, perché l'ordine non conta.",
+    "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-074",
+    "argomento": "Calcolo combinatorio",
+    "livello": 3,
+    "testo": "In una riunione di 10 persone ciascuno stringe la mano a tutti gli altri una volta. Quante strette di mano ci sono?",
+    "opzioni": [
+      "100",
+      "45",
+      "50",
+      "90"
+    ],
+    "corretta": 1,
+    "spiegazione": "Combinazioni di 10 elementi a 2 a 2: 10·9/2 = 45.",
+    "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-075",
+    "argomento": "Calcolo combinatorio",
+    "livello": 3,
+    "testo": "In quanti modi si possono scegliere 3 libri da uno scaffale di 6 libri diversi, senza contare l'ordine?",
+    "opzioni": [
+      "18",
+      "216",
+      "20",
+      "120"
+    ],
+    "corretta": 2,
+    "spiegazione": "Combinazioni: 6·5·4/(3·2·1) = 20.",
+    "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-076",
+    "argomento": "Calcolo combinatorio",
+    "livello": 2,
+    "testo": "Quanti codici PIN di 4 cifre (da 0 a 9, ripetizioni ammesse) esistono?",
+    "opzioni": [
+      "40",
+      "9.999",
+      "5.040",
+      "10.000"
+    ],
+    "corretta": 3,
+    "spiegazione": "Disposizioni con ripetizione: 10⁴ = 10.000.",
+    "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-077",
+    "argomento": "Calcolo combinatorio",
+    "livello": 3,
+    "testo": "Quante sequenze diverse di 3 lanci di moneta (testa/croce) sono possibili?",
+    "opzioni": [
+      "8",
+      "9",
+      "6",
+      "3"
+    ],
+    "corretta": 0,
+    "spiegazione": "Disposizioni con ripetizione di 2 esiti su 3 posti: 2³ = 8.",
+    "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-078",
+    "argomento": "Calcolo combinatorio",
+    "livello": 3,
+    "testo": "Quale differenza c'è tra una disposizione e una combinazione?",
+    "opzioni": [
+      "La combinazione ammette sempre ripetizioni",
+      "Nella disposizione conta l'ordine, nella combinazione no",
+      "Sono sinonimi",
+      "Nella combinazione conta l'ordine, nella disposizione no"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Calcolo combinatorio».",
+    "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-079",
+    "argomento": "Calcolo combinatorio",
+    "livello": 4,
+    "testo": "Un menù offre 3 primi, 4 secondi e 2 dolci. Quanti pasti diversi (un primo, un secondo, un dolce) si possono comporre?",
+    "opzioni": [
+      "12",
+      "9",
+      "24",
+      "36"
+    ],
+    "corretta": 2,
+    "spiegazione": "Principio di moltiplicazione: 3·4·2 = 24.",
+    "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-080",
+    "argomento": "Probabilità",
+    "livello": 1,
+    "testo": "Qual è la probabilità di ottenere 6 lanciando un dado regolare?",
+    "opzioni": [
+      "6",
+      "1/3",
+      "1/2",
+      "1/6"
+    ],
+    "corretta": 3,
+    "spiegazione": "Un caso favorevole su sei possibili.",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-081",
+    "argomento": "Probabilità",
+    "livello": 1,
+    "testo": "Qual è la probabilità di ottenere un numero pari lanciando un dado regolare?",
+    "opzioni": [
+      "1/2",
+      "1/3",
+      "2/3",
+      "1/6"
+    ],
+    "corretta": 0,
+    "spiegazione": "Tre casi favorevoli (2, 4, 6) su sei.",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-082",
+    "argomento": "Probabilità",
+    "livello": 2,
+    "testo": "Un'urna contiene 3 palline rosse e 7 bianche. Qual è la probabilità di estrarre una rossa?",
+    "opzioni": [
+      "7/10",
+      "3/10",
+      "1/3",
+      "3/7"
+    ],
+    "corretta": 1,
+    "spiegazione": "3 casi favorevoli su 10 possibili.",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-083",
+    "argomento": "Probabilità",
+    "livello": 2,
+    "testo": "Da un mazzo di 40 carte napoletane, qual è la probabilità di estrarre un asso?",
+    "opzioni": [
+      "4/10",
+      "1/40",
+      "1/10",
+      "1/4"
+    ],
+    "corretta": 2,
+    "spiegazione": "4 assi su 40 carte: 4/40 = 1/10.",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-084",
+    "argomento": "Probabilità",
+    "livello": 3,
+    "testo": "Lanciando due monete, qual è la probabilità di ottenere due teste?",
+    "opzioni": [
+      "2/3",
+      "1/3",
+      "1/2",
+      "1/4"
+    ],
+    "corretta": 3,
+    "spiegazione": "Casi possibili TT, TC, CT, CC: uno solo è favorevole.",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-085",
+    "argomento": "Probabilità",
+    "livello": 3,
+    "testo": "Lanciando due dadi, qual è la probabilità che la somma sia 7?",
+    "opzioni": [
+      "1/6",
+      "1/36",
+      "7/36",
+      "1/12"
+    ],
+    "corretta": 0,
+    "spiegazione": "6 coppie favorevoli (1-6, 2-5, 3-4, 4-3, 5-2, 6-1) su 36.",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-086",
+    "argomento": "Probabilità",
+    "livello": 3,
+    "testo": "Lanciando due dadi, qual è la probabilità che la somma sia 12?",
+    "opzioni": [
+      "1/12",
+      "1/36",
+      "2/36",
+      "1/6"
+    ],
+    "corretta": 1,
+    "spiegazione": "Solo la coppia 6-6 su 36 casi possibili.",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-087",
+    "argomento": "Probabilità",
+    "livello": 2,
+    "testo": "Qual è la probabilità di NON ottenere 6 lanciando un dado?",
+    "opzioni": [
+      "6/5",
+      "1/6",
+      "5/6",
+      "1/2"
+    ],
+    "corretta": 2,
+    "spiegazione": "Cinque casi favorevoli su sei.",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-088",
+    "argomento": "Probabilità",
+    "livello": 2,
+    "testo": "Ottenere 1 come somma lanciando due dadi è un esempio di evento:",
+    "opzioni": [
+      "Probabile",
+      "Indipendente",
+      "Certo",
+      "Impossibile"
+    ],
+    "corretta": 3,
+    "spiegazione": "La somma minima con due dadi è 2.",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-089",
+    "argomento": "Probabilità",
+    "livello": 2,
+    "testo": "Che probabilità ha un evento certo?",
+    "opzioni": [
+      "1",
+      "1/2",
+      "0",
+      "100"
+    ],
+    "corretta": 0,
+    "spiegazione": "La probabilità va da 0 (evento impossibile) a 1 (evento certo).",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-090",
+    "argomento": "Probabilità",
+    "livello": 3,
+    "testo": "Lanciando un dado, qual è la probabilità di ottenere 1 oppure 2?",
+    "opzioni": [
+      "1/6",
+      "1/3",
+      "1/36",
+      "1/2"
+    ],
+    "corretta": 1,
+    "spiegazione": "Eventi incompatibili: le probabilità si sommano, 1/6 + 1/6 = 1/3.",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-091",
+    "argomento": "Probabilità",
+    "livello": 4,
+    "testo": "Lanciando due volte un dado, qual è la probabilità di ottenere 6 entrambe le volte?",
+    "opzioni": [
+      "1/12",
+      "2/6",
+      "1/36",
+      "1/6"
+    ],
+    "corretta": 2,
+    "spiegazione": "Eventi indipendenti: le probabilità si moltiplicano, 1/6 · 1/6.",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-092",
+    "argomento": "Probabilità",
+    "livello": 3,
+    "testo": "A chi viene attribuita la nascita del concetto moderno di probabilità?",
+    "opzioni": [
+      "Galileo e Cardano",
+      "Newton e Leibniz",
+      "Euclide e Pitagora",
+      "Pascal e Fermat"
+    ],
+    "corretta": 3,
+    "spiegazione": "Dalla loro corrispondenza del 1654.",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-093",
+    "argomento": "Numeri",
+    "livello": 1,
+    "testo": "Qual è l'unico numero primo pari?",
+    "opzioni": [
+      "2",
+      "4",
+      "0",
+      "Nessuno"
+    ],
+    "corretta": 0,
+    "spiegazione": "Tutti gli altri pari sono divisibili per 2.",
+    "fonte": "Wikipedia, «Numero primo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-094",
+    "argomento": "Numeri",
+    "livello": 2,
+    "testo": "Quale di questi numeri è primo?",
+    "opzioni": [
+      "57",
+      "59",
+      "91",
+      "51"
+    ],
+    "corretta": 1,
+    "spiegazione": "51 = 3·17, 57 = 3·19, 91 = 7·13.",
+    "fonte": "Wikipedia, «Numero primo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-095",
+    "argomento": "Numeri",
+    "livello": 2,
+    "testo": "Quanti sono i numeri primi minori di 20?",
+    "opzioni": [
+      "7",
+      "9",
+      "8",
+      "10"
+    ],
+    "corretta": 2,
+    "spiegazione": "2, 3, 5, 7, 11, 13, 17, 19.",
+    "fonte": "Wikipedia, «Numero primo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-096",
+    "argomento": "Numeri",
+    "livello": 2,
+    "testo": "Il numero 1 è primo?",
+    "opzioni": [
+      "Sì, è il primo numero primo",
+      "Dipende dalla convenzione",
+      "Sì, perché è divisibile solo per sé stesso",
+      "No: un primo deve essere maggiore di 1 e avere esattamente due divisori"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Numero primo».",
+    "fonte": "Wikipedia, «Numero primo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-097",
+    "argomento": "Numeri",
+    "livello": 3,
+    "testo": "Quanti sono i numeri primi?",
+    "opzioni": [
+      "Infiniti",
+      "Circa un milione",
+      "100",
+      "Un numero finito ancora sconosciuto"
+    ],
+    "corretta": 0,
+    "spiegazione": "Già dimostrato da Euclide.",
+    "fonte": "Wikipedia, «Numero primo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-098",
+    "argomento": "Numeri",
+    "livello": 2,
+    "testo": "Qual è la media aritmetica di 4, 8, 6, 10, 2?",
+    "opzioni": [
+      "5",
+      "6",
+      "7",
+      "30"
+    ],
+    "corretta": 1,
+    "spiegazione": "(4 + 8 + 6 + 10 + 2) / 5 = 30 / 5 = 6.",
+    "fonte": "Wikipedia, «Media (statistica)» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-099",
+    "argomento": "Numeri",
+    "livello": 3,
+    "testo": "Uno studente ha preso 26, 28, 27 e 29 in quattro esami. Quanto deve prendere nel quinto per avere media 27?",
+    "opzioni": [
+      "26",
+      "27",
+      "25",
+      "24"
+    ],
+    "corretta": 2,
+    "spiegazione": "Totale necessario 27·5 = 135; 135 − 110 = 25.",
+    "fonte": "Wikipedia, «Media (statistica)» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-100",
+    "argomento": "Numeri",
+    "livello": 4,
+    "testo": "Un esame da 6 crediti con voto 30 e uno da 12 crediti con voto 24: qual è la media ponderata sui crediti?",
+    "opzioni": [
+      "27",
+      "25",
+      "28",
+      "26"
+    ],
+    "corretta": 3,
+    "spiegazione": "(30·6 + 24·12) / 18 = 468 / 18 = 26.",
+    "fonte": "Wikipedia, «Media (statistica)» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-101",
+    "argomento": "Connettivi",
+    "livello": 2,
+    "testo": "Perché la negazione si dice operatore «unario»?",
+    "opzioni": [
+      "Perché agisce su un'unica proposizione",
+      "Perché ha un solo valore di verità",
+      "Perché è sempre vera",
+      "Perché lega due proposizioni"
+    ],
+    "corretta": 0,
+    "spiegazione": "Congiunzione e disgiunzione legano invece due proposizioni.",
+    "fonte": "MatematicaC3, Logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-102",
+    "argomento": "Implicazione",
+    "livello": 3,
+    "testo": "Quando è vera la doppia implicazione «p se e solo se q»?",
+    "opzioni": [
+      "Solo quando p e q sono entrambe vere",
+      "Quando p e q hanno lo stesso valore di verità",
+      "Quando almeno una è vera",
+      "Quando hanno valori opposti"
+    ],
+    "corretta": 1,
+    "spiegazione": "v(x↔y) = V se e solo se v(x) = v(y).",
+    "fonte": "Wikipedia, «Logica proposizionale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-103",
+    "argomento": "Implicazione",
+    "livello": 3,
+    "testo": "In quale unico caso l'implicazione «se p allora q» è falsa?",
+    "opzioni": [
+      "Quando p è falsa e q è vera",
+      "Quando entrambe sono false",
+      "Quando p è vera e q è falsa",
+      "Quando entrambe sono vere"
+    ],
+    "corretta": 2,
+    "spiegazione": "È vera se l'antecedente è falso oppure il conseguente è vero.",
+    "fonte": "Wikipedia, «Logica proposizionale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-104",
+    "argomento": "Implicazione",
+    "livello": 3,
+    "testo": "Data l'implicazione «se p allora q», come si chiama l'implicazione «se q allora p»?",
+    "opzioni": [
+      "Equivalente",
+      "Contronominale",
+      "Contraria",
+      "Inversa"
+    ],
+    "corretta": 3,
+    "spiegazione": "La contraria è «se non p allora non q», la contronominale «se non q allora non p».",
+    "fonte": "MatematicaC3, Logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-105",
+    "argomento": "Implicazione",
+    "livello": 3,
+    "testo": "Data l'implicazione «se p allora q», come si chiama «se non p allora non q»?",
+    "opzioni": [
+      "Contraria",
+      "Contronominale",
+      "Doppia implicazione",
+      "Inversa"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce del manuale MatematicaC3.",
+    "fonte": "MatematicaC3, Logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-106",
+    "argomento": "Implicazione",
+    "livello": 3,
+    "testo": "Come si chiama anche la contronominale di un'implicazione?",
+    "opzioni": [
+      "Contraria",
+      "Controinversa",
+      "Reciproca",
+      "Inversa"
+    ],
+    "corretta": 1,
+    "spiegazione": "La contronominale di «p ⇒ q» è «¬q ⇒ ¬p».",
+    "fonte": "MatematicaC3, Logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-107",
+    "argomento": "Inferenza",
+    "livello": 2,
+    "testo": "«Se un numero è multiplo di 10 allora è pari. Il numero n non è pari.» Quindi:",
+    "opzioni": [
+      "Non si può concludere nulla",
+      "n è multiplo di 10",
+      "n non è multiplo di 10",
+      "n è dispari e multiplo di 5"
+    ],
+    "corretta": 2,
+    "spiegazione": "Modus tollens.",
+    "fonte": "MatematicaC3, Esercizi di logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-108",
+    "argomento": "Quantificatori",
+    "livello": 2,
+    "testo": "Quale numero è un controesempio all'affermazione «tutti i multipli di 3 sono dispari»?",
+    "opzioni": [
+      "9",
+      "15",
+      "21",
+      "6"
+    ],
+    "corretta": 3,
+    "spiegazione": "6 è multiplo di 3 ed è pari: basta un controesempio per smentire un'affermazione universale.",
+    "fonte": "MatematicaC3, Esercizi di logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-109",
+    "argomento": "Quantificatori",
+    "livello": 3,
+    "testo": "Qual è la negazione di «Ogni volta che ho preso l'ombrello non è piovuto»?",
+    "opzioni": [
+      "Almeno una volta sono uscito con l'ombrello ed è piovuto",
+      "Tutti i giorni che è piovuto ho preso l'ombrello",
+      "Quando esco senza ombrello piove sempre",
+      "Tutti i giorni in cui non piove esco con l'ombrello"
+    ],
+    "corretta": 0,
+    "spiegazione": "La negazione di «per ogni… non» è «esiste almeno un caso in cui…».",
+    "fonte": "MatematicaC3, Esercizi di logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-110",
+    "argomento": "Quantificatori",
+    "livello": 2,
+    "testo": "Qual è la negazione di «Tutti hanno portato i soldi per la gita»?",
+    "opzioni": [
+      "Tutti non hanno portato i soldi",
+      "Almeno uno non ha portato i soldi per la gita",
+      "Alcuni hanno portato i soldi",
+      "Nessuno ha portato i soldi per la gita"
+    ],
+    "corretta": 1,
+    "spiegazione": "La negazione di un universale affermativo è un particolare negativo.",
+    "fonte": "MatematicaC3, Esercizi di logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-111",
+    "argomento": "Quantificatori",
+    "livello": 4,
+    "testo": "Qual è la negazione di «In ogni scuola c'è almeno una classe in cui sono tutti promossi»?",
+    "opzioni": [
+      "In ogni scuola c'è almeno una classe in cui sono tutti bocciati",
+      "In ogni scuola c'è almeno un bocciato in tutte le classi",
+      "C'è almeno una scuola che ha almeno un bocciato in ogni classe",
+      "C'è almeno una scuola in cui c'è una classe con almeno un bocciato"
+    ],
+    "corretta": 2,
+    "spiegazione": "Si scambiano i quantificatori («ogni» ↔ «almeno uno») e si nega il predicato. Quesito dei Giochi di Archimede 1999.",
+    "fonte": "MatematicaC3, Esercizi di logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-112",
+    "argomento": "Implicazione",
+    "livello": 2,
+    "testo": "p = «Mario è cittadino romano», q = «Mario è cittadino italiano». Quale implicazione è sempre vera?",
+    "opzioni": [
+      "p ⇔ q",
+      "q ⇒ ¬p",
+      "q ⇒ p",
+      "p ⇒ q"
+    ],
+    "corretta": 3,
+    "spiegazione": "Ogni cittadino romano è italiano, ma non viceversa.",
+    "fonte": "MatematicaC3, Esercizi di logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-113",
+    "argomento": "Connettivi",
+    "livello": 3,
+    "testo": "p = «18 è divisibile per 3», q = «18 è un numero dispari». Quale proposizione è vera?",
+    "opzioni": [
+      "p ∧ ¬q",
+      "¬p",
+      "p ∧ q",
+      "¬p ∧ ¬q"
+    ],
+    "corretta": 0,
+    "spiegazione": "p è vera e q è falsa, quindi ¬q è vera.",
+    "fonte": "MatematicaC3, Esercizi di logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-114",
+    "argomento": "Connettivi",
+    "livello": 4,
+    "testo": "A quale proposizione equivale (¬p ∧ q) ∨ (p ∧ ¬q)?",
+    "opzioni": [
+      "Alla tautologia «p o non p»",
+      "Alla disgiunzione esclusiva «o p o q»",
+      "Alla doppia implicazione «p se e solo se q»",
+      "Alla congiunzione «p e q»"
+    ],
+    "corretta": 1,
+    "spiegazione": "È vera quando esattamente una delle due è vera.",
+    "fonte": "MatematicaC3, Esercizi di logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-115",
+    "argomento": "Proposizioni",
+    "livello": 2,
+    "testo": "Quale di queste frasi è una proposizione logica?",
+    "opzioni": [
+      "«I matematici sono intelligenti»",
+      "«Lucia è una bella ragazza»",
+      "«12 è un numero dispari»",
+      "«Per favore, fate silenzio»"
+    ],
+    "corretta": 2,
+    "spiegazione": "Una proposizione deve poter essere oggettivamente vera o falsa: «12 è dispari» è falsa, ma è una proposizione.",
+    "fonte": "MatematicaC3, Esercizi di logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-116",
+    "argomento": "Problemi logici",
+    "livello": 4,
+    "testo": "Quattro amiche: Carla dice «Non sono né la più giovane né la più anziana», Liliana «Non sono la più giovane», Milena «Sono la più giovane», Anna «Sono la più anziana». Solo una mente. Chi è la più giovane?",
+    "opzioni": [
+      "Carla",
+      "Liliana",
+      "Anna",
+      "Milena"
+    ],
+    "corretta": 3,
+    "spiegazione": "Quesito dei Giochi d'autunno 2010; soluzione riportata nel testo.",
+    "fonte": "MatematicaC3, Esercizi di logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-117",
+    "argomento": "Problemi logici",
+    "livello": 4,
+    "testo": "Paolo dice di non essere il capitano; Andrea dice che il capitano è Gabriele; Gabriele dice che il capitano è uno degli altri due. Uno solo dice il vero. Chi è il capitano?",
+    "opzioni": [
+      "Paolo",
+      "Non si può stabilire",
+      "Gabriele",
+      "Andrea"
+    ],
+    "corretta": 0,
+    "spiegazione": "Se fosse Paolo, solo Gabriele direbbe il vero: è l'unico caso coerente. Giochi di Archimede 2011.",
+    "fonte": "MatematicaC3, Esercizi di logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-118",
+    "argomento": "Problemi logici",
+    "livello": 5,
+    "testo": "Il colpevole mente sempre, gli altri dicono il vero. Anna: «Il colpevole è un maschio». Cecilia: «È stata Anna oppure Enrico». Enrico: «Se Bruno è colpevole allora Anna è innocente». Chi è il colpevole?",
+    "opzioni": [
+      "Bruno",
+      "Anna",
+      "Enrico",
+      "Cecilia"
+    ],
+    "corretta": 1,
+    "spiegazione": "Giochi di Archimede 2010; soluzione riportata nel testo.",
+    "fonte": "MatematicaC3, Esercizi di logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-119",
+    "argomento": "Problemi logici",
+    "livello": 4,
+    "testo": "È falso che «su Papilla sono tutti grassi e sporchi». Quale affermazione è sicuramente vera?",
+    "opzioni": [
+      "Tutti gli abitanti sono magri e puliti",
+      "Almeno un abitante è magro e pulito",
+      "Se tutti gli abitanti sono sporchi, almeno uno di loro è magro",
+      "Almeno un abitante è magro"
+    ],
+    "corretta": 2,
+    "spiegazione": "Almeno un abitante è magro oppure pulito: se sono tutti sporchi, deve esserci un magro.",
+    "fonte": "MatematicaC3, Esercizi di logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-120",
+    "argomento": "Problemi logici",
+    "livello": 5,
+    "testo": "«Se il pomeriggio gioco a tennis, la sera ho fame; se la sera ho fame, mangio troppo.» Quale conclusione NON si può trarre?",
+    "opzioni": [
+      "Se gioco a tennis, la sera mangio troppo",
+      "Se la sera non ho fame, non ho giocato a tennis",
+      "Se la sera non mangio troppo, non ho giocato a tennis",
+      "Se la sera non ho fame, allora non mangio troppo"
+    ],
+    "corretta": 3,
+    "spiegazione": "Sarebbe la negazione dell'antecedente: si può mangiare troppo anche senza fame.",
+    "fonte": "MatematicaC3, Esercizi di logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-121",
+    "argomento": "Problemi logici",
+    "livello": 5,
+    "testo": "Su un'isola i cavalieri dicono sempre il vero, i furfanti mentono sempre, i paggi alternano verità e menzogna. Una ragazza dice «Io sono furfante». Che cosa è sicuramente?",
+    "opzioni": [
+      "Paggio",
+      "Furfante",
+      "Non si può stabilire",
+      "Cavaliere"
+    ],
+    "corretta": 0,
+    "spiegazione": "Un cavaliere non lo direbbe (sarebbe falso) e nemmeno un furfante (sarebbe vero): resta il paggio.",
+    "fonte": "MatematicaC3, Esercizi di logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-122",
+    "argomento": "Problemi logici",
+    "livello": 5,
+    "testo": "Quattro amici giocano con 20 carte (re, regine, fanti, assi, dieci). Anna: «Ho un poker»; Bea: «Ho cinque carte di cuori»; Caio: «Ho cinque carte rosse»; Dino: «Ho un full». Una sola affermazione è falsa: chi mente?",
+    "opzioni": [
+      "Dino",
+      "Bea",
+      "Caio",
+      "Anna"
+    ],
+    "corretta": 1,
+    "spiegazione": "Giochi di Archimede 2009; soluzione riportata nel testo.",
+    "fonte": "MatematicaC3, Esercizi di logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-123",
+    "argomento": "Principi logici",
+    "livello": 2,
+    "testo": "Che cosa afferma il principio di non contraddizione?",
+    "opzioni": [
+      "Esiste sempre una terza possibilità",
+      "Ogni proposizione è vera",
+      "Una proposizione e la sua negazione non possono essere entrambe vere",
+      "Una proposizione può essere vera e falsa insieme"
+    ],
+    "corretta": 2,
+    "spiegazione": "In simboli ¬(A ∧ ¬A).",
+    "fonte": "Wikipedia, «Principio di non contraddizione» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-124",
+    "argomento": "Principi logici",
+    "livello": 4,
+    "testo": "Con quale espressione latina si indica che da una contraddizione segue qualsiasi affermazione?",
+    "opzioni": [
+      "Modus ponens",
+      "Tertium non datur",
+      "Petitio principii",
+      "Ex falso sequitur quodlibet"
+    ],
+    "corretta": 3,
+    "spiegazione": "Nella logica moderna è il «principio di esplosione».",
+    "fonte": "Wikipedia, «Principio di non contraddizione» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-125",
+    "argomento": "Principi logici",
+    "livello": 3,
+    "testo": "Che cosa significa «tertium non datur»?",
+    "opzioni": [
+      "Non esiste una terza possibilità oltre al vero e al falso",
+      "Tre premesse non bastano",
+      "La terza ipotesi è sempre vera",
+      "Il terzo termine del sillogismo non è dato"
+    ],
+    "corretta": 0,
+    "spiegazione": "È il principio del terzo escluso.",
+    "fonte": "Wikipedia, «Tertium non datur» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-126",
+    "argomento": "Ragionamento",
+    "livello": 3,
+    "testo": "Che cos'è l'abduzione secondo Aristotele?",
+    "opzioni": [
+      "Un paradosso",
+      "Un sillogismo con premessa maggiore certa e premessa minore solo probabile",
+      "Un sillogismo con premesse entrambe certe",
+      "Un ragionamento dal particolare all'universale"
+    ],
+    "corretta": 1,
+    "spiegazione": "La conclusione è quindi solo probabile.",
+    "fonte": "Wikipedia, «Abduzione» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-127",
+    "argomento": "Ragionamento",
+    "livello": 2,
+    "testo": "Il metodo deduttivo procede:",
+    "opzioni": [
+      "Dalla conclusione alle premesse",
+      "Per tentativi ed errori",
+      "Da premesse generali a conclusioni particolari",
+      "Da casi particolari a una legge universale"
+    ],
+    "corretta": 2,
+    "spiegazione": "Esempio: «tutti gli uomini sono mortali» → «Socrate è mortale».",
+    "fonte": "Wikipedia, «Deduzione» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-128",
+    "argomento": "Ragionamento",
+    "livello": 2,
+    "testo": "Il metodo induttivo:",
+    "opzioni": [
+      "Deduce casi particolari da una legge universale",
+      "Non usa l'esperienza",
+      "Coincide con il sillogismo",
+      "Cerca di stabilire una legge universale partendo da casi particolari"
+    ],
+    "corretta": 3,
+    "spiegazione": "È contrapposto al metodo deduttivo.",
+    "fonte": "Wikipedia, «Induzione» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-129",
+    "argomento": "Ragionamento",
+    "livello": 3,
+    "testo": "A chi si deve l'introduzione del concetto di deduzione, identificata con il sillogismo?",
+    "opzioni": [
+      "Aristotele",
+      "Kant",
+      "Cartesio",
+      "Platone"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Deduzione».",
+    "fonte": "Wikipedia, «Deduzione» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-130",
+    "argomento": "Sillogismo",
+    "livello": 3,
+    "testo": "Nel sillogismo, quale funzione ha il termine maggiore nella conclusione?",
+    "opzioni": [
+      "Non compare",
+      "È il predicato",
+      "È il soggetto",
+      "È il termine medio"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il termine minore fa da soggetto; il medio compare solo nelle premesse.",
+    "fonte": "Wikipedia, «Sillogismo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-131",
+    "argomento": "Sillogismo",
+    "livello": 2,
+    "testo": "«Tutti i dolci sono alimenti; tutte le torte sono dolci.» Quale conclusione segue?",
+    "opzioni": [
+      "Tutti gli alimenti sono torte",
+      "Nessuna conclusione",
+      "Tutte le torte sono alimenti",
+      "Alcuni dolci non sono torte"
+    ],
+    "corretta": 2,
+    "spiegazione": "Schema: se M è A e B è M, allora B è A.",
+    "fonte": "Wikipedia, «Sillogismo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-132",
+    "argomento": "Sillogismo",
+    "livello": 3,
+    "testo": "«Nessun rettile è un mammifero; tutti i serpenti sono rettili.» Quale conclusione segue?",
+    "opzioni": [
+      "Alcuni serpenti sono mammiferi",
+      "Tutti i mammiferi sono serpenti",
+      "Nessuna conclusione",
+      "Nessun serpente è un mammifero"
+    ],
+    "corretta": 3,
+    "spiegazione": "Premessa universale negativa più universale affermativa.",
+    "fonte": "Wikipedia, «Sillogismo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-133",
+    "argomento": "Sillogismo",
+    "livello": 3,
+    "testo": "«Alcuni impiegati sono laureati; tutti i laureati hanno un diploma.» Quale conclusione segue?",
+    "opzioni": [
+      "Alcuni impiegati hanno un diploma",
+      "Tutti i diplomati sono impiegati",
+      "Nessun impiegato ha un diploma",
+      "Tutti gli impiegati hanno un diploma"
+    ],
+    "corretta": 0,
+    "spiegazione": "Da una premessa particolare segue una conclusione particolare.",
+    "fonte": "Wikipedia, «Sillogismo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-134",
+    "argomento": "Sillogismo",
+    "livello": 4,
+    "testo": "«Tutti i gatti sono animali; alcuni animali sono neri; quindi alcuni gatti sono neri.» Il ragionamento è:",
+    "opzioni": [
+      "Valido solo se i gatti esistono",
+      "Non valido: la conclusione non segue dalle premesse",
+      "Valido",
+      "Valido perché la conclusione è vera"
+    ],
+    "corretta": 1,
+    "spiegazione": "Gli animali neri potrebbero non essere gatti: premesse vere possono accompagnare una conclusione falsa.",
+    "fonte": "Wikipedia, «Sillogismo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-135",
+    "argomento": "Sillogismo",
+    "livello": 4,
+    "testo": "«Gli dei sono immortali; gli uomini non sono dei; dunque gli uomini non sono immortali.» Il sillogismo è:",
+    "opzioni": [
+      "Valido",
+      "Valido perché le premesse sono vere",
+      "Non valido, anche se le frasi sono tutte vere",
+      "Valido ma con premesse false"
+    ],
+    "corretta": 2,
+    "spiegazione": "La verità delle proposizioni non garantisce la validità della forma.",
+    "fonte": "Wikipedia, «Sillogismo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-136",
+    "argomento": "Sillogismo",
+    "livello": 3,
+    "testo": "«Ogni animale vola; l'asino è un animale; dunque l'asino vola.» Il sillogismo è:",
+    "opzioni": [
+      "Una fallacia ad hominem",
+      "Non valido",
+      "Valido solo se l'asino vola",
+      "Valido, anche se la premessa maggiore è falsa"
+    ],
+    "corretta": 3,
+    "spiegazione": "La validità dipende dalla forma, non dalla verità delle premesse.",
+    "fonte": "Wikipedia, «Sillogismo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-137",
+    "argomento": "Sillogismo",
+    "livello": 3,
+    "testo": "Che cosa determina la «figura» di un sillogismo?",
+    "opzioni": [
+      "La posizione del termine medio nelle premesse",
+      "La verità della conclusione",
+      "La lunghezza delle proposizioni",
+      "Il numero delle premesse"
+    ],
+    "corretta": 0,
+    "spiegazione": "Aristotele classificò tre figure; gli scolastici ne aggiunsero una quarta.",
+    "fonte": "Wikipedia, «Sillogismo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-138",
+    "argomento": "Sillogismo",
+    "livello": 4,
+    "testo": "Quante figure del sillogismo classificò Aristotele?",
+    "opzioni": [
+      "Due",
+      "Tre (la quarta fu aggiunta dagli scolastici)",
+      "Diciannove",
+      "Quattro"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Sillogismo».",
+    "fonte": "Wikipedia, «Sillogismo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-139",
+    "argomento": "Sillogismo",
+    "livello": 3,
+    "testo": "Quale di queste frasi NON può essere premessa di un sillogismo?",
+    "opzioni": [
+      "Un'affermazione universale",
+      "Una frase negativa",
+      "Una domanda",
+      "Un'affermazione particolare"
+    ],
+    "corretta": 2,
+    "spiegazione": "Le premesse devono essere enunciati dichiarativi, veri o falsi.",
+    "fonte": "Wikipedia, «Sillogismo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-140",
+    "argomento": "Sillogismo",
+    "livello": 2,
+    "testo": "«Marco è più alto di Luca; Luca è più alto di Alberto.» Quindi:",
+    "opzioni": [
+      "Non si può dire nulla",
+      "Luca è il più alto",
+      "Alberto è più alto di Marco",
+      "Marco è più alto di Alberto"
+    ],
+    "corretta": 3,
+    "spiegazione": "È la proprietà transitiva.",
+    "fonte": "Wikipedia, «Sillogismo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-141",
+    "argomento": "Sillogismo",
+    "livello": 4,
+    "testo": "Nel sillogismo retorico (o dialettico) le premesse sono:",
+    "opzioni": [
+      "Probabili e non certe",
+      "Sempre false",
+      "Certe e necessarie",
+      "Solo apparentemente probabili"
+    ],
+    "corretta": 0,
+    "spiegazione": "Nel sillogismo sofistico la probabilità è solo apparente.",
+    "fonte": "Wikipedia, «Sillogismo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-142",
+    "argomento": "Opposizioni",
+    "livello": 4,
+    "testo": "Le proposizioni subcontrarie («alcuni S sono P» / «alcuni S non sono P»):",
+    "opzioni": [
+      "Hanno sempre valori opposti",
+      "Possono essere entrambe vere ma non entrambe false",
+      "Non possono essere entrambe vere",
+      "Sono sempre entrambe false"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il contrario delle contrarie, che non possono essere entrambe vere.",
+    "fonte": "Wikipedia, «Quadrato delle opposizioni» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-143",
+    "argomento": "Fallacie",
+    "livello": 3,
+    "testo": "«Se legalizziamo X, poi verrà Y e infine la catastrofe», senza motivazioni logiche. Che fallacia è?",
+    "opzioni": [
+      "Ad hominem",
+      "Petitio principii",
+      "Pendio scivoloso",
+      "Modus tollens"
+    ],
+    "corretta": 2,
+    "spiegazione": "Si suppone che un evento debba per forza seguirne un altro.",
+    "fonte": "Wikipedia, «Fallacia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-144",
+    "argomento": "Paradossi",
+    "livello": 2,
+    "testo": "Qual è il significato etimologico di «paradosso»?",
+    "opzioni": [
+      "Doppia verità",
+      "Ragionamento corretto",
+      "Domanda senza risposta",
+      "Contro l'opinione comune"
+    ],
+    "corretta": 3,
+    "spiegazione": "Dal greco pará (contro) e dóxa (opinione).",
+    "fonte": "Wikipedia, «Paradosso» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-145",
+    "argomento": "Probabilità",
+    "livello": 4,
+    "testo": "Nel problema di Monty Hall, cambiando porta dopo che il conduttore ha mostrato una capra, la probabilità di vincere l'auto:",
+    "opzioni": [
+      "Passa da 1/3 a 2/3",
+      "Diventa 1/2",
+      "Passa da 1/2 a 1",
+      "Resta 1/3"
+    ],
+    "corretta": 0,
+    "spiegazione": "È un risultato controintuitivo ma non contraddittorio.",
+    "fonte": "Wikipedia, «Problema di Monty Hall» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-146",
+    "argomento": "Probabilità",
+    "livello": 3,
+    "testo": "Da quale gioco televisivo prende spunto il problema di Monty Hall?",
+    "opzioni": [
+      "Wheel of Fortune",
+      "Let's Make a Deal",
+      "Rischiatutto",
+      "Jeopardy!"
+    ],
+    "corretta": 1,
+    "spiegazione": "Monty Hall ne era il conduttore.",
+    "fonte": "Wikipedia, «Problema di Monty Hall» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-147",
+    "argomento": "Problemi logici",
+    "livello": 3,
+    "testo": "Qual è il numero minimo di mosse per risolvere la Torre di Hanoi con 3 dischi?",
+    "opzioni": [
+      "6",
+      "3",
+      "7",
+      "8"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il minimo è 2ⁿ − 1.",
+    "fonte": "Wikipedia, «Torre di Hanoi» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-148",
+    "argomento": "Problemi logici",
+    "livello": 4,
+    "testo": "Qual è il numero minimo di mosse per risolvere la Torre di Hanoi con 4 dischi?",
+    "opzioni": [
+      "12",
+      "8",
+      "16",
+      "15"
+    ],
+    "corretta": 3,
+    "spiegazione": "2⁴ − 1 = 15.",
+    "fonte": "Wikipedia, «Torre di Hanoi» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-149",
+    "argomento": "Problemi logici",
+    "livello": 3,
+    "testo": "Chi inventò nel 1883 il rompicapo della Torre di Hanoi?",
+    "opzioni": [
+      "Édouard Lucas",
+      "Blaise Pascal",
+      "Lewis Carroll",
+      "Leonardo Fibonacci"
+    ],
+    "corretta": 0,
+    "spiegazione": "È detta anche Torre di Lucas.",
+    "fonte": "Wikipedia, «Torre di Hanoi» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-150",
+    "argomento": "Numeri",
+    "livello": 3,
+    "testo": "Quale di questi numeri è «perfetto» (uguale alla somma dei propri divisori, escluso sé stesso)?",
+    "opzioni": [
+      "12",
+      "28",
+      "18",
+      "24"
+    ],
+    "corretta": 1,
+    "spiegazione": "28 = 1 + 2 + 4 + 7 + 14. Gli altri: 12 → 16, 18 → 21, 24 → 36.",
+    "fonte": "Wikipedia, «Numero perfetto» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-151",
+    "argomento": "Numeri",
+    "livello": 2,
+    "testo": "Quale di questi numeri è divisibile per 3?",
+    "opzioni": [
+      "1.234",
+      "4.001",
+      "1.236",
+      "2.351"
+    ],
+    "corretta": 2,
+    "spiegazione": "1 + 2 + 3 + 6 = 12, multiplo di 3.",
+    "fonte": "Wikipedia, «Criteri di divisibilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-152",
+    "argomento": "Numeri",
+    "livello": 2,
+    "testo": "Quale di questi numeri è divisibile per 9?",
+    "opzioni": [
+      "1.234",
+      "5.552",
+      "7.001",
+      "3.861"
+    ],
+    "corretta": 3,
+    "spiegazione": "3 + 8 + 6 + 1 = 18, multiplo di 9.",
+    "fonte": "Wikipedia, «Criteri di divisibilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-153",
+    "argomento": "Numeri",
+    "livello": 3,
+    "testo": "Quale di questi numeri è divisibile per 4?",
+    "opzioni": [
+      "1.316",
+      "2.342",
+      "1.318",
+      "5.106"
+    ],
+    "corretta": 0,
+    "spiegazione": "Le ultime due cifre (16) formano un multiplo di 4.",
+    "fonte": "Wikipedia, «Criteri di divisibilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-154",
+    "argomento": "Numeri",
+    "livello": 4,
+    "testo": "Quale di questi numeri è divisibile per 11?",
+    "opzioni": [
+      "1.234",
+      "2.728",
+      "2.729",
+      "5.050"
+    ],
+    "corretta": 1,
+    "spiegazione": "Cifre di posto dispari 8 + 7 = 15, di posto pari 2 + 2 = 4: la differenza 11 è multiplo di 11.",
+    "fonte": "Wikipedia, «Criteri di divisibilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-155",
+    "argomento": "Numeri",
+    "livello": 1,
+    "testo": "Quale di questi numeri NON è divisibile per 5?",
+    "opzioni": [
+      "7.775",
+      "3.005",
+      "1.252",
+      "1.250"
+    ],
+    "corretta": 2,
+    "spiegazione": "Un numero è divisibile per 5 se termina con 0 o 5.",
+    "fonte": "Wikipedia, «Criteri di divisibilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-156",
+    "argomento": "Numeri",
+    "livello": 3,
+    "testo": "Quale di questi numeri è divisibile per 25?",
+    "opzioni": [
+      "3.170",
+      "4.105",
+      "2.515",
+      "3.175"
+    ],
+    "corretta": 3,
+    "spiegazione": "Le ultime due cifre devono essere 00, 25, 50 o 75.",
+    "fonte": "Wikipedia, «Criteri di divisibilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-157",
+    "argomento": "Numeri",
+    "livello": 2,
+    "testo": "Qual è il massimo comune divisore di 24 e 36?",
+    "opzioni": [
+      "12",
+      "72",
+      "6",
+      "4"
+    ],
+    "corretta": 0,
+    "spiegazione": "24 = 2³·3, 36 = 2²·3²: fattori comuni con esponente minore, 2²·3 = 12.",
+    "fonte": "Wikipedia, «Massimo comun divisore» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-158",
+    "argomento": "Numeri",
+    "livello": 3,
+    "testo": "Qual è il massimo comune divisore di 42 e 56?",
+    "opzioni": [
+      "6",
+      "14",
+      "7",
+      "28"
+    ],
+    "corretta": 1,
+    "spiegazione": "42/56 si semplifica in 3/4 dividendo per 14.",
+    "fonte": "Wikipedia, «Massimo comun divisore» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-159",
+    "argomento": "Numeri",
+    "livello": 3,
+    "testo": "Due numeri si dicono «primi tra loro» (coprimi) quando:",
+    "opzioni": [
+      "Hanno la stessa somma delle cifre",
+      "Sono entrambi numeri primi",
+      "Il loro massimo comune divisore è 1",
+      "Uno divide l'altro"
+    ],
+    "corretta": 2,
+    "spiegazione": "Per esempio 9 e 28 sono coprimi pur non essendo primi.",
+    "fonte": "Wikipedia, «Massimo comun divisore» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-160",
+    "argomento": "Numeri",
+    "livello": 1,
+    "testo": "Qual è il minimo comune multiplo di 4 e 6?",
+    "opzioni": [
+      "2",
+      "10",
+      "24",
+      "12"
+    ],
+    "corretta": 3,
+    "spiegazione": "12 è il più piccolo multiplo comune.",
+    "fonte": "Wikipedia, «Minimo comune multiplo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-161",
+    "argomento": "Numeri",
+    "livello": 3,
+    "testo": "Due autobus partono insieme alle 8:00; uno passa ogni 12 minuti, l'altro ogni 18. Quando ripartiranno di nuovo insieme?",
+    "opzioni": [
+      "Alle 8:36",
+      "Alle 9:00",
+      "Alle 8:30",
+      "Alle 8:54"
+    ],
+    "corretta": 0,
+    "spiegazione": "mcm(12, 18) = 36 minuti.",
+    "fonte": "Wikipedia, «Minimo comune multiplo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-162",
+    "argomento": "Numeri",
+    "livello": 2,
+    "testo": "Qual è il minimo comune multiplo di 8 e 12?",
+    "opzioni": [
+      "96",
+      "24",
+      "4",
+      "48"
+    ],
+    "corretta": 1,
+    "spiegazione": "8 = 2³, 12 = 2²·3: 2³·3 = 24.",
+    "fonte": "Wikipedia, «Minimo comune multiplo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-163",
+    "argomento": "Numeri",
+    "livello": 3,
+    "testo": "Il minimo comune denominatore di più frazioni è:",
+    "opzioni": [
+      "Il massimo comune divisore dei denominatori",
+      "Il prodotto dei numeratori",
+      "Il minimo comune multiplo dei denominatori",
+      "La somma dei denominatori"
+    ],
+    "corretta": 2,
+    "spiegazione": "Serve per sommare le frazioni.",
+    "fonte": "Wikipedia, «Minimo comune multiplo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-164",
+    "argomento": "Percentuali",
+    "livello": 1,
+    "testo": "Quanto è il 32% di 2.000?",
+    "opzioni": [
+      "680",
+      "320",
+      "64",
+      "640"
+    ],
+    "corretta": 3,
+    "spiegazione": "0,32 · 2.000 = 640.",
+    "fonte": "Wikipedia, «Percentuale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-165",
+    "argomento": "Percentuali",
+    "livello": 2,
+    "testo": "Un prezzo passa da 80 € a 100 €. Qual è l'aumento percentuale?",
+    "opzioni": [
+      "25%",
+      "80%",
+      "20%",
+      "125%"
+    ],
+    "corretta": 0,
+    "spiegazione": "(100 − 80)/80 · 100 = 25%.",
+    "fonte": "Wikipedia, «Percentuale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-166",
+    "argomento": "Percentuali",
+    "livello": 3,
+    "testo": "Il tasso di un mutuo passa dal 2% al 3%. Come si descrive correttamente la variazione?",
+    "opzioni": [
+      "È aumentato dell'1%",
+      "È aumentato di 1 punto percentuale (cioè del 50%)",
+      "È aumentato del 33%",
+      "È aumentato del 3%"
+    ],
+    "corretta": 1,
+    "spiegazione": "La differenza tra due percentuali si esprime in punti percentuali.",
+    "fonte": "Wikipedia, «Percentuale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-167",
+    "argomento": "Percentuali",
+    "livello": 4,
+    "testo": "Un prezzo aumenta del 10% e poi diminuisce del 10%. Rispetto al prezzo iniziale è:",
+    "opzioni": [
+      "Invariato",
+      "Diminuito del 10%",
+      "Diminuito dell'1%",
+      "Aumentato dell'1%"
+    ],
+    "corretta": 2,
+    "spiegazione": "100 → 110 → 99: le percentuali si riferiscono a basi diverse e non si sommano.",
+    "fonte": "Wikipedia, «Percentuale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-168",
+    "argomento": "Percentuali",
+    "livello": 3,
+    "testo": "Una stazione passa da 3 binari a 2. Di quanto si sono ridotti, in percentuale?",
+    "opzioni": [
+      "Del 25%",
+      "Dell'1%",
+      "Del 50%",
+      "Del 33,3% circa"
+    ],
+    "corretta": 3,
+    "spiegazione": "1 binario su 3 di partenza.",
+    "fonte": "Wikipedia, «Percentuale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-169",
+    "argomento": "Percentuali",
+    "livello": 2,
+    "testo": "Un articolo costa 150 € ed è scontato del 20%. Quanto si paga?",
+    "opzioni": [
+      "120 €",
+      "30 €",
+      "130 €",
+      "125 €"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il 20% di 150 è 30; 150 − 30 = 120.",
+    "fonte": "Wikipedia, «Percentuale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-170",
+    "argomento": "Percentuali",
+    "livello": 1,
+    "testo": "A quale numero decimale corrisponde il 45%?",
+    "opzioni": [
+      "4,5",
+      "0,45",
+      "0,045",
+      "45"
+    ],
+    "corretta": 1,
+    "spiegazione": "45 parti su 100.",
+    "fonte": "Wikipedia, «Percentuale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-171",
+    "argomento": "Percentuali",
+    "livello": 3,
+    "testo": "Dopo uno sconto del 30% un oggetto costa 70 €. Qual era il prezzo iniziale?",
+    "opzioni": [
+      "110 €",
+      "97 €",
+      "100 €",
+      "91 €"
+    ],
+    "corretta": 2,
+    "spiegazione": "70 € è il 70% del prezzo: 70 / 0,70 = 100.",
+    "fonte": "Wikipedia, «Percentuale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-172",
+    "argomento": "Percentuali",
+    "livello": 2,
+    "testo": "25 candidati su 200 superano la prova. Che percentuale è?",
+    "opzioni": [
+      "15%",
+      "8%",
+      "25%",
+      "12,5%"
+    ],
+    "corretta": 3,
+    "spiegazione": "25/200 = 0,125.",
+    "fonte": "Wikipedia, «Percentuale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-173",
+    "argomento": "Percentuali",
+    "livello": 2,
+    "testo": "Con quale numero si rappresenta il totale nel «per mille» (‰)?",
+    "opzioni": [
+      "1.000",
+      "10",
+      "1.000.000",
+      "100"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il per milione (ppm) usa invece un milione.",
+    "fonte": "Wikipedia, «Percentuale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-174",
+    "argomento": "Serie numeriche",
+    "livello": 2,
+    "testo": "Completa la serie: 13, 21, 34, 55, ...",
+    "opzioni": [
+      "84",
+      "89",
+      "76",
+      "110"
+    ],
+    "corretta": 1,
+    "spiegazione": "Successione di Fibonacci: 34 + 55 = 89.",
+    "fonte": "Wikipedia, «Successione di Fibonacci» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-175",
+    "argomento": "Serie numeriche",
+    "livello": 2,
+    "testo": "Completa la serie: 2, 3, 5, 7, 11, ...",
+    "opzioni": [
+      "12",
+      "17",
+      "13",
+      "15"
+    ],
+    "corretta": 2,
+    "spiegazione": "È la successione dei numeri primi.",
+    "fonte": "Wikipedia, «Numero primo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-176",
+    "argomento": "Serie numeriche",
+    "livello": 3,
+    "testo": "Completa la serie: 1, 2, 6, 24, 120, ...",
+    "opzioni": [
+      "600",
+      "240",
+      "144",
+      "720"
+    ],
+    "corretta": 3,
+    "spiegazione": "Sono i fattoriali: 6! = 720.",
+    "fonte": "Wikipedia, «Fattoriale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-177",
+    "argomento": "Serie numeriche",
+    "livello": 3,
+    "testo": "In una progressione geometrica il primo termine è 3 e la ragione è 2. Quanto vale il quinto termine?",
+    "opzioni": [
+      "48",
+      "96",
+      "30",
+      "24"
+    ],
+    "corretta": 0,
+    "spiegazione": "aₙ = a₁ · rⁿ⁻¹ = 3 · 2⁴ = 48.",
+    "fonte": "Wikipedia, «Progressione geometrica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-178",
+    "argomento": "Serie numeriche",
+    "livello": 3,
+    "testo": "Quanti sono i multipli di 7 compresi tra 1 e 100?",
+    "opzioni": [
+      "16",
+      "14",
+      "15",
+      "13"
+    ],
+    "corretta": 1,
+    "spiegazione": "7, 14, …, 98 è una progressione aritmetica di ragione 7: 98 = 7 + (n − 1)·7 → n = 14.",
+    "fonte": "Wikipedia, «Progressione aritmetica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-179",
+    "argomento": "Combinatoria",
+    "livello": 3,
+    "testo": "Quante persone servono, come minimo, per essere certi che almeno due compiano gli anni lo stesso giorno?",
+    "opzioni": [
+      "365",
+      "366",
+      "367",
+      "183"
+    ],
+    "corretta": 2,
+    "spiegazione": "I giorni possibili sono 366 (compreso il 29 febbraio): con 367 persone, per il principio dei cassetti, almeno due coincidono.",
+    "fonte": "Wikipedia, «Principio dei cassetti» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-180",
+    "argomento": "Combinatoria",
+    "livello": 3,
+    "testo": "Un'urna contiene palline rosse, blu e verdi. Quante bisogna estrarne, al buio, per essere certi di averne due dello stesso colore?",
+    "opzioni": [
+      "2",
+      "6",
+      "3",
+      "4"
+    ],
+    "corretta": 3,
+    "spiegazione": "Con 3 colori, nel caso peggiore le prime 3 sono diverse; la quarta forma una coppia.",
+    "fonte": "Wikipedia, «Principio dei cassetti» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-181",
+    "argomento": "Insiemi",
+    "livello": 2,
+    "testo": "In un gruppo di 40 persone, 25 bevono tè, 20 caffè e 10 entrambi. Quante non bevono né tè né caffè?",
+    "opzioni": [
+      "5",
+      "15",
+      "10",
+      "0"
+    ],
+    "corretta": 0,
+    "spiegazione": "Tè o caffè = 25 + 20 − 10 = 35; 40 − 35 = 5.",
+    "fonte": "Wikipedia, «Diagramma di Venn» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-182",
+    "argomento": "Calcolo combinatorio",
+    "livello": 4,
+    "testo": "Quanti anagrammi distinti ha la parola ANNA?",
+    "opzioni": [
+      "24",
+      "6",
+      "12",
+      "4"
+    ],
+    "corretta": 1,
+    "spiegazione": "Permutazioni con ripetizione: 4!/(2!·2!) = 6.",
+    "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-183",
+    "argomento": "Calcolo combinatorio",
+    "livello": 2,
+    "testo": "In quanti modi si possono scegliere 2 oggetti da 4, senza contare l'ordine?",
+    "opzioni": [
+      "16",
+      "12",
+      "6",
+      "8"
+    ],
+    "corretta": 2,
+    "spiegazione": "4·3/2 = 6.",
+    "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-184",
+    "argomento": "Calcolo combinatorio",
+    "livello": 2,
+    "testo": "Da 5 uomini e 4 donne si sceglie una coppia formata da un uomo e una donna. Quante coppie sono possibili?",
+    "opzioni": [
+      "36",
+      "10",
+      "9",
+      "20"
+    ],
+    "corretta": 3,
+    "spiegazione": "5 · 4 = 20.",
+    "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-185",
+    "argomento": "Calcolo combinatorio",
+    "livello": 3,
+    "testo": "Tra 10 candidati si eleggono un presidente e un vicepresidente. Quanti esiti sono possibili?",
+    "opzioni": [
+      "90",
+      "20",
+      "100",
+      "45"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'ordine conta: 10 · 9 = 90 disposizioni.",
+    "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-186",
+    "argomento": "Calcolo combinatorio",
+    "livello": 3,
+    "testo": "Quanti numeri di 3 cifre tutte diverse si possono scrivere con le cifre 1, 2, 3, 4?",
+    "opzioni": [
+      "64",
+      "24",
+      "12",
+      "4"
+    ],
+    "corretta": 1,
+    "spiegazione": "Disposizioni semplici: 4 · 3 · 2 = 24.",
+    "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-187",
+    "argomento": "Probabilità",
+    "livello": 3,
+    "testo": "Nel problema di Monty Hall, qual è la probabilità di vincere se il concorrente NON cambia porta?",
+    "opzioni": [
+      "1/2",
+      "1",
+      "1/3",
+      "2/3"
+    ],
+    "corretta": 2,
+    "spiegazione": "La probabilità della scelta iniziale resta 1/3; cambiando sale a 2/3.",
+    "fonte": "Wikipedia, «Problema di Monty Hall» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-188",
+    "argomento": "Probabilità",
+    "livello": 2,
+    "testo": "Da un mazzo di 40 carte napoletane (12 figure), qual è la probabilità di estrarre una figura?",
+    "opzioni": [
+      "1/4",
+      "12/52",
+      "1/12",
+      "3/10"
+    ],
+    "corretta": 3,
+    "spiegazione": "12/40 = 3/10.",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-189",
+    "argomento": "Probabilità",
+    "livello": 3,
+    "testo": "Lanciando 3 monete, qual è la probabilità di ottenere almeno una testa?",
+    "opzioni": [
+      "7/8",
+      "3/8",
+      "1/2",
+      "1/8"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'unico caso sfavorevole è CCC su 8 sequenze possibili.",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-190",
+    "argomento": "Probabilità",
+    "livello": 3,
+    "testo": "Lanciando due dadi, qual è la probabilità di ottenere due numeri uguali?",
+    "opzioni": [
+      "1/36",
+      "1/6",
+      "1/3",
+      "1/12"
+    ],
+    "corretta": 1,
+    "spiegazione": "6 coppie uguali su 36 possibili.",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-191",
+    "argomento": "Probabilità",
+    "livello": 3,
+    "testo": "Lanciando due dadi, qual è la probabilità che la somma sia 10?",
+    "opzioni": [
+      "1/10",
+      "1/6",
+      "1/12",
+      "1/36"
+    ],
+    "corretta": 2,
+    "spiegazione": "Coppie (4,6), (5,5), (6,4): 3 su 36.",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-192",
+    "argomento": "Probabilità",
+    "livello": 4,
+    "testo": "Lanciando tre dadi, Galileo spiegò che le somme 10 e 11 escono più spesso di:",
+    "opzioni": [
+      "7 e 14",
+      "3 e 18",
+      "10 e 11 escono come tutte le altre",
+      "9 e 12"
+    ],
+    "corretta": 3,
+    "spiegazione": "Pur ottenendosi da un uguale numero di combinazioni, hanno meno permutazioni.",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-193",
+    "argomento": "Probabilità",
+    "livello": 4,
+    "testo": "Chi scrisse nel 1657 il primo trattato sul calcolo delle probabilità, introducendo il valore atteso?",
+    "opzioni": [
+      "Christiaan Huygens",
+      "Pierre de Fermat",
+      "Gerolamo Cardano",
+      "Jakob Bernoulli"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il «Libellus de ratiociniis in ludo aleae».",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-194",
+    "argomento": "Probabilità",
+    "livello": 4,
+    "testo": "Quale opera di Jakob Bernoulli fu pubblicata postuma nel 1713?",
+    "opzioni": [
+      "Analytica priora",
+      "Ars conjectandi",
+      "Summa de arithmetica",
+      "Liber abbaci"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Probabilità».",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-195",
+    "argomento": "Ragionamento",
+    "livello": 2,
+    "testo": "«Tutti gli uomini sono mortali; Socrate è un uomo.» Che tipo di ragionamento porta a «Socrate è mortale»?",
+    "opzioni": [
+      "Induttivo",
+      "Abduttivo",
+      "Deduttivo",
+      "Analogico"
+    ],
+    "corretta": 2,
+    "spiegazione": "Dall'universale al particolare.",
+    "fonte": "Wikipedia, «Deduzione» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-196",
+    "argomento": "Ragionamento",
+    "livello": 3,
+    "testo": "«Il cigno 1 è bianco, il cigno 2 è bianco… quindi tutti i cigni sono bianchi.» Che tipo di ragionamento è?",
+    "opzioni": [
+      "Deduttivo",
+      "Una tautologia",
+      "Un sillogismo valido",
+      "Induttivo"
+    ],
+    "corretta": 3,
+    "spiegazione": "Dal particolare all'universale: la conclusione non è certa.",
+    "fonte": "Wikipedia, «Induzione» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-197",
+    "argomento": "Tautologie",
+    "livello": 3,
+    "testo": "Che valore di verità ha la formula p ∧ ¬p?",
+    "opzioni": [
+      "È sempre falsa",
+      "È soddisfacibile",
+      "Dipende da p",
+      "È sempre vera"
+    ],
+    "corretta": 0,
+    "spiegazione": "Una formula è contraddizione se non è soddisfacibile.",
+    "fonte": "Wikipedia, «Logica proposizionale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-198",
+    "argomento": "Tautologie",
+    "livello": 3,
+    "testo": "Una formula ben formata si dice «soddisfacibile» se:",
+    "opzioni": [
+      "È vera in ogni valutazione",
+      "Esiste almeno una valutazione che la rende vera",
+      "Non contiene connettivi",
+      "È falsa in ogni valutazione"
+    ],
+    "corretta": 1,
+    "spiegazione": "Se è vera in ogni valutazione è una tautologia.",
+    "fonte": "Wikipedia, «Logica proposizionale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-199",
+    "argomento": "Problemi logici",
+    "livello": 3,
+    "testo": "In una gara di nuoto Anna dice «Chiara è arrivata prima di Barbara», Barbara «Chiara è arrivata prima di Anna», Chiara «Sono arrivata seconda». Una sola dice il vero. Cosa si può stabilire?",
+    "opzioni": [
+      "Solo chi è arrivata seconda",
+      "Nessuna posizione",
+      "Solo chi è arrivata terza",
+      "Solo chi ha vinto"
+    ],
+    "corretta": 2,
+    "spiegazione": "Giochi di Archimede 2000; soluzione riportata nel testo.",
+    "fonte": "Wikipedia, «MatematicaC3, Esercizi di logica (CC BY 3.0)» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-200",
+    "argomento": "Problemi logici",
+    "livello": 4,
+    "testo": "Sull'isola di cavalieri, furfanti e paggi: il vecchio dice «Io sono paggio; il ragazzo è cavaliere», il ragazzo «Io sono cavaliere; la ragazza è paggio», la ragazza «Io sono furfante; il vecchio è paggio». Quanti paggi ci sono?",
+    "opzioni": [
+      "Nessuno",
+      "Uno",
+      "Due",
+      "Tre"
+    ],
+    "corretta": 3,
+    "spiegazione": "La ragazza può essere solo paggio, quindi il vecchio è paggio e il ragazzo non è cavaliere: anche lui è paggio. Giochi di Archimede 1998.",
+    "fonte": "Wikipedia, «MatematicaC3, Esercizi di logica (CC BY 3.0)» (CC BY-SA 4.0)",
+    "versione": "v1"
+  }
+]

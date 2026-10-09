@@ -1,7 +1,53 @@
-# Un solo CloudFront (URL *.cloudfront.net già in https) davanti a:
+# Un solo CloudFront davanti a:
 #   /api/*  -> API Gateway (nessuna cache, passa il token)
 #   il resto -> sito statico nel bucket S3 privato
 # Un solo indirizzo per sito e API: niente CORS, e in prod il WAF si attacca qui.
+# Con domain_name (es. dev.imieiconcorsi.it): certificato ACM in us-east-1 (CloudFront
+# li vuole lì) validato via DNS, e record A/AAAA nella hosted zone. Senza: *.cloudfront.net.
+
+terraform {
+  required_providers {
+    aws = {
+      source                = "hashicorp/aws"
+      configuration_aliases = [aws.us_east_1]
+    }
+  }
+}
+
+locals {
+  con_dominio = var.domain_name != null
+}
+
+resource "aws_acm_certificate" "web" {
+  count             = local.con_dominio ? 1 : 0
+  provider          = aws.us_east_1
+  domain_name       = var.domain_name
+  validation_method = "DNS"
+
+  lifecycle {
+    create_before_destroy = true
+  }
+}
+
+# Il certificato copre un solo nome, quindi un solo record di validazione: con count
+# Terraform sa quanti record creare prima ancora di avere il certificato.
+resource "aws_route53_record" "cert_validation" {
+  count = local.con_dominio ? 1 : 0
+
+  zone_id         = var.zone_id
+  name            = tolist(aws_acm_certificate.web[0].domain_validation_options)[0].resource_record_name
+  type            = tolist(aws_acm_certificate.web[0].domain_validation_options)[0].resource_record_type
+  records         = [tolist(aws_acm_certificate.web[0].domain_validation_options)[0].resource_record_value]
+  ttl             = 300
+  allow_overwrite = true
+}
+
+resource "aws_acm_certificate_validation" "web" {
+  count                   = local.con_dominio ? 1 : 0
+  provider                = aws.us_east_1
+  certificate_arn         = aws_acm_certificate.web[0].arn
+  validation_record_fqdns = [for r in aws_route53_record.cert_validation : r.fqdn]
+}
 
 resource "aws_s3_bucket" "web" {
   bucket_prefix = "${var.name}-web-"
@@ -76,6 +122,7 @@ resource "aws_cloudfront_distribution" "web" {
   price_class         = "PriceClass_100"
   http_version        = "http2and3"
   web_acl_id          = var.web_acl_arn
+  aliases             = local.con_dominio ? [var.domain_name] : []
 
   origin {
     origin_id                = "web"
@@ -132,7 +179,10 @@ resource "aws_cloudfront_distribution" "web" {
   }
 
   viewer_certificate {
-    cloudfront_default_certificate = true
+    cloudfront_default_certificate = !local.con_dominio
+    acm_certificate_arn            = local.con_dominio ? aws_acm_certificate_validation.web[0].certificate_arn : null
+    ssl_support_method             = local.con_dominio ? "sni-only" : null
+    minimum_protocol_version       = local.con_dominio ? "TLSv1.2_2021" : "TLSv1"
   }
 }
 
@@ -190,4 +240,20 @@ resource "aws_s3_object" "web_config" {
   content       = jsonencode(var.app_config)
   content_type  = "application/json"
   cache_control = "no-cache"
+}
+
+# ── DNS: dominio -> CloudFront ───────────────────────────────────────────────
+
+resource "aws_route53_record" "web" {
+  for_each = local.con_dominio ? toset(["A", "AAAA"]) : toset([])
+
+  zone_id = var.zone_id
+  name    = var.domain_name
+  type    = each.value
+
+  alias {
+    name                   = aws_cloudfront_distribution.web.domain_name
+    zone_id                = aws_cloudfront_distribution.web.hosted_zone_id
+    evaluate_target_health = false
+  }
 }

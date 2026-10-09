@@ -39,6 +39,23 @@ resource "aws_cognito_user_pool" "main" {
   email_configuration {
     email_sending_account = "COGNITO_DEFAULT"
   }
+
+  # Una persona = un account: collega i login social all'account con la stessa email.
+  dynamic "lambda_config" {
+    for_each = var.pre_sign_up_enabled ? [1] : []
+    content {
+      pre_sign_up = var.pre_sign_up_lambda_arn
+    }
+  }
+}
+
+resource "aws_lambda_permission" "pre_sign_up" {
+  count         = var.pre_sign_up_enabled ? 1 : 0
+  statement_id  = "AllowCognito"
+  action        = "lambda:InvokeFunction"
+  function_name = var.pre_sign_up_lambda_arn
+  principal     = "cognito-idp.amazonaws.com"
+  source_arn    = aws_cognito_user_pool.main.arn
 }
 
 # Dominio del login social: https://<nome>.auth.<regione>.amazoncognito.com, senza certificati nostri.

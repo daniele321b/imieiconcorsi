@@ -2,3 +2,7 @@
 dist
 .env*
 .DS_Store
+contenuti/libri/**/*
+!contenuti/libri/**/
+!contenuti/libri/**/.gitkeep
+.cache/

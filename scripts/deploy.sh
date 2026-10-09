@@ -10,13 +10,17 @@
 #   scripts/deploy.sh build [lambda|web]     # compila le Lambda (dist/functions) e il sito (packages/web/dist)
 #   scripts/deploy.sh infra                  # terraform init + apply dell'ambiente
 #   scripts/deploy.sh seed                   # importa subito i bandi aperti da inPA (lo scraper gira poi ogni mattina)
-#   scripts/deploy.sh job NOME               # lancia subito un job del mattino: inpa-scraper, scadenze
+#   scripts/deploy.sh job NOME               # lancia subito un job: inpa-scraper, avvisi, scadenze, import-domande (reimporta data/domande)
 #   scripts/deploy.sh make-admin EMAIL       # mette l'utente nel gruppo admin (pannello di controllo)
+#   scripts/deploy.sh unisci-account EMAIL   # unisce gli account doppi (email + Facebook/Google) creati prima del trigger
+#   scripts/deploy.sh genera-domande [MAT]   # data/domande/<materia>.json da contenuti/sorgenti (vuoto = tutte)
+#   scripts/deploy.sh verifica-domande       # ogni domanda ha la sua frase-prova nel PDF della fonte
 #   scripts/deploy.sh urls                   # indirizzi: sito, pannello admin, API, redirect URI Google/Facebook
 #   scripts/deploy.sh status                 # quanti bandi e domande ci sono nelle tabelle
 #   scripts/deploy.sh ses-status             # SES: sandbox o produzione, indirizzi verificati
-#   scripts/deploy.sh ses-production URL     # chiede ad AWS di uscire dalla sandbox SES (una volta per account)
-#   scripts/deploy.sh logs [servizio]        # log in tempo reale: profile, concorsi, study, billing, admin, inpa-scraper, scadenze
+#   scripts/deploy.sh ses-production [URL]   # chiede ad AWS di uscire dalla sandbox SES (una volta per account)
+#   scripts/deploy.sh email-prova EMAIL      # manda un'email di prova da SES e spiega perché non parte
+#   scripts/deploy.sh logs [servizio]        # log in tempo reale: profile, concorsi, study, billing, admin, inpa-scraper, avvisi, scadenze
 #   scripts/deploy.sh local                  # sito in locale (http://localhost:5173) collegato all'ambiente su AWS
 #   scripts/deploy.sh test                   # test e controllo dei tipi del codice applicativo
 #   scripts/deploy.sh all                    # check -> shared -> build -> infra -> seed -> urls
@@ -24,12 +28,13 @@
 #   scripts/deploy.sh destroy-shared         # smonta le risorse comuni (SES) — solo se non serve più a nessun ambiente
 #
 # Variabili: AWS_PROFILE (opzionale), ENVIRONMENT (default dev), REGION (default
-# eu-south-1), DRY_RUN=1 stampa i comandi senza eseguirli.
+# eu-south-1), DOMAIN (default imieiconcorsi.it), DRY_RUN=1 stampa i comandi senza eseguirli.
 
 set -euo pipefail
 
 REGION="${REGION:-eu-south-1}"
 PROJECT="imieiconcorsi"
+DOMAIN="${DOMAIN:-imieiconcorsi.it}"
 ENVIRONMENT="${ENVIRONMENT:-dev}"
 NAME="${PROJECT}-${ENVIRONMENT}"
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
@@ -47,8 +52,13 @@ LAMBDAS=(
   "study:study/handler.ts"
   "billing:billing/handler.ts"
   "admin:admin/handler.ts"
+  "pubblico:pubblico/handler.ts"
+  "auth-pre-signup:auth/pre-signup.ts"
   "inpa-scraper:jobs/inpa-scraper.ts"
+  "avvisi:jobs/avvisi.ts"
   "scadenze:jobs/scadenze.ts"
+  "import-domande:contenuti/import-domande.ts"
+  "estrai-banca-dati:banche-dati/estrai.ts"
 )
 
 export AWS_DEFAULT_REGION="$REGION"
@@ -81,7 +91,8 @@ capture() {
 confirm() {
   [[ "$DRY_RUN" == "1" ]] && return 0
   local answer
-  read -r -p "$1 [scrivi 'si' per confermare] " answer
+  # Dal terminale, non da stdin: confirm può stare dentro un ciclo che legge un elenco.
+  read -r -p "$1 [scrivi 'si' per confermare] " answer < /dev/tty
   [[ "$answer" == "si" ]]
 }
 
@@ -121,11 +132,31 @@ cmd_check() {
     die "manca il bucket di stato $(state_bucket): lancia prima  scripts/deploy.sh bootstrap"
   fi
 
+  bold "Dominio"
+  local zone
+  zone="$(aws route53 list-hosted-zones-by-name --dns-name "${DOMAIN}" \
+    --query "HostedZones[?Name=='${DOMAIN}.'].Id | [0]" --output text 2>/dev/null || true)"
+  [[ -n "$zone" && "$zone" != "None" ]] && ok "hosted zone ${DOMAIN} (${zone##*/})" \
+    || die "nessuna hosted zone per ${DOMAIN} su questo account AWS"
+
+  # Il dominio è utilizzabile quando su internet risponde con i nameserver della hosted
+  # zone: serve al certificato HTTPS e alla verifica SES. Finché la registrazione è in
+  # corso non succede, e Terraform resterebbe ad aspettare il certificato.
+  local ns_zona ns_internet
+  ns_zona="$(aws route53 get-hosted-zone --id "${zone##*/}" --query 'DelegationSet.NameServers' --output text \
+    | tr '\t' '\n' | tr 'A-Z' 'a-z' | sed 's/\.$//' | sort | tr '\n' ' ')"
+  ns_internet="$(dig +short NS "$DOMAIN" 2>/dev/null | tr 'A-Z' 'a-z' | sed 's/\.$//' | sort | tr '\n' ' ')"
+  if [[ -n "$ns_internet" && "$ns_internet" == "$ns_zona" ]]; then
+    ok "dominio attivo: ${DOMAIN} risponde con i nameserver della hosted zone"
+  else
+    die "${DOMAIN} non è ancora attivo su internet (registrazione in corso?). Riprova più tardi: scripts/deploy.sh check"
+  fi
+
   bold "Configurazione"
   if [[ -f "${TF_SHARED}/terraform.tfvars" ]]; then
-    ok "shared/terraform.tfvars presente (mittente SES)"
+    ok "shared/terraform.tfvars presente (dominio, destinatari sandbox SES)"
   else
-    die "manca ${TF_SHARED#"${ROOT}/"}/terraform.tfvars: copia terraform.tfvars.example e metti il mittente delle email"
+    die "manca ${TF_SHARED#"${ROOT}/"}/terraform.tfvars: copia terraform.tfvars.example e metti il tuo indirizzo in sandbox_recipients"
   fi
   if [[ -f "${TF_DIR}/terraform.tfvars" ]]; then
     ok "${ENVIRONMENT}/terraform.tfvars presente (email admin, Google/Facebook se compilati)"
@@ -193,8 +224,8 @@ tf_init() {
 
 cmd_shared() {
   [[ "$DRY_RUN" == "1" || -f "${TF_SHARED}/terraform.tfvars" ]] \
-    || die "manca ${TF_SHARED#"${ROOT}/"}/terraform.tfvars: copia terraform.tfvars.example e metti il mittente delle email"
-  bold "Risorse comuni a dev e prod (SES)"
+    || die "manca ${TF_SHARED#"${ROOT}/"}/terraform.tfvars: copia terraform.tfvars.example e metti il tuo indirizzo in sandbox_recipients"
+  bold "Risorse comuni a dev e prod (dominio ${DOMAIN}, SES)"
   tf_init "$TF_SHARED"
   run terraform -chdir="$TF_SHARED" apply
   printf "  Se è la prima volta: AWS manda un'email di conferma a ogni indirizzo da verificare. Clicca il link.\n"
@@ -214,8 +245,8 @@ cmd_infra() {
 cmd_job() {
   local job="${1:-}" fn out
   case "$job" in
-    inpa-scraper|scadenze) ;;
-    *) die "quale job? inpa-scraper, scadenze" ;;
+    inpa-scraper|avvisi|scadenze|import-domande) ;;
+    *) die "quale job? inpa-scraper, avvisi, scadenze, import-domande" ;;
   esac
   fn="${NAME}-${job}"
   out="$(mktemp)"
@@ -231,7 +262,7 @@ cmd_job() {
 
 cmd_seed() {
   cmd_job inpa-scraper
-  printf '  Le 60 domande dimostrative le carica già Terraform (data/domande-demo.json).\n'
+  printf '  Le domande (data/domande/*.json) le carica infra: ogni file caricato viene importato da solo.\n'
 }
 
 # --------------------------------------------------------------- admin/SES ---
@@ -252,24 +283,91 @@ cmd_make_admin() {
   printf '  Esci e rientra nel sito: il nuovo ruolo arriva con il token. Pannello: %s/admin\n' "$(tf_output web_url)"
 }
 
+cmd_unisci_account() {
+  local email="${1:-}" pool righe nativo="" user stato prefisso provider id
+  [[ -n "$email" ]] || die "uso: scripts/deploy.sh unisci-account tua@email.it"
+  pool="$(tf_output user_pool_id)"
+  righe="$(capture "uuid-nativo CONFIRMED
+facebook_123 EXTERNAL_PROVIDER" aws cognito-idp list-users --user-pool-id "$pool" \
+    --filter "email = \"${email}\"" --query 'Users[].[Username,UserStatus]' --output text)"
+  while read -r user stato; do
+    [[ "$stato" == "CONFIRMED" ]] && nativo="$user"
+  done <<< "$righe"
+  [[ -n "$nativo" ]] || die "nessun account email/password confermato per ${email}: niente da unire"
+
+  bold "Account per ${email}: tengo ${nativo} (email e password)"
+  while read -r user stato; do
+    [[ "$stato" == "EXTERNAL_PROVIDER" ]] || continue
+    prefisso="$(printf '%s' "${user%%_*}" | tr 'A-Z' 'a-z')"
+    id="${user#*_}"
+    case "$prefisso" in
+      google) provider="Google" ;;
+      facebook) provider="Facebook" ;;
+      *) warn "salto ${user}: provider sconosciuto"; continue ;;
+    esac
+    warn "${user} (${provider}) verrà cancellato e il suo accesso collegato a ${nativo}: i dati di studio di quell'account si perdono"
+    confirm "Procedo con ${user}?" || { warn "saltato ${user}"; continue; }
+    run aws cognito-idp admin-delete-user --user-pool-id "$pool" --username "$user"
+    run aws cognito-idp admin-link-provider-for-user --user-pool-id "$pool" \
+      --destination-user "ProviderName=Cognito,ProviderAttributeValue=${nativo}" \
+      --source-user "ProviderName=${provider},ProviderAttributeName=Cognito_Subject,ProviderAttributeValue=${id}"
+    ok "${provider} ora entra nell'account ${nativo}"
+  done <<< "$righe"
+}
+
 cmd_ses_status() {
   bold "SES (${REGION})"
   run aws sesv2 get-account --region "$REGION" \
-    --query '{produzione:ProductionAccessEnabled,invii_24h:SendQuota.Max24HourSend,stato:EnforcementStatus}' --output table
+    --query '{produzione:ProductionAccessEnabled,invii_24h:SendQuota.Max24HourSend,stato:EnforcementStatus,richiesta_uscita:Details.ReviewDetails.Status,caso_supporto:Details.ReviewDetails.CaseId}' --output table
   run aws sesv2 list-email-identities --region "$REGION" \
     --query 'EmailIdentities[].{identita:IdentityName,verificata:VerificationStatus}' --output table
   printf '  In sandbox SES scrive solo agli indirizzi verificati (max 200 email/giorno).\n'
 }
 
 cmd_ses_production() {
-  local url="${1:-}"
-  [[ -n "$url" ]] || die "uso: scripts/deploy.sh ses-production https://indirizzo-del-sito"
+  local url="${1:-https://${DOMAIN}}" stato
   bold "Richiesta ad AWS di uscire dalla sandbox SES"
+  # Una richiesta già inviata blocca la seconda (ConflictException): prima si guarda a che punto è.
+  stato="$(capture "NESSUNA" aws sesv2 get-account --region "$REGION" \
+    --query 'join(`/`, [to_string(ProductionAccessEnabled), Details.ReviewDetails.Status || `NESSUNA`])' --output text 2>/dev/null || echo "?")"
+  case "$stato" in
+    true/*)    ok "SES è già in produzione: scrive a tutti"; return ;;
+    */PENDING) ok "richiesta già inviata e in esame da AWS: la risposta arriva per email all'indirizzo dell'account AWS (scripts/deploy.sh ses-status)"; return ;;
+    */GRANTED) ok "richiesta approvata: tra poco ses-status mostrerà produzione = True"; return ;;
+    */DENIED)
+      warn "la richiesta precedente risulta rifiutata: da comando AWS non ne accetta un'altra (ConflictException)"
+      printf '  Si chiede la rivalutazione rispondendo al caso: console AWS -> Support Center -> caso indicato da\n'
+      printf '  "scripts/deploy.sh ses-status" (colonna caso_supporto) -> Reply. Testo pronto: docs/COMANDI-RAPIDI.md, "Uscire dalla sandbox SES".\n'
+      return ;;
+  esac
   confirm "Invio la richiesta per l'account (email transazionali di iMieiConcorsi)?" || die "annullato"
   run aws sesv2 put-account-details --region "$REGION" \
     --production-access-enabled --mail-type TRANSACTIONAL --website-url "$url" --contact-language EN \
-    --use-case-description "iMieiConcorsi is a study app for Italian public competitions. We send only transactional emails to registered users who opted in: plan expiry reminders 3 days before the end of a paid period, account notifications and alerts about new public competitions they follow. Bounces and complaints are handled by the SES suppression list; users can change notification preferences in their profile."
+    --use-case-description "Our AWS account hosts two small Italian web applications. A previous request for one of them (Fleet Audit, September 2026) was declined; since then we added SNS notifications for every bounce, complaint and rejection (delivered to the account owner), account-level suppression for bounces and complaints, one-click unsubscribe (RFC 8058 List-Unsubscribe headers) on every recurring email, and we have been sending in the sandbox to verified testers only. This request is for iMieiConcorsi (${url}), a study app for Italian public-sector job competitions. We send only to people who registered on our website with their own address (email confirmation through Amazon Cognito): purchase confirmations, a plan-expiry reminder (once, 3 days before), a notice when a plan ends, and - only if the user opts in from their profile - a daily or weekly digest of new public competitions, with an unsubscribe link and List-Unsubscribe headers. No purchased, imported or scraped address lists, no marketing campaigns. Expected volume during the beta: under 100 emails per day. Domain verified with DKIM, custom MAIL FROM with SPF, and DMARC. Privacy policy: ${url}/privacy. Example digest email: subject '3 nuovi bandi per te', body: list of the new competitions with deadline and link, the reason the user receives it, and a one-click unsubscribe link."
   ok "richiesta inviata: AWS risponde di solito entro 24-48 ore (scripts/deploy.sh ses-status)"
+}
+
+# Prova di invio con lo stesso mittente e configuration set delle Lambda.
+cmd_email_prova() {
+  local a="${1:-}" mittente config dominio
+  [[ -n "$a" ]] || die "uso: scripts/deploy.sh email-prova tua@email.it"
+  mittente="$(capture "noreply@${DOMAIN}" terraform -chdir="$TF_SHARED" output -raw ses_sender_email)"
+  config="$(capture "<config-set>" terraform -chdir="$TF_SHARED" output -raw ses_configuration_set_name)"
+  bold "Email di prova da ${mittente} a ${a}"
+
+  dominio="$(capture "?" aws sesv2 get-email-identity --region "$REGION" --email-identity "$DOMAIN" --query VerificationStatus --output text 2>/dev/null || echo "NON TROVATO")"
+  [[ "$dominio" == "SUCCESS" ]] && ok "dominio ${DOMAIN} verificato" \
+    || warn "dominio ${DOMAIN}: ${dominio} — senza dominio verificato SES non spedisce (controlla i record DKIM: scripts/deploy.sh shared)"
+  if [[ "$(capture "false" aws sesv2 get-account --region "$REGION" --query ProductionAccessEnabled --output text 2>/dev/null || echo False)" != "True" ]]; then
+    warn "SES è in sandbox: ${a} deve essere tra gli indirizzi verificati (sandbox_recipients in environments/shared)"
+  fi
+
+  run aws sesv2 send-email --region "$REGION" \
+    --from-email-address "iMieiConcorsi <${mittente}>" \
+    --destination "ToAddresses=${a}" \
+    --configuration-set-name "$config" \
+    --content "Simple={Subject={Data='[prova] Email da iMieiConcorsi',Charset=UTF-8},Body={Text={Data='Se leggi questa email, SES funziona.',Charset=UTF-8}}}" \
+    && ok "inviata: controlla anche lo spam"
 }
 
 # ------------------------------------------------------------------ status ---
@@ -316,6 +414,23 @@ cmd_local() {
   run npm --prefix "$ROOT" run dev -w packages/web
 }
 
+# ---------------------------------------------------------- banca domande ---
+
+cmd_genera_domande() {
+  local m
+  if [[ -n "${1:-}" ]]; then
+    run python3 "${ROOT}/scripts/domande/genera.py" "$1"
+  else
+    for m in "${ROOT}"/contenuti/sorgenti/*.py; do run python3 "${ROOT}/scripts/domande/genera.py" "$(basename "${m%.py}")"; done
+  fi
+}
+
+cmd_verifica_domande() {
+  command -v pdftotext >/dev/null 2>&1 || die "serve pdftotext: brew install poppler"
+  bold "Verifica delle domande sulle fonti (contenuti/libri)"
+  run python3 "${ROOT}/scripts/domande/verifica.py" "$@"
+}
+
 cmd_test() {
   node_deps
   bold "Test (vitest)"
@@ -352,7 +467,7 @@ cmd_all() {
   bold "Fatto. Apri l'indirizzo del sito, registrati, poi:  scripts/deploy.sh make-admin <tua email>"
 }
 
-usage() { sed -n '3,28p' "${BASH_SOURCE[0]}" | sed 's/^# \{0,1\}//'; }
+usage() { sed -n '3,31p' "${BASH_SOURCE[0]}" | sed 's/^# \{0,1\}//'; }
 
 main() {
   local cmd="${1:-}"
@@ -365,9 +480,13 @@ main() {
     shared)    cmd_shared ;;
     seed)      cmd_seed ;;
     job)       cmd_job "$@" ;;
+    genera-domande) cmd_genera_domande "$@" ;;
+    verifica-domande) cmd_verifica_domande "$@" ;;
     make-admin) cmd_make_admin "$@" ;;
+    unisci-account) cmd_unisci_account "$@" ;;
     ses-status) cmd_ses_status ;;
     ses-production) cmd_ses_production "$@" ;;
+    email-prova) cmd_email_prova "$@" ;;
     destroy-shared) cmd_destroy_shared ;;
     urls)      cmd_urls ;;
     status)    cmd_status ;;

@@ -43,3 +43,34 @@ variable "facebook_app_secret" {
   default   = ""
   sensitive = true
 }
+
+# --- Pubblicità del piano Free: facoltativa. Vuoti = annunci interni sui piani ---
+# Con Google AdSense serve anche il banner dei cookie (consenso) prima di attivarlo.
+
+variable "adsense_client" {
+  description = "ID editore AdSense, es. ca-pub-1234567890123456"
+  type        = string
+  default     = ""
+}
+
+variable "adsense_slot" {
+  description = "ID dell'unità pubblicitaria AdSense"
+  type        = string
+  default     = ""
+}
+
+# --- Pagamenti con Stripe (docs/GUIDA-PAGAMENTI.md). Vuoti = modalità "mock" (gratis) ---
+
+variable "stripe_secret_key" {
+  description = "Chiave segreta Stripe: sk_test_... in dev"
+  type        = string
+  default     = ""
+  sensitive   = true
+}
+
+variable "stripe_webhook_secret" {
+  description = "Segreto di firma dell'endpoint webhook Stripe (whsec_...)"
+  type        = string
+  default     = ""
+  sensitive   = true
+}

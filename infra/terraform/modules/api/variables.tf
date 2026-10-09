@@ -25,10 +25,14 @@ variable "environment" {
 variable "services" {
   description = "Microservizi: route, tabelle scrivibili, tabelle in sola lettura, variabili proprie"
   type = map(object({
-    routes       = list(string)
-    write_tables = list(string)
-    read_tables  = list(string)
-    environment  = optional(map(string), {})
-    policies     = optional(any, [])
+    routes = list(string)
+    # Route senza login (es. disiscrizione da email): il servizio deve proteggerle da sé (firma).
+    public_routes = optional(list(string), [])
+    write_tables  = list(string)
+    read_tables   = list(string)
+    environment   = optional(map(string), {})
+    # Permessi IAM in più, come JSON (jsonencode([...])): statement di forme diverse
+    # (Resource stringa o lista) non starebbero in un unico tipo Terraform.
+    policies = optional(string, "[]")
   }))
 }

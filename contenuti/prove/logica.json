@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "log-001",
+    "file": "MatematicaC3_Logica.txt",
+    "frase": "è falsa quando anche una sola delle due proposizioni è falsa"
+  },
+  {
+    "id": "log-002",
+    "file": "MatematicaC3_Logica.txt",
+    "frase": "è falsa solo se entrambe le proposizioni sono false"
+  },
+  {
+    "id": "log-003",
+    "file": "MatematicaC3_Logica.txt",
+    "frase": "è vera quando soltanto una delle due proposizioni è vera"
+  },
+  {
+    "id": "log-004",
+    "file": "MatematicaC3_Logica.txt",
+    "frase": "«100 è minore di 1 o maggiore di 10» è vera perché è vera una delle due affermazioni"
+  },
+  {
+    "id": "log-005",
+    "file": "MatematicaC3_Logica.txt",
+    "frase": "La proposizione p è detta antecedente, (o ipotesi) e la proposizione q è detta conseguente (o tesi)"
+  },
+  {
+    "id": "log-006",
+    "file": "MatematicaC3_Logica.txt",
+    "frase": "condizione sufficiente per q, mentre la proposizione q viene detta condizione necessaria per p"
+  },
+  {
+    "id": "log-007",
+    "file": "MatematicaC3_Logica.txt",
+    "frase": "studiare è condizione necessaria per essere promossi ma non è sufficiente"
+  },
+  {
+    "id": "log-008",
+    "file": "MatematicaC3_Logica.txt",
+    "frase": "da p ⇒ q si può dedurre ¬q ⇒ ¬p"
+  },
+  {
+    "id": "log-009",
+    "file": "MatematicaC3_Logica.txt",
+    "frase": "è detta tautologia"
+  },
+  {
+    "id": "log-010",
+    "file": "MatematicaC3_Logica.txt",
+    "frase": "Un esempio banale di contraddizione è l'affermazione \"un numero è multiplo di 2 ed è dispari\""
+  },
+  {
+    "id": "log-011",
+    "file": "MatematicaC3_Logica.txt",
+    "frase": "¬(p ∧ q) = ¬p ∨ ¬q"
+  },
+  {
+    "id": "log-012",
+    "file": "MatematicaC3_Logica.txt",
+    "frase": "¬(p ∨ q) = ¬p ∧ ¬q"
+  },
+  {
+    "id": "log-013",
+    "file": "MatematicaC3_Logica.txt",
+    "frase": "\"C'è almeno un gatto che non fa le fusa\""
+  },
+  {
+    "id": "log-014",
+    "file": "MatematicaC3_Logica.txt",
+    "frase": "il simbolo ∀ (che si legge \"per ogni\") per indicare il quantificatore universale"
+  },
+  {
+    "id": "log-015",
+    "file": "Wikipedia_Sillogismo.txt",
+    "frase": "termine medio, che è il termine che si trova in entrambe le premesse"
+  },
+  {
+    "id": "log-016",
+    "file": "Wikipedia_Sillogismo.txt",
+    "frase": "Le forme valide, però, sono soltanto 19"
+  },
+  {
+    "id": "log-017",
+    "file": "Wikipedia_Sillogismo.txt",
+    "frase": "\"tutti i pesci sono uomini\" (premessa maggiore)"
+  },
+  {
+    "id": "log-018",
+    "file": "Wikipedia_Modus-ponens.txt",
+    "frase": "Se p implica q è una proposizione vera, e anche la premessa p è vera, allora la conseguenza q è vera"
+  },
+  {
+    "id": "log-019",
+    "file": "Wikipedia_Modus-tollens.txt",
+    "frase": "il modo che toglie la verità di una proposizione togliendo quella di un'altra"
+  },
+  {
+    "id": "log-020",
+    "file": "Wikipedia_Fallacia.txt",
+    "frase": "Fallacia dell'affermazione del conseguente"
+  },
+  {
+    "id": "log-021",
+    "file": "Wikipedia_Fallacia.txt",
+    "frase": "In questo caso ci troviamo di fronte a una negazione dell'antecedente"
+  },
+  {
+    "id": "log-022",
+    "file": "Wikipedia_Modus-ponens.txt",
+    "frase": "(\"modo che afferma\""
+  },
+  {
+    "id": "log-023",
+    "file": "Wikipedia_Condizione-necessaria-e-sufficiente.txt",
+    "frase": "una condizione Q è necessaria per una proposizione P se P implica Q"
+  },
+  {
+    "id": "log-024",
+    "file": "Wikipedia_Condizione-necessaria-e-sufficiente.txt",
+    "frase": "una condizione Q è sufficiente per una proposizione P se Q implica P"
+  },
+  {
+    "id": "log-025",
+    "file": "Wikipedia_Condizione-necessaria-e-sufficiente.txt",
+    "frase": "la divisibilità per 6 di un numero è sufficiente affinché il numero sia pari, ma non è necessaria"
+  },
+  {
+    "id": "log-026",
+    "file": "Wikipedia_Condizione-necessaria-e-sufficiente.txt",
+    "frase": "è necessario che un numero primo maggiore di 2 sia dispari"
+  },
+  {
+    "id": "log-027",
+    "file": "Wikipedia_Condizione-necessaria-e-sufficiente.txt",
+    "frase": "\"ogni volta che Q è vera, anche P è vera\""
+  },
+  {
+    "id": "log-028",
+    "file": "Wikipedia_Quadrato-delle-opposizioni.txt",
+    "frase": "l'universale affermativa (universalis affirmativa)"
+  },
+  {
+    "id": "log-029",
+    "file": "Wikipedia_Quadrato-delle-opposizioni.txt",
+    "frase": "la particolare negativa (particularis negativa)"
+  },
+  {
+    "id": "log-030",
+    "file": "Wikipedia_Quadrato-delle-opposizioni.txt",
+    "frase": "Esempi di contraddizioni sono 'ogni uomo è bianco' e 'qualche uomo non è bianco'"
+  },
+  {
+    "id": "log-031",
+    "file": "Wikipedia_Quadrato-delle-opposizioni.txt",
+    "frase": "sono tali che entrambe non possono, allo stesso tempo, essere vere"
+  },
+  {
+    "id": "log-032",
+    "file": "Wikipedia_Fallacia.txt",
+    "frase": "Argumentum ad hominem"
+  },
+  {
+    "id": "log-033",
+    "file": "Wikipedia_Fallacia.txt",
+    "frase": "premessa è già contenuta la conclusione"
+  },
+  {
+    "id": "log-034",
+    "file": "Wikipedia_Fallacia.txt",
+    "frase": "Esempio: Hai smesso di rapinare banche?"
+  },
+  {
+    "id": "log-035",
+    "file": "Wikipedia_Paradosso-del-mentitore.txt",
+    "frase": "data una proposizione autonegante come \"Questa frase è falsa\""
+  },
+  {
+    "id": "log-036",
+    "file": "Wikipedia_Paradosso-del-mentitore.txt",
+    "frase": "Eubulide di Mileto"
+  },
+  {
+    "id": "log-037",
+    "file": "Wikipedia_Insieme.txt",
+    "frase": "è data dall'insieme formato da tutti gli elementi che appartengono sia"
+  },
+  {
+    "id": "log-038",
+    "file": "Wikipedia_Insieme.txt",
+    "frase": "Insieme vuoto è l'insieme che non contiene nessun elemento"
+  },
+  {
+    "id": "log-039",
+    "file": "Wikipedia_Insieme.txt",
+    "frase": "quando tutti gli elementi di A"
+  },
+  {
+    "id": "log-040",
+    "file": "Wikipedia_Insieme.txt",
+    "frase": "L'intersezione di due insiemi"
+  },
+  {
+    "id": "log-041",
+    "file": "Wikipedia_Insieme.txt",
+    "frase": "Le principali operazioni tra insiemi sono"
+  },
+  {
+    "id": "log-042",
+    "file": "Wikipedia_Diagramma-di-Venn.txt",
+    "frase": "mostra tutte le possibili relazioni logiche tra una collezione finita di insiemi"
+  },
+  {
+    "id": "log-043",
+    "file": "Wikipedia_Diagramma-di-Venn.txt",
+    "frase": "un diagramma di Venn (detto anche diagramma di Eulero-Venn)"
+  },
+  {
+    "id": "log-044",
+    "file": "Wikipedia_Diagramma-di-Venn.txt",
+    "frase": "proposto nel 1880 dal matematico inglese John Venn"
+  },
+  {
+    "id": "log-045",
+    "file": "Wikipedia_Principio-dei-cassetti.txt",
+    "frase": "se n+k oggetti sono messi in n cassetti, allora almeno un cassetto deve contenere più di un oggetto"
+  },
+  {
+    "id": "log-046",
+    "file": "Wikipedia_Principio-dei-cassetti.txt",
+    "frase": "allora almeno un cassetto deve contenere più di un oggetto"
+  },
+  {
+    "id": "log-047",
+    "file": "Wikipedia_Principio-dei-cassetti.txt",
+    "frase": "esplicitato per la prima volta da Dirichlet nel 1834"
+  },
+  {
+    "id": "log-048",
+    "file": "Wikipedia_Progressione-aritmetica.txt",
+    "frase": "la differenza tra ciascun termine (o elemento) della successione e il suo precedente sia una costante"
+  },
+  {
+    "id": "log-049",
+    "file": "Wikipedia_Progressione-aritmetica.txt",
+    "frase": "la differenza tra ciascun termine (o elemento) della successione e il suo precedente sia una costante"
+  },
+  {
+    "id": "log-050",
+    "file": "Wikipedia_Progressione-geometrica.txt",
+    "frase": "il rapporto tra un elemento ed il suo precedente sia sempre costante"
+  },
+  {
+    "id": "log-051",
+    "file": "Wikipedia_Progressione-geometrica.txt",
+    "frase": "il rapporto tra un elemento ed il suo precedente sia sempre costante"
+  },
+  {
+    "id": "log-052",
+    "file": "Wikipedia_Progressione-geometrica.txt",
+    "frase": "il rapporto tra un elemento ed il suo precedente sia sempre costante"
+  },
+  {
+    "id": "log-053",
+    "file": "Wikipedia_Progressione-geometrica.txt",
+    "frase": "il rapporto tra un elemento ed il suo precedente sia sempre costante"
+  },
+  {
+    "id": "log-054",
+    "file": "Wikipedia_Progressione-aritmetica.txt",
+    "frase": "Tale costante viene detta ragione della progressione"
+  },
+  {
+    "id": "log-055",
+    "file": "Wikipedia_Progressione-aritmetica.txt",
+    "frase": "La somma dei numeri di una progressione aritmetica finita si chiama serie aritmetica"
+  },
+  {
+    "id": "log-056",
+    "file": "Wikipedia_Progressione-aritmetica.txt",
+    "frase": "la differenza tra ciascun termine (o elemento) della successione e il suo precedente sia una costante"
+  },
+  {
+    "id": "log-057",
+    "file": "Wikipedia_Progressione-aritmetica.txt",
+    "frase": "la differenza tra ciascun termine (o elemento) della successione e il suo precedente sia una costante"
+  },
+  {
+    "id": "log-058",
+    "file": "Wikipedia_Progressione-aritmetica.txt",
+    "frase": "la differenza tra ciascun termine (o elemento) della successione e il suo precedente sia una costante"
+  },
+  {
+    "id": "log-059",
+    "file": "Wikipedia_Successione-di-Fibonacci.txt",
+    "frase": "ciascun numero è la somma dei due precedenti"
+  },
+  {
+    "id": "log-060",
+    "file": "Wikipedia_Successione-di-Fibonacci.txt",
+    "frase": "ciascun numero è la somma dei due precedenti"
+  },
+  {
+    "id": "log-061",
+    "file": "Wikipedia_Successione-di-Fibonacci.txt",
+    "frase": "ciascun numero è la somma dei due precedenti"
+  },
+  {
+    "id": "log-062",
+    "file": "Wikipedia_Successione-di-Fibonacci.txt",
+    "frase": "Nel 1202 il matematico pisano Leonardo Fibonacci pubblicò il Liber abbaci"
+  },
+  {
+    "id": "log-063",
+    "file": "Wikipedia_Progressione-geometrica.txt",
+    "frase": "il rapporto tra un elemento ed il suo precedente sia sempre costante"
+  },
+  {
+    "id": "log-064",
+    "file": "Wikipedia_Progressione-geometrica.txt",
+    "frase": "il rapporto tra un elemento ed il suo precedente sia sempre costante"
+  },
+  {
+    "id": "log-065",
+    "file": "Wikipedia_Progressione-aritmetica.txt",
+    "frase": "Tale costante viene detta ragione della progressione"
+  },
+  {
+    "id": "log-066",
+    "file": "Wikipedia_Fattoriale.txt",
+    "frase": "il prodotto dei numeri interi positivi minori o uguali a tale numero"
+  },
+  {
+    "id": "log-067",
+    "file": "Wikipedia_Fattoriale.txt",
+    "frase": "per la convenzione del prodotto vuoto si definisce inoltre"
+  },
+  {
+    "id": "log-068",
+    "file": "Wikipedia_Fattoriale.txt",
+    "frase": "il prodotto dei numeri interi positivi minori o uguali a tale numero"
+  },
+  {
+    "id": "log-069",
+    "file": "Wikipedia_Fattoriale.txt",
+    "frase": "La notazione con il punto esclamativo è stata introdotta nel 1807 da Christian Kramp"
+  },
+  {
+    "id": "log-070",
+    "file": "Wikipedia_Calcolo-combinatorio.txt",
+    "frase": "In quanti modi possibili si può anagrammare la parola"
+  },
+  {
+    "id": "log-071",
+    "file": "Wikipedia_Calcolo-combinatorio.txt",
+    "frase": "Una permutazione di un insieme di oggetti è una presentazione ordinata"
+  },
+  {
+    "id": "log-072",
+    "file": "Wikipedia_Calcolo-combinatorio.txt",
+    "frase": "se l'ordinamento è importante"
+  },
+  {
+    "id": "log-073",
+    "file": "Wikipedia_Calcolo-combinatorio.txt",
+    "frase": "combinazione semplice una presentazione di elementi di un insieme nella quale non ha importanza l'ordine dei componenti"
+  },
+  {
+    "id": "log-074",
+    "file": "Wikipedia_Calcolo-combinatorio.txt",
+    "frase": "combinazione semplice una presentazione di elementi di un insieme nella quale non ha importanza l'ordine dei componenti"
+  },
+  {
+    "id": "log-075",
+    "file": "Wikipedia_Calcolo-combinatorio.txt",
+    "frase": "combinazione semplice una presentazione di elementi di un insieme nella quale non ha importanza l'ordine dei componenti"
+  },
+  {
+    "id": "log-076",
+    "file": "Wikipedia_Calcolo-combinatorio.txt",
+    "frase": "se si possono avere più ripetizioni di uno stesso oggetto"
+  },
+  {
+    "id": "log-077",
+    "file": "Wikipedia_Calcolo-combinatorio.txt",
+    "frase": "se si possono avere più ripetizioni di uno stesso oggetto"
+  },
+  {
+    "id": "log-078",
+    "file": "Wikipedia_Calcolo-combinatorio.txt",
+    "frase": "combinazione semplice una presentazione di elementi di un insieme nella quale non ha importanza l'ordine dei componenti"
+  },
+  {
+    "id": "log-079",
+    "file": "Wikipedia_Calcolo-combinatorio.txt",
+    "frase": "il primo elemento della configurazione può essere scelto in"
+  },
+  {
+    "id": "log-080",
+    "file": "Wikipedia_Probabilità.txt",
+    "frase": "il rapporto tra casi favorevoli e casi possibili"
+  },
+  {
+    "id": "log-081",
+    "file": "Wikipedia_Probabilità.txt",
+    "frase": "il rapporto tra casi favorevoli e casi possibili"
+  },
+  {
+    "id": "log-082",
+    "file": "Wikipedia_Probabilità.txt",
+    "frase": "il rapporto tra casi favorevoli e casi possibili"
+  },
+  {
+    "id": "log-083",
+    "file": "Wikipedia_Probabilità.txt",
+    "frase": "il rapporto tra casi favorevoli e casi possibili"
+  },
+  {
+    "id": "log-084",
+    "file": "Wikipedia_Probabilità.txt",
+    "frase": "il rapporto tra casi favorevoli e casi possibili"
+  },
+  {
+    "id": "log-085",
+    "file": "Wikipedia_Probabilità.txt",
+    "frase": "il rapporto tra casi favorevoli e casi possibili"
+  },
+  {
+    "id": "log-086",
+    "file": "Wikipedia_Probabilità.txt",
+    "frase": "il rapporto tra casi favorevoli e casi possibili"
+  },
+  {
+    "id": "log-087",
+    "file": "Wikipedia_Probabilità.txt",
+    "frase": "il rapporto tra casi favorevoli e casi possibili"
+  },
+  {
+    "id": "log-088",
+    "file": "Wikipedia_Probabilità.txt",
+    "frase": "evento impossibile (ottenere 1 come somma dal lancio di due dadi)"
+  },
+  {
+    "id": "log-089",
+    "file": "Wikipedia_Probabilità.txt",
+    "frase": "detti evento certo"
+  },
+  {
+    "id": "log-090",
+    "file": "Wikipedia_Probabilità.txt",
+    "frase": "la probabilità del verificarsi di uno di due eventi incompatibili"
+  },
+  {
+    "id": "log-091",
+    "file": "Wikipedia_Probabilità.txt",
+    "frase": "vengono definiti indipendenti stocasticamente"
+  },
+  {
+    "id": "log-092",
+    "file": "Wikipedia_Probabilità.txt",
+    "frase": "La nascita del concetto moderno di probabilità viene attribuita a Pascal e Fermat"
+  },
+  {
+    "id": "log-093",
+    "file": "Wikipedia_Numero-primo.txt",
+    "frase": "L'unico numero primo pari è 2"
+  },
+  {
+    "id": "log-094",
+    "file": "Wikipedia_Numero-primo.txt",
+    "frase": "un numero intero positivo che abbia esattamente due divisori distinti"
+  },
+  {
+    "id": "log-095",
+    "file": "Wikipedia_Numero-primo.txt",
+    "frase": "La successione dei numeri primi comincia con 2, 3, 5, 7, 11, 13, 17, 19"
+  },
+  {
+    "id": "log-096",
+    "file": "Wikipedia_Numero-primo.txt",
+    "frase": "un numero naturale maggiore di 1 che sia divisibile solamente per 1 e per sé stesso"
+  },
+  {
+    "id": "log-097",
+    "file": "Wikipedia_Numero-primo.txt",
+    "frase": "I primi sono inoltre infiniti"
+  },
+  {
+    "id": "log-098",
+    "file": "Wikipedia_Media-statistica.txt",
+    "frase": "con il termine media si intende comunemente la media aritmetica"
+  },
+  {
+    "id": "log-099",
+    "file": "Wikipedia_Media-statistica.txt",
+    "frase": "con il termine media si intende comunemente la media aritmetica"
+  },
+  {
+    "id": "log-100",
+    "file": "Wikipedia_Media-statistica.txt",
+    "frase": "media aritmetica ponderata (o media pesata) viene calcolata sommando i valori in analisi"
+  },
+  {
+    "id": "log-101",
+    "file": "MatematicaC3_Logica.txt",
+    "frase": "è un operatore che, a differenza dei precedenti, non lega più proposizioni ma agisce su un'unica proposizione"
+  },
+  {
+    "id": "log-102",
+    "file": "Wikipedia_Logica-proposizionale.txt",
+    "frase": "v(x↔y) = V se e solo se v(x) = v(y)"
+  },
+  {
+    "id": "log-103",
+    "file": "Wikipedia_Logica-proposizionale.txt",
+    "frase": "v(x→y) = V se e solo se v(x) = F oppure v(y) = V"
+  },
+  {
+    "id": "log-104",
+    "file": "MatematicaC3_Logica.txt",
+    "frase": "l'implicazione q ⇒ p si dice inversa di p ⇒ q"
+  },
+  {
+    "id": "log-105",
+    "file": "MatematicaC3_Logica.txt",
+    "frase": "l'implicazione ¬p ⇒ ¬q si dice contraria di p ⇒ q"
+  },
+  {
+    "id": "log-106",
+    "file": "MatematicaC3_Logica.txt",
+    "frase": "si dice contronominale (o controinversa) di p ⇒ q"
+  },
+  {
+    "id": "log-107",
+    "file": "MatematicaC3_Esercizi-logica.txt",
+    "frase": "Se un numero è multiplo di 10 allora è pari"
+  },
+  {
+    "id": "log-108",
+    "file": "MatematicaC3_Esercizi-logica.txt",
+    "frase": "Dimostra con un controesempio che non è vera l'affermazione"
+  },
+  {
+    "id": "log-109",
+    "file": "MatematicaC3_Esercizi-logica.txt",
+    "frase": "Almeno una volta sono uscito con l'ombrello ed è piovuto"
+  },
+  {
+    "id": "log-110",
+    "file": "MatematicaC3_Esercizi-logica.txt",
+    "frase": "Tutti hanno portato i soldi per la gita"
+  },
+  {
+    "id": "log-111",
+    "file": "MatematicaC3_Esercizi-logica.txt",
+    "frase": "In ogni scuola c'è almeno una classe in cui sono tutti promossi"
+  },
+  {
+    "id": "log-112",
+    "file": "MatematicaC3_Esercizi-logica.txt",
+    "frase": "Mario è cittadino romano"
+  },
+  {
+    "id": "log-113",
+    "file": "MatematicaC3_Esercizi-logica.txt",
+    "frase": "18 è numero dispari"
+  },
+  {
+    "id": "log-114",
+    "file": "MatematicaC3_Esercizi-logica.txt",
+    "frase": "è equivalente alla proposizione p Y q"
+  },
+  {
+    "id": "log-115",
+    "file": "MatematicaC3_Esercizi-logica.txt",
+    "frase": "Quali delle seguenti frasi sono proposizioni logiche?"
+  },
+  {
+    "id": "log-116",
+    "file": "MatematicaC3_Esercizi-logica.txt",
+    "frase": "Io non sono né la più giovane né la più anziana"
+  },
+  {
+    "id": "log-117",
+    "file": "MatematicaC3_Esercizi-logica.txt",
+    "frase": "Paolo dice di non essere il capitano"
+  },
+  {
+    "id": "log-118",
+    "file": "MatematicaC3_Esercizi-logica.txt",
+    "frase": "Il colpevole è un maschio"
+  },
+  {
+    "id": "log-119",
+    "file": "MatematicaC3_Esercizi-logica.txt",
+    "frase": "su Papilla sono tutti grassi e sporchi"
+  },
+  {
+    "id": "log-120",
+    "file": "MatematicaC3_Esercizi-logica.txt",
+    "frase": "Se il pomeriggio ho giocato a tennis, la sera ho fame"
+  },
+  {
+    "id": "log-121",
+    "file": "MatematicaC3_Esercizi-logica.txt",
+    "frase": "i cavalieri, che dicono sempre la verità, i furfanti, che mentono sempre"
+  },
+  {
+    "id": "log-122",
+    "file": "MatematicaC3_Esercizi-logica.txt",
+    "frase": "Io ho tutte e cinque le carte di cuori"
+  },
+  {
+    "id": "log-123",
+    "file": "Wikipedia_Principio-di-non-contraddizione.txt",
+    "frase": "il principio di non-contraddizione afferma la falsità di ogni proposizione implicante che una certa proposizione A e la sua negazione"
+  },
+  {
+    "id": "log-124",
+    "file": "Wikipedia_Principio-di-non-contraddizione.txt",
+    "frase": "ex falso sequitur quodlibet"
+  },
+  {
+    "id": "log-125",
+    "file": "Wikipedia_Tertium-non-datur.txt",
+    "frase": "principio logico del terzo escluso"
+  },
+  {
+    "id": "log-126",
+    "file": "Wikipedia_Abduzione.txt",
+    "frase": "un sillogismo in cui la premessa maggiore è certa mentre quella minore è solamente probabile"
+  },
+  {
+    "id": "log-127",
+    "file": "Wikipedia_Deduzione.txt",
+    "frase": "fa derivare una certa conclusione da premesse più generiche"
+  },
+  {
+    "id": "log-128",
+    "file": "Wikipedia_Induzione.txt",
+    "frase": "cerca di stabilire una legge universale partendo da singoli casi particolari"
+  },
+  {
+    "id": "log-129",
+    "file": "Wikipedia_Deduzione.txt",
+    "frase": "L'introduzione del concetto di deduzione si deve ad Aristotele"
+  },
+  {
+    "id": "log-130",
+    "file": "Wikipedia_Sillogismo.txt",
+    "frase": "(che funge da predicato nella conclusione)"
+  },
+  {
+    "id": "log-131",
+    "file": "Wikipedia_Sillogismo.txt",
+    "frase": "tutti i dolci sono alimenti e tutte le torte sono dolci"
+  },
+  {
+    "id": "log-132",
+    "file": "Wikipedia_Sillogismo.txt",
+    "frase": "universali negative (\"Nessun A è B\")"
+  },
+  {
+    "id": "log-133",
+    "file": "Wikipedia_Sillogismo.txt",
+    "frase": "particolari affermative (\"Qualche A è B\")"
+  },
+  {
+    "id": "log-134",
+    "file": "Wikipedia_Sillogismo.txt",
+    "frase": "non può darsi il caso in cui le proposizioni siano vere e la conclusione sia falsa"
+  },
+  {
+    "id": "log-135",
+    "file": "Wikipedia_Sillogismo.txt",
+    "frase": "Tale sillogismo è non valido logicamente"
+  },
+  {
+    "id": "log-136",
+    "file": "Wikipedia_Sillogismo.txt",
+    "frase": "La validità di un sillogismo non dipende dalla verità delle affermazioni che lo compongono"
+  },
+  {
+    "id": "log-137",
+    "file": "Wikipedia_Sillogismo.txt",
+    "frase": "La posizione del termine medio nelle premesse determina la figura del sillogismo"
+  },
+  {
+    "id": "log-138",
+    "file": "Wikipedia_Sillogismo.txt",
+    "frase": "Aristotele ne classificò tre, gli scolastici ne aggiunsero una quarta"
+  },
+  {
+    "id": "log-139",
+    "file": "Wikipedia_Sillogismo.txt",
+    "frase": "Non sono enunciati di tipo dichiarativo le preghiere, le esclamazioni, le domande"
+  },
+  {
+    "id": "log-140",
+    "file": "Wikipedia_Sillogismo.txt",
+    "frase": "La proprietà transitiva è l'esempio più elementare del sillogismo"
+  },
+  {
+    "id": "log-141",
+    "file": "Wikipedia_Sillogismo.txt",
+    "frase": "sono date per probabili e non per certe"
+  },
+  {
+    "id": "log-142",
+    "file": "Wikipedia_Quadrato-delle-opposizioni.txt",
+    "frase": "possono essere entrambi veri ma non possono essere entrambi falsi"
+  },
+  {
+    "id": "log-143",
+    "file": "Wikipedia_Fallacia.txt",
+    "frase": "Pendio scivoloso: si commette questo errore quando si prevede il verificarsi di un evento"
+  },
+  {
+    "id": "log-144",
+    "file": "Wikipedia_Paradosso.txt",
+    "frase": "è, genericamente, la descrizione di un fatto che contraddice l'opinione comune"
+  },
+  {
+    "id": "log-145",
+    "file": "Wikipedia_Problema-di-Monty-Hall.txt",
+    "frase": "portandole da 1/3 a 2/3"
+  },
+  {
+    "id": "log-146",
+    "file": "Wikipedia_Problema-di-Monty-Hall.txt",
+    "frase": "legato al gioco a premi statunitense Let's Make a Deal"
+  },
+  {
+    "id": "log-147",
+    "file": "Wikipedia_Torre-di-Hanoi.txt",
+    "frase": "per spostare 3 dischi il numero minimo di mosse è 7"
+  },
+  {
+    "id": "log-148",
+    "file": "Wikipedia_Torre-di-Hanoi.txt",
+    "frase": "il numero minimo di mosse necessarie per completare il gioco"
+  },
+  {
+    "id": "log-149",
+    "file": "Wikipedia_Torre-di-Hanoi.txt",
+    "frase": "Il gioco fu inventato nel 1883 dal matematico francese"
+  },
+  {
+    "id": "log-150",
+    "file": "Wikipedia_Numero-perfetto.txt",
+    "frase": "un numero perfetto è un numero naturale che è uguale alla somma dei suoi divisori positivi"
+  },
+  {
+    "id": "log-151",
+    "file": "Wikipedia_Criteri-di-divisibilità.txt",
+    "frase": "Un numero è divisibile per 3 se la somma di tutte le sue cifre"
+  },
+  {
+    "id": "log-152",
+    "file": "Wikipedia_Criteri-di-divisibilità.txt",
+    "frase": "Un numero è divisibile per 9 se la somma delle sue cifre è divisibile per nove"
+  },
+  {
+    "id": "log-153",
+    "file": "Wikipedia_Criteri-di-divisibilità.txt",
+    "frase": "Un numero è divisibile per 4 se le ultime due cifre sono due zeri oppure formano un numero multiplo di 4"
+  },
+  {
+    "id": "log-154",
+    "file": "Wikipedia_Criteri-di-divisibilità.txt",
+    "frase": "Un numero è divisibile per 11 se la differenza tra la somma delle sue cifre di posto dispari e la somma delle sue cifre di posto pari"
+  },
+  {
+    "id": "log-155",
+    "file": "Wikipedia_Criteri-di-divisibilità.txt",
+    "frase": "Un numero è divisibile per 5 se la sua ultima cifra è 0 oppure 5"
+  },
+  {
+    "id": "log-156",
+    "file": "Wikipedia_Criteri-di-divisibilità.txt",
+    "frase": "le sue ultime 2 cifre a destra sono 00, 25, 50 o 75"
+  },
+  {
+    "id": "log-157",
+    "file": "Wikipedia_Massimo-comun-divisore.txt",
+    "frase": "è il numero naturale più grande per il quale entrambi possono essere divisi esattamente"
+  },
+  {
+    "id": "log-158",
+    "file": "Wikipedia_Massimo-comun-divisore.txt",
+    "frase": "Il massimo comun divisore è utile per ridurre una frazione ai minimi termini"
+  },
+  {
+    "id": "log-159",
+    "file": "Wikipedia_Massimo-comun-divisore.txt",
+    "frase": "Due numeri si dicono coprimi, o primi tra loro"
+  },
+  {
+    "id": "log-160",
+    "file": "Wikipedia_Minimo-comune-multiplo.txt",
+    "frase": "è il più piccolo numero intero positivo multiplo sia di"
+  },
+  {
+    "id": "log-161",
+    "file": "Wikipedia_Minimo-comune-multiplo.txt",
+    "frase": "è il più piccolo numero intero positivo multiplo sia di"
+  },
+  {
+    "id": "log-162",
+    "file": "Wikipedia_Minimo-comune-multiplo.txt",
+    "frase": "è il più piccolo numero intero positivo multiplo sia di"
+  },
+  {
+    "id": "log-163",
+    "file": "Wikipedia_Minimo-comune-multiplo.txt",
+    "frase": "detto minimo comune denominatore, è proprio il minimo comune multiplo dei denominatori"
+  },
+  {
+    "id": "log-164",
+    "file": "Wikipedia_Percentuale.txt",
+    "frase": "Il 32% di 2000 è calcolato come"
+  },
+  {
+    "id": "log-165",
+    "file": "Wikipedia_Percentuale.txt",
+    "frase": "La formula per calcolare la variazione percentuale"
+  },
+  {
+    "id": "log-166",
+    "file": "Wikipedia_Percentuale.txt",
+    "frase": "il tasso è aumentato di 1 punto percentuale"
+  },
+  {
+    "id": "log-167",
+    "file": "Wikipedia_Percentuale.txt",
+    "frase": "Le percentuali non sono quasi mai sommabili perché si riferiscono a basi differenti"
+  },
+  {
+    "id": "log-168",
+    "file": "Wikipedia_Percentuale.txt",
+    "frase": "i binari subiscono una riduzione del 33,3%"
+  },
+  {
+    "id": "log-169",
+    "file": "Wikipedia_Percentuale.txt",
+    "frase": "in cento parti uguali, e prenderne esattamente"
+  },
+  {
+    "id": "log-170",
+    "file": "Wikipedia_Percentuale.txt",
+    "frase": "quarantacinque per cento"
+  },
+  {
+    "id": "log-171",
+    "file": "Wikipedia_Percentuale.txt",
+    "frase": "La formula per calcolare la variazione percentuale"
+  },
+  {
+    "id": "log-172",
+    "file": "Wikipedia_Percentuale.txt",
+    "frase": "una percentuale è un numero o un rapporto espresso sotto forma di frazione in centesimi"
+  },
+  {
+    "id": "log-173",
+    "file": "Wikipedia_Percentuale.txt",
+    "frase": "che rappresenta il totale con il numero 1000"
+  },
+  {
+    "id": "log-174",
+    "file": "Wikipedia_Successione-di-Fibonacci.txt",
+    "frase": "ciascun numero è la somma dei due precedenti"
+  },
+  {
+    "id": "log-175",
+    "file": "Wikipedia_Numero-primo.txt",
+    "frase": "La successione dei numeri primi comincia con 2, 3, 5, 7, 11, 13"
+  },
+  {
+    "id": "log-176",
+    "file": "Wikipedia_Fattoriale.txt",
+    "frase": "il prodotto dei numeri interi positivi minori o uguali a tale numero"
+  },
+  {
+    "id": "log-177",
+    "file": "Wikipedia_Progressione-geometrica.txt",
+    "frase": "il rapporto tra un elemento ed il suo precedente sia sempre costante"
+  },
+  {
+    "id": "log-178",
+    "file": "Wikipedia_Progressione-aritmetica.txt",
+    "frase": "la differenza tra ciascun termine (o elemento) della successione e il suo precedente sia una costante"
+  },
+  {
+    "id": "log-179",
+    "file": "Wikipedia_Principio-dei-cassetti.txt",
+    "frase": "se n+k oggetti sono messi in n cassetti"
+  },
+  {
+    "id": "log-180",
+    "file": "Wikipedia_Principio-dei-cassetti.txt",
+    "frase": "almeno un cassetto deve contenere più di un oggetto"
+  },
+  {
+    "id": "log-181",
+    "file": "Wikipedia_Diagramma-di-Venn.txt",
+    "frase": "mostra tutte le possibili relazioni logiche tra una collezione finita di insiemi"
+  },
+  {
+    "id": "log-182",
+    "file": "Wikipedia_Calcolo-combinatorio.txt",
+    "frase": "se si possono avere più ripetizioni di uno stesso oggetto"
+  },
+  {
+    "id": "log-183",
+    "file": "Wikipedia_Calcolo-combinatorio.txt",
+    "frase": "combinazione semplice una presentazione di elementi di un insieme nella quale non ha importanza l'ordine dei componenti"
+  },
+  {
+    "id": "log-184",
+    "file": "Wikipedia_Calcolo-combinatorio.txt",
+    "frase": "il primo elemento della configurazione può essere scelto in"
+  },
+  {
+    "id": "log-185",
+    "file": "Wikipedia_Calcolo-combinatorio.txt",
+    "frase": "se l'ordinamento è importante"
+  },
+  {
+    "id": "log-186",
+    "file": "Wikipedia_Calcolo-combinatorio.txt",
+    "frase": "se l'ordinamento è importante"
+  },
+  {
+    "id": "log-187",
+    "file": "Wikipedia_Problema-di-Monty-Hall.txt",
+    "frase": "portandole da 1/3 a 2/3"
+  },
+  {
+    "id": "log-188",
+    "file": "Wikipedia_Probabilità.txt",
+    "frase": "il rapporto tra casi favorevoli e casi possibili"
+  },
+  {
+    "id": "log-189",
+    "file": "Wikipedia_Probabilità.txt",
+    "frase": "il rapporto tra casi favorevoli e casi possibili"
+  },
+  {
+    "id": "log-190",
+    "file": "Wikipedia_Probabilità.txt",
+    "frase": "il rapporto tra casi favorevoli e casi possibili"
+  },
+  {
+    "id": "log-191",
+    "file": "Wikipedia_Probabilità.txt",
+    "frase": "il rapporto tra casi favorevoli e casi possibili"
+  },
+  {
+    "id": "log-192",
+    "file": "Wikipedia_Probabilità.txt",
+    "frase": "la probabilità di uscita delle somme 10 e 11 sia più probabile dell'uscita del 9 e del 12"
+  },
+  {
+    "id": "log-193",
+    "file": "Wikipedia_Probabilità.txt",
+    "frase": "Nel 1657 Huygens scrisse"
+  },
+  {
+    "id": "log-194",
+    "file": "Wikipedia_Probabilità.txt",
+    "frase": "Nel 1713 viene pubblicato postumo Ars conjectandi di Jakob Bernoulli"
+  },
+  {
+    "id": "log-195",
+    "file": "Wikipedia_Deduzione.txt",
+    "frase": "Socrate è mortale"
+  },
+  {
+    "id": "log-196",
+    "file": "Wikipedia_Induzione.txt",
+    "frase": "il procedimento che dai particolari porta all'universale"
+  },
+  {
+    "id": "log-197",
+    "file": "Wikipedia_Logica-proposizionale.txt",
+    "frase": "contraddizione se non è soddisfacibile"
+  },
+  {
+    "id": "log-198",
+    "file": "Wikipedia_Logica-proposizionale.txt",
+    "frase": "si dice soddisfacibile se esiste una valutazione v tale che v(A)=V"
+  },
+  {
+    "id": "log-199",
+    "file": "MatematicaC3_Esercizi-logica.txt",
+    "frase": "Chiara è arrivata prima di Barbara"
+  },
+  {
+    "id": "log-200",
+    "file": "MatematicaC3_Esercizi-logica.txt",
+    "frase": "Il vecchio afferma"
+  }
+]

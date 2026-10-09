@@ -1,0 +1,3419 @@
+[
+  {
+    "materia": "italiano",
+    "id": "ita-001",
+    "argomento": "Ortografia",
+    "livello": 1,
+    "testo": "Quale grafia è corretta?",
+    "opzioni": [
+      "qual è",
+      "quale'è",
+      "qualè",
+      "qual'è"
+    ],
+    "corretta": 0,
+    "spiegazione": "«Qual» è un troncamento, non un'elisione: non vuole l'apostrofo. Lo stesso vale per «tal è».",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-002",
+    "argomento": "Ortografia",
+    "livello": 2,
+    "testo": "Quale grafia è corretta?",
+    "opzioni": [
+      "poveruomo",
+      "pover'uomo",
+      "pover uomo",
+      "pove'r uomo"
+    ],
+    "corretta": 1,
+    "spiegazione": "In «pover'uomo» c'è elisione: l'apostrofo è obbligatorio.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-003",
+    "argomento": "Ortografia",
+    "livello": 2,
+    "testo": "In quale fenomeno l'uso dell'apostrofo è sempre obbligatorio?",
+    "opzioni": [
+      "Nel troncamento",
+      "Nella sincope",
+      "Nell'elisione",
+      "Nell'aferesi"
+    ],
+    "corretta": 2,
+    "spiegazione": "Con l'elisione l'apostrofo è obbligatorio; nel troncamento e nell'aferesi solo in alcuni casi.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-004",
+    "argomento": "Ortografia",
+    "livello": 2,
+    "testo": "Perché si scrive «un'artista» con l'apostrofo e «un artista» senza?",
+    "opzioni": [
+      "Sono due grafie equivalenti",
+      "Dipende solo dalla parola che segue",
+      "«Un'artista» è un errore",
+      "Con l'apostrofo indica una donna (elisione di «una»), senza un uomo"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'apostrofo distingue l'elisione di «una» (femminile) dal troncamento di «uno» (maschile).",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-005",
+    "argomento": "Ortografia",
+    "livello": 1,
+    "testo": "Perché il verbo avere si scrive con la «h» in «ho, hai, ha, hanno»?",
+    "opzioni": [
+      "Per distinguerlo da o, ai, a, anno",
+      "È un residuo senza alcuna funzione",
+      "Per ragioni di pronuncia aspirata",
+      "Per indicare l'accento"
+    ],
+    "corretta": 0,
+    "spiegazione": "La h distingue le voci del verbo avere dalla congiunzione o, dalla preposizione ai e a, dal sostantivo anno.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-006",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "In quali parole il grado intensivo di «qu» si scrive con «qqu» invece che con «cqu»?",
+    "opzioni": [
+      "In tutte le parole che iniziano con «acqu-»",
+      "Solo in soqquadro, beqquadro (biqquadro) e derivati",
+      "In nessuna parola italiana",
+      "In tutti i verbi in -quare"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il grado intensivo si scrive normalmente «cqu» (acqua, nacque); «qqu» solo in soqquadro, beqquadro e derivati.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-007",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Quale plurale è corretto?",
+    "opzioni": [
+      "le valiggie",
+      "le valige",
+      "le valigie",
+      "le valigge"
+    ],
+    "corretta": 2,
+    "spiegazione": "Le parole in -cia e -gia atone mantengono la i al plurale se precedute da vocale (valigie, camicie), la perdono se precedute da consonante (arance, piogge).",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-008",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Quale plurale è corretto?",
+    "opzioni": [
+      "le arancie",
+      "le aranci",
+      "le arancee",
+      "le arance"
+    ],
+    "corretta": 3,
+    "spiegazione": "Se -cia è preceduto da consonante, al plurale la i cade: arancia → arance, pioggia → piogge.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-009",
+    "argomento": "Ortografia",
+    "livello": 2,
+    "testo": "Quale accento segna le vocali dal timbro più chiuso, come in «perché»?",
+    "opzioni": [
+      "L'accento acuto",
+      "L'accento circonflesso",
+      "L'accento grave",
+      "La dieresi"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'accento acuto segnala i suoni più chiusi (é, ó); il grave i suoni più aperti (à, è, ò). Si scrive quindi perché, poiché, affinché.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-010",
+    "argomento": "Ortografia",
+    "livello": 2,
+    "testo": "Su quali vocali si usa l'accento grave?",
+    "opzioni": [
+      "Su nessuna vocale nella scrittura moderna",
+      "Sui suoni più aperti (à, è, ò) e normalmente anche su ì e ù",
+      "Solo sulle vocali chiuse é e ó",
+      "Solo sulla î"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'accento grave segna i suoni più aperti à, è, ò e si usa di norma anche su ì e ù.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-011",
+    "argomento": "Ortografia",
+    "livello": 2,
+    "testo": "Quale grafia è corretta?",
+    "opzioni": [
+      "cquore",
+      "qore",
+      "cuore",
+      "quore"
+    ],
+    "corretta": 2,
+    "spiegazione": "Cuore si scrive con c; la q è sempre seguita da u più un'altra vocale (qua, que, qui, quo), ma non tutte le parole con questo suono si scrivono con q.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-012",
+    "argomento": "Ortografia",
+    "livello": 4,
+    "testo": "La lettera «q» in italiano è sempre seguita da:",
+    "opzioni": [
+      "una vocale qualsiasi senza u",
+      "la lettera h",
+      "una consonante doppia",
+      "u semiconsonantica più un'altra vocale"
+    ],
+    "corretta": 3,
+    "spiegazione": "La q compare solo nei nessi qua, que, qui, quo, con valore /kw/.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-013",
+    "argomento": "Morfologia",
+    "livello": 2,
+    "testo": "Quali sono i modi del verbo italiano?",
+    "opzioni": [
+      "Indicativo, congiuntivo, condizionale, imperativo, infinito, gerundio e participio",
+      "Indicativo, congiuntivo e imperativo",
+      "Attivo, passivo e riflessivo",
+      "Presente, passato e futuro"
+    ],
+    "corretta": 0,
+    "spiegazione": "I verbi si flettono per modo: indicativo, congiuntivo, condizionale, imperativo (finiti) e infinito, gerundio, participio (indefiniti). Presente, passato e futuro sono tempi.",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-014",
+    "argomento": "Morfologia",
+    "livello": 2,
+    "testo": "Come si distinguono le parole in grammatica rispetto alla flessione?",
+    "opzioni": [
+      "In proprie e comuni",
+      "In variabili (soggette a flessione) e invariabili",
+      "In primitive e derivate",
+      "In semplici e composte"
+    ],
+    "corretta": 1,
+    "spiegazione": "Le parole variabili cambiano forma (desinenza) secondo genere, numero, persona; le invariabili, come avverbi e preposizioni, no.",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-015",
+    "argomento": "Morfologia",
+    "livello": 3,
+    "testo": "Quale articolo indeterminativo si usa davanti a «iena»?",
+    "opzioni": [
+      "uno",
+      "un",
+      "una",
+      "un'"
+    ],
+    "corretta": 2,
+    "spiegazione": "«Un'» si usa davanti a vocale, ma non davanti a i semiconsonantica: quindi «una iena».",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-016",
+    "argomento": "Sintassi",
+    "livello": 3,
+    "testo": "Che cos'è un «periodo» nell'analisi della frase?",
+    "opzioni": [
+      "Un gruppo di parole senza verbo",
+      "Una frase con un solo predicato",
+      "Il soggetto con i suoi complementi",
+      "Una frase complessa in cui ci sono due o più predicati"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il periodo è una frase complessa con due o più predicati; l'analisi logica studia la frase, l'analisi del periodo il rapporto tra le proposizioni.",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-017",
+    "argomento": "Sintassi",
+    "livello": 2,
+    "testo": "Che cosa individua l'analisi logica?",
+    "opzioni": [
+      "Le categorie sintattiche che costituiscono la frase (soggetto, predicato, complementi)",
+      "L'origine etimologica delle parole",
+      "Le parti del discorso di ogni parola",
+      "Il numero di sillabe"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'analisi grammaticale ha per oggetto le parole; l'analisi logica le funzioni sintattiche nella frase.",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-018",
+    "argomento": "Ortografia",
+    "livello": 5,
+    "testo": "In una circolare si legge: «Qual'è il termine? Un pò di pazienza, il modulo va compilato un'altra volta». Quanti errori di ortografia contiene?",
+    "opzioni": [
+      "Nessuno",
+      "Due: «qual'è» e «pò»",
+      "Uno: solo «qual'è»",
+      "Tre: «qual'è», «pò» e «un'altra»"
+    ],
+    "corretta": 1,
+    "spiegazione": "Si scrive «qual è» (troncamento, senza apostrofo) e «un po'» (apocope, con apostrofo). «Un'altra» è corretto: elisione di «una».",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-019",
+    "argomento": "Ortografia",
+    "livello": 2,
+    "testo": "Quanti grafemi conta l'alfabeto italiano propriamente detto (senza le lettere straniere)?",
+    "opzioni": [
+      "19",
+      "26",
+      "21",
+      "24"
+    ],
+    "corretta": 2,
+    "spiegazione": "A questi si aggiungono 5 lettere «straniere»: j, k, w, x, y.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-020",
+    "argomento": "Ortografia",
+    "livello": 2,
+    "testo": "Quali sono le lettere considerate «straniere» nell'alfabeto italiano?",
+    "opzioni": [
+      "h, q, z, x, y",
+      "a, e, i, o, u",
+      "b, d, g, k, w",
+      "j, k, w, x, y"
+    ],
+    "corretta": 3,
+    "spiegazione": "Sono usate soprattutto per parole di origine straniera.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-021",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Quali sono i trigrammi dell'italiano?",
+    "opzioni": [
+      "gli e sci",
+      "gn e sc",
+      "qu e cq",
+      "ch e gh"
+    ],
+    "corretta": 0,
+    "spiegazione": "I digrammi sono ch, ci, gh, gi, gl, gn, sc.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-022",
+    "argomento": "Ortografia",
+    "livello": 2,
+    "testo": "Che funzione ha la lettera «h» nei gruppi «ch» e «gh»?",
+    "opzioni": [
+      "Rende aspirato il suono",
+      "Indica il suono duro di c e g davanti a e e i",
+      "Non ha alcuna funzione",
+      "Indica una vocale lunga"
+    ],
+    "corretta": 1,
+    "spiegazione": "In italiano la h è muta: ha funzioni diacritiche e distintive.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-023",
+    "argomento": "Ortografia",
+    "livello": 2,
+    "testo": "Perché «hanno» (verbo avere) si scrive con la h?",
+    "opzioni": [
+      "Perché si pronuncia aspirato",
+      "Perché deriva dal greco",
+      "Per distinguerlo dal sostantivo «anno»",
+      "Per una regola di accentazione"
+    ],
+    "corretta": 2,
+    "spiegazione": "Allo stesso modo ho/o, hai/ai, ha/a.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-024",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Quale grafia è corretta davanti a una parola che inizia per «i»?",
+    "opzioni": [
+      "begl'occhi",
+      "gl'amici",
+      "gl'uomini",
+      "gl'italiani"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'elisione di «gli» è ammessa solo davanti a i-; davanti ad altre vocali si scrive per intero (begli occhi, gli amici).",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-025",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Quale di queste grafie è errata?",
+    "opzioni": [
+      "c'ha (per «ci ha»)",
+      "poc'anzi",
+      "anch'io",
+      "c'è"
+    ],
+    "corretta": 0,
+    "spiegazione": "«c'ha» e «c'offrì» sono considerate errate: si scrive «ci ha», «ci offrì».",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-026",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Quale grafia è corretta?",
+    "opzioni": [
+      "anch io",
+      "anch'io",
+      "anchio",
+      "anc'io"
+    ],
+    "corretta": 1,
+    "spiegazione": "Davanti a e- o i- la h è obbligatoria: anch'io, anch'egli.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-027",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Qual è il plurale corretto di «arancia»?",
+    "opzioni": [
+      "aranci",
+      "arancee",
+      "arance",
+      "arancie"
+    ],
+    "corretta": 2,
+    "spiegazione": "Le parole in -cia/-gia atone perdono la i al plurale se la c/g è preceduta da consonante (arance, piogge), la mantengono se preceduta da vocale (camicie, valigie).",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-028",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Qual è il plurale corretto di «valigia»?",
+    "opzioni": [
+      "valigee",
+      "valigi",
+      "valige",
+      "valigie"
+    ],
+    "corretta": 3,
+    "spiegazione": "Prima di -gia c'è una vocale (i), quindi la i si mantiene al plurale.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-029",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Quale di queste parole si scrive con la «i» dopo la c?",
+    "opzioni": [
+      "sufficiente",
+      "beneficente",
+      "conoscente",
+      "magnificente"
+    ],
+    "corretta": 0,
+    "spiegazione": "La i è etimologica nelle parole da -cientis (sufficiente, efficiente, cosciente); non c'è in beneficente, conoscente, magnificente.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-030",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Quale grafia è corretta?",
+    "opzioni": [
+      "superfice",
+      "superficie",
+      "superfige",
+      "superfece"
+    ],
+    "corretta": 1,
+    "spiegazione": "La i è etimologica (dal latino superficies), come in effigie e specie.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-031",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Quale grafia è oggi corretta?",
+    "opzioni": [
+      "pasegero",
+      "passegiero",
+      "passeggero",
+      "passeggiero"
+    ],
+    "corretta": 2,
+    "spiegazione": "Le forme in -ggiero (passeggiero, messaggiero, leggiero) sono antiquate.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-032",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Come si scrive correttamente?",
+    "opzioni": [
+      "ingegniere",
+      "inggegnere",
+      "ingeniere",
+      "ingegnere"
+    ],
+    "corretta": 3,
+    "spiegazione": "Si scrive senza i, anche se deriva dal suffisso -(i)ere.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-033",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Quale grafia è corretta?",
+    "opzioni": [
+      "cielo",
+      "ciello",
+      "celo (nel senso di firmamento)",
+      "cello"
+    ],
+    "corretta": 0,
+    "spiegazione": "Cieco e cielo mantengono la i (residuo di -ae- latino); «celo» è voce del verbo celare.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-034",
+    "argomento": "Ortografia",
+    "livello": 2,
+    "testo": "Davanti a b e p, quale lettera si usa di regola per la nasale?",
+    "opzioni": [
+      "Si raddoppia la consonante",
+      "La m",
+      "La n",
+      "La gn"
+    ],
+    "corretta": 1,
+    "spiegazione": "Esempio: campo, bambino; fanno eccezione pochi composti come panpepato e benpensante.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-035",
+    "argomento": "Ortografia",
+    "livello": 2,
+    "testo": "Quale grafia è corretta?",
+    "opzioni": [
+      "aqua",
+      "accqua",
+      "acqua",
+      "aqqua"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il grado intensivo di qu si scrive -cqu-.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-036",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Quale parola si scrive con la «c» e non con la «q»?",
+    "opzioni": [
+      "quota",
+      "quindi",
+      "questo",
+      "cuore"
+    ],
+    "corretta": 3,
+    "spiegazione": "Scuola, cuore, cuoco, cuoio derivano dalla dittongazione di -ŏ- latina e si scrivono con c.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-037",
+    "argomento": "Ortografia",
+    "livello": 4,
+    "testo": "Quale parola si scrive con -cqui?",
+    "opzioni": [
+      "piacqui",
+      "naqui",
+      "taqui",
+      "giaqqui"
+    ],
+    "corretta": 0,
+    "spiegazione": "«Piacqui» viene dal latino PLACŬI.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-038",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Qual è l'unica parola italiana con -cc- prima di u + vocale?",
+    "opzioni": [
+      "sacculo",
+      "taccuino",
+      "acquisto",
+      "eccuo"
+    ],
+    "corretta": 1,
+    "spiegazione": "Taccuino si scrive con -cc- e non con -cq-.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-039",
+    "argomento": "Ortografia",
+    "livello": 2,
+    "testo": "Quale accento grafico si usa sulla «a» finale (es. carità)?",
+    "opzioni": [
+      "Il circonflesso",
+      "Solo l'accento acuto",
+      "Solo l'accento grave",
+      "Nessun accento"
+    ],
+    "corretta": 2,
+    "spiegazione": "Sulla a si usa solo il grave.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-040",
+    "argomento": "Ortografia",
+    "livello": 2,
+    "testo": "Quale accento richiede «perché»?",
+    "opzioni": [
+      "Il circonflesso",
+      "Nessun accento",
+      "L'accento grave (è)",
+      "L'accento acuto (é), perché la e è chiusa"
+    ],
+    "corretta": 3,
+    "spiegazione": "Su e e o si usa l'acuto per le vocali chiuse, il grave per quelle aperte (cioè).",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-041",
+    "argomento": "Ortografia",
+    "livello": 2,
+    "testo": "Quale di questi monosillabi NON vuole mai l'accento?",
+    "opzioni": [
+      "qui",
+      "più",
+      "già",
+      "può"
+    ],
+    "corretta": 0,
+    "spiegazione": "Qua e qui non vogliono mai l'accento.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-042",
+    "argomento": "Ortografia",
+    "livello": 2,
+    "testo": "Quando l'accento grafico è obbligatorio sulle parole di più sillabe?",
+    "opzioni": [
+      "Mai",
+      "Quando cade sulla vocale finale (es. città, perché)",
+      "Sempre sulla prima sillaba",
+      "Solo nelle parole straniere"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Ortografia italiana».",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-043",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Quale coppia mostra un accento distintivo su un monosillabo?",
+    "opzioni": [
+      "fa / fà",
+      "su / sù",
+      "dà (verbo dare) / da (preposizione)",
+      "qui / quì"
+    ],
+    "corretta": 2,
+    "spiegazione": "Hanno accento distintivo è, dà, dì, là, lì, né, sé, sì, tè, ché.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-044",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Su quale vocale finale si usa praticamente sempre l'accento grave (es. però, parlò)?",
+    "opzioni": [
+      "Su nessuna",
+      "Sulla i soltanto nel futuro",
+      "Sulla e",
+      "Sulla o"
+    ],
+    "corretta": 3,
+    "spiegazione": "La o tonica finale è quasi sempre aperta.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-045",
+    "argomento": "Ortografia",
+    "livello": 4,
+    "testo": "Quale ente ha codificato nel 1967 la norma sugli accenti acuto e grave?",
+    "opzioni": [
+      "L'UNI (Ente nazionale di unificazione)",
+      "La Treccani",
+      "L'Accademia della Crusca",
+      "Il Ministero dell'istruzione"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Ortografia italiana».",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-046",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Davanti a quali vocali «sc» indica il suono di «scena»?",
+    "opzioni": [
+      "Solo davanti a u",
+      "Davanti a e e i",
+      "Davanti a a, o, u",
+      "Davanti a tutte le vocali"
+    ],
+    "corretta": 1,
+    "spiegazione": "Davanti ad a, o, u serve il trigramma sci (sciopero, sciupare).",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-047",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Quale regola vale per la z in posizione intervocalica?",
+    "opzioni": [
+      "Si pronuncia sempre semplice",
+      "Non può mai trovarsi tra due vocali",
+      "Si pronuncia sempre di grado intenso, anche se scritta scempia",
+      "Si scrive sempre doppia"
+    ],
+    "corretta": 2,
+    "spiegazione": "Per questo è difficile decidere tra -z- e -zz- (es. azione / pazzo).",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-048",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Quale grafia è corretta?",
+    "opzioni": [
+      "aczione",
+      "atione",
+      "azzione",
+      "azione"
+    ],
+    "corretta": 3,
+    "spiegazione": "Davanti a -zia, -zie, -zio la z è scempia (azione, grazie, ozio).",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-049",
+    "argomento": "Ortografia",
+    "livello": 4,
+    "testo": "Quale di questi derivati in -iere si scrive con la doppia z, eccezione alla regola di «-zie»?",
+    "opzioni": [
+      "carrozziere",
+      "polizia",
+      "spazio",
+      "grazie"
+    ],
+    "corretta": 0,
+    "spiegazione": "Le parole in -iere/-iera da basi in -zz- (carrozza, terrazza) mantengono la doppia.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-050",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Nell'italiano di inizio Novecento, come si scriveva spesso «ha» (verbo avere)?",
+    "opzioni": [
+      "hà",
+      "à, con l'accento",
+      "ha, come oggi",
+      "a'"
+    ],
+    "corretta": 1,
+    "spiegazione": "Si scriveva à, ànno al posto di ha, hanno.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-051",
+    "argomento": "Ortografia",
+    "livello": 4,
+    "testo": "Quale grafia si è stabilizzata solo negli anni Sessanta?",
+    "opzioni": [
+      "sopral luogo",
+      "sopra luogo",
+      "sopralluogo",
+      "sopraluogo"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Ortografia italiana».",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-052",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Quale variante registra il dizionario De Mauro accanto a «tuttora»?",
+    "opzioni": [
+      "tutt'ora non è ammessa",
+      "tuttoora",
+      "tutto ora",
+      "tutt'ora"
+    ],
+    "corretta": 3,
+    "spiegazione": "«Tutt'ora» è considerata variante.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-053",
+    "argomento": "Ortografia",
+    "livello": 4,
+    "testo": "Quale lettera era usata fino all'Ottocento al posto della i intervocalica (es. «noja»)?",
+    "opzioni": [
+      "La j",
+      "La x",
+      "La y",
+      "La h"
+    ],
+    "corretta": 0,
+    "spiegazione": "Sopravvive in alcuni nomi e toponimi (Jesi, Jacopo).",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-054",
+    "argomento": "Ortografia",
+    "livello": 4,
+    "testo": "Davanti a quali vocali la c dolce si può elidere graficamente (es. c'è)?",
+    "opzioni": [
+      "Solo davanti ad a",
+      "Solo davanti a e e i",
+      "Davanti a tutte le vocali",
+      "Mai"
+    ],
+    "corretta": 1,
+    "spiegazione": "Per questo «c'è» è corretto ma «c'ha» no.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-055",
+    "argomento": "Verbi",
+    "livello": 2,
+    "testo": "Quale modo verbale esprime un evento soggettivo, dubbioso o ipotetico (es. «Penso che sia ubriaco»)?",
+    "opzioni": [
+      "L'imperativo",
+      "Il gerundio",
+      "Il congiuntivo",
+      "L'indicativo"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'indicativo esprime invece la realtà oggettiva.",
+    "fonte": "Wikipedia, «Congiuntivo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-056",
+    "argomento": "Verbi",
+    "livello": 2,
+    "testo": "Quanti tempi ha il congiuntivo italiano?",
+    "opzioni": [
+      "Otto, come l'indicativo",
+      "Due: presente e passato",
+      "Sei, compreso il futuro",
+      "Quattro: presente, imperfetto, passato, trapassato"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il congiuntivo non ha un futuro.",
+    "fonte": "Wikipedia, «Congiuntivo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-057",
+    "argomento": "Verbi",
+    "livello": 3,
+    "testo": "Il congiuntivo italiano ha una forma futura?",
+    "opzioni": [
+      "No, al suo posto si usano il futuro indicativo o il congiuntivo presente",
+      "Sì, il congiuntivo futuro",
+      "Sì, ma solo nei verbi irregolari",
+      "Sì, nella lingua letteraria"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Congiuntivo».",
+    "fonte": "Wikipedia, «Congiuntivo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-058",
+    "argomento": "Verbi",
+    "livello": 2,
+    "testo": "Qual è la forma corretta?",
+    "opzioni": [
+      "Spero che tu venissi presto domani.",
+      "Spero che tu venga presto.",
+      "Spero che tu verrai presto ieri.",
+      "Spero che tu vieni presto."
+    ],
+    "corretta": 1,
+    "spiegazione": "Dopo verbi di speranza si usa il congiuntivo.",
+    "fonte": "Wikipedia, «Congiuntivo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-059",
+    "argomento": "Verbi",
+    "livello": 3,
+    "testo": "In una concessiva come «non ti apro, sebbene tu stia suonando», quale modo si usa?",
+    "opzioni": [
+      "L'infinito",
+      "L'indicativo",
+      "Il congiuntivo",
+      "Il condizionale"
+    ],
+    "corretta": 2,
+    "spiegazione": "«Sebbene» regge il congiuntivo.",
+    "fonte": "Wikipedia, «Congiuntivo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-060",
+    "argomento": "Verbi",
+    "livello": 2,
+    "testo": "Quali sono le forme del condizionale italiano?",
+    "opzioni": [
+      "Imperfetto e trapassato",
+      "Solo presente",
+      "Presente, passato e futuro",
+      "Presente (mangerei) e passato (avrei mangiato)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Condizionale».",
+    "fonte": "Wikipedia, «Condizionale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-061",
+    "argomento": "Verbi",
+    "livello": 3,
+    "testo": "Quale frase è corretta?",
+    "opzioni": [
+      "Verrei volentieri, se tu mi accompagnassi.",
+      "Venissi volentieri, se tu mi accompagneresti.",
+      "Verrei volentieri, se tu mi accompagneresti.",
+      "Verrò volentieri, se tu mi accompagnassi ieri."
+    ],
+    "corretta": 0,
+    "spiegazione": "Nel periodo ipotetico: se + congiuntivo imperfetto, condizionale nella principale.",
+    "fonte": "Wikipedia, «Condizionale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-062",
+    "argomento": "Verbi",
+    "livello": 4,
+    "testo": "In quale caso è corretto usare il condizionale dopo «se»?",
+    "opzioni": [
+      "Nel periodo ipotetico della possibilità",
+      "Nelle interrogative indirette (es. «Mi chiedo se mangerebbe con noi»)",
+      "Mai",
+      "Sempre, al posto del congiuntivo"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Condizionale».",
+    "fonte": "Wikipedia, «Condizionale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-063",
+    "argomento": "Morfologia",
+    "livello": 1,
+    "testo": "Cosa significa letteralmente «pronome»?",
+    "opzioni": [
+      "«Nome proprio»",
+      "«Prima del nome»",
+      "«Al posto del nome»",
+      "«Nome importante»"
+    ],
+    "corretta": 2,
+    "spiegazione": "Dal latino pro-nomen.",
+    "fonte": "Wikipedia, «Pronome» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-064",
+    "argomento": "Morfologia",
+    "livello": 2,
+    "testo": "A quale categoria appartengono «che, cui, il quale»?",
+    "opzioni": [
+      "Pronomi dimostrativi",
+      "Pronomi personali",
+      "Congiunzioni coordinanti",
+      "Pronomi relativi"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Pronome».",
+    "fonte": "Wikipedia, «Pronome» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-065",
+    "argomento": "Morfologia",
+    "livello": 3,
+    "testo": "Nella frase «Ti credevo intelligente, ma non lo sei», cosa sostituisce il pronome «lo»?",
+    "opzioni": [
+      "L'aggettivo «intelligente»",
+      "Il soggetto «tu»",
+      "Il verbo «credevo»",
+      "Nulla, è un articolo"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il pronome può sostituire anche aggettivi o intere frasi.",
+    "fonte": "Wikipedia, «Pronome» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-066",
+    "argomento": "Morfologia",
+    "livello": 3,
+    "testo": "Come si distingue un aggettivo da un pronome con la stessa forma (es. «questo»)?",
+    "opzioni": [
+      "Non si possono distinguere",
+      "L'aggettivo accompagna il nome, il pronome lo sostituisce",
+      "Il pronome è sempre maiuscolo",
+      "L'aggettivo è invariabile"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Pronome».",
+    "fonte": "Wikipedia, «Pronome» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-067",
+    "argomento": "Morfologia",
+    "livello": 2,
+    "testo": "Quali sono le due grandi classi tradizionali degli aggettivi?",
+    "opzioni": [
+      "Semplici e composti",
+      "Attivi e passivi",
+      "Qualificativi e determinativi",
+      "Regolari e irregolari"
+    ],
+    "corretta": 2,
+    "spiegazione": "I determinativi comprendono possessivi, numerali, dimostrativi, indefiniti, interrogativi ed esclamativi.",
+    "fonte": "Wikipedia, «Aggettivo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-068",
+    "argomento": "Morfologia",
+    "livello": 3,
+    "testo": "Quando un aggettivo ha funzione «predicativa»?",
+    "opzioni": [
+      "Quando è invariabile",
+      "Quando precede sempre il nome",
+      "Quando è al superlativo",
+      "Quando, in un predicato nominale, è unito al soggetto dalla copula"
+    ],
+    "corretta": 3,
+    "spiegazione": "Funzione attributiva: si unisce direttamente al nome.",
+    "fonte": "Wikipedia, «Aggettivo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-069",
+    "argomento": "Morfologia",
+    "livello": 3,
+    "testo": "A quale tipo di aggettivi appartiene «alcuni»?",
+    "opzioni": [
+      "Aggettivi indefiniti",
+      "Aggettivi numerali",
+      "Aggettivi qualificativi",
+      "Aggettivi possessivi"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Aggettivo».",
+    "fonte": "Wikipedia, «Aggettivo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-070",
+    "argomento": "Morfologia",
+    "livello": 2,
+    "testo": "L'avverbio è una parte del discorso variabile o invariabile?",
+    "opzioni": [
+      "Variabile in genere e numero",
+      "Invariabile",
+      "Variabile solo nel genere",
+      "Variabile solo nel numero"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Avverbio».",
+    "fonte": "Wikipedia, «Avverbio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-071",
+    "argomento": "Morfologia",
+    "livello": 2,
+    "testo": "Che tipo di avverbio è «lentamente»?",
+    "opzioni": [
+      "Di luogo",
+      "Di quantità",
+      "Di modo",
+      "Di tempo"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Avverbio».",
+    "fonte": "Wikipedia, «Avverbio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-072",
+    "argomento": "Morfologia",
+    "livello": 3,
+    "testo": "Che tipo di avverbi sono «probabilmente, certamente, francamente» quando esprimono il giudizio del parlante?",
+    "opzioni": [
+      "Avverbi connettivi",
+      "Avverbi di luogo",
+      "Avverbi di quantità",
+      "Avverbi frasali"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Avverbio».",
+    "fonte": "Wikipedia, «Avverbio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-073",
+    "argomento": "Morfologia",
+    "livello": 1,
+    "testo": "Quali sono le preposizioni proprie (semplici) dell'italiano?",
+    "opzioni": [
+      "di, a, da, in, con, su, per, tra, fra",
+      "il, lo, la, i, gli, le",
+      "e, o, ma, però",
+      "qui, qua, lì, là"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Preposizione».",
+    "fonte": "Wikipedia, «Preposizione» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-074",
+    "argomento": "Morfologia",
+    "livello": 3,
+    "testo": "Quali preposizioni semplici NON formano preposizioni articolate?",
+    "opzioni": [
+      "in e su",
+      "tra e fra",
+      "di e a",
+      "da e con"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Preposizione».",
+    "fonte": "Wikipedia, «Preposizione» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-075",
+    "argomento": "Morfologia",
+    "livello": 3,
+    "testo": "A quale categoria appartiene «tranne»?",
+    "opzioni": [
+      "Avverbio di tempo",
+      "Congiunzione coordinante",
+      "Preposizione impropria",
+      "Pronome indefinito"
+    ],
+    "corretta": 2,
+    "spiegazione": "Le improprie possono essere anche nomi, aggettivi, avverbi o forme verbali.",
+    "fonte": "Wikipedia, «Preposizione» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-076",
+    "argomento": "Morfologia",
+    "livello": 3,
+    "testo": "In «Ho comprato dello zucchero», che funzione ha «dello»?",
+    "opzioni": [
+      "Pronome",
+      "Preposizione semplice",
+      "Complemento di specificazione",
+      "Articolo partitivo"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Preposizione».",
+    "fonte": "Wikipedia, «Preposizione» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-077",
+    "argomento": "Morfologia",
+    "livello": 3,
+    "testo": "Quale di queste è una congiunzione composta, nata dalla fusione di più parole?",
+    "opzioni": [
+      "affinché",
+      "ma",
+      "se",
+      "e"
+    ],
+    "corretta": 0,
+    "spiegazione": "affinché = a + fine + che; anche cioè, oppure, perché, poiché.",
+    "fonte": "Wikipedia, «Congiunzione (linguistica)» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-078",
+    "argomento": "Sintassi",
+    "livello": 3,
+    "testo": "Cosa fanno le congiunzioni subordinanti?",
+    "opzioni": [
+      "Indicano il tempo verbale",
+      "Introducono proposizioni dipendenti",
+      "Collegano elementi sullo stesso piano",
+      "Sostituiscono il nome"
+    ],
+    "corretta": 1,
+    "spiegazione": "Le coordinanti collegano elementi di uguale rango sintattico.",
+    "fonte": "Wikipedia, «Congiunzione (linguistica)» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-079",
+    "argomento": "Sintassi",
+    "livello": 2,
+    "testo": "Da quali elementi è composta la frase minima?",
+    "opzioni": [
+      "Articolo e nome",
+      "Solo il predicato",
+      "Soggetto e predicato",
+      "Soggetto, predicato e complemento oggetto"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Analisi logica della proposizione».",
+    "fonte": "Wikipedia, «Analisi logica della proposizione» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-080",
+    "argomento": "Sintassi",
+    "livello": 2,
+    "testo": "Da cosa è formato in italiano il predicato nominale?",
+    "opzioni": [
+      "Da un nome e un avverbio",
+      "Da un verbo transitivo e un complemento",
+      "Da un verbo all'infinito",
+      "Dal verbo essere e da un elemento nominale o aggettivale"
+    ],
+    "corretta": 3,
+    "spiegazione": "Esempio: «Lucia è bionda».",
+    "fonte": "Wikipedia, «Analisi logica della proposizione» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-081",
+    "argomento": "Sintassi",
+    "livello": 3,
+    "testo": "Nella frase «Lucia è bionda», che tipo di predicato c'è?",
+    "opzioni": [
+      "Predicato nominale",
+      "Predicato verbale",
+      "Soggetto sottinteso",
+      "Complemento predicativo"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Analisi logica della proposizione».",
+    "fonte": "Wikipedia, «Analisi logica della proposizione» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-082",
+    "argomento": "Sintassi",
+    "livello": 2,
+    "testo": "In «Dormo», qual è il soggetto?",
+    "opzioni": [
+      "Non c'è soggetto",
+      "Io, sottinteso",
+      "Dormo",
+      "Il sonno"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il soggetto può essere sottinteso.",
+    "fonte": "Wikipedia, «Analisi logica della proposizione» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-083",
+    "argomento": "Sintassi",
+    "livello": 2,
+    "testo": "A quali domande risponde il complemento oggetto?",
+    "opzioni": [
+      "Dove? Quando?",
+      "Di chi? Di che cosa?",
+      "Chi? Che cosa?",
+      "Con chi? Per chi?"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Complemento oggetto».",
+    "fonte": "Wikipedia, «Complemento oggetto» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-084",
+    "argomento": "Sintassi",
+    "livello": 3,
+    "testo": "Da quale tipo di verbo è retto il complemento oggetto?",
+    "opzioni": [
+      "Dal verbo essere",
+      "Da un verbo intransitivo",
+      "Da un verbo passivo",
+      "Da un verbo transitivo attivo"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Complemento oggetto».",
+    "fonte": "Wikipedia, «Complemento oggetto» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-085",
+    "argomento": "Sintassi",
+    "livello": 3,
+    "testo": "Come si chiama il complemento oggetto introdotto da un articolo partitivo (es. «delle bibite»)?",
+    "opzioni": [
+      "Complemento oggetto partitivo",
+      "Complemento oggetto interno",
+      "Complemento di materia",
+      "Complemento di specificazione"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Complemento oggetto».",
+    "fonte": "Wikipedia, «Complemento oggetto» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-086",
+    "argomento": "Sintassi",
+    "livello": 2,
+    "testo": "Che cos'è il periodo, in analisi del periodo?",
+    "opzioni": [
+      "Una sola parola",
+      "Una frase compiuta formata da una o più proposizioni collegate",
+      "Il tempo verbale",
+      "Un capoverso di un testo"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Analisi logica del periodo».",
+    "fonte": "Wikipedia, «Analisi logica del periodo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-087",
+    "argomento": "Sintassi",
+    "livello": 3,
+    "testo": "Come si contano le proposizioni di un periodo?",
+    "opzioni": [
+      "In base al numero dei soggetti",
+      "In base al numero dei nomi",
+      "In base al numero dei predicati",
+      "In base al numero delle virgole"
+    ],
+    "corretta": 2,
+    "spiegazione": "Ogni predicato segna una proposizione.",
+    "fonte": "Wikipedia, «Analisi logica del periodo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-088",
+    "argomento": "Sintassi",
+    "livello": 4,
+    "testo": "In «puoi omettere questa parola», quanti predicati ci sono?",
+    "opzioni": [
+      "Nessuno",
+      "Due",
+      "Tre",
+      "Uno: i verbi servili formano un unico predicato con l'infinito"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Analisi logica del periodo».",
+    "fonte": "Wikipedia, «Analisi logica del periodo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-089",
+    "argomento": "Sintassi",
+    "livello": 4,
+    "testo": "«Sciare è la mia passione»: quante proposizioni contiene?",
+    "opzioni": [
+      "Una, perché l'infinito usato come soggetto non forma predicato",
+      "Due",
+      "Nessuna",
+      "Tre"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Analisi logica del periodo».",
+    "fonte": "Wikipedia, «Analisi logica del periodo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-090",
+    "argomento": "Sintassi",
+    "livello": 3,
+    "testo": "Quando una proposizione subordinata è «implicita»?",
+    "opzioni": [
+      "Quando il verbo è in un modo finito",
+      "Quando il verbo è in un modo indefinito",
+      "Quando è tra parentesi",
+      "Quando non ha soggetto espresso"
+    ],
+    "corretta": 1,
+    "spiegazione": "È esplicita se il verbo è in un modo finito.",
+    "fonte": "Wikipedia, «Proposizione subordinata» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-091",
+    "argomento": "Sintassi",
+    "livello": 3,
+    "testo": "Nella frase «Il cane insegue il gatto che scappa», cos'è «che scappa»?",
+    "opzioni": [
+      "La proposizione principale",
+      "Un complemento oggetto",
+      "Una proposizione subordinata relativa",
+      "Una coordinata"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Proposizione subordinata».",
+    "fonte": "Wikipedia, «Proposizione subordinata» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-092",
+    "argomento": "Sintassi",
+    "livello": 4,
+    "testo": "Quali subordinate svolgono la funzione di soggetto o complemento oggetto della reggente?",
+    "opzioni": [
+      "Le relative",
+      "Le avverbiali",
+      "Le coordinate",
+      "Le sostantive o completive"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Proposizione subordinata».",
+    "fonte": "Wikipedia, «Proposizione subordinata» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-093",
+    "argomento": "Retorica",
+    "livello": 2,
+    "testo": "Quale figura retorica chiama un uomo coraggioso «un leone»?",
+    "opzioni": [
+      "La metafora",
+      "L'ossimoro",
+      "La metonimia",
+      "L'iperbole"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Figura retorica».",
+    "fonte": "Wikipedia, «Figura retorica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-094",
+    "argomento": "Retorica",
+    "livello": 3,
+    "testo": "Quale figura retorica è «leggere Dante» per «leggere le opere di Dante»?",
+    "opzioni": [
+      "La metafora",
+      "La metonimia",
+      "La similitudine",
+      "L'anafora"
+    ],
+    "corretta": 1,
+    "spiegazione": "Sostituzione per contiguità logica o materiale.",
+    "fonte": "Wikipedia, «Figura retorica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-095",
+    "argomento": "Retorica",
+    "livello": 3,
+    "testo": "Come si chiama la figura «parte per il tutto» (es. «vela» per «nave»)?",
+    "opzioni": [
+      "Allitterazione",
+      "Anafora",
+      "Sineddoche",
+      "Metonimia"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Figura retorica».",
+    "fonte": "Wikipedia, «Figura retorica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-096",
+    "argomento": "Retorica",
+    "livello": 3,
+    "testo": "Come è definita talvolta l'allegoria?",
+    "opzioni": [
+      "Una similitudine breve",
+      "Una ripetizione di suoni",
+      "Un ossimoro rovesciato",
+      "Una «metafora continuata»"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Figura retorica».",
+    "fonte": "Wikipedia, «Figura retorica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-097",
+    "argomento": "Retorica",
+    "livello": 3,
+    "testo": "Chi fu il primo, secondo la tradizione, a individuare le figure retoriche nella prosa?",
+    "opzioni": [
+      "Gorgia da Lentini",
+      "Cicerone",
+      "Quintiliano",
+      "Aristotele"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Figura retorica».",
+    "fonte": "Wikipedia, «Figura retorica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-098",
+    "argomento": "Retorica",
+    "livello": 2,
+    "testo": "Come viene spesso definita la metafora rispetto alla similitudine?",
+    "opzioni": [
+      "Un'iperbole",
+      "Una similitudine senza il «come»",
+      "Una similitudine con due «come»",
+      "Un elenco di aggettivi"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Metafora».",
+    "fonte": "Wikipedia, «Metafora» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-099",
+    "argomento": "Retorica",
+    "livello": 3,
+    "testo": "Nel verso di Pascoli «Anche un uomo tornava al suo nido», «nido» è una metafora per:",
+    "opzioni": [
+      "Uccello",
+      "Famiglia di uccelli",
+      "Casa",
+      "Albero"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Metafora».",
+    "fonte": "Wikipedia, «Metafora» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-100",
+    "argomento": "Retorica",
+    "livello": 2,
+    "testo": "Quale figura retorica accosta due termini di senso contrario (es. «silenzio assordante»)?",
+    "opzioni": [
+      "La metafora",
+      "L'iperbole",
+      "L'antitesi",
+      "L'ossimoro"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Ossimoro».",
+    "fonte": "Wikipedia, «Ossimoro» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-101",
+    "argomento": "Retorica",
+    "livello": 4,
+    "testo": "Quale verso di Leopardi è citato come esempio di ossimoro?",
+    "opzioni": [
+      "«E 'l naufragar m'è dolce in questo mare»",
+      "«Sempre caro mi fu quest'ermo colle»",
+      "«Il sabato del villaggio»",
+      "«Silvia, rimembri ancora»"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Ossimoro».",
+    "fonte": "Wikipedia, «Ossimoro» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-102",
+    "argomento": "Morfologia",
+    "livello": 4,
+    "testo": "Qual è il plurale di «il dio»?",
+    "opzioni": [
+      "I dii",
+      "Gli dèi",
+      "Gli dii",
+      "I dei"
+    ],
+    "corretta": 1,
+    "spiegazione": "Eccezione nell'uso dell'articolo.",
+    "fonte": "Wikipedia, «Articolo (linguistica)» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-103",
+    "argomento": "Letteratura",
+    "livello": 2,
+    "testo": "Quale opera è considerata il primo documento letterario italiano di autore noto?",
+    "opzioni": [
+      "La Divina Commedia",
+      "Il Novellino",
+      "Il Cantico delle creature di Francesco d'Assisi",
+      "Il Canzoniere di Petrarca"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Storia della letteratura italiana».",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-104",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Sotto il patrocinio di quale sovrano nacque la Scuola siciliana?",
+    "opzioni": [
+      "Carlo d'Angiò",
+      "Ruggero II",
+      "Manfredi",
+      "Federico II"
+    ],
+    "corretta": 3,
+    "spiegazione": "Fu attiva dal 1220-50 circa, ispirata ai modelli provenzali.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-105",
+    "argomento": "Letteratura",
+    "livello": 2,
+    "testo": "Quanti canti ha la Divina Commedia?",
+    "opzioni": [
+      "100",
+      "120",
+      "33",
+      "99"
+    ],
+    "corretta": 0,
+    "spiegazione": "Tre cantiche di 33 canti più il canto introduttivo.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-106",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "In che metro è scritta la Divina Commedia?",
+    "opzioni": [
+      "Sonetti",
+      "Terzine incatenate di endecasillabi",
+      "Ottave di endecasillabi",
+      "Endecasillabi sciolti"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Storia della letteratura italiana».",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-107",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Quale movimento poetico nacque tra fine Duecento e inizio Trecento, maturando la tematica amorosa cortese?",
+    "opzioni": [
+      "La Scuola siciliana",
+      "Il Petrarchismo",
+      "Il Dolce stil novo",
+      "La poesia comico-realistica"
+    ],
+    "corretta": 2,
+    "spiegazione": "Vi appartennero Guinizzelli, Cavalcanti e Dante.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-108",
+    "argomento": "Letteratura",
+    "livello": 4,
+    "testo": "A chi Dante dedicò la Vita Nova?",
+    "opzioni": [
+      "A Brunetto Latini",
+      "A Cino da Pistoia",
+      "A Beatrice Portinari",
+      "A Guido Cavalcanti"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Storia della letteratura italiana».",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-109",
+    "argomento": "Letteratura",
+    "livello": 4,
+    "testo": "Chi è considerato l'ultimo stilnovista, maestro di Petrarca nella musicalità del verso?",
+    "opzioni": [
+      "Cino da Pistoia",
+      "Cecco Angiolieri",
+      "Guittone d'Arezzo",
+      "Guido Guinizzelli"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Storia della letteratura italiana».",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-110",
+    "argomento": "Letteratura",
+    "livello": 4,
+    "testo": "Che cos'è il «Novellino»?",
+    "opzioni": [
+      "Un trattato di Bembo",
+      "Una raccolta di cento novelle antiche di autore ignoto, fine Duecento",
+      "Un'opera di Boccaccio",
+      "Un poema di Ariosto"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Storia della letteratura italiana».",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-111",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Chi scrisse l'Orlando innamorato, poi proseguito dall'Orlando furioso?",
+    "opzioni": [
+      "Torquato Tasso",
+      "Ludovico Ariosto",
+      "Matteo Maria Boiardo",
+      "Luigi Pulci"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Storia della letteratura italiana».",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-112",
+    "argomento": "Letteratura",
+    "livello": 2,
+    "testo": "Chi è l'autore della Gerusalemme liberata?",
+    "opzioni": [
+      "Dante Alighieri",
+      "Ludovico Ariosto",
+      "Giambattista Marino",
+      "Torquato Tasso"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Storia della letteratura italiana».",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-113",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Di quale corte fu cortigiano Ludovico Ariosto?",
+    "opzioni": [
+      "Quella di Ferrara (Este)",
+      "Quella di Napoli (Aragona)",
+      "Quella di Firenze (Medici)",
+      "Quella di Milano (Sforza)"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Storia della letteratura italiana».",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-114",
+    "argomento": "Letteratura",
+    "livello": 2,
+    "testo": "Qual è l'opera maggiore di Niccolò Machiavelli?",
+    "opzioni": [
+      "Il Cortegiano",
+      "Il Principe",
+      "La Storia d'Italia",
+      "La Mandragola"
+    ],
+    "corretta": 1,
+    "spiegazione": "La Mandragola è una commedia di Machiavelli.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-115",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Chi scrisse la Storia d'Italia del Cinquecento, fondamentale per la storiografia moderna?",
+    "opzioni": [
+      "Niccolò Machiavelli",
+      "Giorgio Vasari",
+      "Francesco Guicciardini",
+      "Pietro Bembo"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Storia della letteratura italiana».",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-116",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Quale opera di Pietro Bembo (1525) sostenne l'eccellenza del toscano letterario di Petrarca e Boccaccio?",
+    "opzioni": [
+      "Il Galateo",
+      "Il Cortegiano",
+      "De vulgari eloquentia",
+      "Prose della volgar lingua"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Storia della letteratura italiana».",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-117",
+    "argomento": "Letteratura",
+    "livello": 2,
+    "testo": "Quale opera di Galileo Galilei è citata come esempio di italiano scientifico divulgativo?",
+    "opzioni": [
+      "Dialogo sopra i due massimi sistemi del mondo",
+      "La Città del Sole",
+      "Della ragion di Stato",
+      "Il Saggiatore soltanto"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Storia della letteratura italiana».",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-118",
+    "argomento": "Letteratura",
+    "livello": 4,
+    "testo": "Qual è il poema maggiore di Giambattista Marino, simbolo della poesia barocca?",
+    "opzioni": [
+      "Il Morgante",
+      "L'Adone",
+      "L'Arcadia",
+      "La secchia rapita"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Storia della letteratura italiana».",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-119",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Chi scrisse il Morgante, poema in ottave del circolo mediceo?",
+    "opzioni": [
+      "Lorenzo de' Medici",
+      "Matteo Maria Boiardo",
+      "Luigi Pulci",
+      "Angelo Poliziano"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Storia della letteratura italiana».",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-120",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "In che anno e dove fu fondata l'Accademia dell'Arcadia?",
+    "opzioni": [
+      "A Napoli nel 1700",
+      "A Firenze nel 1583",
+      "A Milano nel 1764",
+      "A Roma nel 1690"
+    ],
+    "corretta": 3,
+    "spiegazione": "Fondata da Gravina e Crescimbeni.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-121",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Chi è il più importante autore dell'Arcadia, attivo alla corte austriaca?",
+    "opzioni": [
+      "Pietro Metastasio",
+      "Carlo Goldoni",
+      "Giuseppe Parini",
+      "Vittorio Alfieri"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Storia della letteratura italiana».",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-122",
+    "argomento": "Letteratura",
+    "livello": 2,
+    "testo": "Quale autore rinnovò il teatro italiano portando la commedia nella società del suo tempo?",
+    "opzioni": [
+      "Vittorio Alfieri",
+      "Carlo Goldoni",
+      "Carlo Gozzi",
+      "Pietro Metastasio"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Storia della letteratura italiana».",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-123",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "In che metro è scritto «Il Giorno» di Parini?",
+    "opzioni": [
+      "Sonetti",
+      "Terzine dantesche",
+      "Endecasillabi sciolti",
+      "Ottave"
+    ],
+    "corretta": 2,
+    "spiegazione": "Satira dell'aristocrazia decaduta.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-124",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Chi fondò la rivista illuminista milanese «Il Caffè»?",
+    "opzioni": [
+      "Cesare Beccaria",
+      "Giuseppe Parini",
+      "Gaetano Filangieri",
+      "Pietro Verri"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Storia della letteratura italiana».",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-125",
+    "argomento": "Letteratura",
+    "livello": 2,
+    "testo": "Quali sono i maggiori rappresentanti del Romanticismo italiano?",
+    "opzioni": [
+      "Alessandro Manzoni e Giacomo Leopardi",
+      "Verga e Capuana",
+      "Ungaretti e Montale",
+      "Carducci e Pascoli"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Storia della letteratura italiana».",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-126",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Come si chiama il diario-zibaldone di pensieri tenuto da Leopardi dal 1817?",
+    "opzioni": [
+      "I Canti",
+      "Lo Zibaldone",
+      "L'Epistolario",
+      "Le Operette morali"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Storia della letteratura italiana».",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-127",
+    "argomento": "Letteratura",
+    "livello": 2,
+    "testo": "Quale romanzo di Verga (1881) segna il pieno passaggio al verismo?",
+    "opzioni": [
+      "Storia di una capinera",
+      "Mastro-don Gesualdo",
+      "I Malavoglia",
+      "Vita dei campi"
+    ],
+    "corretta": 2,
+    "spiegazione": "Mastro-don Gesualdo è del 1888.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-128",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Quale movimento lombardo si opponeva ai sistemi classici, incluso il Romanticismo?",
+    "opzioni": [
+      "L'Ermetismo",
+      "Il Crepuscolarismo",
+      "Il Verismo",
+      "La Scapigliatura"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Storia della letteratura italiana».",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-129",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Quale raccolta di Pascoli ha un titolo ispirato a un verso virgiliano?",
+    "opzioni": [
+      "Myricae",
+      "Canti di Castelvecchio",
+      "Alcyone",
+      "Laudi"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Storia della letteratura italiana».",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-130",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Quale romanzo di D'Annunzio apre la «trilogia della Rosa»?",
+    "opzioni": [
+      "Le vergini delle rocce",
+      "Il piacere",
+      "Il fuoco",
+      "Forse che sì forse che no"
+    ],
+    "corretta": 1,
+    "spiegazione": "Seguono L'innocente e Trionfo della morte.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-131",
+    "argomento": "Letteratura",
+    "livello": 2,
+    "testo": "Quale celebre opera teatrale è di Luigi Pirandello?",
+    "opzioni": [
+      "La locandiera",
+      "Mistero buffo",
+      "Sei personaggi in cerca d'autore",
+      "Natale in casa Cupiello"
+    ],
+    "corretta": 2,
+    "spiegazione": "Pirandello vinse il Nobel nel 1934.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-132",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "In che anno Pirandello vinse il premio Nobel per la letteratura?",
+    "opzioni": [
+      "Nel 1975",
+      "Nel 1959",
+      "Nel 1926",
+      "Nel 1934"
+    ],
+    "corretta": 3,
+    "spiegazione": "Grazia Deledda lo vinse nel 1926, Quasimodo nel 1959, Montale nel 1975.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-133",
+    "argomento": "Letteratura",
+    "livello": 2,
+    "testo": "Qual è il romanzo più noto di Italo Svevo?",
+    "opzioni": [
+      "La coscienza di Zeno",
+      "Il Gattopardo",
+      "Il fu Mattia Pascal",
+      "Uno, nessuno e centomila"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Storia della letteratura italiana».",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-134",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Quale scrittrice italiana vinse il Nobel per la letteratura nel 1926?",
+    "opzioni": [
+      "Sibilla Aleramo",
+      "Grazia Deledda",
+      "Elsa Morante",
+      "Matilde Serao"
+    ],
+    "corretta": 1,
+    "spiegazione": "Autrice di Canne al vento.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-135",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Chi fondò il movimento futurista, con il Manifesto del 1909?",
+    "opzioni": [
+      "Gabriele D'Annunzio",
+      "Giovanni Papini",
+      "Filippo Tommaso Marinetti",
+      "Umberto Boccioni"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Storia della letteratura italiana».",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-136",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Qual è il poeta crepuscolare più famoso?",
+    "opzioni": [
+      "Gabriele D'Annunzio",
+      "Dino Campana",
+      "Umberto Saba",
+      "Guido Gozzano"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il termine «crepuscolari» fu coniato dal critico Borgese.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-137",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Chi coniò nel 1936 il termine «poesia ermetica»?",
+    "opzioni": [
+      "Il critico Francesco Flora",
+      "Benedetto Croce",
+      "Eugenio Montale",
+      "Giuseppe Ungaretti"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Storia della letteratura italiana».",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-138",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Quale poeta ermetico vinse il Nobel per la letteratura nel 1959?",
+    "opzioni": [
+      "Umberto Saba",
+      "Salvatore Quasimodo",
+      "Giuseppe Ungaretti",
+      "Eugenio Montale"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Storia della letteratura italiana».",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-139",
+    "argomento": "Letteratura",
+    "livello": 2,
+    "testo": "Qual è la prima raccolta di Eugenio Montale (1925)?",
+    "opzioni": [
+      "L'allegria",
+      "Le occasioni",
+      "Ossi di seppia",
+      "Il porto sepolto"
+    ],
+    "corretta": 2,
+    "spiegazione": "Montale vinse il Nobel nel 1975.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-140",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Di quale raccolta di Ungaretti fa parte «Il porto sepolto»?",
+    "opzioni": [
+      "Sentimento del tempo",
+      "Ossi di seppia",
+      "Acque e terre",
+      "L'allegria"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Storia della letteratura italiana».",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-141",
+    "argomento": "Letteratura",
+    "livello": 4,
+    "testo": "Quale corrente si sviluppa in Italia nel secondo dopoguerra per raccontare la realtà della guerra e della Resistenza?",
+    "opzioni": [
+      "Il neorealismo",
+      "Il verismo",
+      "Il decadentismo",
+      "Il futurismo"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Storia della letteratura italiana».",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-142",
+    "argomento": "Letteratura",
+    "livello": 4,
+    "testo": "Quale autore teatrale napoletano scrisse «Natale in casa Cupiello» e «Filumena Marturano»?",
+    "opzioni": [
+      "Dario Fo",
+      "Eduardo De Filippo",
+      "Luigi Pirandello",
+      "Carlo Goldoni"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Storia della letteratura italiana».",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-143",
+    "argomento": "Letteratura",
+    "livello": 4,
+    "testo": "Quale accademia fiorentina, nata nel Cinquecento, contribuì a cristallizzare la lingua letteraria?",
+    "opzioni": [
+      "L'Accademia del Cimento",
+      "L'Arcadia",
+      "L'Accademia della Crusca",
+      "L'Accademia dei Lincei"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Storia della letteratura italiana».",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-144",
+    "argomento": "Sintassi",
+    "livello": 3,
+    "testo": "Come si chiamano le due parti del periodo ipotetico?",
+    "opzioni": [
+      "Premessa e conclusione grammaticale",
+      "Tesi e antitesi",
+      "Reggente e coordinata",
+      "Protasi (condizione) e apodosi (conseguenza)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Periodo ipotetico».",
+    "fonte": "Wikipedia, «Periodo ipotetico» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-145",
+    "argomento": "Sintassi",
+    "livello": 3,
+    "testo": "Quali sono i tre tipi tradizionali di periodo ipotetico?",
+    "opzioni": [
+      "Della realtà, della possibilità e dell'irrealtà",
+      "Attivo, passivo e riflessivo",
+      "Del passato, del presente e del futuro",
+      "Semplice, composto e complesso"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Periodo ipotetico».",
+    "fonte": "Wikipedia, «Periodo ipotetico» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-146",
+    "argomento": "Sintassi",
+    "livello": 2,
+    "testo": "Qual è la congiunzione tipica della protasi in italiano?",
+    "opzioni": [
+      "perché",
+      "se",
+      "che",
+      "quando"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Periodo ipotetico».",
+    "fonte": "Wikipedia, «Periodo ipotetico» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-147",
+    "argomento": "Verbi",
+    "livello": 2,
+    "testo": "Quali sono i verbi ausiliari dell'italiano usati per i tempi composti?",
+    "opzioni": [
+      "Fare e andare",
+      "Potere e dovere",
+      "Essere e avere",
+      "Stare e volere"
+    ],
+    "corretta": 2,
+    "spiegazione": "Es. ho fatto, ero andato.",
+    "fonte": "Wikipedia, «Verbo ausiliare» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-148",
+    "argomento": "Verbi",
+    "livello": 3,
+    "testo": "Perché il participio si chiama così?",
+    "opzioni": [
+      "Perché indica partenza",
+      "Perché si usa solo al passato",
+      "Perché è parte del congiuntivo",
+      "Perché partecipa delle categorie dell'aggettivo e del sostantivo"
+    ],
+    "corretta": 3,
+    "spiegazione": "Dal latino partem capit.",
+    "fonte": "Wikipedia, «Participio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-149",
+    "argomento": "Verbi",
+    "livello": 2,
+    "testo": "Quanti tempi ha il participio in italiano?",
+    "opzioni": [
+      "Due: presente e passato",
+      "Tre: presente, passato e futuro",
+      "Quattro",
+      "Uno"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Participio».",
+    "fonte": "Wikipedia, «Participio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-150",
+    "argomento": "Verbi",
+    "livello": 3,
+    "testo": "In «una scatola contenente diversi oggetti», cosa sostituisce il participio presente?",
+    "opzioni": [
+      "Un avverbio",
+      "Una proposizione relativa («che contiene»)",
+      "Un complemento di luogo",
+      "Un imperativo"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Participio».",
+    "fonte": "Wikipedia, «Participio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-151",
+    "argomento": "Verbi",
+    "livello": 2,
+    "testo": "Quali sono i tempi del gerundio?",
+    "opzioni": [
+      "Imperfetto e trapassato",
+      "Presente, passato e futuro",
+      "Presente (mangiando) e passato (avendo mangiato)",
+      "Solo presente"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Gerundio».",
+    "fonte": "Wikipedia, «Gerundio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-152",
+    "argomento": "Verbi",
+    "livello": 3,
+    "testo": "Con quale verbo si forma la perifrasi progressiva (es. «sto scrivendo»)?",
+    "opzioni": [
+      "Essere + participio",
+      "Avere + infinito",
+      "Andare + gerundio passato",
+      "Stare + gerundio"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Gerundio».",
+    "fonte": "Wikipedia, «Gerundio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-153",
+    "argomento": "Verbi",
+    "livello": 3,
+    "testo": "Il gerundio si coniuga secondo la persona?",
+    "opzioni": [
+      "No, non è coniugabile a seconda della persona",
+      "Solo alla terza persona",
+      "Sì, come l'indicativo",
+      "Solo al passato"
+    ],
+    "corretta": 0,
+    "spiegazione": "È un modo indefinito.",
+    "fonte": "Wikipedia, «Gerundio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-154",
+    "argomento": "Verbi",
+    "livello": 3,
+    "testo": "Qual è il gerundio di «fare»?",
+    "opzioni": [
+      "fando",
+      "facendo",
+      "fatto",
+      "facendendo"
+    ],
+    "corretta": 1,
+    "spiegazione": "I verbi con radice abbreviata formano il gerundio sulla base dell'imperfetto (facevo → facendo, dicevo → dicendo).",
+    "fonte": "Wikipedia, «Gerundio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-155",
+    "argomento": "Fonetica",
+    "livello": 2,
+    "testo": "Come si chiama una parola con l'accento sulla penultima sillaba (es. «casa»)?",
+    "opzioni": [
+      "Tronca",
+      "Sdrucciola",
+      "Piana",
+      "Bisdrucciola"
+    ],
+    "corretta": 2,
+    "spiegazione": "Tronche: ultima sillaba; sdrucciole: terzultima; bisdrucciole: quartultima. In italiano prevalgono le piane.",
+    "fonte": "Wikipedia, «Sillaba» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-156",
+    "argomento": "Fonetica",
+    "livello": 2,
+    "testo": "Come si chiama una parola con l'accento sulla terzultima sillaba (es. «tavolo»)?",
+    "opzioni": [
+      "Tronca",
+      "Bisdrucciola",
+      "Piana",
+      "Sdrucciola"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Sillaba».",
+    "fonte": "Wikipedia, «Sillaba» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-157",
+    "argomento": "Fonetica",
+    "livello": 2,
+    "testo": "Come si chiama una parola con l'accento sull'ultima sillaba (es. «città»)?",
+    "opzioni": [
+      "Tronca",
+      "Piana",
+      "Atona",
+      "Sdrucciola"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Sillaba».",
+    "fonte": "Wikipedia, «Sillaba» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-158",
+    "argomento": "Fonetica",
+    "livello": 3,
+    "testo": "Quando una sillaba è detta «aperta» o «libera»?",
+    "opzioni": [
+      "Quando termina per consonante",
+      "Quando termina per vocale",
+      "Quando è accentata",
+      "Quando ha due vocali"
+    ],
+    "corretta": 1,
+    "spiegazione": "È «chiusa» o «implicata» se termina per consonante.",
+    "fonte": "Wikipedia, «Sillaba» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-159",
+    "argomento": "Fonetica",
+    "livello": 3,
+    "testo": "Qual è l'unica parte obbligatoria di una sillaba?",
+    "opzioni": [
+      "L'attacco",
+      "La coda",
+      "Il nucleo",
+      "La rima"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Sillaba».",
+    "fonte": "Wikipedia, «Sillaba» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-160",
+    "argomento": "Fonetica",
+    "livello": 3,
+    "testo": "Come si chiama la sillaba che precede la sillaba tonica?",
+    "opzioni": [
+      "Tronca",
+      "Postonica",
+      "Atona finale",
+      "Protonica"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Sillaba».",
+    "fonte": "Wikipedia, «Sillaba» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-161",
+    "argomento": "Fonetica",
+    "livello": 2,
+    "testo": "Cosa significa letteralmente «dittongo»?",
+    "opzioni": [
+      "«Con due suoni»",
+      "«Due sillabe»",
+      "«Suono doppio di consonante»",
+      "«Senza accento»"
+    ],
+    "corretta": 0,
+    "spiegazione": "Dal greco díphthongos.",
+    "fonte": "Wikipedia, «Dittongo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-162",
+    "argomento": "Fonetica",
+    "livello": 3,
+    "testo": "Cos'è lo iato?",
+    "opzioni": [
+      "Una consonante doppia",
+      "L'incontro di due vocali pronunciate in due sillabe distinte",
+      "L'unione di due vocali in una sillaba",
+      "La caduta di una vocale finale"
+    ],
+    "corretta": 1,
+    "spiegazione": "Dal latino hiatus, «apertura».",
+    "fonte": "Wikipedia, «Iato» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-163",
+    "argomento": "Ortografia",
+    "livello": 2,
+    "testo": "Cos'è l'elisione?",
+    "opzioni": [
+      "L'aggiunta di una vocale",
+      "La caduta di una sillaba iniziale",
+      "La caduta di una vocale finale non accentata davanti a parola che inizia per vocale",
+      "Il raddoppio di una consonante"
+    ],
+    "corretta": 2,
+    "spiegazione": "Nello scritto si segnala con l'apostrofo.",
+    "fonte": "Wikipedia, «Elisione» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-164",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Con quale parola l'elisione è considerata obbligatoria?",
+    "opzioni": [
+      "Con «tra» e «fra»",
+      "Con l'articolo «gli» davanti a qualsiasi vocale",
+      "Con «una» usato come pronome",
+      "Con l'articolo «lo» (es. l'animale)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Anche con dello, allo, quello: dell'oro, quell'uomo.",
+    "fonte": "Wikipedia, «Elisione» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-165",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "«Una» si apostrofa quando è pronome?",
+    "opzioni": [
+      "No, mai",
+      "Sì, sempre",
+      "Solo nello stile giornalistico",
+      "Solo davanti a e"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Elisione».",
+    "fonte": "Wikipedia, «Elisione» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-166",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "In cosa l'apocope (troncamento) differisce dall'elisione?",
+    "opzioni": [
+      "L'apocope avviene solo davanti a vocale",
+      "La parola tronca conserva il significato anche isolata e di solito non vuole l'apostrofo",
+      "L'apocope vuole sempre l'apostrofo",
+      "Non c'è differenza"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Apocope».",
+    "fonte": "Wikipedia, «Apocope» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-167",
+    "argomento": "Ortografia",
+    "livello": 4,
+    "testo": "Parole come «città» e «virtù» derivano da quale fenomeno storico?",
+    "opzioni": [
+      "Da prestiti francesi",
+      "Dall'aggiunta di un accento grafico",
+      "Dal troncamento di antiche forme (cittade, virtute)",
+      "Dall'elisione davanti a vocale"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Apocope».",
+    "fonte": "Wikipedia, «Apocope» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-168",
+    "argomento": "Retorica",
+    "livello": 2,
+    "testo": "Quale figura retorica ripete una o più parole all'inizio di versi o frasi successive?",
+    "opzioni": [
+      "L'epifora",
+      "L'ossimoro",
+      "La sineddoche",
+      "L'anafora"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'epifora ripete invece alla fine.",
+    "fonte": "Wikipedia, «Anafora (figura retorica)» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-169",
+    "argomento": "Retorica",
+    "livello": 3,
+    "testo": "Come si chiama la figura che ripete gli elementi alla fine dei versi o frasi?",
+    "opzioni": [
+      "Epifora",
+      "Chiasmo",
+      "Anafora",
+      "Climax"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Anafora (figura retorica)».",
+    "fonte": "Wikipedia, «Anafora (figura retorica)» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-170",
+    "argomento": "Retorica",
+    "livello": 3,
+    "testo": "Come si chiama la ripetizione di una congiunzione coordinativa (es. «e... e... e»)?",
+    "opzioni": [
+      "Asindeto",
+      "Polisindeto",
+      "Anadiplosi",
+      "Simploche"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'asindeto è invece l'assenza di congiunzioni.",
+    "fonte": "Wikipedia, «Anafora (figura retorica)» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-171",
+    "argomento": "Retorica",
+    "livello": 2,
+    "testo": "Quale figura ripete suoni uguali o simili all'inizio di parole vicine (es. «senza capo né coda»)?",
+    "opzioni": [
+      "La rima",
+      "L'onomatopea",
+      "L'allitterazione",
+      "L'anafora"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Allitterazione».",
+    "fonte": "Wikipedia, «Allitterazione» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-172",
+    "argomento": "Retorica",
+    "livello": 2,
+    "testo": "Quale figura riproduce con i suoni della lingua un rumore (es. «bau bau», «rimbombo»)?",
+    "opzioni": [
+      "La sinestesia",
+      "La metafora",
+      "L'allitterazione",
+      "L'onomatopea"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Onomatopea».",
+    "fonte": "Wikipedia, «Onomatopea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-173",
+    "argomento": "Retorica",
+    "livello": 4,
+    "testo": "«Miagolare» e «ronzare» sono onomatopee:",
+    "opzioni": [
+      "Secondarie, cioè parole con un significato che indicano un suono",
+      "Straniere",
+      "Primarie",
+      "Non sono onomatopee"
+    ],
+    "corretta": 0,
+    "spiegazione": "Le primarie sono come «miao» o «brrr».",
+    "fonte": "Wikipedia, «Onomatopea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-174",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Quale accento richiede il «tè» (bevanda) e quale «perché»?",
+    "opzioni": [
+      "Entrambi con il grave",
+      "tè con il grave, perché con l'acuto",
+      "tè con l'acuto, perché con il grave",
+      "Entrambi con l'acuto"
+    ],
+    "corretta": 1,
+    "spiegazione": "La e di tè, caffè, cioè è aperta; i composti di che (perché, affinché) hanno la é chiusa.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-175",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Quale grafia è corretta?",
+    "opzioni": [
+      "ventitrè",
+      "venti tre",
+      "ventitré",
+      "ventitre"
+    ],
+    "corretta": 2,
+    "spiegazione": "I composti di tre vogliono l'accento acuto.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-176",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Quale accento vuole la terza persona del passato remoto di potere?",
+    "opzioni": [
+      "potè (grave)",
+      "pote (senza accento)",
+      "potê (circonflesso)",
+      "poté (acuto)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Le terze persone del passato remoto in -é hanno l'accento acuto.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-177",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Come si scrive l'imperativo di «fare» per distinguerlo dalla terza persona?",
+    "opzioni": [
+      "fa'",
+      "fa",
+      "fah",
+      "fà"
+    ],
+    "corretta": 0,
+    "spiegazione": "Lo stesso per da', sta', va'.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-178",
+    "argomento": "Ortografia",
+    "livello": 2,
+    "testo": "Quale grafia è corretta?",
+    "opzioni": [
+      "un pò",
+      "un po'",
+      "un pó",
+      "un po"
+    ],
+    "corretta": 1,
+    "spiegazione": "«Po'» è apocope di «poco» e vuole l'apostrofo.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-179",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Come si indicano in forma abbreviata gli anni in cifre (es. 1968)?",
+    "opzioni": [
+      "Con l'accento: il 68'",
+      "Con il trattino: il -68",
+      "Con l'apostrofo: il '68",
+      "Senza segni: il 68"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'apostrofo è obbligatorio in questo caso; con elisione se ne usa uno solo (dell'800).",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-180",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "È un errore andare a capo dopo un apostrofo (es. dell'/oro)?",
+    "opzioni": [
+      "Sì, è sempre un errore grammaticale",
+      "Sì, ma solo nei testi giuridici",
+      "No, anzi è obbligatorio",
+      "No, è una consuetudine tipografica, non una regola grammaticale"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Ortografia italiana».",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-181",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Dove si mette il punto nell'abbreviazione per contrazione «fratelli»?",
+    "opzioni": [
+      "In mezzo: f.lli",
+      "Non si mette",
+      "Alla fine: flli.",
+      "All'inizio: .flli"
+    ],
+    "corretta": 0,
+    "spiegazione": "Nelle abbreviazioni per troncamento il punto va alla fine (sig.).",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-182",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Come si abbrevia «pagine» al plurale?",
+    "opzioni": [
+      "pg.",
+      "pp.",
+      "p.p",
+      "pagg"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il raddoppio dell'ultima lettera indica il plurale (pp., sgg.).",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-183",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Cosa significa l'abbreviazione «cfr.»?",
+    "opzioni": [
+      "Come sopra",
+      "Conforme",
+      "Confronta",
+      "Certificato"
+    ],
+    "corretta": 2,
+    "spiegazione": "Dal latino confer.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-184",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "In quali casi l'iniziale maiuscola è tassativamente obbligatoria?",
+    "opzioni": [
+      "Con tutti gli aggettivi",
+      "Con tutti i nomi di professione",
+      "Con i giorni della settimana",
+      "All'inizio di un periodo e con i nomi propri"
+    ],
+    "corretta": 3,
+    "spiegazione": "Gli altri usi dipendono da stile e consuetudine.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-185",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Come si scrivono di solito i nomi dei popoli del presente?",
+    "opzioni": [
+      "Con la minuscola (gli italiani)",
+      "Tutti in maiuscolo",
+      "Sempre con la maiuscola",
+      "Con l'iniziale maiuscola solo al plurale"
+    ],
+    "corretta": 0,
+    "spiegazione": "I popoli storici del passato si scrivono di solito con la maiuscola (i Romani).",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-186",
+    "argomento": "Ortografia",
+    "livello": 4,
+    "testo": "Quando le particelle «de», «di», «da» nei nomi vogliono la maiuscola?",
+    "opzioni": [
+      "Mai",
+      "Negli attuali cognomi di cui fanno parte (De Nicola, D'Annunzio)",
+      "Solo nei nomi medievali (Francesco Da Assisi)",
+      "Sempre"
+    ],
+    "corretta": 1,
+    "spiegazione": "Nei patronimici e toponimici antichi restano minuscole (Tommaso d'Aquino).",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-187",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Cos'è la «maiuscola reverenziale»?",
+    "opzioni": [
+      "La maiuscola dei titoli di libro",
+      "La maiuscola delle sigle",
+      "La maiuscola usata nei pronomi di cortesia o riferiti a Dio (es. «porgerLe»)",
+      "La maiuscola all'inizio di ogni verso"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Ortografia italiana».",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-188",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Quando è previsto l'uso del corsivo?",
+    "opzioni": [
+      "Per i verbi",
+      "Mai, è solo una scelta grafica",
+      "Per tutti i nomi propri",
+      "Per titoli di opere, nomi scientifici e parole straniere non acclimatate"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Ortografia italiana».",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-189",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Cosa indica il trattino a fine riga?",
+    "opzioni": [
+      "La continuazione nella riga successiva di una parola spezzata",
+      "Un inciso",
+      "Un'abbreviazione",
+      "Una pausa lunga"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Ortografia italiana».",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-190",
+    "argomento": "Ortografia",
+    "livello": 4,
+    "testo": "Che funzione ha oggi il circonflesso nell'italiano, ad es. in «principî»?",
+    "opzioni": [
+      "Indica una vocale aperta",
+      "Segnala una contrazione e può distinguere omografi (principi/principî)",
+      "Indica l'accento tonico obbligatorio",
+      "Indica una vocale lunga obbligatoria"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Ortografia italiana».",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-191",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Nella scrittura di netiquette, scrivere tutto in maiuscolo equivale a:",
+    "opzioni": [
+      "Abbreviare",
+      "Essere formali",
+      "Urlare",
+      "Citare"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Ortografia italiana».",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-192",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Quale di queste parole è tradizionalmente scritta unita (univerbata)?",
+    "opzioni": [
+      "dapper tutto",
+      "d'appertutto",
+      "da per tutto obbligatorio",
+      "dappertutto"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Ortografia italiana».",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-193",
+    "argomento": "Ortografia",
+    "livello": 4,
+    "testo": "Come si scrive correttamente la sequenza davanti a vocale?",
+    "opzioni": [
+      "grand'uomo",
+      "gran'uomo",
+      "grand uomo",
+      "grande'uomo"
+    ],
+    "corretta": 0,
+    "spiegazione": "«Grande» si elide davanti a vocale e si tronca davanti a consonante (gran giocatore).",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-194",
+    "argomento": "Ortografia",
+    "livello": 3,
+    "testo": "Quale forma è corretta davanti a consonante?",
+    "opzioni": [
+      "uno gatto",
+      "un gatto",
+      "un'gatto",
+      "una gatto"
+    ],
+    "corretta": 1,
+    "spiegazione": "«Un» è troncamento, non vuole apostrofo; «uno» davanti a s impura, z, gn ecc.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-195",
+    "argomento": "Ortografia",
+    "livello": 2,
+    "testo": "Quale forma è corretta?",
+    "opzioni": [
+      "uno amica",
+      "un amica",
+      "un'amica",
+      "una amica obbligatorio"
+    ],
+    "corretta": 2,
+    "spiegazione": "Al femminile davanti a vocale si elide «una» con l'apostrofo.",
+    "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-196",
+    "argomento": "Punteggiatura",
+    "livello": 2,
+    "testo": "Da quale parola latina deriva «virgola»?",
+    "opzioni": [
+      "Virgo, «vergine»",
+      "Virtus, «virtù»",
+      "Vir, «uomo»",
+      "Virgula, «piccola verga»"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Punteggiatura».",
+    "fonte": "Wikipedia, «Punteggiatura» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-197",
+    "argomento": "Punteggiatura",
+    "livello": 3,
+    "testo": "Come è considerato il punto rispetto alla virgola in dottrina?",
+    "opzioni": [
+      "Il punto è una pausa forte e chiusa, la virgola una pausa debole e aperta",
+      "Nessuno dei due indica una pausa",
+      "La virgola è più forte del punto",
+      "Sono equivalenti"
+    ],
+    "corretta": 0,
+    "spiegazione": "Punto e virgola e due punti sono pause intermedie secondo la Treccani.",
+    "fonte": "Wikipedia, «Punteggiatura» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-198",
+    "argomento": "Punteggiatura",
+    "livello": 3,
+    "testo": "In greco moderno, quale segno indica la domanda?",
+    "opzioni": [
+      "Il punto esclamativo",
+      "Un segno simile al punto e virgola",
+      "Il punto interrogativo rovesciato",
+      "I due punti"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Punteggiatura».",
+    "fonte": "Wikipedia, «Punteggiatura» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-199",
+    "argomento": "Punteggiatura",
+    "livello": 3,
+    "testo": "Quale lingua apre le domande con un punto interrogativo rovesciato (¿)?",
+    "opzioni": [
+      "Il tedesco",
+      "Il francese",
+      "Lo spagnolo",
+      "L'inglese"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Punteggiatura».",
+    "fonte": "Wikipedia, «Punteggiatura» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-200",
+    "argomento": "Punteggiatura",
+    "livello": 4,
+    "testo": "Da quale parola latina deriverebbe il punto esclamativo?",
+    "opzioni": [
+      "Exclamatio",
+      "Ecce, «ecco»",
+      "Quaestio, «domanda»",
+      "Io, «evviva»"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il punto interrogativo deriverebbe invece da quaestio.",
+    "fonte": "Wikipedia, «Punteggiatura» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-201",
+    "argomento": "Punteggiatura",
+    "livello": 4,
+    "testo": "Chi propose nel 1962 il «punto esclarrogativo» (‽)?",
+    "opzioni": [
+      "Il pubblicitario americano Martin K. Speckter",
+      "Pietro Bembo",
+      "Francesco Flora",
+      "Hervé Bazin"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Punteggiatura».",
+    "fonte": "Wikipedia, «Punteggiatura» (CC BY-SA 4.0)",
+    "versione": "v1"
+  }
+]

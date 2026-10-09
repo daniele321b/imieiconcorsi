@@ -18,16 +18,25 @@ export async function importaBandi() {
 
     // Cosa c'è già: per riconoscere i bandi nuovi e non perdere i dati aggiunti dopo
     // l'import (es. banca dati ufficiale già importata).
-    const esistenti = await batchGet<Pick<Concorso, "id" | "bancaDati">>(
+    const esistenti = await batchGet<Pick<Concorso, "id" | "bancaDati" | "bancaDatiId" | "conclusoIl" | "primoImportoIl" | "pubblicatoIl">>(
       tables.concorsi,
       concorsi.map((c) => ({ id: c.id })),
-      "id, bancaDati",
+      "id, bancaDati, bancaDatiId, conclusoIl, primoImportoIl, pubblicatoIl",
     );
     const giaVisti = new Map(esistenti.map((e) => [e.id, e]));
+    const adesso = new Date().toISOString();
     for (const c of concorsi) {
       const prima = giaVisti.get(c.id);
-      if (prima) c.bancaDati = prima.bancaDati ?? false;
-      else if (c.bancaDatiPrevista) nuoviConBancaDati.push(c);
+      if (prima) {
+        c.bancaDati = prima.bancaDati ?? false;
+        if (prima.bancaDatiId) c.bancaDatiId = prima.bancaDatiId;
+        if (prima.conclusoIl) c.conclusoIl = prima.conclusoIl;
+        // Bandi importati prima di questo campo: contano dalla pubblicazione, così non sembrano tutti nuovi.
+        c.primoImportoIl = prima.primoImportoIl ?? prima.pubblicatoIl ?? "1970-01-01T00:00:00.000Z";
+      } else {
+        c.primoImportoIl = adesso;
+        if (c.bancaDatiPrevista) nuoviConBancaDati.push(c);
+      }
     }
 
     for (let i = 0; i < concorsi.length; i += 25) {

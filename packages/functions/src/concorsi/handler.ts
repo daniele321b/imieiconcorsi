@@ -1,5 +1,6 @@
 import { DeleteCommand, GetCommand, PutCommand, QueryCommand } from "@aws-sdk/lib-dynamodb";
 import { batchGet, db, getProfilo, tables } from "@imieiconcorsi/core/db";
+import { inizioBandiScaduti } from "@imieiconcorsi/core/concorsi";
 import { COMPARTO_IDS, type CompartoId, type Concorso } from "@imieiconcorsi/core/domain";
 import { HttpError, notFound, service } from "@imieiconcorsi/core/http";
 
@@ -21,6 +22,22 @@ async function concorsiAperti(comparto: CompartoId) {
   return (res.Items ?? []) as Concorso[];
 }
 
+/** Scaduti da poco (fino a MESI_DOPO_SCADENZA mesi) e non segnati come conclusi, i più recenti prima. */
+async function concorsiScaduti(comparto: CompartoId) {
+  const res = await db.send(
+    new QueryCommand({
+      TableName: tables.concorsi,
+      IndexName: "byComparto",
+      KeyConditionExpression: "comparto = :c AND scadenza BETWEEN :da AND :oggi",
+      FilterExpression: "attribute_not_exists(conclusoIl)",
+      ExpressionAttributeValues: { ":c": comparto, ":da": inizioBandiScaduti(), ":oggi": new Date().toISOString() },
+      ScanIndexForward: false,
+      Limit: MAX_PER_COMPARTO,
+    }),
+  );
+  return (res.Items ?? []) as Concorso[];
+}
+
 async function idSeguiti(userId: string) {
   const res = await db.send(
     new QueryCommand({
@@ -33,10 +50,15 @@ async function idSeguiti(userId: string) {
 }
 
 export const handler = service({
-  /** ?comparto=enti-locali — senza parametro usa gli interessi dell'utente. */
+  /**
+   * ?comparto=enti-locali, ?comparto=tutti — senza parametro usa gli interessi dell'utente.
+   * ?scaduti=1 aggiunge i bandi con le domande già chiuse ma il concorso non ancora finito.
+   */
   "GET /concorsi": async ({ userId, query }) => {
     let comparti: CompartoId[];
-    if (query.comparto) {
+    if (query.comparto === "tutti") {
+      comparti = [...COMPARTO_IDS];
+    } else if (query.comparto) {
       if (!COMPARTO_IDS.includes(query.comparto as CompartoId)) throw new HttpError(400, "Comparto sconosciuto");
       comparti = [query.comparto as CompartoId];
     } else {
@@ -44,7 +66,11 @@ export const handler = service({
       comparti = profilo?.interessi.length ? profilo.interessi : [...COMPARTO_IDS];
     }
 
-    const [liste, seguiti] = await Promise.all([Promise.all(comparti.map(concorsiAperti)), idSeguiti(userId)]);
+    const conScaduti = query.scaduti === "1";
+    const [liste, seguiti] = await Promise.all([
+      Promise.all(comparti.flatMap((c) => (conScaduti ? [concorsiAperti(c), concorsiScaduti(c)] : [concorsiAperti(c)]))),
+      idSeguiti(userId),
+    ]);
     const concorsi = liste
       .flat()
       .sort((a, b) => (a.scadenza ?? "").localeCompare(b.scadenza ?? ""))

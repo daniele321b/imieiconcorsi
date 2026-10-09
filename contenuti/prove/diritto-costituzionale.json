@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "cost-001",
+    "file": "norma_Costituzione.txt",
+    "frase": "La sovranità appartiene al popolo, che la esercita nelle forme e nei limiti della Costituzione"
+  },
+  {
+    "id": "cost-002",
+    "file": "norma_Costituzione.txt",
+    "frase": "L'Italia è una Repubblica democratica, fondata sul lavoro"
+  },
+  {
+    "id": "cost-003",
+    "file": "norma_Costituzione.txt",
+    "frase": "È compito della Repubblica rimuovere gli ostacoli di ordine economico e sociale"
+  },
+  {
+    "id": "cost-004",
+    "file": "norma_Costituzione.txt",
+    "frase": "a tre bande verticali di eguali dimensioni"
+  },
+  {
+    "id": "cost-005",
+    "file": "norma_Costituzione.txt",
+    "frase": "I loro rapporti sono regolati dai Patti Lateranensi"
+  },
+  {
+    "id": "cost-006",
+    "file": "norma_Costituzione.txt",
+    "frase": "Tutela l'ambiente, la biodiversità e gli ecosistemi, anche nell'interesse delle future generazioni"
+  },
+  {
+    "id": "cost-007",
+    "file": "norma_Costituzione.txt",
+    "frase": "L'Italia ripudia la guerra come strumento di offesa alla libertà degli altri popoli"
+  },
+  {
+    "id": "cost-008",
+    "file": "norma_Costituzione.txt",
+    "frase": "devono essere comunicati entro quarantotto ore all'autorità giudiziaria"
+  },
+  {
+    "id": "cost-009",
+    "file": "norma_Costituzione.txt",
+    "frase": "La stampa non può essere soggetta ad autorizzazioni o censure"
+  },
+  {
+    "id": "cost-010",
+    "file": "norma_Costituzione.txt",
+    "frase": "Non è ammessa la pena di morte"
+  },
+  {
+    "id": "cost-011",
+    "file": "norma_Costituzione.txt",
+    "frase": "L'imputato non è considerato colpevole sino alla condanna definitiva"
+  },
+  {
+    "id": "cost-012",
+    "file": "norma_Costituzione.txt",
+    "frase": "e a ferie annuali retribuite, e non può rinunziarvi"
+  },
+  {
+    "id": "cost-013",
+    "file": "norma_Costituzione.txt",
+    "frase": "Il voto è personale ed eguale, libero e segreto"
+  },
+  {
+    "id": "cost-014",
+    "file": "norma_Costituzione.txt",
+    "frase": "Il numero dei deputati è di ((quattrocento))"
+  },
+  {
+    "id": "cost-015",
+    "file": "norma_Costituzione.txt",
+    "frase": "Il numero dei senatori elettivi è di ((duecento))"
+  },
+  {
+    "id": "cost-016",
+    "file": "norma_Costituzione.txt",
+    "frase": "i venticinque anni di età"
+  },
+  {
+    "id": "cost-017",
+    "file": "norma_Costituzione.txt",
+    "frase": "che hanno compiuto il quarantesimo anno"
+  },
+  {
+    "id": "cost-018",
+    "file": "norma_Costituzione.txt",
+    "frase": "sono eletti per cinque anni"
+  },
+  {
+    "id": "cost-019",
+    "file": "norma_Costituzione.txt",
+    "frase": "non può in alcun caso essere superiore a cinque"
+  },
+  {
+    "id": "cost-020",
+    "file": "norma_Costituzione.txt",
+    "frase": "esercita le sue funzioni senza vincolo di mandato"
+  },
+  {
+    "id": "cost-021",
+    "file": "norma_Costituzione.txt",
+    "frase": "da parte di almeno cinquantamila elettori"
+  },
+  {
+    "id": "cost-022",
+    "file": "norma_Costituzione.txt",
+    "frase": "quando lo richiedono cinquecentomila elettori o cinque Consigli regionali"
+  },
+  {
+    "id": "cost-023",
+    "file": "norma_Costituzione.txt",
+    "frase": "Non è ammesso il referendum per le leggi tributarie e di bilancio"
+  },
+  {
+    "id": "cost-024",
+    "file": "norma_Costituzione.txt",
+    "frase": "se ha partecipato alla votazione la maggioranza degli aventi diritto"
+  },
+  {
+    "id": "cost-025",
+    "file": "norma_Costituzione.txt",
+    "frase": "entro sessanta giorni dalla loro pubblicazione"
+  },
+  {
+    "id": "cost-026",
+    "file": "norma_Costituzione.txt",
+    "frase": "maggioranza dei due terzi dei componenti di ciascuna Camera"
+  },
+  {
+    "id": "cost-027",
+    "file": "norma_Costituzione.txt",
+    "frase": "Il Presidente della Repubblica è eletto dal Parlamento in seduta comune dei suoi membri"
+  },
+  {
+    "id": "cost-028",
+    "file": "norma_Costituzione.txt",
+    "frase": "Dopo il terzo scrutinio è sufficiente la maggioranza assoluta"
+  },
+  {
+    "id": "cost-029",
+    "file": "norma_Costituzione.txt",
+    "frase": "abbia compiuto cinquanta anni d'età"
+  },
+  {
+    "id": "cost-030",
+    "file": "norma_Costituzione.txt",
+    "frase": "Il Presidente della Repubblica è eletto per sette anni"
+  },
+  {
+    "id": "cost-031",
+    "file": "norma_Costituzione.txt",
+    "frase": "sono esercitate dal Presidente del Senato"
+  },
+  {
+    "id": "cost-032",
+    "file": "norma_Costituzione.txt",
+    "frase": "Non può esercitare tale facoltà negli ultimi sei mesi del suo mandato"
+  },
+  {
+    "id": "cost-033",
+    "file": "norma_Costituzione.txt",
+    "frase": "tranne che per alto tradimento o per attentato alla Costituzione"
+  },
+  {
+    "id": "cost-034",
+    "file": "norma_Costituzione.txt",
+    "frase": "Entro dieci giorni dalla sua formazione il Governo si presenta alle Camere"
+  },
+  {
+    "id": "cost-035",
+    "file": "norma_Costituzione.txt",
+    "frase": "almeno un decimo dei componenti della Camera"
+  },
+  {
+    "id": "cost-036",
+    "file": "norma_Costituzione.txt",
+    "frase": "Il Consiglio superiore della magistratura è presieduto dal Presidente della Repubblica"
+  },
+  {
+    "id": "cost-037",
+    "file": "norma_Costituzione.txt",
+    "frase": "La Repubblica è costituita dai Comuni, dalle Province, dalle Città metropolitane, dalle Regioni e dallo Stato"
+  },
+  {
+    "id": "cost-038",
+    "file": "norma_Costituzione.txt",
+    "frase": "I giudici della Corte costituzionale sono nominati per nove anni"
+  },
+  {
+    "id": "cost-039",
+    "file": "norma_Costituzione.txt",
+    "frase": "cessa di avere efficacia dal giorno successivo alla pubblicazione della decisione"
+  },
+  {
+    "id": "cost-040",
+    "file": "norma_Costituzione.txt",
+    "frase": "Non si fa luogo a referendum se la legge è stata approvata nella seconda votazione"
+  },
+  {
+    "id": "cost-041",
+    "file": "norma_Costituzione.txt",
+    "frase": "La forma repubblicana non può essere oggetto di revisione costituzionale"
+  },
+  {
+    "id": "cost-042",
+    "file": "norma_Costituzione.txt",
+    "frase": "ne facciano domanda un quinto dei membri di una Camera o cinquecentomila elettori o cinque Consigli regionali"
+  },
+  {
+    "id": "cost-043",
+    "file": "norma_Costituzione.txt",
+    "frase": "ed entra in vigore il 1° gennaio 1948"
+  },
+  {
+    "id": "cost-044",
+    "file": "norma_Costituzione.txt",
+    "frase": "La Repubblica tutela con apposite norme le minoranze linguistiche"
+  },
+  {
+    "id": "cost-045",
+    "file": "norma_Costituzione.txt",
+    "frase": "richiede l'adempimento dei doveri inderogabili di solidarietà politica, economica e sociale"
+  },
+  {
+    "id": "cost-046",
+    "file": "norma_Costituzione.txt",
+    "frase": "riconosce a tutti i cittadini il diritto al lavoro"
+  },
+  {
+    "id": "cost-047",
+    "file": "norma_Costituzione.txt",
+    "frase": "La Repubblica, una e indivisibile, riconosce e promuove le autonomie locali"
+  },
+  {
+    "id": "cost-048",
+    "file": "norma_Costituzione.txt",
+    "frase": "non richiedono procedimento di revisione costituzionale"
+  },
+  {
+    "id": "cost-049",
+    "file": "norma_Costituzione.txt",
+    "frase": "sono regolati per legge sulla base di intese con le relative rappresentanze"
+  },
+  {
+    "id": "cost-050",
+    "file": "norma_Costituzione.txt",
+    "frase": "La legge dello Stato disciplina i modi e le forme di tutela degli animali"
+  },
+  {
+    "id": "cost-051",
+    "file": "norma_Costituzione.txt",
+    "frase": "ha diritto d'asilo nel territorio della Repubblica"
+  },
+  {
+    "id": "cost-052",
+    "file": "norma_Costituzione.txt",
+    "frase": "Non è ammessa l'estradizione dello straniero per reati politici"
+  },
+  {
+    "id": "cost-053",
+    "file": "norma_Costituzione.txt",
+    "frase": "consente, in condizioni di parità con gli altri Stati, alle limitazioni di sovranità"
+  },
+  {
+    "id": "cost-054",
+    "file": "norma_Costituzione.txt",
+    "frase": "Il domicilio è inviolabile"
+  },
+  {
+    "id": "cost-055",
+    "file": "norma_Costituzione.txt",
+    "frase": "La loro limitazione può avvenire soltanto per atto motivato dell'autorità giudiziaria"
+  },
+  {
+    "id": "cost-056",
+    "file": "norma_Costituzione.txt",
+    "frase": "Nessuna restrizione può essere determinata da ragioni politiche"
+  },
+  {
+    "id": "cost-057",
+    "file": "norma_Costituzione.txt",
+    "frase": "Delle riunioni in luogo pubblico deve essere dato preavviso alle autorità"
+  },
+  {
+    "id": "cost-058",
+    "file": "norma_Costituzione.txt",
+    "frase": "Per le riunioni, anche in luogo aperto al pubblico, non è richiesto preavviso"
+  },
+  {
+    "id": "cost-059",
+    "file": "norma_Costituzione.txt",
+    "frase": "Sono proibite le associazioni segrete"
+  },
+  {
+    "id": "cost-060",
+    "file": "norma_Costituzione.txt",
+    "frase": "purché non si tratti di riti contrari al buon costume"
+  },
+  {
+    "id": "cost-061",
+    "file": "norma_Costituzione.txt",
+    "frase": "immediatamente, e non mai oltre ventiquattro ore"
+  },
+  {
+    "id": "cost-062",
+    "file": "norma_Costituzione.txt",
+    "frase": "Nessuno può essere privato, per motivi politici, della capacità giuridica, della cittadinanza, del nome"
+  },
+  {
+    "id": "cost-063",
+    "file": "norma_Costituzione.txt",
+    "frase": "Nessuna prestazione personale o patrimoniale può essere imposta se non in base alla legge"
+  },
+  {
+    "id": "cost-064",
+    "file": "norma_Costituzione.txt",
+    "frase": "La difesa è diritto inviolabile in ogni stato e grado del procedimento"
+  },
+  {
+    "id": "cost-065",
+    "file": "norma_Costituzione.txt",
+    "frase": "Nessuno può essere distolto dal giudice naturale precostituito per legge"
+  },
+  {
+    "id": "cost-066",
+    "file": "norma_Costituzione.txt",
+    "frase": "Nessuno può essere punito se non in forza di una legge che sia entrata in vigore prima del fatto commesso"
+  },
+  {
+    "id": "cost-067",
+    "file": "norma_Costituzione.txt",
+    "frase": "L'estradizione del cittadino può essere consentita soltanto ove sia espressamente prevista dalle convenzioni internazionali"
+  },
+  {
+    "id": "cost-068",
+    "file": "norma_Costituzione.txt",
+    "frase": "devono tendere alla rieducazione del condannato"
+  },
+  {
+    "id": "cost-069",
+    "file": "norma_Costituzione.txt",
+    "frase": "In tali casi la responsabilità civile si estende allo Stato e agli enti pubblici"
+  },
+  {
+    "id": "cost-070",
+    "file": "norma_Costituzione.txt",
+    "frase": "la famiglia come società naturale fondata sul matrimonio"
+  },
+  {
+    "id": "cost-071",
+    "file": "norma_Costituzione.txt",
+    "frase": "È dovere e diritto dei genitori mantenere, istruire ed educare i figli"
+  },
+  {
+    "id": "cost-072",
+    "file": "norma_Costituzione.txt",
+    "frase": "La Repubblica tutela la salute come fondamentale diritto dell'individuo e interesse della collettività"
+  },
+  {
+    "id": "cost-073",
+    "file": "norma_Costituzione.txt",
+    "frase": "Nessuno può essere obbligato a un determinato trattamento sanitario se non per disposizione di legge"
+  },
+  {
+    "id": "cost-074",
+    "file": "norma_Costituzione.txt",
+    "frase": "Enti e privati hanno il diritto di istituire scuole ed istituti di educazione, senza oneri per lo Stato"
+  },
+  {
+    "id": "cost-075",
+    "file": "norma_Costituzione.txt",
+    "frase": "La Repubblica riconosce il valore educativo, sociale e di promozione del benessere psicofisico dell'attività sportiva"
+  },
+  {
+    "id": "cost-076",
+    "file": "norma_Costituzione.txt",
+    "frase": "L'istruzione inferiore, impartita per almeno otto anni, è obbligatoria e gratuita"
+  },
+  {
+    "id": "cost-077",
+    "file": "norma_Costituzione.txt",
+    "frase": "I capaci e meritevoli, anche se privi di mezzi, hanno diritto di raggiungere i gradi più alti degli studi"
+  },
+  {
+    "id": "cost-078",
+    "file": "norma_Costituzione.txt",
+    "frase": "proporzionata alla quantità e qualità del suo lavoro"
+  },
+  {
+    "id": "cost-079",
+    "file": "norma_Costituzione.txt",
+    "frase": "La durata massima della giornata lavorativa è stabilita dalla legge"
+  },
+  {
+    "id": "cost-080",
+    "file": "norma_Costituzione.txt",
+    "frase": "La donna lavoratrice ha gli stessi diritti e, a parità di lavoro, le stesse retribuzioni che spettano al lavoratore"
+  },
+  {
+    "id": "cost-081",
+    "file": "norma_Costituzione.txt",
+    "frase": "Ogni cittadino inabile al lavoro e sprovvisto dei mezzi necessari per vivere ha diritto al mantenimento e all'assistenza sociale"
+  },
+  {
+    "id": "cost-082",
+    "file": "norma_Costituzione.txt",
+    "frase": "È condizione per la registrazione che gli statuti dei sindacati sanciscano un ordinamento interno a base democratica"
+  },
+  {
+    "id": "cost-083",
+    "file": "norma_Costituzione.txt",
+    "frase": "Il diritto di sciopero si esercita nell'ambito delle leggi che lo regolano"
+  },
+  {
+    "id": "cost-084",
+    "file": "norma_Costituzione.txt",
+    "frase": "in modo da recare danno ((alla salute, all'ambiente,))"
+  },
+  {
+    "id": "cost-085",
+    "file": "norma_Costituzione.txt",
+    "frase": "e salvo indennizzo, espropriata per motivi d'interesse generale"
+  },
+  {
+    "id": "cost-086",
+    "file": "norma_Costituzione.txt",
+    "frase": "La Repubblica incoraggia e tutela il risparmio in tutte le sue forme"
+  },
+  {
+    "id": "cost-087",
+    "file": "norma_Costituzione.txt",
+    "frase": "Il diritto di voto non può essere limitato se non per incapacità civile"
+  },
+  {
+    "id": "cost-088",
+    "file": "norma_Costituzione.txt",
+    "frase": "per concorrere con metodo democratico a determinare la politica nazionale"
+  },
+  {
+    "id": "cost-089",
+    "file": "norma_Costituzione.txt",
+    "frase": "Tutti i cittadini possono rivolgere petizioni alle Camere"
+  },
+  {
+    "id": "cost-090",
+    "file": "norma_Costituzione.txt",
+    "frase": "ha diritto di disporre del tempo necessario al loro adempimento e di conservare il suo posto di lavoro"
+  },
+  {
+    "id": "cost-091",
+    "file": "norma_Costituzione.txt",
+    "frase": "La difesa della Patria è sacro dovere del cittadino"
+  },
+  {
+    "id": "cost-092",
+    "file": "norma_Costituzione.txt",
+    "frase": "Il sistema tributario è informato a criteri di progressività"
+  },
+  {
+    "id": "cost-093",
+    "file": "norma_Costituzione.txt",
+    "frase": "hanno il dovere di adempierle con disciplina ed onore"
+  },
+  {
+    "id": "cost-094",
+    "file": "norma_Costituzione.txt",
+    "frase": "Il Parlamento si compone della Camera dei deputati e del Senato della Repubblica"
+  },
+  {
+    "id": "cost-095",
+    "file": "norma_Costituzione.txt",
+    "frase": "((otto)) dei quali eletti nella circoscrizione Estero"
+  },
+  {
+    "id": "cost-096",
+    "file": "norma_Costituzione.txt",
+    "frase": "Il Senato della Repubblica è eletto a base regionale"
+  },
+  {
+    "id": "cost-097",
+    "file": "norma_Costituzione.txt",
+    "frase": "il Molise ne ha due, la Valle d'Aosta uno"
+  },
+  {
+    "id": "cost-098",
+    "file": "norma_Costituzione.txt",
+    "frase": "È senatore di diritto e a vita, salvo rinunzia, chi è stato Presidente della Repubblica"
+  },
+  {
+    "id": "cost-099",
+    "file": "norma_Costituzione.txt",
+    "frase": "non può essere prorogata se non per legge e soltanto in caso di guerra"
+  },
+  {
+    "id": "cost-100",
+    "file": "norma_Costituzione.txt",
+    "frase": "Le elezioni delle nuove Camere hanno luogo entro settanta giorni dalla fine delle precedenti"
+  },
+  {
+    "id": "cost-101",
+    "file": "norma_Costituzione.txt",
+    "frase": "Le Camere si riuniscono di diritto il primo giorno non festivo di febbraio e di ottobre"
+  },
+  {
+    "id": "cost-102",
+    "file": "norma_Costituzione.txt",
+    "frase": "il Presidente e l'Ufficio di presidenza sono quelli della Camera dei deputati"
+  },
+  {
+    "id": "cost-103",
+    "file": "norma_Costituzione.txt",
+    "frase": "Ciascuna Camera adotta il proprio regolamento a maggioranza assoluta dei suoi componenti"
+  },
+  {
+    "id": "cost-104",
+    "file": "norma_Costituzione.txt",
+    "frase": "non sono valide se non è presente la maggioranza dei loro componenti"
+  },
+  {
+    "id": "cost-105",
+    "file": "norma_Costituzione.txt",
+    "frase": "Nessuno può appartenere contemporaneamente alle due Camere"
+  },
+  {
+    "id": "cost-106",
+    "file": "norma_Costituzione.txt",
+    "frase": "Ciascuna Camera giudica dei titoli di ammissione dei suoi componenti"
+  },
+  {
+    "id": "cost-107",
+    "file": "norma_Costituzione.txt",
+    "frase": "non possono essere chiamati a rispondere delle opinioni espresse e dei voti dati nell'esercizio delle loro funzioni"
+  },
+  {
+    "id": "cost-108",
+    "file": "norma_Costituzione.txt",
+    "frase": "ovvero se sia colto nell'atto di commettere un delitto per il quale è previsto l'arresto obbligatorio in flagranza"
+  },
+  {
+    "id": "cost-109",
+    "file": "norma_Costituzione.txt",
+    "frase": "L'iniziativa delle leggi appartiene al Governo, a ciascun membro delle Camere"
+  },
+  {
+    "id": "cost-110",
+    "file": "norma_Costituzione.txt",
+    "frase": "La procedura normale di esame e di approvazione diretta da parte della Camera è sempre adottata per i disegni di legge in materia costituzionale ed elettorale"
+  },
+  {
+    "id": "cost-111",
+    "file": "norma_Costituzione.txt",
+    "frase": "Le leggi sono promulgate dal Presidente della Repubblica entro un mese dall'approvazione"
+  },
+  {
+    "id": "cost-112",
+    "file": "norma_Costituzione.txt",
+    "frase": "entrano in vigore il quindicesimo giorno successivo alla loro pubblicazione"
+  },
+  {
+    "id": "cost-113",
+    "file": "norma_Costituzione.txt",
+    "frase": "Se le Camere approvano nuovamente la legge, questa deve essere promulgata"
+  },
+  {
+    "id": "cost-114",
+    "file": "norma_Costituzione.txt",
+    "frase": "Hanno diritto di partecipare al referendum tutti i cittadini chiamati ad eleggere la Camera dei deputati"
+  },
+  {
+    "id": "cost-115",
+    "file": "norma_Costituzione.txt",
+    "frase": "se non con determinazione di principi e criteri direttivi e soltanto per tempo limitato e per oggetti definiti"
+  },
+  {
+    "id": "cost-116",
+    "file": "norma_Costituzione.txt",
+    "frase": "anche se sciolte, sono appositamente convocate e si riuniscono entro cinque giorni"
+  },
+  {
+    "id": "cost-117",
+    "file": "norma_Costituzione.txt",
+    "frase": "Le Camere possono tuttavia regolare con legge i rapporti giuridici sorti sulla base dei decreti non convertiti"
+  },
+  {
+    "id": "cost-118",
+    "file": "norma_Costituzione.txt",
+    "frase": "Le Camere deliberano lo stato di guerra"
+  },
+  {
+    "id": "cost-119",
+    "file": "norma_Costituzione.txt",
+    "frase": "non possono applicarsi ai reati commessi successivamente alla presentazione del disegno di legge"
+  },
+  {
+    "id": "cost-120",
+    "file": "norma_Costituzione.txt",
+    "frase": "Le Camere autorizzano con legge la ratifica dei trattati internazionali che sono di natura politica"
+  },
+  {
+    "id": "cost-121",
+    "file": "norma_Costituzione.txt",
+    "frase": "per periodi non superiori complessivamente a quattro mesi"
+  },
+  {
+    "id": "cost-122",
+    "file": "norma_Costituzione.txt",
+    "frase": "Il ricorso all'indebitamento è consentito solo al fine di considerare gli effetti del ciclo economico"
+  },
+  {
+    "id": "cost-123",
+    "file": "norma_Costituzione.txt",
+    "frase": "procede alle indagini e agli esami con gli stessi poteri e le stesse limitazioni dell'autorità giudiziaria"
+  },
+  {
+    "id": "cost-124",
+    "file": "norma_Costituzione.txt",
+    "frase": "La Valle d'Aosta ha un solo delegato"
+  },
+  {
+    "id": "cost-125",
+    "file": "norma_Costituzione.txt",
+    "frase": "ha luogo per scrutinio segreto a maggioranza di due terzi della assemblea"
+  },
+  {
+    "id": "cost-126",
+    "file": "norma_Costituzione.txt",
+    "frase": "L'ufficio di Presidente della Repubblica è incompatibile con qualsiasi altra carica"
+  },
+  {
+    "id": "cost-127",
+    "file": "norma_Costituzione.txt",
+    "frase": "Trenta giorni prima che scada il termine, il Presidente della Camera dei deputati convoca in seduta comune il Parlamento"
+  },
+  {
+    "id": "cost-128",
+    "file": "norma_Costituzione.txt",
+    "frase": "la elezione ha luogo entro quindici giorni dalla riunione delle Camere nuove"
+  },
+  {
+    "id": "cost-129",
+    "file": "norma_Costituzione.txt",
+    "frase": "il Presidente della Camera dei deputati indice la elezione del nuovo Presidente della Repubblica entro quindici giorni"
+  },
+  {
+    "id": "cost-130",
+    "file": "norma_Costituzione.txt",
+    "frase": "Ha il comando delle Forze armate, presiede il Consiglio supremo di difesa"
+  },
+  {
+    "id": "cost-131",
+    "file": "norma_Costituzione.txt",
+    "frase": "Può concedere grazia e commutare le pene"
+  },
+  {
+    "id": "cost-132",
+    "file": "norma_Costituzione.txt",
+    "frase": "Il Presidente della Repubblica può, sentiti i loro Presidenti, sciogliere le Camere"
+  },
+  {
+    "id": "cost-133",
+    "file": "norma_Costituzione.txt",
+    "frase": "Nessun atto del Presidente della Repubblica è valido se non è controfirmato dai ministri proponenti"
+  },
+  {
+    "id": "cost-134",
+    "file": "norma_Costituzione.txt",
+    "frase": "è messo in stato di accusa dal Parlamento in seduta comune, a maggioranza assoluta dei suoi membri"
+  },
+  {
+    "id": "cost-135",
+    "file": "norma_Costituzione.txt",
+    "frase": "dinanzi al Parlamento in seduta comune"
+  },
+  {
+    "id": "cost-136",
+    "file": "norma_Costituzione.txt",
+    "frase": "Il Governo della Repubblica è composto del Presidente del Consiglio e dei ministri"
+  },
+  {
+    "id": "cost-137",
+    "file": "norma_Costituzione.txt",
+    "frase": "Il Presidente della Repubblica nomina il Presidente del Consiglio dei ministri e, su proposta di questo, i ministri"
+  },
+  {
+    "id": "cost-138",
+    "file": "norma_Costituzione.txt",
+    "frase": "prestano giuramento nelle mani del Presidente della Repubblica"
+  },
+  {
+    "id": "cost-139",
+    "file": "norma_Costituzione.txt",
+    "frase": "mediante mozione motivata e votata per appello nominale"
+  },
+  {
+    "id": "cost-140",
+    "file": "norma_Costituzione.txt",
+    "frase": "non importa obbligo di dimissioni"
+  },
+  {
+    "id": "cost-141",
+    "file": "norma_Costituzione.txt",
+    "frase": "Il Presidente del Consiglio dei ministri dirige la politica generale del Governo e ne è responsabile"
+  },
+  {
+    "id": "cost-142",
+    "file": "norma_Costituzione.txt",
+    "frase": "individualmente degli atti dei loro dicasteri"
+  },
+  {
+    "id": "cost-143",
+    "file": "norma_Costituzione.txt",
+    "frase": "sono sottoposti, per i reati commessi nell'esercizio delle loro funzioni, alla giurisdizione ordinaria"
+  },
+  {
+    "id": "cost-144",
+    "file": "norma_Costituzione.txt",
+    "frase": "Agli impieghi nelle pubbliche amministrazioni si accede mediante concorso"
+  },
+  {
+    "id": "cost-145",
+    "file": "norma_Costituzione.txt",
+    "frase": "siano assicurati il buon andamento e l'imparzialità dell'amministrazione"
+  },
+  {
+    "id": "cost-146",
+    "file": "norma_Costituzione.txt",
+    "frase": "I pubblici impiegati sono al servizio esclusivo della Nazione"
+  },
+  {
+    "id": "cost-147",
+    "file": "norma_Costituzione.txt",
+    "frase": "limitazioni al diritto d'iscriversi ai partiti politici per i magistrati"
+  },
+  {
+    "id": "cost-148",
+    "file": "norma_Costituzione.txt",
+    "frase": "Il Consiglio nazionale dell'economia e del lavoro è composto"
+  },
+  {
+    "id": "cost-149",
+    "file": "norma_Costituzione.txt",
+    "frase": "Il Consiglio di Stato è organo di consulenza giuridico-amministrativa"
+  },
+  {
+    "id": "cost-150",
+    "file": "norma_Costituzione.txt",
+    "frase": "La Corte dei conti esercita il controllo preventivo di legittimità sugli atti del Governo"
+  },
+  {
+    "id": "cost-151",
+    "file": "norma_Costituzione.txt",
+    "frase": "La giustizia è amministrata in nome del popolo"
+  },
+  {
+    "id": "cost-152",
+    "file": "norma_Costituzione.txt",
+    "frase": "Non possono essere istituiti giudici straordinari o giudici speciali"
+  },
+  {
+    "id": "cost-153",
+    "file": "norma_Costituzione.txt",
+    "frase": "degli interessi legittimi e, in particolari materie indicate dalla legge, anche dei diritti soggettivi"
+  },
+  {
+    "id": "cost-154",
+    "file": "norma_Costituzione.txt",
+    "frase": "In tempo di pace hanno giurisdizione soltanto per i reati militari commessi da appartenenti alle Forze armate"
+  },
+  {
+    "id": "cost-155",
+    "file": "norma_Costituzione.txt",
+    "frase": "sono eletti per due terzi da tutti i magistrati ordinari"
+  },
+  {
+    "id": "cost-156",
+    "file": "norma_Costituzione.txt",
+    "frase": "I membri elettivi del Consiglio durano in carica quattro anni e non sono immediatamente rieleggibili"
+  },
+  {
+    "id": "cost-157",
+    "file": "norma_Costituzione.txt",
+    "frase": "Le nomine dei magistrati hanno luogo per concorso"
+  },
+  {
+    "id": "cost-158",
+    "file": "norma_Costituzione.txt",
+    "frase": "I magistrati sono inamovibili"
+  },
+  {
+    "id": "cost-159",
+    "file": "norma_Costituzione.txt",
+    "frase": "L'autorità giudiziaria dispone direttamente della polizia giudiziaria"
+  },
+  {
+    "id": "cost-160",
+    "file": "norma_Costituzione.txt",
+    "frase": "davanti a giudice terzo e imparziale"
+  },
+  {
+    "id": "cost-161",
+    "file": "norma_Costituzione.txt",
+    "frase": "è sempre ammesso ricorso in Cassazione per violazione di legge"
+  },
+  {
+    "id": "cost-162",
+    "file": "norma_Costituzione.txt",
+    "frase": "Il pubblico ministero ha l'obbligo di esercitare l'azione penale"
+  },
+  {
+    "id": "cost-163",
+    "file": "norma_Costituzione.txt",
+    "frase": "Tale tutela giurisdizionale non può essere esclusa o limitata"
+  },
+  {
+    "id": "cost-164",
+    "file": "norma_Costituzione.txt",
+    "frase": "Roma è la capitale della Repubblica"
+  },
+  {
+    "id": "cost-165",
+    "file": "norma_Costituzione.txt",
+    "frase": "dispongono di forme e condizioni particolari di autonomia"
+  },
+  {
+    "id": "cost-166",
+    "file": "norma_Costituzione.txt",
+    "frase": "è costituita dalle Province autonome di Trento e di Bolzano"
+  },
+  {
+    "id": "cost-167",
+    "file": "norma_Costituzione.txt",
+    "frase": "e) moneta, tutela del risparmio e mercati finanziari"
+  },
+  {
+    "id": "cost-168",
+    "file": "norma_Costituzione.txt",
+    "frase": "ricerca scientifica e tecnologica e sostegno all'innovazione per i settori produttivi; tutela della salute"
+  },
+  {
+    "id": "cost-169",
+    "file": "norma_Costituzione.txt",
+    "frase": "Spetta alle Regioni la potestà legislativa in riferimento ad ogni materia non espressamente riservata alla legislazione dello Stato"
+  },
+  {
+    "id": "cost-170",
+    "file": "norma_Costituzione.txt",
+    "frase": "salvo che per la determinazione dei principi fondamentali, riservata alla legislazione dello Stato"
+  },
+  {
+    "id": "cost-171",
+    "file": "norma_Costituzione.txt",
+    "frase": "sulla base dei principi di sussidiarietà, differenziazione ed adeguatezza"
+  },
+  {
+    "id": "cost-172",
+    "file": "norma_Costituzione.txt",
+    "frase": "favoriscono l'autonoma iniziativa dei cittadini, singoli e associati"
+  },
+  {
+    "id": "cost-173",
+    "file": "norma_Costituzione.txt",
+    "frase": "Possono ricorrere all'indebitamento solo per finanziare spese di investimento"
+  },
+  {
+    "id": "cost-174",
+    "file": "norma_Costituzione.txt",
+    "frase": "La Repubblica riconosce le peculiarità delle Isole"
+  },
+  {
+    "id": "cost-175",
+    "file": "norma_Costituzione.txt",
+    "frase": "La Regione non può istituire dazi di importazione o esportazione o transito tra le Regioni"
+  },
+  {
+    "id": "cost-176",
+    "file": "norma_Costituzione.txt",
+    "frase": "Sono organi della Regione: il Consiglio regionale, la Giunta e il suo presidente"
+  },
+  {
+    "id": "cost-177",
+    "file": "norma_Costituzione.txt",
+    "frase": "è eletto a suffragio universale e diretto"
+  },
+  {
+    "id": "cost-178",
+    "file": "norma_Costituzione.txt",
+    "frase": "con due deliberazioni successive adottate ad intervallo non minore di due mesi"
+  },
+  {
+    "id": "cost-179",
+    "file": "norma_Costituzione.txt",
+    "frase": "dinanzi alla Corte costituzionale entro sessanta giorni dalla sua pubblicazione"
+  },
+  {
+    "id": "cost-180",
+    "file": "norma_Costituzione.txt",
+    "frase": "sottoscritta da almeno un quinto dei suoi componenti e approvata per appello nominale a maggioranza assoluta"
+  },
+  {
+    "id": "cost-181",
+    "file": "norma_Costituzione.txt",
+    "frase": "creazione di nuove Regioni con un minimo di un milione d'abitanti"
+  },
+  {
+    "id": "cost-182",
+    "file": "norma_Costituzione.txt",
+    "frase": "può con sue leggi istituire nel proprio territorio nuovi Comuni"
+  },
+  {
+    "id": "cost-183",
+    "file": "norma_Costituzione.txt",
+    "frase": "La Corte costituzionale giudica: sulle controversie relative alla legittimità costituzionale delle leggi"
+  },
+  {
+    "id": "cost-184",
+    "file": "norma_Costituzione.txt",
+    "frase": "nominati per un terzo dal Presidente della Repubblica"
+  },
+  {
+    "id": "cost-185",
+    "file": "norma_Costituzione.txt",
+    "frase": "gli avvocati dopo venti anni di esercizio"
+  },
+  {
+    "id": "cost-186",
+    "file": "norma_Costituzione.txt",
+    "frase": "il Presidente, che rimane in carica per un triennio, ed è rieleggibile"
+  },
+  {
+    "id": "cost-187",
+    "file": "norma_Costituzione.txt",
+    "frase": "sedici membri tratti a sorte"
+  },
+  {
+    "id": "cost-188",
+    "file": "norma_Costituzione.txt",
+    "frase": "Contro le decisioni della Corte costituzionale non è ammessa alcuna impugnazione"
+  },
+  {
+    "id": "cost-189",
+    "file": "norma_Costituzione.txt",
+    "frase": "La legge sottoposta a referendum non è promulgata, se non è approvata dalla maggioranza dei voti validi"
+  },
+  {
+    "id": "cost-190",
+    "file": "norma_Costituzione.txt",
+    "frase": "entro tre mesi dalla loro pubblicazione"
+  },
+  {
+    "id": "cost-191",
+    "file": "norma_Costituzione.txt",
+    "frase": "È vietata la riorganizzazione, sotto qualsiasi forma, del disciolto partito fascista"
+  },
+  {
+    "id": "cost-192",
+    "file": "norma_Costituzione.txt",
+    "frase": "I titoli nobiliari non sono riconosciuti"
+  },
+  {
+    "id": "cost-193",
+    "file": "norma_Costituzione.txt",
+    "frase": "il Capo provvisorio dello Stato esercita le attribuzioni di Presidente della Repubblica e ne assume il titolo"
+  },
+  {
+    "id": "cost-194",
+    "file": "norma_Costituzione.txt",
+    "frase": "è depositato nella sala comunale di ciascun Comune della Repubblica"
+  },
+  {
+    "id": "cost-195",
+    "file": "norma_Costituzione.txt",
+    "frase": "Data a Roma, addì 27 dicembre 1947"
+  },
+  {
+    "id": "cost-196",
+    "file": "norma_Costituzione.txt",
+    "frase": "né limitare l'esercizio del diritto al lavoro in qualunque parte del territorio nazionale"
+  },
+  {
+    "id": "cost-197",
+    "file": "norma_Costituzione.txt",
+    "frase": "se il Governo o un decimo dei componenti della Camera o un quinto della commissione richiedono"
+  },
+  {
+    "id": "cost-198",
+    "file": "norma_Costituzione.txt",
+    "frase": "ne dichiarano l'urgenza, la legge è promulgata nel termine da essa stabilito"
+  },
+  {
+    "id": "cost-199",
+    "file": "norma_Costituzione.txt",
+    "frase": "secondo le garanzie prescritte per la tutela della libertà personale"
+  },
+  {
+    "id": "cost-200",
+    "file": "norma_Costituzione.txt",
+    "frase": "la Repubblica promuove con appositi provvedimenti le pari opportunità tra donne e uomini"
+  }
+]

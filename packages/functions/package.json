@@ -3,11 +3,14 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "@imieiconcorsi/core": "*",
-    "@aws-sdk/client-dynamodb": "^3",
-    "@aws-sdk/lib-dynamodb": "^3",
-    "zod": "^4",
     "@aws-sdk/client-cognito-identity-provider": "^3",
-    "@aws-sdk/client-sesv2": "^3"
+    "@aws-sdk/client-dynamodb": "^3",
+    "@aws-sdk/client-s3": "^3",
+    "@aws-sdk/client-sesv2": "^3",
+    "@aws-sdk/lib-dynamodb": "^3",
+    "@aws-sdk/s3-request-presigner": "^3.1148.0",
+    "@imieiconcorsi/core": "*",
+    "unpdf": "^1.8.1",
+    "zod": "^4"
   }
 }

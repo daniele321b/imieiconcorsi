@@ -22,3 +22,15 @@ variable "web_acl_arn" {
   type        = string
   default     = null
 }
+
+variable "domain_name" {
+  description = "Dominio del sito (es. dev.imieiconcorsi.it). null = indirizzo *.cloudfront.net."
+  type        = string
+  default     = null
+}
+
+variable "zone_id" {
+  description = "Hosted zone Route 53 del dominio (obbligatoria con domain_name)"
+  type        = string
+  default     = null
+}

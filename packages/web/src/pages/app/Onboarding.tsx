@@ -1,7 +1,7 @@
 import type { CompartoId, FrequenzaAvvisi, MateriaId } from "@imieiconcorsi/core/domain";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useState } from "react";
-import { useNavigate } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { Logo } from "../../components/brand";
 import { AvvisiPicker, InteressiPicker, LivelliPicker } from "../../components/ProfiloPickers";
 import { Alert, Button, Field, cx } from "../../components/ui";
@@ -23,6 +23,7 @@ export function Onboarding() {
   const [interessi, setInteressi] = useState<CompartoId[]>(utente.interessi);
   const [livelli, setLivelli] = useState<Partial<Record<MateriaId, number>>>(utente.livelli);
   const [avvisi, setAvvisi] = useState<FrequenzaAvvisi>(utente.avvisi);
+  const [accetto, setAccetto] = useState(false);
   const [salvataggio, setSalvataggio] = useState(false);
   const [errore, setErrore] = useState<string>();
 
@@ -32,7 +33,7 @@ export function Onboarding() {
     setSalvataggio(true);
     setErrore(undefined);
     try {
-      await api("/me/profilo", { method: "PUT", body: { nome: nome || undefined, interessi, livelli, avvisi } });
+      await api("/me/profilo", { method: "PUT", body: { nome: nome || undefined, interessi, livelli, avvisi, accettaTermini: true } });
       await ricarica({ rinnovaToken: true });
       navigate("/app", { replace: true });
     } catch (err) {
@@ -67,6 +68,25 @@ export function Onboarding() {
               <div className="space-y-6">
                 <AvvisiPicker value={avvisi} onChange={setAvvisi} />
                 <Field label="Come vuoi che ti chiamiamo? (facoltativo)" name="nome" value={nome} onChange={(e) => setNome(e.target.value)} />
+                <label className="flex items-start gap-2.5 rounded-2xl bg-white p-4 text-sm text-slate-600 ring-1 ring-slate-200">
+                  <input
+                    type="checkbox"
+                    checked={accetto}
+                    onChange={(e) => setAccetto(e.target.checked)}
+                    className="mt-0.5 size-4 rounded border-slate-300 text-brand-600 focus:ring-brand-500"
+                  />
+                  <span>
+                    Accetto i{" "}
+                    <Link to="/termini" target="_blank" className="font-semibold text-brand-600 underline">
+                      Termini e condizioni
+                    </Link>{" "}
+                    e ho letto l'
+                    <Link to="/privacy" target="_blank" className="font-semibold text-brand-600 underline">
+                      Informativa privacy
+                    </Link>
+                    .
+                  </span>
+                </label>
               </div>
             )}
           </div>
@@ -87,7 +107,7 @@ export function Onboarding() {
               Avanti <ArrowRight className="size-4" />
             </Button>
           ) : (
-            <Button size="lg" loading={salvataggio} onClick={() => void concludi()}>
+            <Button size="lg" loading={salvataggio} disabled={!accetto} onClick={() => void concludi()}>
               Inizia a prepararti <ArrowRight className="size-4" />
             </Button>
           )}

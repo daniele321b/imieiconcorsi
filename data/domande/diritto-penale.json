@@ -1,0 +1,3419 @@
+[
+  {
+    "materia": "diritto-penale",
+    "id": "pen-001",
+    "argomento": "Principi",
+    "livello": 1,
+    "testo": "Quale principio è espresso dall'art. 1 del codice penale («Nessuno può essere punito per un fatto che non sia espressamente preveduto come reato dalla legge»)?",
+    "opzioni": [
+      "Il principio di legalità",
+      "Il principio di proporzionalità",
+      "Il principio di offensività",
+      "Il principio di colpevolezza"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'art. 1 c.p. esprime il principio di legalità (riserva di legge), ribadito dall'art. 25 della Costituzione.",
+    "fonte": "Codice penale, art. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-002",
+    "argomento": "Principi",
+    "livello": 2,
+    "testo": "In quali due categorie si distinguono i reati secondo il codice penale?",
+    "opzioni": [
+      "Reati gravi e reati lievi",
+      "Delitti e contravvenzioni",
+      "Delitti e illeciti amministrativi",
+      "Crimini e delitti"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 39 c.p.: i reati si distinguono in delitti e contravvenzioni, secondo la diversa specie delle pene stabilite.",
+    "fonte": "Codice penale, art. 39",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-003",
+    "argomento": "Pene",
+    "livello": 2,
+    "testo": "Quali sono le pene principali per i delitti?",
+    "opzioni": [
+      "Arresto e ammenda",
+      "Ergastolo, arresto e multa",
+      "Ergastolo, reclusione e multa",
+      "Reclusione e ammenda"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 17 c.p.: per i delitti ergastolo, reclusione e multa; per le contravvenzioni arresto e ammenda.",
+    "fonte": "Codice penale, art. 17",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-004",
+    "argomento": "Pene",
+    "livello": 2,
+    "testo": "Quali sono le pene principali per le contravvenzioni?",
+    "opzioni": [
+      "Reclusione e multa",
+      "Ergastolo e ammenda",
+      "Multa e arresto",
+      "Arresto e ammenda"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 17 c.p.: le pene principali per le contravvenzioni sono l'arresto e l'ammenda.",
+    "fonte": "Codice penale, art. 17",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-005",
+    "argomento": "Elemento psicologico",
+    "livello": 3,
+    "testo": "Quando un delitto è doloso secondo l'art. 43 c.p.?",
+    "opzioni": [
+      "Quando l'evento è preveduto e voluto dall'agente come conseguenza della sua azione od omissione",
+      "Quando l'evento è dovuto a negligenza o imprudenza",
+      "Quando l'agente non è imputabile",
+      "Quando l'evento va oltre l'intenzione dell'agente"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 43 c.p.: il delitto è doloso, o secondo l'intenzione, quando l'evento è preveduto e voluto; è preterintenzionale se l'evento va oltre l'intenzione; è colposo se non è voluto e si verifica per negligenza, imprudenza o imperizia.",
+    "fonte": "Codice penale, art. 43",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-006",
+    "argomento": "Imputabilità",
+    "livello": 1,
+    "testo": "Chi non ha compiuto quattordici anni quando commette il fatto è imputabile?",
+    "opzioni": [
+      "Sì, se capace di intendere e di volere",
+      "No, non è mai imputabile",
+      "Solo per i delitti più gravi",
+      "Sì, sempre"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 97 c.p.: non è imputabile chi, nel momento del fatto, non aveva compiuto i quattordici anni. Tra 14 e 18 anni l'imputabilità va accertata caso per caso (art. 98).",
+    "fonte": "Codice penale, art. 97",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-007",
+    "argomento": "Imputabilità",
+    "livello": 3,
+    "testo": "Il minore che ha compiuto 14 anni ma non 18 è imputabile?",
+    "opzioni": [
+      "No, mai",
+      "Solo per le contravvenzioni",
+      "Sì, se aveva capacità di intendere e di volere, ma la pena è diminuita",
+      "Sì, sempre e con pena piena"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 98 c.p.: è imputabile se aveva la capacità di intendere e di volere, ma la pena è diminuita.",
+    "fonte": "Codice penale, art. 98",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-008",
+    "argomento": "Tentativo",
+    "livello": 3,
+    "testo": "Quando si risponde di delitto tentato?",
+    "opzioni": [
+      "Solo quando il delitto viene commesso a metà",
+      "Per qualsiasi contravvenzione non portata a termine",
+      "Quando si pensa di commettere un delitto e lo si confida a qualcuno",
+      "Quando si compiono atti idonei, diretti in modo non equivoco a commettere un delitto, che non si compie"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 56 c.p.: il tentativo richiede atti idonei e diretti in modo non equivoco; non esiste il tentativo di contravvenzione.",
+    "fonte": "Codice penale, art. 56",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-009",
+    "argomento": "Cause di giustificazione",
+    "livello": 2,
+    "testo": "La legittima difesa richiede che la difesa sia:",
+    "opzioni": [
+      "proporzionata all'offesa",
+      "autorizzata dalla polizia",
+      "esercitata solo con armi da fuoco",
+      "immediata e senza limiti"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 52 c.p.: non è punibile chi è costretto a difendere un diritto proprio o altrui contro il pericolo attuale di un'offesa ingiusta, sempre che la difesa sia proporzionata all'offesa.",
+    "fonte": "Codice penale, art. 52",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-010",
+    "argomento": "Cause di giustificazione",
+    "livello": 3,
+    "testo": "Come si chiama la causa di non punibilità di chi commette il fatto per salvare sé o altri da un pericolo attuale di un danno grave alla persona?",
+    "opzioni": [
+      "Legittima difesa",
+      "Stato di necessità",
+      "Adempimento di un dovere",
+      "Consenso dell'avente diritto"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 54 c.p.: stato di necessità, purché il pericolo non sia volontariamente causato e il fatto sia proporzionato al pericolo.",
+    "fonte": "Codice penale, art. 54",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-011",
+    "argomento": "Concorso di persone",
+    "livello": 2,
+    "testo": "Quando più persone concorrono nel medesimo reato, quale pena si applica a ciascuna?",
+    "opzioni": [
+      "La pena solo per chi ha materialmente agito",
+      "Una pena ridotta di un terzo per tutti",
+      "La pena stabilita per quel reato, salve le disposizioni specifiche",
+      "Una pena divisa tra i concorrenti"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 110 c.p.: ciascun concorrente soggiace alla pena stabilita per il reato, salve circostanze aggravanti o attenuanti specifiche.",
+    "fonte": "Codice penale, art. 110",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-012",
+    "argomento": "Reati contro la PA",
+    "livello": 2,
+    "testo": "Chi è pubblico ufficiale agli effetti della legge penale?",
+    "opzioni": [
+      "Solo i magistrati",
+      "Ogni dipendente pubblico",
+      "Chi svolge mansioni d'ordine in un ufficio pubblico",
+      "Chi esercita una pubblica funzione legislativa, giudiziaria o amministrativa"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 357 c.p.: conta la funzione esercitata, non il rapporto di impiego.",
+    "fonte": "Codice penale, art. 357",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-013",
+    "argomento": "Reati contro la PA",
+    "livello": 3,
+    "testo": "Quale reato commette il pubblico ufficiale che si appropria del denaro di cui ha il possesso per ragione del suo ufficio?",
+    "opzioni": [
+      "Peculato",
+      "Concussione",
+      "Corruzione propria",
+      "Truffa"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 314 c.p.: peculato. Il possesso o la disponibilità del bene per ragione dell'ufficio lo distingue da appropriazione indebita e truffa.",
+    "fonte": "Codice penale, art. 314",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-014",
+    "argomento": "Reati contro la PA",
+    "livello": 3,
+    "testo": "Il pubblico ufficiale che, abusando della sua qualità o dei suoi poteri, costringe qualcuno a dare o promettere denaro commette:",
+    "opzioni": [
+      "corruzione per l'esercizio della funzione",
+      "concussione",
+      "peculato",
+      "rifiuto di atti d'ufficio"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 317 c.p.: la concussione si fonda sulla costrizione. Nella corruzione c'è invece un accordo tra le parti.",
+    "fonte": "Codice penale, art. 317",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-015",
+    "argomento": "Reati contro la PA",
+    "livello": 4,
+    "testo": "Il pubblico ufficiale che riceve denaro per compiere un atto contrario ai doveri d'ufficio commette:",
+    "opzioni": [
+      "peculato (art. 314 c.p.)",
+      "concussione (art. 317 c.p.)",
+      "corruzione per un atto contrario ai doveri d'ufficio (art. 319 c.p.)",
+      "corruzione per l'esercizio della funzione (art. 318 c.p.)"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'art. 319 riguarda l'atto contrario ai doveri (corruzione propria); l'art. 318 punisce il mercimonio della funzione senza un atto contrario specifico.",
+    "fonte": "Codice penale, art. 319",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-016",
+    "argomento": "Reati contro la PA",
+    "livello": 5,
+    "testo": "Che fine ha fatto il reato di abuso d'ufficio (art. 323 c.p.)?",
+    "opzioni": [
+      "È stato spostato nel codice di procedura penale",
+      "Ha avuto la pena aumentata nel 2024",
+      "È stato trasformato in contravvenzione",
+      "È stato abrogato dalla legge 9 agosto 2024, n. 114"
+    ],
+    "corretta": 3,
+    "spiegazione": "La L. 114/2024 ha abrogato l'art. 323 c.p. Restano altri reati contro la PA come peculato, concussione e corruzione.",
+    "fonte": "Codice penale, art. 323",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-017",
+    "argomento": "Reati contro la PA",
+    "livello": 3,
+    "testo": "Quale reato commette il pubblico ufficiale che indebitamente rifiuta un atto del suo ufficio che deve essere compiuto senza ritardo per ragioni di giustizia, sicurezza, ordine pubblico o igiene e sanità?",
+    "opzioni": [
+      "Rifiuto di atti d'ufficio (art. 328 c.p.)",
+      "Omessa denuncia di reato (art. 361 c.p.)",
+      "Peculato (art. 314 c.p.)",
+      "Concussione (art. 317 c.p.)"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'art. 328 c.p. punisce il rifiuto e l'omissione di atti d'ufficio.",
+    "fonte": "Codice penale, art. 328",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-018",
+    "argomento": "Reati contro la PA",
+    "livello": 3,
+    "testo": "Il pubblico ufficiale che omette o ritarda di denunciare all'autorità un reato di cui ha avuto notizia nell'esercizio delle sue funzioni commette:",
+    "opzioni": [
+      "abuso d'ufficio",
+      "omessa denuncia di reato",
+      "rifiuto di atti d'ufficio",
+      "favoreggiamento personale"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 361 c.p.: omessa denuncia di reato da parte del pubblico ufficiale.",
+    "fonte": "Codice penale, art. 361",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-019",
+    "argomento": "Reati contro il patrimonio",
+    "livello": 2,
+    "testo": "Quale reato commette chi, con artifizi o raggiri, induce taluno in errore procurandosi un ingiusto profitto con altrui danno?",
+    "opzioni": [
+      "Furto",
+      "Estorsione",
+      "Truffa",
+      "Appropriazione indebita"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 640 c.p.: gli artifizi o raggiri che inducono in errore caratterizzano la truffa.",
+    "fonte": "Codice penale, art. 640",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-020",
+    "argomento": "Procedura penale",
+    "livello": 2,
+    "testo": "Acquisita la notizia di reato, come deve comportarsi la polizia giudiziaria?",
+    "opzioni": [
+      "Deve chiedere l'autorizzazione al giudice",
+      "Deve informare il sindaco",
+      "Può attendere la querela della vittima",
+      "Deve riferirla al pubblico ministero senza ritardo"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 347 c.p.p.: la polizia giudiziaria, senza ritardo, riferisce al pubblico ministero gli elementi essenziali del fatto.",
+    "fonte": "Codice di procedura penale, art. 347",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-021",
+    "argomento": "Procedura penale",
+    "livello": 2,
+    "testo": "Chi iscrive le notizie di reato nell'apposito registro?",
+    "opzioni": [
+      "Il pubblico ministero",
+      "La polizia giudiziaria",
+      "Il cancelliere del tribunale di sorveglianza",
+      "Il giudice per le indagini preliminari"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 335 c.p.p.: il pubblico ministero iscrive immediatamente ogni notizia di reato nel registro custodito presso l'ufficio.",
+    "fonte": "Codice di procedura penale, art. 335",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-022",
+    "argomento": "Procedura penale",
+    "livello": 3,
+    "testo": "In quale caso gli agenti di polizia giudiziaria sono obbligati ad arrestare una persona colta in flagranza?",
+    "opzioni": [
+      "Sempre, per qualsiasi reato",
+      "Nei casi di arresto obbligatorio previsti dall'art. 380 c.p.p.",
+      "Solo con mandato del pubblico ministero",
+      "Solo se lo chiede la vittima"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'art. 380 c.p.p. elenca i casi di arresto obbligatorio in flagranza; l'art. 381 quelli in cui l'arresto è facoltativo.",
+    "fonte": "Codice di procedura penale, art. 380",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-023",
+    "argomento": "Procedura penale",
+    "livello": 3,
+    "testo": "Qual è la differenza tra gli articoli 380 e 381 del codice di procedura penale?",
+    "opzioni": [
+      "Il 380 riguarda i minori, il 381 gli adulti",
+      "Il 380 riguarda le contravvenzioni, il 381 i delitti",
+      "Il 380 disciplina l'arresto obbligatorio in flagranza, il 381 quello facoltativo",
+      "Il 380 riguarda il fermo, il 381 l'arresto"
+    ],
+    "corretta": 2,
+    "spiegazione": "Nell'arresto facoltativo (art. 381) gli agenti valutano la gravità del fatto e la pericolosità del soggetto.",
+    "fonte": "Codice di procedura penale, artt. 380-381",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-024",
+    "argomento": "Illecito amministrativo",
+    "livello": 2,
+    "testo": "Quale principio fissa l'art. 1 della L. 689/1981 per le sanzioni amministrative?",
+    "opzioni": [
+      "Il principio di sussidiarietà",
+      "Il principio di gratuità",
+      "Il principio di oralità del procedimento",
+      "Il principio di legalità: serve una legge entrata in vigore prima della violazione"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 1 L. 689/1981: nessuno può essere assoggettato a sanzioni amministrative se non in forza di una legge in vigore prima della violazione.",
+    "fonte": "L. 689/1981, art. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-025",
+    "argomento": "Illecito amministrativo",
+    "livello": 3,
+    "testo": "A quanto ammonta, in generale, il pagamento in misura ridotta di una sanzione amministrativa?",
+    "opzioni": [
+      "Un terzo del massimo o, se più favorevole, il doppio del minimo",
+      "Il minimo previsto",
+      "Il doppio del massimo",
+      "La metà del massimo"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 16 L. 689/1981: misura ridotta pari alla terza parte del massimo o, se più favorevole e se è stabilito il minimo, al doppio del minimo.",
+    "fonte": "L. 689/1981, art. 16",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-026",
+    "argomento": "Illecito amministrativo",
+    "livello": 3,
+    "testo": "Entro quanti giorni si può pagare la sanzione in misura ridotta?",
+    "opzioni": [
+      "30 giorni dalla contestazione",
+      "60 giorni dalla contestazione o notificazione",
+      "5 giorni dalla contestazione",
+      "90 giorni dalla notificazione"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 16 L. 689/1981: il pagamento in misura ridotta è ammesso entro sessanta giorni dalla contestazione immediata o dalla notificazione.",
+    "fonte": "L. 689/1981, art. 16",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-027",
+    "argomento": "Illecito amministrativo",
+    "livello": 2,
+    "testo": "Chi non aveva compiuto 18 anni al momento del fatto può ricevere una sanzione amministrativa?",
+    "opzioni": [
+      "Sì, sempre",
+      "Solo per le violazioni stradali",
+      "No, salvo che lo stato di incapacità derivi da sua colpa",
+      "Sì, ma ridotta della metà"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 2 L. 689/1981: non può essere sanzionato chi non aveva compiuto diciotto anni o non era capace di intendere e di volere. Per la violazione risponde chi era tenuto alla sorveglianza.",
+    "fonte": "L. 689/1981, art. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-028",
+    "argomento": "Reati contro la PA",
+    "livello": 5,
+    "testo": "Un dipendente comunale, d'accordo con un imprenditore, accetta 2.000 euro per accelerare una pratica regolare che rientra nelle sue competenze. Quale reato si configura?",
+    "opzioni": [
+      "Concussione (art. 317 c.p.)",
+      "Corruzione per un atto contrario ai doveri d'ufficio (art. 319 c.p.)",
+      "Peculato (art. 314 c.p.)",
+      "Corruzione per l'esercizio della funzione (art. 318 c.p.)"
+    ],
+    "corretta": 3,
+    "spiegazione": "C'è un accordo (non una costrizione) e l'atto non è contrario ai doveri: è il mercimonio della funzione dell'art. 318 c.p.",
+    "fonte": "Codice penale, art. 318",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-029",
+    "argomento": "Elemento psicologico",
+    "livello": 4,
+    "testo": "Un delitto è colposo quando l'evento:",
+    "opzioni": [
+      "non è voluto e si verifica per negligenza, imprudenza, imperizia o inosservanza di norme",
+      "è voluto ma non si realizza",
+      "è previsto e accettato come possibile",
+      "va oltre l'intenzione dell'agente"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 43 c.p.: colpa = evento non voluto, dovuto a negligenza, imprudenza, imperizia o inosservanza di leggi, regolamenti, ordini o discipline.",
+    "fonte": "Codice penale, art. 43",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-030",
+    "argomento": "Principi",
+    "livello": 2,
+    "testo": "Si può essere puniti per un fatto che, quando fu commesso, non costituiva reato?",
+    "opzioni": [
+      "Sì, se una legge successiva lo prevede",
+      "No, mai: vale il principio di irretroattività della legge penale",
+      "Sì, se il fatto era molto grave",
+      "Sì, ma solo con una multa"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'art. 2 c.p. vieta di punire fatti che non erano reato secondo la legge del tempo in cui furono commessi.",
+    "fonte": "Codice penale, art. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-031",
+    "argomento": "Principi",
+    "livello": 3,
+    "testo": "Se una legge successiva abolisce un reato, cosa accade alla condanna già pronunciata?",
+    "opzioni": [
+      "Si dimezza la pena",
+      "Viene convertita in multa",
+      "Ne cessano l'esecuzione e gli effetti penali",
+      "Resta valida in ogni caso"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 2, c. 2 c.p. (abolitio criminis).",
+    "fonte": "Codice penale, art. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-032",
+    "argomento": "Principi",
+    "livello": 3,
+    "testo": "Cosa stabilisce l'art. 5 c.p. sull'ignoranza della legge penale, come corretto dalla Corte costituzionale nel 1988?",
+    "opzioni": [
+      "Scusa sempre",
+      "Scusa solo i cittadini stranieri",
+      "Scusa solo per le contravvenzioni",
+      "Non scusa, salvo che si tratti di ignoranza inevitabile"
+    ],
+    "corretta": 3,
+    "spiegazione": "La sentenza n. 364/1988 ha dichiarato illegittimo l'art. 5 nella parte in cui non escludeva l'ignoranza inevitabile.",
+    "fonte": "Codice penale, art. 5",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-033",
+    "argomento": "Applicazione della legge penale",
+    "livello": 2,
+    "testo": "Quando un reato si considera commesso nel territorio dello Stato?",
+    "opzioni": [
+      "Quando l'azione o l'omissione vi è avvenuta in tutto o in parte, o vi si è verificato l'evento",
+      "Solo se l'intera condotta è avvenuta in Italia",
+      "Solo se la vittima è italiana",
+      "Solo se il colpevole è cittadino italiano"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 6 c.p. (principio di territorialità, con criterio dell'ubiquità).",
+    "fonte": "Codice penale, art. 6",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-034",
+    "argomento": "Applicazione della legge penale",
+    "livello": 4,
+    "testo": "Un delitto politico commesso all'estero (fuori dai casi dell'art. 7) è punito secondo la legge italiana:",
+    "opzioni": [
+      "Sempre e d'ufficio",
+      "A richiesta del Ministro della giustizia",
+      "Solo su richiesta dello Stato estero",
+      "Mai"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 8 c.p.",
+    "fonte": "Codice penale, art. 8",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-035",
+    "argomento": "Applicazione della legge penale",
+    "livello": 3,
+    "testo": "Nel computo dei termini penali, il giorno della decorrenza è conteggiato?",
+    "opzioni": [
+      "Solo se è festivo",
+      "Sì, sempre",
+      "No, non è computato",
+      "Solo per le contravvenzioni"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 14 c.p.: si usa il calendario comune e non si conta il giorno di decorrenza.",
+    "fonte": "Codice penale, art. 14",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-036",
+    "argomento": "Applicazione della legge penale",
+    "livello": 3,
+    "testo": "Quando più norme penali regolano la stessa materia, quale prevale?",
+    "opzioni": [
+      "La norma con la pena più alta",
+      "La norma del codice penale",
+      "La norma più recente in ogni caso",
+      "La norma speciale, salvo che sia altrimenti stabilito"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 15 c.p. (principio di specialità).",
+    "fonte": "Codice penale, art. 15",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-037",
+    "argomento": "Pene",
+    "livello": 2,
+    "testo": "Quali sono le pene detentive previste dal codice penale?",
+    "opzioni": [
+      "Ergastolo, reclusione e arresto",
+      "Reclusione, multa e ammenda",
+      "Arresto e ammenda",
+      "Ergastolo e multa"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 18 c.p.; multa e ammenda sono invece pene pecuniarie.",
+    "fonte": "Codice penale, art. 18",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-038",
+    "argomento": "Pene",
+    "livello": 3,
+    "testo": "Entro quali limiti si estende la pena della reclusione?",
+    "opzioni": [
+      "Da un mese a trenta anni",
+      "Da quindici giorni a ventiquattro anni",
+      "Da un anno a venti anni",
+      "Da cinque giorni a tre anni"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 23 c.p.",
+    "fonte": "Codice penale, art. 23",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-039",
+    "argomento": "Pene",
+    "livello": 3,
+    "testo": "Entro quali limiti si estende la pena dell'arresto?",
+    "opzioni": [
+      "Da quindici giorni a ventiquattro anni",
+      "Da un giorno a un anno",
+      "Da cinque giorni a tre anni",
+      "Da sei mesi a cinque anni"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 25 c.p.: l'arresto è la pena detentiva delle contravvenzioni.",
+    "fonte": "Codice penale, art. 25",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-040",
+    "argomento": "Pene",
+    "livello": 3,
+    "testo": "Qual è il limite minimo e massimo della multa?",
+    "opzioni": [
+      "Da 20 a 10.000 euro",
+      "Da 5 a 5.000 euro",
+      "Da 100 a 100.000 euro",
+      "Da 50 a 50.000 euro"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 24 c.p.; l'ammenda va invece da 20 a 10.000 euro.",
+    "fonte": "Codice penale, art. 24",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-041",
+    "argomento": "Pene",
+    "livello": 3,
+    "testo": "Qual è il limite dell'ammenda?",
+    "opzioni": [
+      "Da 20 a 10.000 euro",
+      "Da 1 a 1.000 euro",
+      "Senza limiti",
+      "Da 50 a 50.000 euro"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 26 c.p.",
+    "fonte": "Codice penale, art. 26",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-042",
+    "argomento": "Pene",
+    "livello": 4,
+    "testo": "Le pene pecuniarie proporzionali hanno un limite massimo?",
+    "opzioni": [
+      "Sì, 10.000 euro",
+      "No, non hanno limite massimo",
+      "Sì, 50.000 euro",
+      "Sì, il doppio del danno"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 27 c.p.",
+    "fonte": "Codice penale, art. 27",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-043",
+    "argomento": "Pene accessorie",
+    "livello": 2,
+    "testo": "Quale di queste è una pena accessoria per i delitti?",
+    "opzioni": [
+      "L'ammenda",
+      "La multa",
+      "L'interdizione dai pubblici uffici",
+      "L'arresto"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 19 c.p.: interdizione dai pubblici uffici, da una professione, interdizione legale, incapacità di contrattare con la PA, ecc.",
+    "fonte": "Codice penale, art. 19",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-044",
+    "argomento": "Pene accessorie",
+    "livello": 4,
+    "testo": "Quale condanna comporta l'interdizione perpetua dai pubblici uffici?",
+    "opzioni": [
+      "Solo l'ergastolo",
+      "La reclusione non inferiore a un anno",
+      "Qualsiasi condanna",
+      "L'ergastolo o la reclusione non inferiore a cinque anni"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 29 c.p.: con la reclusione non inferiore a tre anni l'interdizione dura cinque anni.",
+    "fonte": "Codice penale, art. 29",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-045",
+    "argomento": "Pene accessorie",
+    "livello": 4,
+    "testo": "Per quanto tempo dura l'interdizione dai pubblici uffici dopo una condanna alla reclusione di almeno tre anni (ma meno di cinque)?",
+    "opzioni": [
+      "Cinque anni",
+      "Perpetua",
+      "Un anno",
+      "Tre anni"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 29 c.p.",
+    "fonte": "Codice penale, art. 29",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-046",
+    "argomento": "Pene accessorie",
+    "livello": 4,
+    "testo": "Il condannato all'ergastolo si trova in stato di:",
+    "opzioni": [
+      "Libertà vigilata",
+      "Interdizione legale",
+      "Semilibertà",
+      "Inabilitazione civile"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 32 c.p.; la condanna all'ergastolo comporta anche la decadenza dalla responsabilità genitoriale.",
+    "fonte": "Codice penale, art. 32",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-047",
+    "argomento": "Reato",
+    "livello": 2,
+    "testo": "In base a cosa si distinguono delitti e contravvenzioni?",
+    "opzioni": [
+      "In base alla gravità del danno",
+      "In base all'età del reo",
+      "In base alla diversa specie delle pene previste",
+      "In base al luogo del fatto"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 39 c.p.",
+    "fonte": "Codice penale, art. 39",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-048",
+    "argomento": "Reato",
+    "livello": 3,
+    "testo": "Non impedire un evento che si ha l'obbligo giuridico di impedire, a cosa equivale?",
+    "opzioni": [
+      "A un tentativo",
+      "A nulla, se non si è agito",
+      "A un illecito amministrativo",
+      "A cagionarlo"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 40, c. 2 c.p. (reato omissivo improprio).",
+    "fonte": "Codice penale, art. 40",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-049",
+    "argomento": "Reato",
+    "livello": 4,
+    "testo": "Quando le cause sopravvenute escludono il rapporto di causalità?",
+    "opzioni": [
+      "Quando sono state da sole sufficienti a determinare l'evento",
+      "Solo se dovute a un terzo",
+      "Mai",
+      "Sempre"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 41, c. 2 c.p.",
+    "fonte": "Codice penale, art. 41",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-050",
+    "argomento": "Elemento psicologico",
+    "livello": 2,
+    "testo": "Si può essere puniti per un'azione od omissione commessa senza coscienza e volontà?",
+    "opzioni": [
+      "Sì, sempre",
+      "No",
+      "Sì, se il danno è grave",
+      "Sì, ma solo per i delitti"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 42, c. 1 c.p.",
+    "fonte": "Codice penale, art. 42",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-051",
+    "argomento": "Elemento psicologico",
+    "livello": 3,
+    "testo": "Come è punito, di regola, un delitto?",
+    "opzioni": [
+      "Solo se commesso con premeditazione",
+      "Sempre, anche per colpa",
+      "Solo se commesso con dolo, salvi i casi di delitto preterintenzionale o colposo previsti dalla legge",
+      "Solo se c'è un danno economico"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 42, c. 2 c.p.",
+    "fonte": "Codice penale, art. 42",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-052",
+    "argomento": "Elemento psicologico",
+    "livello": 3,
+    "testo": "Quando un delitto è preterintenzionale?",
+    "opzioni": [
+      "Quando il fatto è commesso all'estero",
+      "Quando l'evento non è voluto e deriva da negligenza",
+      "Quando l'evento è voluto e premeditato",
+      "Quando dall'azione deriva un evento più grave di quello voluto"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 43 c.p. (es. omicidio preterintenzionale).",
+    "fonte": "Codice penale, art. 43",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-053",
+    "argomento": "Cause di non punibilità",
+    "livello": 2,
+    "testo": "È punibile chi commette il fatto per caso fortuito o forza maggiore?",
+    "opzioni": [
+      "No",
+      "Sì, ma solo per le contravvenzioni",
+      "Sì, con pena ridotta",
+      "Sì, se il danno è grave"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 45 c.p.",
+    "fonte": "Codice penale, art. 45",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-054",
+    "argomento": "Cause di non punibilità",
+    "livello": 3,
+    "testo": "Chi risponde del fatto commesso da una persona costretta con violenza fisica irresistibile?",
+    "opzioni": [
+      "Entrambi in parti uguali",
+      "L'autore della violenza",
+      "Nessuno",
+      "La persona costretta"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 46 c.p. (costringimento fisico).",
+    "fonte": "Codice penale, art. 46",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-055",
+    "argomento": "Errore",
+    "livello": 4,
+    "testo": "L'errore sul fatto determinato da colpa esclude sempre la punibilità?",
+    "opzioni": [
+      "Sì, ma solo per i minorenni",
+      "No, non esclude mai la punibilità",
+      "No, se il fatto è previsto anche come delitto colposo resta punibile",
+      "Sì, sempre"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 47 c.p.",
+    "fonte": "Codice penale, art. 47",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-056",
+    "argomento": "Errore",
+    "livello": 4,
+    "testo": "Come si chiama il caso in cui l'evento è impossibile per l'inidoneità dell'azione o l'inesistenza dell'oggetto?",
+    "opzioni": [
+      "Tentativo punibile",
+      "Delitto colposo",
+      "Reato putativo punibile",
+      "Reato impossibile, non punibile"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 49, c. 2 c.p.; il giudice può applicare una misura di sicurezza.",
+    "fonte": "Codice penale, art. 49",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-057",
+    "argomento": "Errore",
+    "livello": 3,
+    "testo": "È punibile chi commette un fatto lecito credendo erroneamente che sia reato?",
+    "opzioni": [
+      "No (reato putativo)",
+      "Sì, se ha agito con dolo",
+      "Sì, con pena ridotta",
+      "Sì, per tentativo"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 49, c. 1 c.p.",
+    "fonte": "Codice penale, art. 49",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-058",
+    "argomento": "Cause di giustificazione",
+    "livello": 2,
+    "testo": "È punibile chi lede un diritto con il consenso di chi può validamente disporne?",
+    "opzioni": [
+      "Solo se il consenso è scritto",
+      "No (consenso dell'avente diritto)",
+      "Sì, se il diritto è patrimoniale",
+      "Sì, sempre"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 50 c.p.",
+    "fonte": "Codice penale, art. 50",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-059",
+    "argomento": "Cause di giustificazione",
+    "livello": 3,
+    "testo": "Se un fatto costituente reato è commesso per ordine dell'Autorità, chi ne risponde sempre?",
+    "opzioni": [
+      "Nessuno",
+      "Solo chi lo ha eseguito",
+      "Il pubblico ufficiale che ha dato l'ordine",
+      "Il Ministro competente"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 51 c.p.; risponde anche l'esecutore, salvo errore di fatto sulla legittimità dell'ordine.",
+    "fonte": "Codice penale, art. 51",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-060",
+    "argomento": "Cause di giustificazione",
+    "livello": 3,
+    "testo": "Quale requisito, oltre al pericolo attuale di un'offesa ingiusta, richiede la legittima difesa?",
+    "opzioni": [
+      "La denuncia preventiva",
+      "La presenza di testimoni",
+      "Il possesso di un'arma",
+      "La proporzione tra difesa e offesa"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 52 c.p.",
+    "fonte": "Codice penale, art. 52",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-061",
+    "argomento": "Cause di giustificazione",
+    "livello": 4,
+    "testo": "Lo stato di necessità si applica a chi ha un particolare dovere giuridico di esporsi al pericolo (es. un vigile del fuoco)?",
+    "opzioni": [
+      "No",
+      "Sì, sempre",
+      "Solo se il danno è lieve",
+      "Solo se è fuori servizio"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 54, c. 2 c.p.",
+    "fonte": "Codice penale, art. 54",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-062",
+    "argomento": "Cause di giustificazione",
+    "livello": 4,
+    "testo": "In quali casi l'uso legittimo delle armi (art. 53) scrimina il pubblico ufficiale?",
+    "opzioni": [
+      "Ogni volta che lo ritiene utile",
+      "Quando è costretto a respingere una violenza o vincere una resistenza all'Autorità, per adempiere un dovere d'ufficio",
+      "Solo su ordine scritto del prefetto",
+      "Solo fuori servizio"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 53 c.p.",
+    "fonte": "Codice penale, art. 53",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-063",
+    "argomento": "Cause di giustificazione",
+    "livello": 4,
+    "testo": "Se si eccedono colposamente i limiti di una causa di giustificazione, come si risponde?",
+    "opzioni": [
+      "Come per il delitto doloso",
+      "Non si risponde mai",
+      "Secondo le norme sui delitti colposi, se il fatto è previsto come delitto colposo",
+      "Con una sanzione amministrativa"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 55 c.p. (eccesso colposo).",
+    "fonte": "Codice penale, art. 55",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-064",
+    "argomento": "Tentativo",
+    "livello": 4,
+    "testo": "Come è punito, di regola, il delitto tentato?",
+    "opzioni": [
+      "Con la stessa pena del delitto consumato",
+      "Con la metà esatta della pena",
+      "Solo con una multa",
+      "Con la pena del delitto diminuita da un terzo a due terzi"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 56 c.p.; se la pena è l'ergastolo, reclusione non inferiore a dodici anni.",
+    "fonte": "Codice penale, art. 56",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-065",
+    "argomento": "Tentativo",
+    "livello": 4,
+    "testo": "Cosa accade se il colpevole desiste volontariamente dall'azione?",
+    "opzioni": [
+      "Soggiace soltanto alla pena per gli atti compiuti, se costituiscono di per sé un reato diverso",
+      "Ha diritto a un premio",
+      "Risponde del delitto consumato",
+      "Risponde comunque di tentativo"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 56, c. 3 c.p. (desistenza volontaria).",
+    "fonte": "Codice penale, art. 56",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-066",
+    "argomento": "Circostanze",
+    "livello": 3,
+    "testo": "Le circostanze attenuanti sconosciute all'agente sono valutate a suo favore?",
+    "opzioni": [
+      "Solo se le conosceva",
+      "Sì, anche se da lui non conosciute",
+      "Solo per i minorenni",
+      "No, mai"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 59 c.p.; le aggravanti invece solo se conosciute o ignorate per colpa.",
+    "fonte": "Codice penale, art. 59",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-067",
+    "argomento": "Circostanze",
+    "livello": 2,
+    "testo": "Quale di queste è una circostanza aggravante comune (art. 61 c.p.)?",
+    "opzioni": [
+      "Aver agito per motivi di particolare valore morale",
+      "Aver risarcito il danno prima del giudizio",
+      "Aver agito per motivi abietti o futili",
+      "Aver reagito in stato d'ira per un fatto ingiusto altrui"
+    ],
+    "corretta": 2,
+    "spiegazione": "Le altre opzioni sono attenuanti comuni dell'art. 62 c.p.",
+    "fonte": "Codice penale, art. 61",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-068",
+    "argomento": "Circostanze",
+    "livello": 2,
+    "testo": "Quale di queste è una circostanza attenuante comune (art. 62 c.p.)?",
+    "opzioni": [
+      "Aver approfittato della minorata difesa della vittima",
+      "Aver agito con crudeltà",
+      "Aver commesso il reato per occultarne un altro",
+      "Aver reagito in stato d'ira, determinato da un fatto ingiusto altrui"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 62, n. 2 c.p. (provocazione).",
+    "fonte": "Codice penale, art. 62",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-069",
+    "argomento": "Circostanze",
+    "livello": 4,
+    "testo": "Se ricorre una sola aggravante e la legge non determina l'aumento, di quanto aumenta la pena?",
+    "opzioni": [
+      "Fino a un terzo",
+      "Del doppio",
+      "Fino alla metà",
+      "Di un anno fisso"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 64 c.p.; la reclusione non può comunque superare trent'anni.",
+    "fonte": "Codice penale, art. 64",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-070",
+    "argomento": "Circostanze",
+    "livello": 4,
+    "testo": "Con una sola attenuante, in cosa si converte la pena dell'ergastolo?",
+    "opzioni": [
+      "Nella reclusione di trent'anni",
+      "Nella reclusione da venti a ventiquattro anni",
+      "Nella reclusione da dieci a quindici anni",
+      "Resta l'ergastolo"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 65 c.p.; le altre pene si diminuiscono fino a un terzo.",
+    "fonte": "Codice penale, art. 65",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-071",
+    "argomento": "Circostanze",
+    "livello": 5,
+    "testo": "Se il giudice ritiene le aggravanti prevalenti sulle attenuanti, cosa accade?",
+    "opzioni": [
+      "Si applicano tutte le variazioni",
+      "Si applica la pena base",
+      "Si applicano solo gli aumenti per le aggravanti, senza le diminuzioni",
+      "Si raddoppia la pena"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 69 c.p. (giudizio di bilanciamento); in caso di equivalenza si applica la pena base.",
+    "fonte": "Codice penale, art. 69",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-072",
+    "argomento": "Stampa",
+    "livello": 4,
+    "testo": "Per quale titolo risponde il direttore responsabile di un periodico che omette il controllo necessario a impedire reati?",
+    "opzioni": [
+      "Solo civilmente",
+      "Non risponde mai",
+      "A titolo di dolo, con la pena piena",
+      "A titolo di colpa, con la pena del reato diminuita"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 57 c.p.",
+    "fonte": "Codice penale, art. 57",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-073",
+    "argomento": "Concorso di reati",
+    "livello": 4,
+    "testo": "Chi con una sola azione viola diverse disposizioni di legge come è punito?",
+    "opzioni": [
+      "Con la pena della violazione più grave aumentata sino al triplo (concorso formale)",
+      "Con la pena più lieve",
+      "Con la somma di tutte le pene",
+      "Con la sola pena più grave, senza aumenti"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 81, c. 1 c.p.; la stessa pena si applica al reato continuato (più azioni con un medesimo disegno criminoso).",
+    "fonte": "Codice penale, art. 81",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-074",
+    "argomento": "Concorso di reati",
+    "livello": 4,
+    "testo": "Come si chiama la situazione di chi commette più reati con più azioni esecutive di un medesimo disegno criminoso?",
+    "opzioni": [
+      "Recidiva",
+      "Reato continuato",
+      "Concorso formale",
+      "Reato abituale"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 81, c. 2 c.p.",
+    "fonte": "Codice penale, art. 81",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-075",
+    "argomento": "Imputabilità",
+    "livello": 2,
+    "testo": "Quando una persona è imputabile secondo il codice penale?",
+    "opzioni": [
+      "Quando ha compiuto 21 anni",
+      "Quando ha precedenti penali",
+      "Quando ha la capacità d'intendere e di volere",
+      "Quando è cittadina italiana"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 85 c.p.",
+    "fonte": "Codice penale, art. 85",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-076",
+    "argomento": "Imputabilità",
+    "livello": 3,
+    "testo": "Cosa accade a chi, per infermità, aveva una capacità d'intendere o di volere grandemente scemata ma non esclusa?",
+    "opzioni": [
+      "Risponde con pena aumentata",
+      "Non è imputabile",
+      "Risponde solo civilmente",
+      "Risponde del reato, ma la pena è diminuita"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 89 c.p. (vizio parziale di mente); il vizio totale (art. 88) esclude l'imputabilità.",
+    "fonte": "Codice penale, art. 89",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-077",
+    "argomento": "Imputabilità",
+    "livello": 2,
+    "testo": "Gli stati emotivi o passionali (es. gelosia, rabbia) escludono l'imputabilità?",
+    "opzioni": [
+      "No, né la escludono né la diminuiscono",
+      "Sì, sempre",
+      "La diminuiscono sempre",
+      "Solo se documentati da un medico"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 90 c.p.",
+    "fonte": "Codice penale, art. 90",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-078",
+    "argomento": "Imputabilità",
+    "livello": 3,
+    "testo": "L'ubriachezza volontaria esclude l'imputabilità?",
+    "opzioni": [
+      "La diminuisce sempre",
+      "No, né la esclude né la diminuisce",
+      "Sì, per le contravvenzioni",
+      "Sì, se piena"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 92 c.p.; se l'ubriachezza è preordinata la pena è aumentata. Solo quella da caso fortuito o forza maggiore (art. 91) può escluderla.",
+    "fonte": "Codice penale, art. 92",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-079",
+    "argomento": "Imputabilità",
+    "livello": 4,
+    "testo": "L'ubriachezza preordinata al fine di commettere il reato, che effetto ha sulla pena?",
+    "opzioni": [
+      "Nessun effetto",
+      "La pena è diminuita",
+      "La pena è aumentata",
+      "Esclude la pena"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 92, c. 2 c.p.",
+    "fonte": "Codice penale, art. 92",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-080",
+    "argomento": "Recidiva",
+    "livello": 3,
+    "testo": "Di quanto può aumentare la pena per la recidiva semplice?",
+    "opzioni": [
+      "Del doppio",
+      "Di due terzi",
+      "Della metà",
+      "Di un terzo"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 99 c.p.: chi, già condannato per delitto non colposo, ne commette un altro; l'aumento sale fino alla metà nei casi aggravati.",
+    "fonte": "Codice penale, art. 99",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-081",
+    "argomento": "Recidiva",
+    "livello": 4,
+    "testo": "Quale di queste ipotesi rende la recidiva «aggravata» (aumento fino alla metà)?",
+    "opzioni": [
+      "Nuovo delitto non colposo commesso entro cinque anni dalla condanna precedente",
+      "Nuova contravvenzione colposa",
+      "Precedente condanna a sola ammenda",
+      "Nuovo delitto commesso dopo vent'anni"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 99, c. 2 c.p.: stessa indole, entro cinque anni, durante o dopo l'esecuzione della pena.",
+    "fonte": "Codice penale, art. 99",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-082",
+    "argomento": "Concorso di persone",
+    "livello": 4,
+    "testo": "Se il reato commesso è diverso da quello voluto da uno dei concorrenti, questi ne risponde?",
+    "opzioni": [
+      "No, mai",
+      "Sì, se l'evento è conseguenza della sua azione od omissione; se più grave, la pena è diminuita",
+      "Solo civilmente",
+      "Sì, con pena aumentata"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 116 c.p.",
+    "fonte": "Codice penale, art. 116",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-083",
+    "argomento": "Querela",
+    "livello": 2,
+    "testo": "Entro quale termine, di regola, si propone la querela?",
+    "opzioni": [
+      "Sei mesi dalla denuncia",
+      "Un anno dal fatto",
+      "Tre mesi dal giorno della notizia del fatto",
+      "Trenta giorni dal fatto"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 124 c.p., salvo che la legge disponga altrimenti.",
+    "fonte": "Codice penale, art. 124",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-084",
+    "argomento": "Querela",
+    "livello": 3,
+    "testo": "Per un minore di quattordici anni, chi esercita il diritto di querela?",
+    "opzioni": [
+      "Il minore stesso",
+      "Il pubblico ministero",
+      "Il sindaco",
+      "Il genitore o il tutore"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 120 c.p.",
+    "fonte": "Codice penale, art. 120",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-085",
+    "argomento": "Punibilità",
+    "livello": 4,
+    "testo": "Per quali reati può operare l'esclusione della punibilità per particolare tenuità del fatto (art. 131-bis)?",
+    "opzioni": [
+      "Per i reati con pena detentiva non superiore nel minimo a due anni, o con pena pecuniaria",
+      "Per tutti i reati",
+      "Solo per le contravvenzioni",
+      "Solo per i reati con pena massima di sei mesi"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 131-bis c.p., nel testo modificato dalla riforma Cartabia.",
+    "fonte": "Codice penale, art. 131-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-086",
+    "argomento": "Estinzione del reato",
+    "livello": 2,
+    "testo": "Che effetto ha la morte del reo prima della condanna?",
+    "opzioni": [
+      "Trasferisce la pena agli eredi",
+      "Estingue il reato",
+      "Sospende il processo per un anno",
+      "Nessuno"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 150 c.p.",
+    "fonte": "Codice penale, art. 150",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-087",
+    "argomento": "Estinzione del reato",
+    "livello": 3,
+    "testo": "Quale causa estingue il reato e, se c'è stata condanna, ne fa cessare l'esecuzione e le pene accessorie?",
+    "opzioni": [
+      "La riabilitazione",
+      "La grazia",
+      "L'amnistia",
+      "La remissione del debito"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 151 c.p.; l'indulto e la grazia estinguono invece la pena.",
+    "fonte": "Codice penale, art. 151",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-088",
+    "argomento": "Estinzione del reato",
+    "livello": 4,
+    "testo": "Qual è il tempo minimo di prescrizione di un delitto?",
+    "opzioni": [
+      "Venti anni",
+      "Dieci anni",
+      "Due anni",
+      "Sei anni (quattro per le contravvenzioni)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 157 c.p.: il tempo corrisponde al massimo della pena edittale, ma non meno di sei anni per i delitti e quattro per le contravvenzioni.",
+    "fonte": "Codice penale, art. 157",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-089",
+    "argomento": "Sospensione condizionale",
+    "livello": 3,
+    "testo": "Entro quale limite di pena il giudice può concedere la sospensione condizionale?",
+    "opzioni": [
+      "Due anni di reclusione o arresto",
+      "Cinque anni",
+      "Dieci anni",
+      "Sei mesi"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 163 c.p. (limiti più ampi per minori e giovani adulti).",
+    "fonte": "Codice penale, art. 163",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-090",
+    "argomento": "Sospensione condizionale",
+    "livello": 4,
+    "testo": "A quale condizione è ammessa la sospensione condizionale della pena?",
+    "opzioni": [
+      "Se il reato è una contravvenzione",
+      "Se il giudice presume che il colpevole si asterrà dal commettere ulteriori reati",
+      "Se il colpevole paga una cauzione",
+      "Se la vittima è d'accordo"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 164 c.p.",
+    "fonte": "Codice penale, art. 164",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-091",
+    "argomento": "Sospensione condizionale",
+    "livello": 4,
+    "testo": "A quali obblighi può essere subordinata la sospensione condizionale?",
+    "opzioni": [
+      "Al servizio militare",
+      "All'espatrio",
+      "Alle restituzioni, al risarcimento del danno o alla pubblicazione della sentenza",
+      "Al pagamento di una tassa fissa"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 165 c.p.",
+    "fonte": "Codice penale, art. 165",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-092",
+    "argomento": "Benefici",
+    "livello": 4,
+    "testo": "A quale condizione di pena il giudice può ordinare la non menzione della condanna nel certificato del casellario?",
+    "opzioni": [
+      "Condanna fino a dieci anni",
+      "Solo per le contravvenzioni",
+      "Qualsiasi condanna",
+      "Prima condanna a pena detentiva non superiore a due anni"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 175 c.p.",
+    "fonte": "Codice penale, art. 175",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-093",
+    "argomento": "Benefici",
+    "livello": 5,
+    "testo": "Quanta pena deve aver scontato il condannato (non recidivo) per essere ammesso alla liberazione condizionale?",
+    "opzioni": [
+      "Almeno trenta mesi e comunque almeno metà della pena, se il residuo non supera cinque anni",
+      "Almeno dieci anni",
+      "Basta la buona condotta",
+      "Almeno un terzo della pena"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 176 c.p.",
+    "fonte": "Codice penale, art. 176",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-094",
+    "argomento": "Benefici",
+    "livello": 4,
+    "testo": "Dopo quanto tempo dall'esecuzione della pena si può ottenere, di regola, la riabilitazione?",
+    "opzioni": [
+      "Un anno",
+      "Almeno tre anni, con prove di buona condotta",
+      "Subito dopo la condanna",
+      "Venti anni"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 179 c.p.: otto anni per i recidivi, dieci per i delinquenti abituali.",
+    "fonte": "Codice penale, art. 179",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-095",
+    "argomento": "Misure di sicurezza",
+    "livello": 3,
+    "testo": "A chi possono essere applicate le misure di sicurezza?",
+    "opzioni": [
+      "Solo ai cittadini stranieri",
+      "Solo ai minori",
+      "Alle persone socialmente pericolose che abbiano commesso un fatto previsto come reato",
+      "A chiunque sia sospettato"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 202 c.p.",
+    "fonte": "Codice penale, art. 202",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-096",
+    "argomento": "Misure di sicurezza",
+    "livello": 3,
+    "testo": "Quando una persona è socialmente pericolosa agli effetti della legge penale?",
+    "opzioni": [
+      "Quando ha la fedina penale sporca",
+      "Quando è disoccupata",
+      "Quando è stata assolta",
+      "Quando è probabile che commetta nuovi fatti previsti come reati"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 203 c.p.; la pericolosità si desume dalle circostanze dell'art. 133.",
+    "fonte": "Codice penale, art. 203",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-097",
+    "argomento": "Misure di sicurezza",
+    "livello": 3,
+    "testo": "Le misure di sicurezza possono essere applicate in casi non previsti espressamente dalla legge?",
+    "opzioni": [
+      "No: vale il principio di legalità anche per le misure di sicurezza",
+      "Sì, su richiesta del prefetto",
+      "Sì, a discrezione del giudice",
+      "Solo per i recidivi"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 199 c.p.",
+    "fonte": "Codice penale, art. 199",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-098",
+    "argomento": "Recidiva",
+    "livello": 5,
+    "testo": "Quando è dichiarato delinquente abituale per presunzione di legge?",
+    "opzioni": [
+      "Chi commette due contravvenzioni",
+      "Chi, dopo tre condanne per delitti non colposi della stessa indole (oltre cinque anni complessivi in dieci anni), riporta un'altra condanna analoga",
+      "Chi viola una misura di prevenzione",
+      "Chi è condannato una volta per un delitto grave"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 102 c.p.",
+    "fonte": "Codice penale, art. 102",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-099",
+    "argomento": "Reati contro la PA",
+    "livello": 4,
+    "testo": "Quale reato commette il pubblico ufficiale che, giovandosi dell'errore altrui, riceve indebitamente denaro nell'esercizio delle funzioni?",
+    "opzioni": [
+      "Concussione",
+      "Truffa aggravata",
+      "Peculato mediante profitto dell'errore altrui",
+      "Corruzione propria"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 316 c.p.",
+    "fonte": "Codice penale, art. 316",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-100",
+    "argomento": "Reati contro la PA",
+    "livello": 4,
+    "testo": "Come si chiama il reato del pubblico ufficiale che destina denaro altrui di cui ha la disponibilità a un uso diverso da quello previsto dalla legge, fuori dai casi di peculato?",
+    "opzioni": [
+      "Abuso d'ufficio",
+      "Malversazione",
+      "Concussione",
+      "Indebita destinazione di denaro o cose mobili (art. 314-bis)"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'art. 314-bis è stato introdotto nel 2024, dopo l'abrogazione dell'abuso d'ufficio.",
+    "fonte": "Codice penale, art. 314-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-101",
+    "argomento": "Reati contro la PA",
+    "livello": 3,
+    "testo": "Quale reato commette il privato che, ottenuti contributi pubblici per una finalità, non li destina a quella finalità?",
+    "opzioni": [
+      "Malversazione di erogazioni pubbliche",
+      "Peculato",
+      "Indebita percezione di erogazioni pubbliche",
+      "Ricettazione"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 316-bis c.p.: soggetto attivo è chi è estraneo alla PA.",
+    "fonte": "Codice penale, art. 316-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-102",
+    "argomento": "Reati contro la PA",
+    "livello": 4,
+    "testo": "Chi ottiene contributi pubblici presentando documenti falsi, se non ricorre la truffa aggravata dell'art. 640-bis, commette:",
+    "opzioni": [
+      "Peculato",
+      "Indebita percezione di erogazioni pubbliche",
+      "Concussione",
+      "Malversazione"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 316-ter c.p.",
+    "fonte": "Codice penale, art. 316-ter",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-103",
+    "argomento": "Reati contro la PA",
+    "livello": 3,
+    "testo": "Il pubblico ufficiale che riceve denaro per l'esercizio delle sue funzioni (senza un atto contrario ai doveri) commette:",
+    "opzioni": [
+      "Corruzione propria (art. 319)",
+      "Concussione",
+      "Corruzione per l'esercizio della funzione (art. 318)",
+      "Peculato"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 318 c.p., punito con la reclusione da tre a otto anni.",
+    "fonte": "Codice penale, art. 318",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-104",
+    "argomento": "Reati contro la PA",
+    "livello": 4,
+    "testo": "Quale pena prevede l'art. 318 c.p. per la corruzione per l'esercizio della funzione?",
+    "opzioni": [
+      "Reclusione da uno a tre anni",
+      "Reclusione da sei a dodici anni",
+      "Solo la multa",
+      "Reclusione da tre a otto anni"
+    ],
+    "corretta": 3,
+    "spiegazione": "Pena aumentata dalla L. 3/2019 (cd. spazzacorrotti).",
+    "fonte": "Codice penale, art. 318",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-105",
+    "argomento": "Reati contro la PA",
+    "livello": 4,
+    "testo": "Corrompere un giudice per favorire una parte in un processo integra:",
+    "opzioni": [
+      "Corruzione in atti giudiziari",
+      "Traffico di influenze illecite",
+      "Favoreggiamento",
+      "Concussione"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 319-ter c.p.: reclusione da sei a dodici anni, più grave se ne deriva un'ingiusta condanna.",
+    "fonte": "Codice penale, art. 319-ter",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-106",
+    "argomento": "Reati contro la PA",
+    "livello": 5,
+    "testo": "Nell'induzione indebita (art. 319-quater), chi dà o promette l'utilità è punibile?",
+    "opzioni": [
+      "Solo se l'utilità supera 10.000 euro",
+      "Sì, anche il privato indotto è punito",
+      "No, è solo vittima",
+      "Solo se è recidivo"
+    ],
+    "corretta": 1,
+    "spiegazione": "A differenza della concussione (dove il privato è costretto), nell'induzione indebita il privato indotto è punito con pena minore.",
+    "fonte": "Codice penale, art. 319-quater",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-107",
+    "argomento": "Reati contro la PA",
+    "livello": 3,
+    "testo": "Le norme sulla corruzione (artt. 318 e 319) si applicano all'incaricato di pubblico servizio?",
+    "opzioni": [
+      "No, mai",
+      "Sì, con pene raddoppiate",
+      "Sì, con pene ridotte in misura non superiore a un terzo",
+      "Solo se dipendente statale"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 320 c.p.",
+    "fonte": "Codice penale, art. 320",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-108",
+    "argomento": "Reati contro la PA",
+    "livello": 3,
+    "testo": "Chi offre denaro a un pubblico ufficiale che rifiuta l'offerta commette:",
+    "opzioni": [
+      "Concussione tentata",
+      "Nessun reato",
+      "Corruzione consumata",
+      "Istigazione alla corruzione"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 322 c.p.: si applica la pena della corruzione ridotta di un terzo.",
+    "fonte": "Codice penale, art. 322",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-109",
+    "argomento": "Reati contro la PA",
+    "livello": 3,
+    "testo": "Il dipendente pubblico che rivela notizie d'ufficio che devono restare segrete commette:",
+    "opzioni": [
+      "Rivelazione ed utilizzazione di segreti di ufficio",
+      "Diffamazione",
+      "Peculato d'uso",
+      "Falso ideologico"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 326 c.p.",
+    "fonte": "Codice penale, art. 326",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-110",
+    "argomento": "Reati contro la PA",
+    "livello": 3,
+    "testo": "Chi usa violenza o minaccia per opporsi a un pubblico ufficiale mentre compie un atto d'ufficio commette:",
+    "opzioni": [
+      "Interruzione di pubblico servizio",
+      "Resistenza a un pubblico ufficiale",
+      "Violenza privata",
+      "Oltraggio"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 337 c.p.; se la violenza serve a costringerlo a un atto contrario ai doveri, è violenza o minaccia a PU (art. 336).",
+    "fonte": "Codice penale, art. 337",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-111",
+    "argomento": "Reati contro la PA",
+    "livello": 4,
+    "testo": "Quali requisiti richiede il reato di oltraggio a pubblico ufficiale (art. 341-bis)?",
+    "opzioni": [
+      "Basta un'offesa privata via messaggio",
+      "Serve una violenza fisica",
+      "Luogo pubblico o aperto al pubblico, presenza di più persone, mentre il PU compie un atto d'ufficio",
+      "Serve che il PU sia fuori servizio"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 341-bis c.p.",
+    "fonte": "Codice penale, art. 341-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-112",
+    "argomento": "Reati contro la PA",
+    "livello": 4,
+    "testo": "Quale reato commette chi sfrutta relazioni con un pubblico ufficiale per farsi dare denaro come prezzo della propria mediazione illecita?",
+    "opzioni": [
+      "Estorsione",
+      "Millantato credito (art. 346, oggi abrogato)",
+      "Corruzione propria",
+      "Traffico di influenze illecite"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 346-bis c.p., riscritto dalla L. 114/2024.",
+    "fonte": "Codice penale, art. 346-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-113",
+    "argomento": "Reati contro la PA",
+    "livello": 2,
+    "testo": "Chi esercita senza abilitazione una professione che la richiede (es. medico) commette:",
+    "opzioni": [
+      "Esercizio abusivo di una professione",
+      "Sostituzione di persona",
+      "Falsità ideologica",
+      "Truffa"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 348 c.p.: reclusione da sei mesi a tre anni e multa da 10.000 a 50.000 euro.",
+    "fonte": "Codice penale, art. 348",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-114",
+    "argomento": "Reati contro la PA",
+    "livello": 3,
+    "testo": "Chi è incaricato di pubblico servizio agli effetti penali?",
+    "opzioni": [
+      "Qualsiasi lavoratore privato",
+      "Chi presta un pubblico servizio: attività disciplinata come la funzione pubblica ma priva dei suoi poteri tipici",
+      "Solo i dipendenti di ruolo dello Stato",
+      "Chi esercita la funzione legislativa"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 358 c.p.; sono escluse le semplici mansioni d'ordine e le prestazioni meramente materiali.",
+    "fonte": "Codice penale, art. 358",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-115",
+    "argomento": "Reati contro la PA",
+    "livello": 3,
+    "testo": "Un avvocato o un medico privato, quando il pubblico è obbligato per legge a valersi della sua opera, è considerato:",
+    "opzioni": [
+      "Pubblico ufficiale",
+      "Incaricato di pubblico servizio",
+      "Esercente un servizio di pubblica necessità",
+      "Nessuna qualifica penale"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 359 c.p.",
+    "fonte": "Codice penale, art. 359",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-116",
+    "argomento": "Reati contro la PA",
+    "livello": 3,
+    "testo": "L'incaricato di pubblico servizio deve denunciare i reati punibili a querela di cui viene a conoscenza?",
+    "opzioni": [
+      "Sì, sempre",
+      "Solo se è un dipendente statale",
+      "Solo i reati contro il patrimonio",
+      "No, l'obbligo dell'art. 362 non riguarda i reati punibili a querela"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 362 c.p.",
+    "fonte": "Codice penale, art. 362",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-117",
+    "argomento": "Reati contro la giustizia",
+    "livello": 3,
+    "testo": "Chi accusa di un reato, con denuncia all'autorità, una persona che sa innocente commette:",
+    "opzioni": [
+      "Calunnia",
+      "Falsa testimonianza",
+      "Diffamazione",
+      "Simulazione di reato"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 368 c.p.",
+    "fonte": "Codice penale, art. 368",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-118",
+    "argomento": "Reati contro la giustizia",
+    "livello": 2,
+    "testo": "Il testimone che davanti al giudice afferma il falso o tace ciò che sa commette:",
+    "opzioni": [
+      "Frode processuale",
+      "Falsa testimonianza",
+      "Favoreggiamento",
+      "Calunnia"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 372 c.p.: reclusione da due a sei anni.",
+    "fonte": "Codice penale, art. 372",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-119",
+    "argomento": "Reati contro la giustizia",
+    "livello": 3,
+    "testo": "Chi, senza aver concorso nel delitto, aiuta l'autore a eludere le investigazioni commette:",
+    "opzioni": [
+      "Concorso nel reato",
+      "Ricettazione",
+      "Favoreggiamento personale",
+      "Calunnia"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 378 c.p.",
+    "fonte": "Codice penale, art. 378",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-120",
+    "argomento": "Reati contro la giustizia",
+    "livello": 4,
+    "testo": "Chi rende false dichiarazioni al pubblico ministero che gli chiede informazioni durante le indagini commette:",
+    "opzioni": [
+      "Falsa testimonianza",
+      "Oltraggio a magistrato",
+      "Calunnia",
+      "False informazioni al pubblico ministero"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 371-bis c.p.",
+    "fonte": "Codice penale, art. 371-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-121",
+    "argomento": "Falsità",
+    "livello": 3,
+    "testo": "Il pubblico ufficiale che forma un atto falso o altera un atto vero nell'esercizio delle funzioni commette:",
+    "opzioni": [
+      "Falsità materiale in atto pubblico",
+      "Falsità ideologica",
+      "Truffa",
+      "Abuso d'ufficio"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 476 c.p.: la falsità materiale riguarda la genuinità del documento, quella ideologica la verità del contenuto.",
+    "fonte": "Codice penale, art. 476",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-122",
+    "argomento": "Falsità",
+    "livello": 4,
+    "testo": "Il pubblico ufficiale che attesta in un atto un fatto non avvenuto alla sua presenza commette:",
+    "opzioni": [
+      "Sostituzione di persona",
+      "Falsità ideologica in atto pubblico",
+      "Peculato",
+      "Falsità materiale"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 479 c.p.",
+    "fonte": "Codice penale, art. 479",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-123",
+    "argomento": "Falsità",
+    "livello": 3,
+    "testo": "Il privato che attesta falsamente al pubblico ufficiale, in un atto pubblico, fatti che l'atto deve provare, commette:",
+    "opzioni": [
+      "Calunnia",
+      "Truffa",
+      "Falsità ideologica del privato in atto pubblico (art. 483)",
+      "Falsità materiale del pubblico ufficiale"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 483 c.p.: è il reato richiamato anche per le false dichiarazioni nella SCIA.",
+    "fonte": "Codice penale, art. 483",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-124",
+    "argomento": "Reati contro la persona",
+    "livello": 1,
+    "testo": "Qual è la pena minima per l'omicidio (art. 575 c.p.)?",
+    "opzioni": [
+      "Reclusione non inferiore a dieci anni",
+      "Ergastolo sempre",
+      "Reclusione da sei mesi a cinque anni",
+      "Reclusione non inferiore a ventuno anni"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 575 c.p.; nelle ipotesi aggravate dell'art. 577 si applica l'ergastolo.",
+    "fonte": "Codice penale, art. 575",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-125",
+    "argomento": "Reati contro la persona",
+    "livello": 3,
+    "testo": "Chi, con atti diretti a percuotere o ferire, cagiona la morte di una persona commette:",
+    "opzioni": [
+      "Omicidio preterintenzionale",
+      "Lesioni gravissime",
+      "Omicidio volontario",
+      "Omicidio colposo"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 584 c.p.: reclusione da dieci a diciotto anni.",
+    "fonte": "Codice penale, art. 584",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-126",
+    "argomento": "Reati contro la persona",
+    "livello": 3,
+    "testo": "Come è punito l'omicidio colposo commesso con violazione delle norme antinfortunistiche sul lavoro?",
+    "opzioni": [
+      "Reclusione da sei mesi a cinque anni",
+      "Reclusione da due a sette anni",
+      "Solo multa",
+      "Ergastolo"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 589, c. 2 c.p.; l'ipotesi base è punita da sei mesi a cinque anni.",
+    "fonte": "Codice penale, art. 589",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-127",
+    "argomento": "Reati contro la persona",
+    "livello": 2,
+    "testo": "Chi offende la reputazione di una persona assente comunicando con più persone commette:",
+    "opzioni": [
+      "Calunnia",
+      "Ingiuria (reato)",
+      "Diffamazione",
+      "Minaccia"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 595 c.p.; l'ingiuria è stata depenalizzata nel 2016.",
+    "fonte": "Codice penale, art. 595",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-128",
+    "argomento": "Reati contro la persona",
+    "livello": 3,
+    "testo": "Chi con violenza o minaccia costringe altri a fare, tollerare od omettere qualcosa commette:",
+    "opzioni": [
+      "Estorsione",
+      "Rapina",
+      "Sequestro di persona",
+      "Violenza privata"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 610 c.p.; se c'è un ingiusto profitto con altrui danno si ha estorsione.",
+    "fonte": "Codice penale, art. 610",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-129",
+    "argomento": "Reati contro la persona",
+    "livello": 3,
+    "testo": "Quale reato punisce chi, con condotte reiterate, minaccia o molesta taluno causando un perdurante e grave stato d'ansia o di paura?",
+    "opzioni": [
+      "Atti persecutori (stalking)",
+      "Molestia occasionale",
+      "Violenza privata",
+      "Minaccia semplice"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 612-bis c.p.: reclusione da un anno a sei anni e sei mesi.",
+    "fonte": "Codice penale, art. 612-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-130",
+    "argomento": "Reati contro la persona",
+    "livello": 3,
+    "testo": "Chi si introduce nell'abitazione altrui contro la volontà di chi ha diritto di escluderlo commette:",
+    "opzioni": [
+      "Violenza privata",
+      "Violazione di domicilio",
+      "Invasione di terreni",
+      "Furto in abitazione"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 614 c.p.",
+    "fonte": "Codice penale, art. 614",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-131",
+    "argomento": "Reati contro il patrimonio",
+    "livello": 2,
+    "testo": "Agli effetti della legge penale, l'energia elettrica può essere oggetto di furto?",
+    "opzioni": [
+      "Solo se di proprietà pubblica",
+      "Solo se contenuta in batterie",
+      "Sì, è considerata cosa mobile",
+      "No, non è una cosa"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 624 c.p.",
+    "fonte": "Codice penale, art. 624",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-132",
+    "argomento": "Reati contro il patrimonio",
+    "livello": 2,
+    "testo": "Cosa distingue la rapina dal furto?",
+    "opzioni": [
+      "Il luogo in cui avviene",
+      "L'ora del fatto",
+      "Il valore della cosa rubata",
+      "L'uso della violenza alla persona o della minaccia per impossessarsi della cosa"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 628 c.p.: reclusione da tre a dieci anni.",
+    "fonte": "Codice penale, art. 628",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-133",
+    "argomento": "Reati contro il patrimonio",
+    "livello": 3,
+    "testo": "Chi con violenza o minaccia costringe taluno a fare qualcosa, procurandosi un ingiusto profitto con altrui danno, commette:",
+    "opzioni": [
+      "Estorsione",
+      "Rapina",
+      "Violenza privata",
+      "Truffa"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 629 c.p.: reclusione da cinque a dieci anni.",
+    "fonte": "Codice penale, art. 629",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-134",
+    "argomento": "Reati contro il patrimonio",
+    "livello": 4,
+    "testo": "Quale pena prevede l'art. 630 c.p. per il sequestro di persona a scopo di estorsione?",
+    "opzioni": [
+      "Solo multa",
+      "Reclusione da venticinque a trenta anni",
+      "Reclusione da cinque a dieci anni",
+      "Reclusione da tre a otto anni"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 630 c.p.",
+    "fonte": "Codice penale, art. 630",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-135",
+    "argomento": "Reati contro il patrimonio",
+    "livello": 3,
+    "testo": "Chi altera un sistema informatico procurandosi un ingiusto profitto con altrui danno commette:",
+    "opzioni": [
+      "Danneggiamento",
+      "Truffa ordinaria",
+      "Frode informatica",
+      "Accesso abusivo semplice"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 640-ter c.p.",
+    "fonte": "Codice penale, art. 640-ter",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-136",
+    "argomento": "Reati contro il patrimonio",
+    "livello": 3,
+    "testo": "Chi si appropria del denaro altrui di cui ha già il possesso, per procurarsi un ingiusto profitto, commette:",
+    "opzioni": [
+      "Ricettazione",
+      "Rapina",
+      "Furto",
+      "Appropriazione indebita"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 646 c.p.; se il soggetto è un pubblico ufficiale che possiede per ragione d'ufficio, si ha peculato.",
+    "fonte": "Codice penale, art. 646",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-137",
+    "argomento": "Reati contro il patrimonio",
+    "livello": 2,
+    "testo": "Chi acquista consapevolmente cose provenienti da un delitto, per trarne profitto, commette:",
+    "opzioni": [
+      "Ricettazione",
+      "Favoreggiamento personale",
+      "Riciclaggio",
+      "Furto"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 648 c.p.",
+    "fonte": "Codice penale, art. 648",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-138",
+    "argomento": "Reati contro il patrimonio",
+    "livello": 3,
+    "testo": "Chi trasferisce denaro di provenienza delittuosa in modo da ostacolarne l'identificazione commette:",
+    "opzioni": [
+      "Peculato",
+      "Riciclaggio",
+      "Appropriazione indebita",
+      "Ricettazione"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 648-bis c.p.: reclusione da quattro a dodici anni.",
+    "fonte": "Codice penale, art. 648-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-139",
+    "argomento": "Procedura penale",
+    "livello": 2,
+    "testo": "Quando il pubblico ministero esercita l'azione penale?",
+    "opzioni": [
+      "Solo su ordine del Ministro della giustizia",
+      "Quando lo ritiene opportuno politicamente",
+      "Quando non sussistono i presupposti per la richiesta di archiviazione",
+      "Solo se la vittima lo chiede"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 50 c.p.p., attuazione dell'obbligatorietà dell'azione penale (art. 112 Cost.).",
+    "fonte": "Codice di procedura penale, art. 50",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-140",
+    "argomento": "Procedura penale",
+    "livello": 3,
+    "testo": "L'esercizio dell'azione penale può essere sospeso o interrotto?",
+    "opzioni": [
+      "Sì, su richiesta dell'imputato",
+      "Sì, a discrezione del PM",
+      "Mai",
+      "Solo nei casi espressamente previsti dalla legge"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 50, c. 3 c.p.p.",
+    "fonte": "Codice di procedura penale, art. 50",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-141",
+    "argomento": "Polizia giudiziaria",
+    "livello": 2,
+    "testo": "Quale di questi NON è un compito della polizia giudiziaria secondo l'art. 55 c.p.p.?",
+    "opzioni": [
+      "Emettere la sentenza di condanna",
+      "Prendere notizia dei reati",
+      "Assicurare le fonti di prova",
+      "Ricercarne gli autori"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'art. 55 elenca: prendere notizia dei reati, impedirne le conseguenze, ricercarne gli autori, assicurare le fonti di prova.",
+    "fonte": "Codice di procedura penale, art. 55",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-142",
+    "argomento": "Polizia giudiziaria",
+    "livello": 3,
+    "testo": "Sotto la direzione di chi sono svolte le funzioni di polizia giudiziaria?",
+    "opzioni": [
+      "Del Ministro dell'interno",
+      "Dell'autorità giudiziaria",
+      "Del prefetto",
+      "Del sindaco"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 56 c.p.p.: servizi e sezioni di PG presso ogni procura.",
+    "fonte": "Codice di procedura penale, art. 56",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-143",
+    "argomento": "Polizia giudiziaria",
+    "livello": 3,
+    "testo": "Chi dirige le indagini preliminari e dispone direttamente della polizia giudiziaria?",
+    "opzioni": [
+      "Il difensore della persona offesa",
+      "Il questore",
+      "Il pubblico ministero",
+      "Il giudice per le indagini preliminari"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 327 c.p.p.",
+    "fonte": "Codice di procedura penale, art. 327",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-144",
+    "argomento": "Soggetti",
+    "livello": 3,
+    "testo": "Quando una persona assume la qualità di imputato?",
+    "opzioni": [
+      "Al momento della denuncia",
+      "Quando viene perquisita",
+      "Quando viene sentita come testimone",
+      "Quando le è attribuito il reato, ad esempio, nella richiesta di rinvio a giudizio"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 60 c.p.p.; prima di allora è persona sottoposta alle indagini.",
+    "fonte": "Codice di procedura penale, art. 60",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-145",
+    "argomento": "Soggetti",
+    "livello": 3,
+    "testo": "I diritti e le garanzie dell'imputato spettano anche alla persona sottoposta alle indagini?",
+    "opzioni": [
+      "Sì, si estendono ad essa",
+      "No, solo dopo il rinvio a giudizio",
+      "Solo se detenuta",
+      "Solo se ha un difensore di fiducia"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 61 c.p.p.",
+    "fonte": "Codice di procedura penale, art. 61",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-146",
+    "argomento": "Soggetti",
+    "livello": 4,
+    "testo": "Possono usarsi nell'interrogatorio tecniche che alterano la capacità di autodeterminazione, se l'interrogato acconsente?",
+    "opzioni": [
+      "Sì, con consenso scritto",
+      "No, neppure con il consenso della persona interrogata",
+      "Sì, se autorizzate dal GIP",
+      "Sì, per i reati di mafia"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 64, c. 2 c.p.p.",
+    "fonte": "Codice di procedura penale, art. 64",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-147",
+    "argomento": "Notizia di reato",
+    "livello": 2,
+    "testo": "Chi può presentare denuncia per un reato perseguibile d'ufficio?",
+    "opzioni": [
+      "Solo un pubblico ufficiale",
+      "Solo un avvocato",
+      "Ogni persona che ne ha notizia",
+      "Solo la vittima"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 333 c.p.p.: la legge stabilisce i casi in cui la denuncia è obbligatoria.",
+    "fonte": "Codice di procedura penale, art. 333",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-148",
+    "argomento": "Notizia di reato",
+    "livello": 2,
+    "testo": "Cosa manifesta chi presenta una querela?",
+    "opzioni": [
+      "La richiesta di grazia",
+      "La volontà di risarcire il danno",
+      "La rinuncia all'azione civile",
+      "La volontà che si proceda in ordine a un fatto previsto come reato"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 336 c.p.p.",
+    "fonte": "Codice di procedura penale, art. 336",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-149",
+    "argomento": "Notizia di reato",
+    "livello": 3,
+    "testo": "A chi può essere presentata la denuncia di un privato?",
+    "opzioni": [
+      "Al pubblico ministero o a un ufficiale di polizia giudiziaria",
+      "Solo al sindaco",
+      "Solo al prefetto",
+      "Solo al giudice di pace"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 333, c. 2 c.p.p.",
+    "fonte": "Codice di procedura penale, art. 333",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-150",
+    "argomento": "Polizia giudiziaria",
+    "livello": 3,
+    "testo": "Dopo aver comunicato la notizia di reato, la polizia giudiziaria smette di indagare?",
+    "opzioni": [
+      "Sì, salvo autorizzazione del GIP",
+      "No, continua a raccogliere ogni elemento utile alla ricostruzione del fatto",
+      "Solo se il PM lo vieta",
+      "Sì, deve fermarsi"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 348 c.p.p.",
+    "fonte": "Codice di procedura penale, art. 348",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-151",
+    "argomento": "Polizia giudiziaria",
+    "livello": 3,
+    "testo": "In quali casi gli ufficiali di PG possono fare di propria iniziativa una perquisizione personale o locale?",
+    "opzioni": [
+      "In qualsiasi momento",
+      "Solo con mandato del sindaco",
+      "Nella flagranza del reato o in caso di evasione, se c'è pericolo di dispersione di cose o tracce",
+      "Mai senza decreto del giudice"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 352 c.p.p.",
+    "fonte": "Codice di procedura penale, art. 352",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-152",
+    "argomento": "Polizia giudiziaria",
+    "livello": 3,
+    "testo": "Prima dell'intervento del PM, cosa devono curare ufficiali e agenti di PG sul luogo del reato?",
+    "opzioni": [
+      "Che i giornalisti siano informati",
+      "Che i testimoni se ne vadano",
+      "Che il luogo sia pulito",
+      "Che tracce e cose pertinenti al reato siano conservate e lo stato dei luoghi non venga mutato"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 354 c.p.p.",
+    "fonte": "Codice di procedura penale, art. 354",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-153",
+    "argomento": "Polizia giudiziaria",
+    "livello": 3,
+    "testo": "Da chi la polizia giudiziaria assume sommarie informazioni utili per le investigazioni ex art. 350 c.p.p.?",
+    "opzioni": [
+      "Dalla persona nei cui confronti vengono svolte le indagini, con le garanzie dell'art. 64",
+      "Dal giudice",
+      "Solo dalla persona offesa",
+      "Solo dai testimoni"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 350 c.p.p.",
+    "fonte": "Codice di procedura penale, art. 350",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-154",
+    "argomento": "Arresto e fermo",
+    "livello": 2,
+    "testo": "Chi è in stato di flagranza?",
+    "opzioni": [
+      "Chi è sospettato da un testimone",
+      "Chi è colto nell'atto di commettere il reato o, subito dopo, è inseguito o sorpreso con cose o tracce del reato",
+      "Chi ha precedenti penali",
+      "Chi si trova vicino al luogo del reato il giorno dopo"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 382 c.p.p.; nel reato permanente la flagranza dura finché non cessa la permanenza.",
+    "fonte": "Codice di procedura penale, art. 382",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-155",
+    "argomento": "Arresto e fermo",
+    "livello": 4,
+    "testo": "Chi dispone il fermo di un indiziato di delitto fuori dei casi di flagranza?",
+    "opzioni": [
+      "Il giudice del dibattimento",
+      "La persona offesa",
+      "Il pubblico ministero, se c'è fondato pericolo di fuga",
+      "Il sindaco"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 384 c.p.p.",
+    "fonte": "Codice di procedura penale, art. 384",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-156",
+    "argomento": "Arresto e fermo",
+    "livello": 3,
+    "testo": "Dopo un arresto, chi deve essere immediatamente avvisato dalla polizia giudiziaria?",
+    "opzioni": [
+      "L'ambasciata",
+      "Il sindaco",
+      "Il Presidente del tribunale",
+      "Il pubblico ministero del luogo dell'arresto"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 386 c.p.p.; all'arrestato va consegnata una comunicazione scritta dei suoi diritti.",
+    "fonte": "Codice di procedura penale, art. 386",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-157",
+    "argomento": "Arresto e fermo",
+    "livello": 3,
+    "testo": "Entro quanto il PM deve chiedere la convalida dell'arresto o del fermo al GIP?",
+    "opzioni": [
+      "Entro quarantotto ore",
+      "Entro cinque giorni",
+      "Entro trenta giorni",
+      "Entro ventiquattro ore"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 390 c.p.p.; il giudice fissa l'udienza entro le quarantotto ore successive (cfr. art. 13 Cost.).",
+    "fonte": "Codice di procedura penale, art. 390",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-158",
+    "argomento": "Arresto e fermo",
+    "livello": 4,
+    "testo": "Cosa accade se il PM non chiede la convalida nel termine?",
+    "opzioni": [
+      "Decide il questore",
+      "L'arresto o il fermo diviene inefficace",
+      "L'arrestato resta in carcere fino al processo",
+      "Il termine si proroga automaticamente"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 390, c. 3 c.p.p.",
+    "fonte": "Codice di procedura penale, art. 390",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-159",
+    "argomento": "Arresto e fermo",
+    "livello": 4,
+    "testo": "La partecipazione del difensore all'udienza di convalida è:",
+    "opzioni": [
+      "Facoltativa",
+      "Prevista solo per i minorenni",
+      "Necessaria",
+      "Vietata"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 391 c.p.p.: l'udienza si svolge in camera di consiglio con la partecipazione necessaria del difensore.",
+    "fonte": "Codice di procedura penale, art. 391",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-160",
+    "argomento": "Misure cautelari",
+    "livello": 3,
+    "testo": "Qual è la condizione generale per applicare una misura cautelare personale?",
+    "opzioni": [
+      "La recidiva",
+      "La richiesta della vittima",
+      "La semplice denuncia",
+      "La presenza di gravi indizi di colpevolezza"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 273 c.p.p.",
+    "fonte": "Codice di procedura penale, art. 273",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-161",
+    "argomento": "Misure cautelari",
+    "livello": 4,
+    "testo": "Quali sono le tre esigenze cautelari dell'art. 274 c.p.p.?",
+    "opzioni": [
+      "Pericolo per le prove, pericolo di fuga, pericolo di reiterazione di gravi reati",
+      "Gravità del reato, allarme sociale, recidiva",
+      "Precedenti, nazionalità, residenza",
+      "Richiesta della vittima, del PM e del giudice"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 274, lett. a), b), c) c.p.p.",
+    "fonte": "Codice di procedura penale, art. 274",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-162",
+    "argomento": "Misure cautelari",
+    "livello": 4,
+    "testo": "Il rifiuto dell'indagato di rendere dichiarazioni può fondare il pericolo per le prove?",
+    "opzioni": [
+      "Solo se è recidivo",
+      "No, non può",
+      "Sì, se il reato è grave",
+      "Sì, sempre"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 274, lett. a) c.p.p.",
+    "fonte": "Codice di procedura penale, art. 274",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-163",
+    "argomento": "Misure cautelari",
+    "livello": 4,
+    "testo": "Per quali delitti si possono applicare, di regola, le misure coercitive?",
+    "opzioni": [
+      "Per le contravvenzioni",
+      "Per qualsiasi reato",
+      "Per delitti puniti con l'ergastolo o con la reclusione superiore nel massimo a tre anni",
+      "Solo per l'omicidio"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 280, c. 1 c.p.p.",
+    "fonte": "Codice di procedura penale, art. 280",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-164",
+    "argomento": "Misure cautelari",
+    "livello": 5,
+    "testo": "Per quali delitti può essere disposta, di regola, la custodia cautelare in carcere?",
+    "opzioni": [
+      "Per tutte le contravvenzioni",
+      "Solo per i delitti con ergastolo",
+      "Per delitti con pena massima di un anno",
+      "Per delitti con reclusione non inferiore nel massimo a cinque anni"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 280, c. 2 c.p.p.",
+    "fonte": "Codice di procedura penale, art. 280",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-165",
+    "argomento": "Misure cautelari",
+    "livello": 2,
+    "testo": "Con gli arresti domiciliari, cosa prescrive il giudice all'imputato?",
+    "opzioni": [
+      "Di non allontanarsi dalla propria abitazione o da altro luogo di privata dimora",
+      "Di presentarsi ogni giorno in questura",
+      "Di lasciare il comune",
+      "Di versare una cauzione"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 284 c.p.p.",
+    "fonte": "Codice di procedura penale, art. 284",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-166",
+    "argomento": "Indagini preliminari",
+    "livello": 4,
+    "testo": "Qual è la durata massima ordinaria delle indagini preliminari per un delitto?",
+    "opzioni": [
+      "Cinque anni",
+      "Diciotto mesi (un anno per le contravvenzioni)",
+      "Tre anni",
+      "Sei mesi"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 407, c. 1 c.p.p.; due anni per i reati più gravi elencati al comma 2.",
+    "fonte": "Codice di procedura penale, art. 407",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-167",
+    "argomento": "Indagini preliminari",
+    "livello": 4,
+    "testo": "Quando il PM chiede l'archiviazione dopo la riforma Cartabia?",
+    "opzioni": [
+      "Mai, deve sempre andare a processo",
+      "Quando la vittima ritira la denuncia di un reato procedibile d'ufficio",
+      "Quando gli elementi non consentono una ragionevole previsione di condanna",
+      "Quando l'indagato non confessa"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 408 c.p.p. come modificato dal D.Lgs. 150/2022.",
+    "fonte": "Codice di procedura penale, art. 408",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-168",
+    "argomento": "Riti speciali",
+    "livello": 3,
+    "testo": "In cosa consiste il giudizio abbreviato?",
+    "opzioni": [
+      "La pena è decisa dalla vittima",
+      "Il processo si svolge senza giudice",
+      "Il processo si fa direttamente in Cassazione",
+      "Il processo è definito all'udienza preliminare allo stato degli atti"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 438 c.p.p.; non è ammesso per i delitti puniti con l'ergastolo.",
+    "fonte": "Codice di procedura penale, art. 438",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-169",
+    "argomento": "Riti speciali",
+    "livello": 4,
+    "testo": "Il giudizio abbreviato è ammesso per i delitti puniti con l'ergastolo?",
+    "opzioni": [
+      "No",
+      "Sì, con il consenso del PM",
+      "Solo per i minorenni",
+      "Sì, sempre"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 438, c. 1-bis c.p.p.",
+    "fonte": "Codice di procedura penale, art. 438",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-170",
+    "argomento": "Riti speciali",
+    "livello": 4,
+    "testo": "Nel «patteggiamento», qual è il limite della pena detentiva concordabile (dopo la diminuzione fino a un terzo)?",
+    "opzioni": [
+      "Venti anni",
+      "Cinque anni",
+      "Dieci anni",
+      "Due anni"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 444 c.p.p. (applicazione della pena su richiesta).",
+    "fonte": "Codice di procedura penale, art. 444",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-171",
+    "argomento": "Riti speciali",
+    "livello": 3,
+    "testo": "Entro quanto il PM può presentare l'arrestato in flagranza al giudice del dibattimento per il giudizio direttissimo?",
+    "opzioni": [
+      "Entro dieci giorni",
+      "Entro sei mesi",
+      "Entro quarantotto ore dall'arresto",
+      "Entro un anno"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 449 c.p.p.",
+    "fonte": "Codice di procedura penale, art. 449",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-172",
+    "argomento": "Riti speciali",
+    "livello": 4,
+    "testo": "Quando il PM può chiedere il giudizio immediato?",
+    "opzioni": [
+      "Quando la vittima lo chiede",
+      "Quando il reato è una contravvenzione",
+      "Quando l'imputato è minorenne",
+      "Quando la prova appare evidente"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 453 c.p.p.",
+    "fonte": "Codice di procedura penale, art. 453",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-173",
+    "argomento": "Riti speciali",
+    "livello": 4,
+    "testo": "Quando il PM può chiedere un decreto penale di condanna?",
+    "opzioni": [
+      "Quando ritiene che si debba applicare soltanto una pena pecuniaria",
+      "Quando chiede l'ergastolo",
+      "Per qualsiasi delitto grave",
+      "Solo per i reati commessi da pubblici ufficiali"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 459 c.p.p.",
+    "fonte": "Codice di procedura penale, art. 459",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-174",
+    "argomento": "Illecito amministrativo",
+    "livello": 2,
+    "testo": "Per le violazioni amministrative si risponde solo per dolo?",
+    "opzioni": [
+      "Si risponde anche senza coscienza e volontà",
+      "No, si risponde per azione od omissione cosciente e volontaria, sia dolosa sia colposa",
+      "Sì, solo per dolo",
+      "Solo per colpa grave"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 3 L. 689/1981.",
+    "fonte": "L. 689/1981, art. 3",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-175",
+    "argomento": "Illecito amministrativo",
+    "livello": 3,
+    "testo": "Quali cause escludono la responsabilità per una violazione amministrativa?",
+    "opzioni": [
+      "La mancanza di denaro",
+      "La cittadinanza straniera",
+      "Adempimento di un dovere, esercizio di una facoltà legittima, stato di necessità, legittima difesa",
+      "La sola buona fede"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 4 L. 689/1981.",
+    "fonte": "L. 689/1981, art. 4",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-176",
+    "argomento": "Illecito amministrativo",
+    "livello": 3,
+    "testo": "Il proprietario dell'auto con cui un altro ha commesso un'infrazione è tenuto a pagare la sanzione?",
+    "opzioni": [
+      "Solo se era a bordo",
+      "Sì, ma solo lui e non l'autore",
+      "No, mai",
+      "Sì, in solido con l'autore, salvo che provi che la cosa è stata usata contro la sua volontà"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 6 L. 689/1981 (solidarietà).",
+    "fonte": "L. 689/1981, art. 6",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-177",
+    "argomento": "Illecito amministrativo",
+    "livello": 4,
+    "testo": "Chi con una sola azione commette più violazioni amministrative come è sanzionato?",
+    "opzioni": [
+      "Con la sanzione per la violazione più grave, aumentata sino al triplo",
+      "Con una sola sanzione fissa",
+      "Con la sanzione più lieve",
+      "Con la somma di tutte le sanzioni"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 8 L. 689/1981, analogo al concorso formale penale.",
+    "fonte": "L. 689/1981, art. 8",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-178",
+    "argomento": "Illecito amministrativo",
+    "livello": 3,
+    "testo": "Quali sono i limiti generali della sanzione amministrativa pecuniaria?",
+    "opzioni": [
+      "Da 20 a 10.000 euro",
+      "Da 10 a 15.000 euro",
+      "Da 1 a 1.000 euro",
+      "Da 50 a 50.000 euro"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 10 L. 689/1981; le sanzioni proporzionali non hanno limite massimo.",
+    "fonte": "L. 689/1981, art. 10",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-179",
+    "argomento": "Illecito amministrativo",
+    "livello": 4,
+    "testo": "Salvo diversa previsione, il massimo della sanzione amministrativa può superare il decuplo del minimo?",
+    "opzioni": [
+      "Sì, senza limiti",
+      "Sì, fino al centuplo",
+      "No",
+      "Solo per le persone giuridiche"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 10 L. 689/1981.",
+    "fonte": "L. 689/1981, art. 10",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-180",
+    "argomento": "Illecito amministrativo",
+    "livello": 3,
+    "testo": "Di cosa si tiene conto per determinare la sanzione tra minimo e massimo?",
+    "opzioni": [
+      "Solo del reddito",
+      "Solo della residenza",
+      "Dell'opinione dei testimoni",
+      "Gravità della violazione, opera svolta per attenuarne le conseguenze, personalità e condizioni economiche dell'agente"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 11 L. 689/1981.",
+    "fonte": "L. 689/1981, art. 11",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-181",
+    "argomento": "Illecito amministrativo",
+    "livello": 3,
+    "testo": "Gli organi di controllo possono ispezionare la privata dimora per accertare una violazione amministrativa?",
+    "opzioni": [
+      "No, le ispezioni riguardano cose e luoghi diversi dalla privata dimora",
+      "Solo di notte",
+      "Sì, senza preavviso",
+      "Sì, sempre"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 13 L. 689/1981.",
+    "fonte": "L. 689/1981, art. 13",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-182",
+    "argomento": "Illecito amministrativo",
+    "livello": 3,
+    "testo": "Se la violazione non è contestata immediatamente, entro quanto va notificata ai residenti in Italia?",
+    "opzioni": [
+      "Entro un anno",
+      "Entro novanta giorni dall'accertamento",
+      "Entro trenta giorni",
+      "Entro cinque anni"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 14 L. 689/1981.",
+    "fonte": "L. 689/1981, art. 14",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-183",
+    "argomento": "Illecito amministrativo",
+    "livello": 4,
+    "testo": "Entro quanti giorni dalla contestazione l'interessato può inviare scritti difensivi all'autorità competente?",
+    "opzioni": [
+      "Dieci giorni",
+      "Sessanta giorni",
+      "Trenta giorni",
+      "Novanta giorni"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 18 L. 689/1981; poi l'autorità emette l'ordinanza-ingiunzione o l'archiviazione.",
+    "fonte": "L. 689/1981, art. 18",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-184",
+    "argomento": "Illecito amministrativo",
+    "livello": 4,
+    "testo": "Davanti a quale giudice si propone, di regola, opposizione all'ordinanza-ingiunzione?",
+    "opzioni": [
+      "Il TAR",
+      "Il prefetto",
+      "La Corte dei conti",
+      "L'autorità giudiziaria ordinaria"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 22 L. 689/1981, con rito regolato dall'art. 6 del D.Lgs. 150/2011.",
+    "fonte": "L. 689/1981, art. 22",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-185",
+    "argomento": "Illecito amministrativo",
+    "livello": 3,
+    "testo": "In quanto tempo si prescrive il diritto a riscuotere le sanzioni amministrative?",
+    "opzioni": [
+      "Cinque anni dal giorno della violazione",
+      "Un anno",
+      "Dieci anni",
+      "Venti anni"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 28 L. 689/1981.",
+    "fonte": "L. 689/1981, art. 28",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-186",
+    "argomento": "Illecito amministrativo",
+    "livello": 3,
+    "testo": "Se il trasgressore non paga in misura ridotta, cosa deve fare l'agente accertatore?",
+    "opzioni": [
+      "Raddoppiare la sanzione",
+      "Presentare rapporto all'ufficio competente o, in mancanza, al prefetto",
+      "Archiviare la pratica",
+      "Arrestare il trasgressore"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 17 L. 689/1981.",
+    "fonte": "L. 689/1981, art. 17",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-187",
+    "argomento": "Illecito amministrativo",
+    "livello": 4,
+    "testo": "Chi risponde della violazione amministrativa commessa per ordine dell'autorità?",
+    "opzioni": [
+      "Solo l'esecutore",
+      "L'ente locale",
+      "Il pubblico ufficiale che ha dato l'ordine",
+      "Nessuno"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 4 L. 689/1981.",
+    "fonte": "L. 689/1981, art. 4",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-188",
+    "argomento": "Ordine pubblico",
+    "livello": 2,
+    "testo": "Quante persone servono, almeno, per un'associazione per delinquere?",
+    "opzioni": [
+      "Cinque",
+      "Dieci",
+      "Due",
+      "Tre"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 416 c.p.: tre o più persone associate allo scopo di commettere più delitti.",
+    "fonte": "Codice penale, art. 416",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-189",
+    "argomento": "Ordine pubblico",
+    "livello": 3,
+    "testo": "Che pena prevede l'art. 416 c.p. per chi promuove, costituisce od organizza un'associazione per delinquere?",
+    "opzioni": [
+      "Reclusione da tre a sette anni",
+      "Reclusione da dieci a quindici anni",
+      "Solo multa",
+      "Reclusione da uno a cinque anni"
+    ],
+    "corretta": 0,
+    "spiegazione": "Per la sola partecipazione la pena è da uno a cinque anni.",
+    "fonte": "Codice penale, art. 416",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-190",
+    "argomento": "Ordine pubblico",
+    "livello": 4,
+    "testo": "Che pena prevede l'art. 416-bis per chi fa parte di un'associazione di tipo mafioso?",
+    "opzioni": [
+      "Reclusione da uno a cinque anni",
+      "Reclusione da dieci a quindici anni",
+      "Ergastolo",
+      "Reclusione da tre a sette anni"
+    ],
+    "corretta": 1,
+    "spiegazione": "Per promotori, dirigenti e organizzatori la pena è da dodici a diciotto anni.",
+    "fonte": "Codice penale, art. 416-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-191",
+    "argomento": "Incolumità pubblica",
+    "livello": 3,
+    "testo": "L'incendio della cosa propria è reato?",
+    "opzioni": [
+      "No, mai",
+      "Sì, sempre",
+      "Sì, se dal fatto deriva pericolo per l'incolumità pubblica",
+      "Solo se la cosa è assicurata"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 423 c.p.",
+    "fonte": "Codice penale, art. 423",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-192",
+    "argomento": "Reati contro la persona",
+    "livello": 2,
+    "testo": "Cosa distingue le percosse (art. 581) dalle lesioni (art. 582)?",
+    "opzioni": [
+      "Le lesioni sono solo colpose",
+      "Le percosse richiedono un'arma",
+      "Non c'è differenza",
+      "Nelle percosse dal fatto non deriva una malattia nel corpo o nella mente"
+    ],
+    "corretta": 3,
+    "spiegazione": "Artt. 581 e 582 c.p.",
+    "fonte": "Codice penale, art. 581",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-193",
+    "argomento": "Reati contro la persona",
+    "livello": 4,
+    "testo": "Quando la lesione personale è grave per la durata della malattia?",
+    "opzioni": [
+      "Quando la malattia o l'incapacità di attendere alle ordinarie occupazioni dura più di quaranta giorni",
+      "Più di sei mesi",
+      "Più di venti giorni",
+      "Più di dieci giorni"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 583, n. 1 c.p.",
+    "fonte": "Codice penale, art. 583",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-194",
+    "argomento": "Reati contro la persona",
+    "livello": 3,
+    "testo": "Chi abbandona un minore di quattordici anni di cui ha la custodia commette:",
+    "opzioni": [
+      "Violenza privata",
+      "Abbandono di persone minori o incapaci",
+      "Sequestro di persona",
+      "Maltrattamenti in famiglia"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 591 c.p.",
+    "fonte": "Codice penale, art. 591",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-195",
+    "argomento": "Reati contro la persona",
+    "livello": 3,
+    "testo": "Il sequestro di persona commesso da un pubblico ufficiale con abuso dei poteri è punito più gravemente?",
+    "opzioni": [
+      "È solo un illecito disciplinare",
+      "No, la pena è la stessa",
+      "Sì, con la reclusione da uno a dieci anni",
+      "No, è punito meno gravemente"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 605 c.p.: la pena base è da sei mesi a otto anni.",
+    "fonte": "Codice penale, art. 605",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-196",
+    "argomento": "Reati informatici",
+    "livello": 3,
+    "testo": "Chi si introduce abusivamente in un sistema informatico protetto da misure di sicurezza commette:",
+    "opzioni": [
+      "Danneggiamento",
+      "Violazione di domicilio",
+      "Frode informatica",
+      "Accesso abusivo a un sistema informatico o telematico"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 615-ter c.p.: reclusione fino a tre anni, aggravata se commesso da un pubblico ufficiale.",
+    "fonte": "Codice penale, art. 615-ter",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-197",
+    "argomento": "Reati contro il patrimonio",
+    "livello": 2,
+    "testo": "Quali sono gli elementi della truffa?",
+    "opzioni": [
+      "Artifizi o raggiri, induzione in errore, ingiusto profitto con altrui danno",
+      "Possesso preesistente della cosa",
+      "Violenza e minaccia",
+      "Sottrazione di cosa mobile"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 640 c.p.",
+    "fonte": "Codice penale, art. 640",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-198",
+    "argomento": "Reati contro il patrimonio",
+    "livello": 4,
+    "testo": "La truffa commessa a danno dello Stato o di un altro ente pubblico è:",
+    "opzioni": [
+      "Punita come la truffa semplice",
+      "Aggravata, con reclusione da uno a cinque anni",
+      "Un semplice illecito amministrativo",
+      "Non punibile"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 640, c. 2, n. 1 c.p.",
+    "fonte": "Codice penale, art. 640",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-199",
+    "argomento": "Ordine pubblico",
+    "livello": 4,
+    "testo": "Quando un'associazione è di tipo mafioso secondo l'art. 416-bis?",
+    "opzioni": [
+      "Quando commette almeno un omicidio",
+      "Quando opera solo in Sicilia",
+      "Quando i membri si avvalgono della forza di intimidazione del vincolo associativo e della condizione di assoggettamento e omertà che ne deriva",
+      "Quando ha più di cento membri"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 416-bis, c. 3 c.p.",
+    "fonte": "Codice penale, art. 416-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-200",
+    "argomento": "Reati contro il patrimonio",
+    "livello": 3,
+    "testo": "Il danneggiamento di cose altrui commesso con violenza alla persona o con minaccia è punito con:",
+    "opzioni": [
+      "Solo sanzione amministrativa",
+      "Reclusione da dieci a venti anni",
+      "Ergastolo",
+      "Reclusione da sei mesi a tre anni"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 635 c.p.; il danneggiamento semplice è stato in larga parte depenalizzato nel 2016.",
+    "fonte": "Codice penale, art. 635",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-penale",
+    "id": "pen-201",
+    "argomento": "Reati contro il patrimonio",
+    "livello": 3,
+    "testo": "Il furto in abitazione (art. 624-bis) si caratterizza per:",
+    "opzioni": [
+      "L'introduzione in un edificio o luogo destinato a privata dimora",
+      "L'uso di armi",
+      "Il fatto commesso di notte",
+      "Il valore superiore a 10.000 euro"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 624-bis c.p.",
+    "fonte": "Codice penale, art. 624-bis",
+    "versione": "v1"
+  }
+]

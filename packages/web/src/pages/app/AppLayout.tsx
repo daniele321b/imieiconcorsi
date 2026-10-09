@@ -1,14 +1,16 @@
 import { PIANI } from "@imieiconcorsi/core/domain";
-import { BookOpenCheck, Crown, LayoutDashboard, LogOut, Search, ShieldCheck, User } from "lucide-react";
+import { BookOpenCheck, Crown, Database, LayoutDashboard, LogOut, Search, ShieldCheck, User } from "lucide-react";
 import { Navigate, NavLink, Outlet, useLocation } from "react-router";
 import { Logo } from "../../components/brand";
 import { Badge, FullPageSpinner, cx } from "../../components/ui";
 import { useAuth } from "../../lib/auth";
+import { PiePagina } from "../legale/LegalePagina";
 
 const NAV = [
   { to: "/app", label: "Dashboard", Icon: LayoutDashboard, end: true },
   { to: "/app/concorsi", label: "Concorsi", Icon: Search },
   { to: "/app/studio", label: "Studio", Icon: BookOpenCheck },
+  { to: "/app/banche-dati", label: "Banche dati", Icon: Database },
   { to: "/app/piani", label: "Piani", Icon: Crown },
 ];
 
@@ -22,7 +24,10 @@ export function AppLayout() {
   if (pathname === "/app/onboarding") return <Outlet />;
 
   const piano = PIANI[utente.piano];
-  const voci = utente.admin ? [...NAV, { to: "/admin", label: "Admin", Icon: ShieldCheck, end: false }] : NAV;
+  // L'admin ha tutte le funzioni: niente piani da comprare, al loro posto il pannello.
+  const voci = utente.admin
+    ? [...NAV.filter((v) => v.to !== "/app/piani"), { to: "/admin", label: "Admin", Icon: ShieldCheck, end: false }]
+    : NAV;
 
   return (
     <div className="min-h-screen pb-20 md:pb-0">
@@ -49,11 +54,19 @@ export function AppLayout() {
             ))}
           </nav>
           <div className="ml-auto flex items-center gap-2">
-            <NavLink to="/app/piani" className="hidden sm:block">
-              <Badge tone={utente.piano === "free" ? "slate" : "amber"}>
-                {utente.piano !== "free" && <Crown className="size-3" />} {piano.nome}
-              </Badge>
-            </NavLink>
+            {utente.admin ? (
+              <NavLink to="/admin" className="hidden sm:block">
+                <Badge tone="amber">
+                  <ShieldCheck className="size-3" /> Admin
+                </Badge>
+              </NavLink>
+            ) : (
+              <NavLink to="/app/piani" className="hidden sm:block">
+                <Badge tone={utente.piano === "free" ? "slate" : "amber"}>
+                  {utente.piano !== "free" && <Crown className="size-3" />} {piano.nome}
+                </Badge>
+              </NavLink>
+            )}
             <NavLink
               to="/app/profilo"
               aria-label="Profilo"
@@ -71,16 +84,17 @@ export function AppLayout() {
       <main className="mx-auto max-w-6xl px-4 py-8 sm:px-6">
         <Outlet />
       </main>
+      <PiePagina />
 
       {/* Navigazione in basso su mobile */}
-      <nav className="fixed inset-x-0 bottom-0 z-30 grid grid-cols-5 border-t border-slate-200 bg-white/95 backdrop-blur md:hidden">
-        {[...NAV, { to: "/app/profilo", label: "Profilo", Icon: User, end: false }].map(({ to, label, Icon, end }) => (
+      <nav className="fixed inset-x-0 bottom-0 z-30 grid auto-cols-fr grid-flow-col border-t border-slate-200 bg-white/95 backdrop-blur md:hidden">
+        {[...voci.filter((v) => v.to !== "/admin"), { to: "/app/profilo", label: "Profilo", Icon: User, end: false }].map(({ to, label, Icon, end }) => (
           <NavLink
             key={to}
             to={to}
             end={end}
             className={({ isActive }) =>
-              cx("flex flex-col items-center gap-0.5 py-2.5 text-[11px] font-semibold", isActive ? "text-brand-600" : "text-slate-500")
+              cx("flex flex-col items-center gap-0.5 py-2.5 text-center text-[10px] leading-tight font-semibold sm:text-[11px]", isActive ? "text-brand-600" : "text-slate-500")
             }
           >
             <Icon className="size-5" />

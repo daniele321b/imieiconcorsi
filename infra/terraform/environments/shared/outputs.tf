@@ -1,5 +1,13 @@
 # Letti dagli ambienti (dev, prod) con terraform_remote_state.
 
+output "domain" {
+  value = var.domain
+}
+
+output "zone_id" {
+  value = data.aws_route53_zone.main.zone_id
+}
+
 output "ses_sender_email" {
   value = module.ses.sender_email
 }

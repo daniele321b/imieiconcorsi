@@ -1,15 +1,90 @@
-import { getProfilo } from "@imieiconcorsi/core/db";
-import { PIANI } from "@imieiconcorsi/core/domain";
-import { HttpError, service } from "@imieiconcorsi/core/http";
-import { assegnaPiano, scadenzaDa } from "@imieiconcorsi/core/piani";
+import { randomUUID } from "node:crypto";
+import { GetCommand } from "@aws-sdk/lib-dynamodb";
+import { db, getProfilo, tables } from "@imieiconcorsi/core/db";
+import { PIANI, VERSIONE_TERMINI, type CodiceSconto, type PianoId } from "@imieiconcorsi/core/domain";
+import { emailTornatoFree } from "@imieiconcorsi/core/email-piani";
+import { env } from "@imieiconcorsi/core/env";
+import { type Event, HttpError, notFound, service } from "@imieiconcorsi/core/http";
+import { assegnaPiano } from "@imieiconcorsi/core/piani";
+import { motivoRifiuto, normalizzaCodice, prezzoScontato } from "@imieiconcorsi/core/sconti";
+import type { APIGatewayProxyEventV2, APIGatewayProxyResultV2 } from "aws-lambda";
 import { z } from "zod";
+import { chiudiOrdine, completaOrdine, leggiOrdine, salvaOrdine, type Ordine } from "./ordini";
+import { creaSessione, firmaWebhookValida, leggiSessione, MINIMO_STRIPE } from "./stripe";
 
-const Abbonamento = z.object({
-  piano: z.enum(["free", "medium", "pro"]),
-  periodo: z.enum(["mensile", "annuale"]).default("mensile"),
+// Piani a pagamento. BILLING_MODE (da Terraform):
+//   "stripe": l'acquisto crea un ordine e la pagina di pagamento Stripe; il piano si attiva
+//             con la conferma di Stripe (webhook) o quando la pagina di ritorno trova il pagamento;
+//   "mock":   stesso giro, ma l'ordine si completa subito, senza pagare (prove).
+
+const Abbonamento = z
+  .object({
+    piano: z.enum(["free", "medium", "pro"]),
+    periodo: z.enum(["mensile", "annuale"]).default("mensile"),
+    /**
+     * Per i piani a pagamento: l'utente chiede l'accesso immediato e prende atto che perde
+     * il diritto di recesso (art. 59, c. 1, lett. o, Codice del consumo). Senza, niente acquisto.
+     */
+    rinunciaRecesso: z.literal(true).optional(),
+    codice: z.string().max(40).optional(),
+  })
+  .refine((a) => a.piano === "free" || a.rinunciaRecesso === true, {
+    message: "Serve il consenso all'accesso immediato con rinuncia al recesso",
+    path: ["rinunciaRecesso"],
+  });
+
+const VerificaCodice = z.object({ codice: z.string().max(40) });
+
+async function leggiCodice(codice: string) {
+  const res = await db.send(new GetCommand({ TableName: tables.codici, Key: { codice } }));
+  return res.Item as CodiceSconto | undefined;
+}
+
+/** Codice valido per questo utente e piano, oppure 400 con il motivo. */
+async function codiceValido(userId: string, codiceInserito: string, piano: PianoId) {
+  const codice = normalizzaCodice(codiceInserito);
+  const [c, profilo] = await Promise.all([leggiCodice(codice), getProfilo(userId)]);
+  const motivo = motivoRifiuto(c, { piano, codiciUsati: profilo?.codiciUsati });
+  if (motivo) throw new HttpError(400, motivo, "CODICE_NON_VALIDO");
+  return c!;
+}
+
+const json = (statusCode: number, body: unknown): APIGatewayProxyResultV2 => ({
+  statusCode,
+  headers: { "content-type": "application/json", "cache-control": "no-store" },
+  body: JSON.stringify(body),
 });
 
-export const handler = service({
+/** Conferme di Stripe (rotta pubblica, protetta dalla firma). Risponde 200 a tutto ciò che è firmato. */
+async function webhookStripe(event: APIGatewayProxyEventV2): Promise<APIGatewayProxyResultV2> {
+  const segreto = process.env.STRIPE_WEBHOOK_SECRET;
+  if (!segreto) return json(503, { error: "Webhook non configurato" });
+  const corpo = event.isBase64Encoded ? Buffer.from(event.body ?? "", "base64").toString("utf8") : (event.body ?? "");
+  if (!firmaWebhookValida(corpo, event.headers["stripe-signature"], segreto)) return json(400, { error: "Firma non valida" });
+
+  const evento = JSON.parse(corpo) as { type: string; data: { object: { client_reference_id?: string; payment_status?: string } } };
+  const ordineId = evento.data.object.client_reference_id;
+  if (!ordineId) return json(200, { ignorato: true });
+
+  switch (evento.type) {
+    case "checkout.session.completed":
+      // Con i metodi "lenti" (es. bonifico) arriva completed ma non ancora paid: si aspetta async_payment_succeeded.
+      if (evento.data.object.payment_status === "paid") await completaOrdine(ordineId);
+      break;
+    case "checkout.session.async_payment_succeeded":
+      await completaOrdine(ordineId);
+      break;
+    case "checkout.session.async_payment_failed":
+      await chiudiOrdine(ordineId, "fallito");
+      break;
+    case "checkout.session.expired":
+      await chiudiOrdine(ordineId, "scaduto");
+      break;
+  }
+  return json(200, { ricevuto: true });
+}
+
+const servizio = service({
   "GET /piani": async ({ userId, piano }) => {
     const profilo = await getProfilo(userId);
     return {
@@ -21,19 +96,100 @@ export const handler = service({
     };
   },
 
+  /** Controllo del codice prima dell'acquisto, per mostrare i prezzi scontati. Non consuma il codice. */
+  "POST /me/codice-sconto": async (ctx) => {
+    const { codice } = ctx.body(VerificaCodice);
+    const [c, profilo] = await Promise.all([leggiCodice(normalizzaCodice(codice)), getProfilo(ctx.userId)]);
+    // Il piano lo sceglie dopo: qui basta che il codice valga per almeno uno dei suoi piani.
+    const motivo = motivoRifiuto(c, { piano: c?.piani?.[0] ?? "medium", codiciUsati: profilo?.codiciUsati });
+    if (motivo) throw new HttpError(400, motivo, "CODICE_NON_VALIDO");
+    return { codice: c!.codice, percentuale: c!.percentuale, piani: c!.piani ?? ["medium", "pro"] };
+  },
+
   /**
-   * In modalità "mock" il piano cambia subito, senza pagamento: serve per provare la beta.
-   * Con la piattaforma di pagamento questa route creerà l'ordine e il checkout; il piano lo
-   * attiverà la conferma del pagamento, sempre tramite assegnaPiano.
-   * Dopo la risposta il sito rinnova il token, così il nuovo gruppo Cognito è subito attivo.
+   * Piano Free: subito. Piano a pagamento: crea l'ordine; con Stripe risponde con l'indirizzo
+   * della pagina di pagamento ({ pagamento }), altrimenti (mock, o sconto del 100%) completa
+   * l'ordine subito. Dopo l'attivazione il sito rinnova il token: il gruppo Cognito è nel token.
    */
   "POST /me/abbonamento": async (ctx) => {
-    const { piano, periodo } = ctx.body(Abbonamento);
-    if (process.env.BILLING_MODE !== "mock") {
-      throw new HttpError(501, "Pagamenti non ancora attivi");
+    const { piano, periodo, codice } = ctx.body(Abbonamento);
+
+    if (piano === "free") {
+      await assegnaPiano({ userId: ctx.userId, username: ctx.username, piano, scadenza: null });
+      if (ctx.piano !== "free" && ctx.email) {
+        await emailTornatoFree({ a: ctx.email, nome: ctx.nome, pianoPrecedente: ctx.piano, motivo: "scelta" });
+      }
+      return { piano, scadenza: null };
     }
-    const scadenza = piano === "free" ? null : scadenzaDa(periodo);
-    await assegnaPiano({ userId: ctx.userId, username: ctx.username, piano, periodo, scadenza });
-    return { piano, periodo: piano === "free" ? undefined : periodo, scadenza };
+
+    // Il codice si controlla adesso ma si consuma solo a pagamento riuscito (completaOrdine).
+    const sconto = codice?.trim() ? await codiceValido(ctx.userId, codice, piano) : undefined;
+    const prezzo = PIANI[piano].prezzo[periodo];
+    let importo = sconto ? prezzoScontato(prezzo, sconto.percentuale) : prezzo;
+    // Stripe non accetta meno di 0,50 €: uno sconto che scende sotto si ferma lì (il 100% resta gratis).
+    if (importo > 0 && importo < MINIMO_STRIPE) importo = MINIMO_STRIPE;
+
+    const ora = new Date().toISOString();
+    const ordine: Ordine = {
+      id: `ord_${randomUUID().replace(/-/g, "").slice(0, 20)}`,
+      userId: ctx.userId,
+      username: ctx.username,
+      piano,
+      periodo,
+      prezzo,
+      importo,
+      ...(sconto ? { codiceSconto: sconto.codice, percentualeSconto: sconto.percentuale } : {}),
+      stato: "in-attesa",
+      // Consenso dato adesso, prima del pagamento: è quello che conta.
+      consenso: { rinunciaRecesso: true, versioneTermini: VERSIONE_TERMINI, il: ora },
+      creatoIl: ora,
+      aggiornatoIl: ora,
+    };
+    await salvaOrdine(ordine);
+
+    if (process.env.BILLING_MODE === "stripe" && importo > 0) {
+      const sito = env("SITE_URL");
+      const sessione = await creaSessione({
+        ordineId: ordine.id,
+        email: ctx.email,
+        descrizione: `Piano ${PIANI[piano].nome} ${periodo === "mensile" ? "30 giorni" : "365 giorni"}`,
+        centesimi: Math.round(importo * 100),
+        ritorno: `${sito}/app/pagamento?ordine=${ordine.id}`,
+        annullato: `${sito}/app/pagamento?ordine=${ordine.id}&annullato=1`,
+      });
+      await salvaOrdine({ ...ordine, stripeSessionId: sessione.id });
+      return { ordine: ordine.id, pagamento: sessione.url };
+    }
+
+    const completo = await completaOrdine(ordine.id);
+    return { ordine: ordine.id, piano, periodo, scadenza: completo?.scadenzaPiano, importo };
+  },
+
+  /**
+   * Esito di un ordine, per la pagina di ritorno da Stripe. Se la conferma di Stripe non è
+   * ancora arrivata chiede direttamente a Stripe: così il piano si attiva anche senza webhook.
+   */
+  "GET /me/ordini/{id}": async (ctx) => {
+    let ordine = await leggiOrdine(ctx.params.id!);
+    if (!ordine || ordine.userId !== ctx.userId) throw notFound("Ordine");
+    if (ordine.stato === "in-attesa" && ordine.stripeSessionId) {
+      const s = await leggiSessione(ordine.stripeSessionId);
+      if (s.payment_status === "paid") ordine = (await completaOrdine(ordine.id)) ?? ordine;
+      else if (s.status === "expired") {
+        await chiudiOrdine(ordine.id, "scaduto");
+        ordine = { ...ordine, stato: "scaduto" };
+      }
+    }
+    return {
+      id: ordine.id,
+      stato: ordine.stato,
+      piano: ordine.piano,
+      periodo: ordine.periodo,
+      importo: ordine.importo,
+      scadenzaPiano: ordine.scadenzaPiano,
+    };
   },
 });
+
+export const handler = (event: APIGatewayProxyEventV2) =>
+  event.routeKey === "POST /pubblico/stripe/webhook" ? webhookStripe(event) : servizio(event as Event);

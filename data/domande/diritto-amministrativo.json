@@ -1,0 +1,3419 @@
+[
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-001",
+    "argomento": "Procedimento amministrativo",
+    "livello": 1,
+    "testo": "Quale legge detta le regole generali sul procedimento amministrativo e sul diritto di accesso?",
+    "opzioni": [
+      "La legge 7 agosto 1990, n. 241",
+      "Il D.Lgs. 18 agosto 2000, n. 267",
+      "Il D.Lgs. 30 marzo 2001, n. 165",
+      "La legge 6 novembre 2012, n. 190"
+    ],
+    "corretta": 0,
+    "spiegazione": "La L. 241/1990 disciplina procedimento amministrativo e accesso ai documenti; il D.Lgs. 165/2001 riguarda il pubblico impiego, il TUEL gli enti locali, la L. 190/2012 l'anticorruzione.",
+    "fonte": "L. 241/1990, art. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-002",
+    "argomento": "Procedimento amministrativo",
+    "livello": 2,
+    "testo": "Secondo l'art. 1 della L. 241/1990, l'attività amministrativa è retta da criteri di:",
+    "opzioni": [
+      "sussidiarietà, adeguatezza e differenziazione",
+      "economicità, efficacia, imparzialità, pubblicità e trasparenza",
+      "legalità, tipicità e nominatività",
+      "rapidità, gratuità e oralità"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'art. 1 elenca i criteri di economicità, efficacia, imparzialità, pubblicità e trasparenza. Sussidiarietà, differenziazione e adeguatezza sono i principi dell'art. 118 della Costituzione.",
+    "fonte": "L. 241/1990, art. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-003",
+    "argomento": "Procedimento amministrativo",
+    "livello": 2,
+    "testo": "Se la legge non fissa un termine diverso, entro quanti giorni deve concludersi un procedimento delle amministrazioni statali?",
+    "opzioni": [
+      "120 giorni",
+      "90 giorni",
+      "30 giorni",
+      "60 giorni"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 2, comma 2: in mancanza di un termine diverso, i procedimenti si concludono entro trenta giorni.",
+    "fonte": "L. 241/1990, art. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-004",
+    "argomento": "Procedimento amministrativo",
+    "livello": 2,
+    "testo": "Secondo l'art. 3 della L. 241/1990, deve essere motivato anche il provvedimento che riguarda lo svolgimento dei pubblici concorsi?",
+    "opzioni": [
+      "Solo se lo chiede il candidato",
+      "Solo se negativo",
+      "No, i provvedimenti sui concorsi sono esclusi",
+      "Sì, ogni provvedimento amministrativo deve essere motivato, compresi quelli sui concorsi"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'art. 3 impone la motivazione di ogni provvedimento, compresi quelli su organizzazione, concorsi e personale; restano esclusi solo gli atti normativi e a contenuto generale.",
+    "fonte": "L. 241/1990, art. 3",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-005",
+    "argomento": "Partecipazione",
+    "livello": 3,
+    "testo": "Prima di adottare un provvedimento negativo su un'istanza di parte, l'amministrazione deve:",
+    "opzioni": [
+      "comunicare i motivi ostativi all'accoglimento (preavviso di rigetto)",
+      "sospendere il procedimento per 90 giorni",
+      "chiedere il parere del Consiglio di Stato",
+      "convocare una conferenza di servizi"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'art. 10-bis impone di comunicare tempestivamente agli istanti i motivi che ostano all'accoglimento della domanda.",
+    "fonte": "L. 241/1990, art. 10-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-006",
+    "argomento": "Partecipazione",
+    "livello": 3,
+    "testo": "Dopo aver ricevuto il preavviso di rigetto, entro quanti giorni l'istante può presentare osservazioni scritte?",
+    "opzioni": [
+      "60 giorni",
+      "10 giorni",
+      "30 giorni",
+      "5 giorni"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 10-bis: entro dieci giorni dal ricevimento della comunicazione gli istanti possono presentare per iscritto le loro osservazioni.",
+    "fonte": "L. 241/1990, art. 10-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-007",
+    "argomento": "Semplificazione",
+    "livello": 3,
+    "testo": "In caso di SCIA, entro quanti giorni l'amministrazione può vietare la prosecuzione dell'attività per carenza dei requisiti?",
+    "opzioni": [
+      "In qualsiasi momento, senza limiti",
+      "30 giorni dal ricevimento della segnalazione",
+      "60 giorni dal ricevimento della segnalazione",
+      "90 giorni dall'inizio dell'attività"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 19, comma 3: l'amministrazione, accertata la carenza dei requisiti, nel termine di sessanta giorni adotta provvedimenti di divieto di prosecuzione dell'attività.",
+    "fonte": "L. 241/1990, art. 19",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-008",
+    "argomento": "Semplificazione",
+    "livello": 2,
+    "testo": "Nel silenzio assenso (art. 20 L. 241/1990), il silenzio dell'amministrazione equivale a:",
+    "opzioni": [
+      "richiesta di integrazione documentale",
+      "sospensione del procedimento",
+      "rigetto della domanda",
+      "provvedimento di accoglimento della domanda"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 20: nei procedimenti a istanza di parte il silenzio dell'amministrazione competente equivale ad accoglimento, salvi i casi esclusi.",
+    "fonte": "L. 241/1990, art. 20",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-009",
+    "argomento": "Invalidità del provvedimento",
+    "livello": 3,
+    "testo": "Un provvedimento adottato in violazione di legge, viziato da eccesso di potere o da incompetenza è:",
+    "opzioni": [
+      "annullabile",
+      "inesistente",
+      "valido ma irregolare",
+      "nullo"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 21-octies: sono i tre vizi di legittimità che rendono il provvedimento annullabile.",
+    "fonte": "L. 241/1990, art. 21-octies",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-010",
+    "argomento": "Invalidità del provvedimento",
+    "livello": 4,
+    "testo": "Quale di questi casi rende NULLO un provvedimento amministrativo?",
+    "opzioni": [
+      "L'incompetenza relativa",
+      "La mancanza degli elementi essenziali",
+      "La violazione di legge",
+      "L'eccesso di potere"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 21-septies: è nullo il provvedimento che manca degli elementi essenziali, è viziato da difetto assoluto di attribuzione, è adottato in violazione o elusione del giudicato, o negli altri casi previsti dalla legge.",
+    "fonte": "L. 241/1990, art. 21-septies",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-011",
+    "argomento": "Autotutela",
+    "livello": 5,
+    "testo": "Entro quale termine massimo può essere annullato d'ufficio un provvedimento illegittimo di autorizzazione o di attribuzione di vantaggi economici?",
+    "opzioni": [
+      "Dodici mesi dall'adozione",
+      "Tre anni dall'adozione",
+      "Sei mesi dall'adozione",
+      "Diciotto mesi dall'adozione"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il testo vigente dell'art. 21-nonies fissa un termine ragionevole, comunque non superiore a sei mesi, per i provvedimenti di autorizzazione o di attribuzione di vantaggi economici.",
+    "fonte": "L. 241/1990, art. 21-nonies",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-012",
+    "argomento": "Autotutela",
+    "livello": 4,
+    "testo": "Per quale motivo l'amministrazione può revocare un provvedimento ad efficacia durevole?",
+    "opzioni": [
+      "Per un vizio di incompetenza",
+      "Per violazione del giudicato",
+      "Perché manca un elemento essenziale",
+      "Per sopravvenuti motivi di pubblico interesse"
+    ],
+    "corretta": 3,
+    "spiegazione": "La revoca (art. 21-quinquies) colpisce atti legittimi per ragioni di opportunità: sopravvenuti motivi di pubblico interesse o mutamento della situazione di fatto. I vizi di legittimità portano invece all'annullamento.",
+    "fonte": "L. 241/1990, art. 21-quinquies",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-013",
+    "argomento": "Accesso ai documenti",
+    "livello": 2,
+    "testo": "Chi può esercitare il diritto di accesso ai documenti ai sensi della L. 241/1990?",
+    "opzioni": [
+      "Chi ha un interesse diretto, concreto e attuale collegato al documento",
+      "Chiunque, senza motivazione",
+      "Solo i cittadini italiani maggiorenni",
+      "Solo i dipendenti dell'amministrazione"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 22: sono interessati i soggetti con un interesse diretto, concreto e attuale, corrispondente a una situazione giuridicamente tutelata. L'accesso di chiunque è invece l'accesso civico del D.Lgs. 33/2013.",
+    "fonte": "L. 241/1990, art. 22",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-014",
+    "argomento": "Accesso ai documenti",
+    "livello": 3,
+    "testo": "Cosa succede se l'amministrazione non risponde entro 30 giorni a una richiesta di accesso documentale?",
+    "opzioni": [
+      "Decide il Difensore civico",
+      "La richiesta si intende respinta",
+      "Il termine si proroga di altri 30 giorni",
+      "La richiesta si intende accolta"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 25: decorsi inutilmente trenta giorni dalla richiesta, questa si intende respinta (silenzio rigetto).",
+    "fonte": "L. 241/1990, art. 25",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-015",
+    "argomento": "Accesso ai documenti",
+    "livello": 3,
+    "testo": "Nel procedimento di accesso, chi sono i «controinteressati»?",
+    "opzioni": [
+      "Le associazioni di consumatori",
+      "I funzionari che detengono il documento",
+      "I soggetti che dall'accesso vedrebbero compromesso il loro diritto alla riservatezza",
+      "Gli altri richiedenti dello stesso documento"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 22, lettera c: sono controinteressati i soggetti che dall'esercizio dell'accesso vedrebbero compromesso il diritto alla riservatezza.",
+    "fonte": "L. 241/1990, art. 22",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-016",
+    "argomento": "Procedimento amministrativo",
+    "livello": 5,
+    "testo": "Un comune respinge un'istanza senza aver inviato il preavviso di rigetto, e il ricorrente dimostra che con le sue osservazioni la decisione sarebbe cambiata. Il provvedimento è:",
+    "opzioni": [
+      "inesistente",
+      "nullo per mancanza di un elemento essenziale",
+      "valido, perché il preavviso è facoltativo",
+      "annullabile, perché non si applica la «salvezza» dell'art. 21-octies, comma 2"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'omissione del preavviso (art. 10-bis) è violazione di legge, quindi vizio di annullabilità; il comma 2 dell'art. 21-octies non salva il provvedimento adottato in violazione dell'art. 10-bis.",
+    "fonte": "L. 241/1990, artt. 10-bis e 21-octies",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-017",
+    "argomento": "Enti locali",
+    "livello": 1,
+    "testo": "Quali sono gli organi di governo del comune?",
+    "opzioni": [
+      "Il consiglio, la giunta e il sindaco",
+      "La giunta e i dirigenti",
+      "Il sindaco e il segretario comunale",
+      "Il consiglio e il revisore dei conti"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 36 TUEL: sono organi di governo del comune il consiglio, la giunta, il sindaco.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 36",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-018",
+    "argomento": "Enti locali",
+    "livello": 2,
+    "testo": "Quale organo comunale è definito «di indirizzo e di controllo politico-amministrativo»?",
+    "opzioni": [
+      "La giunta comunale",
+      "Il consiglio comunale",
+      "Il sindaco",
+      "Il segretario comunale"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 42 TUEL: il consiglio è l'organo di indirizzo e di controllo politico-amministrativo e approva gli atti fondamentali.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 42",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-019",
+    "argomento": "Enti locali",
+    "livello": 2,
+    "testo": "Come opera la giunta comunale?",
+    "opzioni": [
+      "Decide da sola gli atti fondamentali del comune",
+      "Opera solo su delega del consiglio",
+      "Collabora con il sindaco e opera attraverso deliberazioni collegiali",
+      "È un organo tecnico guidato dal segretario"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 48 TUEL: la giunta collabora con il sindaco nel governo del comune e opera attraverso deliberazioni collegiali.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 48",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-020",
+    "argomento": "Enti locali",
+    "livello": 1,
+    "testo": "Quanto durano in carica il sindaco e il consiglio comunale?",
+    "opzioni": [
+      "Sei anni",
+      "Tre anni",
+      "Quattro anni",
+      "Cinque anni"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 51 TUEL: sindaco e consiglio comunale durano in carica per un periodo di cinque anni.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 51",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-021",
+    "argomento": "Enti locali",
+    "livello": 3,
+    "testo": "Da chi dipende il segretario comunale titolare, secondo il testo dell'art. 97 TUEL?",
+    "opzioni": [
+      "Dall'Agenzia autonoma per la gestione dell'albo dei segretari comunali e provinciali",
+      "Dal consiglio comunale",
+      "Dal sindaco",
+      "Dalla Prefettura"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'art. 97 TUEL indica il segretario come dipendente dall'Agenzia autonoma per la gestione dell'albo (le cui funzioni sono oggi del Ministero dell'interno).",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 97",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-022",
+    "argomento": "Enti locali",
+    "livello": 3,
+    "testo": "A chi spetta, nel comune, la direzione degli uffici e dei servizi?",
+    "opzioni": [
+      "Al consiglio comunale",
+      "Ai dirigenti",
+      "Alla giunta",
+      "Al sindaco"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 107 TUEL: spetta ai dirigenti la direzione degli uffici e dei servizi; agli organi politici l'indirizzo e il controllo.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 107",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-023",
+    "argomento": "Enti locali",
+    "livello": 3,
+    "testo": "Entro quale data gli enti locali deliberano il bilancio di previsione finanziario?",
+    "opzioni": [
+      "Entro il 30 giugno",
+      "Entro il 31 luglio",
+      "Entro il 31 dicembre dell'anno precedente",
+      "Entro il 30 aprile"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 151 TUEL: gli enti locali deliberano il bilancio di previsione entro il 31 dicembre, con orizzonte almeno triennale. Il rendiconto si approva invece entro il 30 aprile.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 151",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-024",
+    "argomento": "Enti locali",
+    "livello": 4,
+    "testo": "Chi ha ricoperto per due mandati consecutivi la carica di sindaco può essere rieletto subito per un terzo mandato?",
+    "opzioni": [
+      "Sì, ma solo con il voto di due terzi del consiglio",
+      "No, mai più per tutta la vita",
+      "Sì, sempre",
+      "No, salvo le eccezioni previste dalla legge (es. comuni più piccoli)"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'art. 51, comma 2, limita i mandati consecutivi; la legge prevede eccezioni per i comuni di minori dimensioni.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 51",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-025",
+    "argomento": "Pubblico impiego",
+    "livello": 2,
+    "testo": "Secondo il D.Lgs. 165/2001, quali funzioni esercitano gli organi di governo?",
+    "opzioni": [
+      "Funzioni di indirizzo politico-amministrativo",
+      "La gestione finanziaria e tecnica",
+      "L'adozione di tutti i provvedimenti verso l'esterno",
+      "La direzione degli uffici"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 4: agli organi di governo spetta l'indirizzo politico-amministrativo; ai dirigenti la gestione (principio di separazione).",
+    "fonte": "D.Lgs. 165/2001, art. 4",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-026",
+    "argomento": "Pubblico impiego",
+    "livello": 3,
+    "testo": "A chi spetta, secondo l'art. 4 del D.Lgs. 165/2001, l'adozione degli atti che impegnano l'amministrazione verso l'esterno?",
+    "opzioni": [
+      "Agli organi di governo",
+      "Ai dirigenti",
+      "Al Consiglio dei ministri",
+      "Al ministro"
+    ],
+    "corretta": 1,
+    "spiegazione": "Ai dirigenti spetta l'adozione degli atti e provvedimenti amministrativi, compresi quelli che impegnano l'amministrazione verso l'esterno.",
+    "fonte": "D.Lgs. 165/2001, art. 4",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-027",
+    "argomento": "Pubblico impiego",
+    "livello": 2,
+    "testo": "Come avviene, di regola, l'assunzione nelle pubbliche amministrazioni?",
+    "opzioni": [
+      "Con decreto di nomina del ministro",
+      "Con elezione da parte del consiglio",
+      "Con contratto individuale di lavoro, tramite procedure selettive",
+      "Per chiamata diretta del dirigente"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 35: l'assunzione avviene con contratto individuale di lavoro, tramite procedure selettive che garantiscano l'accesso dall'esterno.",
+    "fonte": "D.Lgs. 165/2001, art. 35",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-028",
+    "argomento": "Trasparenza",
+    "livello": 3,
+    "testo": "In base al D.Lgs. 33/2013, chi può chiedere i dati e i documenti detenuti dalle pubbliche amministrazioni, ulteriori a quelli da pubblicare (accesso civico generalizzato)?",
+    "opzioni": [
+      "Solo i giornalisti iscritti all'albo",
+      "Solo i residenti nel territorio dell'ente",
+      "Solo chi ha un interesse diretto, concreto e attuale",
+      "Chiunque"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 5, comma 2: chiunque ha diritto di accedere ai dati e documenti detenuti dalle amministrazioni, ulteriori rispetto a quelli oggetto di pubblicazione.",
+    "fonte": "D.Lgs. 33/2013, art. 5",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-029",
+    "argomento": "Trasparenza",
+    "livello": 2,
+    "testo": "Se un'amministrazione non pubblica un documento che è obbligata a pubblicare, chi può richiederlo con l'accesso civico «semplice»?",
+    "opzioni": [
+      "Chiunque",
+      "Solo l'ANAC",
+      "Solo il diretto interessato",
+      "Solo il Responsabile della trasparenza"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 5, comma 1: l'obbligo di pubblicazione comporta il diritto di chiunque di richiedere i documenti, nei casi in cui ne sia stata omessa la pubblicazione.",
+    "fonte": "D.Lgs. 33/2013, art. 5",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-030",
+    "argomento": "Trasparenza",
+    "livello": 1,
+    "testo": "Come si chiama la sezione del sito istituzionale dove le amministrazioni pubblicano i dati previsti dal D.Lgs. 33/2013?",
+    "opzioni": [
+      "Portale dei servizi",
+      "Amministrazione trasparente",
+      "Albo pretorio",
+      "Area riservata"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il D.Lgs. 33/2013 prevede la sezione «Amministrazione trasparente» del sito istituzionale.",
+    "fonte": "D.Lgs. 33/2013",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-031",
+    "argomento": "Anticorruzione",
+    "livello": 2,
+    "testo": "Quale autorità individua la L. 190/2012 in ambito nazionale per la prevenzione della corruzione?",
+    "opzioni": [
+      "Il Garante per la privacy",
+      "L'Autorità garante della concorrenza e del mercato",
+      "L'Autorità nazionale anticorruzione (ANAC)",
+      "La Corte dei conti"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'art. 1 della L. 190/2012 individua l'Autorità nazionale anticorruzione e gli altri organi incaricati del controllo e della prevenzione.",
+    "fonte": "L. 190/2012, art. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-032",
+    "argomento": "Anticorruzione",
+    "livello": 3,
+    "testo": "Tra chi viene individuato, di norma, il Responsabile della prevenzione della corruzione e della trasparenza (RPCT)?",
+    "opzioni": [
+      "Tra i dipendenti a tempo determinato",
+      "Tra i revisori dei conti esterni",
+      "Tra i consiglieri comunali",
+      "Tra i dirigenti di ruolo in servizio"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'organo di indirizzo individua l'RPCT, di norma tra i dirigenti di ruolo in servizio (art. 1, comma 7, L. 190/2012).",
+    "fonte": "L. 190/2012, art. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-033",
+    "argomento": "Codice di comportamento",
+    "livello": 2,
+    "testo": "Secondo il codice di comportamento dei dipendenti pubblici, quale è il valore orientativo massimo dei regali di «modico valore»?",
+    "opzioni": [
+      "150 euro",
+      "500 euro",
+      "250 euro",
+      "50 euro"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 4 del D.P.R. 62/2013: sono di modico valore i regali di valore non superiore, in via orientativa, a 150 euro, anche sotto forma di sconto.",
+    "fonte": "D.P.R. 62/2013, art. 4",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-034",
+    "argomento": "Codice di comportamento",
+    "livello": 4,
+    "testo": "I codici di comportamento delle singole amministrazioni possono fissare un limite per i regali diverso da 150 euro?",
+    "opzioni": [
+      "No, il limite è fisso per tutti",
+      "Sì, possono prevedere limiti inferiori, anche fino all'esclusione",
+      "Solo con il consenso dell'ANAC",
+      "Sì, ma solo superiori"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 4, comma 5: i codici delle singole amministrazioni possono prevedere limiti inferiori, anche fino all'esclusione della possibilità di riceverli.",
+    "fonte": "D.P.R. 62/2013, art. 4",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-035",
+    "argomento": "Documentazione amministrativa",
+    "livello": 2,
+    "testo": "Quanto valgono, salvo diversa disposizione, i certificati che attestano stati e fatti soggetti a modificazione?",
+    "opzioni": [
+      "Un anno",
+      "Hanno validità illimitata",
+      "Sei mesi dalla data di rilascio",
+      "Tre mesi"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 41 del D.P.R. 445/2000: i certificati non relativi a stati immutabili hanno validità di sei mesi dalla data di rilascio, salvo validità superiore prevista dalla legge.",
+    "fonte": "D.P.R. 445/2000, art. 41",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-036",
+    "argomento": "Documentazione amministrativa",
+    "livello": 2,
+    "testo": "Con quale strumento il cittadino sostituisce i normali certificati (es. residenza, titolo di studio) nei rapporti con la PA?",
+    "opzioni": [
+      "Testimonianza davanti al sindaco",
+      "Atto notarile",
+      "Visura camerale",
+      "Dichiarazioni sostitutive di certificazioni (autocertificazione)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 46 del D.P.R. 445/2000: stati, qualità e fatti elencati sono comprovati con dichiarazioni sottoscritte dall'interessato in sostituzione delle certificazioni.",
+    "fonte": "D.P.R. 445/2000, art. 46",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-037",
+    "argomento": "Documentazione amministrativa",
+    "livello": 3,
+    "testo": "Quale strumento si usa per dichiarare che la copia di un documento è conforme all'originale, senza autenticazione?",
+    "opzioni": [
+      "La dichiarazione sostitutiva dell'atto di notorietà",
+      "Il certificato anagrafico",
+      "L'atto di notorietà davanti al giudice",
+      "La dichiarazione sostitutiva di certificazione"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 19 del D.P.R. 445/2000: la dichiarazione sostitutiva dell'atto di notorietà (art. 47) può attestare la conformità all'originale della copia.",
+    "fonte": "D.P.R. 445/2000, art. 19",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-038",
+    "argomento": "Contratti pubblici",
+    "livello": 2,
+    "testo": "Quale principio apre il Codice dei contratti pubblici del 2023 (D.Lgs. 36/2023), all'art. 1?",
+    "opzioni": [
+      "Il principio di territorialità",
+      "Il principio del risultato",
+      "Il principio del prezzo più basso",
+      "Il principio di rotazione"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il D.Lgs. 36/2023 si apre con il principio del risultato (art. 1), seguito da quello della fiducia (art. 2) e dell'accesso al mercato (art. 3).",
+    "fonte": "D.Lgs. 36/2023, art. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-039",
+    "argomento": "Contratti pubblici",
+    "livello": 3,
+    "testo": "Su quale principio si fonda, secondo l'art. 2 del D.Lgs. 36/2023, l'attribuzione e l'esercizio del potere nel settore dei contratti pubblici?",
+    "opzioni": [
+      "Sulla discrezionalità assoluta della stazione appaltante",
+      "Sull'autorizzazione dell'ANAC per ogni gara",
+      "Sulla reciproca fiducia tra amministrazione, funzionari e operatori economici",
+      "Sul controllo preventivo della Corte dei conti"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'art. 2 introduce il principio della fiducia nell'azione legittima, trasparente e corretta dell'amministrazione, dei suoi funzionari e degli operatori economici.",
+    "fonte": "D.Lgs. 36/2023, art. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-040",
+    "argomento": "Contratti pubblici",
+    "livello": 3,
+    "testo": "Come si chiama, nel Codice dei contratti del 2023, la figura che sostituisce il «responsabile unico del procedimento»?",
+    "opzioni": [
+      "Coordinatore della sicurezza",
+      "Responsabile della transizione digitale",
+      "Direttore generale dei lavori",
+      "Responsabile unico del progetto (RUP)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il D.Lgs. 36/2023 mantiene la sigla RUP ma la riferisce al responsabile unico del progetto, che segue tutte le fasi dell'intervento.",
+    "fonte": "D.Lgs. 36/2023, art. 15",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-041",
+    "argomento": "Enti locali",
+    "livello": 5,
+    "testo": "Un sindaco firma da solo un contratto d'appalto per conto del comune, senza alcun atto del dirigente competente. Quale principio viola?",
+    "opzioni": [
+      "La separazione tra indirizzo politico (organi di governo) e gestione (dirigenti)",
+      "Il principio di sussidiarietà verticale",
+      "Il principio di rotazione degli incarichi",
+      "Il principio del contraddittorio"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'art. 107 TUEL riserva ai dirigenti gli atti di gestione, compresa la stipula dei contratti; gli organi politici danno indirizzi e controllano.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 107",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-042",
+    "argomento": "Principi",
+    "livello": 2,
+    "testo": "Secondo l'art. 1 della L. 241/1990, come agisce la PA quando adotta atti di natura non autoritativa?",
+    "opzioni": [
+      "Secondo le norme del codice penale",
+      "Secondo le norme di diritto privato, salvo che la legge disponga diversamente",
+      "Solo previa autorizzazione del prefetto",
+      "Sempre con provvedimenti autoritativi"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il comma 1-bis stabilisce che negli atti non autoritativi la PA agisce secondo il diritto privato, salvo diversa previsione di legge.",
+    "fonte": "L. 241/1990, art. 1, c. 1-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-043",
+    "argomento": "Principi",
+    "livello": 2,
+    "testo": "Quando la PA può aggravare il procedimento amministrativo?",
+    "opzioni": [
+      "Mai, in nessun caso",
+      "Solo su richiesta del privato",
+      "Solo per straordinarie e motivate esigenze imposte dall'istruttoria",
+      "Ogni volta che lo ritiene opportuno"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il divieto di aggravamento (art. 1, c. 2) ammette eccezioni solo per esigenze straordinarie e motivate dell'istruttoria.",
+    "fonte": "L. 241/1990, art. 1, c. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-044",
+    "argomento": "Principi",
+    "livello": 3,
+    "testo": "A quali principi sono improntati i rapporti tra cittadino e PA secondo l'art. 1, c. 2-bis?",
+    "opzioni": [
+      "Gerarchia e obbedienza",
+      "Onerosità e reciprocità",
+      "Segretezza e riservatezza",
+      "Collaborazione e buona fede"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il comma 2-bis, introdotto nel 2020, richiama i principi di collaborazione e buona fede.",
+    "fonte": "L. 241/1990, art. 1, c. 2-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-045",
+    "argomento": "Principi",
+    "livello": 3,
+    "testo": "I soggetti privati che esercitano attività amministrative devono rispettare i principi della L. 241/1990?",
+    "opzioni": [
+      "Sì, con un livello di garanzia non inferiore a quello delle pubbliche amministrazioni",
+      "Solo per l'accesso ai documenti",
+      "Solo se lo prevede il loro statuto",
+      "No, perché sono soggetti privati"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il comma 1-ter estende criteri e principi ai privati preposti all'esercizio di attività amministrative.",
+    "fonte": "L. 241/1990, art. 1, c. 1-ter",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-046",
+    "argomento": "Conclusione del procedimento",
+    "livello": 3,
+    "testo": "Come conclude la PA un procedimento su una domanda manifestamente irricevibile o infondata?",
+    "opzioni": [
+      "Archiviando la domanda senza alcun atto",
+      "Con un provvedimento espresso in forma semplificata",
+      "Con il silenzio-rigetto",
+      "Rinviando la domanda al TAR"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'art. 2, c. 1 consente un provvedimento in forma semplificata, con motivazione sintetica sul punto risolutivo.",
+    "fonte": "L. 241/1990, art. 2, c. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-047",
+    "argomento": "Conclusione del procedimento",
+    "livello": 3,
+    "testo": "Qual è il termine massimo che i DPCM possono fissare per i procedimenti statali, nei casi ordinari?",
+    "opzioni": [
+      "Sessanta giorni",
+      "Trenta giorni",
+      "Novanta giorni",
+      "Un anno"
+    ],
+    "corretta": 2,
+    "spiegazione": "I decreti dell'art. 2, c. 3 individuano termini non superiori a novanta giorni; oltre servono le condizioni del comma 4.",
+    "fonte": "L. 241/1990, art. 2, c. 3",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-048",
+    "argomento": "Conclusione del procedimento",
+    "livello": 4,
+    "testo": "Qual è il limite massimo, salvo eccezioni, per i termini dei procedimenti statali particolarmente complessi?",
+    "opzioni": [
+      "Trecentosessantacinque giorni",
+      "Novanta giorni",
+      "Duecentoquaranta giorni",
+      "Centottanta giorni"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il comma 4 ammette termini oltre i 90 giorni ma mai superiori a 180, esclusi cittadinanza e immigrazione.",
+    "fonte": "L. 241/1990, art. 2, c. 4",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-049",
+    "argomento": "Conclusione del procedimento",
+    "livello": 4,
+    "testo": "Quali procedimenti sono esclusi dal limite dei 180 giorni dell'art. 2, c. 4?",
+    "opzioni": [
+      "Quelli per l'acquisto della cittadinanza italiana e quelli sull'immigrazione",
+      "Quelli degli enti locali",
+      "Quelli relativi ai concorsi pubblici",
+      "Quelli tributari"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il comma 4 esclude espressamente dal limite i procedimenti di acquisto della cittadinanza e quelli sull'immigrazione.",
+    "fonte": "L. 241/1990, art. 2, c. 4",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-050",
+    "argomento": "Conclusione del procedimento",
+    "livello": 2,
+    "testo": "Da quando decorre il termine di un procedimento ad iniziativa di parte?",
+    "opzioni": [
+      "Dalla prima riunione istruttoria",
+      "Dal ricevimento della domanda",
+      "Dalla data di protocollazione interna dell'ufficio",
+      "Dalla nomina del responsabile del procedimento"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'art. 2, c. 6 fa decorrere i termini dall'inizio d'ufficio o dal ricevimento della domanda, se il procedimento è a istanza di parte.",
+    "fonte": "L. 241/1990, art. 2, c. 6",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-051",
+    "argomento": "Conclusione del procedimento",
+    "livello": 3,
+    "testo": "Quante volte e per quanto tempo possono essere sospesi i termini per acquisire informazioni o certificazioni?",
+    "opzioni": [
+      "Una sola volta, per novanta giorni",
+      "Due volte, per sessanta giorni ciascuna",
+      "Una sola volta, per non più di trenta giorni",
+      "Senza limiti"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'art. 2, c. 7 consente una sola sospensione, non superiore a trenta giorni.",
+    "fonte": "L. 241/1990, art. 2, c. 7",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-052",
+    "argomento": "Conclusione del procedimento",
+    "livello": 3,
+    "testo": "Quale codice disciplina la tutela contro il silenzio dell'amministrazione?",
+    "opzioni": [
+      "Il codice civile",
+      "Il codice di procedura penale",
+      "Il codice dell'amministrazione digitale",
+      "Il codice del processo amministrativo (D.Lgs. 104/2010)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il comma 8 rinvia al codice del processo amministrativo; le sentenze che accolgono il ricorso sono trasmesse alla Corte dei conti.",
+    "fonte": "L. 241/1990, art. 2, c. 8",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-053",
+    "argomento": "Conclusione del procedimento",
+    "livello": 4,
+    "testo": "Che cosa costituisce la mancata o tardiva emanazione del provvedimento per il dirigente o funzionario inadempiente?",
+    "opzioni": [
+      "Elemento di valutazione della performance e di responsabilità disciplinare e amministrativo-contabile",
+      "Nessuna conseguenza",
+      "Un reato di omissione d'atti d'ufficio in ogni caso",
+      "Causa automatica di licenziamento"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il comma 9 collega il ritardo alla valutazione della performance e alla responsabilità disciplinare e contabile.",
+    "fonte": "L. 241/1990, art. 2, c. 9",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-054",
+    "argomento": "Conclusione del procedimento",
+    "livello": 4,
+    "testo": "Se l'organo di governo non individua il titolare del potere sostitutivo, a chi è attribuito?",
+    "opzioni": [
+      "Al difensore civico",
+      "Al dirigente generale o, in mancanza, al dirigente preposto all'ufficio o al funzionario di più elevato livello",
+      "Al sindaco",
+      "Al prefetto"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il comma 9-bis stabilisce questa attribuzione automatica in caso di omessa individuazione.",
+    "fonte": "L. 241/1990, art. 2, c. 9-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-055",
+    "argomento": "Conclusione del procedimento",
+    "livello": 4,
+    "testo": "Entro quale termine il titolare del potere sostitutivo conclude il procedimento?",
+    "opzioni": [
+      "Entro lo stesso termine originario",
+      "Entro dieci giorni in ogni caso",
+      "Entro un termine pari alla metà di quello originariamente previsto",
+      "Entro il doppio del termine originario"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il comma 9-ter: il sostituto conclude il procedimento entro metà del termine originario, con le strutture competenti o con un commissario.",
+    "fonte": "L. 241/1990, art. 2, c. 9-ter",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-056",
+    "argomento": "Conclusione del procedimento",
+    "livello": 5,
+    "testo": "Entro quale data il titolare del potere sostitutivo comunica all'organo di governo i procedimenti in cui il termine non è stato rispettato?",
+    "opzioni": [
+      "Entro il 30 giugno",
+      "Entro il 31 dicembre",
+      "Entro il 31 marzo",
+      "Entro il 30 gennaio di ogni anno"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il comma 9-quater prevede una comunicazione annuale entro il 30 gennaio.",
+    "fonte": "L. 241/1990, art. 2, c. 9-quater",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-057",
+    "argomento": "Conclusione del procedimento",
+    "livello": 3,
+    "testo": "Cosa devono indicare i provvedimenti rilasciati in ritardo su istanza di parte?",
+    "opzioni": [
+      "Il termine previsto e quello effettivamente impiegato",
+      "Solo il nome del dirigente responsabile",
+      "Le scuse dell'amministrazione",
+      "L'importo del risarcimento dovuto"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il comma 9-quinquies impone di indicare il termine di legge o regolamento e quello effettivo.",
+    "fonte": "L. 241/1990, art. 2, c. 9-quinquies",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-058",
+    "argomento": "Conclusione del procedimento",
+    "livello": 4,
+    "testo": "Per il danno ingiusto da inosservanza del termine di conclusione, la PA risponde:",
+    "opzioni": [
+      "Solo se l'inosservanza è dolosa",
+      "Se l'inosservanza è dolosa o colposa",
+      "Mai, il ritardo non è risarcibile",
+      "Solo per i procedimenti tributari"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'art. 2-bis prevede il risarcimento del danno ingiusto da inosservanza dolosa o colposa del termine.",
+    "fonte": "L. 241/1990, art. 2-bis, c. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-059",
+    "argomento": "Conclusione del procedimento",
+    "livello": 5,
+    "testo": "L'indennizzo per il mero ritardo (art. 2-bis, c. 1-bis) spetta anche nei concorsi pubblici?",
+    "opzioni": [
+      "Sì, sempre",
+      "Solo se il concorso dura più di un anno",
+      "No, i concorsi pubblici sono esclusi",
+      "Sì, ma solo per i vincitori"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il comma 1-bis esclude dall'indennizzo le ipotesi di silenzio qualificato e i concorsi pubblici.",
+    "fonte": "L. 241/1990, art. 2-bis, c. 1-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-060",
+    "argomento": "Motivazione",
+    "livello": 2,
+    "testo": "Che cosa deve indicare la motivazione del provvedimento?",
+    "opzioni": [
+      "Solo il nome del responsabile",
+      "L'opinione personale del dirigente",
+      "Solo le norme applicate",
+      "I presupposti di fatto e le ragioni giuridiche della decisione, in relazione all'istruttoria"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'art. 3, c. 1 richiede presupposti di fatto e ragioni giuridiche, in relazione alle risultanze dell'istruttoria.",
+    "fonte": "L. 241/1990, art. 3, c. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-061",
+    "argomento": "Motivazione",
+    "livello": 2,
+    "testo": "Per quali atti la motivazione NON è richiesta?",
+    "opzioni": [
+      "Per gli atti normativi e per quelli a contenuto generale",
+      "Per gli atti relativi al personale",
+      "Per i provvedimenti di diniego",
+      "Per i provvedimenti sui concorsi"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'art. 3, c. 2 esclude la motivazione per atti normativi e a contenuto generale.",
+    "fonte": "L. 241/1990, art. 3, c. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-062",
+    "argomento": "Motivazione",
+    "livello": 3,
+    "testo": "Come si chiama la motivazione che rinvia alle ragioni contenute in un altro atto, da rendere disponibile?",
+    "opzioni": [
+      "Motivazione implicita",
+      "Motivazione per relationem",
+      "Motivazione postuma",
+      "Motivazione apparente"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'art. 3, c. 3 ammette che le ragioni risultino da altro atto richiamato, che deve essere indicato e reso disponibile.",
+    "fonte": "L. 241/1990, art. 3, c. 3",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-063",
+    "argomento": "Motivazione",
+    "livello": 2,
+    "testo": "Cosa deve indicare ogni atto notificato al destinatario?",
+    "opzioni": [
+      "Il numero di dipendenti dell'ufficio",
+      "Il costo del procedimento",
+      "Il termine e l'autorità cui è possibile ricorrere",
+      "L'elenco dei controinteressati"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'art. 3, c. 4 impone di indicare termine e autorità per il ricorso.",
+    "fonte": "L. 241/1990, art. 3, c. 4",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-064",
+    "argomento": "Responsabile del procedimento",
+    "livello": 2,
+    "testo": "Chi assegna la responsabilità del procedimento?",
+    "opzioni": [
+      "Il segretario generale in ogni caso",
+      "Il privato interessato",
+      "Il sindaco",
+      "Il dirigente dell'unità organizzativa, a sé o a un altro dipendente dell'unità"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'art. 5, c. 1 attribuisce al dirigente l'assegnazione della responsabilità dell'istruttoria.",
+    "fonte": "L. 241/1990, art. 5, c. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-065",
+    "argomento": "Responsabile del procedimento",
+    "livello": 3,
+    "testo": "Finché non avviene l'assegnazione, chi è responsabile del procedimento?",
+    "opzioni": [
+      "Il funzionario preposto all'unità organizzativa competente",
+      "Il dipendente più anziano",
+      "Nessuno",
+      "L'organo politico"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'art. 5, c. 2 individua come responsabile il funzionario preposto all'unità organizzativa.",
+    "fonte": "L. 241/1990, art. 5, c. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-066",
+    "argomento": "Responsabile del procedimento",
+    "livello": 3,
+    "testo": "Quale di questi NON è un compito del responsabile del procedimento (art. 6)?",
+    "opzioni": [
+      "Proporre l'indizione della conferenza di servizi",
+      "Giudicare i ricorsi contro il provvedimento finale",
+      "Curare comunicazioni, pubblicazioni e notificazioni",
+      "Accertare d'ufficio i fatti"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'art. 6 elenca compiti istruttori, comunicazioni e proposta o indizione delle conferenze; i ricorsi spettano al giudice o agli organi competenti.",
+    "fonte": "L. 241/1990, art. 6",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-067",
+    "argomento": "Responsabile del procedimento",
+    "livello": 4,
+    "testo": "L'organo competente all'adozione può discostarsi dalle risultanze istruttorie del responsabile del procedimento?",
+    "opzioni": [
+      "Solo con il parere del Consiglio di Stato",
+      "Sì, liberamente e senza motivare",
+      "Sì, ma indicandone la motivazione nel provvedimento finale",
+      "No, mai"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'art. 6, lett. e) consente di discostarsi solo motivando nel provvedimento finale.",
+    "fonte": "L. 241/1990, art. 6",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-068",
+    "argomento": "Responsabile del procedimento",
+    "livello": 2,
+    "testo": "Cosa devono fare responsabile del procedimento e titolari degli uffici in caso di conflitto di interessi, anche potenziale?",
+    "opzioni": [
+      "Chiedere un parere all'ANAC prima di decidere",
+      "Delegare il provvedimento a un collega dello stesso ufficio senza segnalare",
+      "Proseguire, ma informando il privato",
+      "Astenersi, segnalando la situazione di conflitto"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'art. 6-bis impone l'obbligo di astensione e di segnalazione di ogni conflitto, anche potenziale.",
+    "fonte": "L. 241/1990, art. 6-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-069",
+    "argomento": "Partecipazione",
+    "livello": 2,
+    "testo": "A chi va comunicato l'avvio del procedimento?",
+    "opzioni": [
+      "Ai destinatari diretti del provvedimento e a chi per legge deve intervenire",
+      "A tutti i cittadini residenti",
+      "Solo agli avvocati delle parti",
+      "Solo al sindaco"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'art. 7 indica i soggetti su cui il provvedimento produce effetti diretti e quelli che per legge devono intervenire.",
+    "fonte": "L. 241/1990, art. 7",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-070",
+    "argomento": "Partecipazione",
+    "livello": 3,
+    "testo": "La PA può adottare provvedimenti cautelari prima di comunicare l'avvio del procedimento?",
+    "opzioni": [
+      "Solo nei procedimenti tributari",
+      "Sì, resta salva questa facoltà",
+      "Solo con l'autorizzazione del giudice",
+      "No, mai"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'art. 7, c. 2 fa salva la facoltà di adottare provvedimenti cautelari anche prima delle comunicazioni.",
+    "fonte": "L. 241/1990, art. 7, c. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-071",
+    "argomento": "Partecipazione",
+    "livello": 3,
+    "testo": "Come si comunica l'avvio del procedimento se i destinatari sono troppo numerosi?",
+    "opzioni": [
+      "Non si comunica affatto",
+      "Solo tramite raccomandata a ciascuno",
+      "Con forme di pubblicità idonee stabilite dall'amministrazione",
+      "Con un decreto del Presidente della Repubblica"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'art. 8, c. 3 ammette forme di pubblicità idonee quando la comunicazione personale è impossibile o gravosa.",
+    "fonte": "L. 241/1990, art. 8, c. 3",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-072",
+    "argomento": "Partecipazione",
+    "livello": 4,
+    "testo": "Chi può far valere l'omissione di una comunicazione prescritta?",
+    "opzioni": [
+      "Solo il pubblico ministero",
+      "Chiunque",
+      "Solo l'amministrazione stessa",
+      "Solo il soggetto nel cui interesse la comunicazione è prevista"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'art. 8, c. 4 limita la legittimazione al soggetto nel cui interesse la comunicazione è prevista.",
+    "fonte": "L. 241/1990, art. 8, c. 4",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-073",
+    "argomento": "Partecipazione",
+    "livello": 3,
+    "testo": "Chi può intervenire nel procedimento ai sensi dell'art. 9?",
+    "opzioni": [
+      "I portatori di interessi pubblici o privati e di interessi diffusi costituiti in associazioni o comitati, cui possa derivare un pregiudizio",
+      "Solo gli enti pubblici",
+      "Solo i destinatari del provvedimento",
+      "Solo chi ha la residenza nel comune"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'art. 9 apre l'intervento a chiunque possa subire un pregiudizio, compresi gli interessi diffusi organizzati.",
+    "fonte": "L. 241/1990, art. 9",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-074",
+    "argomento": "Partecipazione",
+    "livello": 2,
+    "testo": "Quali diritti hanno i partecipanti al procedimento (art. 10)?",
+    "opzioni": [
+      "Nominare il responsabile del procedimento",
+      "Prendere visione degli atti e presentare memorie scritte e documenti",
+      "Adottare il provvedimento finale",
+      "Sospendere il procedimento a loro scelta"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'art. 10 riconosce la visione degli atti e la presentazione di memorie e documenti, che la PA deve valutare se pertinenti.",
+    "fonte": "L. 241/1990, art. 10",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-075",
+    "argomento": "Partecipazione",
+    "livello": 4,
+    "testo": "Che effetto ha il preavviso di rigetto (art. 10-bis) sui termini del procedimento?",
+    "opzioni": [
+      "Li raddoppia",
+      "Li interrompe e ricominciano da zero",
+      "Li sospende: ricominciano dieci giorni dopo le osservazioni o dalla scadenza del termine per presentarle",
+      "Non ha alcun effetto"
+    ],
+    "corretta": 2,
+    "spiegazione": "Dal 2020 la comunicazione dei motivi ostativi sospende (non interrompe) i termini.",
+    "fonte": "L. 241/1990, art. 10-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-076",
+    "argomento": "Partecipazione",
+    "livello": 4,
+    "testo": "A quali procedimenti NON si applica il preavviso di rigetto?",
+    "opzioni": [
+      "Ai procedimenti degli enti locali",
+      "Ai procedimenti a istanza di parte",
+      "Ai procedimenti di rilascio di autorizzazioni",
+      "Alle procedure concorsuali e ai procedimenti previdenziali e assistenziali gestiti dagli enti previdenziali"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'art. 10-bis esclude le procedure concorsuali e alcuni procedimenti previdenziali e assistenziali.",
+    "fonte": "L. 241/1990, art. 10-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-077",
+    "argomento": "Partecipazione",
+    "livello": 4,
+    "testo": "Dopo l'annullamento giudiziale di un diniego, la PA può addurre motivi ostativi nuovi già emergenti dall'istruttoria?",
+    "opzioni": [
+      "No, non può addurli per la prima volta",
+      "Sì, sempre",
+      "Solo con il consenso del giudice",
+      "Sì, se li comunica entro dieci giorni"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'art. 10-bis vieta di addurre per la prima volta motivi già emergenti dall'istruttoria del provvedimento annullato.",
+    "fonte": "L. 241/1990, art. 10-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-078",
+    "argomento": "Accordi",
+    "livello": 3,
+    "testo": "In quale forma devono essere stipulati gli accordi integrativi o sostitutivi del provvedimento?",
+    "opzioni": [
+      "Anche oralmente",
+      "Per atto scritto, a pena di nullità, salvo che la legge disponga altrimenti",
+      "Con semplice scambio di email",
+      "Solo per atto notarile"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'art. 11, c. 2 richiede la forma scritta a pena di nullità; si applicano i principi del codice civile su obbligazioni e contratti.",
+    "fonte": "L. 241/1990, art. 11, c. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-079",
+    "argomento": "Accordi",
+    "livello": 4,
+    "testo": "Quando può la PA recedere unilateralmente da un accordo ex art. 11?",
+    "opzioni": [
+      "In qualsiasi momento senza conseguenze",
+      "Mai",
+      "Per sopravvenuti motivi di pubblico interesse, salvo l'obbligo di indennizzo",
+      "Solo con il consenso del privato"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'art. 11, c. 4 ammette il recesso per sopravvenuti motivi di pubblico interesse, con indennizzo dei pregiudizi.",
+    "fonte": "L. 241/1990, art. 11, c. 4",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-080",
+    "argomento": "Accordi",
+    "livello": 3,
+    "testo": "Cosa deve precedere la stipulazione di un accordo ex art. 11?",
+    "opzioni": [
+      "Un referendum locale",
+      "Un parere del Consiglio di Stato",
+      "L'autorizzazione del prefetto",
+      "Una determinazione dell'organo che sarebbe competente per adottare il provvedimento"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il comma 4-bis, a garanzia di imparzialità e buon andamento, richiede una determinazione dell'organo competente.",
+    "fonte": "L. 241/1990, art. 11, c. 4-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-081",
+    "argomento": "Accordi",
+    "livello": 3,
+    "testo": "A cosa è subordinata la concessione di sovvenzioni, contributi e vantaggi economici (art. 12)?",
+    "opzioni": [
+      "Alla predeterminazione dei criteri e delle modalità da parte dell'amministrazione",
+      "Al parere della Corte dei conti",
+      "All'estrazione a sorte dei beneficiari",
+      "Alla sola richiesta dell'interessato"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'art. 12 impone di predeterminare criteri e modalità, la cui osservanza deve risultare dai singoli provvedimenti.",
+    "fonte": "L. 241/1990, art. 12",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-082",
+    "argomento": "Partecipazione",
+    "livello": 4,
+    "testo": "A quali attività NON si applicano le norme sulla partecipazione (art. 13)?",
+    "opzioni": [
+      "Ai provvedimenti di autorizzazione",
+      "Agli atti normativi, amministrativi generali, di pianificazione e di programmazione",
+      "Ai provvedimenti a istanza di parte",
+      "Ai provvedimenti sanzionatori"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'art. 13 esclude gli atti normativi, generali, di pianificazione e programmazione, oltre ai procedimenti tributari.",
+    "fonte": "L. 241/1990, art. 13",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-083",
+    "argomento": "Conferenza di servizi",
+    "livello": 3,
+    "testo": "Quando è sempre indetta la conferenza di servizi decisoria?",
+    "opzioni": [
+      "Solo in caso di ricorso al TAR",
+      "Quando lo chiede un qualsiasi cittadino",
+      "Quando la conclusione positiva richiede più pareri, nulla osta o assensi di diverse amministrazioni",
+      "Solo per le opere pubbliche statali"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'art. 14, c. 2 rende obbligatoria la conferenza decisoria quando servono più atti di assenso di diverse amministrazioni.",
+    "fonte": "L. 241/1990, art. 14, c. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-084",
+    "argomento": "Conferenza di servizi",
+    "livello": 3,
+    "testo": "In quale forma si svolge, di regola, la conferenza decisoria?",
+    "opzioni": [
+      "In assemblea pubblica",
+      "In forma simultanea e sincrona",
+      "Per iscritto, presso il Consiglio di Stato",
+      "In forma semplificata e in modalità asincrona"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'art. 14-bis stabilisce la forma semplificata e asincrona, salvo i casi dei commi 6 e 7.",
+    "fonte": "L. 241/1990, art. 14-bis, c. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-085",
+    "argomento": "Conferenza di servizi",
+    "livello": 4,
+    "testo": "Nella conferenza semplificata, qual è il termine massimo ordinario per le determinazioni delle amministrazioni coinvolte?",
+    "opzioni": [
+      "Trenta giorni (sessanta per le amministrazioni preposte a tutele sensibili)",
+      "Centottanta giorni",
+      "Novanta giorni",
+      "Dieci giorni"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'art. 14-bis, c. 2, lett. c) fissa un termine non superiore a 30 giorni, 60 per ambiente, paesaggio, beni culturali e salute.",
+    "fonte": "L. 241/1990, art. 14-bis, c. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-086",
+    "argomento": "Conferenza di servizi",
+    "livello": 4,
+    "testo": "Nella conferenza semplificata, che valore ha la mancata comunicazione della determinazione entro il termine?",
+    "opzioni": [
+      "Equivale a dissenso",
+      "Equivale ad assenso senza condizioni",
+      "Blocca la conferenza",
+      "Obbliga a ripetere la conferenza"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'art. 14-bis, c. 4 equipara il silenzio ad assenso senza condizioni, salvi i casi in cui il diritto UE richiede provvedimenti espressi.",
+    "fonte": "L. 241/1990, art. 14-bis, c. 4",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-087",
+    "argomento": "Conferenza di servizi",
+    "livello": 4,
+    "testo": "Da chi sono rappresentate le amministrazioni statali in una conferenza simultanea a cui partecipano anche amministrazioni non statali?",
+    "opzioni": [
+      "Dal Presidente della Repubblica",
+      "Da un rappresentante per ogni ministero",
+      "Da un unico rappresentante nominato dal Presidente del Consiglio o, per le sole periferiche, dal Prefetto",
+      "Dal Ministro dell'interno"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'art. 14-ter, c. 4 prevede un rappresentante unico delle amministrazioni statali.",
+    "fonte": "L. 241/1990, art. 14-ter, c. 4",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-088",
+    "argomento": "Conferenza di servizi",
+    "livello": 4,
+    "testo": "Cosa sostituisce la determinazione motivata di conclusione della conferenza?",
+    "opzioni": [
+      "Le sentenze del TAR",
+      "Solo il parere dell'amministrazione procedente",
+      "Nessun atto, ha valore solo consultivo",
+      "Tutti gli atti di assenso di competenza delle amministrazioni e dei gestori interessati"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'art. 14-quater, c. 1: la determinazione sostituisce a ogni effetto tutti gli atti di assenso.",
+    "fonte": "L. 241/1990, art. 14-quater, c. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-089",
+    "argomento": "Conferenza di servizi",
+    "livello": 5,
+    "testo": "Entro quanti giorni le amministrazioni dissenzienti preposte a tutele sensibili possono opporsi alla determinazione conclusiva?",
+    "opzioni": [
+      "Entro 10 giorni, con opposizione al Presidente del Consiglio dei ministri",
+      "Entro 120 giorni, al Presidente della Repubblica",
+      "Entro 30 giorni, al Prefetto",
+      "Entro 60 giorni, con ricorso al TAR"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'art. 14-quinquies prevede l'opposizione al Presidente del Consiglio entro 10 giorni dalla comunicazione.",
+    "fonte": "L. 241/1990, art. 14-quinquies",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-090",
+    "argomento": "Accordi",
+    "livello": 3,
+    "testo": "Come devono essere sottoscritti gli accordi fra pubbliche amministrazioni (art. 15)?",
+    "opzioni": [
+      "Con semplice email",
+      "Con firma digitale, firma elettronica avanzata o altra firma elettronica qualificata, pena la nullità",
+      "Non serve sottoscrizione",
+      "Con firma autografa davanti a un notaio"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il comma 2-bis impone la firma digitale o elettronica qualificata/avanzata, a pena di nullità.",
+    "fonte": "L. 241/1990, art. 15, c. 2-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-091",
+    "argomento": "Attività consultiva",
+    "livello": 3,
+    "testo": "Entro quanti giorni gli organi consultivi devono rendere i pareri obbligatori?",
+    "opzioni": [
+      "Novanta giorni",
+      "Trenta giorni",
+      "Venti giorni dal ricevimento della richiesta",
+      "Dieci giorni"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'art. 16, c. 1 fissa venti giorni sia per i pareri obbligatori sia, come limite massimo, per quelli facoltativi.",
+    "fonte": "L. 241/1990, art. 16, c. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-092",
+    "argomento": "Attività consultiva",
+    "livello": 4,
+    "testo": "Se il parere obbligatorio non arriva nel termine, cosa fa l'amministrazione richiedente?",
+    "opzioni": [
+      "Deve attendere senza limiti",
+      "Deve archiviare il procedimento",
+      "Deve chiedere l'intervento del giudice",
+      "Procede indipendentemente dall'espressione del parere"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'art. 16, c. 2 consente di procedere senza parere, salve le esclusioni per ambiente, paesaggio, territorio e salute.",
+    "fonte": "L. 241/1990, art. 16, c. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-093",
+    "argomento": "Attività consultiva",
+    "livello": 4,
+    "testo": "La regola per cui si procede senza parere vale anche per le amministrazioni preposte alla tutela ambientale e della salute?",
+    "opzioni": [
+      "No, per esse non si applica",
+      "Solo per i pareri facoltativi",
+      "Sì, sempre",
+      "Sì, ma il termine si dimezza"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'art. 16, c. 3 esclude i pareri delle amministrazioni preposte alla tutela ambientale, paesaggistica, territoriale e della salute.",
+    "fonte": "L. 241/1990, art. 16, c. 3",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-094",
+    "argomento": "Attività consultiva",
+    "livello": 4,
+    "testo": "Se gli organi tecnici non rendono le valutazioni tecniche entro il termine (o entro 90 giorni), cosa deve fare il responsabile del procedimento?",
+    "opzioni": [
+      "Archiviare la pratica",
+      "Chiederle ad altri organi o enti pubblici con qualificazione equipollente, o a istituti universitari",
+      "Procedere senza valutazioni",
+      "Nominare un consulente privato a sua scelta"
+    ],
+    "corretta": 1,
+    "spiegazione": "A differenza dei pareri, per le valutazioni tecniche l'art. 17 impone di rivolgersi ad altri organi qualificati.",
+    "fonte": "L. 241/1990, art. 17, c. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-095",
+    "argomento": "Silenzio tra amministrazioni",
+    "livello": 4,
+    "testo": "Nel silenzio-assenso tra amministrazioni (art. 17-bis), entro quanti giorni va comunicato l'assenso, di regola?",
+    "opzioni": [
+      "Centottanta giorni",
+      "Sessanta giorni",
+      "Trenta giorni dal ricevimento dello schema di provvedimento",
+      "Dieci giorni"
+    ],
+    "corretta": 2,
+    "spiegazione": "Decorsi i trenta giorni (novanta per le amministrazioni preposte a tutele sensibili), l'assenso si intende acquisito.",
+    "fonte": "L. 241/1990, art. 17-bis, c. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-096",
+    "argomento": "Silenzio tra amministrazioni",
+    "livello": 5,
+    "testo": "Qual è il termine dell'art. 17-bis per le amministrazioni preposte alla tutela ambientale, dei beni culturali e della salute?",
+    "opzioni": [
+      "Sessanta giorni",
+      "Il silenzio-assenso non si applica mai a loro",
+      "Trenta giorni",
+      "Novanta giorni, salvo termine diverso"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'art. 17-bis, c. 3 estende il meccanismo anche a queste amministrazioni, con termine di novanta giorni.",
+    "fonte": "L. 241/1990, art. 17-bis, c. 3",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-097",
+    "argomento": "Semplificazione",
+    "livello": 2,
+    "testo": "Come acquisisce la PA i documenti già in possesso di altre pubbliche amministrazioni?",
+    "opzioni": [
+      "D'ufficio: all'interessato può chiedere solo gli elementi per trovarli",
+      "Tramite il notaio",
+      "Li chiede sempre al cittadino",
+      "Il cittadino deve presentarli in originale"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'art. 18, c. 2 impone l'acquisizione d'ufficio dei documenti detenuti dalla PA.",
+    "fonte": "L. 241/1990, art. 18, c. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-098",
+    "argomento": "Semplificazione",
+    "livello": 3,
+    "testo": "Cosa attesta la ricevuta rilasciata alla presentazione di un'istanza o segnalazione (art. 18-bis)?",
+    "opzioni": [
+      "Solo l'identità del richiedente",
+      "L'avvenuta presentazione e i termini entro cui la PA deve rispondere o il silenzio vale accoglimento",
+      "L'esito favorevole della domanda",
+      "Il pagamento dei diritti di segreteria"
+    ],
+    "corretta": 1,
+    "spiegazione": "La ricevuta indica anche i termini e, se contiene gli elementi dell'art. 8, vale come comunicazione di avvio.",
+    "fonte": "L. 241/1990, art. 18-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-099",
+    "argomento": "Semplificazione",
+    "livello": 4,
+    "testo": "L'istanza produce effetti se la PA non rilascia la ricevuta?",
+    "opzioni": [
+      "Solo se inviata per PEC",
+      "Solo dopo un sollecito scritto",
+      "Sì, ferma la responsabilità del soggetto competente",
+      "No, è come non presentata"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'art. 18-bis precisa che istanze e segnalazioni producono effetti anche senza ricevuta.",
+    "fonte": "L. 241/1990, art. 18-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-100",
+    "argomento": "SCIA",
+    "livello": 2,
+    "testo": "Da quando può iniziare l'attività oggetto di SCIA?",
+    "opzioni": [
+      "Dopo il sopralluogo dei tecnici",
+      "Dopo 60 giorni di silenzio",
+      "Dopo l'autorizzazione espressa",
+      "Dalla data di presentazione della segnalazione all'amministrazione competente"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'art. 19, c. 2 consente l'avvio immediato; la PA controlla dopo.",
+    "fonte": "L. 241/1990, art. 19, c. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-101",
+    "argomento": "SCIA",
+    "livello": 3,
+    "testo": "Se l'attività avviata con SCIA può essere resa conforme alla legge, cosa fa la PA?",
+    "opzioni": [
+      "Invita il privato a conformarla, fissando un termine non inferiore a trenta giorni",
+      "Infligge solo una multa",
+      "Archivia senza fare nulla",
+      "La vieta subito in ogni caso"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'art. 19, c. 3 prevede la conformazione con atto motivato; in difetto, l'attività si intende vietata.",
+    "fonte": "L. 241/1990, art. 19, c. 3",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-102",
+    "argomento": "SCIA",
+    "livello": 3,
+    "testo": "In materia edilizia, qual è il termine per i controlli sulla SCIA?",
+    "opzioni": [
+      "Sessanta giorni",
+      "Trenta giorni",
+      "Dieci giorni",
+      "Novanta giorni"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'art. 19, c. 6-bis riduce per la SCIA edilizia il termine ordinario di sessanta giorni a trenta.",
+    "fonte": "L. 241/1990, art. 19, c. 6-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-103",
+    "argomento": "SCIA",
+    "livello": 4,
+    "testo": "Qual è la pena per chi attesta falsamente i requisiti nelle dichiarazioni che corredano la SCIA?",
+    "opzioni": [
+      "Reclusione da cinque a dieci anni",
+      "Nessuna pena",
+      "Reclusione da uno a tre anni, se il fatto non costituisce più grave reato",
+      "Solo una sanzione amministrativa"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'art. 19, c. 6 prevede la reclusione da uno a tre anni.",
+    "fonte": "L. 241/1990, art. 19, c. 6",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-104",
+    "argomento": "SCIA",
+    "livello": 5,
+    "testo": "Un terzo che si ritiene leso da una SCIA può impugnarla direttamente come provvedimento tacito?",
+    "opzioni": [
+      "No, non ha alcuna tutela",
+      "Sì, entro 60 giorni davanti al TAR",
+      "Sì, con ricorso straordinario al Capo dello Stato",
+      "No: può sollecitare le verifiche della PA e, in caso di inerzia, agire contro il silenzio"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'art. 19, c. 6-ter: la SCIA non è un provvedimento tacito impugnabile; si esperisce solo l'azione dell'art. 31 c.p.a.",
+    "fonte": "L. 241/1990, art. 19, c. 6-ter",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-105",
+    "argomento": "SCIA",
+    "livello": 3,
+    "testo": "Se un'attività richiede più SCIA e comunicazioni, cosa presenta l'interessato?",
+    "opzioni": [
+      "Un'unica SCIA allo sportello unico",
+      "Nessuna SCIA, basta una PEC",
+      "Una domanda di autorizzazione ordinaria",
+      "Una SCIA per ogni amministrazione"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'art. 19-bis prevede la concentrazione dei regimi: un'unica SCIA allo sportello, che la trasmette alle altre amministrazioni.",
+    "fonte": "L. 241/1990, art. 19-bis, c. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-106",
+    "argomento": "Silenzio assenso",
+    "livello": 4,
+    "testo": "In quali casi il silenzio assenso NON si forma, anche se il termine è decorso?",
+    "opzioni": [
+      "Se il dirigente era in ferie",
+      "Se la domanda non è stata ricevuta dalla PA competente o manca degli elementi indispensabili",
+      "Se la domanda era in bollo",
+      "Se il richiedente è una società"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'art. 20, c. 1 indica i soli due casi in cui il silenzio assenso non si forma.",
+    "fonte": "L. 241/1990, art. 20, c. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-107",
+    "argomento": "Silenzio assenso",
+    "livello": 4,
+    "testo": "Entro quanto la PA, nei procedimenti non telematizzati, deve inviare l'attestazione del silenzio assenso formato?",
+    "opzioni": [
+      "Entro sei mesi",
+      "Non è tenuta a inviarla",
+      "Entro dieci giorni dalla formazione del silenzio assenso",
+      "Entro trenta giorni"
+    ],
+    "corretta": 2,
+    "spiegazione": "Decorso il termine, l'attestazione è sostituita da una dichiarazione del privato ex art. 47 DPR 445/2000.",
+    "fonte": "L. 241/1990, art. 20, c. 2-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-108",
+    "argomento": "Silenzio assenso",
+    "livello": 3,
+    "testo": "In quale di queste materie il silenzio assenso NON si applica?",
+    "opzioni": [
+      "Occupazione temporanea di suolo per un'insegna",
+      "Iscrizioni ad albi artigiani",
+      "Commercio al dettaglio",
+      "Pubblica sicurezza"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'art. 20, c. 4 esclude patrimonio culturale, ambiente, difesa, pubblica sicurezza, immigrazione, asilo, cittadinanza, salute.",
+    "fonte": "L. 241/1990, art. 20, c. 4",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-109",
+    "argomento": "Silenzio assenso",
+    "livello": 4,
+    "testo": "Formato il silenzio assenso, la PA può ancora intervenire?",
+    "opzioni": [
+      "Sì, in autotutela (revoca o annullamento d'ufficio)",
+      "Solo con sentenza del giudice",
+      "No, mai",
+      "Solo entro 24 ore"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'art. 20, c. 3 richiama gli artt. 21-quinquies e 21-nonies.",
+    "fonte": "L. 241/1990, art. 20, c. 3",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-110",
+    "argomento": "Efficacia del provvedimento",
+    "livello": 3,
+    "testo": "Quando acquista efficacia un provvedimento limitativo della sfera giuridica dei privati?",
+    "opzioni": [
+      "Con la firma del dirigente",
+      "Con la comunicazione al destinatario",
+      "Con il pagamento di un'imposta",
+      "Con la pubblicazione sul sito dopo un anno"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'art. 21-bis lega l'efficacia alla comunicazione; i provvedimenti cautelari e urgenti sono immediatamente efficaci.",
+    "fonte": "L. 241/1990, art. 21-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-111",
+    "argomento": "Efficacia del provvedimento",
+    "livello": 4,
+    "testo": "Come si chiama il potere della PA di imporre coattivamente l'adempimento degli obblighi, previa diffida?",
+    "opzioni": [
+      "Imperatività",
+      "Inoppugnabilità",
+      "Esecutorietà",
+      "Tipicità"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'art. 21-ter disciplina l'esecutorietà, nei casi e modi stabiliti dalla legge.",
+    "fonte": "L. 241/1990, art. 21-ter",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-112",
+    "argomento": "Efficacia del provvedimento",
+    "livello": 4,
+    "testo": "Per quanto tempo può essere sospesa l'efficacia di un provvedimento?",
+    "opzioni": [
+      "Mai, la sospensione non è prevista",
+      "A tempo indeterminato",
+      "Fino a dieci anni",
+      "Per gravi ragioni e per il tempo strettamente necessario, prorogabile una sola volta"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'art. 21-quater, c. 2 consente la sospensione con termine esplicito, prorogabile o differibile una sola volta.",
+    "fonte": "L. 241/1990, art. 21-quater, c. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-113",
+    "argomento": "Autotutela",
+    "livello": 3,
+    "testo": "Quale effetto produce la revoca del provvedimento?",
+    "opzioni": [
+      "Rende il provvedimento inidoneo a produrre ulteriori effetti",
+      "Trasforma il provvedimento in un contratto",
+      "Rende il provvedimento nullo",
+      "Elimina gli effetti già prodotti fin dall'origine"
+    ],
+    "corretta": 0,
+    "spiegazione": "La revoca (art. 21-quinquies) opera per il futuro; se crea pregiudizi la PA deve indennizzare.",
+    "fonte": "L. 241/1990, art. 21-quinquies",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-114",
+    "argomento": "Autotutela",
+    "livello": 4,
+    "testo": "Se la revoca incide su rapporti negoziali, come si calcola l'indennizzo?",
+    "opzioni": [
+      "Non è dovuto",
+      "È parametrato al solo danno emergente",
+      "Comprende sempre il lucro cessante",
+      "È fisso, pari a mille euro"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'art. 21-quinquies, c. 1-bis limita l'indennizzo al danno emergente.",
+    "fonte": "L. 241/1990, art. 21-quinquies, c. 1-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-115",
+    "argomento": "Autotutela",
+    "livello": 3,
+    "testo": "Quando è ammesso il recesso unilaterale della PA dai contratti?",
+    "opzioni": [
+      "Sempre, per qualsiasi motivo",
+      "Solo con autorizzazione dell'ANAC",
+      "Nei casi previsti dalla legge o dal contratto",
+      "Mai"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 21-sexies.",
+    "fonte": "L. 241/1990, art. 21-sexies",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-116",
+    "argomento": "Invalidità del provvedimento",
+    "livello": 4,
+    "testo": "Un provvedimento vincolato, viziato solo nella forma, è annullabile se il suo contenuto non poteva essere diverso?",
+    "opzioni": [
+      "Sì, sempre",
+      "È nullo",
+      "È inesistente",
+      "No, non è annullabile"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'art. 21-octies, c. 2 esclude l'annullabilità per vizi formali o procedimentali dei provvedimenti vincolati.",
+    "fonte": "L. 241/1990, art. 21-octies, c. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-117",
+    "argomento": "Autotutela",
+    "livello": 3,
+    "testo": "Quale istituto consente di sanare un provvedimento annullabile, per ragioni di interesse pubblico ed entro un termine ragionevole?",
+    "opzioni": [
+      "La convalida",
+      "La revoca",
+      "La sospensione",
+      "Il ritiro per nullità"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'art. 21-nonies, c. 2 fa salva la convalida del provvedimento annullabile.",
+    "fonte": "L. 241/1990, art. 21-nonies, c. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-118",
+    "argomento": "Autotutela",
+    "livello": 5,
+    "testo": "Un'autorizzazione ottenuta con dichiarazioni false, accertate con sentenza penale definitiva, può essere annullata dopo i sei mesi?",
+    "opzioni": [
+      "No, mai",
+      "Sì, anche dopo la scadenza del termine",
+      "Solo se il privato acconsente",
+      "Solo entro un anno"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'art. 21-nonies, c. 2-bis lo consente per false rappresentazioni o dichiarazioni mendaci accertate in giudicato.",
+    "fonte": "L. 241/1990, art. 21-nonies, c. 2-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-119",
+    "argomento": "Accesso ai documenti",
+    "livello": 2,
+    "testo": "In cosa consiste il diritto di accesso secondo l'art. 22?",
+    "opzioni": [
+      "Nel modificare i documenti amministrativi",
+      "Nell'ottenere un parere legale gratuito",
+      "Nel prendere visione ed estrarre copia di documenti amministrativi",
+      "Nel partecipare alle riunioni di giunta"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 22, c. 1, lett. a).",
+    "fonte": "L. 241/1990, art. 22, c. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-120",
+    "argomento": "Accesso ai documenti",
+    "livello": 3,
+    "testo": "Le informazioni della PA che non hanno forma di documento amministrativo sono accessibili ex L. 241/1990?",
+    "opzioni": [
+      "Sì, sempre",
+      "Solo se richieste via PEC",
+      "Solo per i giornalisti",
+      "No, salvo quanto previsto per i dati personali dell'interessato"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'art. 22, c. 4: l'accesso riguarda documenti, non informazioni da elaborare.",
+    "fonte": "L. 241/1990, art. 22, c. 4",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-121",
+    "argomento": "Accesso ai documenti",
+    "livello": 3,
+    "testo": "Fino a quando è esercitabile il diritto di accesso?",
+    "opzioni": [
+      "Finché la PA ha l'obbligo di detenere i documenti",
+      "Per un anno dalla formazione del documento",
+      "Solo durante il procedimento",
+      "Per cinque anni"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 22, c. 6.",
+    "fonte": "L. 241/1990, art. 22, c. 6",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-122",
+    "argomento": "Accesso ai documenti",
+    "livello": 3,
+    "testo": "Nei confronti di chi si esercita il diritto di accesso (art. 23)?",
+    "opzioni": [
+      "Solo i ministeri",
+      "Pubbliche amministrazioni, aziende autonome e speciali, enti pubblici e gestori di pubblici servizi",
+      "Qualsiasi impresa privata",
+      "Solo i comuni"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 23; verso le Autorità di garanzia si esercita secondo i rispettivi ordinamenti.",
+    "fonte": "L. 241/1990, art. 23",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-123",
+    "argomento": "Accesso ai documenti",
+    "livello": 3,
+    "testo": "Sono ammissibili istanze di accesso finalizzate a un controllo generalizzato sull'operato della PA?",
+    "opzioni": [
+      "Solo per i consiglieri regionali",
+      "Sì, sempre",
+      "No, non sono ammissibili",
+      "Solo se firmate da 100 cittadini"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'art. 24, c. 3 lo esclude per l'accesso documentale (il controllo diffuso è invece lo scopo dell'accesso civico generalizzato del D.Lgs. 33/2013).",
+    "fonte": "L. 241/1990, art. 24, c. 3",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-124",
+    "argomento": "Accesso ai documenti",
+    "livello": 4,
+    "testo": "L'accesso può essere negato quando basterebbe differirlo?",
+    "opzioni": [
+      "Solo nei procedimenti tributari",
+      "Sì, a discrezione della PA",
+      "Sì, se il documento è riservato",
+      "No: non può essere negato ove sia sufficiente il differimento"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 24, c. 4.",
+    "fonte": "L. 241/1990, art. 24, c. 4",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-125",
+    "argomento": "Accesso ai documenti",
+    "livello": 4,
+    "testo": "In caso di documenti con dati riservati di terzi, quando va comunque garantito l'accesso?",
+    "opzioni": [
+      "Quando la conoscenza è necessaria per curare o difendere i propri interessi giuridici",
+      "Mai",
+      "Solo con il consenso scritto del terzo",
+      "Solo se il richiedente è un avvocato"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'art. 24, c. 7 garantisce l'accesso difensivo, con limiti più stretti per i dati sensibili e giudiziari.",
+    "fonte": "L. 241/1990, art. 24, c. 7",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-126",
+    "argomento": "Accesso ai documenti",
+    "livello": 2,
+    "testo": "Quanto costa esaminare i documenti amministrativi?",
+    "opzioni": [
+      "Si paga un diritto di 50 euro",
+      "L'esame è gratuito; per le copie si rimborsa il costo di riproduzione",
+      "È gratuito anche il rilascio di copie in bollo",
+      "Si paga sempre una tassa fissa"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 25, c. 1; restano salve le norme sul bollo e i diritti di ricerca e visura.",
+    "fonte": "L. 241/1990, art. 25, c. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-127",
+    "argomento": "Accesso ai documenti",
+    "livello": 3,
+    "testo": "La richiesta di accesso documentale deve essere motivata?",
+    "opzioni": [
+      "No, mai",
+      "Solo se presentata oralmente",
+      "Sì, e va rivolta all'amministrazione che ha formato o detiene il documento",
+      "Solo se riguarda dati personali"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 25, c. 2 (a differenza dell'accesso civico, che non va motivato).",
+    "fonte": "L. 241/1990, art. 25, c. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-128",
+    "argomento": "Accesso ai documenti",
+    "livello": 4,
+    "testo": "Contro il diniego di accesso di un comune, oltre al TAR, a chi si può chiedere il riesame?",
+    "opzioni": [
+      "Al prefetto",
+      "Alla Corte dei conti",
+      "Al Garante per la privacy",
+      "Al difensore civico competente"
+    ],
+    "corretta": 3,
+    "spiegazione": "Per gli atti di comuni, province e regioni si ricorre al difensore civico; per lo Stato alla Commissione per l'accesso.",
+    "fonte": "L. 241/1990, art. 25, c. 4",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-129",
+    "argomento": "Accesso ai documenti",
+    "livello": 4,
+    "testo": "Presso quale organo è istituita la Commissione per l'accesso ai documenti amministrativi?",
+    "opzioni": [
+      "Presso la Presidenza del Consiglio dei Ministri",
+      "Presso la Camera dei deputati",
+      "Presso il Consiglio di Stato",
+      "Presso il Ministero dell'interno"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 27, c. 1; la Commissione è rinnovata ogni tre anni.",
+    "fonte": "L. 241/1990, art. 27, c. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-130",
+    "argomento": "Accesso ai documenti",
+    "livello": 4,
+    "testo": "Ogni quanto è rinnovata la Commissione per l'accesso ai documenti amministrativi?",
+    "opzioni": [
+      "Ogni cinque anni",
+      "Ogni tre anni",
+      "Ogni anno",
+      "Ogni sette anni"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 27, c. 3.",
+    "fonte": "L. 241/1990, art. 27, c. 3",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-131",
+    "argomento": "Segreto d'ufficio",
+    "livello": 2,
+    "testo": "Che cosa vieta il segreto d'ufficio all'impiegato pubblico?",
+    "opzioni": [
+      "Parlare con i colleghi",
+      "Rispondere alle istanze di accesso",
+      "Trasmettere a chi non ne ha diritto informazioni su provvedimenti o notizie apprese per le sue funzioni",
+      "Rilasciare copie nei casi consentiti"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'art. 28 ha riscritto l'art. 15 del DPR 3/1957 coordinandolo con il diritto di accesso.",
+    "fonte": "L. 241/1990, art. 28",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-132",
+    "argomento": "Ambito di applicazione",
+    "livello": 4,
+    "testo": "Le regioni possono prevedere, nei loro procedimenti, garanzie inferiori a quelle dei livelli essenziali della L. 241/1990?",
+    "opzioni": [
+      "Solo le regioni a statuto speciale",
+      "Sì, liberamente",
+      "Sì, con legge regionale",
+      "No, possono solo prevedere livelli ulteriori di tutela"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 29, c. 2-quater.",
+    "fonte": "L. 241/1990, art. 29, c. 2-quater",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-133",
+    "argomento": "Ambito di applicazione",
+    "livello": 3,
+    "testo": "Negli atti di notorietà e attestazioni asseverate da testimoni, quanti testimoni servono?",
+    "opzioni": [
+      "Due",
+      "Uno",
+      "Tre",
+      "Quattro"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'art. 30, c. 1 riduce a due il numero dei testimoni.",
+    "fonte": "L. 241/1990, art. 30, c. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-134",
+    "argomento": "Enti locali",
+    "livello": 1,
+    "testo": "Quali di questi sono enti locali secondo il TUEL?",
+    "opzioni": [
+      "Solo comuni e regioni",
+      "Comuni, province, città metropolitane, comunità montane, comunità isolane e unioni di comuni",
+      "Regioni, prefetture e questure",
+      "Comuni, ASL e camere di commercio"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'art. 2 elenca gli enti locali; le regioni non sono enti locali ma enti territoriali con potestà legislativa.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-135",
+    "argomento": "Enti locali",
+    "livello": 1,
+    "testo": "Come definisce il comune l'art. 3 del TUEL?",
+    "opzioni": [
+      "Un organo della regione",
+      "Un'associazione privata di cittadini",
+      "L'ente locale che rappresenta la propria comunità, ne cura gli interessi e ne promuove lo sviluppo",
+      "Un ufficio periferico dello Stato"
+    ],
+    "corretta": 2,
+    "spiegazione": "La provincia è invece l'ente intermedio tra comune e regione.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 3",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-136",
+    "argomento": "Enti locali",
+    "livello": 2,
+    "testo": "Quale ente locale il TUEL definisce «intermedio tra comune e regione»?",
+    "opzioni": [
+      "La comunità montana",
+      "La città metropolitana",
+      "L'unione di comuni",
+      "La provincia"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 3, c. 3.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 3",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-137",
+    "argomento": "Enti locali",
+    "livello": 2,
+    "testo": "Quali forme di autonomia riconosce il TUEL a comuni e province?",
+    "opzioni": [
+      "Statutaria, normativa, organizzativa, amministrativa, impositiva e finanziaria",
+      "Solo amministrativa",
+      "Solo finanziaria",
+      "Legislativa e giurisdizionale"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 3, c. 4; la potestà legislativa spetta invece a Stato e regioni.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 3",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-138",
+    "argomento": "Enti locali",
+    "livello": 3,
+    "testo": "Che cosa stabilisce lo statuto comunale?",
+    "opzioni": [
+      "Le aliquote dei tributi ogni anno",
+      "Le norme fondamentali dell'organizzazione dell'ente, tra cui attribuzioni degli organi, garanzie delle minoranze e rappresentanza legale",
+      "Le pene per i reati commessi nel comune",
+      "Il bilancio di previsione"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 6, c. 2; lo statuto disciplina anche partecipazione popolare, stemma e gonfalone.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 6",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-139",
+    "argomento": "Enti locali",
+    "livello": 3,
+    "testo": "Quali servizi di competenza statale gestisce il comune?",
+    "opzioni": [
+      "Riscossione delle imposte sui redditi",
+      "Giustizia civile di primo grado",
+      "Servizi elettorali, di stato civile, di anagrafe, di leva militare e di statistica",
+      "Servizi di polizia di Stato"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 14: le relative funzioni sono esercitate dal sindaco come ufficiale del Governo.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 14",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-140",
+    "argomento": "Enti locali",
+    "livello": 4,
+    "testo": "Salvo i casi di fusione, sotto quale soglia di popolazione non si possono istituire nuovi comuni?",
+    "opzioni": [
+      "1.000 abitanti",
+      "15.000 abitanti",
+      "5.000 abitanti",
+      "10.000 abitanti"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 15, c. 1.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 15",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-141",
+    "argomento": "Forme associative",
+    "livello": 2,
+    "testo": "Con quale strumento gli enti locali svolgono in modo coordinato funzioni e servizi determinati, senza creare un nuovo ente?",
+    "opzioni": [
+      "La convenzione",
+      "L'unione di comuni",
+      "Il consorzio obbligatorio di bonifica",
+      "La fusione"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'art. 30 disciplina le convenzioni, che fissano fini, durata, rapporti finanziari e obblighi reciproci.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 30",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-142",
+    "argomento": "Forme associative",
+    "livello": 3,
+    "testo": "Di quante unioni di comuni può far parte ciascun comune?",
+    "opzioni": [
+      "Di quante vuole",
+      "Di una sola",
+      "Di due al massimo",
+      "Di nessuna se ha meno di 5.000 abitanti"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 32, c. 2.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 32",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-143",
+    "argomento": "Forme associative",
+    "livello": 3,
+    "testo": "Che cos'è l'unione di comuni?",
+    "opzioni": [
+      "Un accordo informale tra sindaci",
+      "Un ufficio della prefettura",
+      "Un ente locale costituito da due o più comuni, di norma contermini, per l'esercizio associato di funzioni e servizi",
+      "Un'azienda speciale del comune capoluogo"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 32, c. 1.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 32",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-144",
+    "argomento": "Organi",
+    "livello": 2,
+    "testo": "Da quanti consiglieri (oltre al sindaco) è composto il consiglio di un comune con più di 100.000 abitanti o capoluogo di provincia?",
+    "opzioni": [
+      "30",
+      "24",
+      "60",
+      "40"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 37: 60 oltre il milione, 50 oltre 500.000, 46 oltre 250.000, 40 oltre 100.000 o capoluoghi.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 37",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-145",
+    "argomento": "Organi",
+    "livello": 3,
+    "testo": "Quale presenza minima deve garantire il regolamento per la validità delle sedute del consiglio comunale?",
+    "opzioni": [
+      "Almeno un terzo dei consiglieri assegnati, senza contare il sindaco",
+      "Almeno cinque consiglieri",
+      "Due terzi dei consiglieri",
+      "La metà più uno"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 38, c. 2.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 38",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-146",
+    "argomento": "Organi",
+    "livello": 3,
+    "testo": "Nei comuni sopra 15.000 abitanti, chi presiede il consiglio comunale?",
+    "opzioni": [
+      "Il prefetto",
+      "Un presidente eletto tra i consiglieri nella prima seduta",
+      "Il segretario comunale",
+      "Il sindaco"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 39, c. 1; nei comuni fino a 15.000 abitanti lo statuto può prevedere la figura.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 39",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-147",
+    "argomento": "Organi",
+    "livello": 4,
+    "testo": "Entro quanti giorni il presidente del consiglio deve riunirlo quando lo chiede un quinto dei consiglieri?",
+    "opzioni": [
+      "Entro dieci giorni",
+      "Entro sessanta giorni",
+      "Entro venti giorni",
+      "Entro cinque giorni"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 39, c. 2.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 39",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-148",
+    "argomento": "Organi",
+    "livello": 2,
+    "testo": "Chi nomina i componenti della giunta comunale, tra cui il vicesindaco?",
+    "opzioni": [
+      "Il prefetto",
+      "Il consiglio comunale con voto segreto",
+      "I cittadini con elezione diretta",
+      "Il sindaco"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 46, c. 2: il sindaco nomina la giunta e ne dà comunicazione al consiglio; può anche revocare gli assessori.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 46",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-149",
+    "argomento": "Organi",
+    "livello": 4,
+    "testo": "Qual è il numero massimo di assessori nella giunta comunale?",
+    "opzioni": [
+      "Un terzo dei consiglieri (computando il sindaco) e comunque non più di dodici",
+      "Venti in ogni caso",
+      "Cinque in ogni caso",
+      "La metà dei consiglieri"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 47, c. 1.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 47",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-150",
+    "argomento": "Organi",
+    "livello": 3,
+    "testo": "Nei comuni sopra 15.000 abitanti, gli assessori possono essere scelti fuori dal consiglio?",
+    "opzioni": [
+      "Solo con il consenso del prefetto",
+      "Sì, tra cittadini con i requisiti per essere eletti consiglieri",
+      "Solo se iscritti a un albo professionale",
+      "No, devono essere consiglieri"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 47, c. 3.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 47",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-151",
+    "argomento": "Organi",
+    "livello": 3,
+    "testo": "Qual è la competenza residuale della giunta comunale?",
+    "opzioni": [
+      "Approva il bilancio e lo statuto",
+      "Adotta tutti gli atti di gestione al posto dei dirigenti",
+      "Compie gli atti di governo non riservati dalla legge al consiglio e non attribuiti al sindaco",
+      "Elegge il sindaco"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 48, c. 2: la giunta ha competenza residuale tra gli organi di governo.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 48",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-152",
+    "argomento": "Organi",
+    "livello": 2,
+    "testo": "Chi rappresenta il comune e convoca e presiede la giunta?",
+    "opzioni": [
+      "Il segretario comunale",
+      "Il dirigente più anziano",
+      "Il presidente del consiglio comunale",
+      "Il sindaco"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 50, c. 2.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 50",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-153",
+    "argomento": "Organi",
+    "livello": 4,
+    "testo": "Il voto contrario del consiglio a una proposta del sindaco comporta le sue dimissioni?",
+    "opzioni": [
+      "No, servono una mozione di sfiducia approvata a maggioranza assoluta",
+      "Sì, se la proposta riguardava il bilancio",
+      "Solo se il voto è segreto",
+      "Sì, sempre"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 52, c. 1-2.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 52",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-154",
+    "argomento": "Organi",
+    "livello": 4,
+    "testo": "Da quanti consiglieri deve essere sottoscritta la mozione di sfiducia al sindaco?",
+    "opzioni": [
+      "Da tutti i consiglieri di opposizione",
+      "Da almeno due quinti dei consiglieri assegnati",
+      "Da almeno un decimo",
+      "Dalla metà più uno"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 52, c. 2; viene discussa tra il decimo e il trentesimo giorno dalla presentazione.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 52",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-155",
+    "argomento": "Organi",
+    "livello": 4,
+    "testo": "Quando diventano efficaci e irrevocabili le dimissioni del sindaco?",
+    "opzioni": [
+      "Dopo l'accettazione del prefetto",
+      "Immediatamente",
+      "Trascorsi 20 giorni dalla presentazione al consiglio",
+      "Dopo 60 giorni"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 53, c. 3.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 53",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-156",
+    "argomento": "Organi",
+    "livello": 3,
+    "testo": "In caso di decesso del sindaco, chi ne svolge le funzioni fino alle nuove elezioni?",
+    "opzioni": [
+      "Un commissario nominato dal sindaco uscente",
+      "Il presidente del consiglio comunale",
+      "Il segretario comunale",
+      "Il vicesindaco"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 53, c. 1: la giunta decade e il consiglio è sciolto, ma restano in carica fino all'elezione; le funzioni sono svolte dal vicesindaco.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 53",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-157",
+    "argomento": "Organi",
+    "livello": 3,
+    "testo": "In quale veste il sindaco adotta ordinanze contingibili e urgenti per gravi pericoli all'incolumità pubblica e alla sicurezza urbana (art. 54)?",
+    "opzioni": [
+      "Quale ufficiale del Governo",
+      "Quale delegato del presidente della regione",
+      "Quale capo della polizia di Stato",
+      "Quale presidente del consiglio comunale"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 54, c. 4.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 54",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-158",
+    "argomento": "Organi",
+    "livello": 4,
+    "testo": "Con quale atto vengono sciolti i consigli comunali?",
+    "opzioni": [
+      "Legge regionale",
+      "Decreto del Presidente della Repubblica, su proposta del Ministro dell'interno",
+      "Sentenza del TAR",
+      "Decreto del prefetto"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 141, c. 1.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 141",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-159",
+    "argomento": "Dirigenza locale",
+    "livello": 3,
+    "testo": "Come sono conferiti gli incarichi dirigenziali negli enti locali?",
+    "opzioni": [
+      "A vita, per anzianità",
+      "Per sorteggio",
+      "A tempo determinato, con provvedimento motivato, secondo criteri di competenza professionale",
+      "Con elezione da parte del consiglio"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 109, c. 1; possono essere revocati per inosservanza delle direttive o mancato raggiungimento degli obiettivi.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 109",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-160",
+    "argomento": "Dirigenza locale",
+    "livello": 4,
+    "testo": "Quale quota massima dei posti dirigenziali può essere coperta con contratti a tempo determinato ex art. 110 TUEL?",
+    "opzioni": [
+      "Nessuno",
+      "Il 50 per cento",
+      "Il 10 per cento",
+      "Il 30 per cento dei posti in dotazione organica (comunque almeno una unità)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 110, c. 1; serve una selezione pubblica.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 110",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-161",
+    "argomento": "Contabilità locale",
+    "livello": 3,
+    "testo": "Entro quale data gli enti locali presentano il Documento unico di programmazione (DUP)?",
+    "opzioni": [
+      "Entro il 31 luglio di ogni anno",
+      "Entro il 30 aprile",
+      "Entro il 15 settembre",
+      "Entro il 31 dicembre"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 151, c. 1; il bilancio di previsione si delibera entro il 31 dicembre, su orizzonte almeno triennale.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 151",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-162",
+    "argomento": "Contabilità locale",
+    "livello": 3,
+    "testo": "Qual è l'unità temporale della gestione finanziaria degli enti locali?",
+    "opzioni": [
+      "Il triennio",
+      "L'anno finanziario, dal 1 gennaio al 31 dicembre",
+      "L'anno scolastico",
+      "Il mandato del sindaco"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 162, c. 3: dopo il 31 dicembre non si possono più accertare entrate o impegnare spese dell'esercizio scaduto.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 162",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-163",
+    "argomento": "Contabilità locale",
+    "livello": 4,
+    "testo": "Da cosa può derivare un debito fuori bilancio riconoscibile dal consiglio?",
+    "opzioni": [
+      "Da qualsiasi spesa decisa a voce dal sindaco",
+      "Dalle multe non pagate dai cittadini",
+      "Ad esempio da sentenze esecutive",
+      "Dagli stipendi ordinari del personale"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'art. 194 elenca le fattispecie: sentenze esecutive, disavanzi di aziende, ricapitalizzazioni, espropri, acquisti senza impegno nei limiti dell'utilità.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 194",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-164",
+    "argomento": "Contabilità locale",
+    "livello": 4,
+    "testo": "Quando si ha dissesto finanziario di un ente locale?",
+    "opzioni": [
+      "Quando chiude l'anno con un piccolo avanzo",
+      "Quando cambia il sindaco",
+      "Quando non approva il DUP",
+      "Quando non può garantire le funzioni e i servizi indispensabili o non può far fronte a crediti liquidi ed esigibili di terzi"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 244; il risanamento coinvolge l'organo straordinario di liquidazione.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 244",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-165",
+    "argomento": "Controlli interni",
+    "livello": 4,
+    "testo": "A cosa serve il controllo di gestione negli enti locali?",
+    "opzioni": [
+      "A verificare efficacia, efficienza ed economicità dell'azione amministrativa",
+      "A riscuotere i tributi",
+      "A giudicare i reati dei dipendenti",
+      "A eleggere il collegio dei revisori"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 147, c. 2, lett. a).",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 147",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-166",
+    "argomento": "Pubblico impiego",
+    "livello": 2,
+    "testo": "Quale articolo della Costituzione richiama il D.Lgs. 165/2001 tra i suoi fondamenti?",
+    "opzioni": [
+      "L'art. 21",
+      "L'art. 97, primo comma",
+      "L'art. 1",
+      "L'art. 139"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'art. 1 del D.Lgs. 165/2001 disciplina organizzazione e lavoro pubblico nel rispetto dell'art. 97 Cost. (buon andamento e imparzialità).",
+    "fonte": "D.Lgs. 165/2001, art. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-167",
+    "argomento": "Pubblico impiego",
+    "livello": 3,
+    "testo": "Quali discriminazioni vieta espressamente l'art. 7 del D.Lgs. 165/2001 nell'accesso e nel trattamento sul lavoro?",
+    "opzioni": [
+      "Nessuna, è materia dei contratti",
+      "Solo quelle di genere",
+      "Quelle legate a genere, età, orientamento sessuale, razza, origine etnica, disabilità, religione o lingua",
+      "Solo quelle legate alla religione"
+    ],
+    "corretta": 2,
+    "spiegazione": "Le PA devono garantire pari opportunità, assenza di discriminazioni e benessere organizzativo.",
+    "fonte": "D.Lgs. 165/2001, art. 7",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-168",
+    "argomento": "Pubblico impiego",
+    "livello": 3,
+    "testo": "Chi assume in via esclusiva le determinazioni sull'organizzazione degli uffici e la gestione dei rapporti di lavoro?",
+    "opzioni": [
+      "Il Parlamento con legge",
+      "La Corte dei conti",
+      "I sindacati",
+      "Gli organi preposti alla gestione, con i poteri del privato datore di lavoro"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'art. 5, c. 2 attribuisce queste determinazioni agli organi di gestione (dirigenti).",
+    "fonte": "D.Lgs. 165/2001, art. 5",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-169",
+    "argomento": "Pubblico impiego",
+    "livello": 4,
+    "testo": "Cosa comporta l'esercizio di fatto, da parte di un dipendente pubblico, di mansioni superiori alla propria qualifica?",
+    "opzioni": [
+      "Non ha effetto ai fini dell'inquadramento o dell'assegnazione di incarichi di direzione",
+      "Determina automaticamente la promozione",
+      "Dopo sei mesi dà diritto alla qualifica superiore",
+      "Comporta il licenziamento"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 52, c. 1: nel pubblico impiego le mansioni superiori di fatto non danno diritto all'inquadramento.",
+    "fonte": "D.Lgs. 165/2001, art. 52",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-170",
+    "argomento": "Pubblico impiego",
+    "livello": 4,
+    "testo": "Il mancato raggiungimento degli obiettivi da parte del dirigente, accertato dal sistema di valutazione, cosa comporta?",
+    "opzioni": [
+      "L'arresto immediato",
+      "L'impossibilità di rinnovo dello stesso incarico dirigenziale, previa contestazione",
+      "Nessuna conseguenza",
+      "La promozione a un altro incarico"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 21 (responsabilità dirigenziale); nei casi più gravi revoca dell'incarico o recesso.",
+    "fonte": "D.Lgs. 165/2001, art. 21",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-171",
+    "argomento": "Pubblico impiego",
+    "livello": 3,
+    "testo": "Chi è competente per il procedimento disciplinare che può concludersi con il rimprovero verbale?",
+    "opzioni": [
+      "L'ufficio per i procedimenti disciplinari",
+      "Il giudice del lavoro",
+      "Il responsabile della struttura presso cui presta servizio il dipendente",
+      "Il Ministro per la pubblica amministrazione"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 55-bis: per le sanzioni superiori è competente l'ufficio per i procedimenti disciplinari (UPD).",
+    "fonte": "D.Lgs. 165/2001, art. 55-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-172",
+    "argomento": "Pubblico impiego",
+    "livello": 3,
+    "testo": "Quale sanzione si applica al dipendente pubblico che attesta falsamente la presenza in servizio alterando i sistemi di rilevazione?",
+    "opzioni": [
+      "La sospensione per un giorno",
+      "Una multa di quattro ore",
+      "Il rimprovero verbale",
+      "Il licenziamento disciplinare"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 55-quater, c. 1, lett. a).",
+    "fonte": "D.Lgs. 165/2001, art. 55-quater",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-173",
+    "argomento": "Pubblico impiego",
+    "livello": 4,
+    "testo": "La mobilità volontaria verso altra amministrazione (art. 30) richiede sempre l'assenso dell'amministrazione di appartenenza?",
+    "opzioni": [
+      "No, solo in casi particolari (es. posizioni infungibili, assunti da meno di tre anni, carenze oltre il 20%)",
+      "No, mai",
+      "Solo per i dirigenti",
+      "Sì, sempre"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 30, c. 1, nel testo vigente.",
+    "fonte": "D.Lgs. 165/2001, art. 30",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-174",
+    "argomento": "Trasparenza",
+    "livello": 2,
+    "testo": "Come è definita la trasparenza dal D.Lgs. 33/2013?",
+    "opzioni": [
+      "Pubblicazione dei soli bilanci",
+      "Accessibilità totale dei dati e documenti detenuti dalle pubbliche amministrazioni",
+      "Riservatezza delle informazioni amministrative",
+      "Possibilità di accesso solo per gli interessati qualificati"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 1, c. 1: anche per favorire forme diffuse di controllo sulle funzioni istituzionali e sull'uso delle risorse pubbliche.",
+    "fonte": "D.Lgs. 33/2013, art. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-175",
+    "argomento": "Trasparenza",
+    "livello": 3,
+    "testo": "In che formato vanno pubblicati i dati oggetto di pubblicazione obbligatoria?",
+    "opzioni": [
+      "Solo in formato cartaceo",
+      "In formato proprietario protetto da password",
+      "In formato di tipo aperto, riutilizzabili citando la fonte",
+      "Solo come immagine scansionata"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 7 del D.Lgs. 33/2013, con rinvio all'art. 68 del CAD.",
+    "fonte": "D.Lgs. 33/2013, art. 7",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-176",
+    "argomento": "Trasparenza",
+    "livello": 3,
+    "testo": "Per quanto tempo restano pubblicati, di regola, i dati soggetti a obbligo di pubblicazione?",
+    "opzioni": [
+      "10 anni",
+      "1 anno",
+      "Per sempre",
+      "5 anni dal 1° gennaio dell'anno successivo, e comunque finché gli atti producono effetti"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 8, c. 3.",
+    "fonte": "D.Lgs. 33/2013, art. 8",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-177",
+    "argomento": "Trasparenza",
+    "livello": 3,
+    "testo": "Chi svolge, di norma, le funzioni di Responsabile per la trasparenza?",
+    "opzioni": [
+      "Il responsabile per la prevenzione della corruzione",
+      "Il sindaco",
+      "Il revisore dei conti",
+      "Il presidente dell'OIV"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 43: le due figure coincidono di norma nell'RPCT.",
+    "fonte": "D.Lgs. 33/2013, art. 43",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-178",
+    "argomento": "Trasparenza",
+    "livello": 4,
+    "testo": "L'accesso civico è sottoposto a limitazioni quanto alla legittimazione soggettiva del richiedente?",
+    "opzioni": [
+      "Sì, solo i residenti possono chiederlo",
+      "No, non è soggetto ad alcuna limitazione e non va motivato",
+      "Sì, solo i giornalisti",
+      "Sì, serve un interesse diretto, concreto e attuale"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 5, c. 3, a differenza dell'accesso documentale della L. 241/1990.",
+    "fonte": "D.Lgs. 33/2013, art. 5",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-179",
+    "argomento": "Codice di comportamento",
+    "livello": 2,
+    "testo": "Secondo il DPR 62/2013, con quale spirito il dipendente serve la Nazione?",
+    "opzioni": [
+      "Con fedeltà al proprio dirigente personale",
+      "Con obbedienza al partito di maggioranza",
+      "Con disciplina ed onore",
+      "Con riservatezza assoluta verso i cittadini"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 3: il dipendente osserva la Costituzione servendo la Nazione con disciplina ed onore (cfr. art. 54 Cost.).",
+    "fonte": "DPR 62/2013, art. 3",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-180",
+    "argomento": "Codice di comportamento",
+    "livello": 3,
+    "testo": "Il dipendente può accettare un regalo di modico valore come corrispettivo per un atto del proprio ufficio?",
+    "opzioni": [
+      "Sì, se lo dichiara al dirigente",
+      "Sì, se inferiore a 150 euro",
+      "Sì, se è un regalo d'uso",
+      "No, mai, neanche di modico valore"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 4, c. 2: i regali come corrispettivo di un atto d'ufficio sono sempre vietati.",
+    "fonte": "DPR 62/2013, art. 4",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-181",
+    "argomento": "Codice di comportamento",
+    "livello": 3,
+    "testo": "All'assegnazione all'ufficio, di quali rapporti con privati il dipendente deve informare il dirigente?",
+    "opzioni": [
+      "Dei rapporti di collaborazione retribuiti avuti negli ultimi tre anni",
+      "Di tutte le amicizie personali",
+      "Dei rapporti degli ultimi dieci anni",
+      "Di nessun rapporto"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 6, c. 1.",
+    "fonte": "DPR 62/2013, art. 6",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-182",
+    "argomento": "Codice di comportamento",
+    "livello": 3,
+    "testo": "Entro quale grado di parentela o affinità scatta l'obbligo di astensione del dipendente (art. 7)?",
+    "opzioni": [
+      "Solo il coniuge",
+      "Affini entro il secondo grado, oltre a parenti, coniuge e conviventi",
+      "Fino al sesto grado",
+      "Solo i figli"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 7: anche persone con frequentazione abituale e soggetti con cui ha cause pendenti o grave inimicizia.",
+    "fonte": "DPR 62/2013, art. 7",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-183",
+    "argomento": "Codice di comportamento",
+    "livello": 2,
+    "testo": "Come si fa riconoscere il dipendente in rapporto con il pubblico?",
+    "opzioni": [
+      "Indossando la divisa",
+      "Mostrando la carta d'identità su richiesta",
+      "Esponendo in modo visibile il badge o altro supporto identificativo",
+      "Non deve farsi riconoscere"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 12, c. 1 del DPR 62/2013.",
+    "fonte": "DPR 62/2013, art. 12",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-184",
+    "argomento": "Codice di comportamento",
+    "livello": 3,
+    "testo": "Nei rapporti privati, cosa vieta al dipendente l'art. 10 del codice di comportamento?",
+    "opzioni": [
+      "Frequentare altri dipendenti pubblici",
+      "Usare i social network",
+      "Iscriversi a un'associazione",
+      "Sfruttare o menzionare la propria posizione per ottenere utilità non dovute"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 10 del DPR 62/2013.",
+    "fonte": "DPR 62/2013, art. 10",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-185",
+    "argomento": "Documentazione amministrativa",
+    "livello": 2,
+    "testo": "Come definisce il DPR 445/2000 il «documento di riconoscimento»?",
+    "opzioni": [
+      "Ogni documento munito di fotografia del titolare, rilasciato da una PA, che consente l'identificazione",
+      "Solo il passaporto",
+      "Qualsiasi tessera con il nome",
+      "Solo la carta d'identità cartacea"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 1, lett. c).",
+    "fonte": "DPR 445/2000, art. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-186",
+    "argomento": "Documentazione amministrativa",
+    "livello": 3,
+    "testo": "Quale di questi stati o fatti può essere comprovato con dichiarazione sostitutiva di certificazione (art. 46)?",
+    "opzioni": [
+      "Lo stato di salute",
+      "Il titolo di studio e gli esami sostenuti",
+      "Il possesso di un brevetto europeo rilasciato all'estero",
+      "La conformità di un impianto elettrico"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'art. 46 elenca, tra gli altri, nascita, residenza, cittadinanza, stato di famiglia, titolo di studio ed esami.",
+    "fonte": "DPR 445/2000, art. 46",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-187",
+    "argomento": "Documentazione amministrativa",
+    "livello": 3,
+    "testo": "La dichiarazione sostitutiva dell'atto di notorietà può riguardare fatti relativi ad altre persone?",
+    "opzioni": [
+      "Solo per i figli minori",
+      "No, mai",
+      "Sì, se resa nel proprio interesse e se il dichiarante ne ha diretta conoscenza",
+      "Solo davanti a un notaio"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 47, c. 2.",
+    "fonte": "DPR 445/2000, art. 47",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-188",
+    "argomento": "Documentazione amministrativa",
+    "livello": 3,
+    "testo": "Come effettua la PA i controlli sulle dichiarazioni sostitutive?",
+    "opzioni": [
+      "Solo su denuncia di terzi",
+      "Solo con un'ispezione a domicilio",
+      "Non effettua controlli",
+      "Con controlli idonei, anche a campione e nei casi di ragionevole dubbio, anche dopo l'erogazione dei benefici"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 71, c. 1.",
+    "fonte": "DPR 445/2000, art. 71",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-189",
+    "argomento": "Documentazione amministrativa",
+    "livello": 4,
+    "testo": "Oltre alla decadenza dai benefici, cosa comporta una dichiarazione mendace (art. 75, c. 1-bis)?",
+    "opzioni": [
+      "Il divieto di accesso a contributi e agevolazioni per 2 anni",
+      "Il divieto di voto per 5 anni",
+      "La perdita della cittadinanza",
+      "Nessun'altra conseguenza"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 75, c. 1-bis; restano fermi gli interventi a favore dei minori.",
+    "fonte": "DPR 445/2000, art. 75",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-190",
+    "argomento": "Documentazione amministrativa",
+    "livello": 4,
+    "testo": "Come sono considerate, ai fini penali, le dichiarazioni sostitutive rese ai sensi degli artt. 46 e 47?",
+    "opzioni": [
+      "Come dichiarazioni private senza rilievo penale",
+      "Come fatte a pubblico ufficiale",
+      "Come testimonianze in giudizio",
+      "Come atti notarili"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 76, c. 3; la pena ordinaria è aumentata da un terzo alla metà.",
+    "fonte": "DPR 445/2000, art. 76",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-191",
+    "argomento": "Documentazione amministrativa",
+    "livello": 4,
+    "testo": "Esibire un atto contenente dati non più veri a cosa equivale secondo il DPR 445/2000?",
+    "opzioni": [
+      "A dichiarazione mendace solo se scritta a mano",
+      "A una semplice irregolarità",
+      "A uso di atto falso",
+      "A nulla, se in buona fede"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 76, c. 2.",
+    "fonte": "DPR 445/2000, art. 76",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-192",
+    "argomento": "Documentazione amministrativa",
+    "livello": 2,
+    "testo": "Le domande di partecipazione ai concorsi pubblici possono essere inviate per via telematica?",
+    "opzioni": [
+      "Solo tramite un avvocato",
+      "Solo con raccomandata",
+      "No, solo a mano",
+      "Sì, se effettuate secondo l'art. 65 del CAD"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 38, c. 2 del DPR 445/2000.",
+    "fonte": "DPR 445/2000, art. 38",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-193",
+    "argomento": "Contratti pubblici",
+    "livello": 3,
+    "testo": "Fino a quale importo i lavori possono essere affidati direttamente, anche senza consultare più operatori (D.Lgs. 36/2023)?",
+    "opzioni": [
+      "Fino a meno di 150.000 euro",
+      "Fino a meno di 40.000 euro",
+      "Fino alla soglia europea",
+      "Fino a meno di 1 milione di euro"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 50, c. 1, lett. a); per servizi e forniture il limite è 140.000 euro.",
+    "fonte": "D.Lgs. 36/2023, art. 50",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-194",
+    "argomento": "Contratti pubblici",
+    "livello": 3,
+    "testo": "Fino a quale importo servizi e forniture possono essere affidati direttamente secondo l'art. 50 del D.Lgs. 36/2023?",
+    "opzioni": [
+      "Fino a meno di 5.000 euro",
+      "Fino a meno di 140.000 euro",
+      "Fino a meno di 150.000 euro",
+      "Fino a meno di 500.000 euro"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 50, c. 1, lett. b), compresi i servizi di ingegneria e architettura.",
+    "fonte": "D.Lgs. 36/2023, art. 50",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-195",
+    "argomento": "Contratti pubblici",
+    "livello": 4,
+    "testo": "Cosa vieta il principio di rotazione negli affidamenti sotto soglia?",
+    "opzioni": [
+      "Di cambiare il RUP durante la gara",
+      "Di affidare appalti a imprese straniere",
+      "Di affidare al contraente uscente due commesse consecutive nello stesso settore o categoria",
+      "Di affidare più di un appalto all'anno"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 49, c. 2 del D.Lgs. 36/2023.",
+    "fonte": "D.Lgs. 36/2023, art. 49",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-196",
+    "argomento": "Contratti pubblici",
+    "livello": 3,
+    "testo": "Secondo l'art. 5 del D.Lgs. 36/2023, a quali principi si conformano reciprocamente stazioni appaltanti e operatori economici?",
+    "opzioni": [
+      "Gratuità e oralità",
+      "Segretezza e discrezionalità",
+      "Gerarchia e subordinazione",
+      "Buona fede e tutela dell'affidamento"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 5, c. 1.",
+    "fonte": "D.Lgs. 36/2023, art. 5",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-197",
+    "argomento": "Contratti pubblici",
+    "livello": 4,
+    "testo": "Qual è il criterio generale di aggiudicazione degli appalti nel D.Lgs. 36/2023?",
+    "opzioni": [
+      "L'offerta economicamente più vantaggiosa",
+      "Il sorteggio tra i partecipanti",
+      "Il prezzo più alto",
+      "La sola anzianità dell'impresa"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 108, c. 1: individuata sul miglior rapporto qualità/prezzo o sul prezzo/costo.",
+    "fonte": "D.Lgs. 36/2023, art. 108",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-198",
+    "argomento": "Contratti pubblici",
+    "livello": 2,
+    "testo": "Quale principio, all'art. 3 del D.Lgs. 36/2023, impone di favorire la partecipazione degli operatori economici alle gare?",
+    "opzioni": [
+      "Il principio di autotutela",
+      "Il principio dell'accesso al mercato",
+      "Il principio di sussidiarietà orizzontale",
+      "Il principio di tipicità"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 3: nel rispetto di concorrenza, imparzialità, non discriminazione, pubblicità, trasparenza e proporzionalità.",
+    "fonte": "D.Lgs. 36/2023, art. 3",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-199",
+    "argomento": "Anticorruzione",
+    "livello": 3,
+    "testo": "Quale misura prevede la L. 190/2012 negli uffici più esposti al rischio di corruzione?",
+    "opzioni": [
+      "L'assunzione solo di personale esterno",
+      "L'abolizione dei dirigenti",
+      "La rotazione degli incarichi",
+      "La chiusura degli uffici"
+    ],
+    "corretta": 2,
+    "spiegazione": "La L. 190/2012 prevede la rotazione degli incarichi dove è più elevato il rischio di reati di corruzione.",
+    "fonte": "L. 190/2012, art. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-200",
+    "argomento": "Anticorruzione",
+    "livello": 3,
+    "testo": "Con quale strumento ogni amministrazione pianifica le misure contro la corruzione, secondo le indicazioni del Piano nazionale anticorruzione?",
+    "opzioni": [
+      "Il documento di valutazione dei rischi per la sicurezza",
+      "Il bilancio consuntivo",
+      "Il regolamento edilizio",
+      "Il piano triennale per la prevenzione della corruzione"
+    ],
+    "corretta": 3,
+    "spiegazione": "La L. 190/2012 prevede il piano triennale (oggi confluito nel PIAO), secondo il PNA dell'ANAC.",
+    "fonte": "L. 190/2012, art. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-amministrativo",
+    "id": "amm-201",
+    "argomento": "Anticorruzione",
+    "livello": 4,
+    "testo": "I comuni sotto 15.000 abitanti possono definire insieme le attività anticorruzione?",
+    "opzioni": [
+      "Sì, possono aggregarsi tramite accordi",
+      "Solo con autorizzazione del prefetto",
+      "No, ognuno deve fare da sé",
+      "Solo se appartengono alla stessa unione montana"
+    ],
+    "corretta": 0,
+    "spiegazione": "La L. 190/2012 consente ai piccoli comuni di aggregarsi.",
+    "fonte": "L. 190/2012, art. 1",
+    "versione": "v1"
+  }
+]

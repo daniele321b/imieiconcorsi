@@ -40,3 +40,19 @@
     @apply outline-2 outline-offset-2 outline-brand-500;
   }
 }
+
+/* Testi legali: titoli e liste leggibili senza plugin di tipografia. */
+@layer components {
+  .legale h2 {
+    @apply mt-8 text-xl font-bold text-slate-900;
+  }
+  .legale ul {
+    @apply list-disc space-y-1 pl-6;
+  }
+  .legale a {
+    @apply font-medium text-brand-600 underline underline-offset-2;
+  }
+  .legale strong {
+    @apply font-semibold text-slate-900;
+  }
+}

@@ -7,6 +7,20 @@ variable "aws_region" {
   type = string
 }
 
+# Interruttore separato dall'ARN: l'ARN di una Lambda nuova è noto solo dopo l'apply,
+# mentre count e for_each devono essere noti già nel plan.
+variable "pre_sign_up_enabled" {
+  description = "Attiva il trigger pre sign-up (collegamento account con la stessa email)"
+  type        = bool
+  default     = false
+}
+
+variable "pre_sign_up_lambda_arn" {
+  description = "Lambda del trigger pre sign-up (obbligatoria con pre_sign_up_enabled)"
+  type        = string
+  default     = null
+}
+
 variable "app_origins" {
   description = "Origini del sito ammesse come callback e logout (es. https://xxx.cloudfront.net)"
   type        = list(string)

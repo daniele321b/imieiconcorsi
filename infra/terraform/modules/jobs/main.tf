@@ -9,7 +9,7 @@ module "job" {
   environment       = merge(var.environment, each.value.environment)
   write_tables      = each.value.write_tables
   read_tables       = each.value.read_tables
-  policy_statements = each.value.policies
+  policy_statements = jsondecode(each.value.policies)
   timeout           = each.value.timeout
 }
 

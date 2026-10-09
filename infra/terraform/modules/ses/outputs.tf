@@ -20,12 +20,11 @@ output "configuration_set_arn" {
 }
 
 output "dkim_records" {
-  description = "Record CNAME da creare nel DNS del dominio (vuoto senza dominio)"
-  value = [
-    for t in try(aws_sesv2_email_identity.domain[0].dkim_signing_attributes[0].tokens, []) : {
-      name  = "${t}._domainkey.${var.domain}"
-      type  = "CNAME"
-      value = "${t}.dkim.amazonses.com"
-    }
-  ]
+  description = "Record DKIM creati nella hosted zone (vuoto senza dominio)"
+  value       = [for r in aws_route53_record.dkim : r.fqdn]
+}
+
+output "notifiche_topic_arn" {
+  description = "Topic SNS con rimbalzi, reclami e invii rifiutati"
+  value       = aws_sns_topic.notifiche.arn
 }

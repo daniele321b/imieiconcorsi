@@ -1,4 +1,8 @@
 output "url" {
+  value = local.con_dominio ? "https://${var.domain_name}" : "https://${aws_cloudfront_distribution.web.domain_name}"
+}
+
+output "cloudfront_url" {
   value = "https://${aws_cloudfront_distribution.web.domain_name}"
 }
 

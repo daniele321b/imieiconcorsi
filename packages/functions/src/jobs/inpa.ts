@@ -63,14 +63,40 @@ export function classificaComparto(b: InpaBando): CompartoId {
  * non le legge davvero. Per questo il concorso resta marcato `materieStimate: true`.
  */
 const MATERIE_TIPICHE: Record<CompartoId, MateriaId[]> = {
-  "enti-locali": ["diritto-amministrativo", "diritto-costituzionale", "informatica", "logica"],
-  "forze-ordine": ["italiano", "storia", "diritto-costituzionale", "logica", "informatica"],
-  inps: ["diritto-amministrativo", "diritto-costituzionale", "informatica", "logica"],
-  ministeri: ["diritto-amministrativo", "diritto-costituzionale", "informatica", "logica"],
-  sanita: ["diritto-amministrativo", "diritto-costituzionale", "informatica"],
-  universita: ["diritto-amministrativo", "informatica", "logica"],
-  altro: ["diritto-amministrativo", "diritto-costituzionale", "logica"],
+  "enti-locali": ["diritto-amministrativo", "diritto-costituzionale", "contabilita-pubblica", "informatica", "inglese", "logica"],
+  "forze-ordine": [
+    "italiano", "storia", "geografia", "diritto-costituzionale", "diritto-penale",
+    "logica", "matematica", "informatica", "inglese",
+  ],
+  inps: ["diritto-amministrativo", "diritto-costituzionale", "diritto-lavoro", "contabilita-pubblica", "informatica", "inglese", "logica"],
+  ministeri: ["diritto-amministrativo", "diritto-costituzionale", "contabilita-pubblica", "informatica", "inglese", "logica"],
+  sanita: ["diritto-amministrativo", "diritto-costituzionale", "diritto-lavoro", "informatica", "inglese"],
+  universita: ["diritto-amministrativo", "diritto-lavoro", "informatica", "inglese", "logica"],
+  altro: ["diritto-amministrativo", "diritto-costituzionale", "informatica", "inglese", "logica"],
 };
+
+/**
+ * Materie citate nel testo del bando ("prove su: diritto amministrativo, lingua inglese…").
+ * Parole chiave volutamente specifiche: meglio una materia in meno che una sbagliata.
+ */
+const PAROLE_MATERIA: [MateriaId, RegExp][] = [
+  ["diritto-amministrativo", /diritto amministrativ|procedimento amministrativ|ordinamento degli enti locali|\btuel\b|l(egge|\.)\s*(n\.\s*)?241/i],
+  ["diritto-costituzionale", /diritto costituzional|costituzione della repubblica|diritto pubblico/i],
+  ["contabilita-pubblica", /contabilit[aà] (pubblica|di stato|degli enti)|ordinamento finanziario e contabile|bilancio degli enti|armonizzazione contabile/i],
+  ["diritto-lavoro", /diritto del lavoro|lavoro (alle dipendenze delle )?pubblic|pubblico impiego|previdenz/i],
+  ["diritto-penale", /diritto penale|procedura penale|reati contro la pubblica amministrazione/i],
+  ["italiano", /lingua italiana|grammatica italiana|comprensione (del|di un) testo/i],
+  ["storia", /\bstoria (d'italia|contemporanea|moderna)|cultura generale/i],
+  ["geografia", /\bgeografia\b/i],
+  ["logica", /\blogic|ragionamento (logico|verbale|numerico)|(psico)?attitudinal/i],
+  ["matematica", /\bmatematic|\baritmetic/i],
+  ["informatica", /informatic|competenze digitali|strumenti digitali/i],
+  ["inglese", /lingua inglese|\binglese\b/i],
+];
+
+export function materieDalTesto(testo: string): MateriaId[] {
+  return PAROLE_MATERIA.filter(([, re]) => re.test(testo)).map(([m]) => m);
+}
 
 const testoSemplice = (html?: string | null) =>
   html
@@ -86,6 +112,9 @@ export const citaBancaDati = (b: InpaBando) =>
 
 export function toConcorso(b: InpaBando, now = new Date()): Concorso {
   const comparto = classificaComparto(b);
+  // Con almeno due materie trovate nel bando ci fidiamo del testo; altrimenti stima per comparto.
+  const lette = materieDalTesto([b.titolo, b.descrizioneBreve, testoSemplice(b.descrizione)].filter(Boolean).join(" "));
+  const dalBando = lette.length >= 2;
   return {
     id: b.id,
     titolo: b.titolo.trim(),
@@ -100,8 +129,8 @@ export function toConcorso(b: InpaBando, now = new Date()): Concorso {
     figura: b.figuraRicercata?.trim() || undefined,
     descrizione: testoSemplice(b.descrizione)?.slice(0, 4000) || b.descrizioneBreve || undefined,
     url: DETTAGLIO_URL + b.id,
-    materie: MATERIE_TIPICHE[comparto],
-    materieStimate: true,
+    materie: dalBando ? lette : MATERIE_TIPICHE[comparto],
+    materieStimate: !dalBando,
     bancaDatiPrevista: citaBancaDati(b),
     bancaDati: false,
     fonte: "inpa",

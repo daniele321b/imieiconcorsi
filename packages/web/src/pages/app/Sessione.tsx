@@ -1,9 +1,11 @@
-import { nomeMateria } from "@imieiconcorsi/core/domain";
+import { DOMANDE_TRA_ANNUNCI, nomeMateria } from "@imieiconcorsi/core/domain";
 import { ArrowRight, CheckCircle2, ChevronDown, Flag, RotateCcw, Timer, Trophy, XCircle } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Link, useLocation, useParams } from "react-router";
+import { Pubblicita } from "../../components/Pubblicita";
 import { Alert, Badge, Button, ButtonLink, Card, ProgressBar, Spinner, cx } from "../../components/ui";
 import { api, ApiError, haSoluzione, useApi, type SessioneApi } from "../../lib/api";
+import { useUtente } from "../../lib/auth";
 import { durata } from "../../lib/format";
 
 type Risposte = (number | null)[];
@@ -63,9 +65,17 @@ function useConsegna(sessione: SessioneApi, onConsegnata: (s: SessioneApi) => vo
 // ── Studio: una domanda alla volta con correzione immediata ──────────────────
 
 function StudioRunner({ sessione, onConsegnata }: { sessione: SessioneApi; onConsegnata: (s: SessioneApi) => void }) {
+  const { utente } = useUtente();
   const [indice, setIndice] = useState(0);
   const [risposte, setRisposte] = useState<Risposte>(() => sessione.domande.map(() => null));
+  const [annuncio, setAnnuncio] = useState(false);
   const { consegna, inCorso, errore } = useConsegna(sessione, onConsegnata);
+
+  // Piano Free: un annuncio dopo ogni 5 domande (mai prima del risultato finale).
+  const avanti = () => {
+    if (utente.limiti.pubblicita && (indice + 1) % DOMANDE_TRA_ANNUNCI === 0) setAnnuncio(true);
+    else setIndice((i) => i + 1);
+  };
 
   const domanda = sessione.domande[indice];
   const scelta = risposte[indice];
@@ -80,7 +90,7 @@ function StudioRunner({ sessione, onConsegnata }: { sessione: SessioneApi; onCon
     <div className="mx-auto max-w-2xl">
       <div className="mb-6 flex items-center justify-between gap-4">
         <div>
-          <p className="text-sm font-semibold text-brand-600">{sessione.materie.map(nomeMateria).join(", ")}</p>
+          <p className="text-sm font-semibold text-brand-600">{sessione.bancaDati?.titolo ?? sessione.materie.map(nomeMateria).join(", ")}</p>
           <p className="text-sm text-slate-500">
             Domanda {indice + 1} di {sessione.domande.length}
           </p>
@@ -91,6 +101,14 @@ function StudioRunner({ sessione, onConsegnata }: { sessione: SessioneApi; onCon
       </div>
       <ProgressBar value={((indice + (rivelata ? 1 : 0)) / sessione.domande.length) * 100} className="mb-6" />
 
+      {annuncio ? (
+        <Pubblicita
+          onContinua={() => {
+            setAnnuncio(false);
+            setIndice((i) => i + 1);
+          }}
+        />
+      ) : (
       <Card key={indice} className="animate-fade-up p-6 sm:p-8">
         <p className="text-xs font-semibold tracking-wide text-slate-400 uppercase">{domanda.argomento}</p>
         <h2 className="mt-2 text-xl font-bold text-slate-900">{domanda.testo}</h2>
@@ -127,10 +145,10 @@ function StudioRunner({ sessione, onConsegnata }: { sessione: SessioneApi; onCon
           <div className="mt-6 animate-fade-up rounded-xl bg-slate-50 p-4 text-sm">
             <p className="font-semibold text-slate-900">{scelta === domanda.corretta ? "Esatto!" : "Non proprio."}</p>
             <p className="mt-1 text-slate-600">{domanda.spiegazione}</p>
-            <p className="mt-2 text-xs text-slate-400">Fonte: {domanda.fonte}</p>
           </div>
         )}
       </Card>
+      )}
 
       {errore && (
         <div className="mt-4">
@@ -138,13 +156,13 @@ function StudioRunner({ sessione, onConsegnata }: { sessione: SessioneApi; onCon
         </div>
       )}
 
-      <div className="mt-6 flex justify-end">
+      <div className={cx("mt-6 flex justify-end", annuncio && "hidden")}>
         {ultima ? (
           <Button size="lg" disabled={!rivelata} loading={inCorso} onClick={() => void consegna(risposte)}>
             Vedi il risultato <ArrowRight className="size-4" />
           </Button>
         ) : (
-          <Button size="lg" disabled={!rivelata} onClick={() => setIndice((i) => i + 1)}>
+          <Button size="lg" disabled={!rivelata} onClick={avanti}>
             Prossima domanda <ArrowRight className="size-4" />
           </Button>
         )}
@@ -339,6 +357,13 @@ function Risultati({ sessione }: { sessione: SessioneApi }) {
               Punteggio {esito.punteggio.toLocaleString("it-IT")} su {esito.massimo} · soglia {Math.round(sessione.regole.soglia * 100)}%
             </p>
           )}
+          {simulazione && sessione.consegnataIl && sessione.scadeIl && (
+            <p className="mt-1 inline-flex items-center gap-1 text-sm opacity-80">
+              <Timer className="size-4" /> Tempo impiegato{" "}
+              {durata(Math.min(Date.parse(sessione.consegnataIl), Date.parse(sessione.scadeIl)) - Date.parse(sessione.creataIl))} su{" "}
+              {durata(Date.parse(sessione.scadeIl) - Date.parse(sessione.creataIl))}
+            </p>
+          )}
         </div>
         <div className="grid grid-cols-3 divide-x divide-slate-100">
           {[
@@ -418,7 +443,6 @@ function Risultati({ sessione }: { sessione: SessioneApi }) {
                       <span className="font-semibold">Risposta giusta:</span> {d.opzioni[d.corretta]}
                     </p>
                     <p className="text-slate-600">{d.spiegazione}</p>
-                    <p className="text-xs text-slate-400">Fonte: {d.fonte}</p>
                   </div>
                 )}
               </Card>

@@ -1,9 +1,14 @@
 # Copia in terraform.tfvars (non versionato).
-# Finché non c'è un dominio il mittente è un tuo indirizzo: arriva un'email di conferma da AWS.
-sender_email = "tuo.indirizzo@esempio.it"
 
-# Con SES in sandbox si può scrivere solo a indirizzi verificati: metti qui l'admin e i tester.
-sandbox_recipients = []
+# Dominio comprato su Route 53 (la hosted zone esiste già). Le email partono da noreply@<dominio>.
+domain = "imieiconcorsi.it"
 
-# Quando comprerai il dominio:
-# domain = "imieiconcorsi.it"
+# Finché SES è in sandbox si può scrivere solo a indirizzi verificati:
+# metti qui il tuo indirizzo (avvisi admin, prove) e quelli dei tester.
+# Ognuno riceve un'email di AWS con il link di conferma da cliccare.
+sandbox_recipients = ["tuo.indirizzo@esempio.it"]
+
+# Dove arrivano le notifiche di rimbalzi e reclami (AWS chiede che qualcuno le legga).
+# Vuoto = il primo indirizzo di sandbox_recipients. Arriva un'email "Subscription
+# Confirmation" di AWS: clicca il link una volta.
+# notifiche_email = "tua@email.it"

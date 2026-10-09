@@ -1,24 +1,66 @@
-import type { Periodo, PianoId } from "@imieiconcorsi/core/domain";
-import { Check, Crown, Sparkles } from "lucide-react";
+import { PREZZI_DI_PROVA, type Periodo, type PianoId } from "@imieiconcorsi/core/domain";
+import { prezzoScontato } from "@imieiconcorsi/core/sconti";
+import { Check, Crown, Sparkles, Tag, X } from "lucide-react";
 import { useState } from "react";
+import { Link, Navigate } from "react-router";
 import { Alert, Badge, Button, PageHeader, Spinner, cx } from "../../components/ui";
-import { api, useApi, type PianiApi } from "../../lib/api";
+import { api, useApi, type CodiceScontoApi, type PianiApi } from "../../lib/api";
 import { messaggioErrore, useAuth, useUtente } from "../../lib/auth";
 import { data as dataLunga, euro } from "../../lib/format";
 
 export function Piani() {
   const { utente } = useUtente();
+  // L'admin ha già tutto: niente piani da comprare.
+  if (utente.admin) return <Navigate to="/app" replace />;
+  return <SceltaPiano />;
+}
+
+function SceltaPiano() {
+  const { utente } = useUtente();
   const { ricarica } = useAuth();
   const { data, loading, error, reload } = useApi<PianiApi>("/piani");
-  const [periodo, setPeriodo] = useState<Periodo>(utente.periodo ?? "annuale");
+  const [periodo, setPeriodo] = useState<Periodo>("mensile");
   const [inCorso, setInCorso] = useState<PianoId>();
+  const [rinunciaRecesso, setRinunciaRecesso] = useState(false);
   const [esito, setEsito] = useState<{ tone: "success" | "error"; testo: string }>();
+  const [codice, setCodice] = useState("");
+  const [sconto, setSconto] = useState<CodiceScontoApi>();
+  const [verifica, setVerifica] = useState<{ inCorso: boolean; errore?: string }>({ inCorso: false });
+
+  const scontoSu = (piano: PianoId) => (sconto && piano !== "free" && sconto.piani.includes(piano) ? sconto : undefined);
+
+  async function applicaCodice() {
+    setVerifica({ inCorso: true });
+    try {
+      setSconto(await api<CodiceScontoApi>("/me/codice-sconto", { method: "POST", body: { codice } }));
+      setVerifica({ inCorso: false });
+    } catch (err) {
+      setSconto(undefined);
+      setVerifica({ inCorso: false, errore: messaggioErrore(err) });
+    }
+  }
 
   async function scegli(piano: PianoId) {
     setInCorso(piano);
     setEsito(undefined);
     try {
-      await api("/me/abbonamento", { method: "POST", body: { piano, periodo } });
+      const res = await api<{ pagamento?: string }>("/me/abbonamento", {
+        method: "POST",
+        body: {
+          piano,
+          periodo,
+          ...(piano !== "free" ? { rinunciaRecesso: true } : {}),
+          ...(scontoSu(piano) ? { codice: sconto!.codice } : {}),
+        },
+      });
+      // Con Stripe si va alla sua pagina di pagamento; si torna su /app/pagamento.
+      if (res.pagamento) {
+        window.location.assign(res.pagamento);
+        return;
+      }
+      setRinunciaRecesso(false);
+      setSconto(undefined);
+      setCodice("");
       // Il piano è un gruppo Cognito: serve un token nuovo perché l'app lo veda.
       await ricarica({ rinnovaToken: true });
       await reload();
@@ -34,7 +76,7 @@ export function Piani() {
   if (error || !data) return <Alert tone="error">{error?.message ?? "Piani non disponibili"}</Alert>;
 
   const medium = data.piani.find((p) => p.id === "medium")!;
-  const sconto = Math.round((1 - medium.prezzo.annuale / (medium.prezzo.mensile * 12)) * 100);
+  const scontoAnnuale = Math.round((1 - medium.prezzo.annuale / (medium.prezzo.mensile * 12)) * 100);
 
   return (
     <div>
@@ -55,6 +97,12 @@ export function Piani() {
             <strong>Beta:</strong> i pagamenti non sono ancora attivi. Il cambio di piano è immediato e gratuito, così puoi provare tutto.
           </Alert>
         )}
+        {data.modalita === "stripe" && PREZZI_DI_PROVA && (
+          <Alert tone="info">
+            <strong>Prezzi di prova:</strong> ogni piano costa 0,50 € per provare i pagamenti con Stripe (in modalità test non
+            viene addebitato nulla: usa la carta 4242 4242 4242 4242).
+          </Alert>
+        )}
         {esito && (
           <Alert tone={esito.tone} onClose={() => setEsito(undefined)}>
             {esito.testo}
@@ -73,17 +121,82 @@ export function Piani() {
               className={cx("rounded-lg px-5 py-2 capitalize transition", periodo === p ? "bg-brand-600 text-white" : "text-slate-600")}
             >
               {p}
-              {p === "annuale" && <span className={cx("ml-1.5 text-xs", periodo === p ? "text-accent-300" : "text-emerald-600")}>−{sconto}%</span>}
+              {p === "annuale" && scontoAnnuale > 0 && !PREZZI_DI_PROVA && <span className={cx("ml-1.5 text-xs", periodo === p ? "text-accent-300" : "text-emerald-600")}>−{scontoAnnuale}%</span>}
             </button>
           ))}
         </div>
       </div>
 
+      <div className="mx-auto mt-6 max-w-2xl rounded-2xl bg-white p-4 ring-1 ring-slate-200">
+        {sconto ? (
+          <div className="flex items-center justify-between gap-3 text-sm">
+            <p className="flex items-center gap-2 text-emerald-700">
+              <Tag className="size-4" />
+              Codice <strong>{sconto.codice}</strong>: sconto del {sconto.percentuale}%
+              {sconto.piani.length < 2 && <> sul piano {sconto.piani[0] === "pro" ? "Pro" : "Medium"}</>}
+            </p>
+            <button onClick={() => setSconto(undefined)} className="text-slate-400 hover:text-slate-700" aria-label="Rimuovi il codice">
+              <X className="size-4" />
+            </button>
+          </div>
+        ) : null}
+        {sconto && (
+          <p className="mt-2 text-xs text-amber-700">
+            Il codice si usa con il prossimo acquisto e poi non vale più per il tuo account. Rimuovilo se vuoi tenerlo per dopo.
+          </p>
+        )}
+        {!sconto && (
+          <form
+            className="flex flex-col gap-2 sm:flex-row sm:items-center"
+            onSubmit={(e) => {
+              e.preventDefault();
+              void applicaCodice();
+            }}
+          >
+            <label className="flex flex-1 items-center gap-2 text-sm text-slate-600">
+              <Tag className="size-4 shrink-0 text-slate-400" />
+              <span className="sr-only">Codice sconto</span>
+              <input
+                value={codice}
+                onChange={(e) => setCodice(e.target.value.toUpperCase())}
+                placeholder="Hai un codice sconto?"
+                className="h-10 w-full rounded-xl border-0 bg-white px-3 font-mono uppercase ring-1 ring-slate-300 placeholder:font-sans placeholder:normal-case focus:ring-2 focus:ring-brand-500 focus:outline-none"
+              />
+            </label>
+            <Button type="submit" variant="secondary" disabled={!codice.trim()} loading={verifica.inCorso}>
+              Applica
+            </Button>
+          </form>
+        )}
+        {!sconto && <p className="mt-2 text-xs text-slate-500">Ogni codice sconto vale una sola volta per account.</p>}
+        {verifica.errore && <p className="mt-2 text-sm text-rose-600">{verifica.errore}</p>}
+      </div>
+
+      <label className="mx-auto mt-4 flex max-w-2xl items-start gap-3 rounded-2xl bg-white p-4 text-sm text-slate-600 ring-1 ring-slate-200">
+        <input
+          type="checkbox"
+          checked={rinunciaRecesso}
+          onChange={(e) => setRinunciaRecesso(e.target.checked)}
+          className="mt-0.5 size-4 shrink-0 rounded border-slate-300 text-brand-600 focus:ring-brand-500"
+        />
+        <span>
+          Voglio accedere subito al piano e prendo atto che, per questo, <strong>perdo il diritto di recesso</strong> (art. 59,
+          lett. o, Codice del consumo). Il pagamento è unico, <strong>non si rinnova</strong> e{" "}
+          <strong>non è rimborsabile</strong>, come previsto dai{" "}
+          <Link to="/termini" target="_blank" className="font-semibold text-brand-600 underline">
+            Termini
+          </Link>
+          .
+        </span>
+      </label>
+
       <div className="mt-8 grid gap-6 lg:grid-cols-3">
         {data.piani.map((p) => {
           const attuale = utente.piano === p.id;
           const evidenziato = p.id === "medium";
-          const prezzo = periodo === "mensile" ? p.prezzo.mensile : p.prezzo.annuale;
+          const pieno = periodo === "mensile" ? p.prezzo.mensile : p.prezzo.annuale;
+          const scontoPiano = scontoSu(p.id);
+          const prezzo = scontoPiano ? prezzoScontato(pieno, scontoPiano.percentuale) : pieno;
           return (
             <div
               key={p.id}
@@ -108,8 +221,11 @@ export function Piani() {
               <p className={cx("mt-1 text-sm", evidenziato ? "text-brand-200" : "text-slate-500")}>{p.slogan}</p>
 
               <p className="mt-6">
-                <span className="text-4xl font-extrabold tracking-tight">{prezzo ? euro(prezzo) : "Gratis"}</span>
-                {prezzo > 0 && <span className={cx("text-sm", evidenziato ? "text-brand-200" : "text-slate-500")}> /{periodo === "mensile" ? "mese" : "anno"}</span>}
+                {scontoPiano && (
+                  <span className={cx("mr-2 text-lg line-through", evidenziato ? "text-brand-300" : "text-slate-400")}>{euro(pieno)}</span>
+                )}
+                <span className="text-4xl font-extrabold tracking-tight">{prezzo ? euro(prezzo) : p.id === "free" ? "Gratis" : euro(0)}</span>
+                {pieno > 0 && <span className={cx("text-sm", evidenziato ? "text-brand-200" : "text-slate-500")}> /{periodo === "mensile" ? "mese" : "anno"}</span>}
               </p>
               {prezzo > 0 && periodo === "annuale" && (
                 <p className={cx("text-xs", evidenziato ? "text-brand-200" : "text-slate-500")}>pari a {euro(prezzo / 12)} al mese</p>
@@ -127,7 +243,7 @@ export function Piani() {
                 className="mt-8 w-full"
                 size="lg"
                 variant={evidenziato ? "accent" : attuale ? "secondary" : "primary"}
-                disabled={attuale && (p.id === "free" || utente.periodo === periodo)}
+                disabled={(attuale && (p.id === "free" || utente.periodo === periodo)) || (p.id !== "free" && !rinunciaRecesso)}
                 loading={inCorso === p.id}
                 onClick={() => void scegli(p.id)}
               >

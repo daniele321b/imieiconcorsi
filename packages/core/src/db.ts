@@ -20,6 +20,15 @@ export const tables = {
   get attempts() {
     return env("ATTEMPTS_TABLE");
   },
+  get codici() {
+    return env("CODICI_TABLE");
+  },
+  get ordini() {
+    return env("ORDINI_TABLE");
+  },
+  get bancheDati() {
+    return env("BANCHE_DATI_TABLE");
+  },
 };
 
 export const db = DynamoDBDocumentClient.from(new DynamoDBClient({}), {

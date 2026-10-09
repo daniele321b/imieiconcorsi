@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "inf-001",
+    "file": "Wikipedia_Sistema-operativo.txt",
+    "frase": "vi sono iOS, Android"
+  },
+  {
+    "id": "inf-002",
+    "file": "Wikipedia_Sistema-operativo.txt",
+    "frase": "kernel, scheduler, file system, gestore della memoria, gestore delle periferiche"
+  },
+  {
+    "id": "inf-003",
+    "file": "Wikipedia_Sistema-operativo.txt",
+    "frase": "multitasking o multithreading, se in grado di svolgere più compiti"
+  },
+  {
+    "id": "inf-004",
+    "file": "Wikipedia_Sistema-operativo.txt",
+    "frase": "Microsoft Windows, MacOS, le distribuzioni Linux"
+  },
+  {
+    "id": "inf-005",
+    "file": "Wikipedia_Rete-informatica.txt",
+    "frase": "Esempi di rete informatica sono le reti LAN, WLAN, WAN e GAN"
+  },
+  {
+    "id": "inf-006",
+    "file": "Ghio_Appunti-reti-calcolatori.txt",
+    "frase": "serve per risolvere (convertire) i nomi in indirizzi IP e viceversa"
+  },
+  {
+    "id": "inf-007",
+    "file": "Ghio_Appunti-reti-calcolatori.txt",
+    "frase": "gestione di indirizzi a 32 bit (IPv4)"
+  },
+  {
+    "id": "inf-008",
+    "file": "Ghio_Appunti-reti-calcolatori.txt",
+    "frase": "Livello Trasporto: Protocolli TCP-UDP"
+  },
+  {
+    "id": "inf-009",
+    "file": "Ghio_Appunti-calcolatori-elettronici.txt",
+    "frase": "La memoria ROM è non volatile: il contenuto non viene cancellato all'assenza dell'alimentazione"
+  },
+  {
+    "id": "inf-010",
+    "file": "Ghio_Appunti-calcolatori-elettronici.txt",
+    "frase": "Le memorie cache"
+  },
+  {
+    "id": "inf-011",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "il sistema pubblico di identità digitale (SPID)"
+  },
+  {
+    "id": "inf-012",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "domicilio digitale: un indirizzo elettronico eletto presso un servizio di posta elettronica certificata"
+  },
+  {
+    "id": "inf-013",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "basata su un su un sistema di chiavi crittografiche, una pubblica e una priva"
+  },
+  {
+    "id": "inf-014",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "Il documento informatico soddisfa il requisito della forma scritta e ha l'efficacia prevista dall'articolo 2702 del Codice civile quando vi è apposta una firma digital"
+  },
+  {
+    "id": "inf-015",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "carta d'identità elettronica: il documento d'identità munito di elementi per l'identificazione fisica del titolare"
+  },
+  {
+    "id": "inf-016",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "posta elettronica certificata: sistema di comunicazione in grado di attestare l'"
+  },
+  {
+    "id": "inf-017",
+    "file": "Wikipedia_Hardware.txt",
+    "frase": "è l'insieme di tutte le parti tangibili"
+  },
+  {
+    "id": "inf-018",
+    "file": "Wikipedia_Hardware.txt",
+    "frase": "La scheda madre (in inglese motherboard) è il componente principale di un computer"
+  },
+  {
+    "id": "inf-019",
+    "file": "Wikipedia_Hardware.txt",
+    "frase": "l'insieme di unità di memoria ROM che contengono il BIOS"
+  },
+  {
+    "id": "inf-020",
+    "file": "Wikipedia_Hardware.txt",
+    "frase": "La scheda d'espansione è una qualsiasi scheda elettronica che non è compresa di serie nel computer"
+  },
+  {
+    "id": "inf-021",
+    "file": "Wikipedia_CPU.txt",
+    "frase": "dall'inglese central processing unit"
+  },
+  {
+    "id": "inf-022",
+    "file": "Wikipedia_CPU.txt",
+    "frase": "l'ALU e l'unità di controllo"
+  },
+  {
+    "id": "inf-023",
+    "file": "Wikipedia_CPU.txt",
+    "frase": "la cui implementazione si deve all'italiano Federico Faggin"
+  },
+  {
+    "id": "inf-024",
+    "file": "Wikipedia_RAM.txt",
+    "frase": "è un tipo di memoria volatile caratterizzata dal permettere l'accesso diretto a qualunque indirizzo di memoria con gli stessi tempi"
+  },
+  {
+    "id": "inf-025",
+    "file": "Wikipedia_RAM.txt",
+    "frase": "se non opportunamente salvate sul disco rigido o su altra memoria non volatile, verranno perse"
+  },
+  {
+    "id": "inf-026",
+    "file": "Wikipedia_RAM.txt",
+    "frase": "Nella memoria RAM vengono copiati (caricati) i programmi che la CPU deve eseguire"
+  },
+  {
+    "id": "inf-027",
+    "file": "Wikipedia_Byte.txt",
+    "frase": "Dal 1964 il byte si definisce come formato da 8 bit"
+  },
+  {
+    "id": "inf-028",
+    "file": "Wikipedia_Byte.txt",
+    "frase": "256 possibili valori"
+  },
+  {
+    "id": "inf-029",
+    "file": "Wikipedia_Byte.txt",
+    "frase": "Il simbolo utilizzato per il byte come unità di misura della quantità di informazione è B"
+  },
+  {
+    "id": "inf-030",
+    "file": "Wikipedia_Byte.txt",
+    "frase": "Il termine byte è stato coniato da Werner Buchholz nel luglio 1956"
+  },
+  {
+    "id": "inf-031",
+    "file": "Wikipedia_Sistema-numerico-binario.txt",
+    "frase": "Il sistema numerico binario è un sistema numerico posizionale in base 2"
+  },
+  {
+    "id": "inf-032",
+    "file": "Wikipedia_Sistema-numerico-binario.txt",
+    "frase": "si considera moltiplicata per"
+  },
+  {
+    "id": "inf-033",
+    "file": "Wikipedia_Sistema-numerico-binario.txt",
+    "frase": "si considera moltiplicata per"
+  },
+  {
+    "id": "inf-034",
+    "file": "Wikipedia_Sistema-numerico-binario.txt",
+    "frase": "si considera moltiplicata per"
+  },
+  {
+    "id": "inf-035",
+    "file": "Wikipedia_Sistema-numerico-binario.txt",
+    "frase": "rappresentati fisicamente da due diversi livelli di tensione elettrica"
+  },
+  {
+    "id": "inf-036",
+    "file": "Wikipedia_Periferica.txt",
+    "frase": "è controllata dal sistema operativo (SO) attraverso un driver"
+  },
+  {
+    "id": "inf-037",
+    "file": "Wikipedia_Periferica.txt",
+    "frase": "(plug and play)"
+  },
+  {
+    "id": "inf-038",
+    "file": "Wikipedia_Periferica.txt",
+    "frase": "La gestione delle periferiche da parte del sistema operativo è operata tipicamente attraverso il meccanismo dell'interrupt"
+  },
+  {
+    "id": "inf-039",
+    "file": "Wikipedia_Periferica.txt",
+    "frase": "Ogni periferica può essere di input/output"
+  },
+  {
+    "id": "inf-040",
+    "file": "Wikipedia_USB.txt",
+    "frase": "acronimo di Universal Serial Bus"
+  },
+  {
+    "id": "inf-041",
+    "file": "Wikipedia_USB.txt",
+    "frase": "Dal 2014 nei nuovi dispositivi è utilizzata anche una versione più veloce: la USB-C"
+  },
+  {
+    "id": "inf-042",
+    "file": "Wikipedia_Memoria-di-massa.txt",
+    "frase": "La caratteristica principale della memoria di massa è la"
+  },
+  {
+    "id": "inf-043",
+    "file": "Wikipedia_Memoria-di-massa.txt",
+    "frase": "La ragione risiede nella velocità di accesso ai dati"
+  },
+  {
+    "id": "inf-044",
+    "file": "Wikipedia_Memoria-di-massa.txt",
+    "frase": "Le prime memorie di massa, furono delle unità a nastro magnetico"
+  },
+  {
+    "id": "inf-045",
+    "file": "Wikipedia_Software.txt",
+    "frase": "l'insieme delle componenti intangibili di elaborazione"
+  },
+  {
+    "id": "inf-046",
+    "file": "Wikipedia_Software.txt",
+    "frase": "è stato utilizzato per la prima volta nel 1957 da John Wilder Tukey"
+  },
+  {
+    "id": "inf-047",
+    "file": "Wikipedia_Memoria-di-massa.txt",
+    "frase": "Nell'architettura di von Neumann, quando ci si riferisce alla memoria, s'intende la memoria principale"
+  },
+  {
+    "id": "inf-048",
+    "file": "Wikipedia_Internet.txt",
+    "frase": "è un'architettura di sistema che permette l'interconnessione tra diverse reti di computer a livello globale"
+  },
+  {
+    "id": "inf-049",
+    "file": "Wikipedia_Internet.txt",
+    "frase": "chiamata \"TCP/IP\" dal nome dei due protocolli principali"
+  },
+  {
+    "id": "inf-050",
+    "file": "Wikipedia_Internet.txt",
+    "frase": "Il progenitore e precursore della rete Internet è considerato il progetto ARPANET"
+  },
+  {
+    "id": "inf-051",
+    "file": "Wikipedia_World-Wide-Web.txt",
+    "frase": "è uno dei principali servizi di Internet"
+  },
+  {
+    "id": "inf-052",
+    "file": "Wikipedia_World-Wide-Web.txt",
+    "frase": "giorno in cui l'informatico inglese Tim Berners-Lee pubblicò il primo sito web"
+  },
+  {
+    "id": "inf-053",
+    "file": "Wikipedia_World-Wide-Web.txt",
+    "frase": "presso il CERN (Conseil Européen pour la Recherche Nucléaire) di Ginevra"
+  },
+  {
+    "id": "inf-054",
+    "file": "Wikipedia_World-Wide-Web.txt",
+    "frase": "interrelati tramite collegamenti ipertestuali (link)"
+  },
+  {
+    "id": "inf-055",
+    "file": "Wikipedia_Hypertext-Transfer-Protocol.txt",
+    "frase": "è un protocollo applicativo usato come principale sistema per la trasmissione d'informazioni su internet"
+  },
+  {
+    "id": "inf-056",
+    "file": "Wikipedia_Hypertext-Transfer-Protocol.txt",
+    "frase": "Un server HTTP generalmente resta in ascolto delle richieste dei client sulla porta TCP 80"
+  },
+  {
+    "id": "inf-057",
+    "file": "Wikipedia_Hypertext-Transfer-Protocol.txt",
+    "frase": "404 Not Found"
+  },
+  {
+    "id": "inf-058",
+    "file": "Wikipedia_Hypertext-Transfer-Protocol.txt",
+    "frase": "L'HTTP è un protocollo che lavora con un'architettura di tipo client/server"
+  },
+  {
+    "id": "inf-059",
+    "file": "Wikipedia_Browser.txt",
+    "frase": "è un'applicazione usata principalmente per l'acquisizione, la presentazione e la navigazione di risorse sul Web"
+  },
+  {
+    "id": "inf-060",
+    "file": "Wikipedia_Browser.txt",
+    "frase": "Tra i browser più utilizzati vi sono Google Chrome, Mozilla Firefox"
+  },
+  {
+    "id": "inf-061",
+    "file": "Wikipedia_Browser.txt",
+    "frase": "Il primo browser a raggiungere un'apprezzabile popolarità internazionale fu Mosaic"
+  },
+  {
+    "id": "inf-062",
+    "file": "Wikipedia_Uniform-Resource-Locator.txt",
+    "frase": "è una sequenza di caratteri che identifica univocamente l'indirizzo di una risorsa su una rete di computer"
+  },
+  {
+    "id": "inf-063",
+    "file": "Wikipedia_Uniform-Resource-Locator.txt",
+    "frase": "La risoluzione dell'URL in indirizzo IP, necessario per l'instradamento con il protocollo IP avviene tramite DNS"
+  },
+  {
+    "id": "inf-064",
+    "file": "Wikipedia_Uniform-Resource-Locator.txt",
+    "frase": "L'autenticazione in URL è però estremamente rischiosa"
+  },
+  {
+    "id": "inf-065",
+    "file": "Wikipedia_Posta-elettronica.txt",
+    "frase": "Questi hanno la forma nomeutente@dominio"
+  },
+  {
+    "id": "inf-066",
+    "file": "Wikipedia_Posta-elettronica.txt",
+    "frase": "La posta elettronica è stata ideata nel 1971 da Ray Tomlinson"
+  },
+  {
+    "id": "inf-067",
+    "file": "Wikipedia_Posta-elettronica.txt",
+    "frase": "Su Internet i protocolli usati sono principalmente SMTP, POP e IMAP"
+  },
+  {
+    "id": "inf-068",
+    "file": "Wikipedia_Posta-elettronica.txt",
+    "frase": "Ccn: contiene gli indirizzi di posta elettronica dei destinatari in copia conoscenza nascosta"
+  },
+  {
+    "id": "inf-069",
+    "file": "Wikipedia_Posta-elettronica.txt",
+    "frase": "La modalità di accesso al servizio è quindi asincrona"
+  },
+  {
+    "id": "inf-070",
+    "file": "Wikipedia_Posta-elettronica.txt",
+    "frase": "La consegna al destinatario dei messaggi inviati non è garantita"
+  },
+  {
+    "id": "inf-071",
+    "file": "Wikipedia_Indirizzo-IP.txt",
+    "frase": "un indirizzo IP è un numero che identifica univocamente un nodo in una rete di computer"
+  },
+  {
+    "id": "inf-072",
+    "file": "Wikipedia_Indirizzo-IP.txt",
+    "frase": "L'indirizzo IPv6 (Internet Protocol versione 6) è costituito da 128 bit"
+  },
+  {
+    "id": "inf-073",
+    "file": "Wikipedia_Indirizzo-IP.txt",
+    "frase": "L'indirizzo IP si compone di due parti: indicatore di rete (Net_ID) e indicatore di host (Host_ID)"
+  },
+  {
+    "id": "inf-074",
+    "file": "Wikipedia_Wi-Fi.txt",
+    "frase": "Wi-Fi è un insieme di tecnologie per reti locali senza fili (WLAN)"
+  },
+  {
+    "id": "inf-075",
+    "file": "Wikipedia_Wi-Fi.txt",
+    "frase": "punto di accesso wireless (access point)"
+  },
+  {
+    "id": "inf-076",
+    "file": "Wikipedia_Cloud-computing.txt",
+    "frase": "indica un paradigma di erogazione di servizi offerti su richiesta da un fornitore a un utente finale attraverso la rete internet"
+  },
+  {
+    "id": "inf-077",
+    "file": "Wikipedia_Cloud-computing.txt",
+    "frase": "SaaS (software as a service)"
+  },
+  {
+    "id": "inf-078",
+    "file": "Wikipedia_Cloud-computing.txt",
+    "frase": "PaaS (platform as a service)"
+  },
+  {
+    "id": "inf-079",
+    "file": "Wikipedia_Sicurezza-informatica.txt",
+    "frase": "la tutela della riservatezza, dell'integrità e della disponibilità delle informazioni"
+  },
+  {
+    "id": "inf-080",
+    "file": "Wikipedia_Sicurezza-informatica.txt",
+    "frase": "La riservatezza consiste nel garantire che le informazioni siano accessibili esclusivamente ai soggetti autorizzati"
+  },
+  {
+    "id": "inf-081",
+    "file": "Wikipedia_Sicurezza-informatica.txt",
+    "frase": "L'integrità consiste nel garantire che i dati non vengano modificati, alterati o distrutti in modo non autorizzato"
+  },
+  {
+    "id": "inf-082",
+    "file": "Wikipedia_Sicurezza-informatica.txt",
+    "frase": "l'installazione delle patch di sicurezza, il backup, la ridondanza delle risorse"
+  },
+  {
+    "id": "inf-083",
+    "file": "Wikipedia_Malware.txt",
+    "frase": "abbreviazione dell'inglese malicious software"
+  },
+  {
+    "id": "inf-084",
+    "file": "Wikipedia_Malware.txt",
+    "frase": "oppure può criptare i dati del computer della vittima, estorcendo denaro per la decriptazione"
+  },
+  {
+    "id": "inf-085",
+    "file": "Wikipedia_Malware.txt",
+    "frase": "I Keylogger sono dei programmi in grado di registrare tutto ciò che un utente digita su una tastiera"
+  },
+  {
+    "id": "inf-086",
+    "file": "Wikipedia_Malware.txt",
+    "frase": "Termine coniato nel 1990 da Yisrael Radai"
+  },
+  {
+    "id": "inf-087",
+    "file": "Wikipedia_Phishing.txt",
+    "frase": "Il phishing è un tipo di truffa effettuata su Internet"
+  },
+  {
+    "id": "inf-088",
+    "file": "Wikipedia_Phishing.txt",
+    "frase": "sfrutta una tecnica di ingegneria sociale"
+  },
+  {
+    "id": "inf-089",
+    "file": "Wikipedia_Phishing.txt",
+    "frase": "Un attacco mirato verso un individuo o una compagnia è stato denominato spear phishing"
+  },
+  {
+    "id": "inf-090",
+    "file": "Wikipedia_Phishing.txt",
+    "frase": "Il vishing (voice phishing)"
+  },
+  {
+    "id": "inf-091",
+    "file": "Wikipedia_Firewall.txt",
+    "frase": "è un componente hardware e/o software di difesa perimetrale di una rete"
+  },
+  {
+    "id": "inf-092",
+    "file": "Wikipedia_Crittografia.txt",
+    "frase": "dei metodi per rendere un messaggio non comprensibile/intelligibile a persone non autorizzate a leggerlo"
+  },
+  {
+    "id": "inf-093",
+    "file": "Wikipedia_Crittografia.txt",
+    "frase": "con cui si faceva uso di un'unica chiave sia per proteggere il messaggio che per renderlo nuovamente leggibile"
+  },
+  {
+    "id": "inf-094",
+    "file": "Wikipedia_Crittografia.txt",
+    "frase": "utilizza chiavi diverse per cifrare e per decifrare un messaggio"
+  },
+  {
+    "id": "inf-095",
+    "file": "Wikipedia_Crittografia.txt",
+    "frase": "a Gaio Giulio Cesare si attribuisce l'uso del cosiddetto cifrario di Cesare"
+  },
+  {
+    "id": "inf-096",
+    "file": "Wikipedia_Backup.txt",
+    "frase": "una o più copie di riserva dei dati"
+  },
+  {
+    "id": "inf-097",
+    "file": "Wikipedia_Backup.txt",
+    "frase": "che prevede tre (3) copie dei dati su due (2) tipi diversi di unità archiviazione"
+  },
+  {
+    "id": "inf-098",
+    "file": "Wikipedia_Backup.txt",
+    "frase": "tipo di backup (completo, differenziale, incrementale)"
+  },
+  {
+    "id": "inf-099",
+    "file": "Wikipedia_Software-libero.txt",
+    "frase": "che ne concede lo studio, l'utilizzo, la modifica e la redistribuzione"
+  },
+  {
+    "id": "inf-100",
+    "file": "Wikipedia_Software-libero.txt",
+    "frase": "fondò il progetto GNU"
+  },
+  {
+    "id": "inf-101",
+    "file": "Wikipedia_Software-libero.txt",
+    "frase": "garantisce quattro «libertà fondamentali»"
+  },
+  {
+    "id": "inf-102",
+    "file": "Wikipedia_Foglio-elettronico.txt",
+    "frase": "è un software di produttività personale che consente di operare in maniera efficiente su una più o meno grande mole di dati"
+  },
+  {
+    "id": "inf-103",
+    "file": "Wikipedia_Foglio-elettronico.txt",
+    "frase": "la prima cosa da scrivere nella cella è il simbolo ="
+  },
+  {
+    "id": "inf-104",
+    "file": "Wikipedia_Foglio-elettronico.txt",
+    "frase": "per avere un riferimento assoluto, la lettera o il numero che lo indicano nella formula devono essere preceduti dal carattere"
+  },
+  {
+    "id": "inf-105",
+    "file": "Wikipedia_Foglio-elettronico.txt",
+    "frase": "il primo foglio elettronico"
+  },
+  {
+    "id": "inf-106",
+    "file": "Wikipedia_Videoscrittura.txt",
+    "frase": "I programmi What You See Is What You Get utilizzano infatti interfacce grafiche"
+  },
+  {
+    "id": "inf-107",
+    "file": "Wikipedia_Algoritmo.txt",
+    "frase": "è la specificazione di una sequenza finita di operazioni"
+  },
+  {
+    "id": "inf-108",
+    "file": "Wikipedia_Algoritmo.txt",
+    "frase": "finito: è costituito da un numero finito di istruzioni e deve sempre terminare"
+  },
+  {
+    "id": "inf-109",
+    "file": "Wikipedia_Algoritmo.txt",
+    "frase": "Il termine deriva dalla trascrizione latina del nome del matematico persiano al-Khwarizmi"
+  },
+  {
+    "id": "inf-110",
+    "file": "Wikipedia_Algoritmo.txt",
+    "frase": "un algoritmo può essere descritto attraverso l'uso di un diagramma di flusso o ricorrendo a uno pseudocodice"
+  },
+  {
+    "id": "inf-111",
+    "file": "Wikipedia_Algoritmo.txt",
+    "frase": "un problema è calcolabile quando è risolvibile mediante un algoritmo"
+  },
+  {
+    "id": "inf-112",
+    "file": "Wikipedia_Linguaggio-di-programmazione.txt",
+    "frase": "Un linguaggio di programmazione è un sistema di notazione per la scrittura di programmi per computer"
+  },
+  {
+    "id": "inf-113",
+    "file": "Wikipedia_Linguaggio-di-programmazione.txt",
+    "frase": "il linguaggio meccanico adoperato da Ada Lovelace per la programmazione della macchina di Charles Babbage"
+  },
+  {
+    "id": "inf-114",
+    "file": "Wikipedia_Linguaggio-di-programmazione.txt",
+    "frase": "l'assembly, che costituisce una rappresentazione simbolica del linguaggio macchina"
+  },
+  {
+    "id": "inf-115",
+    "file": "Wikipedia_Linguaggio-di-programmazione.txt",
+    "frase": "il Fortran, creato nel 1957 da John Backus"
+  },
+  {
+    "id": "inf-116",
+    "file": "Wikipedia_Linguaggio-di-programmazione.txt",
+    "frase": "essi vengono classificati in linguaggi a basso livello e ad alto livello"
+  },
+  {
+    "id": "inf-117",
+    "file": "Wikipedia_Linguaggio-di-programmazione.txt",
+    "frase": "successivamente Java, classe 1995"
+  },
+  {
+    "id": "inf-118",
+    "file": "Wikipedia_Base-di-dati.txt",
+    "frase": "è una collezione organizzata di dati in forma elettronica"
+  },
+  {
+    "id": "inf-119",
+    "file": "Wikipedia_Base-di-dati.txt",
+    "frase": "database management system: ovvero il sistema software necessario all'interfacciamento con la base di dati"
+  },
+  {
+    "id": "inf-120",
+    "file": "Wikipedia_Base-di-dati.txt",
+    "frase": "Edgar F. Codd lavorava nella sede californiana di IBM"
+  },
+  {
+    "id": "inf-121",
+    "file": "Wikipedia_Base-di-dati.txt",
+    "frase": "rappresentabile mediante tabelle e relazioni tra esse"
+  },
+  {
+    "id": "inf-122",
+    "file": "Wikipedia_Base-di-dati.txt",
+    "frase": "per ogni record viene definita una chiave, ovvero un identificatore univoco della tupla"
+  },
+  {
+    "id": "inf-123",
+    "file": "Wikipedia_Structured-Query-Language.txt",
+    "frase": "è un linguaggio standardizzato per database basati sul modello relazionale"
+  },
+  {
+    "id": "inf-124",
+    "file": "Wikipedia_Structured-Query-Language.txt",
+    "frase": "L'unico operatore condizionale di SQL è WHERE"
+  },
+  {
+    "id": "inf-125",
+    "file": "Wikipedia_Structured-Query-Language.txt",
+    "frase": "il comando INSERT opera inserendo in tabella una sola riga per volta"
+  },
+  {
+    "id": "inf-126",
+    "file": "Wikipedia_Structured-Query-Language.txt",
+    "frase": "DDL = Data Definition Language"
+  },
+  {
+    "id": "inf-127",
+    "file": "Wikipedia_Structured-Query-Language.txt",
+    "frase": "Il SQL nasce nel 1974 ad opera di Donald Chamberlin, nei laboratori dell'IBM"
+  },
+  {
+    "id": "inf-128",
+    "file": "Wikipedia_Intelligenza-artificiale.txt",
+    "frase": "è il termine ombrello che indica l'insieme delle capacità il cui svolgimento richiederebbe normalmente un intelletto naturale"
+  },
+  {
+    "id": "inf-129",
+    "file": "Wikipedia_Intelligenza-artificiale.txt",
+    "frase": "la disciplina venne istituita formalmente come campo accademico nel 1956"
+  },
+  {
+    "id": "inf-130",
+    "file": "Wikipedia_Intelligenza-artificiale.txt",
+    "frase": "Il Regolamento UE 2024/1689 (AI Act)"
+  },
+  {
+    "id": "inf-131",
+    "file": "Wikipedia_Intelligenza-artificiale.txt",
+    "frase": "Tra i paradigmi di apprendimento più diffusi figurano il machine learning"
+  },
+  {
+    "id": "inf-132",
+    "file": "Wikipedia_Regolamento-generale-sulla-protezione-dei-dati.txt",
+    "frase": "ufficialmente regolamento (UE) n. 2016/679"
+  },
+  {
+    "id": "inf-133",
+    "file": "Wikipedia_Regolamento-generale-sulla-protezione-dei-dati.txt",
+    "frase": "operativo a partire dal 25 maggio 2018"
+  },
+  {
+    "id": "inf-134",
+    "file": "Wikipedia_Regolamento-generale-sulla-protezione-dei-dati.txt",
+    "frase": "entro 72 ore dal momento in cui ne viene a conoscenza"
+  },
+  {
+    "id": "inf-135",
+    "file": "Wikipedia_Regolamento-generale-sulla-protezione-dei-dati.txt",
+    "frase": "Il diritto alla portabilità è sancito dall'articolo 20"
+  },
+  {
+    "id": "inf-136",
+    "file": "Wikipedia_Regolamento-generale-sulla-protezione-dei-dati.txt",
+    "frase": "Responsabile per la protezione dei dati (\"DPO\", Data Protection Officer)"
+  },
+  {
+    "id": "inf-137",
+    "file": "Wikipedia_Regolamento-generale-sulla-protezione-dei-dati.txt",
+    "frase": "informazioni mediche o indirizzi IP di computer"
+  },
+  {
+    "id": "inf-138",
+    "file": "Wikipedia_Posta-elettronica-certificata.txt",
+    "frase": "L'indirizzo PEC dei soggetti obbligati ad averla è iscritto nel registro pubblico INI-PEC"
+  },
+  {
+    "id": "inf-139",
+    "file": "Wikipedia_Posta-elettronica-certificata.txt",
+    "frase": "fornirà al mittente una ricevuta di avvenuta consegna"
+  },
+  {
+    "id": "inf-140",
+    "file": "Wikipedia_Posta-elettronica-certificata.txt",
+    "frase": "è demandata all'Agenzia per l'Italia digitale"
+  },
+  {
+    "id": "inf-141",
+    "file": "Wikipedia_SPID.txt",
+    "frase": "è il sistema unico di accesso con identità digitale ai servizi online della pubblica amministrazione italiana"
+  },
+  {
+    "id": "inf-142",
+    "file": "Wikipedia_SPID.txt",
+    "frase": "come previsto dal Regolamento europeo eIDAS n. 910/2014"
+  },
+  {
+    "id": "inf-143",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "documento informatico: il documento elettronico che contiene la rappresentazione informatica di atti, fatti o dati giuridicamente rilevanti"
+  },
+  {
+    "id": "inf-144",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "documento analogico: la rappresentazione non informatica di atti, fatti o dati giuridicamente rilevanti"
+  },
+  {
+    "id": "inf-145",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "duplicato informatico: il documento informatico ottenuto mediante la memorizzazione"
+  },
+  {
+    "id": "inf-146",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "formato aperto: un formato di dati reso pubblico, documentato esaustivamente e neutro"
+  },
+  {
+    "id": "inf-147",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "anche per finalità commerciali, in formato disaggregato"
+  },
+  {
+    "id": "inf-148",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "identità digitale: la rappresentazione informatica della corrispondenza tra un utente e i suoi attributi identificativi"
+  },
+  {
+    "id": "inf-149",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "interoperabilità: caratteristica di un sistema informativo, le cui interfacce sono pubbliche e aperte"
+  },
+  {
+    "id": "inf-150",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "carta nazionale dei servizi: il documento rilasciato su supporto informatico per consentire l'accesso per via telematica"
+  },
+  {
+    "id": "inf-151",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "Chiunque ha il diritto di usare"
+  },
+  {
+    "id": "inf-152",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "i professionisti tenuti all'iscrizione in albi ed elenchi e i soggetti tenuti all'iscrizione nel registro delle imprese hanno l'obbligo di dotarsi di un domicilio digitale"
+  },
+  {
+    "id": "inf-153",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "sono obbligati ad accettare, tramite la piattaforma di cui al comma 2, i pagamenti spettanti a qualsiasi titolo attraverso sistemi di pagamento elettronico"
+  },
+  {
+    "id": "inf-154",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "Chiunque può presentare al difensore civico per il digitale"
+  },
+  {
+    "id": "inf-155",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "ciascuna pubblica amministrazione affida a un unico ufficio dirigenziale generale"
+  },
+  {
+    "id": "inf-156",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "Le pubbliche amministrazioni formano gli originali dei propri documenti"
+  },
+  {
+    "id": "inf-157",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "raccoglie in un fascicolo informatico gli atti, i documenti e i dati del procedimento"
+  },
+  {
+    "id": "inf-158",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "se la loro conformità all'originale in tutte le sue componenti è attestata da un pubblico ufficiale a ciò autorizzato"
+  },
+  {
+    "id": "inf-159",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "quando l'istante o il dichiarante è identificato attraverso il sistema pubblico di identità digitale (SPID), la carta di identità elettronica o la carta nazionale dei servizi"
+  },
+  {
+    "id": "inf-160",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "è istituito, a cura dell'Agenzia per l'Italia digitale, il sistema pubblico per la gestione dell'identità digitale"
+  },
+  {
+    "id": "inf-161",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "È istituita presso il Ministero dell'interno l'ANPR"
+  },
+  {
+    "id": "inf-162",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "c) software libero o a codice sorgente aperto"
+  },
+  {
+    "id": "inf-163",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "hanno l'obbligo di rendere disponibile il relativo codice sorgente"
+  },
+  {
+    "id": "inf-164",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "adotta Linee guida contenenti le regole tecniche e di indirizzo per l'attuazione del presente Codice"
+  },
+  {
+    "id": "inf-165",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "Indice nazionale dei domicili digitali (INI-PEC)"
+  },
+  {
+    "id": "inf-166",
+    "file": "norma_DLgs196-2003_privacy.txt",
+    "frase": "L'Autorità di controllo di cui all'articolo 51 del regolamento è individuata nel Garante per la protezione dei dati personali"
+  },
+  {
+    "id": "inf-167",
+    "file": "norma_DLgs196-2003_privacy.txt",
+    "frase": "Il Collegio è costituito da quattro componenti, eletti due dalla Camera dei deputati e due dal Senato"
+  },
+  {
+    "id": "inf-168",
+    "file": "norma_DLgs196-2003_privacy.txt",
+    "frase": "è lecito a condizione che sia prestato da chi esercita la responsabilità genitoriale"
+  },
+  {
+    "id": "inf-169",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "copia per immagine su supporto informatico di documento analogico: il documento informatico avente contenuto e forma identici"
+  },
+  {
+    "id": "inf-170",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "La loro esibizione e produzione sostituisce quella dell'originale"
+  },
+  {
+    "id": "inf-171",
+    "file": "Ghio_Appunti-reti-calcolatori.txt",
+    "frase": "Il protocollo ARP serve per venire a sapere l'indirizzo MAC della destinazione partendo dal suo indirizzo IP"
+  },
+  {
+    "id": "inf-172",
+    "file": "Ghio_Appunti-reti-calcolatori.txt",
+    "frase": "permette a un host di ottenere dinamicamente dal server DHCP vari parametri di configurazione, tra cui il proprio indirizzo IP"
+  },
+  {
+    "id": "inf-173",
+    "file": "Ghio_Appunti-reti-calcolatori.txt",
+    "frase": "è un modo per connettere ad Internet più host utilizzando un unico indirizzo IP"
+  },
+  {
+    "id": "inf-174",
+    "file": "Ghio_Appunti-reti-calcolatori.txt",
+    "frase": "il segnale elettrico proveniente da un nodo viene replicato su tutte le altre interfacce"
+  },
+  {
+    "id": "inf-175",
+    "file": "Ghio_Appunti-reti-calcolatori.txt",
+    "frase": "Il protocollo UDP è privo dei controlli di flusso e di congestione"
+  },
+  {
+    "id": "inf-176",
+    "file": "Ghio_Appunti-reti-calcolatori.txt",
+    "frase": "il TCP usa un three-way handshake"
+  },
+  {
+    "id": "inf-177",
+    "file": "Ghio_Appunti-reti-calcolatori.txt",
+    "frase": "L'host deve quindi conoscere almeno un default gateway, che è il router per uscire dalla rete logica"
+  },
+  {
+    "id": "inf-178",
+    "file": "Ghio_Appunti-reti-calcolatori.txt",
+    "frase": "ogni numero è compreso tra 0 e 255"
+  },
+  {
+    "id": "inf-179",
+    "file": "Ghio_Appunti-reti-calcolatori.txt",
+    "frase": "L'Internet Control Message Protocol (ICMP) fornisce delle funzionalità di controllo sul livello IP"
+  },
+  {
+    "id": "inf-180",
+    "file": "Ghio_Appunti-reti-calcolatori.txt",
+    "frase": "Il livello fisico (physical) è lo strato deputato al trasporto fisico dei bit"
+  },
+  {
+    "id": "inf-181",
+    "file": "Ghio_Appunti-reti-calcolatori.txt",
+    "frase": "L'indirizzo MAC permette di identificare la scheda"
+  },
+  {
+    "id": "inf-182",
+    "file": "Ghio_Appunti-reti-calcolatori.txt",
+    "frase": "indirizzi con tutti 0 nel campo host identificano l'intera rete"
+  },
+  {
+    "id": "inf-183",
+    "file": "Ghio_Appunti-calcolatori-elettronici.txt",
+    "frase": "il Program Counter (PC) contiene l'indirizzo di memoria della nuova istruzione da leggere"
+  },
+  {
+    "id": "inf-184",
+    "file": "Ghio_Appunti-calcolatori-elettronici.txt",
+    "frase": "L'instruction set è l'insieme delle operazioni che il processore è in grado di eseguire"
+  },
+  {
+    "id": "inf-185",
+    "file": "Ghio_Appunti-calcolatori-elettronici.txt",
+    "frase": "completano un'istruzione in un solo colpo di clock"
+  },
+  {
+    "id": "inf-186",
+    "file": "Ghio_Appunti-calcolatori-elettronici.txt",
+    "frase": "I processori con architettura RISC fanno uso delle pipeline"
+  },
+  {
+    "id": "inf-187",
+    "file": "Ghio_Appunti-calcolatori-elettronici.txt",
+    "frase": "Le celle di una memoria RAM dinamica contengono dei condensatori"
+  },
+  {
+    "id": "inf-188",
+    "file": "Ghio_Appunti-calcolatori-elettronici.txt",
+    "frase": "h è la percentuale di accessi che avvengono con successo (hit) in cache"
+  },
+  {
+    "id": "inf-189",
+    "file": "Ghio_Appunti-calcolatori-elettronici.txt",
+    "frase": "Durante la fase di fetch il processore legge una di queste istruzioni dalla memoria"
+  },
+  {
+    "id": "inf-190",
+    "file": "Ghio_Appunti-calcolatori-elettronici.txt",
+    "frase": "L'8086 supporta istruzioni per il calcolo binario (in complemento a 2)"
+  },
+  {
+    "id": "inf-191",
+    "file": "Wikipedia_Sistema-operativo.txt",
+    "frase": "che gestisce le risorse hardware e software della macchina"
+  },
+  {
+    "id": "inf-192",
+    "file": "Wikipedia_Sistema-operativo.txt",
+    "frase": "monotasking, se in grado di eseguire un solo compito"
+  },
+  {
+    "id": "inf-193",
+    "file": "Wikipedia_Sistema-operativo.txt",
+    "frase": "L'esemplare più famoso è senz'altro l'MS-DOS di Microsoft"
+  },
+  {
+    "id": "inf-194",
+    "file": "Wikipedia_Sistema-operativo.txt",
+    "frase": "un interprete di comandi che funzioni anche da interfaccia utente ovvero da Shell"
+  },
+  {
+    "id": "inf-195",
+    "file": "Wikipedia_Sistema-operativo.txt",
+    "frase": "Un kernel tradizionale, ovvero monolitico"
+  },
+  {
+    "id": "inf-196",
+    "file": "Wikipedia_Rete-informatica.txt",
+    "frase": "si parla di rete metropolitana o MAN (Metropolitan Area Network) se la rete si estende all'interno di una città"
+  },
+  {
+    "id": "inf-197",
+    "file": "Wikipedia_Rete-informatica.txt",
+    "frase": "si parla di rete geografica o WAN (Wide Area Network)"
+  },
+  {
+    "id": "inf-198",
+    "file": "Wikipedia_Rete-informatica.txt",
+    "frase": "In questa architettura tutti i dispositivi connessi alla rete hanno le stesse capacità"
+  },
+  {
+    "id": "inf-199",
+    "file": "Wikipedia_Rete-informatica.txt",
+    "frase": "La topologia di rete è il modello geometrico (grafo)"
+  },
+  {
+    "id": "inf-200",
+    "file": "Wikipedia_Rete-informatica.txt",
+    "frase": "Spesso le reti informatiche sono organizzate sotto un'architettura client-server"
+  }
+]

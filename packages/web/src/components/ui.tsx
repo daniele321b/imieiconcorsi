@@ -1,5 +1,5 @@
 import { AlertTriangle, CheckCircle2, Info, Loader2, Sparkles, X } from "lucide-react";
-import type { ButtonHTMLAttributes, InputHTMLAttributes, ReactNode } from "react";
+import { useEffect, type ButtonHTMLAttributes, type InputHTMLAttributes, type ReactNode } from "react";
 import { Link } from "react-router";
 
 export const cx = (...c: (string | false | null | undefined)[]) => c.filter(Boolean).join(" ");
@@ -191,6 +191,48 @@ export function UpgradeBanner({ message, onClose }: { message: string; onClose?:
           <X className="size-4" />
         </button>
       )}
+    </div>
+  );
+}
+
+/** Popup "funzione dei piani a pagamento": si chiude con la X, con Esc o cliccando fuori. */
+export function PremiumModal({ titolo, children, onClose }: { titolo: string; children: ReactNode; onClose: () => void }) {
+  useEffect(() => {
+    const esc = (e: KeyboardEvent) => e.key === "Escape" && onClose();
+    window.addEventListener("keydown", esc);
+    return () => window.removeEventListener("keydown", esc);
+  }, [onClose]);
+
+  return (
+    <div className="fixed inset-0 z-50 grid place-items-center bg-slate-950/50 p-4 backdrop-blur-sm" onClick={onClose}>
+      <div
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="premium-titolo"
+        onClick={(e) => e.stopPropagation()}
+        className="w-full max-w-md animate-fade-up rounded-3xl bg-white p-6 shadow-2xl sm:p-8"
+      >
+        <div className="flex items-start justify-between gap-4">
+          <span className="grid size-11 place-items-center rounded-2xl bg-brand-950">
+            <Sparkles className="size-5 text-accent-300" />
+          </span>
+          <button onClick={onClose} aria-label="Chiudi" className="text-slate-400 hover:text-slate-700">
+            <X className="size-5" />
+          </button>
+        </div>
+        <h2 id="premium-titolo" className="mt-4 text-xl font-extrabold text-slate-900">
+          {titolo}
+        </h2>
+        <div className="mt-2 text-sm text-slate-600">{children}</div>
+        <div className="mt-6 flex flex-wrap justify-end gap-2">
+          <Button variant="ghost" onClick={onClose}>
+            Non ora
+          </Button>
+          <ButtonLink to="/app/piani" variant="accent">
+            Vedi i piani
+          </ButtonLink>
+        </div>
+      </div>
     </div>
   );
 }

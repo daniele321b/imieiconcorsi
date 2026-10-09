@@ -1,0 +1,3436 @@
+[
+  {
+    "materia": "storia",
+    "id": "sto-001",
+    "argomento": "Medioevo",
+    "livello": 1,
+    "testo": "In che anno cadde l'Impero romano d'Occidente?",
+    "opzioni": [
+      "476",
+      "1054",
+      "800",
+      "410"
+    ],
+    "corretta": 0,
+    "spiegazione": "La caduta dell'Impero romano d'Occidente è fissata convenzionalmente al 476; seguirono Ostrogoti, Bizantini e Longobardi.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-002",
+    "argomento": "Medioevo",
+    "livello": 2,
+    "testo": "Da quale papa e in che anno fu incoronato Carlo Magno?",
+    "opzioni": [
+      "Da papa Urbano II, nel 1095",
+      "Da papa Leone III, nell'anno 800",
+      "Da papa Gregorio VII, nel 1077",
+      "Da papa Gregorio Magno, nel 590"
+    ],
+    "corretta": 1,
+    "spiegazione": "Carlo Magno fu incoronato imperatore da papa Leone III nell'anno 800.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-003",
+    "argomento": "Età moderna",
+    "livello": 3,
+    "testo": "Quale trattato del 1454 chiuse la guerra tra Venezia e Milano e aprì la «politica dell'equilibrio»?",
+    "opzioni": [
+      "Il trattato di Campoformio",
+      "La pace di Westfalia",
+      "La pace di Lodi",
+      "La pace di Cateau-Cambrésis"
+    ],
+    "corretta": 2,
+    "spiegazione": "La pace di Lodi (9 aprile 1454) avviò l'equilibrio tra gli Stati italiani, poi difeso da Lorenzo il Magnifico.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-004",
+    "argomento": "Età moderna",
+    "livello": 2,
+    "testo": "Quale signore fiorentino del Quattrocento è legato alla «politica dell'equilibrio» tra gli Stati italiani?",
+    "opzioni": [
+      "Ludovico il Moro",
+      "Cosimo I de' Medici",
+      "Francesco Sforza",
+      "Lorenzo il Magnifico"
+    ],
+    "corretta": 3,
+    "spiegazione": "Nella seconda metà del Quattrocento Lorenzo il Magnifico fu il garante della politica dell'equilibrio.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-005",
+    "argomento": "Risorgimento",
+    "livello": 2,
+    "testo": "In che anno Carlo Alberto promulgò lo Statuto albertino?",
+    "opzioni": [
+      "1848",
+      "1831",
+      "1821",
+      "1861"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il 4 marzo 1848 Carlo Alberto promulgò lo Statuto, che divenne poi la carta fondamentale del Regno d'Italia.",
+    "fonte": "Wikipedia, «Risorgimento» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-006",
+    "argomento": "Risorgimento",
+    "livello": 1,
+    "testo": "Quando fu proclamato il Regno d'Italia?",
+    "opzioni": [
+      "Il 2 giugno 1946",
+      "Il 17 marzo 1861",
+      "Il 4 marzo 1848",
+      "Il 20 settembre 1870"
+    ],
+    "corretta": 1,
+    "spiegazione": "La proclamazione del 17 marzo 1861 sancì la nascita dello Stato unitario.",
+    "fonte": "Wikipedia, «Risorgimento» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-007",
+    "argomento": "Risorgimento",
+    "livello": 2,
+    "testo": "Con quale evento l'esercito italiano entrò a Roma il 20 settembre 1870?",
+    "opzioni": [
+      "La spedizione dei Mille",
+      "La battaglia di Solferino",
+      "La breccia di Porta Pia",
+      "Il plebiscito di Napoli"
+    ],
+    "corretta": 2,
+    "spiegazione": "La breccia di Porta Pia (20 settembre 1870) chiuse il processo risorgimentale; Roma divenne poi capitale.",
+    "fonte": "Wikipedia, «Risorgimento» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-008",
+    "argomento": "Prima guerra mondiale",
+    "livello": 2,
+    "testo": "Quale evento del 28 giugno 1914 fece scoppiare la Prima guerra mondiale?",
+    "opzioni": [
+      "L'invasione del Belgio",
+      "La rivoluzione russa",
+      "Lo sbarco degli Stati Uniti in Francia",
+      "L'assassinio dell'arciduca Francesco Ferdinando a Sarajevo"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'attentato di Sarajevo all'erede al trono austro-ungarico fu la causa scatenante del conflitto.",
+    "fonte": "Wikipedia, «Prima guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-009",
+    "argomento": "Prima guerra mondiale",
+    "livello": 3,
+    "testo": "Con quale accordo segreto del 1915 l'Italia si impegnò a entrare in guerra a fianco dell'Intesa?",
+    "opzioni": [
+      "Il Patto di Londra",
+      "Il trattato di Versailles",
+      "Il patto Gentiloni",
+      "La Triplice alleanza"
+    ],
+    "corretta": 0,
+    "spiegazione": "Con il patto di Londra l'Italia si impegnava a entrare in guerra entro un mese, in cambio di concessioni territoriali.",
+    "fonte": "Wikipedia, «Prima guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-010",
+    "argomento": "Prima guerra mondiale",
+    "livello": 2,
+    "testo": "A quale Stato l'Italia dichiarò guerra il 24 maggio 1915?",
+    "opzioni": [
+      "Alla Francia",
+      "All'Austria-Ungheria",
+      "Alla Germania",
+      "All'Impero ottomano"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il 24 maggio 1915 l'Italia dichiarò guerra all'Austria-Ungheria, ma inizialmente non alla Germania.",
+    "fonte": "Wikipedia, «Prima guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-011",
+    "argomento": "Prima guerra mondiale",
+    "livello": 2,
+    "testo": "Quale battaglia vittoriosa del 1918 portò l'Austria-Ungheria a chiedere l'armistizio?",
+    "opzioni": [
+      "Caporetto",
+      "Isonzo",
+      "Vittorio Veneto",
+      "Piave del 1917"
+    ],
+    "corretta": 2,
+    "spiegazione": "Dopo la vittoria italiana a Vittorio Veneto l'Austria-Ungheria chiese l'armistizio, firmato a Villa Giusti.",
+    "fonte": "Wikipedia, «Prima guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-012",
+    "argomento": "Prima guerra mondiale",
+    "livello": 3,
+    "testo": "Quale trattato firmato il 28 giugno 1919 stabilì la pace tra la Germania e le potenze alleate?",
+    "opzioni": [
+      "Il trattato di Saint-Germain",
+      "Il trattato di Rapallo",
+      "Il trattato di Brest-Litovsk",
+      "Il trattato di Versailles"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il trattato di Versailles fu firmato il 28 giugno 1919; Saint-Germain riguardò l'Austria.",
+    "fonte": "Wikipedia, «Prima guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-013",
+    "argomento": "Fascismo",
+    "livello": 1,
+    "testo": "In che data avvenne la marcia su Roma?",
+    "opzioni": [
+      "28 ottobre 1922",
+      "3 gennaio 1925",
+      "25 luglio 1943",
+      "10 giugno 1924"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il 28 ottobre 1922 il fascismo marciò su Roma e Vittorio Emanuele III affidò il governo a Mussolini.",
+    "fonte": "Wikipedia, «Fascismo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-014",
+    "argomento": "Fascismo",
+    "livello": 3,
+    "testo": "Con il discorso del 3 gennaio 1925 Mussolini si assunse la responsabilità politica di quale delitto?",
+    "opzioni": [
+      "L'attentato di via Rasella",
+      "Il delitto Matteotti",
+      "Il delitto Rosselli",
+      "L'omicidio di Gramsci"
+    ],
+    "corretta": 1,
+    "spiegazione": "Con il discorso del 3 gennaio 1925 Mussolini si assunse la responsabilità del delitto Matteotti, avviando la dittatura.",
+    "fonte": "Wikipedia, «Fascismo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-015",
+    "argomento": "Fascismo",
+    "livello": 2,
+    "testo": "In che anno furono firmati i Patti Lateranensi tra Stato italiano e Chiesa?",
+    "opzioni": [
+      "1919",
+      "1948",
+      "1929",
+      "1938"
+    ],
+    "corretta": 2,
+    "spiegazione": "I Patti Lateranensi del 1929 chiusero la «questione romana».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-016",
+    "argomento": "Fascismo",
+    "livello": 4,
+    "testo": "Cosa avvenne il 25 luglio 1943?",
+    "opzioni": [
+      "Gli Alleati sbarcarono in Sicilia",
+      "Nacque la Repubblica sociale italiana",
+      "L'Italia firmò l'armistizio con gli Alleati",
+      "Il Gran Consiglio del fascismo sfiduciò Mussolini, che fu poi arrestato"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il 25 luglio 1943 l'ordine del giorno Grandi, con l'appoggio del Re, portò alla caduta di Mussolini.",
+    "fonte": "Wikipedia, «Fascismo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-017",
+    "argomento": "Seconda guerra mondiale",
+    "livello": 1,
+    "testo": "Con quale evento iniziò la Seconda guerra mondiale?",
+    "opzioni": [
+      "L'attacco della Germania alla Polonia, il 1° settembre 1939",
+      "L'invasione dell'Unione Sovietica",
+      "L'annessione dell'Austria",
+      "L'attacco giapponese a Pearl Harbor"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il conflitto iniziò il 1° settembre 1939 con l'attacco tedesco alla Polonia.",
+    "fonte": "Wikipedia, «Seconda guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-018",
+    "argomento": "Seconda guerra mondiale",
+    "livello": 2,
+    "testo": "Quando l'Italia entrò nella Seconda guerra mondiale?",
+    "opzioni": [
+      "Il 22 giugno 1941",
+      "Il 10 giugno 1940",
+      "Il 1° settembre 1939",
+      "L'8 settembre 1943"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il 10 giugno 1940 l'Italia entrò in guerra come alleata della Germania contro Francia e Regno Unito.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-019",
+    "argomento": "Seconda guerra mondiale",
+    "livello": 3,
+    "testo": "Come si chiama l'armistizio firmato il 3 settembre 1943 tra Italia e Alleati?",
+    "opzioni": [
+      "Armistizio di Villa Giusti",
+      "Armistizio di Compiègne",
+      "Armistizio di Cassibile",
+      "Pace di Parigi"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'armistizio di Cassibile fu firmato il 3 settembre e reso noto l'8 settembre 1943.",
+    "fonte": "Wikipedia, «Seconda guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-020",
+    "argomento": "Seconda guerra mondiale",
+    "livello": 2,
+    "testo": "Quando terminò la Seconda guerra mondiale in Europa?",
+    "opzioni": [
+      "Il 6 giugno 1944",
+      "Il 2 settembre 1945",
+      "Il 25 aprile 1945",
+      "L'8 maggio 1945, con la resa tedesca"
+    ],
+    "corretta": 3,
+    "spiegazione": "In Europa la guerra finì l'8 maggio 1945; in Asia il 2 settembre, con la resa del Giappone.",
+    "fonte": "Wikipedia, «Seconda guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-021",
+    "argomento": "Seconda guerra mondiale",
+    "livello": 2,
+    "testo": "Su quali città gli Stati Uniti sganciarono le bombe atomiche nel 1945?",
+    "opzioni": [
+      "Hiroshima e Nagasaki",
+      "Kyoto e Kobe",
+      "Hiroshima e Okinawa",
+      "Tokyo e Osaka"
+    ],
+    "corretta": 0,
+    "spiegazione": "La resa del Giappone seguì i bombardamenti atomici di Hiroshima e Nagasaki.",
+    "fonte": "Wikipedia, «Seconda guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-022",
+    "argomento": "Repubblica",
+    "livello": 1,
+    "testo": "Con quale voto gli italiani scelsero la Repubblica?",
+    "opzioni": [
+      "Un voto dell'Assemblea Costituente",
+      "Il referendum istituzionale del 2 e 3 giugno 1946",
+      "Le elezioni politiche del 1948",
+      "Il plebiscito del 1861"
+    ],
+    "corretta": 1,
+    "spiegazione": "Nel referendum del 2-3 giugno 1946, il primo a cui votarono le donne, gli italiani scelsero la Repubblica.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-023",
+    "argomento": "Repubblica",
+    "livello": 2,
+    "testo": "Il referendum del 1946 fu la prima consultazione nazionale in cui votarono:",
+    "opzioni": [
+      "anche gli italiani all'estero",
+      "anche i militari in servizio",
+      "anche le donne",
+      "anche i diciottenni"
+    ],
+    "corretta": 2,
+    "spiegazione": "Nel referendum istituzionale del 1946 per la prima volta votarono anche le donne italiane.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-024",
+    "argomento": "Repubblica",
+    "livello": 3,
+    "testo": "Chi fu il primo Presidente della Repubblica Italiana, con piene funzioni dal 1° gennaio 1948?",
+    "opzioni": [
+      "Giovanni Gronchi",
+      "Luigi Einaudi",
+      "Alcide De Gasperi",
+      "Enrico De Nicola"
+    ],
+    "corretta": 3,
+    "spiegazione": "Enrico De Nicola, già Capo provvisorio dello Stato, assunse le piene funzioni di Presidente il 1° gennaio 1948. Luigi Einaudi fu il primo eletto secondo la Costituzione.",
+    "fonte": "Wikipedia, «Storia dell'Italia repubblicana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-025",
+    "argomento": "Repubblica",
+    "livello": 3,
+    "testo": "Quale inchiesta giudiziaria del 1992 segnò la fine della cosiddetta «prima repubblica»?",
+    "opzioni": [
+      "Mani pulite",
+      "Calciopoli",
+      "P2",
+      "Piazza Fontana"
+    ],
+    "corretta": 0,
+    "spiegazione": "Nel 1992 le indagini della magistratura di Milano, note come Mani pulite, travolsero il sistema dei partiti.",
+    "fonte": "Wikipedia, «Storia dell'Italia repubblicana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-026",
+    "argomento": "Repubblica",
+    "livello": 4,
+    "testo": "Quale periodo della storia repubblicana va convenzionalmente dal 1963 al 1981 ed è segnato dal terrorismo?",
+    "opzioni": [
+      "Il boom economico",
+      "Il centro-sinistra e gli anni di piombo",
+      "La seconda repubblica",
+      "Il centrismo"
+    ],
+    "corretta": 1,
+    "spiegazione": "La voce colloca nel 1963-1981 il centro-sinistra e gli anni di piombo.",
+    "fonte": "Wikipedia, «Storia dell'Italia repubblicana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-027",
+    "argomento": "Guerra fredda",
+    "livello": 2,
+    "testo": "Con quali eventi si chiude convenzionalmente la Guerra fredda?",
+    "opzioni": [
+      "La fine della guerra di Corea (1953)",
+      "La crisi dei missili di Cuba (1962)",
+      "La caduta del Muro di Berlino (1989) e la dissoluzione dell'URSS (1991)",
+      "La nascita della NATO (1949)"
+    ],
+    "corretta": 2,
+    "spiegazione": "La Guerra fredda termina con la caduta del Muro (1989) e la dissoluzione dell'Unione Sovietica (1991).",
+    "fonte": "Wikipedia, «Guerra fredda» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-028",
+    "argomento": "Guerra fredda",
+    "livello": 3,
+    "testo": "Con quale alleanza l'URSS rispose nel 1955 alla nascita della NATO?",
+    "opzioni": [
+      "Il Patto di Monaco",
+      "Il Comecon",
+      "Il Cominform",
+      "Il Patto di Varsavia"
+    ],
+    "corretta": 3,
+    "spiegazione": "La NATO nasce nel 1949; nel 1955 l'URSS risponde con il Patto di Varsavia.",
+    "fonte": "Wikipedia, «Guerra fredda» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-029",
+    "argomento": "Integrazione europea",
+    "livello": 2,
+    "testo": "Quali comunità istituirono i Trattati di Roma del 1957?",
+    "opzioni": [
+      "La CEE e l'EURATOM",
+      "Il Consiglio d'Europa e la CEDU",
+      "La CECA e la NATO",
+      "L'Unione europea e l'euro"
+    ],
+    "corretta": 0,
+    "spiegazione": "I Trattati di Roma del 1957 istituirono la Comunità economica europea e l'EURATOM.",
+    "fonte": "Wikipedia, «Storia dell'Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-030",
+    "argomento": "Integrazione europea",
+    "livello": 3,
+    "testo": "Quale fu la prima comunità europea, nata dal piano Schuman e ideata da Jean Monnet?",
+    "opzioni": [
+      "L'EURATOM",
+      "La CECA (Comunità europea del carbone e dell'acciaio)",
+      "L'EFTA",
+      "La CEE"
+    ],
+    "corretta": 1,
+    "spiegazione": "La CECA, prevista dal piano Schuman e ideata da Jean Monnet, fu la prima comunità; il trattato fu ratificato nel 1951.",
+    "fonte": "Wikipedia, «Storia dell'Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-031",
+    "argomento": "Età antica",
+    "livello": 2,
+    "testo": "Quale editto del 313 garantì la libertà di culto nell'Impero romano?",
+    "opzioni": [
+      "L'editto di Nantes",
+      "L'editto di Tessalonica",
+      "L'editto di Milano",
+      "L'editto di Caracalla"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'editto di Tessalonica (380) impose invece la religione del vescovo di Roma.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-032",
+    "argomento": "Medioevo",
+    "livello": 2,
+    "testo": "Quale popolo guidato da Alboino invase l'Italia nel 568?",
+    "opzioni": [
+      "I Franchi",
+      "I Visigoti",
+      "Gli Ostrogoti",
+      "I Longobardi"
+    ],
+    "corretta": 3,
+    "spiegazione": "Dopo il 476 l'Italia fu invasa da Ostrogoti (492), Bizantini (535) e Longobardi (568).",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-033",
+    "argomento": "Medioevo",
+    "livello": 3,
+    "testo": "Chi guidava gli Ostrogoti che invasero l'Italia nel 492?",
+    "opzioni": [
+      "Teodorico",
+      "Attila",
+      "Odoacre",
+      "Alarico"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-034",
+    "argomento": "Medioevo",
+    "livello": 3,
+    "testo": "Quale sovrano unì nel Medioevo la corona di Sicilia e il diadema imperiale?",
+    "opzioni": [
+      "Ruggero II",
+      "Federico II di Svevia",
+      "Ottone I",
+      "Carlo Magno"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-035",
+    "argomento": "Medioevo",
+    "livello": 2,
+    "testo": "Quale popolo unificò il Mezzogiorno nel regno di Sicilia?",
+    "opzioni": [
+      "Gli Angioini",
+      "I Longobardi",
+      "I Normanni",
+      "Gli Arabi"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-036",
+    "argomento": "Età antica",
+    "livello": 1,
+    "testo": "Secondo la tradizione, in che anno fu fondata Roma?",
+    "opzioni": [
+      "Nel 27 a.C.",
+      "Nel 509 a.C.",
+      "Nel 476 d.C.",
+      "Nel 753 a.C."
+    ],
+    "corretta": 3,
+    "spiegazione": "Secondo la tradizione Roma fu fondata il 21 aprile 753 a.C. da Romolo sul Palatino.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-037",
+    "argomento": "Età antica",
+    "livello": 2,
+    "testo": "Quanti re governarono Roma secondo la tradizione, fino al 509 a.C.?",
+    "opzioni": [
+      "Sette",
+      "Tre",
+      "Dodici",
+      "Cinque"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-038",
+    "argomento": "Età antica",
+    "livello": 3,
+    "testo": "Quale re di Roma istituì i primi collegi sacerdotali, come quello delle Vestali?",
+    "opzioni": [
+      "Romolo",
+      "Numa Pompilio",
+      "Tarquinio il Superbo",
+      "Tullo Ostilio"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-039",
+    "argomento": "Età antica",
+    "livello": 3,
+    "testo": "A quale re di Roma la tradizione attribuisce la fondazione del porto di Ostia?",
+    "opzioni": [
+      "Servio Tullio",
+      "Numa Pompilio",
+      "Anco Marzio",
+      "Tarquinio Prisco"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-040",
+    "argomento": "Età antica",
+    "livello": 3,
+    "testo": "Chi fu l'ultimo re di Roma, espulso nel 510 a.C.?",
+    "opzioni": [
+      "Servio Tullio",
+      "Tarquinio Prisco",
+      "Anco Marzio",
+      "Tarquinio il Superbo"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-041",
+    "argomento": "Età antica",
+    "livello": 3,
+    "testo": "A quale re etrusco la tradizione attribuisce l'ordinamento centuriato?",
+    "opzioni": [
+      "Servio Tullio",
+      "Numa Pompilio",
+      "Tarquinio il Superbo",
+      "Romolo"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-042",
+    "argomento": "Età antica",
+    "livello": 3,
+    "testo": "In che anno furono redatte le leggi delle XII tavole?",
+    "opzioni": [
+      "Nel 27 a.C.",
+      "Nel 450 a.C.",
+      "Nel 753 a.C.",
+      "Nel 133 a.C."
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-043",
+    "argomento": "Età antica",
+    "livello": 3,
+    "testo": "Quale magistratura nacque dopo la secessione della plebe sul Monte Sacro (494 a.C.)?",
+    "opzioni": [
+      "La dittatura",
+      "Il consolato",
+      "Il tribunato della plebe",
+      "La censura"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-044",
+    "argomento": "Età antica",
+    "livello": 3,
+    "testo": "In quale celebre episodio i Sanniti inflissero una disfatta umiliante ai Romani?",
+    "opzioni": [
+      "Azio",
+      "Zama",
+      "Canne",
+      "Le Forche Caudine"
+    ],
+    "corretta": 3,
+    "spiegazione": "Avvenne durante la seconda guerra sannitica.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-045",
+    "argomento": "Età antica",
+    "livello": 3,
+    "testo": "Quale re d'Epiro venne in aiuto di Taranto contro Roma?",
+    "opzioni": [
+      "Pirro",
+      "Annibale",
+      "Filippo V",
+      "Mitridate"
+    ],
+    "corretta": 0,
+    "spiegazione": "Fu sconfitto a Maleventum nel 275 a.C.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-046",
+    "argomento": "Età antica",
+    "livello": 2,
+    "testo": "Quali territori annesse Roma dopo la prima guerra punica (241 a.C.)?",
+    "opzioni": [
+      "Grecia e Macedonia",
+      "Sicilia, Sardegna e Corsica",
+      "Spagna e Africa",
+      "Gallia e Britannia"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-047",
+    "argomento": "Età antica",
+    "livello": 2,
+    "testo": "In quale battaglia del 216 a.C. Annibale sconfisse duramente i Romani?",
+    "opzioni": [
+      "Farsalo",
+      "Zama",
+      "Canne",
+      "Azio"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-048",
+    "argomento": "Età antica",
+    "livello": 2,
+    "testo": "Chi sconfisse Annibale a Zama?",
+    "opzioni": [
+      "Quinto Fabio Massimo",
+      "Marco Attilio Regolo",
+      "Gaio Mario",
+      "Publio Cornelio Scipione"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-049",
+    "argomento": "Età antica",
+    "livello": 3,
+    "testo": "Perché Quinto Fabio Massimo era detto «il temporeggiatore»?",
+    "opzioni": [
+      "Perché evitava lo scontro diretto con Annibale per far riorganizzare Roma",
+      "Perché rinviò le elezioni",
+      "Perché arrivava sempre in ritardo",
+      "Perché governò per pochi giorni"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-050",
+    "argomento": "Età antica",
+    "livello": 4,
+    "testo": "Quale politico romano si oppose all'ellenizzazione dei costumi in nome del mos maiorum?",
+    "opzioni": [
+      "Scipione l'Africano",
+      "Catone il Censore",
+      "Cicerone",
+      "Tiberio Gracco"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-051",
+    "argomento": "Età antica",
+    "livello": 3,
+    "testo": "Cosa prevedeva la riforma dei fratelli Gracchi?",
+    "opzioni": [
+      "Trasferire la capitale",
+      "Estendere il voto alle donne",
+      "Limitare l'occupazione delle terre pubbliche e redistribuire le eccedenze ai contadini",
+      "Abolire la schiavitù"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-052",
+    "argomento": "Età antica",
+    "livello": 4,
+    "testo": "Cosa ottennero gli alleati italici dopo la guerra sociale (91-88 a.C.)?",
+    "opzioni": [
+      "L'esenzione dalle tasse",
+      "Il diritto di battere moneta",
+      "L'indipendenza",
+      "La cittadinanza romana"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-053",
+    "argomento": "Età antica",
+    "livello": 2,
+    "testo": "Chi guidò la terza guerra servile, scoppiata a Capua nel 73 a.C.?",
+    "opzioni": [
+      "Spartaco",
+      "Giugurta",
+      "Catilina",
+      "Vercingetorige"
+    ],
+    "corretta": 0,
+    "spiegazione": "La rivolta fu schiacciata da Crasso nel 71 a.C.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-054",
+    "argomento": "Età antica",
+    "livello": 3,
+    "testo": "Chi formò il primo triumvirato?",
+    "opzioni": [
+      "Mario, Silla e Cinna",
+      "Cesare, Crasso e Pompeo",
+      "Bruto, Cassio e Cicerone",
+      "Ottaviano, Antonio e Lepido"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-055",
+    "argomento": "Età antica",
+    "livello": 2,
+    "testo": "Quale fiume attraversò Cesare nel 49 a.C. dando inizio alla guerra civile?",
+    "opzioni": [
+      "L'Arno",
+      "Il Po",
+      "Il Rubicone",
+      "Il Tevere"
+    ],
+    "corretta": 2,
+    "spiegazione": "«Alea iacta est».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-056",
+    "argomento": "Età antica",
+    "livello": 2,
+    "testo": "Quando fu ucciso Giulio Cesare?",
+    "opzioni": [
+      "Nel 27 a.C.",
+      "Nel 31 a.C. ad Azio",
+      "Nel 49 a.C.",
+      "Alle idi di marzo del 44 a.C."
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-057",
+    "argomento": "Età antica",
+    "livello": 2,
+    "testo": "Quale battaglia del 31 a.C. decretò il trionfo di Ottaviano su Marco Antonio?",
+    "opzioni": [
+      "Azio",
+      "Farsalo",
+      "Filippi",
+      "Munda"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-058",
+    "argomento": "Età antica",
+    "livello": 3,
+    "testo": "In quante regioni Augusto divise l'Italia nel 7 d.C.?",
+    "opzioni": [
+      "Sette",
+      "Undici",
+      "Venti",
+      "Quattordici"
+    ],
+    "corretta": 1,
+    "spiegazione": "Roma città fu invece divisa in 14 regioni.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-059",
+    "argomento": "Età antica",
+    "livello": 3,
+    "testo": "Quale dinastia imperiale comprese Tiberio, Caligola, Claudio e Nerone?",
+    "opzioni": [
+      "La dinastia Flavia",
+      "La dinastia degli Antonini",
+      "La dinastia Giulio-Claudia",
+      "La dinastia dei Severi"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-060",
+    "argomento": "Età antica",
+    "livello": 3,
+    "testo": "Sotto quale imperatore fu conquistata la Britannia, a partire dal 43?",
+    "opzioni": [
+      "Traiano",
+      "Nerone",
+      "Augusto",
+      "Claudio"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-061",
+    "argomento": "Età antica",
+    "livello": 3,
+    "testo": "Come è ricordato il 69 d.C.?",
+    "opzioni": [
+      "L'anno dei quattro imperatori",
+      "L'anno dell'eruzione del Vesuvio",
+      "L'anno della fondazione di Costantinopoli",
+      "L'anno della morte di Augusto"
+    ],
+    "corretta": 0,
+    "spiegazione": "Galba, Otone, Vitellio e Vespasiano.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-062",
+    "argomento": "Età antica",
+    "livello": 2,
+    "testo": "Quale evento distrusse Pompei ed Ercolano nel 79 d.C.?",
+    "opzioni": [
+      "Un'invasione barbarica",
+      "L'eruzione del Vesuvio",
+      "Un terremoto in Sicilia",
+      "Un incendio appiccato da Nerone"
+    ],
+    "corretta": 1,
+    "spiegazione": "Avvenne sotto l'imperatore Tito.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-063",
+    "argomento": "Età antica",
+    "livello": 3,
+    "testo": "Quale dinastia fece costruire il Colosseo (anfiteatro Flavio)?",
+    "opzioni": [
+      "La dinastia Costantiniana",
+      "La dinastia Giulio-Claudia",
+      "La dinastia Flavia (Vespasiano)",
+      "La dinastia dei Severi"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-064",
+    "argomento": "Età antica",
+    "livello": 3,
+    "testo": "Sotto quale imperatore l'Impero romano raggiunse la massima estensione (117)?",
+    "opzioni": [
+      "Augusto",
+      "Adriano",
+      "Costantino",
+      "Traiano"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-065",
+    "argomento": "Età antica",
+    "livello": 4,
+    "testo": "Come si chiamava il sistema di successione degli imperatori introdotto da Nerva?",
+    "opzioni": [
+      "Principato adottivo",
+      "Dominato",
+      "Monarchia ereditaria",
+      "Tetrarchia"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-066",
+    "argomento": "Età antica",
+    "livello": 4,
+    "testo": "Quale imperatore avviò nel 284 la fase del «Dominato»?",
+    "opzioni": [
+      "Marco Aurelio",
+      "Diocleziano",
+      "Costantino",
+      "Augusto"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-067",
+    "argomento": "Età antica",
+    "livello": 3,
+    "testo": "Quale popolo di lingua non indoeuropea sviluppò dal IX secolo a.C. una raffinata civiltà nell'Italia centrale tirrenica?",
+    "opzioni": [
+      "I Veneti",
+      "I Sanniti",
+      "Gli Etruschi",
+      "I Liguri"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-068",
+    "argomento": "Età antica",
+    "livello": 3,
+    "testo": "Quale civiltà sviluppò in Sardegna l'elemento etnico degli antichi Sardi?",
+    "opzioni": [
+      "La civiltà etrusca",
+      "La civiltà micenea",
+      "La civiltà villanoviana",
+      "La civiltà nuragica"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-069",
+    "argomento": "Età antica",
+    "livello": 3,
+    "testo": "Come chiamarono gli storici romani l'Italia meridionale colonizzata dai Greci?",
+    "opzioni": [
+      "Magna Grecia",
+      "Ellade minore",
+      "Gallia Cisalpina",
+      "Italia annonaria"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-070",
+    "argomento": "Età antica",
+    "livello": 4,
+    "testo": "Quali coloni fondarono Siracusa?",
+    "opzioni": [
+      "Gli Ateniesi",
+      "I Corinzi",
+      "Gli Spartani",
+      "Gli Eubei"
+    ],
+    "corretta": 1,
+    "spiegazione": "Gli Spartani fondarono Taranto, gli Eubei Cuma e Napoli.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-071",
+    "argomento": "Età antica",
+    "livello": 3,
+    "testo": "Quale imperatore concesse nel 212 la cittadinanza romana a tutti gli abitanti dell'Impero?",
+    "opzioni": [
+      "Augusto",
+      "Costantino",
+      "Caracalla",
+      "Adriano"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-072",
+    "argomento": "Età antica",
+    "livello": 3,
+    "testo": "Quale imperatore istituì la Tetrarchia?",
+    "opzioni": [
+      "Teodosio",
+      "Costantino",
+      "Settimio Severo",
+      "Diocleziano"
+    ],
+    "corretta": 3,
+    "spiegazione": "Due Augusti e due Cesari che amministravano gruppi distinti di province.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-073",
+    "argomento": "Età antica",
+    "livello": 2,
+    "testo": "Quale città fondò Costantino nel 330 come seconda capitale?",
+    "opzioni": [
+      "Costantinopoli, sull'antico sito di Bisanzio",
+      "Milano",
+      "Treviri",
+      "Ravenna"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-074",
+    "argomento": "Età antica",
+    "livello": 3,
+    "testo": "Sotto quale imperatore il cristianesimo divenne religione ufficiale dell'Impero (380)?",
+    "opzioni": [
+      "Costantino",
+      "Teodosio I",
+      "Giuliano",
+      "Nerone"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-075",
+    "argomento": "Età antica",
+    "livello": 3,
+    "testo": "In che anno l'Impero si divise definitivamente in Occidente e Oriente, alla morte di Teodosio?",
+    "opzioni": [
+      "Nel 313",
+      "Nel 476",
+      "Nel 395",
+      "Nel 1054"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-076",
+    "argomento": "Età antica",
+    "livello": 2,
+    "testo": "Quale popolo saccheggiò Roma nel 410, guidato da Alarico?",
+    "opzioni": [
+      "I Longobardi",
+      "I Vandali",
+      "Gli Unni",
+      "I Visigoti"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-077",
+    "argomento": "Età antica",
+    "livello": 3,
+    "testo": "Quale invasione del 452 provocò la fuga delle popolazioni nella laguna e la nascita di Venezia?",
+    "opzioni": [
+      "Quella degli Unni di Attila",
+      "Quella dei Franchi",
+      "Quella dei Vandali di Genserico",
+      "Quella degli Ostrogoti"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-078",
+    "argomento": "Età antica",
+    "livello": 2,
+    "testo": "Chi depose nel 476 l'ultimo imperatore d'Occidente, Romolo Augusto?",
+    "opzioni": [
+      "Teodorico",
+      "Odoacre",
+      "Alarico",
+      "Attila"
+    ],
+    "corretta": 1,
+    "spiegazione": "Odoacre non si proclamò imperatore ma re d'Italia.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-079",
+    "argomento": "Medioevo",
+    "livello": 4,
+    "testo": "Quale filosofo fu condannato a morte nel 524 durante le persecuzioni di Teodorico?",
+    "opzioni": [
+      "Tommaso d'Aquino",
+      "Sant'Agostino",
+      "Severino Boezio",
+      "Cassiodoro"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-080",
+    "argomento": "Medioevo",
+    "livello": 3,
+    "testo": "Quale imperatore d'Oriente avviò nel 535 la guerra gotica per riconquistare l'Italia?",
+    "opzioni": [
+      "Costantino",
+      "Eraclio",
+      "Teodosio",
+      "Giustiniano"
+    ],
+    "corretta": 3,
+    "spiegazione": "Con i generali Belisario e Narsete.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-081",
+    "argomento": "Medioevo",
+    "livello": 3,
+    "testo": "Chi fondò nel 529 l'abbazia di Montecassino?",
+    "opzioni": [
+      "San Benedetto da Norcia",
+      "San Romualdo",
+      "Papa Gregorio Magno",
+      "San Francesco d'Assisi"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-082",
+    "argomento": "Medioevo",
+    "livello": 3,
+    "testo": "Quale città divenne stabilmente capitale del regno longobardo?",
+    "opzioni": [
+      "Ravenna",
+      "Pavia",
+      "Benevento",
+      "Milano"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-083",
+    "argomento": "Medioevo",
+    "livello": 3,
+    "testo": "Come si chiama la prima raccolta di leggi scritte longobarde (643)?",
+    "opzioni": [
+      "Constitutio de feudis",
+      "Capitolare di Quierzy",
+      "Editto di Rotari",
+      "Codice di Giustiniano"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-084",
+    "argomento": "Medioevo",
+    "livello": 4,
+    "testo": "Quale regina avviò la conversione dei Longobardi al cattolicesimo?",
+    "opzioni": [
+      "Adelaide",
+      "Galla Placidia",
+      "Matilde di Canossa",
+      "Teodolinda"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-085",
+    "argomento": "Medioevo",
+    "livello": 4,
+    "testo": "Quale atto del 728 è considerato l'origine del potere temporale dei papi?",
+    "opzioni": [
+      "La Donazione di Sutri",
+      "La Prammatica Sanzione",
+      "La Donazione di Costantino",
+      "Il Concordato di Worms"
+    ],
+    "corretta": 0,
+    "spiegazione": "Con essa il re longobardo Liutprando cedette alcuni castelli al papa.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-086",
+    "argomento": "Medioevo",
+    "livello": 3,
+    "testo": "Quale re dei Franchi sconfisse Astolfo e donò al papa le terre dell'esarcato di Ravenna?",
+    "opzioni": [
+      "Carlo Martello",
+      "Pipino il Breve",
+      "Carlo Magno",
+      "Clodoveo"
+    ],
+    "corretta": 1,
+    "spiegazione": "Nacque così lo Stato della Chiesa.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-087",
+    "argomento": "Medioevo",
+    "livello": 3,
+    "testo": "In che anno Carlo Magno sconfisse definitivamente i Longobardi di Desiderio?",
+    "opzioni": [
+      "Nel 568",
+      "Nel 800",
+      "Nel 774",
+      "Nel 962"
+    ],
+    "corretta": 2,
+    "spiegazione": "Assunse il titolo di Re dei Franchi e dei Longobardi.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-088",
+    "argomento": "Medioevo",
+    "livello": 3,
+    "testo": "Dove sbarcarono per la prima volta gli Arabi in Sicilia, nell'827?",
+    "opzioni": [
+      "A Messina",
+      "A Siracusa",
+      "A Palermo",
+      "A Mazara del Vallo"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-089",
+    "argomento": "Medioevo",
+    "livello": 4,
+    "testo": "Quale battaglia del 915 fermò definitivamente l'espansione saracena nella penisola?",
+    "opzioni": [
+      "La battaglia del Garigliano",
+      "La battaglia di Lepanto",
+      "La battaglia di Legnano",
+      "La battaglia di Ostia"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-090",
+    "argomento": "Medioevo",
+    "livello": 3,
+    "testo": "Quale imperatore tedesco si cinse della corona italiana nel 951, sposando Adelaide?",
+    "opzioni": [
+      "Enrico IV",
+      "Ottone I",
+      "Carlo Magno",
+      "Federico Barbarossa"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-091",
+    "argomento": "Medioevo",
+    "livello": 3,
+    "testo": "Quali documenti (960-963) contengono le prime frasi ufficiali in volgare italiano?",
+    "opzioni": [
+      "L'Editto di Rotari",
+      "Le Costituzioni di Melfi",
+      "I Placiti cassinesi",
+      "Il Cantico delle creature"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-092",
+    "argomento": "Medioevo",
+    "livello": 2,
+    "testo": "Quali sono le quattro repubbliche marinare più note, i cui stemmi compaiono nella bandiera della Marina?",
+    "opzioni": [
+      "Ancona, Gaeta, Noli e Ragusa",
+      "Pisa, Livorno, Trieste e Venezia",
+      "Genova, Napoli, Bari e Venezia",
+      "Amalfi, Genova, Pisa e Venezia"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-093",
+    "argomento": "Medioevo",
+    "livello": 3,
+    "testo": "Quale papa bandì la prima crociata?",
+    "opzioni": [
+      "Urbano II",
+      "Innocenzo III",
+      "Bonifacio VIII",
+      "Gregorio VII"
+    ],
+    "corretta": 0,
+    "spiegazione": "La prima crociata conquistò Gerusalemme nel 1099.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-094",
+    "argomento": "Medioevo",
+    "livello": 3,
+    "testo": "Con quale accordo del 1122 si chiuse la lotta per le investiture?",
+    "opzioni": [
+      "La pace di Costanza",
+      "Il concordato di Worms",
+      "La pace di Lodi",
+      "Il trattato di Verdun"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-095",
+    "argomento": "Medioevo",
+    "livello": 3,
+    "testo": "Quale imperatore subì l'«umiliazione di Canossa»?",
+    "opzioni": [
+      "Federico II",
+      "Enrico VII",
+      "Enrico IV",
+      "Ottone III"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-096",
+    "argomento": "Medioevo",
+    "livello": 2,
+    "testo": "In che anno nacque l'Università di Bologna secondo la voce di Wikipedia?",
+    "opzioni": [
+      "Nel 1222",
+      "Nel 962",
+      "Nel 1303",
+      "Nel 1088"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-097",
+    "argomento": "Medioevo",
+    "livello": 3,
+    "testo": "Chi riunì nel 1130 i possedimenti normanni creando il Regno di Sicilia?",
+    "opzioni": [
+      "Ruggero II",
+      "Federico II",
+      "Tancredi di Lecce",
+      "Roberto il Guiscardo"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-098",
+    "argomento": "Medioevo",
+    "livello": 3,
+    "testo": "Quale magistrato forestiero fu introdotto nei comuni per porre fine alle lotte interne?",
+    "opzioni": [
+      "Il doge",
+      "Il podestà",
+      "Il console",
+      "Il gonfaloniere"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-099",
+    "argomento": "Medioevo",
+    "livello": 2,
+    "testo": "In quale battaglia la Lega Lombarda sconfisse Federico Barbarossa nel 1176?",
+    "opzioni": [
+      "Montaperti",
+      "Campaldino",
+      "Legnano",
+      "Benevento"
+    ],
+    "corretta": 2,
+    "spiegazione": "Con la pace di Costanza (1183) l'imperatore riconobbe l'autonomia dei comuni.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-100",
+    "argomento": "Medioevo",
+    "livello": 3,
+    "testo": "Oltre a Roma, quale città è citata nell'inno nazionale italiano?",
+    "opzioni": [
+      "Torino",
+      "Firenze",
+      "Milano",
+      "Legnano"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-101",
+    "argomento": "Medioevo",
+    "livello": 2,
+    "testo": "Chi è l'autore del Decameron?",
+    "opzioni": [
+      "Giovanni Boccaccio",
+      "Francesco Petrarca",
+      "Guido Cavalcanti",
+      "Dante Alighieri"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-102",
+    "argomento": "Medioevo",
+    "livello": 4,
+    "testo": "Quale re di Francia si scontrò con Bonifacio VIII, fino allo «schiaffo di Anagni» (1303)?",
+    "opzioni": [
+      "Luigi IX",
+      "Filippo IV il Bello",
+      "Francesco I",
+      "Carlo VIII"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-103",
+    "argomento": "Medioevo",
+    "livello": 3,
+    "testo": "Dove fu trasferita la sede papale nel 1305 da Clemente V?",
+    "opzioni": [
+      "A Parigi",
+      "A Viterbo",
+      "Ad Avignone",
+      "A Lione"
+    ],
+    "corretta": 2,
+    "spiegazione": "La «cattività avignonese» terminò nel 1377 con Gregorio XI.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-104",
+    "argomento": "Medioevo",
+    "livello": 4,
+    "testo": "Quale concilio pose fine allo Scisma d'Occidente?",
+    "opzioni": [
+      "Il Concilio di Pisa",
+      "Il Concilio di Trento",
+      "Il Concilio di Nicea",
+      "Il Concilio di Costanza (1414)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-105",
+    "argomento": "Medioevo",
+    "livello": 4,
+    "testo": "Chi guidò la breve repubblica romana del 1347-1354?",
+    "opzioni": [
+      "Cola di Rienzo",
+      "Stefano Porcari",
+      "Girolamo Savonarola",
+      "Arnaldo da Brescia"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-106",
+    "argomento": "Medioevo",
+    "livello": 3,
+    "testo": "Quale rivolta scoppiò a Palermo nel 1282 contro gli Angioini?",
+    "opzioni": [
+      "La rivolta di Masaniello",
+      "I Vespri siciliani",
+      "La congiura dei Pazzi",
+      "Il tumulto dei Ciompi"
+    ],
+    "corretta": 1,
+    "spiegazione": "Si conclusero con la pace di Caltabellotta (1302).",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-107",
+    "argomento": "Medioevo",
+    "livello": 4,
+    "testo": "Quale signore di Milano ottenne nel 1395 il titolo ereditario di duca?",
+    "opzioni": [
+      "Francesco Sforza",
+      "Ludovico il Moro",
+      "Gian Galeazzo Visconti",
+      "Giovanni Visconti"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-108",
+    "argomento": "Età moderna",
+    "livello": 3,
+    "testo": "In che anno Cosimo de' Medici affermò il proprio controllo su Firenze?",
+    "opzioni": [
+      "Nel 1378",
+      "Nel 1492",
+      "Nel 1569",
+      "Nel 1434"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-109",
+    "argomento": "Medioevo",
+    "livello": 4,
+    "testo": "Chi istituì il Ducato di Savoia nel 1416?",
+    "opzioni": [
+      "Amedeo VIII, designato duca dall'imperatore Sigismondo",
+      "Carlo Alberto",
+      "Umberto Biancamano",
+      "Emanuele Filiberto"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-110",
+    "argomento": "Età moderna",
+    "livello": 4,
+    "testo": "Quale città pugliese fu conquistata dai Turchi nel 1480?",
+    "opzioni": [
+      "Taranto",
+      "Otranto",
+      "Brindisi",
+      "Bari"
+    ],
+    "corretta": 1,
+    "spiegazione": "Fu riconquistata dagli Aragonesi dopo tredici mesi.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-111",
+    "argomento": "Età moderna",
+    "livello": 3,
+    "testo": "Quale re di Francia scese in Italia nel 1494, avviando le guerre d'Italia?",
+    "opzioni": [
+      "Francesco I",
+      "Luigi XII",
+      "Carlo VIII",
+      "Enrico II"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il 1494 segna la fine della politica dell'equilibrio.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-112",
+    "argomento": "Età moderna",
+    "livello": 3,
+    "testo": "In quale battaglia del 1495 la lega antifrancese costrinse Carlo VIII a ritirarsi?",
+    "opzioni": [
+      "Agnadello",
+      "Pavia",
+      "Marignano",
+      "Fornovo"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-113",
+    "argomento": "Età moderna",
+    "livello": 4,
+    "testo": "Quale episodio celebre avvenne durante il conflitto franco-spagnolo per Napoli all'inizio del Cinquecento?",
+    "opzioni": [
+      "La disfida di Barletta",
+      "La congiura dei Pazzi",
+      "Il sacco di Roma",
+      "I Vespri siciliani"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-114",
+    "argomento": "Età moderna",
+    "livello": 4,
+    "testo": "Contro quale Stato fu stipulata nel 1508 la Lega di Cambrai?",
+    "opzioni": [
+      "Lo Stato della Chiesa",
+      "La Repubblica di Venezia",
+      "Il Regno di Francia",
+      "Il Ducato di Milano"
+    ],
+    "corretta": 1,
+    "spiegazione": "Promossa da papa Giulio II.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-115",
+    "argomento": "Età moderna",
+    "livello": 3,
+    "testo": "In quale battaglia del 1525 fu fatto prigioniero il re di Francia Francesco I?",
+    "opzioni": [
+      "Fornovo",
+      "Marignano",
+      "Pavia",
+      "Lepanto"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-116",
+    "argomento": "Età moderna",
+    "livello": 2,
+    "testo": "Chi saccheggiò Roma nel maggio 1527?",
+    "opzioni": [
+      "I Francesi",
+      "I Turchi",
+      "Gli Spagnoli di Filippo II",
+      "I Lanzichenecchi, soldati imperiali"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-117",
+    "argomento": "Età moderna",
+    "livello": 3,
+    "testo": "Quale pace del 1559 pose fine alle guerre d'Italia tra Francia e Spagna?",
+    "opzioni": [
+      "La pace di Cateau-Cambrésis",
+      "La pace di Westfalia",
+      "La pace di Utrecht",
+      "La pace di Lodi"
+    ],
+    "corretta": 0,
+    "spiegazione": "Sancì l'egemonia spagnola su Milano, Napoli, Sicilia e Sardegna.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-118",
+    "argomento": "Età moderna",
+    "livello": 3,
+    "testo": "In che anno i Savoia trasferirono la capitale da Chambéry a Torino?",
+    "opzioni": [
+      "Nel 1416",
+      "Nel 1563",
+      "Nel 1861",
+      "Nel 1720"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-119",
+    "argomento": "Età moderna",
+    "livello": 2,
+    "testo": "In quale battaglia del 1571 la Lega Santa sconfisse la flotta ottomana?",
+    "opzioni": [
+      "Famagosta",
+      "Prevesa",
+      "Lepanto",
+      "Capo Passero"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-120",
+    "argomento": "Età moderna",
+    "livello": 4,
+    "testo": "Quale comandante veneziano difese Famagosta e fu torturato dagli Ottomani?",
+    "opzioni": [
+      "Andrea Doria",
+      "Francesco Morosini",
+      "Sebastiano Venier",
+      "Marcantonio Bragadin"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-121",
+    "argomento": "Età moderna",
+    "livello": 2,
+    "testo": "Chi guidò la rivolta popolare scoppiata a Napoli nel 1647 contro le gabelle spagnole?",
+    "opzioni": [
+      "Masaniello",
+      "Gennaro Annese",
+      "Tommaso Campanella",
+      "Pietro Micca"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-122",
+    "argomento": "Età moderna",
+    "livello": 3,
+    "testo": "Quale trattato del 1713 segnò il passaggio dell'egemonia in Italia dalla Spagna all'Austria?",
+    "opzioni": [
+      "Il trattato di Cateau-Cambrésis",
+      "Il trattato di Utrecht",
+      "Il trattato di Aquisgrana",
+      "Il trattato di Campoformio"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-123",
+    "argomento": "Età moderna",
+    "livello": 3,
+    "testo": "Quale eroe piemontese si sacrificò durante l'assedio di Torino del 1706?",
+    "opzioni": [
+      "Masaniello",
+      "Ciro Menotti",
+      "Pietro Micca",
+      "Balilla"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-124",
+    "argomento": "Età moderna",
+    "livello": 4,
+    "testo": "Con il trattato dell'Aia del 1720 i Savoia scambiarono la Sicilia con quale isola, diventando re di essa?",
+    "opzioni": [
+      "L'Elba",
+      "Malta",
+      "La Corsica",
+      "La Sardegna"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-125",
+    "argomento": "Età moderna",
+    "livello": 4,
+    "testo": "Quale ragazzo genovese diede inizio, con un sasso, alla rivolta contro gli Austriaci nel 1746?",
+    "opzioni": [
+      "Balilla",
+      "Pietro Micca",
+      "Masaniello",
+      "Goffredo Mameli"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-126",
+    "argomento": "Età moderna",
+    "livello": 3,
+    "testo": "A quale Stato Genova cedette la Corsica nel 1768?",
+    "opzioni": [
+      "All'Inghilterra",
+      "Alla Francia",
+      "Alla Spagna",
+      "Al Regno di Sardegna"
+    ],
+    "corretta": 1,
+    "spiegazione": "Con il trattato di Versailles.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-127",
+    "argomento": "Età moderna",
+    "livello": 2,
+    "testo": "Chi scrisse nel 1763-1764 il trattato «Dei delitti e delle pene»?",
+    "opzioni": [
+      "Pietro Verri",
+      "Ludovico Muratori",
+      "Cesare Beccaria",
+      "Gaetano Filangieri"
+    ],
+    "corretta": 2,
+    "spiegazione": "Proponeva l'abolizione della tortura e della pena di morte.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-128",
+    "argomento": "Età moderna",
+    "livello": 2,
+    "testo": "Quale scienziato italiano inventò la pila elettrica?",
+    "opzioni": [
+      "Evangelista Torricelli",
+      "Lazzaro Spallanzani",
+      "Luigi Galvani",
+      "Alessandro Volta"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-129",
+    "argomento": "Età moderna",
+    "livello": 4,
+    "testo": "Chi fu la prima donna autrice di un libro di matematica e titolare di una cattedra universitaria di matematica?",
+    "opzioni": [
+      "Maria Gaetana Agnesi",
+      "Laura Bassi",
+      "Elena Cornaro Piscopia",
+      "Maria Montessori"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-130",
+    "argomento": "Età napoleonica",
+    "livello": 3,
+    "testo": "Con quale trattato del 1797 la Repubblica di Venezia fu ceduta all'Austria?",
+    "opzioni": [
+      "Il trattato di Utrecht",
+      "Il trattato di Campoformio",
+      "Il trattato di Presburgo",
+      "Il congresso di Vienna"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-131",
+    "argomento": "Età napoleonica",
+    "livello": 3,
+    "testo": "Quale repubblica, riconosciuta a Campoformio, comprendeva Lombardia ed Emilia-Romagna?",
+    "opzioni": [
+      "La Repubblica Romana",
+      "La Repubblica Ligure",
+      "La Repubblica Cisalpina",
+      "La Repubblica Partenopea"
+    ],
+    "corretta": 2,
+    "spiegazione": "Nel 1802 divenne Repubblica Italiana e nel 1805 Regno d'Italia.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-132",
+    "argomento": "Età napoleonica",
+    "livello": 4,
+    "testo": "A chi Napoleone affidò il Regno di Napoli nel 1808?",
+    "opzioni": [
+      "A Giuseppe Bonaparte",
+      "A Eugenio di Beauharnais",
+      "A Elisa Bonaparte",
+      "A Gioacchino Murat"
+    ],
+    "corretta": 3,
+    "spiegazione": "Prima lo aveva retto il fratello Giuseppe (1806-1808).",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-133",
+    "argomento": "Età napoleonica",
+    "livello": 4,
+    "testo": "Chi era il viceré del Regno d'Italia napoleonico?",
+    "opzioni": [
+      "Eugenio di Beauharnais, figliastro di Napoleone",
+      "Giuseppe Bonaparte",
+      "Gioacchino Murat",
+      "Francesco Melzi d'Eril"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-134",
+    "argomento": "Età napoleonica",
+    "livello": 2,
+    "testo": "Dove fu esiliato Napoleone dopo l'abdicazione del 1814?",
+    "opzioni": [
+      "A Malta",
+      "All'Isola d'Elba",
+      "In Corsica",
+      "A Sant'Elena"
+    ],
+    "corretta": 1,
+    "spiegazione": "Dopo i Cento giorni sarebbe stato esiliato a Sant'Elena.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-135",
+    "argomento": "Età napoleonica",
+    "livello": 4,
+    "testo": "Quale istituto napoleonico era al vertice di ogni dipartimento del Regno d'Italia?",
+    "opzioni": [
+      "Il podestà",
+      "Il consiglio comunale",
+      "La prefettura",
+      "La questura"
+    ],
+    "corretta": 2,
+    "spiegazione": "Nel Regno di Napoli l'equivalente era l'intendenza.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-136",
+    "argomento": "Risorgimento",
+    "livello": 3,
+    "testo": "Dopo quale evento la storiografia fa iniziare di solito il Risorgimento come movimento?",
+    "opzioni": [
+      "La pace di Utrecht",
+      "La Rivoluzione francese",
+      "La spedizione dei Mille",
+      "Il Congresso di Vienna (1815)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Risorgimento».",
+    "fonte": "Wikipedia, «Risorgimento» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-137",
+    "argomento": "Risorgimento",
+    "livello": 3,
+    "testo": "Quando fu proclamata ufficialmente Roma capitale d'Italia?",
+    "opzioni": [
+      "Il 3 febbraio 1871",
+      "Il 17 marzo 1861",
+      "Il 2 giugno 1946",
+      "Il 20 settembre 1870"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il Parlamento lo aveva già stabilito il 27 marzo 1861.",
+    "fonte": "Wikipedia, «Risorgimento» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-138",
+    "argomento": "Risorgimento",
+    "livello": 2,
+    "testo": "Quali città insorsero nel marzo 1848 con le «Cinque giornate» e la rivolta del 22 marzo?",
+    "opzioni": [
+      "Roma e Firenze",
+      "Milano e Venezia",
+      "Torino e Genova",
+      "Napoli e Palermo"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Risorgimento».",
+    "fonte": "Wikipedia, «Risorgimento» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-139",
+    "argomento": "Risorgimento",
+    "livello": 3,
+    "testo": "In quali battaglie fu sconfitto Carlo Alberto nella prima guerra d'indipendenza?",
+    "opzioni": [
+      "Lissa e Custoza (1866)",
+      "Magenta e Solferino",
+      "Custoza e Novara",
+      "Calatafimi e Volturno"
+    ],
+    "corretta": 2,
+    "spiegazione": "Dopo Novara abdicò in favore di Vittorio Emanuele II.",
+    "fonte": "Wikipedia, «Risorgimento» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-140",
+    "argomento": "Risorgimento",
+    "livello": 4,
+    "testo": "Quale attentato a Napoleone III aprì la fase decisiva del 1859-1860?",
+    "opzioni": [
+      "L'attentato di Gaetano Bresci",
+      "L'attentato di Agesilao Milano",
+      "L'attentato di Guglielmo Oberdan",
+      "L'attentato di Felice Orsini"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Risorgimento».",
+    "fonte": "Wikipedia, «Risorgimento» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-141",
+    "argomento": "Risorgimento",
+    "livello": 2,
+    "testo": "Quali battaglie vinsero Franco-Piemontesi nella seconda guerra d'indipendenza (1859)?",
+    "opzioni": [
+      "Magenta e Solferino e San Martino",
+      "Calatafimi e Volturno",
+      "Caporetto e Vittorio Veneto",
+      "Custoza e Novara"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Risorgimento».",
+    "fonte": "Wikipedia, «Risorgimento» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-142",
+    "argomento": "Risorgimento",
+    "livello": 3,
+    "testo": "Con quale armistizio del 1859 Napoleone III interruppe la guerra, lasciando al Piemonte solo la Lombardia?",
+    "opzioni": [
+      "Cormons",
+      "Villafranca",
+      "Vignale",
+      "Campoformio"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Risorgimento».",
+    "fonte": "Wikipedia, «Risorgimento» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-143",
+    "argomento": "Risorgimento",
+    "livello": 2,
+    "testo": "Da dove salpò Garibaldi con i Mille e dove sbarcò?",
+    "opzioni": [
+      "Da Livorno, sbarcando a Palermo",
+      "Da La Spezia, sbarcando a Messina",
+      "Da Quarto (Liguria), sbarcando a Marsala l'11 maggio 1860",
+      "Da Genova, sbarcando a Napoli"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Risorgimento».",
+    "fonte": "Wikipedia, «Risorgimento» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-144",
+    "argomento": "Risorgimento",
+    "livello": 3,
+    "testo": "Qual fu la prima battaglia vinta dai garibaldini contro i borbonici, il 15 maggio 1860?",
+    "opzioni": [
+      "Aspromonte",
+      "Volturno",
+      "Milazzo",
+      "Calatafimi"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Risorgimento».",
+    "fonte": "Wikipedia, «Risorgimento» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-145",
+    "argomento": "Risorgimento",
+    "livello": 4,
+    "testo": "Con quale battaglia del 1° ottobre 1860 Garibaldi sottrasse definitivamente il Sud ai Borbone?",
+    "opzioni": [
+      "Battaglia del Volturno",
+      "Battaglia di Gaeta",
+      "Battaglia di Calatafimi",
+      "Battaglia di Mentana"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Risorgimento».",
+    "fonte": "Wikipedia, «Risorgimento» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-146",
+    "argomento": "Risorgimento",
+    "livello": 4,
+    "testo": "In quale battaglia navale del 1866 fu sconfitta la Marina italiana?",
+    "opzioni": [
+      "Lepanto",
+      "Lissa",
+      "Capo Passero",
+      "Capo Matapan"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Risorgimento».",
+    "fonte": "Wikipedia, «Risorgimento» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-147",
+    "argomento": "Risorgimento",
+    "livello": 4,
+    "testo": "Quale vittoria prussiana del 1866 determinò l'esito della terza guerra d'indipendenza?",
+    "opzioni": [
+      "Sedan",
+      "Lipsia",
+      "Sadowa",
+      "Waterloo"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Risorgimento».",
+    "fonte": "Wikipedia, «Risorgimento» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-148",
+    "argomento": "Prima guerra mondiale",
+    "livello": 2,
+    "testo": "Tra quali date si combatté la Prima guerra mondiale?",
+    "opzioni": [
+      "Dal 1° settembre 1939 all'8 maggio 1945",
+      "Dal 24 maggio 1915 al 4 novembre 1918 per tutti",
+      "Dal 1912 al 1913",
+      "Dal 28 luglio 1914 all'11 novembre 1918"
+    ],
+    "corretta": 3,
+    "spiegazione": "Per l'Italia la guerra iniziò il 24 maggio 1915.",
+    "fonte": "Wikipedia, «Prima guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-149",
+    "argomento": "Prima guerra mondiale",
+    "livello": 3,
+    "testo": "Lungo quale fiume si combatterono le principali offensive italiane del 1915-1917?",
+    "opzioni": [
+      "L'Isonzo",
+      "Il Tevere",
+      "L'Adige",
+      "Il Po"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Prima guerra mondiale».",
+    "fonte": "Wikipedia, «Prima guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-150",
+    "argomento": "Prima guerra mondiale",
+    "livello": 2,
+    "testo": "Su quale fiume ripiegò l'esercito italiano dopo la disfatta di Caporetto?",
+    "opzioni": [
+      "L'Isonzo",
+      "Il Piave",
+      "Il Tagliamento",
+      "Il Brenta"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Prima guerra mondiale».",
+    "fonte": "Wikipedia, «Prima guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-151",
+    "argomento": "Prima guerra mondiale",
+    "livello": 3,
+    "testo": "Quale presidente americano mantenne la neutralità degli Stati Uniti fino al 1917?",
+    "opzioni": [
+      "Franklin D. Roosevelt",
+      "Herbert Hoover",
+      "Thomas Woodrow Wilson",
+      "Theodore Roosevelt"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'affondamento del Lusitania e la guerra sottomarina tedesca portarono gli USA in guerra.",
+    "fonte": "Wikipedia, «Prima guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-152",
+    "argomento": "Prima guerra mondiale",
+    "livello": 3,
+    "testo": "Intorno a quale piazzaforte i Tedeschi lanciarono nel 1916 una grande battaglia di logoramento?",
+    "opzioni": [
+      "Gallipoli",
+      "Tannenberg",
+      "Ypres",
+      "Verdun"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Prima guerra mondiale».",
+    "fonte": "Wikipedia, «Prima guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-153",
+    "argomento": "Prima guerra mondiale",
+    "livello": 4,
+    "testo": "Con quale trattato la Russia rivoluzionaria uscì dalla guerra nel 1918?",
+    "opzioni": [
+      "Trattato di Brest-Litovsk",
+      "Trattato di Versailles",
+      "Trattato di Saint-Germain",
+      "Trattato di Rapallo"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Prima guerra mondiale».",
+    "fonte": "Wikipedia, «Prima guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-154",
+    "argomento": "Prima guerra mondiale",
+    "livello": 3,
+    "testo": "Quale presidente del Consiglio guidava l'Italia quando dichiarò guerra all'Austria-Ungheria nel 1915?",
+    "opzioni": [
+      "Giovanni Giolitti",
+      "Antonio Salandra",
+      "Vittorio Emanuele Orlando",
+      "Francesco Crispi"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Prima guerra mondiale».",
+    "fonte": "Wikipedia, «Prima guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-155",
+    "argomento": "Prima guerra mondiale",
+    "livello": 3,
+    "testo": "Che tipo di guerra caratterizzò soprattutto il primo conflitto mondiale?",
+    "opzioni": [
+      "Una guerra lampo di movimento",
+      "Una guerra solo navale",
+      "Una logorante guerra di trincea",
+      "Una guerra solo aerea"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Prima guerra mondiale».",
+    "fonte": "Wikipedia, «Prima guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-156",
+    "argomento": "Fascismo",
+    "livello": 2,
+    "testo": "Quale movimento fondò Mussolini nel 1919 con reduci, arditi e futuristi?",
+    "opzioni": [
+      "Il Partito Popolare",
+      "Il Partito Nazionale Fascista",
+      "L'Associazione nazionalista",
+      "I Fasci italiani di combattimento"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il Partito Nazionale Fascista nacque nel 1921.",
+    "fonte": "Wikipedia, «Fascismo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-157",
+    "argomento": "Fascismo",
+    "livello": 3,
+    "testo": "Come si chiamò la protesta dei deputati di opposizione che abbandonarono il Parlamento dopo il delitto Matteotti?",
+    "opzioni": [
+      "Secessione dell'Aventino",
+      "Biennio rosso",
+      "Patto di Palazzo Vidoni",
+      "Marcia su Roma"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Fascismo».",
+    "fonte": "Wikipedia, «Fascismo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-158",
+    "argomento": "Fascismo",
+    "livello": 4,
+    "testo": "In che anno il Gran Consiglio del Fascismo fu costituzionalizzato?",
+    "opzioni": [
+      "Nel 1922",
+      "Nel 1928",
+      "Nel 1919",
+      "Nel 1943"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Fascismo».",
+    "fonte": "Wikipedia, «Fascismo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-159",
+    "argomento": "Fascismo",
+    "livello": 3,
+    "testo": "Quale Stato si costituì nel Nord Italia dopo l'8 settembre 1943, riconosciuto solo dall'Asse?",
+    "opzioni": [
+      "La Repubblica di Salò democratica",
+      "Il Regno del Sud",
+      "La Repubblica Sociale Italiana",
+      "Il Territorio Libero di Trieste"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Fascismo».",
+    "fonte": "Wikipedia, «Fascismo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-160",
+    "argomento": "Fascismo",
+    "livello": 4,
+    "testo": "Formalmente, a quale istituzione restò subordinato il regime fascista?",
+    "opzioni": [
+      "Alla Società delle Nazioni",
+      "Al Papa",
+      "Al Parlamento eletto a suffragio universale",
+      "Alla monarchia sabauda e allo Statuto del Regno"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Fascismo».",
+    "fonte": "Wikipedia, «Fascismo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-161",
+    "argomento": "Seconda guerra mondiale",
+    "livello": 3,
+    "testo": "Come si chiamò l'invasione tedesca dell'Unione Sovietica nel 1941?",
+    "opzioni": [
+      "Operazione Barbarossa",
+      "Operazione Torch",
+      "Operazione Leone marino",
+      "Operazione Overlord"
+    ],
+    "corretta": 0,
+    "spiegazione": "Hitler ruppe così il patto Molotov-Ribbentrop.",
+    "fonte": "Wikipedia, «Seconda guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-162",
+    "argomento": "Seconda guerra mondiale",
+    "livello": 2,
+    "testo": "Quale attacco giapponese portò gli Stati Uniti in guerra nel dicembre 1941?",
+    "opzioni": [
+      "Lo sbarco a Okinawa",
+      "L'attacco di Pearl Harbor",
+      "L'invasione delle Filippine",
+      "La battaglia delle Midway"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Seconda guerra mondiale».",
+    "fonte": "Wikipedia, «Seconda guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-163",
+    "argomento": "Seconda guerra mondiale",
+    "livello": 2,
+    "testo": "Quando iniziò lo sbarco in Normandia (operazione Overlord)?",
+    "opzioni": [
+      "Il 10 luglio 1943",
+      "L'8 settembre 1943",
+      "Il 6 giugno 1944",
+      "Il 25 aprile 1945"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Seconda guerra mondiale».",
+    "fonte": "Wikipedia, «Seconda guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-164",
+    "argomento": "Seconda guerra mondiale",
+    "livello": 3,
+    "testo": "Quale località egiziana fu teatro delle battaglie decisive tra Asse e britannici nel 1942?",
+    "opzioni": [
+      "Tobruk",
+      "Alessandria",
+      "Il Cairo",
+      "El Alamein"
+    ],
+    "corretta": 3,
+    "spiegazione": "Era l'ultimo ostacolo geografico prima del Cairo.",
+    "fonte": "Wikipedia, «Seconda guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-165",
+    "argomento": "Seconda guerra mondiale",
+    "livello": 3,
+    "testo": "Quando fu fondata l'ONU, al termine della Conferenza di San Francisco?",
+    "opzioni": [
+      "Il 26 giugno 1945",
+      "Il 4 aprile 1949",
+      "Il 1° settembre 1939",
+      "Il 10 dicembre 1948"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Seconda guerra mondiale».",
+    "fonte": "Wikipedia, «Seconda guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-166",
+    "argomento": "Seconda guerra mondiale",
+    "livello": 2,
+    "testo": "Come si chiamavano i due schieramenti della Seconda guerra mondiale?",
+    "opzioni": [
+      "NATO e Patto di Varsavia",
+      "Potenze dell'Asse e Alleati",
+      "Triplice alleanza e Triplice intesa",
+      "Imperi centrali e Intesa"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Seconda guerra mondiale».",
+    "fonte": "Wikipedia, «Seconda guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-167",
+    "argomento": "Seconda guerra mondiale",
+    "livello": 3,
+    "testo": "Quale paese aderì al Patto tripartito nel 1941 ma, dopo un colpo di Stato a Belgrado, fu invaso dalla Germania?",
+    "opzioni": [
+      "L'Ungheria",
+      "La Grecia",
+      "La Jugoslavia",
+      "La Bulgaria"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Seconda guerra mondiale».",
+    "fonte": "Wikipedia, «Seconda guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-168",
+    "argomento": "Repubblica",
+    "livello": 3,
+    "testo": "Dove andò in esilio Umberto II dopo il referendum del 1946?",
+    "opzioni": [
+      "In Svizzera",
+      "In Francia",
+      "In Spagna",
+      "In Portogallo"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il governo De Gasperi dichiarò decaduta la monarchia nella notte tra il 12 e il 13 giugno.",
+    "fonte": "Wikipedia, «Storia dell'Italia repubblicana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-169",
+    "argomento": "Repubblica",
+    "livello": 3,
+    "testo": "Chi assunse temporaneamente le funzioni di capo dello Stato nel giugno 1946?",
+    "opzioni": [
+      "Alcide De Gasperi",
+      "Palmiro Togliatti",
+      "Luigi Einaudi",
+      "Enrico De Nicola"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Storia dell'Italia repubblicana».",
+    "fonte": "Wikipedia, «Storia dell'Italia repubblicana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-170",
+    "argomento": "Repubblica",
+    "livello": 2,
+    "testo": "Quale programma statunitense finanziò la ricostruzione europea nel dopoguerra?",
+    "opzioni": [
+      "La Dottrina Monroe",
+      "Il Piano Marshall",
+      "Il New Deal",
+      "Il Piano Schuman"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Storia dell'Italia repubblicana».",
+    "fonte": "Wikipedia, «Storia dell'Italia repubblicana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-171",
+    "argomento": "Repubblica",
+    "livello": 2,
+    "testo": "In che anno l'Italia aderì alla NATO?",
+    "opzioni": [
+      "Nel 1946",
+      "Nel 1955",
+      "Nel 1949",
+      "Nel 1957"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Storia dell'Italia repubblicana».",
+    "fonte": "Wikipedia, «Storia dell'Italia repubblicana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-172",
+    "argomento": "Repubblica",
+    "livello": 3,
+    "testo": "In che anno l'Italia fu ammessa alle Nazioni Unite?",
+    "opzioni": [
+      "Nel 1945",
+      "Nel 1960",
+      "Nel 1949",
+      "Nel 1955"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Storia dell'Italia repubblicana».",
+    "fonte": "Wikipedia, «Storia dell'Italia repubblicana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-173",
+    "argomento": "Repubblica",
+    "livello": 3,
+    "testo": "Quale ente fu istituito per ridurre il divario tra Nord e Sud nel dopoguerra?",
+    "opzioni": [
+      "La Cassa per il Mezzogiorno",
+      "La Cassa depositi e prestiti",
+      "L'ENI",
+      "L'IRI"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Storia dell'Italia repubblicana».",
+    "fonte": "Wikipedia, «Storia dell'Italia repubblicana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-174",
+    "argomento": "Repubblica",
+    "livello": 3,
+    "testo": "In che anno fu introdotta in Italia la legge sul divorzio?",
+    "opzioni": [
+      "Nel 1978",
+      "Nel 1970",
+      "Nel 1946",
+      "Nel 1981"
+    ],
+    "corretta": 1,
+    "spiegazione": "Approvata da una maggioranza trasversale, esclusi DC e MSI.",
+    "fonte": "Wikipedia, «Storia dell'Italia repubblicana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-175",
+    "argomento": "Repubblica",
+    "livello": 2,
+    "testo": "Come fu chiamato lo scandalo delle tangenti scoperto dall'inchiesta «Mani pulite»?",
+    "opzioni": [
+      "P2",
+      "Calciopoli",
+      "Tangentopoli",
+      "Scandalo Lockheed"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Storia dell'Italia repubblicana».",
+    "fonte": "Wikipedia, «Storia dell'Italia repubblicana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-176",
+    "argomento": "Repubblica",
+    "livello": 3,
+    "testo": "Quale periodo di forte crescita del PIL italiano è noto come «miracolo economico»?",
+    "opzioni": [
+      "Gli anni Venti",
+      "Il periodo 2001-2008",
+      "Gli anni Novanta",
+      "Il boom tra la fine degli anni Cinquanta e i primi anni Sessanta"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Storia dell'Italia repubblicana».",
+    "fonte": "Wikipedia, «Storia dell'Italia repubblicana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-177",
+    "argomento": "Guerra fredda",
+    "livello": 2,
+    "testo": "Perché la Guerra fredda è detta «fredda»?",
+    "opzioni": [
+      "Perché non vi furono combattimenti diretti su larga scala tra le superpotenze",
+      "Perché si combatté in Siberia",
+      "Perché fu combattuta solo in mare",
+      "Perché durò solo d'inverno"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Guerra fredda».",
+    "fonte": "Wikipedia, «Guerra fredda» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-178",
+    "argomento": "Guerra fredda",
+    "livello": 3,
+    "testo": "Quale crisi del 1962 portò il mondo vicino a un conflitto nucleare?",
+    "opzioni": [
+      "La guerra di Corea",
+      "La crisi dei missili di Cuba",
+      "La crisi di Suez",
+      "Il blocco di Berlino"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Guerra fredda».",
+    "fonte": "Wikipedia, «Guerra fredda» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-179",
+    "argomento": "Guerra fredda",
+    "livello": 3,
+    "testo": "Quale diplomatico americano inviò nel 1946 il «lungo telegramma» che ispirò la politica di contenimento?",
+    "opzioni": [
+      "Dean Acheson",
+      "George Marshall",
+      "George Frost Kennan",
+      "Henry Kissinger"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Guerra fredda».",
+    "fonte": "Wikipedia, «Guerra fredda» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-180",
+    "argomento": "Guerra fredda",
+    "livello": 2,
+    "testo": "Quali eventi segnarono la fine della Guerra fredda?",
+    "opzioni": [
+      "La fine della guerra di Corea",
+      "La nascita della NATO e del Patto di Varsavia",
+      "La crisi di Cuba e la guerra del Vietnam",
+      "La caduta del Muro di Berlino (1989) e la dissoluzione dell'URSS (1991)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Guerra fredda».",
+    "fonte": "Wikipedia, «Guerra fredda» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-181",
+    "argomento": "Guerra fredda",
+    "livello": 3,
+    "testo": "Quale processo di riduzione delle tensioni tra i blocchi si avviò dagli anni Settanta?",
+    "opzioni": [
+      "La distensione",
+      "La perestrojka",
+      "Il riarmo",
+      "Il containment"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Guerra fredda».",
+    "fonte": "Wikipedia, «Guerra fredda» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-182",
+    "argomento": "Integrazione europea",
+    "livello": 2,
+    "testo": "Chi sono gli autori del Manifesto di Ventotene?",
+    "opzioni": [
+      "Carlo Rosselli e Piero Gobetti",
+      "Altiero Spinelli, Ernesto Rossi ed Eugenio Colorni",
+      "Alcide De Gasperi e Robert Schuman",
+      "Jean Monnet e Konrad Adenauer"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Storia dell'Unione europea».",
+    "fonte": "Wikipedia, «Storia dell'Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-183",
+    "argomento": "Integrazione europea",
+    "livello": 3,
+    "testo": "Quale ministro francese propose il piano da cui nacque la CECA?",
+    "opzioni": [
+      "Charles de Gaulle",
+      "Jean Monnet",
+      "Robert Schuman",
+      "François Mitterrand"
+    ],
+    "corretta": 2,
+    "spiegazione": "La CECA fu ideata da Jean Monnet; il piano prende il nome da Schuman.",
+    "fonte": "Wikipedia, «Storia dell'Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-184",
+    "argomento": "Integrazione europea",
+    "livello": 3,
+    "testo": "Perché la Costituzione europea non entrò mai in vigore?",
+    "opzioni": [
+      "Perché l'Italia non la ratificò",
+      "Perché non fu mai firmata",
+      "Perché la bocciò la Corte di giustizia",
+      "Per il voto contrario nei referendum, a partire da quello francese"
+    ],
+    "corretta": 3,
+    "spiegazione": "Fu poi sostituita dal Trattato di Lisbona.",
+    "fonte": "Wikipedia, «Storia dell'Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-185",
+    "argomento": "Integrazione europea",
+    "livello": 4,
+    "testo": "Quale atto degli anni Ottanta rilanciò il processo di integrazione europea verso il mercato unico?",
+    "opzioni": [
+      "L'Atto unico europeo",
+      "Il Trattato di Amsterdam",
+      "Il Trattato di Nizza",
+      "Il Piano Werner"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Storia dell'Unione europea».",
+    "fonte": "Wikipedia, «Storia dell'Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-186",
+    "argomento": "Integrazione europea",
+    "livello": 4,
+    "testo": "Quale premier britannico, eletto nel 1979, chiese di contribuire meno al bilancio comunitario?",
+    "opzioni": [
+      "John Major",
+      "Margaret Thatcher",
+      "Harold Wilson",
+      "Tony Blair"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Storia dell'Unione europea».",
+    "fonte": "Wikipedia, «Storia dell'Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-187",
+    "argomento": "Italia liberale",
+    "livello": 3,
+    "testo": "Quale questione tenne banco nei primi anni dopo l'Unità, insieme al brigantaggio?",
+    "opzioni": [
+      "La questione balcanica",
+      "La questione d'Oriente",
+      "La questione meridionale",
+      "La questione sociale inglese"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il brigantaggio fu intenso soprattutto tra il 1861 e il 1865.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-188",
+    "argomento": "Italia liberale",
+    "livello": 3,
+    "testo": "Da quali ceti era composta principalmente la Destra storica?",
+    "opzioni": [
+      "Dal clero",
+      "Dai braccianti agricoli",
+      "Dagli operai industriali",
+      "Dall'alta borghesia e dai proprietari terrieri"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-189",
+    "argomento": "Italia liberale",
+    "livello": 3,
+    "testo": "Chi guidò la Sinistra storica, al governo dal 1876?",
+    "opzioni": [
+      "Agostino Depretis",
+      "Giovanni Giolitti",
+      "Francesco Crispi",
+      "Marco Minghetti"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-190",
+    "argomento": "Italia liberale",
+    "livello": 3,
+    "testo": "Chi successe a Vittorio Emanuele II sul trono d'Italia?",
+    "opzioni": [
+      "Vittorio Emanuele III",
+      "Umberto I",
+      "Umberto II",
+      "Carlo Alberto"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-191",
+    "argomento": "Italia liberale",
+    "livello": 3,
+    "testo": "Quale obiettivo abbandonò la Sinistra storica rispetto alla Destra?",
+    "opzioni": [
+      "La conquista di Roma",
+      "La monarchia",
+      "Il pareggio di bilancio",
+      "L'unità nazionale"
+    ],
+    "corretta": 2,
+    "spiegazione": "Avviò invece politiche di democratizzazione e ammodernamento.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-192",
+    "argomento": "Italia liberale",
+    "livello": 2,
+    "testo": "In quale battaglia del 1896 l'Italia subì una pesante sconfitta in Etiopia?",
+    "opzioni": [
+      "El Alamein",
+      "Caporetto",
+      "Dogali",
+      "Adua"
+    ],
+    "corretta": 3,
+    "spiegazione": "Fu uno dei pochi successi della resistenza africana al colonialismo europeo.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-193",
+    "argomento": "Italia liberale",
+    "livello": 3,
+    "testo": "Quale riforma elettorale è tra i provvedimenti più importanti di Giolitti?",
+    "opzioni": [
+      "Il suffragio universale maschile",
+      "Il voto alle donne",
+      "L'abolizione del Senato",
+      "Il sistema proporzionale puro"
+    ],
+    "corretta": 0,
+    "spiegazione": "Giolitti promosse anche la legislazione sociale e la nazionalizzazione delle ferrovie.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-194",
+    "argomento": "Italia liberale",
+    "livello": 3,
+    "testo": "Quali territori occupò l'Italia dopo la guerra italo-turca (1911-1912)?",
+    "opzioni": [
+      "Rodi e Creta soltanto",
+      "La Libia e il Dodecaneso",
+      "L'Albania e la Dalmazia",
+      "L'Eritrea e la Somalia"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-195",
+    "argomento": "Prima guerra mondiale",
+    "livello": 4,
+    "testo": "Cosa prometteva all'Italia il Patto di Londra del 1915, in caso di vittoria?",
+    "opzioni": [
+      "La Corsica e Nizza",
+      "La Libia e la Tunisia",
+      "Trentino, Alto Adige, Venezia Giulia, Istria e Dalmazia settentrionale (Fiume esclusa)",
+      "Fiume e tutta la Dalmazia"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-196",
+    "argomento": "Fascismo",
+    "livello": 3,
+    "testo": "Quale espressione della propaganda nazionalista indicava l'insoddisfazione per i risultati della pace del 1919?",
+    "opzioni": [
+      "Pace senza vittoria",
+      "Pace cartaginese",
+      "Vittoria di Pirro",
+      "Vittoria mutilata"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-197",
+    "argomento": "Fascismo",
+    "livello": 3,
+    "testo": "Come si chiamò l'intesa politico-militare tra Italia e Germania del 1936?",
+    "opzioni": [
+      "Asse Roma-Berlino",
+      "Patto anticomintern",
+      "Triplice alleanza",
+      "Patto d'acciaio"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-198",
+    "argomento": "Fascismo",
+    "livello": 4,
+    "testo": "Come è ricordato il periodo di agitazioni sindacali e operaie del 1919-1920 in Italia?",
+    "opzioni": [
+      "Autunno caldo",
+      "Biennio rosso",
+      "Anni di piombo",
+      "Settimana rossa"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-199",
+    "argomento": "Repubblica",
+    "livello": 2,
+    "testo": "Quando entrò in vigore l'attuale Costituzione italiana?",
+    "opzioni": [
+      "Il 22 dicembre 1947",
+      "Il 25 aprile 1945",
+      "Il 1° gennaio 1948",
+      "Il 2 giugno 1946"
+    ],
+    "corretta": 2,
+    "spiegazione": "Fu approvata il 22 dicembre 1947 e promulgata il 27 dicembre.",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-200",
+    "argomento": "Repubblica",
+    "livello": 3,
+    "testo": "Chi successe a Enrico De Nicola come Presidente della Repubblica?",
+    "opzioni": [
+      "Antonio Segni",
+      "Giovanni Gronchi",
+      "Alcide De Gasperi",
+      "Luigi Einaudi"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-201",
+    "argomento": "Repubblica",
+    "livello": 3,
+    "testo": "Quali due esponenti DC erano definiti i «cavalli di razza» del partito?",
+    "opzioni": [
+      "Aldo Moro e Amintore Fanfani",
+      "Ciriaco De Mita e Arnaldo Forlani",
+      "Mariano Rumor e Emilio Colombo",
+      "Alcide De Gasperi e Giulio Andreotti"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-202",
+    "argomento": "Repubblica",
+    "livello": 3,
+    "testo": "Di quale gruppo di grandi economie l'Italia fu tra i fondatori nel 1975?",
+    "opzioni": [
+      "Il Commonwealth",
+      "Il G6 (poi G7)",
+      "Il Patto di Varsavia",
+      "L'OPEC"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Storia d'Italia».",
+    "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  }
+]

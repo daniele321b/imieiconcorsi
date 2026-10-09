@@ -1,5 +1,7 @@
 import {
   AdminAddUserToGroupCommand,
+  AdminDeleteUserCommand,
+  AdminListGroupsForUserCommand,
   AdminRemoveUserFromGroupCommand,
   AdminUpdateUserAttributesCommand,
   CognitoIdentityProviderClient,
@@ -26,6 +28,12 @@ export async function impostaPianoCognito(username: string, piano: PianoId) {
   }
 }
 
+/** Gruppi Cognito attuali di un utente (piano e admin), letti al momento. */
+export async function gruppiDi(username: string) {
+  const res = await cognito.send(new AdminListGroupsForUserCommand({ UserPoolId: userPoolId(), Username: username, Limit: 60 }));
+  return (res.Groups ?? []).map((g) => g.GroupName!);
+}
+
 export async function impostaGruppo(username: string, gruppo: string, presente: boolean) {
   const Command = presente ? AdminAddUserToGroupCommand : AdminRemoveUserFromGroupCommand;
   await cognito.send(new Command({ UserPoolId: userPoolId(), Username: username, GroupName: gruppo }));
@@ -39,6 +47,10 @@ export async function aggiornaNome(username: string, nome: string) {
       UserAttributes: [{ Name: "name", Value: nome }],
     }),
   );
+}
+
+export async function eliminaUtenteCognito(username: string) {
+  await cognito.send(new AdminDeleteUserCommand({ UserPoolId: userPoolId(), Username: username }));
 }
 
 /** Tutti gli utenti di un gruppo, pagina per pagina (60 alla volta). */

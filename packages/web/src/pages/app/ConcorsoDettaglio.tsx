@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Link, useParams } from "react-router";
 import { IconaMateria } from "../../components/brand";
 import { Alert, Badge, Button, Card, Spinner, UpgradeBanner, cx } from "../../components/ui";
-import { useApi, type ConcorsoApi } from "../../lib/api";
+import { api, ApiError, useApi, type ConcorsoApi } from "../../lib/api";
 import { useUtente } from "../../lib/auth";
 import { data, giorniA, scadenzaTesto, tipoProcedura } from "../../lib/format";
 import { useAvviaSessione } from "../../lib/sessioni";
@@ -39,6 +39,13 @@ export function ConcorsoDettaglio() {
         <p className="text-sm font-semibold tracking-wide text-brand-600 uppercase">{concorso.ente}</p>
         <h1 className="mt-2 text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl">{concorso.figura ?? concorso.titolo}</h1>
         {concorso.figura && <p className="mt-2 text-slate-500">{concorso.titolo}</p>}
+        {giorni !== undefined && giorni < 0 && (
+          <p className="mt-3 rounded-xl bg-amber-50 px-3 py-2 text-sm text-amber-900 ring-1 ring-amber-200">
+            {concorso.conclusoIl
+              ? "Concorso concluso."
+              : `Le domande di partecipazione si sono chiuse il ${data(concorso.scadenza)}: se le hai inviate, continua pure a prepararti con studio e simulazioni.`}
+          </p>
+        )}
 
         <div className="mt-5 flex flex-wrap gap-2">
           <Badge tone={giorni !== undefined && giorni <= 7 ? "red" : "brand"}>
@@ -71,6 +78,13 @@ export function ConcorsoDettaglio() {
           >
             Bando su inPA <ExternalLink className="size-4" />
           </a>
+          {utente.admin && giorni !== undefined && giorni < 0 && (
+            <SegnaConcluso
+              id={concorso.id}
+              concluso={!!concorso.conclusoIl}
+              onCambio={(conclusoIl) => setData((c) => c && { ...c, conclusoIl })}
+            />
+          )}
         </div>
       </header>
 
@@ -140,8 +154,23 @@ export function ConcorsoDettaglio() {
             <Timer className="size-6 text-accent-300" />
             <h2 className="mt-3 text-lg font-bold">Simulazione d'esame</h2>
             <p className="mt-1 text-sm text-brand-100">
-              Domande su tutte le materie del bando, un minuto a domanda. Risposta giusta +1, sbagliata −0,25, non data 0.
+              {concorso.bancaDati && utente.limiti.bancheDati
+                ? "Domande della banca dati ufficiale del concorso, un minuto a domanda."
+                : "Domande su tutte le materie del bando, un minuto a domanda."}{" "}
+              Risposta giusta +1, sbagliata −0,25, non data 0.
             </p>
+            {concorso.bancaDati && (
+              <p className="mt-3 rounded-xl bg-white/10 px-3 py-2 text-xs text-brand-100">
+                {utente.limiti.bancheDati ? (
+                  <>Banca dati ufficiale disponibile: la simulazione usa le domande ufficiali.</>
+                ) : (
+                  <>
+                    È uscita la banca dati ufficiale: con <Link to="/app/piani" className="font-semibold text-white underline">Medium o Pro</Link> la
+                    simulazione usa le domande ufficiali.
+                  </>
+                )}
+              </p>
+            )}
             <div className="mt-5 grid grid-cols-3 gap-2" role="radiogroup" aria-label="Numero di domande">
               {LUNGHEZZE.map((n) => (
                 <button
@@ -176,5 +205,31 @@ export function ConcorsoDettaglio() {
         </aside>
       </div>
     </div>
+  );
+}
+
+/** Admin: il concorso è finito e non compare più nemmeno tra i bandi con le domande chiuse. */
+function SegnaConcluso({ id, concluso, onCambio }: { id: string; concluso: boolean; onCambio: (conclusoIl?: string) => void }) {
+  const [inCorso, setInCorso] = useState(false);
+  const [errore, setErrore] = useState<string>();
+  async function cambia() {
+    setInCorso(true);
+    setErrore(undefined);
+    try {
+      await api(`/admin/concorsi/${encodeURIComponent(id)}/concluso`, { method: "PUT", body: { concluso: !concluso } });
+      onCambio(concluso ? undefined : new Date().toISOString());
+    } catch (err) {
+      setErrore(err instanceof ApiError ? err.message : "Errore di rete");
+    } finally {
+      setInCorso(false);
+    }
+  }
+  return (
+    <span className="inline-flex items-center gap-2">
+      <Button variant="ghost" loading={inCorso} onClick={() => void cambia()}>
+        {concluso ? "Admin: riapri il concorso" : "Admin: segna come concluso"}
+      </Button>
+      {errore && <span className="text-sm text-rose-600">{errore}</span>}
+    </span>
   );
 }

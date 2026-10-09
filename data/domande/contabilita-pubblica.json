@@ -1,0 +1,3402 @@
+[
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-001",
+    "argomento": "Ciclo di bilancio",
+    "livello": 2,
+    "testo": "Entro quale data il Governo presenta alle Camere il Documento di economia e finanza (DEF)?",
+    "opzioni": [
+      "Entro il 10 aprile",
+      "Entro il 30 giugno",
+      "Entro il 20 ottobre",
+      "Entro il 27 settembre"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 7 L. 196/2009: DEF entro il 10 aprile, Nota di aggiornamento entro il 27 settembre, disegno di legge di bilancio entro il 20 ottobre, assestamento entro il 30 giugno.",
+    "fonte": "L. 196/2009, art. 7",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-002",
+    "argomento": "Ciclo di bilancio",
+    "livello": 2,
+    "testo": "Entro quale data va presentato alle Camere il disegno di legge di bilancio dello Stato?",
+    "opzioni": [
+      "Entro il 31 dicembre",
+      "Entro il 20 ottobre",
+      "Entro il 30 giugno",
+      "Entro il 10 aprile"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 7 L. 196/2009: il disegno di legge del bilancio dello Stato si presenta entro il 20 ottobre di ogni anno.",
+    "fonte": "L. 196/2009, art. 7",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-003",
+    "argomento": "Ciclo di bilancio",
+    "livello": 3,
+    "testo": "Entro quale data va presentata la Nota di aggiornamento del DEF?",
+    "opzioni": [
+      "Entro il 31 luglio",
+      "Entro il 15 novembre",
+      "Entro il 27 settembre",
+      "Entro il 10 aprile"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 7 L. 196/2009, nel testo vigente: la Nota di aggiornamento del DEF si presenta entro il 27 settembre.",
+    "fonte": "L. 196/2009, art. 7",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-004",
+    "argomento": "Ciclo di bilancio",
+    "livello": 3,
+    "testo": "Entro quale data va presentato il disegno di legge di assestamento del bilancio dello Stato?",
+    "opzioni": [
+      "Entro il 31 dicembre",
+      "Entro il 31 marzo",
+      "Entro il 27 settembre",
+      "Entro il 30 giugno"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 7 L. 196/2009: l'assestamento si presenta entro il 30 giugno di ogni anno.",
+    "fonte": "L. 196/2009, art. 7",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-005",
+    "argomento": "Ciclo di bilancio",
+    "livello": 4,
+    "testo": "Entro quando vanno presentati gli eventuali disegni di legge collegati alla manovra di finanza pubblica?",
+    "opzioni": [
+      "Entro il mese di gennaio",
+      "Contestualmente al bilancio, il 20 ottobre",
+      "Entro il 10 aprile",
+      "Entro il 31 dicembre"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 7 L. 196/2009: i collegati alla manovra si presentano entro il mese di gennaio di ogni anno.",
+    "fonte": "L. 196/2009, art. 7",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-006",
+    "argomento": "Principi costituzionali",
+    "livello": 2,
+    "testo": "Quale principio sancisce oggi il primo comma dell'art. 81 della Costituzione?",
+    "opzioni": [
+      "Il pareggio di bilancio senza eccezioni",
+      "L'equilibrio tra le entrate e le spese del bilancio, tenendo conto del ciclo economico",
+      "Il divieto assoluto di ricorso all'indebitamento",
+      "La libertà di spesa del Governo"
+    ],
+    "corretta": 1,
+    "spiegazione": "Dopo la legge costituzionale 1/2012 lo Stato assicura l'equilibrio tra entrate e spese tenendo conto delle fasi avverse e favorevoli del ciclo economico.",
+    "fonte": "Contabilità pubblica (Wikipedia, CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-007",
+    "argomento": "Principi costituzionali",
+    "livello": 3,
+    "testo": "Cosa è possibile, secondo l'art. 81 Cost., se il bilancio non è approvato entro la fine dell'esercizio precedente?",
+    "opzioni": [
+      "La gestione commissariale",
+      "L'applicazione del bilancio dell'anno prima senza limiti",
+      "L'esercizio provvisorio",
+      "Lo scioglimento delle Camere"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'art. 81 ammette l'esercizio provvisorio del bilancio, concesso per legge e per periodi limitati, in caso di mancata approvazione nei termini.",
+    "fonte": "Contabilità pubblica (Wikipedia, CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-008",
+    "argomento": "Principi costituzionali",
+    "livello": 3,
+    "testo": "La legge di approvazione del bilancio può istituire nuovi tributi o nuove spese?",
+    "opzioni": [
+      "Sì, ma solo nuove spese",
+      "Sì, se approvata a maggioranza assoluta",
+      "Sì, sempre",
+      "No, per l'art. 81 Cost. non può"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'art. 81 vieta di istituire nuove entrate tributarie o nuove spese con la legge di approvazione del bilancio.",
+    "fonte": "Contabilità pubblica (Wikipedia, CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-009",
+    "argomento": "Principi costituzionali",
+    "livello": 2,
+    "testo": "Quale obbligo impone l'art. 81 Cost. a ogni legge che comporta nuove spese?",
+    "opzioni": [
+      "Indicare i mezzi per farvi fronte (copertura finanziaria)",
+      "Ottenere il parere della Corte dei conti",
+      "Essere approvata con referendum",
+      "Essere approvata entro il 31 dicembre"
+    ],
+    "corretta": 0,
+    "spiegazione": "Ogni legge che importi nuovi o maggiori oneri provvede ai mezzi per farvi fronte: è l'obbligo di copertura finanziaria.",
+    "fonte": "Contabilità pubblica (Wikipedia, CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-010",
+    "argomento": "Principi costituzionali",
+    "livello": 1,
+    "testo": "Il principio per cui il bilancio si riferisce a un singolo anno si chiama principio di:",
+    "opzioni": [
+      "universalità",
+      "annualità",
+      "unità",
+      "integrità"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'art. 81 Cost. prevede il principio di annualità: le Camere approvano ogni anno il bilancio e il rendiconto.",
+    "fonte": "Contabilità pubblica (Wikipedia, CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-011",
+    "argomento": "Equilibrio di bilancio",
+    "livello": 3,
+    "testo": "Quale organismo indipendente, istituito dalla L. 243/2012, analizza e verifica gli andamenti di finanza pubblica?",
+    "opzioni": [
+      "La Banca d'Italia",
+      "L'ISTAT",
+      "L'Ufficio parlamentare di bilancio",
+      "La Ragioneria generale dello Stato"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 16 L. 243/2012: è istituito presso le Camere l'Ufficio parlamentare di bilancio, organismo indipendente.",
+    "fonte": "L. 243/2012, art. 16",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-012",
+    "argomento": "Equilibrio di bilancio",
+    "livello": 2,
+    "testo": "Secondo l'art. 3 della L. 243/2012, chi concorre ad assicurare l'equilibrio dei bilanci?",
+    "opzioni": [
+      "Solo le Regioni",
+      "Solo i Comuni con più di 15.000 abitanti",
+      "Solo lo Stato",
+      "Tutte le amministrazioni pubbliche"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 3: le amministrazioni pubbliche concorrono ad assicurare l'equilibrio dei bilanci.",
+    "fonte": "L. 243/2012, art. 3",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-013",
+    "argomento": "Bilanci armonizzati",
+    "livello": 2,
+    "testo": "Secondo il D.Lgs. 118/2011, il bilancio di previsione finanziario degli enti territoriali è:",
+    "opzioni": [
+      "almeno triennale e di carattere autorizzatorio",
+      "quinquennale e non vincolante",
+      "biennale e approvato dalla Corte dei conti",
+      "annuale e solo conoscitivo"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il bilancio di previsione finanziario è almeno triennale, ha carattere autorizzatorio ed è aggiornato annualmente.",
+    "fonte": "D.Lgs. 118/2011",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-014",
+    "argomento": "Bilanci armonizzati",
+    "livello": 3,
+    "testo": "Entro quale data gli enti locali approvano il rendiconto dell'esercizio precedente?",
+    "opzioni": [
+      "Entro il 31 gennaio",
+      "Entro il 30 aprile dell'anno successivo",
+      "Entro il 31 luglio",
+      "Entro il 31 dicembre"
+    ],
+    "corretta": 1,
+    "spiegazione": "D.Lgs. 118/2011: rendiconto entro il 30 aprile dell'anno successivo; per le Regioni il termine è il 31 luglio.",
+    "fonte": "D.Lgs. 118/2011, art. 18",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-015",
+    "argomento": "Bilanci armonizzati",
+    "livello": 4,
+    "testo": "Quale operazione annuale serve ad attuare il principio della competenza finanziaria sui residui?",
+    "opzioni": [
+      "La revisione straordinaria delle tariffe",
+      "Il consolidamento con le società partecipate",
+      "Il riaccertamento dei residui attivi e passivi",
+      "La rivalutazione del patrimonio immobiliare"
+    ],
+    "corretta": 2,
+    "spiegazione": "Per attuare la competenza finanziaria, gli enti provvedono ogni anno al riaccertamento dei residui attivi e passivi.",
+    "fonte": "D.Lgs. 118/2011, art. 3",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-016",
+    "argomento": "Nozioni generali",
+    "livello": 2,
+    "testo": "Quale di queste NON è una delle aree della contabilità pubblica?",
+    "opzioni": [
+      "Il sistema dei controlli sulle gestioni",
+      "La gestione finanziaria",
+      "La responsabilità amministrativa e contabile dei dipendenti pubblici",
+      "La contabilità delle imprese private"
+    ],
+    "corretta": 3,
+    "spiegazione": "La contabilità pubblica comprende gestione finanziaria, beni pubblici, attività contrattuale, controlli e responsabilità. La contabilità delle imprese è un'altra disciplina.",
+    "fonte": "Contabilità pubblica (Wikipedia, CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-017",
+    "argomento": "Nozioni generali",
+    "livello": 4,
+    "testo": "Perché la legge di approvazione del bilancio è detta legge «formale»?",
+    "opzioni": [
+      "Perché non può introdurre nuove entrate tributarie o nuove spese",
+      "Perché non è votata dal Parlamento",
+      "Perché non ha valore giuridico",
+      "Perché non viene pubblicata in Gazzetta Ufficiale"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il divieto dell'art. 81 di istituire nuovi tributi o nuove spese con la legge di bilancio le dà carattere formale.",
+    "fonte": "Contabilità pubblica (Wikipedia, CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-018",
+    "argomento": "Ciclo di bilancio",
+    "livello": 5,
+    "testo": "A febbraio un comune non ha ancora approvato il bilancio di previsione e non ha ottenuto proroghe. Quale principio è stato violato e quale termine?",
+    "opzioni": [
+      "Il termine del 20 ottobre fissato dalla L. 196/2009",
+      "Il termine del 31 dicembre dell'anno precedente per deliberare il bilancio di previsione",
+      "Nessuno: il bilancio si può approvare in qualsiasi momento",
+      "Il termine del 30 aprile per il bilancio di previsione"
+    ],
+    "corretta": 1,
+    "spiegazione": "Gli enti locali deliberano il bilancio di previsione entro il 31 dicembre; il 30 aprile è il termine del rendiconto, il 20 ottobre quello del disegno di legge di bilancio dello Stato.",
+    "fonte": "D.Lgs. 118/2011, art. 18",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-019",
+    "argomento": "Principi generali",
+    "livello": 2,
+    "testo": "Secondo l'art. 1 della L. 196/2009, le amministrazioni pubbliche concorrono agli obiettivi di finanza pubblica in coerenza con:",
+    "opzioni": [
+      "I regolamenti comunali",
+      "Le direttive della Banca d'Italia",
+      "Le procedure e i criteri stabiliti dall'Unione europea",
+      "Le sole decisioni del Parlamento regionale"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il concorso si realizza secondo i principi di armonizzazione dei bilanci e coordinamento della finanza pubblica.",
+    "fonte": "L. 196/2009, art. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-020",
+    "argomento": "Ciclo di bilancio",
+    "livello": 2,
+    "testo": "A quale metodo si conforma l'impostazione delle previsioni di entrata e di spesa dei bilanci pubblici?",
+    "opzioni": [
+      "Al metodo della spesa storica senza programmazione",
+      "Al metodo della contabilità privata",
+      "Al metodo del pareggio di cassa giornaliero",
+      "Al metodo della programmazione"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 7, c. 1.",
+    "fonte": "L. 196/2009, art. 7",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-021",
+    "argomento": "Ciclo di bilancio",
+    "livello": 3,
+    "testo": "Da quante sezioni è composto il DEF?",
+    "opzioni": [
+      "Tre",
+      "Due",
+      "Una",
+      "Quattro"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 10: la prima sezione reca lo schema del Programma di stabilità.",
+    "fonte": "L. 196/2009, art. 10",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-022",
+    "argomento": "Ciclo di bilancio",
+    "livello": 4,
+    "testo": "Cosa reca la prima sezione del DEF?",
+    "opzioni": [
+      "L'elenco dei dipendenti pubblici",
+      "Lo schema del Programma di stabilità",
+      "Il rendiconto dello Stato",
+      "Il bilancio delle regioni"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 10, c. 2.",
+    "fonte": "L. 196/2009, art. 10",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-023",
+    "argomento": "Copertura delle leggi",
+    "livello": 3,
+    "testo": "Come va intesa la spesa autorizzata indicata da una legge che comporta nuovi oneri?",
+    "opzioni": [
+      "Come stima indicativa non vincolante",
+      "Come obiettivo da superare",
+      "Come limite massimo di spesa",
+      "Come importo minimo garantito"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 17, c. 1, in attuazione dell'art. 81 Cost.",
+    "fonte": "L. 196/2009, art. 17",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-024",
+    "argomento": "Copertura delle leggi",
+    "livello": 3,
+    "testo": "A cosa servono i fondi speciali previsti nella prima sezione della legge di bilancio?",
+    "opzioni": [
+      "A pagare gli stipendi dei ministri",
+      "A ripianare i debiti delle società private",
+      "A finanziare i partiti",
+      "Alla copertura di provvedimenti legislativi che si prevede siano approvati nel triennio"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 18 L. 196/2009.",
+    "fonte": "L. 196/2009, art. 18",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-025",
+    "argomento": "Bilancio dello Stato",
+    "livello": 2,
+    "testo": "In quali termini è redatto il bilancio annuale di previsione dello Stato?",
+    "opzioni": [
+      "In termini di competenza e di cassa",
+      "Solo di residui",
+      "Solo di competenza economica",
+      "Solo di cassa"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 20, c. 1.",
+    "fonte": "L. 196/2009, art. 20",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-026",
+    "argomento": "Bilancio dello Stato",
+    "livello": 2,
+    "testo": "A quale periodo si riferisce il disegno di legge del bilancio di previsione?",
+    "opzioni": [
+      "Alla durata della legislatura",
+      "A un periodo triennale",
+      "A un quinquennio",
+      "A un solo anno"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 21, c. 1: si compone di due sezioni.",
+    "fonte": "L. 196/2009, art. 21",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-027",
+    "argomento": "Bilancio dello Stato",
+    "livello": 4,
+    "testo": "Quale di questi contenuti NON può essere inserito nella prima sezione della legge di bilancio?",
+    "opzioni": [
+      "Il livello massimo del ricorso al mercato finanziario",
+      "Gli importi dei fondi speciali",
+      "Norme di delega o di carattere ordinamentale o organizzatorio",
+      "Norme contro l'evasione fiscale"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 21, c. 1-quinquies: niente deleghe, norme ordinamentali, interventi localistici o microsettoriali.",
+    "fonte": "L. 196/2009, art. 21",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-028",
+    "argomento": "Bilancio dello Stato",
+    "livello": 3,
+    "testo": "Quali sono, per la spesa, le unità di voto parlamentare del bilancio dello Stato?",
+    "opzioni": [
+      "Le missioni",
+      "I capitoli",
+      "Gli articoli",
+      "I programmi"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 21, c. 2: i programmi sono aggregati di spesa con finalità omogenea; le missioni sono le funzioni principali.",
+    "fonte": "L. 196/2009, art. 21",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-029",
+    "argomento": "Bilancio dello Stato",
+    "livello": 3,
+    "testo": "Cosa rappresentano le «missioni» nel bilancio dello Stato?",
+    "opzioni": [
+      "Le funzioni principali e gli obiettivi strategici perseguiti con la spesa",
+      "Le singole spese per trasferte",
+      "I capitoli di entrata",
+      "Gli uffici periferici dei ministeri"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 21, c. 2.",
+    "fonte": "L. 196/2009, art. 21",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-030",
+    "argomento": "Bilancio dello Stato",
+    "livello": 4,
+    "testo": "A chi è affidata la realizzazione di ciascun programma di spesa?",
+    "opzioni": [
+      "Alla Corte dei conti",
+      "A un unico centro di responsabilità amministrativa",
+      "Al Parlamento",
+      "A più ministeri insieme"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 21, c. 2: corrisponde all'unità organizzativa di primo livello dei Ministeri.",
+    "fonte": "L. 196/2009, art. 21",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-031",
+    "argomento": "Bilancio dello Stato",
+    "livello": 4,
+    "testo": "A quale classificazione internazionale sono raccordati i programmi del bilancio dello Stato?",
+    "opzioni": [
+      "IFRS",
+      "NACE",
+      "COFOG (Classification of the functions of government)",
+      "ISO 9001"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 21, c. 2.",
+    "fonte": "L. 196/2009, art. 21",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-032",
+    "argomento": "Bilancio dello Stato",
+    "livello": 4,
+    "testo": "Come si chiamano le spese vincolate a meccanismi o parametri che ne regolano l'evoluzione, come stipendi, pensioni e interessi passivi?",
+    "opzioni": [
+      "Fattori legislativi",
+      "Spese di adeguamento al fabbisogno",
+      "Spese facoltative",
+      "Oneri inderogabili"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 21, c. 5, lett. a): comprendono le spese obbligatorie.",
+    "fonte": "L. 196/2009, art. 21",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-033",
+    "argomento": "Bilancio dello Stato",
+    "livello": 4,
+    "testo": "Come si chiamano le spese autorizzate da una legge che ne determina l'importo come limite massimo?",
+    "opzioni": [
+      "Fattori legislativi",
+      "Spese di adeguamento al fabbisogno",
+      "Oneri inderogabili",
+      "Spese fiscali"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 21, c. 5, lett. b).",
+    "fonte": "L. 196/2009, art. 21",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-034",
+    "argomento": "Bilancio dello Stato",
+    "livello": 4,
+    "testo": "Quali previsioni del bilancio costituiscono i limiti per le autorizzazioni di impegno e di pagamento?",
+    "opzioni": [
+      "Le stime del DEF",
+      "Le previsioni di competenza e quelle di cassa",
+      "Le previsioni del terzo anno",
+      "Solo i residui presunti"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 21, c. 9.",
+    "fonte": "L. 196/2009, art. 21",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-035",
+    "argomento": "Bilancio dello Stato",
+    "livello": 3,
+    "testo": "Quale documento, allegato allo stato di previsione dell'entrata, elenca esenzioni, riduzioni e regimi fiscali di favore?",
+    "opzioni": [
+      "Il budget dei costi",
+      "La nota di variazioni",
+      "Il rapporto annuale sulle spese fiscali",
+      "Il conto del patrimonio"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 21, c. 11-bis.",
+    "fonte": "L. 196/2009, art. 21",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-036",
+    "argomento": "Bilancio dello Stato",
+    "livello": 3,
+    "testo": "Cosa s'intende per somme «incassate» e «pagate» nelle previsioni di cassa?",
+    "opzioni": [
+      "Le somme previste nel DEF",
+      "Le somme accertate e impegnate",
+      "Le somme dei residui perenti",
+      "Le somme versate in Tesoreria e quelle erogate dalla Tesoreria"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 21, c. 3, lett. d).",
+    "fonte": "L. 196/2009, art. 21",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-037",
+    "argomento": "Bilancio dello Stato",
+    "livello": 4,
+    "testo": "Cos'è l'«accertamento qualificato» delle entrate dello Stato?",
+    "opzioni": [
+      "L'iscrizione in bilancio delle entrate per l'importo che lo Stato prevede di riscuotere nel triennio",
+      "Il calcolo dei residui perenti",
+      "Il controllo preventivo della Corte dei conti",
+      "La verifica fiscale della Guardia di finanza"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 21-bis.",
+    "fonte": "L. 196/2009, art. 21-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-038",
+    "argomento": "Classificazione",
+    "livello": 3,
+    "testo": "In quali titoli sono ripartite le spese dello Stato secondo la classificazione economica?",
+    "opzioni": [
+      "Spese obbligatorie e facoltative",
+      "Spese correnti, in conto capitale e per rimborso di prestiti",
+      "Spese centrali e periferiche",
+      "Spese fisse, variabili e straordinarie"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 25, c. 3-bis.",
+    "fonte": "L. 196/2009, art. 25",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-039",
+    "argomento": "Classificazione",
+    "livello": 3,
+    "testo": "Come sono distinte le entrate dello Stato tra «ricorrenti» e «non ricorrenti»?",
+    "opzioni": [
+      "A seconda che siano in euro o in valuta",
+      "A seconda dell'ente che le riscuote",
+      "A seconda che l'acquisizione sia prevista a regime o limitata a uno o più esercizi",
+      "A seconda che siano tributarie o no"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 25, c. 1, lett. b).",
+    "fonte": "L. 196/2009, art. 25",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-040",
+    "argomento": "Saldi di bilancio",
+    "livello": 4,
+    "testo": "Come si chiama la differenza tra entrate tributarie ed extratributarie e spese correnti?",
+    "opzioni": [
+      "Saldo netto da finanziare",
+      "Indebitamento netto",
+      "Ricorso al mercato",
+      "Risparmio pubblico"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 25, c. 7, lett. a).",
+    "fonte": "L. 196/2009, art. 25",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-041",
+    "argomento": "Saldi di bilancio",
+    "livello": 5,
+    "testo": "Quale saldo esclude dalle operazioni finali soltanto l'accensione e il rimborso di prestiti?",
+    "opzioni": [
+      "Il saldo netto da finanziare o da impiegare",
+      "Il ricorso al mercato",
+      "L'avanzo primario",
+      "Il risparmio pubblico"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 25, c. 7, lett. c).",
+    "fonte": "L. 196/2009, art. 25",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-042",
+    "argomento": "Saldi di bilancio",
+    "livello": 4,
+    "testo": "Come si chiama la differenza tra il totale delle entrate finali e il totale delle spese?",
+    "opzioni": [
+      "Avanzo di amministrazione",
+      "Ricorso al mercato",
+      "Risparmio pubblico",
+      "Saldo di cassa"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 25, c. 7, lett. d).",
+    "fonte": "L. 196/2009, art. 25",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-043",
+    "argomento": "Bilancio dello Stato",
+    "livello": 3,
+    "testo": "In cosa sono suddivisi i programmi di spesa per specificarne ulteriormente la finalità?",
+    "opzioni": [
+      "In missioni",
+      "In commissioni",
+      "In azioni",
+      "In titoli"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 25-bis: le azioni sono un livello di dettaglio dei programmi.",
+    "fonte": "L. 196/2009, art. 25-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-044",
+    "argomento": "Fondi di riserva",
+    "livello": 3,
+    "testo": "Presso quale Ministero è istituito il fondo di riserva per le spese obbligatorie?",
+    "opzioni": [
+      "Ministero dell'interno",
+      "Ministero della giustizia",
+      "Presidenza del Consiglio",
+      "Ministero dell'economia e delle finanze"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 26: le somme sono trasferite con decreti del MEF registrati dalla Corte dei conti.",
+    "fonte": "L. 196/2009, art. 26",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-045",
+    "argomento": "Fondi di riserva",
+    "livello": 4,
+    "testo": "Il fondo di riserva per le spese impreviste può finanziare spese che impegnano i bilanci futuri con carattere di continuità?",
+    "opzioni": [
+      "No",
+      "Sì, sempre",
+      "Solo per il personale",
+      "Solo con legge regionale"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 28, c. 1.",
+    "fonte": "L. 196/2009, art. 28",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-046",
+    "argomento": "Fondi di riserva",
+    "livello": 4,
+    "testo": "A cosa serve il fondo di riserva previsto dall'art. 29 della L. 196/2009?",
+    "opzioni": [
+      "A riassegnare i residui perenti",
+      "A integrare le autorizzazioni di cassa",
+      "A pagare le spese impreviste di competenza",
+      "A coprire nuove leggi di spesa"
+    ],
+    "corretta": 1,
+    "spiegazione": "Lo prevede l'art. 29 della L. 196/2009.",
+    "fonte": "L. 196/2009, art. 29",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-047",
+    "argomento": "Leggi di spesa",
+    "livello": 4,
+    "testo": "Nelle leggi pluriennali di spesa in conto capitale, entro quali limiti le amministrazioni possono assumere impegni?",
+    "opzioni": [
+      "Senza alcun limite",
+      "Solo dopo il rendiconto",
+      "Entro l'intera somma indicata dalla legge, mentre i pagamenti restano nei limiti annuali",
+      "Solo entro la quota del primo anno"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 30, c. 1.",
+    "fonte": "L. 196/2009, art. 30",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-048",
+    "argomento": "Esercizio provvisorio",
+    "livello": 3,
+    "testo": "Per quanto tempo al massimo può essere concesso l'esercizio provvisorio del bilancio dello Stato?",
+    "opzioni": [
+      "Sei mesi, per decreto",
+      "Senza limite",
+      "Un anno, per decreto",
+      "Per periodi non superiori complessivamente a quattro mesi, e solo per legge"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 32 L. 196/2009; lo stesso limite è nell'art. 81 Cost.",
+    "fonte": "L. 196/2009, art. 32",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-049",
+    "argomento": "Esercizio provvisorio",
+    "livello": 4,
+    "testo": "Durante l'esercizio provvisorio, entro quale limite è consentita la gestione?",
+    "opzioni": [
+      "Per tanti dodicesimi della spesa prevista quanti sono i mesi dell'esercizio provvisorio",
+      "Per metà della spesa annuale",
+      "Solo per le spese di personale",
+      "Senza alcun limite"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 32, c. 2; fanno eccezione le spese obbligatorie non frazionabili.",
+    "fonte": "L. 196/2009, art. 32",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-050",
+    "argomento": "Assestamento",
+    "livello": 4,
+    "testo": "Con l'assestamento si possono usare stanziamenti in conto capitale per finanziare spese correnti?",
+    "opzioni": [
+      "Sì, sempre",
+      "No, è precluso",
+      "Solo con il parere dell'ISTAT",
+      "Solo a dicembre"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 33, c. 3.",
+    "fonte": "L. 196/2009, art. 33",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-051",
+    "argomento": "Rendiconto",
+    "livello": 2,
+    "testo": "Entro quando il Ministro dell'economia presenta alle Camere il rendiconto generale dello Stato?",
+    "opzioni": [
+      "Entro il 20 ottobre",
+      "Entro il 31 dicembre",
+      "Entro il mese di giugno",
+      "Entro il 31 gennaio"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 35, c. 1: il rendiconto si riferisce all'esercizio scaduto il 31 dicembre precedente.",
+    "fonte": "L. 196/2009, art. 35",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-052",
+    "argomento": "Rendiconto",
+    "livello": 3,
+    "testo": "Da quali parti è costituito il rendiconto generale dello Stato?",
+    "opzioni": [
+      "Bilancio di cassa e bilancio economico",
+      "Stato patrimoniale e nota integrativa",
+      "Entrate e residui",
+      "Conto del bilancio e conto generale del patrimonio"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 36, c. 1.",
+    "fonte": "L. 196/2009, art. 36",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-053",
+    "argomento": "Rendiconto",
+    "livello": 4,
+    "testo": "Quale organo parifica il rendiconto generale dello Stato?",
+    "opzioni": [
+      "La Corte dei conti",
+      "L'ISTAT",
+      "La Ragioneria generale dello Stato",
+      "Il Consiglio di Stato"
+    ],
+    "corretta": 0,
+    "spiegazione": "Artt. 37-38: la RGS trasmette il rendiconto alla Corte dei conti entro il 31 maggio; la Corte lo parifica.",
+    "fonte": "L. 196/2009, art. 38",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-054",
+    "argomento": "Rendiconto",
+    "livello": 4,
+    "testo": "Entro quale data la Ragioneria generale trasmette alla Corte dei conti il rendiconto generale?",
+    "opzioni": [
+      "Entro il 30 giugno",
+      "Entro il 31 maggio",
+      "Entro il 30 aprile",
+      "Entro il 31 dicembre"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 37, c. 2: i Ministeri inviano i conti alla RGS entro il 30 aprile.",
+    "fonte": "L. 196/2009, art. 37",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-055",
+    "argomento": "Tesoreria",
+    "livello": 3,
+    "testo": "Cosa esprime il saldo di cassa del settore statale?",
+    "opzioni": [
+      "Il patrimonio netto dello Stato",
+      "L'avanzo delle regioni",
+      "Il fabbisogno da finanziare con emissioni di titoli di Stato e altri strumenti",
+      "Le entrate tributarie"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 44, c. 1.",
+    "fonte": "L. 196/2009, art. 44",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-056",
+    "argomento": "Tesoreria",
+    "livello": 3,
+    "testo": "Con quale cadenza il Conto riassuntivo del Tesoro rendiconta riscossioni e pagamenti della tesoreria statale?",
+    "opzioni": [
+      "Settimanale",
+      "Annuale",
+      "Triennale",
+      "Mensile"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 44-bis, c. 2.",
+    "fonte": "L. 196/2009, art. 44-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-057",
+    "argomento": "Equilibrio di bilancio",
+    "livello": 3,
+    "testo": "Di quale disposizione costituzionale la L. 243/2012 costituisce attuazione?",
+    "opzioni": [
+      "Dell'art. 81, sesto comma, Cost. (come sostituito dalla L. cost. 1/2012)",
+      "Dell'art. 3 Cost.",
+      "Dell'art. 53 Cost.",
+      "Dell'art. 117 Cost."
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 1 L. 243/2012 (legge «rinforzata»).",
+    "fonte": "L. 243/2012, art. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-058",
+    "argomento": "Equilibrio di bilancio",
+    "livello": 4,
+    "testo": "Come può essere modificata la L. 243/2012?",
+    "opzioni": [
+      "Con legge regionale",
+      "Solo in modo espresso da una legge approvata ai sensi dell'art. 81, sesto comma, Cost. (maggioranza assoluta)",
+      "Con un regolamento ministeriale",
+      "Con un qualsiasi decreto-legge"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 1, c. 2: è una legge rinforzata.",
+    "fonte": "L. 243/2012, art. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-059",
+    "argomento": "Equilibrio di bilancio",
+    "livello": 4,
+    "testo": "Cos'è il «saldo strutturale» secondo la L. 243/2012?",
+    "opzioni": [
+      "Il saldo di cassa della Tesoreria",
+      "Il debito pubblico diviso per il PIL",
+      "Il saldo del conto consolidato corretto per gli effetti del ciclo economico, al netto delle misure una tantum",
+      "La differenza tra entrate e spese correnti"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 2, c. 1, lett. d).",
+    "fonte": "L. 243/2012, art. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-060",
+    "argomento": "Equilibrio di bilancio",
+    "livello": 3,
+    "testo": "A cosa corrisponde l'equilibrio dei bilanci secondo l'art. 3 della L. 243/2012?",
+    "opzioni": [
+      "A un avanzo del 3% del PIL",
+      "Al pareggio di cassa mensile",
+      "All'azzeramento del debito",
+      "All'obiettivo di medio termine"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 3, c. 2.",
+    "fonte": "L. 243/2012, art. 3",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-061",
+    "argomento": "Equilibrio di bilancio",
+    "livello": 4,
+    "testo": "È consentito il ricorso all'indebitamento per operazioni relative alle partite finanziarie?",
+    "opzioni": [
+      "No, salvo quanto previsto per gli eventi eccezionali",
+      "Solo con decreto ministeriale",
+      "Sì, sempre",
+      "Solo per le regioni"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 4, c. 4.",
+    "fonte": "L. 243/2012, art. 4",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-062",
+    "argomento": "Equilibrio di bilancio",
+    "livello": 3,
+    "testo": "Quando sono consentiti scostamenti temporanei del saldo strutturale dall'obiettivo programmatico?",
+    "opzioni": [
+      "Ogni anno elettorale",
+      "Esclusivamente in caso di eventi eccezionali",
+      "Mai",
+      "Ogni volta che il Governo lo ritiene"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 6, c. 1.",
+    "fonte": "L. 243/2012, art. 6",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-063",
+    "argomento": "Equilibrio di bilancio",
+    "livello": 4,
+    "testo": "Quali sono gli «eventi eccezionali» che consentono lo scostamento?",
+    "opzioni": [
+      "Il cambio del Governo",
+      "Le elezioni politiche",
+      "Gravi recessioni economiche ed eventi straordinari fuori dal controllo dello Stato, come gravi crisi finanziarie o calamità naturali",
+      "L'aumento dei tassi d'interesse di mezzo punto"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 6, c. 2.",
+    "fonte": "L. 243/2012, art. 6",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-064",
+    "argomento": "Equilibrio di bilancio",
+    "livello": 4,
+    "testo": "Con quale maggioranza ciascuna Camera autorizza lo scostamento dall'obiettivo programmatico?",
+    "opzioni": [
+      "Unanimità",
+      "Due terzi dei componenti",
+      "Maggioranza semplice dei presenti",
+      "Maggioranza assoluta dei componenti"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 6, c. 3 (coerente con l'art. 81, secondo comma, Cost.).",
+    "fonte": "L. 243/2012, art. 6",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-065",
+    "argomento": "Enti territoriali",
+    "livello": 4,
+    "testo": "Quando i bilanci di regioni ed enti locali si considerano in equilibrio secondo la L. 243/2012?",
+    "opzioni": [
+      "Quando conseguono un saldo non negativo, in termini di competenza, tra entrate finali e spese finali",
+      "Quando il debito è zero",
+      "Quando la cassa è positiva ogni giorno",
+      "Quando l'avanzo supera il 10%"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 9, c. 1.",
+    "fonte": "L. 243/2012, art. 9",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-066",
+    "argomento": "Enti territoriali",
+    "livello": 4,
+    "testo": "Se un ente territoriale chiude il rendiconto con saldo negativo, entro quando deve recuperarlo?",
+    "opzioni": [
+      "Entro dieci anni",
+      "Entro il triennio successivo, in quote costanti",
+      "Non deve recuperarlo",
+      "Entro l'anno successivo"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 9, c. 2.",
+    "fonte": "L. 243/2012, art. 9",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-067",
+    "argomento": "Enti territoriali",
+    "livello": 2,
+    "testo": "Per quali spese regioni ed enti locali possono ricorrere all'indebitamento?",
+    "opzioni": [
+      "Per pagare gli stipendi",
+      "Per qualsiasi spesa corrente",
+      "Esclusivamente per spese di investimento",
+      "Per ripianare i debiti delle partecipate"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 10, c. 1 (cfr. art. 119, sesto comma, Cost.).",
+    "fonte": "L. 243/2012, art. 10",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-068",
+    "argomento": "Enti territoriali",
+    "livello": 4,
+    "testo": "Qual è la durata massima dei piani di ammortamento per l'indebitamento degli enti territoriali?",
+    "opzioni": [
+      "Il mandato del sindaco",
+      "Dieci anni",
+      "Trent'anni in ogni caso",
+      "Non superiore alla vita utile dell'investimento"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 10, c. 2.",
+    "fonte": "L. 243/2012, art. 10",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-069",
+    "argomento": "Enti territoriali",
+    "livello": 5,
+    "testo": "In che modo regioni ed enti locali concorrono alla riduzione del debito pubblico complessivo?",
+    "opzioni": [
+      "Con versamenti al Fondo per l'ammortamento dei titoli di Stato",
+      "Acquistando titoli esteri",
+      "Aumentando le aliquote IVA",
+      "Vendendo beni demaniali al Tesoro"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 12, c. 2.",
+    "fonte": "L. 243/2012, art. 12",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-070",
+    "argomento": "Bilancio dello Stato",
+    "livello": 4,
+    "testo": "A cosa corrisponde l'equilibrio del bilancio dello Stato secondo l'art. 14 della L. 243/2012?",
+    "opzioni": [
+      "A un debito pari al 60% del PIL",
+      "A un valore del saldo netto da finanziare coerente con gli obiettivi programmatici",
+      "A un saldo di cassa positivo",
+      "All'assenza di residui passivi"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 14, c. 1.",
+    "fonte": "L. 243/2012, art. 14",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-071",
+    "argomento": "Bilancio dello Stato",
+    "livello": 4,
+    "testo": "Quali sono le unità di voto parlamentare del bilancio dello Stato per le entrate e per la spesa?",
+    "opzioni": [
+      "I titoli per le entrate, le missioni per la spesa",
+      "Le categorie per entrambe",
+      "Le tipologie per le entrate, i programmi per la spesa",
+      "I capitoli per entrambe"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 15, c. 5.",
+    "fonte": "L. 243/2012, art. 15",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-072",
+    "argomento": "Equilibrio di bilancio",
+    "livello": 5,
+    "testo": "Quando sono in equilibrio i bilanci delle amministrazioni pubbliche non territoriali in contabilità finanziaria?",
+    "opzioni": [
+      "Quando le spese correnti sono pari a zero",
+      "Quando non hanno debiti",
+      "Quando l'avanzo è almeno il 5% delle entrate",
+      "Quando registrano un saldo non negativo, in termini di cassa e di competenza, tra entrate finali e spese finali"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 13, c. 1 L. 243/2012; l'avanzo di amministrazione si può usare solo dopo l'approvazione del rendiconto.",
+    "fonte": "L. 243/2012, art. 13",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-073",
+    "argomento": "Principi contabili",
+    "livello": 2,
+    "testo": "Quanti sono i principi contabili generali (o postulati) dell'allegato 1 al D.Lgs. 118/2011?",
+    "opzioni": [
+      "Diciotto",
+      "Venticinque",
+      "Dodici",
+      "Dieci"
+    ],
+    "corretta": 0,
+    "spiegazione": "Vanno dall'annualità alla prevalenza della sostanza sulla forma.",
+    "fonte": "D.Lgs. 118/2011, all. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-074",
+    "argomento": "Principi contabili",
+    "livello": 2,
+    "testo": "Cosa prevede il principio dell'annualità?",
+    "opzioni": [
+      "Il bilancio dura quanto il mandato politico",
+      "I documenti di bilancio sono predisposti con cadenza annuale e riferiti all'anno solare, con previsioni elaborate su un orizzonte almeno triennale",
+      "Il bilancio si approva ogni tre anni",
+      "Il bilancio segue l'anno scolastico"
+    ],
+    "corretta": 1,
+    "spiegazione": "Allegato 1, principio n. 1.",
+    "fonte": "D.Lgs. 118/2011, all. 1, principio n. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-075",
+    "argomento": "Principi contabili",
+    "livello": 3,
+    "testo": "Secondo il principio dell'unità, a cosa sono destinate le entrate in conto capitale?",
+    "opzioni": [
+      "Al rimborso delle anticipazioni di cassa",
+      "Anche agli stipendi",
+      "Esclusivamente al finanziamento di spese di investimento",
+      "A qualsiasi spesa"
+    ],
+    "corretta": 2,
+    "spiegazione": "Allegato 1, principio n. 2: in generale è il complesso unitario delle entrate a finanziare tutte le spese, salvo le entrate vincolate.",
+    "fonte": "D.Lgs. 118/2011, all. 1, principio n. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-076",
+    "argomento": "Principi contabili",
+    "livello": 3,
+    "testo": "Con quale principio sono incompatibili le gestioni fuori bilancio?",
+    "opzioni": [
+      "Con il principio della competenza economica",
+      "Con il principio della prudenza",
+      "Con il principio della flessibilità",
+      "Con il principio dell'universalità"
+    ],
+    "corretta": 3,
+    "spiegazione": "Allegato 1, principio n. 3.",
+    "fonte": "D.Lgs. 118/2011, all. 1, principio n. 3",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-077",
+    "argomento": "Principi contabili",
+    "livello": 3,
+    "testo": "Quale principio impone di iscrivere le entrate al lordo delle spese di riscossione, senza compensazioni di partite?",
+    "opzioni": [
+      "Il principio dell'integrità",
+      "Il principio della congruità",
+      "Il principio dell'unità",
+      "Il principio della neutralità"
+    ],
+    "corretta": 0,
+    "spiegazione": "Allegato 1, principio n. 4.",
+    "fonte": "D.Lgs. 118/2011, all. 1, principio n. 4",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-078",
+    "argomento": "Principi contabili",
+    "livello": 3,
+    "testo": "A quale concetto anglosassone fa esplicito riferimento il principio della veridicità?",
+    "opzioni": [
+      "Spending review",
+      "True and fair view",
+      "Value for money",
+      "Going concern"
+    ],
+    "corretta": 1,
+    "spiegazione": "Allegato 1, principio n. 5.",
+    "fonte": "D.Lgs. 118/2011, all. 1, principio n. 5",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-079",
+    "argomento": "Principi contabili",
+    "livello": 4,
+    "testo": "Quando un'informazione contabile è «rilevante»?",
+    "opzioni": [
+      "Quando è pubblicata sul sito",
+      "Quando è approvata dal consiglio",
+      "Quando la sua omissione o errata presentazione può influenzare le decisioni degli utilizzatori",
+      "Quando supera un milione di euro"
+    ],
+    "corretta": 2,
+    "spiegazione": "Allegato 1, principio n. 6 (significatività e rilevanza).",
+    "fonte": "D.Lgs. 118/2011, all. 1, principio n. 6",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-080",
+    "argomento": "Principi contabili",
+    "livello": 3,
+    "testo": "Secondo il principio della flessibilità, come va considerato un eccessivo ricorso alle variazioni di bilancio?",
+    "opzioni": [
+      "Come irrilevante",
+      "Come un obbligo di legge",
+      "Come segno di buona gestione",
+      "Come un fatto negativo, che inficia l'attendibilità della programmazione"
+    ],
+    "corretta": 3,
+    "spiegazione": "Allegato 1, principio n. 7.",
+    "fonte": "D.Lgs. 118/2011, all. 1, principio n. 7",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-081",
+    "argomento": "Principi contabili",
+    "livello": 3,
+    "testo": "In cosa consiste il principio della congruità?",
+    "opzioni": [
+      "Nella verifica dell'adeguatezza dei mezzi disponibili rispetto ai fini stabiliti",
+      "Nell'imputazione per anno solare",
+      "Nella pubblicazione del bilancio",
+      "Nel pareggio tra entrate e spese di cassa"
+    ],
+    "corretta": 0,
+    "spiegazione": "Allegato 1, principio n. 8.",
+    "fonte": "D.Lgs. 118/2011, all. 1, principio n. 8",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-082",
+    "argomento": "Principi contabili",
+    "livello": 4,
+    "testo": "Nel rendiconto, cosa comporta il principio della prudenza?",
+    "opzioni": [
+      "Si contabilizzano solo le componenti positive",
+      "Le componenti positive non realizzate non si contabilizzano, quelle negative sì anche se non definitivamente realizzate",
+      "Si contabilizza tutto al valore di mercato",
+      "Si rinvia ogni valutazione all'anno successivo"
+    ],
+    "corretta": 1,
+    "spiegazione": "Allegato 1, principio n. 9.",
+    "fonte": "D.Lgs. 118/2011, all. 1, principio n. 9",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-083",
+    "argomento": "Principi contabili",
+    "livello": 4,
+    "testo": "Il principio della prudenza consente di ridurre arbitrariamente le previsioni di entrata?",
+    "opzioni": [
+      "Sì, sempre",
+      "Sì, se lo decide la giunta",
+      "No, i suoi eccessi vanno evitati perché rendono il bilancio inattendibile",
+      "Sì, per le sole entrate tributarie"
+    ],
+    "corretta": 2,
+    "spiegazione": "Allegato 1, principio n. 9.",
+    "fonte": "D.Lgs. 118/2011, all. 1, principio n. 9",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-084",
+    "argomento": "Principi contabili",
+    "livello": 3,
+    "testo": "Quale principio richiede un nesso logico tra programmazione, previsione, gestione e rendicontazione?",
+    "opzioni": [
+      "Il principio della pubblicità",
+      "Il principio dell'integrità",
+      "Il principio dell'annualità",
+      "Il principio della coerenza"
+    ],
+    "corretta": 3,
+    "spiegazione": "Allegato 1, principio n. 10.",
+    "fonte": "D.Lgs. 118/2011, all. 1, principio n. 10",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-085",
+    "argomento": "Principi contabili",
+    "livello": 4,
+    "testo": "In quale prospettiva vanno valutate le poste di bilancio secondo il principio della continuità?",
+    "opzioni": [
+      "Nella prospettiva della continuazione delle attività istituzionali dell'ente",
+      "Solo per l'esercizio in corso",
+      "Secondo il valore di vendita immediata",
+      "Nella prospettiva della liquidazione dell'ente"
+    ],
+    "corretta": 0,
+    "spiegazione": "Allegato 1, principio n. 11.",
+    "fonte": "D.Lgs. 118/2011, all. 1, principio n. 11",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-086",
+    "argomento": "Principi contabili",
+    "livello": 4,
+    "testo": "Cosa richiede il principio della verificabilità?",
+    "opzioni": [
+      "Che i dati siano stimati senza documenti",
+      "Che le amministrazioni conservino la documentazione probatoria per ricostruire il procedimento valutativo",
+      "Che il bilancio sia verificato dal prefetto",
+      "Che il bilancio sia approvato all'unanimità"
+    ],
+    "corretta": 1,
+    "spiegazione": "Allegato 1, principio n. 12 (comparabilità e verificabilità).",
+    "fonte": "D.Lgs. 118/2011, all. 1, principio n. 12",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-087",
+    "argomento": "Principi contabili",
+    "livello": 3,
+    "testo": "Secondo il principio di neutralità, la redazione dei documenti contabili deve:",
+    "opzioni": [
+      "Privilegiare i dipendenti dell'ente",
+      "Seguire le richieste dei creditori",
+      "Fondarsi su principi indipendenti e imparziali, senza favorire particolari gruppi",
+      "Favorire la maggioranza politica"
+    ],
+    "corretta": 2,
+    "spiegazione": "Allegato 1, principio n. 13.",
+    "fonte": "D.Lgs. 118/2011, all. 1, principio n. 13",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-088",
+    "argomento": "Principi contabili",
+    "livello": 2,
+    "testo": "Quale principio impone all'amministrazione di rendere conoscibili ai cittadini i contenuti del bilancio e del rendiconto?",
+    "opzioni": [
+      "Il principio dell'unità",
+      "Il principio dell'integrità",
+      "Il principio della prudenza",
+      "Il principio della pubblicità"
+    ],
+    "corretta": 3,
+    "spiegazione": "Allegato 1, principio n. 14.",
+    "fonte": "D.Lgs. 118/2011, all. 1, principio n. 14",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-089",
+    "argomento": "Principi contabili",
+    "livello": 4,
+    "testo": "Il principio dell'equilibrio di bilancio si esaurisce nel pareggio finanziario di competenza del bilancio di previsione?",
+    "opzioni": [
+      "No, è più ampio: comprende tutti gli equilibri finanziari, economici e patrimoniali",
+      "Riguarda solo la cassa",
+      "Sì, coincide con esso",
+      "Riguarda solo il rendiconto"
+    ],
+    "corretta": 0,
+    "spiegazione": "Allegato 1, principio n. 15.",
+    "fonte": "D.Lgs. 118/2011, all. 1, principio n. 15",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-090",
+    "argomento": "Competenza finanziaria",
+    "livello": 3,
+    "testo": "Cosa costituisce il principio della competenza finanziaria?",
+    "opzioni": [
+      "Il criterio di calcolo degli ammortamenti",
+      "Il criterio di imputazione agli esercizi delle obbligazioni giuridicamente perfezionate attive e passive",
+      "Il criterio di valutazione del patrimonio",
+      "Il criterio di registrazione dei soli incassi"
+    ],
+    "corretta": 1,
+    "spiegazione": "Allegato 1, principio n. 16.",
+    "fonte": "D.Lgs. 118/2011, all. 1, principio n. 16",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-091",
+    "argomento": "Competenza finanziaria",
+    "livello": 4,
+    "testo": "A quale esercizio si imputa un'obbligazione giuridicamente perfezionata secondo la competenza finanziaria «potenziata»?",
+    "opzioni": [
+      "All'esercizio in cui avviene il pagamento",
+      "All'esercizio in cui è stato firmato il contratto, sempre",
+      "All'esercizio in cui l'obbligazione viene a scadenza",
+      "All'ultimo esercizio del triennio"
+    ],
+    "corretta": 2,
+    "spiegazione": "Allegato 1, principio n. 16: la registrazione avviene quando l'obbligazione è perfezionata, con imputazione all'esercizio di scadenza.",
+    "fonte": "D.Lgs. 118/2011, all. 1, principio n. 16",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-092",
+    "argomento": "Competenza finanziaria",
+    "livello": 3,
+    "testo": "Quale fase dell'entrata perfeziona un diritto di credito relativo a una riscossione da realizzare?",
+    "opzioni": [
+      "L'impegno",
+      "Il versamento",
+      "La riscossione",
+      "L'accertamento"
+    ],
+    "corretta": 3,
+    "spiegazione": "Allegato 1, principio n. 16.",
+    "fonte": "D.Lgs. 118/2011, all. 1, principio n. 16",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-093",
+    "argomento": "Competenza finanziaria",
+    "livello": 4,
+    "testo": "Quale di questi NON è un requisito dell'accertamento dell'entrata?",
+    "opzioni": [
+      "L'avvenuto incasso della somma",
+      "Il titolo giuridico",
+      "La ragione del credito",
+      "L'individuazione del debitore"
+    ],
+    "corretta": 0,
+    "spiegazione": "Allegato 1: ragione del credito, titolo giuridico, debitore, ammontare e scadenza.",
+    "fonte": "D.Lgs. 118/2011, all. 1, principio n. 16",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-094",
+    "argomento": "Competenza finanziaria",
+    "livello": 4,
+    "testo": "È possibile accertare oggi entrate future, il cui diritto di credito non è ancora scaduto?",
+    "opzioni": [
+      "Solo per i tributi",
+      "No, è esclusa categoricamente",
+      "Sì, con delibera di giunta",
+      "Sì, se probabili"
+    ],
+    "corretta": 1,
+    "spiegazione": "Allegato 1, principio n. 16: altererebbe gli equilibri finanziari dell'esercizio.",
+    "fonte": "D.Lgs. 118/2011, all. 1, principio n. 16",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-095",
+    "argomento": "Competenza finanziaria",
+    "livello": 3,
+    "testo": "Con quale fase della spesa si registra un'obbligazione giuridicamente perfezionata relativa a un pagamento da effettuare?",
+    "opzioni": [
+      "L'ordinazione",
+      "La liquidazione",
+      "L'impegno",
+      "Il pagamento"
+    ],
+    "corretta": 2,
+    "spiegazione": "Allegato 1, principio n. 16.",
+    "fonte": "D.Lgs. 118/2011, all. 1, principio n. 16",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-096",
+    "argomento": "Competenza finanziaria",
+    "livello": 4,
+    "testo": "Quale di questi è un elemento costitutivo dell'impegno di spesa?",
+    "opzioni": [
+      "La fattura già pagata",
+      "Il mandato di pagamento quietanzato",
+      "Il parere del revisore",
+      "Il soggetto creditore"
+    ],
+    "corretta": 3,
+    "spiegazione": "Allegato 1: ragione del debito, somma da pagare, creditore, vincolo sullo stanziamento, scadenza.",
+    "fonte": "D.Lgs. 118/2011, all. 1, principio n. 16",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-097",
+    "argomento": "Competenza finanziaria",
+    "livello": 4,
+    "testo": "Per le partite di giro e le operazioni per conto terzi, a quale esercizio si imputano le obbligazioni?",
+    "opzioni": [
+      "All'esercizio in cui l'obbligazione è perfezionata (in deroga al principio generale)",
+      "Non si registrano",
+      "Al triennio successivo",
+      "All'esercizio di scadenza"
+    ],
+    "corretta": 0,
+    "spiegazione": "Allegato 1, principio n. 16.",
+    "fonte": "D.Lgs. 118/2011, all. 1, principio n. 16",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-098",
+    "argomento": "Principi contabili",
+    "livello": 4,
+    "testo": "Secondo la competenza economica, a quale esercizio si attribuisce l'effetto di un'operazione?",
+    "opzioni": [
+      "All'esercizio dell'incasso o del pagamento",
+      "All'esercizio a cui l'operazione si riferisce, non a quello del movimento finanziario",
+      "Sempre all'esercizio successivo",
+      "Al primo anno del mandato"
+    ],
+    "corretta": 1,
+    "spiegazione": "Allegato 1, principio n. 17.",
+    "fonte": "D.Lgs. 118/2011, all. 1, principio n. 17",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-099",
+    "argomento": "Principi contabili",
+    "livello": 4,
+    "testo": "Qual è il tipico esempio di ripartizione di un costo pluriennale su base razionale e sistematica?",
+    "opzioni": [
+      "L'accertamento",
+      "La reversale",
+      "L'ammortamento",
+      "Il fondo di cassa"
+    ],
+    "corretta": 2,
+    "spiegazione": "Allegato 1, principio n. 17.",
+    "fonte": "D.Lgs. 118/2011, all. 1, principio n. 17",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-100",
+    "argomento": "Principi contabili",
+    "livello": 3,
+    "testo": "Quale principio impone di rilevare i fatti secondo la loro realtà economica e non solo la forma giuridica?",
+    "opzioni": [
+      "Annualità",
+      "Integrità",
+      "Pubblicità",
+      "Prevalenza della sostanza sulla forma"
+    ],
+    "corretta": 3,
+    "spiegazione": "Allegato 1, principio n. 18.",
+    "fonte": "D.Lgs. 118/2011, all. 1, principio n. 18",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-101",
+    "argomento": "Programmazione enti locali",
+    "livello": 2,
+    "testo": "Qual è lo strumento di guida strategica e operativa degli enti locali, presupposto di tutti gli altri documenti di programmazione?",
+    "opzioni": [
+      "Il Documento unico di programmazione (DUP)",
+      "Il conto del tesoriere",
+      "Il rendiconto",
+      "Il PEG"
+    ],
+    "corretta": 0,
+    "spiegazione": "Principio applicato della programmazione (all. 4/1).",
+    "fonte": "D.Lgs. 118/2011, all. 4/1",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-102",
+    "argomento": "Programmazione enti locali",
+    "livello": 3,
+    "testo": "Quali sono le due sezioni del DUP?",
+    "opzioni": [
+      "Parte entrate e parte spese",
+      "Sezione Strategica (SeS) e Sezione Operativa (SeO)",
+      "Sezione corrente e sezione capitale",
+      "Bilancio e rendiconto"
+    ],
+    "corretta": 1,
+    "spiegazione": "All. 4/1: la SeS dura quanto il mandato, la SeO quanto il bilancio di previsione.",
+    "fonte": "D.Lgs. 118/2011, all. 4/1",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-103",
+    "argomento": "Programmazione enti locali",
+    "livello": 4,
+    "testo": "Qual è l'orizzonte temporale della Sezione Strategica del DUP?",
+    "opzioni": [
+      "Un anno",
+      "Quello del bilancio di previsione",
+      "Quello del mandato amministrativo",
+      "Dieci anni"
+    ],
+    "corretta": 2,
+    "spiegazione": "Lo prevede il principio contabile dell'allegato 4/1 al D.Lgs. 118/2011.",
+    "fonte": "D.Lgs. 118/2011, all. 4/1",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-104",
+    "argomento": "Programmazione enti locali",
+    "livello": 4,
+    "testo": "Cosa sviluppa e concretizza la Sezione Strategica del DUP?",
+    "opzioni": [
+      "Il riaccertamento dei residui",
+      "Il piano delle assunzioni annuali",
+      "Il conto economico",
+      "Le linee programmatiche di mandato (art. 46, c. 3 TUEL)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Lo prevede il principio contabile dell'allegato 4/1 al D.Lgs. 118/2011.",
+    "fonte": "D.Lgs. 118/2011, all. 4/1",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-105",
+    "argomento": "Programmazione enti locali",
+    "livello": 3,
+    "testo": "Entro quale data va presentata al consiglio la nota di aggiornamento del DUP, insieme allo schema di bilancio?",
+    "opzioni": [
+      "Entro il 15 novembre",
+      "Entro il 30 aprile",
+      "Entro il 31 luglio",
+      "Entro il 31 dicembre"
+    ],
+    "corretta": 0,
+    "spiegazione": "All. 4/1, par. 4.2.",
+    "fonte": "D.Lgs. 118/2011, all. 4/1",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-106",
+    "argomento": "Programmazione enti locali",
+    "livello": 3,
+    "testo": "Quali enti locali possono predisporre il DUP semplificato?",
+    "opzioni": [
+      "Solo le province",
+      "Quelli con popolazione fino a 5.000 abitanti",
+      "Tutti i comuni",
+      "Quelli sopra 50.000 abitanti"
+    ],
+    "corretta": 1,
+    "spiegazione": "All. 4/1; fino a 2.000 abitanti è ammessa una forma ulteriormente semplificata.",
+    "fonte": "D.Lgs. 118/2011, all. 4/1",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-107",
+    "argomento": "Programmazione enti locali",
+    "livello": 3,
+    "testo": "Quale documento declina in maggior dettaglio la programmazione operativa del DUP e guida la relazione tra giunta e responsabili dei servizi?",
+    "opzioni": [
+      "Il bilancio consolidato",
+      "Il DEFR",
+      "Il piano esecutivo di gestione (PEG)",
+      "Il conto del patrimonio"
+    ],
+    "corretta": 2,
+    "spiegazione": "All. 4/1, par. 10.",
+    "fonte": "D.Lgs. 118/2011, all. 4/1",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-108",
+    "argomento": "Programmazione enti locali",
+    "livello": 4,
+    "testo": "Per quali comuni il PEG è obbligatorio?",
+    "opzioni": [
+      "Solo per i capoluoghi di regione",
+      "Per tutti i comuni",
+      "Per i comuni sopra 100.000 abitanti",
+      "Per i comuni con popolazione superiore a 5.000 abitanti (e per le province)"
+    ],
+    "corretta": 3,
+    "spiegazione": "All. 4/1, par. 10: per gli altri è facoltativo.",
+    "fonte": "D.Lgs. 118/2011, all. 4/1",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-109",
+    "argomento": "Programmazione regioni",
+    "livello": 4,
+    "testo": "Entro quale data la giunta regionale presenta al consiglio il Documento di economia e finanza regionale (DEFR)?",
+    "opzioni": [
+      "Entro il 30 giugno",
+      "Entro il 10 aprile",
+      "Entro il 15 novembre",
+      "Entro il 31 luglio"
+    ],
+    "corretta": 0,
+    "spiegazione": "All. 4/1, strumenti di programmazione delle regioni.",
+    "fonte": "D.Lgs. 118/2011, all. 4/1",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-110",
+    "argomento": "Programmazione regioni",
+    "livello": 4,
+    "testo": "Entro quale data va presentato al consiglio regionale il disegno di legge di stabilità regionale?",
+    "opzioni": [
+      "Entro il 30 giugno",
+      "Entro il 31 ottobre",
+      "Entro il 31 dicembre",
+      "Entro il 15 febbraio"
+    ],
+    "corretta": 1,
+    "spiegazione": "Lo prevede il principio contabile dell'allegato 4/1 al D.Lgs. 118/2011.",
+    "fonte": "D.Lgs. 118/2011, all. 4/1",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-111",
+    "argomento": "Contabilità finanziaria",
+    "livello": 3,
+    "testo": "Quando un credito è «esigibile» ai fini della competenza finanziaria?",
+    "opzioni": [
+      "Quando è stato incassato",
+      "Quando è prescritto",
+      "Quando non vi sono ostacoli alla sua riscossione ed è possibile pretenderne l'adempimento",
+      "Quando è iscritto in bilancio"
+    ],
+    "corretta": 2,
+    "spiegazione": "All. 4/2, che richiama la giurisprudenza della Cassazione.",
+    "fonte": "D.Lgs. 118/2011, all. 4/2",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-112",
+    "argomento": "Contabilità finanziaria",
+    "livello": 3,
+    "testo": "Che cos'è il fondo pluriennale vincolato (FPV)?",
+    "opzioni": [
+      "Un fondo per pagare i debiti fuori bilancio",
+      "Il fondo di cassa del tesoriere",
+      "Un fondo per le spese impreviste",
+      "Un saldo finanziario di risorse già accertate che finanziano spese impegnate ma esigibili in esercizi successivi"
+    ],
+    "corretta": 3,
+    "spiegazione": "Lo prevede il principio contabile dell'allegato 4/2 al D.Lgs. 118/2011.",
+    "fonte": "D.Lgs. 118/2011, all. 4/2",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-113",
+    "argomento": "Contabilità finanziaria",
+    "livello": 4,
+    "testo": "L'accantonamento al fondo crediti di dubbia esigibilità (FCDE) è oggetto di impegno?",
+    "opzioni": [
+      "No: genera un'economia che confluisce nel risultato di amministrazione come quota accantonata",
+      "Viene pagato al tesoriere",
+      "Sì, ma solo a dicembre",
+      "Sì, come ogni spesa"
+    ],
+    "corretta": 0,
+    "spiegazione": "Lo prevede il principio contabile dell'allegato 4/2 al D.Lgs. 118/2011.",
+    "fonte": "D.Lgs. 118/2011, all. 4/2",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-114",
+    "argomento": "Contabilità finanziaria",
+    "livello": 4,
+    "testo": "Quali crediti NON sono oggetto di svalutazione nel FCDE?",
+    "opzioni": [
+      "I canoni di locazione",
+      "I crediti verso altre amministrazioni pubbliche e quelli assistiti da fideiussione",
+      "Le sanzioni del codice della strada",
+      "Le rette dei servizi a domanda individuale"
+    ],
+    "corretta": 1,
+    "spiegazione": "All. 4/2: esclusi anche i tributi accertati per cassa.",
+    "fonte": "D.Lgs. 118/2011, all. 4/2",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-115",
+    "argomento": "Contabilità finanziaria",
+    "livello": 4,
+    "testo": "Dal 2021, in quale misura va stanziato il fondo crediti di dubbia esigibilità nel bilancio degli enti locali?",
+    "opzioni": [
+      "È facoltativo",
+      "Almeno al 55%",
+      "Per l'intero importo",
+      "Almeno al 75%"
+    ],
+    "corretta": 2,
+    "spiegazione": "All. 4/2: percentuali crescenti dal 2016 (55%) fino all'intero importo dal 2021.",
+    "fonte": "D.Lgs. 118/2011, all. 4/2",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-116",
+    "argomento": "Contabilità finanziaria",
+    "livello": 3,
+    "testo": "Con quale fase della spesa si determina la somma da pagare, in base ai documenti che comprovano il diritto del creditore?",
+    "opzioni": [
+      "L'accertamento",
+      "L'impegno",
+      "L'ordinazione",
+      "La liquidazione"
+    ],
+    "corretta": 3,
+    "spiegazione": "All. 4/2: le fasi della spesa sono impegno, liquidazione, ordinazione e pagamento.",
+    "fonte": "D.Lgs. 118/2011, all. 4/2",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-117",
+    "argomento": "Contabilità finanziaria",
+    "livello": 3,
+    "testo": "Come si chiama l'atto con cui l'ente ordina al tesoriere di pagare un soggetto specificato?",
+    "opzioni": [
+      "Mandato di pagamento",
+      "Determina di impegno",
+      "Ruolo esattoriale",
+      "Reversale d'incasso"
+    ],
+    "corretta": 0,
+    "spiegazione": "All. 4/2 (ordinazione).",
+    "fonte": "D.Lgs. 118/2011, all. 4/2",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-118",
+    "argomento": "Contabilità finanziaria",
+    "livello": 4,
+    "testo": "A quale esercizio si imputa un pagamento?",
+    "opzioni": [
+      "All'esercizio successivo, sempre",
+      "All'esercizio in cui il tesoriere lo ha effettuato, anche se la comunicazione arriva l'anno dopo",
+      "All'esercizio della fattura",
+      "All'esercizio dell'impegno"
+    ],
+    "corretta": 1,
+    "spiegazione": "Lo prevede il principio contabile dell'allegato 4/2 al D.Lgs. 118/2011.",
+    "fonte": "D.Lgs. 118/2011, all. 4/2",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-119",
+    "argomento": "Contabilità finanziaria",
+    "livello": 4,
+    "testo": "Entro quanti giorni dall'incasso il servizio finanziario emette gli ordinativi d'incasso per le entrate riscosse dal tesoriere?",
+    "opzioni": [
+      "Entro 180 giorni",
+      "Entro un anno",
+      "Entro 60 giorni",
+      "Entro 10 giorni"
+    ],
+    "corretta": 2,
+    "spiegazione": "All. 4/2, par. 4.1.",
+    "fonte": "D.Lgs. 118/2011, all. 4/2",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-120",
+    "argomento": "Contabilità finanziaria",
+    "livello": 4,
+    "testo": "È consentito contabilizzare temporaneamente gli incassi tra le partite di giro?",
+    "opzioni": [
+      "Sì, sempre",
+      "Sì, fino a fine anno",
+      "Solo per le entrate tributarie",
+      "No, è vietato"
+    ],
+    "corretta": 3,
+    "spiegazione": "Lo prevede il principio contabile dell'allegato 4/2 al D.Lgs. 118/2011.",
+    "fonte": "D.Lgs. 118/2011, all. 4/2",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-121",
+    "argomento": "Risultato di amministrazione",
+    "livello": 3,
+    "testo": "In quali quote è distinto il risultato di amministrazione?",
+    "opzioni": [
+      "Fondi liberi, vincolati, accantonati e destinati agli investimenti",
+      "Fondi attivi e passivi",
+      "Fondi correnti e straordinari",
+      "Fondi statali e locali"
+    ],
+    "corretta": 0,
+    "spiegazione": "All. 4/2, par. 9.2.8.",
+    "fonte": "D.Lgs. 118/2011, all. 4/2",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-122",
+    "argomento": "Risultato di amministrazione",
+    "livello": 4,
+    "testo": "A quale esercizio del bilancio di previsione è applicabile il risultato di amministrazione?",
+    "opzioni": [
+      "Mai, va restituito allo Stato",
+      "Solo al primo esercizio considerato nel bilancio",
+      "A tutti gli esercizi del triennio",
+      "Solo all'ultimo esercizio"
+    ],
+    "corretta": 1,
+    "spiegazione": "All. 4/2, par. 9.2.3.",
+    "fonte": "D.Lgs. 118/2011, all. 4/2",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-123",
+    "argomento": "Contabilità finanziaria",
+    "livello": 4,
+    "testo": "Durante l'esercizio provvisorio, come gestiscono gli enti gli stanziamenti di spesa?",
+    "opzioni": [
+      "Possono solo incassare, non spendere",
+      "Senza alcun limite",
+      "Sulla base dell'ultimo bilancio di previsione definitivamente approvato",
+      "Sulla base del rendiconto di due anni prima"
+    ],
+    "corretta": 2,
+    "spiegazione": "All. 4/2, par. 8.1.",
+    "fonte": "D.Lgs. 118/2011, all. 4/2",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-124",
+    "argomento": "Contabilità finanziaria",
+    "livello": 4,
+    "testo": "Cosa si confronta nel conto del tesoriere riguardo al fondo di cassa?",
+    "opzioni": [
+      "Il fondo di cassa e il patrimonio netto",
+      "Il fondo di cassa e il debito pubblico",
+      "Il fondo di cassa e il FCDE",
+      "Il fondo di cassa contabile (di diritto) e quello risultante dalle scritture della banca (di fatto)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Lo prevede il principio contabile dell'allegato 4/2 al D.Lgs. 118/2011.",
+    "fonte": "D.Lgs. 118/2011, all. 4/2",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-125",
+    "argomento": "Contabilità finanziaria",
+    "livello": 5,
+    "testo": "A quale esercizio si accertano le entrate tributarie gestite tramite ruoli ordinari e liste di carico?",
+    "opzioni": [
+      "All'esercizio in cui sono emessi il ruolo, l'avviso o le liste di carico, se la scadenza è entro l'approvazione del rendiconto",
+      "All'esercizio dell'incasso, sempre",
+      "All'esercizio in cui il contribuente presenta ricorso",
+      "Al triennio successivo"
+    ],
+    "corretta": 0,
+    "spiegazione": "All. 4/2, par. 3.7.",
+    "fonte": "D.Lgs. 118/2011, all. 4/2",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-126",
+    "argomento": "Contabilità finanziaria",
+    "livello": 4,
+    "testo": "Le somme stanziate a cui non hanno fatto seguito obbligazioni giuridicamente perfezionate e scadute, come vengono trattate a fine esercizio?",
+    "opzioni": [
+      "Si trasferiscono automaticamente all'anno dopo",
+      "Sono cancellate quali economie di bilancio",
+      "Si pagano comunque",
+      "Diventano residui passivi"
+    ],
+    "corretta": 1,
+    "spiegazione": "Lo prevede il principio contabile dell'allegato 4/2 al D.Lgs. 118/2011.",
+    "fonte": "D.Lgs. 118/2011, all. 4/2",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-127",
+    "argomento": "Corte dei conti",
+    "livello": 2,
+    "testo": "Quali articoli della Costituzione prevedono la Corte dei conti?",
+    "opzioni": [
+      "Gli artt. 117 e 118",
+      "Gli artt. 134 e 135",
+      "Gli artt. 100 e 103",
+      "Gli artt. 81 e 97"
+    ],
+    "corretta": 2,
+    "spiegazione": "È organo di rilievo costituzionale con funzioni di controllo e giurisdizionali, tra gli organi ausiliari del Governo.",
+    "fonte": "Wikipedia, «Corte dei conti (Italia)» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-128",
+    "argomento": "Corte dei conti",
+    "livello": 3,
+    "testo": "In che anno fu istituita la Corte dei conti dello Stato italiano unitario?",
+    "opzioni": [
+      "Nel 1848",
+      "Nel 1946",
+      "Nel 1924",
+      "Nel 1862"
+    ],
+    "corretta": 3,
+    "spiegazione": "Istituita con la legge 14 agosto 1862, n. 800, fu inaugurata a Torino il 10 ottobre 1862.",
+    "fonte": "Wikipedia, «Corte dei conti (Italia)» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-129",
+    "argomento": "Corte dei conti",
+    "livello": 3,
+    "testo": "Come si chiama il testo normativo del 2016 che disciplina il processo davanti alla Corte dei conti?",
+    "opzioni": [
+      "Codice della giustizia contabile (D.Lgs. 174/2016)",
+      "Codice dei contratti pubblici",
+      "Codice del processo amministrativo",
+      "Testo unico degli enti locali"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il codice è entrato in vigore nel 2016 ed è stato corretto dal D.Lgs. 114/2019.",
+    "fonte": "Wikipedia, «Corte dei conti (Italia)» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-130",
+    "argomento": "Corte dei conti",
+    "livello": 4,
+    "testo": "Qual è l'organo di autogoverno della magistratura contabile?",
+    "opzioni": [
+      "Il Consiglio superiore della magistratura",
+      "Il Consiglio di presidenza della Corte dei conti",
+      "Il Consiglio di Stato",
+      "La Procura generale"
+    ],
+    "corretta": 1,
+    "spiegazione": "Istituito dall'art. 10 della L. 117/1988, è presieduto dal Presidente della Corte.",
+    "fonte": "Wikipedia, «Corte dei conti (Italia)» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-131",
+    "argomento": "Corte dei conti",
+    "livello": 3,
+    "testo": "In materia giurisdizionale, quali sezioni della Corte dei conti giudicano in primo grado?",
+    "opzioni": [
+      "Le sezioni riunite",
+      "La sezione delle autonomie",
+      "Le sezioni giurisdizionali regionali",
+      "Le sezioni centrali d'appello"
+    ],
+    "corretta": 2,
+    "spiegazione": "Le sezioni regionali hanno sede nei capoluoghi di regione; in appello giudicano le sezioni centrali di Roma.",
+    "fonte": "Wikipedia, «Corte dei conti (Italia)» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-132",
+    "argomento": "Corte dei conti",
+    "livello": 4,
+    "testo": "Quante sono le sezioni giurisdizionali centrali d'appello con sede a Roma?",
+    "opzioni": [
+      "Venti",
+      "Cinque",
+      "Una",
+      "Tre"
+    ],
+    "corretta": 3,
+    "spiegazione": "C'è inoltre una sezione d'appello per la Regione Siciliana, a Palermo.",
+    "fonte": "Wikipedia, «Corte dei conti (Italia)» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-133",
+    "argomento": "Corte dei conti",
+    "livello": 4,
+    "testo": "Quale organo della Corte dei conti risolve i conflitti di competenza e le «questioni di massima»?",
+    "opzioni": [
+      "Le sezioni riunite",
+      "La sezione delle autonomie",
+      "Il Procuratore regionale",
+      "Il Consiglio di presidenza"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Corte dei conti (Italia)».",
+    "fonte": "Wikipedia, «Corte dei conti (Italia)» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-134",
+    "argomento": "Corte dei conti",
+    "livello": 3,
+    "testo": "Chi svolge le funzioni di pubblico ministero nei giudizi di responsabilità davanti alle sezioni regionali?",
+    "opzioni": [
+      "L'Avvocatura dello Stato",
+      "La Procura regionale della Corte dei conti",
+      "Il Procuratore della Repubblica presso il tribunale",
+      "Il prefetto"
+    ],
+    "corretta": 1,
+    "spiegazione": "Presso ogni sezione giurisdizionale regionale opera una Procura regionale.",
+    "fonte": "Wikipedia, «Corte dei conti (Italia)» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-135",
+    "argomento": "Corte dei conti",
+    "livello": 3,
+    "testo": "Quale organo della Corte dei conti emette il giudizio di parificazione del rendiconto generale dello Stato?",
+    "opzioni": [
+      "La sezione regionale del Lazio",
+      "La sezione controllo enti",
+      "Le sezioni riunite",
+      "La Procura generale"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Corte dei conti (Italia)».",
+    "fonte": "Wikipedia, «Corte dei conti (Italia)» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-136",
+    "argomento": "Corte dei conti",
+    "livello": 4,
+    "testo": "Che tipo di controllo esercita la Corte dei conti sugli atti del Governo?",
+    "opzioni": [
+      "Nessun controllo",
+      "Un controllo di costituzionalità",
+      "Un controllo politico di merito",
+      "Un controllo preventivo di legittimità"
+    ],
+    "corretta": 3,
+    "spiegazione": "Effettua inoltre un controllo successivo sulla gestione dei bilanci pubblici.",
+    "fonte": "Wikipedia, «Corte dei conti (Italia)» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-137",
+    "argomento": "Corte dei conti",
+    "livello": 4,
+    "testo": "Prima di esercitare l'azione di responsabilità, cosa deve inviare il procuratore contabile al presunto responsabile?",
+    "opzioni": [
+      "Un invito a dedurre",
+      "Una cartella esattoriale",
+      "Un decreto ingiuntivo",
+      "Un avviso di garanzia penale"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'invito a dedurre consente all'interessato di presentare deduzioni e documenti.",
+    "fonte": "Wikipedia, «Corte dei conti (Italia)» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-138",
+    "argomento": "Corte dei conti",
+    "livello": 3,
+    "testo": "Di quale tipo di responsabilità giudica principalmente la Corte dei conti?",
+    "opzioni": [
+      "Responsabilità penale per reati comuni",
+      "Responsabilità amministrativa dei pubblici dipendenti e amministratori per danni all'erario",
+      "Responsabilità civile tra privati",
+      "Responsabilità politica dei ministri"
+    ],
+    "corretta": 1,
+    "spiegazione": "Oltre alla responsabilità amministrativa e contabile, giudica il contenzioso pensionistico.",
+    "fonte": "Wikipedia, «Corte dei conti (Italia)» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-139",
+    "argomento": "Ragioneria generale dello Stato",
+    "livello": 2,
+    "testo": "Di quale Ministero è un dipartimento la Ragioneria generale dello Stato?",
+    "opzioni": [
+      "Della Presidenza del Consiglio",
+      "Del Ministero dell'interno",
+      "Del Ministero dell'economia e delle finanze",
+      "Del Ministero della giustizia"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Ragioneria generale dello Stato».",
+    "fonte": "Wikipedia, «Ragioneria generale dello Stato» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-140",
+    "argomento": "Ragioneria generale dello Stato",
+    "livello": 3,
+    "testo": "Quale di questi compiti spetta alla Ragioneria generale dello Stato?",
+    "opzioni": [
+      "Riscuotere direttamente le imposte",
+      "Approvare la legge di bilancio",
+      "Giudicare la responsabilità dei funzionari",
+      "Predisporre il bilancio di previsione e il rendiconto generale dello Stato"
+    ],
+    "corretta": 3,
+    "spiegazione": "La RGS si occupa anche della tenuta della contabilità e della vigilanza sulla spesa pubblica.",
+    "fonte": "Wikipedia, «Ragioneria generale dello Stato» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-141",
+    "argomento": "Ragioneria generale dello Stato",
+    "livello": 4,
+    "testo": "Come si chiamano gli uffici della RGS presenti presso ogni ministero?",
+    "opzioni": [
+      "Uffici centrali del bilancio",
+      "Avvocature distrettuali",
+      "Ragionerie territoriali comunali",
+      "Sezioni di controllo"
+    ],
+    "corretta": 0,
+    "spiegazione": "Sono le ex ragionerie centrali; a livello locale operano le ragionerie territoriali.",
+    "fonte": "Wikipedia, «Ragioneria generale dello Stato» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-142",
+    "argomento": "Bilancio dello Stato",
+    "livello": 2,
+    "testo": "Entro quale data deve essere approvato il bilancio dello Stato?",
+    "opzioni": [
+      "Entro il 10 aprile",
+      "Entro il 31 dicembre",
+      "Entro il 20 ottobre",
+      "Entro il 30 giugno"
+    ],
+    "corretta": 1,
+    "spiegazione": "Presentato entro il 20 ottobre, va approvato entro il 31 dicembre; altrimenti serve l'esercizio provvisorio.",
+    "fonte": "Wikipedia, «Bilancio dello Stato» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-143",
+    "argomento": "Bilancio dello Stato",
+    "livello": 3,
+    "testo": "Cosa indica il bilancio di cassa, a differenza di quello di competenza?",
+    "opzioni": [
+      "Le previsioni triennali",
+      "Il patrimonio dello Stato",
+      "Le entrate effettivamente incassate e le spese effettivamente pagate",
+      "Le obbligazioni giuridiche sorte nell'anno"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il bilancio di competenza guarda alla nascita delle obbligazioni, quello di cassa al loro adempimento.",
+    "fonte": "Wikipedia, «Bilancio dello Stato» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-144",
+    "argomento": "Bilancio dello Stato",
+    "livello": 3,
+    "testo": "Quale funzione del bilancio fa sì che, senza la sua approvazione, l'esecutivo non possa gestire la spesa né riscuotere le entrate?",
+    "opzioni": [
+      "La funzione economica",
+      "La funzione statistica",
+      "La funzione contabile",
+      "La funzione giuridica (di autorizzazione)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Bilancio dello Stato».",
+    "fonte": "Wikipedia, «Bilancio dello Stato» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-145",
+    "argomento": "Bilancio dello Stato",
+    "livello": 3,
+    "testo": "Come si chiama il saldo positivo tra entrate e spese al netto degli interessi sul debito?",
+    "opzioni": [
+      "Avanzo primario",
+      "Fabbisogno",
+      "Disavanzo strutturale",
+      "Ricorso al mercato"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Bilancio dello Stato».",
+    "fonte": "Wikipedia, «Bilancio dello Stato» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-146",
+    "argomento": "Regole europee",
+    "livello": 2,
+    "testo": "In che anno e dove fu sottoscritto il Patto di stabilità e crescita?",
+    "opzioni": [
+      "Nel 1957, a Roma",
+      "Nel 1997, ad Amsterdam",
+      "Nel 2012, a Bruxelles",
+      "Nel 1992, a Maastricht"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Patto di stabilità e crescita».",
+    "fonte": "Wikipedia, «Patto di stabilità e crescita» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-147",
+    "argomento": "Regole europee",
+    "livello": 2,
+    "testo": "Quali sono i due parametri di bilancio storici del Patto di stabilità e crescita?",
+    "opzioni": [
+      "Inflazione sotto il 2% e debito sotto il 90%",
+      "Deficit zero e debito zero",
+      "Deficit non oltre il 3% del PIL e debito sotto il 60% del PIL",
+      "Deficit non oltre l'1% e debito sotto il 100%"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Patto di stabilità e crescita».",
+    "fonte": "Wikipedia, «Patto di stabilità e crescita» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-148",
+    "argomento": "Regole europee",
+    "livello": 3,
+    "testo": "Come si chiama la procedura UE che si attiva quando uno Stato supera il limite di deficit?",
+    "opzioni": [
+      "Procedura di infrazione ambientale",
+      "Procedura di revisione dei trattati",
+      "Procedura di conciliazione",
+      "Procedura per deficit eccessivo"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Patto di stabilità e crescita».",
+    "fonte": "Wikipedia, «Patto di stabilità e crescita» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-149",
+    "argomento": "Regole europee",
+    "livello": 3,
+    "testo": "Qual è il nome formale del cosiddetto «fiscal compact»?",
+    "opzioni": [
+      "Trattato sulla stabilità, coordinamento e governance nell'unione economica e monetaria",
+      "Patto di stabilità e crescita",
+      "Trattato di Maastricht",
+      "Meccanismo europeo di stabilità"
+    ],
+    "corretta": 0,
+    "spiegazione": "Approvato il 2 marzo 2012, in vigore dal 1° gennaio 2013.",
+    "fonte": "Wikipedia, «Patto di bilancio europeo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-150",
+    "argomento": "Regole europee",
+    "livello": 4,
+    "testo": "Da quando è entrato in vigore il fiscal compact?",
+    "opzioni": [
+      "Dal 1° gennaio 2020",
+      "Dal 1° gennaio 2013",
+      "Dal 1° gennaio 1999",
+      "Dal 1° gennaio 2002"
+    ],
+    "corretta": 1,
+    "spiegazione": "Voce «Patto di bilancio europeo».",
+    "fonte": "Wikipedia, «Patto di bilancio europeo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-151",
+    "argomento": "Regole europee",
+    "livello": 4,
+    "testo": "Qual è, secondo il fiscal compact, il limite di deficit strutturale per i Paesi con debito superiore al 60% del PIL?",
+    "opzioni": [
+      "0% esatto",
+      "1,5% del PIL",
+      "0,5% del PIL",
+      "3% del PIL"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il limite sale all'1% per i Paesi con debito inferiore al 60% del PIL.",
+    "fonte": "Wikipedia, «Patto di bilancio europeo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-152",
+    "argomento": "Bilanci armonizzati",
+    "livello": 3,
+    "testo": "Su quale materia di competenza esclusiva dello Stato si fonda l'armonizzazione dei bilanci del D.Lgs. 118/2011?",
+    "opzioni": [
+      "La tutela dell'ambiente",
+      "L'ordinamento civile",
+      "La difesa",
+      "L'armonizzazione dei bilanci pubblici (art. 117, secondo comma, lett. e), Cost.)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 1 D.Lgs. 118/2011.",
+    "fonte": "D.Lgs. 118/2011, art. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-153",
+    "argomento": "Bilanci armonizzati",
+    "livello": 3,
+    "testo": "Quale contabilità adottano regioni ed enti locali, e cosa le affiancano a fini conoscitivi?",
+    "opzioni": [
+      "La contabilità finanziaria, affiancata dalla contabilità economico-patrimoniale",
+      "La partita doppia senza contabilità finanziaria",
+      "Solo la contabilità economica",
+      "Solo la contabilità di cassa"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 2, c. 1.",
+    "fonte": "D.Lgs. 118/2011, art. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-154",
+    "argomento": "Bilanci armonizzati",
+    "livello": 3,
+    "testo": "Quali sono i quattro principi contabili applicati allegati al D.Lgs. 118/2011?",
+    "opzioni": [
+      "Previsione, gestione, controllo, revisione",
+      "Programmazione, contabilità finanziaria, contabilità economico-patrimoniale, bilancio consolidato",
+      "Entrate, spese, residui, cassa",
+      "Annualità, unità, universalità, integrità"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 3, c. 1: allegati 4/1, 4/2, 4/3 e 4/4.",
+    "fonte": "D.Lgs. 118/2011, art. 3",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-155",
+    "argomento": "Bilanci armonizzati",
+    "livello": 4,
+    "testo": "A cosa serve il piano dei conti integrato?",
+    "opzioni": [
+      "A eleggere il revisore",
+      "A pagare i fornitori",
+      "Al consolidamento e monitoraggio dei conti pubblici e al raccordo con il Sistema europeo dei conti",
+      "A calcolare gli stipendi"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 4 D.Lgs. 118/2011.",
+    "fonte": "D.Lgs. 118/2011, art. 4",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-156",
+    "argomento": "Bilanci armonizzati",
+    "livello": 4,
+    "testo": "Cosa genera ogni atto gestionale secondo l'art. 5 del D.Lgs. 118/2011?",
+    "opzioni": [
+      "Un mandato di pagamento",
+      "Un ordine di servizio",
+      "Un parere del revisore",
+      "Una transazione elementare, con codifica completa"
+    ],
+    "corretta": 3,
+    "spiegazione": "Senza codifica completa il sistema non deve consentire accertamenti, impegni, pagamenti, ecc.",
+    "fonte": "D.Lgs. 118/2011, art. 5",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-157",
+    "argomento": "Bilanci armonizzati",
+    "livello": 3,
+    "testo": "Cosa rappresentano i programmi nel bilancio armonizzato?",
+    "opzioni": [
+      "Aggregati omogenei di attività volte a perseguire gli obiettivi definiti nelle missioni",
+      "I capitoli di entrata",
+      "Le singole fatture",
+      "Le funzioni principali dell'ente"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 13 D.Lgs. 118/2011.",
+    "fonte": "D.Lgs. 118/2011, art. 13",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-158",
+    "argomento": "Bilanci armonizzati",
+    "livello": 3,
+    "testo": "Come sono definiti i «titoli» delle entrate nel bilancio armonizzato?",
+    "opzioni": [
+      "Secondo l'importo",
+      "Secondo la fonte di provenienza delle entrate",
+      "Secondo il funzionario che le gestisce",
+      "Secondo la data di incasso"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 15: i titoli si articolano in tipologie, che sono le unità di voto.",
+    "fonte": "D.Lgs. 118/2011, art. 15",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-159",
+    "argomento": "Bilanci armonizzati",
+    "livello": 3,
+    "testo": "Entro quale data le amministrazioni del D.Lgs. 118/2011 approvano il bilancio consolidato?",
+    "opzioni": [
+      "Entro il 31 marzo",
+      "Entro il 31 dicembre dell'anno precedente",
+      "Entro il 31 ottobre dell'anno successivo",
+      "Entro il 30 aprile"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 18, c. 1, lett. c).",
+    "fonte": "D.Lgs. 118/2011, art. 18",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-160",
+    "argomento": "Bilanci armonizzati",
+    "livello": 4,
+    "testo": "Entro quale data le regioni approvano il rendiconto?",
+    "opzioni": [
+      "Entro il 30 aprile da parte del consiglio",
+      "Entro il 15 novembre",
+      "Entro il 31 dicembre",
+      "Entro il 31 luglio dell'anno successivo, con approvazione della giunta entro il 30 aprile"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 18, c. 1, lett. b): così si consente la parifica delle sezioni regionali della Corte dei conti.",
+    "fonte": "D.Lgs. 118/2011, art. 18",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-161",
+    "argomento": "Bilanci armonizzati",
+    "livello": 4,
+    "testo": "Come si chiama il sistema di indicatori che consente di confrontare i bilanci degli enti?",
+    "opzioni": [
+      "Piano degli indicatori e dei risultati attesi di bilancio",
+      "Quadro generale riassuntivo",
+      "Documento unico di programmazione",
+      "Conto del tesoriere"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 18-bis.",
+    "fonte": "D.Lgs. 118/2011, art. 18-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-162",
+    "argomento": "Bilancio regionale",
+    "livello": 3,
+    "testo": "Con quale atto il consiglio regionale approva il bilancio di previsione finanziario?",
+    "opzioni": [
+      "Con regolamento",
+      "Con legge",
+      "Con delibera di giunta",
+      "Con decreto del presidente"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 39, c. 1: orizzonte almeno triennale.",
+    "fonte": "D.Lgs. 118/2011, art. 39",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-163",
+    "argomento": "Bilancio regionale",
+    "livello": 4,
+    "testo": "Come deve essere deliberato il bilancio di previsione regionale per ciascun esercizio?",
+    "opzioni": [
+      "In disavanzo, se approvato dalla giunta",
+      "Con un avanzo minimo del 10%",
+      "In pareggio finanziario di competenza, con fondo di cassa finale non negativo",
+      "Senza vincoli di equilibrio"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 40, c. 1.",
+    "fonte": "D.Lgs. 118/2011, art. 40",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-164",
+    "argomento": "Risultato di amministrazione",
+    "livello": 3,
+    "testo": "Come si calcola il risultato di amministrazione?",
+    "opzioni": [
+      "Entrate accertate meno spese pagate",
+      "Entrate tributarie meno spese correnti",
+      "Patrimonio netto meno debiti",
+      "Fondo di cassa più residui attivi meno residui passivi (al netto del FPV di spesa)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 42, c. 1.",
+    "fonte": "D.Lgs. 118/2011, art. 42",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-165",
+    "argomento": "Bilancio regionale",
+    "livello": 3,
+    "testo": "Se il bilancio regionale non è approvato entro il 31 dicembre, per quanto può essere concesso l'esercizio provvisorio?",
+    "opzioni": [
+      "Per legge, per non più di quattro mesi complessivi",
+      "Per un anno",
+      "Per decreto, per sei mesi",
+      "Senza limiti"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 43, c. 2.",
+    "fonte": "D.Lgs. 118/2011, art. 43",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-166",
+    "argomento": "Bilancio regionale",
+    "livello": 4,
+    "testo": "In quale missione del bilancio è stanziato l'accantonamento al fondo crediti di dubbia esigibilità?",
+    "opzioni": [
+      "Nella missione «Anticipazioni finanziarie»",
+      "Nella missione «Fondi e Accantonamenti»",
+      "Nella missione «Debito pubblico»",
+      "Nella missione «Servizi istituzionali»"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 46, c. 1.",
+    "fonte": "D.Lgs. 118/2011, art. 46",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-167",
+    "argomento": "Bilancio regionale",
+    "livello": 4,
+    "testo": "Cosa sono gli organismi strumentali della regione?",
+    "opzioni": [
+      "Società per azioni quotate",
+      "Uffici della Corte dei conti",
+      "Articolazioni organizzative dotate di autonomia gestionale e contabile ma prive di personalità giuridica",
+      "Enti locali autonomi"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 47, c. 2.",
+    "fonte": "D.Lgs. 118/2011, art. 47",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-168",
+    "argomento": "Bilancio regionale",
+    "livello": 3,
+    "testo": "Entro quale data la regione approva con legge l'assestamento del bilancio?",
+    "opzioni": [
+      "Entro il 30 aprile",
+      "Entro il 31 dicembre",
+      "Entro il 30 novembre",
+      "Entro il 31 luglio"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 50, c. 1.",
+    "fonte": "D.Lgs. 118/2011, art. 50",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-169",
+    "argomento": "Bilancio regionale",
+    "livello": 4,
+    "testo": "Con quale atto sono autorizzate, di regola, le variazioni al bilancio di previsione regionale?",
+    "opzioni": [
+      "Con legge (salvi i casi in cui provvede la giunta con atto amministrativo)",
+      "Con delibera della Corte dei conti",
+      "Sempre con decreto del dirigente",
+      "Con ordinanza del presidente"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 51, c. 1-2.",
+    "fonte": "D.Lgs. 118/2011, art. 51",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-170",
+    "argomento": "Bilancio regionale",
+    "livello": 5,
+    "testo": "Una regione può contrarre nuovo indebitamento se il consiglio non ha approvato il rendiconto dell'ultimo esercizio?",
+    "opzioni": [
+      "Sì, con delibera di giunta",
+      "No",
+      "Solo per spese correnti",
+      "Sì, sempre"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 62, c. 2.",
+    "fonte": "D.Lgs. 118/2011, art. 62",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-171",
+    "argomento": "Bilanci armonizzati",
+    "livello": 3,
+    "testo": "Cosa rappresenta il bilancio consolidato del «gruppo amministrazione pubblica»?",
+    "opzioni": [
+      "Il conto del tesoriere",
+      "Solo le entrate tributarie dell'ente",
+      "Il risultato economico, patrimoniale e finanziario del gruppo, eliminando i rapporti interni",
+      "Il bilancio di previsione dell'ente capogruppo"
+    ],
+    "corretta": 2,
+    "spiegazione": "Allegato 4/4.",
+    "fonte": "D.Lgs. 118/2011, all. 4/4",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-172",
+    "argomento": "Bilanci armonizzati",
+    "livello": 4,
+    "testo": "Chi predispone il bilancio consolidato?",
+    "opzioni": [
+      "Ogni società partecipata",
+      "Il revisore dei conti",
+      "La Corte dei conti",
+      "L'ente capogruppo"
+    ],
+    "corretta": 3,
+    "spiegazione": "Allegato 4/4.",
+    "fonte": "D.Lgs. 118/2011, all. 4/4",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-173",
+    "argomento": "Bilanci armonizzati",
+    "livello": 5,
+    "testo": "Sotto quale soglia di incidenza un bilancio di una partecipata è considerato irrilevante ai fini del consolidamento per gli enti locali?",
+    "opzioni": [
+      "Il 10 per cento rispetto alla capogruppo (5 per cento per le regioni)",
+      "L'1 per cento",
+      "Il 50 per cento",
+      "Il 25 per cento"
+    ],
+    "corretta": 0,
+    "spiegazione": "Allegato 4/4, che però invita a non escludere troppe realtà singolarmente insignificanti.",
+    "fonte": "D.Lgs. 118/2011, all. 4/4",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-174",
+    "argomento": "Finanza locale",
+    "livello": 2,
+    "testo": "A quale fonte è riservato l'ordinamento della finanza locale?",
+    "opzioni": [
+      "Ai regolamenti comunali",
+      "Alla legge, che lo coordina con la finanza statale e regionale",
+      "Al prefetto",
+      "Agli statuti delle province"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 149, c. 1 TUEL.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 149",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-175",
+    "argomento": "Finanza locale",
+    "livello": 3,
+    "testo": "Su cosa si fonda l'autonomia finanziaria di comuni e province secondo l'art. 149 TUEL?",
+    "opzioni": [
+      "Sulle donazioni private",
+      "Sul pareggio di cassa giornaliero",
+      "Sulla certezza di risorse proprie e trasferite",
+      "Sui soli prestiti bancari"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 149, c. 2.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 149",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-176",
+    "argomento": "Finanza locale",
+    "livello": 2,
+    "testo": "A quale servizio è affidato il coordinamento e la gestione dell'attività finanziaria dell'ente locale?",
+    "opzioni": [
+      "All'ufficio anagrafe",
+      "Alla polizia locale",
+      "All'ufficio tecnico",
+      "Al servizio economico-finanziario (ragioneria)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 153 TUEL.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 153",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-177",
+    "argomento": "Bilancio enti locali",
+    "livello": 4,
+    "testo": "Entro quali limiti va iscritto il fondo di riserva nel bilancio degli enti locali?",
+    "opzioni": [
+      "Tra lo 0,30 e il 2 per cento delle spese correnti inizialmente previste",
+      "Senza limiti",
+      "Almeno il 50 per cento",
+      "Tra il 5 e il 10 per cento"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 166, c. 1 TUEL.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 166",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-178",
+    "argomento": "Bilancio enti locali",
+    "livello": 4,
+    "testo": "Chi delibera l'utilizzo del fondo di riserva negli enti locali?",
+    "opzioni": [
+      "Il revisore dei conti",
+      "L'organo esecutivo (giunta), con comunicazione al consiglio",
+      "Il tesoriere",
+      "Il consiglio comunale con legge"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 166, c. 2.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 166",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-179",
+    "argomento": "Bilancio enti locali",
+    "livello": 5,
+    "testo": "Qual è il limite minimo del fondo di riserva se l'ente utilizza anticipazioni di tesoreria o entrate vincolate (artt. 195 e 222)?",
+    "opzioni": [
+      "1 per cento",
+      "2 per cento",
+      "0,45 per cento delle spese correnti",
+      "0,30 per cento"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 166, c. 2-ter.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 166",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-180",
+    "argomento": "Bilancio enti locali",
+    "livello": 3,
+    "testo": "Entro quanti giorni dall'approvazione del bilancio la giunta delibera il PEG?",
+    "opzioni": [
+      "Entro cinque giorni",
+      "Entro il 31 luglio",
+      "Entro sessanta giorni",
+      "Entro venti giorni"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 169, c. 1 TUEL.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 169",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-181",
+    "argomento": "Bilancio enti locali",
+    "livello": 4,
+    "testo": "Quali sono le unità elementari ai fini della gestione e della rendicontazione nel PEG?",
+    "opzioni": [
+      "I capitoli",
+      "Le tipologie",
+      "I titoli",
+      "Le missioni"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 169, c. 2: raccordati al quarto livello del piano dei conti.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 169",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-182",
+    "argomento": "Bilancio enti locali",
+    "livello": 3,
+    "testo": "A quale organo spettano, di regola, le variazioni al bilancio di previsione degli enti locali?",
+    "opzioni": [
+      "Al sindaco",
+      "All'organo consiliare",
+      "Al segretario comunale",
+      "Al tesoriere"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 175, c. 2, salvo le variazioni attribuite a giunta e dirigenti.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 175",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-183",
+    "argomento": "Bilancio enti locali",
+    "livello": 4,
+    "testo": "Entro quale data possono essere deliberate, di regola, le variazioni di bilancio degli enti locali?",
+    "opzioni": [
+      "Non oltre il 31 luglio",
+      "In qualsiasi momento",
+      "Non oltre il 30 novembre (salvo alcune variazioni ammesse fino al 31 dicembre)",
+      "Non oltre il 30 aprile"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 175, c. 3.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 175",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-184",
+    "argomento": "Gestione dell'entrata",
+    "livello": 3,
+    "testo": "Qual è la prima fase di gestione dell'entrata negli enti locali?",
+    "opzioni": [
+      "Il versamento",
+      "La riscossione",
+      "La liquidazione",
+      "L'accertamento"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 179 TUEL; seguono riscossione e versamento.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 179",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-185",
+    "argomento": "Gestione della spesa",
+    "livello": 2,
+    "testo": "Quali sono, in ordine, le fasi di gestione della spesa?",
+    "opzioni": [
+      "Impegno, liquidazione, ordinazione, pagamento",
+      "Accertamento, riscossione, versamento",
+      "Ordinazione, impegno, pagamento, liquidazione",
+      "Liquidazione, impegno, pagamento, ordinazione"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 182 TUEL.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 182",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-186",
+    "argomento": "Gestione della spesa",
+    "livello": 4,
+    "testo": "A chi compete la liquidazione della spesa?",
+    "opzioni": [
+      "Al consiglio comunale",
+      "All'ufficio che ha dato esecuzione al provvedimento di spesa",
+      "Al tesoriere",
+      "Al revisore dei conti"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 184, c. 2 TUEL.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 184",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-187",
+    "argomento": "Gestione della spesa",
+    "livello": 4,
+    "testo": "Entro quali limiti sono disposti gli ordinativi di pagamento?",
+    "opzioni": [
+      "Nei limiti del fondo di riserva",
+      "Senza limiti",
+      "Nei limiti dei rispettivi stanziamenti di cassa (salvo anticipazioni di tesoreria, servizi per conto terzi e partite di giro)",
+      "Nei limiti dei residui attivi"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 185, c. 1 TUEL.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 185",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-188",
+    "argomento": "Risultato di amministrazione",
+    "livello": 4,
+    "testo": "Cosa comprendono i fondi accantonati del risultato di amministrazione?",
+    "opzioni": [
+      "Le entrate in conto capitale non spese",
+      "Le entrate libere",
+      "I residui passivi",
+      "Gli accantonamenti per passività potenziali e il fondo crediti di dubbia esigibilità"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 187, c. 1 TUEL.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 187",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-189",
+    "argomento": "Risultato di amministrazione",
+    "livello": 5,
+    "testo": "Quando l'ente locale è in disavanzo di amministrazione?",
+    "opzioni": [
+      "Quando il risultato non basta a coprire le quote vincolate, destinate e accantonate",
+      "Quando non ha approvato il PEG",
+      "Quando ha residui passivi",
+      "Quando la cassa è inferiore a un milione"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 187, c. 1 TUEL.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 187",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-190",
+    "argomento": "Equilibri di bilancio",
+    "livello": 4,
+    "testo": "Entro quale data, almeno, il consiglio verifica il permanere degli equilibri generali di bilancio?",
+    "opzioni": [
+      "Entro il 30 aprile",
+      "Entro il 31 luglio",
+      "Entro il 31 dicembre",
+      "Entro il 15 novembre"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 193, c. 2 TUEL (salvaguardia degli equilibri).",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 193",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-191",
+    "argomento": "Tesoreria",
+    "livello": 4,
+    "testo": "Qual è il limite ordinario delle anticipazioni di tesoreria agli enti locali (art. 222 TUEL)?",
+    "opzioni": [
+      "Un dodicesimo del bilancio",
+      "Il 30% del fondo di cassa",
+      "Tre dodicesimi delle entrate accertate nel penultimo anno precedente, relative ai primi tre titoli",
+      "La metà delle spese correnti"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 222, c. 1; la legge ha più volte innalzato temporaneamente il limite.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 222",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-192",
+    "argomento": "Rendiconto",
+    "livello": 2,
+    "testo": "Cosa comprende il rendiconto della gestione degli enti locali?",
+    "opzioni": [
+      "Solo il conto del tesoriere",
+      "Il bilancio di previsione aggiornato",
+      "Il DUP e il PEG",
+      "Conto del bilancio, conto economico e stato patrimoniale"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 227, c. 1 TUEL.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 227",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-193",
+    "argomento": "Rendiconto",
+    "livello": 4,
+    "testo": "Quanti giorni prima della sessione consiliare la proposta di rendiconto va messa a disposizione dei consiglieri, come minimo?",
+    "opzioni": [
+      "Venti giorni",
+      "Tre mesi",
+      "Cinque giorni",
+      "Un giorno"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 227, c. 2.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 227",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-194",
+    "argomento": "Rendiconto",
+    "livello": 4,
+    "testo": "Cosa accade se il comune non approva il rendiconto entro il 30 aprile?",
+    "opzioni": [
+      "Nulla",
+      "Si applica la procedura di scioglimento prevista dall'art. 141, c. 2 (diffida e commissario)",
+      "Si applica una multa al sindaco",
+      "Il bilancio si approva da solo"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 227, c. 2-bis.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 227",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-195",
+    "argomento": "Rendiconto",
+    "livello": 4,
+    "testo": "In cosa consiste il riaccertamento dei residui previsto prima del conto del bilancio?",
+    "opzioni": [
+      "Nella loro trasformazione in entrate libere",
+      "Nel pagamento immediato di tutti i residui",
+      "Nella revisione delle ragioni del loro mantenimento, in tutto o in parte, e della corretta imputazione",
+      "Nella cancellazione di tutti i residui"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 228, c. 3 TUEL.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 228",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-196",
+    "argomento": "Rendiconto",
+    "livello": 3,
+    "testo": "A chi rendono il conto della propria gestione gli agenti contabili degli enti locali (economo, tesoriere, consegnatari)?",
+    "opzioni": [
+      "Al prefetto",
+      "Alla banca d'Italia",
+      "Al sindaco soltanto",
+      "Il conto viene trasmesso alla Corte dei conti, con gli allegati richiesti"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 233 TUEL: tra gli allegati, eventuali documenti richiesti dalla Corte dei conti.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 233",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-197",
+    "argomento": "Revisione",
+    "livello": 3,
+    "testo": "Su quali atti l'organo di revisione degli enti locali rende pareri?",
+    "opzioni": [
+      "Ad esempio su strumenti di programmazione economico-finanziaria e sulla proposta di bilancio di previsione",
+      "Sui regolamenti edilizi in ogni caso",
+      "Sulle nomine degli assessori",
+      "Sulle sentenze del TAR"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 239 TUEL.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 239",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-198",
+    "argomento": "Esercizio provvisorio",
+    "livello": 3,
+    "testo": "Se il bilancio di previsione non è approvato entro il 31 dicembre, come si svolge la gestione finanziaria dell'ente locale?",
+    "opzioni": [
+      "Liberamente, senza limiti",
+      "Secondo i principi applicati su esercizio provvisorio o gestione provvisoria",
+      "Si blocca ogni pagamento",
+      "La gestione passa alla regione"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 163, c. 1 TUEL.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 163",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-199",
+    "argomento": "Bilancio enti locali",
+    "livello": 4,
+    "testo": "Per gli enti locali sotto i 5.000 abitanti, l'articolazione del PEG prevista dall'art. 169, commi 1 e 2, è:",
+    "opzioni": [
+      "Sostituita dal DEFR",
+      "Obbligatoria e più dettagliata",
+      "Facoltativa",
+      "Vietata"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 169, c. 3 TUEL, fermo l'obbligo di rilevare i fatti secondo il piano dei conti.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 169",
+    "versione": "v1"
+  },
+  {
+    "materia": "contabilita-pubblica",
+    "id": "cont-200",
+    "argomento": "Equilibri di bilancio",
+    "livello": 4,
+    "testo": "Se dalla salvaguardia degli equilibri emerge un disavanzo, cosa deve adottare il consiglio?",
+    "opzioni": [
+      "Nulla, si rinvia all'anno dopo",
+      "Le dimissioni del sindaco",
+      "Un aumento automatico dell'IVA",
+      "Le misure per ripristinare il pareggio, il ripiano dei debiti fuori bilancio e l'adeguamento del FCDE"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 193, c. 2 TUEL.",
+    "fonte": "D.Lgs. 267/2000 (TUEL), art. 193",
+    "versione": "v1"
+  }
+]

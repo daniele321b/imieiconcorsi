@@ -9,6 +9,10 @@ terraform {
       source  = "hashicorp/archive"
       version = "~> 2.7"
     }
+    random = {
+      source  = "hashicorp/random"
+      version = "~> 3.6"
+    }
   }
 
   # Bucket creato da infra/terraform/bootstrap: imieiconcorsi-tfstate-<account id>.
@@ -24,6 +28,19 @@ terraform {
 
 provider "aws" {
   region = var.aws_region
+
+  default_tags {
+    tags = {
+      Project     = "imieiconcorsi"
+      Environment = "dev"
+    }
+  }
+}
+
+# CloudFront vuole i certificati (e in prod il WAF) in us-east-1.
+provider "aws" {
+  alias  = "us_east_1"
+  region = "us-east-1"
 
   default_tags {
     tags = {

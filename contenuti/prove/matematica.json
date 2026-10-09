@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "mat-001",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Un numero p > 1 si dice primo se è divisibile solo per se stesso e per l'unità"
+  },
+  {
+    "id": "mat-002",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "verifico se 59 è divisibile per un numero primo"
+  },
+  {
+    "id": "mat-003",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Ogni numero naturale n > 1 si può scrivere in modo unico come prodotto di numeri primi"
+  },
+  {
+    "id": "mat-004",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Un numero è divisibile per 3 se e solo se la somma delle cifre che lo compongono è divisibile per 3"
+  },
+  {
+    "id": "mat-005",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Un numero è divisibile per 3 se e solo se la somma delle cifre"
+  },
+  {
+    "id": "mat-006",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Un numero è divisibile per 5 se la sua ultima cifra è 0 o 5"
+  },
+  {
+    "id": "mat-007",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "è il più piccolo tra tutti i multipli comuni di a e di b"
+  },
+  {
+    "id": "mat-008",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "è il più grande tra tutti i divisori comuni ad a e b"
+  },
+  {
+    "id": "mat-009",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Il prodotto di due potenze con la stessa base è uguale a una potenza che ha per base la stessa base e per esponente la somma degli esponenti"
+  },
+  {
+    "id": "mat-010",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "La potenza di una potenza è uguale a una potenza che ha la base della prima potenza e per esponente il prodotto degli esponenti"
+  },
+  {
+    "id": "mat-011",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "qualunque numero diverso da zero elevato a zero è uguale a 1"
+  },
+  {
+    "id": "mat-012",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "In ogni proporzione il prodotto dei medi è uguale al prodotto degli estremi"
+  },
+  {
+    "id": "mat-013",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "il prodotto dei medi è uguale al prodotto degli estremi"
+  },
+  {
+    "id": "mat-014",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "La percentuale si indica con un numero intero o decimale seguita dal simbolo %"
+  },
+  {
+    "id": "mat-015",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "La percentuale si indica con un numero intero o decimale seguita dal simbolo %"
+  },
+  {
+    "id": "mat-016",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "La percentuale si indica con un numero intero o decimale"
+  },
+  {
+    "id": "mat-017",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "La media aritmetica (semplice) è il valore ottenuto sommando tutti i dati e dividendo tale somma per il numero dei dati"
+  },
+  {
+    "id": "mat-018",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "La mediana di una successione di dati disposti in ordine crescente è il valore equidistante dagli estremi"
+  },
+  {
+    "id": "mat-019",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Espressioni numeriche"
+  },
+  {
+    "id": "mat-020",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "seguita dal simbolo %"
+  },
+  {
+    "id": "mat-021",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "mentre la divisione 0 : 0 è indeterminata"
+  },
+  {
+    "id": "mat-022",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Si dice resto della divisione tra n e m"
+  },
+  {
+    "id": "mat-023",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "si chiama modulo di n rispetto a m"
+  },
+  {
+    "id": "mat-024",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "si ottiene moltiplicando fra loro n fattori tutti uguali ad a"
+  },
+  {
+    "id": "mat-025",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "si definisce radice n-esima di a il numero r tale che moltiplicando tra loro n fattori tutti uguali a r"
+  },
+  {
+    "id": "mat-026",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Chiamiamo divisore proprio di un numero un suo divisore diverso dal numero stesso e dall'unità"
+  },
+  {
+    "id": "mat-027",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "(di Euclide). I numeri primi sono infiniti"
+  },
+  {
+    "id": "mat-028",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Scomporre in fattori primi il numero 630"
+  },
+  {
+    "id": "mat-029",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "12 e 25 sono primi tra loro"
+  },
+  {
+    "id": "mat-030",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Per calcolare il minimo comune multiplo tra 6 e 15"
+  },
+  {
+    "id": "mat-031",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "il massimo comune divisore tra 18 e 12"
+  },
+  {
+    "id": "mat-032",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Due numeri relativi si dicono concordi, se hanno lo stesso segno"
+  },
+  {
+    "id": "mat-033",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Il valore assoluto di un numero relativo è il numero senza il segno"
+  },
+  {
+    "id": "mat-034",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "si dicono opposti se hanno lo stesso valore assoluto ma segni diversi"
+  },
+  {
+    "id": "mat-035",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "La somma di due numeri relativi concordi è il numero che ha per valore assoluto la somma dei singoli valori assoluti"
+  },
+  {
+    "id": "mat-036",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "La somma di due numeri relativi discordi"
+  },
+  {
+    "id": "mat-037",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "regola dei segni"
+  },
+  {
+    "id": "mat-038",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "regola dei segni"
+  },
+  {
+    "id": "mat-039",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Si chiamano proprie le frazioni che hanno il numeratore minore del denominatore"
+  },
+  {
+    "id": "mat-040",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Si chiamano improprie le frazioni che hanno il numeratore maggiore del denominatore"
+  },
+  {
+    "id": "mat-041",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Si chiamano apparenti le frazioni che hanno il numeratore multiplo del denominatore"
+  },
+  {
+    "id": "mat-042",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Se si moltiplica, o si divide, numeratore e denominatore di una stessa frazione per uno stesso numero"
+  },
+  {
+    "id": "mat-043",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Per ridurre ai minimi termini una frazione occorre dividere numeratore e denominatore per il loro"
+  },
+  {
+    "id": "mat-044",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Se le unità frazionarie sono diverse"
+  },
+  {
+    "id": "mat-045",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Il prodotto di due frazioni è una frazione che ha per numeratore il prodotto dei numeratori"
+  },
+  {
+    "id": "mat-046",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Il quoziente di due frazioni è la frazione che si ottiene moltiplicando la prima frazione per l'inverso della seconda"
+  },
+  {
+    "id": "mat-047",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "si definisce il suo inverso o reciproco"
+  },
+  {
+    "id": "mat-048",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "La potenza di un numero razionale diverso da zero elevato a un esponente intero negativo"
+  },
+  {
+    "id": "mat-049",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "dove k è un numero decimale maggiore o uguale a 1 e minore di 10"
+  },
+  {
+    "id": "mat-050",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "dove k è un numero decimale maggiore o uguale a 1 e minore di 10"
+  },
+  {
+    "id": "mat-051",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "la potenza di 10 più vicina al numero"
+  },
+  {
+    "id": "mat-052",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Il primo numero si dice antecedente, il secondo conseguente"
+  },
+  {
+    "id": "mat-053",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "A e D sono detti estremi, mentre B e C si dicono medi"
+  },
+  {
+    "id": "mat-054",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Una proporzione si dice continua se ha i medi uguali"
+  },
+  {
+    "id": "mat-055",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Se in una proporzione scambiamo tra loro i medi otteniamo ancora una proporzione"
+  },
+  {
+    "id": "mat-056",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "si dicono direttamente proporzionali se il loro rapporto è costante"
+  },
+  {
+    "id": "mat-057",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "si dicono inversamente proporzionali se il loro prodotto è costante"
+  },
+  {
+    "id": "mat-058",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "si dicono inversamente proporzionali se il loro prodotto è costante"
+  },
+  {
+    "id": "mat-059",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "si dicono direttamente proporzionali se il loro rapporto è costante"
+  },
+  {
+    "id": "mat-060",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Le percentuali sono frazioni che hanno come denominatore 100"
+  },
+  {
+    "id": "mat-061",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Si definisce base di un sistema di numerazione il numero di simboli"
+  },
+  {
+    "id": "mat-062",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "si chiama notazione polinomiale"
+  },
+  {
+    "id": "mat-063",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Un insieme privo di elementi si chiama insieme vuoto"
+  },
+  {
+    "id": "mat-064",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Si definisce cardinalità (o potenza) di un insieme finito il numero degli elementi"
+  },
+  {
+    "id": "mat-065",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "si chiama insieme delle parti"
+  },
+  {
+    "id": "mat-066",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "essi si dicono disgiunti se non hanno elementi in comune"
+  },
+  {
+    "id": "mat-067",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "si dice insieme differenza tra A e B l'insieme C composto da tutti gli elementi di A che non appartengono a B"
+  },
+  {
+    "id": "mat-068",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "si dice che questi costituiscono una partizione di A"
+  },
+  {
+    "id": "mat-069",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Un insieme di due elementi a e b presi in un determinato ordine si dice coppia ordinata"
+  },
+  {
+    "id": "mat-070",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Chiamiamo relazione d'equivalenza una relazione che gode delle tre proprietà riflessiva, simmetrica e transitiva"
+  },
+  {
+    "id": "mat-071",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Un'espressione letterale in cui numeri e lettere sono legati dalla sola moltiplicazione si chiama monomio"
+  },
+  {
+    "id": "mat-072",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "La parte numerica del monomio ridotto a forma normale si chiama coefficiente"
+  },
+  {
+    "id": "mat-073",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Due o più monomi che hanno parte letterale identica si dicono simili"
+  },
+  {
+    "id": "mat-074",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Il grado complessivo di un monomio è la somma degli esponenti della parte letterale"
+  },
+  {
+    "id": "mat-075",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Due monomi simili che hanno coefficiente opposto si dicono monomi opposti"
+  },
+  {
+    "id": "mat-076",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Il prodotto di due monomi è il monomio avente per coefficiente il prodotto dei coefficienti"
+  },
+  {
+    "id": "mat-077",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "La potenza di un monomio è un monomio avente per coefficiente la potenza del coefficiente"
+  },
+  {
+    "id": "mat-078",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Due o più monomi che hanno parte letterale identica si dicono simili"
+  },
+  {
+    "id": "mat-079",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Un polinomio è un'espressione algebrica letterale che consiste in una somma algebrica di monomi"
+  },
+  {
+    "id": "mat-080",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Il grado complessivo (o semplicemente grado) di un polinomio è il massimo dei gradi complessivi dei suoi termini"
+  },
+  {
+    "id": "mat-081",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Un polinomio si dice omogeneo se tutti i termini che lo compongono sono dello stesso grado"
+  },
+  {
+    "id": "mat-082",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "si dice completo se contiene tutte le potenze di tale lettera di grado inferiore a n, compreso il termine noto"
+  },
+  {
+    "id": "mat-083",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Il quadrato di un binomio è uguale alla somma tra il quadrato del primo termine"
+  },
+  {
+    "id": "mat-084",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Il quadrato di un binomio è uguale alla somma tra il quadrato del primo termine"
+  },
+  {
+    "id": "mat-085",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "somma per differenza"
+  },
+  {
+    "id": "mat-086",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "somma per differenza"
+  },
+  {
+    "id": "mat-087",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Il cubo di un binomio è uguale alla somma tra il cubo del primo monomio"
+  },
+  {
+    "id": "mat-088",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "differenza di due quadrati"
+  },
+  {
+    "id": "mat-089",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Raccoglimento totale a fattore comune"
+  },
+  {
+    "id": "mat-090",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Il resto della divisione di un polinomio A(x) per un binomio del tipo (x − k) è uguale al valore che A(x) assume"
+  },
+  {
+    "id": "mat-091",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Condizione necessaria e sufficiente affinché un polinomio A(x) sia divisibile per un binomio del tipo (x − k) è che risulti A(k) = 0"
+  },
+  {
+    "id": "mat-092",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Un polinomio si dice riducibile (scomponibile) se può essere scritto come prodotto di due o più polinomi"
+  },
+  {
+    "id": "mat-093",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Le formule aperte costruite con il predicato essere uguale si chiamano equazioni"
+  },
+  {
+    "id": "mat-094",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Due equazioni sono equivalenti se hanno lo stesso insieme soluzione"
+  },
+  {
+    "id": "mat-095",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Aggiungendo o sottraendo ad ambo i membri di un'equazione data uno stesso numero"
+  },
+  {
+    "id": "mat-096",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Moltiplicando o dividendo ambo i membri di un'equazione per uno stesso numero non nullo"
+  },
+  {
+    "id": "mat-097",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Aggiungendo o sottraendo ad ambo i membri di un'equazione data uno stesso numero"
+  },
+  {
+    "id": "mat-098",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Aggiungendo o sottraendo ad ambo i membri di un'equazione data uno stesso numero"
+  },
+  {
+    "id": "mat-099",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Moltiplicando o dividendo ambo i membri di un'equazione per uno stesso numero non nullo"
+  },
+  {
+    "id": "mat-100",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Risolvere un'equazione significa determinare il suo Insieme Soluzione"
+  },
+  {
+    "id": "mat-101",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Risolvere un'equazione significa determinare il suo Insieme Soluzione"
+  },
+  {
+    "id": "mat-102",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Un'equazione in cui l'incognita compare al denominatore si chiama frazionaria o fratta"
+  },
+  {
+    "id": "mat-103",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Per il primo principio di equivalenza moltiplichiamo per 2 entrambi i membri"
+  },
+  {
+    "id": "mat-104",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "intervallo limitato aperto (a e b sono esclusi)"
+  },
+  {
+    "id": "mat-105",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "cambiare il verso della disequazione"
+  },
+  {
+    "id": "mat-106",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "cambiare il verso della disequazione"
+  },
+  {
+    "id": "mat-107",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Due disequazioni si dicono equivalenti se hanno lo stesso insieme delle soluzioni"
+  },
+  {
+    "id": "mat-108",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Si definisce sistema di equazioni l'insieme di più equazioni, in due o più incognite, che devono essere verificate contemporaneamente"
+  },
+  {
+    "id": "mat-109",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Si definisce sistema di equazioni l'insieme di più equazioni"
+  },
+  {
+    "id": "mat-110",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Si definisce sistema di equazioni l'insieme di più equazioni"
+  },
+  {
+    "id": "mat-111",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Determinare due numeri naturali la cui somma sia 16"
+  },
+  {
+    "id": "mat-112",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Un fascio di rette parallele tagliato da due trasversali r e r 0 determina su esse segmenti che mantengono tra loro le proporzioni"
+  },
+  {
+    "id": "mat-113",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "In altre parole ogni elemento del dominio A è in corrispondenza con un solo elemento del codominio B"
+  },
+  {
+    "id": "mat-114",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Si dice iniettiva una funzione per la quale elementi distinti del dominio D hanno immagini distinte"
+  },
+  {
+    "id": "mat-115",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Si dice biunivoca o biiettiva una funzione che sia contemporaneamente iniettiva e suriettiva"
+  },
+  {
+    "id": "mat-116",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "il cui grafico è una retta, è detta funzione lineare"
+  },
+  {
+    "id": "mat-117",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "il cui grafico è una retta, è detta funzione lineare"
+  },
+  {
+    "id": "mat-118",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Gli assi dividono il piano in quattro zone chiamate quadranti"
+  },
+  {
+    "id": "mat-119",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "Il punto medio di un segmento AB è il punto M interno al segmento che lo divide in due parti congruenti"
+  },
+  {
+    "id": "mat-120",
+    "file": "MatematicaC3_Algebra1.txt",
+    "frase": "si chiama funzione di proporzionalità inversa"
+  },
+  {
+    "id": "mat-121",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "Si dice radice quadrata di un numero reale a positivo o nullo"
+  },
+  {
+    "id": "mat-122",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "Si dice radice quadrata di un numero reale a positivo o nullo"
+  },
+  {
+    "id": "mat-123",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "Si dice radice cubica di un numero reale a quel numero che, elevato al cubo"
+  },
+  {
+    "id": "mat-124",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "Si dice potenza a esponente razionale di un numero reale positivo"
+  },
+  {
+    "id": "mat-125",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "Due radicali si dicono simili se hanno lo stesso indice e lo stesso radicando"
+  },
+  {
+    "id": "mat-126",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "È possibile effettuare somme algebriche soltanto se i radicali sono simili"
+  },
+  {
+    "id": "mat-127",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "Il numero a prende il nome di coefficiente del radicale"
+  },
+  {
+    "id": "mat-128",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "Si dice radice quadrata di un numero reale a positivo o nullo"
+  },
+  {
+    "id": "mat-129",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "Per razionalizzare il denominatore"
+  },
+  {
+    "id": "mat-130",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "Chiamiamo numero razionale le partizioni che ammettono elemento separatore e numero irrazionale"
+  },
+  {
+    "id": "mat-131",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "Si dice equazione di secondo grado, un'equazione del tipo"
+  },
+  {
+    "id": "mat-132",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "prende il nome di discriminante"
+  },
+  {
+    "id": "mat-133",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "l'equazione ammette due soluzioni reali e distinte"
+  },
+  {
+    "id": "mat-134",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "radici reali e coincidenti"
+  },
+  {
+    "id": "mat-135",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "l'equazione non ammette soluzioni reali"
+  },
+  {
+    "id": "mat-136",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "prende il nome di discriminante"
+  },
+  {
+    "id": "mat-137",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "radici reali e coincidenti"
+  },
+  {
+    "id": "mat-138",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "la somma delle radici è x1 + x2 = −"
+  },
+  {
+    "id": "mat-139",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "il prodotto delle radici è x1 · x2 ="
+  },
+  {
+    "id": "mat-140",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "Risoluzione di un'equazione di secondo grado incompleta pura"
+  },
+  {
+    "id": "mat-141",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "Risoluzione di un'equazione incompleta spuria"
+  },
+  {
+    "id": "mat-142",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "il numero di radici positive è uguale al numero di variazioni"
+  },
+  {
+    "id": "mat-143",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "si chiama funzione polinomiale di secondo grado"
+  },
+  {
+    "id": "mat-144",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "Un'equazione binomia è un'equazione del tipo"
+  },
+  {
+    "id": "mat-145",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "Sono esempi di equazioni trinomie x4 − 5x2 + 4 = 0"
+  },
+  {
+    "id": "mat-146",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "Un'equazione si dice irrazionale quando l'incognita compare sotto il segno di radice"
+  },
+  {
+    "id": "mat-147",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "è dato dal prodotto dei gradi delle equazioni che lo compongono"
+  },
+  {
+    "id": "mat-148",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "si dice simmetrico se rimane lo stesso scambiando tra loro le incognite"
+  },
+  {
+    "id": "mat-149",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "Si chiama evento il risultato di un fenomeno aleatorio"
+  },
+  {
+    "id": "mat-150",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "Si chiama spazio degli eventi, l'insieme di tutti gli esiti possibili del fenomeno considerato"
+  },
+  {
+    "id": "mat-151",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "Si chiama evento elementare ogni elemento dell'insieme Ω"
+  },
+  {
+    "id": "mat-152",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "Due eventi A e B si dicono incompatibili quando non si possono verificare contemporaneamente"
+  },
+  {
+    "id": "mat-153",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "(delle probabilità totali)"
+  },
+  {
+    "id": "mat-154",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "si definisce evento complementare di A"
+  },
+  {
+    "id": "mat-155",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "Due eventi A e B si dicono indipendenti se il verificarsi di A non cambia la probabilità"
+  },
+  {
+    "id": "mat-156",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "(delle probabilità composte)"
+  },
+  {
+    "id": "mat-157",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "Si chiama probabilità condizionata o subordinata"
+  },
+  {
+    "id": "mat-158",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "Chiamiamo evento impossibile"
+  },
+  {
+    "id": "mat-159",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "Ogni sezione (A; B) dell'insieme R ammette uno e un solo elemento separatore"
+  },
+  {
+    "id": "mat-160",
+    "file": "MatematicaC3_Algebra2.txt",
+    "frase": "Si dice radice quadrata di un numero reale a positivo o nullo"
+  },
+  {
+    "id": "mat-161",
+    "file": "Wikipedia_Teorema-di-Pitagora.txt",
+    "frase": "In ogni triangolo rettangolo l'area del quadrato costruito sull'ipotenusa è uguale alla somma delle aree dei quadrati costruiti sui cateti"
+  },
+  {
+    "id": "mat-162",
+    "file": "Wikipedia_Teorema-di-Pitagora.txt",
+    "frase": "In ogni triangolo rettangolo l'area del quadrato costruito sull'ipotenusa è uguale alla somma delle aree dei quadrati costruiti sui cateti"
+  },
+  {
+    "id": "mat-163",
+    "file": "Wikipedia_Teorema-di-Pitagora.txt",
+    "frase": "In ogni triangolo rettangolo l'area del quadrato costruito sull'ipotenusa è uguale alla somma delle aree dei quadrati costruiti sui cateti"
+  },
+  {
+    "id": "mat-164",
+    "file": "Wikipedia_Teorema-di-Pitagora.txt",
+    "frase": "Una terna di numeri interi positivi"
+  },
+  {
+    "id": "mat-165",
+    "file": "Wikipedia_Teorema-di-Pitagora.txt",
+    "frase": "Una terna di numeri interi positivi"
+  },
+  {
+    "id": "mat-166",
+    "file": "Wikipedia_Teorema-di-Pitagora.txt",
+    "frase": "era già noto ai Babilonesi"
+  },
+  {
+    "id": "mat-167",
+    "file": "Wikipedia_Triangolo.txt",
+    "frase": "la somma degli angoli interni è uguale a un angolo piatto, ossia 180°"
+  },
+  {
+    "id": "mat-168",
+    "file": "Wikipedia_Triangolo.txt",
+    "frase": "la somma degli angoli interni è uguale a un angolo piatto, ossia 180°"
+  },
+  {
+    "id": "mat-169",
+    "file": "Wikipedia_Triangolo.txt",
+    "frase": "triangolo avente i suoi angoli interni di uguale ampiezza, pari a 60°"
+  },
+  {
+    "id": "mat-170",
+    "file": "Wikipedia_Triangolo.txt",
+    "frase": "In un triangolo isoscele due lati hanno lunghezza uguale"
+  },
+  {
+    "id": "mat-171",
+    "file": "Wikipedia_Triangolo.txt",
+    "frase": "In un triangolo scaleno tutti i lati hanno lunghezze differenti"
+  },
+  {
+    "id": "mat-172",
+    "file": "Wikipedia_Triangolo.txt",
+    "frase": "ha un angolo interno maggiore di 90°"
+  },
+  {
+    "id": "mat-173",
+    "file": "Wikipedia_Triangolo.txt",
+    "frase": "è l'unico poligono che non può essere concavo"
+  },
+  {
+    "id": "mat-174",
+    "file": "Wikipedia_Quadrilatero.txt",
+    "frase": "La somma delle ampiezze degli angoli interni di un quadrilatero semplice ABCD è uguale a 360°"
+  },
+  {
+    "id": "mat-175",
+    "file": "Wikipedia_Poligono.txt",
+    "frase": "La somma degli angoli interni di un poligono è pari a tanti angoli piatti quanti sono i suoi lati"
+  },
+  {
+    "id": "mat-176",
+    "file": "Wikipedia_Poligono.txt",
+    "frase": "regolare se è convesso, equilatero ed equiangolo"
+  },
+  {
+    "id": "mat-177",
+    "file": "Wikipedia_Rettangolo.txt",
+    "frase": "L'area del rettangolo è il prodotto della sua lunghezza per la sua larghezza"
+  },
+  {
+    "id": "mat-178",
+    "file": "Wikipedia_Rettangolo.txt",
+    "frase": "Il quadrato è un tipo particolare di rettangolo"
+  },
+  {
+    "id": "mat-179",
+    "file": "Wikipedia_Trapezio.txt",
+    "frase": "del trapezio è la somma delle basi per l'altezza diviso due"
+  },
+  {
+    "id": "mat-180",
+    "file": "Wikipedia_Trapezio.txt",
+    "frase": "un trapezio è un quadrilatero con due lati paralleli"
+  },
+  {
+    "id": "mat-181",
+    "file": "Wikipedia_Circonferenza.txt",
+    "frase": "La formula per trovare la lunghezza della circonferenza è"
+  },
+  {
+    "id": "mat-182",
+    "file": "Wikipedia_Cerchio.txt",
+    "frase": "La formula dell'area del cerchio può essere ottenuta come limite di quella del poligono regolare"
+  },
+  {
+    "id": "mat-183",
+    "file": "Wikipedia_Cerchio.txt",
+    "frase": "Se la corda in questione passa per il centro, essa si chiama diametro"
+  },
+  {
+    "id": "mat-184",
+    "file": "Wikipedia_Pi-greco.txt",
+    "frase": "viene definito come il rapporto tra la lunghezza della circonferenza e quella del suo diametro"
+  },
+  {
+    "id": "mat-185",
+    "file": "Wikipedia_Pi-greco.txt",
+    "frase": "Johann Heinrich Lambert dimostrò nel 1761"
+  },
+  {
+    "id": "mat-186",
+    "file": "Wikipedia_Pi-greco.txt",
+    "frase": "Ferdinand von Lindemann"
+  },
+  {
+    "id": "mat-187",
+    "file": "Wikipedia_Cerchio.txt",
+    "frase": "si chiama settore circolare"
+  },
+  {
+    "id": "mat-188",
+    "file": "Wikipedia_Cerchio.txt",
+    "frase": "L'area compresa fra le due circonferenze si chiama corona circolare"
+  },
+  {
+    "id": "mat-189",
+    "file": "Wikipedia_Angolo.txt",
+    "frase": "un angolo retto è la metà di un angolo piatto"
+  },
+  {
+    "id": "mat-190",
+    "file": "Wikipedia_Angolo.txt",
+    "frase": "si dice angolo acuto"
+  },
+  {
+    "id": "mat-191",
+    "file": "Wikipedia_Angolo.txt",
+    "frase": "l'angolo completo o angolo giro è suddiviso in 360 spicchi"
+  },
+  {
+    "id": "mat-192",
+    "file": "Wikipedia_Angolo.txt",
+    "frase": "il radiante, definito come il rapporto tra la lunghezza di un arco di circonferenza e il raggio"
+  },
+  {
+    "id": "mat-193",
+    "file": "Wikipedia_Cubo.txt",
+    "frase": "presenta 6 facce quadrate, 8 vertici e 12 spigoli"
+  },
+  {
+    "id": "mat-194",
+    "file": "Wikipedia_Cubo.txt",
+    "frase": "Ogni cubo è caratterizzato dalla lunghezza a dei suoi spigoli"
+  },
+  {
+    "id": "mat-195",
+    "file": "Wikipedia_Parallelepipedo.txt",
+    "frase": "Il volume di un parallelepipedo è il prodotto dell'area di una qualsiasi delle sue 6 facce per la distanza"
+  },
+  {
+    "id": "mat-196",
+    "file": "Wikipedia_Sfera.txt",
+    "frase": "è dato dall'equazione (integrale in d"
+  },
+  {
+    "id": "mat-197",
+    "file": "Wikipedia_Sistema-internazionale-di-unità-di-misura.txt",
+    "frase": "fino ad arrivare a sette nel 1971"
+  },
+  {
+    "id": "mat-198",
+    "file": "Wikipedia_Sistema-internazionale-di-unità-di-misura.txt",
+    "frase": "le sue unità di misura erano metro, chilogrammo e secondo"
+  },
+  {
+    "id": "mat-199",
+    "file": "Wikipedia_Sistema-internazionale-di-unità-di-misura.txt",
+    "frase": "aggiunse la temperatura assoluta (e l'unità di misura associata: kelvin)"
+  },
+  {
+    "id": "mat-200",
+    "file": "Wikipedia_Capitalizzazione-semplice.txt",
+    "frase": "il capitale finale, detto anche montante"
+  }
+]

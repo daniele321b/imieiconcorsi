@@ -1,7 +1,9 @@
 import type {
+  CodiceSconto,
   Concorso,
   Domanda,
   DomandaPubblica,
+  Feedback,
   MATERIE,
   MateriaId,
   Periodo,
@@ -90,6 +92,7 @@ export interface NuovaSessione {
   tipo: TipoSessione;
   materie?: MateriaId[];
   concorsoId?: string;
+  bancaDatiId?: string;
   numero?: number;
 }
 
@@ -97,7 +100,23 @@ export interface Statistiche {
   domandeRisposte: number;
   perMateria: { materia: MateriaId; corrette: number; totale: number; percentuale: number }[];
   simulazioni: { id: string; data: string; percentuale: number; superata: boolean }[];
-  recenti: { id: string; tipo: TipoSessione; materie: MateriaId[]; concorsoId?: string; data: string; percentuale: number }[];
+  recenti: { id: string; tipo: TipoSessione; materie: MateriaId[]; concorsoId?: string; data: string; percentuale: number; durataMs?: number; bancaDati?: string }[];
+}
+
+export interface CodiceScontoApi {
+  codice: string;
+  percentuale: number;
+  /** Piani su cui vale */
+  piani: ("medium" | "pro")[];
+}
+
+export interface OrdineApi {
+  id: string;
+  stato: "in-attesa" | "pagato" | "scaduto" | "fallito";
+  piano: "medium" | "pro";
+  periodo: Periodo;
+  importo: number;
+  scadenzaPiano?: string;
 }
 
 export interface PianiApi {
@@ -131,6 +150,11 @@ export interface AdminUtente {
   scadenzaPiano?: string;
   periodo?: Periodo;
   onboarded: boolean;
+  feedback?: Feedback;
+}
+
+export interface AdminCodici {
+  codici: CodiceSconto[];
 }
 
 export interface AdminUtenti {

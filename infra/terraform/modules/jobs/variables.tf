@@ -20,7 +20,9 @@ variable "jobs" {
     timeout      = optional(number, 300)
     write_tables = optional(list(string), [])
     read_tables  = optional(list(string), [])
-    policies     = optional(any, [])
-    environment  = optional(map(string), {})
+    # Permessi IAM in più, come JSON (jsonencode([...])): statement di forme diverse
+    # (Resource stringa o lista) non starebbero in un unico tipo Terraform.
+    policies    = optional(string, "[]")
+    environment = optional(map(string), {})
   }))
 }

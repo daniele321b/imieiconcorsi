@@ -3,16 +3,13 @@ import { attributo, utentiNelGruppo } from "@imieiconcorsi/core/cognito";
 import { batchGet, db, tables } from "@imieiconcorsi/core/db";
 import { GRUPPI, PIANI, type Profilo } from "@imieiconcorsi/core/domain";
 import { inviaEmail } from "@imieiconcorsi/core/email";
+import { dataIt, emailTornatoFree } from "@imieiconcorsi/core/email-piani";
 import { env } from "@imieiconcorsi/core/env";
 import { assegnaPiano } from "@imieiconcorsi/core/piani";
 import { azionePerAbbonato } from "./scadenze-logic";
 
-// Ogni mattina: chi ha il piano scaduto torna Free, chi scade entro 3 giorni riceve un'email.
-
-const dataIt = (iso: string) =>
-  new Intl.DateTimeFormat("it-IT", { day: "numeric", month: "long", year: "numeric", timeZone: "Europe/Rome" }).format(
-    new Date(iso),
-  );
+// Ogni mattina: chi ha il piano scaduto torna Free (e riceve un'email), chi scade entro
+// 3 giorni riceve il promemoria.
 
 export const handler = async () => {
   const conteggi = { scaduti: 0, promemoria: 0, errori: 0 };
@@ -33,6 +30,8 @@ export const handler = async () => {
       try {
         if (azione === "scaduto") {
           await assegnaPiano({ userId: sub, username: u.Username!, piano: "free", scadenza: null });
+          const email = attributo(u, "email");
+          if (email) await emailTornatoFree({ a: email, nome: attributo(u, "name"), pianoPrecedente: gruppo, motivo: "scadenza" });
           conteggi.scaduti++;
         } else if (azione === "promemoria") {
           const email = attributo(u, "email");

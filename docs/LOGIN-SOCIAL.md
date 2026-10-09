@@ -181,3 +181,12 @@ cache.
   dominio Cognito si chiama sempre `imieiconcorsi-dev`.
 - **Per prod** serviranno app OAuth separate (o almeno altri URI), con l'app
   Google pubblicata e quella Facebook in modalità Live, con informativa privacy.
+- **"Currently ineligible for submission" su Meta:** riguarda solo il passaggio a
+  Live, non i test in sviluppo. Per pubblicare servono:
+  - categoria **Istruzione**;
+  - icona 1024 × 1024: `docs/brand/icona-1024.png`;
+  - URL dell'informativa privacy: `https://dev.imieiconcorsi.it/privacy`;
+  - URL con le istruzioni per eliminare i dati: `https://dev.imieiconcorsi.it/eliminazione-dati`.
+
+  Prima della pubblicazione vanno compilati i dati del titolare in
+  `packages/web/src/lib/legale.ts`, e i testi vanno rivisti da un legale.

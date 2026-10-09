@@ -1,22 +1,53 @@
-import { BookOpenCheck } from "lucide-react";
+import { DOMANDE_STUDIO } from "@imieiconcorsi/core/domain";
+import { BookOpenCheck, Lock } from "lucide-react";
+import { useState } from "react";
 import { IconaMateria } from "../../components/brand";
-import { Alert, Button, Card, PageHeader, Spinner, UpgradeBanner, cx } from "../../components/ui";
+import { Alert, Button, Card, PageHeader, PremiumModal, Spinner, UpgradeBanner, cx } from "../../components/ui";
 import { useApi, type MateriaApi } from "../../lib/api";
 import { useUtente } from "../../lib/auth";
 import { useAvviaSessione } from "../../lib/sessioni";
 
 export function Studio() {
   const { utente } = useUtente();
-  const { data, loading, error } = useApi<{ materie: MateriaApi[] }>("/materie");
+  const { data, loading, error } = useApi<{ materie: MateriaApi[]; versione?: string }>("/materie");
   const { avvia, inCorso, errore, chiudiErrore } = useAvviaSessione();
-  const numero = utente.limiti.domandePerSessioneStudio;
+  const massimo = utente.limiti.domandePerSessioneStudio;
+  const [numero, setNumero] = useState<number>(DOMANDE_STUDIO[0]);
+  const [premium, setPremium] = useState(false);
 
   return (
     <div>
-      <PageHeader
-        title="Studio"
-        subtitle={`Sessioni da ${Math.min(10, numero)} domande con la spiegazione subito dopo ogni risposta.`}
-      />
+      <PageHeader title="Studio" subtitle="Scegli una materia: la spiegazione arriva subito dopo ogni risposta." />
+
+      <div className="mb-6 flex flex-wrap items-center gap-3">
+        <span className="text-sm font-semibold text-slate-600">Domande per sessione</span>
+        <div className="inline-grid grid-cols-3 rounded-xl bg-white p-1 text-sm font-semibold ring-1 ring-slate-200" role="radiogroup">
+          {DOMANDE_STUDIO.map((n) => {
+            const bloccato = n > massimo;
+            return (
+              <button
+                key={n}
+                role="radio"
+                aria-checked={numero === n}
+                onClick={() => (bloccato ? setPremium(true) : setNumero(n))}
+                className={cx(
+                  "inline-flex items-center justify-center gap-1 rounded-lg px-4 py-1.5 transition",
+                  numero === n ? "bg-brand-600 text-white" : bloccato ? "text-slate-400" : "text-slate-600 hover:bg-slate-50",
+                )}
+              >
+                {bloccato && <Lock className="size-3" />} {n}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
+      {premium && (
+        <PremiumModal titolo="Sessioni da 20 o 30 domande" onClose={() => setPremium(false)}>
+          Con il piano Free ogni sessione di studio ha 10 domande. Con <strong>Medium</strong> e <strong>Pro</strong> scegli tu
+          quante farne (10, 20 o 30), senza pubblicità e con le banche dati ufficiali dei tuoi concorsi.
+        </PremiumModal>
+      )}
 
       <div className="space-y-4">
         {errore &&
@@ -52,7 +83,7 @@ export function Studio() {
                   className="mt-5"
                   disabled={!m.domande}
                   loading={inCorso === m.id}
-                  onClick={() => void avvia({ tipo: "studio", materie: [m.id], numero: Math.min(10, numero) }, m.id)}
+                  onClick={() => void avvia({ tipo: "studio", materie: [m.id], numero: Math.min(numero, massimo) }, m.id)}
                 >
                   <BookOpenCheck className="size-4" /> {m.domande ? "Inizia" : "In arrivo"}
                 </Button>
@@ -61,6 +92,12 @@ export function Studio() {
           </div>
         )}
       </div>
+
+      <p className="mx-auto mt-10 max-w-3xl text-center text-xs leading-relaxed text-slate-400">
+        Le domande sono scritte dalla redazione a partire da libri di testo e fonti online: MatematicaC3 e Matematica Dolce
+        (CC BY / CC BY-SA), appunti di L. Ghio (CC BY-SA), voci di Wikipedia (CC BY-SA 4.0), dati ISTAT (CC BY 4.0) e testi di
+        legge ufficiali su Normattiva.{data?.versione && <> Banca domande {data.versione}.</>}
+      </p>
     </div>
   );
 }

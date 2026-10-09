@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "eng-001",
+    "file": "Wikipedia-EN_English-modal-auxiliary-verbs.txt",
+    "frase": "The central English modal auxiliary verbs are can (with could), may (with might), shall (with should), will (with would), and must"
+  },
+  {
+    "id": "eng-002",
+    "file": "Wikipedia-EN_English-modal-auxiliary-verbs.txt",
+    "frase": "may (with might)"
+  },
+  {
+    "id": "eng-003",
+    "file": "Wikipedia-EN_English-modal-auxiliary-verbs.txt",
+    "frase": "\"Nobody ought to say a word.\""
+  },
+  {
+    "id": "eng-004",
+    "file": "Wikipedia-EN_English-conditional-sentences.txt",
+    "frase": "zero conditional, first conditional (or conditional I), second conditional (or conditional II), third conditional (or conditional III) and mixed conditional"
+  },
+  {
+    "id": "eng-005",
+    "file": "Wikipedia-EN_English-conditional-sentences.txt",
+    "frase": "If you had called me, I would have come"
+  },
+  {
+    "id": "eng-006",
+    "file": "Wikipedia-EN_English-conditional-sentences.txt",
+    "frase": "If I were king, I could have you thrown in the dungeon"
+  },
+  {
+    "id": "eng-007",
+    "file": "Wikipedia-EN_English-conditional-sentences.txt",
+    "frase": "English uses past tense morphology to indicate that the speaker regards the antecedent as impossible or unlikely"
+  },
+  {
+    "id": "eng-008",
+    "file": "Wikipedia-EN_English-passive-voice.txt",
+    "frase": "The passive voice is marked by using be or get followed by a past participle"
+  },
+  {
+    "id": "eng-009",
+    "file": "Wikipedia-EN_English-passive-voice.txt",
+    "frase": "Caesar was stabbed"
+  },
+  {
+    "id": "eng-010",
+    "file": "Wikipedia-EN_English-passive-voice.txt",
+    "frase": "usually via a by-phrase"
+  },
+  {
+    "id": "eng-011",
+    "file": "Wikipedia-EN_English-relative-clauses.txt",
+    "frase": "The basic relative pronouns are who, which, and that"
+  },
+  {
+    "id": "eng-012",
+    "file": "Wikipedia-EN_English-relative-clauses.txt",
+    "frase": "who also has the derived forms whom and whose"
+  },
+  {
+    "id": "eng-013",
+    "file": "Wikipedia-EN_English-relative-clauses.txt",
+    "frase": "that is used only in restrictive relative clauses, and is not preceded by a comma"
+  },
+  {
+    "id": "eng-014",
+    "file": "Wikipedia-EN_Uses-of-English-verb-forms.txt",
+    "frase": "English lacks a morphological future tense"
+  },
+  {
+    "id": "eng-015",
+    "file": "Wikipedia-EN_Uses-of-English-verb-forms.txt",
+    "frase": "It's going to explode!"
+  },
+  {
+    "id": "eng-016",
+    "file": "Wikipedia-EN_Uses-of-English-verb-forms.txt",
+    "frase": "The present perfect intrinsically refers to past events"
+  },
+  {
+    "id": "eng-017",
+    "file": "Wikipedia-EN_English-articles.txt",
+    "frase": "which takes the alternate form an when followed by a vowel sound"
+  },
+  {
+    "id": "eng-018",
+    "file": "Wikipedia-EN_English-articles.txt",
+    "frase": "an hour (the h is silent)"
+  },
+  {
+    "id": "eng-019",
+    "file": "Wikipedia-EN_English-articles.txt",
+    "frase": "a one-armed bandit (pronounced \"won...\")"
+  },
+  {
+    "id": "eng-020",
+    "file": "Wikipedia-EN_English-articles.txt",
+    "frase": "The definite article is the default determiner when the speaker believes that the listener knows the identity"
+  },
+  {
+    "id": "eng-021",
+    "file": "Wikipedia-EN_English-articles.txt",
+    "frase": "For example, I have a box is grammatically correct, but *I have box is not"
+  },
+  {
+    "id": "eng-022",
+    "file": "Wikipedia-EN_English-articles.txt",
+    "frase": "John likes fast cars"
+  },
+  {
+    "id": "eng-023",
+    "file": "Wikipedia-EN_English-plurals.txt",
+    "frase": "The spelling adds -es, or -s if the singular already ends in -e"
+  },
+  {
+    "id": "eng-024",
+    "file": "Wikipedia-EN_English-plurals.txt",
+    "frase": "preceded by a consonant usually drop the y and add -ies"
+  },
+  {
+    "id": "eng-025",
+    "file": "Wikipedia-EN_English-plurals.txt",
+    "frase": "Singular nouns ending in o preceded by a consonant in many cases spell the plural by adding -es"
+  },
+  {
+    "id": "eng-026",
+    "file": "Wikipedia-EN_English-plurals.txt",
+    "frase": "the plural of leaf is leaves"
+  },
+  {
+    "id": "eng-027",
+    "file": "Wikipedia-EN_English-plurals.txt",
+    "frase": "person—people"
+  },
+  {
+    "id": "eng-028",
+    "file": "Wikipedia-EN_English-plurals.txt",
+    "frase": "There are many compounds of man and woman that form their plurals in the same way"
+  },
+  {
+    "id": "eng-029",
+    "file": "Wikipedia-EN_English-plurals.txt",
+    "frase": "goose / geese"
+  },
+  {
+    "id": "eng-030",
+    "file": "Wikipedia-EN_English-plurals.txt",
+    "frase": "salmon sheep shrimp"
+  },
+  {
+    "id": "eng-031",
+    "file": "Wikipedia-EN_English-plurals.txt",
+    "frase": "words such as criteria and phenomena are used as singular by some speakers, although this is still considered incorrect"
+  },
+  {
+    "id": "eng-032",
+    "file": "Wikipedia-EN_English-plurals.txt",
+    "frase": "die—dice"
+  },
+  {
+    "id": "eng-033",
+    "file": "Wikipedia-EN_Personal-pronouns-in-English.txt",
+    "frase": "subjective (nominative) case (I, we, etc.), used as the subject of a verb"
+  },
+  {
+    "id": "eng-034",
+    "file": "Wikipedia-EN_Personal-pronouns-in-English.txt",
+    "frase": "objective (accusative) case (me, us, etc.), used as the object of a verb"
+  },
+  {
+    "id": "eng-035",
+    "file": "Wikipedia-EN_Personal-pronouns-in-English.txt",
+    "frase": "She cut herself"
+  },
+  {
+    "id": "eng-036",
+    "file": "Wikipedia-EN_Personal-pronouns-in-English.txt",
+    "frase": "this book is mine"
+  },
+  {
+    "id": "eng-037",
+    "file": "Wikipedia-EN_Personal-pronouns-in-English.txt",
+    "frase": "The same reflexive forms also are used as intensive pronouns"
+  },
+  {
+    "id": "eng-038",
+    "file": "Wikipedia-EN_Personal-pronouns-in-English.txt",
+    "frase": "singular they is morphosyntactically plural"
+  },
+  {
+    "id": "eng-039",
+    "file": "Wikipedia-EN_English-possessive.txt",
+    "frase": "the possessive is generally formed with the suffix -'s"
+  },
+  {
+    "id": "eng-040",
+    "file": "Wikipedia-EN_English-possessive.txt",
+    "frase": "personal pronouns have irregular possessives that do not use an apostrophe, such as its"
+  },
+  {
+    "id": "eng-041",
+    "file": "Wikipedia-EN_English-possessive.txt",
+    "frase": "the phrase the king of Spain forms the possessive the king of Spain's"
+  },
+  {
+    "id": "eng-042",
+    "file": "Wikipedia-EN_English-possessive.txt",
+    "frase": "The interrogative and relative pronoun who has the possessive whose"
+  },
+  {
+    "id": "eng-043",
+    "file": "Wikipedia-EN_English-possessive.txt",
+    "frase": "Singular nouns ending in s also form a possessive regularly by adding 's"
+  },
+  {
+    "id": "eng-044",
+    "file": "Wikipedia-EN_Degrees-of-comparison-of-adjectives-and-adverbs.txt",
+    "frase": "words of one syllable require the suffix"
+  },
+  {
+    "id": "eng-045",
+    "file": "Wikipedia-EN_Degrees-of-comparison-of-adjectives-and-adverbs.txt",
+    "frase": "such as better and best (from good)"
+  },
+  {
+    "id": "eng-046",
+    "file": "Wikipedia-EN_Degrees-of-comparison-of-adjectives-and-adverbs.txt",
+    "frase": "words of three or more syllables require \"more\" or \"most\""
+  },
+  {
+    "id": "eng-047",
+    "file": "Wikipedia-EN_Degrees-of-comparison-of-adjectives-and-adverbs.txt",
+    "frase": "as big and as fully [comparative of equality]"
+  },
+  {
+    "id": "eng-048",
+    "file": "Wikipedia-EN_Degrees-of-comparison-of-adjectives-and-adverbs.txt",
+    "frase": "as with than in English"
+  },
+  {
+    "id": "eng-049",
+    "file": "Wikipedia-EN_Degrees-of-comparison-of-adjectives-and-adverbs.txt",
+    "frase": "If an adjective has two comparative markers, it is known as a double comparative"
+  },
+  {
+    "id": "eng-050",
+    "file": "Wikipedia-EN_Degrees-of-comparison-of-adjectives-and-adverbs.txt",
+    "frase": "less and least (from little/few)"
+  },
+  {
+    "id": "eng-051",
+    "file": "Wikipedia-EN_English-phrasal-verbs.txt",
+    "frase": "a phrasal verb typically constitutes a single semantic unit consisting of a verb followed by a particle"
+  },
+  {
+    "id": "eng-052",
+    "file": "Wikipedia-EN_English-phrasal-verbs.txt",
+    "frase": "Who can put up with that?"
+  },
+  {
+    "id": "eng-053",
+    "file": "Wikipedia-EN_English-phrasal-verbs.txt",
+    "frase": "She looks forward to a rest"
+  },
+  {
+    "id": "eng-054",
+    "file": "Wikipedia-EN_English-phrasal-verbs.txt",
+    "frase": "run out of"
+  },
+  {
+    "id": "eng-055",
+    "file": "Wikipedia-EN_Present-perfect.txt",
+    "frase": "the present tense of the auxiliary verb have"
+  },
+  {
+    "id": "eng-056",
+    "file": "Wikipedia-EN_Present-perfect.txt",
+    "frase": "I have lived here for five years"
+  },
+  {
+    "id": "eng-057",
+    "file": "Wikipedia-EN_Present-perfect.txt",
+    "frase": "normally based on time expressions with for or since"
+  },
+  {
+    "id": "eng-058",
+    "file": "Wikipedia-EN_Present-perfect.txt",
+    "frase": "He has already arrived in America"
+  },
+  {
+    "id": "eng-059",
+    "file": "Wikipedia-EN_Present-perfect.txt",
+    "frase": "English also has a present perfect continuous"
+  },
+  {
+    "id": "eng-060",
+    "file": "Wikipedia-EN_Simple-past.txt",
+    "frase": "verbs ending in -y change to -ied"
+  },
+  {
+    "id": "eng-061",
+    "file": "Wikipedia-EN_Simple-past.txt",
+    "frase": "double the final consonant"
+  },
+  {
+    "id": "eng-062",
+    "file": "Wikipedia-EN_Simple-past.txt",
+    "frase": "verbs ending in -e add only –d"
+  },
+  {
+    "id": "eng-063",
+    "file": "Wikipedia-EN_Simple-past.txt",
+    "frase": "the copula verb be has two past tense forms"
+  },
+  {
+    "id": "eng-064",
+    "file": "Wikipedia-EN_Simple-past.txt",
+    "frase": "We turned the oven off two minutes ago"
+  },
+  {
+    "id": "eng-065",
+    "file": "Wikipedia-EN_Simple-past.txt",
+    "frase": "use the auxiliary did"
+  },
+  {
+    "id": "eng-066",
+    "file": "Wikipedia-EN_Simple-past.txt",
+    "frase": "there is no addition of -s for the third person singular"
+  },
+  {
+    "id": "eng-067",
+    "file": "Wikipedia-EN_Going-to-future.txt",
+    "frase": "It's going to rain"
+  },
+  {
+    "id": "eng-068",
+    "file": "Wikipedia-EN_Going-to-future.txt",
+    "frase": "It is made using appropriate forms of the expression to be going to"
+  },
+  {
+    "id": "eng-069",
+    "file": "Wikipedia-EN_Going-to-future.txt",
+    "frase": "which expresses intention but not imminence"
+  },
+  {
+    "id": "eng-070",
+    "file": "Wikipedia-EN_Going-to-future.txt",
+    "frase": "with the colloquial form gonna"
+  },
+  {
+    "id": "eng-071",
+    "file": "Wikipedia-EN_Going-to-future.txt",
+    "frase": "The will future is often used for announcing a decision at the time when it is made"
+  },
+  {
+    "id": "eng-072",
+    "file": "Wikipedia-EN_Tag-question.txt",
+    "frase": "You're John, aren't you?"
+  },
+  {
+    "id": "eng-073",
+    "file": "Wikipedia-EN_Tag-question.txt",
+    "frase": "You don't remember my name, do you?"
+  },
+  {
+    "id": "eng-074",
+    "file": "Wikipedia-EN_Tag-question.txt",
+    "frase": "Let's start, shall we?"
+  },
+  {
+    "id": "eng-075",
+    "file": "Wikipedia-EN_Tag-question.txt",
+    "frase": "Clever, aren't I?"
+  },
+  {
+    "id": "eng-076",
+    "file": "Wikipedia-EN_Tag-question.txt",
+    "frase": "Be careful, will you?"
+  },
+  {
+    "id": "eng-077",
+    "file": "Wikipedia-EN_Indirect-speech.txt",
+    "frase": "Jill said she was coming"
+  },
+  {
+    "id": "eng-078",
+    "file": "Wikipedia-EN_Indirect-speech.txt",
+    "frase": "I said that I would come to his party the next day"
+  },
+  {
+    "id": "eng-079",
+    "file": "Wikipedia-EN_Indirect-speech.txt",
+    "frase": "I asked if he/she would come to my party the next day"
+  },
+  {
+    "id": "eng-080",
+    "file": "Wikipedia-EN_Indirect-speech.txt",
+    "frase": "the next day/the following day"
+  },
+  {
+    "id": "eng-081",
+    "file": "Wikipedia-EN_Gerund.txt",
+    "frase": "I enjoy reading"
+  },
+  {
+    "id": "eng-082",
+    "file": "Wikipedia-EN_Gerund.txt",
+    "frase": "Swimming is fun"
+  },
+  {
+    "id": "eng-083",
+    "file": "Wikipedia-EN_Gerund.txt",
+    "frase": "avoid, (not) bother, escape, evade"
+  },
+  {
+    "id": "eng-084",
+    "file": "Wikipedia-EN_Gerund.txt",
+    "frase": "give over, give up, go about"
+  },
+  {
+    "id": "eng-085",
+    "file": "Wikipedia-EN_Mass-noun.txt",
+    "frase": "the mass noun \"water\" is quantified as \"20 litres of water\""
+  },
+  {
+    "id": "eng-086",
+    "file": "Wikipedia-EN_Mass-noun.txt",
+    "frase": "though note the different quantifiers \"much\" and \"many\""
+  },
+  {
+    "id": "eng-087",
+    "file": "Wikipedia-EN_Mass-noun.txt",
+    "frase": "\"so many chairs\""
+  },
+  {
+    "id": "eng-088",
+    "file": "Wikipedia-EN_Count-noun.txt",
+    "frase": "\"seven chairs\" and \"some furniture\""
+  },
+  {
+    "id": "eng-089",
+    "file": "Wikipedia-EN_Mass-noun.txt",
+    "frase": "by the impossibility of being combined with an indefinite article"
+  },
+  {
+    "id": "eng-090",
+    "file": "Wikipedia-EN_Mass-noun.txt",
+    "frase": "although in English they take singular verb forms"
+  },
+  {
+    "id": "eng-091",
+    "file": "Wikipedia-EN_Count-noun.txt",
+    "frase": "Some determiners can be used with both mass and count nouns, including \"all\", \"no\", and \"some\""
+  },
+  {
+    "id": "eng-092",
+    "file": "Wikipedia-EN_Do-support.txt",
+    "frase": "today's English usually substitutes Do you know him?"
+  },
+  {
+    "id": "eng-093",
+    "file": "Wikipedia-EN_Do-support.txt",
+    "frase": "the auxiliary do is used to produce a form like I do not (don't) know"
+  },
+  {
+    "id": "eng-094",
+    "file": "Wikipedia-EN_Do-support.txt",
+    "frase": "Do-support is not used when there is already an auxiliary or copular verb present"
+  },
+  {
+    "id": "eng-095",
+    "file": "Wikipedia-EN_Do-support.txt",
+    "frase": "usually as a means of adding emphasis"
+  },
+  {
+    "id": "eng-096",
+    "file": "Wikipedia-EN_Imperative-mood.txt",
+    "frase": "In English, the imperative is formed using the bare infinitive form of the verb"
+  },
+  {
+    "id": "eng-097",
+    "file": "Wikipedia-EN_Imperative-mood.txt",
+    "frase": "the imperative is negated using do not, as in \"Don't touch me!\""
+  },
+  {
+    "id": "eng-098",
+    "file": "Wikipedia-EN_Imperative-mood.txt",
+    "frase": "with the meaning of \"let's (do something)\""
+  },
+  {
+    "id": "eng-099",
+    "file": "Wikipedia-EN_English-markers-of-habitual-aspect.txt",
+    "frase": "used to as in we used to go there"
+  },
+  {
+    "id": "eng-100",
+    "file": "Wikipedia-EN_English-markers-of-habitual-aspect.txt",
+    "frase": "The form [would + infinitive] is employed to talk about a habit or frequent action in a former time"
+  },
+  {
+    "id": "eng-101",
+    "file": "Wikipedia-EN_English-markers-of-habitual-aspect.txt",
+    "frase": "the simple present is used, as in I go there (every Thursday)"
+  },
+  {
+    "id": "eng-102",
+    "file": "Wikipedia-EN_Interrogative-word.txt",
+    "frase": "such as what, which, when, where, who, whom, whose, why, whether and how"
+  },
+  {
+    "id": "eng-103",
+    "file": "Wikipedia-EN_Interrogative-word.txt",
+    "frase": "They are sometimes called wh-words, because in English most of them start with wh-"
+  },
+  {
+    "id": "eng-104",
+    "file": "Wikipedia-EN_Interrogative-word.txt",
+    "frase": "I wonder where he is going"
+  },
+  {
+    "id": "eng-105",
+    "file": "Wikipedia-EN_False-friend.txt",
+    "frase": "Italian parenti (the latter two both meaning 'relatives')"
+  },
+  {
+    "id": "eng-106",
+    "file": "Wikipedia-EN_False-friend.txt",
+    "frase": "English demand and French demander ('ask')"
+  },
+  {
+    "id": "eng-107",
+    "file": "Wikipedia-EN_False-friend.txt",
+    "frase": "a false friend is a word in a different language that looks or sounds similar to a word in a given language, but differs significantly in meaning"
+  },
+  {
+    "id": "eng-108",
+    "file": "Wikipedia-EN_Contraction-grammar.txt",
+    "frase": "as in I'm for \"I am\""
+  },
+  {
+    "id": "eng-109",
+    "file": "Wikipedia-EN_Contraction-grammar.txt",
+    "frase": "tend to be avoided in more formal writing"
+  },
+  {
+    "id": "eng-110",
+    "file": "Wikipedia-EN_Contraction-grammar.txt",
+    "frase": "English has a number of contractions"
+  },
+  {
+    "id": "eng-111",
+    "file": "Wikipedia-EN_Continuous-and-progressive-aspects.txt",
+    "frase": "The continuous aspect is constructed by using a form of the copula, \"to be\", together with the present participle"
+  },
+  {
+    "id": "eng-112",
+    "file": "Wikipedia-EN_Continuous-and-progressive-aspects.txt",
+    "frase": "Andrew was playing tennis when Jane called him"
+  },
+  {
+    "id": "eng-113",
+    "file": "Wikipedia-EN_Continuous-and-progressive-aspects.txt",
+    "frase": "but does not indicate for how long Andrew played"
+  },
+  {
+    "id": "eng-114",
+    "file": "Wikipedia-EN_Uses-of-English-verb-forms.txt",
+    "frase": "We live in Dallas"
+  },
+  {
+    "id": "eng-115",
+    "file": "Wikipedia-EN_Uses-of-English-verb-forms.txt",
+    "frase": "The progressive or continuous aspect is used to denote a temporary action or state"
+  },
+  {
+    "id": "eng-116",
+    "file": "Wikipedia-EN_Uses-of-English-verb-forms.txt",
+    "frase": "for action that was ongoing at the time referred to, the past progressive is generally used instead"
+  },
+  {
+    "id": "eng-117",
+    "file": "Wikipedia-EN_Future-perfect.txt",
+    "frase": "I will have finished by tomorrow"
+  },
+  {
+    "id": "eng-118",
+    "file": "Wikipedia-EN_Future-perfect.txt",
+    "frase": "She will have fallen asleep by the time we get home"
+  },
+  {
+    "id": "eng-119",
+    "file": "Wikipedia-EN_Pluperfect.txt",
+    "frase": "\"we had arrived\" before the game began"
+  },
+  {
+    "id": "eng-120",
+    "file": "Wikipedia-EN_Pluperfect.txt",
+    "frase": "usually called past perfect in English"
+  },
+  {
+    "id": "eng-121",
+    "file": "Wikipedia-EN_Pluperfect.txt",
+    "frase": "\"they had been writing\" when the bell rang"
+  },
+  {
+    "id": "eng-122",
+    "file": "Wikipedia-EN_English-verbs.txt",
+    "frase": "a third person singular present tense form ending in -s"
+  },
+  {
+    "id": "eng-123",
+    "file": "Wikipedia-EN_English-verbs.txt",
+    "frase": "although there are about 200 irregular verbs"
+  },
+  {
+    "id": "eng-124",
+    "file": "Wikipedia-EN_English-verbs.txt",
+    "frase": "the irregularity in nearly all cases concerns the past tense and past participle forms"
+  },
+  {
+    "id": "eng-125",
+    "file": "Wikipedia-EN_English-verbs.txt",
+    "frase": "the irregularity in nearly all cases concerns the past tense and past participle forms"
+  },
+  {
+    "id": "eng-126",
+    "file": "Wikipedia-EN_English-verbs.txt",
+    "frase": "the irregularity in nearly all cases concerns the past tense and past participle forms"
+  },
+  {
+    "id": "eng-127",
+    "file": "Wikipedia-EN_English-verbs.txt",
+    "frase": "the irregularity in nearly all cases concerns the past tense and past participle forms"
+  },
+  {
+    "id": "eng-128",
+    "file": "Wikipedia-EN_English-verbs.txt",
+    "frase": "the irregularity in nearly all cases concerns the past tense and past participle forms"
+  },
+  {
+    "id": "eng-129",
+    "file": "Wikipedia-EN_English-verbs.txt",
+    "frase": "with the forms be, am, is, are, was, were, been and being"
+  },
+  {
+    "id": "eng-130",
+    "file": "Wikipedia-EN_English-verbs.txt",
+    "frase": "have they went yet?"
+  },
+  {
+    "id": "eng-131",
+    "file": "Wikipedia-EN_Infinitive.txt",
+    "frase": "The form without to is called the bare infinitive"
+  },
+  {
+    "id": "eng-132",
+    "file": "Wikipedia-EN_Infinitive.txt",
+    "frase": "I expect to happily sit here"
+  },
+  {
+    "id": "eng-133",
+    "file": "Wikipedia-EN_Infinitive.txt",
+    "frase": "to buy a car"
+  },
+  {
+    "id": "eng-134",
+    "file": "Wikipedia-EN_Adjective.txt",
+    "frase": "opinion, size, age or shape, colour, origin, material, purpose"
+  },
+  {
+    "id": "eng-135",
+    "file": "Wikipedia-EN_Adjective.txt",
+    "frase": "as a predicative adjective, e.g. \"My kids are happy\""
+  },
+  {
+    "id": "eng-136",
+    "file": "Wikipedia-EN_Adjective.txt",
+    "frase": "That used to be an immensely funny idea. (Prepositive attributive)"
+  },
+  {
+    "id": "eng-137",
+    "file": "Wikipedia-EN_English-adverbs.txt",
+    "frase": "derived from adjectives + the suffix -ly"
+  },
+  {
+    "id": "eng-138",
+    "file": "Wikipedia-EN_English-adverbs.txt",
+    "frase": "These include not, well, fast, right, and very"
+  },
+  {
+    "id": "eng-139",
+    "file": "Wikipedia-EN_English-adverbs.txt",
+    "frase": "The words not and never are adverbs that participate in negation"
+  },
+  {
+    "id": "eng-140",
+    "file": "Wikipedia-EN_English-determiners.txt",
+    "frase": "They also imply a single selection from a set of exactly two"
+  },
+  {
+    "id": "eng-141",
+    "file": "Wikipedia-EN_English-determiners.txt",
+    "frase": "disjunctive determiners select singular nouns"
+  },
+  {
+    "id": "eng-142",
+    "file": "Wikipedia-EN_English-determiners.txt",
+    "frase": "are words – such as the, a, each, some, which, this, and numerals such as five"
+  },
+  {
+    "id": "eng-143",
+    "file": "Wikipedia-EN_English-numerals.txt",
+    "frase": "the number is typically written as two words separated by a hyphen"
+  },
+  {
+    "id": "eng-144",
+    "file": "Wikipedia-EN_English-numerals.txt",
+    "frase": "the word hundred remains in its singular form regardless of the number preceding it"
+  },
+  {
+    "id": "eng-145",
+    "file": "Wikipedia-EN_English-numerals.txt",
+    "frase": "Ordinal numbers refer to a position"
+  },
+  {
+    "id": "eng-146",
+    "file": "Wikipedia-EN_English-numerals.txt",
+    "frase": "6: half a dozen"
+  },
+  {
+    "id": "eng-147",
+    "file": "Wikipedia-EN_English-numerals.txt",
+    "frase": "a billion is used for a million million"
+  },
+  {
+    "id": "eng-148",
+    "file": "Wikipedia-EN_Homophone.txt",
+    "frase": "Homophones that are spelled differently are also called heterographs, e.g. to, too, and two"
+  },
+  {
+    "id": "eng-149",
+    "file": "Wikipedia-EN_Homophone.txt",
+    "frase": "or spelled differently, as in rain, reign, and rein"
+  },
+  {
+    "id": "eng-150",
+    "file": "Wikipedia-EN_Question.txt",
+    "frase": "yes–no questions (such as \"Are you hungry?\")"
+  },
+  {
+    "id": "eng-151",
+    "file": "Wikipedia-EN_Question.txt",
+    "frase": "alternative questions (such as \"Do you want jam or marmalade?\")"
+  },
+  {
+    "id": "eng-152",
+    "file": "Wikipedia-EN_Question.txt",
+    "frase": "An open question, such as \"What is your name?\""
+  },
+  {
+    "id": "eng-153",
+    "file": "Wikipedia-EN_English-compound.txt",
+    "frase": "Orthography: open, hyphenated, or solid (closed up)"
+  },
+  {
+    "id": "eng-154",
+    "file": "Wikipedia-EN_English-modal-auxiliary-verbs.txt",
+    "frase": "I could swim may serve as a past form of I can swim"
+  },
+  {
+    "id": "eng-155",
+    "file": "Wikipedia-EN_English-modal-auxiliary-verbs.txt",
+    "frase": "replaced by be able to"
+  },
+  {
+    "id": "eng-156",
+    "file": "Wikipedia-EN_English-modal-auxiliary-verbs.txt",
+    "frase": "can be replaced by be allowed to"
+  },
+  {
+    "id": "eng-157",
+    "file": "Wikipedia-EN_English-modal-auxiliary-verbs.txt",
+    "frase": "The modal must in most meanings can be replaced by have to"
+  },
+  {
+    "id": "eng-158",
+    "file": "Wikipedia-EN_English-modal-auxiliary-verbs.txt",
+    "frase": "They can most easily be distinguished from other verbs by their defectiveness"
+  },
+  {
+    "id": "eng-159",
+    "file": "Wikipedia-EN_English-modal-auxiliary-verbs.txt",
+    "frase": "mustn't"
+  },
+  {
+    "id": "eng-160",
+    "file": "Wikipedia-EN_English-modal-auxiliary-verbs.txt",
+    "frase": "Shall I read now?"
+  },
+  {
+    "id": "eng-161",
+    "file": "Wikipedia-EN_English-modal-auxiliary-verbs.txt",
+    "frase": "used mostly to express modality, properties such as possibility and obligation"
+  },
+  {
+    "id": "eng-162",
+    "file": "Wikipedia-EN_English-modal-auxiliary-verbs.txt",
+    "frase": "A few other verbs are usually also classed as modals: ought"
+  },
+  {
+    "id": "eng-163",
+    "file": "Wikipedia-EN_English-conditional-sentences.txt",
+    "frase": "If it rains this afternoon, we can/could/should/may/might find somewhere to shelter"
+  },
+  {
+    "id": "eng-164",
+    "file": "Wikipedia-EN_English-conditional-sentences.txt",
+    "frase": "If it rains this afternoon, come round to my place!"
+  },
+  {
+    "id": "eng-165",
+    "file": "Wikipedia-EN_English-conditional-sentences.txt",
+    "frase": "such as whenever, unless, provided (that), and as long as"
+  },
+  {
+    "id": "eng-166",
+    "file": "Wikipedia-EN_English-conditional-sentences.txt",
+    "frase": "zero conditional"
+  },
+  {
+    "id": "eng-167",
+    "file": "Wikipedia-EN_English-conditional-sentences.txt",
+    "frase": "second conditional (or conditional II)"
+  },
+  {
+    "id": "eng-168",
+    "file": "Wikipedia-EN_English-conditional-sentences.txt",
+    "frase": "If I were to be king, I could have you thrown"
+  },
+  {
+    "id": "eng-169",
+    "file": "Wikipedia-EN_English-conditional-sentences.txt",
+    "frase": "third conditional (or conditional III)"
+  },
+  {
+    "id": "eng-170",
+    "file": "Wikipedia-EN_English-conditional-sentences.txt",
+    "frase": "such as whenever, unless, provided (that), and as long as"
+  },
+  {
+    "id": "eng-171",
+    "file": "Wikipedia-EN_English-passive-voice.txt",
+    "frase": "Three stores were robbed last night (the identity of the agent may be unknown)"
+  },
+  {
+    "id": "eng-172",
+    "file": "Wikipedia-EN_English-passive-voice.txt",
+    "frase": "A new cancer drug has been discovered"
+  },
+  {
+    "id": "eng-173",
+    "file": "Wikipedia-EN_English-passive-voice.txt",
+    "frase": "Mistakes have been made on this project (the speaker may not wish to identify the agent)"
+  },
+  {
+    "id": "eng-174",
+    "file": "Wikipedia-EN_English-passive-voice.txt",
+    "frase": "Don't get killed"
+  },
+  {
+    "id": "eng-175",
+    "file": "Wikipedia-EN_English-passive-voice.txt",
+    "frase": "you ever been kicked by an elephant"
+  },
+  {
+    "id": "eng-176",
+    "file": "Wikipedia-EN_English-passive-voice.txt",
+    "frase": "Three stores were robbed last night"
+  },
+  {
+    "id": "eng-177",
+    "file": "Wikipedia-EN_English-relative-clauses.txt",
+    "frase": "whom is used only when its antecedent is the object of the relative clause"
+  },
+  {
+    "id": "eng-178",
+    "file": "Wikipedia-EN_English-relative-clauses.txt",
+    "frase": "In some cases the relative pronoun may be omitted"
+  },
+  {
+    "id": "eng-179",
+    "file": "Wikipedia-EN_English-relative-clauses.txt",
+    "frase": "a non-restrictive relative clause is surrounded by pauses in speech and usually by commas in writing"
+  },
+  {
+    "id": "eng-180",
+    "file": "Wikipedia-EN_English-relative-clauses.txt",
+    "frase": "who and which may be used in both restrictive and non-restrictive clauses"
+  },
+  {
+    "id": "eng-181",
+    "file": "Wikipedia-EN_English-verbs.txt",
+    "frase": "the irregularity in nearly all cases concerns the past tense and past participle forms"
+  },
+  {
+    "id": "eng-182",
+    "file": "Wikipedia-EN_English-verbs.txt",
+    "frase": "the irregularity in nearly all cases concerns the past tense and past participle forms"
+  },
+  {
+    "id": "eng-183",
+    "file": "Wikipedia-EN_English-verbs.txt",
+    "frase": "the irregularity in nearly all cases concerns the past tense and past participle forms"
+  },
+  {
+    "id": "eng-184",
+    "file": "Wikipedia-EN_English-verbs.txt",
+    "frase": "the irregularity in nearly all cases concerns the past tense and past participle forms"
+  },
+  {
+    "id": "eng-185",
+    "file": "Wikipedia-EN_English-verbs.txt",
+    "frase": "the irregularity in nearly all cases concerns the past tense and past participle forms"
+  },
+  {
+    "id": "eng-186",
+    "file": "Wikipedia-EN_English-verbs.txt",
+    "frase": "the irregularity in nearly all cases concerns the past tense and past participle forms"
+  },
+  {
+    "id": "eng-187",
+    "file": "Wikipedia-EN_English-verbs.txt",
+    "frase": "the irregularity in nearly all cases concerns the past tense and past participle forms"
+  },
+  {
+    "id": "eng-188",
+    "file": "Wikipedia-EN_English-verbs.txt",
+    "frase": "I seen it, he done it"
+  },
+  {
+    "id": "eng-189",
+    "file": "Wikipedia-EN_Simple-past.txt",
+    "frase": "I was born in 1980"
+  },
+  {
+    "id": "eng-190",
+    "file": "Wikipedia-EN_Simple-past.txt",
+    "frase": "When did they get married?"
+  },
+  {
+    "id": "eng-191",
+    "file": "Wikipedia-EN_Simple-past.txt",
+    "frase": "It is used principally to describe events in the past"
+  },
+  {
+    "id": "eng-192",
+    "file": "Wikipedia-EN_English-articles.txt",
+    "frase": "The boy with glasses was looking at the moon"
+  },
+  {
+    "id": "eng-193",
+    "file": "Wikipedia-EN_English-possessive.txt",
+    "frase": "expresses for whom something is intended"
+  },
+  {
+    "id": "eng-194",
+    "file": "Wikipedia-EN_Gerund.txt",
+    "frase": "I like swimming"
+  },
+  {
+    "id": "eng-195",
+    "file": "Wikipedia-EN_English-plurals.txt",
+    "frase": "0.5 children per woman"
+  },
+  {
+    "id": "eng-196",
+    "file": "Wikipedia-EN_Degrees-of-comparison-of-adjectives-and-adverbs.txt",
+    "frase": "polite can use politer or more polite"
+  },
+  {
+    "id": "eng-197",
+    "file": "Wikipedia-EN_Degrees-of-comparison-of-adjectives-and-adverbs.txt",
+    "frase": "least big and least fully [superlative of inferiority]"
+  },
+  {
+    "id": "eng-198",
+    "file": "Wikipedia-EN_Tag-question.txt",
+    "frase": "I'll make tea, shall I?"
+  },
+  {
+    "id": "eng-199",
+    "file": "Wikipedia-EN_English-phrasal-verbs.txt",
+    "frase": "turn down, run into, or sit up"
+  },
+  {
+    "id": "eng-200",
+    "file": "Wikipedia-EN_Indirect-speech.txt",
+    "frase": "He said that he could get it for free"
+  }
+]

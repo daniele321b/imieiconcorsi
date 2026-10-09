@@ -14,7 +14,8 @@ export function giorniA(iso?: string) {
 export function scadenzaTesto(iso?: string) {
   const g = giorniA(iso);
   if (g === undefined) return "Scadenza non indicata";
-  if (g < 0) return "Scaduto";
+  // Scaduto il termine per la domanda: il bando resta, ci si può ancora esercitare.
+  if (g < 0) return "Domande chiuse";
   if (g === 0) return "Scade oggi";
   if (g === 1) return "Scade domani";
   return `Scade tra ${g} giorni`;

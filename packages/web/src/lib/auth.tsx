@@ -84,6 +84,9 @@ export function messaggioErrore(err: unknown): string {
       return "Troppi tentativi. Riprova tra qualche minuto.";
     case "InvalidParameterException":
       return "Controlla i dati inseriti.";
+    case "UserLambdaValidationException":
+      // Messaggio del trigger pre sign-up (es. "Esiste già un account con questa email: accedi con Facebook.")
+      return err instanceof Error ? err.message.replace(/^PreSignUp failed with error\s*/i, "") : "Registrazione non riuscita.";
     default:
       return err instanceof Error && err.message ? err.message : "Qualcosa è andato storto. Riprova.";
   }

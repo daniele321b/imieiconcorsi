@@ -1,6 +1,7 @@
 import { BellRing, CheckCircle2, Target, Timer, TrendingUp } from "lucide-react";
 import { Navigate } from "react-router";
 import { AuthCard } from "../components/AuthCard";
+import { PiePagina } from "./legale/LegalePagina";
 import { Logo } from "../components/brand";
 import { FullPageSpinner } from "../components/ui";
 import { useAuth } from "../lib/auth";
@@ -86,6 +87,9 @@ export function Landing() {
             <AuthCard />
           </div>
         </section>
+      </div>
+      <div className="relative">
+        <PiePagina scuro />
       </div>
     </div>
   );

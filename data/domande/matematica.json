@@ -1,0 +1,3402 @@
+[
+  {
+    "materia": "matematica",
+    "id": "mat-001",
+    "argomento": "Numeri primi",
+    "livello": 1,
+    "testo": "Quando un numero maggiore di 1 si dice primo?",
+    "opzioni": [
+      "Quando è divisibile solo per se stesso e per l'unità",
+      "Quando non è divisibile per 2",
+      "Quando è dispari",
+      "Quando ha esattamente tre divisori"
+    ],
+    "corretta": 0,
+    "spiegazione": "Un numero p > 1 è primo se è divisibile solo per se stesso e per 1; altrimenti è composto.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-002",
+    "argomento": "Numeri primi",
+    "livello": 3,
+    "testo": "Quale di questi numeri è primo?",
+    "opzioni": [
+      "87",
+      "97",
+      "91",
+      "51"
+    ],
+    "corretta": 1,
+    "spiegazione": "97 non è divisibile per 2, 3, 5, 7 (i primi fino alla sua radice). 91 = 7 × 13, 51 = 3 × 17, 87 = 3 × 29.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-003",
+    "argomento": "Numeri primi",
+    "livello": 3,
+    "testo": "Cosa afferma il teorema fondamentale dell'aritmetica?",
+    "opzioni": [
+      "I numeri primi sono infiniti",
+      "Il prodotto di due primi è sempre primo",
+      "Ogni numero naturale maggiore di 1 si scrive in modo unico come prodotto di numeri primi",
+      "Ogni numero pari è somma di due primi"
+    ],
+    "corretta": 2,
+    "spiegazione": "Ogni n > 1 ammette un'unica scomposizione in fattori primi (a meno dell'ordine).",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-004",
+    "argomento": "Divisibilità",
+    "livello": 1,
+    "testo": "Quando un numero è divisibile per 3?",
+    "opzioni": [
+      "Quando è dispari",
+      "Quando le ultime due cifre formano un multiplo di 3",
+      "Quando finisce per 3",
+      "Quando la somma delle sue cifre è divisibile per 3"
+    ],
+    "corretta": 3,
+    "spiegazione": "Criterio di divisibilità per 3: la somma delle cifre deve essere divisibile per 3.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-005",
+    "argomento": "Divisibilità",
+    "livello": 2,
+    "testo": "Il numero 1.234.567 è divisibile per 3?",
+    "opzioni": [
+      "No, perché la somma delle cifre è 28",
+      "Sì, perché è dispari",
+      "No, perché finisce per 7",
+      "Sì, perché la somma delle cifre è 27"
+    ],
+    "corretta": 0,
+    "spiegazione": "1+2+3+4+5+6+7 = 28, che non è divisibile per 3.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-006",
+    "argomento": "Divisibilità",
+    "livello": 1,
+    "testo": "Quando un numero è divisibile per 5?",
+    "opzioni": [
+      "Quando la somma delle cifre è 5",
+      "Quando la sua ultima cifra è 0 o 5",
+      "Quando è dispari",
+      "Quando la penultima cifra è 5"
+    ],
+    "corretta": 1,
+    "spiegazione": "Criterio di divisibilità per 5: l'ultima cifra è 0 o 5.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-007",
+    "argomento": "MCD e mcm",
+    "livello": 2,
+    "testo": "Qual è il minimo comune multiplo di 12 e 18?",
+    "opzioni": [
+      "72",
+      "216",
+      "36",
+      "6"
+    ],
+    "corretta": 2,
+    "spiegazione": "12 = 2²·3, 18 = 2·3²: il mcm prende i fattori con esponente massimo, 2²·3² = 36. Il MCD è 6.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-008",
+    "argomento": "MCD e mcm",
+    "livello": 2,
+    "testo": "Qual è il massimo comune divisore di 48 e 36?",
+    "opzioni": [
+      "144",
+      "4",
+      "6",
+      "12"
+    ],
+    "corretta": 3,
+    "spiegazione": "48 = 2⁴·3, 36 = 2²·3²: il MCD prende i fattori comuni con esponente minimo, 2²·3 = 12.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-009",
+    "argomento": "Potenze",
+    "livello": 2,
+    "testo": "Quanto vale 2⁵ · 2³?",
+    "opzioni": [
+      "2⁸ = 256",
+      "4⁸",
+      "2¹⁵",
+      "2²"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il prodotto di potenze con la stessa base ha per esponente la somma degli esponenti: 2⁵ · 2³ = 2⁸ = 256.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-010",
+    "argomento": "Potenze",
+    "livello": 3,
+    "testo": "Quanto vale (3²)³?",
+    "opzioni": [
+      "3⁹",
+      "3⁶ = 729",
+      "3⁵ = 243",
+      "9³ = 27"
+    ],
+    "corretta": 1,
+    "spiegazione": "La potenza di una potenza ha per esponente il prodotto degli esponenti: (3²)³ = 3⁶ = 729.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-011",
+    "argomento": "Potenze",
+    "livello": 1,
+    "testo": "Quanto vale 5⁰?",
+    "opzioni": [
+      "Non è definito",
+      "5",
+      "1",
+      "0"
+    ],
+    "corretta": 2,
+    "spiegazione": "Qualunque numero diverso da zero elevato a zero è uguale a 1.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-012",
+    "argomento": "Proporzioni",
+    "livello": 2,
+    "testo": "Quale proprietà vale in ogni proporzione A : B = C : D?",
+    "opzioni": [
+      "La somma dei medi è uguale alla somma degli estremi",
+      "Gli antecedenti sono uguali",
+      "Il rapporto tra estremi è sempre 1",
+      "Il prodotto dei medi è uguale al prodotto degli estremi"
+    ],
+    "corretta": 3,
+    "spiegazione": "Proprietà fondamentale: A · D = B · C.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-013",
+    "argomento": "Proporzioni",
+    "livello": 3,
+    "testo": "Trova x nella proporzione 3 : 5 = x : 40.",
+    "opzioni": [
+      "24",
+      "15",
+      "66,6",
+      "20"
+    ],
+    "corretta": 0,
+    "spiegazione": "Prodotto dei medi = prodotto degli estremi: 5x = 3 · 40 = 120, quindi x = 24.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-014",
+    "argomento": "Percentuali",
+    "livello": 2,
+    "testo": "Un articolo costa 80 €. Con uno sconto del 20%, quanto si paga?",
+    "opzioni": [
+      "60 €",
+      "64 €",
+      "70 €",
+      "16 €"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il 20% di 80 è 16; 80 − 16 = 64 €.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-015",
+    "argomento": "Percentuali",
+    "livello": 3,
+    "testo": "Un prezzo di 120 € aumenta del 15%. Quanto diventa?",
+    "opzioni": [
+      "135 €",
+      "150 €",
+      "138 €",
+      "132 €"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il 15% di 120 è 18; 120 + 18 = 138 €.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-016",
+    "argomento": "Percentuali",
+    "livello": 1,
+    "testo": "Quanto è il 25% di 360?",
+    "opzioni": [
+      "36",
+      "72",
+      "120",
+      "90"
+    ],
+    "corretta": 3,
+    "spiegazione": "25% = 25/100 = 1/4; 360 : 4 = 90.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-017",
+    "argomento": "Statistica",
+    "livello": 2,
+    "testo": "Qual è la media aritmetica di 4, 7, 10 e 11?",
+    "opzioni": [
+      "8",
+      "8,5",
+      "7,5",
+      "10"
+    ],
+    "corretta": 0,
+    "spiegazione": "Somma dei dati diviso il loro numero: (4 + 7 + 10 + 11) : 4 = 32 : 4 = 8.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-018",
+    "argomento": "Statistica",
+    "livello": 3,
+    "testo": "Qual è la mediana dei dati 3, 8, 5, 10, 2?",
+    "opzioni": [
+      "8",
+      "5",
+      "5,6",
+      "3"
+    ],
+    "corretta": 1,
+    "spiegazione": "Si ordinano i dati: 2, 3, 5, 8, 10. Il valore centrale è 5. La media sarebbe invece 5,6.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-019",
+    "argomento": "Equazioni",
+    "livello": 2,
+    "testo": "Risolvi l'equazione 3x + 7 = 22.",
+    "opzioni": [
+      "x = 3",
+      "x = 15",
+      "x = 5",
+      "x = 29/3"
+    ],
+    "corretta": 2,
+    "spiegazione": "3x = 22 − 7 = 15, quindi x = 15 : 3 = 5.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-020",
+    "argomento": "Problemi",
+    "livello": 4,
+    "testo": "In un concorso il 40% dei candidati supera lo scritto e, di questi, il 25% supera l'orale. Su 1.000 candidati, quanti superano entrambe le prove?",
+    "opzioni": [
+      "400",
+      "250",
+      "65",
+      "100"
+    ],
+    "corretta": 3,
+    "spiegazione": "Lo scritto lo superano 1.000 · 0,40 = 400 candidati; l'orale 400 · 0,25 = 100.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-021",
+    "argomento": "Numeri naturali",
+    "livello": 2,
+    "testo": "Quale di queste divisioni è «indeterminata»?",
+    "opzioni": [
+      "0 : 0",
+      "0 : 5",
+      "5 : 0",
+      "5 : 5"
+    ],
+    "corretta": 0,
+    "spiegazione": "n : 0 con n ≠ 0 è impossibile; 0 : 0 è indeterminata; 0 : 5 = 0.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-022",
+    "argomento": "Numeri naturali",
+    "livello": 1,
+    "testo": "Nella divisione intera 17 : 5, quanto valgono quoziente e resto?",
+    "opzioni": [
+      "Quoziente 3, resto 3",
+      "Quoziente 3, resto 2",
+      "Quoziente 4, resto 3",
+      "Quoziente 2, resto 7"
+    ],
+    "corretta": 1,
+    "spiegazione": "5 · 3 = 15 ≤ 17; 17 − 15 = 2.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-023",
+    "argomento": "Numeri naturali",
+    "livello": 2,
+    "testo": "Quanto vale 23 mod 7?",
+    "opzioni": [
+      "0",
+      "3",
+      "2",
+      "16"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'operazione modulo restituisce il resto: 23 = 7 · 3 + 2.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-024",
+    "argomento": "Potenze",
+    "livello": 1,
+    "testo": "Quanto vale 2⁵?",
+    "opzioni": [
+      "64",
+      "25",
+      "10",
+      "32"
+    ],
+    "corretta": 3,
+    "spiegazione": "Cinque fattori uguali a 2: 2·2·2·2·2 = 32.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-025",
+    "argomento": "Radici",
+    "livello": 1,
+    "testo": "Qual è la radice cubica di 64?",
+    "opzioni": [
+      "4",
+      "8",
+      "3",
+      "16"
+    ],
+    "corretta": 0,
+    "spiegazione": "4 · 4 · 4 = 64.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-026",
+    "argomento": "Divisibilità",
+    "livello": 2,
+    "testo": "Quali sono i divisori propri di 12?",
+    "opzioni": [
+      "1, 12",
+      "2, 3, 4, 6",
+      "1, 2, 3, 4, 6, 12",
+      "2, 4, 6, 8"
+    ],
+    "corretta": 1,
+    "spiegazione": "Sono i divisori diversi dal numero stesso e dall'unità.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-027",
+    "argomento": "Numeri primi",
+    "livello": 2,
+    "testo": "Quale teorema afferma che i numeri primi sono infiniti?",
+    "opzioni": [
+      "Il teorema di Ruffini",
+      "Il teorema di Pitagora",
+      "Il teorema di Euclide",
+      "Il teorema di Talete"
+    ],
+    "corretta": 2,
+    "spiegazione": "Algebra 1, teorema 1.4.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-028",
+    "argomento": "Numeri primi",
+    "livello": 3,
+    "testo": "Qual è la scomposizione in fattori primi di 630?",
+    "opzioni": [
+      "2² · 3 · 5 · 7",
+      "3² · 7 · 10",
+      "2 · 3 · 5 · 21",
+      "2 · 3² · 5 · 7"
+    ],
+    "corretta": 3,
+    "spiegazione": "630 = 2 · 315 = 2 · 3 · 105 = 2 · 3 · 3 · 35 = 2 · 3² · 5 · 7.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-029",
+    "argomento": "MCD e mcm",
+    "livello": 2,
+    "testo": "12 e 25 sono:",
+    "opzioni": [
+      "Primi tra loro (coprimi)",
+      "Entrambi numeri primi",
+      "Con MCD uguale a 5",
+      "Uno multiplo dell'altro"
+    ],
+    "corretta": 0,
+    "spiegazione": "MCD(12, 25) = 1: non hanno fattori primi comuni.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-030",
+    "argomento": "MCD e mcm",
+    "livello": 1,
+    "testo": "Qual è il minimo comune multiplo di 6 e 15?",
+    "opzioni": [
+      "15",
+      "30",
+      "3",
+      "90"
+    ],
+    "corretta": 1,
+    "spiegazione": "6 = 2·3, 15 = 3·5: mcm = 2·3·5 = 30.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-031",
+    "argomento": "MCD e mcm",
+    "livello": 1,
+    "testo": "Qual è il massimo comune divisore di 18 e 12?",
+    "opzioni": [
+      "3",
+      "2",
+      "6",
+      "36"
+    ],
+    "corretta": 2,
+    "spiegazione": "Divisori comuni: 1, 2, 3, 6.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-032",
+    "argomento": "Numeri relativi",
+    "livello": 1,
+    "testo": "Due numeri relativi si dicono concordi quando:",
+    "opzioni": [
+      "La loro somma è zero",
+      "Hanno lo stesso valore assoluto",
+      "Hanno segni opposti",
+      "Hanno lo stesso segno"
+    ],
+    "corretta": 3,
+    "spiegazione": "+3 e +5 sono concordi; +3 e −5 sono discordi.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-033",
+    "argomento": "Numeri relativi",
+    "livello": 1,
+    "testo": "Quanto vale |−7|?",
+    "opzioni": [
+      "7",
+      "1/7",
+      "0",
+      "−7"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il valore assoluto è il numero senza segno.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-034",
+    "argomento": "Numeri relativi",
+    "livello": 1,
+    "testo": "Due numeri relativi sono «opposti» quando:",
+    "opzioni": [
+      "Hanno lo stesso segno",
+      "Hanno lo stesso valore assoluto ma segni diversi",
+      "Sono entrambi negativi",
+      "Il loro prodotto è 1"
+    ],
+    "corretta": 1,
+    "spiegazione": "Esempio: +3 e −3.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-035",
+    "argomento": "Numeri relativi",
+    "livello": 1,
+    "testo": "Quanto vale (−3) + (−5)?",
+    "opzioni": [
+      "+8",
+      "+2",
+      "−8",
+      "−2"
+    ],
+    "corretta": 2,
+    "spiegazione": "Concordi: si sommano i valori assoluti e si mantiene il segno.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-036",
+    "argomento": "Numeri relativi",
+    "livello": 2,
+    "testo": "Quanto vale (+7) + (−10)?",
+    "opzioni": [
+      "+3",
+      "−17",
+      "+17",
+      "−3"
+    ],
+    "corretta": 3,
+    "spiegazione": "Discordi: si sottraggono i valori assoluti e si prende il segno del maggiore in valore assoluto.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-037",
+    "argomento": "Numeri relativi",
+    "livello": 1,
+    "testo": "Quanto vale (−4) · (−6)?",
+    "opzioni": [
+      "+24",
+      "−10",
+      "+10",
+      "−24"
+    ],
+    "corretta": 0,
+    "spiegazione": "Regola dei segni: meno per meno dà più.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-038",
+    "argomento": "Numeri relativi",
+    "livello": 2,
+    "testo": "Quanto vale (−2)³?",
+    "opzioni": [
+      "+6",
+      "−8",
+      "+8",
+      "−6"
+    ],
+    "corretta": 1,
+    "spiegazione": "Tre fattori negativi: il prodotto è negativo.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-039",
+    "argomento": "Frazioni",
+    "livello": 1,
+    "testo": "Una frazione si dice «propria» quando:",
+    "opzioni": [
+      "Il numeratore è multiplo del denominatore",
+      "Il numeratore è maggiore del denominatore",
+      "Il numeratore è minore del denominatore",
+      "È ridotta ai minimi termini"
+    ],
+    "corretta": 2,
+    "spiegazione": "Rappresenta una grandezza minore dell'intero.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-040",
+    "argomento": "Frazioni",
+    "livello": 1,
+    "testo": "Come si chiama una frazione come 7/4?",
+    "opzioni": [
+      "Apparente",
+      "Equivalente",
+      "Propria",
+      "Impropria"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il numeratore è maggiore del denominatore ma non ne è multiplo.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-041",
+    "argomento": "Frazioni",
+    "livello": 2,
+    "testo": "Come si chiama una frazione come 12/4?",
+    "opzioni": [
+      "Apparente",
+      "Impropria non apparente",
+      "Irriducibile",
+      "Propria"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il numeratore è multiplo del denominatore: 12/4 = 3.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-042",
+    "argomento": "Frazioni",
+    "livello": 1,
+    "testo": "Quale frazione è equivalente a 2/3?",
+    "opzioni": [
+      "3/2",
+      "8/12",
+      "4/9",
+      "6/8"
+    ],
+    "corretta": 1,
+    "spiegazione": "Proprietà invariantiva: numeratore e denominatore moltiplicati per 4.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-043",
+    "argomento": "Frazioni",
+    "livello": 1,
+    "testo": "Come si riduce ai minimi termini 18/24?",
+    "opzioni": [
+      "2/3",
+      "6/8",
+      "3/4",
+      "9/12"
+    ],
+    "corretta": 2,
+    "spiegazione": "Si dividono numeratore e denominatore per MCD(18, 24) = 6.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-044",
+    "argomento": "Frazioni",
+    "livello": 2,
+    "testo": "Quanto vale 1/4 + 1/6?",
+    "opzioni": [
+      "2/10",
+      "1/5",
+      "7/12",
+      "5/12"
+    ],
+    "corretta": 3,
+    "spiegazione": "Denominatore comune 12: 3/12 + 2/12 = 5/12.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-045",
+    "argomento": "Frazioni",
+    "livello": 2,
+    "testo": "Quanto vale 2/3 · 9/4?",
+    "opzioni": [
+      "3/2",
+      "11/7",
+      "18/7",
+      "8/27"
+    ],
+    "corretta": 0,
+    "spiegazione": "Numeratori per numeratori e denominatori per denominatori: 18/12 = 3/2.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-046",
+    "argomento": "Frazioni",
+    "livello": 2,
+    "testo": "Quanto vale 2/3 : 4/9?",
+    "opzioni": [
+      "4/3",
+      "3/2",
+      "8/27",
+      "2/3"
+    ],
+    "corretta": 1,
+    "spiegazione": "Si moltiplica per l'inverso: 2/3 · 9/4 = 3/2.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-047",
+    "argomento": "Frazioni",
+    "livello": 1,
+    "testo": "Qual è il reciproco di 3/5?",
+    "opzioni": [
+      "3/5",
+      "−3/5",
+      "5/3",
+      "−5/3"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il prodotto di un numero per il suo reciproco è 1.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-048",
+    "argomento": "Potenze",
+    "livello": 2,
+    "testo": "Quanto vale 2⁻³?",
+    "opzioni": [
+      "8",
+      "−8",
+      "−6",
+      "1/8"
+    ],
+    "corretta": 3,
+    "spiegazione": "Esponente negativo: si prende il reciproco della base con esponente opposto.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-049",
+    "argomento": "Notazione scientifica",
+    "livello": 2,
+    "testo": "Come si scrive 0,00045 in notazione scientifica?",
+    "opzioni": [
+      "4,5 · 10⁻⁴",
+      "45 · 10⁻⁵",
+      "0,45 · 10⁻³",
+      "4,5 · 10⁴"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il coefficiente deve essere compreso tra 1 (incluso) e 10 (escluso).",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-050",
+    "argomento": "Notazione scientifica",
+    "livello": 1,
+    "testo": "Come si scrive 3.500.000 in notazione scientifica?",
+    "opzioni": [
+      "0,35 · 10⁷",
+      "3,5 · 10⁶",
+      "35 · 10⁵",
+      "3,5 · 10⁵"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il coefficiente deve essere compreso tra 1 e 10.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-051",
+    "argomento": "Notazione scientifica",
+    "livello": 3,
+    "testo": "Qual è l'ordine di grandezza di 8.200?",
+    "opzioni": [
+      "10²",
+      "10⁵",
+      "10⁴",
+      "10³"
+    ],
+    "corretta": 2,
+    "spiegazione": "È la potenza di 10 più vicina: 8.200 è più vicino a 10.000 che a 1.000.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-052",
+    "argomento": "Proporzioni",
+    "livello": 1,
+    "testo": "Nel rapporto A : B, come si chiamano A e B?",
+    "opzioni": [
+      "Numeratore e resto",
+      "Estremi e medi",
+      "Dividendo e quoziente",
+      "Antecedente e conseguente"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il rapporto è il quoziente del primo numero per il secondo.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-053",
+    "argomento": "Proporzioni",
+    "livello": 1,
+    "testo": "Nella proporzione A : B = C : D, quali sono gli estremi?",
+    "opzioni": [
+      "A e D",
+      "A e B",
+      "B e C",
+      "C e D"
+    ],
+    "corretta": 0,
+    "spiegazione": "B e C sono i medi.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-054",
+    "argomento": "Proporzioni",
+    "livello": 3,
+    "testo": "Nella proporzione continua 4 : x = x : 9, quanto vale x?",
+    "opzioni": [
+      "36",
+      "6",
+      "13",
+      "6,5"
+    ],
+    "corretta": 1,
+    "spiegazione": "x² = 4 · 9 = 36, x = 6.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-055",
+    "argomento": "Proporzioni",
+    "livello": 2,
+    "testo": "Se in una proporzione si scambiano tra loro i medi:",
+    "opzioni": [
+      "Bisogna scambiare anche gli antecedenti",
+      "Si ottiene il reciproco",
+      "Si ottiene ancora una proporzione",
+      "La proporzione diventa falsa"
+    ],
+    "corretta": 2,
+    "spiegazione": "È la proprietà del permutare.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-056",
+    "argomento": "Proporzionalità",
+    "livello": 1,
+    "testo": "Due grandezze sono direttamente proporzionali quando:",
+    "opzioni": [
+      "Il loro prodotto è costante",
+      "La loro somma è costante",
+      "Crescono entrambe di 1",
+      "Il loro rapporto è costante"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il rapporto y/x = k è costante.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-057",
+    "argomento": "Proporzionalità",
+    "livello": 1,
+    "testo": "Due grandezze sono inversamente proporzionali quando:",
+    "opzioni": [
+      "Il loro prodotto è costante",
+      "Il loro rapporto è costante",
+      "La loro differenza è costante",
+      "Una è il doppio dell'altra"
+    ],
+    "corretta": 0,
+    "spiegazione": "x · y = k.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-058",
+    "argomento": "Proporzionalità",
+    "livello": 3,
+    "testo": "6 operai finiscono un lavoro in 10 giorni. In quanti giorni lo finirebbero 4 operai, lavorando allo stesso ritmo?",
+    "opzioni": [
+      "12",
+      "15",
+      "6,7",
+      "8"
+    ],
+    "corretta": 1,
+    "spiegazione": "Proporzionalità inversa: 6 · 10 = 4 · x, x = 15.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-059",
+    "argomento": "Proporzionalità",
+    "livello": 2,
+    "testo": "3 kg di mele costano 7,50 €. Quanto costano 5 kg?",
+    "opzioni": [
+      "10,50 €",
+      "15,00 €",
+      "12,50 €",
+      "12,00 €"
+    ],
+    "corretta": 2,
+    "spiegazione": "Proporzionalità diretta: 2,50 € al kg · 5.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-060",
+    "argomento": "Percentuali",
+    "livello": 2,
+    "testo": "A quale frazione corrisponde il 12,5%?",
+    "opzioni": [
+      "5/4",
+      "1/4",
+      "1/12",
+      "1/8"
+    ],
+    "corretta": 3,
+    "spiegazione": "12,5/100 = 125/1000 = 1/8.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-061",
+    "argomento": "Sistemi di numerazione",
+    "livello": 3,
+    "testo": "Quanto vale in base 10 il numero binario 1011?",
+    "opzioni": [
+      "11",
+      "9",
+      "13",
+      "1011"
+    ],
+    "corretta": 0,
+    "spiegazione": "1·2³ + 0·2² + 1·2 + 1 = 11.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-062",
+    "argomento": "Sistemi di numerazione",
+    "livello": 2,
+    "testo": "Come si chiama la scrittura 352 = 3·10² + 5·10 + 2?",
+    "opzioni": [
+      "Ordine di grandezza",
+      "Notazione polinomiale",
+      "Scomposizione in fattori",
+      "Notazione scientifica"
+    ],
+    "corretta": 1,
+    "spiegazione": "Somma delle cifre moltiplicate per le potenze della base.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-063",
+    "argomento": "Insiemi",
+    "livello": 1,
+    "testo": "Come si chiama un insieme privo di elementi?",
+    "opzioni": [
+      "Insieme unitario",
+      "Insieme delle parti",
+      "Insieme vuoto",
+      "Insieme universo"
+    ],
+    "corretta": 2,
+    "spiegazione": "Si indica con ∅ o {}.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-064",
+    "argomento": "Insiemi",
+    "livello": 1,
+    "testo": "Qual è la cardinalità dell'insieme {a, b, c, d}?",
+    "opzioni": [
+      "1",
+      "16",
+      "5",
+      "4"
+    ],
+    "corretta": 3,
+    "spiegazione": "È il numero dei suoi elementi.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-065",
+    "argomento": "Insiemi",
+    "livello": 3,
+    "testo": "Quanti elementi ha l'insieme delle parti di un insieme con 3 elementi?",
+    "opzioni": [
+      "8",
+      "9",
+      "3",
+      "6"
+    ],
+    "corretta": 0,
+    "spiegazione": "I sottoinsiemi di un insieme di n elementi sono 2ⁿ (compresi ∅ e l'insieme stesso).",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-066",
+    "argomento": "Insiemi",
+    "livello": 1,
+    "testo": "Due insiemi si dicono disgiunti quando:",
+    "opzioni": [
+      "Hanno gli stessi elementi",
+      "Non hanno elementi in comune",
+      "Hanno la stessa cardinalità",
+      "Uno è contenuto nell'altro"
+    ],
+    "corretta": 1,
+    "spiegazione": "La loro intersezione è vuota.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-067",
+    "argomento": "Insiemi",
+    "livello": 2,
+    "testo": "A = {1, 2, 3, 4}, B = {3, 4, 5}. Quanto vale A − B?",
+    "opzioni": [
+      "{3, 4}",
+      "{5}",
+      "{1, 2}",
+      "{1, 2, 5}"
+    ],
+    "corretta": 2,
+    "spiegazione": "Elementi di A che non appartengono a B.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-068",
+    "argomento": "Insiemi",
+    "livello": 3,
+    "testo": "Quale condizione NON è richiesta perché alcuni sottoinsiemi formino una partizione di A?",
+    "opzioni": [
+      "Che siano non vuoti",
+      "Che la loro unione sia A",
+      "Che siano a due a due disgiunti",
+      "Che abbiano tutti lo stesso numero di elementi"
+    ],
+    "corretta": 3,
+    "spiegazione": "Bastano: non vuoti, disgiunti a due a due, unione uguale ad A.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-069",
+    "argomento": "Insiemi",
+    "livello": 2,
+    "testo": "Se A ha 3 elementi e B ne ha 2, quante coppie ordinate ha il prodotto cartesiano A × B?",
+    "opzioni": [
+      "6",
+      "9",
+      "5",
+      "8"
+    ],
+    "corretta": 0,
+    "spiegazione": "3 · 2 = 6 coppie (a; b).",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-070",
+    "argomento": "Relazioni",
+    "livello": 3,
+    "testo": "Quali proprietà deve avere una relazione di equivalenza?",
+    "opzioni": [
+      "Riflessiva e antisimmetrica",
+      "Riflessiva, simmetrica e transitiva",
+      "Solo transitiva",
+      "Antisimmetrica e transitiva"
+    ],
+    "corretta": 1,
+    "spiegazione": "Antisimmetrica e transitiva caratterizzano invece le relazioni d'ordine.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-071",
+    "argomento": "Monomi",
+    "livello": 1,
+    "testo": "Come si chiama un'espressione letterale in cui numeri e lettere sono legati solo dalla moltiplicazione?",
+    "opzioni": [
+      "Equazione",
+      "Frazione algebrica",
+      "Monomio",
+      "Polinomio"
+    ],
+    "corretta": 2,
+    "spiegazione": "Esempio: 5a²b.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-072",
+    "argomento": "Monomi",
+    "livello": 1,
+    "testo": "Nel monomio −7x²y, come si chiama −7?",
+    "opzioni": [
+      "Grado",
+      "Parte letterale",
+      "Esponente",
+      "Coefficiente"
+    ],
+    "corretta": 3,
+    "spiegazione": "x²y è la parte letterale.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-073",
+    "argomento": "Monomi",
+    "livello": 1,
+    "testo": "Quale monomio è simile a 3a²b?",
+    "opzioni": [
+      "−5a²b",
+      "3a²b²",
+      "3ab²",
+      "3a³b"
+    ],
+    "corretta": 0,
+    "spiegazione": "Monomi simili hanno parte letterale identica.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-074",
+    "argomento": "Monomi",
+    "livello": 2,
+    "testo": "Qual è il grado complessivo del monomio 4x³y²?",
+    "opzioni": [
+      "6",
+      "5",
+      "4",
+      "3"
+    ],
+    "corretta": 1,
+    "spiegazione": "Somma degli esponenti: 3 + 2.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-075",
+    "argomento": "Monomi",
+    "livello": 1,
+    "testo": "Come si chiamano i monomi 5ab² e −5ab²?",
+    "opzioni": [
+      "Uguali",
+      "Reciproci",
+      "Opposti",
+      "Non simili"
+    ],
+    "corretta": 2,
+    "spiegazione": "Sono simili con coefficienti opposti: la loro somma è zero.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-076",
+    "argomento": "Monomi",
+    "livello": 2,
+    "testo": "Quanto vale (3x²y) · (−2xy³)?",
+    "opzioni": [
+      "−6x²y³",
+      "6x³y⁴",
+      "x³y⁴",
+      "−6x³y⁴"
+    ],
+    "corretta": 3,
+    "spiegazione": "Si moltiplicano i coefficienti e si sommano gli esponenti delle stesse lettere.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-077",
+    "argomento": "Monomi",
+    "livello": 3,
+    "testo": "Quanto vale (−2a²b)³?",
+    "opzioni": [
+      "−8a⁶b³",
+      "8a⁶b³",
+      "−6a⁶b³",
+      "−8a⁵b³"
+    ],
+    "corretta": 0,
+    "spiegazione": "(−2)³ = −8; (a²)³ = a⁶; b³.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-078",
+    "argomento": "Monomi",
+    "livello": 1,
+    "testo": "Quanto vale 3x² + 5x²?",
+    "opzioni": [
+      "15x²",
+      "8x²",
+      "8x",
+      "8x⁴"
+    ],
+    "corretta": 1,
+    "spiegazione": "Si sommano i coefficienti dei monomi simili.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-079",
+    "argomento": "Polinomi",
+    "livello": 1,
+    "testo": "Che cos'è un polinomio?",
+    "opzioni": [
+      "Un monomio di grado elevato",
+      "Un prodotto di monomi",
+      "Una somma algebrica di monomi",
+      "Un'equazione con più incognite"
+    ],
+    "corretta": 2,
+    "spiegazione": "Esempio: 6a + 2b.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-080",
+    "argomento": "Polinomi",
+    "livello": 2,
+    "testo": "Qual è il grado del polinomio x³y + 2x²y³ − 5?",
+    "opzioni": [
+      "6",
+      "3",
+      "4",
+      "5"
+    ],
+    "corretta": 3,
+    "spiegazione": "È il massimo dei gradi dei termini: x³y ha grado 4, 2x²y³ grado 5.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-081",
+    "argomento": "Polinomi",
+    "livello": 2,
+    "testo": "Il polinomio a³ − b³ + ab² è:",
+    "opzioni": [
+      "Omogeneo di grado 3",
+      "Ordinato e completo",
+      "Di grado 1",
+      "Completo"
+    ],
+    "corretta": 0,
+    "spiegazione": "Tutti i termini hanno grado 3.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-082",
+    "argomento": "Polinomi",
+    "livello": 2,
+    "testo": "Quale di questi polinomi è completo rispetto a x?",
+    "opzioni": [
+      "x³ + x − 1",
+      "x³ − 2x² + x − 5",
+      "x⁴ − 3x² + 2",
+      "x³ + 4"
+    ],
+    "corretta": 1,
+    "spiegazione": "Contiene tutte le potenze di x di grado inferiore a 3, compreso il termine noto.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-083",
+    "argomento": "Prodotti notevoli",
+    "livello": 1,
+    "testo": "A cosa è uguale (a + b)²?",
+    "opzioni": [
+      "a² + ab + b²",
+      "a² + b²",
+      "a² + 2ab + b²",
+      "2a + 2b"
+    ],
+    "corretta": 2,
+    "spiegazione": "Quadrato del primo, più doppio prodotto, più quadrato del secondo.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-084",
+    "argomento": "Prodotti notevoli",
+    "livello": 2,
+    "testo": "A cosa è uguale (x − 3)²?",
+    "opzioni": [
+      "x² − 9",
+      "x² − 3x + 9",
+      "x² + 9",
+      "x² − 6x + 9"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il doppio prodotto ha segno negativo.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-085",
+    "argomento": "Prodotti notevoli",
+    "livello": 1,
+    "testo": "A cosa è uguale (a + b)(a − b)?",
+    "opzioni": [
+      "a² − b²",
+      "(a − b)²",
+      "a² − 2ab + b²",
+      "a² + b²"
+    ],
+    "corretta": 0,
+    "spiegazione": "Somma per differenza: differenza dei quadrati.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-086",
+    "argomento": "Prodotti notevoli",
+    "livello": 3,
+    "testo": "Quanto vale 51 · 49, usando la somma per differenza?",
+    "opzioni": [
+      "2.501",
+      "2.499",
+      "2.449",
+      "2.500"
+    ],
+    "corretta": 1,
+    "spiegazione": "(50 + 1)(50 − 1) = 2.500 − 1.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-087",
+    "argomento": "Prodotti notevoli",
+    "livello": 3,
+    "testo": "A cosa è uguale (a + b)³?",
+    "opzioni": [
+      "a³ + 3ab + b³",
+      "a³ + b³",
+      "a³ + 3a²b + 3ab² + b³",
+      "a³ + 2a²b + 2ab² + b³"
+    ],
+    "corretta": 2,
+    "spiegazione": "Cubo di un binomio.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-088",
+    "argomento": "Scomposizione",
+    "livello": 2,
+    "testo": "Come si scompone x² − 9?",
+    "opzioni": [
+      "(x − 9)(x + 1)",
+      "(x − 3)²",
+      "Non si scompone",
+      "(x − 3)(x + 3)"
+    ],
+    "corretta": 3,
+    "spiegazione": "È una differenza di due quadrati.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-089",
+    "argomento": "Scomposizione",
+    "livello": 2,
+    "testo": "Come si scompone 6x² + 9x con il raccoglimento a fattore comune?",
+    "opzioni": [
+      "3x(2x + 3)",
+      "6x(x + 9)",
+      "x(6x + 9x)",
+      "3(2x² + 3)"
+    ],
+    "corretta": 0,
+    "spiegazione": "MCD dei termini: 3x.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-090",
+    "argomento": "Polinomi",
+    "livello": 3,
+    "testo": "Qual è il resto della divisione di x³ − 2x + 1 per (x − 2)?",
+    "opzioni": [
+      "1",
+      "5",
+      "9",
+      "0"
+    ],
+    "corretta": 1,
+    "spiegazione": "Teorema del resto: A(2) = 8 − 4 + 1 = 5.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-091",
+    "argomento": "Polinomi",
+    "livello": 3,
+    "testo": "Per quale binomio è divisibile x² − 5x + 6?",
+    "opzioni": [
+      "x + 3",
+      "x − 1",
+      "x − 2",
+      "x + 2"
+    ],
+    "corretta": 2,
+    "spiegazione": "Teorema di Ruffini: A(2) = 4 − 10 + 6 = 0.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-092",
+    "argomento": "Scomposizione",
+    "livello": 2,
+    "testo": "Quando un polinomio si dice riducibile?",
+    "opzioni": [
+      "Quando ha grado 1",
+      "Quando è omogeneo",
+      "Quando ha coefficienti interi",
+      "Quando si può scrivere come prodotto di polinomi di grado maggiore di zero"
+    ],
+    "corretta": 3,
+    "spiegazione": "Altrimenti è irriducibile.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-093",
+    "argomento": "Equazioni",
+    "livello": 1,
+    "testo": "Come si chiamano le formule aperte costruite con il predicato «essere uguale»?",
+    "opzioni": [
+      "Equazioni",
+      "Uguaglianze",
+      "Identità numeriche",
+      "Disequazioni"
+    ],
+    "corretta": 0,
+    "spiegazione": "Le formule chiuse con «essere uguale» sono uguaglianze.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-094",
+    "argomento": "Equazioni",
+    "livello": 2,
+    "testo": "Quando due equazioni sono equivalenti?",
+    "opzioni": [
+      "Quando hanno lo stesso grado",
+      "Quando hanno lo stesso insieme soluzione",
+      "Quando hanno gli stessi coefficienti",
+      "Quando hanno la stessa incognita"
+    ],
+    "corretta": 1,
+    "spiegazione": "Algebra 1, definizione 15.3.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-095",
+    "argomento": "Equazioni",
+    "livello": 2,
+    "testo": "Cosa afferma il primo principio di equivalenza delle equazioni?",
+    "opzioni": [
+      "Si possono moltiplicare i membri per zero",
+      "Si possono scambiare incognita e termine noto",
+      "Aggiungendo o sottraendo ad ambo i membri lo stesso numero si ottiene un'equazione equivalente",
+      "Si può elevare al quadrato"
+    ],
+    "corretta": 2,
+    "spiegazione": "Consente di «trasportare» termini cambiandone il segno.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-096",
+    "argomento": "Equazioni",
+    "livello": 2,
+    "testo": "Cosa afferma il secondo principio di equivalenza delle equazioni?",
+    "opzioni": [
+      "Si può cambiare il segno di un solo membro",
+      "Si possono sommare due equazioni",
+      "Si può dividere per zero",
+      "Moltiplicando o dividendo ambo i membri per uno stesso numero non nullo si ottiene un'equazione equivalente"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il numero deve essere diverso da zero.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-097",
+    "argomento": "Equazioni",
+    "livello": 1,
+    "testo": "Risolvi: 3x − 7 = 2x + 5.",
+    "opzioni": [
+      "x = 12",
+      "x = −12",
+      "x = −2",
+      "x = 2"
+    ],
+    "corretta": 0,
+    "spiegazione": "3x − 2x = 5 + 7.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-098",
+    "argomento": "Equazioni",
+    "livello": 2,
+    "testo": "Risolvi: 5(x − 2) = 3x + 4.",
+    "opzioni": [
+      "x = −7",
+      "x = 7",
+      "x = 3",
+      "x = 1"
+    ],
+    "corretta": 1,
+    "spiegazione": "5x − 10 = 3x + 4 → 2x = 14.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-099",
+    "argomento": "Equazioni",
+    "livello": 2,
+    "testo": "Risolvi: x/3 + x/6 = 5.",
+    "opzioni": [
+      "x = 5",
+      "x = 30",
+      "x = 10",
+      "x = 15"
+    ],
+    "corretta": 2,
+    "spiegazione": "Moltiplicando per 6: 2x + x = 30.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-100",
+    "argomento": "Equazioni",
+    "livello": 3,
+    "testo": "L'equazione 2x + 3 = 2x + 5 è:",
+    "opzioni": [
+      "Determinata con x = 1",
+      "Di secondo grado",
+      "Indeterminata",
+      "Impossibile"
+    ],
+    "corretta": 3,
+    "spiegazione": "Si riduce a 0 · x = 2: nessun valore la soddisfa.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-101",
+    "argomento": "Equazioni",
+    "livello": 3,
+    "testo": "L'equazione 2(x + 1) = 2x + 2 è:",
+    "opzioni": [
+      "Indeterminata (ogni numero è soluzione)",
+      "Determinata con x = 1",
+      "Impossibile",
+      "Determinata con x = 0"
+    ],
+    "corretta": 0,
+    "spiegazione": "Si riduce a 0 · x = 0.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-102",
+    "argomento": "Equazioni",
+    "livello": 2,
+    "testo": "Come si chiama un'equazione in cui l'incognita compare al denominatore?",
+    "opzioni": [
+      "Lineare",
+      "Frazionaria (o fratta)",
+      "Letterale",
+      "Irrazionale"
+    ],
+    "corretta": 1,
+    "spiegazione": "Bisogna porre le condizioni di esistenza.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-103",
+    "argomento": "Equazioni",
+    "livello": 2,
+    "testo": "Dalla formula dell'area del triangolo A = b · h / 2, come si ricava h?",
+    "opzioni": [
+      "h = 2b / A",
+      "h = A · b / 2",
+      "h = 2A / b",
+      "h = A / 2b"
+    ],
+    "corretta": 2,
+    "spiegazione": "Si moltiplica per 2 e si divide per b.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-104",
+    "argomento": "Disequazioni",
+    "livello": 2,
+    "testo": "L'intervallo aperto (2, 5) contiene gli estremi 2 e 5?",
+    "opzioni": [
+      "Solo 2",
+      "Solo 5",
+      "Sì, entrambi",
+      "No, gli estremi sono esclusi"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'intervallo chiuso [2, 5] li include.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-105",
+    "argomento": "Disequazioni",
+    "livello": 2,
+    "testo": "Cosa succede al verso di una disequazione se si moltiplicano entrambi i membri per un numero negativo?",
+    "opzioni": [
+      "Il verso si inverte",
+      "Diventa un'uguaglianza",
+      "La disequazione diventa impossibile",
+      "Resta uguale"
+    ],
+    "corretta": 0,
+    "spiegazione": "Esempio: −x > 2 diventa x < −2.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-106",
+    "argomento": "Disequazioni",
+    "livello": 2,
+    "testo": "Risolvi: −2x > 6.",
+    "opzioni": [
+      "x < 3",
+      "x < −3",
+      "x > 3",
+      "x > −3"
+    ],
+    "corretta": 1,
+    "spiegazione": "Dividendo per −2 il verso si inverte.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-107",
+    "argomento": "Disequazioni",
+    "livello": 1,
+    "testo": "Risolvi: 3x − 4 ≤ 11.",
+    "opzioni": [
+      "x < 5",
+      "x ≤ 7/3",
+      "x ≤ 5",
+      "x ≥ 5"
+    ],
+    "corretta": 2,
+    "spiegazione": "Si ottiene 3x ≤ 15, quindi x ≤ 5.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-108",
+    "argomento": "Sistemi",
+    "livello": 1,
+    "testo": "Che cos'è un sistema di equazioni?",
+    "opzioni": [
+      "Una disequazione doppia",
+      "Un'equazione di grado superiore",
+      "Un'equazione con più soluzioni",
+      "Un insieme di equazioni che devono essere verificate contemporaneamente"
+    ],
+    "corretta": 3,
+    "spiegazione": "Si scrive raggruppando le equazioni con una parentesi graffa.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-109",
+    "argomento": "Sistemi",
+    "livello": 2,
+    "testo": "Risolvi il sistema: x + y = 10; x − y = 4.",
+    "opzioni": [
+      "x = 7, y = 3",
+      "x = 6, y = 4",
+      "x = 3, y = 7",
+      "x = 14, y = −4"
+    ],
+    "corretta": 0,
+    "spiegazione": "Sommando: 2x = 14.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-110",
+    "argomento": "Sistemi",
+    "livello": 2,
+    "testo": "Risolvi il sistema: 2x + y = 7; x − y = 2.",
+    "opzioni": [
+      "x = 1, y = 3",
+      "x = 3, y = 1",
+      "x = 2, y = 3",
+      "x = 4, y = 2"
+    ],
+    "corretta": 1,
+    "spiegazione": "Sommando: 3x = 9.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-111",
+    "argomento": "Problemi",
+    "livello": 2,
+    "testo": "Due numeri hanno somma 16 e differenza 6. Quali sono?",
+    "opzioni": [
+      "10 e 6",
+      "8 e 8",
+      "11 e 5",
+      "12 e 4"
+    ],
+    "corretta": 2,
+    "spiegazione": "x + y = 16, x − y = 6 → x = 11, y = 5.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-112",
+    "argomento": "Geometria",
+    "livello": 3,
+    "testo": "Cosa afferma il teorema di Talete?",
+    "opzioni": [
+      "Ogni angolo alla circonferenza è metà del corrispondente angolo al centro",
+      "In un triangolo rettangolo il quadrato dell'ipotenusa è la somma dei quadrati dei cateti",
+      "La somma degli angoli interni di un triangolo è 180°",
+      "Un fascio di rette parallele tagliato da due trasversali determina segmenti proporzionali"
+    ],
+    "corretta": 3,
+    "spiegazione": "AB : A'B' = BC : B'C'.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-113",
+    "argomento": "Funzioni",
+    "livello": 1,
+    "testo": "Che cosa caratterizza una funzione da A a B?",
+    "opzioni": [
+      "Ogni elemento di A ha uno e un solo corrispondente in B",
+      "Ogni elemento di A ha almeno due immagini",
+      "A e B hanno lo stesso numero di elementi",
+      "Ogni elemento di B ha un corrispondente in A"
+    ],
+    "corretta": 0,
+    "spiegazione": "A è il dominio, B il codominio.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-114",
+    "argomento": "Funzioni",
+    "livello": 2,
+    "testo": "Quando una funzione si dice iniettiva?",
+    "opzioni": [
+      "Quando ogni elemento del codominio è immagine",
+      "Quando elementi distinti del dominio hanno immagini distinte",
+      "Quando il dominio è vuoto",
+      "Quando è costante"
+    ],
+    "corretta": 1,
+    "spiegazione": "Se è anche suriettiva è biunivoca.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-115",
+    "argomento": "Funzioni",
+    "livello": 2,
+    "testo": "Quando una funzione si dice biunivoca (biiettiva)?",
+    "opzioni": [
+      "Quando è costante",
+      "Quando è solo iniettiva",
+      "Quando è contemporaneamente iniettiva e suriettiva",
+      "Quando ha due variabili"
+    ],
+    "corretta": 2,
+    "spiegazione": "Algebra 1, definizione 8.5.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-116",
+    "argomento": "Funzioni",
+    "livello": 1,
+    "testo": "Qual è il grafico della funzione y = mx + q?",
+    "opzioni": [
+      "Un'iperbole",
+      "Una circonferenza",
+      "Una parabola",
+      "Una retta"
+    ],
+    "corretta": 3,
+    "spiegazione": "È detta funzione lineare.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-117",
+    "argomento": "Funzioni",
+    "livello": 1,
+    "testo": "Data y = 2x + 3, quanto vale y per x = 4?",
+    "opzioni": [
+      "11",
+      "24",
+      "9",
+      "14"
+    ],
+    "corretta": 0,
+    "spiegazione": "2 · 4 + 3 = 11.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-118",
+    "argomento": "Piano cartesiano",
+    "livello": 2,
+    "testo": "In quale quadrante si trova il punto (−2; 3)?",
+    "opzioni": [
+      "Nel quarto",
+      "Nel secondo",
+      "Nel terzo",
+      "Nel primo"
+    ],
+    "corretta": 1,
+    "spiegazione": "Ascissa negativa e ordinata positiva.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-119",
+    "argomento": "Piano cartesiano",
+    "livello": 2,
+    "testo": "Qual è il punto medio del segmento di estremi A(2; 4) e B(6; 8)?",
+    "opzioni": [
+      "(8; 12)",
+      "(3; 5)",
+      "(4; 6)",
+      "(2; 2)"
+    ],
+    "corretta": 2,
+    "spiegazione": "Media delle ascisse e media delle ordinate.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-120",
+    "argomento": "Funzioni",
+    "livello": 2,
+    "testo": "Che tipo di proporzionalità esprime la funzione y = 12/x?",
+    "opzioni": [
+      "Funzione costante",
+      "Proporzionalità quadratica",
+      "Proporzionalità diretta",
+      "Proporzionalità inversa"
+    ],
+    "corretta": 3,
+    "spiegazione": "x · y = 12 costante.",
+    "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-121",
+    "argomento": "Radicali",
+    "livello": 1,
+    "testo": "Quanto vale √49?",
+    "opzioni": [
+      "7",
+      "±7",
+      "24,5",
+      "−7"
+    ],
+    "corretta": 0,
+    "spiegazione": "La radice quadrata aritmetica è il numero non negativo che elevato al quadrato dà 49.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-122",
+    "argomento": "Radicali",
+    "livello": 2,
+    "testo": "√(−4) è un numero reale?",
+    "opzioni": [
+      "Sì, vale −2",
+      "No: nei reali non esiste la radice quadrata di un numero negativo",
+      "Sì, vale 2",
+      "Sì, vale ±2"
+    ],
+    "corretta": 1,
+    "spiegazione": "La radice quadrata è definita per a ≥ 0.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-123",
+    "argomento": "Radicali",
+    "livello": 2,
+    "testo": "Quanto vale la radice cubica di −27?",
+    "opzioni": [
+      "Non esiste",
+      "−9",
+      "−3",
+      "3"
+    ],
+    "corretta": 2,
+    "spiegazione": "(−3)³ = −27: la radice cubica è definita anche per i negativi.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-124",
+    "argomento": "Radicali",
+    "livello": 3,
+    "testo": "Quanto vale 8^(2/3)?",
+    "opzioni": [
+      "16/3",
+      "64",
+      "2",
+      "4"
+    ],
+    "corretta": 3,
+    "spiegazione": "8^(2/3) = (∛8)² = 2² = 4.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-125",
+    "argomento": "Radicali",
+    "livello": 1,
+    "testo": "Quando due radicali si dicono simili?",
+    "opzioni": [
+      "Quando hanno lo stesso indice e lo stesso radicando",
+      "Quando hanno radicandi opposti",
+      "Quando hanno lo stesso indice",
+      "Quando hanno lo stesso coefficiente"
+    ],
+    "corretta": 0,
+    "spiegazione": "Solo i radicali simili si possono sommare.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-126",
+    "argomento": "Radicali",
+    "livello": 1,
+    "testo": "Quanto vale 2√3 + 5√3?",
+    "opzioni": [
+      "10√3",
+      "7√3",
+      "7√6",
+      "√21"
+    ],
+    "corretta": 1,
+    "spiegazione": "Radicali simili: si sommano i coefficienti.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-127",
+    "argomento": "Radicali",
+    "livello": 2,
+    "testo": "Quanto vale √12 portando fuori dal segno di radice?",
+    "opzioni": [
+      "6√2",
+      "4√3",
+      "2√3",
+      "3√2"
+    ],
+    "corretta": 2,
+    "spiegazione": "√12 = √(4 · 3) = 2√3; 2 diventa il coefficiente del radicale.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-128",
+    "argomento": "Radicali",
+    "livello": 2,
+    "testo": "Quanto vale √2 · √8?",
+    "opzioni": [
+      "√10",
+      "16",
+      "2√2",
+      "4"
+    ],
+    "corretta": 3,
+    "spiegazione": "√(2 · 8) = √16 = 4.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-129",
+    "argomento": "Radicali",
+    "livello": 3,
+    "testo": "Razionalizzando il denominatore, a cosa è uguale 6/√3?",
+    "opzioni": [
+      "2√3",
+      "√3/6",
+      "3√2",
+      "6√3"
+    ],
+    "corretta": 0,
+    "spiegazione": "6/√3 · √3/√3 = 6√3/3 = 2√3.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-130",
+    "argomento": "Numeri reali",
+    "livello": 2,
+    "testo": "Quale di questi numeri è irrazionale?",
+    "opzioni": [
+      "√9",
+      "√2",
+      "3/7",
+      "0,5"
+    ],
+    "corretta": 1,
+    "spiegazione": "√9 = 3; 0,5 e 3/7 sono razionali.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-131",
+    "argomento": "Equazioni di secondo grado",
+    "livello": 1,
+    "testo": "Qual è la forma generale di un'equazione di secondo grado?",
+    "opzioni": [
+      "ax³ + bx = 0",
+      "ax + b = 0",
+      "ax² + bx + c = 0 con a ≠ 0",
+      "ax² + bx + c = 0 con b ≠ 0"
+    ],
+    "corretta": 2,
+    "spiegazione": "Se a = 0 l'equazione è di primo grado.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-132",
+    "argomento": "Equazioni di secondo grado",
+    "livello": 1,
+    "testo": "Come si chiama l'espressione b² − 4ac?",
+    "opzioni": [
+      "Determinante",
+      "Vertice",
+      "Coefficiente direttivo",
+      "Discriminante"
+    ],
+    "corretta": 3,
+    "spiegazione": "Si indica con Δ.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-133",
+    "argomento": "Equazioni di secondo grado",
+    "livello": 2,
+    "testo": "Se Δ > 0, l'equazione di secondo grado ha:",
+    "opzioni": [
+      "Due soluzioni reali e distinte",
+      "Nessuna soluzione reale",
+      "Infinite soluzioni",
+      "Due soluzioni coincidenti"
+    ],
+    "corretta": 0,
+    "spiegazione": "Se Δ = 0 coincidenti, se Δ < 0 nessuna reale.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-134",
+    "argomento": "Equazioni di secondo grado",
+    "livello": 2,
+    "testo": "Se Δ = 0, l'equazione di secondo grado ha:",
+    "opzioni": [
+      "Nessuna soluzione reale",
+      "Due soluzioni reali coincidenti",
+      "Due soluzioni distinte",
+      "Una sola soluzione uguale a zero"
+    ],
+    "corretta": 1,
+    "spiegazione": "x₁ = x₂ = −b/2a.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-135",
+    "argomento": "Equazioni di secondo grado",
+    "livello": 2,
+    "testo": "L'equazione x² + x + 3 = 0:",
+    "opzioni": [
+      "Ha due soluzioni distinte",
+      "Ha due soluzioni coincidenti",
+      "Non ha soluzioni reali",
+      "Ha soluzione x = −3"
+    ],
+    "corretta": 2,
+    "spiegazione": "Δ = 1 − 12 = −11 < 0.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-136",
+    "argomento": "Equazioni di secondo grado",
+    "livello": 2,
+    "testo": "Quali sono le soluzioni di x² − 5x + 6 = 0?",
+    "opzioni": [
+      "−2 e −3",
+      "1 e 6",
+      "−1 e 6",
+      "2 e 3"
+    ],
+    "corretta": 3,
+    "spiegazione": "Δ = 25 − 24 = 1; x = (5 ± 1)/2.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-137",
+    "argomento": "Equazioni di secondo grado",
+    "livello": 3,
+    "testo": "Quali sono le soluzioni di 4x² − 12x + 9 = 0?",
+    "opzioni": [
+      "x₁ = x₂ = 3/2",
+      "9/4 e 1",
+      "Nessuna soluzione reale",
+      "3 e −3"
+    ],
+    "corretta": 0,
+    "spiegazione": "Δ = 144 − 144 = 0; x = 12/8 = 3/2.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-138",
+    "argomento": "Equazioni di secondo grado",
+    "livello": 3,
+    "testo": "Qual è la somma delle soluzioni di 2x² − 8x + 3 = 0?",
+    "opzioni": [
+      "−4",
+      "4",
+      "3/2",
+      "8"
+    ],
+    "corretta": 1,
+    "spiegazione": "x₁ + x₂ = −b/a = 8/2.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-139",
+    "argomento": "Equazioni di secondo grado",
+    "livello": 3,
+    "testo": "Qual è il prodotto delle soluzioni di 2x² − 8x + 3 = 0?",
+    "opzioni": [
+      "−4",
+      "3",
+      "3/2",
+      "−3/2"
+    ],
+    "corretta": 2,
+    "spiegazione": "x₁ · x₂ = c/a.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-140",
+    "argomento": "Equazioni di secondo grado",
+    "livello": 2,
+    "testo": "Quali sono le soluzioni dell'equazione pura x² − 16 = 0?",
+    "opzioni": [
+      "16",
+      "4",
+      "Nessuna",
+      "±4"
+    ],
+    "corretta": 3,
+    "spiegazione": "Da x² = 16 si ricava x = ±4.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-141",
+    "argomento": "Equazioni di secondo grado",
+    "livello": 2,
+    "testo": "Quali sono le soluzioni dell'equazione spuria x² − 5x = 0?",
+    "opzioni": [
+      "0 e 5",
+      "5",
+      "0 e −5",
+      "±5"
+    ],
+    "corretta": 0,
+    "spiegazione": "x(x − 5) = 0.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-142",
+    "argomento": "Equazioni di secondo grado",
+    "livello": 4,
+    "testo": "Per la regola di Cartesio, quante soluzioni positive ha x² − 5x + 6 = 0 (Δ > 0)?",
+    "opzioni": [
+      "Tre",
+      "Due",
+      "Una",
+      "Nessuna"
+    ],
+    "corretta": 1,
+    "spiegazione": "Segni dei coefficienti + − +: due variazioni, due radici positive (2 e 3).",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-143",
+    "argomento": "Funzioni",
+    "livello": 2,
+    "testo": "Qual è il grafico della funzione y = x² − 4?",
+    "opzioni": [
+      "Un'iperbole",
+      "Una retta",
+      "Una parabola",
+      "Una circonferenza"
+    ],
+    "corretta": 2,
+    "spiegazione": "È una funzione polinomiale di secondo grado.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-144",
+    "argomento": "Equazioni",
+    "livello": 2,
+    "testo": "Qual è la soluzione reale dell'equazione binomia x³ − 8 = 0?",
+    "opzioni": [
+      "4",
+      "±2",
+      "8/3",
+      "2"
+    ],
+    "corretta": 3,
+    "spiegazione": "Da x³ = 8 si ricava x = 2.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-145",
+    "argomento": "Equazioni",
+    "livello": 4,
+    "testo": "Quante soluzioni reali ha l'equazione x⁴ − 5x² + 4 = 0?",
+    "opzioni": [
+      "Quattro: ±1 e ±2",
+      "Due: 1 e 4",
+      "Due: ±2",
+      "Nessuna"
+    ],
+    "corretta": 0,
+    "spiegazione": "Ponendo t = x²: t² − 5t + 4 = 0 → t = 1 o t = 4.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-146",
+    "argomento": "Equazioni",
+    "livello": 2,
+    "testo": "Quando un'equazione si dice irrazionale?",
+    "opzioni": [
+      "Quando ha soluzioni irrazionali",
+      "Quando l'incognita compare sotto il segno di radice",
+      "Quando è di grado superiore al secondo",
+      "Quando l'incognita è al denominatore"
+    ],
+    "corretta": 1,
+    "spiegazione": "Algebra 2, definizione 8.1.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-147",
+    "argomento": "Sistemi",
+    "livello": 3,
+    "testo": "Qual è il grado di un sistema formato da un'equazione di secondo grado e una di primo grado?",
+    "opzioni": [
+      "4",
+      "1",
+      "2",
+      "3"
+    ],
+    "corretta": 2,
+    "spiegazione": "È il prodotto dei gradi: 2 · 1.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-148",
+    "argomento": "Sistemi",
+    "livello": 3,
+    "testo": "Quando un sistema in due incognite si dice simmetrico?",
+    "opzioni": [
+      "Quando ha soluzioni opposte",
+      "Quando è omogeneo",
+      "Quando ha due equazioni uguali",
+      "Quando resta lo stesso scambiando tra loro le incognite"
+    ],
+    "corretta": 3,
+    "spiegazione": "Esempio: x + y = s, xy = p.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-149",
+    "argomento": "Probabilità",
+    "livello": 1,
+    "testo": "Come si chiama il risultato di un fenomeno aleatorio?",
+    "opzioni": [
+      "Evento",
+      "Spazio campionario",
+      "Variabile",
+      "Frequenza"
+    ],
+    "corretta": 0,
+    "spiegazione": "Algebra 2, definizione 9.1.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-150",
+    "argomento": "Probabilità",
+    "livello": 2,
+    "testo": "Come si chiama l'insieme di tutti gli esiti possibili di un fenomeno aleatorio?",
+    "opzioni": [
+      "Evento elementare",
+      "Spazio degli eventi (Ω)",
+      "Insieme delle parti",
+      "Evento certo"
+    ],
+    "corretta": 1,
+    "spiegazione": "Ogni suo elemento è un evento elementare.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-151",
+    "argomento": "Probabilità",
+    "livello": 2,
+    "testo": "Cos'è un evento elementare?",
+    "opzioni": [
+      "Un evento con probabilità 1/2",
+      "L'unione di due eventi",
+      "Ogni singolo elemento dello spazio degli eventi Ω",
+      "Un evento impossibile"
+    ],
+    "corretta": 2,
+    "spiegazione": "Un evento composto è invece un sottoinsieme qualsiasi di Ω.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-152",
+    "argomento": "Probabilità",
+    "livello": 1,
+    "testo": "Due eventi si dicono incompatibili quando:",
+    "opzioni": [
+      "Sono indipendenti",
+      "Hanno la stessa probabilità",
+      "Uno implica l'altro",
+      "Non si possono verificare contemporaneamente"
+    ],
+    "corretta": 3,
+    "spiegazione": "A ∩ B = ∅.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-153",
+    "argomento": "Probabilità",
+    "livello": 4,
+    "testo": "Da un mazzo di 40 carte (10 di denari, 12 figure, 3 figure di denari) si estrae una carta. Qual è la probabilità che sia di denari o una figura?",
+    "opzioni": [
+      "19/40",
+      "3/40",
+      "22/40",
+      "1/4"
+    ],
+    "corretta": 0,
+    "spiegazione": "Teorema delle probabilità totali per eventi compatibili: 10/40 + 12/40 − 3/40.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-154",
+    "argomento": "Probabilità",
+    "livello": 2,
+    "testo": "Se la probabilità di un evento A è 0,3, qual è la probabilità dell'evento complementare?",
+    "opzioni": [
+      "0",
+      "0,7",
+      "0,3",
+      "1,3"
+    ],
+    "corretta": 1,
+    "spiegazione": "P(non A) = 1 − P(A).",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-155",
+    "argomento": "Probabilità",
+    "livello": 2,
+    "testo": "Quando due eventi si dicono indipendenti?",
+    "opzioni": [
+      "Quando si escludono",
+      "Quando non possono verificarsi insieme",
+      "Quando il verificarsi dell'uno non cambia la probabilità dell'altro",
+      "Quando hanno probabilità 1/2"
+    ],
+    "corretta": 2,
+    "spiegazione": "Altrimenti sono dipendenti.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-156",
+    "argomento": "Probabilità",
+    "livello": 3,
+    "testo": "Un'urna ha 3 palline rosse e 2 bianche. Si estraggono due palline con reimmissione: qual è la probabilità che siano entrambe rosse?",
+    "opzioni": [
+      "6/25",
+      "3/5",
+      "3/10",
+      "9/25"
+    ],
+    "corretta": 3,
+    "spiegazione": "Eventi indipendenti: 3/5 · 3/5.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-157",
+    "argomento": "Probabilità",
+    "livello": 4,
+    "testo": "Stessa urna (3 rosse, 2 bianche), ma senza reimmissione: probabilità di due rosse?",
+    "opzioni": [
+      "3/10",
+      "1/2",
+      "9/25",
+      "6/25"
+    ],
+    "corretta": 0,
+    "spiegazione": "Probabilità condizionata: 3/5 · 2/4 = 6/20.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-158",
+    "argomento": "Probabilità",
+    "livello": 1,
+    "testo": "Come si chiama un evento che non può verificarsi in alcun caso?",
+    "opzioni": [
+      "Evento complementare",
+      "Evento impossibile",
+      "Evento certo",
+      "Evento aleatorio"
+    ],
+    "corretta": 1,
+    "spiegazione": "Si indica con ∅; ha probabilità 0.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-159",
+    "argomento": "Numeri reali",
+    "livello": 3,
+    "testo": "Secondo il teorema di Dedekind, ogni sezione dell'insieme dei numeri reali ammette:",
+    "opzioni": [
+      "Infiniti elementi separatori",
+      "Nessun elemento separatore",
+      "Uno e un solo elemento separatore",
+      "Due elementi separatori"
+    ],
+    "corretta": 2,
+    "spiegazione": "Per questo R è un insieme continuo.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-160",
+    "argomento": "Radicali",
+    "livello": 2,
+    "testo": "Quanto vale √(3²)?",
+    "opzioni": [
+      "9",
+      "√3",
+      "6",
+      "3"
+    ],
+    "corretta": 3,
+    "spiegazione": "La radice quadrata di un quadrato di un numero positivo è il numero stesso.",
+    "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-161",
+    "argomento": "Geometria",
+    "livello": 1,
+    "testo": "Cosa afferma il teorema di Pitagora?",
+    "opzioni": [
+      "In un triangolo rettangolo il quadrato dell'ipotenusa è uguale alla somma dei quadrati dei cateti",
+      "In un triangolo rettangolo i cateti sono uguali",
+      "In ogni triangolo la somma degli angoli è 180°",
+      "L'ipotenusa è la somma dei cateti"
+    ],
+    "corretta": 0,
+    "spiegazione": "c² = a² + b².",
+    "fonte": "Wikipedia, «Teorema di Pitagora» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-162",
+    "argomento": "Geometria",
+    "livello": 1,
+    "testo": "I cateti di un triangolo rettangolo misurano 3 cm e 4 cm. Quanto misura l'ipotenusa?",
+    "opzioni": [
+      "12 cm",
+      "5 cm",
+      "7 cm",
+      "6 cm"
+    ],
+    "corretta": 1,
+    "spiegazione": "√(9 + 16) = √25.",
+    "fonte": "Wikipedia, «Teorema di Pitagora» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-163",
+    "argomento": "Geometria",
+    "livello": 2,
+    "testo": "I cateti di un triangolo rettangolo misurano 6 m e 8 m. Quanto misura l'ipotenusa?",
+    "opzioni": [
+      "48 m",
+      "12 m",
+      "10 m",
+      "14 m"
+    ],
+    "corretta": 2,
+    "spiegazione": "√(36 + 64) = √100.",
+    "fonte": "Wikipedia, «Teorema di Pitagora» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-164",
+    "argomento": "Geometria",
+    "livello": 2,
+    "testo": "In un triangolo rettangolo l'ipotenusa misura 13 e un cateto 5. Quanto misura l'altro cateto?",
+    "opzioni": [
+      "√194",
+      "18",
+      "8",
+      "12"
+    ],
+    "corretta": 3,
+    "spiegazione": "√(169 − 25) = √144.",
+    "fonte": "Wikipedia, «Teorema di Pitagora» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-165",
+    "argomento": "Geometria",
+    "livello": 2,
+    "testo": "Quale di queste è una terna pitagorica?",
+    "opzioni": [
+      "5, 12, 13",
+      "6, 7, 8",
+      "2, 3, 4",
+      "4, 5, 6"
+    ],
+    "corretta": 0,
+    "spiegazione": "25 + 144 = 169.",
+    "fonte": "Wikipedia, «Teorema di Pitagora» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-166",
+    "argomento": "Geometria",
+    "livello": 3,
+    "testo": "Quale popolo conosceva già l'enunciato del teorema di Pitagora prima di Pitagora?",
+    "opzioni": [
+      "Gli Etruschi",
+      "I Babilonesi",
+      "I Celti",
+      "I Romani"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'enunciato, non la dimostrazione.",
+    "fonte": "Wikipedia, «Teorema di Pitagora» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-167",
+    "argomento": "Geometria",
+    "livello": 1,
+    "testo": "Quanto vale la somma degli angoli interni di un triangolo (geometria euclidea)?",
+    "opzioni": [
+      "90°",
+      "360°",
+      "180°",
+      "270°"
+    ],
+    "corretta": 2,
+    "spiegazione": "È un angolo piatto.",
+    "fonte": "Wikipedia, «Triangolo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-168",
+    "argomento": "Geometria",
+    "livello": 1,
+    "testo": "Un triangolo ha due angoli di 50° e 60°. Quanto misura il terzo?",
+    "opzioni": [
+      "80°",
+      "90°",
+      "250°",
+      "70°"
+    ],
+    "corretta": 3,
+    "spiegazione": "180° − 110°.",
+    "fonte": "Wikipedia, «Triangolo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-169",
+    "argomento": "Geometria",
+    "livello": 1,
+    "testo": "Quanto misura ciascun angolo interno di un triangolo equilatero?",
+    "opzioni": [
+      "60°",
+      "120°",
+      "90°",
+      "45°"
+    ],
+    "corretta": 0,
+    "spiegazione": "Gli angoli sono uguali: 180°/3.",
+    "fonte": "Wikipedia, «Triangolo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-170",
+    "argomento": "Geometria",
+    "livello": 1,
+    "testo": "Come si chiama un triangolo con due lati uguali?",
+    "opzioni": [
+      "Ottusangolo",
+      "Isoscele",
+      "Equilatero",
+      "Scaleno"
+    ],
+    "corretta": 1,
+    "spiegazione": "Ha anche due angoli uguali.",
+    "fonte": "Wikipedia, «Triangolo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-171",
+    "argomento": "Geometria",
+    "livello": 1,
+    "testo": "Come si chiama un triangolo con tutti i lati di lunghezza diversa?",
+    "opzioni": [
+      "Isoscele",
+      "Equilatero",
+      "Scaleno",
+      "Rettangolo"
+    ],
+    "corretta": 2,
+    "spiegazione": "Ha anche i tre angoli diversi.",
+    "fonte": "Wikipedia, «Triangolo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-172",
+    "argomento": "Geometria",
+    "livello": 2,
+    "testo": "Un triangolo con un angolo di 120° si dice:",
+    "opzioni": [
+      "Equilatero",
+      "Acutangolo",
+      "Rettangolo",
+      "Ottusangolo"
+    ],
+    "corretta": 3,
+    "spiegazione": "Ha un angolo maggiore di 90°.",
+    "fonte": "Wikipedia, «Triangolo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-173",
+    "argomento": "Geometria",
+    "livello": 3,
+    "testo": "Quale poligono non può mai essere concavo?",
+    "opzioni": [
+      "Il triangolo",
+      "Il quadrilatero",
+      "L'esagono",
+      "Il pentagono"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voce «Triangolo».",
+    "fonte": "Wikipedia, «Triangolo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-174",
+    "argomento": "Geometria",
+    "livello": 1,
+    "testo": "Quanto vale la somma degli angoli interni di un quadrilatero?",
+    "opzioni": [
+      "540°",
+      "360°",
+      "720°",
+      "180°"
+    ],
+    "corretta": 1,
+    "spiegazione": "Un angolo giro.",
+    "fonte": "Wikipedia, «Quadrilatero» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-175",
+    "argomento": "Geometria",
+    "livello": 2,
+    "testo": "Quanto vale la somma degli angoli interni di un esagono?",
+    "opzioni": [
+      "1.080°",
+      "540°",
+      "720°",
+      "360°"
+    ],
+    "corretta": 2,
+    "spiegazione": "180° · (6 − 2).",
+    "fonte": "Wikipedia, «Poligono» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-176",
+    "argomento": "Geometria",
+    "livello": 2,
+    "testo": "Quando un poligono si dice regolare?",
+    "opzioni": [
+      "Quando ha almeno un angolo retto",
+      "Quando è inscritto in un quadrato",
+      "Quando ha lati paralleli",
+      "Quando è convesso, equilatero ed equiangolo"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Poligono».",
+    "fonte": "Wikipedia, «Poligono» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-177",
+    "argomento": "Geometria",
+    "livello": 1,
+    "testo": "Qual è l'area di un rettangolo di base 7 m e altezza 4 m?",
+    "opzioni": [
+      "28 m²",
+      "11 m²",
+      "14 m²",
+      "22 m²"
+    ],
+    "corretta": 0,
+    "spiegazione": "Base per altezza.",
+    "fonte": "Wikipedia, «Rettangolo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-178",
+    "argomento": "Geometria",
+    "livello": 2,
+    "testo": "Il quadrato è un caso particolare di:",
+    "opzioni": [
+      "Triangolo",
+      "Rettangolo (e di rombo)",
+      "Trapezio scaleno",
+      "Pentagono"
+    ],
+    "corretta": 1,
+    "spiegazione": "Ha tutti i lati congruenti e tutti gli angoli retti.",
+    "fonte": "Wikipedia, «Rettangolo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-179",
+    "argomento": "Geometria",
+    "livello": 2,
+    "testo": "Qual è l'area di un trapezio con basi 10 cm e 6 cm e altezza 4 cm?",
+    "opzioni": [
+      "64 cm²",
+      "24 cm²",
+      "32 cm²",
+      "40 cm²"
+    ],
+    "corretta": 2,
+    "spiegazione": "(10 + 6) · 4 / 2.",
+    "fonte": "Wikipedia, «Trapezio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-180",
+    "argomento": "Geometria",
+    "livello": 1,
+    "testo": "Che cos'è un trapezio?",
+    "opzioni": [
+      "Un quadrilatero con tutti i lati uguali",
+      "Un quadrilatero senza lati paralleli",
+      "Un triangolo con un angolo retto",
+      "Un quadrilatero con due lati paralleli"
+    ],
+    "corretta": 3,
+    "spiegazione": "I lati paralleli sono le basi.",
+    "fonte": "Wikipedia, «Trapezio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-181",
+    "argomento": "Geometria",
+    "livello": 2,
+    "testo": "Quanto è lunga una circonferenza di raggio 5 cm?",
+    "opzioni": [
+      "10π cm",
+      "5π cm",
+      "25π cm",
+      "100π cm"
+    ],
+    "corretta": 0,
+    "spiegazione": "L = 2πr = 2π · 5 = 10π.",
+    "fonte": "Wikipedia, «Circonferenza» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-182",
+    "argomento": "Geometria",
+    "livello": 2,
+    "testo": "Qual è l'area di un cerchio di raggio 3 m?",
+    "opzioni": [
+      "3π m²",
+      "9π m²",
+      "18π m²",
+      "6π m²"
+    ],
+    "corretta": 1,
+    "spiegazione": "A = πr² = π · 3² = 9π.",
+    "fonte": "Wikipedia, «Cerchio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-183",
+    "argomento": "Geometria",
+    "livello": 1,
+    "testo": "Come si chiama una corda che passa per il centro del cerchio?",
+    "opzioni": [
+      "Tangente",
+      "Raggio",
+      "Diametro",
+      "Arco"
+    ],
+    "corretta": 2,
+    "spiegazione": "Divide il cerchio in due semicerchi.",
+    "fonte": "Wikipedia, «Cerchio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-184",
+    "argomento": "Geometria",
+    "livello": 2,
+    "testo": "Come si definisce π nella geometria piana?",
+    "opzioni": [
+      "Il rapporto tra raggio e diametro",
+      "La metà della circonferenza",
+      "L'area di un quadrato di lato 1",
+      "Il rapporto tra la lunghezza della circonferenza e il suo diametro"
+    ],
+    "corretta": 3,
+    "spiegazione": "Vale circa 3,14159.",
+    "fonte": "Wikipedia, «Pi greco» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-185",
+    "argomento": "Geometria",
+    "livello": 4,
+    "testo": "Chi dimostrò nel 1761 che π è irrazionale?",
+    "opzioni": [
+      "Johann Heinrich Lambert",
+      "Ferdinand von Lindemann",
+      "Eulero",
+      "Archimede"
+    ],
+    "corretta": 0,
+    "spiegazione": "Lindemann dimostrò nel 1882 che è trascendente.",
+    "fonte": "Wikipedia, «Pi greco» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-186",
+    "argomento": "Geometria",
+    "livello": 4,
+    "testo": "Perché la quadratura del cerchio con riga e compasso è impossibile?",
+    "opzioni": [
+      "Perché il cerchio non ha area",
+      "Perché π è un numero trascendente",
+      "Perché π è maggiore di 3",
+      "Perché π è razionale"
+    ],
+    "corretta": 1,
+    "spiegazione": "Dimostrato da Ferdinand von Lindemann nel 1882.",
+    "fonte": "Wikipedia, «Pi greco» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-187",
+    "argomento": "Geometria",
+    "livello": 2,
+    "testo": "Come si chiama la parte di cerchio delimitata da due raggi e da un arco?",
+    "opzioni": [
+      "Corona circolare",
+      "Segmento circolare",
+      "Settore circolare",
+      "Corda"
+    ],
+    "corretta": 2,
+    "spiegazione": "È l'intersezione tra un angolo al centro e il cerchio.",
+    "fonte": "Wikipedia, «Cerchio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-188",
+    "argomento": "Geometria",
+    "livello": 2,
+    "testo": "Come si chiama la regione compresa tra due circonferenze concentriche?",
+    "opzioni": [
+      "Lunula",
+      "Semicerchio",
+      "Settore circolare",
+      "Corona circolare"
+    ],
+    "corretta": 3,
+    "spiegazione": "Voce «Cerchio».",
+    "fonte": "Wikipedia, «Cerchio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-189",
+    "argomento": "Geometria",
+    "livello": 1,
+    "testo": "Quanti gradi misura un angolo retto?",
+    "opzioni": [
+      "90°",
+      "180°",
+      "45°",
+      "360°"
+    ],
+    "corretta": 0,
+    "spiegazione": "È la metà di un angolo piatto.",
+    "fonte": "Wikipedia, «Angolo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-190",
+    "argomento": "Geometria",
+    "livello": 1,
+    "testo": "Un angolo di 35° si dice:",
+    "opzioni": [
+      "Ottuso",
+      "Acuto",
+      "Piatto",
+      "Retto"
+    ],
+    "corretta": 1,
+    "spiegazione": "È minore di un angolo retto.",
+    "fonte": "Wikipedia, «Angolo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-191",
+    "argomento": "Geometria",
+    "livello": 1,
+    "testo": "In quanti gradi sessagesimali si divide l'angolo giro?",
+    "opzioni": [
+      "180",
+      "100",
+      "360",
+      "400"
+    ],
+    "corretta": 2,
+    "spiegazione": "Voce «Angolo».",
+    "fonte": "Wikipedia, «Angolo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-192",
+    "argomento": "Geometria",
+    "livello": 3,
+    "testo": "Come si definisce il radiante?",
+    "opzioni": [
+      "Un trecentosessantesimo dell'angolo giro",
+      "La centesima parte dell'angolo retto",
+      "L'angolo di un triangolo equilatero",
+      "Il rapporto tra la lunghezza di un arco e il raggio della circonferenza"
+    ],
+    "corretta": 3,
+    "spiegazione": "Un angolo giro misura 2π radianti.",
+    "fonte": "Wikipedia, «Angolo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-193",
+    "argomento": "Geometria solida",
+    "livello": 1,
+    "testo": "Quanti spigoli ha un cubo?",
+    "opzioni": [
+      "12",
+      "6",
+      "24",
+      "8"
+    ],
+    "corretta": 0,
+    "spiegazione": "6 facce, 8 vertici, 12 spigoli.",
+    "fonte": "Wikipedia, «Cubo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-194",
+    "argomento": "Geometria solida",
+    "livello": 1,
+    "testo": "Qual è il volume di un cubo con spigolo 3 cm?",
+    "opzioni": [
+      "18 cm³",
+      "27 cm³",
+      "9 cm³",
+      "54 cm³"
+    ],
+    "corretta": 1,
+    "spiegazione": "V = a³ = 3³ = 27.",
+    "fonte": "Wikipedia, «Cubo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-195",
+    "argomento": "Geometria solida",
+    "livello": 2,
+    "testo": "Qual è il volume di un parallelepipedo rettangolo di dimensioni 2, 3 e 4 m?",
+    "opzioni": [
+      "52 m³",
+      "9 m³",
+      "24 m³",
+      "26 m³"
+    ],
+    "corretta": 2,
+    "spiegazione": "Area di base (2 · 3) per l'altezza 4.",
+    "fonte": "Wikipedia, «Parallelepipedo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-196",
+    "argomento": "Geometria solida",
+    "livello": 3,
+    "testo": "Qual è la formula del volume della sfera di raggio R?",
+    "opzioni": [
+      "2πR³",
+      "πR²",
+      "4πR²",
+      "(4/3)πR³"
+    ],
+    "corretta": 3,
+    "spiegazione": "4πR² è la superficie sferica.",
+    "fonte": "Wikipedia, «Sfera» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-197",
+    "argomento": "Misure",
+    "livello": 2,
+    "testo": "Quante sono le unità di misura di base del Sistema internazionale (SI)?",
+    "opzioni": [
+      "7",
+      "5",
+      "10",
+      "3"
+    ],
+    "corretta": 0,
+    "spiegazione": "Metro, chilogrammo, secondo, ampere, kelvin, mole, candela.",
+    "fonte": "Wikipedia, «Sistema internazionale di unità di misura» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-198",
+    "argomento": "Misure",
+    "livello": 1,
+    "testo": "Qual è l'unità di misura della massa nel Sistema internazionale?",
+    "opzioni": [
+      "Grammo",
+      "Chilogrammo",
+      "Libbra",
+      "Newton"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il sistema MKS usava metro, chilogrammo e secondo.",
+    "fonte": "Wikipedia, «Sistema internazionale di unità di misura» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-199",
+    "argomento": "Misure",
+    "livello": 2,
+    "testo": "Qual è l'unità SI della temperatura assoluta?",
+    "opzioni": [
+      "Grado Fahrenheit",
+      "Joule",
+      "Kelvin",
+      "Grado Celsius"
+    ],
+    "corretta": 2,
+    "spiegazione": "Introdotta come grandezza fondamentale nel 1954.",
+    "fonte": "Wikipedia, «Sistema internazionale di unità di misura» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "matematica",
+    "id": "mat-200",
+    "argomento": "Matematica finanziaria",
+    "livello": 3,
+    "testo": "Un capitale di 1.000 € è investito in capitalizzazione semplice al 5% annuo per 3 anni. Qual è il montante?",
+    "opzioni": [
+      "1.157,63 €",
+      "1.050 €",
+      "1.500 €",
+      "1.150 €"
+    ],
+    "corretta": 3,
+    "spiegazione": "M = C(1 + it) = 1.000 · (1 + 0,05 · 3).",
+    "fonte": "Wikipedia, «Capitalizzazione semplice» (CC BY-SA 4.0)",
+    "versione": "v1"
+  }
+]

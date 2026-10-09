@@ -5,7 +5,7 @@ Terraform, autenticazione, dati e servizi suoi, nessuna dipendenza da altri
 progetti. Comandi pronti in [COMANDI-RAPIDI.md](COMANDI-RAPIDI.md).
 
 ```
-Browser ──HTTPS──▶ CloudFront (*.cloudfront.net)         [prod: + WAF]
+Browser ──HTTPS──▶ CloudFront: dev.imieiconcorsi.it (prod: imieiconcorsi.it, + WAF)
                      ├── /api/*  ──▶ API Gateway HTTP (JWT Cognito)
                      │                 ├── profile    /me, /me/profilo                       ──▶ users
                      │                 ├── concorsi   /concorsi, /me/concorsi                ──▶ follows   (legge concorsi, users)
@@ -40,7 +40,8 @@ mai messa in cache (`Cache-Control: no-store`).
 
 | Risorsa (`imieiconcorsi-dev-…`) | Note |
 |---|---|
-| CloudFront | Un'unica distribuzione per sito e API (`/api/*`), HTTPS col certificato di default; in dev senza WAF |
+| CloudFront | Un'unica distribuzione per sito e API (`/api/*`) su `dev.imieiconcorsi.it`, certificato ACM (in us-east-1, validato via DNS); in dev senza WAF |
+| Route 53 | Hosted zone `imieiconcorsi.it`, creata all'acquisto del dominio e solo letta da Terraform. Record: `dev` → CloudFront; DKIM, MAIL FROM e DMARC per le email |
 | S3 `web-…` | Sito statico, bucket privato (accesso solo da CloudFront) |
 | Cognito user pool + dominio `imieiconcorsi-dev.auth.eu-south-1.amazoncognito.com` | Email come username, verifica con codice; Google/Facebook se configurati |
 | API Gateway HTTP | Autorizzazione JWT su tutte le route, limite 50 richieste/s in dev. In dev risponde anche al suo indirizzo diretto (`scripts/deploy.sh urls`); in prod quell'accesso va bloccato |
@@ -58,7 +59,7 @@ NAT, load balancer né database sempre accesi, quindi si può lasciare acceso.
 ```
 infra/terraform/
 ├── bootstrap/            bucket dello stato (una volta sola)
-├── environments/shared/  risorse comuni a dev e prod: SES
+├── environments/shared/  risorse comuni a dev e prod: dominio (record email) e SES
 ├── environments/dev/     ambiente dev: backend, provider, collegamento dei moduli, domande demo
 └── modules/
     ├── data/             tabelle DynamoDB
@@ -66,13 +67,15 @@ infra/terraform/
     ├── api/              API Gateway + microservizi
     ├── jobs/             job del mattino + scheduler
     ├── ses/              identità SES e configuration set
+    ├── contenuti/        bucket dei contenuti + import automatico della banca domande
     ├── web/              S3 + CloudFront + file del sito + config.json
     └── lambda/           una Lambda: zip, ruolo IAM, log
 packages/
 ├── core/                 dominio condiviso (TypeScript)
 ├── functions/            codice dei microservizi e dello scraper (TypeScript)
 └── web/                  sito React (TypeScript)
-data/domande-demo.json    domande dimostrative, caricate da Terraform in dev
+data/domande/             banca domande statica, un file per materia (importata da modules/contenuti)
+contenuti/                libri (fuori da git) e registro delle fonti
 scripts/deploy.sh         tutti i comandi
 ```
 
@@ -104,12 +107,13 @@ di CloudFront.
 - **Codici di verifica del login:** li manda Cognito con il suo servizio di
   default (massimo 50 al giorno, mittente `no-reply@verificationemail.com`).
   Quando c'è il dominio si possono passare su SES.
-- **Email dell'app** (promemoria scadenze, avvisi admin): SES, configurato
+- **Email dell'app** (conferma d'acquisto, piano attivato o tornato Free,
+  promemoria scadenze, avvisi admin): SES, configurato
   nell'ambiente **shared**, che dev legge con `terraform_remote_state`.
-  - Finché non c'è un dominio, il mittente è un indirizzo verificato.
-  - Con un dominio (`domain` in `shared/terraform.tfvars`) Terraform crea
-    l'identità con DKIM e mostra i record CNAME da mettere nel DNS (output
-    `ses_dkim_records`).
+  - Mittente `noreply@imieiconcorsi.it`. Terraform crea nella hosted zone i 3
+    record DKIM, il MAIL FROM `mail.imieiconcorsi.it` (MX + SPF) e il DMARC
+    (`p=none` per iniziare, poi si stringe).
+  - Le email di dev hanno l'oggetto che inizia con `[dev]`.
 - **Sandbox:** SES consegna solo agli indirizzi verificati, fino a 200 email al
   giorno. L'uscita si chiede con `scripts/deploy.sh ses-production`, una volta per
   account: conviene farlo dopo aver configurato il dominio.
@@ -127,13 +131,29 @@ Pagamenti singoli, senza rinnovo automatico: Medium o Pro per 30 o 365 giorni.
 - **Oggi:** il servizio `billing` gira con `BILLING_MODE = "mock"` (in
   `environments/dev/main.tf`). Il cambio di piano è immediato e gratuito: mette
   l'utente nel gruppo Cognito e fissa la scadenza.
-- **Poi:** passerà dalla piattaforma di pagamento (repo `paymentplatform`).
-  1. `billing` crea l'ordine, con un id anonimo, e il checkout.
-  2. L'utente paga con Stripe o PayPal e torna sul sito.
-  3. Il piano si attiva dopo la verifica lato server: interrogazione della
-     piattaforma, più la notifica firmata come seconda strada.
+- **Poi (deciso il 2026-10-09):** Stripe Checkout diretto, senza la
+  piattaforma `paymentplatform`. PayPal, Apple Pay e Google Pay si attivano
+  dentro Stripe.
+  1. `billing` crea l'ordine e la sessione Stripe, con il prezzo calcolato dal
+     server.
+  2. L'utente paga sulla pagina di Stripe e torna sul sito.
+  3. Il piano si attiva con il webhook firmato di Stripe
+     (`/api/pubblico/stripe/webhook`), una volta sola.
+  Guida: `docs/GUIDA-PAGAMENTI.md`.
 - **Scadenza:** il job `scadenze` manda il promemoria 3 giorni prima e, alla
-  scadenza, riporta l'utente a Free.
+  scadenza, riporta l'utente a Free e gli manda l'email.
+- **Codici sconto:** tabella `imieiconcorsi-dev-codici`, scritta dal pannello
+  admin (`/admin/codici`). `billing` li controlla (`POST /me/codice-sconto`) e,
+  all'acquisto, conta l'uso con una scrittura condizionata: due acquisti insieme
+  non superano gli usi massimi. Con Stripe l'importo
+  scontato sarà quello dell'ordine.
+- **Avvisi sui bandi:** job `avvisi` alle 7:00. Legge da `users` chi vuole gli
+  avvisi e prende i bandi dei suoi comparti con data di pubblicazione inPA di
+  ieri (ultimi 7 giorni per il settimanale); senza data conta `primoImportoIl`,
+  scritto dallo scraper. L'email arriva da Cognito.
+- **Pubblicità:** nel piano Free (`limiti.pubblicita`) un annuncio ogni 5
+  domande di studio. AdSense è facoltativo (`adsense_client`, `adsense_slot`);
+  senza, l'annuncio è interno.
 
 ## Produzione (da fare)
 

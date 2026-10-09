@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { citaBancaDati, classificaComparto, toConcorso, type InpaBando } from "../src/jobs/inpa";
+import { citaBancaDati, classificaComparto, materieDalTesto, toConcorso, type InpaBando } from "../src/jobs/inpa";
 
 const bando = (ente: string, titolo = "Concorso per istruttore amministrativo"): InpaBando => ({
   id: "abc",
@@ -57,5 +57,26 @@ describe("citaBancaDati", () => {
     ["Prova scritta e orale", false],
   ])("%s → %s", (descrizione, atteso) => {
     expect(citaBancaDati({ ...bando("Comune di Pavia"), descrizione: `<p>${descrizione}</p>` })).toBe(atteso);
+  });
+});
+
+describe("materie lette dal bando", () => {
+  it("trova le materie citate nelle prove", () => {
+    expect(
+      materieDalTesto(
+        "Prova scritta su diritto amministrativo, ordinamento degli enti locali, contabilità pubblica; accertamento della lingua inglese e delle competenze informatiche",
+      ),
+    ).toEqual(["diritto-amministrativo", "contabilita-pubblica", "informatica", "inglese"]);
+  });
+
+  it("con almeno due materie nel testo le usa e non le marca come stimate", () => {
+    const c = toConcorso({ ...bando("Comune di Lucca"), descrizione: "<p>Materie: diritto penale e lingua inglese</p>" });
+    expect(c.materie).toEqual(["diritto-penale", "inglese"]);
+    expect(c.materieStimate).toBe(false);
+  });
+
+  it("con meno di due materie resta la stima per comparto", () => {
+    const c = toConcorso({ ...bando("Comune di Lucca"), descrizione: "<p>Prova orale</p>" });
+    expect(c.materieStimate).toBe(true);
   });
 });
