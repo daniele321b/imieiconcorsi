@@ -20,3 +20,14 @@ adsense_slot   = ""
 # Pagamenti con Stripe (docs/GUIDA-PAGAMENTI.md). Vuoti = cambio piano gratuito ("mock").
 stripe_secret_key     = ""   # sk_test_... (Dashboard Stripe -> Developers -> API keys)
 stripe_webhook_secret = ""   # whsec_...  (Developers -> Webhooks -> il tuo endpoint)
+
+# Tutor AI del piano Pro (Amazon Bedrock). Vuoto = Claude Haiku 4.5, profilo EU.
+# ai_model = "eu.anthropic.claude-haiku-4-5-20251001-v1:0"
+# Tetti di spesa del tutor AI al mese, in dollari: per utente e per tutta la piattaforma
+# (all'80% del secondo arriva un'email, al 100% l'AI va in pausa fino al mese dopo).
+# ai_tetto_utente_usd  = 3
+# ai_tetto_mensile_usd = 50
+
+# Monitoraggio: gli allarmi arrivano ad admin_email (topic SNS imieiconcorsi-dev-monitoraggio).
+# Budget mensile di TUTTO l'account AWS, in dollari; 0 = nessun budget.
+# budget_mensile_usd = 50

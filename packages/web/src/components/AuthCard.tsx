@@ -17,8 +17,14 @@ import { config, type SocialProvider } from "../lib/config";
 import { FacebookIcon, GoogleIcon } from "./brand";
 import { Alert, Button, Field, cx } from "./ui";
 
+// Riquadro di accesso della home: accedi, registrati (con il codice via email), conferma,
+// password dimenticata, oppure Google e Facebook. Parla direttamente con Cognito tramite
+// Amplify; finito il login, l'AuthProvider (lib/auth.tsx) carica l'utente e si entra nell'app.
+
+/** Schermata del riquadro: ogni modo mostra un modulo diverso. */
 type Modo = "accedi" | "registrati" | "conferma" | "recupera" | "nuova-password";
 
+/** Riquadro di accesso e registrazione. */
 export function AuthCard() {
   const [modo, setModo] = useState<Modo>("accedi");
   const [email, setEmail] = useState("");
@@ -314,6 +320,7 @@ export function AuthCard() {
   );
 }
 
+/** Campo per il codice a 6 cifre arrivato per email. */
 function CodiceField({ value, onChange }: { value: string; onChange: (v: string) => void }) {
   return (
     <label className="block">

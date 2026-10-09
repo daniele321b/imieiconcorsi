@@ -1,6 +1,9 @@
 import { z } from "zod";
 import { MATERIA_IDS } from "./domain";
 
+// Controllo dei file della banca domande statica (data/domande/*.json) prima di caricarli:
+// lo usano lo script di import (scripts/deploy.sh seed) e i test.
+
 /**
  * Una domanda della banca statica (data/domande/<materia>.json). Stesso schema per le
  * domande scritte a mano e per quelle generate dai libri e poi riviste.
@@ -24,4 +27,5 @@ export const DomandaSchema = z
     message: "le 4 opzioni devono essere diverse",
   });
 
+/** Un file della banca statica: un elenco di domande della stessa materia. */
 export const FileDomandeSchema = z.array(DomandaSchema);

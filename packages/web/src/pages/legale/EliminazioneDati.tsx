@@ -4,6 +4,7 @@ import { LegalePagina } from "./LegalePagina";
 
 // Istruzioni per l'eliminazione dei dati: richieste anche da Meta (Facebook Login) e Google.
 
+/** Pagina /eliminazione-dati (pubblica: la chiedono anche Meta e Google). */
 export function EliminazioneDati() {
   return (
     <LegalePagina titolo="Eliminazione dei dati">
@@ -20,7 +21,8 @@ export function EliminazioneDati() {
       <h2>Cosa viene cancellato</h2>
       <ul>
         <li>Email, nome e accesso, compreso il collegamento con Google o Facebook.</li>
-        <li>Profilo di studio: interessi, livelli, concorsi seguiti, sessioni, risposte e statistiche.</li>
+        <li>Profilo di studio: interessi, livelli, concorsi seguiti, sessioni, risposte, statistiche e progressi nelle banche dati.</li>
+        <li>Richieste di assistenza e i loro messaggi.</li>
         <li>Piano attivo: l'eventuale periodo residuo non viene rimborsato.</li>
       </ul>
       <p>

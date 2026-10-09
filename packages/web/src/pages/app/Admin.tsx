@@ -1,5 +1,5 @@
 import { PIANI, type CodiceSconto, type PianoId } from "@imieiconcorsi/core/domain";
-import { Copy, Crown, Database, Search, ShieldCheck, Sparkles, Tag, Users } from "lucide-react";
+import { Bot, Copy, Crown, Database, LifeBuoy, Receipt, Search, ShieldCheck, Sparkles, Tag, Users } from "lucide-react";
 import { type FormEvent, useEffect, useState } from "react";
 import { Navigate } from "react-router";
 import { Alert, Badge, Button, ButtonLink, Card, PageHeader, Spinner, cx } from "../../components/ui";
@@ -10,12 +10,18 @@ import { dataBreve } from "../../lib/format";
 
 const toDate = (iso?: string) => (iso ? iso.slice(0, 10) : "");
 
+// Pannello di controllo (/admin), solo per gli admin: numeri principali (utenti per piano,
+// richieste aperte, spesa AI del mese), link a richieste, pagamenti e banche dati, codici sconto
+// ed elenco degli utenti con cambio di piano e disattivazione. Le API sono in functions/src/admin.
+
+/** Pagina /admin: chi non è admin torna all'app. */
 export function Admin() {
   const { utente } = useUtente();
   if (!utente.admin) return <Navigate to="/app" replace />;
   return <Pannello />;
 }
 
+/** Contenuto del pannello. */
 function Pannello() {
   const riepilogo = useApi<AdminRiepilogo>("/admin/riepilogo");
   const [cerca, setCerca] = useState("");
@@ -64,18 +70,33 @@ function Pannello() {
         title="Pannello di controllo"
         subtitle="Utenti registrati, piani e accesso. Le modifiche valgono dal prossimo accesso dell'utente."
         actions={
-          <ButtonLink to="/admin/banche-dati" variant="secondary">
-            <Database className="size-4" /> Banche dati
-          </ButtonLink>
+          <div className="flex flex-wrap gap-2">
+            <ButtonLink to="/admin/richieste" variant="secondary">
+              <LifeBuoy className="size-4" /> Richieste
+            </ButtonLink>
+            <ButtonLink to="/admin/pagamenti" variant="secondary">
+              <Receipt className="size-4" /> Pagamenti
+            </ButtonLink>
+            <ButtonLink to="/admin/banche-dati" variant="secondary">
+              <Database className="size-4" /> Banche dati
+            </ButtonLink>
+          </div>
         }
       />
 
-      <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+      <div className="grid grid-cols-2 gap-4 lg:grid-cols-3">
         {[
           { label: "Utenti", valore: riepilogo.data?.utenti, Icon: Users, cls: "text-brand-600" },
           { label: "Medium", valore: riepilogo.data?.medium, Icon: Crown, cls: "text-amber-500" },
           { label: "Pro", valore: riepilogo.data?.pro, Icon: Sparkles, cls: "text-fuchsia-500" },
           { label: "Admin", valore: riepilogo.data?.admin, Icon: ShieldCheck, cls: "text-slate-600" },
+          { label: "Richieste aperte", valore: riepilogo.data?.richiesteAperte, Icon: LifeBuoy, cls: "text-rose-500" },
+          {
+            label: riepilogo.data ? `Spesa AI del mese (tetto ${riepilogo.data.ai.tettoUsd} $, ${riepilogo.data.ai.chiamate} chiamate)` : "Spesa AI del mese",
+            valore: riepilogo.data && `${riepilogo.data.ai.spesaUsd.toFixed(2)} $`,
+            Icon: Bot,
+            cls: "text-emerald-600",
+          },
         ].map(({ label, valore, Icon, cls }) => (
           <Card key={label}>
             <Icon className={cx("size-5", cls)} />
@@ -121,6 +142,7 @@ function Pannello() {
   );
 }
 
+/** Un utente nell'elenco: piano, scadenza, accesso, stato; si modifica in linea. */
 function RigaUtente({ utente, onAggiornato }: { utente: AdminUtente; onAggiornato: (u: AdminUtente) => void }) {
   const [piano, setPiano] = useState<PianoId>(utente.piano);
   const [scadenza, setScadenza] = useState(toDate(utente.scadenzaPiano));
@@ -236,6 +258,7 @@ function RigaUtente({ utente, onAggiornato }: { utente: AdminUtente; onAggiornat
 const campo =
   "mt-1 block h-10 w-full rounded-xl border-0 bg-white px-3 text-sm text-slate-900 ring-1 ring-slate-300 focus:ring-2 focus:ring-brand-500";
 
+/** Riquadro dei codici sconto: elenco, nuovo codice, attiva/disattiva. */
 function CodiciSconto() {
   const { data, loading, error, setData } = useApi<AdminCodici>("/admin/codici");
   const [codice, setCodice] = useState("");

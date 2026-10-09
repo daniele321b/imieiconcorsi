@@ -1,5 +1,9 @@
 # Job pianificati (ora italiana): ognuno è una Lambda lanciata da EventBridge Scheduler.
+# I job (inpa-scraper, pulizia-bandi, avvisi, scadenze) e i loro orari stanno in
+# environments/dev/main.tf; il codice in packages/functions/src/jobs/. Si lanciano anche a
+# mano con scripts/deploy.sh job <nome>.
 
+# Una Lambda per job.
 module "job" {
   source   = "../lambda"
   for_each = var.jobs
@@ -13,6 +17,7 @@ module "job" {
   timeout           = each.value.timeout
 }
 
+# Ruolo con cui lo Scheduler lancia le Lambda.
 resource "aws_iam_role" "scheduler" {
   name = "${var.name}-scheduler"
   assume_role_policy = jsonencode({
@@ -25,6 +30,7 @@ resource "aws_iam_role" "scheduler" {
   })
 }
 
+# Lo Scheduler può lanciare solo le Lambda dei job.
 resource "aws_iam_role_policy" "scheduler" {
   name = "invoke"
   role = aws_iam_role.scheduler.id
@@ -38,6 +44,7 @@ resource "aws_iam_role_policy" "scheduler" {
   })
 }
 
+# Orario di ogni job (espressione cron in ora italiana); se fallisce si riprova 2 volte.
 resource "aws_scheduler_schedule" "job" {
   for_each = var.jobs
 

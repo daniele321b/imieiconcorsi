@@ -8,6 +8,9 @@ output "table_arns" {
     codici    = aws_dynamodb_table.codici.arn
     ordini    = aws_dynamodb_table.ordini.arn
     banche    = aws_dynamodb_table.banche_dati.arn
+    richieste = aws_dynamodb_table.richieste.arn
+    progressi = aws_dynamodb_table.progressi.arn
+    contatori = aws_dynamodb_table.contatori.arn
   }
 }
 
@@ -26,5 +29,24 @@ output "table_env" {
     CODICI_TABLE      = aws_dynamodb_table.codici.name
     ORDINI_TABLE      = aws_dynamodb_table.ordini.name
     BANCHE_DATI_TABLE = aws_dynamodb_table.banche_dati.name
+    RICHIESTE_TABLE   = aws_dynamodb_table.richieste.name
+    PROGRESSI_TABLE   = aws_dynamodb_table.progressi.name
+    CONTATORI_TABLE   = aws_dynamodb_table.contatori.name
+  }
+}
+
+output "table_names" {
+  value = {
+    users     = aws_dynamodb_table.users.name
+    concorsi  = aws_dynamodb_table.concorsi.name
+    follows   = aws_dynamodb_table.follows.name
+    questions = aws_dynamodb_table.questions.name
+    attempts  = aws_dynamodb_table.attempts.name
+    codici    = aws_dynamodb_table.codici.name
+    ordini    = aws_dynamodb_table.ordini.name
+    banche    = aws_dynamodb_table.banche_dati.name
+    richieste = aws_dynamodb_table.richieste.name
+    progressi = aws_dynamodb_table.progressi.name
+    contatori = aws_dynamodb_table.contatori.name
   }
 }

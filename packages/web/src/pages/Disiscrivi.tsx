@@ -7,8 +7,10 @@ import { LegalePagina } from "./legale/LegalePagina";
 // Si conferma con un pulsante, così i programmi che aprono i link delle email da soli
 // (antivirus, anteprime) non disiscrivono nessuno per sbaglio.
 
+/** Momenti della pagina: prima della conferma, invio, fatto, errore (link non valido). */
 type Stato = "da-confermare" | "in-corso" | "fatto" | "errore";
 
+/** Pagina /disiscrivi?u=…&t=… */
 export function Disiscrivi() {
   const [params] = useSearchParams();
   const u = params.get("u");

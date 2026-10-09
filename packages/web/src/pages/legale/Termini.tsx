@@ -1,4 +1,4 @@
-import { PIANI } from "@imieiconcorsi/core/domain";
+import { GIORNI_PREMIO_INVITO, MAX_PREMI_INVITO_ANNO, PIANI } from "@imieiconcorsi/core/domain";
 import { Link } from "react-router";
 import { euro } from "../../lib/format";
 import { LEGALE } from "../../lib/legale";
@@ -7,6 +7,7 @@ import { LegalePagina } from "./LegalePagina";
 // Termini e condizioni. I punti su pagamento unico, nessun rinnovo e recesso devono
 // restare allineati al flusso di acquisto (pagina Piani e servizio billing).
 
+/** Pagina /termini. */
 export function Termini() {
   return (
     <LegalePagina titolo="Termini e condizioni">
@@ -44,10 +45,17 @@ export function Termini() {
       <ul>
         <li>Il piano {PIANI.free.nome} è gratuito e mostra un annuncio ogni 5 domande di studio; i piani a pagamento sono senza pubblicità.</li>
         <li>
-          I piani {PIANI.medium.nome} e {PIANI.pro.nome} sono a pagamento, per 30 giorni (mensile) o 365 giorni (annuale).
-          Prezzi attuali, IVA inclusa ove dovuta: {PIANI.medium.nome} {euro(PIANI.medium.prezzo.mensile)} al mese o{" "}
-          {euro(PIANI.medium.prezzo.annuale)} all'anno; {PIANI.pro.nome} {euro(PIANI.pro.prezzo.mensile)} al mese o{" "}
-          {euro(PIANI.pro.prezzo.annuale)} all'anno. Il prezzo applicato è quello mostrato al momento dell'acquisto.
+          I piani {PIANI.medium.nome} e {PIANI.pro.nome} sono a pagamento, per 30 giorni, 90 giorni o 365 giorni. Prezzi
+          attuali, IVA inclusa ove dovuta: {PIANI.medium.nome} {euro(PIANI.medium.prezzo.mensile)} per 30 giorni,{" "}
+          {euro(PIANI.medium.prezzo.trimestrale)} per 90 giorni, {euro(PIANI.medium.prezzo.annuale)} per un anno;{" "}
+          {PIANI.pro.nome} {euro(PIANI.pro.prezzo.mensile)} per 30 giorni, {euro(PIANI.pro.prezzo.trimestrale)} per 90 giorni,{" "}
+          {euro(PIANI.pro.prezzo.annuale)} per un anno. Il prezzo applicato è quello mostrato al momento dell'acquisto.
+        </li>
+        <li>
+          <strong>Invita un amico.</strong> Ogni utente ha un codice personale. Se un amico lo inserisce prima del suo primo
+          acquisto e poi compra un piano, chi l'ha invitato riceve {GIORNI_PREMIO_INVITO} giorni gratis: piano {PIANI.medium.nome} se
+          ha il piano {PIANI.free.nome}, altrimenti il suo piano si allunga. Al massimo {MAX_PREMI_INVITO_ANNO} premi l'anno; i premi
+          non si convertono in denaro. Gli inviti a sé stessi o con account creati apposta non danno diritto al premio.
         </li>
         <li>
           <strong>Pagamento unico, nessun rinnovo automatico.</strong> Ogni acquisto è un pagamento singolo per il periodo
@@ -95,7 +103,14 @@ export function Termini() {
         </li>
         <li>
           Le funzioni di intelligenza artificiale del piano {PIANI.pro.nome} producono risposte generate automaticamente: sono
-          un aiuto allo studio e possono contenere errori, da verificare sulle fonti ufficiali.
+          un aiuto allo studio e possono contenere errori, da verificare sulle fonti ufficiali. Rispondono solo su argomenti di
+          studio per i concorsi e hanno limiti di utilizzo: i gettoni del mese, un numero massimo di richieste al minuto e un
+          tetto di consumo mensile per account, per un uso corretto e sostenibile del servizio. Se si raggiunge un limite, le
+          funzioni AI tornano disponibili il mese successivo (o dopo pochi secondi, per il limite al minuto).
+        </li>
+        <li>
+          Se trovi una domanda o una risposta sbagliata, puoi segnalarla dalla pagina Assistenza o dal link "Segnala un errore"
+          sotto la domanda.
         </li>
         <li>
           Testi, domande, spiegazioni e software di iMieiConcorsi sono protetti. Puoi usarli per il tuo studio personale; non

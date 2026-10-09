@@ -3,8 +3,13 @@ import { Hub } from "aws-amplify/utils";
 import { createContext, useCallback, useContext, useEffect, useState, type ReactNode } from "react";
 import { api, type UtenteApi } from "./api";
 
+// Stato del login condiviso da tutto il sito: chi è collegato (utente con piano e limiti, da
+// GET /me), ricarica dopo un cambio di piano, uscita. Le pagine lo leggono con useAuth/useUtente.
+
+/** Caricamento iniziale, nessuno collegato, o utente collegato. */
 type Stato = "caricamento" | "ospite" | "autenticato";
 
+/** Cosa offre il contesto del login alle pagine. */
 interface AuthContextValue {
   stato: Stato;
   utente?: UtenteApi;
@@ -16,6 +21,7 @@ interface AuthContextValue {
 
 const AuthContext = createContext<AuthContextValue | null>(null);
 
+/** Avvolge il sito (main.tsx): controlla la sessione all'avvio e a ogni login (eventi di Amplify). */
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [stato, setStato] = useState<Stato>("caricamento");
   const [utente, setUtente] = useState<UtenteApi>();
@@ -51,6 +57,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   return <AuthContext.Provider value={{ stato, utente, setUtente, ricarica, esci }}>{children}</AuthContext.Provider>;
 }
 
+/** Stato del login, per le pagine pubbliche e il layout. */
 export function useAuth() {
   const ctx = useContext(AuthContext);
   if (!ctx) throw new Error("useAuth fuori da AuthProvider");

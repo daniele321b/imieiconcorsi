@@ -7,6 +7,10 @@ import { useApi, type MateriaApi } from "../../lib/api";
 import { useUtente } from "../../lib/auth";
 import { useAvviaSessione } from "../../lib/sessioni";
 
+// Studio (/app/studio): scelta delle materie e del numero di domande per una sessione di
+// studio, e simulazione libera sulle materie scelte.
+
+/** Pagina /app/studio. */
 export function Studio() {
   const { utente } = useUtente();
   const { data, loading, error } = useApi<{ materie: MateriaApi[]; versione?: string }>("/materie");

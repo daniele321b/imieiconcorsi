@@ -16,19 +16,40 @@ import { estraiDomande } from "./parser";
 const s3 = new S3Client({});
 const bucket = () => env("CONTENUTI_BUCKET");
 
+/** Aggiorna alcuni campi della banca dati (stato, conteggi, esempi…). */
 async function aggiorna(id: string, campi: Partial<BancaDati>) {
   const nomi = Object.keys(campi);
-  await db.send(
-    new UpdateCommand({
-      TableName: tables.bancheDati,
-      Key: { id },
-      UpdateExpression: `SET ${nomi.map((n, i) => `#k${i} = :v${i}`).join(", ")}`,
-      ExpressionAttributeNames: Object.fromEntries(nomi.map((n, i) => [`#k${i}`, n])),
-      ExpressionAttributeValues: Object.fromEntries(nomi.map((n, i) => [`:v${i}`, campi[n as keyof BancaDati]])),
-    }),
-  );
+  await db
+    .send(
+      new UpdateCommand({
+        TableName: tables.bancheDati,
+        Key: { id },
+        UpdateExpression: `SET ${nomi.map((n, i) => `#k${i} = :v${i}`).join(", ")}`,
+        // L'admin può eliminare la banca dati durante l'estrazione: non va ricreata a metà.
+        ConditionExpression: "attribute_exists(id)",
+        ExpressionAttributeNames: Object.fromEntries(nomi.map((n, i) => [`#k${i}`, n])),
+        ExpressionAttributeValues: Object.fromEntries(nomi.map((n, i) => [`:v${i}`, campi[n as keyof BancaDati]])),
+      }),
+    )
+    .catch((err) => {
+      if (err instanceof Error && err.name === "ConditionalCheckFailedException") console.log(`Banca dati ${id} eliminata nel frattempo`);
+      else throw err;
+    });
 }
 
+/** Sezioni nell'ordine del PDF, con la prima domanda e quante ne hanno. */
+function indiceSezioni(domande: { numero: number; sezione?: string }[]) {
+  const out: { sezione: string; da: number; domande: number }[] = [];
+  for (const d of domande) {
+    if (!d.sezione) continue;
+    const ultima = out.at(-1);
+    if (ultima?.sezione === d.sezione) ultima.domande++;
+    else out.push({ sezione: d.sezione, da: d.numero, domande: 1 });
+  }
+  return out;
+}
+
+/** Legge il PDF, ne estrae il testo e le domande, salva il file JSON e il riepilogo per l'admin. */
 async function estrai(id: string) {
   const res = await db.send(new GetCommand({ TableName: tables.bancheDati, Key: { id } }));
   const banca = res.Item as BancaDati | undefined;
@@ -44,10 +65,22 @@ async function estrai(id: string) {
     }
 
     const { domande, scartate, formati } = estraiDomande(text as string, banca.formato);
+    // Esempi da controllare nell'ordine del PDF (la giusta è quella che il PDF indica),
+    // le prime due domande di ogni sezione.
+    const perSezione = new Map<string, typeof domande>();
+    for (const d of domande) {
+      const lista = perSezione.get(d.sezione ?? "") ?? [];
+      if (lista.length < 2) perSezione.set(d.sezione ?? "", [...lista, d]);
+    }
+    const esempi = [...perSezione.values()]
+      .flat()
+      .slice(0, 16)
+      .map((d) => ({ numero: d.numero, testo: d.testo, opzioni: d.pdf.opzioni, corretta: d.pdf.corretta, ...(d.sezione ? { sezione: d.sezione } : {}) }));
     await s3.send(
       new PutObjectCommand({
         Bucket: bucket(),
         Key: `banche-dati/${id}.json`,
+        // Entrambi gli ordini: la pubblicazione usa quello scelto dall'admin (mescolate o come nel PDF).
         Body: JSON.stringify({ domande }),
         ContentType: "application/json",
       }),
@@ -58,7 +91,9 @@ async function estrai(id: string) {
       domande: domande.length,
       scartate: scartate.length,
       formati,
-      esempi: domande.slice(0, 5),
+      esempi,
+      sezioni: [...perSezione.keys()].filter(Boolean),
+      indiceSezioni: indiceSezioni(domande),
       problemi: scartate.slice(0, 30),
       errore: domande.length ? "" : "Nessuna domanda riconosciuta: prova un altro formato o mandami il PDF.",
       estrattaIl: new Date().toISOString(),
@@ -78,6 +113,7 @@ async function estrai(id: string) {
   }
 }
 
+/** Entrata: dalla notifica S3 (PDF appena caricato o ricopiato) o da { id } dal pannello. */
 export const handler = async (event: S3Event | { id: string }) => {
   const ids =
     "Records" in event

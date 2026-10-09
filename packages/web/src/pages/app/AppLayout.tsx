@@ -1,22 +1,37 @@
 import { PIANI } from "@imieiconcorsi/core/domain";
-import { BookOpenCheck, Crown, Database, LayoutDashboard, LogOut, Search, ShieldCheck, User } from "lucide-react";
+import { BookOpenCheck, Crown, Database, LayoutDashboard, LifeBuoy, LogOut, Search, ShieldCheck, Sparkles, User } from "lucide-react";
+import { useEffect } from "react";
 import { Navigate, NavLink, Outlet, useLocation } from "react-router";
 import { Logo } from "../../components/brand";
 import { Badge, FullPageSpinner, cx } from "../../components/ui";
 import { useAuth } from "../../lib/auth";
+import { inviaInvitoRicordato } from "../../lib/invito";
 import { PiePagina } from "../legale/LegalePagina";
 
+// Cornice dell'area riservata (/app e /admin): intestazione con menu, assistenza e profilo,
+// menu in basso su telefono, piè di pagina. Rimanda alla home chi non è collegato e
+// all'onboarding chi non ha ancora completato il profilo.
+
+/** Voci del menu principale. */
 const NAV = [
   { to: "/app", label: "Dashboard", Icon: LayoutDashboard, end: true },
   { to: "/app/concorsi", label: "Concorsi", Icon: Search },
   { to: "/app/studio", label: "Studio", Icon: BookOpenCheck },
   { to: "/app/banche-dati", label: "Banche dati", Icon: Database },
+  { to: "/app/tutor", label: "Tutor AI", Icon: Sparkles },
   { to: "/app/piani", label: "Piani", Icon: Crown },
 ];
 
+/** Layout comune delle pagine riservate: le pagine si vedono al posto di <Outlet />. */
 export function AppLayout() {
   const { stato, utente, esci } = useAuth();
   const { pathname } = useLocation();
+  const pronto = stato !== "caricamento" && !!utente?.onboarded;
+
+  // Codice di un amico dal link d'invito: si manda una volta, a profilo completato.
+  useEffect(() => {
+    if (pronto) void inviaInvitoRicordato();
+  }, [pronto]);
 
   if (stato === "caricamento") return <FullPageSpinner />;
   if (stato === "ospite" || !utente) return <Navigate to="/" replace />;
@@ -67,6 +82,16 @@ export function AppLayout() {
                 </Badge>
               </NavLink>
             )}
+            {/* Assistenza, con il pallino quando c'è una risposta da leggere. */}
+            <NavLink
+              to="/app/assistenza"
+              aria-label={utente.richiesteDaLeggere ? `Assistenza: ${utente.richiesteDaLeggere} risposte da leggere` : "Assistenza"}
+              title="Assistenza"
+              className={({ isActive }) => cx("relative rounded-lg p-2 hover:bg-slate-100", isActive ? "text-brand-600" : "text-slate-500")}
+            >
+              <LifeBuoy className="size-5" />
+              {!!utente.richiesteDaLeggere && <span className="absolute top-1.5 right-1.5 size-2.5 rounded-full bg-rose-500 ring-2 ring-white" />}
+            </NavLink>
             <NavLink
               to="/app/profilo"
               aria-label="Profilo"

@@ -2,8 +2,17 @@ import type { APIGatewayProxyEventV2WithJWTAuthorizer, APIGatewayProxyResultV2 }
 import { ZodError, type ZodType } from "zod";
 import { GRUPPI, PIANI, pianoDaGruppi, type Limiti, type PianoId } from "./domain";
 
+// Base comune di tutte le API: ogni Lambda di servizio (profile, study, billing…) è creata con
+// service() e una mappa di route. Qui si legge il token di Cognito (già verificato dall'API
+// Gateway), si ricavano utente, piano e limiti, e si trasformano errori ed esiti in risposte JSON.
+
+/** Evento dell'API Gateway HTTP con il token JWT già verificato dall'authorizer. */
 export type Event = APIGatewayProxyEventV2WithJWTAuthorizer;
 
+/**
+ * Errore da mostrare all'utente: stato HTTP, messaggio in italiano e un codice facoltativo
+ * che il sito usa per reagire (es. LIMITE_PIANO mostra l'invito a cambiare piano).
+ */
 export class HttpError extends Error {
   constructor(
     public status: number,
@@ -14,8 +23,10 @@ export class HttpError extends Error {
   }
 }
 
+/** Errore 404 con un messaggio leggibile, es. notFound("Concorso"). */
 export const notFound = (what = "Risorsa") => new HttpError(404, `${what} non trovata`);
 
+/** Contesto di una richiesta, passato a ogni route: chi chiama, con quale piano, e i dati inviati. */
 export interface Ctx {
   event: Event;
   /** sub di Cognito: id anonimo usato in tutte le tabelle */
@@ -28,8 +39,11 @@ export interface Ctx {
   piano: PianoId;
   limiti: Limiti;
   admin: boolean;
+  /** Parti variabili del percorso, es. {id} in "GET /concorsi/{id}" */
   params: Record<string, string | undefined>;
+  /** Parametri dopo il "?" nell'indirizzo */
   query: Record<string, string | undefined>;
+  /** Corpo JSON della richiesta, controllato con uno schema zod (errore 400 se non va bene) */
   body<T>(schema: ZodType<T>): T;
 }
 
@@ -100,6 +114,7 @@ export function richiediAdmin(ctx: Ctx) {
   if (!ctx.admin) throw new HttpError(403, "Riservato agli amministratori", "SOLO_ADMIN");
 }
 
+/** Risposta HTTP con corpo JSON. */
 function json(statusCode: number, body: unknown): APIGatewayProxyResultV2 {
   return {
     statusCode,

@@ -1,14 +1,22 @@
+# Una funzione Lambda con tutto quello che le serve: codice, log, ruolo e permessi.
+# La usano i moduli api (un microservizio per Lambda) e jobs (un job per Lambda), e il
+# trigger di Cognito. Il codice arriva già compilato da scripts/deploy.sh build in
+# dist/functions/<nome>/index.mjs: qui si comprime in uno zip e si carica.
+
+# Zip del codice compilato (cambia solo se cambia il codice: allora la Lambda si aggiorna).
 data "archive_file" "code" {
   type        = "zip"
   source_dir  = var.source_dir
   output_path = "${path.root}/.build/${var.name}.zip"
 }
 
+# Log della funzione, tenuti per log_retention_days giorni (14 di solito).
 resource "aws_cloudwatch_log_group" "this" {
   name              = "/aws/lambda/${var.name}"
   retention_in_days = var.log_retention_days
 }
 
+# Ruolo con cui gira la funzione: può essere assunto solo dal servizio Lambda.
 resource "aws_iam_role" "this" {
   name = var.name
   assume_role_policy = jsonencode({
@@ -21,6 +29,8 @@ resource "aws_iam_role" "this" {
   })
 }
 
+# Permessi minimi: scrivere i propri log, leggere/scrivere solo le tabelle indicate
+# (write_tables, read_tables, con i loro indici) e le regole in più di policy_statements.
 resource "aws_iam_role_policy" "this" {
   name = "access"
   role = aws_iam_role.this.id
@@ -50,6 +60,7 @@ resource "aws_iam_role_policy" "this" {
   })
 }
 
+# La funzione: Node.js 22 su processori ARM (Graviton, costano meno), entrata index.handler.
 resource "aws_lambda_function" "this" {
   function_name    = var.name
   role             = aws_iam_role.this.arn

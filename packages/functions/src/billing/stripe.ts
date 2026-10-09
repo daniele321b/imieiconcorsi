@@ -9,6 +9,7 @@ const API = "https://api.stripe.com/v1";
 /** Importo minimo che Stripe accetta in euro. */
 export const MINIMO_STRIPE = 0.5;
 
+/** I campi che usiamo di una sessione di Stripe Checkout (la pagina di pagamento). */
 export interface SessioneStripe {
   id: string;
   url: string | null;
@@ -29,6 +30,7 @@ export function formEncode(obj: Record<string, unknown>, prefisso = ""): string[
   });
 }
 
+/** Chiamata all'API di Stripe con la chiave segreta; con `idempotenza` Stripe non la ripete due volte. */
 async function chiama<T>(metodo: "GET" | "POST", percorso: string, parametri?: Record<string, unknown>, idempotenza?: string): Promise<T> {
   const res = await fetch(`${API}${percorso}`, {
     method: metodo,
@@ -44,6 +46,7 @@ async function chiama<T>(metodo: "GET" | "POST", percorso: string, parametri?: R
   return dati;
 }
 
+/** Crea la pagina di pagamento per un ordine; l'utente ci viene mandato dal sito. */
 export function creaSessione(args: {
   ordineId: string;
   email?: string;
@@ -76,6 +79,7 @@ export function creaSessione(args: {
   );
 }
 
+/** Stato attuale di una sessione di pagamento (per la pagina di ritorno, se il webhook tarda). */
 export const leggiSessione = (id: string) => chiama<SessioneStripe>("GET", `/checkout/sessions/${encodeURIComponent(id)}`);
 
 /**

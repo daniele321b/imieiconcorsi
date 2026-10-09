@@ -1,12 +1,17 @@
 import { nomeComparto } from "@imieiconcorsi/core/domain";
-import { Bookmark, BookmarkCheck, CalendarClock, MapPin, Users } from "lucide-react";
+import { Bookmark, BookmarkCheck, CalendarClock, Database, MapPin, Users } from "lucide-react";
 import { Link } from "react-router";
-import type { ConcorsoApi } from "../lib/api";
+import type { ConcorsoInLista } from "@imieiconcorsi/core/concorsi";
 import { giorniA, scadenzaTesto, tipoProcedura } from "../lib/format";
 import { Badge, Button, cx } from "./ui";
 
-type Sintesi = Omit<ConcorsoApi, "descrizione">;
+// Scheda di un bando nelle liste (ricerca, dashboard): ente, scadenza colorata (rossa entro
+// 7 giorni, ambra se chiuso), titolo, sedi, posti, e il pulsante Segui.
 
+/** Bando della lista con l'indicazione se l'utente lo segue. */
+type Sintesi = ConcorsoInLista & { seguito: boolean };
+
+/** Scheda di un bando; tutta la scheda apre il dettaglio, `onSegui` (facoltativo) mostra il pulsante Segui. */
 export function ConcorsoCard({
   concorso,
   onSegui,
@@ -17,14 +22,15 @@ export function ConcorsoCard({
   inCorso?: boolean;
 }) {
   const giorni = giorniA(concorso.scadenza);
-  const urgente = giorni !== undefined && giorni <= 7;
+  const chiuso = giorni !== undefined && giorni < 0;
+  const urgente = !chiuso && giorni !== undefined && giorni <= 7;
 
   return (
     // Tutta la card apre il dettaglio (il link si allarga con after:inset-0); il pulsante Segui sta sopra.
     <article className="group relative flex min-w-0 flex-col rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200/70 transition hover:shadow-md hover:ring-brand-200">
       <div className="flex items-start justify-between gap-3">
         <p className="line-clamp-1 min-w-0 text-xs font-semibold tracking-wide break-words text-brand-600 uppercase">{concorso.ente}</p>
-        <Badge tone={urgente ? "red" : "slate"} className="shrink-0">
+        <Badge tone={chiuso ? "amber" : urgente ? "red" : "slate"} className="shrink-0">
           <CalendarClock className="size-3" /> {scadenzaTesto(concorso.scadenza)}
         </Badge>
       </div>
@@ -49,6 +55,15 @@ export function ConcorsoCard({
       <div className="mt-4 flex flex-wrap items-center gap-2">
         <Badge tone="brand">{nomeComparto(concorso.comparto)}</Badge>
         {tipoProcedura(concorso.tipoProcedura) && <Badge>{tipoProcedura(concorso.tipoProcedura)}</Badge>}
+        {/* Banca dati ufficiale collegata: il link porta alla consultazione (sopra il link della scheda). */}
+        {concorso.bancaDati && concorso.bancaDatiId && (
+          <Link
+            to={`/app/banche-dati/${concorso.bancaDatiId}`}
+            className="relative z-10 inline-flex items-center gap-1 rounded-full bg-emerald-50 px-2.5 py-0.5 text-xs font-semibold text-emerald-700 ring-1 ring-emerald-100 hover:bg-emerald-100"
+          >
+            <Database className="size-3" /> Banca dati
+          </Link>
+        )}
         {onSegui && (
           <Button
             size="sm"

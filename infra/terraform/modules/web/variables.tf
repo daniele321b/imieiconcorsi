@@ -1,5 +1,6 @@
 variable "name" {
-  type = string
+  description = "Prefisso dei nomi delle risorse, es. imieiconcorsi-dev"
+  type        = string
 }
 
 variable "dist_dir" {

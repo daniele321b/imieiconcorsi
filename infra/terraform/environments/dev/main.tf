@@ -63,18 +63,32 @@ locals {
   site_env = { SITE_URL = module.web.url }
   # Firma dei link "non ricevere più avvisi" (valgono senza login).
   disiscrizione_env = { DISISCRIZIONE_SECRET = random_password.disiscrizione.result }
+
+  # Lista dei bandi in cache: file nel bucket del sito, serviti da CloudFront sotto /dati/bandi/.
+  cache_bandi_env = { WEB_BUCKET = module.web.bucket }
+  cache_bandi = {
+    Effect   = "Allow"
+    Action   = ["s3:PutObject"]
+    Resource = "arn:aws:s3:::${module.web.bucket}/dati/*"
+  }
+
+  # Modello del profilo d'inferenza senza il prefisso di area (eu., us., global.…).
+  ai_base_model = replace(var.ai_model, "/^(eu|us|apac|jp|global)\\./", "")
 }
 
+# Segreto che firma i link delle email (disiscrizione, lettura): generato una volta e tenuto nello stato.
 resource "random_password" "disiscrizione" {
   length  = 48
   special = false
 }
 
+# Tabelle DynamoDB (modules/data): utenti, concorsi, domande, sessioni, ordini, richieste, progressi…
 module "data" {
   source = "../../modules/data"
   name   = local.name
 }
 
+# Sito e lista dei bandi in cache dietro CloudFront, con /api verso l'API Gateway (modules/web).
 module "web" {
   source      = "../../modules/web"
   name        = local.name
@@ -105,8 +119,10 @@ module "auth_trigger" {
   }]
 }
 
+# Id dell'account AWS (per gli ARN dei permessi Bedrock).
 data "aws_caller_identity" "current" {}
 
+# Cognito: account, login social, gruppi dei piani (modules/auth).
 module "auth" {
   source     = "../../modules/auth"
   name       = local.name
@@ -124,6 +140,8 @@ module "auth" {
   facebook_app_secret  = var.facebook_app_secret
 }
 
+# API: un microservizio Lambda per voce di services, con le sue route e i suoi permessi (modules/api).
+# Le route devono coincidere con quelle del codice (service() in packages/functions/src/<servizio>/handler.ts).
 module "api" {
   source        = "../../modules/api"
   name          = local.name
@@ -135,9 +153,12 @@ module "api" {
   services = {
     profile = {
       routes = ["GET /me", "PUT /me/profilo", "PUT /me/feedback", "DELETE /me"]
-      # DELETE /me cancella l'account: profilo, concorsi seguiti, sessioni e utente Cognito.
-      write_tables = [module.data.table_arns.users, module.data.table_arns.follows, module.data.table_arns.attempts]
-      read_tables  = []
+      # DELETE /me cancella l'account: profilo, concorsi seguiti, sessioni, richieste, progressi e utente Cognito.
+      write_tables = [
+        module.data.table_arns.users, module.data.table_arns.follows, module.data.table_arns.attempts,
+        module.data.table_arns.richieste, module.data.table_arns.progressi,
+      ]
+      read_tables = []
       # Il nome è un dato personale: si salva su Cognito, non nel database.
       # Un nuovo feedback sull'app arriva all'admin per email.
       environment = merge(local.cognito_env, local.email_env)
@@ -150,20 +171,23 @@ module "api" {
     concorsi = {
       routes = [
         "GET /concorsi", "GET /concorsi/{id}",
-        "GET /me/concorsi", "PUT /me/concorsi/{id}", "DELETE /me/concorsi/{id}",
+        "GET /me/concorsi", "PUT /me/concorsi/{id}", "DELETE /me/concorsi/{id}", "GET /me/storico-concorsi",
       ]
       write_tables = [module.data.table_arns.follows]
-      read_tables  = [module.data.table_arns.concorsi, module.data.table_arns.users]
+      # banche: il titolo della banca dati collegata, nel dettaglio del concorso.
+      read_tables = [module.data.table_arns.concorsi, module.data.table_arns.users, module.data.table_arns.banche]
     }
     study = {
       routes = [
         "GET /materie", "POST /sessioni", "GET /sessioni/{id}",
-        "POST /sessioni/{id}/consegna", "GET /me/statistiche", "GET /banche-dati",
+        "POST /sessioni/{id}/consegna", "GET /me/statistiche", "GET /banche-dati", "GET /banche-dati/{id}/domande",
+        "DELETE /me/progressi/{bancaId}",
       ]
-      write_tables = [module.data.table_arns.attempts]
+      # Sul profilo: il contatore degli utilizzi settimanali delle banche dati (piano Free).
+      # Progressi: domande delle banche dati già fatte e sbagliate, aggiornati a ogni consegna.
+      write_tables = [module.data.table_arns.attempts, module.data.table_arns.users, module.data.table_arns.progressi]
       read_tables = [
-        module.data.table_arns.questions, module.data.table_arns.concorsi, module.data.table_arns.users,
-        module.data.table_arns.banche,
+        module.data.table_arns.questions, module.data.table_arns.concorsi, module.data.table_arns.banche,
       ]
       # Sezione Banche dati: elenco delle banche pubblicate (tabella piccola, uno Scan).
       policies = jsonencode([{
@@ -173,12 +197,16 @@ module "api" {
       }])
     }
     billing = {
-      routes = ["GET /piani", "POST /me/abbonamento", "POST /me/codice-sconto", "GET /me/ordini/{id}"]
+      routes = [
+        "GET /piani", "POST /me/abbonamento", "POST /me/codice-sconto", "GET /me/ordini", "GET /me/ordini/{id}",
+        "GET /me/invito", "POST /me/invito",
+      ]
       # Conferme di Stripe: rotta senza login, protetta dalla firma del webhook.
       public_routes = ["POST /pubblico/stripe/webhook"]
       # Il piano è il gruppo Cognito; sul profilo stanno scadenza e periodo.
       # Ordini: uno per acquisto. Codici sconto: si conta l'uso a pagamento riuscito.
-      write_tables = [module.data.table_arns.users, module.data.table_arns.codici, module.data.table_arns.ordini]
+      # follows: al ritorno al Free resta seguito un solo concorso (gli altri vanno nello storico).
+      write_tables = [module.data.table_arns.users, module.data.table_arns.codici, module.data.table_arns.ordini, module.data.table_arns.follows]
       read_tables  = []
       # Con la chiave Stripe in terraform.tfvars si paga davvero (modalità test di Stripe in dev);
       # senza, "mock": cambio piano immediato e gratuito.
@@ -189,16 +217,53 @@ module "api" {
         STRIPE_WEBHOOK_SECRET = var.stripe_webhook_secret
       })
       policies = jsonencode([local.cognito_piani, local.invia_email, {
-        # Email per la conferma d'acquisto: sta solo in Cognito.
+        # Email per la conferma d'acquisto: sta solo in Cognito. Gruppi: piano di chi ha invitato un amico.
         Effect   = "Allow"
-        Action   = ["cognito-idp:AdminGetUser"]
+        Action   = ["cognito-idp:AdminGetUser", "cognito-idp:AdminListGroupsForUser"]
         Resource = module.auth.user_pool_arn
       }])
     }
+    ai = {
+      # Piano Pro: tutor e allenamenti con domande generate (Claude su Bedrock).
+      # Sul profilo: gettoni, token e spesa del mese, richieste al minuto.
+      # Contatori: spesa AI del mese di tutta la piattaforma (tetto mensile, email all'admin).
+      routes       = ["GET /ai/stato", "POST /ai/tutor", "POST /ai/allenamento"]
+      write_tables = [module.data.table_arns.users, module.data.table_arns.contatori]
+      read_tables  = [module.data.table_arns.attempts, module.data.table_arns.questions]
+      environment = merge(local.email_env, {
+        AI_MODEL             = var.ai_model
+        AI_TETTO_UTENTE_USD  = tostring(var.ai_tetto_utente_usd)
+        AI_TETTO_MENSILE_USD = tostring(var.ai_tetto_mensile_usd)
+      })
+      # Un allenamento da 5 domande può richiedere 15-20 secondi.
+      timeout = 29
+      policies = jsonencode([local.invia_email, {
+        # Il profilo d'inferenza EU smista la richiesta tra le regioni europee:
+        # servono il profilo (qui) e il modello in ogni regione di destinazione.
+        Effect = "Allow"
+        Action = ["bedrock:InvokeModel"]
+        Resource = [
+          "arn:aws:bedrock:${var.aws_region}:${data.aws_caller_identity.current.account_id}:inference-profile/${var.ai_model}",
+          "arn:aws:bedrock:*::foundation-model/${local.ai_base_model}",
+        ]
+      }])
+    }
+    richieste = {
+      # Assistenza: richieste degli utenti registrati (banca dati, domanda sbagliata, accesso,
+      # pagamento…). Ogni richiesta o messaggio nuovo arriva all'admin per email.
+      routes = [
+        "GET /me/richieste", "POST /me/richieste", "POST /me/richieste/{id}/messaggi", "PUT /me/richieste/{id}/letta",
+      ]
+      write_tables = [module.data.table_arns.richieste]
+      read_tables  = []
+      environment  = merge(local.email_env, local.site_env)
+      policies     = jsonencode([local.invia_email])
+    }
     pubblico = {
       # Disiscrizione dagli avvisi in un clic, dal link firmato nell'email o da Gmail & co.
-      routes        = []
-      public_routes = ["POST /pubblico/disiscrivi"]
+      routes = []
+      # Lettura degli avvisi: immagine invisibile e link delle email (firmati come la disiscrizione).
+      public_routes = ["POST /pubblico/disiscrivi", "GET /pubblico/aperto", "GET /pubblico/clic"]
       write_tables  = [module.data.table_arns.users]
       read_tables   = []
       environment   = local.disiscrizione_env
@@ -211,31 +276,40 @@ module "api" {
         "GET /admin/codici", "POST /admin/codici", "PUT /admin/codici/{codice}",
         "GET /admin/banche-dati", "POST /admin/banche-dati", "PUT /admin/banche-dati/{id}",
         "POST /admin/banche-dati/{id}/estrai", "POST /admin/banche-dati/{id}/pubblica", "POST /admin/banche-dati/{id}/ritira",
+        "DELETE /admin/banche-dati/{id}",
+        "POST /admin/banche-dati/{id}/concorsi", "DELETE /admin/banche-dati/{id}/concorsi/{concorsoId}",
         "PUT /admin/concorsi/{id}/concluso",
+        "GET /admin/ordini",
+        "GET /admin/richieste", "POST /admin/richieste/{userId}/{id}",
       ]
       # Banche dati: pubblicare scrive le domande ufficiali e collega il concorso.
       write_tables = [
         module.data.table_arns.users, module.data.table_arns.codici, module.data.table_arns.banche,
-        module.data.table_arns.questions, module.data.table_arns.concorsi,
+        module.data.table_arns.questions, module.data.table_arns.concorsi, module.data.table_arns.follows,
+        module.data.table_arns.richieste,
       ]
-      read_tables = []
+      # Contatori: spesa AI del mese nel riepilogo del pannello.
+      read_tables = [module.data.table_arns.ordini, module.data.table_arns.contatori]
       # Cambiando piano a un utente gli arriva l'email (piano attivato / tornato Free).
-      environment = merge(local.cognito_env, local.email_env, local.site_env, { CONTENUTI_BUCKET = module.contenuti.bucket })
+      environment = merge(local.cognito_env, local.email_env, local.site_env, {
+        CONTENUTI_BUCKET     = module.contenuti.bucket
+        AI_TETTO_MENSILE_USD = tostring(var.ai_tetto_mensile_usd)
+      })
       policies = jsonencode([local.cognito_piani, local.invia_email, {
         # PDF delle banche dati: link firmato per il caricamento, lettura delle domande estratte,
-        # copia su se stesso per rifare l'estrazione.
+        # copia su se stesso per rifare l'estrazione, cancellazione quando l'admin la elimina.
         Effect   = "Allow"
-        Action   = ["s3:PutObject", "s3:GetObject"]
+        Action   = ["s3:PutObject", "s3:GetObject", "s3:DeleteObject"]
         Resource = "${module.contenuti.bucket_arn}/banche-dati/*"
         }, {
         Effect   = "Allow"
         Action   = ["dynamodb:Scan"]
         Resource = module.data.table_arns.banche
         }, {
-        # Elenco dei codici sconto nel pannello: la tabella è piccola, basta uno Scan.
+        # Elenco dei codici sconto e storico pagamenti nel pannello: tabelle piccole, basta uno Scan.
         Effect   = "Allow"
         Action   = ["dynamodb:Scan"]
-        Resource = module.data.table_arns.codici
+        Resource = [module.data.table_arns.codici, module.data.table_arns.ordini]
         }, {
         Effect = "Allow"
         Action = [
@@ -249,6 +323,7 @@ module "api" {
   }
 }
 
+# Job pianificati (modules/jobs): orari in ora italiana, codice in packages/functions/src/jobs/.
 module "jobs" {
   source        = "../../modules/jobs"
   name          = local.name
@@ -257,10 +332,33 @@ module "jobs" {
 
   jobs = {
     inpa-scraper = {
-      description  = "Importa i bandi aperti da inPA e avvisa l'admin dei nuovi con banca dati"
-      schedule     = "cron(0 6 * * ? *)"
+      description = "Importa i bandi aperti e i chiusi recenti da inPA, rifà la lista in cache, avvisa l'admin dei nuovi con banca dati"
+      schedule    = "cron(0 6 * * ? *)"
+      # Il massimo di Lambda: l'import dello storico dei chiusi (storico-bandi) va a blocchi da ~13 minuti.
+      timeout      = 900
       write_tables = [module.data.table_arns.concorsi]
-      policies     = jsonencode([local.invia_email])
+      environment  = local.cache_bandi_env
+      policies     = jsonencode([local.invia_email, local.cache_bandi])
+    }
+    pulizia-bandi = {
+      description = "Domenica e mercoledì: toglie i bandi che inPA non elenca più e rifà la lista in cache"
+      # Due volte a settimana: così il controllo "job fermo" (al massimo 7 giorni in CloudWatch)
+      # vede sempre almeno un'esecuzione, senza falsi allarmi prima del giro.
+      schedule = "cron(0 3 ? * SUN,WED *)"
+      timeout  = 900
+      # Cancella dalla tabella dei bandi; Scan per trovare quelli non più su inPA.
+      write_tables = [module.data.table_arns.concorsi]
+      environment  = local.cache_bandi_env
+      policies = jsonencode([local.invia_email, local.cache_bandi, {
+        Effect   = "Allow"
+        Action   = ["dynamodb:Scan"]
+        Resource = module.data.table_arns.concorsi
+        }, {
+        # Il giro di tutte le pagine non sta in una Lambda: si rilancia da sola.
+        Effect   = "Allow"
+        Action   = ["lambda:InvokeFunction"]
+        Resource = "arn:aws:lambda:${var.aws_region}:${data.aws_caller_identity.current.account_id}:function:${local.name}-pulizia-bandi"
+      }])
     }
     avvisi = {
       description  = "Email con i bandi nuovi dei comparti scelti: ogni giorno o il lunedì"
@@ -283,7 +381,7 @@ module "jobs" {
     scadenze = {
       description  = "Piani scaduti -> Free (con email); promemoria 3 giorni prima della scadenza"
       schedule     = "cron(15 6 * * ? *)"
-      write_tables = [module.data.table_arns.users]
+      write_tables = [module.data.table_arns.users, module.data.table_arns.follows]
       environment  = merge(local.cognito_env, local.site_env)
       policies = jsonencode([local.invia_email, local.cognito_piani, {
         Effect   = "Allow"
@@ -320,5 +418,37 @@ removed {
 
   lifecycle {
     destroy = false
+  }
+}
+
+# --- Monitoraggio -------------------------------------------------------------
+# Allarmi CloudWatch sulle risorse principali -> topic SNS imieiconcorsi-dev-monitoraggio
+# (email a admin_email, da confermare dal link di AWS) + dashboard "imieiconcorsi-dev".
+
+module "monitoraggio" {
+  source     = "../../modules/monitoraggio"
+  name       = local.name
+  aws_region = var.aws_region
+  email      = var.admin_email
+
+  api_id          = module.api.api_id
+  api_functions   = module.api.function_names
+  job_functions   = module.jobs.function_names
+  other_functions = merge(module.contenuti.function_names, { auth-pre-signup = module.auth_trigger.function_name })
+  # Giorni massimi senza esecuzioni prima dell'allarme (CloudWatch: al massimo 7).
+  # pulizia-bandi gira la domenica: in 7 giorni di fila ce n'è sempre una.
+  # Giorni senza esecuzioni prima dell'allarme: 2 per i job di ogni giorno, 5 per la pulizia
+  # (domenica e mercoledì, al massimo 4 giorni tra un giro e l'altro). Con 1 giorno l'allarme
+  # scatterebbe ogni notte tra la mezzanotte e l'ora del job.
+  job_heartbeat = { inpa-scraper = 2, avvisi = 2, scadenze = 2, pulizia-bandi = 5 }
+
+  table_names        = module.data.table_names
+  distribution_id    = module.web.distribution_id
+  ai_model           = var.ai_model
+  budget_mensile_usd = var.budget_mensile_usd
+
+  providers = {
+    aws           = aws
+    aws.us_east_1 = aws.us_east_1
   }
 }

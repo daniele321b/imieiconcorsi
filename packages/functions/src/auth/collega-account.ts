@@ -1,3 +1,7 @@
+// Regole del trigger "pre sign-up" (pre-signup.ts) per evitare account doppi: chi ha già un
+// account email e password e poi entra con Google o Facebook (stessa email) finisce nello
+// stesso account. Senza AWS: le prova la suite di test.
+
 /** Provider social come li chiama Cognito (identity provider configurati in Terraform). */
 const PROVIDER: Record<string, string> = { google: "Google", facebook: "Facebook" };
 
@@ -12,11 +16,13 @@ export function providerDaUsername(username: string) {
   return nome ? { nome, id: username.slice(i + 1) } : undefined;
 }
 
+/** Un account già presente con la stessa email (username Cognito e stato, es. CONFIRMED). */
 export interface UtenteEsistente {
   username: string;
   stato?: string;
 }
 
+/** Cosa fa il trigger: lasciar procedere, collegare a un account esistente o rifiutare con un messaggio. */
 export type Decisione =
   | { azione: "procedi" }
   | { azione: "collega"; destinazione: string }

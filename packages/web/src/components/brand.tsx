@@ -16,6 +16,9 @@ import {
 import type { MateriaApi } from "../lib/api";
 import { cx } from "./ui";
 
+// Elementi grafici del marchio: logo, icone e colori delle materie, icone di Google e Facebook.
+
+/** Logo di iMieiConcorsi; `light` per gli sfondi scuri. */
 export function Logo({ className, light }: { className?: string; light?: boolean }) {
   return (
     <span className={cx("inline-flex items-center gap-2 font-extrabold tracking-tight", className)}>
@@ -30,6 +33,7 @@ export function Logo({ className, light }: { className?: string; light?: boolean
   );
 }
 
+/** Icona di ogni materia (il nome viene da MATERIE in core/domain.ts). */
 const ICONE: Record<MateriaApi["icona"], LucideIcon> = {
   scale: Scale,
   landmark: Landmark,
@@ -45,6 +49,7 @@ const ICONE: Record<MateriaApi["icona"], LucideIcon> = {
   languages: Languages,
 };
 
+/** Colori di sfondo e testo di ogni materia, per riconoscerle a colpo d'occhio. */
 export const COLORI_MATERIA: Record<string, string> = {
   "diritto-amministrativo": "bg-indigo-50 text-indigo-600",
   "diritto-costituzionale": "bg-sky-50 text-sky-600",
@@ -60,6 +65,7 @@ export const COLORI_MATERIA: Record<string, string> = {
   inglese: "bg-fuchsia-50 text-fuchsia-600",
 };
 
+/** Icona colorata di una materia. */
 export function IconaMateria({ icona, materia, className }: { icona: MateriaApi["icona"]; materia: string; className?: string }) {
   const Icon = ICONE[icona];
   return (
@@ -69,6 +75,7 @@ export function IconaMateria({ icona, materia, className }: { icona: MateriaApi[
   );
 }
 
+/** Logo di Google per il pulsante di accesso. */
 export function GoogleIcon({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" className={className} aria-hidden>
@@ -80,6 +87,7 @@ export function GoogleIcon({ className }: { className?: string }) {
   );
 }
 
+/** Logo di Facebook per il pulsante di accesso. */
 export function FacebookIcon({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" className={className} aria-hidden>

@@ -1,10 +1,11 @@
-import { PIANI, type PianoId } from "./domain";
+import { PIANI, USI_BANCHE_DATI_FREE, type PianoId } from "./domain";
 import { inviaEmail } from "./email";
 
 // Email sul cambio di piano: passaggio a un piano a pagamento e ritorno al Free.
 // (La conferma di un acquisto con il riepilogo del pagamento la manda billing.)
 // Se l'email non parte il cambio di piano resta valido: l'errore finisce nei log.
 
+/** Data per le email, in ora italiana: "9 ottobre 2026". */
 export const dataIt = (iso: string) =>
   new Intl.DateTimeFormat("it-IT", { day: "numeric", month: "long", year: "numeric", timeZone: "Europe/Rome" }).format(
     new Date(iso),
@@ -52,8 +53,9 @@ export async function emailTornatoFree(args: {
     saluto(args.nome),
     "",
     perche,
-    "I tuoi progressi e le statistiche restano salvati. Con il Free hai 1 concorso seguito,",
-    "sessioni da 10 domande, 1 simulazione a settimana e un annuncio ogni 5 domande.",
+    "I tuoi progressi e le statistiche restano salvati. Con il Free hai 1 concorso seguito",
+    "(resta quello che hai seguito per ultimo; gli altri li ritrovi nello storico del profilo),",
+    `sessioni da 10 domande, 1 simulazione e ${USI_BANCHE_DATI_FREE} utilizzi delle banche dati a settimana, e un annuncio ogni 5 domande.`,
     "",
     `Per tornare a un piano a pagamento: ${sito()}/app/piani`,
   ]);

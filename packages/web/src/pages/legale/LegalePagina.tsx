@@ -38,6 +38,7 @@ export function LegalePagina({ titolo, children }: { titolo: string; children: R
   );
 }
 
+/** Piè di pagina con i link a Termini, Privacy ed Eliminazione dei dati; `scuro` per la home. */
 export function PiePagina({ scuro }: { scuro?: boolean }) {
   const cls = scuro ? "text-brand-200/70 hover:text-white" : "text-slate-500 hover:text-slate-800";
   return (

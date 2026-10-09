@@ -1,11 +1,18 @@
 import type { CompartoId, Concorso, MateriaId } from "@imieiconcorsi/core/domain";
 
+// Accesso a inPA (il portale dei concorsi pubblici) e conversione dei suoi bandi nei nostri
+// Concorso: comparto dedotto da ente e settore, materie lette dal testo (o stimate per comparto),
+// segnale "cita una banca dati". Lo usano lo scraper del mattino e la pulizia della domenica.
+//
 // API JSON pubblica usata dal portale inPA stesso. Una chiamata al giorno, sequenziale.
 const SEARCH_URL = "https://portale.inpa.gov.it/concorsi-smart/api/concorso-public-area/search-better";
 const DETTAGLIO_URL = "https://www.inpa.gov.it/bandi-e-avvisi/dettaglio-bando-avviso/?concorso_id=";
+/** Bandi per pagina (il massimo che inPA accetta senza rallentare). */
 const PAGE_SIZE = 100;
+/** Pausa tra una pagina e l'altra, per non pesare sul portale. */
 const PAUSA_MS = 500;
 
+/** Un bando come lo restituisce inPA (solo i campi che usiamo). */
 export interface InpaBando {
   id: string;
   titolo: string;
@@ -28,21 +35,49 @@ interface InpaPage {
   totalElements: number;
 }
 
-export async function* bandiAperti(fetchFn: typeof fetch = fetch): AsyncGenerator<InpaBando[]> {
-  for (let page = 0; ; page++) {
-    const res = await fetchFn(`${SEARCH_URL}?page=${page}&size=${PAGE_SIZE}`, {
-      method: "POST",
-      headers: { "content-type": "application/json", "user-agent": "iMieiConcorsi/0.1 (aggiornamento giornaliero)" },
-      body: JSON.stringify({ text: "", status: ["OPEN"] }),
-    });
-    if (!res.ok) throw new Error(`inPA ha risposto ${res.status} alla pagina ${page}`);
-    const data = (await res.json()) as InpaPage;
-    yield data.content;
-    if (data.last || !data.content.length) return;
-    await new Promise((r) => setTimeout(r, PAUSA_MS));
+/** OPEN = domande aperte; CLOSED = scadute (inPA le dà più o meno dalla scadenza più recente). */
+export type StatoInpa = "OPEN" | "CLOSED";
+
+/** Una pagina di risultati di inPA. */
+export async function cercaPagina(stato: StatoInpa, page: number, fetchFn: typeof fetch = fetch): Promise<InpaPage> {
+  const res = await fetchFn(`${SEARCH_URL}?page=${page}&size=${PAGE_SIZE}`, {
+    method: "POST",
+    headers: { "content-type": "application/json", "user-agent": "iMieiConcorsi/0.1 (aggiornamento giornaliero)" },
+    body: JSON.stringify({ text: "", status: [stato] }),
+  });
+  if (!res.ok) throw new Error(`inPA ha risposto ${res.status} alla pagina ${page} (${stato})`);
+  return (await res.json()) as InpaPage;
+}
+
+/** Attesa tra due chiamate. */
+export const pausa = () => new Promise((r) => setTimeout(r, PAUSA_MS));
+
+/** Pagine di bandi a partire da `daPagina`, una chiamata ogni PAUSA_MS. */
+export async function* bandi(stato: StatoInpa, daPagina = 0, fetchFn: typeof fetch = fetch): AsyncGenerator<{ pagina: number; bandi: InpaBando[]; ultima: boolean }> {
+  for (let page = daPagina; ; page++) {
+    const data = await cercaPagina(stato, page, fetchFn);
+    const ultima = data.last || !data.content.length;
+    yield { pagina: page, bandi: data.content, ultima };
+    if (ultima) return;
+    await pausa();
   }
 }
 
+/** Tutti i bandi con le domande aperte, una pagina alla volta. */
+export async function* bandiAperti(fetchFn: typeof fetch = fetch): AsyncGenerator<InpaBando[]> {
+  for await (const p of bandi("OPEN", 0, fetchFn)) yield p.bandi;
+}
+
+/**
+ * La pagina di chiusi è tutta più vecchia di `limite`? L'ordine di inPA è solo
+ * approssimativo, quindi conta la scadenza più recente della pagina.
+ */
+export function paginaPiuVecchiaDi(pagina: InpaBando[], limite: string) {
+  const scadenze = pagina.map((b) => b.dataScadenza).filter((d): d is string => !!d);
+  return scadenze.length > 0 && scadenze.every((d) => d < limite);
+}
+
+/** Comparto di un bando dalle parole di ente, settore e titolo: vince la prima regola che corrisponde. */
 const REGOLE_COMPARTO: [CompartoId, RegExp][] = [
   ["forze-ordine", /polizia di stato|polizia penitenziaria|carabinieri|guardia di finanza|vigili del fuoco|esercito|marina militare|aeronautica|ministero della difesa|ministero dell'interno/i],
   ["inps", /\binps\b|\binail\b|previdenza/i],
@@ -94,10 +129,12 @@ const PAROLE_MATERIA: [MateriaId, RegExp][] = [
   ["inglese", /lingua inglese|\binglese\b/i],
 ];
 
+/** Materie citate nel testo del bando (es. "diritto amministrativo", "lingua inglese"). */
 export function materieDalTesto(testo: string): MateriaId[] {
   return PAROLE_MATERIA.filter(([, re]) => re.test(testo)).map(([m]) => m);
 }
 
+/** Testo senza tag HTML e spazi doppi. */
 const testoSemplice = (html?: string | null) =>
   html
     ?.replace(/<[^>]+>/g, " ")
@@ -110,6 +147,7 @@ const BANCA_DATI = /banc(a|he)[\s-]*dati/i;
 export const citaBancaDati = (b: InpaBando) =>
   BANCA_DATI.test([b.titolo, b.descrizioneBreve, testoSemplice(b.descrizione)].filter(Boolean).join(" "));
 
+/** Da un bando di inPA al nostro Concorso (comparto, materie, link al dettaglio). */
 export function toConcorso(b: InpaBando, now = new Date()): Concorso {
   const comparto = classificaComparto(b);
   // Con almeno due materie trovate nel bando ci fidiamo del testo; altrimenti stima per comparto.

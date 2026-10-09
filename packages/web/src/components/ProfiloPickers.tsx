@@ -3,6 +3,10 @@ import { Check } from "lucide-react";
 import { IconaMateria } from "./brand";
 import { cx } from "./ui";
 
+// Selettori del profilo, usati sia nell'onboarding sia nella pagina Profilo: comparti di
+// interesse, livello in ogni materia (1-5) e frequenza degli avvisi email.
+
+/** Scelta dei comparti di interesse (almeno uno): decidono i bandi mostrati e gli avvisi. */
 export function InteressiPicker({ value, onChange }: { value: CompartoId[]; onChange: (v: CompartoId[]) => void }) {
   const toggle = (id: CompartoId) => onChange(value.includes(id) ? value.filter((v) => v !== id) : [...value, id]);
   return (
@@ -39,8 +43,10 @@ export function InteressiPicker({ value, onChange }: { value: CompartoId[]; onCh
   );
 }
 
+/** Nomi dei livelli da 1 a 5. */
 const LIVELLI = ["Base", "Elementare", "Medio", "Buono", "Ottimo"];
 
+/** Livello dichiarato in ogni materia: lo studio propone prima le domande vicine a quel livello. */
 export function LivelliPicker({
   value,
   onChange,
@@ -85,12 +91,14 @@ export function LivelliPicker({
   );
 }
 
+/** Le tre scelte per gli avvisi sui nuovi bandi. */
 const FREQUENZE: { id: FrequenzaAvvisi; titolo: string; testo: string }[] = [
   { id: "giornaliero", titolo: "Ogni giorno", testo: "Un'email al mattino quando escono nuovi bandi per te." },
   { id: "settimanale", titolo: "Ogni settimana", testo: "Un riepilogo il lunedì con tutti i bandi della settimana." },
   { id: "mai", titolo: "Nessun avviso", testo: "Controllerai tu i bandi nell'app." },
 ];
 
+/** Ogni quanto ricevere l'email con i nuovi bandi. */
 export function AvvisiPicker({ value, onChange }: { value: FrequenzaAvvisi; onChange: (v: FrequenzaAvvisi) => void }) {
   return (
     <div className="grid gap-3 sm:grid-cols-3" role="radiogroup">

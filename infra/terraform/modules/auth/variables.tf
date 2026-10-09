@@ -4,7 +4,8 @@ variable "name" {
 }
 
 variable "aws_region" {
-  type = string
+  description = "Regione AWS del user pool"
+  type        = string
 }
 
 # Interruttore separato dall'ARN: l'ARN di una Lambda nuova è noto solo dopo l'apply,
@@ -27,23 +28,27 @@ variable "app_origins" {
 }
 
 variable "google_client_id" {
-  type    = string
-  default = ""
+  description = "Client id OAuth di Google; vuoto = niente accesso con Google"
+  type        = string
+  default     = ""
 }
 
 variable "google_client_secret" {
-  type      = string
-  default   = ""
-  sensitive = true
+  description = "Client secret OAuth di Google"
+  type        = string
+  default     = ""
+  sensitive   = true
 }
 
 variable "facebook_app_id" {
-  type    = string
-  default = ""
+  description = "App id di Facebook; vuoto = niente accesso con Facebook"
+  type        = string
+  default     = ""
 }
 
 variable "facebook_app_secret" {
-  type      = string
-  default   = ""
-  sensitive = true
+  description = "App secret di Facebook"
+  type        = string
+  default     = ""
+  sensitive   = true
 }

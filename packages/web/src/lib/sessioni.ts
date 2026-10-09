@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { api, ApiError, type NuovaSessione, type SessioneApi } from "./api";
+import { leggiOrdineRisposte } from "./ordineRisposte";
 
 /** Avvia una sessione di studio o una simulazione e apre la pagina della sessione. */
 export function useAvviaSessione() {
@@ -12,7 +13,8 @@ export function useAvviaSessione() {
     setInCorso(chiave);
     setErrore(undefined);
     try {
-      const sessione = await api<SessioneApi>("/sessioni", { method: "POST", body: input });
+      // Le risposte delle banche dati nell'ordine scelto dall'utente (senza banca dati non conta).
+      const sessione = await api<SessioneApi>("/sessioni", { method: "POST", body: { ordineRisposte: leggiOrdineRisposte(), ...input } });
       navigate(`/app/sessione/${sessione.id}`, { state: sessione });
     } catch (err) {
       setErrore(err instanceof ApiError ? err : new ApiError(0, "Errore di rete"));

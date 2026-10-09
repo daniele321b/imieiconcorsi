@@ -1,12 +1,15 @@
 import type { FiltriConcorsi } from "@imieiconcorsi/core/concorsi";
 import { tipoProcedura } from "../lib/format";
+import { cx } from "./ui";
 
+/** Stile comune dei menu a tendina del pannello. */
 const select =
   "mt-1 block h-10 w-full rounded-xl border-0 bg-white px-3 text-sm text-slate-900 ring-1 ring-slate-300 focus:ring-2 focus:ring-brand-500";
 
+/** Campo numerico vuoto = filtro spento. */
 const num = (v: string) => (v ? Number(v) : undefined);
 
-/** Pannello dei filtri della ricerca: scadenza, data di uscita, posti, sede, procedura, banca dati. */
+/** Pannello dei filtri della ricerca: stato, scadenza, data di uscita, posti, sede, procedura, banca dati. */
 export function FiltriConcorsiPanel({
   value,
   onChange,
@@ -21,9 +24,36 @@ export function FiltriConcorsiPanel({
 
   return (
     <div className="grid gap-3 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-200 sm:grid-cols-2 lg:grid-cols-3">
+      {/* La scadenza è per inviare la domanda: chi l'ha già inviata continua a prepararsi sui chiusi. */}
+      <fieldset className="sm:col-span-2 lg:col-span-3">
+        <legend className="text-xs font-semibold text-slate-500">Bandi</legend>
+        <div className="mt-1 flex flex-wrap gap-x-6 gap-y-2">
+          {(
+            [
+              ["aperti", "Aperti", "domande ancora aperte"],
+              ["chiusi", "Chiusi", "domande scadute, concorso in corso"],
+            ] as const
+          ).map(([chiave, nome, nota]) => (
+            <label key={chiave} className="flex items-center gap-2 text-sm font-medium text-slate-700">
+              <input
+                type="checkbox"
+                checked={value[chiave] !== false}
+                onChange={(e) => set({ [chiave]: e.target.checked ? undefined : false })}
+                className="size-4 rounded border-slate-300 text-brand-600 focus:ring-brand-500"
+              />
+              {nome} <span className="font-normal text-slate-400">({nota})</span>
+            </label>
+          ))}
+        </div>
+      </fieldset>
       <label className="text-xs font-semibold text-slate-500">
         Scadenza
-        <select value={value.scadeEntroGiorni ?? ""} onChange={(e) => set({ scadeEntroGiorni: num(e.target.value) })} className={select}>
+        <select
+          value={value.scadeEntroGiorni ?? ""}
+          onChange={(e) => set({ scadeEntroGiorni: num(e.target.value) })}
+          disabled={value.aperti === false}
+          className={cx(select, "disabled:opacity-50")}
+        >
           <option value="">Qualsiasi</option>
           <option value="7">Entro 7 giorni</option>
           <option value="15">Entro 15 giorni</option>

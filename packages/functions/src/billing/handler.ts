@@ -1,7 +1,15 @@
 import { randomUUID } from "node:crypto";
-import { GetCommand } from "@aws-sdk/lib-dynamodb";
+import { GetCommand, QueryCommand } from "@aws-sdk/lib-dynamodb";
 import { db, getProfilo, tables } from "@imieiconcorsi/core/db";
-import { PIANI, VERSIONE_TERMINI, type CodiceSconto, type PianoId } from "@imieiconcorsi/core/domain";
+import {
+  periodo as durata,
+  GIORNI_PREMIO_INVITO,
+  PERIODO_IDS,
+  PIANI,
+  VERSIONE_TERMINI,
+  type CodiceSconto,
+  type PianoId,
+} from "@imieiconcorsi/core/domain";
 import { emailTornatoFree } from "@imieiconcorsi/core/email-piani";
 import { env } from "@imieiconcorsi/core/env";
 import { type Event, HttpError, notFound, service } from "@imieiconcorsi/core/http";
@@ -9,6 +17,7 @@ import { assegnaPiano } from "@imieiconcorsi/core/piani";
 import { motivoRifiuto, normalizzaCodice, prezzoScontato } from "@imieiconcorsi/core/sconti";
 import type { APIGatewayProxyEventV2, APIGatewayProxyResultV2 } from "aws-lambda";
 import { z } from "zod";
+import { codiceDi, usaCodiceInvito } from "./inviti";
 import { chiudiOrdine, completaOrdine, leggiOrdine, salvaOrdine, type Ordine } from "./ordini";
 import { creaSessione, firmaWebhookValida, leggiSessione, MINIMO_STRIPE } from "./stripe";
 
@@ -17,10 +26,11 @@ import { creaSessione, firmaWebhookValida, leggiSessione, MINIMO_STRIPE } from "
 //             con la conferma di Stripe (webhook) o quando la pagina di ritorno trova il pagamento;
 //   "mock":   stesso giro, ma l'ordine si completa subito, senza pagare (prove).
 
+/** Acquisto (o ritorno al Free): piano, durata, consenso e codice sconto facoltativo. */
 const Abbonamento = z
   .object({
     piano: z.enum(["free", "medium", "pro"]),
-    periodo: z.enum(["mensile", "annuale"]).default("mensile"),
+    periodo: z.enum(PERIODO_IDS).default("mensile"),
     /**
      * Per i piani a pagamento: l'utente chiede l'accesso immediato e prende atto che perde
      * il diritto di recesso (art. 59, c. 1, lett. o, Codice del consumo). Senza, niente acquisto.
@@ -33,8 +43,10 @@ const Abbonamento = z
     path: ["rinunciaRecesso"],
   });
 
+/** Codice sconto da controllare prima dell'acquisto. */
 const VerificaCodice = z.object({ codice: z.string().max(40) });
 
+/** Un codice (sconto o invito) dalla tabella codici. */
 async function leggiCodice(codice: string) {
   const res = await db.send(new GetCommand({ TableName: tables.codici, Key: { codice } }));
   return res.Item as CodiceSconto | undefined;
@@ -49,6 +61,7 @@ async function codiceValido(userId: string, codiceInserito: string, piano: Piano
   return c!;
 }
 
+/** Risposta JSON per la rotta del webhook, che non passa da service(). */
 const json = (statusCode: number, body: unknown): APIGatewayProxyResultV2 => ({
   statusCode,
   headers: { "content-type": "application/json", "cache-control": "no-store" },
@@ -84,7 +97,9 @@ async function webhookStripe(event: APIGatewayProxyEventV2): Promise<APIGatewayP
   return json(200, { ricevuto: true });
 }
 
+/** Le rotte con login. */
 const servizio = service({
+  /** Piani con prezzi e limiti, piano attuale, scadenza e se l'utente può ancora usare un codice d'invito. */
   "GET /piani": async ({ userId, piano }) => {
     const profilo = await getProfilo(userId);
     return {
@@ -94,6 +109,28 @@ const servizio = service({
       scadenza: profilo?.scadenzaPiano,
       modalita: process.env.BILLING_MODE,
     };
+  },
+
+  /** Il proprio codice "invita un amico" (creato la prima volta) e com'è andata. */
+  "GET /me/invito": async (ctx) => {
+    const [c, profilo] = await Promise.all([codiceDi(ctx.userId), getProfilo(ctx.userId)]);
+    return {
+      codice: c.codice,
+      link: `${env("SITE_URL")}/?invito=${encodeURIComponent(c.codice)}`,
+      iscritti: c.iscritti,
+      premi: c.premi,
+      giorniPerPremio: GIORNI_PREMIO_INVITO,
+      // Si può ancora inserire il codice di un amico?
+      puoiInserire: !profilo?.invitatoDa && !profilo?.ultimoAcquisto,
+      invitato: !!profilo?.invitatoDa,
+    };
+  },
+
+  /** L'utente inserisce il codice dell'amico che l'ha invitato (dal link o dal profilo). */
+  "POST /me/invito": async (ctx) => {
+    const { codice } = ctx.body(VerificaCodice);
+    await usaCodiceInvito(ctx.userId, codice);
+    return { ok: true };
   },
 
   /** Controllo del codice prima dell'acquisto, per mostrare i prezzi scontati. Non consuma il codice. */
@@ -152,7 +189,7 @@ const servizio = service({
       const sessione = await creaSessione({
         ordineId: ordine.id,
         email: ctx.email,
-        descrizione: `Piano ${PIANI[piano].nome} ${periodo === "mensile" ? "30 giorni" : "365 giorni"}`,
+        descrizione: `Piano ${PIANI[piano].nome} ${durata(periodo).giorni} giorni`,
         centesimi: Math.round(importo * 100),
         ritorno: `${sito}/app/pagamento?ordine=${ordine.id}`,
         annullato: `${sito}/app/pagamento?ordine=${ordine.id}&annullato=1`,
@@ -169,6 +206,39 @@ const servizio = service({
    * Esito di un ordine, per la pagina di ritorno da Stripe. Se la conferma di Stripe non è
    * ancora arrivata chiede direttamente a Stripe: così il piano si attiva anche senza webhook.
    */
+  /**
+   * Storico dei pagamenti dell'utente, dal più recente (indice perUtente della tabella ordini).
+   * Anche i tentativi non completati: il sito li mostra a parte.
+   */
+  "GET /me/ordini": async ({ userId }) => {
+    const res = await db.send(
+      new QueryCommand({
+        TableName: tables.ordini,
+        IndexName: "perUtente",
+        KeyConditionExpression: "userId = :u",
+        ExpressionAttributeValues: { ":u": userId },
+        ScanIndexForward: false,
+        Limit: 100,
+      }),
+    );
+    return {
+      ordini: ((res.Items ?? []) as Ordine[]).map((o) => ({
+        id: o.id,
+        piano: o.piano,
+        periodo: o.periodo,
+        prezzo: o.prezzo,
+        importo: o.importo,
+        codiceSconto: o.codiceSconto,
+        percentualeSconto: o.percentualeSconto,
+        stato: o.stato,
+        creatoIl: o.creatoIl,
+        pagatoIl: o.pagatoIl,
+        scadenzaPiano: o.scadenzaPiano,
+      })),
+    };
+  },
+
+  /** Stato di un ordine (pagina di ritorno da Stripe); se il webhook tarda lo si chiede a Stripe. */
   "GET /me/ordini/{id}": async (ctx) => {
     let ordine = await leggiOrdine(ctx.params.id!);
     if (!ordine || ordine.userId !== ctx.userId) throw notFound("Ordine");
@@ -191,5 +261,6 @@ const servizio = service({
   },
 });
 
+/** Il webhook di Stripe non ha login: va gestito a parte; tutto il resto passa da service(). */
 export const handler = (event: APIGatewayProxyEventV2) =>
   event.routeKey === "POST /pubblico/stripe/webhook" ? webhookStripe(event) : servizio(event as Event);

@@ -2,22 +2,32 @@
 
 Stack autonomo di iMieiConcorsi, tutto serverless in `eu-south-1` (Milano): stato
 Terraform, autenticazione, dati e servizi suoi, nessuna dipendenza da altri
-progetti. Comandi pronti in [COMANDI-RAPIDI.md](COMANDI-RAPIDI.md).
+progetti. Comandi pronti in [COMANDI-RAPIDI.md](COMANDI-RAPIDI.md). Come è fatto il
+codice: [ARCHITETTURA.md](ARCHITETTURA.md) e [MAPPA-CODICE.md](MAPPA-CODICE.md).
 
 ```
 Browser ──HTTPS──▶ CloudFront: dev.imieiconcorsi.it (prod: imieiconcorsi.it, + WAF)
                      ├── /api/*  ──▶ API Gateway HTTP (JWT Cognito)
-                     │                 ├── profile    /me, /me/profilo                       ──▶ users
-                     │                 ├── concorsi   /concorsi, /me/concorsi                ──▶ follows   (legge concorsi, users)
-                     │                 ├── study      /materie, /sessioni, /me/statistiche   ──▶ attempts  (legge questions, concorsi, users)
-                     │                 ├── billing    /piani, /me/abbonamento                ──▶ users + gruppi Cognito
-                     │                 └── admin      /admin/riepilogo, /admin/utenti/...    ──▶ users + Cognito (solo gruppo admin)
+                     │                 ├── profile    /me, /me/profilo, /me/feedback           ──▶ users (+ cancella tutto con DELETE /me)
+                     │                 ├── concorsi   /concorsi, /me/concorsi, storico         ──▶ follows   (legge concorsi, users)
+                     │                 ├── study      /sessioni, /banche-dati, /me/statistiche ──▶ attempts, progressi, users (legge questions, …)
+                     │                 ├── billing    /piani, /me/abbonamento, /me/invito      ──▶ ordini, codici, users + gruppi Cognito ◀── webhook Stripe
+                     │                 ├── ai         /ai/tutor, /ai/allenamento               ──▶ Bedrock (Claude, EU), users, contatori
+                     │                 ├── richieste  /me/richieste                            ──▶ richieste (+ email all'admin)
+                     │                 ├── pubblico   link delle email (senza login, firmati)  ──▶ users
+                     │                 └── admin      /admin/...                               ──▶ tutto, solo gruppo admin
+                     ├── /dati/bandi/* ──▶ S3: lista dei bandi in cache (rifatta ogni mattina)
                      └── tutto il resto ──▶ S3 privato: sito React + config.json
 Browser ──HTTPS──▶ Cognito (login email/password, Google, Facebook; gruppi medium, pro, admin)
 
 EventBridge Scheduler, ora italiana
-  06:00 ──▶ inpa-scraper ──▶ concorsi            ──▶ email all'admin: nuovi bandi con banca dati
-  06:15 ──▶ scadenze     ──▶ gruppi Cognito, users ──▶ email agli utenti: piano in scadenza tra 3 giorni
+  06:00     ──▶ inpa-scraper  ──▶ concorsi + lista in cache ──▶ email all'admin: nuovi bandi con banca dati
+  06:15     ──▶ scadenze      ──▶ gruppi Cognito, users      ──▶ email agli utenti: piano in scadenza / scaduto
+  07:00     ──▶ avvisi        ──▶ users                      ──▶ email con i bandi nuovi dei comparti scelti
+  dom e mer 03:00 ──▶ pulizia-bandi ──▶ concorsi             ──▶ toglie i bandi che inPA non elenca più
+
+S3 contenuti ──▶ import-domande (banca statica) · estrai-banca-dati (PDF delle banche dati ufficiali)
+CloudWatch (allarmi + dashboard) ──▶ SNS imieiconcorsi-dev-monitoraggio ──▶ email all'admin
 
 Ambiente "shared" (comune a dev e prod): SES, mittente delle email
 ```
@@ -45,9 +55,10 @@ mai messa in cache (`Cache-Control: no-store`).
 | S3 `web-…` | Sito statico, bucket privato (accesso solo da CloudFront) |
 | Cognito user pool + dominio `imieiconcorsi-dev.auth.eu-south-1.amazoncognito.com` | Email come username, verifica con codice; Google/Facebook se configurati |
 | API Gateway HTTP | Autorizzazione JWT su tutte le route, limite 50 richieste/s in dev. In dev risponde anche al suo indirizzo diretto (`scripts/deploy.sh urls`); in prod quell'accesso va bloccato |
-| 5 Lambda di servizio (`profile`, `concorsi`, `study`, `billing`, `admin`) + 2 job (`inpa-scraper`, `scadenze`) | Node.js 22, arm64; ognuna con un ruolo IAM limitato alle sue tabelle e ai permessi Cognito/SES che le servono |
-| DynamoDB `users`, `concorsi`, `follows`, `questions`, `attempts` | On demand; backup continuo su `users` e `attempts` |
-| EventBridge Scheduler | Lancia i job alle 6:00 e alle 6:15, ora italiana |
+| 8 Lambda di servizio (`profile`, `concorsi`, `study`, `billing`, `ai`, `richieste`, `pubblico`, `admin`) + 4 job (`inpa-scraper`, `pulizia-bandi`, `avvisi`, `scadenze`) + `import-domande`, `estrai-banca-dati`, `auth-pre-signup` | Node.js 22, arm64; ognuna con un ruolo IAM limitato alle sue tabelle e ai permessi Cognito/SES/Bedrock che le servono |
+| DynamoDB `users`, `concorsi`, `follows`, `questions`, `attempts`, `codici`, `ordini`, `banche-dati`, `richieste`, `progressi`, `contatori` | On demand; backup continuo sulle tabelle con dati non ricostruibili (utenti, sessioni, codici, ordini, richieste) |
+| EventBridge Scheduler | Lancia i job (6:00, 6:15, 7:00 e domenica e mercoledì alle 3:00), ora italiana |
+| CloudWatch + SNS + Budgets | Allarmi del monitoraggio, dashboard, budget mensile dell'account |
 | SES (ambiente shared, nome `imieiconcorsi`) | Mittente verificato e configuration set con soppressione automatica di rimbalzi e reclami. Parte in sandbox |
 | S3 `imieiconcorsi-tfstate-<account>` | Stato Terraform (creato da `bootstrap`, versionato e cifrato) |
 
@@ -69,6 +80,7 @@ infra/terraform/
     ├── ses/              identità SES e configuration set
     ├── contenuti/        bucket dei contenuti + import automatico della banca domande
     ├── web/              S3 + CloudFront + file del sito + config.json
+    ├── monitoraggio/     allarmi CloudWatch, topic SNS, budget, dashboard
     └── lambda/           una Lambda: zip, ruolo IAM, log
 packages/
 ├── core/                 dominio condiviso (TypeScript)

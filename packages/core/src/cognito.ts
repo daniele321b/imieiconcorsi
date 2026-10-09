@@ -11,9 +11,17 @@ import {
 import { GRUPPI, type PianoId } from "./domain";
 import { env } from "./env";
 
+// Operazioni su Amazon Cognito, il servizio che gestisce gli account (login, password, Google
+// e Facebook). Qui stanno solo i dati d'identità: email, nome e gruppi. Il gruppo dice il
+// piano (medium, pro) e il ruolo (admin); tutto il resto sta in DynamoDB sotto l'id anonimo (sub).
+// Le Lambda che usano queste funzioni hanno USER_POOL_ID e i permessi cognito-idp in Terraform.
+
+/** Client Cognito condiviso (la regione arriva dall'ambiente della Lambda). */
 export const cognito = new CognitoIdentityProviderClient({});
+/** Id del pool degli utenti, passato da Terraform (local.cognito_env). */
 export const userPoolId = () => env("USER_POOL_ID");
 
+/** Valore di un attributo di un utente Cognito (es. "email", "sub", "name"). */
 export const attributo = (user: UserType, nome: string) => user.Attributes?.find((a) => a.Name === nome)?.Value;
 
 /** Porta l'utente nel gruppo del piano (e lo toglie dall'altro gruppo a pagamento). */
@@ -34,11 +42,13 @@ export async function gruppiDi(username: string) {
   return (res.Groups ?? []).map((g) => g.GroupName!);
 }
 
+/** Aggiunge (`presente` = true) o toglie un utente da un gruppo, es. "admin". */
 export async function impostaGruppo(username: string, gruppo: string, presente: boolean) {
   const Command = presente ? AdminAddUserToGroupCommand : AdminRemoveUserFromGroupCommand;
   await cognito.send(new Command({ UserPoolId: userPoolId(), Username: username, GroupName: gruppo }));
 }
 
+/** Il nome è un dato personale: si salva solo su Cognito, non nel database. */
 export async function aggiornaNome(username: string, nome: string) {
   await cognito.send(
     new AdminUpdateUserAttributesCommand({
@@ -49,6 +59,7 @@ export async function aggiornaNome(username: string, nome: string) {
   );
 }
 
+/** Ultimo passo dell'eliminazione dell'account: cancella l'utente (e il suo login) da Cognito. */
 export async function eliminaUtenteCognito(username: string) {
   await cognito.send(new AdminDeleteUserCommand({ UserPoolId: userPoolId(), Username: username }));
 }

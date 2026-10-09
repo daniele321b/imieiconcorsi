@@ -1,6 +1,9 @@
+// Regole del job delle scadenze dei piani (scadenze.ts), senza AWS per poterle provare.
+
 /** Giorni di preavviso per l'email "il tuo piano sta per scadere". */
 export const GIORNI_PREAVVISO = 3;
 
+/** Cosa fare per un abbonato: niente, mandare il promemoria, o riportarlo al Free. */
 export type Azione = "nessuna" | "promemoria" | "scaduto";
 
 /**

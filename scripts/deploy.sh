@@ -10,7 +10,11 @@
 #   scripts/deploy.sh build [lambda|web]     # compila le Lambda (dist/functions) e il sito (packages/web/dist)
 #   scripts/deploy.sh infra                  # terraform init + apply dell'ambiente
 #   scripts/deploy.sh seed                   # importa subito i bandi aperti da inPA (lo scraper gira poi ogni mattina)
-#   scripts/deploy.sh job NOME               # lancia subito un job: inpa-scraper, avvisi, scadenze, import-domande (reimporta data/domande)
+#   scripts/deploy.sh job NOME               # lancia subito un job: inpa-scraper, pulizia-bandi, avvisi, scadenze, import-domande
+#   scripts/deploy.sh storico-bandi [PAGINA] # importa i bandi chiusi degli ultimi 18 mesi da inPA (una volta; riprende da PAGINA)
+#   scripts/deploy.sh ai-prova               # controlla che il tutor AI (Claude su Bedrock) risponda
+#   scripts/deploy.sh allarmi                # allarmi del monitoraggio in questo momento (CloudWatch)
+#   scripts/deploy.sh allarme-prova          # messaggio di prova sul topic SNS del monitoraggio
 #   scripts/deploy.sh make-admin EMAIL       # mette l'utente nel gruppo admin (pannello di controllo)
 #   scripts/deploy.sh unisci-account EMAIL   # unisce gli account doppi (email + Facebook/Google) creati prima del trigger
 #   scripts/deploy.sh genera-domande [MAT]   # data/domande/<materia>.json da contenuti/sorgenti (vuoto = tutte)
@@ -20,7 +24,7 @@
 #   scripts/deploy.sh ses-status             # SES: sandbox o produzione, indirizzi verificati
 #   scripts/deploy.sh ses-production [URL]   # chiede ad AWS di uscire dalla sandbox SES (una volta per account)
 #   scripts/deploy.sh email-prova EMAIL      # manda un'email di prova da SES e spiega perché non parte
-#   scripts/deploy.sh logs [servizio]        # log in tempo reale: profile, concorsi, study, billing, admin, inpa-scraper, avvisi, scadenze
+#   scripts/deploy.sh logs [servizio]        # log in tempo reale: profile, concorsi, study, billing, admin, ai, richieste, inpa-scraper, avvisi, scadenze
 #   scripts/deploy.sh local                  # sito in locale (http://localhost:5173) collegato all'ambiente su AWS
 #   scripts/deploy.sh test                   # test e controllo dei tipi del codice applicativo
 #   scripts/deploy.sh all                    # check -> shared -> build -> infra -> seed -> urls
@@ -45,7 +49,8 @@ DIST_FUNCTIONS="${ROOT}/dist/functions"
 DIST_WEB="${ROOT}/packages/web/dist"
 DRY_RUN="${DRY_RUN:-0}"
 
-# Lambda: nome -> sorgente (packages/functions/src/...)
+# Lambda: nome -> sorgente (packages/functions/src/...). Con ":aws" l'SDK AWS va nel
+# pacchetto invece di usare quello del runtime (serve all'SDK Anthropic per Bedrock).
 LAMBDAS=(
   "profile:profile/handler.ts"
   "concorsi:concorsi/handler.ts"
@@ -53,8 +58,11 @@ LAMBDAS=(
   "billing:billing/handler.ts"
   "admin:admin/handler.ts"
   "pubblico:pubblico/handler.ts"
+  "richieste:richieste/handler.ts"
+  "ai:ai/handler.ts:aws"
   "auth-pre-signup:auth/pre-signup.ts"
   "inpa-scraper:jobs/inpa-scraper.ts"
+  "pulizia-bandi:jobs/pulizia-bandi.ts"
   "avvisi:jobs/avvisi.ts"
   "scadenze:jobs/scadenze.ts"
   "import-domande:contenuti/import-domande.ts"
@@ -70,6 +78,7 @@ ok()   { printf '  \033[32m✔\033[0m %s\n' "$*"; }
 warn() { printf '  \033[33m!\033[0m %s\n' "$*"; }
 die()  { printf '\033[31mERRORE:\033[0m %s\n' "$*" >&2; exit 1; }
 
+# Esegue un comando; con DRY_RUN=1 lo stampa soltanto (prova a secco).
 run() {
   if [[ "$DRY_RUN" == "1" ]]; then
     printf '  [dry-run] %s\n' "$*"
@@ -78,6 +87,7 @@ run() {
   fi
 }
 
+# Esegue un comando e ne restituisce l'output; a secco restituisce il segnaposto.
 capture() {
   local placeholder="$1"
   shift
@@ -88,6 +98,7 @@ capture() {
   fi
 }
 
+# Chiede conferma: si va avanti solo scrivendo "si".
 confirm() {
   [[ "$DRY_RUN" == "1" ]] && return 0
   local answer
@@ -96,8 +107,11 @@ confirm() {
   [[ "$answer" == "si" ]]
 }
 
+# Un output di Terraform dell'ambiente (es. web_url).
 tf_output() { capture "<$1>" terraform -chdir="$TF_DIR" output -raw "$1"; }
+# Id dell'account AWS delle credenziali in uso.
 account_id() { capture "123456789012" aws sts get-caller-identity --query Account --output text; }
+# Nome del bucket dello stato di Terraform (con l'id dell'account).
 state_bucket() { printf '%s-tfstate-%s' "$PROJECT" "$(account_id)"; }
 
 # Dipendenze Node del codice applicativo: installate solo se mancano o se il lockfile è cambiato.
@@ -181,27 +195,31 @@ cmd_bootstrap() {
 # ------------------------------------------------------------------- build ---
 
 build_lambda() {
-  local entry name src
+  local entry name file opzioni src external
   bold "Build delle Lambda (esbuild)"
   run rm -rf "$DIST_FUNCTIONS"
   for entry in "${LAMBDAS[@]}"; do
-    name="${entry%%:*}"
-    src="${ROOT}/packages/functions/src/${entry#*:}"
+    IFS=: read -r name file opzioni <<< "$entry"
+    src="${ROOT}/packages/functions/src/${file}"
     # L'SDK AWS v3 è già nel runtime Lambda; il banner rende disponibile require nelle dipendenze CommonJS.
+    external=(--external:'@aws-sdk/*')
+    [[ "${opzioni:-}" == "aws" ]] && external=()
     run "${ROOT}/node_modules/.bin/esbuild" "$src" \
       --bundle --platform=node --target=node22 --format=esm --minify --sourcemap \
-      --external:'@aws-sdk/*' \
+      ${external[@]+"${external[@]}"} \
       --banner:js="import { createRequire } from 'module'; const require = createRequire(import.meta.url);" \
       --outfile="${DIST_FUNCTIONS}/${name}/index.mjs" --log-level=warning
     ok "$name"
   done
 }
 
+# Compila il sito con Vite in packages/web/dist.
 build_web() {
   bold "Build del sito (Vite)"
   run npm --prefix "$ROOT" run build -w packages/web
 }
 
+# build [lambda|web]: compila le Lambda, il sito o entrambi.
 cmd_build() {
   node_deps
   case "${1:-all}" in
@@ -222,6 +240,7 @@ tf_init() {
   run terraform -chdir="$dir" init -input=false -backend-config="bucket=${TF_VAR_state_bucket}"
 }
 
+# shared: crea o aggiorna le risorse comuni (SES).
 cmd_shared() {
   [[ "$DRY_RUN" == "1" || -f "${TF_SHARED}/terraform.tfvars" ]] \
     || die "manca ${TF_SHARED#"${ROOT}/"}/terraform.tfvars: copia terraform.tfvars.example e metti il tuo indirizzo in sandbox_recipients"
@@ -232,6 +251,7 @@ cmd_shared() {
   printf '  Stato:  scripts/deploy.sh ses-status\n'
 }
 
+# infra: terraform init + apply dell'ambiente (chiede conferma).
 cmd_infra() {
   [[ "$DRY_RUN" == "1" || ( -d "$DIST_FUNCTIONS" && -f "${DIST_WEB}/index.html" ) ]] \
     || die "mancano le Lambda o il sito compilati: lancia prima  scripts/deploy.sh build"
@@ -243,23 +263,101 @@ cmd_infra() {
 # -------------------------------------------------------------------- seed ---
 
 cmd_job() {
-  local job="${1:-}" fn out
+  local job="${1:-}" fn out meta
   case "$job" in
-    inpa-scraper|avvisi|scadenze|import-domande) ;;
-    *) die "quale job? inpa-scraper, avvisi, scadenze, import-domande" ;;
+    inpa-scraper|pulizia-bandi|avvisi|scadenze|import-domande) ;;
+    *) die "quale job? inpa-scraper, pulizia-bandi, avvisi, scadenze, import-domande" ;;
   esac
   fn="${NAME}-${job}"
+
+  # La pulizia dura più di una Lambda (circa mezz'ora: si rilancia da sola a blocchi da 15
+  # minuti): si fa partire in background, come fa lo scheduler, e si seguono i log.
+  if [[ "$job" == "pulizia-bandi" ]]; then
+    bold "Job pulizia-bandi: parte in background (circa mezz'ora)"
+    if [[ "$DRY_RUN" == "1" ]]; then
+      printf '  [dry-run] aws lambda invoke --function-name %s --invocation-type Event\n' "$fn"
+    else
+      aws lambda invoke --function-name "$fn" --invocation-type Event /dev/null >/dev/null
+    fi
+    ok "partito. Avanzamento: scripts/deploy.sh logs pulizia-bandi (alla fine: \"Pulizia: cancellati …\")"
+    return
+  fi
+
   out="$(mktemp)"
-  bold "Job ${job} (può richiedere un minuto)"
+  bold "Job ${job} (di solito un minuto, lo scraper anche qualche minuto in più)"
   if [[ "$DRY_RUN" == "1" ]]; then
     printf '  [dry-run] aws lambda invoke --function-name %s\n' "$fn"
   else
-    aws lambda invoke --function-name "$fn" --cli-read-timeout 330 "$out" >/dev/null
+    # Si aspetta fino al tempo massimo della Lambda (15 minuti) e senza nuovi tentativi: se la
+    # CLI riprovasse da sola dopo un'attesa scaduta, il job partirebbe più volte.
+    meta="$(AWS_MAX_ATTEMPTS=1 aws lambda invoke --function-name "$fn" --cli-read-timeout 960 "$out")" ||
+      { rm -f "$out"; die "nessuna risposta dal job: potrebbe essere ancora in corso, controlla con scripts/deploy.sh logs ${job} prima di rilanciarlo"; }
+    if grep -q '"FunctionError"' <<< "$meta"; then
+      warn "il job è finito con un errore: $(cat "$out")"
+      rm -f "$out"
+      die "dettagli: scripts/deploy.sh logs ${job}"
+    fi
     ok "risposta: $(cat "$out")"
   fi
   rm -f "$out"
 }
 
+# Bandi chiusi degli ultimi 18 mesi (decine di migliaia): la Lambda ne importa un blocco
+# per volta (~13 minuti) e dice da che pagina ripartire. Si può interrompere e riprendere.
+cmd_storico_bandi() {
+  local pagina="${1:-0}" fn="${NAME}-inpa-scraper" out risposta
+  out="$(mktemp)"
+  bold "Storico dei bandi chiusi da inPA (ultimi 18 mesi), dalla pagina ${pagina}"
+  printf '  Ci vuole circa mezz'"'"'ora. Se si interrompe: scripts/deploy.sh storico-bandi <pagina indicata>\n'
+  while [[ -n "$pagina" && "$pagina" != "null" ]]; do
+    if [[ "$DRY_RUN" == "1" ]]; then
+      printf '  [dry-run] aws lambda invoke --function-name %s --payload {"storico":{"daPagina":%s}}\n' "$fn" "$pagina"
+      break
+    fi
+    # Niente nuovi tentativi automatici della CLI: ripeterebbero lo stesso blocco.
+    AWS_MAX_ATTEMPTS=1 aws lambda invoke --function-name "$fn" --cli-binary-format raw-in-base64-out \
+      --payload "{\"storico\":{\"daPagina\":${pagina}}}" --cli-read-timeout 960 "$out" >/dev/null
+    risposta="$(cat "$out")"
+    grep -q '"chiusi"' <<< "$risposta" || { rm -f "$out"; die "risposta inattesa: ${risposta} — riprendi con: scripts/deploy.sh storico-bandi ${pagina}"; }
+    pagina="$(sed -E 's/.*"prossimaPagina":(null|[0-9]+).*/\1/' <<< "$risposta")"
+    ok "blocco importato: ${risposta}"
+  done
+  rm -f "$out"
+  ok "storico completo: i bandi chiusi compaiono con il filtro Stato del bando"
+}
+
+# Il primo uso dei modelli Anthropic su Bedrock richiede, una volta per account, il modulo
+# sul caso d'uso nella console. Qui si prova una chiamata vera con lo stesso modello della Lambda.
+cmd_ai_prova() {
+  local modello out
+  modello="$(capture "eu.anthropic.claude-haiku-4-5-20251001-v1:0" aws lambda get-function-configuration \
+    --function-name "${NAME}-ai" --query 'Environment.Variables.AI_MODEL' --output text)"
+  bold "Prova del tutor AI: ${modello} (${REGION})"
+  out="$(mktemp)"
+  if [[ "$DRY_RUN" == "1" ]]; then
+    printf '  [dry-run] aws bedrock-runtime converse --model-id %s\n' "$modello"
+  elif aws bedrock-runtime converse --region "$REGION" --model-id "$modello" \
+    --messages '[{"role":"user","content":[{"text":"Rispondi solo: funziono"}]}]' \
+    --inference-config '{"maxTokens":20}' --query 'output.message.content[0].text' --output text > "$out" 2>&1; then
+    ok "risponde: $(cat "$out")"
+  else
+    warn "non risponde: $(cat "$out")"
+    if grep -qi "use case" "$out"; then
+      printf '  Manca il modulo di Anthropic sul caso d'"'"'uso (una volta per account AWS, vale per tutte le regioni):\n'
+      printf '    1. apri https://%s.console.aws.amazon.com/bedrock/home?region=%s#/model-catalog\n' "$REGION" "$REGION"
+      printf '    2. scegli Claude Haiku 4.5 -> "Submit use case details" (o "Request access")\n'
+      printf '    3. azienda e sito: iMieiConcorsi, https://%s; utenti: esterni (clienti); settore: Education\n' "$DOMAIN"
+      printf '       caso d'"'"'uso: "Study tutor for Italian public-sector exam candidates: explains quiz answers and\n'
+      printf '       generates practice questions. Paid users only, monthly usage limits."\n'
+      printf '    4. invia, aspetta fino a 15 minuti e rilancia: scripts/deploy.sh ai-prova\n'
+    else
+      printf '  Se parla di permessi: le credenziali che usi devono poter chiamare bedrock:InvokeModel.\n'
+    fi
+  fi
+  rm -f "$out"
+}
+
+# seed: lancia subito lo scraper di inPA.
 cmd_seed() {
   cmd_job inpa-scraper
   printf '  Le domande (data/domande/*.json) le carica infra: ogni file caricato viene importato da solo.\n'
@@ -283,6 +381,7 @@ cmd_make_admin() {
   printf '  Esci e rientra nel sito: il nuovo ruolo arriva con il token. Pannello: %s/admin\n' "$(tf_output web_url)"
 }
 
+# unisci-account EMAIL: tiene l'account email e password e cancella i doppioni social.
 cmd_unisci_account() {
   local email="${1:-}" pool righe nativo="" user stato prefisso provider id
   [[ -n "$email" ]] || die "uso: scripts/deploy.sh unisci-account tua@email.it"
@@ -315,6 +414,7 @@ facebook_123 EXTERNAL_PROVIDER" aws cognito-idp list-users --user-pool-id "$pool
   done <<< "$righe"
 }
 
+# ses-status: sandbox o produzione, indirizzi verificati.
 cmd_ses_status() {
   bold "SES (${REGION})"
   run aws sesv2 get-account --region "$REGION" \
@@ -324,6 +424,7 @@ cmd_ses_status() {
   printf '  In sandbox SES scrive solo agli indirizzi verificati (max 200 email/giorno).\n'
 }
 
+# ses-production [URL]: richiesta ad AWS per uscire dalla sandbox di SES.
 cmd_ses_production() {
   local url="${1:-https://${DOMAIN}}" stato
   bold "Richiesta ad AWS di uscire dalla sandbox SES"
@@ -379,8 +480,32 @@ cmd_urls() {
   printf '  API (stesso CloudFront)  %s\n' "$(tf_output api_url)"
   printf '  API Gateway diretto      %s\n' "$(tf_output api_gateway_url)"
   printf '  Redirect Google/Facebook %s\n' "$(tf_output cognito_idp_redirect_uri)"
+  printf '  Dashboard monitoraggio   %s\n' "$(tf_output dashboard_url)"
 }
 
+# ------------------------------------------------------------- monitoraggio ---
+
+cmd_allarmi() {
+  bold "Allarmi accesi (${NAME}, ${REGION} e us-east-1)"
+  local regione
+  for regione in "$REGION" us-east-1; do
+    run aws cloudwatch describe-alarms --region "$regione" --alarm-name-prefix "$NAME" --state-value ALARM \
+      --query 'MetricAlarms[].{allarme:AlarmName,da:StateUpdatedTimestamp,motivo:StateReason}' --output table
+  done
+  printf '  Nessuna tabella = nessun allarme acceso. Dashboard: %s\n' "$(tf_output dashboard_url)"
+}
+
+# allarme-prova: messaggio di prova sul topic del monitoraggio.
+cmd_allarme_prova() {
+  local topic
+  topic="$(tf_output monitoraggio_topic_arn)"
+  bold "Messaggio di prova sul topic ${topic##*:}"
+  run aws sns publish --region "$REGION" --topic-arn "$topic" --subject "[${NAME}] Prova del monitoraggio" \
+    --message "Se leggi questa email, gli allarmi di ${NAME} ti arrivano." >/dev/null
+  ok "inviato: se non arriva, conferma l'iscrizione dal link nell'email \"AWS Notification - Subscription Confirmation\""
+}
+
+# status: quanti bandi e domande ci sono nelle tabelle.
 cmd_status() {
   local table
   bold "Contenuto delle tabelle (${NAME})"
@@ -391,9 +516,10 @@ cmd_status() {
   cmd_urls
 }
 
+# logs SERVIZIO: log in tempo reale di una Lambda.
 cmd_logs() {
   local service="${1:-}"
-  [[ -n "$service" ]] || die "quale servizio? profile, concorsi, study, billing, admin, inpa-scraper, scadenze"
+  [[ -n "$service" ]] || die "quale servizio? profile, concorsi, study, billing, admin, ai, richieste, pubblico, inpa-scraper, pulizia-bandi, avvisi, scadenze"
   run aws logs tail "/aws/lambda/${NAME}-${service}" --follow --format short
 }
 
@@ -425,12 +551,14 @@ cmd_genera_domande() {
   fi
 }
 
+# verifica-domande: controlla le frasi-prova delle domande nei PDF delle fonti.
 cmd_verifica_domande() {
   command -v pdftotext >/dev/null 2>&1 || die "serve pdftotext: brew install poppler"
   bold "Verifica delle domande sulle fonti (contenuti/libri)"
   run python3 "${ROOT}/scripts/domande/verifica.py" "$@"
 }
 
+# test: controllo dei tipi e test automatici.
 cmd_test() {
   node_deps
   bold "Test (vitest)"
@@ -448,6 +576,7 @@ cmd_destroy() {
   run terraform -chdir="$TF_DIR" destroy
 }
 
+# destroy-shared: smonta le risorse comuni (solo dopo aver smontato gli ambienti).
 cmd_destroy_shared() {
   bold "ATTENZIONE: elimina le risorse comuni (SES) usate da TUTTI gli ambienti"
   confirm "Nessun ambiente le usa più?" || die "annullato"
@@ -467,8 +596,10 @@ cmd_all() {
   bold "Fatto. Apri l'indirizzo del sito, registrati, poi:  scripts/deploy.sh make-admin <tua email>"
 }
 
-usage() { sed -n '3,31p' "${BASH_SOURCE[0]}" | sed 's/^# \{0,1\}//'; }
+# Aiuto: le righe di commento in cima a questo file.
+usage() { sed -n '3,35p' "${BASH_SOURCE[0]}" | sed 's/^# \{0,1\}//'; }
 
+# Smista il comando richiesto alla sua funzione.
 main() {
   local cmd="${1:-}"
   [[ $# -gt 0 ]] && shift
@@ -480,6 +611,10 @@ main() {
     shared)    cmd_shared ;;
     seed)      cmd_seed ;;
     job)       cmd_job "$@" ;;
+    storico-bandi) cmd_storico_bandi "$@" ;;
+    ai-prova)  cmd_ai_prova ;;
+    allarmi)   cmd_allarmi ;;
+    allarme-prova) cmd_allarme_prova ;;
     genera-domande) cmd_genera_domande "$@" ;;
     verifica-domande) cmd_verifica_domande "$@" ;;
     make-admin) cmd_make_admin "$@" ;;

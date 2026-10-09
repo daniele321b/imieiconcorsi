@@ -1,11 +1,13 @@
 variable "aws_region" {
-  type    = string
-  default = "eu-south-1"
+  description = "Regione AWS delle risorse condivise"
+  type        = string
+  default     = "eu-south-1"
 }
 
 variable "project_name" {
-  type    = string
-  default = "imieiconcorsi"
+  description = "Nome del progetto, primo pezzo del nome di ogni risorsa"
+  type        = string
+  default     = "imieiconcorsi"
 }
 
 variable "domain" {

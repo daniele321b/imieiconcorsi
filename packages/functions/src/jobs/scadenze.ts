@@ -11,6 +11,7 @@ import { azionePerAbbonato } from "./scadenze-logic";
 // Ogni mattina: chi ha il piano scaduto torna Free (e riceve un'email), chi scade entro
 // 3 giorni riceve il promemoria.
 
+/** Entrata del job: scorre gli abbonati Medium e Pro (gruppi Cognito) e applica azionePerAbbonato. */
 export const handler = async () => {
   const conteggi = { scaduti: 0, promemoria: 0, errori: 0 };
 

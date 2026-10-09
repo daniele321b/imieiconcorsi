@@ -38,7 +38,8 @@ describe("prezzi", () => {
     for (const p of [PIANI.medium, PIANI.pro]) {
       expect(p.prezzo.mensile).toBeGreaterThanOrEqual(MINIMO_STRIPE);
       expect(p.prezzo.annuale).toBeGreaterThanOrEqual(MINIMO_STRIPE);
-      if (PREZZI_DI_PROVA) expect(p.prezzo).toEqual({ mensile: 0.5, annuale: 0.5 });
+      expect(p.prezzo.trimestrale).toBeGreaterThanOrEqual(MINIMO_STRIPE);
+      if (PREZZI_DI_PROVA) expect(p.prezzo).toEqual({ mensile: 0.5, trimestrale: 0.5, annuale: 0.5 });
     }
   });
 });

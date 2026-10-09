@@ -2,16 +2,19 @@ import { AdminGetUserCommand } from "@aws-sdk/client-cognito-identity-provider";
 import { GetCommand, PutCommand, UpdateCommand } from "@aws-sdk/lib-dynamodb";
 import { cognito, userPoolId } from "@imieiconcorsi/core/cognito";
 import { db, tables } from "@imieiconcorsi/core/db";
-import { PIANI, VERSIONE_TERMINI, type Periodo } from "@imieiconcorsi/core/domain";
+import { periodo as durata, PIANI, VERSIONE_TERMINI, type Periodo } from "@imieiconcorsi/core/domain";
 import { inviaEmail } from "@imieiconcorsi/core/email";
 import { dataIt } from "@imieiconcorsi/core/email-piani";
 import { assegnaPiano, scadenzaDa } from "@imieiconcorsi/core/piani";
+import { premiaChiHaInvitato } from "./inviti";
 
 // Ordini dei piani a pagamento (tabella ordini). Niente dati personali: email e nome stanno
 // in Cognito e si leggono al momento della conferma. Il piano si attiva solo da qui.
 
+/** In attesa del pagamento, pagato, sessione di pagamento scaduta senza pagare, pagamento fallito. */
 export type StatoOrdine = "in-attesa" | "pagato" | "scaduto" | "fallito";
 
+/** Un tentativo di acquisto di un piano (tabella ordini). */
 export interface Ordine {
   /** Codice anonimo, anche su Stripe (client_reference_id) */
   id: string;
@@ -36,10 +39,12 @@ export interface Ordine {
 
 const euro = (n: number) => n.toLocaleString("it-IT", { style: "currency", currency: "EUR" });
 
+/** Scrive un ordine nuovo. */
 export async function salvaOrdine(o: Ordine) {
   await db.send(new PutCommand({ TableName: tables.ordini, Item: o }));
 }
 
+/** Un ordine per codice (undefined se non esiste). */
 export async function leggiOrdine(id: string) {
   const res = await db.send(new GetCommand({ TableName: tables.ordini, Key: { id } }));
   return res.Item as Ordine | undefined;
@@ -138,6 +143,8 @@ export async function completaOrdine(id: string): Promise<Ordine | undefined> {
   }
 
   await inviaConferma(ordine, scadenza);
+  // Primo acquisto di un amico invitato: chi l'ha invitato riceve il suo mese gratis.
+  await premiaChiHaInvitato(ordine.userId).catch((err) => console.error("Premio invito non assegnato", err));
   return { ...ordine, scadenzaPiano: scadenza };
 }
 
@@ -154,12 +161,12 @@ export async function inviaConferma(o: Ordine, scadenza: string) {
     const p = PIANI[o.piano];
     await inviaEmail({
       a: email,
-      oggetto: `Conferma acquisto: piano ${p.nome} ${o.periodo}`,
+      oggetto: `Conferma acquisto: piano ${p.nome} per ${durata(o.periodo).nome}`,
       testo: [
         "Grazie per il tuo acquisto su iMieiConcorsi.",
         "",
         `Ordine: ${o.id}`,
-        `Piano: ${p.nome} (${o.periodo})`,
+        `Piano: ${p.nome} (${durata(o.periodo).nome})`,
         o.codiceSconto
           ? `Importo: ${euro(o.importo)} IVA inclusa (prezzo ${euro(o.prezzo)}, sconto del ${o.percentualeSconto}% con il codice ${o.codiceSconto})`
           : `Importo: ${euro(o.importo)} IVA inclusa`,

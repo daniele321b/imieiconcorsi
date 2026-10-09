@@ -8,12 +8,17 @@ import { Alert, Button, Field, cx } from "../../components/ui";
 import { api } from "../../lib/api";
 import { messaggioErrore, useAuth, useUtente } from "../../lib/auth";
 
+// Primo accesso (/app/onboarding): tre passi (comparti, livelli, avvisi) e accettazione di
+// Termini e Informativa. Finché non è completato, l'app riporta qui.
+
+/** Titolo e sottotitolo di ogni passo. */
 const PASSI = [
   { titolo: "Quali concorsi ti interessano?", sotto: "Scegli uno o più comparti: ti avviseremo solo per questi." },
   { titolo: "Come te la cavi nelle materie?", sotto: "Una stima veloce da 1 a 5. Serve a partire dalle domande giuste per te." },
   { titolo: "Quando vuoi gli avvisi?", sotto: "Puoi cambiarlo quando vuoi dal profilo." },
 ];
 
+/** Pagina /app/onboarding. */
 export function Onboarding() {
   const { utente } = useUtente();
   const { ricarica } = useAuth();

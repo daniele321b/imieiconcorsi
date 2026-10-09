@@ -1,4 +1,4 @@
-import { PREZZI_DI_PROVA, type Periodo, type PianoId } from "@imieiconcorsi/core/domain";
+import { PERIODI, periodo as durata, PREZZI_DI_PROVA, type Periodo, type PianoId } from "@imieiconcorsi/core/domain";
 import { prezzoScontato } from "@imieiconcorsi/core/sconti";
 import { Check, Crown, Sparkles, Tag, X } from "lucide-react";
 import { useState } from "react";
@@ -8,6 +8,10 @@ import { api, useApi, type CodiceScontoApi, type PianiApi } from "../../lib/api"
 import { messaggioErrore, useAuth, useUtente } from "../../lib/auth";
 import { data as dataLunga, euro } from "../../lib/format";
 
+// Piani (/app/piani): Free, Medium e Pro con prezzi per 30/90/365 giorni, codice sconto,
+// consenso alla rinuncia al recesso e acquisto (Stripe Checkout, o cambio immediato in "mock").
+
+/** Pagina /app/piani (l'admin ha già tutto e torna al pannello). */
 export function Piani() {
   const { utente } = useUtente();
   // L'admin ha già tutto: niente piani da comprare.
@@ -15,11 +19,13 @@ export function Piani() {
   return <SceltaPiano />;
 }
 
+/** Scelta di piano e durata, e acquisto. */
 function SceltaPiano() {
   const { utente } = useUtente();
   const { ricarica } = useAuth();
   const { data, loading, error, reload } = useApi<PianiApi>("/piani");
-  const [periodo, setPeriodo] = useState<Periodo>("mensile");
+  // Il trimestre copre la preparazione di un concorso: è la scelta proposta.
+  const [periodo, setPeriodo] = useState<Periodo>("trimestrale");
   const [inCorso, setInCorso] = useState<PianoId>();
   const [rinunciaRecesso, setRinunciaRecesso] = useState(false);
   const [esito, setEsito] = useState<{ tone: "success" | "error"; testo: string }>();
@@ -76,20 +82,24 @@ function SceltaPiano() {
   if (error || !data) return <Alert tone="error">{error?.message ?? "Piani non disponibili"}</Alert>;
 
   const medium = data.piani.find((p) => p.id === "medium")!;
-  const scontoAnnuale = Math.round((1 - medium.prezzo.annuale / (medium.prezzo.mensile * 12)) * 100);
+  /** Risparmio rispetto a comprare 30 giorni alla volta, sul Medium. */
+  const risparmio = (id: Periodo) => Math.round((1 - medium.prezzo[id] / (medium.prezzo.mensile * durata(id).mesi)) * 100);
 
   return (
     <div>
       <PageHeader
         title="Scegli il tuo piano"
-        subtitle="Un solo pagamento per 30 o 365 giorni, senza rinnovo automatico. Ti avvisiamo 3 giorni prima della scadenza."
+        subtitle="Un solo pagamento per 30 giorni, 90 giorni o un anno, senza rinnovo automatico. Ti avvisiamo 3 giorni prima della scadenza."
       />
 
       <div className="space-y-4">
         {utente.piano !== "free" && (
           <Alert tone="success">
             Hai il piano <strong>{data.piani.find((p) => p.id === utente.piano)?.nome}</strong>
-            {data.scadenza ? <> fino al {dataLunga(data.scadenza)}.</> : <> senza scadenza.</>}
+            {data.scadenza ? <> fino al {dataLunga(data.scadenza)}.</> : <> senza scadenza.</>}{" "}
+            <Link to="/app/profilo#pagamenti" className="font-semibold underline">
+              I tuoi pagamenti
+            </Link>
           </Alert>
         )}
         {data.modalita === "mock" && (
@@ -111,17 +121,19 @@ function SceltaPiano() {
       </div>
 
       <div className="mt-6 flex justify-center">
-        <div className="inline-grid grid-cols-2 rounded-xl bg-white p-1 text-sm font-semibold ring-1 ring-slate-200" role="radiogroup">
-          {(["mensile", "annuale"] as const).map((p) => (
+        <div className="inline-grid grid-cols-3 rounded-xl bg-white p-1 text-sm font-semibold ring-1 ring-slate-200" role="radiogroup" aria-label="Durata">
+          {PERIODI.map((p) => (
             <button
-              key={p}
+              key={p.id}
               role="radio"
-              aria-checked={periodo === p}
-              onClick={() => setPeriodo(p)}
-              className={cx("rounded-lg px-5 py-2 capitalize transition", periodo === p ? "bg-brand-600 text-white" : "text-slate-600")}
+              aria-checked={periodo === p.id}
+              onClick={() => setPeriodo(p.id)}
+              className={cx("rounded-lg px-4 py-2 transition sm:px-5", periodo === p.id ? "bg-brand-600 text-white" : "text-slate-600")}
             >
-              {p}
-              {p === "annuale" && scontoAnnuale > 0 && !PREZZI_DI_PROVA && <span className={cx("ml-1.5 text-xs", periodo === p ? "text-accent-300" : "text-emerald-600")}>−{scontoAnnuale}%</span>}
+              {p.nome}
+              {risparmio(p.id) > 0 && !PREZZI_DI_PROVA && (
+                <span className={cx("ml-1.5 text-xs", periodo === p.id ? "text-accent-300" : "text-emerald-600")}>−{risparmio(p.id)}%</span>
+              )}
             </button>
           ))}
         </div>
@@ -194,7 +206,7 @@ function SceltaPiano() {
         {data.piani.map((p) => {
           const attuale = utente.piano === p.id;
           const evidenziato = p.id === "medium";
-          const pieno = periodo === "mensile" ? p.prezzo.mensile : p.prezzo.annuale;
+          const pieno = p.prezzo[periodo];
           const scontoPiano = scontoSu(p.id);
           const prezzo = scontoPiano ? prezzoScontato(pieno, scontoPiano.percentuale) : pieno;
           return (
@@ -225,10 +237,10 @@ function SceltaPiano() {
                   <span className={cx("mr-2 text-lg line-through", evidenziato ? "text-brand-300" : "text-slate-400")}>{euro(pieno)}</span>
                 )}
                 <span className="text-4xl font-extrabold tracking-tight">{prezzo ? euro(prezzo) : p.id === "free" ? "Gratis" : euro(0)}</span>
-                {pieno > 0 && <span className={cx("text-sm", evidenziato ? "text-brand-200" : "text-slate-500")}> /{periodo === "mensile" ? "mese" : "anno"}</span>}
+                {pieno > 0 && <span className={cx("text-sm", evidenziato ? "text-brand-200" : "text-slate-500")}> per {durata(periodo).nome}</span>}
               </p>
-              {prezzo > 0 && periodo === "annuale" && (
-                <p className={cx("text-xs", evidenziato ? "text-brand-200" : "text-slate-500")}>pari a {euro(prezzo / 12)} al mese</p>
+              {prezzo > 0 && periodo !== "mensile" && (
+                <p className={cx("text-xs", evidenziato ? "text-brand-200" : "text-slate-500")}>pari a {euro(prezzo / durata(periodo).mesi)} al mese</p>
               )}
 
               <ul className="mt-6 flex-1 space-y-3 text-sm">
@@ -239,6 +251,11 @@ function SceltaPiano() {
                 ))}
               </ul>
 
+              {p.id === "free" && utente.piano !== "free" && (
+                <p className="mt-6 text-xs text-slate-500">
+                  Tornando a Free resta seguito solo l'ultimo concorso che hai seguito: gli altri li ritrovi nello storico del profilo.
+                </p>
+              )}
               <Button
                 className="mt-8 w-full"
                 size="lg"
@@ -250,7 +267,7 @@ function SceltaPiano() {
                 {attuale && (p.id === "free" || utente.periodo === periodo)
                   ? "Piano attuale"
                   : attuale
-                    ? `Passa all'abbonamento ${periodo}`
+                    ? `Passa a ${durata(periodo).nome}`
                     : p.id === "free"
                       ? "Torna a Free"
                       : `Scegli ${p.nome}`}

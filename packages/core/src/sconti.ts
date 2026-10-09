@@ -4,6 +4,7 @@ import type { CodiceSconto, PianoId } from "./domain";
 /** Codice inserito dall'utente → forma salvata (maiuscole, senza spazi). */
 export const normalizzaCodice = (codice: string) => codice.trim().toUpperCase().replace(/\s+/g, "");
 
+/** Forma valida di un codice scelto dall'admin: 4-24 tra lettere maiuscole, numeri e trattino. */
 export const FORMATO_CODICE = /^[A-Z0-9-]{4,24}$/;
 
 /** Alfabeto senza caratteri ambigui (0/O, 1/I/L). */
@@ -27,6 +28,7 @@ export function motivoRifiuto(
   c: CodiceSconto | undefined,
   { piano, codiciUsati = [], oggi = new Date() }: { piano: PianoId; codiciUsati?: string[]; oggi?: Date },
 ): string | null {
+  if (c?.tipo === "invito") return "Questo è un codice invito di un amico: inseriscilo nel profilo, sezione Invita un amico.";
   if (!c || !c.attivo) return "Codice sconto non valido.";
   if (c.validoFino && Date.parse(c.validoFino) < oggi.getTime()) return "Questo codice sconto è scaduto.";
   if (c.usiMassimi !== undefined && c.usi >= c.usiMassimi) return "Questo codice sconto è esaurito.";

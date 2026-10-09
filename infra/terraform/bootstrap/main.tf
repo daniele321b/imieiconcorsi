@@ -31,6 +31,7 @@ variable "project_name" {
 
 data "aws_caller_identity" "current" {}
 
+# Il bucket dello stato di Terraform (protetto dalla cancellazione).
 resource "aws_s3_bucket" "state" {
   bucket = "${var.project_name}-tfstate-${data.aws_caller_identity.current.account_id}"
 
@@ -39,6 +40,7 @@ resource "aws_s3_bucket" "state" {
   }
 }
 
+# Versioni: uno stato rovinato si può recuperare.
 resource "aws_s3_bucket_versioning" "state" {
   bucket = aws_s3_bucket.state.id
   versioning_configuration {
@@ -46,6 +48,7 @@ resource "aws_s3_bucket_versioning" "state" {
   }
 }
 
+# Cifratura dei file di stato (contengono anche segreti).
 resource "aws_s3_bucket_server_side_encryption_configuration" "state" {
   bucket = aws_s3_bucket.state.id
   rule {
@@ -55,6 +58,7 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "state" {
   }
 }
 
+# Mai pubblico.
 resource "aws_s3_bucket_public_access_block" "state" {
   bucket                  = aws_s3_bucket.state.id
   block_public_acls       = true

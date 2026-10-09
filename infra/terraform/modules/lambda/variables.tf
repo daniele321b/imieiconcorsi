@@ -9,8 +9,9 @@ variable "source_dir" {
 }
 
 variable "environment" {
-  type    = map(string)
-  default = {}
+  description = "Variabili d'ambiente della funzione (nomi delle tabelle, email, ecc.)"
+  type        = map(string)
+  default     = {}
 }
 
 variable "write_tables" {
@@ -26,18 +27,21 @@ variable "read_tables" {
 }
 
 variable "timeout" {
-  type    = number
-  default = 10
+  description = "Durata massima di un'esecuzione, in secondi"
+  type        = number
+  default     = 10
 }
 
 variable "memory_size" {
-  type    = number
-  default = 512
+  description = "Memoria in MB (anche la CPU cresce con la memoria)"
+  type        = number
+  default     = 512
 }
 
 variable "log_retention_days" {
-  type    = number
-  default = 14
+  description = "Giorni di conservazione dei log"
+  type        = number
+  default     = 14
 }
 
 variable "policy_statements" {

@@ -1,8 +1,9 @@
 import { MATERIE, nomeComparto } from "@imieiconcorsi/core/domain";
-import { ArrowLeft, Bookmark, BookmarkCheck, CalendarClock, ExternalLink, Info, MapPin, Timer, Users } from "lucide-react";
+import { ArrowLeft, Bookmark, BookmarkCheck, CalendarClock, Database, ExternalLink, Info, MapPin, Timer, Users } from "lucide-react";
 import { useState } from "react";
 import { Link, useParams } from "react-router";
 import { IconaMateria } from "../../components/brand";
+import { OrdineRisposte } from "../../components/OrdineRisposte";
 import { Alert, Badge, Button, Card, Spinner, UpgradeBanner, cx } from "../../components/ui";
 import { api, ApiError, useApi, type ConcorsoApi } from "../../lib/api";
 import { useUtente } from "../../lib/auth";
@@ -10,8 +11,19 @@ import { data, giorniA, scadenzaTesto, tipoProcedura } from "../../lib/format";
 import { useAvviaSessione } from "../../lib/sessioni";
 import { useSegui } from "./Concorsi";
 
-const LUNGHEZZE = [30, 50, 60];
+// Dettaglio di un bando (/app/concorsi/:id): scadenza, posti, sedi, materie, link a inPA,
+// Segui, studio e simulazione sulle materie del bando o sulla sua banca dati ufficiale.
+// Per l'admin: "Segna come concluso".
 
+/** Domande della simulazione tra cui scegliere. */
+const LUNGHEZZE = [30, 50, 60];
+/** Domande di una sessione di studio sulla banca dati. */
+const STUDIO_BANCA = [10, 20, 30];
+
+/** Da dove prendere le domande della simulazione: banca dati ufficiale o materie del bando. */
+type Fonte = "banca" | "materie";
+
+/** Pagina /app/concorsi/:id. */
 export function ConcorsoDettaglio() {
   const { id } = useParams();
   const { utente } = useUtente();
@@ -21,6 +33,9 @@ export function ConcorsoDettaglio() {
   );
   const { avvia, inCorso, errore, chiudiErrore } = useAvviaSessione();
   const [lunghezza, setLunghezza] = useState(60);
+  // Con la banca dati ufficiale i piani a pagamento scelgono da dove pescare le domande.
+  const [fonte, setFonte] = useState<Fonte>("banca");
+  const [studioBanca, setStudioBanca] = useState(STUDIO_BANCA[0]);
 
   if (loading) return <Spinner />;
   if (error || !concorso) return <Alert tone="error">{error?.message ?? "Concorso non trovato"}</Alert>;
@@ -28,6 +43,10 @@ export function ConcorsoDettaglio() {
   const giorni = giorniA(concorso.scadenza);
   const materie = MATERIE.filter((m) => concorso.materie.includes(m.id));
   const erroreMostrato = errore ?? erroreSegui;
+  // Medium e Pro senza limiti; il Free con i suoi utilizzi settimanali (li controlla il server).
+  const usiLimitati = utente.limiti.usiBancheDatiSettimana;
+  const conBanca = !!concorso.bancaDatiId;
+  const usaBanca = conBanca && fonte === "banca";
 
   return (
     <div className="space-y-6">
@@ -109,8 +128,56 @@ export function ConcorsoDettaglio() {
           </Alert>
         ))}
 
+
       <div className="grid gap-6 lg:grid-cols-[1.4fr_1fr]">
         <section className="space-y-4">
+          {conBanca && (
+            <Card className="flex flex-wrap items-center gap-4 p-4 ring-brand-200">
+              <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-brand-50 text-brand-600">
+                <Database className="size-5" />
+              </span>
+              <div className="min-w-0 flex-1">
+                <p className="font-semibold">Banca dati ufficiale</p>
+                {concorso.bancaDatiTitolo && (
+                  <p className="text-sm text-slate-700">
+                    {concorso.bancaDatiTitolo}
+                    {!!concorso.bancaDatiDomande && <span className="text-slate-500"> · {concorso.bancaDatiDomande.toLocaleString("it-IT")} domande</span>}
+                  </p>
+                )}
+                <p className="text-xs text-slate-500">
+                  Le domande pubblicate dall'ente, con la risposta giusta subito.{" "}
+                  <Link to={`/app/banche-dati/${concorso.bancaDatiId}`} className="font-semibold text-brand-600 hover:text-brand-700">
+                    Consultala domanda per domanda
+                  </Link>
+                  {usiLimitati !== null && ` · Free: ${usiLimitati} utilizzi a settimana`}
+                </p>
+                <div className="mt-2">
+                  <OrdineRisposte />
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="inline-grid grid-cols-3 rounded-lg bg-slate-100 p-0.5 text-xs font-semibold">
+                  {STUDIO_BANCA.map((n) => (
+                    <button
+                      key={n}
+                      onClick={() => setStudioBanca(n)}
+                      className={cx("rounded-md px-2.5 py-1 transition", studioBanca === n ? "bg-white text-brand-700 shadow-sm" : "text-slate-500")}
+                    >
+                      {n}
+                    </button>
+                  ))}
+                </div>
+                <Button
+                  size="sm"
+                  loading={inCorso === "banca-studio"}
+                  onClick={() => void avvia({ tipo: "studio", bancaDatiId: concorso.bancaDatiId, concorsoId: concorso.id, numero: studioBanca }, "banca-studio")}
+                >
+                  Studia
+                </Button>
+              </div>
+            </Card>
+          )}
+
           <div className="flex items-center justify-between">
             <h2 className="text-lg font-bold text-slate-900">Materie d'esame</h2>
             {concorso.materieStimate && <Badge tone="amber">Stimate dal comparto</Badge>}
@@ -154,22 +221,46 @@ export function ConcorsoDettaglio() {
             <Timer className="size-6 text-accent-300" />
             <h2 className="mt-3 text-lg font-bold">Simulazione d'esame</h2>
             <p className="mt-1 text-sm text-brand-100">
-              {concorso.bancaDati && utente.limiti.bancheDati
+              {usaBanca
                 ? "Domande della banca dati ufficiale del concorso, un minuto a domanda."
                 : "Domande su tutte le materie del bando, un minuto a domanda."}{" "}
               Risposta giusta +1, sbagliata −0,25, non data 0.
             </p>
-            {concorso.bancaDati && (
-              <p className="mt-3 rounded-xl bg-white/10 px-3 py-2 text-xs text-brand-100">
-                {utente.limiti.bancheDati ? (
-                  <>Banca dati ufficiale disponibile: la simulazione usa le domande ufficiali.</>
-                ) : (
-                  <>
-                    È uscita la banca dati ufficiale: con <Link to="/app/piani" className="font-semibold text-white underline">Medium o Pro</Link> la
-                    simulazione usa le domande ufficiali.
-                  </>
+            {conBanca && (
+              <div className="mt-4" role="radiogroup" aria-label="Da dove prendere le domande">
+                <p className="text-xs font-semibold text-brand-200">Domande da</p>
+                <div className="mt-1 grid grid-cols-2 gap-1 rounded-xl bg-white/10 p-1 text-xs font-semibold">
+                  {(
+                    [
+                      ["banca", "Banca dati ufficiale"],
+                      ["materie", "Materie del bando"],
+                    ] as const
+                  ).map(([id, nome]) => (
+                    <button
+                      key={id}
+                      role="radio"
+                      aria-checked={fonte === id}
+                      onClick={() => setFonte(id)}
+                      className={cx("rounded-lg px-2 py-1.5 transition", fonte === id ? "bg-white text-brand-900" : "text-brand-100 hover:bg-white/10")}
+                    >
+                      {nome}
+                    </button>
+                  ))}
+                </div>
+                {fonte === "banca" && (
+                  <div className="mt-3">
+                    <OrdineRisposte scuro />
+                  </div>
                 )}
-              </p>
+                {usiLimitati !== null && fonte === "banca" && (
+                  <p className="mt-2 text-xs text-brand-200">
+                    Piano Free: {usiLimitati} utilizzi delle banche dati a settimana.{" "}
+                    <Link to="/app/piani" className="font-semibold text-white underline">
+                      Illimitati con Medium
+                    </Link>
+                  </p>
+                )}
+              </div>
             )}
             <div className="mt-5 grid grid-cols-3 gap-2" role="radiogroup" aria-label="Numero di domande">
               {LUNGHEZZE.map((n) => (
@@ -192,7 +283,15 @@ export function ConcorsoDettaglio() {
               size="lg"
               className="mt-4 w-full"
               loading={inCorso === "simulazione"}
-              onClick={() => void avvia({ tipo: "simulazione", concorsoId: concorso.id, numero: lunghezza })}
+              onClick={() =>
+                void avvia({
+                  tipo: "simulazione",
+                  concorsoId: concorso.id,
+                  numero: lunghezza,
+                  // Banca dati scelta: esplicita (vale anche per il Free); materie esplicite = niente banca dati.
+                  ...(usaBanca ? { bancaDatiId: concorso.bancaDatiId } : conBanca ? { materie: concorso.materie } : {}),
+                })
+              }
             >
               Inizia la simulazione
             </Button>

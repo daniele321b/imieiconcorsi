@@ -4,8 +4,13 @@ import { createRoot } from "react-dom/client";
 import { createBrowserRouter, Navigate, RouterProvider } from "react-router";
 import { AuthProvider } from "./lib/auth";
 import { caricaConfig } from "./lib/config";
+import { ricordaInvito } from "./lib/invito";
 import { Admin } from "./pages/app/Admin";
 import { AdminBancheDati } from "./pages/app/AdminBancheDati";
+import { AdminPagamenti } from "./pages/app/AdminPagamenti";
+import { AdminRichieste } from "./pages/app/AdminRichieste";
+import { Assistenza } from "./pages/app/Assistenza";
+import { BancaDatiConsulta } from "./pages/app/BancaDatiConsulta";
 import { BancheDati } from "./pages/app/BancheDati";
 import { AppLayout } from "./pages/app/AppLayout";
 import { Concorsi } from "./pages/app/Concorsi";
@@ -17,6 +22,7 @@ import { Piani } from "./pages/app/Piani";
 import { Profilo } from "./pages/app/Profilo";
 import { SessionePage } from "./pages/app/Sessione";
 import { Studio } from "./pages/app/Studio";
+import { Tutor } from "./pages/app/Tutor";
 import { AuthCallback } from "./pages/AuthCallback";
 import { Disiscrivi } from "./pages/Disiscrivi";
 import { EliminazioneDati } from "./pages/legale/EliminazioneDati";
@@ -24,6 +30,11 @@ import { Privacy } from "./pages/legale/Privacy";
 import { Termini } from "./pages/legale/Termini";
 import { Landing } from "./pages/Landing";
 
+// Punto di partenza del sito: legge la configurazione (config.json), avvia il login (AuthProvider)
+// e definisce le pagine. Le pagine pubbliche stanno sotto "/", l'area riservata sotto "/app"
+// (AppLayout: menu, controllo del login e dell'onboarding) e il pannello di controllo sotto "/admin".
+
+/** Indirizzo → pagina. */
 const router = createBrowserRouter([
   { path: "/", element: <Landing /> },
   { path: "/auth/callback", element: <AuthCallback /> },
@@ -42,10 +53,13 @@ const router = createBrowserRouter([
       { path: "concorsi/:id", element: <ConcorsoDettaglio /> },
       { path: "studio", element: <Studio /> },
       { path: "banche-dati", element: <BancheDati /> },
+      { path: "banche-dati/:id", element: <BancaDatiConsulta /> },
+      { path: "tutor", element: <Tutor /> },
       { path: "sessione/:id", element: <SessionePage /> },
       { path: "piani", element: <Piani /> },
       { path: "pagamento", element: <Pagamento /> },
       { path: "profilo", element: <Profilo /> },
+      { path: "assistenza", element: <Assistenza /> },
     ],
   },
   {
@@ -55,12 +69,16 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Admin /> },
       { path: "banche-dati", element: <AdminBancheDati /> },
+      { path: "pagamenti", element: <AdminPagamenti /> },
+      { path: "richieste", element: <AdminRichieste /> },
     ],
   },
   { path: "*", element: <Navigate to="/" replace /> },
 ]);
 
 const root = createRoot(document.getElementById("root")!);
+// Arrivati da un link "invita un amico": il codice serve dopo la registrazione.
+ricordaInvito();
 
 caricaConfig()
   .then(() =>

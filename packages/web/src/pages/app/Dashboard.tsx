@@ -9,6 +9,10 @@ import { useUtente } from "../../lib/auth";
 import { dataBreve, durata, giorniA } from "../../lib/format";
 import { useAvviaSessione } from "../../lib/sessioni";
 
+// Dashboard (/app): concorsi seguiti, statistiche (risposte per materia, andamento delle
+// simulazioni), ultime sessioni e scorciatoie per studiare.
+
+/** Pagina /app. */
 export function Dashboard() {
   const { utente } = useUtente();
   const seguiti = useApi<{ concorsi: ConcorsoApi[] }>("/me/concorsi");

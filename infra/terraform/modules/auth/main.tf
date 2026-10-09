@@ -7,6 +7,8 @@ locals {
   facebook_enabled = var.facebook_app_id != "" && nonsensitive(var.facebook_app_secret != "")
 }
 
+# Il "pool" degli utenti: login con l'email, codice di verifica per email, password di almeno
+# 8 caratteri con maiuscola, minuscola e numero, recupero password via email.
 resource "aws_cognito_user_pool" "main" {
   name                     = var.name
   username_attributes      = ["email"]
@@ -49,6 +51,7 @@ resource "aws_cognito_user_pool" "main" {
   }
 }
 
+# Permesso a Cognito di chiamare il trigger pre sign-up (functions/src/auth/pre-signup.ts).
 resource "aws_lambda_permission" "pre_sign_up" {
   count         = var.pre_sign_up_enabled ? 1 : 0
   statement_id  = "AllowCognito"
@@ -64,6 +67,7 @@ resource "aws_cognito_user_pool_domain" "main" {
   user_pool_id = aws_cognito_user_pool.main.id
 }
 
+# Accesso con Google: solo se in terraform.tfvars ci sono client id e secret (docs/LOGIN-SOCIAL.md).
 resource "aws_cognito_identity_provider" "google" {
   count         = local.google_enabled ? 1 : 0
   user_pool_id  = aws_cognito_user_pool.main.id
@@ -83,6 +87,7 @@ resource "aws_cognito_identity_provider" "google" {
   }
 }
 
+# Accesso con Facebook: solo se ci sono app id e secret.
 resource "aws_cognito_identity_provider" "facebook" {
   count         = local.facebook_enabled ? 1 : 0
   user_pool_id  = aws_cognito_user_pool.main.id
@@ -102,6 +107,8 @@ resource "aws_cognito_identity_provider" "facebook" {
   }
 }
 
+# Il "client" usato dal sito (senza secret: gira nel browser). Token di accesso e d'identità
+# valgono un'ora, il token di rinnovo 30 giorni: si resta collegati senza rifare il login.
 resource "aws_cognito_user_pool_client" "web" {
   name            = "${var.name}-web"
   user_pool_id    = aws_cognito_user_pool.main.id

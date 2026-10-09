@@ -3,6 +3,7 @@
 // e il trigger Cognito pre sign-up (sempre). L'accesso con Google o Facebook non passa
 // di qui: l'email l'ha già verificata il provider.
 
+/** Domini di posta accettati per la registrazione con email e password. */
 export const DOMINI_EMAIL_CONSENTITI = [
   // Google
   "gmail.com", "googlemail.com",
@@ -19,10 +20,13 @@ export const DOMINI_EMAIL_CONSENTITI = [
   "proton.me", "protonmail.com", "pm.me", "gmx.com", "gmx.it", "gmx.net", "zoho.com", "tutanota.com", "fastmail.com",
 ] as const;
 
+/** Dominio di un indirizzo, in minuscolo: "Mario@Gmail.com" → "gmail.com". */
 export const dominioEmail = (email: string) => email.trim().toLowerCase().split("@").pop() ?? "";
 
+/** true se l'indirizzo è di un provider della lista. */
 export const emailConsentita = (email: string) =>
   (DOMINI_EMAIL_CONSENTITI as readonly string[]).includes(dominioEmail(email));
 
+/** Messaggio mostrato a chi prova a registrarsi con un indirizzo di un altro dominio. */
 export const MESSAGGIO_EMAIL_NON_CONSENTITA =
   "Per registrarti usa un indirizzo di un provider diffuso (Gmail, Outlook/Hotmail, Yahoo, iCloud, Libero, Virgilio, Alice/TIM…) oppure accedi con Google o Facebook.";

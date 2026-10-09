@@ -125,15 +125,39 @@ Tiene l'account email e password (con il suo ruolo admin) e cancella il doppione
 social, i cui dati di studio si perdono. Al prossimo accesso con Facebook entri
 nell'account unito: la prima volta la pagina si ricarica da sola una volta.
 
+**Richieste di assistenza.** Gli utenti registrati scrivono dalla pagina
+**Assistenza** (icona salvagente in alto, o Profilo → Assistenza) scegliendo il
+tipo: banca dati da aggiungere, domanda o risposta sbagliata, problema di
+accesso, problema con un pagamento, piano e scadenza, errore nell'app,
+suggerimento, altro. Ogni tipo propone una traccia da completare. Sotto ogni
+domanda (studio, revisione, consultazione della banca dati) c'è **Segnala un
+errore**, che apre una richiesta con la domanda già allegata; dalla pagina di
+ritorno del pagamento, **Problemi con il pagamento?** allega il codice
+dell'ordine. Ti arriva un'email per ogni richiesta e ogni messaggio nuovo.
+Rispondi da Pannello admin → **Richieste**: l'utente riceve un'email e vede un
+pallino rosso sull'icona dell'assistenza. Rispondendo, una richiesta aperta passa
+"in lavorazione"; scegli "chiusa" quando è risolta (se l'utente riscrive, si
+riapre). Limiti contro gli abusi: 5 richieste non chiuse insieme e 10 nuove al
+giorno per utente.
+
+**Storico pagamenti.** Pannello admin → **Pagamenti**: tutti gli ordini (pagati,
+in attesa, non completati, falliti) con email, piano, importo, sconto e
+scadenza, filtri per stato, piano ed email, e i totali incassati (mese e
+sempre). Il pulsante con il codice dell'ordine lo copia insieme alla sessione
+Stripe, per cercarla nella Dashboard di Stripe. Ogni utente vede i suoi in
+**Profilo → I tuoi pagamenti** (link anche dalla pagina Piani): pagati, e a parte
+i tentativi non completati, con **Aiuto** per aprire una richiesta su quell'ordine.
+
 ## 4. Email (SES) e job del mattino
 
 Ogni mattina, ora italiana:
 
 | Ora | Job | Cosa fa |
 |---|---|---|
-| 6:00 | `inpa-scraper` | Importa i bandi da inPA e ti scrive se ci sono bandi nuovi che citano una banca dati |
+| 6:00 | `inpa-scraper` | Importa i bandi aperti da inPA (e i chiusi degli ultimi 7 giorni), rifà la lista in cache (`/dati/bandi/` su CloudFront) e ti scrive se ci sono bandi nuovi che citano una banca dati |
+| Domenica e mercoledì 3:00 | `pulizia-bandi` | Rilegge i chiusi degli ultimi 18 mesi e cancella i bandi che inPA non elenca più (si ferma e ti scrive se dovrebbe cancellarne più del 25%) |
 | 6:15 | `scadenze` | Riporta a Free chi ha il piano scaduto (con email "tornato al Free"); manda il promemoria 3 giorni prima della scadenza |
-| 7:00 | `avvisi` | Email con i bandi usciti su inPA ieri nei comparti scelti nel profilo (il lunedì: ultimi 7 giorni, per chi ha scelto "ogni settimana") |
+| 7:00 | `avvisi` | Email con i bandi usciti su inPA ieri nei comparti scelti nel profilo (il lunedì: ultimi 7 giorni, per chi ha scelto "ogni settimana"). Solo a chi li legge: dopo 7 avvisi non aperti si passa al lunedì, dopo altri 4 si sospendono; ripartono quando la persona apre un'email, clicca un link o entra nell'app |
 
 Email sul piano: conferma d'acquisto (con l'eventuale sconto) quando si passa a
 un piano a pagamento; "tornato al Free" alla scadenza, quando l'utente sceglie
@@ -145,6 +169,7 @@ Per lanciarli subito:
 scripts/deploy.sh job inpa-scraper
 scripts/deploy.sh job avvisi        # una sola email al giorno per utente, anche se lo rilanci
 scripts/deploy.sh job scadenze
+scripts/deploy.sh job pulizia-bandi # parte in background (~30 minuti): avanzamento con scripts/deploy.sh logs pulizia-bandi
 ```
 
 **Se le email non arrivano**, prima di tutto:
@@ -255,30 +280,135 @@ registrati in `contenuti/fonti.csv`. Le regole sul diritto d'autore sono in
 Ogni mattina lo scraper ti scrive quali bandi nuovi citano una banca dati. Quando
 l'ente la pubblica:
 1. Scarica il PDF dal sito dell'ente.
-2. Pannello admin → **Banche dati** → scegli:
-   - **Collegata a un concorso**: scegli il bando dalla lista (filtro "solo i
-     bandi che citano una banca dati"); le sue simulazioni Medium e Pro useranno
-     le domande ufficiali;
-   - **Banca dati a sé**: comparto e anno, per esempio "Banca dati Polizia di
-     Stato 2026", slegata dai concorsi.
+2. Pannello admin → **Banche dati** → titolo (es. "Banca dati Polizia di Stato
+   2026"), comparto e anno, poi i **concorsi a cui collegarla**: mentre scrivi il
+   titolo compaiono i **bandi aperti simili** (parole in comune con ente e titolo,
+   stesso comparto, anno; "molto simile" = almeno due parole in comune e il bando
+   cita una banca dati) da aggiungere con **+** o tutti insieme con "Collega i …
+   molto simili"; con **Cerca un altro concorso** trovi qualsiasi bando a mano (anche
+   chiuso, togliendo "Solo aperti"). Si può lasciare senza concorsi: resta nella
+   sezione Banche dati del suo comparto. Poi materia se è una sola, come è segnata
+   la risposta giusta (**Automatico** va bene quasi sempre) → **Carica ed estrai**.
 
-   Poi titolo, materia se è una sola, come è segnata la risposta giusta
-   (**Automatico** va bene quasi sempre) → **Carica ed estrai**.
+   I concorsi collegati si cambiano anche dopo, dalla riga della banca dati
+   (pulsante **Concorsi**): stessi suggeriti e stessa ricerca, × per scollegare. Un
+   concorso può avere una sola banca dati: se ne ha già un'altra, prima va
+   scollegato da quella.
 3. L'estrazione parte da sola; quando finisce arriva un'email e la riga diventa
-   "da controllare". **Vedi esempi**: controlla testo, risposte e giusta (in
-   verde) delle prime domande e i motivi delle scartate.
+   "da controllare". **Vedi esempi**: le prime due domande di ogni sezione del
+   PDF, **nell'ordine del PDF**: controlla testo, risposte e giusta (in verde)
+   confrontandole con il file, e i motivi delle scartate. Le sezioni del PDF
+   (es. "Matematica", "Storia") diventano l'argomento delle domande.
+   **Ordine delle risposte**: lo sceglie ogni utente entrando nella banca dati (sezione Banche dati,
+   pagina del concorso, consultazione): "Mescolata" (predefinito, ordine casuale ma fisso per ogni
+   domanda) o "Sempre per prima (A)". La scelta resta salvata nel browser e vale anche per il punteggio
+   delle sessioni.
 4. Se le giuste sono sbagliate o le scartate sono tante: cambia il formato dal
    menu della riga (l'estrazione riparte) oppure mandami il PDF.
 5. **Pubblica**: la banca dati compare nella sezione **Banche dati** dell'app
-   (per comparto, Medium e Pro: studio e simulazioni) e, se collegata, nelle
-   simulazioni del concorso. **Ritira** la toglie.
+   (per comparto, con l'elenco dei concorsi per cui vale) e **in ogni concorso
+   collegato**: nella pagina del concorso il riquadro "Banca dati ufficiale" con
+   titolo, numero di domande, il link **Consultala domanda per domanda** (la nostra
+   consultazione) e lo studio; nella simulazione la scelta "Banca dati ufficiale /
+   Materie del bando"; nelle liste dei bandi il segno verde **Banca dati**, che
+   porta alla consultazione (compare dal mattino dopo, quando si rifà la lista in
+   cache). Collegando un concorso a una banca già pubblicata, tutto questo vale
+   subito. **Ritira** la toglie da tutti i concorsi e la lascia ripubblicabile.
+6. **Elimina** (riga della banca dati, con conferma): la toglie per sempre, con
+   PDF, domande estratte e domande pubblicate; i concorsi collegati tornano alle
+   nostre domande. Le sessioni già fatte restano nelle statistiche. Il PDF resta
+   recuperabile per 30 giorni come versione vecchia nel bucket, poi sparisce.
 
-**Bandi con le domande chiuse.** Nella ricerca, la casella "Mostra anche i bandi
-con le domande chiuse" fa vedere i bandi scaduti da meno di 18 mesi: chi ha già
-fatto domanda continua a prepararsi. Quando un concorso è davvero finito, dalla
-sua pagina (da admin) **Segna come concluso** e sparisce anche da lì.
+**Bandi con le domande chiuse.** Nella ricerca, **Filtri → Stato del bando**:
+"Aperti" (predefinito), "Aperti e chiusi" o "Solo chiusi". I chiusi sono i bandi
+scaduti da meno di 18 mesi: chi ha già fatto domanda continua a prepararsi.
+Quando un concorso è davvero finito, dalla sua pagina (da admin) **Segna come
+concluso** e sparisce anche da lì.
+
+Lo scraper di ogni mattina prende i chiusi degli ultimi 7 giorni. Lo **storico**
+(circa 30.000 bandi chiusi negli ultimi 18 mesi) si importa una volta sola, dopo
+il primo `infra` con questa versione:
+```bash
+scripts/deploy.sh storico-bandi        # ~30 minuti, a blocchi da ~13 minuti
+scripts/deploy.sh storico-bandi 250    # se si interrompe: riparte dalla pagina indicata
+```
 
 Serve un PDF con il testo selezionabile: se è una scansione l'estrazione lo dice.
+
+**Domande già fatte (progressi).** Per ogni utente e banca dati si salvano le
+domande fatte e quelle sbagliate l'ultima volta (tabella `progressi`, due mappe
+di bit: 6.000 domande stanno in meno di 1 KB). Si aggiornano alla consegna di
+ogni sessione di studio o simulazione sulla banca dati; le domande lasciate in
+bianco non contano. Nell'app:
+- scheda della banca dati: barra "fatte / da ripassare" e la scelta **Nuove**
+  (predefinita: prima le mai fatte, finite quelle le altre), **Da ripassare**
+  (solo le sbagliate l'ultima volta) o **Tutte**; **Ricomincia** azzera;
+- consultazione: su ogni domanda "Già fatta" o "Sbagliata l'ultima volta".
+
+Se rifai l'estrazione di una banca dati (i numeri delle domande possono
+cambiare), i progressi su quella banca ripartono da zero.
+
+## Piani, inviti e limiti del Free
+
+- **Prezzi** (`LISTINO` in `packages/core/src/domain.ts`): Medium 9,99 € / 30 giorni, 19,99 € / 90 giorni,
+  39,99 € / anno; Pro 14,99 € / 30 giorni, 29,99 € / 90 giorni, 69,99 € / anno. La pagina Piani propone il
+  trimestre.
+- **Ritorno al Free** (scadenza, scelta o admin): resta seguito solo l'ultimo concorso seguito; gli
+  altri finiscono nello **storico** del profilo (menu "Storico dei concorsi seguiti": nome e giorno).
+- **Banche dati per il Free**: 3 utilizzi a settimana (da lunedì). Un utilizzo = una sessione di studio
+  o simulazione su una banca dati, oppure la prima consultazione di una banca dati nella settimana.
+  Consultazione domanda per domanda: `/app/banche-dati/<id>`.
+- **Invita un amico**: ogni utente ha un codice `AMICO-…` e un link `/?invito=…` nel profilo. Se l'amico
+  lo usa prima del suo primo acquisto, quando compra un piano chi l'ha invitato riceve 30 giorni gratis
+  (Medium se era Free, altrimenti il suo piano si allunga), al massimo 12 volte l'anno. I codici invito
+  stanno nella tabella dei codici sconto ma non compaiono nel pannello.
+
+## Tutor AI (piano Pro)
+
+Il tutor usa Claude Haiku 4.5 su Amazon Bedrock, profilo d'inferenza **EU** (i
+dati restano in Europa), pagato a consumo sulla bolletta AWS. Ogni utente Pro ha
+300 gettoni al mese: 1 per risposta del tutor, 3 per un allenamento da 5
+domande. Costo indicativo: ~0,3 centesimi a risposta, ~1,5 centesimi ad
+allenamento, quindi al massimo 1-2 € al mese per utente Pro.
+
+**Prima volta (una volta per account AWS):** console AWS → Amazon Bedrock →
+Model catalog → **Claude Haiku 4.5** → compila il modulo sul caso d'uso di
+Anthropic. Poi:
+```bash
+scripts/deploy.sh ai-prova    # una chiamata vera al modello: dice se risponde o cosa manca
+```
+Per cambiare modello (per esempio uno più capace e più caro) metti `ai_model`
+in `environments/dev/terraform.tfvars` e lancia `infra`. Gettoni e costi delle
+azioni: `GETTONI_AI_PRO` e `COSTI_AI` in `packages/core/src/domain.ts`; se cambi
+modello aggiorna anche `PREZZI_AI_USD` (servono a stimare la spesa).
+
+**Limiti contro le spese indesiderate**, dal primo all'ultimo controllo:
+| Limite | Valore | Dove si cambia |
+|---|---|---|
+| Gettoni per utente | 300 al mese | `GETTONI_AI_PRO`, `COSTI_AI` (domain.ts) |
+| Spesa per utente | 3 $ al mese (stimata dai token) | `ai_tetto_utente_usd` (terraform.tfvars) |
+| Ritmo | 6 richieste al minuto per utente | `AI_AL_MINUTO` (domain.ts) |
+| Spesa di tutta la piattaforma | 50 $ al mese: email all'80%, pausa al 100% | `ai_tetto_mensile_usd` (terraform.tfvars) |
+| Lunghezza | 800 token a risposta, ultimi 8 messaggi della chat | `MAX_TOKEN_*` (ai/handler.ts), `MAX_MESSAGGI` (ai/logic.ts) |
+
+La spesa del mese e il tetto si vedono nel pannello admin (riquadro "Spesa AI
+del mese"); i contatori stanno nella tabella `contatori` (riga `ai#AAAA-MM`).
+Raggiunto il tetto della piattaforma, tutor e allenamenti si fermano per tutti
+fino al mese dopo, o finché non alzi `ai_tetto_mensile_usd` e lanci `infra`.
+
+**Solo studio (guardrail).** Le istruzioni del tutor gli dicono di rispondere
+solo su studio e concorsi (materie d'esame, bandi e prove, metodo di studio).
+Per il resto (email, temi, codice per lavoro, ricette, consigli personali,
+richieste di ignorare le regole o di mostrare le istruzioni) risponde solo con il
+segnale `[FUORI_TEMA]`: il server lo riconosce, mostra all'utente un avviso
+gentile e **restituisce il gettone**; i token consumati contano comunque per i
+tetti di spesa. Un passo in più, se servisse: un Guardrail di Amazon Bedrock
+(argomenti vietati e filtri di contenuto), che costa a parte per ogni testo
+controllato.
+
+Nell'app: voce **Tutor AI** nel menu (allenamento sui punti deboli + chat
+libera) e **Chiedi al tutor AI** sotto ogni domanda corretta, in studio e nella
+revisione dopo la consegna. Free e Medium vedono l'invito al piano Pro.
 
 ## 5. Dopo una modifica al codice
 
@@ -320,10 +450,43 @@ test, carta `4242 4242 4242 4242`); senza, il cambio di piano è gratuito
 ("mock"). Prezzi di prova a 0,50 € finché `PREZZI_DI_PROVA = true` in
 `packages/core/src/domain.ts`.
 
+## Monitoraggio
+
+Allarmi CloudWatch sulle risorse principali, mandati al topic SNS
+`imieiconcorsi-dev-monitoraggio` (CloudFront e budget: `imieiconcorsi-dev-monitoraggio-us-east-1`,
+perché quelle metriche stanno in us-east-1). Ogni allarme manda un'email quando scatta e quando
+torna normale. L'email è `admin_email` di `terraform.tfvars`: dopo il primo `infra` arrivano due email
+"AWS Notification - Subscription Confirmation", una per topic: **clicca il link in entrambe**.
+
+| Risorsa | Allarme |
+|---|---|
+| Lambda (tutte, una per una) | crash o timeout: 1 per job e trigger, 3 in 5 minuti per le funzioni dell'API |
+| Lambda (account) | richieste rifiutate (throttling); concorrenza oltre l'80% del limite dell'account |
+| API Gateway | almeno 5 errori 5xx in 5 minuti; latenza p95 oltre 3 secondi per 15 minuti |
+| DynamoDB (tutte le tabelle) | letture o scritture rifiutate (throttling) |
+| CloudFront | più del 5% di errori 5xx per 10 minuti |
+| SES | rimbalzi oltre il 4% o segnalazioni di spam oltre lo 0,08% (AWS interviene al 5% e allo 0,1%) |
+| Job | `inpa-scraper`, `avvisi`, `scadenze` fermi da 2 giorni, `pulizia-bandi` da 5 (gira domenica e mercoledì). Appena creato, l'allarme di un job resta acceso finché il job non gira la prima volta: `scripts/deploy.sh job <nome>` lo sblocca subito |
+| Spesa | budget mensile **dell'intero account AWS** (`budget_mensile_usd`, 50 $): avviso all'80% speso e al 100% previsto |
+
+Dashboard "imieiconcorsi-dev" in CloudWatch: stato degli allarmi, richieste ed errori dell'API,
+latenza, errori e durata delle Lambda, concorrenza, esecuzioni dei job, capacità DynamoDB,
+CloudFront, email, token del tutor AI.
+
+```bash
+scripts/deploy.sh allarme-prova   # email di prova sul topic: verifica che l'iscrizione sia confermata
+scripts/deploy.sh allarmi         # cosa è in allarme adesso
+scripts/deploy.sh urls            # tra gli indirizzi anche la dashboard
+```
+
+Dopo il primo deploy gli allarmi "job fermo" possono scattare finché i job non girano la prima
+volta (il mattino dopo, o subito con `scripts/deploy.sh job …`). Costo indicativo: circa 6 $ al mese
+tra allarmi e dashboard.
+
 ## 7. Log
 
 ```bash
-scripts/deploy.sh logs profile        # oppure: concorsi, study, billing, admin, inpa-scraper, scadenze (Ctrl+C per uscire)
+scripts/deploy.sh logs profile        # oppure: concorsi, study, billing, admin, ai, inpa-scraper, scadenze (Ctrl+C per uscire)
 ```
 
 ## 7b. Prove delle funzioni del piano

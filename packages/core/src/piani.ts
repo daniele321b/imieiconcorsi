@@ -1,13 +1,16 @@
 import { UpdateCommand } from "@aws-sdk/lib-dynamodb";
 import { impostaPianoCognito } from "./cognito";
 import { db, tables } from "./db";
-import type { Periodo, PianoId } from "./domain";
+import { periodo as durata, PIANI, type Periodo, type PianoId } from "./domain";
+import { riduciSeguiti } from "./seguiti";
 
-export const GIORNI_PERIODO: Record<Periodo, number> = { mensile: 30, annuale: 365 };
+// Cambio di piano di un utente, in un posto solo: lo usano il pagamento (billing), il pannello
+// admin e il job delle scadenze. Il piano è il gruppo Cognito; scadenza e durata stanno sul
+// profilo. Tornando al Free, i concorsi seguiti oltre il limite passano nello storico.
 
 /** Fine di un periodo pagato che parte adesso (nessun pro-rata: il nuovo periodo parte dal pagamento). */
 export function scadenzaDa(periodo: Periodo, da = new Date()) {
-  return new Date(da.getTime() + GIORNI_PERIODO[periodo] * 86_400_000).toISOString();
+  return new Date(da.getTime() + durata(periodo).giorni * 86_400_000).toISOString();
 }
 
 /**
@@ -66,4 +69,8 @@ export async function assegnaPiano(args: {
       ExpressionAttributeValues: values,
     }),
   );
+
+  // Il Free segue un solo concorso: resta l'ultimo seguito, gli altri vanno nello storico.
+  const limite = PIANI[args.piano].limiti.concorsiSeguiti;
+  if (limite !== null) await riduciSeguiti(args.userId, limite);
 }

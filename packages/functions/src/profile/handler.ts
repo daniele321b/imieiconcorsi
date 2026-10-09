@@ -10,11 +10,17 @@ import {
   type Profilo,
   type Utente,
 } from "@imieiconcorsi/core/domain";
+import { LETTURA_AVVISI, valoriLettura } from "@imieiconcorsi/core/disiscrizione";
 import { avvisaAdmin } from "@imieiconcorsi/core/email";
 import { dataIt } from "@imieiconcorsi/core/email-piani";
 import { type Ctx, HttpError, service } from "@imieiconcorsi/core/http";
 import { z } from "zod";
 
+// Servizio "profile": il profilo di studio dell'utente (interessi, livelli, avvisi), il parere
+// sull'app e l'eliminazione dell'account. Il profilo nasce al primo GET /me, qualunque sia il
+// modo di accesso. Email, nome e piano non stanno qui ma nel token di Cognito.
+
+/** Dati del modulo del profilo (onboarding e pagina Profilo). */
 const ProfiloInput = z.object({
   nome: z.string().trim().max(80).optional(),
   interessi: z.array(z.enum(COMPARTO_IDS)).min(1, "Scegli almeno un comparto"),
@@ -24,6 +30,7 @@ const ProfiloInput = z.object({
   accettaTermini: z.literal(true).optional(),
 });
 
+/** Voto da 1 a 5 e commento facoltativo. */
 const FeedbackInput = z.object({
   voto: z.number().int().min(1).max(5),
   testo: z.string().trim().max(1000).optional(),
@@ -38,6 +45,20 @@ const utente = (ctx: Ctx, profilo: Profilo, nome = ctx.nome): Utente => ({
   admin: ctx.admin,
   limiti: ctx.limiti,
 });
+
+/** Quante richieste di assistenza hanno una risposta non ancora vista (pallino nel menu). */
+async function richiesteDaLeggere(userId: string) {
+  const res = await db.send(
+    new QueryCommand({
+      TableName: tables.richieste,
+      KeyConditionExpression: "userId = :u",
+      FilterExpression: "attribute_exists(daLeggere)",
+      ExpressionAttributeValues: { ":u": userId },
+      Select: "COUNT",
+    }),
+  );
+  return res.Count ?? 0;
+}
 
 /** Tutte le righe di un utente in una tabella con chiave composta (userId + sortKey). */
 async function eliminaRighe(table: string, sortKey: string, userId: string) {
@@ -93,7 +114,14 @@ export const handler = service({
           if (err.name !== "ConditionalCheckFailedException") throw err;
         });
     }
-    return utente(ctx, profilo);
+    // Chi usa l'app legge: gli avvisi sospesi o ridotti per email non aperte ripartono.
+    if (profilo.avvisiNonAperti) {
+      await db.send(
+        new UpdateCommand({ TableName: tables.users, Key: { userId: ctx.userId }, UpdateExpression: LETTURA_AVVISI, ExpressionAttributeValues: valoriLettura() }),
+      );
+      profilo = { ...profilo, avvisiNonAperti: 0 };
+    }
+    return { ...utente(ctx, profilo), richiesteDaLeggere: await richiesteDaLeggere(ctx.userId) };
   },
 
   /** Parere sull'app: una modifica ogni 15 giorni, e l'admin riceve un'email. */
@@ -124,6 +152,7 @@ export const handler = service({
     return feedback;
   },
 
+  /** Salva il profilo (anche alla fine dell'onboarding, con l'accettazione dei Termini). */
   "PUT /me/profilo": async (ctx) => {
     const input = ctx.body(ProfiloInput);
     // Il nome è un dato personale: va su Cognito, non nel database.
@@ -135,7 +164,8 @@ export const handler = service({
         TableName: tables.users,
         Key: { userId: ctx.userId },
         UpdateExpression:
-          "SET interessi = :i, livelli = :l, avvisi = :a, onboarded = :t, updatedAt = :u" +
+          // Salvare la frequenza degli avvisi la riattiva anche se era ridotta per email non aperte.
+          "SET interessi = :i, livelli = :l, avvisi = :a, onboarded = :t, updatedAt = :u, avvisiNonAperti = :zero" +
           (input.accettaTermini ? ", terminiAccettati = :termini" : ""),
         ConditionExpression: "attribute_exists(userId)",
         ExpressionAttributeValues: {
@@ -144,6 +174,7 @@ export const handler = service({
           ":a": input.avvisi,
           ":t": true,
           ":u": now,
+          ":zero": 0,
           ...(input.accettaTermini ? { ":termini": { versione: VERSIONE_TERMINI, il: now } } : {}),
         },
         ReturnValues: "ALL_NEW",
@@ -154,12 +185,15 @@ export const handler = service({
 
   /**
    * Eliminazione dell'account (diritto alla cancellazione, richiesta anche da Facebook):
-   * dati di studio, concorsi seguiti, profilo e infine l'utente Cognito con email e nome.
+   * dati di studio, concorsi seguiti, richieste di assistenza, progressi nelle banche dati,
+   * profilo e infine l'utente Cognito con email e nome.
    * I dati dei pagamenti restano solo sulla piattaforma di pagamento, per obblighi fiscali.
    */
   "DELETE /me": async (ctx) => {
     await eliminaRighe(tables.attempts, "id", ctx.userId);
     await eliminaRighe(tables.follows, "concorsoId", ctx.userId);
+    await eliminaRighe(tables.richieste, "id", ctx.userId);
+    await eliminaRighe(tables.progressi, "bancaId", ctx.userId);
     await db.send(new DeleteCommand({ TableName: tables.users, Key: { userId: ctx.userId } }));
     await eliminaUtenteCognito(ctx.username);
     console.log(`Account eliminato: ${ctx.userId}`);

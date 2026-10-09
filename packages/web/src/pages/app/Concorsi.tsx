@@ -1,14 +1,29 @@
-import { filtraConcorsi, filtriAttivi, ORDINAMENTI, ordinaConcorsi, type FiltriConcorsi, type Ordinamento } from "@imieiconcorsi/core/concorsi";
-import { COMPARTI, type CompartoId } from "@imieiconcorsi/core/domain";
+import {
+  filtraConcorsi,
+  filtriAttivi,
+  ORDINAMENTI,
+  ordinaConcorsi,
+  type ConcorsoInLista,
+  type FiltriConcorsi,
+  type Ordinamento,
+} from "@imieiconcorsi/core/concorsi";
+import { COMPARTI, COMPARTO_IDS, type CompartoId } from "@imieiconcorsi/core/domain";
 import { ArrowUpDown, Search, SearchX, SlidersHorizontal } from "lucide-react";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { ConcorsoCard } from "../../components/ConcorsoCard";
 import { FiltriConcorsiPanel } from "../../components/FiltriConcorsiPanel";
 import { Alert, Button, EmptyState, PageHeader, Spinner, UpgradeBanner, cx } from "../../components/ui";
 import { api, ApiError, useApi, type ConcorsoApi } from "../../lib/api";
+import { useUtente } from "../../lib/auth";
+import { caricaBandi } from "../../lib/bandi";
 
+// Ricerca dei bandi (/app/concorsi): lista dalla cache su CloudFront (lib/bandi.ts), filtri,
+// ordinamento, ricerca per testo e "Segui". Si mostrano 30 bandi per volta.
+
+/** Bandi mostrati per volta ("Mostra altri"). */
 const PAGINA = 30;
 
+/** Segui / smetti di seguire un concorso, con l'errore del limite del piano (usato anche nel dettaglio). */
 export function useSegui(onCambio: (id: string, seguito: boolean) => void) {
   const [inCorso, setInCorso] = useState<string>();
   const [errore, setErrore] = useState<ApiError>();
@@ -28,21 +43,52 @@ export function useSegui(onCambio: (id: string, seguito: boolean) => void) {
   return { segui, inCorso, errore, chiudiErrore: () => setErrore(undefined) };
 }
 
+/** Pagina /app/concorsi. */
 export function Concorsi() {
   const [comparto, setComparto] = useState<CompartoId | "miei" | "tutti">("miei");
   const [testo, setTesto] = useState("");
   const [ordine, setOrdine] = useState<Ordinamento>("scadenza");
   const [filtri, setFiltri] = useState<FiltriConcorsi>({});
-  // La scadenza è per inviare la domanda: chi ha già fatto domanda continua a prepararsi.
-  const [conScaduti, setConScaduti] = useState(false);
   const [pannello, setPannello] = useState(false);
   const [mostrati, setMostrati] = useState(PAGINA);
 
-  const qs = new URLSearchParams({ ...(comparto !== "miei" ? { comparto } : {}), ...(conScaduti ? { scaduti: "1" } : {}) }).toString();
-  const { data, loading, error, setData } = useApi<{ concorsi: ConcorsoApi[] }>(`/concorsi${qs ? `?${qs}` : ""}`);
-  const { segui, inCorso, errore, chiudiErrore } = useSegui((id, seguito) =>
-    setData((d) => d && { concorsi: d.concorsi.map((c) => (c.id === id ? { ...c, seguito } : c)) }),
+  const { utente } = useUtente();
+  // Tutti i bandi, aperti e chiusi: le caselle Aperti/Chiusi nei filtri scelgono cosa vedere.
+  const comparti = useMemo<readonly CompartoId[]>(
+    () => (comparto === "tutti" ? COMPARTO_IDS : comparto === "miei" ? (utente.interessi.length ? utente.interessi : COMPARTO_IDS) : [comparto]),
+    [comparto, utente.interessi],
   );
+  const [bandi, setBandi] = useState<ConcorsoInLista[]>();
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<ApiError>();
+  useEffect(() => {
+    let attuale = true;
+    setLoading(true);
+    setError(undefined);
+    caricaBandi(comparti)
+      .then((b) => attuale && setBandi(b))
+      .catch(() => attuale && setError(new ApiError(0, "Non riesco a caricare i bandi: riprova tra poco.")))
+      .finally(() => attuale && setLoading(false));
+    return () => {
+      attuale = false;
+    };
+  }, [comparti]);
+
+  // Quali segui: dall'API (la lista in cache è uguale per tutti).
+  const seguitiApi = useApi<{ concorsi: ConcorsoApi[] }>("/me/concorsi");
+  const [seguiti, setSeguiti] = useState<Set<string>>(new Set());
+  useEffect(() => {
+    if (seguitiApi.data) setSeguiti(new Set(seguitiApi.data.concorsi.map((c) => c.id)));
+  }, [seguitiApi.data]);
+  const { segui, inCorso, errore, chiudiErrore } = useSegui((id, seguito) =>
+    setSeguiti((s) => {
+      const nuovi = new Set(s);
+      if (seguito) nuovi.add(id);
+      else nuovi.delete(id);
+      return nuovi;
+    }),
+  );
+  const data = useMemo(() => bandi && { concorsi: bandi.map((c) => ({ ...c, seguito: seguiti.has(c.id) })) }, [bandi, seguiti]);
 
   const filtrati = useMemo(() => {
     const q = testo.trim().toLowerCase();
@@ -69,7 +115,7 @@ export function Concorsi() {
     <div>
       <PageHeader
         title="Concorsi"
-        subtitle="I bandi di inPA con le domande ancora aperte, aggiornati ogni mattina. Puoi mostrare anche quelli con le domande chiuse, per continuare a prepararti."
+        subtitle="I bandi di inPA, aperti e con le domande chiuse, aggiornati ogni mattina. Dai Filtri scegli se vedere solo gli aperti o solo i chiusi."
       />
 
       <div className="sticky top-16 z-20 -mx-4 space-y-3 bg-slate-50/90 px-4 py-3 backdrop-blur sm:-mx-6 sm:px-6">
@@ -130,18 +176,6 @@ export function Concorsi() {
             )}
           </div>
         )}
-        <label className="flex items-center gap-2 text-sm font-medium text-slate-700">
-          <input
-            type="checkbox"
-            checked={conScaduti}
-            onChange={(e) => {
-              setConScaduti(e.target.checked);
-              setMostrati(PAGINA);
-            }}
-            className="size-4 rounded border-slate-300 text-brand-600 focus:ring-brand-500"
-          />
-          Mostra anche i bandi con le domande chiuse (concorso ancora in corso)
-        </label>
         <div className="-mx-1 flex gap-2 overflow-x-auto px-1 pb-1">
           {chips.map((c) => (
             <button
@@ -177,7 +211,8 @@ export function Concorsi() {
         ) : filtrati.length ? (
           <>
             <p className="text-sm text-slate-500">
-              {filtrati.length} {filtrati.length === 1 ? "bando" : "bandi"}, ordinati per{" "}
+              {filtrati.length} {filtrati.length === 1 ? "bando" : "bandi"}
+              {filtri.aperti === false ? " con le domande chiuse" : filtri.chiusi === false ? " aperti" : ""}, ordinati per{" "}
               {
                 {
                   scadenza: "scadenza più vicina",
@@ -203,6 +238,18 @@ export function Concorsi() {
         ) : (
           <EmptyState icon={<SearchX className="size-6" />} title="Nessun bando trovato">
             Prova a cambiare comparto o a cercare un'altra parola.
+            {(filtri.aperti === false || filtri.chiusi === false) && (
+              <>
+                {" "}
+                <button
+                  onClick={() => setFiltri((f) => ({ ...f, aperti: undefined, chiusi: undefined }))}
+                  className="font-semibold text-brand-600 hover:text-brand-700"
+                >
+                  Mostra aperti e chiusi
+                </button>
+                .
+              </>
+            )}
           </EmptyState>
         )}
       </div>

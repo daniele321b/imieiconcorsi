@@ -1,14 +1,21 @@
-import { PIANI, type CompartoId, type FrequenzaAvvisi, type MateriaId } from "@imieiconcorsi/core/domain";
-import { LogOut, ShieldCheck, Trash2 } from "lucide-react";
+import { periodo, PIANI, type CompartoId, type FrequenzaAvvisi, type MateriaId } from "@imieiconcorsi/core/domain";
+import { LifeBuoy, LogOut, ShieldCheck, Trash2 } from "lucide-react";
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { FeedbackApp } from "../../components/FeedbackApp";
+import { InvitaAmico } from "../../components/InvitaAmico";
+import { StoricoPagamenti } from "../../components/StoricoPagamenti";
+import { StoricoSeguiti } from "../../components/StoricoSeguiti";
 import { AvvisiPicker, InteressiPicker, LivelliPicker } from "../../components/ProfiloPickers";
 import { Alert, Badge, Button, ButtonLink, Card, Field, PageHeader } from "../../components/ui";
 import { api } from "../../lib/api";
 import { messaggioErrore, useAuth, useUtente } from "../../lib/auth";
 import { data } from "../../lib/format";
 
+// Profilo (/app/profilo): piano, nome, comparti, livelli, avvisi, storico dei pagamenti, invita
+// un amico, storico dei concorsi seguiti, assistenza, parere sull'app, uscita ed eliminazione.
+
+/** Pagina /app/profilo. */
 export function Profilo() {
   const { utente } = useUtente();
   const { esci, ricarica } = useAuth();
@@ -86,7 +93,7 @@ export function Profilo() {
           <div>
             <p className="text-xs font-semibold text-slate-500 uppercase">Piano</p>
             <p className="mt-1 flex items-center gap-2 font-medium">
-              {PIANI[utente.piano].nome} {utente.periodo && <Badge>{utente.periodo}</Badge>}
+              {PIANI[utente.piano].nome} {utente.periodo && <Badge>{periodo(utente.periodo).nome}</Badge>}
               <ButtonLink to="/app/piani" variant="ghost" size="sm">
                 Cambia
               </ButtonLink>
@@ -139,6 +146,22 @@ export function Profilo() {
           Salva modifiche
         </Button>
       </div>
+
+      {!utente.admin && <StoricoPagamenti />}
+
+      {!utente.admin && <InvitaAmico />}
+
+      <StoricoSeguiti />
+
+      <section className="space-y-3">
+        <h2 className="flex items-center gap-2 text-lg font-bold">
+          <LifeBuoy className="size-5 text-brand-600" /> Assistenza
+        </h2>
+        <p className="text-sm text-slate-500">Ti serve una banca dati, hai trovato una domanda sbagliata o hai un problema con l'accesso o un pagamento? Scrivici.</p>
+        <ButtonLink to="/app/assistenza" variant="secondary">
+          Le mie richieste{!!utente.richiesteDaLeggere && ` · ${utente.richiesteDaLeggere} risposte nuove`}
+        </ButtonLink>
+      </section>
 
       <FeedbackApp />
 

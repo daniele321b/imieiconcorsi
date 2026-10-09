@@ -18,6 +18,7 @@ locals {
   con_dominio = var.domain_name != null
 }
 
+# Certificato HTTPS per il dominio (solo se c'è domain_name).
 resource "aws_acm_certificate" "web" {
   count             = local.con_dominio ? 1 : 0
   provider          = aws.us_east_1
@@ -42,6 +43,7 @@ resource "aws_route53_record" "cert_validation" {
   allow_overwrite = true
 }
 
+# Attende che AWS confermi il certificato tramite il record DNS.
 resource "aws_acm_certificate_validation" "web" {
   count                   = local.con_dominio ? 1 : 0
   provider                = aws.us_east_1
@@ -49,11 +51,13 @@ resource "aws_acm_certificate_validation" "web" {
   validation_record_fqdns = [for r in aws_route53_record.cert_validation : r.fqdn]
 }
 
+# Bucket del sito (file di packages/web/dist) e della lista dei bandi in cache.
 resource "aws_s3_bucket" "web" {
   bucket_prefix = "${var.name}-web-"
   force_destroy = true
 }
 
+# Privato: i file si leggono solo passando da CloudFront.
 resource "aws_s3_bucket_public_access_block" "web" {
   bucket                  = aws_s3_bucket.web.id
   block_public_acls       = true
@@ -62,6 +66,7 @@ resource "aws_s3_bucket_public_access_block" "web" {
   restrict_public_buckets = true
 }
 
+# Identità con cui CloudFront legge il bucket privato (richieste firmate).
 resource "aws_cloudfront_origin_access_control" "web" {
   name                              = "${var.name}-web"
   origin_access_control_origin_type = "s3"
@@ -69,10 +74,12 @@ resource "aws_cloudfront_origin_access_control" "web" {
   signing_protocol                  = "sigv4"
 }
 
+# Politica di cache standard di AWS per i file statici.
 data "aws_cloudfront_cache_policy" "caching_optimized" {
   name = "Managed-CachingOptimized"
 }
 
+# Inoltra all'API intestazioni e parametri del browser, tranne Host.
 data "aws_cloudfront_origin_request_policy" "all_viewer_except_host" {
   name = "Managed-AllViewerExceptHostHeader"
 }
@@ -101,6 +108,7 @@ resource "aws_cloudfront_cache_policy" "api" {
   }
 }
 
+# Sito a pagina unica: un indirizzo come /app/profilo serve index.html (decide React).
 resource "aws_cloudfront_function" "spa" {
   name    = "${var.name}-spa"
   runtime = "cloudfront-js-2.0"
@@ -108,6 +116,7 @@ resource "aws_cloudfront_function" "spa" {
   code    = file("${path.module}/functions/spa.js")
 }
 
+# Toglie /api dall'indirizzo prima di passarlo all'API Gateway.
 resource "aws_cloudfront_function" "api_prefix" {
   name    = "${var.name}-api-prefix"
   runtime = "cloudfront-js-2.0"
@@ -115,6 +124,7 @@ resource "aws_cloudfront_function" "api_prefix" {
   code    = file("${path.module}/functions/api-prefix.js")
 }
 
+# La distribuzione CloudFront: HTTPS, cache dei file statici, /api/* verso l'API Gateway.
 resource "aws_cloudfront_distribution" "web" {
   enabled             = true
   comment             = var.name
@@ -186,6 +196,7 @@ resource "aws_cloudfront_distribution" "web" {
   }
 }
 
+# Il bucket si lascia leggere solo da questa distribuzione CloudFront.
 resource "aws_s3_bucket_policy" "web" {
   bucket = aws_s3_bucket.web.id
   policy = jsonencode({
@@ -198,6 +209,25 @@ resource "aws_s3_bucket_policy" "web" {
       Condition = { StringEquals = { "AWS:SourceArn" = aws_cloudfront_distribution.web.arn } }
     }]
   })
+}
+
+# Lista dei bandi in cache (dati/bandi/<versione>/…): la scrive lo scraper ogni mattina in una
+# cartella nuova; le cartelle vecchie spariscono da sole. indice.json si riscrive ogni giorno.
+resource "aws_s3_bucket_lifecycle_configuration" "web" {
+  bucket = aws_s3_bucket.web.id
+
+  rule {
+    id     = "cache-bandi-vecchie"
+    status = "Enabled"
+
+    filter {
+      prefix = "dati/bandi/"
+    }
+
+    expiration {
+      days = 45
+    }
+  }
 }
 
 # ── Contenuto del sito ───────────────────────────────────────────────────────
@@ -222,6 +252,7 @@ locals {
   web_files = setsubtract(fileset(var.dist_dir, "**"), ["config.json"])
 }
 
+# Ogni file del sito compilato, con il tipo giusto e la cache adatta.
 resource "aws_s3_object" "web" {
   for_each = local.web_files
 
@@ -234,6 +265,7 @@ resource "aws_s3_object" "web" {
   cache_control = startswith(each.value, "assets/") ? "public, max-age=31536000, immutable" : "no-cache"
 }
 
+# config.json: indirizzo dell'API e dati di Cognito per il sito (lib/config.ts).
 resource "aws_s3_object" "web_config" {
   bucket        = aws_s3_bucket.web.id
   key           = "config.json"

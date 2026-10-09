@@ -1,6 +1,7 @@
 import { CheckCircle2, Clock, XCircle } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { Link, useSearchParams } from "react-router";
+import type { AperturaRichiesta } from "../../components/Richieste";
 import { Alert, ButtonLink, Card, Spinner } from "../../components/ui";
 import { api, ApiError, type OrdineApi } from "../../lib/api";
 import { useAuth } from "../../lib/auth";
@@ -107,7 +108,10 @@ export function Pagamento() {
         )}
       </Card>
       <p className="mt-4 text-center text-xs text-slate-400">
-        Ordine {ordine.id} · <Link to="/termini">Termini</Link>
+        Ordine {ordine.id} · <Link to="/termini">Termini</Link> ·{" "}
+        <Link to="/app/assistenza" state={{ tipo: "pagamento", contesto: { ordineId: ordine.id } } satisfies AperturaRichiesta}>
+          Problemi con il pagamento?
+        </Link>
       </p>
     </div>
   );

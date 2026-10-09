@@ -4,11 +4,13 @@
 #   banche-dati/<id>.pdf    banche dati ufficiali caricate dal pannello admin: ogni PDF fa
 #                           partire l'estrazione delle domande (banche-dati/<id>.json).
 
+# Il bucket (nome con un suffisso casuale: i nomi S3 sono unici nel mondo).
 resource "aws_s3_bucket" "contenuti" {
   bucket_prefix = "${var.name}-contenuti-"
   force_destroy = true
 }
 
+# Niente di pubblico: lo leggono solo le Lambda con i permessi giusti.
 resource "aws_s3_bucket_public_access_block" "contenuti" {
   bucket                  = aws_s3_bucket.contenuti.id
   block_public_acls       = true
@@ -17,6 +19,7 @@ resource "aws_s3_bucket_public_access_block" "contenuti" {
   restrict_public_buckets = true
 }
 
+# Versioni: un file sovrascritto o cancellato per errore si può recuperare.
 resource "aws_s3_bucket_versioning" "contenuti" {
   bucket = aws_s3_bucket.contenuti.id
   versioning_configuration {
@@ -24,6 +27,31 @@ resource "aws_s3_bucket_versioning" "contenuti" {
   }
 }
 
+# Banche dati eliminate dall'admin o PDF ricopiati per rifare l'estrazione: le versioni
+# vecchie restano 30 giorni (per recuperare un errore), poi spariscono.
+resource "aws_s3_bucket_lifecycle_configuration" "contenuti" {
+  bucket     = aws_s3_bucket.contenuti.id
+  depends_on = [aws_s3_bucket_versioning.contenuti]
+
+  rule {
+    id     = "banche-dati-versioni-vecchie"
+    status = "Enabled"
+
+    filter {
+      prefix = "banche-dati/"
+    }
+
+    noncurrent_version_expiration {
+      noncurrent_days = 30
+    }
+
+    expiration {
+      expired_object_delete_marker = true
+    }
+  }
+}
+
+# Lambda che importa un file di domande nella tabella questions (functions/src/contenuti).
 module "import_domande" {
   source       = "../lambda"
   name         = "${var.name}-import-domande"
@@ -38,6 +66,7 @@ module "import_domande" {
   }]
 }
 
+# Permesso a S3 di far partire l'import.
 resource "aws_lambda_permission" "s3" {
   statement_id  = "AllowS3"
   action        = "lambda:InvokeFunction"
@@ -46,6 +75,7 @@ resource "aws_lambda_permission" "s3" {
   source_arn    = aws_s3_bucket.contenuti.arn
 }
 
+# Cosa fa partire cosa: un JSON in domande/ → import; un PDF in banche-dati/ → estrazione.
 resource "aws_s3_bucket_notification" "domande" {
   bucket = aws_s3_bucket.contenuti.id
 
@@ -80,6 +110,8 @@ resource "aws_s3_bucket_cors_configuration" "contenuti" {
   }
 }
 
+# Lambda che estrae le domande da un PDF (functions/src/banche-dati/estrai.ts): fino a 15
+# minuti e 3 GB di memoria, per PDF di migliaia di pagine. A fine lavoro scrive all'admin.
 module "estrai_banca_dati" {
   source       = "../lambda"
   name         = "${var.name}-estrai-banca-dati"
@@ -95,6 +127,7 @@ module "estrai_banca_dati" {
   }], var.email_policy_statements)
 }
 
+# Permesso a S3 di far partire l'estrazione.
 resource "aws_lambda_permission" "s3_banche_dati" {
   statement_id  = "AllowS3"
   action        = "lambda:InvokeFunction"

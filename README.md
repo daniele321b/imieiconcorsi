@@ -15,3 +15,5 @@ scripts/deploy.sh all
 
 - [docs/COMANDI-RAPIDI.md](docs/COMANDI-RAPIDI.md): i comandi pronti da copiare
 - [docs/DEPLOY.md](docs/DEPLOY.md): architettura e runbook
+- [docs/ARCHITETTURA.md](docs/ARCHITETTURA.md): guida per sviluppatori (flussi, dati, come aggiungere route, tabelle, job, pagine)
+- [docs/MAPPA-CODICE.md](docs/MAPPA-CODICE.md): cosa fa ogni file, componente e modulo Terraform

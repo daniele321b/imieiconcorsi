@@ -10,8 +10,10 @@ import type { S3Event } from "aws-lambda";
 // verità: le domande che non ci sono più vengono tolte dalla tabella.
 
 const s3 = new S3Client({});
+/** Cartella dei file delle domande nel bucket dei contenuti. */
 const PREFISSO = "domande/";
 
+/** Scrive o cancella righe della tabella questions a blocchi da 25. */
 async function scriviABlocchi(richieste: Record<string, unknown>[]) {
   for (let i = 0; i < richieste.length; i += 25) {
     let pending = richieste.slice(i, i + 25);
@@ -22,6 +24,7 @@ async function scriviABlocchi(richieste: Record<string, unknown>[]) {
   }
 }
 
+/** Id delle domande di una materia già in tabella (per togliere quelle sparite dal file). */
 async function idEsistenti(materia: string) {
   const ids: string[] = [];
   let start: Record<string, unknown> | undefined;
@@ -41,6 +44,7 @@ async function idEsistenti(materia: string) {
   return ids;
 }
 
+/** Importa un file domande/<materia>.json: controlla, scrive le domande e toglie quelle sparite. */
 export async function importaFile(bucket: string, key: string) {
   const materia = key.slice(PREFISSO.length).replace(/\.json$/, "");
   const obj = await s3.send(new GetObjectCommand({ Bucket: bucket, Key: key }));

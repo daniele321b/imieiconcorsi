@@ -1,5 +1,8 @@
 import type { Domanda, DomandaPubblica, Esito, MateriaId, Regole } from "@imieiconcorsi/core/domain";
 
+// Parte pura del servizio studio (senza AWS, provata dai test): scelta delle domande di una
+// sessione, mescolamento, versione senza soluzioni e calcolo del punteggio.
+
 /**
  * Sceglie `numero` domande ripartite il più possibile in modo uniforme tra le materie.
  * Dentro ogni materia preferisce quelle vicine al livello dichiarato dall'utente.
@@ -31,6 +34,7 @@ export function selezionaDomande(
   return mescola(scelte, random);
 }
 
+/** Copia della lista in ordine casuale (Fisher-Yates). */
 export function mescola<T>(items: T[], random: () => number = Math.random): T[] {
   const out = [...items];
   for (let i = out.length - 1; i > 0; i--) {
@@ -40,8 +44,10 @@ export function mescola<T>(items: T[], random: () => number = Math.random): T[] 
   return out;
 }
 
+/** La domanda senza soluzione, spiegazione e fonte: è quella che vede chi fa una simulazione. */
 export const pubblica = ({ corretta, spiegazione, fonte, ...d }: Domanda): DomandaPubblica => d;
 
+/** Punteggio di una sessione consegnata: giuste, sbagliate, non date, percentuale e per materia. */
 export function calcolaEsito(domande: Domanda[], risposte: (number | null)[], regole: Regole): Esito {
   let corrette = 0;
   let errate = 0;

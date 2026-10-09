@@ -29,8 +29,18 @@ export const tables = {
   get bancheDati() {
     return env("BANCHE_DATI_TABLE");
   },
+  get richieste() {
+    return env("RICHIESTE_TABLE");
+  },
+  get progressi() {
+    return env("PROGRESSI_TABLE");
+  },
+  get contatori() {
+    return env("CONTATORI_TABLE");
+  },
 };
 
+/** Client DynamoDB che lavora con oggetti JavaScript normali (i campi undefined non si salvano). */
 export const db = DynamoDBDocumentClient.from(new DynamoDBClient({}), {
   marshallOptions: { removeUndefinedValues: true },
 });

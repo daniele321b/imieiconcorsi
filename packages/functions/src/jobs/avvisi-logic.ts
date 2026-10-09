@@ -1,5 +1,8 @@
 import type { Concorso, FrequenzaAvvisi } from "@imieiconcorsi/core/domain";
 
+// Regole degli avvisi email sui nuovi bandi, senza AWS (le prova la suite di test): quando
+// mandarli, quali bandi includere, e come rallentarli per chi non li apre. Il job vero è avvisi.ts.
+
 const GIORNO = 86_400_000;
 
 /** Data (YYYY-MM-DD) e giorno della settimana in ora italiana. */
@@ -40,4 +43,23 @@ export function bandiNuovi<T extends Pick<Concorso, "primoImportoIl" | "pubblica
       return uscito !== undefined && giorni.has(giornoARoma(new Date(uscito)).data);
     })
     .sort((a, b) => (a.scadenza ?? "").localeCompare(b.scadenza ?? ""));
+}
+
+// ── Avvisi solo a chi li legge ───────────────────────────────────────────────
+
+/** Avvisi giornalieri non aperti di fila dopo cui si passa al lunedì. */
+export const SOGLIA_SETTIMANALE = 7;
+/** Avvisi settimanali non aperti di fila dopo cui si sospendono. */
+export const SOGLIA_PAUSA_SETTIMANALE = 4;
+
+/**
+ * Frequenza che vale davvero, dati gli avvisi mandati e non aperti di fila. Si riparte da
+ * zero quando la persona apre un'email, clicca un link o entra nell'app.
+ */
+export function frequenzaEffettiva(scelta: Exclude<FrequenzaAvvisi, "mai">, nonAperti = 0): Exclude<FrequenzaAvvisi, "mai"> | "pausa" {
+  if (scelta === "giornaliero") {
+    if (nonAperti < SOGLIA_SETTIMANALE) return "giornaliero";
+    return nonAperti < SOGLIA_SETTIMANALE + SOGLIA_PAUSA_SETTIMANALE ? "settimanale" : "pausa";
+  }
+  return nonAperti < SOGLIA_PAUSA_SETTIMANALE ? "settimanale" : "pausa";
 }

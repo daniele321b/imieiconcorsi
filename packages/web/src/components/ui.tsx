@@ -2,6 +2,10 @@ import { AlertTriangle, CheckCircle2, Info, Loader2, Sparkles, X } from "lucide-
 import { useEffect, type ButtonHTMLAttributes, type InputHTMLAttributes, type ReactNode } from "react";
 import { Link } from "react-router";
 
+// Componenti grafici di base (Tailwind CSS), usati da tutte le pagine: pulsanti, schede,
+// etichette, campi, avvisi, caricamento, barre di avanzamento, intestazioni e inviti al piano.
+
+/** Unisce classi CSS saltando quelle vuote o false: cx("a", cond && "b"). */
 export const cx = (...c: (string | false | null | undefined)[]) => c.filter(Boolean).join(" ");
 
 type Variant = "primary" | "secondary" | "ghost" | "danger" | "accent";
@@ -26,6 +30,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   loading?: boolean;
 }
 
+/** Pulsante; `loading` mostra la rotellina e lo disattiva. */
 export function Button({ variant = "primary", size = "md", loading, className, children, disabled, ...props }: ButtonProps) {
   return (
     <button
@@ -44,6 +49,7 @@ export function Button({ variant = "primary", size = "md", loading, className, c
   );
 }
 
+/** Link interno con l'aspetto di un pulsante. */
 export function ButtonLink({
   to,
   variant = "primary",
@@ -67,6 +73,7 @@ export function ButtonLink({
   );
 }
 
+/** Riquadro bianco con bordo e ombra. */
 export function Card({ className, children }: { className?: string; children: ReactNode }) {
   return <div className={cx("rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200/70", className)}>{children}</div>;
 }
@@ -79,6 +86,7 @@ const BADGE = {
   amber: "bg-amber-50 text-amber-800 ring-1 ring-amber-100",
 };
 
+/** Etichetta piccola colorata (stato, piano, numero). */
 export function Badge({ tone = "slate", className, children }: { tone?: keyof typeof BADGE; className?: string; children: ReactNode }) {
   return (
     <span className={cx("inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-semibold", BADGE[tone], className)}>
@@ -92,6 +100,7 @@ interface FieldProps extends InputHTMLAttributes<HTMLInputElement> {
   hint?: string;
 }
 
+/** Campo di testo con etichetta e suggerimento. */
 export function Field({ label, hint, id, className, ...props }: FieldProps) {
   const inputId = id ?? props.name;
   return (
@@ -113,6 +122,7 @@ const ALERT = {
   info: { cls: "bg-brand-50 text-brand-900 ring-brand-200", Icon: Info },
 };
 
+/** Messaggio colorato: errore, successo o informazione; con `onClose` si può chiudere. */
 export function Alert({ tone = "info", children, onClose }: { tone?: keyof typeof ALERT; children: ReactNode; onClose?: () => void }) {
   const { cls, Icon } = ALERT[tone];
   return (
@@ -128,6 +138,7 @@ export function Alert({ tone = "info", children, onClose }: { tone?: keyof typeo
   );
 }
 
+/** Rotellina di caricamento con testo. */
 export function Spinner({ label = "Caricamento…" }: { label?: string }) {
   return (
     <div className="flex items-center justify-center gap-2 py-16 text-slate-500">
@@ -137,6 +148,7 @@ export function Spinner({ label = "Caricamento…" }: { label?: string }) {
   );
 }
 
+/** Caricamento a tutta pagina (all'avvio, finché non si sa chi è collegato). */
 export function FullPageSpinner() {
   return (
     <div className="grid min-h-screen place-items-center">
@@ -145,6 +157,7 @@ export function FullPageSpinner() {
   );
 }
 
+/** Barra di avanzamento; `value` in percentuale (0-100). */
 export function ProgressBar({ value, tone = "brand", className }: { value: number; tone?: "brand" | "green" | "amber" | "red"; className?: string }) {
   const colori = { brand: "bg-brand-500", green: "bg-emerald-500", amber: "bg-amber-400", red: "bg-rose-500" };
   return (
@@ -154,6 +167,7 @@ export function ProgressBar({ value, tone = "brand", className }: { value: numbe
   );
 }
 
+/** Riquadro "niente da mostrare" con icona, titolo, testo e azione facoltativa. */
 export function EmptyState({ icon, title, children, action }: { icon: ReactNode; title: string; children?: ReactNode; action?: ReactNode }) {
   return (
     <div className="flex flex-col items-center rounded-2xl border-2 border-dashed border-slate-200 px-6 py-10 text-center">
@@ -165,6 +179,7 @@ export function EmptyState({ icon, title, children, action }: { icon: ReactNode;
   );
 }
 
+/** Titolo della pagina con sottotitolo e pulsanti a destra. */
 export function PageHeader({ title, subtitle, actions }: { title: string; subtitle?: ReactNode; actions?: ReactNode }) {
   return (
     <div className="mb-6 flex flex-wrap items-end justify-between gap-4">
@@ -178,6 +193,7 @@ export function PageHeader({ title, subtitle, actions }: { title: string; subtit
 }
 
 /** Mostrato quando il server risponde LIMITE_PIANO. */
+/** Banner "funzione del piano superiore" con il link alla pagina Piani. */
 export function UpgradeBanner({ message, onClose }: { message: string; onClose?: () => void }) {
   return (
     <div className="flex flex-wrap items-center gap-3 rounded-2xl bg-gradient-to-r from-brand-700 to-brand-500 p-4 text-white shadow-lg shadow-brand-600/20">

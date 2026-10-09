@@ -1,9 +1,11 @@
 variable "name" {
-  type = string
+  description = "Prefisso dei nomi delle risorse, es. imieiconcorsi-dev"
+  type        = string
 }
 
 variable "functions_dir" {
-  type = string
+  description = "Cartella delle Lambda compilate (dist/functions)"
+  type        = string
 }
 
 variable "domande_dir" {
@@ -12,7 +14,8 @@ variable "domande_dir" {
 }
 
 variable "questions_table_arn" {
-  type = string
+  description = "ARN della tabella delle domande, scritta dall'import"
+  type        = string
 }
 
 variable "environment" {

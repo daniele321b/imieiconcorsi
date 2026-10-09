@@ -1,11 +1,13 @@
 variable "aws_region" {
-  type    = string
-  default = "eu-south-1"
+  description = "Regione AWS dell'ambiente (Milano: eu-south-1)"
+  type        = string
+  default     = "eu-south-1"
 }
 
 variable "project_name" {
-  type    = string
-  default = "imieiconcorsi"
+  description = "Nome del progetto, primo pezzo del nome di ogni risorsa"
+  type        = string
+  default     = "imieiconcorsi"
 }
 
 variable "state_bucket" {
@@ -23,25 +25,29 @@ variable "admin_email" {
 # Vanno in terraform.tfvars (non versionato).
 
 variable "google_client_id" {
-  type    = string
-  default = ""
+  description = "Client id OAuth di Google (docs/LOGIN-SOCIAL.md); vuoto = niente accesso con Google"
+  type        = string
+  default     = ""
 }
 
 variable "google_client_secret" {
-  type      = string
-  default   = ""
-  sensitive = true
+  description = "Client secret OAuth di Google"
+  type        = string
+  default     = ""
+  sensitive   = true
 }
 
 variable "facebook_app_id" {
-  type    = string
-  default = ""
+  description = "App id di Facebook (docs/LOGIN-SOCIAL.md); vuoto = niente accesso con Facebook"
+  type        = string
+  default     = ""
 }
 
 variable "facebook_app_secret" {
-  type      = string
-  default   = ""
-  sensitive = true
+  description = "App secret di Facebook"
+  type        = string
+  default     = ""
+  sensitive   = true
 }
 
 # --- Pubblicità del piano Free: facoltativa. Vuoti = annunci interni sui piani ---
@@ -73,4 +79,51 @@ variable "stripe_webhook_secret" {
   type        = string
   default     = ""
   sensitive   = true
+}
+
+# --- Tutor AI del piano Pro (Claude su Amazon Bedrock) ---
+
+variable "ai_model" {
+  description = <<-EOT
+    Profilo d'inferenza Bedrock del tutor AI. eu. = i dati restano in Europa.
+    Haiku 4.5 è il più economico (~0,3 cent a risposta); per risposte più ricche
+    si può passare a un modello più grande, a costo maggiore.
+  EOT
+  type        = string
+  default     = "eu.anthropic.claude-haiku-4-5-20251001-v1:0"
+}
+
+variable "ai_tetto_utente_usd" {
+  description = <<-EOT
+    Spesa AI massima al mese per utente, in dollari (stima dai token consumati). Oltre, il tutor
+    si ferma per quell'utente fino al mese dopo. Rete di sicurezza oltre ai gettoni: un utente Pro
+    che usa tutti i 300 gettoni spende di solito 1-2 dollari.
+  EOT
+  type        = number
+  default     = 3
+  validation {
+    condition     = var.ai_tetto_utente_usd > 0
+    error_message = "ai_tetto_utente_usd deve essere maggiore di zero."
+  }
+}
+
+variable "ai_tetto_mensile_usd" {
+  description = <<-EOT
+    Spesa AI massima al mese di tutta la piattaforma, in dollari. All'80% l'admin riceve
+    un'email; al 100% tutor e allenamenti AI vanno in pausa per tutti fino al mese dopo.
+  EOT
+  type        = number
+  default     = 50
+  validation {
+    condition     = var.ai_tetto_mensile_usd > 0
+    error_message = "ai_tetto_mensile_usd deve essere maggiore di zero."
+  }
+}
+
+# --- Monitoraggio ---
+
+variable "budget_mensile_usd" {
+  description = "Budget mensile dell'intero account AWS in dollari (avviso all'80% speso e al 100% previsto). 0 = nessun budget"
+  type        = number
+  default     = 50
 }

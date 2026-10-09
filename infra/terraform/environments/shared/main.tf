@@ -7,6 +7,7 @@ data "aws_route53_zone" "main" {
   private_zone = false
 }
 
+# Mittente delle email (modules/ses), usato da tutti gli ambienti.
 module "ses" {
   source             = "../../modules/ses"
   name               = var.project_name

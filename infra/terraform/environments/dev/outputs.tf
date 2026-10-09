@@ -42,3 +42,11 @@ output "web_config" {
 output "contenuti_bucket" {
   value = module.contenuti.bucket
 }
+
+output "monitoraggio_topic_arn" {
+  value = module.monitoraggio.topic_arn
+}
+
+output "dashboard_url" {
+  value = module.monitoraggio.dashboard_url
+}

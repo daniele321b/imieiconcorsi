@@ -6,6 +6,7 @@ import { LegalePagina } from "./LegalePagina";
 // Descrive come funziona davvero l'app: se cambia il trattamento, va aggiornata
 // insieme a VERSIONE_TERMINI (packages/core/src/domain.ts).
 
+/** Pagina /privacy. */
 export function Privacy() {
   return (
     <LegalePagina titolo="Informativa sulla privacy">
@@ -42,7 +43,30 @@ export function Privacy() {
           esito del pagamento, collegati all'identificativo anonimo.
         </li>
         <li>
+          <strong>Inviti:</strong> se ti iscrivi con il link di un amico, salviamo quale account ti ha invitato (identificativo
+          anonimo), per dargli il premio quando compri un piano. Per lo stesso motivo lui vede quanti amici si sono iscritti e
+          hanno comprato, non chi sono.
+        </li>
+        <li>
+          <strong>Concorsi seguiti:</strong> teniamo lo storico dei concorsi che hai seguito (nome e giorno), che vedi nel profilo.
+        </li>
+        <li>
           <strong>Parere sull'app:</strong> se lo lasci dal profilo, il voto e il commento; ci arrivano anche per email.
+        </li>
+        <li>
+          <strong>Progressi nelle banche dati:</strong> quali domande di ogni banca dati hai già fatto e quali hai sbagliato
+          l'ultima volta, per proporti quelle nuove o da ripassare. Puoi azzerarli quando vuoi con "Ricomincia".
+        </li>
+        <li>
+          <strong>Richieste di assistenza:</strong> se ci scrivi dalla pagina Assistenza, il tipo di richiesta, i messaggi
+          scambiati e, se la richiesta nasce da lì, la domanda, la banca dati, il concorso o l'ordine a cui si riferisce. Ci
+          arrivano anche per email; ti avvisiamo per email quando rispondiamo. Non scrivere password o dati della carta.
+        </li>
+        <li>
+          <strong>Tutor AI (solo piano Pro):</strong> quando lo usi, le tue domande al tutor e la domanda di studio su cui chiedi
+          vengono inviate al modello di intelligenza artificiale per avere la risposta, senza il tuo nome né la tua email. Non
+          conserviamo le conversazioni: salviamo solo quanti gettoni e token hai usato nel mese e la spesa stimata, per i limiti
+          di utilizzo. Il tutor risponde solo su argomenti di studio. Non scrivere dati personali nel tutor.
         </li>
         <li>
           <strong>Dati tecnici:</strong> log dei servizi (data e ora delle richieste, errori), conservati per 14 giorni per
@@ -63,6 +87,12 @@ export function Privacy() {
           avvisa e smette di scrivere a quell'indirizzo.
         </li>
         <li>
+          Avvisi solo a chi li legge: negli avvisi sui bandi un'immagine invisibile e i link ci dicono se l'email è stata
+          aperta. Lo usiamo soltanto per contare gli avvisi non aperti di fila: dopo 7 si passa all'invio del lunedì, dopo
+          altri 4 gli avvisi si sospendono finché non apri un'email o torni nell'app. Base: legittimo interesse a non mandare
+          email inutili; puoi bloccare le immagini nel tuo programma di posta o disattivare gli avvisi dal profilo.
+        </li>
+        <li>
           Sicurezza e prevenzione degli abusi (per esempio non accettiamo indirizzi email temporanei): legittimo interesse,
           art. 6.1.f GDPR.
         </li>
@@ -73,7 +103,10 @@ export function Privacy() {
 
       <h2>Per quanto tempo</h2>
       <ul>
-        <li>Dati dell'account e di studio: finché l'account è attivo. Quando lo elimini vengono cancellati subito.</li>
+        <li>
+          Dati dell'account e di studio, progressi e richieste di assistenza: finché l'account è attivo. Quando lo elimini
+          vengono cancellati subito.
+        </li>
         <li>
           Copie di sicurezza del database: si sovrascrivono da sole entro 35 giorni, quindi un dato cancellato sparisce anche da
           lì entro quel termine.
@@ -90,7 +123,8 @@ export function Privacy() {
         <li>
           <strong>Amazon Web Services</strong> (Amazon Web Services EMEA SARL): ospita l'app, il database e l'invio delle email
           nella regione di Milano. È nostro responsabile del trattamento. La consegna del sito passa dalla rete CloudFront, che
-          può servire le pagine da server fuori dall'Unione Europea.
+          può servire le pagine da server fuori dall'Unione Europea. Il tutor AI usa Amazon Bedrock (modelli Claude di
+          Anthropic) solo in regioni dell'Unione Europea; i testi inviati non vengono usati per addestrare i modelli.
         </li>
         <li>
           <strong>Google e Meta (Facebook)</strong>: solo se scegli di accedere con loro, per l'autenticazione. Trattano i dati

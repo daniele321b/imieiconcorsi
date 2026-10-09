@@ -7,8 +7,9 @@ import {
   type UserType,
 } from "@aws-sdk/client-cognito-identity-provider";
 import { randomUUID } from "node:crypto";
-import { CopyObjectCommand, GetObjectCommand, PutObjectCommand, S3Client } from "@aws-sdk/client-s3";
-import { BatchWriteCommand, GetCommand, PutCommand, ScanCommand, UpdateCommand } from "@aws-sdk/lib-dynamodb";
+import { CopyObjectCommand, DeleteObjectsCommand, GetObjectCommand, PutObjectCommand, S3Client } from "@aws-sdk/client-s3";
+import { BatchWriteCommand, DeleteCommand, GetCommand, PutCommand, QueryCommand, ScanCommand, UpdateCommand } from "@aws-sdk/lib-dynamodb";
+import { inviaEmail } from "@imieiconcorsi/core/email";
 import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
 import { attributo, cognito, gruppiDi, userPoolId, utentiNelGruppo } from "@imieiconcorsi/core/cognito";
 import { batchGet, db, tables } from "@imieiconcorsi/core/db";
@@ -18,31 +19,51 @@ import {
   MATERIA_IDS,
   pianoDaGruppi,
   PREFISSO_BANCA_DATI,
+  TETTO_AI_MESE_USD,
   type BancaDati,
   type CodiceSconto,
   type Concorso,
   type Domanda,
   type Profilo,
+  type Richiesta,
+  concorsiDellaBanca,
+  nomeConcorsoBreve,
+  nomeTipoRichiesta,
 } from "@imieiconcorsi/core/domain";
 import { env } from "@imieiconcorsi/core/env";
 import { emailPianoAttivato, emailTornatoFree } from "@imieiconcorsi/core/email-piani";
 import { HttpError, notFound, richiediAdmin, service } from "@imieiconcorsi/core/http";
 import { assegnaPiano } from "@imieiconcorsi/core/piani";
 import { FORMATO_CODICE, generaCodice, normalizzaCodice } from "@imieiconcorsi/core/sconti";
+import { rispostePerUtenti, type DomandaDelFile } from "../banche-dati/pubblica";
+import type { Ordine } from "../billing/ordini";
 import { z } from "zod";
 
-// Pannello di controllo: solo per il gruppo Cognito "admin" (controllato in ogni route).
+// Pannello di controllo: solo per il gruppo Cognito "admin" (controllato in ogni route con
+// richiediAdmin). Le pagine del sito sono /admin (Admin.tsx), /admin/banche-dati,
+// /admin/pagamenti e /admin/richieste. Cosa si fa da qui:
+// - riepilogo: utenti per piano, richieste aperte, spesa AI del mese;
+// - utenti: ricerca per email, cambio di piano e scadenza, disattivazione dell'account;
+// - codici sconto: creazione e disattivazione;
+// - richieste di assistenza: elenco per stato e risposte (l'utente riceve un'email);
+// - storico pagamenti: ordini con filtri e totali incassati;
+// - banche dati ufficiali: caricamento del PDF, estrazione, pubblicazione, ritiro, eliminazione;
+// - concorsi: "concluso" toglie un bando chiuso dalle liste.
 
+/** Utenti per pagina nell'elenco del pannello. */
 const PAGINA = 50;
 
+/** Nuovo piano di un utente e, per i piani a pagamento, la scadenza. */
 const CambioPiano = z.object({
   piano: z.enum(["free", "medium", "pro"]),
   /** Data di fine (YYYY-MM-DD o ISO). Assente o null = senza scadenza. */
   scadenza: z.string().datetime({ offset: true }).or(z.string().date()).nullable().optional(),
 });
 
+/** Account attivo (true) o disattivato: un account disattivato non può più accedere. */
 const CambioStato = z.object({ abilitato: z.boolean() });
 
+/** Nuovo codice sconto. */
 const NuovoCodice = z.object({
   /** Vuoto = generato a caso (es. K7MQ-2XRT) */
   codice: z.string().max(40).optional(),
@@ -55,35 +76,56 @@ const NuovoCodice = z.object({
   nota: z.string().max(200).optional(),
 });
 
+/** Attiva o disattiva un codice sconto. */
 const StatoCodice = z.object({ attivo: z.boolean() });
 
+/** Risposta dell'assistenza a una richiesta e/o nuovo stato. */
+const RispostaRichiesta = z
+  .object({
+    testo: z.string().trim().min(2).max(3000).optional(),
+    stato: z.enum(["aperta", "in-lavorazione", "chiusa"]).optional(),
+  })
+  .refine((r) => r.testo || r.stato, "Scrivi una risposta o cambia lo stato");
+
+/** Come è segnata la risposta giusta nel PDF (vedi banche-dati/parser.ts). */
 const FORMATI = ["auto", "indicata", "segnata", "chiave", "prima"] as const;
+/** Ordine predefinito delle risposte agli utenti (ognuno può poi scegliere il suo). */
+const ORDINI = ["mescolate", "pdf"] as const;
+/** PDF più grande accettato: 200 MB. */
 const MAX_PDF = 200 * 1024 * 1024;
 
+/** Dati di una banca dati da caricare (il PDF lo carica poi il browser con un link firmato). */
 const NuovaBanca = z.object({
   /** Facoltativo: senza concorso la banca dati sta solo nella sezione Banche dati */
   concorsoId: z.string().min(1).optional(),
+  /** Altri concorsi da collegare (scelti dai suggeriti o cercati a mano) */
+  concorsiIds: z.array(z.string().min(1).max(100)).max(50).optional(),
   /** Obbligatorio senza concorso; con il concorso, se manca, si prende il suo */
   comparto: z.enum(COMPARTO_IDS).optional(),
   anno: z.number().int().min(2000).max(2100).optional(),
   titolo: z.string().trim().min(3).max(200),
   materia: z.enum(MATERIA_IDS).optional(),
   formato: z.enum(FORMATI).default("auto"),
+  ordineRisposte: z.enum(ORDINI).optional(),
   nomeFile: z.string().max(300),
   dimensione: z.number().int().min(1).max(MAX_PDF, "Il PDF supera i 200 MB"),
 });
 
+/** Modifiche a una banca dati; cambiare il formato rifà l'estrazione. */
 const ModificaBanca = z.object({
   titolo: z.string().trim().min(3).max(200).optional(),
   comparto: z.enum(COMPARTO_IDS).optional(),
   anno: z.number().int().min(2000).max(2100).nullable().optional(),
   materia: z.enum(MATERIA_IDS).nullable().optional(),
   formato: z.enum(FORMATI).optional(),
+  ordineRisposte: z.enum(ORDINI).optional(),
 });
 
 const s3 = new S3Client({});
+/** Dove sta il PDF di una banca dati nel bucket dei contenuti. */
 const chiavePdf = (id: string) => `banche-dati/${id}.pdf`;
 
+/** Una banca dati; 404 se non esiste. */
 async function leggiBanca(id: string) {
   const res = await db.send(new GetCommand({ TableName: tables.bancheDati, Key: { id } }));
   if (!res.Item) throw notFound("Banca dati");
@@ -115,6 +157,7 @@ async function gruppiPerUtente() {
   return mappa;
 }
 
+/** Un utente Cognito con i suoi attributi; 404 se non esiste. */
 async function utenteCognito(username: string) {
   try {
     return await cognito.send(new AdminGetUserCommand({ UserPoolId: userPoolId(), Username: username }));
@@ -124,14 +167,230 @@ async function utenteCognito(username: string) {
   }
 }
 
+const condizioneFallita = (err: unknown) => err instanceof Error && err.name === "ConditionalCheckFailedException";
+
+/** Il concorso torna alle domande dei nostri libri, se usava proprio questa banca dati. */
+async function scollegaConcorso(bancaId: string, concorsoId: string) {
+  await db
+    .send(
+      new UpdateCommand({
+        TableName: tables.concorsi,
+        Key: { id: concorsoId },
+        UpdateExpression: "SET bancaDati = :no REMOVE bancaDatiId",
+        ConditionExpression: "bancaDatiId = :b",
+        ExpressionAttributeValues: { ":no": false, ":b": bancaId },
+      }),
+    )
+    .catch((err) => {
+      if (!condizioneFallita(err)) throw err;
+    });
+}
+
+/** Ritirando o eliminando la banca dati, tutti i suoi concorsi tornano alle nostre domande. */
+async function scollegaTutti(banca: BancaDati) {
+  for (const c of concorsiDellaBanca(banca)) await scollegaConcorso(banca.id, c.id);
+}
+
+/**
+ * Il concorso usa la banca dati pubblicata: link alla consultazione e simulazioni con le domande
+ * ufficiali. Non se ha già un'altra banca dati (restituisce false): va scollegata prima da quella.
+ */
+async function collegaConcorso(bancaId: string, concorsoId: string) {
+  try {
+    await db.send(
+      new UpdateCommand({
+        TableName: tables.concorsi,
+        Key: { id: concorsoId },
+        UpdateExpression: "SET bancaDati = :si, bancaDatiId = :b",
+        ConditionExpression: "attribute_exists(id) AND (attribute_not_exists(bancaDatiId) OR bancaDatiId = :b)",
+        ExpressionAttributeValues: { ":si": true, ":b": bancaId },
+      }),
+    );
+    return true;
+  } catch (err) {
+    if (condizioneFallita(err)) return false;
+    throw err;
+  }
+}
+
+/**
+ * Salva sulla banca dati la lista dei concorsi collegati (il primo resta anche in concorsoId).
+ * `prima` = la banca come letta: se nel frattempo la lista è cambiata (un'altra modifica
+ * contemporanea), non si sovrascrive e si chiede di riprovare.
+ */
+async function salvaConcorsiDellaBanca(prima: BancaDati, concorsi: { id: string; titolo: string }[]) {
+  const condizione = prima.concorsi ? { ConditionExpression: "size(concorsi) = :n" } : { ConditionExpression: "attribute_not_exists(concorsi)" };
+  const n = prima.concorsi ? { ":n": prima.concorsi.length } : {};
+  try {
+    await db.send(
+      new UpdateCommand({
+        TableName: tables.bancheDati,
+        Key: { id: prima.id },
+        ...condizione,
+        ...(concorsi.length
+          ? {
+              UpdateExpression: "SET concorsi = :l, concorsoId = :p, concorsoTitolo = :t",
+              ExpressionAttributeValues: { ":l": concorsi, ":p": concorsi[0]!.id, ":t": concorsi[0]!.titolo, ...n },
+            }
+          : { UpdateExpression: "SET concorsi = :l REMOVE concorsoId, concorsoTitolo", ExpressionAttributeValues: { ":l": [], ...n } }),
+      }),
+    );
+  } catch (err) {
+    if (condizioneFallita(err)) throw new HttpError(409, "La banca dati è cambiata nel frattempo: ricarica la pagina e riprova.");
+    throw err;
+  }
+}
+
+/** Concorsi da collegare: devono esistere e non avere già un'altra banca dati pubblicata. */
+async function concorsiCollegabili(ids: string[], bancaId?: string) {
+  const unici = [...new Set(ids)];
+  const trovati = await batchGet<Concorso>(tables.concorsi, unici.map((id) => ({ id })), "id, ente, figura, titolo, comparto, bancaDatiId");
+  const perId = new Map(trovati.map((c) => [c.id, c]));
+  const mancanti = unici.filter((id) => !perId.has(id));
+  if (mancanti.length) throw new HttpError(404, `Concorso non trovato: ${mancanti.join(", ")}`);
+  const occupati = trovati.filter((c) => c.bancaDatiId && c.bancaDatiId !== bancaId);
+  if (occupati.length) {
+    throw new HttpError(
+      409,
+      `Questi concorsi hanno già un'altra banca dati: ${occupati.map(nomeConcorsoBreve).join("; ")}. Scollegala prima da quella.`,
+    );
+  }
+  return unici.map((id) => perId.get(id)!);
+}
+
+/** Cancella le domande pubblicate (materia bd#<id>), 25 alla volta. */
+async function cancellaDomande(id: string) {
+  let cancellate = 0;
+  let ExclusiveStartKey: Record<string, unknown> | undefined;
+  do {
+    const res = await db.send(
+      new QueryCommand({
+        TableName: tables.questions,
+        KeyConditionExpression: "materia = :m",
+        ExpressionAttributeValues: { ":m": `${PREFISSO_BANCA_DATI}${id}` },
+        ProjectionExpression: "materia, id",
+        ExclusiveStartKey,
+      }),
+    );
+    const chiavi = (res.Items ?? []) as { materia: string; id: string }[];
+    for (let i = 0; i < chiavi.length; i += 25) {
+      let pending = chiavi.slice(i, i + 25).map((Key) => ({ DeleteRequest: { Key } }));
+      while (pending.length) {
+        const out = await db.send(new BatchWriteCommand({ RequestItems: { [tables.questions]: pending } }));
+        pending = (out.UnprocessedItems?.[tables.questions] ?? []) as typeof pending;
+      }
+    }
+    cancellate += chiavi.length;
+    ExclusiveStartKey = res.LastEvaluatedKey;
+  } while (ExclusiveStartKey);
+  return cancellate;
+}
+
+/**
+ * Le domande estratte entrano nella banca domande (materia bd#<id>) e il concorso la usa:
+ * da qui le simulazioni Medium e Pro di quel concorso pescano le domande ufficiali.
+ * Ripubblicare sovrascrive le stesse domande (id = numero nel PDF).
+ */
+async function pubblicaBanca(banca: BancaDati) {
+  const file = await s3.send(new GetObjectCommand({ Bucket: env("CONTENUTI_BUCKET"), Key: `banche-dati/${banca.id}.json` }));
+  const { domande } = JSON.parse(await file.Body!.transformToString()) as { domande: DomandaDelFile[] };
+  if (banca.ordineRisposte === "pdf" && domande.some((d) => !d.pdf)) {
+    throw new HttpError(409, "Questa banca dati è stata estratta prima che si salvasse l'ordine del PDF: rifai l'estrazione, poi pubblica.");
+  }
+  const materia = `${PREFISSO_BANCA_DATI}${banca.id}`;
+  const items: (Domanda & { materiaDiStudio?: string })[] = domande.map((d) => ({
+    materia: materia as Domanda["materia"],
+    id: `n${String(d.numero).padStart(5, "0")}`,
+    // La sezione del PDF (es. "Matematica") è più utile del titolo della banca dati.
+    argomento: d.sezione ?? banca.titolo,
+    livello: 3,
+    testo: d.testo,
+    ...rispostePerUtenti(d, banca.ordineRisposte),
+    spiegazione: "Risposta indicata nella banca dati ufficiale del concorso.",
+    fonte: `${banca.titolo} (banca dati ufficiale)`,
+    versione: "ufficiale",
+    ...(banca.materia ? { materiaDiStudio: banca.materia } : {}),
+  }));
+  for (let i = 0; i < items.length; i += 25) {
+    let pending = items.slice(i, i + 25).map((Item) => ({ PutRequest: { Item } }));
+    while (pending.length) {
+      const res = await db.send(new BatchWriteCommand({ RequestItems: { [tables.questions]: pending } }));
+      pending = (res.UnprocessedItems?.[tables.questions] ?? []) as typeof pending;
+    }
+  }
+  // Ogni concorso collegato usa la banca dati; chi ne ha già un'altra resta com'è (lo si dice all'admin).
+  const occupati: string[] = [];
+  for (const c of concorsiDellaBanca(banca)) {
+    if (!(await collegaConcorso(banca.id, c.id))) occupati.push(c.titolo);
+  }
+  const ora = new Date().toISOString();
+  await db.send(
+    new UpdateCommand({
+      TableName: tables.bancheDati,
+      Key: { id: banca.id },
+      UpdateExpression: "SET stato = :s, pubblicataIl = :o",
+      ExpressionAttributeValues: { ":s": "pubblicata", ":o": ora },
+    }),
+  );
+  return { domande: items.length, occupati };
+}
+
+/** Tutti gli ordini (tabella piccola: uno per acquisto). */
+async function tuttiGliOrdini() {
+  const out: Ordine[] = [];
+  let ExclusiveStartKey: Record<string, unknown> | undefined;
+  do {
+    const res = await db.send(new ScanCommand({ TableName: tables.ordini, ExclusiveStartKey }));
+    out.push(...((res.Items ?? []) as Ordine[]));
+    ExclusiveStartKey = res.LastEvaluatedKey;
+  } while (ExclusiveStartKey);
+  return out;
+}
+
+/** Email degli utenti (da Cognito: nel database non c'è), poche richieste alla volta. */
+async function emailDi(usernames: string[]) {
+  const mappa = new Map<string, string | undefined>();
+  const unici = [...new Set(usernames)];
+  for (let i = 0; i < unici.length; i += 5) {
+    await Promise.all(
+      unici.slice(i, i + 5).map(async (u) => {
+        try {
+          const res = await cognito.send(new AdminGetUserCommand({ UserPoolId: userPoolId(), Username: u }));
+          mappa.set(u, res.UserAttributes?.find((a) => a.Name === "email")?.Value);
+        } catch {
+          mappa.set(u, undefined); // utente eliminato: l'ordine resta per gli obblighi fiscali
+        }
+      }),
+    );
+  }
+  return mappa;
+}
+
+/** Ordini per pagina nello storico pagamenti. */
+const PAGINA_ORDINI = 50;
+
+/** Scadenza scelta come giorno (YYYY-MM-DD): vale fino alla fine di quel giorno. */
 const fineGiornata = (data: string) => (data.length === 10 ? `${data}T23:59:59.000Z` : new Date(data).toISOString());
 
 export const handler = service({
+  /** Numeri del pannello: utenti per piano, richieste aperte, spesa AI del mese. */
   "GET /admin/riepilogo": async (ctx) => {
     richiediAdmin(ctx);
-    const [pool, gruppi] = await Promise.all([
+    const mese = new Date().toISOString().slice(0, 7);
+    const [pool, gruppi, spesaAi, aperte] = await Promise.all([
       cognito.send(new DescribeUserPoolCommand({ UserPoolId: userPoolId() })),
       gruppiPerUtente(),
+      // Spesa AI del mese di tutta la piattaforma (la scrive il servizio AI, tabella contatori).
+      db.send(new GetCommand({ TableName: tables.contatori, Key: { id: `ai#${mese}` } })),
+      db.send(
+        new QueryCommand({
+          TableName: tables.richieste,
+          IndexName: "perStato",
+          KeyConditionExpression: "stato = :s",
+          ExpressionAttributeValues: { ":s": "aperta" },
+          Select: "COUNT",
+        }),
+      ),
     ]);
     const conta = (g: string) => [...gruppi.values()].filter((gs) => gs.includes(g)).length;
     return {
@@ -139,6 +398,12 @@ export const handler = service({
       medium: conta(GRUPPI.medium),
       pro: conta(GRUPPI.pro),
       admin: conta(GRUPPI.admin),
+      richiesteAperte: aperte.Count ?? 0,
+      ai: {
+        spesaUsd: Number(spesaAi.Item?.spesaMicroUsd ?? 0) / 1e6,
+        tettoUsd: Number(process.env.AI_TETTO_MENSILE_USD || TETTO_AI_MESE_USD),
+        chiamate: Number(spesaAi.Item?.chiamate ?? 0),
+      },
     };
   },
 
@@ -190,6 +455,7 @@ export const handler = service({
     };
   },
 
+  /** Cambia piano e scadenza a un utente (omaggi, assistenza); gli arriva un'email. */
   "PUT /admin/utenti/{username}/piano": async (ctx) => {
     richiediAdmin(ctx);
     const { piano, scadenza } = ctx.body(CambioPiano);
@@ -210,6 +476,7 @@ export const handler = service({
     return { ok: true };
   },
 
+  /** Tutti i codici sconto, dal più recente. */
   "GET /admin/codici": async (ctx) => {
     richiediAdmin(ctx);
     const codici: CodiceSconto[] = [];
@@ -219,9 +486,11 @@ export const handler = service({
       codici.push(...((res.Items ?? []) as CodiceSconto[]));
       ExclusiveStartKey = res.LastEvaluatedKey;
     } while (ExclusiveStartKey);
-    return { codici: codici.sort((a, b) => b.creatoIl.localeCompare(a.creatoIl)) };
+    // I codici "invita un amico" degli utenti stanno nella stessa tabella: qui solo gli sconti.
+    return { codici: codici.filter((c) => c.tipo !== "invito").sort((a, b) => b.creatoIl.localeCompare(a.creatoIl)) };
   },
 
+  /** Crea un codice sconto (scelto dall'admin o generato a caso). */
   "POST /admin/codici": async (ctx) => {
     richiediAdmin(ctx);
     const dati = ctx.body(NuovoCodice);
@@ -253,6 +522,7 @@ export const handler = service({
     throw new HttpError(500, "Non riesco a generare un codice libero, riprova");
   },
 
+  /** Attiva o disattiva un codice: disattivato smette subito di funzionare. */
   "PUT /admin/codici/{codice}": async (ctx) => {
     richiediAdmin(ctx);
     const { attivo } = ctx.body(StatoCodice);
@@ -273,8 +543,153 @@ export const handler = service({
     return { ok: true };
   },
 
+  // ── Richieste di assistenza ────────────────────────────────────────────────
+
+  /** Richieste per stato (indice perStato), dalla più recente. ?stato=aperta|in-lavorazione|chiusa */
+  "GET /admin/richieste": async (ctx) => {
+    richiediAdmin(ctx);
+    const stato = ctx.query.stato ?? "aperta";
+    const res = await db.send(
+      new QueryCommand({
+        TableName: tables.richieste,
+        IndexName: "perStato",
+        KeyConditionExpression: "stato = :s",
+        ExpressionAttributeValues: { ":s": stato },
+        ScanIndexForward: false,
+        Limit: 100,
+      }),
+    );
+    const richieste = (res.Items ?? []) as Richiesta[];
+    const emails = await emailDi(richieste.map((r) => r.username));
+    // Quante per stato, per i contatori del pannello.
+    const conteggi = Object.fromEntries(
+      await Promise.all(
+        (["aperta", "in-lavorazione", "chiusa"] as const).map(async (s) => {
+          const c = await db.send(
+            new QueryCommand({
+              TableName: tables.richieste,
+              IndexName: "perStato",
+              KeyConditionExpression: "stato = :s",
+              ExpressionAttributeValues: { ":s": s },
+              Select: "COUNT",
+            }),
+          );
+          return [s, c.Count ?? 0];
+        }),
+      ),
+    );
+    return { conteggi, richieste: richieste.map(({ username, ...r }) => ({ ...r, email: emails.get(username) })) };
+  },
+
+  /** Risposta dell'assistenza e/o cambio di stato. Con una risposta, l'utente riceve un'email. */
+  "POST /admin/richieste/{userId}/{id}": async (ctx) => {
+    richiediAdmin(ctx);
+    const { testo, stato } = ctx.body(RispostaRichiesta);
+    const chiave = { userId: ctx.params.userId, id: ctx.params.id };
+    const res = await db.send(new GetCommand({ TableName: tables.richieste, Key: chiave }));
+    const r = res.Item as Richiesta | undefined;
+    if (!r) throw notFound("Richiesta");
+
+    const ora = new Date().toISOString();
+    const set = ["aggiornataIl = :o"];
+    const valori: Record<string, unknown> = { ":o": ora };
+    if (testo) {
+      set.push("messaggi = list_append(messaggi, :m)", "daLeggere = :si");
+      valori[":m"] = [{ da: "assistenza", testo, il: ora }];
+      valori[":si"] = true;
+    }
+    // Una risposta senza stato scelto mette la richiesta "in lavorazione" (se era aperta).
+    const nuovoStato = stato ?? (testo && r.stato === "aperta" ? "in-lavorazione" : undefined);
+    if (nuovoStato) {
+      set.push("stato = :s");
+      valori[":s"] = nuovoStato;
+    }
+    await db.send(new UpdateCommand({ TableName: tables.richieste, Key: chiave, UpdateExpression: `SET ${set.join(", ")}`, ExpressionAttributeValues: valori }));
+
+    if (testo) {
+      const email = (await emailDi([r.username])).get(r.username);
+      if (email) {
+        await inviaEmail({
+          a: email,
+          oggetto: `Risposta alla tua richiesta: ${nomeTipoRichiesta(r.tipo)}`,
+          testo: [
+            "Ciao,",
+            "",
+            "l'assistenza di iMieiConcorsi ha risposto alla tua richiesta:",
+            "",
+            testo,
+            "",
+            `Per rispondere o vedere la conversazione: ${process.env.SITE_URL ?? ""}/app/assistenza`,
+            "",
+            "Il team di iMieiConcorsi",
+          ].join("\n"),
+        }).catch((err) => console.error("Email di risposta alla richiesta non inviata", err));
+      }
+    }
+    return { ok: true, stato: nuovoStato ?? r.stato };
+  },
+
+  // ── Storico pagamenti ──────────────────────────────────────────────────────
+
+  /**
+   * Ordini dal più recente. ?stato=pagato|in-attesa|scaduto|fallito &piano=medium|pro
+   * &email=inizio dell'indirizzo &pagina=0,1,2… Con i totali incassati.
+   */
+  "GET /admin/ordini": async (ctx) => {
+    richiediAdmin(ctx);
+    const { stato, piano, email, pagina } = ctx.query;
+    let ordini = (await tuttiGliOrdini()).sort((a, b) => b.creatoIl.localeCompare(a.creatoIl));
+
+    const pagati = ordini.filter((o) => o.stato === "pagato");
+    const mese = new Date().toISOString().slice(0, 7);
+    const somma = (lista: Ordine[]) => Math.round(lista.reduce((n, o) => n + o.importo, 0) * 100) / 100;
+    const totali = {
+      ordini: ordini.length,
+      pagati: pagati.length,
+      incassato: somma(pagati),
+      incassatoMese: somma(pagati.filter((o) => (o.pagatoIl ?? o.creatoIl).startsWith(mese))),
+      perStato: Object.fromEntries(["pagato", "in-attesa", "scaduto", "fallito"].map((s) => [s, ordini.filter((o) => o.stato === s).length])),
+    };
+
+    if (stato) ordini = ordini.filter((o) => o.stato === stato);
+    if (piano) ordini = ordini.filter((o) => o.piano === piano);
+    if (email?.trim()) {
+      // Da email a utenti Cognito (anche più account con la stessa email), poi i loro ordini.
+      const res = await cognito.send(
+        new ListUsersCommand({ UserPoolId: userPoolId(), Filter: `email ^= "${email.trim().replace(/"/g, "")}"`, Limit: 20 }),
+      );
+      const subs = new Set((res.Users ?? []).map((u) => attributo(u, "sub")));
+      ordini = ordini.filter((o) => subs.has(o.userId));
+    }
+
+    const n = Math.max(0, Number(pagina) || 0);
+    const fetta = ordini.slice(n * PAGINA_ORDINI, (n + 1) * PAGINA_ORDINI);
+    const emails = await emailDi(fetta.map((o) => o.username));
+    return {
+      totali,
+      ordini: fetta.map((o) => ({
+        id: o.id,
+        email: emails.get(o.username),
+        piano: o.piano,
+        periodo: o.periodo,
+        prezzo: o.prezzo,
+        importo: o.importo,
+        codiceSconto: o.codiceSconto,
+        percentualeSconto: o.percentualeSconto,
+        stato: o.stato,
+        creatoIl: o.creatoIl,
+        pagatoIl: o.pagatoIl,
+        scadenzaPiano: o.scadenzaPiano,
+        stripeSessionId: o.stripeSessionId,
+      })),
+      trovati: ordini.length,
+      prossima: (n + 1) * PAGINA_ORDINI < ordini.length ? n + 1 : null,
+    };
+  },
+
   // ── Banche dati ufficiali ──────────────────────────────────────────────────
 
+  /** Tutte le banche dati, in ogni stato, dall'ultima caricata. */
   "GET /admin/banche-dati": async (ctx) => {
     richiediAdmin(ctx);
     const banche: BancaDati[] = [];
@@ -291,22 +706,21 @@ export const handler = service({
   "POST /admin/banche-dati": async (ctx) => {
     richiediAdmin(ctx);
     const dati = ctx.body(NuovaBanca);
-    let concorso: Concorso | undefined;
-    if (dati.concorsoId) {
-      concorso = (await db.send(new GetCommand({ TableName: tables.concorsi, Key: { id: dati.concorsoId } }))).Item as Concorso | undefined;
-      if (!concorso) throw notFound("Concorso");
-    }
-    const comparto = dati.comparto ?? concorso?.comparto;
+    // Concorsi collegati da subito: quello principale e gli altri scelti (suggeriti o cercati).
+    const collegati = await concorsiCollegabili([...(dati.concorsoId ? [dati.concorsoId] : []), ...(dati.concorsiIds ?? [])]);
+    const concorsi = collegati.map((c) => ({ id: c.id, titolo: nomeConcorsoBreve(c) }));
+    const comparto = dati.comparto ?? collegati[0]?.comparto;
     if (!comparto) throw new HttpError(400, "Indica il comparto o un concorso");
 
     const banca: BancaDati = {
       id: `bd_${randomUUID().replace(/-/g, "").slice(0, 16)}`,
       comparto,
       ...(dati.anno ? { anno: dati.anno } : {}),
-      ...(concorso ? { concorsoId: concorso.id, concorsoTitolo: `${concorso.ente} — ${concorso.figura ?? concorso.titolo}` } : {}),
+      ...(concorsi.length ? { concorsi, concorsoId: concorsi[0]!.id, concorsoTitolo: concorsi[0]!.titolo } : {}),
       titolo: dati.titolo,
       ...(dati.materia ? { materia: dati.materia } : {}),
       formato: dati.formato,
+      ...(dati.ordineRisposte === "pdf" ? { ordineRisposte: "pdf" as const } : {}),
       stato: "caricamento",
       nomeFile: dati.nomeFile,
       dimensione: dati.dimensione,
@@ -322,11 +736,14 @@ export const handler = service({
     return { banca, upload };
   },
 
-  /** Cambia titolo, materia o formato; cambiando il formato l'estrazione riparte. */
+  /**
+   * Cambia titolo, materia, formato o ordine delle risposte. Cambiando il formato l'estrazione
+   * riparte; cambiando l'ordine di una banca già pubblicata, le domande si ripubblicano.
+   */
   "PUT /admin/banche-dati/{id}": async (ctx) => {
     richiediAdmin(ctx);
     const banca = await leggiBanca(ctx.params.id!);
-    const { titolo, materia, formato, comparto, anno } = ctx.body(ModificaBanca);
+    const { titolo, materia, formato, comparto, anno, ordineRisposte } = ctx.body(ModificaBanca);
     const set: string[] = [];
     const remove: string[] = [];
     const valori: Record<string, unknown> = {};
@@ -339,7 +756,11 @@ export const handler = service({
     const riestrai = !!formato && formato !== banca.formato && banca.stato !== "caricamento";
     if (formato) (set.push("formato = :f"), (valori[":f"] = formato));
     if (riestrai) (set.push("stato = :s"), (valori[":s"] = "estrazione"));
+    const nuovoOrdine = !!ordineRisposte && ordineRisposte !== (banca.ordineRisposte ?? "mescolate");
+    if (ordineRisposte) (set.push("ordineRisposte = :o"), (valori[":o"] = ordineRisposte));
     if (!set.length && !remove.length) return banca;
+    // Prima si ripubblica con il nuovo ordine: se non si può (estrazione vecchia), non si salva nulla.
+    if (nuovoOrdine && banca.stato === "pubblicata" && !riestrai) await pubblicaBanca({ ...banca, ordineRisposte });
     await db.send(
       new UpdateCommand({
         TableName: tables.bancheDati,
@@ -352,6 +773,7 @@ export const handler = service({
     return leggiBanca(banca.id);
   },
 
+  /** Rifà l'estrazione delle domande dal PDF. */
   "POST /admin/banche-dati/{id}/estrai": async (ctx) => {
     richiediAdmin(ctx);
     const banca = await leggiBanca(ctx.params.id!);
@@ -359,82 +781,55 @@ export const handler = service({
     return { ok: true };
   },
 
-  /**
-   * Le domande estratte entrano nella banca domande (materia bd#<id>) e il concorso la usa:
-   * da qui le simulazioni Medium e Pro di quel concorso pescano le domande ufficiali.
-   */
+  /** Pubblica le domande estratte: compaiono nella sezione Banche dati e nel concorso collegato. */
   "POST /admin/banche-dati/{id}/pubblica": async (ctx) => {
     richiediAdmin(ctx);
     const banca = await leggiBanca(ctx.params.id!);
     if (banca.stato !== "estratta" && banca.stato !== "pubblicata") throw new HttpError(409, "Prima serve un'estrazione riuscita");
     if (!banca.domande) throw new HttpError(409, "Nessuna domanda da pubblicare");
+    return { ok: true, ...(await pubblicaBanca(banca)) };
+  },
 
-    const file = await s3.send(new GetObjectCommand({ Bucket: env("CONTENUTI_BUCKET"), Key: `banche-dati/${banca.id}.json` }));
-    const { domande } = JSON.parse(await file.Body!.transformToString()) as {
-      domande: { numero: number; testo: string; opzioni: string[]; corretta: number }[];
-    };
-    const materia = `${PREFISSO_BANCA_DATI}${banca.id}`;
-    const items: (Domanda & { materiaDiStudio?: string })[] = domande.map((d) => ({
-      materia: materia as Domanda["materia"],
-      id: `n${String(d.numero).padStart(5, "0")}`,
-      argomento: banca.titolo,
-      livello: 3,
-      testo: d.testo,
-      opzioni: d.opzioni,
-      corretta: d.corretta,
-      spiegazione: "Risposta indicata nella banca dati ufficiale del concorso.",
-      fonte: `${banca.titolo} (banca dati ufficiale)`,
-      versione: "ufficiale",
-      ...(banca.materia ? { materiaDiStudio: banca.materia } : {}),
-    }));
-    for (let i = 0; i < items.length; i += 25) {
-      let pending = items.slice(i, i + 25).map((Item) => ({ PutRequest: { Item } }));
-      while (pending.length) {
-        const res = await db.send(new BatchWriteCommand({ RequestItems: { [tables.questions]: pending } }));
-        pending = (res.UnprocessedItems?.[tables.questions] ?? []) as typeof pending;
-      }
+  /**
+   * Collega un concorso (di solito aperto) alla banca dati, anche dopo il caricamento. Se la
+   * banca è già pubblicata, il concorso mostra subito il link alla consultazione e le sue
+   * simulazioni usano le domande ufficiali; altrimenti succede alla pubblicazione.
+   */
+  "POST /admin/banche-dati/{id}/concorsi": async (ctx) => {
+    richiediAdmin(ctx);
+    const { concorsoId } = ctx.body(z.object({ concorsoId: z.string().min(1).max(100) }));
+    const banca = await leggiBanca(ctx.params.id!);
+    const attuali = concorsiDellaBanca(banca);
+    if (attuali.some((c) => c.id === concorsoId)) return banca;
+    const [concorso] = await concorsiCollegabili([concorsoId], banca.id);
+    // Prima la lista (se è cambiata nel frattempo non si tocca nulla), poi il concorso.
+    const nuova = [...attuali, { id: concorso!.id, titolo: nomeConcorsoBreve(concorso!) }];
+    await salvaConcorsiDellaBanca(banca, nuova);
+    if (banca.stato === "pubblicata" && !(await collegaConcorso(banca.id, concorsoId))) {
+      await salvaConcorsiDellaBanca({ ...banca, concorsi: nuova }, attuali).catch(() => {});
+      throw new HttpError(409, "Il concorso ha già un'altra banca dati: scollegala prima da quella.");
     }
-    if (banca.concorsoId) {
-      await db.send(
-        new UpdateCommand({
-          TableName: tables.concorsi,
-          Key: { id: banca.concorsoId },
-          UpdateExpression: "SET bancaDati = :si, bancaDatiId = :b",
-          ExpressionAttributeValues: { ":si": true, ":b": banca.id },
-        }),
-      );
-    }
-    const ora = new Date().toISOString();
-    await db.send(
-      new UpdateCommand({
-        TableName: tables.bancheDati,
-        Key: { id: banca.id },
-        UpdateExpression: "SET stato = :s, pubblicataIl = :o",
-        ExpressionAttributeValues: { ":s": "pubblicata", ":o": ora },
-      }),
+    return leggiBanca(banca.id);
+  },
+
+  /** Scollega un concorso: torna alle domande della nostra banca e perde il link alla banca dati. */
+  "DELETE /admin/banche-dati/{id}/concorsi/{concorsoId}": async (ctx) => {
+    richiediAdmin(ctx);
+    const banca = await leggiBanca(ctx.params.id!);
+    const concorsoId = ctx.params.concorsoId!;
+    await salvaConcorsiDellaBanca(
+      banca,
+      concorsiDellaBanca(banca).filter((c) => c.id !== concorsoId),
     );
-    return { ok: true, domande: items.length };
+    await scollegaConcorso(banca.id, concorsoId);
+    return leggiBanca(banca.id);
   },
 
   /** Il concorso torna alle domande dei nostri libri; la banca dati resta, ripubblicabile. */
   "POST /admin/banche-dati/{id}/ritira": async (ctx) => {
     richiediAdmin(ctx);
     const banca = await leggiBanca(ctx.params.id!);
-    if (banca.concorsoId) {
-      await db
-        .send(
-          new UpdateCommand({
-            TableName: tables.concorsi,
-            Key: { id: banca.concorsoId },
-            UpdateExpression: "SET bancaDati = :no REMOVE bancaDatiId",
-            ConditionExpression: "bancaDatiId = :b",
-            ExpressionAttributeValues: { ":no": false, ":b": banca.id },
-          }),
-        )
-        .catch((err) => {
-          if (!(err instanceof Error && err.name === "ConditionalCheckFailedException")) throw err;
-        });
-    }
+    await scollegaTutti(banca);
     await db.send(
       new UpdateCommand({
         TableName: tables.bancheDati,
@@ -444,6 +839,26 @@ export const handler = service({
       }),
     );
     return { ok: true };
+  },
+
+  /**
+   * Elimina la banca dati per sempre: il concorso torna alle nostre domande, le domande
+   * ufficiali e il PDF spariscono. Le sessioni già fatte restano nelle statistiche.
+   */
+  "DELETE /admin/banche-dati/{id}": async (ctx) => {
+    richiediAdmin(ctx);
+    const banca = await leggiBanca(ctx.params.id!);
+    await scollegaTutti(banca);
+    const domande = await cancellaDomande(banca.id);
+    await s3.send(
+      new DeleteObjectsCommand({
+        Bucket: env("CONTENUTI_BUCKET"),
+        Delete: { Objects: [{ Key: chiavePdf(banca.id) }, { Key: `banche-dati/${banca.id}.json` }], Quiet: true },
+      }),
+    );
+    await db.send(new DeleteCommand({ TableName: tables.bancheDati, Key: { id: banca.id } }));
+    console.log(`Banca dati ${banca.id} (${banca.titolo}) eliminata da ${ctx.email ?? ctx.username}: ${domande} domande`);
+    return { ok: true, domande };
   },
 
   /** Concorso finito: sparisce anche dai bandi scaduti (o ricompare, togliendo il segno). */
@@ -467,6 +882,7 @@ export const handler = service({
     return { ok: true };
   },
 
+  /** Disattiva o riattiva un account (non il proprio). */
   "PUT /admin/utenti/{username}/stato": async (ctx) => {
     richiediAdmin(ctx);
     const { abilitato } = ctx.body(CambioStato);

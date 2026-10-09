@@ -1,9 +1,22 @@
-import { COMPARTI, MATERIE, nomeComparto, nomeMateria, type BancaDati, type CompartoId, type MateriaId } from "@imieiconcorsi/core/domain";
-import { ArrowLeft, Database, FileUp, RefreshCw } from "lucide-react";
-import { type FormEvent, useEffect, useMemo, useState } from "react";
+import { concorsiSuggeriti, scaduto, type ConcorsoInLista } from "@imieiconcorsi/core/concorsi";
+import {
+  COMPARTI,
+  COMPARTO_IDS,
+  concorsiDellaBanca,
+  MATERIE,
+  nomeComparto,
+  nomeConcorsoBreve,
+  nomeMateria,
+  type BancaDati,
+  type CompartoId,
+  type MateriaId,
+} from "@imieiconcorsi/core/domain";
+import { ArrowLeft, Database, FileUp, Link2, Loader2, Plus, RefreshCw, Trash2, X } from "lucide-react";
+import { type FormEvent, type ReactNode, useEffect, useMemo, useState } from "react";
 import { Link, Navigate } from "react-router";
 import { Alert, Badge, Button, Card, PageHeader, Spinner, cx } from "../../components/ui";
-import { api, ApiError, useApi, type ConcorsoApi } from "../../lib/api";
+import { api, ApiError, useApi } from "../../lib/api";
+import { caricaBandi } from "../../lib/bandi";
 import { useUtente } from "../../lib/auth";
 import { dataBreve } from "../../lib/format";
 
@@ -30,14 +43,22 @@ const campo =
 
 const messaggio = (err: unknown) => (err instanceof ApiError ? err.message : err instanceof Error ? err.message : "Errore di rete");
 
+// Pannello admin → Banche dati (/admin/banche-dati): carica il PDF di una banca dati ufficiale,
+// collegala ai concorsi (suggeriti tra i bandi aperti simili o cercati a mano, anche dopo),
+// segui l'estrazione, controlla gli esempi, poi pubblica, ritira o elimina. Il PDF va
+// direttamente su S3 con un link firmato dal backend.
+
+/** Pagina /admin/banche-dati: chi non è admin torna all'app. */
 export function AdminBancheDati() {
   const { utente } = useUtente();
   if (!utente.admin) return <Navigate to="/app" replace />;
   return <Pannello />;
 }
 
+/** Elenco delle banche dati e modulo di caricamento. */
 function Pannello() {
   const { data, loading, error, reload } = useApi<{ banche: BancaDati[] }>("/admin/banche-dati");
+  const { bandi, errore: erroreBandi } = useBandi();
   const inLavorazione = data?.banche.some((b) => b.stato === "caricamento" || b.stato === "estrazione");
 
   // Mentre una banca dati è in estrazione la lista si aggiorna da sola.
@@ -57,7 +78,8 @@ function Pannello() {
         subtitle="Carica il PDF di una banca dati: le domande vengono estratte da sole, controlli gli esempi e pubblichi. Le banche dati pubblicate compaiono nella sezione Banche dati (Medium e Pro), divise per comparto; se le colleghi a un concorso, anche le sue simulazioni usano le domande ufficiali."
       />
 
-      <Caricamento onCaricata={() => void reload()} />
+      {erroreBandi && <Alert tone="error">Elenco dei bandi non disponibile: {erroreBandi}</Alert>}
+      <Caricamento bandi={bandi} onCaricata={() => void reload()} />
 
       <section className="space-y-3">
         <div className="flex items-center justify-between">
@@ -70,7 +92,7 @@ function Pannello() {
         {loading && !data ? (
           <Spinner />
         ) : data?.banche.length ? (
-          data.banche.map((b) => <RigaBanca key={b.id} banca={b} onCambio={() => void reload()} />)
+          data.banche.map((b) => <RigaBanca key={b.id} banca={b} bandi={bandi} onCambio={() => void reload()} />)
         ) : (
           <p className="text-sm text-slate-500">Nessuna banca dati caricata.</p>
         )}
@@ -79,28 +101,29 @@ function Pannello() {
   );
 }
 
-function Caricamento({ onCaricata }: { onCaricata: () => void }) {
-  const bandi = useApi<{ concorsi: ConcorsoApi[] }>("/concorsi?comparto=tutti&scaduti=1");
-  const [modo, setModo] = useState<"concorso" | "libera">("concorso");
+/** Tutti i bandi (aperti e chiusi da poco), dalla lista in cache: per suggerire e cercare i concorsi da collegare. */
+function useBandi() {
+  const [bandi, setBandi] = useState<ConcorsoInLista[]>();
+  const [errore, setErrore] = useState<string>();
+  useEffect(() => {
+    caricaBandi(COMPARTO_IDS)
+      .then(setBandi)
+      .catch((err) => setErrore(messaggio(err)));
+  }, []);
+  return { bandi, errore };
+}
+
+/** Modulo per caricare una nuova banca dati (comparto e anno, titolo, concorsi da collegare, formato, PDF). */
+function Caricamento({ bandi, onCaricata }: { bandi?: ConcorsoInLista[]; onCaricata: () => void }) {
   const [comparto, setComparto] = useState<CompartoId | "">("");
   const [anno, setAnno] = useState(String(new Date().getFullYear()));
-  const [cerca, setCerca] = useState("");
-  const [soloConBanca, setSoloConBanca] = useState(true);
-  const [concorsoId, setConcorsoId] = useState("");
+  const [collegati, setCollegati] = useState<{ id: string; titolo: string; comparto: CompartoId }[]>([]);
   const [titolo, setTitolo] = useState("");
   const [materia, setMateria] = useState<MateriaId | "">("");
   const [formato, setFormato] = useState<Formato>("auto");
   const [file, setFile] = useState<File>();
   const [fase, setFase] = useState<string>();
   const [esito, setEsito] = useState<{ tone: "success" | "error"; testo: string }>();
-
-  const opzioni = useMemo(() => {
-    const q = cerca.trim().toLowerCase();
-    return (bandi.data?.concorsi ?? [])
-      .filter((c) => !soloConBanca || c.bancaDatiPrevista || c.bancaDati)
-      .filter((c) => !q || [c.id, c.ente, c.titolo, c.figura].some((s) => s?.toLowerCase().includes(q)))
-      .slice(0, 200);
-  }, [bandi.data, cerca, soloConBanca]);
 
   async function carica(e: FormEvent) {
     e.preventDefault();
@@ -111,7 +134,7 @@ function Caricamento({ onCaricata }: { onCaricata: () => void }) {
       const { upload } = await api<{ banca: BancaDati; upload: string }>("/admin/banche-dati", {
         method: "POST",
         body: {
-          concorsoId: modo === "concorso" ? concorsoId : undefined,
+          concorsiIds: collegati.map((c) => c.id),
           comparto: comparto || undefined,
           anno: anno ? Number(anno) : undefined,
           titolo,
@@ -126,6 +149,7 @@ function Caricamento({ onCaricata }: { onCaricata: () => void }) {
       if (!res.ok) throw new Error(`Caricamento non riuscito (${res.status})`);
       setEsito({ tone: "success", testo: "PDF caricato: l'estrazione è partita. Ti arriva anche un'email quando finisce." });
       setTitolo("");
+      setCollegati([]);
       setFile(undefined);
       onCaricata();
     } catch (err) {
@@ -142,36 +166,14 @@ function Caricamento({ onCaricata }: { onCaricata: () => void }) {
         <h2 className="text-lg font-bold text-slate-900">Carica una banca dati</h2>
       </div>
       <form onSubmit={(e) => void carica(e)} className="grid gap-3 sm:grid-cols-2">
-        <div className="sm:col-span-2">
-          <div className="inline-grid grid-cols-2 rounded-xl bg-slate-100 p-1 text-sm font-semibold" role="radiogroup">
-            {(
-              [
-                ["concorso", "Collegata a un concorso"],
-                ["libera", "Banca dati a sé (per comparto)"],
-              ] as const
-            ).map(([id, nome]) => (
-              <button
-                key={id}
-                type="button"
-                role="radio"
-                aria-checked={modo === id}
-                onClick={() => setModo(id)}
-                className={cx("rounded-lg px-4 py-2 transition", modo === id ? "bg-white text-brand-700 shadow-sm" : "text-slate-600")}
-              >
-                {nome}
-              </button>
-            ))}
-          </div>
-          <p className="mt-1 text-xs text-slate-500">
-            {modo === "concorso"
-              ? "Le simulazioni Medium e Pro di quel concorso useranno queste domande; la banca dati compare anche nella sezione Banche dati."
-              : "Per esempio «Banca dati Polizia di Stato 2026»: compare solo nella sezione Banche dati, sotto il comparto scelto."}
-          </p>
-        </div>
+        <label className="text-xs font-semibold text-slate-500 sm:col-span-2">
+          Titolo della banca dati
+          <input required minLength={3} value={titolo} onChange={(e) => setTitolo(e.target.value)} placeholder="es. Banca dati Polizia di Stato 2026 — agenti" className={campo} />
+        </label>
         <label className="text-xs font-semibold text-slate-500">
-          Comparto{modo === "concorso" && " (vuoto = quello del concorso)"}
-          <select required={modo === "libera"} value={comparto} onChange={(e) => setComparto(e.target.value as CompartoId | "")} className={campo}>
-            <option value="">{modo === "concorso" ? "Come il concorso" : "Scegli…"}</option>
+          Comparto{collegati.length > 0 && " (vuoto = quello del primo concorso)"}
+          <select required={!collegati.length} value={comparto} onChange={(e) => setComparto(e.target.value as CompartoId | "")} className={campo}>
+            <option value="">{collegati.length ? "Come il concorso" : "Scegli…"}</option>
             {COMPARTI.map((c) => (
               <option key={c.id} value={c.id}>
                 {c.nome}
@@ -183,33 +185,21 @@ function Caricamento({ onCaricata }: { onCaricata: () => void }) {
           Anno
           <input type="number" min={2000} max={2100} value={anno} onChange={(e) => setAnno(e.target.value)} className={campo} />
         </label>
-        {modo === "concorso" && (
-        <div className="sm:col-span-2">
-          <label className="text-xs font-semibold text-slate-500">
-            Concorso
-            <input value={cerca} onChange={(e) => setCerca(e.target.value)} placeholder="Cerca per ente, titolo o id inPA…" className={campo} />
-          </label>
-          <label className="mt-2 flex items-center gap-2 text-sm text-slate-600">
-            <input type="checkbox" checked={soloConBanca} onChange={(e) => setSoloConBanca(e.target.checked)} className="size-4 rounded border-slate-300" />
-            Solo i bandi che citano una banca dati
-          </label>
-          {bandi.loading ? (
-            <Spinner label="Carico i bandi…" />
-          ) : (
-            <select required value={concorsoId} onChange={(e) => setConcorsoId(e.target.value)} className={cx(campo, "mt-2")} size={6}>
-              {opzioni.map((c) => (
-                <option key={c.id} value={c.id}>
-                  {c.ente} — {c.figura ?? c.titolo} (scade {dataBreve(c.scadenza)}){c.bancaDati ? " · banca dati pubblicata" : ""}
-                </option>
-              ))}
-            </select>
-          )}
+        <div className="rounded-xl bg-slate-50 p-3 sm:col-span-2">
+          <p className="text-sm font-semibold text-slate-800">Concorsi a cui collegarla (facoltativo)</p>
+          <p className="mt-0.5 text-xs text-slate-500">
+            Dal titolo e dal comparto ti proponiamo i bandi aperti che le somigliano; puoi anche cercarne altri. I concorsi collegati
+            mostrano il link alla banca dati e, da pubblicata, le loro simulazioni usano le domande ufficiali. Puoi cambiarli anche
+            dopo, dalla riga della banca dati.
+          </p>
+          <SceltaConcorsi
+            bandi={bandi}
+            banca={{ titolo, comparto: comparto || undefined, anno: anno ? Number(anno) : undefined }}
+            collegati={collegati}
+            onAggiungi={(c) => setCollegati((l) => (l.some((x) => x.id === c.id) ? l : [...l, { id: c.id, titolo: nomeConcorsoBreve(c), comparto: c.comparto }]))}
+            onTogli={(id) => setCollegati((l) => l.filter((c) => c.id !== id))}
+          />
         </div>
-        )}
-        <label className="text-xs font-semibold text-slate-500">
-          Titolo della banca dati
-          <input required minLength={3} value={titolo} onChange={(e) => setTitolo(e.target.value)} placeholder={modo === "concorso" ? "es. Banca dati prova preselettiva 2026" : "es. Banca dati Polizia di Stato 2026"} className={campo} />
-        </label>
         <label className="text-xs font-semibold text-slate-500">
           Materia (se è una sola)
           <select value={materia} onChange={(e) => setMateria(e.target.value as MateriaId | "")} className={campo}>
@@ -232,7 +222,7 @@ function Caricamento({ onCaricata }: { onCaricata: () => void }) {
           </select>
           <span className="mt-1 block font-normal text-slate-400">{FORMATI.find((f) => f.id === formato)?.spiegazione}</span>
         </label>
-        <label className="text-xs font-semibold text-slate-500">
+        <label className="text-xs font-semibold text-slate-500 sm:col-span-2">
           File PDF (testo selezionabile, fino a 200 MB)
           <input
             required
@@ -243,7 +233,7 @@ function Caricamento({ onCaricata }: { onCaricata: () => void }) {
           />
         </label>
         <div className="flex items-center gap-3 sm:col-span-2">
-          <Button type="submit" loading={!!fase} disabled={!file || (modo === "concorso" ? !concorsoId : !comparto)}>
+          <Button type="submit" loading={!!fase} disabled={!file || (!comparto && !collegati.length)}>
             <FileUp className="size-4" /> Carica ed estrai
           </Button>
           {fase && <span className="text-sm text-slate-500">{fase}</span>}
@@ -258,10 +248,151 @@ function Caricamento({ onCaricata }: { onCaricata: () => void }) {
   );
 }
 
-function RigaBanca({ banca, onCambio }: { banca: BancaDati; onCambio: () => void }) {
+/**
+ * Concorsi collegati a una banca dati: quelli già scelti (con ×), i suggeriti (bandi aperti
+ * simili per titolo, comparto e anno: core/concorsi.ts → concorsiSuggeriti) e la ricerca a mano
+ * tra tutti i bandi. Si usa nel modulo di caricamento e nella riga di ogni banca dati.
+ */
+function SceltaConcorsi({
+  bandi,
+  banca,
+  collegati,
+  onAggiungi,
+  onTogli,
+  inCorso,
+}: {
+  bandi?: ConcorsoInLista[];
+  banca: { titolo: string; comparto?: CompartoId; anno?: number };
+  collegati: { id: string; titolo: string }[];
+  /** Restituisce una promessa se collega sul server: "Collega i molto simili" le aspetta una per una */
+  onAggiungi: (c: ConcorsoInLista) => void | Promise<unknown>;
+  onTogli: (id: string) => void;
+  /** Id del concorso che si sta collegando o scollegando */
+  inCorso?: string;
+}) {
+  const [cerca, setCerca] = useState("");
+  const [soloAperti, setSoloAperti] = useState(true);
+  const giaCollegati = useMemo(() => new Set(collegati.map((c) => c.id)), [collegati]);
+  const perId = useMemo(() => new Map((bandi ?? []).map((c) => [c.id, c])), [bandi]);
+  const suggeriti = useMemo(() => concorsiSuggeriti(banca, bandi ?? [], { esclusi: giaCollegati }), [banca.titolo, banca.comparto, banca.anno, bandi, giaCollegati]);
+  const forti = suggeriti.filter((s) => s.forte);
+  const trovati = useMemo(() => {
+    const q = cerca.trim().toLowerCase();
+    if (q.length < 3) return [];
+    return (bandi ?? [])
+      .filter((c) => !giaCollegati.has(c.id) && (!soloAperti || !scaduto(c)))
+      .filter((c) => [c.id, c.ente, c.titolo, c.figura].some((x) => x?.toLowerCase().includes(q)))
+      .slice(0, 8);
+  }, [bandi, cerca, soloAperti, giaCollegati]);
+
+  const riga = (c: ConcorsoInLista, extra?: ReactNode) => (
+    <li key={c.id} className="flex items-center gap-2">
+      <button
+        type="button"
+        disabled={!!inCorso}
+        onClick={() => onAggiungi(c)}
+        className="grid size-6 shrink-0 place-items-center rounded-md bg-white text-brand-600 ring-1 ring-slate-200 hover:bg-brand-50 disabled:opacity-50"
+        title="Collega"
+      >
+        {inCorso === c.id ? <Loader2 className="size-3.5 animate-spin" /> : <Plus className="size-3.5" />}
+      </button>
+      <span className="min-w-0 flex-1 truncate">
+        {nomeConcorsoBreve(c)} <span className="text-slate-400">· {scaduto(c) ? "domande chiuse" : `scade ${dataBreve(c.scadenza)}`}</span>
+        {c.bancaDati && <span className="text-amber-600"> · ha già una banca dati</span>}
+      </span>
+      {extra}
+    </li>
+  );
+
+  return (
+    <div className="mt-3 space-y-3 text-sm">
+      {collegati.length > 0 && (
+        <div className="flex flex-wrap gap-2">
+          {collegati.map((c) => {
+            const bando = perId.get(c.id);
+            return (
+              <span key={c.id} className="inline-flex max-w-full items-center gap-1.5 rounded-full bg-white py-1 pr-1 pl-3 text-xs font-medium text-slate-700 ring-1 ring-slate-200">
+                <Link to={`/app/concorsi/${c.id}`} className="truncate hover:text-brand-700" title={c.titolo}>
+                  {c.titolo}
+                </Link>
+                {bando?.scadenza && <span className="shrink-0 text-slate-400">{scaduto(bando) ? "chiuso" : `scade ${dataBreve(bando.scadenza)}`}</span>}
+                <button
+                  type="button"
+                  disabled={!!inCorso}
+                  onClick={() => onTogli(c.id)}
+                  className="grid size-5 shrink-0 place-items-center rounded-full text-slate-400 hover:bg-rose-50 hover:text-rose-600"
+                  title="Scollega"
+                >
+                  {inCorso === c.id ? <Loader2 className="size-3 animate-spin" /> : <X className="size-3" />}
+                </button>
+              </span>
+            );
+          })}
+        </div>
+      )}
+
+      {!bandi ? (
+        <Spinner label="Carico i bandi…" />
+      ) : (
+        <>
+          {suggeriti.length > 0 && (
+            <div>
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <p className="text-xs font-semibold text-slate-500">Bandi aperti simili</p>
+                {forti.length > 1 && (
+                  <Button
+                    type="button"
+                    variant="ghost"
+                    size="sm"
+                    disabled={!!inCorso}
+                    onClick={async () => {
+                      // Uno alla volta: ogni collegamento riscrive la lista dei concorsi della banca dati.
+                      for (const s of forti) await onAggiungi(s.concorso);
+                    }}
+                  >
+                    Collega i {forti.length} molto simili
+                  </Button>
+                )}
+              </div>
+              <ul className="mt-1 space-y-1">
+                {suggeriti.map((s) => riga(s.concorso, s.forte ? <Badge tone="green">molto simile</Badge> : undefined))}
+              </ul>
+            </div>
+          )}
+          <div>
+            <div className="flex flex-wrap items-center gap-3">
+              <input
+                value={cerca}
+                onChange={(e) => setCerca(e.target.value)}
+                placeholder="Cerca un altro concorso: ente, titolo o id inPA…"
+                className="h-9 min-w-56 flex-1 rounded-lg border-0 bg-white px-3 text-sm ring-1 ring-slate-300 focus:ring-2 focus:ring-brand-500"
+              />
+              <label className="flex items-center gap-1.5 text-xs text-slate-600">
+                <input type="checkbox" checked={soloAperti} onChange={(e) => setSoloAperti(e.target.checked)} className="size-4 rounded border-slate-300" />
+                Solo aperti
+              </label>
+            </div>
+            {cerca.trim().length >= 3 && (
+              <ul className="mt-2 space-y-1">{trovati.length ? trovati.map((c) => riga(c)) : <li className="text-xs text-slate-500">Nessun bando trovato.</li>}</ul>
+            )}
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
+
+/** Una banca dati: stato, numeri dell'estrazione, esempi da controllare e azioni. */
+function RigaBanca({ banca, bandi, onCambio }: { banca: BancaDati; bandi?: ConcorsoInLista[]; onCambio: () => void }) {
   const [aperta, setAperta] = useState(banca.stato === "estratta");
+  const collegati = concorsiDellaBanca(banca);
+  // Concorsi: aperto da controllare prima di pubblicare, o se non ce n'è ancora nessuno.
+  const [concorsiAperti, setConcorsiAperti] = useState(banca.stato === "estratta" || !collegati.length);
+  const [avviso, setAvviso] = useState<string>();
   const [inCorso, setInCorso] = useState<string>();
   const [errore, setErrore] = useState<string>();
+  // Eliminare è definitivo: serve un secondo clic di conferma.
+  const [confermaElimina, setConfermaElimina] = useState(false);
 
   async function azione(nome: string, fn: () => Promise<unknown>) {
     setInCorso(nome);
@@ -289,7 +420,14 @@ function RigaBanca({ banca, onCambio }: { banca: BancaDati; onCambio: () => void
             <Badge tone={stato.tone}>{stato.testo}</Badge>
           </div>
           <p className="mt-0.5 text-sm text-slate-500">
-            {[banca.comparto && nomeComparto(banca.comparto), banca.anno, banca.concorsoTitolo ?? "senza concorso"].filter(Boolean).join(" · ")} ·{" "}
+            {[
+              banca.comparto && nomeComparto(banca.comparto),
+              banca.anno,
+              collegati.length === 1 ? collegati[0]!.titolo : collegati.length ? `${collegati.length} concorsi collegati` : "senza concorsi collegati",
+            ]
+              .filter(Boolean)
+              .join(" · ")}{" "}
+            ·{" "}
             {banca.nomeFile} · caricata il {dataBreve(banca.caricataIl)}
             {banca.materia && ` · ${nomeMateria(banca.materia)}`}
           </p>
@@ -332,7 +470,17 @@ function RigaBanca({ banca, onCambio }: { banca: BancaDati; onCambio: () => void
             </Button>
           )}
           {banca.stato === "estratta" && !!banca.domande && (
-            <Button size="sm" loading={inCorso === "pubblica"} onClick={() => void azione("pubblica", () => api(`/admin/banche-dati/${banca.id}/pubblica`, { method: "POST" }))}>
+            <Button
+              size="sm"
+              loading={inCorso === "pubblica"}
+              onClick={() =>
+                void azione("pubblica", async () => {
+                  const r = await api<{ domande: number; occupati: string[] }>(`/admin/banche-dati/${banca.id}/pubblica`, { method: "POST" });
+                  // Concorsi che hanno già un'altra banca dati: restano com'erano.
+                  setAvviso(r.occupati.length ? `Pubblicata. Non collegati perché hanno già un'altra banca dati: ${r.occupati.join("; ")}.` : undefined);
+                })
+              }
+            >
               Pubblica {banca.domande} domande
             </Button>
           )}
@@ -341,22 +489,87 @@ function RigaBanca({ banca, onCambio }: { banca: BancaDati; onCambio: () => void
               Ritira
             </Button>
           )}
+          <Button variant="ghost" size="sm" onClick={() => setConcorsiAperti((a) => !a)}>
+            <Link2 className="size-4" /> Concorsi ({collegati.length})
+          </Button>
           {!!banca.esempi?.length && (
             <Button variant="ghost" size="sm" onClick={() => setAperta((a) => !a)}>
               {aperta ? "Nascondi esempi" : "Vedi esempi"}
             </Button>
           )}
+          {!confermaElimina && (
+            <Button variant="ghost" size="sm" disabled={!!inCorso} onClick={() => setConfermaElimina(true)} className="text-rose-600 hover:bg-rose-50">
+              <Trash2 className="size-4" /> Elimina
+            </Button>
+          )}
         </div>
       </div>
 
+      {confermaElimina && (
+        <div className="flex flex-wrap items-center gap-3 rounded-xl bg-rose-50 p-3 text-sm text-rose-900 ring-1 ring-rose-200">
+          <p className="min-w-0 flex-1">
+            Elimino <strong>{banca.titolo}</strong> per sempre, con il PDF e le domande estratte.
+            {banca.stato === "pubblicata" && " Sparisce subito dalla sezione Banche dati degli utenti."}
+            {banca.stato === "pubblicata" && collegati.length > 0 && " I concorsi collegati tornano alle domande della nostra banca."} Le sessioni già
+            fatte restano nelle statistiche.
+          </p>
+          <Button variant="ghost" size="sm" disabled={inCorso === "elimina"} onClick={() => setConfermaElimina(false)}>
+            Annulla
+          </Button>
+          <Button
+            variant="danger"
+            size="sm"
+            loading={inCorso === "elimina"}
+            onClick={() => void azione("elimina", () => api(`/admin/banche-dati/${banca.id}`, { method: "DELETE" }))}
+          >
+            Elimina definitivamente
+          </Button>
+        </div>
+      )}
+
       {errore && <Alert tone="error">{errore}</Alert>}
+      {avviso && (
+        <Alert tone="info" onClose={() => setAvviso(undefined)}>
+          {avviso}
+        </Alert>
+      )}
+
+      {concorsiAperti && (
+        <div className="rounded-xl bg-slate-50 p-4">
+          <p className="text-sm font-semibold text-slate-800">Concorsi collegati</p>
+          <p className="mt-0.5 text-xs text-slate-500">
+            {banca.stato === "pubblicata"
+              ? "Collegando un concorso, la sua pagina mostra subito il link a questa banca dati e le sue simulazioni usano le domande ufficiali."
+              : "Alla pubblicazione, ogni concorso collegato mostrerà il link a questa banca dati e le sue simulazioni useranno le domande ufficiali."}{" "}
+            Il segno "Banca dati" nelle liste dei bandi compare dal giorno dopo (la lista in cache si rifà ogni mattina).
+          </p>
+          <SceltaConcorsi
+            bandi={bandi}
+            banca={{ titolo: banca.titolo, comparto: banca.comparto, anno: banca.anno }}
+            collegati={collegati}
+            inCorso={inCorso?.startsWith("concorso:") ? inCorso.slice(9) : undefined}
+            onAggiungi={(c) => azione(`concorso:${c.id}`, () => api(`/admin/banche-dati/${banca.id}/concorsi`, { method: "POST", body: { concorsoId: c.id } }))}
+            onTogli={(id) => void azione(`concorso:${id}`, () => api(`/admin/banche-dati/${banca.id}/concorsi/${encodeURIComponent(id)}`, { method: "DELETE" }))}
+          />
+        </div>
+      )}
 
       {aperta && !!banca.esempi?.length && (
         <div className="space-y-3 rounded-xl bg-slate-50 p-4 text-sm">
-          <p className="font-semibold text-slate-700">Prime domande estratte: controlla che testo, risposte e giusta (in verde) siano corretti</p>
+          <div>
+            <p className="font-semibold text-slate-700">
+              Controlla che testo, risposte e giusta (in verde) siano come nel PDF
+              {!!banca.sezioni?.length && <> · sezioni trovate: {banca.sezioni.join(", ")}</>}
+            </p>
+            <p className="mt-0.5 text-xs text-slate-500">
+              Qui le risposte sono nell'ordine del PDF. Gli utenti scelgono entrando nella banca dati se vedere la giusta sempre per
+              prima o mescolata.
+            </p>
+          </div>
           {banca.esempi.map((d) => (
             <div key={d.numero}>
               <p className="font-medium text-slate-900">
+                {d.sezione && <Badge className="mr-1.5 align-middle">{d.sezione}</Badge>}
                 {d.numero}. {d.testo}
               </p>
               <ul className="mt-1 space-y-0.5">

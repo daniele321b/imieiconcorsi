@@ -1,5 +1,6 @@
 variable "name" {
-  type = string
+  description = "Prefisso dei nomi delle risorse, es. imieiconcorsi-dev"
+  type        = string
 }
 
 variable "functions_dir" {
@@ -8,7 +9,8 @@ variable "functions_dir" {
 }
 
 variable "jwt_issuer" {
-  type = string
+  description = "Emittente dei token Cognito (indirizzo del user pool), per l'authorizer JWT"
+  type        = string
 }
 
 variable "jwt_audience" {
@@ -31,6 +33,8 @@ variable "services" {
     write_tables  = list(string)
     read_tables   = list(string)
     environment   = optional(map(string), {})
+    # Secondi; l'API Gateway HTTP aspetta al massimo 30 secondi.
+    timeout = optional(number, 10)
     # Permessi IAM in più, come JSON (jsonencode([...])): statement di forme diverse
     # (Resource stringa o lista) non starebbero in un unico tipo Terraform.
     policies = optional(string, "[]")

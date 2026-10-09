@@ -6,12 +6,17 @@ import { Logo } from "../components/brand";
 import { FullPageSpinner } from "../components/ui";
 import { useAuth } from "../lib/auth";
 
+// Home pubblica (/): presentazione dell'app e riquadro di accesso (AuthCard). Chi è già
+// collegato viene portato direttamente nell'app.
+
+/** I tre punti di forza mostrati sotto il titolo. */
 const PUNTI = [
   { Icon: BellRing, titolo: "Il bando giusto, appena esce", testo: "Ogni mattina leggiamo inPA e ti avvisiamo solo per i comparti che ti interessano." },
   { Icon: Target, titolo: "Studi le materie del tuo bando", testo: "Schede brevi e quiz calibrati sul tuo livello, materia per materia." },
   { Icon: Timer, titolo: "Simulazioni come all'esame", testo: "60 domande, timer e penalità sugli errori. Poi vedi dove migliorare." },
 ];
 
+/** Pagina "/". */
 export function Landing() {
   const { stato } = useAuth();
   if (stato === "caricamento") return <FullPageSpinner />;

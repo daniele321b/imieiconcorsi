@@ -11,4 +11,5 @@ export const LEGALE = {
   versione: VERSIONE_TERMINI,
 };
 
+/** true finché qualche dato è ancora tra parentesi quadre: le pagine legali mostrano "bozza". */
 export const legaleInBozza = Object.values(LEGALE).some((v) => v.startsWith("["));

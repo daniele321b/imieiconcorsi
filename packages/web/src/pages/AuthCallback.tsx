@@ -5,6 +5,9 @@ import { Link, Navigate } from "react-router";
 import { Alert, Spinner } from "../components/ui";
 import { useAuth } from "../lib/auth";
 
+// Pagina /auth/callback: qui torna il browser dopo il login con Google o Facebook.
+
+/** Nel sessionStorage: il login social è già stato ritentato una volta (niente cicli). */
 const CHIAVE_RIPROVA = "login-social-riprova";
 
 /**

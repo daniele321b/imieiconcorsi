@@ -132,6 +132,28 @@ resource "aws_dynamodb_table" "ordini" {
     name = "id"
     type = "S"
   }
+  attribute {
+    name = "userId"
+    type = "S"
+  }
+  attribute {
+    name = "creatoIl"
+    type = "S"
+  }
+
+  # Storico dei pagamenti di un utente (pagina Profilo), dal più recente.
+  global_secondary_index {
+    name            = "perUtente"
+    projection_type = "ALL"
+    key_schema {
+      attribute_name = "userId"
+      key_type       = "HASH"
+    }
+    key_schema {
+      attribute_name = "creatoIl"
+      key_type       = "RANGE"
+    }
+  }
 
   point_in_time_recovery {
     enabled = true
@@ -141,6 +163,81 @@ resource "aws_dynamodb_table" "ordini" {
 # Pannello admin: banche dati ufficiali caricate in PDF (stato dell'estrazione, riepilogo).
 resource "aws_dynamodb_table" "banche_dati" {
   name         = "${var.name}-banche-dati"
+  billing_mode = "PAY_PER_REQUEST"
+  hash_key     = "id"
+
+  attribute {
+    name = "id"
+    type = "S"
+  }
+}
+
+# Richieste di assistenza degli utenti (una conversazione per richiesta). L'indice perStato
+# serve al pannello admin: le aperte, le in lavorazione, le chiuse, dalla più recente.
+resource "aws_dynamodb_table" "richieste" {
+  name         = "${var.name}-richieste"
+  billing_mode = "PAY_PER_REQUEST"
+  hash_key     = "userId"
+  range_key    = "id"
+
+  attribute {
+    name = "userId"
+    type = "S"
+  }
+  attribute {
+    name = "id"
+    type = "S"
+  }
+  attribute {
+    name = "stato"
+    type = "S"
+  }
+  attribute {
+    name = "aggiornataIl"
+    type = "S"
+  }
+
+  global_secondary_index {
+    name            = "perStato"
+    projection_type = "ALL"
+
+    key_schema {
+      attribute_name = "stato"
+      key_type       = "HASH"
+    }
+    key_schema {
+      attribute_name = "aggiornataIl"
+      key_type       = "RANGE"
+    }
+  }
+
+  point_in_time_recovery {
+    enabled = true
+  }
+}
+
+# Domande delle banche dati già fatte da ogni utente: una riga per utente e banca dati,
+# con due mappe di bit (fatte, sbagliate l'ultima volta) indicizzate dal numero della domanda.
+resource "aws_dynamodb_table" "progressi" {
+  name         = "${var.name}-progressi"
+  billing_mode = "PAY_PER_REQUEST"
+  hash_key     = "userId"
+  range_key    = "bancaId"
+
+  attribute {
+    name = "userId"
+    type = "S"
+  }
+  attribute {
+    name = "bancaId"
+    type = "S"
+  }
+}
+
+# Contatori della piattaforma, una riga per contatore: per ora la spesa AI del mese
+# ("ai#2026-10": token e dollari stimati), per il tetto di spesa mensile del tutor.
+resource "aws_dynamodb_table" "contatori" {
+  name         = "${var.name}-contatori"
   billing_mode = "PAY_PER_REQUEST"
   hash_key     = "id"
 

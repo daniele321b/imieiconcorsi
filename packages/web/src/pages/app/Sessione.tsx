@@ -3,19 +3,47 @@ import { ArrowRight, CheckCircle2, ChevronDown, Flag, RotateCcw, Timer, Trophy, 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Link, useLocation, useParams } from "react-router";
 import { Pubblicita } from "../../components/Pubblicita";
+import { ChiediAlTutor } from "../../components/ChiediAlTutor";
+import { SegnalaErrore } from "../../components/Richieste";
 import { Alert, Badge, Button, ButtonLink, Card, ProgressBar, Spinner, cx } from "../../components/ui";
-import { api, ApiError, haSoluzione, useApi, type SessioneApi } from "../../lib/api";
+import { api, ApiError, haSoluzione, useApi, type ContestoRichiesta, type SessioneApi } from "../../lib/api";
 import { useUtente } from "../../lib/auth";
 import { durata } from "../../lib/format";
 
+// Pagina di una sessione (/app/sessione/:id): studio con correzione subito, simulazione a tempo
+// e, dopo la consegna, i risultati con la revisione delle risposte. Il punteggio lo calcola il
+// server (POST /sessioni/{id}/consegna); qui si raccolgono solo le risposte.
+
+/** Risposte date, nell'ordine delle domande (null = non risposta). */
 type Risposte = (number | null)[];
 
+/** Per "Segnala un errore": quale domanda, e di quale banca dati o concorso. */
+function contestoDomanda(sessione: SessioneApi, d: { materia: string; id: string; testo: string }): ContestoRichiesta {
+  return {
+    domanda: { materia: d.materia, id: d.id, testo: d.testo.slice(0, 1500) },
+    ...(sessione.bancaDati ? { bancaDatiId: sessione.bancaDati.id } : {}),
+    ...(sessione.concorsoId ? { concorsoId: sessione.concorsoId } : {}),
+  };
+}
+
+/** Le domande ufficiali hanno le risposte in ordine diverso dal PDF: lo si dice, o sembra un errore. */
+function NotaOrdineRisposte({ sessione }: { sessione: SessioneApi }) {
+  if (!sessione.bancaDati?.mescolate) return null;
+  return (
+    <p className="mb-4 rounded-xl bg-slate-100 px-3 py-2 text-xs text-slate-600">
+      Le risposte sono in ordine diverso dal PDF ufficiale: così impari la risposta giusta e non la sua lettera.
+    </p>
+  );
+}
+
+/** Pagina /app/sessione/:id: carica la sessione e mostra studio, simulazione o risultati. */
 export function SessionePage() {
   const { id } = useParams();
   // key: passando da una sessione all'altra lo stato riparte da zero.
   return <Sessione key={id} id={id!} />;
 }
 
+/** La sessione: dati arrivati dalla pagina precedente o richiesti al server. */
 function Sessione({ id }: { id: string }) {
   const { state } = useLocation();
   const appenaCreata = (state as SessioneApi | null)?.id === id ? (state as SessioneApi) : undefined;
@@ -39,6 +67,7 @@ function Sessione({ id }: { id: string }) {
   );
 }
 
+/** Consegna delle risposte al server, che calcola il punteggio. */
 function useConsegna(sessione: SessioneApi, onConsegnata: (s: SessioneApi) => void) {
   const [inCorso, setInCorso] = useState(false);
   const [errore, setErrore] = useState<string>();
@@ -64,6 +93,7 @@ function useConsegna(sessione: SessioneApi, onConsegnata: (s: SessioneApi) => vo
 
 // ── Studio: una domanda alla volta con correzione immediata ──────────────────
 
+/** Studio: una domanda alla volta, con la risposta giusta e la spiegazione subito dopo. */
 function StudioRunner({ sessione, onConsegnata }: { sessione: SessioneApi; onConsegnata: (s: SessioneApi) => void }) {
   const { utente } = useUtente();
   const [indice, setIndice] = useState(0);
@@ -100,6 +130,7 @@ function StudioRunner({ sessione, onConsegnata }: { sessione: SessioneApi; onCon
         </Badge>
       </div>
       <ProgressBar value={((indice + (rivelata ? 1 : 0)) / sessione.domande.length) * 100} className="mb-6" />
+      <NotaOrdineRisposte sessione={sessione} />
 
       {annuncio ? (
         <Pubblicita
@@ -145,6 +176,8 @@ function StudioRunner({ sessione, onConsegnata }: { sessione: SessioneApi; onCon
           <div className="mt-6 animate-fade-up rounded-xl bg-slate-50 p-4 text-sm">
             <p className="font-semibold text-slate-900">{scelta === domanda.corretta ? "Esatto!" : "Non proprio."}</p>
             <p className="mt-1 text-slate-600">{domanda.spiegazione}</p>
+            <ChiediAlTutor domanda={domanda} risposta={scelta} />
+            <SegnalaErrore className="mt-3 flex" contesto={contestoDomanda(sessione, domanda)} />
           </div>
         )}
       </Card>
@@ -175,6 +208,7 @@ function StudioRunner({ sessione, onConsegnata }: { sessione: SessioneApi; onCon
 
 const chiaveBozza = (id: string) => `simulazione:${id}`;
 
+/** Risposte della simulazione salvate nel browser: ricaricando la pagina non si perdono. */
 function leggiBozza(id: string, n: number): Risposte {
   try {
     const salvate = JSON.parse(localStorage.getItem(chiaveBozza(id)) ?? "null");
@@ -183,6 +217,7 @@ function leggiBozza(id: string, n: number): Risposte {
   return Array.from({ length: n }, () => null);
 }
 
+/** Simulazione: timer, salto tra le domande, consegna (automatica allo scadere del tempo). */
 function SimulazioneRunner({ sessione, onConsegnata }: { sessione: SessioneApi; onConsegnata: (s: SessioneApi) => void }) {
   const [indice, setIndice] = useState(0);
   const [risposte, setRisposte] = useState<Risposte>(() => leggiBozza(sessione.id, sessione.domande.length));
@@ -233,6 +268,7 @@ function SimulazioneRunner({ sessione, onConsegnata }: { sessione: SessioneApi; 
           </span>
         </div>
 
+        <NotaOrdineRisposte sessione={sessione} />
         <Card key={indice} className="animate-fade-up p-6 sm:p-8">
           <h2 className="text-xl font-bold text-slate-900">{domanda.testo}</h2>
           <div className="mt-6 grid gap-3" role="radiogroup">
@@ -324,6 +360,7 @@ function SimulazioneRunner({ sessione, onConsegnata }: { sessione: SessioneApi; 
 
 // ── Risultati ────────────────────────────────────────────────────────────────
 
+/** Risultati: punteggio, esito, risultati per materia e revisione domanda per domanda. */
 function Risultati({ sessione }: { sessione: SessioneApi }) {
   const esito = sessione.esito!;
   const [aperta, setAperta] = useState<number | null>(null);
@@ -412,6 +449,7 @@ function Risultati({ sessione }: { sessione: SessioneApi }) {
 
       <section>
         <h2 className="mb-3 text-lg font-bold">Rivedi le risposte</h2>
+        <NotaOrdineRisposte sessione={sessione} />
         <div className="space-y-2">
           {sessione.domande.map((d, i) => {
             if (!haSoluzione(d)) return null;
@@ -443,6 +481,8 @@ function Risultati({ sessione }: { sessione: SessioneApi }) {
                       <span className="font-semibold">Risposta giusta:</span> {d.opzioni[d.corretta]}
                     </p>
                     <p className="text-slate-600">{d.spiegazione}</p>
+                    <ChiediAlTutor domanda={d} risposta={r} />
+                    <SegnalaErrore className="flex" contesto={contestoDomanda(sessione, d)} />
                   </div>
                 )}
               </Card>

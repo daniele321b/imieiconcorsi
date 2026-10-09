@@ -14,11 +14,13 @@ locals {
 
 data "aws_region" "current" {}
 
+# Indirizzo mittente (senza dominio va verificato cliccando il link che arriva per email).
 resource "aws_sesv2_email_identity" "sender" {
   count          = local.con_dominio ? 0 : 1
   email_identity = var.sender_email
 }
 
+# Il dominio intero come mittente verificato (con i record DKIM qui sotto).
 resource "aws_sesv2_email_identity" "domain" {
   count          = local.con_dominio ? 1 : 0
   email_identity = var.domain
@@ -34,6 +36,7 @@ resource "aws_route53_record" "dkim" {
   records = ["${aws_sesv2_email_identity.domain[0].dkim_signing_attributes[0].tokens[count.index]}.dkim.${data.aws_region.current.region}.amazonses.com"]
 }
 
+# Mittente tecnico mail.<dominio>: SPF allineato, meno probabilità di finire nello spam.
 resource "aws_sesv2_email_identity_mail_from_attributes" "domain" {
   count                  = local.con_dominio ? 1 : 0
   email_identity         = aws_sesv2_email_identity.domain[0].email_identity
@@ -41,6 +44,7 @@ resource "aws_sesv2_email_identity_mail_from_attributes" "domain" {
   behavior_on_mx_failure = "USE_DEFAULT_VALUE"
 }
 
+# Dove tornano i rimbalzi del mittente tecnico (server di SES della regione).
 resource "aws_route53_record" "mail_from_mx" {
   count   = local.con_dominio ? 1 : 0
   zone_id = var.zone_id
@@ -50,6 +54,7 @@ resource "aws_route53_record" "mail_from_mx" {
   records = ["10 feedback-smtp.${data.aws_region.current.region}.amazonses.com"]
 }
 
+# SPF: SES è autorizzato a spedire per mail.<dominio>.
 resource "aws_route53_record" "mail_from_spf" {
   count   = local.con_dominio ? 1 : 0
   zone_id = var.zone_id
@@ -59,6 +64,7 @@ resource "aws_route53_record" "mail_from_spf" {
   records = ["v=spf1 include:amazonses.com ~all"]
 }
 
+# DMARC: regola per i provider di posta (per ora solo rapporti, nessun blocco).
 resource "aws_route53_record" "dmarc" {
   count   = local.con_dominio ? 1 : 0
   zone_id = var.zone_id
@@ -74,6 +80,7 @@ resource "aws_sesv2_email_identity" "recipient" {
   email_identity = each.value
 }
 
+# Insieme di regole usato da tutte le email dell'app (nome passato alle Lambda).
 resource "aws_sesv2_configuration_set" "main" {
   configuration_set_name = var.name
 
@@ -95,10 +102,12 @@ resource "aws_sesv2_configuration_set" "main" {
 # (SES -> SNS -> email): AWS chiede che chi spedisce se ne accorga subito.
 data "aws_caller_identity" "current" {}
 
+# Topic che riceve rimbalzi e segnalazioni di spam da SES.
 resource "aws_sns_topic" "notifiche" {
   name = "${var.name}-ses-notifiche"
 }
 
+# Solo SES (di questo account) può pubblicare sul topic.
 resource "aws_sns_topic_policy" "notifiche" {
   arn = aws_sns_topic.notifiche.arn
   policy = jsonencode({
@@ -118,6 +127,7 @@ resource "aws_sns_topic_policy" "notifiche" {
   })
 }
 
+# Quali eventi mandare al topic: rimbalzi, spam, invii rifiutati.
 resource "aws_sesv2_configuration_set_event_destination" "notifiche" {
   configuration_set_name = aws_sesv2_configuration_set.main.configuration_set_name
   event_destination_name = "rimbalzi-e-reclami"

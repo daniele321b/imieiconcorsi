@@ -1,10 +1,10 @@
-import { COMPARTI, nomeMateria, type CompartoId, type MateriaId } from "@imieiconcorsi/core/domain";
-import { BookOpenCheck, Database, Lock, Timer } from "lucide-react";
+import { COMPARTI, nomeMateria, type CompartoId, type MateriaId, type SelezioneBanca } from "@imieiconcorsi/core/domain";
+import { BookOpenCheck, Database, Eye, RotateCcw, Timer } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router";
-import { Alert, Badge, Button, Card, EmptyState, PageHeader, PremiumModal, Spinner, UpgradeBanner, cx } from "../../components/ui";
-import { useApi } from "../../lib/api";
-import { useUtente } from "../../lib/auth";
+import { OrdineRisposte } from "../../components/OrdineRisposte";
+import { Alert, Badge, Button, ButtonLink, Card, EmptyState, PageHeader, ProgressBar, Spinner, UpgradeBanner, cx } from "../../components/ui";
+import { api, useApi } from "../../lib/api";
 import { useAvviaSessione } from "../../lib/sessioni";
 
 interface BancaApi {
@@ -14,21 +14,30 @@ interface BancaApi {
   anno?: number;
   materia?: MateriaId;
   domande: number;
-  concorsoId?: string;
-  concorsoTitolo?: string;
+  /** Concorsi collegati: la scheda li elenca con il link al bando */
+  concorsi: { id: string; titolo: string }[];
+  /** Domande già fatte e sbagliate l'ultima volta; assente = mai iniziata */
+  progresso?: { fatte: number; sbagliate: number };
 }
 
+/** Utilizzi del piano Free nella settimana; null = illimitati. */
+export interface UsiApi {
+  limite: number;
+  usati: number;
+  restanti: number;
+  aperte: string[];
+}
+
+/** Domande per una sessione di studio e per una simulazione, tra cui scegliere. */
 const STUDIO = [10, 20, 30] as const;
 const SIMULAZIONE = [30, 60] as const;
 
 // Banche dati ufficiali per comparto, anche slegate dai concorsi (es. "Polizia di Stato 2026").
-// Si vedono tutte; esercitarsi richiede Medium o Pro.
+// Medium e Pro senza limiti; il Free ha USI_BANCHE_DATI_FREE utilizzi a settimana.
 export function BancheDati() {
-  const { utente } = useUtente();
-  const { data, loading, error } = useApi<{ banche: BancaApi[] }>("/banche-dati");
+  const { data, loading, error, reload } = useApi<{ banche: BancaApi[]; usi: UsiApi | null }>("/banche-dati");
   const { avvia, inCorso, errore, chiudiErrore } = useAvviaSessione();
-  const [premium, setPremium] = useState(false);
-  const accesso = utente.limiti.bancheDati;
+  const usi = data?.usi;
 
   const perComparto = COMPARTI.map((c) => ({ ...c, banche: (data?.banche ?? []).filter((b) => b.comparto === c.id) })).filter((c) => c.banche.length);
 
@@ -36,12 +45,23 @@ export function BancheDati() {
     <div>
       <PageHeader
         title="Banche dati ufficiali"
-        subtitle="Le domande pubblicate dagli enti per le prove dei concorsi, divise per comparto. Studia con la correzione subito o fai una simulazione a tempo."
+        subtitle="Le domande pubblicate dagli enti per le prove dei concorsi, divise per comparto. Consultale una per una, studia con la correzione subito o fai una simulazione a tempo."
       />
 
       <div className="space-y-4">
-        {!accesso && (
-          <UpgradeBanner message="Le banche dati ufficiali sono incluse nei piani Medium e Pro: qui sotto vedi quelle disponibili." />
+        <div className="rounded-2xl bg-white p-4 ring-1 ring-slate-200">
+          <OrdineRisposte />
+          <p className="mt-2 text-xs text-slate-500">
+            Molti PDF ufficiali mettono la risposta giusta sempre in A: mescolata impari la risposta, non la lettera. Vale per
+            consultazione, studio e simulazioni.
+          </p>
+        </div>
+        {usi && (
+          <Alert tone={usi.restanti ? "info" : "error"}>
+            Piano Free: {usi.restanti === 1 ? "ti resta 1 utilizzo" : `ti restano ${usi.restanti} utilizzi`} su {usi.limite}{" "}
+            questa settimana (ripartono lunedì). Un utilizzo = una sessione, oppure la prima consultazione di una banca dati
+            nella settimana. Con Medium e Pro sono illimitati.
+          </Alert>
         )}
         {errore &&
           (errore.code === "LIMITE_PIANO" ? (
@@ -53,13 +73,6 @@ export function BancheDati() {
           ))}
         {error && <Alert tone="error">{error.message}</Alert>}
       </div>
-
-      {premium && (
-        <PremiumModal titolo="Banche dati ufficiali" onClose={() => setPremium(false)}>
-          Con <strong>Medium</strong> e <strong>Pro</strong> ti eserciti sulle domande ufficiali pubblicate dagli enti: sessioni di
-          studio con la risposta giusta subito e simulazioni a tempo, per tutte le banche dati disponibili.
-        </PremiumModal>
-      )}
 
       {loading ? (
         <Spinner />
@@ -77,10 +90,10 @@ export function BancheDati() {
                   <SchedaBanca
                     key={b.id}
                     banca={b}
-                    bloccata={!accesso}
+                    giaAperta={!!usi?.aperte.includes(b.id)}
                     inCorso={inCorso}
-                    onBloccata={() => setPremium(true)}
-                    onAvvia={(tipo, numero) => void avvia({ tipo, bancaDatiId: b.id, numero }, `${b.id}-${tipo}`)}
+                    onAvvia={(tipo, numero, selezione) => void avvia({ tipo, bancaDatiId: b.id, numero, selezione }, `${b.id}-${tipo}`).then(() => reload())}
+                    onRicomincia={() => void api(`/me/progressi/${b.id}`, { method: "DELETE" }).then(() => reload())}
                   />
                 ))}
               </div>
@@ -92,41 +105,76 @@ export function BancheDati() {
   );
 }
 
+/** Concorsi per cui vale la banca dati: i primi due, gli altri si aprono con "e altri N". */
+function ConcorsiCollegati({ concorsi }: { concorsi: BancaApi["concorsi"] }) {
+  const [tutti, setTutti] = useState(false);
+  const mostrati = tutti ? concorsi : concorsi.slice(0, 2);
+  return (
+    <div className="mt-1 space-y-0.5 text-xs text-slate-500">
+      <p className="font-semibold">{concorsi.length === 1 ? "Concorso" : `Vale per ${concorsi.length} concorsi`}:</p>
+      {mostrati.map((c) => (
+        <Link key={c.id} to={`/app/concorsi/${c.id}`} className="block truncate hover:text-brand-700">
+          {c.titolo}
+        </Link>
+      ))}
+      {concorsi.length > 2 && (
+        <button onClick={() => setTutti((t) => !t)} className="font-semibold text-brand-600 hover:text-brand-700">
+          {tutti ? "Mostra meno" : `e altri ${concorsi.length - 2}`}
+        </button>
+      )}
+    </div>
+  );
+}
+
+/** Scheda di una banca dati: dati, progressi, consultazione, studio e simulazione. */
 function SchedaBanca({
   banca,
-  bloccata,
+  giaAperta,
   inCorso,
-  onBloccata,
   onAvvia,
+  onRicomincia,
 }: {
   banca: BancaApi;
-  bloccata: boolean;
+  /** Free: già consultata questa settimana, consultarla di nuovo non costa */
+  giaAperta: boolean;
   inCorso?: string;
-  onBloccata: () => void;
-  onAvvia: (tipo: "studio" | "simulazione", numero: number) => void;
+  onAvvia: (tipo: "studio" | "simulazione", numero: number, selezione: SelezioneBanca) => void;
+  onRicomincia: () => void;
 }) {
   const [studio, setStudio] = useState<number>(STUDIO[0]);
   const [simulazione, setSimulazione] = useState<number>(SIMULAZIONE[1]);
+  const [selezione, setSelezione] = useState<SelezioneBanca>("nuove");
+  const p = banca.progresso;
+  // Finite le domande da ripassare, si torna alle nuove.
+  const sel: SelezioneBanca = selezione === "sbagliate" && !p?.sbagliate ? "nuove" : selezione;
+  const percentuale = p && banca.domande ? Math.round((p.fatte / banca.domande) * 100) : 0;
 
-  const scelta = (opzioni: readonly number[], valore: number, set: (n: number) => void) => (
-    <div className="inline-grid rounded-lg bg-slate-100 p-0.5 text-xs font-semibold" style={{ gridTemplateColumns: `repeat(${opzioni.length}, 1fr)` }}>
-      {opzioni.map((n) => (
-        <button
-          key={n}
-          onClick={() => set(n)}
-          className={cx("rounded-md px-2.5 py-1 transition", valore === n ? "bg-white text-brand-700 shadow-sm" : "text-slate-500")}
-        >
-          {n}
-        </button>
-      ))}
-    </div>
-  );
+  function scelta<T extends string | number>(opzioni: readonly { id: T; nome: string; disabled?: boolean }[], valore: T, set: (v: T) => void) {
+    return (
+      <div className="inline-grid rounded-lg bg-slate-100 p-0.5 text-xs font-semibold" style={{ gridTemplateColumns: `repeat(${opzioni.length}, auto)` }}>
+        {opzioni.map((o) => (
+          <button
+            key={o.id}
+            onClick={() => set(o.id)}
+            disabled={o.disabled}
+            className={cx(
+              "rounded-md px-2.5 py-1 transition disabled:opacity-40",
+              valore === o.id ? "bg-white text-brand-700 shadow-sm" : "text-slate-500",
+            )}
+          >
+            {o.nome}
+          </button>
+        ))}
+      </div>
+    );
+  }
+  const numeri = (n: readonly number[]) => n.map((x) => ({ id: x, nome: String(x) }));
 
   return (
     <Card className="flex flex-col">
       <div className="flex items-start gap-3">
         <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-brand-50 text-brand-600">
-          {bloccata ? <Lock className="size-5" /> : <Database className="size-5" />}
+          <Database className="size-5" />
         </span>
         <div className="min-w-0 flex-1">
           <p className="font-bold text-slate-900">{banca.titolo}</p>
@@ -135,29 +183,69 @@ function SchedaBanca({
             <Badge tone="brand">{banca.domande.toLocaleString("it-IT")} domande</Badge>
             {banca.materia && <Badge>{nomeMateria(banca.materia)}</Badge>}
           </div>
-          {banca.concorsoId && (
-            <Link to={`/app/concorsi/${banca.concorsoId}`} className="mt-1 block truncate text-xs text-slate-500 hover:text-brand-700">
-              Concorso: {banca.concorsoTitolo}
-            </Link>
-          )}
+          {banca.concorsi.length > 0 && <ConcorsiCollegati concorsi={banca.concorsi} />}
         </div>
       </div>
 
+      {/* Domande già fatte nelle sessioni (studio e simulazioni) su questa banca dati. */}
+      {p && (
+        <div className="mt-4">
+          <ProgressBar value={percentuale} tone="green" />
+          <div className="mt-1.5 flex flex-wrap items-center justify-between gap-x-3 gap-y-1 text-xs text-slate-500">
+            <span>
+              <strong className="text-slate-700">{p.fatte.toLocaleString("it-IT")}</strong> di {banca.domande.toLocaleString("it-IT")} fatte ({percentuale}%)
+              {p.sbagliate > 0 && (
+                <>
+                  {" · "}
+                  <strong className="text-rose-600">{p.sbagliate.toLocaleString("it-IT")}</strong> da ripassare
+                </>
+              )}
+            </span>
+            <button
+              onClick={() => window.confirm("Ricominciare da capo? Si azzerano le domande fatte e quelle da ripassare di questa banca dati.") && onRicomincia()}
+              className="inline-flex items-center gap-1 font-semibold hover:text-slate-800"
+            >
+              <RotateCcw className="size-3" /> Ricomincia
+            </button>
+          </div>
+        </div>
+      )}
+
       <div className="mt-4 space-y-2 border-t border-slate-100 pt-4">
+        {p && (
+          <div className="flex items-center justify-between gap-2">
+            <p className="text-xs text-slate-500">Quali domande</p>
+            {scelta<SelezioneBanca>(
+              [
+                { id: "nuove", nome: "Nuove" },
+                { id: "sbagliate", nome: `Da ripassare (${p.sbagliate})`, disabled: !p.sbagliate },
+                { id: "tutte", nome: "Tutte" },
+              ],
+              sel,
+              setSelezione,
+            )}
+          </div>
+        )}
         <div className="flex items-center justify-between gap-2">
-          {scelta(STUDIO, studio, setStudio)}
+          <p className="text-xs text-slate-500">{giaAperta ? "Già aperta questa settimana" : "Domanda per domanda, con la risposta"}</p>
+          <ButtonLink to={`/app/banche-dati/${banca.id}`} size="sm" variant="ghost">
+            <Eye className="size-4" /> Consulta
+          </ButtonLink>
+        </div>
+        <div className="flex items-center justify-between gap-2">
+          {scelta(numeri(STUDIO), studio, setStudio)}
           <Button
             size="sm"
             variant="secondary"
             loading={inCorso === `${banca.id}-studio`}
-            onClick={() => (bloccata ? onBloccata() : onAvvia("studio", studio))}
+            onClick={() => onAvvia("studio", studio, sel)}
           >
             <BookOpenCheck className="size-4" /> Studia
           </Button>
         </div>
         <div className="flex items-center justify-between gap-2">
-          {scelta(SIMULAZIONE, simulazione, setSimulazione)}
-          <Button size="sm" loading={inCorso === `${banca.id}-simulazione`} onClick={() => (bloccata ? onBloccata() : onAvvia("simulazione", simulazione))}>
+          {scelta(numeri(SIMULAZIONE), simulazione, setSimulazione)}
+          <Button size="sm" loading={inCorso === `${banca.id}-simulazione`} onClick={() => onAvvia("simulazione", simulazione, sel)}>
             <Timer className="size-4" /> Simulazione
           </Button>
         </div>

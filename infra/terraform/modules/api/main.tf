@@ -1,11 +1,17 @@
 # API Gateway HTTP con autenticazione Cognito davanti ai microservizi (una Lambda ciascuno).
 # Il browser la raggiunge da CloudFront sotto /api, stesso indirizzo del sito: niente CORS.
+#
+# Ogni voce di var.services (profile, concorsi, study, billing, ai, richieste, pubblico, admin)
+# diventa una Lambda (packages/functions/src/<nome>/handler.ts) con le sue route. Le chiavi
+# delle route ("GET /me") devono essere le stesse della mappa in service() del codice.
 
 resource "aws_apigatewayv2_api" "main" {
   name          = var.name
   protocol_type = "HTTP"
 }
 
+# Unico stage, pubblicato a ogni modifica. Limite di richieste: 50 al secondo (picchi fino a 100),
+# per contenere costi e abusi.
 resource "aws_apigatewayv2_stage" "default" {
   api_id      = aws_apigatewayv2_api.main.id
   name        = "$default"
@@ -17,6 +23,8 @@ resource "aws_apigatewayv2_stage" "default" {
   }
 }
 
+# Controllo del token: ogni route (tranne le pubbliche) vuole un token valido di Cognito
+# nell'intestazione Authorization. Le Lambda ricevono già i dati dell'utente (claims).
 resource "aws_apigatewayv2_authorizer" "cognito" {
   api_id           = aws_apigatewayv2_api.main.id
   name             = "cognito"
@@ -30,12 +38,15 @@ resource "aws_apigatewayv2_authorizer" "cognito" {
 }
 
 locals {
+  # Route → nome del servizio che la gestisce, es. "GET /me" = "profile".
   routes = merge([
     for service, cfg in var.services : { for route in concat(cfg.routes, cfg.public_routes) : route => service }
   ]...)
+  # Route senza login (webhook di Stripe, link delle email): si proteggono da sole con una firma.
   public_routes = toset(flatten([for cfg in values(var.services) : cfg.public_routes]))
 }
 
+# Una Lambda per servizio.
 module "service" {
   source   = "../lambda"
   for_each = var.services
@@ -46,8 +57,10 @@ module "service" {
   write_tables      = each.value.write_tables
   read_tables       = each.value.read_tables
   policy_statements = jsondecode(each.value.policies)
+  timeout           = each.value.timeout
 }
 
+# Collegamento API → Lambda del servizio (formato evento 2.0).
 resource "aws_apigatewayv2_integration" "service" {
   for_each = var.services
 
@@ -57,6 +70,7 @@ resource "aws_apigatewayv2_integration" "service" {
   payload_format_version = "2.0"
 }
 
+# Una route per ogni "METODO /percorso" dichiarato nei servizi.
 resource "aws_apigatewayv2_route" "service" {
   for_each = local.routes
 
@@ -67,6 +81,7 @@ resource "aws_apigatewayv2_route" "service" {
   authorizer_id      = contains(local.public_routes, each.key) ? null : aws_apigatewayv2_authorizer.cognito.id
 }
 
+# Permesso all'API Gateway di chiamare la Lambda.
 resource "aws_lambda_permission" "api" {
   for_each = var.services
 
