@@ -1039,3 +1039,509 @@ U("cont-200", "Equilibri di bilancio", 4, "Se dalla salvaguardia degli equilibri
   "Le misure per ripristinare il pareggio, il ripiano dei debiti fuori bilancio e l'adeguamento del FCDE", ["Nulla, si rinvia all'anno dopo", "Le dimissioni del sindaco", "Un aumento automatico dell'IVA"],
   "Art. 193, c. 2 TUEL.",
   "art. 193", "le misure necessarie a ripristinare il pareggio")
+
+# --- v2: finanza locale — indebitamento, tesoreria, revisione, dissesto (TUEL) ---
+D("cont-201", "Indebitamento", 4, "Quali condizioni servono a un ente locale per ricorrere all'indebitamento (art. 203 TUEL)?",
+  "Rendiconto del penultimo anno approvato e bilancio di previsione deliberato con i relativi stanziamenti", ["Solo il parere del prefetto", "Il consenso di tutti i consiglieri", "L'autorizzazione della Corte dei conti per ogni mutuo"],
+  "Art. 203 TUEL: servono l'approvazione del rendiconto del penultimo anno precedente e la deliberazione del bilancio di previsione in cui sono iscritti gli stanziamenti.",
+  "D.Lgs. 267/2000, art. 203", TUEL, "Il ricorso all'indebitamento è possibile solo se sussistono le seguenti condizioni")
+
+D("cont-202", "Indebitamento", 5, "Oltre quale limite di interessi annui, rispetto alle entrate dei primi tre titoli, un ente locale non può assumere nuovi mutui?",
+  "Il 10 per cento", ["Il 3 per cento", "Il 25 per cento", "Il 50 per cento"],
+  "Art. 204 TUEL: dal 2015 gli interessi annui su mutui, prestiti e garanzie non devono superare il 10 per cento delle entrate dei primi tre titoli del rendiconto del penultimo anno.",
+  "D.Lgs. 267/2000, art. 204", TUEL, "e il 10 per cento, a decorrere dall'anno 2015, delle entrate relative ai primi tre titoli")
+
+D("cont-203", "Indebitamento", 3, "Per cosa può essere fatto ricorso a mutui passivi, oltre agli investimenti, secondo l'art. 202 TUEL?",
+  "Per finanziare i debiti fuori bilancio riconosciuti (e altre destinazioni di legge)", ["Per pagare gli stipendi correnti", "Per finanziare le feste patronali", "Per coprire qualsiasi spesa corrente"],
+  "Art. 202 TUEL: l'indebitamento è ammesso per gli investimenti; si può ricorrere a mutui anche per i debiti fuori bilancio dell'art. 194 e per altre destinazioni di legge. Le entrate hanno destinazione vincolata.",
+  "D.Lgs. 267/2000, art. 202", TUEL, "Può essere fatto ricorso a mutui passivi per il finanziamento dei debiti fuori bilancio")
+
+D("cont-204", "Indebitamento", 3, "Le entrate derivanti dall'indebitamento degli enti locali possono essere usate liberamente?",
+  "No, hanno destinazione vincolata", ["Sì, per qualsiasi spesa", "Sì, se lo decide la giunta", "Sì, dopo un anno"],
+  "Art. 202, comma 2, TUEL: le entrate da indebitamento hanno destinazione vincolata.",
+  "D.Lgs. 267/2000, art. 202", TUEL, "Le relative entrate hanno destinazione vincolata")
+
+D("cont-205", "Tesoreria", 3, "A chi può essere affidato il servizio di tesoreria di un comune capoluogo di provincia?",
+  "A una banca autorizzata", ["A un'associazione di volontariato", "Al segretario comunale", "A un qualsiasi cittadino residente"],
+  "Art. 208 TUEL: per comuni capoluogo, province e città metropolitane la tesoreria è affidata a una banca autorizzata ai sensi del testo unico bancario.",
+  "D.Lgs. 267/2000, art. 208", TUEL, "ad una banca autorizzata, a svolgere l'attività")
+
+D("cont-206", "Tesoreria", 2, "In cosa consiste il servizio di tesoreria degli enti locali?",
+  "Riscossione delle entrate, pagamento delle spese e custodia di titoli e valori", ["Approvazione del bilancio", "Redazione del DUP", "Nomina dei revisori"],
+  "Art. 209 TUEL: il servizio di tesoreria comprende le operazioni legate alla gestione finanziaria, in particolare riscossione delle entrate, pagamento delle spese e custodia di titoli e valori.",
+  "D.Lgs. 267/2000, art. 209", TUEL, "alla riscossione delle entrate, al pagamento delle spese, alla custodia di titoli e valori")
+
+D("cont-207", "Tesoreria", 3, "Come viene affidato il servizio di tesoreria e quante volte si può rinnovare con lo stesso soggetto?",
+  "Con procedure ad evidenza pubblica; il rinnovo è ammesso per non più di una volta", ["Con affidamento diretto, rinnovabile senza limiti", "Per sorteggio, mai rinnovabile", "Con nomina del sindaco, rinnovabile due volte"],
+  "Art. 210 TUEL: l'affidamento avviene con procedure ad evidenza pubblica nel rispetto della concorrenza; il rinnovo con lo stesso soggetto è ammesso per non più di una volta.",
+  "D.Lgs. 267/2000, art. 210", TUEL, "al rinnovo del contratto di tesoreria nei confronti del medesimo soggetto")
+
+D("cont-208", "Tesoreria", 3, "Da quale organo è deliberata la convenzione che regola il rapporto con il tesoriere?",
+  "Dall'organo consiliare", ["Dalla giunta", "Dal responsabile del servizio finanziario", "Dal tesoriere stesso"],
+  "Art. 210, comma 2, TUEL: il rapporto con il tesoriere è regolato da una convenzione deliberata dall'organo consiliare.",
+  "D.Lgs. 267/2000, art. 210", TUEL, "Il rapporto viene regolato in base ad una convenzione deliberata dall'organo consiliare")
+
+D("cont-209", "Tesoreria", 2, "Cosa rilascia il tesoriere per ogni somma riscossa?",
+  "Una quietanza numerata in ordine cronologico per esercizio", ["Un mandato di pagamento", "Un impegno di spesa", "Una delibera di giunta"],
+  "Art. 214 TUEL: per ogni somma riscossa il tesoriere rilascia quietanza, numerata in ordine cronologico per esercizio finanziario.",
+  "D.Lgs. 267/2000, art. 214", TUEL, "Per ogni somma riscossa il tesoriere rilascia quietanza")
+
+D("cont-210", "Tesoreria", 2, "A chi sono intestati i depositi gestiti dal tesoriere dell'ente locale?",
+  "All'ente locale", ["Al tesoriere", "Al sindaco", "Al Ministero dell'economia"],
+  "Art. 209, comma 3, TUEL: ogni deposito, comunque costituito, è intestato all'ente locale e viene gestito dal tesoriere.",
+  "D.Lgs. 267/2000, art. 209", TUEL, "Ogni deposito, comunque costituito, è intestato all'ente locale e viene gestito dal tesoriere")
+
+D("cont-211", "Tesoreria", 4, "Entro quanto tempo il tesoriere rende il conto della gestione di cassa e quando l'ente lo trasmette alla Corte dei conti?",
+  "Entro 30 giorni dalla chiusura dell'esercizio; l'ente lo trasmette entro 60 giorni dall'approvazione del rendiconto", ["Entro 10 giorni; trasmissione entro 15", "Entro un anno; nessuna trasmissione", "Entro 90 giorni; trasmissione entro 30"],
+  "Art. 226 TUEL: entro 30 giorni dalla chiusura dell'esercizio il tesoriere rende il conto, che l'ente trasmette alla sezione giurisdizionale della Corte dei conti entro 60 giorni dall'approvazione del rendiconto.",
+  "D.Lgs. 267/2000, art. 226", TUEL, "Entro il termine di 30 giorni dalla chiusura dell'esercizio finanziario, il tesoriere")
+
+D("cont-212", "Tesoreria", 3, "Con quale atto l'ente chiede al tesoriere un'anticipazione di tesoreria?",
+  "Con una richiesta corredata dalla deliberazione della giunta", ["Con una legge regionale", "Con un decreto del prefetto", "Con una semplice telefonata del sindaco"],
+  "Art. 222 TUEL: il tesoriere concede le anticipazioni su richiesta dell'ente corredata dalla deliberazione della giunta, entro i limiti di legge.",
+  "D.Lgs. 267/2000, art. 222", TUEL, "su richiesta dell'ente corredata dalla deliberazione della giunta")
+
+D("cont-213", "Tesoreria", 4, "Da quando decorrono gli interessi sulle anticipazioni di tesoreria?",
+  "Dall'effettivo utilizzo delle somme", ["Dalla richiesta dell'ente", "Dal primo gennaio", "Dalla firma della convenzione"],
+  "Art. 222, comma 2, TUEL: gli interessi decorrono dall'effettivo utilizzo delle somme, secondo la convenzione di tesoreria.",
+  "D.Lgs. 267/2000, art. 222", TUEL, "Gli interessi sulle anticipazioni di tesoreria decorrono dall'effettivo utilizzo delle somme")
+
+D("cont-214", "Revisione", 3, "Su quali proposte l'organo di revisione esprime parere, tra le seguenti?",
+  "Ricorso all'indebitamento e riconoscimento di debiti fuori bilancio", ["Nomina degli assessori", "Ordinanze contingibili e urgenti", "Concessione della cittadinanza onoraria"],
+  "Art. 239 TUEL: tra i pareri dei revisori ci sono quelli sulle proposte di ricorso all'indebitamento e di riconoscimento di debiti fuori bilancio e transazioni.",
+  "D.Lgs. 267/2000, art. 239", TUEL, "proposte di riconoscimento di debiti fuori bilancio e transazioni")
+
+D("cont-215", "Revisione", 3, "Oltre ai pareri, quale funzione generale svolge l'organo di revisione dell'ente locale?",
+  "Vigilanza sulla regolarità contabile, finanziaria ed economica della gestione", ["Amministrazione attiva dell'ente", "Rappresentanza legale del comune", "Giudizio di responsabilità contabile"],
+  "Art. 239 TUEL: l'organo di revisione collabora con il consiglio, rende pareri e vigila sulla regolarità contabile, finanziaria ed economica della gestione.",
+  "D.Lgs. 267/2000, art. 239", TUEL, "vigilanza sulla regolarità contabile, finanziaria ed economica")
+
+D("cont-216", "Dissesto", 3, "Quando un ente locale si trova in dissesto finanziario?",
+  "Quando non può garantire le funzioni e i servizi indispensabili o non può far fronte a crediti liquidi ed esigibili di terzi", ["Quando chiude un esercizio con un piccolo avanzo", "Quando cambia il sindaco", "Quando non ha mai contratto mutui"],
+  "Art. 244 TUEL: c'è dissesto se l'ente non può garantire funzioni e servizi indispensabili o se esistono crediti liquidi ed esigibili di terzi a cui non si può far fronte con le misure ordinarie.",
+  "D.Lgs. 267/2000, art. 244", TUEL, "Si ha stato di dissesto finanziario se l'ente non può garantire l'assolvimento delle funzioni e dei servizi indispensabili")
+
+D("cont-217", "Dissesto", 4, "A quali enti si applicano le norme sul risanamento degli enti locali dissestati?",
+  "Solo a province e comuni", ["A tutte le pubbliche amministrazioni", "Solo alle regioni", "Anche alle società partecipate"],
+  "Art. 244, comma 2, TUEL: le norme sul risanamento degli enti locali dissestati si applicano solo a province e comuni.",
+  "D.Lgs. 267/2000, art. 244", TUEL, "Le norme sul risanamento degli enti locali dissestati si applicano solo a province e comuni")
+
+D("cont-218", "Dissesto", 3, "Chi sono i soggetti della procedura di risanamento di un ente dissestato?",
+  "L'organo straordinario di liquidazione e gli organi istituzionali dell'ente", ["Solo il prefetto", "Il tesoriere e i creditori", "La Corte dei conti e la Banca d'Italia"],
+  "Art. 245 TUEL: soggetti della procedura sono l'organo straordinario di liquidazione, che ripiana l'indebitamento pregresso, e gli organi istituzionali dell'ente, che assicurano l'equilibrio stabile.",
+  "D.Lgs. 267/2000, art. 245", TUEL, "Soggetti della procedura di risanamento sono l'organo straordinario di liquidazione e gli organi istituzionali dell'ente")
+
+D("cont-219", "Dissesto", 3, "Chi delibera la dichiarazione di dissesto finanziario e si può revocare?",
+  "Il consiglio dell'ente; la deliberazione non è revocabile", ["La giunta; è revocabile entro un anno", "Il sindaco; è revocabile in ogni momento", "Il prefetto; è revocabile dalla Corte dei conti"],
+  "Art. 246 TUEL: la dichiarazione di dissesto è adottata dal consiglio, con una relazione dell'organo di revisione sulle cause; la deliberazione non è revocabile.",
+  "D.Lgs. 267/2000, art. 246", TUEL, "La deliberazione dello stato di dissesto non è revocabile")
+
+D("cont-220", "Dissesto", 4, "Entro quanti giorni dall'esecutività la deliberazione di dissesto va trasmessa al Ministero dell'interno e alla Procura della Corte dei conti?",
+  "5 giorni", ["30 giorni", "60 giorni", "90 giorni"],
+  "Art. 246, comma 2, TUEL: la deliberazione è trasmessa entro 5 giorni dall'esecutività al Ministero dell'interno e alla Procura regionale della Corte dei conti, con la relazione dei revisori.",
+  "D.Lgs. 267/2000, art. 246", TUEL, "è trasmessa, entro 5 giorni dalla data di esecutività, al Ministero dell'interno")
+
+D("cont-221", "Dissesto", 4, "Dopo la dichiarazione di dissesto, i creditori possono avviare azioni esecutive per i debiti di competenza dell'organo straordinario di liquidazione?",
+  "No, non possono essere intraprese né proseguite", ["Sì, sempre", "Sì, ma solo per crediti sotto i 10.000 euro", "Sì, con l'autorizzazione del sindaco"],
+  "Art. 248, comma 2, TUEL: dalla dichiarazione di dissesto fino all'approvazione del rendiconto della liquidazione non possono essere intraprese o proseguite azioni esecutive per quei debiti.",
+  "D.Lgs. 267/2000, art. 248", TUEL, "non possono essere intraprese o proseguite azioni esecutive nei confronti dell'ente")
+
+D("cont-222", "Dissesto", 4, "I pignoramenti eseguiti dopo la deliberazione di dissesto vincolano l'ente e il tesoriere?",
+  "No, non li vincolano", ["Sì, bloccano tutte le somme", "Sì, ma solo per sei mesi", "Solo se autorizzati dal prefetto"],
+  "Art. 248, comma 3, TUEL: i pignoramenti eseguiti dopo la deliberazione dello stato di dissesto non vincolano l'ente ed il tesoriere.",
+  "D.Lgs. 267/2000, art. 248", TUEL, "I pignoramenti eventualmente eseguiti dopo la deliberazione dello stato di dissesto non vincolano l'ente ed il tesoriere")
+
+D("cont-223", "Dissesto", 4, "Com'è composto l'organo straordinario di liquidazione in un comune fino a 5.000 abitanti?",
+  "Da un singolo commissario", ["Da una commissione di tre membri", "Da cinque membri", "Dal consiglio comunale"],
+  "Art. 252 TUEL: nei comuni fino a 5.000 abitanti l'organo straordinario di liquidazione è un singolo commissario; sopra i 5.000 e nelle province è una commissione di tre membri.",
+  "D.Lgs. 267/2000, art. 252", TUEL, "Per i comuni con popolazione sino a 5.000 abitanti l'organo straordinario di liquidazione è composto da un singolo commissario")
+
+D("cont-224", "Dissesto", 5, "Entro quanto tempo il consiglio dell'ente dissestato presenta al Ministro dell'interno l'ipotesi di bilancio stabilmente riequilibrato?",
+  "Entro tre mesi dal decreto di nomina dell'organo straordinario", ["Entro dieci giorni", "Entro due anni", "Non c'è termine"],
+  "Art. 259 TUEL: entro tre mesi il consiglio presenta l'ipotesi di bilancio stabilmente riequilibrato; altrimenti il prefetto assegna un termine non superiore a quarantacinque giorni e poi avvia lo scioglimento del consiglio.",
+  "D.Lgs. 267/2000, art. 259", TUEL, "un'ipotesi di bilancio di previsione stabilmente riequilibrato")
+
+D("cont-225", "Dissesto", 4, "Cos'è la procedura di riequilibrio finanziario pluriennale (art. 243-bis TUEL)?",
+  "Una procedura a cui il comune può ricorrere per squilibri strutturali capaci di provocare il dissesto", ["Il nome del bilancio di previsione triennale", "Una forma di mutuo con la Cassa depositi e prestiti", "La procedura di nomina del tesoriere"],
+  "Art. 243-bis TUEL: comuni e province con squilibri strutturali in grado di provocare il dissesto, quando le misure ordinarie non bastano, possono ricorrere con deliberazione consiliare alla procedura di riequilibrio pluriennale.",
+  "D.Lgs. 267/2000, art. 243-bis", TUEL, "alla procedura di riequilibrio finanziario pluriennale prevista dal presente articolo")
+
+D("cont-226", "Dissesto", 4, "Cosa succede ai termini per deliberare il bilancio di previsione dopo la dichiarazione di dissesto?",
+  "Sono sospesi fino al decreto di approvazione dell'ipotesi di bilancio riequilibrato", ["Si dimezzano", "Restano invariati", "Si raddoppiano"],
+  "Art. 248, comma 1, TUEL: dalla dichiarazione di dissesto e fino al decreto dell'art. 261 sono sospesi i termini per la deliberazione del bilancio di previsione.",
+  "D.Lgs. 267/2000, art. 248", TUEL, "sono sospesi i termini per la deliberazione del bilancio")
+
+D("cont-227", "Gestione della spesa", 4, "Per quali spese l'impegno si costituisce automaticamente con l'approvazione del bilancio, senza ulteriori atti?",
+  "Per il trattamento economico tabellare del personale e le rate dei mutui", ["Per tutti gli appalti di lavori", "Per i contributi alle associazioni", "Per le consulenze esterne"],
+  "Art. 183, comma 2, TUEL: con l'approvazione del bilancio è costituito impegno, senza ulteriori atti, per il trattamento economico tabellare del personale, le rate di ammortamento dei mutui e altre spese dovute.",
+  "D.Lgs. 267/2000, art. 183", TUEL, "per il trattamento economico tabellare già attribuito al personale dipendente")
+
+D("cont-228", "Finanza locale", 3, "A cosa è preposto il responsabile del servizio finanziario dell'ente locale, tra l'altro?",
+  "Alla verifica di veridicità delle previsioni di entrata e di compatibilità delle previsioni di spesa", ["All'approvazione del rendiconto", "Alla nomina della giunta", "Al rilascio delle licenze commerciali"],
+  "Art. 153, comma 4, TUEL: il responsabile del servizio finanziario verifica la veridicità delle previsioni di entrata e la compatibilità delle previsioni di spesa.",
+  "D.Lgs. 267/2000, art. 153", TUEL, "è preposto alla verifica di veridicità delle previsioni di entrata")
+
+D("cont-229", "Finanza locale", 3, "Più enti locali possono gestire insieme il servizio finanziario?",
+  "Sì, con apposite convenzioni per strutture comuni", ["No, mai", "Solo se appartengono alla stessa provincia", "Solo con legge regionale"],
+  "Art. 153, comma 2, TUEL: è consentito stipulare apposite convenzioni tra gli enti per assicurare il servizio a mezzo di strutture comuni.",
+  "D.Lgs. 267/2000, art. 153", TUEL, "È consentito stipulare apposite convenzioni tra gli enti per assicurare il servizio a mezzo di strutture comuni")
+
+D("cont-230", "Dissesto", 5, "Se il consiglio non presenta l'ipotesi di bilancio stabilmente riequilibrato nei tre mesi, che termine massimo gli assegna il prefetto prima di avviare lo scioglimento?",
+  "Non superiore a quarantacinque giorni", ["Novanta giorni", "Un anno", "Nessun termine: scioglimento immediato"],
+  "Art. 259 TUEL: decorsi i tre mesi, il prefetto assegna al consiglio un termine perentorio non superiore a quarantacinque giorni, trascorso il quale inizia la procedura per lo scioglimento.",
+  "D.Lgs. 267/2000, art. 259", TUEL, "un termine perentorio, non superiore a quarantacinque giorni")
+
+# --- v2: responsabilità amministrativa (Wikipedia) e L. 196/2009 ---
+RESP = "Wikipedia_Responsabilità-amministrativa.txt"
+
+D("cont-231", "Responsabilità amministrativa", 2, "Quali sono gli elementi della responsabilità amministrativo-contabile del dipendente pubblico?",
+  "Il danno, l'antigiuridicità della condotta e il dolo o la colpa grave", ["Solo il danno, anche senza colpa", "La colpa lieve e il danno morale del dirigente", "Il reato accertato con sentenza penale"],
+  "Gli elementi sono il danno, l'antigiuridicità della condotta e il dolo o la colpa grave; anche la mera illegittimità della condotta integra l'antigiuridicità.",
+  W("Responsabilità amministrativa"), RESP, "Gli elementi della responsabilità amministrativo-contabile sono il danno, l'antigiuridicità della condotta, e il dolo o la colpa grave")
+
+D("cont-232", "Responsabilità amministrativa", 3, "Un dipendente che causa un danno erariale con una negligenza minima (colpa lieve) risponde per responsabilità amministrativa?",
+  "No, la responsabilità è limitata ai casi di dolo o colpa grave", ["Sì, sempre", "Sì, ma paga solo la metà", "Sì, se il danno supera 1.000 euro"],
+  "A differenza della responsabilità civile ex art. 2043 c.c., la responsabilità amministrativa è limitata ai soli casi di dolo o di colpa grave.",
+  W("Responsabilità amministrativa"), RESP, "i giudici hanno limitato la responsabilità ai soli casi di dolo")
+
+D("cont-233", "Responsabilità amministrativa", 2, "Quale articolo della Costituzione afferma il principio della responsabilità dei dipendenti pubblici?",
+  "L'articolo 28", ["L'articolo 81", "L'articolo 97", "L'articolo 100"],
+  "Il principio della responsabilità del dipendente pubblico è statuito anzitutto dall'art. 28 della Costituzione.",
+  W("Responsabilità amministrativa"), RESP, "è anzitutto statuito dall'art. 28 della Costituzione")
+
+D("cont-234", "Responsabilità amministrativa", 3, "Oltre al danno patrimoniale, quale danno può essere risarcito nel giudizio di responsabilità amministrativa?",
+  "Il danno all'immagine della pubblica amministrazione", ["Il danno estetico del dipendente", "Il danno da vacanza rovinata", "Nessun altro danno"],
+  "Si aggiunge il danno non patrimoniale, risarcibile se è leso un diritto costituzionalmente garantito, come il danno all'immagine della pubblica amministrazione.",
+  W("Responsabilità amministrativa"), RESP, "il danno all'immagine della pubblica amministrazione")
+
+D("cont-235", "Responsabilità amministrativa", 3, "Quando il danno erariale si dice «indiretto»?",
+  "Quando lo Stato deve risarcire un cittadino per l'errore del dipendente", ["Quando il dipendente distrugge un bene pubblico", "Quando il danno è inferiore a 100 euro", "Quando lo causa un privato senza rapporto con la PA"],
+  "Il danno è diretto se il dipendente danneggia direttamente lo Stato; indiretto se lo costringe a risarcire un altro cittadino a causa di un suo errore.",
+  W("Responsabilità amministrativa"), RESP, "perché ha costretto lo Stato a risarcire un altro cittadino a causa di un errore del dipendente pubblico")
+
+D("cont-236", "Responsabilità amministrativa", 3, "Come è perseguita la responsabilità amministrativa davanti alla Corte dei conti?",
+  "D'ufficio", ["Solo su querela dell'amministrazione danneggiata", "Solo su richiesta di un cittadino", "Solo dopo una condanna penale"],
+  "Il giudizio spetta alla Corte dei conti ed è una responsabilità perseguita d'ufficio, il che spiega anche la limitazione al dolo e alla colpa grave.",
+  W("Responsabilità amministrativa"), RESP, "È una responsabilità perseguita d'ufficio")
+
+D("cont-237", "Responsabilità amministrativa", 4, "Come si chiama il potere della Corte dei conti di attenuare l'addebito al responsabile valutando le circostanze?",
+  "Potere riduttivo", ["Potere sostitutivo", "Potere di autotutela", "Potere di grazia"],
+  "La Corte dei conti dispone del potere riduttivo, con cui valuta una serie di circostanze attenuanti e riduce l'addebito.",
+  W("Responsabilità amministrativa"), RESP, "potere riduttivo")
+
+D("cont-238", "Responsabilità amministrativa", 5, "Se un amministratore di un ente locale assume un impegno di spesa irregolare per l'acquisto di beni, chi risponde verso il fornitore?",
+  "L'amministratore o il funzionario, con il proprio patrimonio personale", ["Sempre il comune", "Il tesoriere", "La regione"],
+  "Per impegni irregolari il rapporto negoziale intercorre direttamente tra l'amministratore o funzionario e la controparte: risponde con il proprio patrimonio e l'ente resta estraneo.",
+  W("Responsabilità amministrativa"), RESP, "L'amministratore o funzionario rispondono col loro patrimonio personale")
+
+D("cont-239", "Ragioneria generale dello Stato", 3, "Chi consolida le operazioni delle amministrazioni pubbliche e verifica il raggiungimento degli obiettivi di finanza pubblica del DEF?",
+  "Il Ministero dell'economia e delle finanze - Ragioneria generale dello Stato", ["L'ISTAT da solo", "La Banca d'Italia", "Ogni ministero per conto proprio"],
+  "Art. 14 L. 196/2009: la RGS consolida le operazioni delle amministrazioni pubbliche, valuta la coerenza con gli obiettivi del DEF e monitora gli effetti della manovra.",
+  "L. 196/2009, art. 14", L196, "consolidare le operazioni delle amministrazioni pubbliche")
+
+D("cont-240", "Bilancio dello Stato", 4, "È consentito assegnare un'entrata dello Stato a una spesa speciale specifica?",
+  "No, è vietato, salvo i proventi riscossi per conto di enti e le oblazioni fatte a scopo determinato", ["Sì, sempre", "Sì, se lo decide il ministro competente", "Sì, per le entrate tributarie"],
+  "Art. 24, comma 4, L. 196/2009: è vietata l'assegnazione di qualsiasi provento per spese o erogazioni speciali, salve le eccezioni indicate.",
+  "L. 196/2009, art. 24", L196, "È vietata altresì l'assegnazione di qualsiasi provento per spese o erogazioni speciali")
+
+D("cont-241", "Bilancio dello Stato", 2, "Quale anno finanziario segue la gestione del bilancio dello Stato?",
+  "Dal 1° gennaio al 31 dicembre", ["Dal 1° aprile al 31 marzo", "Dal 1° luglio al 30 giugno", "Dal 1° ottobre al 30 settembre"],
+  "Art. 20 L. 196/2009: l'unità temporale della gestione è l'anno finanziario che comincia il 1° gennaio e termina il 31 dicembre.",
+  "L. 196/2009, art. 20", L196, "l'anno finanziario che comincia il 1° gennaio e termina il 31 dicembre")
+
+D("cont-242", "Gestione della spesa", 3, "Chi impegna e ordina le spese dello Stato, nei limiti delle risorse assegnate in bilancio?",
+  "I dirigenti", ["I ministri personalmente", "La Corte dei conti", "Il Parlamento a ogni spesa"],
+  "Art. 34, comma 1, L. 196/2009: i dirigenti, nell'ambito delle attribuzioni demandate, impegnano e ordinano le spese nei limiti delle risorse assegnate.",
+  "L. 196/2009, art. 34", L196, "I dirigenti, nell'ambito delle attribuzioni ad essi demandate, impegnano ed ordinano le spese")
+
+D("cont-243", "Rendiconto", 4, "Come si determina, dopo la chiusura dell'esercizio, la somma da conservare in conto residui passivi dello Stato?",
+  "Con decreto ministeriale registrato dalla Corte dei conti, per ogni unità elementare di bilancio", ["Con legge del Parlamento", "Con delibera della Banca d'Italia", "Automaticamente, senza alcun atto"],
+  "Art. 34-ter L. 196/2009: decorso l'esercizio, con decreto ministeriale da registrarsi alla Corte dei conti è determinata la somma da conservarsi in conto residui.",
+  "L. 196/2009, art. 34-ter", L196, "con decreto ministeriale da registrarsi alla Corte dei conti")
+
+D("cont-244", "Bilancio dello Stato", 3, "A cosa serve il bilancio di genere previsto dalla L. 196/2009?",
+  "A valutare il diverso impatto della politica di bilancio su donne e uomini", ["A dividere il bilancio tra ministeri maschili e femminili", "A calcolare gli stipendi dei dipendenti", "A fissare le quote rosa nei concorsi"],
+  "Art. 38-septies: la RGS sperimenta un bilancio di genere per valutare l'impatto della politica di bilancio su donne e uomini in termini di denaro, servizi, tempo e lavoro non retribuito.",
+  "L. 196/2009, art. 38-septies", L196, "per la valutazione del diverso impatto della politica di bilancio sulle donne e sugli uomini")
+
+D("cont-245", "Ragioneria generale dello Stato", 4, "Con quali strutture il Ministero dell'economia collabora con le amministrazioni centrali per verificare i risultati della spesa?",
+  "Nuclei di analisi e valutazione della spesa", ["Commissioni tributarie", "Uffici relazioni con il pubblico", "Comitati regionali di controllo"],
+  "Art. 39 L. 196/2009: la collaborazione ha luogo nell'ambito di appositi nuclei di analisi e valutazione della spesa, senza nuovi oneri.",
+  "L. 196/2009, art. 39", L196, "nuclei di analisi e valutazione della spesa")
+
+D("cont-246", "Finanza pubblica", 4, "Entro quanto tempo gli istituti finanziatori comunicano al MEF, all'ISTAT e alla Banca d'Italia un finanziamento concesso a una pubblica amministrazione?",
+  "Entro trenta giorni dalla stipula", ["Entro un anno", "Entro cinque giorni", "Non devono comunicarlo"],
+  "Art. 48 L. 196/2009: nei contratti di finanziamento alle PA è inserita una clausola che obbliga gli istituti a comunicare l'operazione in via telematica entro trenta giorni dalla stipula.",
+  "L. 196/2009, art. 48", L196, "entro trenta giorni dalla stipula")
+
+D("cont-247", "Finanza pubblica", 5, "Con quale maggioranza le Commissioni parlamentari devono esprimere parere favorevole sulla nomina del presidente dell'ISTAT?",
+  "Due terzi dei componenti", ["Maggioranza semplice dei presenti", "Unanimità", "Nessun parere: nomina libera del Governo"],
+  "Art. 5 L. 196/2009: la designazione del Governo è sottoposta al parere delle Commissioni; la nomina è subordinata al parere favorevole a maggioranza dei due terzi dei componenti.",
+  "L. 196/2009, art. 5", L196, "a maggioranza dei due terzi dei componenti")
+
+D("cont-248", "Bilancio dello Stato", 4, "Cosa devono pubblicare le pubbliche amministrazioni sui fondi che non rientrano nei bilanci ordinari (gestioni fuori bilancio)?",
+  "Informazioni su quei fondi, come richiesto dalla direttiva 2011/85/UE", ["Nulla, sono riservati", "Solo il nome del gestore", "Solo il saldo di fine anno al Parlamento europeo"],
+  "Art. 31-bis L. 196/2009: le pubbliche amministrazioni pubblicano, ai sensi della direttiva 2011/85/UE, informazioni sui fondi che non rientrano nei bilanci ordinari.",
+  "L. 196/2009, art. 31-bis", L196, "informazioni inerenti i fondi che non rientrano nei bilanci ordinari")
+
+# --- v2: armonizzazione, sanità e regioni (D.Lgs. 118/2011) ---
+D("cont-249", "Bilanci armonizzati", 4, "Presso quale ministero è istituita la Commissione per l'armonizzazione degli enti territoriali (Arconet)?",
+  "Il Ministero dell'economia e delle finanze", ["Il Ministero dell'interno", "La Presidenza della Repubblica", "Il Ministero della salute"],
+  "Art. 3-bis D.Lgs. 118/2011: la Commissione è istituita presso il MEF e promuove l'armonizzazione dei sistemi contabili e degli schemi di bilancio degli enti territoriali.",
+  "D.Lgs. 118/2011, art. 3-bis", D118, "Presso il Ministero dell'economia e delle finanze è istituita, senza nuovi o maggiori oneri")
+
+D("cont-250", "Bilanci armonizzati", 3, "Qual è il compito della Commissione Arconet?",
+  "Promuovere l'armonizzazione dei sistemi contabili e degli schemi di bilancio degli enti territoriali", ["Giudicare la responsabilità degli amministratori", "Nominare i revisori dei conti", "Approvare i bilanci dei comuni"],
+  "Art. 3-bis: la Commissione promuove l'armonizzazione dei sistemi contabili e degli schemi di bilancio e aggiorna gli allegati al titolo I del decreto.",
+  "D.Lgs. 118/2011, art. 3-bis", D118, "ha il compito di promuovere l'armonizzazione dei sistemi contabili e degli schemi di bilancio")
+
+D("cont-251", "Bilanci armonizzati", 4, "Con quali codifiche sono state sostituite, dal 2017, le codifiche SIOPE degli enti territoriali in contabilità finanziaria?",
+  "Con quelle del piano dei conti integrato", ["Con i codici fiscali dei fornitori", "Con i codici ATECO", "Con le codifiche della Banca d'Italia"],
+  "Art. 8 D.Lgs. 118/2011: dal 1° gennaio 2017 le codifiche SIOPE degli enti territoriali in contabilità finanziaria sono sostituite con quelle del piano dei conti integrato.",
+  "D.Lgs. 118/2011, art. 8", D118, "sono sostituite con quelle previste nella struttura del piano dei conti integrato")
+
+D("cont-252", "Bilanci armonizzati", 3, "Le entrate in conto capitale e quelle da prestiti possono finanziare spese correnti?",
+  "No, è sempre precluso", ["Sì, liberamente", "Sì, entro il 10 per cento", "Sì, se lo autorizza la giunta"],
+  "Art. 16, comma 2, D.Lgs. 118/2011: resta in ogni caso precluso l'utilizzo delle entrate in conto capitale e da accensione di prestiti per finanziare spese correnti.",
+  "D.Lgs. 118/2011, art. 16", D118, "Resta in ogni caso precluso l'utilizzo delle entrate in conto capitale")
+
+D("cont-253", "Bilanci armonizzati", 5, "Per quali spese le amministrazioni possono fare, in gestione, variazioni compensative tra missioni e programmi (art. 16 D.Lgs. 118/2011)?",
+  "Solo per le spese di personale, a seguito di trasferimenti interni di personale", ["Per qualsiasi spesa", "Solo per le spese di investimento", "Solo per gli interessi passivi"],
+  "Art. 16, comma 1: le variazioni compensative tra missioni e programmi sono ammesse limitatamente alle spese per il personale conseguenti a trasferimenti all'interno dell'amministrazione.",
+  "D.Lgs. 118/2011, art. 16", D118, "limitatamente alle spese per il personale")
+
+D("cont-254", "Bilanci armonizzati", 3, "A quale banca dati le amministrazioni trasmettono i bilanci preventivi e consuntivi (art. 18 D.Lgs. 118/2011)?",
+  "Alla Banca dati unitaria delle amministrazioni pubbliche (BDAP)", ["Al registro delle imprese", "All'anagrafe tributaria", "All'archivio di Stato"],
+  "Art. 18, comma 2: i bilanci preventivi e consuntivi sono trasmessi alla Banca dati unitaria delle amministrazioni pubbliche, secondo l'art. 13 della L. 196/2009.",
+  "D.Lgs. 118/2011, art. 18", D118, "alla Banca dati unitaria delle· amministrazioni pubbliche")
+
+D("cont-255", "Sanità", 4, "Perché le regioni devono perimetrare nel bilancio entrate e uscite del servizio sanitario regionale?",
+  "Per confrontare subito le spese sanitarie con il fabbisogno standard e le relative fonti di finanziamento", ["Per nasconderle al Parlamento", "Per pagare meno tasse", "Per non doverle rendicontare"],
+  "Art. 20 D.Lgs. 118/2011: l'esatta perimetrazione consente la confrontabilità immediata fra entrate e spese sanitarie e le risorse del fabbisogno sanitario regionale standard.",
+  "D.Lgs. 118/2011, art. 20", D118, "le regioni garantiscono un'esatta perimetrazione delle entrate e delle uscite")
+
+D("cont-256", "Sanità", 5, "Dove affluiscono le risorse destinate al fabbisogno sanitario regionale standard?",
+  "In conti di tesoreria unica appositamente istituiti per il finanziamento del servizio sanitario", ["Nel conto corrente personale del presidente della regione", "Nelle casse dei comuni", "In un fondo all'estero"],
+  "Art. 21 D.Lgs. 118/2011: per trasparenza dei flussi di cassa, le risorse del fabbisogno sanitario sono versate in conti di tesoreria unica istituiti per il finanziamento del servizio sanitario.",
+  "D.Lgs. 118/2011, art. 21", D118, "sono versate in conti di tesoreria unica appositamente istituiti")
+
+D("cont-257", "Sanità", 5, "Che cos'è la «gestione sanitaria accentrata» (GSA) presso la regione?",
+  "Un centro di responsabilità della regione con contabilità economico-patrimoniale per la quota di sanità gestita direttamente", ["Un'azienda ospedaliera privata", "Un ufficio del Ministero della salute", "Il nome del bilancio dello Stato per la sanità"],
+  "Art. 22 D.Lgs. 118/2011: le regioni che gestiscono direttamente una quota del finanziamento sanitario individuano uno specifico centro di responsabilità, la gestione sanitaria accentrata, con contabilità economico-patrimoniale.",
+  "D.Lgs. 118/2011, art. 22", D118, "denominato gestione sanitaria accentrata presso la regione")
+
+D("cont-258", "Sanità", 3, "Di quali documenti si compone il bilancio d'esercizio degli enti del Servizio sanitario nazionale?",
+  "Stato patrimoniale, conto economico, rendiconto finanziario e nota integrativa", ["Solo il conto del tesoriere", "DUP e PEG", "Bilancio di previsione e assestamento"],
+  "Art. 26 D.Lgs. 118/2011: il bilancio d'esercizio, riferito all'anno solare, si compone di stato patrimoniale, conto economico, rendiconto finanziario e nota integrativa, con relazione sulla gestione.",
+  "D.Lgs. 118/2011, art. 26", D118, "Si compone dello stato patrimoniale, del conto economico, del rendiconto finanziario e della nota integrativa")
+
+D("cont-259", "Sanità", 4, "Entro quale data è adottato il bilancio d'esercizio delle aziende sanitarie e da chi?",
+  "Entro il 30 aprile dell'anno successivo, dal direttore generale", ["Entro il 31 dicembre, dal presidente della regione", "Entro il 31 luglio, dal consiglio regionale", "Entro il 31 marzo, dal collegio sindacale"],
+  "Art. 31 D.Lgs. 118/2011: il bilancio di esercizio è adottato entro il 30 aprile dell'anno successivo dal direttore generale ed è corredato dalla relazione del collegio sindacale.",
+  "D.Lgs. 118/2011, art. 31", D118, "Il bilancio di esercizio è adottato entro il 30 aprile dell' anno successivo")
+
+D("cont-260", "Bilancio regionale", 3, "Su quale documento le regioni elaborano le previsioni del bilancio, riferite ad almeno tre anni?",
+  "Il documento di economia e finanza regionale (DEFR)", ["Il DUP comunale", "Il piano regolatore", "La relazione della Corte dei conti"],
+  "Art. 36 D.Lgs. 118/2011: le regioni adottano il bilancio di previsione con orizzonte almeno triennale, sulla base delle linee strategiche del documento di economia e finanza regionale.",
+  "D.Lgs. 118/2011, art. 36", D118, "sono elaborate sulla base delle linee strategiche e delle politiche contenute nel documento di economia e finanza regionale")
+
+D("cont-261", "Bilancio regionale", 3, "A quale principio le regioni ispirano la propria gestione finanziaria (art. 36 D.Lgs. 118/2011)?",
+  "Al principio della programmazione", ["Al principio della discrezionalità assoluta", "Al principio dell'anno solare unico senza previsioni", "Al principio della spesa libera"],
+  "Art. 36, comma 3: le regioni ispirano la propria gestione al principio della programmazione e adottano ogni anno il bilancio di previsione finanziario.",
+  "D.Lgs. 118/2011, art. 36", D118, "Le regioni ispirano la propria gestione al principio della programmazione")
+
+D("cont-262", "Bilancio regionale", 4, "Cosa devono quantificare le leggi regionali che prevedono spese a carattere continuativo?",
+  "L'onere annuale per ciascun esercizio del bilancio e l'onere a regime", ["Solo il numero di beneficiari", "Nulla: lo fa il tesoriere", "Solo la spesa del primo mese"],
+  "Art. 38 D.Lgs. 118/2011: le leggi regionali con spese continuative quantificano l'onere annuale per ciascuno degli esercizi del bilancio e indicano l'onere a regime.",
+  "D.Lgs. 118/2011, art. 38", D118, "quantificano l'onere annuale previsto per ciascuno degli esercizi compresi nel bilancio di previsione")
+
+D("cont-263", "Bilancio regionale", 4, "Cosa indicano le leggi regionali che dispongono spese a carattere pluriennale?",
+  "L'ammontare complessivo della spesa e le quote a carico dei singoli esercizi", ["Solo la data di inizio", "Solo il dirigente responsabile", "Nulla: la quantificazione è facoltativa"],
+  "Art. 38, comma 2: le leggi regionali pluriennali indicano l'ammontare complessivo della spesa e la quota a carico del bilancio in corso e degli esercizi successivi.",
+  "D.Lgs. 118/2011, art. 38", D118, "indicano l'ammontare complessivo della spesa")
+
+D("cont-264", "Bilancio regionale", 4, "Se la giunta regionale adotta in via d'urgenza una variazione di competenza del consiglio, entro quando va ratificata?",
+  "Entro sessanta giorni, a pena di decadenza (e comunque entro il 31 dicembre)", ["Entro un anno", "Non serve ratifica", "Entro cinque giorni"],
+  "Art. 51-bis D.Lgs. 118/2011: la giunta può adottare in via d'urgenza variazioni attribuite al consiglio, salvo ratifica a pena di decadenza entro i sessanta giorni seguenti.",
+  "D.Lgs. 118/2011, art. 51-bis", D118, "salvo ratifica a pena di decadenza da parte del consiglio regionale entro i sessanta giorni seguenti")
+
+D("cont-265", "Bilancio regionale", 3, "Qual è la principale fonte descrittiva e valutativa dello stato patrimoniale della regione?",
+  "Gli inventari", ["Il DEFR", "Il conto del tesoriere", "La nota di aggiornamento"],
+  "Art. 64 D.Lgs. 118/2011: gli inventari costituiscono la principale fonte descrittiva e valutativa dello stato patrimoniale.",
+  "D.Lgs. 118/2011, art. 64", D118, "Gli inventari costituiscono la principale fonte descrittiva e valutativa dello stato patrimoniale")
+
+D("cont-266", "Bilancio regionale", 4, "Ogni quanto vanno rinnovati, almeno, gli inventari dei beni mobili e immobili della regione?",
+  "Almeno ogni cinque anni i mobili e ogni dieci anni gli immobili", ["Ogni anno entrambi", "Mai, una volta fatti valgono per sempre", "Ogni venti anni entrambi"],
+  "Art. 64, comma 4, D.Lgs. 118/2011: almeno ogni cinque anni per i beni mobili e ogni dieci anni per gli immobili si provvede alla revisione degli inventari.",
+  "D.Lgs. 118/2011, art. 64", D118, "Almeno ogni cinque anni, per i beni mobili, ed ogni dieci anni")
+
+D("cont-267", "Bilancio regionale", 4, "Secondo quali norme sono valutati i beni della regione?",
+  "Secondo il codice civile e il principio contabile della contabilità economico-patrimoniale", ["Secondo il valore di mercato stimato dal presidente", "Secondo il prezzo di acquisto aumentato del 10 per cento", "Non vengono valutati"],
+  "Art. 64, comma 3: i beni sono valutati secondo le norme del codice civile e i criteri del principio applicato della contabilità economico-patrimoniale (allegato 4/3).",
+  "D.Lgs. 118/2011, art. 64", D118, "I beni sono valutati secondo le norme del codice civile")
+
+D("cont-268", "Tesoreria", 3, "A chi è affidato il servizio di tesoreria delle regioni?",
+  "A imprese autorizzate all'attività bancaria, con gara ad evidenza pubblica", ["Alla Banca d'Italia in via esclusiva", "Agli uffici postali", "Al presidente della regione"],
+  "Art. 69 D.Lgs. 118/2011: la tesoreria regionale è affidata con convenzione a imprese autorizzate all'esercizio dell'attività bancaria, previa gara ad evidenza pubblica.",
+  "D.Lgs. 118/2011, art. 69", D118, "a imprese autorizzate all'esercizio dell'attività bancaria")
+
+D("cont-269", "Corte dei conti", 4, "Secondo quale legge rispondono, per i danni arrecati, gli amministratori e i dipendenti della regione?",
+  "La legge 14 gennaio 1994, n. 20, come i dipendenti statali", ["Il codice della strada", "La legge elettorale regionale", "Solo il codice penale"],
+  "Art. 71 D.Lgs. 118/2011: gli amministratori e i dipendenti regionali rispondono nei soli casi e limiti della L. 20/1994, con gli istituti processuali dei dipendenti statali.",
+  "D.Lgs. 118/2011, art. 71", D118, "rispondono nei soli casi e negli stessi limiti di cui alla legge 14 gennaio 1994, n. 20")
+
+D("cont-270", "Revisione", 3, "Quale funzione svolge il collegio dei revisori dei conti della regione?",
+  "Vigilanza sulla regolarità contabile, finanziaria ed economica della gestione regionale", ["Approvazione delle leggi regionali", "Nomina della giunta regionale", "Gestione della tesoreria"],
+  "Art. 72 D.Lgs. 118/2011: il collegio dei revisori vigila sulla regolarità contabile, finanziaria ed economica della gestione della regione e delle sue articolazioni dotate di autonomia contabile.",
+  "D.Lgs. 118/2011, art. 72", D118, "svolge la funzione di vigilanza sulla regolarità contabile, finanziaria ed economica della gestione della regione")
+
+D("cont-271", "Bilancio regionale", 3, "Con quale atto il consiglio regionale riconosce la legittimità dei debiti fuori bilancio?",
+  "Con legge", ["Con delibera di giunta", "Con decreto del presidente", "Con una semplice nota del tesoriere"],
+  "Art. 73 D.Lgs. 118/2011: il Consiglio regionale riconosce con legge la legittimità dei debiti fuori bilancio.",
+  "D.Lgs. 118/2011, art. 73", D118, "Il Consiglio regionale riconosce con legge, la legittimità dei debiti fuori bilancio")
+
+D("cont-272", "Bilancio regionale", 3, "Quale di queste situazioni può generare un debito fuori bilancio riconoscibile dalla regione?",
+  "Una sentenza esecutiva", ["Un'entrata tributaria maggiore del previsto", "Un avanzo di amministrazione", "Una donazione ricevuta"],
+  "Art. 73 D.Lgs. 118/2011: tra le cause di debito fuori bilancio ci sono le sentenze esecutive, i disavanzi di organismi controllati, gli espropri e l'acquisto di beni e servizi senza impegno.",
+  "D.Lgs. 118/2011, art. 73", D118, "sentenze esecutive")
+
+D("cont-273", "Bilancio regionale", 4, "L'acquisto di beni e servizi senza il preventivo impegno di spesa, nelle regioni, rientra:",
+  "Tra le ipotesi di debito fuori bilancio da riconoscere con legge", ["Tra le spese sempre legittime", "Tra le entrate straordinarie", "Tra le partite di giro"],
+  "Art. 73, comma 1, lett. e): l'acquisizione di beni e servizi in assenza del preventivo impegno di spesa è una delle ipotesi di debito fuori bilancio.",
+  "D.Lgs. 118/2011, art. 73", D118, "acquisizione di beni e servizi in assenza del preventivo impegno di spesa")
+
+D("cont-274", "Bilancio regionale", 4, "Come assicurano le regioni l'autonomia contabile del consiglio regionale?",
+  "Sulla base dei propri statuti, nel rispetto dei principi contabili del D.Lgs. 118/2011", ["Affidandola al Ministero dell'interno", "Eliminando il bilancio del consiglio", "Con un decreto della Corte dei conti"],
+  "Art. 67 D.Lgs. 118/2011: le regioni assicurano, sulla base dei rispettivi statuti, l'autonomia contabile del consiglio regionale, che adotta lo stesso sistema contabile e gli stessi schemi.",
+  "D.Lgs. 118/2011, art. 67", D118, "assicurano l'autonomia contabile del consiglio regionale")
+
+# --- v2: principi del bilancio locale (TUEL) e fiscal compact ---
+D("cont-275", "Bilancio enti locali", 4, "Chi può differire i termini di presentazione del DUP e di approvazione del bilancio degli enti locali?",
+  "Il Ministro dell'interno con decreto, d'intesa con il MEF, sentita la Conferenza Stato-città", ["Il sindaco con ordinanza", "Il consiglio comunale da solo", "Il revisore dei conti"],
+  "Art. 151, comma 1, TUEL: i termini possono essere differiti con decreto del Ministro dell'interno, d'intesa con il Ministro dell'economia, sentita la Conferenza Stato-città, per motivate esigenze.",
+  "D.Lgs. 267/2000, art. 151", TUEL, "I termini possono essere differiti con decreto del Ministro dell'interno")
+
+D("cont-276", "Bilancio enti locali", 3, "Il bilancio di previsione degli enti locali contiene previsioni di cassa per tutti gli anni del triennio?",
+  "No: competenza e cassa per il primo esercizio, solo competenza per gli esercizi successivi", ["Sì, cassa per tutti e tre gli anni", "No, contiene solo previsioni di cassa", "No, contiene solo il primo anno"],
+  "Art. 151, comma 3, TUEL: il bilancio comprende le previsioni di competenza e di cassa del primo esercizio e le previsioni di competenza degli esercizi successivi.",
+  "D.Lgs. 267/2000, art. 151", TUEL, "comprende le previsioni di competenza e di cassa del primo esercizio del periodo considerato")
+
+D("cont-277", "Bilancio enti locali", 3, "Secondo il principio di unità del bilancio degli enti locali, come si finanziano le spese?",
+  "Il totale delle entrate finanzia indistintamente il totale delle spese, salvo eccezioni di legge", ["Ogni entrata finanzia una spesa precisa", "Le spese si finanziano solo con mutui", "Ogni ufficio finanzia le proprie spese con le proprie entrate"],
+  "Art. 162, comma 2, TUEL: il totale delle entrate finanzia indistintamente il totale delle spese, salvo le eccezioni di legge.",
+  "D.Lgs. 267/2000, art. 162", TUEL, "Il totale delle entrate finanzia indistintamente il totale delle spese")
+
+D("cont-278", "Bilancio enti locali", 3, "Dopo il 31 dicembre, un comune può ancora accertare entrate o impegnare spese sull'esercizio appena chiuso?",
+  "No, non può più", ["Sì, fino al 31 gennaio", "Sì, fino all'approvazione del rendiconto", "Sì, senza limiti"],
+  "Art. 162, comma 3, TUEL: dopo il 31 dicembre non possono più effettuarsi accertamenti di entrate e impegni di spesa in conto dell'esercizio scaduto.",
+  "D.Lgs. 267/2000, art. 162", TUEL, "non possono più effettuarsi accertamenti di entrate e impegni di spesa in conto dell'esercizio scaduto")
+
+D("cont-279", "Risultato di amministrazione", 4, "Da cosa sono costituiti i fondi destinati agli investimenti nel risultato di amministrazione e quando si possono usare?",
+  "Dalle entrate in conto capitale senza vincoli non spese; si usano solo dopo l'approvazione del rendiconto", ["Dalle entrate tributarie; in qualsiasi momento", "Dai mutui non ancora contratti; solo a fine mandato", "Dalle partite di giro; mai"],
+  "Art. 187 TUEL: i fondi destinati agli investimenti sono le entrate in c/capitale senza vincoli di specifica destinazione non spese, utilizzabili con variazione di bilancio solo dopo l'approvazione del rendiconto.",
+  "D.Lgs. 267/2000, art. 187", TUEL, "sono utilizzabili con provvedimento di variazione di bilancio solo a seguito dell'approvazione del rendiconto")
+
+D("cont-280", "Risultato di amministrazione", 5, "I trasferimenti in conto capitale possono essere finanziati con il debito?",
+  "No, non possono essere finanziati dal debito né dalle entrate in conto capitale destinate agli investimenti", ["Sì, sempre", "Sì, se sotto i 100.000 euro", "Sì, con il parere della giunta"],
+  "Art. 187 TUEL: i trasferimenti in conto capitale non sono destinati al finanziamento degli investimenti e non possono essere finanziati dal debito e dalle entrate in conto capitale destinate agli investimenti.",
+  "D.Lgs. 267/2000, art. 187", TUEL, "I trasferimenti in conto capitale non sono destinati al finanziamento degli investimenti")
+
+D("cont-281", "Risultato di amministrazione", 4, "Quando va applicato il disavanzo di amministrazione accertato con il rendiconto?",
+  "Subito, all'esercizio in corso, insieme alla delibera di approvazione del rendiconto", ["Entro dieci anni", "Solo alla fine del mandato", "Mai: si cancella da solo"],
+  "Art. 188 TUEL: il disavanzo è immediatamente applicato all'esercizio in corso di gestione contestualmente alla delibera di approvazione del rendiconto.",
+  "D.Lgs. 267/2000, art. 188", TUEL, "è immediatamente applicato ((...)) all'esercizio in corso di gestione")
+
+D("cont-282", "Risultato di amministrazione", 5, "A cosa è equiparata la mancata adozione della delibera che applica il disavanzo al bilancio in corso?",
+  "Alla mancata approvazione del rendiconto", ["A un semplice ritardo senza effetti", "A un avanzo di amministrazione", "Alla dichiarazione di dissesto"],
+  "Art. 188 TUEL: la mancata adozione della delibera che applica il disavanzo è equiparata a tutti gli effetti alla mancata approvazione del rendiconto.",
+  "D.Lgs. 267/2000, art. 188", TUEL, "è equiparata a tutti gli effetti alla mancata approvazione del rendiconto di gestione")
+
+D("cont-283", "Risultato di amministrazione", 4, "Entro quale limite massimo si può ripianare il disavanzo di amministrazione negli esercizi successivi?",
+  "Non oltre la durata della consiliatura, con un piano di rientro deliberato dal consiglio", ["In trent'anni", "Senza limite di tempo", "Entro il primo trimestre dell'anno"],
+  "Art. 188 TUEL: il disavanzo può essere ripianato negli esercizi successivi del bilancio, in ogni caso non oltre la durata della consiliatura, con una delibera consiliare di piano di rientro.",
+  "D.Lgs. 267/2000, art. 188", TUEL, "in ogni caso non oltre la durata della consiliatura")
+
+D("cont-284", "Gestione della spesa", 3, "A quali condizioni un ente locale può effettuare una spesa?",
+  "Se c'è l'impegno contabile registrato e l'attestazione della copertura finanziaria", ["Basta la firma del sindaco", "Basta una fattura del fornitore", "Basta l'approvazione orale della giunta"],
+  "Art. 191, comma 1, TUEL: gli enti locali possono effettuare spese solo se sussiste l'impegno contabile registrato sul programma di bilancio e l'attestazione della copertura finanziaria.",
+  "D.Lgs. 267/2000, art. 191", TUEL, "Gli enti locali possono effettuare spese solo se sussiste l'impegno contabile registrato")
+
+D("cont-285", "Gestione della spesa", 4, "Quando il comune comunica al fornitore gli estremi dell'impegno e della copertura finanziaria?",
+  "Contestualmente all'ordinazione della prestazione; la fattura dovrà riportarli", ["Solo al momento del pagamento", "Mai: sono dati interni", "Dopo il collaudo, se richiesto"],
+  "Art. 191, comma 1, TUEL: la comunicazione dell'impegno e della copertura è effettuata contestualmente all'ordinazione, con l'avvertenza che la fattura va completata con quegli estremi.",
+  "D.Lgs. 267/2000, art. 191", TUEL, "è effettuata contestualmente all'ordinazione della prestazione")
+
+D("cont-286", "Gestione della spesa", 4, "Se il fornitore non riceve dal comune la comunicazione dell'impegno di spesa, cosa può fare?",
+  "Non eseguire la prestazione finché i dati non gli vengono comunicati", ["Pretendere il doppio del prezzo", "Rivolgersi direttamente al prefetto per il pagamento", "Nulla: deve eseguirla comunque"],
+  "Art. 191, comma 1, TUEL: in mancanza della comunicazione il terzo interessato ha facoltà di non eseguire la prestazione sino a quando i dati non gli vengano comunicati.",
+  "D.Lgs. 267/2000, art. 191", TUEL, "ha facoltà di non eseguire la prestazione sino a quando i dati non gli vengano comunicati")
+
+D("cont-287", "Finanza locale", 3, "In quali campi la legge riconosce agli enti locali potestà impositiva autonoma?",
+  "Imposte, tasse e tariffe", ["Solo nelle accise sui carburanti", "Solo nei dazi doganali", "In nessun campo"],
+  "Art. 149, comma 3, TUEL: la legge assicura agli enti locali potestà impositiva autonoma nel campo delle imposte, delle tasse e delle tariffe.",
+  "D.Lgs. 267/2000, art. 149", TUEL, "potestà impositiva autonoma nel campo delle imposte, delle tasse e delle tariffe")
+
+D("cont-288", "Rendiconto", 3, "Cosa dimostra il conto del bilancio degli enti locali?",
+  "I risultati finali della gestione rispetto alle autorizzazioni del primo esercizio del bilancio di previsione", ["Il valore di mercato degli immobili", "Il programma elettorale del sindaco", "Solo il saldo di cassa del tesoriere"],
+  "Art. 228, comma 1, TUEL: il conto del bilancio dimostra i risultati finali della gestione rispetto alle autorizzazioni del primo esercizio del bilancio di previsione.",
+  "D.Lgs. 267/2000, art. 228", TUEL, "Il conto del bilancio dimostra i risultati finali della gestione")
+
+D("cont-289", "Rendiconto", 3, "Per l'entrata, cosa riporta il conto del bilancio distintamente per residui e competenza?",
+  "Le somme accertate, distinguendo la parte riscossa da quella ancora da riscuotere", ["Solo le entrate previste", "Solo le entrate future", "Solo i tributi evasi"],
+  "Art. 228, comma 2, TUEL: per l'entrata il conto del bilancio comprende le somme accertate, con distinzione della parte riscossa e di quella ancora da riscuotere.",
+  "D.Lgs. 267/2000, art. 228", TUEL, "per l'entrata le somme accertate, con distinzione della parte riscossa e di quella ancora da riscuotere")
+
+D("cont-290", "Regole europee", 3, "Quali Stati dell'Unione non sottoscrissero il fiscal compact nel 2012?",
+  "Regno Unito, Croazia e Repubblica Ceca", ["Germania, Francia e Italia", "Spagna, Portogallo e Grecia", "Irlanda, Malta e Cipro"],
+  "Il trattato fu approvato il 2 marzo 2012 da 25 dei 27 Stati: non lo sottoscrissero Regno Unito, Croazia e Repubblica Ceca.",
+  W("Patto di bilancio europeo"), FC, "non è stato sottoscritto da Regno Unito, Croazia e Repubblica Ceca")
+
+D("cont-291", "Regole europee", 4, "Di quanto devono ridurre ogni anno il debito i Paesi che superano il 60% del PIL, secondo il fiscal compact?",
+  "Di un ventesimo della parte eccedente il 60%", ["Di un decimo dell'intero debito", "Del 3% del PIL", "Di metà dell'eccedenza"],
+  "Il fiscal compact prevede una riduzione del rapporto debito/PIL pari ogni anno a un ventesimo della parte eccedente il 60% del PIL.",
+  W("Patto di bilancio europeo"), FC, "pari ogni anno a un ventesimo della parte eccedente il 60% del PIL")
+
+D("cont-292", "Regole europee", 4, "Per i Paesi con debito pubblico inferiore al 60% del PIL, qual è il limite di deficit strutturale del fiscal compact?",
+  "1% del PIL", ["0,5% del PIL", "3% del PIL", "Nessun limite"],
+  "Il deficit strutturale non deve superare lo 0,5% del PIL, ma per i Paesi con debito inferiore al 60% del PIL il limite è l'1%.",
+  W("Patto di bilancio europeo"), FC, "per i paesi il cui debito pubblico è inferiore al 60% del PIL, l'1%")
+
+D("cont-293", "Regole europee", 3, "Quale istituzione verifica che gli Stati abbiano inserito le regole del fiscal compact nell'ordinamento nazionale?",
+  "La Corte di giustizia dell'Unione europea", ["Il Parlamento europeo", "La Banca centrale europea", "L'ONU"],
+  "Gli Stati si impegnano a inserire le nuove regole in norme costituzionali o comunque nella legislazione nazionale, con verifica della Corte europea di giustizia.",
+  W("Patto di bilancio europeo"), FC, "che verrà verificato dalla Corte europea di giustizia")
+
+D("cont-294", "Regole europee", 3, "Quante volte all'anno, almeno, si riuniscono i leader dei Paesi dell'euro secondo il fiscal compact?",
+  "Almeno due volte", ["Una volta ogni cinque anni", "Ogni settimana", "Mai: non sono previsti vertici"],
+  "Il trattato prevede l'impegno a tenere almeno due volte all'anno un vertice dei leader dei Paesi che adottano l'euro.",
+  W("Patto di bilancio europeo"), FC, "l'impegno a tenere almeno due volte all'anno un vertice dei leader dei paesi che adottano l'euro")
+
+D("cont-295", "Regole europee", 4, "Il fiscal compact fa formalmente parte del diritto dell'Unione europea?",
+  "No, è un accordo intergovernativo fuori dal corpus normativo dell'UE", ["Sì, è un regolamento UE", "Sì, è una direttiva approvata dal Parlamento europeo", "Sì, è stato inserito nel Trattato di Lisbona nel 2012"],
+  "Pur negoziato da 25 Paesi, l'accordo non fa formalmente parte del corpus normativo dell'Unione europea; il Parlamento europeo ne criticò la forma intergovernativa.",
+  W("Patto di bilancio europeo"), FC, "l'accordo non fa formalmente parte del corpus normativo dell'Unione europea")
+
+D("cont-296", "Regole europee", 5, "Quale Stato membro sottopose a referendum popolare la ratifica del fiscal compact?",
+  "L'Irlanda", ["L'Italia", "La Germania", "La Francia"],
+  "L'Irlanda è l'unico Stato membro ad aver indetto un referendum: il 31 maggio 2012 il 60,3% dei votanti approvò il patto.",
+  W("Patto di bilancio europeo"), FC, "L'Irlanda è l'unico Stato membro dell'UE ad aver indetto un referendum")
+
+D("cont-297", "Regole europee", 5, "Entro quale data i Paesi dovevano introdurre la regola del pareggio per poter ottenere prestiti dal Meccanismo europeo di stabilità?",
+  "Entro il 1° marzo 2014", ["Entro il 1° gennaio 2010", "Entro il 31 dicembre 2020", "Non c'era alcun collegamento con il MES"],
+  "Solo i Paesi che hanno introdotto la regola del pareggio entro il 1° marzo 2014 possono ottenere eventuali prestiti dal Meccanismo europeo di stabilità.",
+  W("Patto di bilancio europeo"), FC, "Solo i paesi che hanno introdotto tale regola entro il 1º marzo 2014")
+
+D("cont-298", "Regole europee", 4, "Con chi gli Stati si impegnano a coordinare i piani di emissione del debito secondo l'art. 6 del fiscal compact?",
+  "Con il Consiglio dell'Unione e la Commissione europea", ["Con le agenzie di rating", "Con il Fondo monetario internazionale", "Con le banche centrali degli altri Stati"],
+  "Tra le clausole del trattato c'è l'impegno a coordinare i piani di emissione del debito con il Consiglio dell'Unione e con la Commissione europea (art. 6).",
+  W("Patto di bilancio europeo"), FC, "impegno a coordinare i piani di emissione del debito col Consiglio dell'Unione e con la Commissione europea")
+
+D("cont-299", "Regole europee", 4, "Cosa devono garantire gli Stati che non riescono a raggiungere gli obiettivi di bilancio concordati nel fiscal compact?",
+  "Correzioni automatiche con scadenze determinate", ["L'uscita dall'euro", "Un referendum popolare", "Nulla: gli obiettivi sono indicativi"],
+  "Il trattato impone a ogni Stato di garantire correzioni automatiche con scadenze determinate quando non riesce a raggiungere altrimenti gli obiettivi di bilancio.",
+  W("Patto di bilancio europeo"), FC, "garantire correzioni automatiche con scadenze determinate")
+
+D("cont-300", "Regole europee", 3, "Cosa prevede il fiscal compact se il deficit pubblico supera il 3% del PIL?",
+  "Sanzioni semi-automatiche", ["L'espulsione dall'Unione", "La sospensione delle elezioni", "Nessuna conseguenza"],
+  "Il trattato conferma l'obbligo di mantenere il deficit sotto il 3% del PIL, come nel Patto di stabilità e crescita; in caso contrario scattano sanzioni semi-automatiche.",
+  W("Patto di bilancio europeo"), FC, "in caso contrario scatteranno sanzioni semi-automatiche")
