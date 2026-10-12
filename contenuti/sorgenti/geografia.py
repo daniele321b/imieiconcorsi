@@ -1057,3 +1057,319 @@ D("geo-201", "Unione europea", 4, "In quale anno è stato introdotto l'euro come
   "Nel 2002", ["Nel 1999", "Nel 1992", "Nel 2007"],
   "Sostituì dodici valute nazionali.",
   W("Unione europea"), UE, "L'euro è stato introdotto nel 2002")
+
+# --- Ampliamento a 300: Unione europea, regioni, ambiente ISTAT, continenti, Italia fisica ---
+def U(id, arg, liv, testo, giusta, sbagliate, spieg, frase):
+    D(id, arg, liv, testo, giusta, sbagliate, spieg, W("Unione europea"), UE, frase)
+
+AMB = "ISTAT_Annuario2025_cap2_Ambiente-clima-energia.txt"
+def A(id, arg, liv, testo, giusta, sbagliate, spieg, frase):
+    D(id, arg, liv, testo, giusta, sbagliate, spieg, IST, AMB, frase)
+
+U("geo-202", "Unione europea", 2, "Quali sei Stati fondarono la Comunità economica europea con i Trattati di Roma del 1957?",
+  "Belgio, Francia, Germania occidentale, Italia, Lussemburgo e Paesi Bassi", ["Francia, Germania, Italia, Spagna, Regno Unito e Belgio", "Italia, Francia, Austria, Svizzera, Belgio e Olanda", "Germania, Francia, Danimarca, Irlanda, Italia e Belgio"],
+  "Gli stessi sei Stati avevano già creato la CECA nel 1951.", "firmato da Belgio, Francia, Italia, Lussemburgo, Paesi Bassi e Germania occidentale")
+U("geo-203", "Unione europea", 3, "Quale comunità europea fu istituita insieme alla CEE con i Trattati di Roma?",
+  "L'Euratom (Comunità europea dell'energia atomica)", ["La CECA", "Il Consiglio d'Europa", "L'EFTA"],
+  "Entrambi i trattati sono entrati in vigore nel 1958.", "Comunità europea dell'energia atomica (Euratom)")
+U("geo-204", "Unione europea", 3, "In che anno sei nazioni crearono la Comunità europea del carbone e dell'acciaio (CECA)?",
+  "Nel 1951", ["Nel 1957", "Nel 1946", "Nel 1965"],
+  "Era considerata «un primo passo nella federazione dell'Europa».", "nel 1951, deluse dalla mancanza di progressi in seno al Consiglio d'Europa, sei nazioni")
+U("geo-205", "Unione europea", 2, "Quale documento sull'unità europea fu redatto nel 1941 da Altiero Spinelli, Ernesto Rossi ed Eugenio Colorni?",
+  "Il Manifesto di Ventotene", ["La Dichiarazione Schuman", "Il Trattato di Parigi", "Il Manifesto di Bruxelles"],
+  "Fu scritto al confino sull'isola di Ventotene e pubblicato nel 1944.", "Manifesto di Ventotene")
+U("geo-206", "Unione europea", 3, "Quale statista italiano è tra i padri fondatori dell'Unione europea?",
+  "Alcide De Gasperi", ["Giovanni Giolitti", "Aldo Moro", "Enrico Mattei"],
+  "Con lui sono ricordati Jean Monnet e Robert Schuman (Francia) e Paul-Henri Spaak (Belgio).", "Alcide De Gasperi dall'Italia")
+U("geo-207", "Unione europea", 3, "Quali Stati entrarono nelle Comunità europee nel 1973?",
+  "Danimarca, Irlanda e Regno Unito", ["Spagna, Portogallo e Grecia", "Austria, Finlandia e Svezia", "Norvegia, Islanda e Svizzera"],
+  "La Norvegia negoziò l'ingresso ma gli elettori lo respinsero con un referendum.", "Nel 1973, le Comunità furono ampliate per includere la Danimarca")
+U("geo-208", "Unione europea", 4, "Quale territorio lasciò le Comunità europee nel 1985 dopo un referendum, per una disputa sui diritti di pesca?",
+  "La Groenlandia", ["Le Isole Far Oer", "L'Islanda", "La Norvegia"],
+  "La Groenlandia è una provincia autonoma della Danimarca.", "compresa la Groenlandia che, nel 1985, lasciò le Comunità")
+U("geo-209", "Unione europea", 3, "In che anno si tennero le prime elezioni dirette del Parlamento europeo a suffragio universale?",
+  "Nel 1979", ["Nel 1957", "Nel 1993", "Nel 1969"],
+  "Prima i membri erano designati dai parlamenti nazionali.", "Nel 1979 furono proclamate le prime elezioni dirette democratiche del parlamento europeo")
+U("geo-210", "Unione europea", 3, "Quando entrarono nella Comunità europea Spagna e Portogallo?",
+  "Nel 1986", ["Nel 1981", "Nel 1995", "Nel 1973"],
+  "La Grecia era entrata nel 1981.", "Nel 1981 si unì alla Comunità europea anche la Grecia e, nel 1986, Spagna e Portogallo")
+U("geo-211", "Unione europea", 3, "Quando entrò in vigore il Trattato di Maastricht, che istituì formalmente l'Unione europea?",
+  "Il 1° novembre 1993", ["Il 25 marzo 1957", "Il 1° dicembre 2009", "Il 1° gennaio 2002"],
+  "I suoi principali artefici furono Helmut Kohl e François Mitterrand.", "entrò in vigore il 1o novembre 1993")
+U("geo-212", "Unione europea", 4, "Come si chiamano i criteri che un Paese deve soddisfare per aderire all'UE, concordati nel 1993?",
+  "Criteri di Copenaghen", ["Criteri di Maastricht", "Parametri di Schengen", "Criteri di Lisbona"],
+  "Richiedono democrazia stabile, economia di mercato funzionante e accettazione degli obblighi di adesione.", "criteri di Copenaghen")
+U("geo-213", "Unione europea", 3, "Quale fu il più grande allargamento dell'UE, con l'ingresso di dieci Paesi tra cui Polonia e Ungheria?",
+  "Quello del 2004", ["Quello del 1995", "Quello del 2007", "Quello del 2013"],
+  "Entrarono Cipro, Estonia, Lettonia, Lituania, Malta, Polonia, Repubblica Ceca, Slovacchia, Slovenia e Ungheria.", "Nel 2004 l'UE ha visto il suo più grande allargamento")
+U("geo-214", "Unione europea", 4, "Quali Paesi bocciarono con referendum la Costituzione europea nel 2005?",
+  "Francia e Paesi Bassi", ["Irlanda e Danimarca", "Regno Unito e Svezia", "Italia e Spagna"],
+  "Il trattato costituzionale non entrò in vigore; molte novità furono riprese dal Trattato di Lisbona.", "anche il risultato del referendum tenuto nei Paesi Bassi fu contrario")
+U("geo-215", "Unione europea", 4, "Quando entrò in vigore il Trattato di Lisbona?",
+  "Il 1° dicembre 2009", ["Il 13 dicembre 2007", "Il 1° novembre 1993", "Il 1° gennaio 2002"],
+  "Fu firmato il 13 dicembre 2007; l'Irlanda lo approvò con un secondo referendum nel 2009.", "entrato in vigore il 1o dicembre 2009")
+U("geo-216", "Unione europea", 3, "Quale articolo del Trattato di Lisbona disciplina il recesso di uno Stato dall'Unione?",
+  "L'articolo 50", ["L'articolo 7", "L'articolo 1", "L'articolo 352"],
+  "È stato invocato solo dal Regno Unito (Brexit).", "conosciute come articolo 50")
+U("geo-217", "Unione europea", 3, "Quale Stato è entrato nell'UE nel 2013, portandola a 28 membri?",
+  "La Croazia", ["La Slovenia", "La Romania", "La Serbia"],
+  "La Croazia ha poi adottato l'euro nel 2023.", "Nel 2013 continuò l'allargamento con l'adesione della Croazia")
+U("geo-218", "Unione europea", 2, "In che anno Romania e Bulgaria sono entrate nell'Unione europea?",
+  "Nel 2007", ["Nel 2004", "Nel 2013", "Nel 1995"],
+  "Nello stesso anno la Slovenia adottò l'euro.", "Il 2007 è anche l'anno dell'adesione di Romania e Bulgaria")
+U("geo-219", "Unione europea", 4, "Dove si trovano le zone più basse dell'Unione europea, a 7 metri sotto il livello del mare?",
+  "Nel Lammefjorden (Danimarca) e nello Zuidplaspolder (Paesi Bassi)", ["Nel delta del Po", "Nella laguna di Venezia", "Nella Camargue, in Francia"],
+  "Il punto più alto dell'Unione è il Monte Bianco.", "le zone più basse sono il Lammefjorden in Danimarca e lo Zuidplaspolder nei Paesi Bassi")
+U("geo-220", "Unione europea", 4, "Come sono classificati territori come le Canarie, le Azzorre e la Guyana francese, che fanno parte dell'UE pur essendo fuori dall'Europa?",
+  "Regioni ultraperiferiche", ["Paesi e territori d'oltremare", "Protettorati europei", "Territori associati"],
+  "Groenlandia e Nuova Caledonia sono invece paesi e territori d'oltremare, non parte dell'UE.", "tali territori vengono classificati come regioni ultraperiferiche")
+U("geo-221", "Unione europea", 4, "Quale isola dell'UE è la più grande per superficie?",
+  "L'Irlanda", ["La Sicilia", "La Sardegna", "Cipro"],
+  "Seguono Sicilia e Sardegna.", "1 Irlanda Irlanda Europa 70 273")
+
+R("geo-222", "Regioni", 2, "Qual è il capoluogo della regione Friuli-Venezia Giulia?",
+  "Trieste", ["Udine", "Gorizia", "Pordenone"],
+  "Il Friuli-Venezia Giulia è una regione a statuto speciale dal 1963.", "Friuli-Venezia 6 Trieste")
+R("geo-223", "Regioni", 1, "Qual è il capoluogo della Puglia?",
+  "Bari", ["Lecce", "Foggia", "Taranto"],
+  "La Puglia comprende anche la provincia di Barletta-Andria-Trani.", "Puglia Bari 3 877 395")
+R("geo-224", "Regioni", 1, "Qual è il capoluogo dell'Umbria?",
+  "Perugia", ["Terni", "Assisi", "Spoleto"],
+  "L'Umbria ha solo due province: Perugia e Terni.", "Umbria Perugia 851 473")
+R("geo-225", "Regioni", 1, "Qual è il capoluogo della Liguria?",
+  "Genova", ["La Spezia", "Savona", "Imperia"],
+  "Le province liguri sono Genova, Imperia, La Spezia e Savona.", "Liguria Genova 1 510 143")
+R("geo-226", "Regioni", 3, "Qual è la regione italiana più estesa per superficie?",
+  "La Sicilia", ["Il Piemonte", "La Sardegna", "La Lombardia"],
+  "La Sicilia (circa 25.800 km²) supera di poco il Piemonte (circa 25.400 km²).", "Sicilia Palermo 4 787 390 25 824,33")
+R("geo-227", "Regioni", 2, "Qual è la regione italiana più piccola per superficie?",
+  "La Valle d'Aosta", ["Il Molise", "La Liguria", "L'Umbria"],
+  "Ha circa 3.260 km² ed è anche la meno popolosa.", "Valle d'Aosta Aosta 122 532 3 258,61")
+R("geo-228", "Regioni", 4, "Come è attribuita la presidenza della regione Trentino-Alto Adige?",
+  "A rotazione tra i presidenti delle Province autonome di Trento e di Bolzano", ["Per elezione diretta dei cittadini", "Per nomina del Governo", "Al sindaco di Trento"],
+  "Nelle altre regioni il presidente è eletto insieme al consiglio, tranne in Valle d'Aosta.", "è ricoperta a rotazione dal Presidente della Provincia di Trento e dal Presidente della Provincia di Bolzano")
+R("geo-229", "Regioni", 4, "Quale legge disciplina dal 1995 le elezioni regionali, salvo le leggi elettorali proprie delle regioni?",
+  "La legge Tatarella", ["La legge Ricasoli", "La legge Bassanini", "La legge Delrio"],
+  "Le riforme costituzionali del 1999 e del 2001 consentono alle regioni di darsi una propria legge elettorale.", "dal 1995 normate dalla legge Tatarella")
+R("geo-230", "Regioni", 4, "Chi raggruppò nel 1870 le province in «compartimenti» a fini statistici, precursori delle regioni?",
+  "Pietro Maestri", ["Camillo Cavour", "Bettino Ricasoli", "Francesco Crispi"],
+  "Il termine «regione» comparve al posto di «compartimento» nell'Annuario statistico del 1912.", "furono stilati nel 1870 da Pietro Maestri a fini statistici e didattici")
+R("geo-231", "Regioni", 3, "Ogni quanti anni si tengono di norma le elezioni regionali?",
+  "Ogni cinque anni", ["Ogni quattro anni", "Ogni sei anni", "Ogni tre anni"],
+  "Rinnovano il consiglio regionale e il presidente della giunta.", "che di norma si tengono ogni cinque anni")
+
+A("geo-232", "Ambiente", 3, "Quale quota della produzione lorda di energia elettrica italiana veniva da fonti rinnovabili nel 2023 (ISTAT)?",
+  "Il 44 per cento", ["Il 20 per cento", "Il 70 per cento", "Il 10 per cento"],
+  "Era il 35,4 per cento nel 2022, anno di forte calo dell'idroelettrico.", "dal 35,4 al 44 per cento della produzione lorda totale")
+A("geo-233", "Ambiente", 3, "Quale fonte rinnovabile ha dato il contributo maggiore alla produzione elettrica italiana nel 2023?",
+  "L'idroelettrica", ["L'eolica", "La geotermica", "Le bioenergie"],
+  "Idroelettrico 15,3%, fotovoltaico 11,6%, eolico 8,9%, bioenergie 6,1%, geotermico 2,2%.", "L'apporto maggiore viene garantito dalla fonte idroelettrica")
+A("geo-234", "Ambiente", 3, "In quale regione italiana si produce energia geotermica?",
+  "Solo in Toscana", ["In Sicilia e Campania", "In tutte le regioni vulcaniche", "Solo in Trentino-Alto Adige"],
+  "L'idroelettrico prevale nelle regioni montuose, l'eolico nel Mezzogiorno, il fotovoltaico al Centro.", "l'energia geotermica viene prodotta solo in Toscana")
+A("geo-235", "Ambiente", 4, "Quale regione aveva nel 2023 la quota più alta di energia elettrica da fonti rinnovabili?",
+  "La Valle d'Aosta (98,4%)", ["La Lombardia", "L'Emilia-Romagna", "La Liguria"],
+  "Seguono Basilicata, Trentino-Alto Adige e Marche; ultime Emilia-Romagna e Liguria.", "la Valle d'Aosta (98,4 per cento)")
+A("geo-236", "Ambiente", 4, "Qual era la dipendenza energetica dell'Italia dall'estero nel 2023?",
+  "Il 74,8 per cento", ["Il 30 per cento", "Il 50 per cento", "Il 95 per cento"],
+  "La media dell'UE era il 58,3 per cento.", "la dipendenza energetica dall'estero è infatti del 74,8 per cento")
+A("geo-237", "Ambiente", 3, "Qual era la percentuale di raccolta differenziata dei rifiuti urbani in Italia nel 2023?",
+  "Il 66,6 per cento", ["Il 45 per cento", "Il 30 per cento", "L'85 per cento"],
+  "Supera il target UE del 65 per cento.", "La raccolta differenziata è al 66,6 per cento")
+A("geo-238", "Ambiente", 4, "Quanti rifiuti urbani pro capite sono stati prodotti in Italia nel 2023?",
+  "Circa 496 kg per abitante", ["Circa 200 kg", "Circa 900 kg", "Circa 1.500 kg"],
+  "In tutto 29,3 milioni di tonnellate.", "496,2 kg per abitante")
+A("geo-239", "Ambiente", 3, "Quale quota del territorio terrestre italiano era coperta da aree tutelate nel 2023?",
+  "Il 21,7 per cento", ["Il 5 per cento", "Il 40 per cento", "Il 60 per cento"],
+  "Le aree marine tutelate erano l'11,6 per cento.", "le aree tutelate terrestri coprono il 21,7 per cento del territorio")
+A("geo-240", "Ambiente", 4, "Qual è stata la temperatura media annua nei capoluoghi di regione nel 2023, tra gli anni più caldi dal 1971?",
+  "16,6 °C", ["12,1 °C", "20,4 °C", "14,0 °C"],
+  "È di 1,7 °C sopra il valore climatico 1981-2010.", "con una temperatura media annua di 16,6°C")
+A("geo-241", "Ambiente", 3, "Quale quota delle famiglie aveva un impianto di condizionamento nel 2024?",
+  "Il 56 per cento", ["Il 15 per cento", "L'85 per cento", "Il 30 per cento"],
+  "Era il 29,4 per cento nel 2013: la presenza è quasi raddoppiata.", "dal 29,4 per cento nel 2013 al 56 per cento nel 2024")
+A("geo-242", "Ambiente", 3, "Qual è stata nel 2024 la preoccupazione ambientale più sentita dagli italiani?",
+  "I cambiamenti climatici", ["Il rumore", "L'inquinamento elettromagnetico", "La perdita di biodiversità"],
+  "Indicata dal 58,1 per cento.", "i cambiamenti climatici sono la preoccupazione ambientale più sentita")
+A("geo-243", "Ambiente", 4, "Quanti terremoti di magnitudo pari o superiore a 4,0 si sono registrati in Italia nel 2024?",
+  "15", ["150", "2", "45"],
+  "Erano 10 nel 2023.", "Sono stati 15 i terremoti di magnitudo superiore o uguale a 4,0")
+
+D("geo-244", "Europa", 3, "Secondo il mito greco, in quale animale si trasformò Zeus per rapire la principessa Europa?",
+  "In un toro bianco", ["In un'aquila", "In un cigno", "In un cavallo alato"],
+  "La condusse fino a Creta; il loro figlio Minosse ne divenne re.", W("Europa"), EUR, "si trasformò in uno splendido toro bianco")
+D("geo-245", "Europa", 3, "Quale istmo separa la parte continentale da quella peninsulare dell'Europa?",
+  "L'istmo ponto-baltico, da Odessa a Danzica", ["L'istmo di Corinto", "L'istmo di Suez", "L'istmo di Panama"],
+  "È una linea di circa 1200 km tra Mar Nero e Baltico.", W("Europa"), EUR, "separate dall'istmo ponto-baltico")
+D("geo-246", "Europa", 3, "Quale corrente oceanica rende il clima europeo più mite di altre aree alla stessa latitudine?",
+  "La corrente del Golfo", ["La corrente di Humboldt", "La corrente del Labrador", "La corrente delle Canarie"],
+  "È soprannominata «il riscaldamento centralizzato d'Europa».", W("Europa"), EUR, "a causa dell'influenza della corrente del Golfo")
+D("geo-247", "Europa", 3, "Quali isole europee rientrano tra le venti più grandi della Terra?",
+  "Gran Bretagna, Islanda e Irlanda", ["Sicilia, Sardegna e Corsica", "Creta, Cipro e Malta", "Islanda, Sicilia e Creta"],
+  "Sono rispettivamente la nona, la diciottesima e la ventesima.", W("Europa"), EUR, "la Gran Bretagna, l'Islanda e l'Irlanda")
+D("geo-248", "Europa", 3, "In Europa, il clima diventa più freddo anche spostandosi:",
+  "da ovest verso est, per la crescente distanza dal mare", ["da est verso ovest", "da nord verso sud", "solo in altitudine"],
+  "L'influenza oceanica si riduce verso l'interno del continente.", W("Europa"), EUR, "diventa più fredda anche andando da ovest verso est")
+D("geo-249", "Europa", 4, "Quali mari e stretti segnano il confine meridionale tra Europa e Asia?",
+  "Mar Nero, Bosforo, Mar di Marmara e Dardanelli", ["Mar Caspio e Mar d'Aral", "Mar Rosso e canale di Suez", "Mar Egeo e Mar Ionio"],
+  "Sono universalmente riconosciuti come confine.", W("Europa"), EUR, "Il mar Nero, lo stretto del Bosforo, il Mar di Marmara e lo stretto dei Dardanelli")
+D("geo-250", "Europa", 4, "Secondo la convenzione del confine sullo spartiacque del Caucaso, qual è la vetta più alta d'Europa?",
+  "Il Monte Elbrus", ["Il Monte Bianco", "Il Monte Rosa", "Il Cervino"],
+  "Con la convenzione di von Strahlenberg la vetta più alta è invece il Monte Bianco.", W("Europa"), EUR, "la vetta massima si identifica con il Monte Elbrus")
+D("geo-251", "Europa", 3, "Quale caratteristica rende l'Europa unica tra i continenti per il popolamento?",
+  "L'assenza di zone inabitabili come deserti o calotte glaciali", ["La presenza dei fiumi più lunghi", "Il clima tropicale", "L'assenza di montagne"],
+  "Per questo è il secondo continente per densità di popolazione.", W("Europa"), EUR, "l'assenza di zone inabitabili come deserti o calotte glaciali")
+D("geo-252", "Europa", 4, "Quali catene montuose si trovano tra Norvegia e Svezia, solcate a nord da profondi fiordi?",
+  "Le Alpi Scandinave", ["I Carpazi", "I Monti Grampiani", "I Sudeti"],
+  "Arrivano a 2452 m.", W("Europa"), EUR, "delle Alpi Scandinave, tra Norvegia e Svezia")
+D("geo-253", "Europa", 4, "Quale grande pianura dell'Europa orientale si estende verso est dal Bassopiano germanico?",
+  "Il Bassopiano sarmatico", ["La Puszta", "Il Tavoliere", "La pianura di Aquitania"],
+  "Nella grande pianura ungherese si estende invece la Puszta.", W("Europa"), EUR, "il vastissimo Bassopiano sarmatico")
+
+D("geo-254", "Continenti", 2, "Qual è il deserto più vasto del mondo, che si estende nel nord dell'Africa?",
+  "Il Sahara", ["Il Kalahari", "Il Gobi", "Il Namib"],
+  "Misura circa 9 milioni di km²; a sud sfuma nel Sahel.", W("Africa"), AFR, "si estende il Sahara, il più vasto deserto del mondo")
+D("geo-255", "Continenti", 2, "Qual è la montagna più alta dell'Africa?",
+  "Il Kilimangiaro, in Tanzania", ["Il Monte Kenya", "Il Ruwenzori", "L'Atlante"],
+  "È un vulcano spento con ghiacci perenni in cima.", W("Africa"), AFR, "Il punto più alto: Kilimangiaro, Tanzania")
+D("geo-256", "Continenti", 3, "Qual è lo Stato più grande dell'Africa per superficie?",
+  "L'Algeria", ["L'Egitto", "La Nigeria", "Il Sudan"],
+  "Il più piccolo sono le Seychelles; sulla terraferma il Gambia.", W("Africa"), AFR, "Lo Stato più grande del continente è l'Algeria")
+D("geo-257", "Continenti", 3, "Qual è l'unica grande isola dell'Africa, la quarta del mondo per estensione?",
+  "Il Madagascar", ["Zanzibar", "Sant'Elena", "Le Canarie"],
+  "Gli altri arcipelaghi africani sono formati da isole piccole.", W("Africa"), AFR, "L'unica isola di grandi dimensioni è il Madagascar")
+D("geo-258", "Continenti", 3, "Lungo quale fiume africano si trovano le celebri Cascate Vittoria?",
+  "Lo Zambesi", ["Il Nilo", "Il Congo", "Il Niger"],
+  "Lo Zambesi sfocia nell'Oceano Indiano.", W("Africa"), AFR, "Lo Zambesi è celebre anche per le Cascate Vittoria")
+D("geo-259", "Continenti", 4, "Dove si trova il punto più basso dell'Africa?",
+  "Nel lago Assal, a Gibuti", ["Nel Mar Morto", "Nella depressione di Qattara", "Nel lago Vittoria"],
+  "Si trova a circa 155 m sotto il livello del mare.", W("Africa"), AFR, "Il punto più basso: Lago Assal, Gibuti")
+D("geo-260", "Continenti", 4, "Qual è il punto più meridionale dell'Africa?",
+  "Capo Agulhas, in Sudafrica", ["Capo di Buona Speranza", "Capo Verde", "Ras Hafun"],
+  "È anche il punto africano più vicino all'Antartide.", W("Africa"), AFR, "Il punto più a Sud: Capo Agulhas, Sudafrica")
+D("geo-261", "Continenti", 3, "Quale stretto separa l'Asia dall'America settentrionale?",
+  "Lo stretto di Bering", ["Lo stretto di Malacca", "Lo stretto di Magellano", "Lo stretto di Hormuz"],
+  "È largo circa 92 km.", W("Asia"), ASI, "è separata dall'America settentrionale dallo stretto di Bering")
+D("geo-262", "Continenti", 3, "Quale massiccio montuoso asiatico è chiamato il «tetto del mondo»?",
+  "Il Pamir", ["L'Himalaya", "Il Caucaso", "Gli Urali"],
+  "Dal Pamir si diramano grandi catene verso est e sud.", W("Asia"), ASI, "si annodano nel Pamir, il \"tetto del mondo\"")
+D("geo-263", "Continenti", 4, "Qual è il più vasto arcipelago della Terra?",
+  "L'Arcipelago Malese", ["Le Filippine", "Il Giappone", "La Polinesia"],
+  "Fa parte della regione orientale dell'Asia.", W("Asia"), ASI, "l'Arcipelago Malese, il più vasto arcipelago della Terra")
+D("geo-264", "Continenti", 4, "Quale continente ha l'altitudine media più elevata (oltre 1000 m), escludendo l'Antartide coperta dai ghiacci?",
+  "L'Asia", ["L'Africa", "L'America", "L'Europa"],
+  "È anche il continente più vasto e più popolato.", W("Asia"), ASI, "L'Asia è il continente con la maggiore altitudine media")
+D("geo-265", "Continenti", 2, "Da quale esploratore prende il nome l'America?",
+  "Amerigo Vespucci", ["Cristoforo Colombo", "Giovanni Caboto", "Ferdinando Magellano"],
+  "Il cartografo Martin Waldseemüller usò il nome latinizzato Americus.", W("America"), AME, "L'America prende il nome dall'esploratore fiorentino Amerigo Vespucci")
+D("geo-266", "Continenti", 3, "Attraverso quale lingua di terra giunsero in America, dall'Asia, le prime popolazioni circa 13.000 anni fa?",
+  "La Beringia", ["L'istmo di Panama", "La Groenlandia", "Le Aleutine"],
+  "La Beringia univa allora i due continenti.", W("America"), AME, "attraverso la Beringia")
+D("geo-267", "Continenti", 4, "Che quota delle terre emerse costituisce l'America?",
+  "Circa il 23,4%", ["Circa il 5%", "Circa il 40%", "Circa il 60%"],
+  "È l'8,5% della superficie totale della Terra.", W("America"), AME, "il 23,4% delle terre emerse")
+D("geo-268", "Continenti", 4, "Chi propose nel 1831 la divisione dell'Oceania in Polinesia, Micronesia, Malesia e Melanesia?",
+  "Jules Dumont d'Urville", ["James Cook", "Abel Tasman", "Charles Darwin"],
+  "La propose alla Società geografica di Parigi.", W("Oceania"), OCN, "l'ammiraglio francese Jules Dumont d'Urville")
+D("geo-269", "Continenti", 3, "Quante isole, all'incirca, fanno parte dell'Oceania?",
+  "Circa 30.000", ["Circa 300", "Circa 3.000", "Circa 300.000"],
+  "Il nome deriva dal ruolo dell'oceano nell'unirle.", W("Oceania"), OCN, "le sue circa 30 000 isole")
+D("geo-270", "Continenti", 3, "Chi guidò la prima spedizione a raggiungere il polo sud geografico, il 14 dicembre 1911?",
+  "Roald Amundsen", ["Robert Falcon Scott", "Ernest Shackleton", "James Cook"],
+  "Circa un mese dopo arrivò anche la spedizione di Scott.", W("Antartide"), ANT, "una spedizione guidata dall'esploratore polare norvegese Roald Amundsen")
+D("geo-271", "Continenti", 3, "Qual è lo spessore medio della calotta glaciale antartica?",
+  "Circa 2.000 metri", ["Circa 200 metri", "Circa 20 metri", "Circa 10.000 metri"],
+  "Copre il 98% del continente.", W("Antartide"), ANT, "avente uno spessore medio di circa 2 000 metri")
+D("geo-272", "Continenti", 4, "A quale anno si fa risalire il primo avvistamento confermato del continente antartico?",
+  "Al 1820", ["Al 1492", "Al 1773", "Al 1911"],
+  "Si attribuisce alla spedizione russa di Bellingshausen e Lazarev.", W("Antartide"), ANT, "si fa risalire al 1820")
+D("geo-273", "Continenti", 4, "Quale navigatore attraversò per primo il Circolo polare antartico, nel 1773?",
+  "James Cook", ["Roald Amundsen", "Ferdinando Magellano", "Vasco da Gama"],
+  "Arrivò a circa 121 km dalla costa prima di dover invertire la rotta.", W("Antartide"), ANT, "le navi del capitano James Cook")
+
+D("geo-274", "Mediterraneo", 3, "Quale battaglia del 480 a.C. salvò la Grecia dall'occupazione persiana?",
+  "La battaglia di Salamina", ["La battaglia di Lepanto", "La battaglia del Mare Sardo", "La battaglia di Azio"],
+  "I Greci si opposero alle mire di Serse.", W("Mar Mediterraneo"), MED, "nel 480 a.C., li oppose alle mire di Serse nella battaglia di Salamina")
+D("geo-275", "Mediterraneo", 3, "Quali città sono le Repubbliche marinare più note?",
+  "Amalfi, Pisa, Genova e Venezia", ["Napoli, Palermo, Bari e Ancona", "Trieste, Livorno, Gaeta e Ragusa", "Roma, Ostia, Pisa e Genova"],
+  "Contrastarono l'espansione islamica nel Mediterraneo.", W("Mar Mediterraneo"), MED, "Amalfi, Pisa, Genova e Venezia le più note")
+D("geo-276", "Mediterraneo", 4, "Quale tratto di mare divide il Mediterraneo occidentale da quello orientale?",
+  "Il canale di Sicilia", ["Lo stretto di Messina", "Lo stretto di Otranto", "Le Bocche di Bonifacio"],
+  "L'occidentale ha ampie piane abissali; l'orientale è dominato dalla dorsale Mediterranea.", W("Mar Mediterraneo"), MED, "il Mediterraneo occidentale, delimitato dal canale di Sicilia")
+D("geo-277", "Mediterraneo", 4, "Quali sono i due bacini principali del Mediterraneo occidentale?",
+  "Il bacino algero-provenzale e il bacino tirrenico", ["Il bacino ionico e quello levantino", "Il bacino adriatico e quello egeo", "Il bacino del Mar Nero e quello di Marmara"],
+  "Il bacino tirrenico è la parte più profonda del Mediterraneo occidentale.", W("Mar Mediterraneo"), MED, "quello algero-provenzale e il bacino tirrenico")
+D("geo-278", "Oceani", 3, "Qual è la superficie dell'Oceano Pacifico secondo la convenzione italiana?",
+  "Circa 179 milioni di km²", ["Circa 74 milioni di km²", "Circa 106 milioni di km²", "Circa 14 milioni di km²"],
+  "Atlantico circa 106 milioni, Indiano circa 74 milioni di km².", W("Oceano"), OCE, "Oceano Pacifico, 179000000 km2")
+D("geo-279", "Oceani", 4, "Chi propose nel 1928 di considerare anche un Oceano Artico, portando gli oceani a quattro?",
+  "L'Organizzazione Idrografica Internazionale", ["La Società geografica italiana", "Le Nazioni Unite", "L'UNESCO"],
+  "La convenzione è seguita soprattutto nei paesi di lingua inglese.", W("Oceano"), OCE, "seguendo la proposta del 1928 dell'Organizzazione Idrografica Internazionale")
+D("geo-280", "Oceani", 3, "Come si chiamano i mari minori compresi all'interno degli oceani, come il Mediterraneo e il Mar Rosso?",
+  "Mari dipendenti", ["Mari chiusi", "Mari interni", "Bacini abissali"],
+  "Il Mar Glaciale Artico è considerato in Italia un mare dipendente dall'Atlantico.", W("Oceano"), OCE, "dette \"mari dipendenti\"")
+D("geo-281", "Oceani", 4, "Quando si affermò la tripartizione in Oceano Atlantico, Pacifico e Indiano?",
+  "Risale alle grandi scoperte, si diffuse nel Settecento e trionfò dall'Ottocento", ["Nell'antichità greca", "Solo nel Novecento", "Nel Medioevo"],
+  "Fu favorita dalla scolarizzazione di massa.", W("Oceano"), OCE, "La tripartizione in Oceano Atlantico, Oceano Pacifico e Oceano Indiano risale all'epoca delle grandi scoperte geografiche")
+
+D("geo-282", "Vulcani", 3, "Quale tipo di vulcano è l'Etna?",
+  "Uno stratovulcano sovrapposto a un vulcano a scudo", ["Un vulcano sottomarino", "Una caldera spenta", "Un vulcano di fango"],
+  "È il più alto vulcano attivo della placca euroasiatica.", W("Etna"), ETN, "Il vulcano è classificato tra quelli definiti a scudo a cui è sovrapposto uno stratovulcano")
+D("geo-283", "Vulcani", 4, "Quali fiumi delimitano la regione etnea?",
+  "L'Alcantara e il Simeto", ["Il Platani e il Salso", "Il Belice e l'Imera", "Il Tevere e l'Aniene"],
+  "La regione etnea ha una superficie di 1570 km².", W("Etna"), ETN, "delimitata dal corso dell'Alcantara e da quello del Simeto")
+D("geo-284", "Vulcani", 4, "Quale meridiano attraversa l'Etna, prendendone il nome?",
+  "Il 15° meridiano est", ["Il meridiano di Greenwich", "Il 12° meridiano est", "Il 10° meridiano est"],
+  "È il meridiano di riferimento del fuso orario dell'Europa centrale.", W("Etna"), ETN, "è attraversato dal 15o meridiano est")
+D("geo-285", "Vulcani", 4, "Come si chiama la grande depressione sul versante est dell'Etna?",
+  "La Valle del Bove", ["La Bocca Nuova", "La Voragine", "La Grotta del Gelo"],
+  "Voragine e Bocca Nuova sono crateri sommitali.", W("Etna"), ETN, "Il versante est è dominato dalla Valle del Bove")
+D("geo-286", "Vulcani", 4, "Cosa sono le «sciare» sull'Etna?",
+  "Terreni di scorie vulcaniche incoerenti", ["Boschi di castagno", "Laghi craterici", "Sorgenti termali"],
+  "Predominano sul versante occidentale e nord.", W("Etna"), ETN, "termine siciliano locale che indica terreno di scorie vulcaniche incoerenti")
+D("geo-287", "Pianure", 3, "Quale superficie ha all'incirca la Pianura Padana?",
+  "Circa 47.800 km²", ["Circa 4.800 km²", "Circa 150.000 km²", "Circa 12.000 km²"],
+  "È la più grande pianura dell'Europa meridionale.", W("Pianura Padana"), PP, "Con una superficie di circa 47820 km2")
+D("geo-288", "Pianure", 3, "Cosa sono i fontanili o risorgive della Pianura Padana?",
+  "Punti in cui l'acqua della falda riaffiora in superficie", ["Pozzi artificiali per l'irrigazione", "Laghi di origine glaciale", "Canali di bonifica"],
+  "Segnano il passaggio tra alta e bassa pianura.", W("Pianura Padana"), PP, "dando origine ai fontanili o risorgive")
+D("geo-289", "Pianure", 4, "Come si chiamano le coltivazioni a prato rese possibili dalle acque a temperatura costante delle risorgive?",
+  "Marcite", ["Risaie", "Terrazzamenti", "Polder"],
+  "Le acque delle risorgive hanno una temperatura tra 9 e 12 °C.", W("Pianura Padana"), PP, "particolari coltivazioni a prato chiamate marcite")
+D("geo-290", "Pianure", 3, "Come è detta anche l'alta pianura padana, dal suolo permeabile di sabbie e ghiaie?",
+  "Pianura asciutta", ["Pianura irrigua", "Bassopiano", "Pianura alluvionale bassa"],
+  "La bassa pianura è detta invece pianura irrigua.", W("Pianura Padana"), PP, "L'alta pianura, detta anche pianura asciutta")
+D("geo-291", "Mari e stretti", 3, "Tra quali comuni si misura la larghezza minima dello stretto di Messina?",
+  "Villa San Giovanni e Messina", ["Reggio Calabria e Taormina", "Scilla e Milazzo", "Messina e Tropea"],
+  "La distanza è di circa 3,14 km.", W("Stretto di Messina"), STR, "tra i comuni di Villa San Giovanni e di Messina")
+D("geo-292", "Mari e stretti", 4, "Cosa sono i «piloni dello Stretto»?",
+  "Le strutture di sostegno del vecchio elettrodotto aereo che sovrappassava lo stretto", ["I piloni del ponte sullo Stretto", "Due fari medievali", "Antiche torri di avvistamento"],
+  "L'elettrodotto del 1957 fu sostituito nel 1992 da cavi sottomarini.", W("Stretto di Messina"), STR, "note come piloni dello Stretto")
+D("geo-293", "Mari e stretti", 4, "Con quale denominazione geopolitica medievale era noto lo stretto di Messina?",
+  "Faro di Messina", ["Fretum Gaditanum", "Bocca di Scilla", "Canale di Calabria"],
+  "In epoca romana era il Fretum Siculum.", W("Stretto di Messina"), STR, "come Faro di Messina")
+
+D("geo-294", "Isole", 3, "A quale arcipelago appartengono Ponza e Ventotene?",
+  "Alle Isole Ponziane (o Pontine)", ["Alle Isole Eolie", "All'Arcipelago Toscano", "Alle Isole Tremiti"],
+  "Sono nel Mar Tirreno, al largo del Lazio.", W("Isole dell'Italia"), ISO, "Isole Ponziane o Isole Pontine Isola di Ponza Isola di Ventotene")
+D("geo-295", "Isole", 2, "A quale arcipelago appartengono l'Elba, il Giglio e Montecristo?",
+  "All'Arcipelago Toscano", ["Alle Isole Ponziane", "All'Arcipelago di La Maddalena", "Alle Isole Egadi"],
+  "Comprende anche Gorgona, Capraia, Pianosa e Giannutri.", W("Isole dell'Italia"), ISO, "Arcipelago Toscano Isola di Gorgona")
+D("geo-296", "Isole", 3, "A quale arcipelago appartengono Lampedusa e Linosa?",
+  "Alle Isole Pelagie", ["Alle Isole Egadi", "Alle Isole Eolie", "Alle Isole Maltesi"],
+  "Si trovano nel canale di Sicilia.", W("Isole dell'Italia"), ISO, "Isole Pelagie Isola di Lampedusa")
+D("geo-297", "Isole", 3, "In quale arcipelago si trova l'isola di Caprera?",
+  "Nell'Arcipelago di La Maddalena", ["Nell'Arcipelago Toscano", "Nelle Isole Eolie", "Nelle Isole Flegree"],
+  "Si trova nel Mar Tirreno, a nord-est della Sardegna.", W("Isole dell'Italia"), ISO, "Arcipelago di La Maddalena La Maddalena Caprera")
+D("geo-298", "Isole", 3, "Quale isola è il centro storico di Siracusa?",
+  "Ortigia", ["Mozia", "Ustica", "Pantelleria"],
+  "Si trova nel Mar Ionio.", W("Isole dell'Italia"), ISO, "Isola di Ortigia (centro storico di Siracusa)")
+D("geo-299", "Isole", 3, "Quali isole fanno parte delle Isole Flegree, nel golfo di Napoli?",
+  "Ischia, Procida e Vivara", ["Capri e Li Galli", "Ponza e Palmarola", "Elba e Pianosa"],
+  "Capri fa parte dell'Arcipelago Campano ma non delle Flegree.", W("Isole dell'Italia"), ISO, "Isole Flegree Isola d'Ischia")
+D("geo-300", "Isole", 4, "Quale superficie complessiva hanno le isole italiane?",
+  "Oltre 50.000 km²", ["Circa 5.000 km²", "Oltre 150.000 km²", "Circa 20.000 km²"],
+  "Sicilia e Sardegna da sole superano i 49.000 km².", W("Isole dell'Italia"), ISO, "la loro superficie complessiva supera i 50.000 km2")
+D("geo-301", "Unione europea", 4, "Con quante entità indipendenti confina l'Unione europea?",
+  "21", ["7", "40", "12"],
+  "Le frontiere esterne misurano 14.647 km; la costa dell'UE è la seconda al mondo per lunghezza dopo il Canada.", W("Unione europea"), UE, "L'Unione europea confina con 21 entità indipendenti")

@@ -3415,5 +3415,1705 @@
     "spiegazione": "Sostituì dodici valute nazionali.",
     "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
     "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-202",
+    "argomento": "Unione europea",
+    "livello": 2,
+    "testo": "Quali sei Stati fondarono la Comunità economica europea con i Trattati di Roma del 1957?",
+    "opzioni": [
+      "Germania, Francia, Danimarca, Irlanda, Italia e Belgio",
+      "Belgio, Francia, Germania occidentale, Italia, Lussemburgo e Paesi Bassi",
+      "Italia, Francia, Austria, Svizzera, Belgio e Olanda",
+      "Francia, Germania, Italia, Spagna, Regno Unito e Belgio"
+    ],
+    "corretta": 1,
+    "spiegazione": "Gli stessi sei Stati avevano già creato la CECA nel 1951.",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-203",
+    "argomento": "Unione europea",
+    "livello": 3,
+    "testo": "Quale comunità europea fu istituita insieme alla CEE con i Trattati di Roma?",
+    "opzioni": [
+      "Il Consiglio d'Europa",
+      "La CECA",
+      "L'Euratom (Comunità europea dell'energia atomica)",
+      "L'EFTA"
+    ],
+    "corretta": 2,
+    "spiegazione": "Entrambi i trattati sono entrati in vigore nel 1958.",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-204",
+    "argomento": "Unione europea",
+    "livello": 3,
+    "testo": "In che anno sei nazioni crearono la Comunità europea del carbone e dell'acciaio (CECA)?",
+    "opzioni": [
+      "Nel 1957",
+      "Nel 1946",
+      "Nel 1965",
+      "Nel 1951"
+    ],
+    "corretta": 3,
+    "spiegazione": "Era considerata «un primo passo nella federazione dell'Europa».",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-205",
+    "argomento": "Unione europea",
+    "livello": 2,
+    "testo": "Quale documento sull'unità europea fu redatto nel 1941 da Altiero Spinelli, Ernesto Rossi ed Eugenio Colorni?",
+    "opzioni": [
+      "Il Manifesto di Ventotene",
+      "Il Trattato di Parigi",
+      "La Dichiarazione Schuman",
+      "Il Manifesto di Bruxelles"
+    ],
+    "corretta": 0,
+    "spiegazione": "Fu scritto al confino sull'isola di Ventotene e pubblicato nel 1944.",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-206",
+    "argomento": "Unione europea",
+    "livello": 3,
+    "testo": "Quale statista italiano è tra i padri fondatori dell'Unione europea?",
+    "opzioni": [
+      "Aldo Moro",
+      "Alcide De Gasperi",
+      "Enrico Mattei",
+      "Giovanni Giolitti"
+    ],
+    "corretta": 1,
+    "spiegazione": "Con lui sono ricordati Jean Monnet e Robert Schuman (Francia) e Paul-Henri Spaak (Belgio).",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-207",
+    "argomento": "Unione europea",
+    "livello": 3,
+    "testo": "Quali Stati entrarono nelle Comunità europee nel 1973?",
+    "opzioni": [
+      "Spagna, Portogallo e Grecia",
+      "Austria, Finlandia e Svezia",
+      "Danimarca, Irlanda e Regno Unito",
+      "Norvegia, Islanda e Svizzera"
+    ],
+    "corretta": 2,
+    "spiegazione": "La Norvegia negoziò l'ingresso ma gli elettori lo respinsero con un referendum.",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-208",
+    "argomento": "Unione europea",
+    "livello": 4,
+    "testo": "Quale territorio lasciò le Comunità europee nel 1985 dopo un referendum, per una disputa sui diritti di pesca?",
+    "opzioni": [
+      "L'Islanda",
+      "Le Isole Far Oer",
+      "La Norvegia",
+      "La Groenlandia"
+    ],
+    "corretta": 3,
+    "spiegazione": "La Groenlandia è una provincia autonoma della Danimarca.",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-209",
+    "argomento": "Unione europea",
+    "livello": 3,
+    "testo": "In che anno si tennero le prime elezioni dirette del Parlamento europeo a suffragio universale?",
+    "opzioni": [
+      "Nel 1979",
+      "Nel 1957",
+      "Nel 1969",
+      "Nel 1993"
+    ],
+    "corretta": 0,
+    "spiegazione": "Prima i membri erano designati dai parlamenti nazionali.",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-210",
+    "argomento": "Unione europea",
+    "livello": 3,
+    "testo": "Quando entrarono nella Comunità europea Spagna e Portogallo?",
+    "opzioni": [
+      "Nel 1981",
+      "Nel 1986",
+      "Nel 1973",
+      "Nel 1995"
+    ],
+    "corretta": 1,
+    "spiegazione": "La Grecia era entrata nel 1981.",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-211",
+    "argomento": "Unione europea",
+    "livello": 3,
+    "testo": "Quando entrò in vigore il Trattato di Maastricht, che istituì formalmente l'Unione europea?",
+    "opzioni": [
+      "Il 25 marzo 1957",
+      "Il 1° dicembre 2009",
+      "Il 1° novembre 1993",
+      "Il 1° gennaio 2002"
+    ],
+    "corretta": 2,
+    "spiegazione": "I suoi principali artefici furono Helmut Kohl e François Mitterrand.",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-212",
+    "argomento": "Unione europea",
+    "livello": 4,
+    "testo": "Come si chiamano i criteri che un Paese deve soddisfare per aderire all'UE, concordati nel 1993?",
+    "opzioni": [
+      "Criteri di Maastricht",
+      "Criteri di Lisbona",
+      "Parametri di Schengen",
+      "Criteri di Copenaghen"
+    ],
+    "corretta": 3,
+    "spiegazione": "Richiedono democrazia stabile, economia di mercato funzionante e accettazione degli obblighi di adesione.",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-213",
+    "argomento": "Unione europea",
+    "livello": 3,
+    "testo": "Quale fu il più grande allargamento dell'UE, con l'ingresso di dieci Paesi tra cui Polonia e Ungheria?",
+    "opzioni": [
+      "Quello del 2004",
+      "Quello del 1995",
+      "Quello del 2013",
+      "Quello del 2007"
+    ],
+    "corretta": 0,
+    "spiegazione": "Entrarono Cipro, Estonia, Lettonia, Lituania, Malta, Polonia, Repubblica Ceca, Slovacchia, Slovenia e Ungheria.",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-214",
+    "argomento": "Unione europea",
+    "livello": 4,
+    "testo": "Quali Paesi bocciarono con referendum la Costituzione europea nel 2005?",
+    "opzioni": [
+      "Italia e Spagna",
+      "Francia e Paesi Bassi",
+      "Regno Unito e Svezia",
+      "Irlanda e Danimarca"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il trattato costituzionale non entrò in vigore; molte novità furono riprese dal Trattato di Lisbona.",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-215",
+    "argomento": "Unione europea",
+    "livello": 4,
+    "testo": "Quando entrò in vigore il Trattato di Lisbona?",
+    "opzioni": [
+      "Il 13 dicembre 2007",
+      "Il 1° gennaio 2002",
+      "Il 1° dicembre 2009",
+      "Il 1° novembre 1993"
+    ],
+    "corretta": 2,
+    "spiegazione": "Fu firmato il 13 dicembre 2007; l'Irlanda lo approvò con un secondo referendum nel 2009.",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-216",
+    "argomento": "Unione europea",
+    "livello": 3,
+    "testo": "Quale articolo del Trattato di Lisbona disciplina il recesso di uno Stato dall'Unione?",
+    "opzioni": [
+      "L'articolo 1",
+      "L'articolo 7",
+      "L'articolo 352",
+      "L'articolo 50"
+    ],
+    "corretta": 3,
+    "spiegazione": "È stato invocato solo dal Regno Unito (Brexit).",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-217",
+    "argomento": "Unione europea",
+    "livello": 3,
+    "testo": "Quale Stato è entrato nell'UE nel 2013, portandola a 28 membri?",
+    "opzioni": [
+      "La Croazia",
+      "La Serbia",
+      "La Slovenia",
+      "La Romania"
+    ],
+    "corretta": 0,
+    "spiegazione": "La Croazia ha poi adottato l'euro nel 2023.",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-218",
+    "argomento": "Unione europea",
+    "livello": 2,
+    "testo": "In che anno Romania e Bulgaria sono entrate nell'Unione europea?",
+    "opzioni": [
+      "Nel 2004",
+      "Nel 2007",
+      "Nel 2013",
+      "Nel 1995"
+    ],
+    "corretta": 1,
+    "spiegazione": "Nello stesso anno la Slovenia adottò l'euro.",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-219",
+    "argomento": "Unione europea",
+    "livello": 4,
+    "testo": "Dove si trovano le zone più basse dell'Unione europea, a 7 metri sotto il livello del mare?",
+    "opzioni": [
+      "Nel delta del Po",
+      "Nella Camargue, in Francia",
+      "Nel Lammefjorden (Danimarca) e nello Zuidplaspolder (Paesi Bassi)",
+      "Nella laguna di Venezia"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il punto più alto dell'Unione è il Monte Bianco.",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-220",
+    "argomento": "Unione europea",
+    "livello": 4,
+    "testo": "Come sono classificati territori come le Canarie, le Azzorre e la Guyana francese, che fanno parte dell'UE pur essendo fuori dall'Europa?",
+    "opzioni": [
+      "Territori associati",
+      "Paesi e territori d'oltremare",
+      "Protettorati europei",
+      "Regioni ultraperiferiche"
+    ],
+    "corretta": 3,
+    "spiegazione": "Groenlandia e Nuova Caledonia sono invece paesi e territori d'oltremare, non parte dell'UE.",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-221",
+    "argomento": "Unione europea",
+    "livello": 4,
+    "testo": "Quale isola dell'UE è la più grande per superficie?",
+    "opzioni": [
+      "L'Irlanda",
+      "La Sardegna",
+      "Cipro",
+      "La Sicilia"
+    ],
+    "corretta": 0,
+    "spiegazione": "Seguono Sicilia e Sardegna.",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-222",
+    "argomento": "Regioni",
+    "livello": 2,
+    "testo": "Qual è il capoluogo della regione Friuli-Venezia Giulia?",
+    "opzioni": [
+      "Pordenone",
+      "Trieste",
+      "Udine",
+      "Gorizia"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il Friuli-Venezia Giulia è una regione a statuto speciale dal 1963.",
+    "fonte": "Wikipedia, «Regioni d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-223",
+    "argomento": "Regioni",
+    "livello": 1,
+    "testo": "Qual è il capoluogo della Puglia?",
+    "opzioni": [
+      "Foggia",
+      "Taranto",
+      "Bari",
+      "Lecce"
+    ],
+    "corretta": 2,
+    "spiegazione": "La Puglia comprende anche la provincia di Barletta-Andria-Trani.",
+    "fonte": "Wikipedia, «Regioni d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-224",
+    "argomento": "Regioni",
+    "livello": 1,
+    "testo": "Qual è il capoluogo dell'Umbria?",
+    "opzioni": [
+      "Spoleto",
+      "Assisi",
+      "Terni",
+      "Perugia"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'Umbria ha solo due province: Perugia e Terni.",
+    "fonte": "Wikipedia, «Regioni d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-225",
+    "argomento": "Regioni",
+    "livello": 1,
+    "testo": "Qual è il capoluogo della Liguria?",
+    "opzioni": [
+      "Genova",
+      "Savona",
+      "Imperia",
+      "La Spezia"
+    ],
+    "corretta": 0,
+    "spiegazione": "Le province liguri sono Genova, Imperia, La Spezia e Savona.",
+    "fonte": "Wikipedia, «Regioni d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-226",
+    "argomento": "Regioni",
+    "livello": 3,
+    "testo": "Qual è la regione italiana più estesa per superficie?",
+    "opzioni": [
+      "La Sardegna",
+      "La Sicilia",
+      "La Lombardia",
+      "Il Piemonte"
+    ],
+    "corretta": 1,
+    "spiegazione": "La Sicilia (circa 25.800 km²) supera di poco il Piemonte (circa 25.400 km²).",
+    "fonte": "Wikipedia, «Regioni d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-227",
+    "argomento": "Regioni",
+    "livello": 2,
+    "testo": "Qual è la regione italiana più piccola per superficie?",
+    "opzioni": [
+      "L'Umbria",
+      "La Liguria",
+      "La Valle d'Aosta",
+      "Il Molise"
+    ],
+    "corretta": 2,
+    "spiegazione": "Ha circa 3.260 km² ed è anche la meno popolosa.",
+    "fonte": "Wikipedia, «Regioni d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-228",
+    "argomento": "Regioni",
+    "livello": 4,
+    "testo": "Come è attribuita la presidenza della regione Trentino-Alto Adige?",
+    "opzioni": [
+      "Per nomina del Governo",
+      "Per elezione diretta dei cittadini",
+      "Al sindaco di Trento",
+      "A rotazione tra i presidenti delle Province autonome di Trento e di Bolzano"
+    ],
+    "corretta": 3,
+    "spiegazione": "Nelle altre regioni il presidente è eletto insieme al consiglio, tranne in Valle d'Aosta.",
+    "fonte": "Wikipedia, «Regioni d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-229",
+    "argomento": "Regioni",
+    "livello": 4,
+    "testo": "Quale legge disciplina dal 1995 le elezioni regionali, salvo le leggi elettorali proprie delle regioni?",
+    "opzioni": [
+      "La legge Tatarella",
+      "La legge Delrio",
+      "La legge Ricasoli",
+      "La legge Bassanini"
+    ],
+    "corretta": 0,
+    "spiegazione": "Le riforme costituzionali del 1999 e del 2001 consentono alle regioni di darsi una propria legge elettorale.",
+    "fonte": "Wikipedia, «Regioni d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-230",
+    "argomento": "Regioni",
+    "livello": 4,
+    "testo": "Chi raggruppò nel 1870 le province in «compartimenti» a fini statistici, precursori delle regioni?",
+    "opzioni": [
+      "Bettino Ricasoli",
+      "Pietro Maestri",
+      "Francesco Crispi",
+      "Camillo Cavour"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il termine «regione» comparve al posto di «compartimento» nell'Annuario statistico del 1912.",
+    "fonte": "Wikipedia, «Regioni d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-231",
+    "argomento": "Regioni",
+    "livello": 3,
+    "testo": "Ogni quanti anni si tengono di norma le elezioni regionali?",
+    "opzioni": [
+      "Ogni quattro anni",
+      "Ogni sei anni",
+      "Ogni cinque anni",
+      "Ogni tre anni"
+    ],
+    "corretta": 2,
+    "spiegazione": "Rinnovano il consiglio regionale e il presidente della giunta.",
+    "fonte": "Wikipedia, «Regioni d'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-232",
+    "argomento": "Ambiente",
+    "livello": 3,
+    "testo": "Quale quota della produzione lorda di energia elettrica italiana veniva da fonti rinnovabili nel 2023 (ISTAT)?",
+    "opzioni": [
+      "Il 20 per cento",
+      "Il 10 per cento",
+      "Il 70 per cento",
+      "Il 44 per cento"
+    ],
+    "corretta": 3,
+    "spiegazione": "Era il 35,4 per cento nel 2022, anno di forte calo dell'idroelettrico.",
+    "fonte": "ISTAT, Annuario statistico italiano 2025 (CC BY 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-233",
+    "argomento": "Ambiente",
+    "livello": 3,
+    "testo": "Quale fonte rinnovabile ha dato il contributo maggiore alla produzione elettrica italiana nel 2023?",
+    "opzioni": [
+      "L'idroelettrica",
+      "Le bioenergie",
+      "L'eolica",
+      "La geotermica"
+    ],
+    "corretta": 0,
+    "spiegazione": "Idroelettrico 15,3%, fotovoltaico 11,6%, eolico 8,9%, bioenergie 6,1%, geotermico 2,2%.",
+    "fonte": "ISTAT, Annuario statistico italiano 2025 (CC BY 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-234",
+    "argomento": "Ambiente",
+    "livello": 3,
+    "testo": "In quale regione italiana si produce energia geotermica?",
+    "opzioni": [
+      "Solo in Trentino-Alto Adige",
+      "Solo in Toscana",
+      "In Sicilia e Campania",
+      "In tutte le regioni vulcaniche"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'idroelettrico prevale nelle regioni montuose, l'eolico nel Mezzogiorno, il fotovoltaico al Centro.",
+    "fonte": "ISTAT, Annuario statistico italiano 2025 (CC BY 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-235",
+    "argomento": "Ambiente",
+    "livello": 4,
+    "testo": "Quale regione aveva nel 2023 la quota più alta di energia elettrica da fonti rinnovabili?",
+    "opzioni": [
+      "La Lombardia",
+      "La Liguria",
+      "La Valle d'Aosta (98,4%)",
+      "L'Emilia-Romagna"
+    ],
+    "corretta": 2,
+    "spiegazione": "Seguono Basilicata, Trentino-Alto Adige e Marche; ultime Emilia-Romagna e Liguria.",
+    "fonte": "ISTAT, Annuario statistico italiano 2025 (CC BY 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-236",
+    "argomento": "Ambiente",
+    "livello": 4,
+    "testo": "Qual era la dipendenza energetica dell'Italia dall'estero nel 2023?",
+    "opzioni": [
+      "Il 50 per cento",
+      "Il 30 per cento",
+      "Il 95 per cento",
+      "Il 74,8 per cento"
+    ],
+    "corretta": 3,
+    "spiegazione": "La media dell'UE era il 58,3 per cento.",
+    "fonte": "ISTAT, Annuario statistico italiano 2025 (CC BY 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-237",
+    "argomento": "Ambiente",
+    "livello": 3,
+    "testo": "Qual era la percentuale di raccolta differenziata dei rifiuti urbani in Italia nel 2023?",
+    "opzioni": [
+      "Il 66,6 per cento",
+      "Il 45 per cento",
+      "L'85 per cento",
+      "Il 30 per cento"
+    ],
+    "corretta": 0,
+    "spiegazione": "Supera il target UE del 65 per cento.",
+    "fonte": "ISTAT, Annuario statistico italiano 2025 (CC BY 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-238",
+    "argomento": "Ambiente",
+    "livello": 4,
+    "testo": "Quanti rifiuti urbani pro capite sono stati prodotti in Italia nel 2023?",
+    "opzioni": [
+      "Circa 1.500 kg",
+      "Circa 496 kg per abitante",
+      "Circa 900 kg",
+      "Circa 200 kg"
+    ],
+    "corretta": 1,
+    "spiegazione": "In tutto 29,3 milioni di tonnellate.",
+    "fonte": "ISTAT, Annuario statistico italiano 2025 (CC BY 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-239",
+    "argomento": "Ambiente",
+    "livello": 3,
+    "testo": "Quale quota del territorio terrestre italiano era coperta da aree tutelate nel 2023?",
+    "opzioni": [
+      "Il 40 per cento",
+      "Il 60 per cento",
+      "Il 21,7 per cento",
+      "Il 5 per cento"
+    ],
+    "corretta": 2,
+    "spiegazione": "Le aree marine tutelate erano l'11,6 per cento.",
+    "fonte": "ISTAT, Annuario statistico italiano 2025 (CC BY 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-240",
+    "argomento": "Ambiente",
+    "livello": 4,
+    "testo": "Qual è stata la temperatura media annua nei capoluoghi di regione nel 2023, tra gli anni più caldi dal 1971?",
+    "opzioni": [
+      "14,0 °C",
+      "20,4 °C",
+      "12,1 °C",
+      "16,6 °C"
+    ],
+    "corretta": 3,
+    "spiegazione": "È di 1,7 °C sopra il valore climatico 1981-2010.",
+    "fonte": "ISTAT, Annuario statistico italiano 2025 (CC BY 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-241",
+    "argomento": "Ambiente",
+    "livello": 3,
+    "testo": "Quale quota delle famiglie aveva un impianto di condizionamento nel 2024?",
+    "opzioni": [
+      "Il 56 per cento",
+      "L'85 per cento",
+      "Il 15 per cento",
+      "Il 30 per cento"
+    ],
+    "corretta": 0,
+    "spiegazione": "Era il 29,4 per cento nel 2013: la presenza è quasi raddoppiata.",
+    "fonte": "ISTAT, Annuario statistico italiano 2025 (CC BY 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-242",
+    "argomento": "Ambiente",
+    "livello": 3,
+    "testo": "Qual è stata nel 2024 la preoccupazione ambientale più sentita dagli italiani?",
+    "opzioni": [
+      "Il rumore",
+      "I cambiamenti climatici",
+      "La perdita di biodiversità",
+      "L'inquinamento elettromagnetico"
+    ],
+    "corretta": 1,
+    "spiegazione": "Indicata dal 58,1 per cento.",
+    "fonte": "ISTAT, Annuario statistico italiano 2025 (CC BY 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-243",
+    "argomento": "Ambiente",
+    "livello": 4,
+    "testo": "Quanti terremoti di magnitudo pari o superiore a 4,0 si sono registrati in Italia nel 2024?",
+    "opzioni": [
+      "150",
+      "2",
+      "15",
+      "45"
+    ],
+    "corretta": 2,
+    "spiegazione": "Erano 10 nel 2023.",
+    "fonte": "ISTAT, Annuario statistico italiano 2025 (CC BY 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-244",
+    "argomento": "Europa",
+    "livello": 3,
+    "testo": "Secondo il mito greco, in quale animale si trasformò Zeus per rapire la principessa Europa?",
+    "opzioni": [
+      "In un'aquila",
+      "In un cavallo alato",
+      "In un cigno",
+      "In un toro bianco"
+    ],
+    "corretta": 3,
+    "spiegazione": "La condusse fino a Creta; il loro figlio Minosse ne divenne re.",
+    "fonte": "Wikipedia, «Europa» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-245",
+    "argomento": "Europa",
+    "livello": 3,
+    "testo": "Quale istmo separa la parte continentale da quella peninsulare dell'Europa?",
+    "opzioni": [
+      "L'istmo ponto-baltico, da Odessa a Danzica",
+      "L'istmo di Panama",
+      "L'istmo di Suez",
+      "L'istmo di Corinto"
+    ],
+    "corretta": 0,
+    "spiegazione": "È una linea di circa 1200 km tra Mar Nero e Baltico.",
+    "fonte": "Wikipedia, «Europa» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-246",
+    "argomento": "Europa",
+    "livello": 3,
+    "testo": "Quale corrente oceanica rende il clima europeo più mite di altre aree alla stessa latitudine?",
+    "opzioni": [
+      "La corrente del Labrador",
+      "La corrente del Golfo",
+      "La corrente delle Canarie",
+      "La corrente di Humboldt"
+    ],
+    "corretta": 1,
+    "spiegazione": "È soprannominata «il riscaldamento centralizzato d'Europa».",
+    "fonte": "Wikipedia, «Europa» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-247",
+    "argomento": "Europa",
+    "livello": 3,
+    "testo": "Quali isole europee rientrano tra le venti più grandi della Terra?",
+    "opzioni": [
+      "Creta, Cipro e Malta",
+      "Sicilia, Sardegna e Corsica",
+      "Gran Bretagna, Islanda e Irlanda",
+      "Islanda, Sicilia e Creta"
+    ],
+    "corretta": 2,
+    "spiegazione": "Sono rispettivamente la nona, la diciottesima e la ventesima.",
+    "fonte": "Wikipedia, «Europa» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-248",
+    "argomento": "Europa",
+    "livello": 3,
+    "testo": "In Europa, il clima diventa più freddo anche spostandosi:",
+    "opzioni": [
+      "da nord verso sud",
+      "da est verso ovest",
+      "solo in altitudine",
+      "da ovest verso est, per la crescente distanza dal mare"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'influenza oceanica si riduce verso l'interno del continente.",
+    "fonte": "Wikipedia, «Europa» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-249",
+    "argomento": "Europa",
+    "livello": 4,
+    "testo": "Quali mari e stretti segnano il confine meridionale tra Europa e Asia?",
+    "opzioni": [
+      "Mar Nero, Bosforo, Mar di Marmara e Dardanelli",
+      "Mar Caspio e Mar d'Aral",
+      "Mar Rosso e canale di Suez",
+      "Mar Egeo e Mar Ionio"
+    ],
+    "corretta": 0,
+    "spiegazione": "Sono universalmente riconosciuti come confine.",
+    "fonte": "Wikipedia, «Europa» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-250",
+    "argomento": "Europa",
+    "livello": 4,
+    "testo": "Secondo la convenzione del confine sullo spartiacque del Caucaso, qual è la vetta più alta d'Europa?",
+    "opzioni": [
+      "Il Monte Bianco",
+      "Il Monte Elbrus",
+      "Il Monte Rosa",
+      "Il Cervino"
+    ],
+    "corretta": 1,
+    "spiegazione": "Con la convenzione di von Strahlenberg la vetta più alta è invece il Monte Bianco.",
+    "fonte": "Wikipedia, «Europa» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-251",
+    "argomento": "Europa",
+    "livello": 3,
+    "testo": "Quale caratteristica rende l'Europa unica tra i continenti per il popolamento?",
+    "opzioni": [
+      "L'assenza di montagne",
+      "La presenza dei fiumi più lunghi",
+      "L'assenza di zone inabitabili come deserti o calotte glaciali",
+      "Il clima tropicale"
+    ],
+    "corretta": 2,
+    "spiegazione": "Per questo è il secondo continente per densità di popolazione.",
+    "fonte": "Wikipedia, «Europa» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-252",
+    "argomento": "Europa",
+    "livello": 4,
+    "testo": "Quali catene montuose si trovano tra Norvegia e Svezia, solcate a nord da profondi fiordi?",
+    "opzioni": [
+      "I Carpazi",
+      "I Monti Grampiani",
+      "I Sudeti",
+      "Le Alpi Scandinave"
+    ],
+    "corretta": 3,
+    "spiegazione": "Arrivano a 2452 m.",
+    "fonte": "Wikipedia, «Europa» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-253",
+    "argomento": "Europa",
+    "livello": 4,
+    "testo": "Quale grande pianura dell'Europa orientale si estende verso est dal Bassopiano germanico?",
+    "opzioni": [
+      "Il Bassopiano sarmatico",
+      "La Puszta",
+      "Il Tavoliere",
+      "La pianura di Aquitania"
+    ],
+    "corretta": 0,
+    "spiegazione": "Nella grande pianura ungherese si estende invece la Puszta.",
+    "fonte": "Wikipedia, «Europa» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-254",
+    "argomento": "Continenti",
+    "livello": 2,
+    "testo": "Qual è il deserto più vasto del mondo, che si estende nel nord dell'Africa?",
+    "opzioni": [
+      "Il Kalahari",
+      "Il Sahara",
+      "Il Gobi",
+      "Il Namib"
+    ],
+    "corretta": 1,
+    "spiegazione": "Misura circa 9 milioni di km²; a sud sfuma nel Sahel.",
+    "fonte": "Wikipedia, «Africa» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-255",
+    "argomento": "Continenti",
+    "livello": 2,
+    "testo": "Qual è la montagna più alta dell'Africa?",
+    "opzioni": [
+      "Il Ruwenzori",
+      "Il Monte Kenya",
+      "Il Kilimangiaro, in Tanzania",
+      "L'Atlante"
+    ],
+    "corretta": 2,
+    "spiegazione": "È un vulcano spento con ghiacci perenni in cima.",
+    "fonte": "Wikipedia, «Africa» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-256",
+    "argomento": "Continenti",
+    "livello": 3,
+    "testo": "Qual è lo Stato più grande dell'Africa per superficie?",
+    "opzioni": [
+      "Il Sudan",
+      "L'Egitto",
+      "La Nigeria",
+      "L'Algeria"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il più piccolo sono le Seychelles; sulla terraferma il Gambia.",
+    "fonte": "Wikipedia, «Africa» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-257",
+    "argomento": "Continenti",
+    "livello": 3,
+    "testo": "Qual è l'unica grande isola dell'Africa, la quarta del mondo per estensione?",
+    "opzioni": [
+      "Il Madagascar",
+      "Le Canarie",
+      "Sant'Elena",
+      "Zanzibar"
+    ],
+    "corretta": 0,
+    "spiegazione": "Gli altri arcipelaghi africani sono formati da isole piccole.",
+    "fonte": "Wikipedia, «Africa» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-258",
+    "argomento": "Continenti",
+    "livello": 3,
+    "testo": "Lungo quale fiume africano si trovano le celebri Cascate Vittoria?",
+    "opzioni": [
+      "Il Congo",
+      "Lo Zambesi",
+      "Il Nilo",
+      "Il Niger"
+    ],
+    "corretta": 1,
+    "spiegazione": "Lo Zambesi sfocia nell'Oceano Indiano.",
+    "fonte": "Wikipedia, «Africa» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-259",
+    "argomento": "Continenti",
+    "livello": 4,
+    "testo": "Dove si trova il punto più basso dell'Africa?",
+    "opzioni": [
+      "Nel Mar Morto",
+      "Nel lago Vittoria",
+      "Nel lago Assal, a Gibuti",
+      "Nella depressione di Qattara"
+    ],
+    "corretta": 2,
+    "spiegazione": "Si trova a circa 155 m sotto il livello del mare.",
+    "fonte": "Wikipedia, «Africa» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-260",
+    "argomento": "Continenti",
+    "livello": 4,
+    "testo": "Qual è il punto più meridionale dell'Africa?",
+    "opzioni": [
+      "Capo di Buona Speranza",
+      "Capo Verde",
+      "Ras Hafun",
+      "Capo Agulhas, in Sudafrica"
+    ],
+    "corretta": 3,
+    "spiegazione": "È anche il punto africano più vicino all'Antartide.",
+    "fonte": "Wikipedia, «Africa» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-261",
+    "argomento": "Continenti",
+    "livello": 3,
+    "testo": "Quale stretto separa l'Asia dall'America settentrionale?",
+    "opzioni": [
+      "Lo stretto di Bering",
+      "Lo stretto di Hormuz",
+      "Lo stretto di Malacca",
+      "Lo stretto di Magellano"
+    ],
+    "corretta": 0,
+    "spiegazione": "È largo circa 92 km.",
+    "fonte": "Wikipedia, «Asia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-262",
+    "argomento": "Continenti",
+    "livello": 3,
+    "testo": "Quale massiccio montuoso asiatico è chiamato il «tetto del mondo»?",
+    "opzioni": [
+      "Il Caucaso",
+      "Il Pamir",
+      "L'Himalaya",
+      "Gli Urali"
+    ],
+    "corretta": 1,
+    "spiegazione": "Dal Pamir si diramano grandi catene verso est e sud.",
+    "fonte": "Wikipedia, «Asia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-263",
+    "argomento": "Continenti",
+    "livello": 4,
+    "testo": "Qual è il più vasto arcipelago della Terra?",
+    "opzioni": [
+      "Il Giappone",
+      "Le Filippine",
+      "L'Arcipelago Malese",
+      "La Polinesia"
+    ],
+    "corretta": 2,
+    "spiegazione": "Fa parte della regione orientale dell'Asia.",
+    "fonte": "Wikipedia, «Asia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-264",
+    "argomento": "Continenti",
+    "livello": 4,
+    "testo": "Quale continente ha l'altitudine media più elevata (oltre 1000 m), escludendo l'Antartide coperta dai ghiacci?",
+    "opzioni": [
+      "L'Africa",
+      "L'Europa",
+      "L'America",
+      "L'Asia"
+    ],
+    "corretta": 3,
+    "spiegazione": "È anche il continente più vasto e più popolato.",
+    "fonte": "Wikipedia, «Asia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-265",
+    "argomento": "Continenti",
+    "livello": 2,
+    "testo": "Da quale esploratore prende il nome l'America?",
+    "opzioni": [
+      "Amerigo Vespucci",
+      "Cristoforo Colombo",
+      "Giovanni Caboto",
+      "Ferdinando Magellano"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il cartografo Martin Waldseemüller usò il nome latinizzato Americus.",
+    "fonte": "Wikipedia, «America» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-266",
+    "argomento": "Continenti",
+    "livello": 3,
+    "testo": "Attraverso quale lingua di terra giunsero in America, dall'Asia, le prime popolazioni circa 13.000 anni fa?",
+    "opzioni": [
+      "L'istmo di Panama",
+      "La Beringia",
+      "La Groenlandia",
+      "Le Aleutine"
+    ],
+    "corretta": 1,
+    "spiegazione": "La Beringia univa allora i due continenti.",
+    "fonte": "Wikipedia, «America» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-267",
+    "argomento": "Continenti",
+    "livello": 4,
+    "testo": "Che quota delle terre emerse costituisce l'America?",
+    "opzioni": [
+      "Circa il 40%",
+      "Circa il 5%",
+      "Circa il 23,4%",
+      "Circa il 60%"
+    ],
+    "corretta": 2,
+    "spiegazione": "È l'8,5% della superficie totale della Terra.",
+    "fonte": "Wikipedia, «America» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-268",
+    "argomento": "Continenti",
+    "livello": 4,
+    "testo": "Chi propose nel 1831 la divisione dell'Oceania in Polinesia, Micronesia, Malesia e Melanesia?",
+    "opzioni": [
+      "Charles Darwin",
+      "James Cook",
+      "Abel Tasman",
+      "Jules Dumont d'Urville"
+    ],
+    "corretta": 3,
+    "spiegazione": "La propose alla Società geografica di Parigi.",
+    "fonte": "Wikipedia, «Oceania» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-269",
+    "argomento": "Continenti",
+    "livello": 3,
+    "testo": "Quante isole, all'incirca, fanno parte dell'Oceania?",
+    "opzioni": [
+      "Circa 30.000",
+      "Circa 3.000",
+      "Circa 300",
+      "Circa 300.000"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il nome deriva dal ruolo dell'oceano nell'unirle.",
+    "fonte": "Wikipedia, «Oceania» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-270",
+    "argomento": "Continenti",
+    "livello": 3,
+    "testo": "Chi guidò la prima spedizione a raggiungere il polo sud geografico, il 14 dicembre 1911?",
+    "opzioni": [
+      "Ernest Shackleton",
+      "Roald Amundsen",
+      "James Cook",
+      "Robert Falcon Scott"
+    ],
+    "corretta": 1,
+    "spiegazione": "Circa un mese dopo arrivò anche la spedizione di Scott.",
+    "fonte": "Wikipedia, «Antartide» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-271",
+    "argomento": "Continenti",
+    "livello": 3,
+    "testo": "Qual è lo spessore medio della calotta glaciale antartica?",
+    "opzioni": [
+      "Circa 200 metri",
+      "Circa 20 metri",
+      "Circa 2.000 metri",
+      "Circa 10.000 metri"
+    ],
+    "corretta": 2,
+    "spiegazione": "Copre il 98% del continente.",
+    "fonte": "Wikipedia, «Antartide» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-272",
+    "argomento": "Continenti",
+    "livello": 4,
+    "testo": "A quale anno si fa risalire il primo avvistamento confermato del continente antartico?",
+    "opzioni": [
+      "Al 1911",
+      "Al 1773",
+      "Al 1492",
+      "Al 1820"
+    ],
+    "corretta": 3,
+    "spiegazione": "Si attribuisce alla spedizione russa di Bellingshausen e Lazarev.",
+    "fonte": "Wikipedia, «Antartide» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-273",
+    "argomento": "Continenti",
+    "livello": 4,
+    "testo": "Quale navigatore attraversò per primo il Circolo polare antartico, nel 1773?",
+    "opzioni": [
+      "James Cook",
+      "Vasco da Gama",
+      "Roald Amundsen",
+      "Ferdinando Magellano"
+    ],
+    "corretta": 0,
+    "spiegazione": "Arrivò a circa 121 km dalla costa prima di dover invertire la rotta.",
+    "fonte": "Wikipedia, «Antartide» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-274",
+    "argomento": "Mediterraneo",
+    "livello": 3,
+    "testo": "Quale battaglia del 480 a.C. salvò la Grecia dall'occupazione persiana?",
+    "opzioni": [
+      "La battaglia del Mare Sardo",
+      "La battaglia di Salamina",
+      "La battaglia di Azio",
+      "La battaglia di Lepanto"
+    ],
+    "corretta": 1,
+    "spiegazione": "I Greci si opposero alle mire di Serse.",
+    "fonte": "Wikipedia, «Mar Mediterraneo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-275",
+    "argomento": "Mediterraneo",
+    "livello": 3,
+    "testo": "Quali città sono le Repubbliche marinare più note?",
+    "opzioni": [
+      "Napoli, Palermo, Bari e Ancona",
+      "Roma, Ostia, Pisa e Genova",
+      "Amalfi, Pisa, Genova e Venezia",
+      "Trieste, Livorno, Gaeta e Ragusa"
+    ],
+    "corretta": 2,
+    "spiegazione": "Contrastarono l'espansione islamica nel Mediterraneo.",
+    "fonte": "Wikipedia, «Mar Mediterraneo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-276",
+    "argomento": "Mediterraneo",
+    "livello": 4,
+    "testo": "Quale tratto di mare divide il Mediterraneo occidentale da quello orientale?",
+    "opzioni": [
+      "Lo stretto di Otranto",
+      "Le Bocche di Bonifacio",
+      "Lo stretto di Messina",
+      "Il canale di Sicilia"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'occidentale ha ampie piane abissali; l'orientale è dominato dalla dorsale Mediterranea.",
+    "fonte": "Wikipedia, «Mar Mediterraneo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-277",
+    "argomento": "Mediterraneo",
+    "livello": 4,
+    "testo": "Quali sono i due bacini principali del Mediterraneo occidentale?",
+    "opzioni": [
+      "Il bacino algero-provenzale e il bacino tirrenico",
+      "Il bacino ionico e quello levantino",
+      "Il bacino adriatico e quello egeo",
+      "Il bacino del Mar Nero e quello di Marmara"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il bacino tirrenico è la parte più profonda del Mediterraneo occidentale.",
+    "fonte": "Wikipedia, «Mar Mediterraneo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-278",
+    "argomento": "Oceani",
+    "livello": 3,
+    "testo": "Qual è la superficie dell'Oceano Pacifico secondo la convenzione italiana?",
+    "opzioni": [
+      "Circa 74 milioni di km²",
+      "Circa 179 milioni di km²",
+      "Circa 106 milioni di km²",
+      "Circa 14 milioni di km²"
+    ],
+    "corretta": 1,
+    "spiegazione": "Atlantico circa 106 milioni, Indiano circa 74 milioni di km².",
+    "fonte": "Wikipedia, «Oceano» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-279",
+    "argomento": "Oceani",
+    "livello": 4,
+    "testo": "Chi propose nel 1928 di considerare anche un Oceano Artico, portando gli oceani a quattro?",
+    "opzioni": [
+      "La Società geografica italiana",
+      "L'UNESCO",
+      "L'Organizzazione Idrografica Internazionale",
+      "Le Nazioni Unite"
+    ],
+    "corretta": 2,
+    "spiegazione": "La convenzione è seguita soprattutto nei paesi di lingua inglese.",
+    "fonte": "Wikipedia, «Oceano» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-280",
+    "argomento": "Oceani",
+    "livello": 3,
+    "testo": "Come si chiamano i mari minori compresi all'interno degli oceani, come il Mediterraneo e il Mar Rosso?",
+    "opzioni": [
+      "Bacini abissali",
+      "Mari interni",
+      "Mari chiusi",
+      "Mari dipendenti"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il Mar Glaciale Artico è considerato in Italia un mare dipendente dall'Atlantico.",
+    "fonte": "Wikipedia, «Oceano» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-281",
+    "argomento": "Oceani",
+    "livello": 4,
+    "testo": "Quando si affermò la tripartizione in Oceano Atlantico, Pacifico e Indiano?",
+    "opzioni": [
+      "Risale alle grandi scoperte, si diffuse nel Settecento e trionfò dall'Ottocento",
+      "Solo nel Novecento",
+      "Nel Medioevo",
+      "Nell'antichità greca"
+    ],
+    "corretta": 0,
+    "spiegazione": "Fu favorita dalla scolarizzazione di massa.",
+    "fonte": "Wikipedia, «Oceano» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-282",
+    "argomento": "Vulcani",
+    "livello": 3,
+    "testo": "Quale tipo di vulcano è l'Etna?",
+    "opzioni": [
+      "Un vulcano di fango",
+      "Uno stratovulcano sovrapposto a un vulcano a scudo",
+      "Un vulcano sottomarino",
+      "Una caldera spenta"
+    ],
+    "corretta": 1,
+    "spiegazione": "È il più alto vulcano attivo della placca euroasiatica.",
+    "fonte": "Wikipedia, «Etna» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-283",
+    "argomento": "Vulcani",
+    "livello": 4,
+    "testo": "Quali fiumi delimitano la regione etnea?",
+    "opzioni": [
+      "Il Belice e l'Imera",
+      "Il Platani e il Salso",
+      "L'Alcantara e il Simeto",
+      "Il Tevere e l'Aniene"
+    ],
+    "corretta": 2,
+    "spiegazione": "La regione etnea ha una superficie di 1570 km².",
+    "fonte": "Wikipedia, «Etna» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-284",
+    "argomento": "Vulcani",
+    "livello": 4,
+    "testo": "Quale meridiano attraversa l'Etna, prendendone il nome?",
+    "opzioni": [
+      "Il 12° meridiano est",
+      "Il meridiano di Greenwich",
+      "Il 10° meridiano est",
+      "Il 15° meridiano est"
+    ],
+    "corretta": 3,
+    "spiegazione": "È il meridiano di riferimento del fuso orario dell'Europa centrale.",
+    "fonte": "Wikipedia, «Etna» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-285",
+    "argomento": "Vulcani",
+    "livello": 4,
+    "testo": "Come si chiama la grande depressione sul versante est dell'Etna?",
+    "opzioni": [
+      "La Valle del Bove",
+      "La Grotta del Gelo",
+      "La Bocca Nuova",
+      "La Voragine"
+    ],
+    "corretta": 0,
+    "spiegazione": "Voragine e Bocca Nuova sono crateri sommitali.",
+    "fonte": "Wikipedia, «Etna» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-286",
+    "argomento": "Vulcani",
+    "livello": 4,
+    "testo": "Cosa sono le «sciare» sull'Etna?",
+    "opzioni": [
+      "Sorgenti termali",
+      "Terreni di scorie vulcaniche incoerenti",
+      "Laghi craterici",
+      "Boschi di castagno"
+    ],
+    "corretta": 1,
+    "spiegazione": "Predominano sul versante occidentale e nord.",
+    "fonte": "Wikipedia, «Etna» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-287",
+    "argomento": "Pianure",
+    "livello": 3,
+    "testo": "Quale superficie ha all'incirca la Pianura Padana?",
+    "opzioni": [
+      "Circa 150.000 km²",
+      "Circa 4.800 km²",
+      "Circa 47.800 km²",
+      "Circa 12.000 km²"
+    ],
+    "corretta": 2,
+    "spiegazione": "È la più grande pianura dell'Europa meridionale.",
+    "fonte": "Wikipedia, «Pianura Padana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-288",
+    "argomento": "Pianure",
+    "livello": 3,
+    "testo": "Cosa sono i fontanili o risorgive della Pianura Padana?",
+    "opzioni": [
+      "Canali di bonifica",
+      "Laghi di origine glaciale",
+      "Pozzi artificiali per l'irrigazione",
+      "Punti in cui l'acqua della falda riaffiora in superficie"
+    ],
+    "corretta": 3,
+    "spiegazione": "Segnano il passaggio tra alta e bassa pianura.",
+    "fonte": "Wikipedia, «Pianura Padana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-289",
+    "argomento": "Pianure",
+    "livello": 4,
+    "testo": "Come si chiamano le coltivazioni a prato rese possibili dalle acque a temperatura costante delle risorgive?",
+    "opzioni": [
+      "Marcite",
+      "Terrazzamenti",
+      "Risaie",
+      "Polder"
+    ],
+    "corretta": 0,
+    "spiegazione": "Le acque delle risorgive hanno una temperatura tra 9 e 12 °C.",
+    "fonte": "Wikipedia, «Pianura Padana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-290",
+    "argomento": "Pianure",
+    "livello": 3,
+    "testo": "Come è detta anche l'alta pianura padana, dal suolo permeabile di sabbie e ghiaie?",
+    "opzioni": [
+      "Pianura irrigua",
+      "Pianura asciutta",
+      "Bassopiano",
+      "Pianura alluvionale bassa"
+    ],
+    "corretta": 1,
+    "spiegazione": "La bassa pianura è detta invece pianura irrigua.",
+    "fonte": "Wikipedia, «Pianura Padana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-291",
+    "argomento": "Mari e stretti",
+    "livello": 3,
+    "testo": "Tra quali comuni si misura la larghezza minima dello stretto di Messina?",
+    "opzioni": [
+      "Reggio Calabria e Taormina",
+      "Scilla e Milazzo",
+      "Villa San Giovanni e Messina",
+      "Messina e Tropea"
+    ],
+    "corretta": 2,
+    "spiegazione": "La distanza è di circa 3,14 km.",
+    "fonte": "Wikipedia, «Stretto di Messina» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-292",
+    "argomento": "Mari e stretti",
+    "livello": 4,
+    "testo": "Cosa sono i «piloni dello Stretto»?",
+    "opzioni": [
+      "Antiche torri di avvistamento",
+      "I piloni del ponte sullo Stretto",
+      "Due fari medievali",
+      "Le strutture di sostegno del vecchio elettrodotto aereo che sovrappassava lo stretto"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'elettrodotto del 1957 fu sostituito nel 1992 da cavi sottomarini.",
+    "fonte": "Wikipedia, «Stretto di Messina» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-293",
+    "argomento": "Mari e stretti",
+    "livello": 4,
+    "testo": "Con quale denominazione geopolitica medievale era noto lo stretto di Messina?",
+    "opzioni": [
+      "Faro di Messina",
+      "Fretum Gaditanum",
+      "Canale di Calabria",
+      "Bocca di Scilla"
+    ],
+    "corretta": 0,
+    "spiegazione": "In epoca romana era il Fretum Siculum.",
+    "fonte": "Wikipedia, «Stretto di Messina» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-294",
+    "argomento": "Isole",
+    "livello": 3,
+    "testo": "A quale arcipelago appartengono Ponza e Ventotene?",
+    "opzioni": [
+      "Alle Isole Eolie",
+      "Alle Isole Ponziane (o Pontine)",
+      "All'Arcipelago Toscano",
+      "Alle Isole Tremiti"
+    ],
+    "corretta": 1,
+    "spiegazione": "Sono nel Mar Tirreno, al largo del Lazio.",
+    "fonte": "Wikipedia, «Isole dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-295",
+    "argomento": "Isole",
+    "livello": 2,
+    "testo": "A quale arcipelago appartengono l'Elba, il Giglio e Montecristo?",
+    "opzioni": [
+      "Alle Isole Egadi",
+      "All'Arcipelago di La Maddalena",
+      "All'Arcipelago Toscano",
+      "Alle Isole Ponziane"
+    ],
+    "corretta": 2,
+    "spiegazione": "Comprende anche Gorgona, Capraia, Pianosa e Giannutri.",
+    "fonte": "Wikipedia, «Isole dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-296",
+    "argomento": "Isole",
+    "livello": 3,
+    "testo": "A quale arcipelago appartengono Lampedusa e Linosa?",
+    "opzioni": [
+      "Alle Isole Egadi",
+      "Alle Isole Maltesi",
+      "Alle Isole Eolie",
+      "Alle Isole Pelagie"
+    ],
+    "corretta": 3,
+    "spiegazione": "Si trovano nel canale di Sicilia.",
+    "fonte": "Wikipedia, «Isole dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-297",
+    "argomento": "Isole",
+    "livello": 3,
+    "testo": "In quale arcipelago si trova l'isola di Caprera?",
+    "opzioni": [
+      "Nell'Arcipelago di La Maddalena",
+      "Nell'Arcipelago Toscano",
+      "Nelle Isole Eolie",
+      "Nelle Isole Flegree"
+    ],
+    "corretta": 0,
+    "spiegazione": "Si trova nel Mar Tirreno, a nord-est della Sardegna.",
+    "fonte": "Wikipedia, «Isole dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-298",
+    "argomento": "Isole",
+    "livello": 3,
+    "testo": "Quale isola è il centro storico di Siracusa?",
+    "opzioni": [
+      "Pantelleria",
+      "Ortigia",
+      "Ustica",
+      "Mozia"
+    ],
+    "corretta": 1,
+    "spiegazione": "Si trova nel Mar Ionio.",
+    "fonte": "Wikipedia, «Isole dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-299",
+    "argomento": "Isole",
+    "livello": 3,
+    "testo": "Quali isole fanno parte delle Isole Flegree, nel golfo di Napoli?",
+    "opzioni": [
+      "Ponza e Palmarola",
+      "Elba e Pianosa",
+      "Ischia, Procida e Vivara",
+      "Capri e Li Galli"
+    ],
+    "corretta": 2,
+    "spiegazione": "Capri fa parte dell'Arcipelago Campano ma non delle Flegree.",
+    "fonte": "Wikipedia, «Isole dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-300",
+    "argomento": "Isole",
+    "livello": 4,
+    "testo": "Quale superficie complessiva hanno le isole italiane?",
+    "opzioni": [
+      "Circa 5.000 km²",
+      "Oltre 150.000 km²",
+      "Circa 20.000 km²",
+      "Oltre 50.000 km²"
+    ],
+    "corretta": 3,
+    "spiegazione": "Sicilia e Sardegna da sole superano i 49.000 km².",
+    "fonte": "Wikipedia, «Isole dell'Italia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "geografia",
+    "id": "geo-301",
+    "argomento": "Unione europea",
+    "livello": 4,
+    "testo": "Con quante entità indipendenti confina l'Unione europea?",
+    "opzioni": [
+      "21",
+      "7",
+      "12",
+      "40"
+    ],
+    "corretta": 0,
+    "spiegazione": "Le frontiere esterne misurano 14.647 km; la costa dell'UE è la seconda al mondo per lunghezza dopo il Canada.",
+    "fonte": "Wikipedia, «Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
   }
 ]
