@@ -487,3 +487,244 @@ G("mat-199", "Misure", 2, "Qual è l'unità SI della temperatura assoluta?", "Ke
   "Introdotta come grandezza fondamentale nel 1954.", "Sistema internazionale di unità di misura", "aggiunse la temperatura assoluta (e l'unità di misura associata: kelvin)")
 G("mat-200", "Matematica finanziaria", 3, "Un capitale di 1.000 € è investito in capitalizzazione semplice al 5% annuo per 3 anni. Qual è il montante?", "1.150 €", ["1.157,63 €", "1.050 €", "1.500 €"],
   "M = C(1 + it) = 1.000 · (1 + 0,05 · 3).", "Capitalizzazione semplice", "il capitale finale, detto anche montante")
+
+# --- Ampliamento a 300: esercizi di aritmetica, algebra, probabilità e geometria ---
+P_PRIMO = "Un numero p > 1 si dice primo se è divisibile solo per se stesso e per l'unità"
+P_TFA = "Ogni numero naturale n > 1 si può scrivere in modo unico come prodotto di numeri primi"
+P_MCM = "è il più piccolo tra tutti i multipli comuni di a e di b"
+P_MCD = "è il più grande tra tutti i divisori comuni ad a e b"
+P_DIV3 = "Un numero è divisibile per 3 se e solo se la somma delle cifre che lo compongono è divisibile per 3"
+P_PROD = "Il prodotto di due potenze con la stessa base è uguale a una potenza che ha per base la stessa base"
+P_QUOZ = "Il quoziente di due potenze con la stessa base, la prima con esponente maggiore o uguale"
+P_POTPOT = "La potenza di una potenza è uguale a una potenza che ha la base della prima potenza"
+P_SEGNI = "regola dei segni"
+P_DISC = "La somma di due numeri relativi discordi"
+P_FRSUM = "Se le unità frazionarie sono diverse"
+P_FRPROD = "Il prodotto di due frazioni è una frazione che ha per numeratore il prodotto dei numeratori"
+P_FRQUOZ = "Il quoziente di due frazioni è la frazione che si ottiene moltiplicando la prima frazione per l'inverso della"
+P_MINT = "Per ridurre ai minimi termini una frazione occorre dividere numeratore e denominatore per il loro"
+P_NEG = "La potenza di un numero razionale diverso da zero elevato a un esponente intero negativo"
+P_SCI = "dove k è un numero decimale maggiore o uguale a 1 e minore di 10"
+P_MEDI = "In ogni proporzione il prodotto dei medi è uguale al prodotto degli estremi"
+P_CONT = "Una proporzione si dice continua se ha i medi uguali"
+P_PERC = "Le percentuali sono frazioni che hanno come denominatore 100"
+P_DIR = "si dicono direttamente proporzionali se il loro rapporto è costante"
+P_INV = "si dicono inversamente proporzionali se il loro prodotto è costante"
+P_MEDIA = "La media aritmetica (semplice) è il valore ottenuto sommando tutti i dati e dividendo tale somma per il numero"
+P_MEDIANA = "La mediana di una successione di dati disposti in ordine crescente è il valore equidistante dagli estremi"
+P_BASE = "Si definisce base di un sistema di numerazione il numero di simboli"
+P_MON = "Il prodotto di due monomi è il monomio avente per coefficiente il prodotto dei coefficienti"
+P_POTMON = "La potenza di un monomio è un monomio avente per coefficiente la potenza del coefficiente"
+P_GRADO = "Il grado complessivo di un monomio è la somma degli esponenti della parte letterale"
+P_SIMILI = "Due o più monomi che hanno parte letterale identica si dicono simili"
+P_QB = "Il quadrato di un binomio è uguale alla somma tra il quadrato del primo termine"
+P_CB = "Il cubo di un binomio è uguale alla somma tra il cubo del primo monomio"
+P_RESTO = "Il resto della divisione di un polinomio A(x) per un binomio del tipo (x − k) è uguale al valore che A(x) assu"
+P_EQ1 = "Aggiungendo o sottraendo ad ambo i membri di un'equazione data uno stesso numero"
+P_EQ2 = "Moltiplicando o dividendo ambo i membri di un'equazione per uno stesso numero non nullo"
+P_IS = "Risolvere un'equazione significa determinare il suo Insieme Soluzione"
+P_VERSO = "cambiare il verso della disequazione"
+P_SIST = "Si definisce sistema di equazioni l'insieme di più equazioni"
+
+M("mat-201", "Numeri primi", 1, "Quale di questi numeri, compresi tra 80 e 90, è primo?", "83", ["81", "85", "87"],
+  "81 = 3⁴, 85 = 5 · 17, 87 = 3 · 29; 83 ha solo due divisori.", P_PRIMO)
+M("mat-202", "Numeri primi", 2, "Qual è la scomposizione in fattori primi di 84?", "2² · 3 · 7", ["2 · 42", "4 · 21", "2³ · 3 · 7"],
+  "84 = 2 · 2 · 3 · 7 = 2² · 3 · 7.", P_TFA)
+M("mat-203", "MCD e mcm", 3, "Qual è il minimo comune multiplo di 8, 12 e 20?", "120", ["240", "60", "40"],
+  "8 = 2³, 12 = 2² · 3, 20 = 2² · 5: mcm = 2³ · 3 · 5 = 120.", P_MCM)
+M("mat-204", "MCD e mcm", 2, "Qual è il massimo comune divisore di 54 e 72?", "18", ["9", "6", "24"],
+  "54 = 2 · 3³, 72 = 2³ · 3²: MCD = 2 · 3² = 18.", P_MCD)
+M("mat-205", "Divisibilità", 2, "Quale di questi numeri è divisibile per 3?", "2.718", ["2.719", "2.720", "2.716"],
+  "2 + 7 + 1 + 8 = 18, multiplo di 3.", P_DIV3)
+M("mat-206", "Potenze", 2, "Quanto vale 3⁴ · 3²?", "3⁶ = 729", ["3⁸ = 6.561", "9⁶", "3² = 9"],
+  "Stessa base: si sommano gli esponenti.", P_PROD)
+M("mat-207", "Potenze", 2, "Quanto vale 10⁵ : 10³?", "10² = 100", ["10⁸", "1⁵", "10¹⁵"],
+  "Stessa base: si sottraggono gli esponenti.", P_QUOZ)
+M("mat-208", "Potenze", 2, "Quanto vale (2³)²?", "2⁶ = 64", ["2⁵ = 32", "2⁹ = 512", "6² = 36"],
+  "Potenza di potenza: si moltiplicano gli esponenti.", P_POTPOT)
+M("mat-209", "Numeri relativi", 2, "Quanto vale (−1)⁷?", "−1", ["+1", "−7", "0"],
+  "Una potenza di base negativa con esponente dispari è negativa.", P_SEGNI)
+M("mat-210", "Numeri relativi", 2, "Quanto vale (−12) : (+4)?", "−3", ["+3", "−8", "−48"],
+  "Segni discordi: il quoziente è negativo.", P_SEGNI)
+M("mat-211", "Numeri relativi", 1, "Quanto vale (−5) + (+3)?", "−2", ["+2", "−8", "+8"],
+  "Numeri discordi: si sottraggono i valori assoluti e si prende il segno del maggiore.", P_DISC)
+M("mat-212", "Frazioni", 2, "Quanto vale 3/4 + 1/6?", "11/12", ["4/10", "4/24", "5/12"],
+  "m.c.d. 12: 9/12 + 2/12 = 11/12.", P_FRSUM)
+M("mat-213", "Frazioni", 2, "Quanto vale 5/6 − 1/4?", "7/12", ["4/2", "1/3", "4/12"],
+  "Con denominatore 12: 10/12 − 3/12 = 7/12.", P_FRSUM)
+M("mat-214", "Frazioni", 2, "Quanto vale 3/5 · 10/9?", "2/3", ["30/14", "13/14", "3/2"],
+  "3/5 · 10/9 = 30/45 = 2/3.", P_FRPROD)
+M("mat-215", "Frazioni", 3, "Quanto vale 4/7 : 2/21?", "6", ["8/147", "1/6", "2/3"],
+  "4/7 · 21/2 = 84/14 = 6.", P_FRQUOZ)
+M("mat-216", "Frazioni", 2, "Come si riduce ai minimi termini 45/60?", "3/4", ["9/12", "15/20", "5/6"],
+  "Si divide per MCD(45, 60) = 15.", P_MINT)
+M("mat-217", "Potenze", 3, "Quanto vale (2/3)⁻²?", "9/4", ["4/9", "−4/9", "−9/4"],
+  "Esponente negativo: si prende il reciproco della base con esponente positivo.", P_NEG)
+M("mat-218", "Notazione scientifica", 2, "Come si scrive 72.000 in notazione scientifica?", "7,2 · 10⁴", ["72 · 10³", "0,72 · 10⁵", "7,2 · 10³"],
+  "Il coefficiente deve essere tra 1 e 10.", P_SCI)
+M("mat-219", "Notazione scientifica", 2, "Come si scrive 0,0036 in notazione scientifica?", "3,6 · 10⁻³", ["36 · 10⁻⁴", "3,6 · 10⁻²", "0,36 · 10⁻²"],
+  "Si sposta la virgola di 3 posti verso destra.", P_SCI)
+M("mat-220", "Proporzioni", 2, "Trova x nella proporzione 4 : 7 = 12 : x.", "21", ["28", "3", "16"],
+  "4 · x = 7 · 12 → x = 84/4 = 21.", P_MEDI)
+M("mat-221", "Proporzioni", 2, "Trova x nella proporzione x : 6 = 10 : 15.", "4", ["9", "25", "2,5"],
+  "Prodotto dei medi = prodotto degli estremi: 15x = 60, x = 4.", P_MEDI)
+M("mat-222", "Proporzioni", 3, "Nella proporzione continua 9 : x = x : 16, quanto vale x?", "12", ["12,5", "25", "144"],
+  "Il medio è la radice del prodotto degli estremi: x² = 144.", P_CONT)
+M("mat-223", "Percentuali", 1, "Quanto è il 35% di 80?", "28", ["35", "24", "45"],
+  "80 · 35 / 100 = 28.", P_PERC)
+M("mat-224", "Percentuali", 2, "Su 250 candidati ne vengono ammessi 60. Che percentuale è?", "24%", ["60%", "25%", "15%"],
+  "60/250 = 0,24, cioè il 24%.", P_PERC)
+M("mat-225", "Percentuali", 3, "Dopo un aumento del 10% un prezzo è di 154 €. Qual era il prezzo iniziale?", "140 €", ["138,60 €", "144 €", "150 €"],
+  "Prezzo iniziale = 154 / 1,10 = 140.", P_PERC)
+M("mat-226", "Proporzionalità", 2, "4 penne costano 6 €. Quanto costano 10 penne?", "15 €", ["12 €", "24 €", "20 €"],
+  "Proporzionalità diretta: ogni penna costa 1,50 €.", P_DIR)
+M("mat-227", "Proporzionalità", 3, "8 rubinetti riempiono una vasca in 6 ore. Quanto impiegano 12 rubinetti uguali?", "4 ore", ["9 ore", "3 ore", "5 ore"],
+  "Proporzionalità inversa: 8 · 6 = 12 · x → x = 4.", P_INV)
+M("mat-228", "Statistica", 1, "Qual è la media aritmetica di 12, 15, 18, 21 e 24?", "18", ["15", "21", "90"],
+  "La somma 90 divisa per 5 dati.", P_MEDIA)
+M("mat-229", "Statistica", 3, "Qual è la mediana dei dati 4, 9, 2, 7, 5, 8?", "6", ["5", "7", "5,8"],
+  "Ordinati: 2, 4, 5, 7, 8, 9; con un numero pari di dati è la media dei due centrali: (5 + 7)/2 = 6.", P_MEDIANA)
+M("mat-230", "Sistemi di numerazione", 2, "Quanto vale in base 10 il numero binario 1101?", "13", ["11", "1.101", "14"],
+  "1·8 + 1·4 + 0·2 + 1·1 = 13.", P_BASE)
+M("mat-231", "Insiemi", 2, "Quanti sottoinsiemi ha un insieme di 4 elementi?", "16", ["8", "4", "24"],
+  "L'insieme delle parti ha 2⁴ = 16 elementi.", "si chiama insieme delle parti")
+M("mat-232", "Insiemi", 2, "Se A ha 4 elementi e B ne ha 3, quante coppie ordinate ha il prodotto cartesiano A × B?", "12", ["7", "64", "81"],
+  "Ogni elemento di A si accoppia con ogni elemento di B: 4 · 3 = 12.", "Un insieme di due elementi a e b presi in un determinato ordine si dice coppia ordinata")
+M("mat-233", "Insiemi", 2, "A = {a, b, c, d, e}, B = {c, d, f}. Quanto vale A − B?", "{a, b, e}", ["{f}", "{c, d}", "{a, b, e, f}"],
+  "Gli elementi di A che non appartengono a B.", "si dice insieme differenza tra A e B l'insieme C composto da tutti gli elementi di A che non appartengono a B")
+M("mat-234", "Monomi", 2, "Quanto vale (4a³b) · (−3ab²)?", "−12a⁴b³", ["12a⁴b³", "−12a³b²", "a⁴b³"],
+  "Si moltiplicano i coefficienti e si sommano gli esponenti delle lettere uguali.", P_MON)
+M("mat-235", "Monomi", 2, "Quanto vale (−3x²y)²?", "9x⁴y²", ["−9x⁴y²", "−6x⁴y²", "9x⁴y"],
+  "Il quadrato di un numero negativo è positivo.", P_POTMON)
+M("mat-236", "Monomi", 2, "Qual è il grado complessivo del monomio 5a²b³c?", "6", ["5", "3", "2"],
+  "Somma degli esponenti: 2 + 3 + 1 = 6.", P_GRADO)
+M("mat-237", "Monomi", 2, "Quanto vale 5xy − 8xy + xy?", "−2xy", ["−3xy", "14xy", "−2x²y²"],
+  "Monomi simili: si sommano i coefficienti (5 − 8 + 1 = −2).", P_SIMILI)
+M("mat-238", "Prodotti notevoli", 2, "A cosa è uguale (x + 5)²?", "x² + 10x + 25", ["x² + 25", "x² + 5x + 25", "x² + 10x + 10"],
+  "Quadrato del primo, doppio prodotto, quadrato del secondo.", P_QB)
+M("mat-239", "Prodotti notevoli", 3, "A cosa è uguale (2a − 3b)²?", "4a² − 12ab + 9b²", ["4a² − 9b²", "4a² + 9b²", "4a² − 6ab + 9b²"],
+  "(2a)² − 2·2a·3b + (3b)².", P_QB)
+M("mat-240", "Prodotti notevoli", 2, "A cosa è uguale (x + 4)(x − 4)?", "x² − 16", ["x² + 16", "x² − 8x + 16", "x² − 8"],
+  "Somma per differenza: differenza dei quadrati.", "somma per differenza")
+M("mat-241", "Prodotti notevoli", 3, "Quanto vale 103 · 97, usando la somma per differenza?", "9.991", ["10.009", "9.909", "10.000"],
+  "(100 + 3)(100 − 3) = 10.000 − 9.", "somma per differenza")
+M("mat-242", "Prodotti notevoli", 3, "A cosa è uguale (x − 1)³?", "x³ − 3x² + 3x − 1", ["x³ − 1", "x³ − 3x + 1", "x³ + 3x² − 3x − 1"],
+  "Cubo di un binomio con il segno alternato.", P_CB)
+M("mat-243", "Scomposizione", 2, "Come si scompone 4x² − 25?", "(2x − 5)(2x + 5)", ["(4x − 5)(x + 5)", "(2x − 5)²", "Non si può scomporre"],
+  "È una differenza di due quadrati.", "differenza di due quadrati")
+M("mat-244", "Scomposizione", 2, "Come si scompone 10a²b − 15ab² raccogliendo a fattore comune?", "5ab(2a − 3b)", ["5(2a²b − 3ab²)", "ab(10a − 15b)", "5a(2ab − 3b)"],
+  "Il fattore comune massimo è 5ab.", "Raccoglimento totale a fattore comune")
+M("mat-245", "Polinomi", 3, "Qual è il resto della divisione di x³ + 2x² − 1 per (x + 1)?", "0", ["2", "−2", "1"],
+  "Per il teorema del resto: A(−1) = −1 + 2 − 1 = 0.", P_RESTO)
+M("mat-246", "Equazioni", 1, "Risolvi: 4x − 9 = 2x + 7.", "x = 8", ["x = 1", "x = −8", "x = 16"],
+  "2x = 16 → x = 8.", P_EQ1)
+M("mat-247", "Equazioni", 2, "Risolvi: 3(x + 2) = 5x − 4.", "x = 5", ["x = 1", "x = −5", "x = 2"],
+  "3x + 6 = 5x − 4 → 10 = 2x → x = 5.", P_EQ1)
+M("mat-248", "Equazioni", 2, "Risolvi: x/2 + x/3 = 10.", "x = 12", ["x = 6", "x = 60", "x = 5"],
+  "Moltiplicando per 6: 3x + 2x = 60 → x = 12.", P_EQ2)
+M("mat-249", "Equazioni", 2, "L'equazione 2(x − 3) = 2x − 6 è:", "indeterminata (vera per ogni x)", ["impossibile", "determinata con x = 3", "determinata con x = 0"],
+  "Svolgendo si ottiene 0 = 0.", P_IS)
+M("mat-250", "Disequazioni", 2, "Risolvi: 5 − 2x < 11.", "x > −3", ["x < −3", "x > 3", "x < 3"],
+  "−2x < 6 → dividendo per −2 il verso si inverte: x > −3.", P_VERSO)
+M("mat-251", "Sistemi", 2, "Risolvi il sistema: x + y = 12; x − y = 2.", "x = 7, y = 5", ["x = 5, y = 7", "x = 6, y = 6", "x = 10, y = 2"],
+  "Sommando le equazioni: 2x = 14, quindi x = 7 e y = 5.", P_SIST)
+M("mat-252", "Sistemi", 2, "Risolvi il sistema: 3x + y = 11; x + y = 5.", "x = 3, y = 2", ["x = 2, y = 3", "x = 4, y = 1", "x = 1, y = 4"],
+  "Sottraendo la seconda dalla prima: 2x = 6.", P_SIST)
+M("mat-253", "Problemi", 2, "Due numeri hanno somma 30 e uno è il doppio dell'altro. Quali sono?", "10 e 20", ["15 e 15", "12 e 18", "5 e 25"],
+  "Posto x il minore: x + 2x = 30, x = 10.", P_SIST)
+M("mat-254", "Problemi", 3, "Un padre ha il triplo dell'età del figlio; insieme hanno 48 anni. Quanti anni ha il figlio?", "12", ["16", "14", "36"],
+  "Posto x l'età del figlio: x + 3x = 48, x = 12.", P_SIST)
+M("mat-255", "Funzioni", 2, "Data y = −3x + 2, quanto vale y per x = −1?", "5", ["−1", "−5", "1"],
+  "y = −3 · (−1) + 2 = 5.", "il cui grafico è una retta, è detta funzione lineare")
+M("mat-256", "Piano cartesiano", 2, "Qual è il punto medio del segmento di estremi A(−2; 6) e B(4; 0)?", "(1; 3)", ["(2; 6)", "(3; 3)", "(1; 6)"],
+  "Media delle coordinate: ((−2 + 4)/2; (6 + 0)/2).", "Il punto medio di un segmento AB è il punto M interno al segmento che lo divide in due parti congruenti")
+M("mat-257", "Piano cartesiano", 1, "In quale quadrante si trova il punto (−3; −5)?", "Nel terzo", ["Nel primo", "Nel secondo", "Nel quarto"],
+  "Ascissa e ordinata negative.", "Gli assi dividono il piano in quattro zone chiamate quadranti")
+
+N("mat-258", "Radicali", 1, "Quanto vale √81 + √16?", "13", ["√97", "10", "25"],
+  "9 + 4 = 13; la somma delle radici non è la radice della somma.", "Si dice radice quadrata di un numero reale a positivo o nullo")
+N("mat-259", "Radicali", 2, "Quanto vale 3√2 + 4√2 − √2?", "6√2", ["7√2", "6√6", "8√2"],
+  "Radicali simili: si sommano i coefficienti (3 + 4 − 1).", "È possibile effettuare somme algebriche soltanto se i radicali sono simili")
+N("mat-260", "Radicali", 2, "Quanto vale √3 · √12?", "6", ["√15", "36", "3√2"],
+  "√3 · √12 = √36 = 6.", "Si dice radice quadrata di un numero reale a positivo o nullo")
+N("mat-261", "Radicali", 3, "Razionalizzando il denominatore, a cosa è uguale 10/√5?", "2√5", ["5√2", "√50", "10√5"],
+  "10√5 / 5 = 2√5.", "Per razionalizzare il denominatore")
+N("mat-262", "Radicali", 3, "Quanto vale 16^(3/4)?", "8", ["12", "4", "64"],
+  "(⁴√16)³ = 2³ = 8.", "Si dice potenza a esponente razionale di un numero reale positivo")
+N("mat-263", "Radicali", 2, "Quanto vale la radice cubica di −125?", "−5", ["5", "Non esiste nei reali", "±5"],
+  "(−5)³ = −125: la radice cubica esiste anche per i negativi.", "Si dice radice cubica di un numero reale a quel numero che, elevato al cubo")
+N("mat-264", "Equazioni di secondo grado", 2, "Quali sono le soluzioni di x² − 7x + 10 = 0?", "2 e 5", ["−2 e −5", "1 e 10", "3 e 4"],
+  "Δ = 49 − 40 = 9 > 0: x = (7 ± 3)/2.", "l'equazione ammette due soluzioni reali e distinte")
+N("mat-265", "Equazioni di secondo grado", 2, "Quali sono le soluzioni di x² + 6x + 9 = 0?", "x₁ = x₂ = −3", ["3 e −3", "x₁ = x₂ = 3", "Nessuna soluzione reale"],
+  "Δ = 36 − 36 = 0: è (x + 3)² = 0.", "radici reali e coincidenti")
+N("mat-266", "Equazioni di secondo grado", 3, "Quante soluzioni reali ha x² − 2x + 5 = 0?", "Nessuna", ["Una", "Due distinte", "Due coincidenti"],
+  "Δ = 4 − 20 = −16, negativo.", "l'equazione non ammette soluzioni reali")
+N("mat-267", "Equazioni di secondo grado", 2, "Quali sono le soluzioni di x² − 25 = 0?", "±5", ["5", "25", "Nessuna"],
+  "Equazione pura: x² = 25, x = ±5.", "Risoluzione di un'equazione di secondo grado incompleta pura")
+N("mat-268", "Equazioni di secondo grado", 2, "Quali sono le soluzioni di 3x² + 12x = 0?", "0 e −4", ["0 e 4", "±2", "−4 e 4"],
+  "Equazione spuria: 3x(x + 4) = 0.", "Risoluzione di un'equazione incompleta spuria")
+N("mat-269", "Equazioni di secondo grado", 3, "Quanto vale il discriminante di x² − 4x + 1 = 0?", "12", ["20", "−12", "4"],
+  "Δ = b² − 4ac = 16 − 4 = 12.", "prende il nome di discriminante")
+N("mat-270", "Equazioni di secondo grado", 3, "Qual è la somma delle soluzioni di x² − 9x + 14 = 0?", "9", ["−9", "14", "−14"],
+  "Somma = −b/a = 9 (le soluzioni sono 2 e 7).", "la somma delle radici è x1 + x2 = −")
+N("mat-271", "Probabilità", 3, "Un'urna contiene 5 palline rosse e 3 blu. Estraendone due con reimmissione, qual è la probabilità che siano entrambe rosse?", "25/64", ["5/14", "10/64", "5/8"],
+  "Eventi indipendenti: 5/8 · 5/8 = 25/64.", "Due eventi A e B si dicono indipendenti se il verificarsi di A non cambia la probabilità")
+N("mat-272", "Probabilità", 2, "Se la probabilità di un evento è 2/5, qual è la probabilità dell'evento complementare?", "3/5", ["2/5", "5/2", "1/5"],
+  "P(non A) = 1 − 2/5 = 3/5.", "si definisce evento complementare di A")
+N("mat-273", "Probabilità", 3, "Lanciando un dado, qual è la probabilità di ottenere un numero pari o maggiore di 4?", "2/3", ["5/6", "1/2", "1/3"],
+  "P(pari) + P(>4) − P(pari e >4) = 3/6 + 2/6 − 1/6 = 4/6.", "la probabilità dell'unione degli eventi è uguale alla somma delle probabilità dei singoli eventi meno la probabilità della loro intersezione")
+N("mat-274", "Equazioni", 3, "Qual è la soluzione reale dell'equazione binomia x³ + 27 = 0?", "−3", ["3", "±3", "Nessuna"],
+  "x³ = −27, quindi x = −3.", "Un'equazione binomia è un'equazione del tipo")
+N("mat-275", "Equazioni", 4, "Quante soluzioni reali ha l'equazione x⁴ − 10x² + 9 = 0?", "Quattro: ±1 e ±3", ["Due: 1 e 9", "Due: ±3", "Nessuna"],
+  "Posto t = x²: t² − 10t + 9 = 0 → t = 1 o t = 9.", "Sono esempi di equazioni trinomie")
+N("mat-276", "Sistemi", 3, "Qual è il grado di un sistema formato da due equazioni di secondo grado?", "4", ["2", "3", "1"],
+  "Il grado del sistema è il prodotto dei gradi: 2 · 2 = 4.", "è dato dal prodotto dei gradi delle equazioni che lo compongono")
+
+G("mat-277", "Geometria", 1, "Un triangolo ha due angoli di 35° e 85°. Quanto misura il terzo?", "60°", ["70°", "50°", "90°"],
+  "180° − 35° − 85° = 60°.", "Triangolo", "la somma degli angoli interni è uguale a un angolo piatto, ossia 180°")
+G("mat-278", "Geometria", 2, "Quanto vale la somma degli angoli interni di un pentagono?", "540°", ["360°", "720°", "450°"],
+  "(5 − 2) · 180° = 540°.", "Poligono", "La somma degli angoli interni di un poligono è pari a tanti angoli piatti quanti sono i suoi lati")
+G("mat-279", "Geometria", 3, "Quanto misura ciascun angolo interno di un ottagono regolare?", "135°", ["120°", "140°", "108°"],
+  "(8 − 2) · 180° / 8 = 1080° / 8 = 135°.", "Poligono", "La somma degli angoli interni di un poligono è pari a tanti angoli piatti quanti sono i suoi lati")
+G("mat-280", "Geometria", 1, "Qual è il complementare di un angolo di 35°?", "55°", ["145°", "325°", "65°"],
+  "Complementare: ciò che manca per arrivare a 90°.", "Angolo", "Si dice complementare di un angolo di ampiezza")
+G("mat-281", "Geometria", 1, "Qual è il supplementare di un angolo di 110°?", "70°", ["250°", "20°", "80°"],
+  "Supplementare: ciò che manca per arrivare a 180°.", "Angolo", "Si dice supplementare di un angolo di ampiezza")
+G("mat-282", "Geometria", 2, "Qual è l'area di un rettangolo di base 12 cm e altezza 5 cm?", "60 cm²", ["34 cm²", "17 cm²", "120 cm²"],
+  "Area = base per altezza = 12 · 5.", "Rettangolo", "L'area del rettangolo è il prodotto della sua lunghezza per la sua larghezza")
+G("mat-283", "Geometria", 2, "Quanto è lunga la diagonale di un rettangolo di lati 12 cm e 5 cm?", "13 cm", ["17 cm", "7 cm", "√119 cm"],
+  "Per Pitagora: √(144 + 25) = √169 = 13.", "Teorema di Pitagora", PIT)
+G("mat-284", "Geometria", 1, "Qual è il perimetro di un rettangolo di lati 8 m e 5 m?", "26 m", ["40 m", "13 m", "80 m"],
+  "Perimetro = 2 · (8 + 5) = 26.", "Rettangolo", "per il suo perimetro")
+G("mat-285", "Geometria", 2, "Qual è l'area di un trapezio con basi 12 cm e 8 cm e altezza 5 cm?", "50 cm²", ["100 cm²", "25 cm²", "480 cm²"],
+  "Area = (12 + 8) · 5 / 2 = 50.", "Trapezio", "del trapezio è la somma delle basi per l'altezza diviso due")
+G("mat-286", "Geometria", 2, "Qual è l'area di un triangolo di base 10 cm e altezza 6 cm?", "30 cm²", ["60 cm²", "16 cm²", "15 cm²"],
+  "b · h / 2 = 30: il triangolo è metà di un parallelogramma.", "Triangolo", "perché il triangolo va visto come la metà di un parallelogramma")
+G("mat-287", "Geometria", 3, "Quale formula permette di calcolare l'area di un triangolo conoscendo solo i tre lati?", "La formula di Erone", ["Il teorema di Talete", "La formula di Cramer", "Il teorema di Euclide"],
+  "Usa il semiperimetro p: A = √(p(p − a)(p − b)(p − c)).", "Triangolo", "il semiperimetro (formula di Erone)")
+G("mat-288", "Geometria", 2, "Quanto è lunga una circonferenza di raggio 7 cm?", "14π cm", ["49π cm", "7π cm", "28π cm"],
+  "L = 2πr = 2π · 7.", "Circonferenza", "La formula per trovare la lunghezza della circonferenza è")
+G("mat-289", "Geometria", 2, "Quanto è lunga una circonferenza di diametro 10 m?", "10π m", ["20π m", "25π m", "5π m"],
+  "L = dπ, con d = 10.", "Circonferenza", "La formula per trovare la lunghezza della circonferenza è")
+G("mat-290", "Geometria", 2, "Qual è l'area di un cerchio di raggio 5 cm?", "25π cm²", ["10π cm²", "5π cm²", "100π cm²"],
+  "A = πr² = π · 5².", "Cerchio", "La formula dell'area del cerchio può essere ottenuta come limite di quella del poligono regolare")
+G("mat-291", "Geometria", 3, "Qual è l'area di un cerchio di diametro 8 m?", "16π m²", ["64π m²", "8π m²", "32π m²"],
+  "Il raggio è 4: π · 4² = 16π.", "Cerchio", "La formula dell'area del cerchio può essere ottenuta come limite di quella del poligono regolare")
+G("mat-292", "Geometria solida", 3, "Qual è l'area della superficie di una sfera di raggio 3 cm?", "36π cm²", ["9π cm²", "12π cm²", "27π cm²"],
+  "A = 4πR² = 4π · 9.", "Sfera", "è data dall'equazione: A = 4 π R 2")
+G("mat-293", "Geometria solida", 3, "Qual è il volume di una sfera di raggio 3 cm?", "36π cm³", ["27π cm³", "12π cm³", "108π cm³"],
+  "V = (4/3)πR³ = (4/3)π · 27 = 36π.", "Sfera", "è dato dall'equazione (integrale in d")
+G("mat-294", "Geometria solida", 2, "Qual è l'area totale della superficie di un cubo di spigolo 4 cm?", "96 cm²", ["64 cm²", "16 cm²", "48 cm²"],
+  "Il cubo ha 6 facce quadrate: 6 · 16 = 96.", "Cubo", "presenta 6 facce quadrate, 8 vertici e 12 spigoli")
+G("mat-295", "Geometria solida", 2, "Qual è il volume di un parallelepipedo rettangolo di dimensioni 3, 4 e 5 m?", "60 m³", ["12 m³", "47 m³", "94 m³"],
+  "V = 3 · 4 · 5 = 60.", "Parallelepipedo", "Il volume di un parallelepipedo è il prodotto dell'area di una qualsiasi delle sue 6 facce per la distanza")
+G("mat-296", "Geometria", 2, "I cateti di un triangolo rettangolo misurano 9 cm e 12 cm. Quanto misura l'ipotenusa?", "15 cm", ["21 cm", "13 cm", "√63 cm"],
+  "√(81 + 144) = √225 = 15.", "Teorema di Pitagora", PIT)
+G("mat-297", "Geometria", 3, "In un triangolo rettangolo l'ipotenusa misura 25 e un cateto 7. Quanto misura l'altro cateto?", "24", ["18", "√674", "26"],
+  "√(625 − 49) = √576 = 24.", "Teorema di Pitagora", PIT)
+G("mat-298", "Geometria", 3, "Quali valori trovò Archimede come limiti per π, usando poligoni di 96 lati?", "223/71 < π < 22/7", ["3 < π < 4", "3,14 < π < 3,15", "π = 355/113"],
+  "Il valore 355/113 si deve invece a Zu Chongzhi.", "Pi greco", "lo scienziato siracusano scoprì che 223⁄71 < π < 22⁄7")
+G("mat-299", "Misure", 2, "Quale grandezza misura la candela nel Sistema internazionale?", "L'intensità luminosa", ["La temperatura", "La quantità di sostanza", "La corrente elettrica"],
+  "Fu aggiunta nel 1954 insieme alla temperatura assoluta.", "Sistema internazionale di unità di misura", "intensità luminosa (definendo poi come sua unità di misura la candela)")
+G("mat-300", "Misure", 3, "Quale unità SI è definita attraverso il numero di Avogadro?", "La mole", ["Il kelvin", "La candela", "L'ampere"],
+  "La quantità di sostanza è diventata grandezza fondamentale nel 1971.", "Sistema internazionale di unità di misura", "definisce la mole attraverso il numero di Avogadro")
