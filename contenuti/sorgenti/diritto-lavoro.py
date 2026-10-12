@@ -1047,3 +1047,311 @@ P("lav-201", "Lavoro pubblico", 4, "In quante aree almeno sono inquadrati i dipe
   "Almeno tre aree funzionali", ["Una sola area", "Dieci aree", "Due fasce"],
   "Art. 52, c. 1-bis D.Lgs. 165/2001.",
   "art. 52", "sono inquadrati in almeno tre d")
+
+# --- Ampliamento a 300: D.Lgs. 81/2015 (contratti) ---
+C("lav-202", "Mansioni", 3, "Secondo l'art. 2103 c.c. (riscritto dal D.Lgs. 81/2015), in caso di modifica degli assetti organizzativi che incide sulla sua posizione, il lavoratore può essere assegnato:",
+  "a mansioni del livello di inquadramento inferiore, purché nella medesima categoria legale", ["a qualsiasi mansione inferiore, anche di altra categoria", "solo a mansioni superiori", "a mansioni inferiori con riduzione proporzionale della retribuzione"],
+  "Il demansionamento è ammesso di un livello, nella stessa categoria legale, conservando livello e trattamento retributivo.", "art. 3", "lo stesso può essere assegnato a mansioni appartenenti al livello di inquadramento inferiore purché rientranti nella medesima categoria legale")
+C("lav-203", "Mansioni", 4, "Se il datore non adempie l'obbligo formativo legato al cambio di mansioni, l'atto di assegnazione delle nuove mansioni:",
+  "resta valido", ["è nullo", "è annullabile su richiesta del lavoratore entro 60 giorni", "diventa inefficace dopo sei mesi"],
+  "L'art. 2103 c.c. precisa che il mancato adempimento dell'obbligo formativo non determina la nullità dell'assegnazione.", "art. 3", "il cui mancato adempimento non determina comunque la nullità dell'atto di assegnazione delle nuove mansioni")
+C("lav-204", "Mansioni", 4, "In caso di assegnazione a mansioni inferiori, come va comunicato il mutamento al lavoratore?",
+  "Per iscritto, a pena di nullità", ["Anche oralmente", "Con raccomandata entro 30 giorni, a pena di decadenza", "Non serve alcuna comunicazione"],
+  "Il lavoratore conserva livello di inquadramento e trattamento retributivo, salvo gli elementi legati a particolari modalità della prestazione precedente.", "art. 3", "il mutamento di mansioni è comunicato per iscritto, a pena di nullità")
+C("lav-205", "Mansioni", 3, "Cosa spetta al lavoratore assegnato a mansioni superiori?",
+  "Il trattamento corrispondente all'attività svolta", ["Nessuna differenza retributiva", "Una indennità forfettaria fissata dalla legge", "Solo un punteggio per i concorsi interni"],
+  "Nel settore privato l'assegnazione diventa poi definitiva dopo il periodo fissato dai contratti collettivi o dalla legge.", "art. 3", "Nel caso di assegnazione a mansioni superiori il lavoratore ha diritto al trattamento corrispondente all'attività svolta")
+C("lav-206", "Part-time", 4, "Se il contratto collettivo non disciplina il lavoro supplementare, entro quale misura il datore può richiederlo al lavoratore part-time?",
+  "Non oltre il 25 per cento delle ore settimanali concordate", ["Non oltre il 10 per cento", "Non oltre il 50 per cento", "Senza limiti"],
+  "Art. 6, comma 2, del D.Lgs. 81/2015.", "art. 6", "in misura non superiore al 25 per cento delle ore di lavoro settimanali concordate")
+C("lav-207", "Part-time", 4, "In assenza di disciplina collettiva, con quale maggiorazione è retribuito il lavoro supplementare?",
+  "15 per cento della retribuzione oraria globale di fatto", ["25 per cento", "50 per cento", "Nessuna maggiorazione"],
+  "Art. 6, comma 2.", "art. 6", "Il lavoro supplementare è retribuito con una maggiorazione del 15 per cento")
+C("lav-208", "Part-time", 2, "Rispetto al lavoratore a tempo pieno di pari inquadramento, il lavoratore part-time:",
+  "non deve ricevere un trattamento meno favorevole", ["ha diritto a un trattamento più favorevole", "può avere un trattamento inferiore se lo prevede il contratto individuale", "non ha diritto alle ferie"],
+  "Art. 7: i diritti sono gli stessi, il trattamento economico è riproporzionato alla prestazione.", "art. 7", "Il lavoratore a tempo parziale non deve ricevere un trattamento meno favorevole rispetto al lavoratore a tempo pieno di pari inquadramento")
+C("lav-209", "Part-time", 4, "Come si computano i lavoratori part-time ai fini delle discipline che dipendono dal numero di dipendenti?",
+  "In proporzione all'orario svolto, rapportato al tempo pieno", ["Come lavoratori a tempo pieno", "Non si computano", "Ciascuno vale mezza unità"],
+  "Art. 9 del D.Lgs. 81/2015.", "art. 9", "i lavoratori a tempo parziale sono computati in proporzione all'orario svolto, rapportato al tempo pieno")
+C("lav-210", "Part-time", 5, "Se manca la prova della stipulazione a tempo parziale, su domanda del lavoratore il giudice:",
+  "dichiara la sussistenza di un rapporto a tempo pieno", ["dichiara nullo il contratto", "riduce le ore al minimo contrattuale", "applica una sanzione solo amministrativa"],
+  "Art. 10, comma 1: restano dovuti retribuzione e contributi per il periodo precedente.", "art. 10", "su domanda del lavoratore è dichiarata la sussistenza fra le parti di un rapporto di lavoro a tempo pieno")
+C("lav-211", "Part-time", 5, "Quali disposizioni sul part-time NON si applicano alle pubbliche amministrazioni, secondo l'art. 12?",
+  "Gli articoli 6, commi 2 e 6, e 10", ["Tutte le disposizioni della sezione", "Solo l'articolo 5", "Gli articoli 7 e 8"],
+  "Le altre norme sul part-time si applicano anche al pubblico impiego, salvo disposizioni speciali.", "art. 12", "con esclusione di quelle contenute negli articoli 6, commi 2 e 6, e 10")
+C("lav-212", "Lavoro intermittente", 4, "Con quali lavoratori il contratto intermittente può essere concluso in ogni caso, a prescindere dai contratti collettivi?",
+  "Con meno di 24 anni (prestazioni entro i 25) e con più di 55 anni", ["Solo con studenti universitari", "Con meno di 30 anni e più di 60", "Con chiunque sia disoccupato da più di un anno"],
+  "Art. 13, comma 2, del D.Lgs. 81/2015.", "art. 13", "può in ogni caso essere concluso con soggetti con meno di 24 anni di età")
+C("lav-213", "Lavoro intermittente", 5, "Fuori da turismo, pubblici esercizi e spettacolo, qual è il limite del lavoro intermittente con lo stesso datore?",
+  "400 giornate di effettivo lavoro in tre anni solari", ["200 giornate in un anno", "100 giornate in due anni", "Nessun limite"],
+  "Superato il limite, il rapporto si trasforma a tempo pieno e indeterminato.", "art. 13", "non superiore a quattrocento giornate di effettivo lavoro nell'arco di tre anni solari")
+C("lav-214", "Lavoro intermittente", 4, "Che cosa compensa l'indennità di disponibilità nel lavoro intermittente?",
+  "L'impegno del lavoratore a rispondere alla chiamata; è mensile e divisibile in quote orarie", ["Le ore effettivamente lavorate", "Le ferie non godute", "Il trattamento di fine rapporto"],
+  "Art. 16: la misura è fissata dai contratti collettivi, non sotto il minimo stabilito con decreto ministeriale.", "art. 16", "La misura dell'indennità mensile di disponibilità, divisibile in quote orarie")
+C("lav-215", "Lavoro intermittente", 5, "Cosa può comportare il rifiuto ingiustificato di rispondere alla chiamata da parte del lavoratore intermittente che si è obbligato?",
+  "Il licenziamento e la restituzione della quota di indennità successiva al rifiuto", ["Solo un richiamo verbale", "Una multa fino a quattro ore di retribuzione", "Nessuna conseguenza"],
+  "Art. 16, comma 5.", "art. 16", "Il rifiuto ingiustificato di rispondere alla chiamata può costituire motivo di licenziamento")
+C("lav-216", "Lavoro intermittente", 4, "Come si computa il lavoratore intermittente nell'organico dell'impresa?",
+  "In proporzione all'orario effettivamente svolto in ciascun semestre", ["Come un lavoratore a tempo pieno", "Non si computa mai", "In proporzione alle chiamate dell'anno precedente"],
+  "Art. 18 del D.Lgs. 81/2015.", "art. 18", "in proporzione all'orario di lavoro effettivamente svolto nell'arco di ciascun semestre")
+C("lav-217", "Contratti a termine", 3, "Per quale finalità è sempre vietato assumere a tempo determinato?",
+  "Per sostituire lavoratori in sciopero", ["Per sostituire lavoratrici in maternità", "Per attività stagionali", "Per punte di attività"],
+  "Art. 20: altri divieti riguardano licenziamenti collettivi recenti, cassa integrazione e mancata valutazione dei rischi.", "art. 20", "per la sostituzione di lavoratori che esercitano il diritto di sciopero")
+C("lav-218", "Contratti a termine", 4, "Un datore che non ha effettuato la valutazione dei rischi può stipulare contratti a termine?",
+  "No: il termine non è ammesso e il contratto si trasforma a tempo indeterminato", ["Sì, senza conseguenze", "Sì, ma solo fino a sei mesi", "Sì, con una sanzione amministrativa"],
+  "Art. 20, comma 1, lett. d) e comma 2.", "art. 20", "da parte di datori di lavoro che non hanno effettuato la valutazione dei rischi")
+C("lav-219", "Contratti a termine", 4, "Quante proroghe al massimo sono ammesse per un contratto a tempo determinato nell'arco di 24 mesi?",
+  "Quattro", ["Due", "Cinque", "Sei"],
+  "Art. 21, comma 1: oltre il limite il contratto si trasforma a tempo indeterminato.", "art. 21", "per un massimo di quattro volte nell'arco di ventiquattro mesi")
+C("lav-220", "Contratti a termine", 5, "Se il rapporto a termine prosegue dopo la scadenza, quale maggiorazione spetta per i primi dieci giorni?",
+  "20 per cento della retribuzione per ogni giorno", ["10 per cento", "40 per cento", "Nessuna"],
+  "Art. 22: dall'undicesimo giorno la maggiorazione sale al 40 per cento.", "art. 22", "pari al 20 per cento fino al decimo giorno successivo e al 40 per cento per ciascun giorno ulteriore")
+C("lav-221", "Contratti a termine", 5, "Un contratto a termine di quattro mesi continua oltre la scadenza: da quando si trasforma a tempo indeterminato?",
+  "Dopo il trentesimo giorno di prosecuzione", ["Dal giorno successivo alla scadenza", "Dopo il cinquantesimo giorno", "Dopo sei mesi"],
+  "Art. 22, comma 2: 30 giorni per i contratti sotto i sei mesi, 50 negli altri casi.", "art. 22", "Qualora il rapporto di lavoro continui oltre il trentesimo giorno in caso di contratto di durata inferiore a sei mesi")
+C("lav-222", "Contratti a termine", 3, "Quale trattamento spetta al lavoratore a tempo determinato rispetto ai colleghi a tempo indeterminato comparabili?",
+  "Lo stesso trattamento economico e normativo, in proporzione al periodo lavorato", ["Un trattamento ridotto del 20 per cento", "Solo il minimo di legge", "Lo stesso trattamento ma senza ferie"],
+  "Art. 25: principio di non discriminazione, salvo obiettiva incompatibilità con la natura del contratto.", "art. 25", "Al lavoratore a tempo determinato spetta il trattamento economico e normativo in atto nell'impresa per i lavoratori con contratto a tempo indeterminato comparabili")
+C("lav-223", "Contratti a termine", 5, "Qual è la durata massima dei contratti a tempo determinato con i dirigenti?",
+  "Cinque anni", ["Tre anni", "Ventiquattro mesi", "Dieci anni"],
+  "Art. 29, comma 2: il dirigente può recedere dopo un triennio a norma dell'art. 2118 c.c.", "art. 29", "i contratti di lavoro a tempo determinato con i dirigenti, che non possono avere una durata superiore a cinque anni")
+C("lav-224", "Somministrazione", 4, "Cosa deve fare l'utilizzatore verso i lavoratori somministrati per retribuzioni e contributi?",
+  "Ne risponde in solido con il somministratore, salvo rivalsa", ["Nulla: risponde solo l'agenzia", "Paga solo se l'agenzia fallisce", "Paga la metà dei contributi"],
+  "Art. 35, comma 2, del D.Lgs. 81/2015.", "art. 35", "L'utilizzatore è obbligato in solido con il somministratore a corrispondere ai lavoratori i trattamenti retributivi")
+C("lav-225", "Somministrazione", 3, "Durante la missione, quali condizioni spettano ai lavoratori somministrati?",
+  "Condizioni complessivamente non inferiori a quelle dei dipendenti di pari livello dell'utilizzatore", ["Quelle minime fissate dall'agenzia", "Il 70 per cento della retribuzione dei dipendenti", "Le condizioni del contratto nazionale del commercio"],
+  "Art. 35, comma 1: parità di trattamento a parità di mansioni.", "art. 35", "a condizioni economiche e normative complessivamente non inferiori a quelle dei dipendenti di pari livello dell'utilizzatore")
+C("lav-226", "Somministrazione", 4, "Che cosa accade se il contratto di somministrazione è privo di forma scritta?",
+  "È nullo e i lavoratori sono considerati dipendenti dell'utilizzatore", ["È valido ma sanzionabile", "I lavoratori restano dipendenti dell'agenzia", "Si converte in appalto di servizi"],
+  "Art. 38, comma 1.", "art. 38", "In mancanza di forma scritta il contratto di somministrazione di lavoro è nullo e i lavoratori sono considerati a tutti gli effetti alle dipendenze dell'utilizzatore")
+C("lav-227", "Somministrazione", 3, "Quale di questi elementi deve contenere il contratto di somministrazione?",
+  "Gli estremi dell'autorizzazione rilasciata al somministratore", ["Il codice fiscale dei familiari dei lavoratori", "Il parere dell'Ispettorato del lavoro", "Il bilancio dell'utilizzatore"],
+  "Art. 33: il contratto è scritto e indica tra l'altro numero dei lavoratori, rischi, durata, mansioni, luogo e orario.", "art. 33", "gli estremi dell'autorizzazione rilasciata al somministratore")
+C("lav-228", "Apprendistato", 3, "Qual è la durata minima del contratto di apprendistato, salvo eccezioni?",
+  "Sei mesi", ["Tre mesi", "Un anno", "Due anni"],
+  "Art. 42, comma 2, del D.Lgs. 81/2015.", "art. 42", "Il contratto di apprendistato ha una durata minima non inferiore a sei mesi")
+C("lav-229", "Apprendistato", 4, "Quale età è richiesta per l'apprendistato per la qualifica e il diploma professionale?",
+  "Dai 15 anni compiuti fino al compimento dei 25", ["Dai 18 ai 29 anni", "Dai 16 ai 21 anni", "Dai 14 ai 18 anni"],
+  "Art. 43, comma 2: la durata non può superare tre anni (quattro per il diploma quadriennale).", "art. 43", "i giovani che hanno compiuto i 15 anni di età e fino al compimento dei 25")
+C("lav-230", "Apprendistato", 4, "Per quali finalità può essere usato l'apprendistato di alta formazione e ricerca?",
+  "Titoli universitari, dottorati, attività di ricerca e praticantato per le professioni ordinistiche", ["Solo per il diploma di scuola media", "Solo per i corsi di lingua", "Solo per la qualifica di operaio specializzato"],
+  "Art. 45: possono essere assunti soggetti tra i 18 e i 29 anni con diploma.", "art. 45", "nonché per il praticantato per l'accesso alle professioni ordinistiche")
+C("lav-231", "Apprendistato", 5, "Nell'apprendistato per la qualifica e il diploma professionale, quale fatto costituisce giustificato motivo di licenziamento?",
+  "Il mancato raggiungimento degli obiettivi formativi attestato dall'istituzione formativa", ["Il compimento dei 18 anni", "Una singola assenza ingiustificata", "La richiesta di ferie"],
+  "Art. 42, comma 3: per il resto, durante l'apprendistato si applicano le sanzioni per il licenziamento illegittimo.", "art. 42", "costituisce giustificato motivo di licenziamento il mancato raggiungimento degli obiettivi formativi")
+
+# --- D.Lgs. 81/2008 (sicurezza) ---
+T("lav-232", "Sicurezza sul lavoro", 3, "Su quali argomenti deve vertere, in particolare, la formazione dei lavoratori secondo l'art. 37 del D.Lgs. 81/2008?",
+  "Concetti di rischio, danno, prevenzione e protezione, e rischi delle mansioni", ["Solo l'uso dei DPI", "Solo il primo soccorso", "Solo il codice disciplinare"],
+  "La formazione deve essere sufficiente e adeguata, anche rispetto alle conoscenze linguistiche.", "art. 37", "concetti di rischio, danno, prevenzione, protezione, organizzazione della prevenzione aziendale")
+T("lav-233", "Sicurezza sul lavoro", 4, "Con quale atto sono definiti durata e contenuti minimi della formazione dei lavoratori?",
+  "Con accordo in sede di Conferenza Stato-Regioni", ["Con decreto del Presidente della Repubblica", "Con regolamento aziendale", "Con legge regionale"],
+  "Art. 37, comma 2, previa consultazione delle parti sociali.", "art. 37", "sono definiti mediante accordo in sede di Conferenza permanente per i rapporti tra lo Stato, le regioni")
+T("lav-234", "Sicurezza sul lavoro", 3, "In caso di pericolo grave e immediato che non può essere evitato, il datore di lavoro deve fare in modo che i lavoratori possano:",
+  "cessare l'attività o mettersi al sicuro abbandonando immediatamente il luogo di lavoro", ["restare al posto in attesa di istruzioni scritte", "proseguire fino alla fine del turno", "chiamare prima il sindacato"],
+  "Art. 43, comma 1, lett. d).", "art. 43", "possano cessare la loro attività, o mettersi al sicuro, abbandonando immediatamente il luogo di lavoro")
+T("lav-235", "Sicurezza sul lavoro", 3, "Sentito chi il datore di lavoro prende i provvedimenti in materia di primo soccorso?",
+  "Il medico competente, ove nominato", ["Il sindaco", "L'ispettorato del lavoro", "Il RLS, obbligatoriamente"],
+  "Art. 45, comma 1: si tiene conto di natura dell'attività e dimensioni dell'azienda.", "art. 45", "sentito il medico competente ove nominato, prende i provvedimenti necessari in materia di primo soccorso")
+T("lav-236", "Sicurezza sul lavoro", 4, "Quale decreto ministeriale individua le caratteristiche minime delle attrezzature di primo soccorso?",
+  "Il D.M. 15 luglio 2003, n. 388", ["Il D.M. 10 marzo 1998", "Il D.P.R. 547/1955", "Il D.Lgs. 626/1994"],
+  "Art. 45, comma 2, del D.Lgs. 81/2008.", "art. 45", "decreto ministeriale 15 luglio 2003, n. 388")
+T("lav-237", "Sicurezza sul lavoro", 4, "Dove opera il rappresentante dei lavoratori per la sicurezza territoriale (RLST)?",
+  "Nelle aziende del territorio o comparto in cui non è stato eletto o designato il RLS", ["Solo nelle aziende con più di 200 dipendenti", "Solo nelle pubbliche amministrazioni", "Presso l'ispettorato del lavoro"],
+  "Art. 48, comma 1.", "art. 48", "nelle quali non sia stato eletto o designato il rappresentante dei lavoratori per la sicurezza")
+T("lav-238", "Sicurezza sul lavoro", 4, "Qual è il ruolo degli organismi paritetici nelle controversie su rappresentanza, informazione e formazione?",
+  "Sono prima istanza di riferimento", ["Decidono con sentenza", "Non hanno alcun ruolo", "Sostituiscono il giudice del lavoro"],
+  "Art. 51, comma 2, salvo quanto previsto dalla contrattazione collettiva.", "art. 51", "sono prima istanza di riferimento in merito a controversie")
+T("lav-239", "Sicurezza sul lavoro", 4, "Presso quale ente è costituito il fondo di sostegno alla piccola e media impresa, ai RLST e alla pariteticità?",
+  "INAIL", ["INPS", "Ministero della salute", "Camera di commercio"],
+  "Art. 52, comma 1, del D.Lgs. 81/2008.", "art. 52", "Presso l'Istituto nazionale per l'assicurazione contro gli infortuni sul lavoro (INAIL) è costituito il fondo")
+T("lav-240", "Sicurezza sul lavoro", 3, "La documentazione prevista dal D.Lgs. 81/2008 può essere conservata con sistemi informatici?",
+  "Sì, è consentito l'impiego di sistemi di elaborazione automatica dei dati", ["No, solo su carta", "Solo con autorizzazione dell'ASL", "Solo per le aziende con più di 50 dipendenti"],
+  "Art. 53: l'accesso deve essere limitato ai soggetti abilitati e le modifiche solo aggiuntive.", "art. 53", "È consentito l'impiego di sistemi di elaborazione automatica dei dati")
+T("lav-241", "Sicurezza sul lavoro", 4, "Quale sanzione rischia il lavoratore che viola gli obblighi di sicurezza dell'art. 20, comma 2 (ad es. uso dei DPI)?",
+  "Arresto fino a un mese o ammenda da 200 a 600 euro", ["Solo il licenziamento", "Nessuna sanzione penale", "Reclusione da uno a tre anni"],
+  "Art. 59: anche i lavoratori sono destinatari di sanzioni.", "art. 59", "con l'arresto fino a un mese o con l'ammenda da 200 a 600 euro")
+T("lav-242", "Sicurezza sul lavoro", 3, "A quale allegato del D.Lgs. 81/2008 devono essere conformi i luoghi di lavoro?",
+  "Allegato IV", ["Allegato I", "Allegato X", "Allegato XXXIII"],
+  "Art. 63, comma 1; i luoghi vanno strutturati tenendo conto, se del caso, dei lavoratori disabili.", "art. 63", "I luoghi di lavoro devono essere conformi ai requisiti indicati nell'allegato IV")
+T("lav-243", "Sicurezza sul lavoro", 2, "Come devono essere tenute le vie di circolazione che portano alle uscite di emergenza?",
+  "Sgombre, per poterle usare in ogni evenienza", ["Chiuse a chiave fuori orario", "Segnalate ma usabili come deposito temporaneo", "Accessibili solo agli addetti antincendio"],
+  "Art. 64, comma 1, lett. b).", "art. 64", "siano sgombre allo scopo di consentirne l'utilizzazione in ogni evenienza")
+T("lav-244", "Sicurezza sul lavoro", 3, "Secondo l'art. 65, è consentito destinare al lavoro locali chiusi sotterranei o semisotterranei?",
+  "Di regola no, salvo le deroghe previste", ["Sì, sempre", "Solo per uffici", "Solo nei mesi estivi"],
+  "L'art. 65 pone il divieto, con deroghe per particolari esigenze tecniche e condizioni di sicurezza.", "art. 65", "È vietato destinare al lavoro locali chiusi sotterranei o semisotterranei")
+T("lav-245", "Sicurezza sul lavoro", 3, "Come definisce il D.Lgs. 81/2008 la «zona pericolosa»?",
+  "Qualsiasi zona dentro o vicino a un'attrezzatura in cui la presenza di un lavoratore costituisce un rischio", ["Solo le aree con sostanze chimiche", "Le zone esterne al perimetro aziendale", "Le aree dove si fuma"],
+  "Art. 69, lett. c); il «lavoratore esposto» è chi si trova in tutto o in parte in tale zona.", "art. 69", "qualsiasi zona all'interno ovvero in prossimità di una attrezzatura di lavoro nella quale la presenza di un lavoratore costituisce un rischio")
+T("lav-246", "Sicurezza sul lavoro", 3, "Che cosa si intende per «attrezzatura di lavoro» nel D.Lgs. 81/2008?",
+  "Qualsiasi macchina, apparecchio, utensile o impianto destinato a essere usato durante il lavoro", ["Solo le macchine con motore elettrico", "Solo i dispositivi di protezione individuale", "Solo i veicoli aziendali"],
+  "Art. 69, lett. a).", "art. 69", "qualsiasi macchina, apparecchio, utensile o impianto")
+T("lav-247", "Sicurezza sul lavoro", 4, "Nella scelta delle attrezzature di lavoro, quale fattore NON è tra quelli che il datore deve considerare per legge?",
+  "Il prezzo più basso sul mercato", ["Le caratteristiche specifiche del lavoro", "I rischi presenti nell'ambiente di lavoro", "I rischi da interferenze con altre attrezzature"],
+  "Art. 71, comma 2: condizioni del lavoro, rischi dell'ambiente, rischi dell'attrezzatura e interferenze.", "art. 71", "i rischi derivanti da interferenze con le altre attrezzature già in uso")
+T("lav-248", "Sicurezza sul lavoro", 3, "Chi è il «committente» nei cantieri temporanei o mobili?",
+  "Il soggetto per conto del quale l'intera opera viene realizzata", ["L'impresa che esegue i lavori", "Il direttore dei lavori", "Il coordinatore per l'esecuzione"],
+  "Art. 89, lett. b); negli appalti pubblici è il titolare del potere decisionale e di spesa.", "art. 89", "il soggetto per conto del quale l'intera opera viene realizzata")
+T("lav-249", "Sicurezza sul lavoro", 3, "Cos'è un «cantiere temporaneo o mobile» secondo il D.Lgs. 81/2008?",
+  "Qualunque luogo in cui si effettuano lavori edili o di ingegneria civile elencati nell'allegato X", ["Solo i cantieri con più di 10 lavoratori", "Solo i cantieri stradali", "Qualsiasi luogo di lavoro all'aperto"],
+  "Art. 89, comma 1, lett. a).", "art. 89", "qualunque luogo in cui si effettuano lavori edili o di ingegneria civile")
+T("lav-250", "Sicurezza sul lavoro", 3, "Nella movimentazione manuale dei carichi, qual è il primo obbligo del datore di lavoro?",
+  "Evitare la movimentazione manuale, con misure organizzative e mezzi meccanici", ["Fornire cinture lombari a tutti", "Limitare i carichi a 50 kg", "Far firmare una liberatoria ai lavoratori"],
+  "Art. 168: se non è evitabile, il datore deve ridurne il rischio, in particolare di patologie dorso-lombari.", "art. 168", "per evitare la necessità di una movimentazione manuale dei carichi da parte dei lavoratori")
+T("lav-251", "Sicurezza sul lavoro", 4, "Con quale periodicità sono visitati i videoterminalisti idonei senza prescrizioni e con meno di 50 anni?",
+  "Ogni cinque anni", ["Ogni anno", "Ogni due anni", "Ogni dieci anni"],
+  "Art. 176, comma 3: la periodicità è biennale per gli idonei con prescrizioni e per chi ha compiuto 50 anni.", "art. 176", "quinquennale negli altri casi")
+T("lav-252", "Sicurezza sul lavoro", 5, "A quale normativa si collega il modello di organizzazione e gestione dell'art. 30 del D.Lgs. 81/2008?",
+  "Alla responsabilità amministrativa degli enti del D.Lgs. 231/2001, con efficacia esimente", ["Al codice della privacy", "Al codice dei contratti pubblici", "Al testo unico sul pubblico impiego"],
+  "Se adottato ed efficacemente attuato, il modello può escludere la responsabilità dell'ente per reati in materia di sicurezza.", "art. 30", "idoneo ad avere efficacia esimente della responsabilità amministrativa delle persone giuridiche")
+T("lav-253", "Sicurezza sul lavoro", 4, "Dove deve essere organizzato, prioritariamente, il servizio di prevenzione e protezione?",
+  "All'interno dell'azienda o dell'unità produttiva", ["Sempre presso un consulente esterno", "Presso l'ASL competente", "Presso l'INAIL"],
+  "Art. 31: in alternativa il datore può incaricare persone o servizi esterni.", "art. 31", "il datore di lavoro organizza il servizio di prevenzione e protezione")
+T("lav-254", "Sicurezza sul lavoro", 3, "Gli addetti e i responsabili del servizio di prevenzione e protezione possono subire pregiudizi per l'attività svolta?",
+  "No, la legge lo esclude", ["Sì, se il datore non è d'accordo con le loro proposte", "Sì, se sono esterni", "Solo se l'azienda ha meno di 15 dipendenti"],
+  "Art. 31, comma 2: devono anche avere mezzi e tempo adeguati.", "art. 31", "Essi non possono subire pregiudizio a causa della attività svolta nell'espletamento del proprio incarico")
+T("lav-255", "Sicurezza sul lavoro", 3, "Quale di questi è un compito del servizio di prevenzione e protezione (art. 33)?",
+  "Elaborare le procedure di sicurezza per le varie attività aziendali", ["Irrogare sanzioni disciplinari", "Effettuare le visite mediche", "Firmare i contratti di appalto"],
+  "Il servizio individua i rischi, propone la formazione e partecipa alla riunione periodica.", "art. 33", "ad elaborare le procedure di sicurezza per le varie attività aziendali")
+T("lav-256", "Sicurezza sul lavoro", 4, "Quale di questi titoli consente di svolgere le funzioni di medico competente?",
+  "La specializzazione in medicina del lavoro", ["La sola laurea in medicina", "La specializzazione in pediatria", "L'iscrizione all'albo dei medici di base"],
+  "Art. 38: valgono anche altri titoli specifici, come la specializzazione in igiene e medicina preventiva o in medicina legale.", "art. 38", "specializzazione in medicina del lavoro o in medicina preventiva dei lavoratori e psicotecnica")
+T("lav-257", "Sicurezza sul lavoro", 4, "Se il medico competente giudica il lavoratore inidoneo alla mansione specifica, il datore di lavoro:",
+  "lo adibisce, se possibile, a mansioni equivalenti o, in mancanza, inferiori, con il trattamento delle mansioni di provenienza", ["lo licenzia per giusta causa", "lo sospende senza retribuzione", "lo trasferisce ad altra azienda"],
+  "Art. 42 del D.Lgs. 81/2008, anche tenendo conto della L. 68/1999.", "art. 42", "a mansioni equivalenti o, in difetto, a mansioni inferiori garantendo il trattamento corrispondente alle mansioni di provenienza")
+T("lav-258", "Sicurezza sul lavoro", 4, "Qual è il numero minimo di RLS in un'unità produttiva con 600 lavoratori?",
+  "Tre", ["Uno", "Sei", "Due"],
+  "Art. 47, comma 7: uno fino a 200 lavoratori, tre da 201 a 1.000, sei oltre i 1.000.", "art. 47", "tre rappresentanti nelle aziende ovvero unità produttive da 201 a 1.000 lavoratori")
+T("lav-259", "Sicurezza sul lavoro", 4, "Nelle aziende con più di 15 lavoratori, come si individua il RLS?",
+  "È eletto o designato dai lavoratori nell'ambito delle rappresentanze sindacali in azienda", ["Lo nomina il datore di lavoro", "Lo nomina l'ASL", "È sempre il RSPP"],
+  "Art. 47, comma 4: se mancano le rappresentanze sindacali, è eletto dai lavoratori al loro interno.", "art. 47", "è eletto o designato dai lavoratori nell'ambito delle rappresentanze sindacali in azienda")
+T("lav-260", "Sicurezza sul lavoro", 4, "Nei cantieri con più imprese esecutrici, quando il committente designa il coordinatore per la progettazione?",
+  "Contestualmente all'affidamento dell'incarico di progettazione", ["A lavori ultimati", "Solo se lo chiede l'ASL", "Dopo l'apertura del cantiere"],
+  "Art. 90, comma 3; il coordinatore per l'esecuzione va designato prima dell'affidamento dei lavori.", "art. 90", "contestualmente all'affidamento dell'incarico di progettazione, designa il coordinatore per la progettazione")
+T("lav-261", "Sicurezza sul lavoro", 4, "Quale rischio specifico deve considerare il piano di sicurezza e coordinamento (PSC) nei cantieri con attività di scavo?",
+  "Il possibile rinvenimento di ordigni bellici inesplosi", ["Il rischio di furto delle attrezzature", "Il rischio di ritardi nei pagamenti", "Il rischio di contenzioso con i vicini"],
+  "Art. 100: il PSC comprende relazione tecnica, prescrizioni e stima dei costi della sicurezza.", "art. 100", "rinvenimento di ordigni bellici inesplosi")
+T("lav-262", "Sicurezza sul lavoro", 5, "Qual è il valore limite di esposizione giornaliera al rumore (LEX) fissato dall'art. 189?",
+  "87 dB(A)", ["80 dB(A)", "85 dB(A)", "90 dB(A)"],
+  "80 dB(A) è il valore inferiore di azione, 85 dB(A) il valore superiore di azione.", "art. 189", "LEX = 87 dB(A)")
+T("lav-263", "Sicurezza sul lavoro", 4, "Cosa devono fare i lavoratori autonomi e i componenti dell'impresa familiare secondo l'art. 21?",
+  "Usare attrezzature conformi e munirsi di DPI, utilizzandoli correttamente", ["Nominare un RSPP", "Redigere il documento di valutazione dei rischi", "Eleggere un RLS"],
+  "Art. 21: se operano in appalto devono anche avere una tessera di riconoscimento con fotografia.", "art. 21", "munirsi di dispositivi di protezione individuale ed utilizzarli")
+
+# --- D.Lgs. 165/2001 (lavoro pubblico) ---
+P("lav-264", "Dirigenza", 4, "Quale conseguenza ha il mancato raggiungimento degli obiettivi accertato dal sistema di valutazione per il dirigente?",
+  "L'impossibilità di rinnovo dello stesso incarico", ["Il licenziamento automatico", "La riduzione dello stipendio tabellare", "Il trasferimento d'ufficio in altra regione"],
+  "Art. 21: nei casi più gravi l'incarico può essere revocato o il rapporto risolto, previa contestazione.", "art. 21", "l'impossibilità di rinnovo dello stesso incarico dirigenziale")
+P("lav-265", "Dirigenza", 5, "Quale quota minima della retribuzione complessiva del dirigente deve costituire il trattamento accessorio legato ai risultati?",
+  "Il 30 per cento", ["Il 10 per cento", "Il 50 per cento", "Il 5 per cento"],
+  "Art. 24, comma 1-bis, al netto della retribuzione individuale di anzianità e degli incarichi aggiuntivi.", "art. 24", "deve costituire almeno il 30 per cento della retribuzione complessiva del dirigente")
+P("lav-266", "Mobilità", 4, "Nel passaggio diretto tra amministrazioni, quando serve l'assenso dell'amministrazione di appartenenza?",
+  "Per posizioni infungibili, personale assunto da meno di tre anni o se si crea una carenza di organico oltre il 20%", ["Sempre", "Mai", "Solo per i dirigenti"],
+  "Art. 30, comma 1, del D.Lgs. 165/2001.", "art. 30", "o di personale assunto da meno di tre anni")
+P("lav-267", "Mobilità", 4, "Per motivate esigenze organizzative, per quanto tempo al massimo l'amministrazione di appartenenza può differire il passaggio diretto?",
+  "Sessanta giorni dalla ricezione dell'istanza", ["Sei mesi", "Un anno", "Trenta giorni"],
+  "Art. 30, comma 1.", "art. 30", "fino ad un massimo di sessanta giorni dalla ricezione dell'istanza")
+P("lav-268", "Mobilità", 4, "Prima di avviare le procedure di assunzione, cosa devono comunicare le amministrazioni secondo l'art. 34-bis?",
+  "Area, livello e sede di destinazione dei posti, per l'eventuale assegnazione di personale in disponibilità", ["L'elenco dei vincitori", "Il bilancio dell'ente", "I nomi dei commissari"],
+  "La mobilità del personale in disponibilità precede il concorso.", "art. 34-bis", "prima di avviare le procedure di assunzione di personale, sono tenute a comunicare")
+P("lav-269", "Reclutamento", 3, "Per le qualifiche per cui basta la scuola dell'obbligo, come avviene l'assunzione nelle PA?",
+  "Mediante avviamento degli iscritti nelle liste di collocamento", ["Sempre con concorso per esami", "Per chiamata diretta del dirigente", "Per sorteggio"],
+  "Art. 35, comma 1, lett. b).", "art. 35", "mediante avviamento degli iscritti nelle liste di collocamento")
+P("lav-270", "Reclutamento", 4, "Come avvengono le assunzioni obbligatorie dei disabili (L. 68/1999) nelle PA?",
+  "Per chiamata numerica degli iscritti nelle liste di collocamento", ["Per chiamata nominativa del sindaco", "Con concorso riservato obbligatorio", "Con sorteggio tra gli idonei"],
+  "Art. 35, comma 2, previa verifica della compatibilità dell'invalidità con le mansioni.", "art. 35", "avvengono per chiamata numerica degli iscritti nelle liste di collocamento")
+P("lav-271", "Reclutamento", 4, "Chi è stato condannato, anche con sentenza non definitiva, per reati contro la PA può far parte di una commissione di concorso?",
+  "No, nemmeno con compiti di segreteria", ["Sì, se la pena è sospesa", "Sì, come segretario", "Sì, dopo tre anni dalla sentenza"],
+  "Art. 35-bis, introdotto dalla legge anticorruzione.", "art. 35-bis", "non possono fare parte, anche con compiti di segreteria, di commissioni per l'accesso o la selezione a pubblici impieghi")
+P("lav-272", "Procedimento disciplinare", 4, "Entro quanto il responsabile della struttura segnala all'UPD i fatti di rilevanza disciplinare punibili oltre il rimprovero verbale?",
+  "Immediatamente e comunque entro dieci giorni", ["Entro trenta giorni", "Entro sei mesi", "Entro la fine dell'anno"],
+  "Art. 55-bis, comma 4.", "art. 55-bis", "segnala immediatamente, e comunque entro dieci giorni")
+P("lav-273", "Procedimento disciplinare", 4, "Entro quanto l'UPD deve contestare per iscritto l'addebito dopo la segnalazione?",
+  "Non oltre trenta giorni", ["Non oltre dieci giorni", "Non oltre centoventi giorni", "Non oltre un anno"],
+  "Art. 55-bis, comma 4: il termine decorre dalla segnalazione o dalla piena conoscenza dei fatti.", "art. 55-bis", "con immediatezza e comunque non oltre trenta giorni decorrenti dal ricevimento della predetta segnalazione")
+P("lav-274", "Procedimento disciplinare", 4, "Quante volte il dipendente può chiedere il differimento dell'audizione per grave e oggettivo impedimento?",
+  "Una sola volta", ["Due volte", "Senza limiti", "Mai"],
+  "Art. 55-bis, comma 4: il termine di conclusione si proroga in misura corrispondente.", "art. 55-bis", "sia differita, per una sola volta")
+P("lav-275", "Procedimento disciplinare", 5, "A chi vanno comunicati per via telematica gli atti di avvio e conclusione del procedimento disciplinare?",
+  "All'Ispettorato per la funzione pubblica, entro venti giorni", ["Al Prefetto, entro cinque giorni", "All'ANAC, entro sessanta giorni", "Alla Corte dei conti, entro un anno"],
+  "Art. 55-bis, comma 4: il nome del dipendente è sostituito da un codice identificativo.", "art. 55-bis", "all'Ispettorato per la funzione pubblica, entro venti giorni dalla loro adozione")
+P("lav-276", "Procedimento disciplinare", 4, "Se per gli stessi fatti è in corso un procedimento penale, il procedimento disciplinare di regola:",
+  "prosegue e si conclude anche in pendenza del processo penale", ["si sospende sempre", "si estingue", "è assorbito dal processo penale"],
+  "Art. 55-ter: la sospensione è possibile solo per infrazioni gravi e accertamenti complessi.", "art. 55-ter", "è proseguito e concluso anche in pendenza del procedimento penale")
+P("lav-277", "Procedimento disciplinare", 5, "Quando l'UPD può sospendere il procedimento disciplinare in attesa di quello penale?",
+  "Per infrazioni punibili oltre la sospensione di dieci giorni, in casi complessi e senza elementi sufficienti", ["Sempre, su richiesta del dipendente", "Solo per il rimprovero verbale", "Mai"],
+  "Art. 55-ter, comma 1.", "art. 55-ter", "Per le infrazioni per le quali è applicabile una sanzione superiore alla sospensione dal servizio con privazione della retribuzione fino a dieci giorni")
+P("lav-278", "Licenziamento", 3, "Quale di questi comportamenti comporta comunque il licenziamento disciplinare nel pubblico impiego?",
+  "L'ingiustificato rifiuto del trasferimento disposto per motivate esigenze di servizio", ["Un ritardo occasionale di dieci minuti", "La partecipazione a uno sciopero", "L'iscrizione a un sindacato"],
+  "Art. 55-quater, comma 1, lett. c).", "art. 55-quater", "ingiustificato rifiuto del trasferimento disposto dall'amministrazione per motivate esigenze di servizio")
+P("lav-279", "Licenziamento", 4, "Le falsità documentali commesse per ottenere l'assunzione o una progressione di carriera comportano:",
+  "il licenziamento disciplinare", ["solo la revoca della progressione", "una multa", "un rimprovero scritto"],
+  "Art. 55-quater, comma 1, lett. d).", "art. 55-quater", "falsità documentali o dichiarative commesse ai fini o in occasione dell'instaurazione del rapporto di lavoro")
+P("lav-280", "Licenziamento", 5, "L'insufficiente rendimento porta al licenziamento se rilevato da una valutazione negativa della performance:",
+  "per ciascun anno dell'ultimo triennio", ["per un solo anno", "per due mesi consecutivi", "nell'ultimo quinquennio, anche non consecutiva"],
+  "Art. 55-quater, comma 1, lett. f-quinquies).", "art. 55-quater", "rilevato dalla costante valutazione negativa della performance del dipendente per ciascun anno dell'ultimo triennio")
+P("lav-281", "Licenziamento", 4, "La reiterazione nell'ambiente di lavoro di gravi condotte aggressive, moleste o ingiuriose comporta:",
+  "il licenziamento disciplinare", ["solo un richiamo verbale", "il trasferimento ad altro ufficio", "una sospensione di un giorno"],
+  "Art. 55-quater, comma 1, lett. e).", "art. 55-quater", "reiterazione nell'ambiente di lavoro di gravi condotte aggressive o moleste o minacciose o ingiuriose")
+P("lav-282", "Assenze", 4, "Cosa può fare l'amministrazione in caso di accertata permanente inidoneità psicofisica al servizio del dipendente?",
+  "Risolvere il rapporto di lavoro", ["Solo ridurre lo stipendio", "Nulla, il posto è garantito", "Trasferirlo in un altro ente senza il suo consenso"],
+  "Art. 55-octies: un regolamento disciplina procedura di verifica e sospensione cautelare.", "art. 55-octies", "l'amministrazione può risolvere il rapporto di lavoro")
+P("lav-283", "Procedimento disciplinare", 3, "Chi è competente per il procedimento disciplinare che può concludersi con il rimprovero verbale?",
+  "Il responsabile della struttura in cui presta servizio il dipendente", ["L'ufficio per i procedimenti disciplinari", "Il sindaco o il ministro", "Il giudice del lavoro"],
+  "Art. 55-bis, comma 1: per il rimprovero verbale si applica la disciplina del contratto collettivo.", "art. 55-bis", "Per le infrazioni di minore gravità, per le quali è prevista l'irrogazione della sanzione del rimprovero verbale")
+P("lav-284", "Procedimento disciplinare", 4, "Più amministrazioni possono gestire insieme l'ufficio per i procedimenti disciplinari?",
+  "Sì, previa convenzione e senza maggiori oneri", ["No, mai", "Solo i Comuni sotto i 1.000 abitanti", "Solo con autorizzazione del Prefetto"],
+  "Art. 55-bis, comma 3.", "art. 55-bis", "Le amministrazioni, previa convenzione, possono prevedere la gestione unificata delle funzioni dell'ufficio competente per i procedimenti disciplinari")
+P("lav-285", "Licenziamento", 5, "Quale condanna penale definitiva comporta il licenziamento disciplinare secondo l'art. 55-quater?",
+  "Quella per cui è prevista l'interdizione perpetua dai pubblici uffici o l'estinzione del rapporto", ["Qualsiasi condanna, anche per contravvenzione", "Solo la condanna all'ergastolo", "Nessuna: decide il giudice penale"],
+  "Art. 55-quater, comma 1, lett. f).", "art. 55-quater", "condanna penale definitiva, in relazione alla quale è prevista l'interdizione perpetua dai pubblici uffici")
+P("lav-286", "Licenziamento", 5, "La violazione reiterata degli obblighi della prestazione porta al licenziamento se ha già causato sospensioni per un totale di:",
+  "oltre un anno nell'arco di un biennio", ["oltre dieci giorni in un anno", "oltre un mese nell'ultimo quinquennio", "oltre tre mesi in un anno"],
+  "Art. 55-quater, comma 1, lett. f-quater).", "art. 55-quater", "della sospensione dal servizio per un periodo complessivo superiore a un anno nell'arco di un biennio")
+
+# --- Costituzione e Statuto dei lavoratori (articoli non ancora usati) ---
+K("lav-287", "Costituzione e lavoro", 1, "Come qualifica l'art. 41 della Costituzione l'iniziativa economica privata?",
+  "Libera", ["Vietata nei servizi pubblici", "Subordinata all'autorizzazione dello Stato", "Riservata ai cittadini italiani"],
+  "Non può però svolgersi in contrasto con l'utilità sociale o recando danno a salute, ambiente, sicurezza, libertà e dignità umana.", "art. 41", "L'iniziativa economica privata è libera")
+K("lav-288", "Costituzione e lavoro", 3, "Secondo l'art. 117 della Costituzione, la «tutela e sicurezza del lavoro» è materia di:",
+  "legislazione concorrente tra Stato e Regioni", ["legislazione esclusiva dello Stato", "legislazione esclusiva delle Regioni", "competenza dei contratti collettivi"],
+  "Nelle materie concorrenti lo Stato fissa i principi fondamentali, le Regioni il resto.", "art. 117", "tutela e sicurezza del lavoro")
+K("lav-289", "Costituzione e lavoro", 3, "A chi spetta la legislazione in materia di previdenza sociale, secondo l'art. 117?",
+  "Allo Stato, in via esclusiva", ["Alle Regioni, in via esclusiva", "A Stato e Regioni in via concorrente", "All'INPS"],
+  "Art. 117, secondo comma, lett. o). La previdenza complementare e integrativa è invece materia concorrente.", "art. 117", "o) previdenza sociale")
+K("lav-290", "Costituzione e pubblico impiego", 3, "Per gli atti compiuti in violazione di diritti, i dipendenti pubblici secondo l'art. 28 della Costituzione sono:",
+  "direttamente responsabili secondo le leggi penali, civili e amministrative", ["mai responsabili: risponde solo lo Stato", "responsabili solo se dirigenti", "responsabili solo penalmente"],
+  "La responsabilità civile si estende allo Stato e agli enti pubblici.", "art. 28", "sono direttamente responsabili, secondo le leggi penali, civili e amministrative, degli atti compiuti in violazione di diritti")
+K("lav-291", "Costituzione e pubblico impiego", 2, "Come devono adempiere le funzioni pubbliche i cittadini a cui sono affidate (art. 54)?",
+  "Con disciplina ed onore", ["Con discrezionalità politica", "Solo secondo le direttive del partito di maggioranza", "Con riservatezza assoluta"],
+  "Prestano giuramento nei casi stabiliti dalla legge.", "art. 54", "hanno il dovere di adempierle con disciplina ed onore")
+K("lav-292", "Costituzione e lavoro", 2, "Come definisce la salute l'art. 32 della Costituzione?",
+  "Fondamentale diritto dell'individuo e interesse della collettività", ["Diritto riservato ai lavoratori", "Interesse esclusivo dello Stato", "Dovere del cittadino verso il datore"],
+  "Su questa base poggia anche la tutela della salute nei luoghi di lavoro.", "art. 32", "La Repubblica tutela la salute come fondamentale diritto dell'individuo e interesse della collettività")
+S("lav-293", "Statuto dei lavoratori", 3, "Quale diritto riconosce ai lavoratori l'art. 9 dello Statuto, tramite le loro rappresentanze?",
+  "Controllare l'applicazione delle norme per la prevenzione di infortuni e malattie professionali", ["Fissare l'orario di lavoro", "Scegliere i dirigenti", "Decidere le assunzioni"],
+  "Possono anche promuovere ricerca e attuazione delle misure di tutela della salute.", "art. 9", "hanno diritto di controllare l'applicazione delle norme per la prevenzione degli infortuni e delle malattie professionali")
+S("lav-294", "Statuto dei lavoratori", 4, "Cosa vieta l'art. 16 dello Statuto dei lavoratori?",
+  "I trattamenti economici di maggior favore con carattere discriminatorio", ["Gli aumenti di merito", "I premi di produzione", "Gli straordinari"],
+  "Il datore può essere condannato a versare al fondo adeguamento pensioni l'importo indebitamente corrisposto, per un massimo di un anno.", "art. 16", "È vietata la concessione di trattamenti economici di maggior favore aventi carattere discriminatorio")
+S("lav-295", "Diritti sindacali", 3, "Secondo l'art. 26 dello Statuto, i lavoratori possono raccogliere contributi sindacali sul luogo di lavoro?",
+  "Sì, senza pregiudicare il normale svolgimento dell'attività aziendale", ["No, mai", "Solo fuori dall'orario e fuori dall'azienda", "Solo con autorizzazione scritta del datore"],
+  "Possono anche fare proselitismo; i commi sulla trattenuta in busta paga sono stati abrogati dal referendum del 1995.", "art. 26", "I lavoratori hanno diritto di raccogliere contributi e di svolgere opera di proselitismo")
+S("lav-296", "Diritti sindacali", 4, "A chi spettano i permessi retribuiti dell'art. 30 dello Statuto?",
+  "Ai componenti degli organi direttivi provinciali e nazionali delle associazioni sindacali", ["A tutti gli iscritti al sindacato", "Solo ai delegati RLS", "Ai lavoratori studenti"],
+  "I permessi servono a partecipare alle riunioni degli organi, secondo i contratti di lavoro.", "art. 30", "I componenti degli organi direttivi, provinciali e nazionali")
+S("lav-297", "Statuto dei lavoratori", 4, "Quale clausola deve contenere un appalto di opere pubbliche secondo l'art. 36 dello Statuto?",
+  "L'obbligo di applicare condizioni non inferiori ai contratti collettivi di categoria e zona", ["L'obbligo di assumere solo residenti", "Il divieto di iscrizione ai sindacati", "L'obbligo di lavorare anche nei festivi"],
+  "Vale anche per i benefici concessi dallo Stato agli imprenditori.", "art. 36", "condizioni non inferiori a quelle risultanti dai contratti collettivi di lavoro della categoria e della zona")
+S("lav-298", "Statuto dei lavoratori", 3, "Il lavoratore eletto al Parlamento europeo può chiedere l'aspettativa ai sensi dell'art. 31 dello Statuto?",
+  "Sì, aspettativa non retribuita per la durata del mandato", ["No, solo per il Parlamento nazionale", "Sì, ma retribuita dal datore", "Solo se il datore è pubblico"],
+  "L'art. 31 vale per Parlamento nazionale ed europeo, assemblee regionali e altre funzioni pubbliche elettive.", "art. 31", "del Parlamento europeo o di assemblee regionali")
+C("lav-299", "Contratti a termine", 4, "Senza nessuna delle condizioni dell'art. 19, comma 1, un contratto a termine può essere prorogato oltre i primi dodici mesi?",
+  "No: oltre i 12 mesi serve una delle condizioni, altrimenti diventa a tempo indeterminato", ["Sì, liberamente fino a 36 mesi", "Sì, con il solo consenso del lavoratore", "Sì, se il datore paga una maggiorazione"],
+  "Art. 21, comma 01; i contratti per attività stagionali fanno eccezione.", "art. 21", "Il contratto può essere prorogato e rinnovato liberamente nei primi dodici mesi")
+C("lav-300", "Somministrazione", 4, "La somministrazione di lavoro è vietata presso unità produttive in cui, nei sei mesi precedenti, vi sono stati:",
+  "licenziamenti collettivi per le stesse mansioni", ["nuove assunzioni a tempo indeterminato", "promozioni del personale", "cambi del contratto collettivo"],
+  "Art. 32, comma 1, lett. b), con eccezioni per sostituzione di assenti o durata iniziale fino a tre mesi.", "art. 32", "presso unità produttive nelle quali si è proceduto, entro i sei mesi precedenti, a licenziamenti collettivi")
+C("lav-301", "Somministrazione", 5, "Se la somministrazione avviene oltre i limiti di legge, cosa può chiedere il lavoratore?",
+  "La costituzione di un rapporto alle dipendenze dell'utilizzatore dall'inizio della somministrazione", ["Solo un'indennità di 6 mensilità", "Il trasferimento a un'altra agenzia", "Nulla: risponde solo l'agenzia"],
+  "Art. 38, comma 2: la domanda può essere rivolta anche solo all'utilizzatore.", "art. 38", "il lavoratore può chiedere, anche soltanto nei confronti dell'utilizzatore, la costituzione di un rapporto di lavoro alle dipendenze di quest'ultimo")

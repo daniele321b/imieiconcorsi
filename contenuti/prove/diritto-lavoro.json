@@ -1003,5 +1003,505 @@
     "id": "lav-201",
     "file": "norma_DLgs165-2001_pubblico-impiego.txt",
     "frase": "sono inquadrati in almeno tre d"
+  },
+  {
+    "id": "lav-202",
+    "file": "norma_DLgs81-2015_contratti-lavoro.txt",
+    "frase": "lo stesso può essere assegnato a mansioni appartenenti al livello di inquadramento inferiore purché rientranti nella medesima categoria legale"
+  },
+  {
+    "id": "lav-203",
+    "file": "norma_DLgs81-2015_contratti-lavoro.txt",
+    "frase": "il cui mancato adempimento non determina comunque la nullità dell'atto di assegnazione delle nuove mansioni"
+  },
+  {
+    "id": "lav-204",
+    "file": "norma_DLgs81-2015_contratti-lavoro.txt",
+    "frase": "il mutamento di mansioni è comunicato per iscritto, a pena di nullità"
+  },
+  {
+    "id": "lav-205",
+    "file": "norma_DLgs81-2015_contratti-lavoro.txt",
+    "frase": "Nel caso di assegnazione a mansioni superiori il lavoratore ha diritto al trattamento corrispondente all'attività svolta"
+  },
+  {
+    "id": "lav-206",
+    "file": "norma_DLgs81-2015_contratti-lavoro.txt",
+    "frase": "in misura non superiore al 25 per cento delle ore di lavoro settimanali concordate"
+  },
+  {
+    "id": "lav-207",
+    "file": "norma_DLgs81-2015_contratti-lavoro.txt",
+    "frase": "Il lavoro supplementare è retribuito con una maggiorazione del 15 per cento"
+  },
+  {
+    "id": "lav-208",
+    "file": "norma_DLgs81-2015_contratti-lavoro.txt",
+    "frase": "Il lavoratore a tempo parziale non deve ricevere un trattamento meno favorevole rispetto al lavoratore a tempo pieno di pari inquadramento"
+  },
+  {
+    "id": "lav-209",
+    "file": "norma_DLgs81-2015_contratti-lavoro.txt",
+    "frase": "i lavoratori a tempo parziale sono computati in proporzione all'orario svolto, rapportato al tempo pieno"
+  },
+  {
+    "id": "lav-210",
+    "file": "norma_DLgs81-2015_contratti-lavoro.txt",
+    "frase": "su domanda del lavoratore è dichiarata la sussistenza fra le parti di un rapporto di lavoro a tempo pieno"
+  },
+  {
+    "id": "lav-211",
+    "file": "norma_DLgs81-2015_contratti-lavoro.txt",
+    "frase": "con esclusione di quelle contenute negli articoli 6, commi 2 e 6, e 10"
+  },
+  {
+    "id": "lav-212",
+    "file": "norma_DLgs81-2015_contratti-lavoro.txt",
+    "frase": "può in ogni caso essere concluso con soggetti con meno di 24 anni di età"
+  },
+  {
+    "id": "lav-213",
+    "file": "norma_DLgs81-2015_contratti-lavoro.txt",
+    "frase": "non superiore a quattrocento giornate di effettivo lavoro nell'arco di tre anni solari"
+  },
+  {
+    "id": "lav-214",
+    "file": "norma_DLgs81-2015_contratti-lavoro.txt",
+    "frase": "La misura dell'indennità mensile di disponibilità, divisibile in quote orarie"
+  },
+  {
+    "id": "lav-215",
+    "file": "norma_DLgs81-2015_contratti-lavoro.txt",
+    "frase": "Il rifiuto ingiustificato di rispondere alla chiamata può costituire motivo di licenziamento"
+  },
+  {
+    "id": "lav-216",
+    "file": "norma_DLgs81-2015_contratti-lavoro.txt",
+    "frase": "in proporzione all'orario di lavoro effettivamente svolto nell'arco di ciascun semestre"
+  },
+  {
+    "id": "lav-217",
+    "file": "norma_DLgs81-2015_contratti-lavoro.txt",
+    "frase": "per la sostituzione di lavoratori che esercitano il diritto di sciopero"
+  },
+  {
+    "id": "lav-218",
+    "file": "norma_DLgs81-2015_contratti-lavoro.txt",
+    "frase": "da parte di datori di lavoro che non hanno effettuato la valutazione dei rischi"
+  },
+  {
+    "id": "lav-219",
+    "file": "norma_DLgs81-2015_contratti-lavoro.txt",
+    "frase": "per un massimo di quattro volte nell'arco di ventiquattro mesi"
+  },
+  {
+    "id": "lav-220",
+    "file": "norma_DLgs81-2015_contratti-lavoro.txt",
+    "frase": "pari al 20 per cento fino al decimo giorno successivo e al 40 per cento per ciascun giorno ulteriore"
+  },
+  {
+    "id": "lav-221",
+    "file": "norma_DLgs81-2015_contratti-lavoro.txt",
+    "frase": "Qualora il rapporto di lavoro continui oltre il trentesimo giorno in caso di contratto di durata inferiore a sei mesi"
+  },
+  {
+    "id": "lav-222",
+    "file": "norma_DLgs81-2015_contratti-lavoro.txt",
+    "frase": "Al lavoratore a tempo determinato spetta il trattamento economico e normativo in atto nell'impresa per i lavoratori con contratto a tempo indeterminato comparabili"
+  },
+  {
+    "id": "lav-223",
+    "file": "norma_DLgs81-2015_contratti-lavoro.txt",
+    "frase": "i contratti di lavoro a tempo determinato con i dirigenti, che non possono avere una durata superiore a cinque anni"
+  },
+  {
+    "id": "lav-224",
+    "file": "norma_DLgs81-2015_contratti-lavoro.txt",
+    "frase": "L'utilizzatore è obbligato in solido con il somministratore a corrispondere ai lavoratori i trattamenti retributivi"
+  },
+  {
+    "id": "lav-225",
+    "file": "norma_DLgs81-2015_contratti-lavoro.txt",
+    "frase": "a condizioni economiche e normative complessivamente non inferiori a quelle dei dipendenti di pari livello dell'utilizzatore"
+  },
+  {
+    "id": "lav-226",
+    "file": "norma_DLgs81-2015_contratti-lavoro.txt",
+    "frase": "In mancanza di forma scritta il contratto di somministrazione di lavoro è nullo e i lavoratori sono considerati a tutti gli effetti alle dipendenze dell'utilizzatore"
+  },
+  {
+    "id": "lav-227",
+    "file": "norma_DLgs81-2015_contratti-lavoro.txt",
+    "frase": "gli estremi dell'autorizzazione rilasciata al somministratore"
+  },
+  {
+    "id": "lav-228",
+    "file": "norma_DLgs81-2015_contratti-lavoro.txt",
+    "frase": "Il contratto di apprendistato ha una durata minima non inferiore a sei mesi"
+  },
+  {
+    "id": "lav-229",
+    "file": "norma_DLgs81-2015_contratti-lavoro.txt",
+    "frase": "i giovani che hanno compiuto i 15 anni di età e fino al compimento dei 25"
+  },
+  {
+    "id": "lav-230",
+    "file": "norma_DLgs81-2015_contratti-lavoro.txt",
+    "frase": "nonché per il praticantato per l'accesso alle professioni ordinistiche"
+  },
+  {
+    "id": "lav-231",
+    "file": "norma_DLgs81-2015_contratti-lavoro.txt",
+    "frase": "costituisce giustificato motivo di licenziamento il mancato raggiungimento degli obiettivi formativi"
+  },
+  {
+    "id": "lav-232",
+    "file": "norma_DLgs81-2008_sicurezza-lavoro.txt",
+    "frase": "concetti di rischio, danno, prevenzione, protezione, organizzazione della prevenzione aziendale"
+  },
+  {
+    "id": "lav-233",
+    "file": "norma_DLgs81-2008_sicurezza-lavoro.txt",
+    "frase": "sono definiti mediante accordo in sede di Conferenza permanente per i rapporti tra lo Stato, le regioni"
+  },
+  {
+    "id": "lav-234",
+    "file": "norma_DLgs81-2008_sicurezza-lavoro.txt",
+    "frase": "possano cessare la loro attività, o mettersi al sicuro, abbandonando immediatamente il luogo di lavoro"
+  },
+  {
+    "id": "lav-235",
+    "file": "norma_DLgs81-2008_sicurezza-lavoro.txt",
+    "frase": "sentito il medico competente ove nominato, prende i provvedimenti necessari in materia di primo soccorso"
+  },
+  {
+    "id": "lav-236",
+    "file": "norma_DLgs81-2008_sicurezza-lavoro.txt",
+    "frase": "decreto ministeriale 15 luglio 2003, n. 388"
+  },
+  {
+    "id": "lav-237",
+    "file": "norma_DLgs81-2008_sicurezza-lavoro.txt",
+    "frase": "nelle quali non sia stato eletto o designato il rappresentante dei lavoratori per la sicurezza"
+  },
+  {
+    "id": "lav-238",
+    "file": "norma_DLgs81-2008_sicurezza-lavoro.txt",
+    "frase": "sono prima istanza di riferimento in merito a controversie"
+  },
+  {
+    "id": "lav-239",
+    "file": "norma_DLgs81-2008_sicurezza-lavoro.txt",
+    "frase": "Presso l'Istituto nazionale per l'assicurazione contro gli infortuni sul lavoro (INAIL) è costituito il fondo"
+  },
+  {
+    "id": "lav-240",
+    "file": "norma_DLgs81-2008_sicurezza-lavoro.txt",
+    "frase": "È consentito l'impiego di sistemi di elaborazione automatica dei dati"
+  },
+  {
+    "id": "lav-241",
+    "file": "norma_DLgs81-2008_sicurezza-lavoro.txt",
+    "frase": "con l'arresto fino a un mese o con l'ammenda da 200 a 600 euro"
+  },
+  {
+    "id": "lav-242",
+    "file": "norma_DLgs81-2008_sicurezza-lavoro.txt",
+    "frase": "I luoghi di lavoro devono essere conformi ai requisiti indicati nell'allegato IV"
+  },
+  {
+    "id": "lav-243",
+    "file": "norma_DLgs81-2008_sicurezza-lavoro.txt",
+    "frase": "siano sgombre allo scopo di consentirne l'utilizzazione in ogni evenienza"
+  },
+  {
+    "id": "lav-244",
+    "file": "norma_DLgs81-2008_sicurezza-lavoro.txt",
+    "frase": "È vietato destinare al lavoro locali chiusi sotterranei o semisotterranei"
+  },
+  {
+    "id": "lav-245",
+    "file": "norma_DLgs81-2008_sicurezza-lavoro.txt",
+    "frase": "qualsiasi zona all'interno ovvero in prossimità di una attrezzatura di lavoro nella quale la presenza di un lavoratore costituisce un rischio"
+  },
+  {
+    "id": "lav-246",
+    "file": "norma_DLgs81-2008_sicurezza-lavoro.txt",
+    "frase": "qualsiasi macchina, apparecchio, utensile o impianto"
+  },
+  {
+    "id": "lav-247",
+    "file": "norma_DLgs81-2008_sicurezza-lavoro.txt",
+    "frase": "i rischi derivanti da interferenze con le altre attrezzature già in uso"
+  },
+  {
+    "id": "lav-248",
+    "file": "norma_DLgs81-2008_sicurezza-lavoro.txt",
+    "frase": "il soggetto per conto del quale l'intera opera viene realizzata"
+  },
+  {
+    "id": "lav-249",
+    "file": "norma_DLgs81-2008_sicurezza-lavoro.txt",
+    "frase": "qualunque luogo in cui si effettuano lavori edili o di ingegneria civile"
+  },
+  {
+    "id": "lav-250",
+    "file": "norma_DLgs81-2008_sicurezza-lavoro.txt",
+    "frase": "per evitare la necessità di una movimentazione manuale dei carichi da parte dei lavoratori"
+  },
+  {
+    "id": "lav-251",
+    "file": "norma_DLgs81-2008_sicurezza-lavoro.txt",
+    "frase": "quinquennale negli altri casi"
+  },
+  {
+    "id": "lav-252",
+    "file": "norma_DLgs81-2008_sicurezza-lavoro.txt",
+    "frase": "idoneo ad avere efficacia esimente della responsabilità amministrativa delle persone giuridiche"
+  },
+  {
+    "id": "lav-253",
+    "file": "norma_DLgs81-2008_sicurezza-lavoro.txt",
+    "frase": "il datore di lavoro organizza il servizio di prevenzione e protezione"
+  },
+  {
+    "id": "lav-254",
+    "file": "norma_DLgs81-2008_sicurezza-lavoro.txt",
+    "frase": "Essi non possono subire pregiudizio a causa della attività svolta nell'espletamento del proprio incarico"
+  },
+  {
+    "id": "lav-255",
+    "file": "norma_DLgs81-2008_sicurezza-lavoro.txt",
+    "frase": "ad elaborare le procedure di sicurezza per le varie attività aziendali"
+  },
+  {
+    "id": "lav-256",
+    "file": "norma_DLgs81-2008_sicurezza-lavoro.txt",
+    "frase": "specializzazione in medicina del lavoro o in medicina preventiva dei lavoratori e psicotecnica"
+  },
+  {
+    "id": "lav-257",
+    "file": "norma_DLgs81-2008_sicurezza-lavoro.txt",
+    "frase": "a mansioni equivalenti o, in difetto, a mansioni inferiori garantendo il trattamento corrispondente alle mansioni di provenienza"
+  },
+  {
+    "id": "lav-258",
+    "file": "norma_DLgs81-2008_sicurezza-lavoro.txt",
+    "frase": "tre rappresentanti nelle aziende ovvero unità produttive da 201 a 1.000 lavoratori"
+  },
+  {
+    "id": "lav-259",
+    "file": "norma_DLgs81-2008_sicurezza-lavoro.txt",
+    "frase": "è eletto o designato dai lavoratori nell'ambito delle rappresentanze sindacali in azienda"
+  },
+  {
+    "id": "lav-260",
+    "file": "norma_DLgs81-2008_sicurezza-lavoro.txt",
+    "frase": "contestualmente all'affidamento dell'incarico di progettazione, designa il coordinatore per la progettazione"
+  },
+  {
+    "id": "lav-261",
+    "file": "norma_DLgs81-2008_sicurezza-lavoro.txt",
+    "frase": "rinvenimento di ordigni bellici inesplosi"
+  },
+  {
+    "id": "lav-262",
+    "file": "norma_DLgs81-2008_sicurezza-lavoro.txt",
+    "frase": "LEX = 87 dB(A)"
+  },
+  {
+    "id": "lav-263",
+    "file": "norma_DLgs81-2008_sicurezza-lavoro.txt",
+    "frase": "munirsi di dispositivi di protezione individuale ed utilizzarli"
+  },
+  {
+    "id": "lav-264",
+    "file": "norma_DLgs165-2001_pubblico-impiego.txt",
+    "frase": "l'impossibilità di rinnovo dello stesso incarico dirigenziale"
+  },
+  {
+    "id": "lav-265",
+    "file": "norma_DLgs165-2001_pubblico-impiego.txt",
+    "frase": "deve costituire almeno il 30 per cento della retribuzione complessiva del dirigente"
+  },
+  {
+    "id": "lav-266",
+    "file": "norma_DLgs165-2001_pubblico-impiego.txt",
+    "frase": "o di personale assunto da meno di tre anni"
+  },
+  {
+    "id": "lav-267",
+    "file": "norma_DLgs165-2001_pubblico-impiego.txt",
+    "frase": "fino ad un massimo di sessanta giorni dalla ricezione dell'istanza"
+  },
+  {
+    "id": "lav-268",
+    "file": "norma_DLgs165-2001_pubblico-impiego.txt",
+    "frase": "prima di avviare le procedure di assunzione di personale, sono tenute a comunicare"
+  },
+  {
+    "id": "lav-269",
+    "file": "norma_DLgs165-2001_pubblico-impiego.txt",
+    "frase": "mediante avviamento degli iscritti nelle liste di collocamento"
+  },
+  {
+    "id": "lav-270",
+    "file": "norma_DLgs165-2001_pubblico-impiego.txt",
+    "frase": "avvengono per chiamata numerica degli iscritti nelle liste di collocamento"
+  },
+  {
+    "id": "lav-271",
+    "file": "norma_DLgs165-2001_pubblico-impiego.txt",
+    "frase": "non possono fare parte, anche con compiti di segreteria, di commissioni per l'accesso o la selezione a pubblici impieghi"
+  },
+  {
+    "id": "lav-272",
+    "file": "norma_DLgs165-2001_pubblico-impiego.txt",
+    "frase": "segnala immediatamente, e comunque entro dieci giorni"
+  },
+  {
+    "id": "lav-273",
+    "file": "norma_DLgs165-2001_pubblico-impiego.txt",
+    "frase": "con immediatezza e comunque non oltre trenta giorni decorrenti dal ricevimento della predetta segnalazione"
+  },
+  {
+    "id": "lav-274",
+    "file": "norma_DLgs165-2001_pubblico-impiego.txt",
+    "frase": "sia differita, per una sola volta"
+  },
+  {
+    "id": "lav-275",
+    "file": "norma_DLgs165-2001_pubblico-impiego.txt",
+    "frase": "all'Ispettorato per la funzione pubblica, entro venti giorni dalla loro adozione"
+  },
+  {
+    "id": "lav-276",
+    "file": "norma_DLgs165-2001_pubblico-impiego.txt",
+    "frase": "è proseguito e concluso anche in pendenza del procedimento penale"
+  },
+  {
+    "id": "lav-277",
+    "file": "norma_DLgs165-2001_pubblico-impiego.txt",
+    "frase": "Per le infrazioni per le quali è applicabile una sanzione superiore alla sospensione dal servizio con privazione della retribuzione fino a dieci giorni"
+  },
+  {
+    "id": "lav-278",
+    "file": "norma_DLgs165-2001_pubblico-impiego.txt",
+    "frase": "ingiustificato rifiuto del trasferimento disposto dall'amministrazione per motivate esigenze di servizio"
+  },
+  {
+    "id": "lav-279",
+    "file": "norma_DLgs165-2001_pubblico-impiego.txt",
+    "frase": "falsità documentali o dichiarative commesse ai fini o in occasione dell'instaurazione del rapporto di lavoro"
+  },
+  {
+    "id": "lav-280",
+    "file": "norma_DLgs165-2001_pubblico-impiego.txt",
+    "frase": "rilevato dalla costante valutazione negativa della performance del dipendente per ciascun anno dell'ultimo triennio"
+  },
+  {
+    "id": "lav-281",
+    "file": "norma_DLgs165-2001_pubblico-impiego.txt",
+    "frase": "reiterazione nell'ambiente di lavoro di gravi condotte aggressive o moleste o minacciose o ingiuriose"
+  },
+  {
+    "id": "lav-282",
+    "file": "norma_DLgs165-2001_pubblico-impiego.txt",
+    "frase": "l'amministrazione può risolvere il rapporto di lavoro"
+  },
+  {
+    "id": "lav-283",
+    "file": "norma_DLgs165-2001_pubblico-impiego.txt",
+    "frase": "Per le infrazioni di minore gravità, per le quali è prevista l'irrogazione della sanzione del rimprovero verbale"
+  },
+  {
+    "id": "lav-284",
+    "file": "norma_DLgs165-2001_pubblico-impiego.txt",
+    "frase": "Le amministrazioni, previa convenzione, possono prevedere la gestione unificata delle funzioni dell'ufficio competente per i procedimenti disciplinari"
+  },
+  {
+    "id": "lav-285",
+    "file": "norma_DLgs165-2001_pubblico-impiego.txt",
+    "frase": "condanna penale definitiva, in relazione alla quale è prevista l'interdizione perpetua dai pubblici uffici"
+  },
+  {
+    "id": "lav-286",
+    "file": "norma_DLgs165-2001_pubblico-impiego.txt",
+    "frase": "della sospensione dal servizio per un periodo complessivo superiore a un anno nell'arco di un biennio"
+  },
+  {
+    "id": "lav-287",
+    "file": "norma_Costituzione.txt",
+    "frase": "L'iniziativa economica privata è libera"
+  },
+  {
+    "id": "lav-288",
+    "file": "norma_Costituzione.txt",
+    "frase": "tutela e sicurezza del lavoro"
+  },
+  {
+    "id": "lav-289",
+    "file": "norma_Costituzione.txt",
+    "frase": "o) previdenza sociale"
+  },
+  {
+    "id": "lav-290",
+    "file": "norma_Costituzione.txt",
+    "frase": "sono direttamente responsabili, secondo le leggi penali, civili e amministrative, degli atti compiuti in violazione di diritti"
+  },
+  {
+    "id": "lav-291",
+    "file": "norma_Costituzione.txt",
+    "frase": "hanno il dovere di adempierle con disciplina ed onore"
+  },
+  {
+    "id": "lav-292",
+    "file": "norma_Costituzione.txt",
+    "frase": "La Repubblica tutela la salute come fondamentale diritto dell'individuo e interesse della collettività"
+  },
+  {
+    "id": "lav-293",
+    "file": "norma_L300-1970_Statuto-lavoratori.txt",
+    "frase": "hanno diritto di controllare l'applicazione delle norme per la prevenzione degli infortuni e delle malattie professionali"
+  },
+  {
+    "id": "lav-294",
+    "file": "norma_L300-1970_Statuto-lavoratori.txt",
+    "frase": "È vietata la concessione di trattamenti economici di maggior favore aventi carattere discriminatorio"
+  },
+  {
+    "id": "lav-295",
+    "file": "norma_L300-1970_Statuto-lavoratori.txt",
+    "frase": "I lavoratori hanno diritto di raccogliere contributi e di svolgere opera di proselitismo"
+  },
+  {
+    "id": "lav-296",
+    "file": "norma_L300-1970_Statuto-lavoratori.txt",
+    "frase": "I componenti degli organi direttivi, provinciali e nazionali"
+  },
+  {
+    "id": "lav-297",
+    "file": "norma_L300-1970_Statuto-lavoratori.txt",
+    "frase": "condizioni non inferiori a quelle risultanti dai contratti collettivi di lavoro della categoria e della zona"
+  },
+  {
+    "id": "lav-298",
+    "file": "norma_L300-1970_Statuto-lavoratori.txt",
+    "frase": "del Parlamento europeo o di assemblee regionali"
+  },
+  {
+    "id": "lav-299",
+    "file": "norma_DLgs81-2015_contratti-lavoro.txt",
+    "frase": "Il contratto può essere prorogato e rinnovato liberamente nei primi dodici mesi"
+  },
+  {
+    "id": "lav-300",
+    "file": "norma_DLgs81-2015_contratti-lavoro.txt",
+    "frase": "presso unità produttive nelle quali si è proceduto, entro i sei mesi precedenti, a licenziamenti collettivi"
+  },
+  {
+    "id": "lav-301",
+    "file": "norma_DLgs81-2015_contratti-lavoro.txt",
+    "frase": "il lavoratore può chiedere, anche soltanto nei confronti dell'utilizzatore, la costituzione di un rapporto di lavoro alle dipendenze di quest'ultimo"
   }
 ]
