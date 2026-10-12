@@ -9,6 +9,7 @@
 #   scripts/deploy.sh shared                 # risorse comuni a dev e prod: SES (una volta, poi solo se cambia)
 #   scripts/deploy.sh build [lambda|web]     # compila le Lambda (dist/functions) e il sito (packages/web/dist)
 #   scripts/deploy.sh infra                  # terraform init + apply dell'ambiente
+#   scripts/deploy.sh piano                  # solo il piano (non cambia nulla): riassunto + testo completo in un file
 #   scripts/deploy.sh seed                   # importa subito i bandi aperti da inPA (lo scraper gira poi ogni mattina)
 #   scripts/deploy.sh job NOME               # lancia subito un job: inpa-scraper, pulizia-bandi, avvisi, scadenze, import-domande
 #   scripts/deploy.sh storico-bandi [PAGINA] # importa i bandi chiusi degli ultimi 24 mesi da inPA (una volta; riprende da PAGINA)
@@ -266,6 +267,35 @@ cmd_infra() {
   bold "terraform init + apply (${ENVIRONMENT})"
   tf_init
   run terraform -chdir="$TF_DIR" apply
+}
+
+# piano: il piano di Terraform senza applicarlo. Il testo completo (spesso troppo lungo per il
+# terminale) va in infra/terraform/environments/<env>/piano.txt; qui il riassunto, con in
+# evidenza le risorse che verrebbero distrutte o ricreate.
+cmd_piano() {
+  local file="${TF_DIR}/piano.txt" distrutte
+  [[ "$DRY_RUN" == "1" || ( -d "$DIST_FUNCTIONS" && -f "${DIST_WEB}/index.html" ) ]] \
+    || die "mancano le Lambda o il sito compilati: lancia prima  scripts/deploy.sh build"
+  bold "Piano di Terraform (${ENVIRONMENT}): non cambia nulla"
+  tf_init >/dev/null
+  if [[ "$DRY_RUN" == "1" ]]; then
+    printf '  [dry-run] terraform plan -no-color > %s\n' "$file"
+    return
+  fi
+  terraform -chdir="$TF_DIR" plan -no-color -input=false > "$file" 2>&1 || { tail -30 "$file"; die "piano non riuscito (testo completo: ${file#"${ROOT}/"})"; }
+  grep -E "^(Plan:|No changes)" "$file" | sed 's/^/  /'
+  printf '\n  Da creare:        %s\n' "$(grep -c 'will be created' "$file" || true)"
+  printf '  Da modificare:    %s\n' "$(grep -c 'will be updated in-place' "$file" || true)"
+  distrutte="$(grep -E 'will be destroyed|must be replaced' "$file" || true)"
+  if [[ -n "$distrutte" ]]; then
+    warn "da DISTRUGGERE o RICREARE (controlla prima di applicare):"
+    printf '%s\n' "$distrutte" | sed -E 's/^ *# /    /'
+  else
+    ok "nessuna risorsa da distruggere o ricreare"
+  fi
+  printf '\n  Elenco delle modifiche:\n'
+  grep -E '^  # .* will be (created|updated in-place)' "$file" | sed -E 's/^  # /    /' | head -80
+  ok "testo completo: ${file#"${ROOT}/"}  (apri con: open -e ${file#"${ROOT}/"})"
 }
 
 # -------------------------------------------------------------------- seed ---
@@ -610,7 +640,7 @@ cmd_all() {
 }
 
 # Aiuto: le righe di commento in cima a questo file.
-usage() { sed -n '3,35p' "${BASH_SOURCE[0]}" | sed 's/^# \{0,1\}//'; }
+usage() { sed -n '3,36p' "${BASH_SOURCE[0]}" | sed 's/^# \{0,1\}//'; }
 
 # Smista il comando richiesto alla sua funzione.
 main() {
@@ -621,6 +651,7 @@ main() {
     bootstrap) cmd_bootstrap ;;
     build)     cmd_build "$@" ;;
     infra)     cmd_infra ;;
+    piano)     cmd_piano ;;
     shared)    cmd_shared ;;
     seed)      cmd_seed ;;
     job)       cmd_job "$@" ;;

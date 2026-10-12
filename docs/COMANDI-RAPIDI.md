@@ -779,6 +779,7 @@ un avviso rosso e chiedono "si" (poi Terraform chiede "yes"). `local` funziona s
 ```bash
 scripts/deploy.sh build
 scripts/deploy.sh infra                     # dev
+ENVIRONMENT=prod scripts/deploy.sh piano    # prod: solo il piano, riassunto + testo completo in environments/prod/piano.txt
 ENVIRONMENT=prod scripts/deploy.sh infra    # prod: "si", poi "yes"
 ```
 
