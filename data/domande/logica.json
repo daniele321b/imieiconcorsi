@@ -3398,5 +3398,1705 @@
     "spiegazione": "La ragazza può essere solo paggio, quindi il vecchio è paggio e il ragazzo non è cavaliere: anche lui è paggio. Giochi di Archimede 1998.",
     "fonte": "Wikipedia, «MatematicaC3, Esercizi di logica (CC BY 3.0)» (CC BY-SA 4.0)",
     "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-201",
+    "argomento": "Serie numeriche",
+    "livello": 1,
+    "testo": "Completa la serie: 7, 12, 17, 22, ...",
+    "opzioni": [
+      "27",
+      "28",
+      "26",
+      "32"
+    ],
+    "corretta": 0,
+    "spiegazione": "Progressione aritmetica di ragione 5.",
+    "fonte": "Wikipedia, «Progressione aritmetica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-202",
+    "argomento": "Serie numeriche",
+    "livello": 2,
+    "testo": "Completa la serie: 50, 44, 38, 32, ...",
+    "opzioni": [
+      "24",
+      "26",
+      "25",
+      "28"
+    ],
+    "corretta": 1,
+    "spiegazione": "Progressione aritmetica di ragione −6.",
+    "fonte": "Wikipedia, «Progressione aritmetica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-203",
+    "argomento": "Serie numeriche",
+    "livello": 2,
+    "testo": "Completa la serie: 5, 15, 45, 135, ...",
+    "opzioni": [
+      "540",
+      "270",
+      "405",
+      "180"
+    ],
+    "corretta": 2,
+    "spiegazione": "Progressione geometrica di ragione 3: 135 × 3 = 405.",
+    "fonte": "Wikipedia, «Progressione geometrica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-204",
+    "argomento": "Serie numeriche",
+    "livello": 2,
+    "testo": "Completa la serie: 1000, 100, 10, 1, ...",
+    "opzioni": [
+      "0",
+      "0,01",
+      "−9",
+      "0,1"
+    ],
+    "corretta": 3,
+    "spiegazione": "Progressione geometrica di ragione 1/10.",
+    "fonte": "Wikipedia, «Progressione geometrica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-205",
+    "argomento": "Serie numeriche",
+    "livello": 3,
+    "testo": "Completa la serie: 2, 5, 7, 12, 19, ...",
+    "opzioni": [
+      "31",
+      "29",
+      "38",
+      "26"
+    ],
+    "corretta": 0,
+    "spiegazione": "Come nella successione di Fibonacci, ogni termine è la somma dei due precedenti: 12 + 19 = 31.",
+    "fonte": "Wikipedia, «Successione di Fibonacci» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-206",
+    "argomento": "Serie numeriche",
+    "livello": 2,
+    "testo": "Completa la serie: 10, 10, 20, 30, 50, ...",
+    "opzioni": [
+      "60",
+      "80",
+      "100",
+      "70"
+    ],
+    "corretta": 1,
+    "spiegazione": "Ogni termine è la somma dei due precedenti (Fibonacci moltiplicata per 10): 30 + 50 = 80.",
+    "fonte": "Wikipedia, «Successione di Fibonacci» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-207",
+    "argomento": "Serie numeriche",
+    "livello": 3,
+    "testo": "In una progressione aritmetica il primo termine è 10 e la ragione è 3. Quanto vale il ventesimo termine?",
+    "opzioni": [
+      "70",
+      "60",
+      "67",
+      "63"
+    ],
+    "corretta": 2,
+    "spiegazione": "a₂₀ = 10 + 19 × 3 = 67.",
+    "fonte": "Wikipedia, «Progressione aritmetica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-208",
+    "argomento": "Serie numeriche",
+    "livello": 3,
+    "testo": "Quanto vale la somma dei numeri interi da 1 a 50?",
+    "opzioni": [
+      "1225",
+      "1250",
+      "2550",
+      "1275"
+    ],
+    "corretta": 3,
+    "spiegazione": "n·(n+1)/2 = 50 × 51 / 2 = 1275.",
+    "fonte": "Wikipedia, «Progressione aritmetica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-209",
+    "argomento": "Serie numeriche",
+    "livello": 4,
+    "testo": "Quanto vale la somma dei numeri pari da 2 a 100?",
+    "opzioni": [
+      "2550",
+      "2450",
+      "2500",
+      "5050"
+    ],
+    "corretta": 0,
+    "spiegazione": "Sono 50 termini: (2 + 100) × 50 / 2 = 2550.",
+    "fonte": "Wikipedia, «Progressione aritmetica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-210",
+    "argomento": "Serie numeriche",
+    "livello": 3,
+    "testo": "In una progressione geometrica il primo termine è 2 e la ragione è 3. Quanto vale il quinto termine?",
+    "opzioni": [
+      "54",
+      "162",
+      "30",
+      "486"
+    ],
+    "corretta": 1,
+    "spiegazione": "a₅ = 2 × 3⁴ = 2 × 81 = 162.",
+    "fonte": "Wikipedia, «Progressione geometrica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-211",
+    "argomento": "Serie numeriche",
+    "livello": 1,
+    "testo": "Completa la serie: 2, 4, 8, 16, 32, ...",
+    "opzioni": [
+      "48",
+      "60",
+      "64",
+      "34"
+    ],
+    "corretta": 2,
+    "spiegazione": "Ogni termine è il doppio del precedente.",
+    "fonte": "Wikipedia, «Progressione geometrica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-212",
+    "argomento": "Serie numeriche",
+    "livello": 3,
+    "testo": "Quanto vale 8! / 6!?",
+    "opzioni": [
+      "48",
+      "14",
+      "2",
+      "56"
+    ],
+    "corretta": 3,
+    "spiegazione": "8!/6! = 8 × 7 = 56: i fattori da 6 in giù si semplificano.",
+    "fonte": "Wikipedia, «Fattoriale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-213",
+    "argomento": "Serie numeriche",
+    "livello": 3,
+    "testo": "Quanto vale 7!?",
+    "opzioni": [
+      "5040",
+      "40320",
+      "2520",
+      "720"
+    ],
+    "corretta": 0,
+    "spiegazione": "7! = 7 × 720 = 5040.",
+    "fonte": "Wikipedia, «Fattoriale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-214",
+    "argomento": "Serie numeriche",
+    "livello": 3,
+    "testo": "Quanto vale 10! / 8!?",
+    "opzioni": [
+      "2",
+      "90",
+      "80",
+      "20"
+    ],
+    "corretta": 1,
+    "spiegazione": "10!/8! = 10 × 9 = 90.",
+    "fonte": "Wikipedia, «Fattoriale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-215",
+    "argomento": "Serie numeriche",
+    "livello": 2,
+    "testo": "Quanto vale 3! × 2!?",
+    "opzioni": [
+      "6",
+      "5",
+      "12",
+      "36"
+    ],
+    "corretta": 2,
+    "spiegazione": "3! = 6 e 2! = 2: 6 × 2 = 12.",
+    "fonte": "Wikipedia, «Fattoriale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-216",
+    "argomento": "Serie numeriche",
+    "livello": 4,
+    "testo": "Chi introdusse nel 1807 la notazione con il punto esclamativo per il fattoriale?",
+    "opzioni": [
+      "Carl Friedrich Gauss",
+      "Blaise Pascal",
+      "Leonhard Euler",
+      "Christian Kramp"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il nome «fattoriale» era stato coniato poco prima da Antoine Arbogast.",
+    "fonte": "Wikipedia, «Fattoriale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-217",
+    "argomento": "Serie numeriche",
+    "livello": 3,
+    "testo": "Qual è il decimo termine della successione di Fibonacci 1, 1, 2, 3, 5, …?",
+    "opzioni": [
+      "55",
+      "50",
+      "34",
+      "89"
+    ],
+    "corretta": 0,
+    "spiegazione": "1, 1, 2, 3, 5, 8, 13, 21, 34, 55.",
+    "fonte": "Wikipedia, «Successione di Fibonacci» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-218",
+    "argomento": "Serie numeriche",
+    "livello": 4,
+    "testo": "Il rapporto tra due termini consecutivi della successione di Fibonacci tende a:",
+    "opzioni": [
+      "2",
+      "la sezione aurea, circa 1,618",
+      "π, circa 3,14",
+      "1"
+    ],
+    "corretta": 1,
+    "spiegazione": "È detta anche numero di Fidia.",
+    "fonte": "Wikipedia, «Successione di Fibonacci» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-219",
+    "argomento": "Serie numeriche",
+    "livello": 3,
+    "testo": "Quanto vale il centesimo termine della progressione 4, 9, 14, 19, ...?",
+    "opzioni": [
+      "500",
+      "495",
+      "499",
+      "504"
+    ],
+    "corretta": 2,
+    "spiegazione": "a₁₀₀ = 4 + 99 × 5 = 499.",
+    "fonte": "Wikipedia, «Progressione aritmetica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-220",
+    "argomento": "Serie numeriche",
+    "livello": 3,
+    "testo": "Nella progressione 3, 7, 11, 15, ..., quale posizione occupa il numero 43?",
+    "opzioni": [
+      "La decima",
+      "La dodicesima",
+      "La nona",
+      "L'undicesima"
+    ],
+    "corretta": 3,
+    "spiegazione": "3 + 4(n − 1) = 43 → n = 11.",
+    "fonte": "Wikipedia, «Progressione aritmetica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-221",
+    "argomento": "Calcolo combinatorio",
+    "livello": 2,
+    "testo": "Quanti anagrammi (anche senza senso) ha la parola ROMA?",
+    "opzioni": [
+      "24",
+      "4",
+      "12",
+      "16"
+    ],
+    "corretta": 0,
+    "spiegazione": "Quattro lettere distinte: 4! = 24 permutazioni.",
+    "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-222",
+    "argomento": "Calcolo combinatorio",
+    "livello": 3,
+    "testo": "Quanti anagrammi distinti ha la parola CASA?",
+    "opzioni": [
+      "16",
+      "12",
+      "24",
+      "6"
+    ],
+    "corretta": 1,
+    "spiegazione": "4! / 2! = 12, perché la A compare due volte.",
+    "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-223",
+    "argomento": "Calcolo combinatorio",
+    "livello": 2,
+    "testo": "In quanti modi diversi possono mettersi in fila 5 persone?",
+    "opzioni": [
+      "60",
+      "720",
+      "120",
+      "25"
+    ],
+    "corretta": 2,
+    "spiegazione": "5! = 120 permutazioni.",
+    "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-224",
+    "argomento": "Calcolo combinatorio",
+    "livello": 3,
+    "testo": "In quanti modi si può formare un comitato di 3 persone scelte tra 7?",
+    "opzioni": [
+      "210",
+      "42",
+      "21",
+      "35"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'ordine non conta: C(7,3) = 7·6·5 / 3! = 35.",
+    "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-225",
+    "argomento": "Calcolo combinatorio",
+    "livello": 3,
+    "testo": "In una riunione di 6 persone ognuno stringe la mano a tutti gli altri una volta. Quante strette di mano ci sono?",
+    "opzioni": [
+      "15",
+      "36",
+      "12",
+      "30"
+    ],
+    "corretta": 0,
+    "spiegazione": "C(6,2) = 6·5 / 2 = 15.",
+    "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-226",
+    "argomento": "Calcolo combinatorio",
+    "livello": 3,
+    "testo": "In una gara con 8 atleti, in quanti modi diversi si può formare il podio (1°, 2°, 3°)?",
+    "opzioni": [
+      "56",
+      "336",
+      "24",
+      "512"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'ordine conta: 8 × 7 × 6 = 336 disposizioni.",
+    "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-227",
+    "argomento": "Calcolo combinatorio",
+    "livello": 2,
+    "testo": "Quanti PIN di 4 cifre (da 0 a 9, ripetizioni ammesse) si possono formare?",
+    "opzioni": [
+      "40",
+      "9.999",
+      "10.000",
+      "5.040"
+    ],
+    "corretta": 2,
+    "spiegazione": "Disposizioni con ripetizione: 10⁴ = 10.000.",
+    "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-228",
+    "argomento": "Calcolo combinatorio",
+    "livello": 4,
+    "testo": "Quante sequenze di 3 lettere si possono formare con un alfabeto di 21 lettere, ammettendo ripetizioni?",
+    "opzioni": [
+      "1.330",
+      "63",
+      "7.980",
+      "9.261"
+    ],
+    "corretta": 3,
+    "spiegazione": "21³ = 9.261.",
+    "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-229",
+    "argomento": "Calcolo combinatorio",
+    "livello": 2,
+    "testo": "Lanciando una moneta 3 volte, quante sequenze di risultati sono possibili?",
+    "opzioni": [
+      "8",
+      "6",
+      "3",
+      "9"
+    ],
+    "corretta": 0,
+    "spiegazione": "Due esiti per ciascun lancio: 2³ = 8.",
+    "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-230",
+    "argomento": "Calcolo combinatorio",
+    "livello": 3,
+    "testo": "Quante diagonali ha un esagono?",
+    "opzioni": [
+      "15",
+      "9",
+      "6",
+      "12"
+    ],
+    "corretta": 1,
+    "spiegazione": "I segmenti tra 6 vertici sono C(6,2) = 15; tolti i 6 lati restano 9 diagonali.",
+    "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-231",
+    "argomento": "Calcolo combinatorio",
+    "livello": 2,
+    "testo": "In quanti modi si possono scegliere 2 libri da uno scaffale di 10?",
+    "opzioni": [
+      "20",
+      "90",
+      "45",
+      "100"
+    ],
+    "corretta": 2,
+    "spiegazione": "C(10,2) = 10·9 / 2 = 45.",
+    "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-232",
+    "argomento": "Calcolo combinatorio",
+    "livello": 2,
+    "testo": "Quanti numeri di 2 cifre diverse si possono formare con le cifre 1, 2, 3, 4, 5?",
+    "opzioni": [
+      "25",
+      "10",
+      "15",
+      "20"
+    ],
+    "corretta": 3,
+    "spiegazione": "5 × 4 = 20 disposizioni semplici.",
+    "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-233",
+    "argomento": "Calcolo combinatorio",
+    "livello": 4,
+    "testo": "Quanti anagrammi distinti ha la parola MAMMA?",
+    "opzioni": [
+      "10",
+      "60",
+      "120",
+      "20"
+    ],
+    "corretta": 0,
+    "spiegazione": "5! / (3! × 2!) = 10 (tre M e due A).",
+    "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-234",
+    "argomento": "Calcolo combinatorio",
+    "livello": 4,
+    "testo": "In quanti modi 4 persone possono sedersi attorno a un tavolo rotondo (contano solo le posizioni relative)?",
+    "opzioni": [
+      "12",
+      "6",
+      "4",
+      "24"
+    ],
+    "corretta": 1,
+    "spiegazione": "Nelle permutazioni circolari si fissa una persona: (4 − 1)! = 6.",
+    "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-235",
+    "argomento": "Calcolo combinatorio",
+    "livello": 4,
+    "testo": "Da 5 uomini e 3 donne si forma un comitato con 2 uomini e 1 donna. Quanti comitati sono possibili?",
+    "opzioni": [
+      "56",
+      "15",
+      "30",
+      "60"
+    ],
+    "corretta": 2,
+    "spiegazione": "C(5,2) × C(3,1) = 10 × 3 = 30.",
+    "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-236",
+    "argomento": "Calcolo combinatorio",
+    "livello": 3,
+    "testo": "Tre premi diversi vanno assegnati a 3 delle 10 persone presenti (un premio a testa). In quanti modi?",
+    "opzioni": [
+      "120",
+      "1000",
+      "30",
+      "720"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'ordine conta: 10 × 9 × 8 = 720.",
+    "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-237",
+    "argomento": "Calcolo combinatorio",
+    "livello": 4,
+    "testo": "Quante colonne diverse si possono giocare al Totocalcio (13 partite, segni 1, X, 2)?",
+    "opzioni": [
+      "1.594.323",
+      "8.192",
+      "39",
+      "2.197"
+    ],
+    "corretta": 0,
+    "spiegazione": "Disposizioni con ripetizione: 3¹³ = 1.594.323.",
+    "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-238",
+    "argomento": "Probabilità",
+    "livello": 1,
+    "testo": "Lanciando un dado, qual è la probabilità di ottenere un numero pari?",
+    "opzioni": [
+      "1/6",
+      "1/2",
+      "1/3",
+      "2/3"
+    ],
+    "corretta": 1,
+    "spiegazione": "Casi favorevoli 3 (2, 4, 6) su 6 possibili.",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-239",
+    "argomento": "Probabilità",
+    "livello": 2,
+    "testo": "Lanciando un dado, qual è la probabilità di ottenere un numero maggiore di 4?",
+    "opzioni": [
+      "2/3",
+      "1/2",
+      "1/3",
+      "1/6"
+    ],
+    "corretta": 2,
+    "spiegazione": "Casi favorevoli 2 (5 e 6) su 6.",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-240",
+    "argomento": "Probabilità",
+    "livello": 2,
+    "testo": "Da un mazzo di 40 carte, qual è la probabilità di estrarre un asso?",
+    "opzioni": [
+      "1/8",
+      "1/4",
+      "1/40",
+      "1/10"
+    ],
+    "corretta": 3,
+    "spiegazione": "4 assi su 40 carte.",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-241",
+    "argomento": "Probabilità",
+    "livello": 2,
+    "testo": "Un'urna contiene 3 palline rosse, 5 blu e 2 verdi. Qual è la probabilità di estrarre una pallina blu?",
+    "opzioni": [
+      "1/2",
+      "1/3",
+      "5/8",
+      "1/5"
+    ],
+    "corretta": 0,
+    "spiegazione": "5 favorevoli su 10.",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-242",
+    "argomento": "Probabilità",
+    "livello": 4,
+    "testo": "Un'urna ha 4 palline bianche e 6 nere. Estraendone due senza reimmissione, qual è la probabilità che siano entrambe bianche?",
+    "opzioni": [
+      "1/5",
+      "2/15",
+      "2/5",
+      "4/25"
+    ],
+    "corretta": 1,
+    "spiegazione": "4/10 × 3/9 = 12/90 = 2/15.",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-243",
+    "argomento": "Probabilità",
+    "livello": 3,
+    "testo": "Lanciando due monete, qual è la probabilità di ottenere almeno una croce?",
+    "opzioni": [
+      "1/2",
+      "1/4",
+      "3/4",
+      "2/3"
+    ],
+    "corretta": 2,
+    "spiegazione": "Esiti: TT, TC, CT, CC; solo TT non ha croci: 3/4.",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-244",
+    "argomento": "Probabilità",
+    "livello": 3,
+    "testo": "Lanciando due dadi, qual è la probabilità che la somma sia 4?",
+    "opzioni": [
+      "1/6",
+      "1/9",
+      "1/36",
+      "1/12"
+    ],
+    "corretta": 3,
+    "spiegazione": "Coppie favorevoli (1,3), (2,2), (3,1): 3 casi su 36.",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-245",
+    "argomento": "Probabilità",
+    "livello": 3,
+    "testo": "Lanciando due dadi, qual è la probabilità che la somma sia 2?",
+    "opzioni": [
+      "1/36",
+      "1/12",
+      "1/18",
+      "1/6"
+    ],
+    "corretta": 0,
+    "spiegazione": "Solo la coppia (1,1): 1 caso su 36.",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-246",
+    "argomento": "Probabilità",
+    "livello": 3,
+    "testo": "Se la probabilità di un evento A è 0,3, qual è la probabilità che A non si verifichi?",
+    "opzioni": [
+      "0,03",
+      "0,7",
+      "0,3",
+      "1,3"
+    ],
+    "corretta": 1,
+    "spiegazione": "A e «non A» sono incompatibili e la loro unione è certa: 1 − 0,3 = 0,7.",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-247",
+    "argomento": "Probabilità",
+    "livello": 2,
+    "testo": "Lanciando un dado, qual è la probabilità di ottenere un multiplo di 3?",
+    "opzioni": [
+      "1/2",
+      "1/4",
+      "1/3",
+      "1/6"
+    ],
+    "corretta": 2,
+    "spiegazione": "Favorevoli: 3 e 6, cioè 2 su 6.",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-248",
+    "argomento": "Probabilità",
+    "livello": 2,
+    "testo": "Lanciando due dadi, ottenere somma 1 è un evento:",
+    "opzioni": [
+      "certo",
+      "probabile al 50%",
+      "con probabilità 1/36",
+      "impossibile"
+    ],
+    "corretta": 3,
+    "spiegazione": "La somma minima di due dadi è 2: la probabilità è 0.",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-249",
+    "argomento": "Probabilità",
+    "livello": 2,
+    "testo": "Lanciando un dado a sei facce, ottenere un numero compreso tra 1 e 6 è un evento:",
+    "opzioni": [
+      "certo",
+      "impossibile",
+      "aleatorio",
+      "probabile al 50%"
+    ],
+    "corretta": 0,
+    "spiegazione": "La probabilità dell'evento certo è 1.",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-250",
+    "argomento": "Probabilità",
+    "livello": 3,
+    "testo": "Una coppia ha tre figli. Supponendo uguale probabilità di maschio e femmina, qual è la probabilità che siano tutti maschi?",
+    "opzioni": [
+      "1/6",
+      "1/8",
+      "1/2",
+      "1/3"
+    ],
+    "corretta": 1,
+    "spiegazione": "Eventi indipendenti: (1/2)³ = 1/8.",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-251",
+    "argomento": "Probabilità",
+    "livello": 2,
+    "testo": "Estraendo un numero della tombola (da 1 a 90), qual è la probabilità che sia multiplo di 10?",
+    "opzioni": [
+      "1/90",
+      "1/5",
+      "1/10",
+      "1/9"
+    ],
+    "corretta": 2,
+    "spiegazione": "I multipli di 10 sono 9 su 90.",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-252",
+    "argomento": "Probabilità",
+    "livello": 2,
+    "testo": "Da un mazzo di 52 carte francesi, qual è la probabilità di estrarre una carta di cuori?",
+    "opzioni": [
+      "1/2",
+      "1/52",
+      "1/13",
+      "1/4"
+    ],
+    "corretta": 3,
+    "spiegazione": "13 carte di cuori su 52.",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-253",
+    "argomento": "Probabilità",
+    "livello": 3,
+    "testo": "Da un mazzo di 40 carte (12 figure e 4 assi), qual è la probabilità di estrarre una figura o un asso?",
+    "opzioni": [
+      "2/5",
+      "1/10",
+      "1/2",
+      "3/10"
+    ],
+    "corretta": 0,
+    "spiegazione": "Eventi incompatibili: 12/40 + 4/40 = 16/40 = 2/5.",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-254",
+    "argomento": "Probabilità",
+    "livello": 4,
+    "testo": "Lanciando un dado due volte, qual è la probabilità di ottenere 6 al primo lancio e un numero dispari al secondo?",
+    "opzioni": [
+      "1/6",
+      "1/12",
+      "7/12",
+      "1/3"
+    ],
+    "corretta": 1,
+    "spiegazione": "Eventi indipendenti: 1/6 × 1/2 = 1/12.",
+    "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-255",
+    "argomento": "Numeri",
+    "livello": 2,
+    "testo": "Quale di questi numeri è divisibile per 6?",
+    "opzioni": [
+      "1.354",
+      "1.375",
+      "1.374",
+      "2.023"
+    ],
+    "corretta": 2,
+    "spiegazione": "1.374 è pari e la somma delle cifre (15) è multipla di 3.",
+    "fonte": "Wikipedia, «Criteri di divisibilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-256",
+    "argomento": "Numeri",
+    "livello": 3,
+    "testo": "Quale di questi numeri è divisibile per 12 (cioè per 3 e per 4)?",
+    "opzioni": [
+      "4.622",
+      "4.626",
+      "4.618",
+      "4.620"
+    ],
+    "corretta": 3,
+    "spiegazione": "4.620: le ultime due cifre (20) sono multiple di 4 e la somma delle cifre (12) è multipla di 3.",
+    "fonte": "Wikipedia, «Criteri di divisibilità» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-257",
+    "argomento": "Numeri",
+    "livello": 3,
+    "testo": "Con l'algoritmo di Euclide, qual è il massimo comune divisore di 84 e 18?",
+    "opzioni": [
+      "6",
+      "12",
+      "18",
+      "3"
+    ],
+    "corretta": 0,
+    "spiegazione": "84 = 18·4 + 12; 18 = 12·1 + 6; 12 = 6·2: MCD = 6.",
+    "fonte": "Wikipedia, «Massimo comun divisore» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-258",
+    "argomento": "Numeri",
+    "livello": 3,
+    "testo": "Qual è il massimo comune divisore di 48 e 180?",
+    "opzioni": [
+      "6",
+      "12",
+      "36",
+      "24"
+    ],
+    "corretta": 1,
+    "spiegazione": "48 = 2⁴·3 e 180 = 2²·3²·5: MCD = 2²·3 = 12.",
+    "fonte": "Wikipedia, «Massimo comun divisore» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-259",
+    "argomento": "Numeri",
+    "livello": 3,
+    "testo": "Qual è il minimo comune multiplo di 6, 8 e 12?",
+    "opzioni": [
+      "96",
+      "12",
+      "24",
+      "48"
+    ],
+    "corretta": 2,
+    "spiegazione": "6 = 2·3, 8 = 2³, 12 = 2²·3: mcm = 2³·3 = 24.",
+    "fonte": "Wikipedia, «Minimo comune multiplo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-260",
+    "argomento": "Numeri",
+    "livello": 2,
+    "testo": "Qual è il minimo comune multiplo di 9 e 15?",
+    "opzioni": [
+      "30",
+      "135",
+      "3",
+      "45"
+    ],
+    "corretta": 3,
+    "spiegazione": "9 = 3², 15 = 3·5: mcm = 3²·5 = 45.",
+    "fonte": "Wikipedia, «Minimo comune multiplo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-261",
+    "argomento": "Numeri",
+    "livello": 3,
+    "testo": "Due fari lampeggiano insieme; poi uno lampeggia ogni 15 secondi e l'altro ogni 20. Dopo quanti secondi lampeggeranno di nuovo insieme?",
+    "opzioni": [
+      "60",
+      "35",
+      "45",
+      "300"
+    ],
+    "corretta": 0,
+    "spiegazione": "mcm(15, 20) = 60.",
+    "fonte": "Wikipedia, «Minimo comune multiplo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-262",
+    "argomento": "Numeri",
+    "livello": 3,
+    "testo": "Due corde lunghe 60 m e 84 m vanno tagliate in pezzi tutti uguali, i più lunghi possibile. Quanto è lungo ogni pezzo?",
+    "opzioni": [
+      "4 m",
+      "12 m",
+      "24 m",
+      "6 m"
+    ],
+    "corretta": 1,
+    "spiegazione": "MCD(60, 84) = 12.",
+    "fonte": "Wikipedia, «Massimo comun divisore» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-263",
+    "argomento": "Numeri",
+    "livello": 3,
+    "testo": "Qual è il più piccolo numero perfetto?",
+    "opzioni": [
+      "1",
+      "12",
+      "6",
+      "28"
+    ],
+    "corretta": 2,
+    "spiegazione": "I divisori di 6 escluso sé stesso sono 1, 2, 3, e 1 + 2 + 3 = 6.",
+    "fonte": "Wikipedia, «Numero perfetto» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-264",
+    "argomento": "Numeri",
+    "livello": 3,
+    "testo": "Quale scomposizione in fattori primi di 360 è corretta?",
+    "opzioni": [
+      "2² · 3² · 10",
+      "6² · 10",
+      "2⁴ · 3 · 5",
+      "2³ · 3² · 5"
+    ],
+    "corretta": 3,
+    "spiegazione": "360 = 8 × 9 × 5; la scomposizione in primi è unica.",
+    "fonte": "Wikipedia, «Minimo comune multiplo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-265",
+    "argomento": "Numeri",
+    "livello": 2,
+    "testo": "Quale di questi numeri NON è primo?",
+    "opzioni": [
+      "91",
+      "83",
+      "89",
+      "97"
+    ],
+    "corretta": 0,
+    "spiegazione": "91 = 7 × 13, quindi ha più di due divisori.",
+    "fonte": "Wikipedia, «Numero primo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-266",
+    "argomento": "Numeri",
+    "livello": 3,
+    "testo": "Quanti divisori ha il numero 12?",
+    "opzioni": [
+      "12",
+      "6",
+      "5",
+      "4"
+    ],
+    "corretta": 1,
+    "spiegazione": "1, 2, 3, 4, 6, 12: non è primo perché ne ha più di due.",
+    "fonte": "Wikipedia, «Numero primo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-267",
+    "argomento": "Numeri",
+    "livello": 2,
+    "testo": "A che cosa serve il crivello di Eratostene?",
+    "opzioni": [
+      "A risolvere equazioni",
+      "A calcolare le probabilità",
+      "A determinare quali sono i numeri primi",
+      "A calcolare il MCD"
+    ],
+    "corretta": 2,
+    "spiegazione": "È un semplice algoritmo dell'antica Grecia.",
+    "fonte": "Wikipedia, «Numero primo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-268",
+    "argomento": "Problemi logici",
+    "livello": 3,
+    "testo": "Qual è il numero minimo di mosse per risolvere la Torre di Hanoi con 5 dischi?",
+    "opzioni": [
+      "25",
+      "32",
+      "15",
+      "31"
+    ],
+    "corretta": 3,
+    "spiegazione": "2⁵ − 1 = 31.",
+    "fonte": "Wikipedia, «Torre di Hanoi» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-269",
+    "argomento": "Problemi logici",
+    "livello": 3,
+    "testo": "Qual è il numero minimo di mosse per risolvere la Torre di Hanoi con 6 dischi?",
+    "opzioni": [
+      "63",
+      "31",
+      "36",
+      "64"
+    ],
+    "corretta": 0,
+    "spiegazione": "2⁶ − 1 = 63.",
+    "fonte": "Wikipedia, «Torre di Hanoi» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-270",
+    "argomento": "Numeri",
+    "livello": 3,
+    "testo": "Qual è la media geometrica di 2 e 8?",
+    "opzioni": [
+      "16",
+      "4",
+      "10",
+      "5"
+    ],
+    "corretta": 1,
+    "spiegazione": "√(2 × 8) = √16 = 4.",
+    "fonte": "Wikipedia, «Media (statistica)» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-271",
+    "argomento": "Numeri",
+    "livello": 1,
+    "testo": "Qual è la media aritmetica di 10, 20, 30 e 40?",
+    "opzioni": [
+      "100",
+      "30",
+      "25",
+      "20"
+    ],
+    "corretta": 2,
+    "spiegazione": "(10 + 20 + 30 + 40) / 4 = 25.",
+    "fonte": "Wikipedia, «Media (statistica)» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-272",
+    "argomento": "Numeri",
+    "livello": 3,
+    "testo": "La media di 5 numeri è 12. Aggiungendo il numero 18, quanto diventa la media?",
+    "opzioni": [
+      "12,5",
+      "15",
+      "14",
+      "13"
+    ],
+    "corretta": 3,
+    "spiegazione": "Somma iniziale 60; (60 + 18) / 6 = 13.",
+    "fonte": "Wikipedia, «Media (statistica)» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-273",
+    "argomento": "Numeri",
+    "livello": 2,
+    "testo": "Qual è la mediana dei valori 3, 7, 1, 9, 5?",
+    "opzioni": [
+      "5",
+      "3",
+      "25",
+      "7"
+    ],
+    "corretta": 0,
+    "spiegazione": "Ordinati: 1, 3, 5, 7, 9; il valore centrale è 5.",
+    "fonte": "Wikipedia, «Media (statistica)» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-274",
+    "argomento": "Percentuali",
+    "livello": 2,
+    "testo": "Quanto è il 15% di 240?",
+    "opzioni": [
+      "16",
+      "36",
+      "40",
+      "24"
+    ],
+    "corretta": 1,
+    "spiegazione": "240 × 15 / 100 = 36.",
+    "fonte": "Wikipedia, «Percentuale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-275",
+    "argomento": "Percentuali",
+    "livello": 3,
+    "testo": "18 è il 30% di quale numero?",
+    "opzioni": [
+      "48",
+      "54",
+      "60",
+      "90"
+    ],
+    "corretta": 2,
+    "spiegazione": "18 / 0,30 = 60.",
+    "fonte": "Wikipedia, «Percentuale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-276",
+    "argomento": "Percentuali",
+    "livello": 2,
+    "testo": "Un prezzo passa da 50 € a 65 €. Di quanto è aumentato in percentuale?",
+    "opzioni": [
+      "65%",
+      "23%",
+      "15%",
+      "30%"
+    ],
+    "corretta": 3,
+    "spiegazione": "15 / 50 = 0,30 = 30%.",
+    "fonte": "Wikipedia, «Percentuale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-277",
+    "argomento": "Percentuali",
+    "livello": 2,
+    "testo": "Un bene costa 200 € più IVA al 22%. Quanto si paga in totale?",
+    "opzioni": [
+      "244 €",
+      "222 €",
+      "264 €",
+      "220 €"
+    ],
+    "corretta": 0,
+    "spiegazione": "200 + 22% di 200 = 200 + 44 = 244.",
+    "fonte": "Wikipedia, «Percentuale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-278",
+    "argomento": "Percentuali",
+    "livello": 4,
+    "testo": "Su un prezzo si applicano uno sconto del 20% e poi uno del 10%. Qual è lo sconto complessivo?",
+    "opzioni": [
+      "32%",
+      "28%",
+      "30%",
+      "25%"
+    ],
+    "corretta": 1,
+    "spiegazione": "0,80 × 0,90 = 0,72: si paga il 72%, lo sconto è il 28%.",
+    "fonte": "Wikipedia, «Percentuale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-279",
+    "argomento": "Percentuali",
+    "livello": 3,
+    "testo": "In un concorso con 1.200 candidati supera la prova il 15%. Quanti sono i candidati ammessi?",
+    "opzioni": [
+      "120",
+      "150",
+      "180",
+      "200"
+    ],
+    "corretta": 2,
+    "spiegazione": "1.200 × 0,15 = 180.",
+    "fonte": "Wikipedia, «Percentuale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-280",
+    "argomento": "Insiemi",
+    "livello": 2,
+    "testo": "Dati A = {numeri pari da 2 a 10} e B = {1, 2, 3, 4}, qual è l'intersezione A ∩ B?",
+    "opzioni": [
+      "{1, 2, 3, 4, 6, 8, 10}",
+      "{1, 3}",
+      "{6, 8, 10}",
+      "{2, 4}"
+    ],
+    "corretta": 3,
+    "spiegazione": "Sono gli elementi comuni ai due insiemi.",
+    "fonte": "Wikipedia, «Insieme» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-281",
+    "argomento": "Insiemi",
+    "livello": 2,
+    "testo": "Dati A = {2, 4, 6, 8, 10} e B = {1, 2, 3, 4}, quanti elementi ha l'unione A ∪ B?",
+    "opzioni": [
+      "7",
+      "5",
+      "9",
+      "2"
+    ],
+    "corretta": 0,
+    "spiegazione": "A ∪ B = {1, 2, 3, 4, 6, 8, 10}: gli elementi comuni (2 e 4) si contano una volta sola.",
+    "fonte": "Wikipedia, «Insieme» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-282",
+    "argomento": "Insiemi",
+    "livello": 3,
+    "testo": "Di quali insiemi l'insieme vuoto è sottoinsieme?",
+    "opzioni": [
+      "Solo di sé stesso",
+      "Di qualsiasi insieme",
+      "Di nessun insieme",
+      "Solo degli insiemi infiniti"
+    ],
+    "corretta": 1,
+    "spiegazione": "Non contenendo elementi, tutti i suoi elementi (nessuno) appartengono a ogni insieme.",
+    "fonte": "Wikipedia, «Insieme» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-283",
+    "argomento": "Insiemi",
+    "livello": 3,
+    "testo": "In una classe di 30 studenti, 18 studiano inglese, 15 francese e 7 entrambe le lingue. Quanti non studiano nessuna delle due?",
+    "opzioni": [
+      "3",
+      "0",
+      "4",
+      "7"
+    ],
+    "corretta": 2,
+    "spiegazione": "Studiano almeno una lingua 18 + 15 − 7 = 26; 30 − 26 = 4.",
+    "fonte": "Wikipedia, «Insieme» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-284",
+    "argomento": "Insiemi",
+    "livello": 2,
+    "testo": "Se A ha 12 elementi, B ne ha 9 e A ∩ B ne ha 4, quanti elementi ha A ∪ B?",
+    "opzioni": [
+      "13",
+      "25",
+      "21",
+      "17"
+    ],
+    "corretta": 3,
+    "spiegazione": "12 + 9 − 4 = 17.",
+    "fonte": "Wikipedia, «Insieme» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-285",
+    "argomento": "Insiemi",
+    "livello": 2,
+    "testo": "Quante persone servono, come minimo, per essere certi che almeno due siano nate nello stesso mese?",
+    "opzioni": [
+      "13",
+      "24",
+      "12",
+      "7"
+    ],
+    "corretta": 0,
+    "spiegazione": "Con 12 mesi («cassetti»), la tredicesima persona finisce per forza in un mese già occupato.",
+    "fonte": "Wikipedia, «Principio dei cassetti» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-286",
+    "argomento": "Problemi logici",
+    "livello": 3,
+    "testo": "Un cassetto contiene calzini neri e bianchi mescolati. Quanti bisogna prenderne al buio per essere certi di avere una coppia dello stesso colore?",
+    "opzioni": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "corretta": 1,
+    "spiegazione": "I colori sono 2: il terzo calzino ripete per forza un colore.",
+    "fonte": "Wikipedia, «Principio dei cassetti» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-287",
+    "argomento": "Leggi di De Morgan",
+    "livello": 3,
+    "testo": "Per le leggi di De Morgan, la negazione di «p e q» è:",
+    "opzioni": [
+      "p oppure q",
+      "non p e non q",
+      "non p oppure non q",
+      "p e non q"
+    ],
+    "corretta": 2,
+    "spiegazione": "¬(p ∧ q) = ¬p ∨ ¬q.",
+    "fonte": "MatematicaC3, Logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-288",
+    "argomento": "Leggi di De Morgan",
+    "livello": 3,
+    "testo": "Qual è la negazione di «Piove o fa freddo»?",
+    "opzioni": [
+      "Non piove o non fa freddo",
+      "Piove e fa freddo",
+      "Non piove ma fa freddo",
+      "Non piove e non fa freddo"
+    ],
+    "corretta": 3,
+    "spiegazione": "¬(p ∨ q) = ¬p ∧ ¬q.",
+    "fonte": "MatematicaC3, Logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-289",
+    "argomento": "Tautologie",
+    "livello": 2,
+    "testo": "La proposizione «p oppure non p» è:",
+    "opzioni": [
+      "una tautologia, sempre vera",
+      "indeterminata",
+      "una contraddizione",
+      "vera solo se p è vera"
+    ],
+    "corretta": 0,
+    "spiegazione": "È vera qualunque sia il valore di p.",
+    "fonte": "MatematicaC3, Logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-290",
+    "argomento": "Tautologie",
+    "livello": 2,
+    "testo": "L'affermazione «un numero è multiplo di 2 ed è dispari» è:",
+    "opzioni": [
+      "una tautologia",
+      "una contraddizione, sempre falsa",
+      "una proposizione aperta sempre vera",
+      "vera per alcuni numeri"
+    ],
+    "corretta": 1,
+    "spiegazione": "Un multiplo di 2 è pari, quindi non può essere dispari.",
+    "fonte": "MatematicaC3, Logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-291",
+    "argomento": "Condizioni",
+    "livello": 3,
+    "testo": "«Studiare» rispetto a «essere promossi» è una condizione:",
+    "opzioni": [
+      "né necessaria né sufficiente",
+      "necessaria e sufficiente",
+      "necessaria ma non sufficiente",
+      "sufficiente ma non necessaria"
+    ],
+    "corretta": 2,
+    "spiegazione": "Senza studiare non si è promossi, ma studiare non garantisce la promozione.",
+    "fonte": "MatematicaC3, Logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-292",
+    "argomento": "Quantificatori",
+    "livello": 2,
+    "testo": "Come si legge il simbolo ∀?",
+    "opzioni": [
+      "«Esiste»",
+      "«Non»",
+      "«Implica»",
+      "«Per ogni»"
+    ],
+    "corretta": 3,
+    "spiegazione": "È il quantificatore universale; ∃ (esiste) è quello esistenziale.",
+    "fonte": "MatematicaC3, Logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-293",
+    "argomento": "Quantificatori",
+    "livello": 3,
+    "testo": "Qual è la negazione di «L'anno scorso siamo stati tutti promossi»?",
+    "opzioni": [
+      "L'anno scorso c'è stato almeno uno di noi che non è stato promosso",
+      "L'anno scorso alcuni di noi sono stati promossi",
+      "L'anno scorso siamo stati tutti bocciati",
+      "L'anno scorso nessuno è stato promosso"
+    ],
+    "corretta": 0,
+    "spiegazione": "La negazione di «tutti» è «almeno uno non», non «nessuno».",
+    "fonte": "MatematicaC3, Logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-294",
+    "argomento": "Inferenza",
+    "livello": 3,
+    "testo": "«Se piove, la strada è bagnata. La strada non è bagnata.» Che cosa si può concludere?",
+    "opzioni": [
+      "Piove",
+      "Non piove",
+      "La strada è asciutta perché c'è il sole",
+      "Nulla"
+    ],
+    "corretta": 1,
+    "spiegazione": "Modus tollens: da p ⇒ q e ¬q segue ¬p.",
+    "fonte": "Wikipedia, «Modus tollens» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-295",
+    "argomento": "Fallacie",
+    "livello": 3,
+    "testo": "«Se piove, la strada è bagnata. La strada è bagnata. Quindi piove.» Questo ragionamento è:",
+    "opzioni": [
+      "una tautologia",
+      "valido (modus ponens)",
+      "non valido: è la fallacia dell'affermazione del conseguente",
+      "valido (modus tollens)"
+    ],
+    "corretta": 2,
+    "spiegazione": "La strada potrebbe essere bagnata per altri motivi.",
+    "fonte": "Wikipedia, «Fallacia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-296",
+    "argomento": "Inferenza",
+    "livello": 3,
+    "testo": "«Ogni volta che piove Luca prende l'ombrello. Oggi Luca non ha preso l'ombrello.» Quindi:",
+    "opzioni": [
+      "oggi piove",
+      "non si può dire nulla",
+      "Luca ha dimenticato l'ombrello",
+      "oggi non piove"
+    ],
+    "corretta": 3,
+    "spiegazione": "Dall'implicazione p ⇒ q si deduce la contronominale ¬q ⇒ ¬p.",
+    "fonte": "MatematicaC3, Logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-297",
+    "argomento": "Implicazione",
+    "livello": 3,
+    "testo": "«Se un numero è multiplo di 12 allora è multiplo di 3.» Quale affermazione è equivalente?",
+    "opzioni": [
+      "Se un numero non è multiplo di 3, allora non è multiplo di 12",
+      "Se un numero non è multiplo di 12, non è multiplo di 3",
+      "Nessun multiplo di 3 è multiplo di 12",
+      "Se un numero è multiplo di 3, allora è multiplo di 12"
+    ],
+    "corretta": 0,
+    "spiegazione": "La contronominale ¬q ⇒ ¬p è equivalente all'implicazione; inversa e contraria no.",
+    "fonte": "MatematicaC3, Logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-298",
+    "argomento": "Implicazione",
+    "livello": 2,
+    "testo": "Nella frase «Essere multiplo di 12 implica essere multiplo di 3», qual è il conseguente?",
+    "opzioni": [
+      "Essere un numero",
+      "Essere multiplo di 3",
+      "Essere multiplo di 4",
+      "Essere multiplo di 12"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il conseguente (tesi) è ciò che segue «implica».",
+    "fonte": "MatematicaC3, Logica (CC BY 3.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-299",
+    "argomento": "Problemi logici",
+    "livello": 3,
+    "testo": "Anna è più alta di Bea, Bea è più alta di Carla, Dora è più bassa di Carla. Chi è la più bassa?",
+    "opzioni": [
+      "Carla",
+      "Bea",
+      "Dora",
+      "Non si può stabilire"
+    ],
+    "corretta": 2,
+    "spiegazione": "Ordine: Anna > Bea > Carla > Dora (la relazione «più alto di» è transitiva).",
+    "fonte": "Wikipedia, «Deduzione» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "logica",
+    "id": "log-300",
+    "argomento": "Insiemi",
+    "livello": 3,
+    "testo": "Chi propose nel 1880 i diagrammi per rappresentare le relazioni logiche tra insiemi?",
+    "opzioni": [
+      "Leonhard Euler",
+      "Gottlob Frege",
+      "George Boole",
+      "John Venn"
+    ],
+    "corretta": 3,
+    "spiegazione": "Sono detti anche diagrammi di Eulero-Venn.",
+    "fonte": "Wikipedia, «Diagramma di Venn» (CC BY-SA 4.0)",
+    "versione": "v1"
   }
 ]

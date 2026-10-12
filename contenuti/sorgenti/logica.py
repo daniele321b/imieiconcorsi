@@ -675,3 +675,243 @@ S("log-199", 3, "In una gara di nuoto Anna dice «Chiara è arrivata prima di Ba
 S("log-200", 4, "Sull'isola di cavalieri, furfanti e paggi: il vecchio dice «Io sono paggio; il ragazzo è cavaliere», il ragazzo «Io sono cavaliere; la ragazza è paggio», la ragazza «Io sono furfante; il vecchio è paggio». Quanti paggi ci sono?",
   "Tre", ["Uno", "Due", "Nessuno"], "La ragazza può essere solo paggio, quindi il vecchio è paggio e il ragazzo non è cavaliere: anche lui è paggio. Giochi di Archimede 1998.",
   ME, ES, "Il vecchio afferma", "Problemi logici")
+
+# --- Ampliamento a 300: serie, combinatoria, probabilità, numeri, insiemi, logica proposizionale ---
+DIVF = "Wikipedia_Criteri-di-divisibilità.txt"
+MCDF = "Wikipedia_Massimo-comun-divisore.txt"
+MCMF = "Wikipedia_Minimo-comune-multiplo.txt"
+PERCF = "Wikipedia_Percentuale.txt"
+PERF = "Wikipedia_Numero-perfetto.txt"
+HAN = "Wikipedia_Torre-di-Hanoi.txt"
+R_DIV3 = "Un numero è divisibile per 3 se la somma di tutte le sue cifre è pari a 3 o ad un suo multiplo"
+R_DIV6 = "un numero è divisibile per 6 se e solo se è divisibile sia per 2 sia per 3"
+R_MCD = "è il numero naturale più grande per il quale entrambi possono essere d"
+R_MCM = "è il più piccolo numero intero positivo multiplo sia di"
+R_PERC = "una percentuale è un numero o un rapporto espresso sotto forma di frazione in centesimi"
+R_INT = "è data dall'insieme formato da tutti gli elementi che appartengono sia all'insieme"
+R_UNI = "L'unione di due insiemi"
+R_CAS2 = "se n+k oggetti sono messi in n cassetti, allora almeno un cassetto deve contenere più di un oggetto"
+R_HAN = "il numero minimo di mosse necessarie per completare il gioco è"
+R_IND = "vengono definiti indipendenti stocasticamente"
+
+S("log-201", 1, "Completa la serie: 7, 12, 17, 22, ...", "27", ["26", "28", "32"],
+  "Progressione aritmetica di ragione 5.", "Progressione aritmetica", PA, R_PA)
+S("log-202", 2, "Completa la serie: 50, 44, 38, 32, ...", "26", ["24", "28", "25"],
+  "Progressione aritmetica di ragione −6.", "Progressione aritmetica", PA, R_PA)
+S("log-203", 2, "Completa la serie: 5, 15, 45, 135, ...", "405", ["270", "180", "540"],
+  "Progressione geometrica di ragione 3: 135 × 3 = 405.", "Progressione geometrica", PG, R_PG)
+S("log-204", 2, "Completa la serie: 1000, 100, 10, 1, ...", "0,1", ["0", "−9", "0,01"],
+  "Progressione geometrica di ragione 1/10.", "Progressione geometrica", PG, R_PG)
+S("log-205", 3, "Completa la serie: 2, 5, 7, 12, 19, ...", "31", ["26", "29", "38"],
+  "Come nella successione di Fibonacci, ogni termine è la somma dei due precedenti: 12 + 19 = 31.", "Successione di Fibonacci", FIB, R_FIB)
+S("log-206", 2, "Completa la serie: 10, 10, 20, 30, 50, ...", "80", ["70", "60", "100"],
+  "Ogni termine è la somma dei due precedenti (Fibonacci moltiplicata per 10): 30 + 50 = 80.", "Successione di Fibonacci", FIB, R_FIB)
+S("log-207", 3, "In una progressione aritmetica il primo termine è 10 e la ragione è 3. Quanto vale il ventesimo termine?",
+  "67", ["70", "60", "63"], "a₂₀ = 10 + 19 × 3 = 67.", "Progressione aritmetica", PA, "Tale costante viene detta ragione della progressione")
+S("log-208", 3, "Quanto vale la somma dei numeri interi da 1 a 50?", "1275", ["1250", "2550", "1225"],
+  "n·(n+1)/2 = 50 × 51 / 2 = 1275.", "Progressione aritmetica", PA, "La somma dei numeri di una progressione aritmetica finita si chiama serie aritmetica")
+S("log-209", 4, "Quanto vale la somma dei numeri pari da 2 a 100?", "2550", ["2500", "5050", "2450"],
+  "Sono 50 termini: (2 + 100) × 50 / 2 = 2550.", "Progressione aritmetica", PA, "La somma dei numeri di una progressione aritmetica finita si chiama serie aritmetica")
+S("log-210", 3, "In una progressione geometrica il primo termine è 2 e la ragione è 3. Quanto vale il quinto termine?",
+  "162", ["54", "486", "30"], "a₅ = 2 × 3⁴ = 2 × 81 = 162.", "Progressione geometrica", PG, R_PG)
+S("log-211", 1, "Completa la serie: 2, 4, 8, 16, 32, ...", "64", ["48", "34", "60"],
+  "Ogni termine è il doppio del precedente.", "Progressione geometrica", PG, R_PG)
+S("log-212", 3, "Quanto vale 8! / 6!?", "56", ["2", "48", "14"],
+  "8!/6! = 8 × 7 = 56: i fattori da 6 in giù si semplificano.", "Fattoriale", FAT, R_FAT)
+S("log-213", 3, "Quanto vale 7!?", "5040", ["720", "40320", "2520"],
+  "7! = 7 × 720 = 5040.", "Fattoriale", FAT, R_FAT)
+S("log-214", 3, "Quanto vale 10! / 8!?", "90", ["2", "80", "20"],
+  "10!/8! = 10 × 9 = 90.", "Fattoriale", FAT, R_FAT)
+S("log-215", 2, "Quanto vale 3! × 2!?", "12", ["6", "5", "36"],
+  "3! = 6 e 2! = 2: 6 × 2 = 12.", "Fattoriale", FAT, R_FAT)
+S("log-216", 4, "Chi introdusse nel 1807 la notazione con il punto esclamativo per il fattoriale?",
+  "Christian Kramp", ["Leonhard Euler", "Blaise Pascal", "Carl Friedrich Gauss"],
+  "Il nome «fattoriale» era stato coniato poco prima da Antoine Arbogast.", "Fattoriale", FAT, "La notazione con il punto esclamativo è stata introdotta nel 1807 da Christian Kramp")
+S("log-217", 3, "Qual è il decimo termine della successione di Fibonacci 1, 1, 2, 3, 5, …?", "55", ["34", "89", "50"],
+  "1, 1, 2, 3, 5, 8, 13, 21, 34, 55.", "Successione di Fibonacci", FIB, R_FIB)
+S("log-218", 4, "Il rapporto tra due termini consecutivi della successione di Fibonacci tende a:",
+  "la sezione aurea, circa 1,618", ["2", "π, circa 3,14", "1"],
+  "È detta anche numero di Fidia.", "Successione di Fibonacci", FIB, "chiamato sezione aurea o numero di Fidia")
+S("log-219", 3, "Quanto vale il centesimo termine della progressione 4, 9, 14, 19, ...?", "499", ["500", "504", "495"],
+  "a₁₀₀ = 4 + 99 × 5 = 499.", "Progressione aritmetica", PA, R_PA)
+S("log-220", 3, "Nella progressione 3, 7, 11, 15, ..., quale posizione occupa il numero 43?", "L'undicesima", ["La decima", "La dodicesima", "La nona"],
+  "3 + 4(n − 1) = 43 → n = 11.", "Progressione aritmetica", PA, R_PA)
+
+S("log-221", 2, "Quanti anagrammi (anche senza senso) ha la parola ROMA?", "24", ["12", "16", "4"],
+  "Quattro lettere distinte: 4! = 24 permutazioni.", "Calcolo combinatorio", CC, R_PERM, arg="Calcolo combinatorio")
+S("log-222", 3, "Quanti anagrammi distinti ha la parola CASA?", "12", ["24", "6", "16"],
+  "4! / 2! = 12, perché la A compare due volte.", "Calcolo combinatorio", CC, R_PERM, arg="Calcolo combinatorio")
+S("log-223", 2, "In quanti modi diversi possono mettersi in fila 5 persone?", "120", ["25", "60", "720"],
+  "5! = 120 permutazioni.", "Calcolo combinatorio", CC, R_PERM, arg="Calcolo combinatorio")
+S("log-224", 3, "In quanti modi si può formare un comitato di 3 persone scelte tra 7?", "35", ["210", "21", "42"],
+  "L'ordine non conta: C(7,3) = 7·6·5 / 3! = 35.", "Calcolo combinatorio", CC, R_COMB, arg="Calcolo combinatorio")
+S("log-225", 3, "In una riunione di 6 persone ognuno stringe la mano a tutti gli altri una volta. Quante strette di mano ci sono?", "15", ["30", "36", "12"],
+  "C(6,2) = 6·5 / 2 = 15.", "Calcolo combinatorio", CC, R_COMB, arg="Calcolo combinatorio")
+S("log-226", 3, "In una gara con 8 atleti, in quanti modi diversi si può formare il podio (1°, 2°, 3°)?", "336", ["56", "512", "24"],
+  "L'ordine conta: 8 × 7 × 6 = 336 disposizioni.", "Calcolo combinatorio", CC, R_DISP, arg="Calcolo combinatorio")
+S("log-227", 2, "Quanti PIN di 4 cifre (da 0 a 9, ripetizioni ammesse) si possono formare?", "10.000", ["5.040", "9.999", "40"],
+  "Disposizioni con ripetizione: 10⁴ = 10.000.", "Calcolo combinatorio", CC, R_RIP, arg="Calcolo combinatorio")
+S("log-228", 4, "Quante sequenze di 3 lettere si possono formare con un alfabeto di 21 lettere, ammettendo ripetizioni?", "9.261", ["7.980", "1.330", "63"],
+  "21³ = 9.261.", "Calcolo combinatorio", CC, R_RIP, arg="Calcolo combinatorio")
+S("log-229", 2, "Lanciando una moneta 3 volte, quante sequenze di risultati sono possibili?", "8", ["6", "3", "9"],
+  "Due esiti per ciascun lancio: 2³ = 8.", "Calcolo combinatorio", CC, R_RIP, arg="Calcolo combinatorio")
+S("log-230", 3, "Quante diagonali ha un esagono?", "9", ["6", "12", "15"],
+  "I segmenti tra 6 vertici sono C(6,2) = 15; tolti i 6 lati restano 9 diagonali.", "Calcolo combinatorio", CC, R_COMB, arg="Calcolo combinatorio")
+S("log-231", 2, "In quanti modi si possono scegliere 2 libri da uno scaffale di 10?", "45", ["90", "20", "100"],
+  "C(10,2) = 10·9 / 2 = 45.", "Calcolo combinatorio", CC, R_COMB, arg="Calcolo combinatorio")
+S("log-232", 2, "Quanti numeri di 2 cifre diverse si possono formare con le cifre 1, 2, 3, 4, 5?", "20", ["25", "10", "15"],
+  "5 × 4 = 20 disposizioni semplici.", "Calcolo combinatorio", CC, R_DISP, arg="Calcolo combinatorio")
+S("log-233", 4, "Quanti anagrammi distinti ha la parola MAMMA?", "10", ["120", "20", "60"],
+  "5! / (3! × 2!) = 10 (tre M e due A).", "Calcolo combinatorio", CC, R_PERM, arg="Calcolo combinatorio")
+S("log-234", 4, "In quanti modi 4 persone possono sedersi attorno a un tavolo rotondo (contano solo le posizioni relative)?", "6", ["24", "4", "12"],
+  "Nelle permutazioni circolari si fissa una persona: (4 − 1)! = 6.", "Calcolo combinatorio", CC, R_PERM, arg="Calcolo combinatorio")
+S("log-235", 4, "Da 5 uomini e 3 donne si forma un comitato con 2 uomini e 1 donna. Quanti comitati sono possibili?", "30", ["15", "56", "60"],
+  "C(5,2) × C(3,1) = 10 × 3 = 30.", "Calcolo combinatorio", CC, R_COMB, arg="Calcolo combinatorio")
+S("log-236", 3, "Tre premi diversi vanno assegnati a 3 delle 10 persone presenti (un premio a testa). In quanti modi?", "720", ["120", "1000", "30"],
+  "L'ordine conta: 10 × 9 × 8 = 720.", "Calcolo combinatorio", CC, R_DISP, arg="Calcolo combinatorio")
+S("log-237", 4, "Quante colonne diverse si possono giocare al Totocalcio (13 partite, segni 1, X, 2)?", "1.594.323", ["39", "2.197", "8.192"],
+  "Disposizioni con ripetizione: 3¹³ = 1.594.323.", "Calcolo combinatorio", CC, R_RIP, arg="Calcolo combinatorio")
+
+S("log-238", 1, "Lanciando un dado, qual è la probabilità di ottenere un numero pari?", "1/2", ["1/3", "1/6", "2/3"],
+  "Casi favorevoli 3 (2, 4, 6) su 6 possibili.", "Probabilità", PRO, R_PRO, arg="Probabilità")
+S("log-239", 2, "Lanciando un dado, qual è la probabilità di ottenere un numero maggiore di 4?", "1/3", ["1/2", "1/6", "2/3"],
+  "Casi favorevoli 2 (5 e 6) su 6.", "Probabilità", PRO, R_PRO, arg="Probabilità")
+S("log-240", 2, "Da un mazzo di 40 carte, qual è la probabilità di estrarre un asso?", "1/10", ["1/4", "1/40", "1/8"],
+  "4 assi su 40 carte.", "Probabilità", PRO, R_PRO, arg="Probabilità")
+S("log-241", 2, "Un'urna contiene 3 palline rosse, 5 blu e 2 verdi. Qual è la probabilità di estrarre una pallina blu?", "1/2", ["1/3", "1/5", "5/8"],
+  "5 favorevoli su 10.", "Probabilità", PRO, R_PRO, arg="Probabilità")
+S("log-242", 4, "Un'urna ha 4 palline bianche e 6 nere. Estraendone due senza reimmissione, qual è la probabilità che siano entrambe bianche?", "2/15", ["4/25", "1/5", "2/5"],
+  "4/10 × 3/9 = 12/90 = 2/15.", "Probabilità", PRO, R_PRO, arg="Probabilità")
+S("log-243", 3, "Lanciando due monete, qual è la probabilità di ottenere almeno una croce?", "3/4", ["1/2", "1/4", "2/3"],
+  "Esiti: TT, TC, CT, CC; solo TT non ha croci: 3/4.", "Probabilità", PRO, R_PRO, arg="Probabilità")
+S("log-244", 3, "Lanciando due dadi, qual è la probabilità che la somma sia 4?", "1/12", ["1/6", "1/9", "1/36"],
+  "Coppie favorevoli (1,3), (2,2), (3,1): 3 casi su 36.", "Probabilità", PRO, R_PRO, arg="Probabilità")
+S("log-245", 3, "Lanciando due dadi, qual è la probabilità che la somma sia 2?", "1/36", ["1/18", "1/12", "1/6"],
+  "Solo la coppia (1,1): 1 caso su 36.", "Probabilità", PRO, R_PRO, arg="Probabilità")
+S("log-246", 3, "Se la probabilità di un evento A è 0,3, qual è la probabilità che A non si verifichi?", "0,7", ["0,3", "1,3", "0,03"],
+  "A e «non A» sono incompatibili e la loro unione è certa: 1 − 0,3 = 0,7.", "Probabilità", PRO, R_INC, arg="Probabilità")
+S("log-247", 2, "Lanciando un dado, qual è la probabilità di ottenere un multiplo di 3?", "1/3", ["1/2", "1/6", "1/4"],
+  "Favorevoli: 3 e 6, cioè 2 su 6.", "Probabilità", PRO, R_PRO, arg="Probabilità")
+S("log-248", 2, "Lanciando due dadi, ottenere somma 1 è un evento:", "impossibile", ["certo", "probabile al 50%", "con probabilità 1/36"],
+  "La somma minima di due dadi è 2: la probabilità è 0.", "Probabilità", PRO, "evento impossibile (ottenere 1 come somma dal lancio di due dadi)", arg="Probabilità")
+S("log-249", 2, "Lanciando un dado a sei facce, ottenere un numero compreso tra 1 e 6 è un evento:", "certo", ["impossibile", "probabile al 50%", "aleatorio"],
+  "La probabilità dell'evento certo è 1.", "Probabilità", PRO, "evento certo (ad esempio: lanciando un dado a sei facce si ottiene un numero compreso tra 1 e 6)", arg="Probabilità")
+S("log-250", 3, "Una coppia ha tre figli. Supponendo uguale probabilità di maschio e femmina, qual è la probabilità che siano tutti maschi?", "1/8", ["1/3", "1/6", "1/2"],
+  "Eventi indipendenti: (1/2)³ = 1/8.", "Probabilità", PRO, R_IND, arg="Probabilità")
+S("log-251", 2, "Estraendo un numero della tombola (da 1 a 90), qual è la probabilità che sia multiplo di 10?", "1/10", ["1/9", "1/90", "1/5"],
+  "I multipli di 10 sono 9 su 90.", "Probabilità", PRO, R_PRO, arg="Probabilità")
+S("log-252", 2, "Da un mazzo di 52 carte francesi, qual è la probabilità di estrarre una carta di cuori?", "1/4", ["1/13", "1/52", "1/2"],
+  "13 carte di cuori su 52.", "Probabilità", PRO, R_PRO, arg="Probabilità")
+S("log-253", 3, "Da un mazzo di 40 carte (12 figure e 4 assi), qual è la probabilità di estrarre una figura o un asso?", "2/5", ["3/10", "1/10", "1/2"],
+  "Eventi incompatibili: 12/40 + 4/40 = 16/40 = 2/5.", "Probabilità", PRO, R_INC, arg="Probabilità")
+S("log-254", 4, "Lanciando un dado due volte, qual è la probabilità di ottenere 6 al primo lancio e un numero dispari al secondo?", "1/12", ["1/6", "1/3", "7/12"],
+  "Eventi indipendenti: 1/6 × 1/2 = 1/12.", "Probabilità", PRO, R_IND, arg="Probabilità")
+
+S("log-255", 2, "Quale di questi numeri è divisibile per 6?", "1.374", ["1.375", "1.354", "2.023"],
+  "1.374 è pari e la somma delle cifre (15) è multipla di 3.", "Criteri di divisibilità", DIVF, R_DIV6, arg="Numeri")
+S("log-256", 3, "Quale di questi numeri è divisibile per 12 (cioè per 3 e per 4)?", "4.620", ["4.622", "4.618", "4.626"],
+  "4.620: le ultime due cifre (20) sono multiple di 4 e la somma delle cifre (12) è multipla di 3.", "Criteri di divisibilità", DIVF, R_DIV3, arg="Numeri")
+S("log-257", 3, "Con l'algoritmo di Euclide, qual è il massimo comune divisore di 84 e 18?", "6", ["12", "3", "18"],
+  "84 = 18·4 + 12; 18 = 12·1 + 6; 12 = 6·2: MCD = 6.", "Massimo comun divisore", MCDF, "Un metodo molto più efficiente è fornito dall'algoritmo di Euclide", arg="Numeri")
+S("log-258", 3, "Qual è il massimo comune divisore di 48 e 180?", "12", ["6", "24", "36"],
+  "48 = 2⁴·3 e 180 = 2²·3²·5: MCD = 2²·3 = 12.", "Massimo comun divisore", MCDF, R_MCD, arg="Numeri")
+S("log-259", 3, "Qual è il minimo comune multiplo di 6, 8 e 12?", "24", ["48", "96", "12"],
+  "6 = 2·3, 8 = 2³, 12 = 2²·3: mcm = 2³·3 = 24.", "Minimo comune multiplo", MCMF, R_MCM, arg="Numeri")
+S("log-260", 2, "Qual è il minimo comune multiplo di 9 e 15?", "45", ["135", "3", "30"],
+  "9 = 3², 15 = 3·5: mcm = 3²·5 = 45.", "Minimo comune multiplo", MCMF, R_MCM, arg="Numeri")
+S("log-261", 3, "Due fari lampeggiano insieme; poi uno lampeggia ogni 15 secondi e l'altro ogni 20. Dopo quanti secondi lampeggeranno di nuovo insieme?", "60", ["35", "300", "45"],
+  "mcm(15, 20) = 60.", "Minimo comune multiplo", MCMF, R_MCM, arg="Numeri")
+S("log-262", 3, "Due corde lunghe 60 m e 84 m vanno tagliate in pezzi tutti uguali, i più lunghi possibile. Quanto è lungo ogni pezzo?", "12 m", ["6 m", "24 m", "4 m"],
+  "MCD(60, 84) = 12.", "Massimo comun divisore", MCDF, R_MCD, arg="Numeri")
+S("log-263", 3, "Qual è il più piccolo numero perfetto?", "6", ["1", "12", "28"],
+  "I divisori di 6 escluso sé stesso sono 1, 2, 3, e 1 + 2 + 3 = 6.", "Numero perfetto", PERF, "un numero perfetto è un numero naturale che è uguale alla somma dei suoi divisori positivi", arg="Numeri")
+S("log-264", 3, "Quale scomposizione in fattori primi di 360 è corretta?", "2³ · 3² · 5", ["2² · 3² · 10", "2⁴ · 3 · 5", "6² · 10"],
+  "360 = 8 × 9 × 5; la scomposizione in primi è unica.", "Minimo comune multiplo", MCMF, "Il teorema fondamentale dell'aritmetica afferma che ogni intero maggiore di", arg="Numeri")
+S("log-265", 2, "Quale di questi numeri NON è primo?", "91", ["89", "83", "97"],
+  "91 = 7 × 13, quindi ha più di due divisori.", "Numero primo", PRI, R_PRI, arg="Numeri")
+S("log-266", 3, "Quanti divisori ha il numero 12?", "6", ["4", "5", "12"],
+  "1, 2, 3, 4, 6, 12: non è primo perché ne ha più di due.", "Numero primo", PRI, R_PRI, arg="Numeri")
+S("log-267", 2, "A che cosa serve il crivello di Eratostene?", "A determinare quali sono i numeri primi", ["A calcolare il MCD", "A risolvere equazioni", "A calcolare le probabilità"],
+  "È un semplice algoritmo dell'antica Grecia.", "Numero primo", PRI, "il crivello di Eratostene, un semplice algoritmo per determinare quali sono i numeri primi", arg="Numeri")
+S("log-268", 3, "Qual è il numero minimo di mosse per risolvere la Torre di Hanoi con 5 dischi?", "31", ["25", "32", "15"],
+  "2⁵ − 1 = 31.", "Torre di Hanoi", HAN, R_HAN, arg="Problemi logici")
+S("log-269", 3, "Qual è il numero minimo di mosse per risolvere la Torre di Hanoi con 6 dischi?", "63", ["64", "36", "31"],
+  "2⁶ − 1 = 63.", "Torre di Hanoi", HAN, R_HAN, arg="Problemi logici")
+S("log-270", 3, "Qual è la media geometrica di 2 e 8?", "4", ["5", "10", "16"],
+  "√(2 × 8) = √16 = 4.", "Media (statistica)", MED, "La media geometrica di", arg="Numeri")
+S("log-271", 1, "Qual è la media aritmetica di 10, 20, 30 e 40?", "25", ["20", "30", "100"],
+  "(10 + 20 + 30 + 40) / 4 = 25.", "Media (statistica)", MED, R_MED, arg="Numeri")
+S("log-272", 3, "La media di 5 numeri è 12. Aggiungendo il numero 18, quanto diventa la media?", "13", ["15", "12,5", "14"],
+  "Somma iniziale 60; (60 + 18) / 6 = 13.", "Media (statistica)", MED, R_MED, arg="Numeri")
+S("log-273", 2, "Qual è la mediana dei valori 3, 7, 1, 9, 5?", "5", ["7", "3", "25"],
+  "Ordinati: 1, 3, 5, 7, 9; il valore centrale è 5.", "Media (statistica)", MED, "come la mediana, che sono più robusti rispetto ai valori anomali", arg="Numeri")
+S("log-274", 2, "Quanto è il 15% di 240?", "36", ["24", "16", "40"],
+  "240 × 15 / 100 = 36.", "Percentuale", PERCF, R_PERC, arg="Percentuali")
+S("log-275", 3, "18 è il 30% di quale numero?", "60", ["54", "48", "90"],
+  "18 / 0,30 = 60.", "Percentuale", PERCF, R_PERC, arg="Percentuali")
+S("log-276", 2, "Un prezzo passa da 50 € a 65 €. Di quanto è aumentato in percentuale?", "30%", ["15%", "23%", "65%"],
+  "15 / 50 = 0,30 = 30%.", "Percentuale", PERCF, R_PERC, arg="Percentuali")
+S("log-277", 2, "Un bene costa 200 € più IVA al 22%. Quanto si paga in totale?", "244 €", ["222 €", "220 €", "264 €"],
+  "200 + 22% di 200 = 200 + 44 = 244.", "Percentuale", PERCF, R_PERC, arg="Percentuali")
+S("log-278", 4, "Su un prezzo si applicano uno sconto del 20% e poi uno del 10%. Qual è lo sconto complessivo?", "28%", ["30%", "25%", "32%"],
+  "0,80 × 0,90 = 0,72: si paga il 72%, lo sconto è il 28%.", "Percentuale", PERCF, R_PERC, arg="Percentuali")
+S("log-279", 3, "In un concorso con 1.200 candidati supera la prova il 15%. Quanti sono i candidati ammessi?", "180", ["150", "120", "200"],
+  "1.200 × 0,15 = 180.", "Percentuale", PERCF, R_PERC, arg="Percentuali")
+
+S("log-280", 2, "Dati A = {numeri pari da 2 a 10} e B = {1, 2, 3, 4}, qual è l'intersezione A ∩ B?", "{2, 4}", ["{1, 2, 3, 4, 6, 8, 10}", "{1, 3}", "{6, 8, 10}"],
+  "Sono gli elementi comuni ai due insiemi.", "Insieme", INS, R_INT, arg="Insiemi")
+S("log-281", 2, "Dati A = {2, 4, 6, 8, 10} e B = {1, 2, 3, 4}, quanti elementi ha l'unione A ∪ B?", "7", ["9", "2", "5"],
+  "A ∪ B = {1, 2, 3, 4, 6, 8, 10}: gli elementi comuni (2 e 4) si contano una volta sola.", "Insieme", INS, R_UNI, arg="Insiemi")
+S("log-282", 3, "Di quali insiemi l'insieme vuoto è sottoinsieme?", "Di qualsiasi insieme", ["Solo di sé stesso", "Di nessun insieme", "Solo degli insiemi infiniti"],
+  "Non contenendo elementi, tutti i suoi elementi (nessuno) appartengono a ogni insieme.", "Insieme", INS, "L'insieme vuoto è sottoinsieme di", arg="Insiemi")
+S("log-283", 3, "In una classe di 30 studenti, 18 studiano inglese, 15 francese e 7 entrambe le lingue. Quanti non studiano nessuna delle due?", "4", ["7", "0", "3"],
+  "Studiano almeno una lingua 18 + 15 − 7 = 26; 30 − 26 = 4.", "Insieme", INS, R_UNI, arg="Insiemi")
+S("log-284", 2, "Se A ha 12 elementi, B ne ha 9 e A ∩ B ne ha 4, quanti elementi ha A ∪ B?", "17", ["21", "25", "13"],
+  "12 + 9 − 4 = 17.", "Insieme", INS, R_UNI, arg="Insiemi")
+S("log-285", 2, "Quante persone servono, come minimo, per essere certi che almeno due siano nate nello stesso mese?", "13", ["12", "24", "7"],
+  "Con 12 mesi («cassetti»), la tredicesima persona finisce per forza in un mese già occupato.", "Principio dei cassetti", CAS, R_CAS2, arg="Insiemi")
+S("log-286", 3, "Un cassetto contiene calzini neri e bianchi mescolati. Quanti bisogna prenderne al buio per essere certi di avere una coppia dello stesso colore?", "3", ["2", "4", "5"],
+  "I colori sono 2: il terzo calzino ripete per forza un colore.", "Principio dei cassetti", CAS, R_CAS2, arg="Problemi logici")
+
+D("log-287", "Leggi di De Morgan", 3, "Per le leggi di De Morgan, la negazione di «p e q» è:",
+  "non p oppure non q", ["non p e non q", "p oppure q", "p e non q"],
+  "¬(p ∧ q) = ¬p ∨ ¬q.", M, LOG, "In formule si hanno le seguenti equivalenze (leggi di De Morgan)")
+D("log-288", "Leggi di De Morgan", 3, "Qual è la negazione di «Piove o fa freddo»?",
+  "Non piove e non fa freddo", ["Non piove o non fa freddo", "Piove e fa freddo", "Non piove ma fa freddo"],
+  "¬(p ∨ q) = ¬p ∧ ¬q.", M, LOG, "In formule si hanno le seguenti equivalenze (leggi di De Morgan)")
+D("log-289", "Tautologie", 2, "La proposizione «p oppure non p» è:",
+  "una tautologia, sempre vera", ["una contraddizione", "vera solo se p è vera", "indeterminata"],
+  "È vera qualunque sia il valore di p.", M, LOG, "La proposizione p ∨ ¬p è una tautologia in quanto è sempre vera")
+D("log-290", "Tautologie", 2, "L'affermazione «un numero è multiplo di 2 ed è dispari» è:",
+  "una contraddizione, sempre falsa", ["una tautologia", "vera per alcuni numeri", "una proposizione aperta sempre vera"],
+  "Un multiplo di 2 è pari, quindi non può essere dispari.", M, LOG, "Un esempio banale di contraddizione è l'affermazione \"un numero è multiplo di 2 ed è dispari\"")
+D("log-291", "Condizioni", 3, "«Studiare» rispetto a «essere promossi» è una condizione:",
+  "necessaria ma non sufficiente", ["sufficiente ma non necessaria", "necessaria e sufficiente", "né necessaria né sufficiente"],
+  "Senza studiare non si è promossi, ma studiare non garantisce la promozione.", M, LOG, "studiare è condizione necessaria per essere promossi ma non è sufficiente")
+D("log-292", "Quantificatori", 2, "Come si legge il simbolo ∀?",
+  "«Per ogni»", ["«Esiste»", "«Non»", "«Implica»"],
+  "È il quantificatore universale; ∃ (esiste) è quello esistenziale.", M, LOG, "il simbolo ∀ (che si legge \"per ogni\")")
+D("log-293", "Quantificatori", 3, "Qual è la negazione di «L'anno scorso siamo stati tutti promossi»?",
+  "L'anno scorso c'è stato almeno uno di noi che non è stato promosso", ["L'anno scorso siamo stati tutti bocciati", "L'anno scorso nessuno è stato promosso", "L'anno scorso alcuni di noi sono stati promossi"],
+  "La negazione di «tutti» è «almeno uno non», non «nessuno».", M, LOG, "L'anno scorso c'è stato almeno uno di noi che non è stato promosso")
+D("log-294", "Inferenza", 3, "«Se piove, la strada è bagnata. La strada non è bagnata.» Che cosa si può concludere?",
+  "Non piove", ["Piove", "La strada è asciutta perché c'è il sole", "Nulla"],
+  "Modus tollens: da p ⇒ q e ¬q segue ¬p.", W("Modus tollens"), MT, "Non esiste, pertanto, nessun valore di verità assegnabile alle proposizioni p e q che renda la conclusione di Modus tollens falsa")
+D("log-295", "Fallacie", 3, "«Se piove, la strada è bagnata. La strada è bagnata. Quindi piove.» Questo ragionamento è:",
+  "non valido: è la fallacia dell'affermazione del conseguente", ["valido (modus ponens)", "valido (modus tollens)", "una tautologia"],
+  "La strada potrebbe essere bagnata per altri motivi.", W("Fallacia"), FAL, "Fallacia dell'affermazione del conseguente")
+D("log-296", "Inferenza", 3, "«Ogni volta che piove Luca prende l'ombrello. Oggi Luca non ha preso l'ombrello.» Quindi:",
+  "oggi non piove", ["oggi piove", "Luca ha dimenticato l'ombrello", "non si può dire nulla"],
+  "Dall'implicazione p ⇒ q si deduce la contronominale ¬q ⇒ ¬p.", M, LOG, "da p ⇒ q si può dedurre ¬q ⇒ ¬p")
+D("log-297", "Implicazione", 3, "«Se un numero è multiplo di 12 allora è multiplo di 3.» Quale affermazione è equivalente?",
+  "Se un numero non è multiplo di 3, allora non è multiplo di 12", ["Se un numero è multiplo di 3, allora è multiplo di 12", "Se un numero non è multiplo di 12, non è multiplo di 3", "Nessun multiplo di 3 è multiplo di 12"],
+  "La contronominale ¬q ⇒ ¬p è equivalente all'implicazione; inversa e contraria no.", M, LOG, "Se un numero è multiplo di 12 allora è multiplo di 3")
+D("log-298", "Implicazione", 2, "Nella frase «Essere multiplo di 12 implica essere multiplo di 3», qual è il conseguente?",
+  "Essere multiplo di 3", ["Essere multiplo di 12", "Essere un numero", "Essere multiplo di 4"],
+  "Il conseguente (tesi) è ciò che segue «implica».", M, LOG, "Essere multiplo di 12 implica essere multiplo di 3")
+D("log-299", "Problemi logici", 3, "Anna è più alta di Bea, Bea è più alta di Carla, Dora è più bassa di Carla. Chi è la più bassa?",
+  "Dora", ["Carla", "Bea", "Non si può stabilire"],
+  "Ordine: Anna > Bea > Carla > Dora (la relazione «più alto di» è transitiva).", W("Deduzione"), DED, "Il metodo deduttivo")
+D("log-300", "Insiemi", 3, "Chi propose nel 1880 i diagrammi per rappresentare le relazioni logiche tra insiemi?",
+  "John Venn", ["Leonhard Euler", "George Boole", "Gottlob Frege"],
+  "Sono detti anche diagrammi di Eulero-Venn.", W("Diagramma di Venn"), VEN, "proposto nel 1880 dal matematico inglese John Venn")
