@@ -1,10 +1,12 @@
 import { COMPARTI, nomeMateria, type CompartoId, type MateriaId, type SelezioneBanca } from "@imieiconcorsi/core/domain";
-import { BookOpenCheck, Database, Eye, RotateCcw, Timer } from "lucide-react";
+import { ArrowLeft, BookOpenCheck, ChevronDown, Database, Eye, RotateCcw, Star, Timer } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router";
+import { NumeroAMano } from "../../components/NumeroDomande";
 import { OrdineRisposte } from "../../components/OrdineRisposte";
-import { Alert, Badge, Button, ButtonLink, Card, EmptyState, PageHeader, ProgressBar, Spinner, UpgradeBanner, cx } from "../../components/ui";
+import { Alert, Badge, Button, Card, EmptyState, PageHeader, ProgressBar, Spinner, UpgradeBanner, cx } from "../../components/ui";
 import { api, useApi } from "../../lib/api";
+import { useUtente } from "../../lib/auth";
 import { useAvviaSessione } from "../../lib/sessioni";
 
 interface BancaApi {
@@ -15,9 +17,9 @@ interface BancaApi {
   materia?: MateriaId;
   domande: number;
   /** Concorsi collegati: la scheda li elenca con il link al bando */
-  concorsi: { id: string; titolo: string }[];
+  concorsi: { id: string; titolo: string; ente?: string }[];
   /** Domande già fatte e sbagliate l'ultima volta; assente = mai iniziata */
-  progresso?: { fatte: number; sbagliate: number };
+  progresso?: { fatte: number; sbagliate: number; preferite: number };
 }
 
 /** Utilizzi del piano Free nella settimana; null = illimitati. */
@@ -37,12 +39,16 @@ const SIMULAZIONE = [30, 60] as const;
 export function BancheDati() {
   const { data, loading, error, reload } = useApi<{ banche: BancaApi[]; usi: UsiApi | null }>("/banche-dati");
   const { avvia, inCorso, errore, chiudiErrore } = useAvviaSessione();
+  const { utente } = useUtente();
   const usi = data?.usi;
 
   const perComparto = COMPARTI.map((c) => ({ ...c, banche: (data?.banche ?? []).filter((b) => b.comparto === c.id) })).filter((c) => c.banche.length);
 
   return (
     <div>
+      <Link to="/app/studio" className="mb-4 inline-flex items-center gap-1 text-sm font-semibold text-slate-500 hover:text-slate-800">
+        <ArrowLeft className="size-4" /> Studio
+      </Link>
       <PageHeader
         title="Banche dati ufficiali"
         subtitle="Le domande pubblicate dagli enti per le prove dei concorsi, divise per comparto. Consultale una per una, studia con la correzione subito o fai una simulazione a tempo."
@@ -92,6 +98,7 @@ export function BancheDati() {
                     banca={b}
                     giaAperta={!!usi?.aperte.includes(b.id)}
                     inCorso={inCorso}
+                    maxSimulazione={utente.limiti.domandePerSimulazione}
                     onAvvia={(tipo, numero, selezione) => void avvia({ tipo, bancaDatiId: b.id, numero, selezione }, `${b.id}-${tipo}`).then(() => reload())}
                     onRicomincia={() => void api(`/me/progressi/${b.id}`, { method: "DELETE" }).then(() => reload())}
                   />
@@ -113,8 +120,9 @@ function ConcorsiCollegati({ concorsi }: { concorsi: BancaApi["concorsi"] }) {
     <div className="mt-1 space-y-0.5 text-xs text-slate-500">
       <p className="font-semibold">{concorsi.length === 1 ? "Concorso" : `Vale per ${concorsi.length} concorsi`}:</p>
       {mostrati.map((c) => (
-        <Link key={c.id} to={`/app/concorsi/${c.id}`} className="block truncate hover:text-brand-700">
-          {c.titolo}
+        <Link key={c.id} to={`/app/concorsi/${c.id}`} className="block break-words hover:text-brand-700">
+          <span className="font-semibold text-slate-700">{c.titolo}</span>
+          {c.ente && <span> · {c.ente}</span>}
         </Link>
       ))}
       {concorsi.length > 2 && (
@@ -126,11 +134,18 @@ function ConcorsiCollegati({ concorsi }: { concorsi: BancaApi["concorsi"] }) {
   );
 }
 
-/** Scheda di una banca dati: dati, progressi, consultazione, studio e simulazione. */
+/** Cosa fare con una banca dati, dopo averla aperta. */
+type Modo = "studio" | "simulazione";
+
+/**
+ * Scheda di una banca dati: dati e progressi. Toccandola si aprono le tre scelte (Consulta,
+ * Studia, Simulazione); scelto Studia o Simulazione si decide quali domande e quante, poi si parte.
+ */
 function SchedaBanca({
   banca,
   giaAperta,
   inCorso,
+  maxSimulazione,
   onAvvia,
   onRicomincia,
 }: {
@@ -138,20 +153,26 @@ function SchedaBanca({
   /** Free: già consultata questa settimana, consultarla di nuovo non costa */
   giaAperta: boolean;
   inCorso?: string;
-  onAvvia: (tipo: "studio" | "simulazione", numero: number, selezione: SelezioneBanca) => void;
+  /** Domande massime di una simulazione per il piano (il Pro ne sceglie a mano fino a 100) */
+  maxSimulazione: number;
+  onAvvia: (tipo: Modo, numero: number, selezione: SelezioneBanca) => void;
   onRicomincia: () => void;
 }) {
+  const [aperta, setAperta] = useState(false);
+  const [modo, setModo] = useState<Modo>();
   const [studio, setStudio] = useState<number>(STUDIO[0]);
-  const [simulazione, setSimulazione] = useState<number>(SIMULAZIONE[1]);
+  // undefined: numero scritto a mano non (ancora) valido.
+  const [simulazione, setSimulazione] = useState<number | undefined>(SIMULAZIONE[1]);
   const [selezione, setSelezione] = useState<SelezioneBanca>("nuove");
   const p = banca.progresso;
-  // Finite le domande da ripassare, si torna alle nuove.
-  const sel: SelezioneBanca = selezione === "sbagliate" && !p?.sbagliate ? "nuove" : selezione;
+  // Finite le domande da ripassare (o tolte tutte le preferite), si torna alle nuove.
+  const sel: SelezioneBanca = (selezione === "sbagliate" && !p?.sbagliate) || (selezione === "preferite" && !p?.preferite) ? "nuove" : selezione;
   const percentuale = p && banca.domande ? Math.round((p.fatte / banca.domande) * 100) : 0;
+  const numero = modo === "studio" ? studio : simulazione;
 
-  function scelta<T extends string | number>(opzioni: readonly { id: T; nome: string; disabled?: boolean }[], valore: T, set: (v: T) => void) {
+  function scelta<T extends string | number>(opzioni: readonly { id: T; nome: string; disabled?: boolean }[], valore: T | undefined, set: (v: T) => void) {
     return (
-      <div className="inline-grid rounded-lg bg-slate-100 p-0.5 text-xs font-semibold" style={{ gridTemplateColumns: `repeat(${opzioni.length}, auto)` }}>
+      <div className="inline-flex flex-wrap gap-0.5 rounded-lg bg-slate-200/70 p-0.5 text-xs font-semibold">
         {opzioni.map((o) => (
           <button
             key={o.id}
@@ -169,23 +190,37 @@ function SchedaBanca({
     );
   }
   const numeri = (n: readonly number[]) => n.map((x) => ({ id: x, nome: String(x) }));
+  const riquadro = "flex flex-col items-center gap-1 rounded-xl px-2 py-3 text-center text-sm font-semibold ring-1 transition";
 
   return (
     <Card className="flex flex-col">
-      <div className="flex items-start gap-3">
+      <button
+        type="button"
+        onClick={() => {
+          setAperta((a) => !a);
+          setModo(undefined);
+        }}
+        aria-expanded={aperta}
+        className="flex items-start gap-3 text-left"
+      >
         <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-brand-50 text-brand-600">
           <Database className="size-5" />
         </span>
-        <div className="min-w-0 flex-1">
-          <p className="font-bold text-slate-900">{banca.titolo}</p>
-          <div className="mt-1 flex flex-wrap gap-1.5">
+        <span className="min-w-0 flex-1">
+          <span className="block font-bold break-words text-slate-900">{banca.titolo}</span>
+          <span className="mt-1 flex flex-wrap gap-1.5">
             {banca.anno && <Badge>{banca.anno}</Badge>}
             <Badge tone="brand">{banca.domande.toLocaleString("it-IT")} domande</Badge>
             {banca.materia && <Badge>{nomeMateria(banca.materia)}</Badge>}
-          </div>
-          {banca.concorsi.length > 0 && <ConcorsiCollegati concorsi={banca.concorsi} />}
+          </span>
+        </span>
+        <ChevronDown className={cx("mt-1 size-5 shrink-0 text-slate-400 transition", aperta && "rotate-180")} />
+      </button>
+      {banca.concorsi.length > 0 && (
+        <div className="pl-13">
+          <ConcorsiCollegati concorsi={banca.concorsi} />
         </div>
-      </div>
+      )}
 
       {/* Domande già fatte nelle sessioni (studio e simulazioni) su questa banca dati. */}
       {p && (
@@ -200,6 +235,14 @@ function SchedaBanca({
                   <strong className="text-rose-600">{p.sbagliate.toLocaleString("it-IT")}</strong> da ripassare
                 </>
               )}
+              {p.preferite > 0 && (
+                <>
+                  {" · "}
+                  <Link to={`/app/banche-dati/${banca.id}?preferite=1`} className="inline-flex items-center gap-0.5 font-semibold text-amber-700 hover:underline">
+                    <Star className="size-3 fill-amber-400 text-amber-500" /> {p.preferite} preferite
+                  </Link>
+                </>
+              )}
             </span>
             <button
               onClick={() => window.confirm("Ricominciare da capo? Si azzerano le domande fatte e quelle da ripassare di questa banca dati.") && onRicomincia()}
@@ -211,45 +254,86 @@ function SchedaBanca({
         </div>
       )}
 
-      <div className="mt-4 space-y-2 border-t border-slate-100 pt-4">
-        {p && (
-          <div className="flex items-center justify-between gap-2">
-            <p className="text-xs text-slate-500">Quali domande</p>
-            {scelta<SelezioneBanca>(
+      {!aperta ? (
+        <button
+          type="button"
+          onClick={() => setAperta(true)}
+          className="mt-4 rounded-xl bg-brand-50 py-2.5 text-sm font-semibold text-brand-700 transition hover:bg-brand-100"
+        >
+          Consulta, studia o fai una simulazione
+        </button>
+      ) : (
+        <div className="mt-4 animate-fade-up space-y-3 border-t border-slate-100 pt-4">
+          <div className="grid grid-cols-3 gap-2">
+            <Link to={`/app/banche-dati/${banca.id}`} className={cx(riquadro, "text-slate-700 ring-slate-200 hover:bg-slate-50")}>
+              <Eye className="size-5 text-brand-600" /> Consulta
+              <span className="text-[11px] font-normal text-slate-500">{giaAperta ? "Già aperta questa settimana" : "Una per una, con la risposta"}</span>
+            </Link>
+            {(
               [
-                { id: "nuove", nome: "Nuove" },
-                { id: "sbagliate", nome: `Da ripassare (${p.sbagliate})`, disabled: !p.sbagliate },
-                { id: "tutte", nome: "Tutte" },
-              ],
-              sel,
-              setSelezione,
-            )}
+                { id: "studio", nome: "Studia", Icon: BookOpenCheck, sotto: "Correzione subito" },
+                { id: "simulazione", nome: "Simulazione", Icon: Timer, sotto: "A tempo, come la prova" },
+              ] as const
+            ).map((m) => (
+              <button
+                key={m.id}
+                type="button"
+                aria-pressed={modo === m.id}
+                onClick={() => setModo(modo === m.id ? undefined : m.id)}
+                className={cx(riquadro, modo === m.id ? "bg-brand-600 text-white ring-brand-600" : "text-slate-700 ring-slate-200 hover:bg-slate-50")}
+              >
+                <m.Icon className={cx("size-5", modo === m.id ? "text-white" : "text-brand-600")} /> {m.nome}
+                <span className={cx("text-[11px] font-normal", modo === m.id ? "text-brand-100" : "text-slate-500")}>{m.sotto}</span>
+              </button>
+            ))}
           </div>
-        )}
-        <div className="flex items-center justify-between gap-2">
-          <p className="text-xs text-slate-500">{giaAperta ? "Già aperta questa settimana" : "Domanda per domanda, con la risposta"}</p>
-          <ButtonLink to={`/app/banche-dati/${banca.id}`} size="sm" variant="ghost">
-            <Eye className="size-4" /> Consulta
-          </ButtonLink>
+
+          {modo && (
+            <div className="animate-fade-up space-y-3 rounded-xl bg-slate-50 p-3">
+              {p && (
+                <div className="space-y-1.5">
+                  <p className="text-xs font-semibold text-slate-500">Quali domande</p>
+                  {scelta<SelezioneBanca>(
+                    [
+                      { id: "nuove", nome: "Nuove" },
+                      { id: "sbagliate", nome: `Da ripassare (${p.sbagliate})`, disabled: !p.sbagliate },
+                      { id: "preferite", nome: `Preferite (${p.preferite})`, disabled: !p.preferite },
+                      { id: "tutte", nome: "Tutte" },
+                    ],
+                    sel,
+                    setSelezione,
+                  )}
+                </div>
+              )}
+              <div className="space-y-1.5">
+                <p className="text-xs font-semibold text-slate-500">Quante domande</p>
+                <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
+                  {modo === "studio" ? scelta(numeri(STUDIO), studio, setStudio) : scelta(numeri(SIMULAZIONE), simulazione, setSimulazione)}
+                  {modo === "simulazione" && maxSimulazione > Math.max(...SIMULAZIONE) && (
+                    <NumeroAMano valore={simulazione} onChange={setSimulazione} max={maxSimulazione} fissi={SIMULAZIONE} />
+                  )}
+                </div>
+              </div>
+              <Button
+                className="w-full"
+                disabled={!numero}
+                loading={inCorso === `${banca.id}-${modo}`}
+                onClick={() => numero && onAvvia(modo, numero, sel)}
+              >
+                {modo === "studio" ? (
+                  <>
+                    <BookOpenCheck className="size-4" /> Inizia lo studio
+                  </>
+                ) : (
+                  <>
+                    <Timer className="size-4" /> Inizia la simulazione
+                  </>
+                )}
+              </Button>
+            </div>
+          )}
         </div>
-        <div className="flex items-center justify-between gap-2">
-          {scelta(numeri(STUDIO), studio, setStudio)}
-          <Button
-            size="sm"
-            variant="secondary"
-            loading={inCorso === `${banca.id}-studio`}
-            onClick={() => onAvvia("studio", studio, sel)}
-          >
-            <BookOpenCheck className="size-4" /> Studia
-          </Button>
-        </div>
-        <div className="flex items-center justify-between gap-2">
-          {scelta(numeri(SIMULAZIONE), simulazione, setSimulazione)}
-          <Button size="sm" loading={inCorso === `${banca.id}-simulazione`} onClick={() => onAvvia("simulazione", simulazione, sel)}>
-            <Timer className="size-4" /> Simulazione
-          </Button>
-        </div>
-      </div>
+      )}
     </Card>
   );
 }

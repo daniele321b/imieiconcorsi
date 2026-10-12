@@ -1,16 +1,20 @@
 // Ordinamento dei bandi nella ricerca: lo fa il sito sulla lista già scaricata.
-import type { CompartoId, Concorso } from "./domain";
+import type { CampoModificabile, CompartoId, Concorso, ModificheConcorso } from "./domain";
 
 /** Ordinamenti tra cui scegliere nella ricerca dei bandi. */
 export const ORDINAMENTI = [
   { id: "scadenza", nome: "Scadenza più vicina" },
+  { id: "scadenza-lontana", nome: "Scadenza più lontana" },
   { id: "pubblicazione", nome: "Usciti di recente" },
+  { id: "pubblicazione-vecchi", nome: "Usciti da più tempo" },
   { id: "piu-posti", nome: "Più posti" },
   { id: "meno-posti", nome: "Meno posti" },
+  { id: "nome-az", nome: "Nome dalla A alla Z" },
+  { id: "nome-za", nome: "Nome dalla Z alla A" },
 ] as const;
 export type Ordinamento = (typeof ORDINAMENTI)[number]["id"];
 
-type Ordinabile = Pick<Concorso, "scadenza" | "pubblicatoIl" | "posti">;
+type Ordinabile = Pick<Concorso, "scadenza" | "pubblicatoIl" | "posti"> & Partial<Pick<Concorso, "titolo" | "figura">>;
 
 /**
  * Copia ordinata della lista. I bandi senza il dato usato per ordinare (data o posti
@@ -25,8 +29,25 @@ export function ordinaConcorsi<T extends Ordinabile>(concorsi: readonly T[], ord
     if (chiusoA !== chiusoB) return chiusoA ? 1 : -1;
     return chiusoA ? b.scadenza!.localeCompare(a.scadenza!) : (a.scadenza ?? "9999").localeCompare(b.scadenza ?? "9999");
   };
+  // Prima gli aperti (scadenza più lontana), poi i chiusi (chiusi da più tempo).
+  const perScadenzaLontana = (a: T, b: T) => {
+    const chiusoA = !!a.scadenza && a.scadenza < adesso;
+    const chiusoB = !!b.scadenza && b.scadenza < adesso;
+    if (chiusoA !== chiusoB) return chiusoA ? 1 : -1;
+    // Senza scadenza in fondo anche qui.
+    if (!a.scadenza || !b.scadenza) return a.scadenza ? -1 : b.scadenza ? 1 : 0;
+    return chiusoA ? a.scadenza.localeCompare(b.scadenza) : b.scadenza.localeCompare(a.scadenza);
+  };
+  const nome = (c: T) => conMaiuscola(c.figura || c.titolo || "");
+  const alfabetico = (x: string, y: string) => x.localeCompare(y, "it", { sensitivity: "base" });
   const confronta: Record<Ordinamento, (a: T, b: T) => number> = {
     scadenza: perScadenza,
+    "scadenza-lontana": perScadenzaLontana,
+    // Senza data di pubblicazione in fondo, come per "usciti di recente".
+    "pubblicazione-vecchi": (a, b) =>
+      (a.pubblicatoIl ?? "9999").localeCompare(b.pubblicatoIl ?? "9999") || perScadenza(a, b),
+    "nome-az": (a, b) => alfabetico(nome(a), nome(b)) || perScadenza(a, b),
+    "nome-za": (a, b) => alfabetico(nome(b), nome(a)) || perScadenza(a, b),
     pubblicazione: (a, b) => (b.pubblicatoIl ?? "").localeCompare(a.pubblicatoIl ?? "") || perScadenza(a, b),
     "piu-posti": (a, b) => (b.posti ?? 0) - (a.posti ?? 0) || perScadenza(a, b),
     // Senza numero di posti in fondo anche qui: non vuol dire "pochi posti".
@@ -61,7 +82,53 @@ export const CAMPI_LISTA = [
 ] as const satisfies readonly (keyof ConcorsoInLista)[];
 
 /** Filtri della ricerca (pannello "Filtri" del sito); un campo assente = filtro spento. */
+// ── Tipi di bando ────────────────────────────────────────────────────────────
+// inPA pubblica anche mobilità, selezioni a tempo determinato, incarichi, tirocini e procedure
+// interne: il tipo si riconosce dal titolo (e dalla figura). Il primo che corrisponde vince.
+
+export const TIPI_BANDO = [
+  { id: "tirocinio", nome: "Tirocini e borse", re: /tirocin|borse? di studio|\bstage\b|dottorat|assegn[oi] di ricerca|praticantato|servizio civile/i },
+  { id: "mobilita", nome: "Mobilità", re: /mobilit[aà]/i },
+  { id: "interno", nome: "Interni e progressioni", re: /progression|riservat[oa] al personale|concorso interno|selezione interna/i },
+  { id: "incarico", nome: "Incarichi e collaborazioni", re: /incaric|collaborazion|consulen|co\.?co\.?co|libero.professional|lavoro autonomo/i },
+  { id: "tempo-determinato", nome: "Tempo determinato", re: /tempo determinato|\ba termine\b|supplenz|stagional/i },
+  { id: "concorso", nome: "Concorsi", re: /./ },
+] as const;
+export type TipoBando = (typeof TIPI_BANDO)[number]["id"];
+
+/** Tipo di un bando dal titolo e dalla figura cercata. */
+export const tipoBando = (c: Pick<Concorso, "titolo" | "figura">): TipoBando =>
+  TIPI_BANDO.find((t) => t.re.test(`${c.titolo} ${c.figura ?? ""}`))!.id;
+
+// ── Correzioni dell'admin ────────────────────────────────────────────────────
+
+/**
+ * Il bando con le correzioni dell'admin applicate. Si ricordano i valori di partenza (di inPA)
+ * dei campi corretti, per poterli rimettere: quelli già ricordati restano, salvo `aggiornaOriginali`
+ * (l'import del mattino, che porta i valori freschi di inPA).
+ */
+export function conModificheAdmin(c: Concorso, modifiche: ModificheConcorso, aggiornaOriginali = false): Concorso {
+  const chiavi = Object.keys(modifiche) as CampoModificabile[];
+  if (!chiavi.length) return c;
+  const originali: Partial<Record<CampoModificabile, unknown>> = aggiornaOriginali ? {} : { ...c.originaliInpa };
+  for (const k of chiavi) if (!(k in originali)) originali[k] = c[k] ?? null;
+  return { ...c, ...modifiche, modificheAdmin: modifiche, originaliInpa: originali };
+}
+
+/** Il bando senza le correzioni dell'admin: tornano i valori di inPA. */
+export function senzaModificheAdmin(c: Concorso): Concorso {
+  const { modificheAdmin: _m, originaliInpa, modificatoIl: _i, ...resto } = c;
+  const out: Record<string, unknown> = { ...resto };
+  for (const [k, v] of Object.entries(originaliInpa ?? {})) {
+    if (v === null) delete out[k];
+    else out[k] = v;
+  }
+  return out as unknown as Concorso;
+}
+
 export interface FiltriConcorsi {
+  /** Solo questi tipi di bando (assente o vuoto = tutti) */
+  tipi?: TipoBando[];
   /** false = nasconde i bandi con le domande ancora aperte (assente = li mostra) */
   aperti?: boolean;
   /** false = nasconde i bandi con le domande chiuse (assente = li mostra) */
@@ -79,7 +146,7 @@ export interface FiltriConcorsi {
   soloBancaDati?: boolean;
 }
 
-type Filtrabile = Pick<Concorso, "scadenza" | "pubblicatoIl" | "posti" | "sedi" | "tipoProcedura" | "bancaDatiPrevista" | "bancaDati">;
+type Filtrabile = Pick<Concorso, "scadenza" | "pubblicatoIl" | "posti" | "sedi" | "tipoProcedura" | "bancaDatiPrevista" | "bancaDati" | "titolo" | "figura">;
 
 const GIORNO = 86_400_000;
 
@@ -96,13 +163,16 @@ export function filtraConcorsi<T extends Filtrabile>(concorsi: readonly T[], f: 
       (!f.postiMinimi || (c.posti ?? 0) >= f.postiMinimi) &&
       (!sede || c.sedi.some((s) => s.toLowerCase().includes(sede))) &&
       (!f.procedura || c.tipoProcedura === f.procedura) &&
+      (!f.tipi?.length || f.tipi.includes(tipoBando(c))) &&
       (!f.soloBancaDati || c.bancaDatiPrevista || c.bancaDati),
   );
 }
 
 /** Quanti filtri sono attivi (per il pulsante "Filtri (2)"): una casella Aperti/Chiusi tolta conta. */
 export const filtriAttivi = (f: FiltriConcorsi) =>
-  Object.entries(f).filter(([k, v]) => (k === "aperti" || k === "chiusi" ? v === false : v !== undefined && v !== "" && v !== false)).length;
+  Object.entries(f).filter(([k, v]) =>
+    k === "aperti" || k === "chiusi" ? v === false : v !== undefined && v !== "" && v !== false && !(Array.isArray(v) && !v.length),
+  ).length;
 
 // ── Bandi scaduti ────────────────────────────────────────────────────────────
 
@@ -112,7 +182,7 @@ export const filtriAttivi = (f: FiltriConcorsi) =>
  * inPA non dice quando finisce: vale la scelta dell'admin ("concluso") o, al massimo,
  * MESI_DOPO_SCADENZA mesi dalla scadenza.
  */
-export const MESI_DOPO_SCADENZA = 18;
+export const MESI_DOPO_SCADENZA = 24;
 
 /** Data più vecchia di scadenza per cui un bando chiuso resta nelle liste. */
 export const inizioBandiScaduti = (ora = new Date()) => {
@@ -123,6 +193,51 @@ export const inizioBandiScaduti = (ora = new Date()) => {
 
 /** true se il termine per inviare la domanda è passato. */
 export const scaduto = (c: Pick<Concorso, "scadenza">, ora = new Date()) => c.scadenza !== undefined && Date.parse(c.scadenza) < ora.getTime();
+
+// ── Nomi dei concorsi ────────────────────────────────────────────────────────
+
+/** Prima lettera maiuscola (il resto com'è): inPA ha anche titoli come "istruttore amministrativo". */
+export const conMaiuscola = (testo: string) => testo.trim().replace(/\p{L}/u, (lettera) => lettera.toLocaleUpperCase("it-IT"));
+
+/** Anno del bando: di pubblicazione o, se manca, della scadenza. */
+export function annoBando(c: Pick<Concorso, "pubblicatoIl" | "scadenza">) {
+  const data = c.pubblicatoIl ?? c.scadenza;
+  return data ? new Date(data).getUTCFullYear() : undefined;
+}
+
+/**
+ * Nome da mostrare: la figura cercata (o il titolo) con la maiuscola e l'anno, perché i
+ * concorsi che si ripetono (es. "Agente di Polizia di Stato") si distinguano: "… 2026", "… 2025".
+ */
+export function nomeConcorso(c: Pick<Concorso, "titolo" | "figura" | "pubblicatoIl" | "scadenza">) {
+  const base = conMaiuscola(c.figura || c.titolo);
+  const anno = annoBando(c);
+  if (!anno || base.includes(String(anno))) return base;
+  // "… 150 posti 2026" si leggerebbe male: dopo un numero l'anno va staccato.
+  return /\d$/.test(base) ? `${base} · ${anno}` : `${base} ${anno}`;
+}
+
+const dataNome = new Intl.DateTimeFormat("it-IT", { day: "numeric", month: "long", year: "numeric", timeZone: "Europe/Rome" });
+
+/**
+ * Nomi per una lista: se lo stesso ente ha due bandi con lo stesso nome (stesso anno), si
+ * aggiunge la data di pubblicazione e, se non basta, un pezzo del codice inPA.
+ */
+export function nomiDistinti<T extends Pick<Concorso, "id" | "ente" | "titolo" | "figura" | "pubblicatoIl" | "scadenza">>(lista: readonly T[]) {
+  const nomi = new Map(lista.map((c) => [c.id, nomeConcorso(c)]));
+  const chiave = (c: T) => `${c.ente.toLowerCase()}|${nomi.get(c.id)}`;
+  const doppi = (perChiave: (c: T) => string) => {
+    const conta = new Map<string, number>();
+    for (const c of lista) conta.set(perChiave(c), (conta.get(perChiave(c)) ?? 0) + 1);
+    return lista.filter((c) => conta.get(perChiave(c))! > 1);
+  };
+  for (const c of doppi(chiave)) {
+    const data = c.pubblicatoIl ?? c.scadenza;
+    if (data) nomi.set(c.id, `${conMaiuscola(c.figura || c.titolo)} · ${dataNome.format(new Date(data))}`);
+  }
+  for (const c of doppi(chiave)) nomi.set(c.id, `${nomi.get(c.id)} · cod. ${c.id.slice(-6)}`);
+  return nomi;
+}
 
 // ── Concorsi da collegare a una banca dati ───────────────────────────────────
 

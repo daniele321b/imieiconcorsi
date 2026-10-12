@@ -1,4 +1,4 @@
-import { periodo, PIANI, type CompartoId, type FrequenzaAvvisi, type MateriaId } from "@imieiconcorsi/core/domain";
+import { MATERIE, periodo, PIANI, type CompartoId, type FrequenzaAvvisi, type MateriaId } from "@imieiconcorsi/core/domain";
 import { LifeBuoy, LogOut, ShieldCheck, Trash2 } from "lucide-react";
 import { useState } from "react";
 import { useNavigate } from "react-router";
@@ -7,7 +7,7 @@ import { InvitaAmico } from "../../components/InvitaAmico";
 import { StoricoPagamenti } from "../../components/StoricoPagamenti";
 import { StoricoSeguiti } from "../../components/StoricoSeguiti";
 import { AvvisiPicker, InteressiPicker, LivelliPicker } from "../../components/ProfiloPickers";
-import { Alert, Badge, Button, ButtonLink, Card, Field, PageHeader } from "../../components/ui";
+import { Alert, Badge, Button, ButtonLink, Card, Espandibile, Field, PageHeader } from "../../components/ui";
 import { api } from "../../lib/api";
 import { messaggioErrore, useAuth, useUtente } from "../../lib/auth";
 import { data } from "../../lib/format";
@@ -124,10 +124,9 @@ export function Profilo() {
         <InteressiPicker value={interessi} onChange={setInteressi} />
       </section>
 
-      <section className="space-y-3">
-        <h2 className="text-lg font-bold">Livello nelle materie</h2>
+      <Espandibile titolo="Livello nelle materie" riassunto={`${Object.keys(livelli).length} su ${MATERIE.length} indicate`}>
         <LivelliPicker value={livelli} onChange={setLivelli} />
-      </section>
+      </Espandibile>
 
       <section className="space-y-3">
         <h2 className="text-lg font-bold">Avvisi sui nuovi bandi</h2>
@@ -159,7 +158,9 @@ export function Profilo() {
         </h2>
         <p className="text-sm text-slate-500">Ti serve una banca dati, hai trovato una domanda sbagliata o hai un problema con l'accesso o un pagamento? Scrivici.</p>
         <ButtonLink to="/app/assistenza" variant="secondary">
-          Le mie richieste{!!utente.richiesteDaLeggere && ` · ${utente.richiesteDaLeggere} risposte nuove`}
+          Le mie richieste
+          {!!utente.richiesteDaLeggere &&
+            ` · ${utente.richiesteDaLeggere} ${utente.richiesteDaLeggere === 1 ? "risposta nuova" : "risposte nuove"}`}
         </ButtonLink>
       </section>
 

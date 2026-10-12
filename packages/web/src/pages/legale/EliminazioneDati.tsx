@@ -1,6 +1,6 @@
 import { Link } from "react-router";
-import { LEGALE } from "../../lib/legale";
 import { LegalePagina } from "./LegalePagina";
+import { ComeContattarci } from "./parti";
 
 // Istruzioni per l'eliminazione dei dati: richieste anche da Meta (Facebook Login) e Google.
 
@@ -27,14 +27,14 @@ export function EliminazioneDati() {
       </ul>
       <p>
         La cancellazione è immediata. Dalle copie di sicurezza del database i dati spariscono entro 35 giorni. Restano solo i
-        dati dei pagamenti, conservati per 10 anni per obbligo di legge, come spiegato nell'
+        dati dei pagamenti (ordini, con l'email e il nome dell'intestatario), conservati per 10 anni per obbligo di legge, come spiegato nell'
         <Link to="/privacy">Informativa sulla privacy</Link>.
       </p>
 
       <h2>Se non riesci ad accedere</h2>
       <p>
-        Scrivi a <strong>{LEGALE.email}</strong> dall'indirizzo email del tuo account, chiedendo l'eliminazione. Rispondiamo
-        entro 30 giorni.
+        Scrivici <ComeContattarci />, indicando l'indirizzo email del tuo account e chiedendo l'eliminazione: per sicurezza
+        ti chiederemo conferma da quell'indirizzo. Rispondiamo entro 30 giorni.
       </p>
 
       <h2>Se usavi Facebook o Google</h2>

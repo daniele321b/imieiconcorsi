@@ -16,7 +16,8 @@ Ambienti Terraform:
   si distrugge con gli ambienti.
 - **dev**: su **https://dev.imieiconcorsi.it**; tutte le risorse si chiamano
   `imieiconcorsi-dev-…`.
-- **prod** (da creare): su **https://imieiconcorsi.it**.
+- **prod**: su **https://imieiconcorsi.it**; risorse `imieiconcorsi-prod-…`. Stessi
+  comandi di dev con `ENVIRONMENT=prod` davanti: vedi [Produzione](#10-produzione).
 
 ## 1. Primo deploy
 
@@ -104,8 +105,10 @@ scripts/deploy.sh make-admin tua@email.it   # una volta; poi esci e rientra nel 
 scripts/deploy.sh urls                      # riga "Pannello admin"
 ```
 Dal pannello vedi tutti gli utenti e quanti sono Medium e Pro. Per ogni utente
-puoi cambiare piano e scadenza (scadenza vuota = senza scadenza) e
-disattivarlo. L'utente vede il nuovo piano al suo prossimo accesso, al massimo
+puoi cambiare piano e scadenza (scadenza vuota = senza scadenza), disattivarlo
+oppure **eliminarlo** (con conferma: profilo, sessioni, progressi, concorsi
+seguiti, richieste e login spariscono; restano solo gli ordini, senza dati
+personali; gli admin non si eliminano da qui). L'utente vede il nuovo piano al suo prossimo accesso, al massimo
 entro un'ora, e riceve un'email ("piano attivato" o "tornato al Free").
 
 **Codici sconto.** Nel riquadro "Codici sconto" del pannello: percentuale, piano
@@ -140,11 +143,30 @@ pallino rosso sull'icona dell'assistenza. Rispondendo, una richiesta aperta pass
 riapre). Limiti contro gli abusi: 5 richieste non chiuse insieme e 10 nuove al
 giorno per utente.
 
+**Avvisi all'admin** (nuovi bandi con banca dati, richieste di assistenza, ricevute non partite,
+spesa AI, scraper fermo): arrivano ad `admin_email` dal topic SNS `imieiconcorsi-dev-avvisi-admin`,
+che non ha i limiti della sandbox di SES. **Dopo il primo `infra` arriva l'email "AWS Notification -
+Subscription Confirmation": clicca il link**, altrimenti gli avvisi non arrivano (stessa cosa per prod).
+
+**Accessi.** A ogni login (email e password, Google o Facebook) Cognito registra data, ora e modo
+nella tabella `accessi` (si cancellano da soli dopo 12 mesi). Nel pannello, per ogni utente:
+"Ultimo accesso" e il pulsante **Accessi (n)** con gli ultimi 50.
+
+**Bandi da caricare.** Sulla voce **Admin** del menu compare un numero rosso: i bandi
+nuovi della settimana che citano una banca dati da caricare e che non hai ancora visto.
+Porta all'elenco, e aprendo l'elenco il numero si azzera (lo ricorda il browser). Il pannello admin mostra quanti bandi aperti citano una
+banca dati non ancora caricata (e quanti sono usciti nell'ultima settimana); in
+**Banche dati** c'è l'elenco, con "nuovo" sui bandi della settimana e **Carica la
+banca dati**, che precompila il modulo con quel concorso. L'email del mattino sui
+nuovi bandi con banca dati porta a questo elenco.
+
 **Storico pagamenti.** Pannello admin → **Pagamenti**: tutti gli ordini (pagati,
 in attesa, non completati, falliti) con email, piano, importo, sconto e
 scadenza, filtri per stato, piano ed email, e i totali incassati (mese e
 sempre). Il pulsante con il codice dell'ordine lo copia insieme alla sessione
-Stripe, per cercarla nella Dashboard di Stripe. Ogni utente vede i suoi in
+Stripe, per cercarla nella Dashboard di Stripe. Ogni ordine conserva email e nome di chi ha
+pagato: se l'account viene eliminato restano nello storico, con l'etichetta "account eliminato".
+La colonna **Ricevuta** dice se l'email è partita o il motivo per cui no (es. SES in sandbox). Ogni utente vede i suoi in
 **Profilo → I tuoi pagamenti** (link anche dalla pagina Piani): pagati, e a parte
 i tentativi non completati, con **Aiuto** per aprire una richiesta su quell'ordine.
 
@@ -155,7 +177,7 @@ Ogni mattina, ora italiana:
 | Ora | Job | Cosa fa |
 |---|---|---|
 | 6:00 | `inpa-scraper` | Importa i bandi aperti da inPA (e i chiusi degli ultimi 7 giorni), rifà la lista in cache (`/dati/bandi/` su CloudFront) e ti scrive se ci sono bandi nuovi che citano una banca dati |
-| Domenica e mercoledì 3:00 | `pulizia-bandi` | Rilegge i chiusi degli ultimi 18 mesi e cancella i bandi che inPA non elenca più (si ferma e ti scrive se dovrebbe cancellarne più del 25%) |
+| Domenica e mercoledì 3:00 | `pulizia-bandi` | Rilegge i chiusi degli ultimi 24 mesi e cancella i bandi che inPA non elenca più o chiusi da più di 24 mesi (si ferma e ti scrive se dovrebbe cancellarne più del 25%) |
 | 6:15 | `scadenze` | Riporta a Free chi ha il piano scaduto (con email "tornato al Free"); manda il promemoria 3 giorni prima della scadenza |
 | 7:00 | `avvisi` | Email con i bandi usciti su inPA ieri nei comparti scelti nel profilo (il lunedì: ultimi 7 giorni, per chi ha scelto "ogni settimana"). Solo a chi li legge: dopo 7 avvisi non aperti si passa al lunedì, dopo altri 4 si sospendono; ripartono quando la persona apre un'email, clicca un link o entra nell'app |
 
@@ -213,19 +235,30 @@ Se `richiesta_uscita` è **DENIED** (il caso di Fleet Audit, stesso account e
 stessa regione) da comando non si può rifare: console AWS → **Support Center** →
 apri il caso (numero in `caso_supporto`) → **Reply**, e incolla:
 
-> Hello, we would like to ask for a re-evaluation of production access in eu-south-1. Since the previous review we have:
-> (1) added SNS notifications for every bounce, complaint and rejection, delivered to the account owner;
-> (2) enabled account-level suppression for bounces and complaints;
-> (3) added one-click unsubscribe (RFC 8058 List-Unsubscribe and List-Unsubscribe-Post headers) plus an unsubscribe link to every recurring email;
-> (4) been sending in the sandbox only to verified testers, with no bounces or complaints.
+> Hello,
 >
-> The account hosts two small Italian web apps. This request is mainly for iMieiConcorsi (https://dev.imieiconcorsi.it), a study app for Italian public-sector job competitions. Recipients are only people who registered on our website with their own address, confirmed through Amazon Cognito; we never use purchased, imported or scraped lists, and we send no marketing campaigns.
+> We would like to ask for a re-evaluation of Amazon SES production access in eu-south-1 (Europe - Milan) for this account. The earlier request (for another small app on this account, Fleet Audit) was declined on 28 September 2026. This request is for the transactional emails of iMieiConcorsi (https://imieiconcorsi.it).
 >
-> Emails we send: purchase confirmations; one reminder 3 days before a paid plan expires; a notice when a plan ends; and, only for users who opt in from their profile, a daily or weekly digest of newly published public competitions in the sectors they chose. Each digest says why the user receives it and has a one-click unsubscribe link.
+> Since the previous review we have:
+> 1. Set up SNS notifications for every bounce, complaint and rejection, delivered by email to the account owner, and enabled suppression of bounced and complaining addresses in our configuration set and at account level.
+> 2. Added one-click unsubscribe (RFC 8058 List-Unsubscribe and List-Unsubscribe-Post headers) and a visible unsubscribe link to every recurring email. Recurring emails also slow down and then stop automatically for users who do not open them.
+> 3. Authenticated the sending domain imieiconcorsi.it with Easy DKIM, a custom MAIL FROM domain (mail.imieiconcorsi.it, SPF) and DMARC.
+> 4. Sent only to verified test addresses while in the sandbox, with no bounces or complaints.
+> 5. Published a public page that lists every email we send, how often, and how to stop it: https://imieiconcorsi.it/email
 >
-> Example digest — subject: "3 nuovi bandi per te"; body: the list of new competitions with deadline and link, the reason for receiving it, and the unsubscribe link.
+> About the service: iMieiConcorsi is a study app for people preparing for Italian public-sector job competitions. Users register on the website with their own email address, confirmed through Amazon Cognito. We never use purchased, imported or scraped address lists, and we send no marketing emails or newsletters.
 >
-> Expected volume during the beta: under 100 emails per day. The sending domain imieiconcorsi.it is verified with DKIM, with a custom MAIL FROM domain (SPF) and DMARC. Privacy policy: https://dev.imieiconcorsi.it/privacy
+> Emails we send, only to registered users:
+> - purchase receipts and plan activation notices;
+> - one reminder 3 days before a paid plan expires, and a notice when it ends;
+> - replies to support requests the user opened;
+> - only for users who opt in from their profile: a daily or weekly digest of newly published public competitions in the sectors they chose. Example subject: "3 nuovi bandi per te"; the body lists the new competitions with deadline and link, explains why the user receives it, and has the unsubscribe link.
+>
+> Bounces and complaints: suppressed addresses are never retried, and every bounce or complaint reaches us by SNS so we can review it.
+>
+> Expected volume: under 100 emails per day during the beta, up to about 1,000 per day after launch. A daily quota of 1,000 emails with the default sending rate is enough for us.
+>
+> Public pages: privacy policy https://imieiconcorsi.it/privacy, terms https://imieiconcorsi.it/termini, contact https://imieiconcorsi.it/contatti, about https://imieiconcorsi.it/chi-siamo, pricing https://imieiconcorsi.it/prezzi.
 >
 > Thank you.
 
@@ -236,6 +269,23 @@ Un nuovo tester in sandbox va aggiunto a `sandbox_recipients` in
 ```bash
 scripts/deploy.sh shared      # terraform chiede "yes"; il tester riceve l'email di verifica da cliccare
 ```
+
+## Pagine pubbliche e dati del gestore
+
+Senza account si vedono: home, **Chi siamo**, **Prezzi**, **Domande frequenti**, **Contatti**,
+**Le nostre email** (tutte le email che mandiamo e come smettere), **Privacy**, **Cookie**,
+**Termini**, **Eliminazione dei dati** (link nel piè di pagina; le prime tre anche in cima
+alla home). Servono agli utenti e a chi valuta il servizio (AWS per SES, Stripe, Google e Meta).
+
+- **Gestore**: per ora "iMieiConcorsi, progetto in fase di avvio". Quando la società è
+  costituita, compila `ragioneSociale`, `sede` e `partitaIva` in
+  `packages/web/src/lib/legale.ts`: le pagine li mostrano da sole. Servono per legge prima di
+  accettare pagamenti veri (Stripe live).
+- **Contatti**: il modulo della pagina Contatti funziona senza account e ti arriva per email
+  dal topic SNS degli avvisi admin (non serve SES). Rispondi direttamente all'indirizzo che
+  trovi nel messaggio. Al massimo 5 messaggi l'ora per indirizzo IP. Se un giorno c'è una
+  casella vera (es. `info@imieiconcorsi.it`), mettila in `email` in `legale.ts`.
+- **Le nostre email** va tenuta allineata al codice: una email nuova = una voce in più.
 
 ## Banca domande (piano Free)
 
@@ -305,6 +355,17 @@ l'ente la pubblica:
    delle sessioni.
 4. Se le giuste sono sbagliate o le scartate sono tante: cambia il formato dal
    menu della riga (l'estrazione riparte) oppure mandami il PDF.
+   **PDF con la sola risposta esatta** (tabella "numero | domanda | risposta", es.
+   Carabinieri: "In questo file trovi solo la domanda con la relativa risposta esatta"):
+   formato **Solo risposta esatta** (anche "Automatico" lo riconosce). Le colonne si leggono
+   dalla posizione nella pagina, "Materia : …" diventa la sezione. Le altre 3 alternative
+   si **ricavano** da risposte di domande dello stesso tipo nello stesso file (negli esempi
+   sono segnate "ricavata"): vero/falso → l'opposto; numeri e lettere → valori vicini;
+   relazioni "A<B" → calcolate in modo che non siano anch'esse vere; coppie (X/Y, "a / b")
+   → incrociate, mai una coppia vera del file. **Scartate**: le domande al negativo ("Non ha
+   nulla a che fare con…", "Non attinente…": un'alternativa presa a caso sarebbe giusta
+   anche lei) e quelle che citano parole che il file non riporta. Agli utenti la
+   spiegazione dice che le alternative sono ricavate.
 5. **Pubblica**: la banca dati compare nella sezione **Banche dati** dell'app
    (per comparto, con l'elenco dei concorsi per cui vale) e **in ogni concorso
    collegato**: nella pagina del concorso il riquadro "Banca dati ufficiale" con
@@ -319,14 +380,70 @@ l'ente la pubblica:
    nostre domande. Le sessioni già fatte restano nelle statistiche. Il PDF resta
    recuperabile per 30 giorni come versione vecchia nel bucket, poi sparisce.
 
+**Menu.** Da 1024 px in su il menu è in alto; su telefono e tablet (anche iPad) c'è la barra
+in basso con Dashboard, Concorsi, Tutor AI al centro, Studio e Piani (Admin per l'admin). Le
+banche dati si aprono dal riquadro in cima alla pagina **Studio**. Il profilo è il cerchio in alto.
+
+**Ordinamenti della ricerca.** Scadenza più vicina / più lontana, usciti di recente / da più
+tempo, più / meno posti, nome del concorso dalla A alla Z / dalla Z alla A.
+
+**"Con banca dati".** Il filtro "Solo bandi con banca dati" tiene i bandi che hanno già una banca
+dati caricata, più quelli il cui testo su inPA (titolo, descrizione breve o completa) ha una frase
+che nomina una "banca dati" **delle domande della prova** (quesiti, domande, prova, preselettiva,
+test, quiz) **senza negarla** ("non è prevista", "nessuna", "senza"…) e che non parla di altre banche
+dati (contratti pubblici, INPS, del personale, giuridiche…): `fraseBancaDati` in
+`packages/functions/src/jobs/inpa.ts`. Nella pagina del bando si vede la frase da cui lo
+deduciamo. Si ricalcola a ogni import (gli aperti ogni mattina).
+
+**Tipi di bando.** Filtri → **Tipo di bando**: Concorsi, Tempo determinato, Mobilità, Incarichi e
+collaborazioni, Tirocini e borse, Interni e progressioni (riconosciuti dal titolo,
+`TIPI_BANDO` in `packages/core/src/concorsi.ts`); le schede dei tipi diversi da "Concorsi" hanno
+un'etichetta. Altre fonti oltre a inPA (Gazzetta Ufficiale, scuola, Forze armate) non sono
+ancora importate. Il segno verde "Banca dati" sulle schede c'è solo quando la banca dati è
+pubblicata e collegata.
+
+**Nomi dei bandi.** Tutti con la maiuscola iniziale (anche quelli scritti in minuscolo su
+inPA: li sistema l'import, e il sito li mostra già così) e con l'anno di pubblicazione, così i
+concorsi che si ripetono si distinguono ("Agente di Polizia di Stato 2026" e "… 2025"). Se lo
+stesso ente ha due bandi con lo stesso nome nello stesso anno, nella lista si aggiungono la
+data e un pezzo del codice inPA; il codice intero è nella pagina del bando.
+
+**Punteggi.** Simulazione: punteggio d'esame (+1 giusta, −0,25 sbagliata, 0 non data) sul
+massimo, si passa al 70%. Studio: percentuale delle giuste sulle risposte date, senza penalità
+(2 giuste su 10 = 20%). Nello studio **Esci** interrompe: le risposte date restano nei progressi
+e nelle statistiche, le domande non fatte non contano.
+
+**Prove d'esame.** La simulazione ha un cronometro in alto: tempo rimasto in grande, tempo
+trascorso, barra del tempo e ritmo (quante domande sei indietro rispetto al tempo passato);
+negli ultimi 5 minuti diventa rosso. Lo studio mostra il tempo trascorso; i risultati il tempo
+impiegato. Domande: 30, 50 o 60 (nella banca dati 30 o 60); con **Medium e Pro** si può scrivere un altro
+numero, da 5 a 100 (`SIMULAZIONE_MAX` in `domain.ts`, controllato anche dal server).
+
+**Banche dati (pagina utente).** Ogni scheda mostra titolo, domande e progressi; toccandola si
+aprono le tre scelte **Consulta**, **Studia**, **Simulazione**. Scelto Studia o Simulazione:
+quali domande (nuove, da ripassare, preferite, tutte), quante, e il pulsante per iniziare.
+
+**Segnala un errore** (sotto le domande): si apre un riquadro lì sotto, senza cambiare pagina;
+dopo l'invio **Torna alla domanda** lo chiude e si riprende dallo stesso punto. La segnalazione
+finisce in Assistenza come le altre richieste.
+
 **Bandi con le domande chiuse.** Nella ricerca, **Filtri → Stato del bando**:
 "Aperti" (predefinito), "Aperti e chiusi" o "Solo chiusi". I chiusi sono i bandi
-scaduti da meno di 18 mesi: chi ha già fatto domanda continua a prepararsi.
+scaduti da meno di 24 mesi: chi ha già fatto domanda continua a prepararsi.
 Quando un concorso è davvero finito, dalla sua pagina (da admin) **Segna come
 concluso** e sparisce anche da lì.
 
+**Correggere un bando** (admin). Nella pagina del bando, riquadro "Solo per te (admin): dati
+del bando" → **Modifica nome e dati**: nome (il titolo grande; l'anno si aggiunge da solo se
+manca), descrizione breve, ente, scadenza, posti, sedi, comparto, materie d'esame, testo "Dal
+bando", banca dati prevista. Si salvano solo i campi cambiati, anche a parte
+(`modificheAdmin` sul bando): l'import del mattino li **riapplica sopra i dati di inPA**,
+quindi non si perdono. I valori di inPA restano salvati (`originaliInpa`): **Torna ai dati di
+inPA** annulla tutte le correzioni. Nella pagina del bando si vedono subito; nelle liste e
+nella ricerca dal mattino dopo (la lista in cache si rifà ogni mattina).
+
 Lo scraper di ogni mattina prende i chiusi degli ultimi 7 giorni. Lo **storico**
-(circa 30.000 bandi chiusi negli ultimi 18 mesi) si importa una volta sola, dopo
+(circa 40.000 bandi chiusi negli ultimi 24 mesi) si importa una volta sola, dopo
 il primo `infra` con questa versione:
 ```bash
 scripts/deploy.sh storico-bandi        # ~30 minuti, a blocchi da ~13 minuti
@@ -340,10 +457,14 @@ domande fatte e quelle sbagliate l'ultima volta (tabella `progressi`, due mappe
 di bit: 6.000 domande stanno in meno di 1 KB). Si aggiornano alla consegna di
 ogni sessione di studio o simulazione sulla banca dati; le domande lasciate in
 bianco non contano. Nell'app:
-- scheda della banca dati: barra "fatte / da ripassare" e la scelta **Nuove**
-  (predefinita: prima le mai fatte, finite quelle le altre), **Da ripassare**
-  (solo le sbagliate l'ultima volta) o **Tutte**; **Ricomincia** azzera;
-- consultazione: su ogni domanda "Già fatta" o "Sbagliata l'ultima volta".
+- scheda della banca dati: barra "fatte / da ripassare / preferite" e la scelta
+  **Nuove** (predefinita: prima le mai fatte, finite quelle le altre), **Da
+  ripassare** (solo le sbagliate l'ultima volta), **Preferite** o **Tutte**;
+  **Ricomincia** azzera fatte e sbagliate (le preferite restano);
+- consultazione: su ogni domanda "Già fatta" o "Sbagliata l'ultima volta" e la
+  **stella** per salvarla tra le **preferite**; il pulsante "Preferite (n)" fa
+  scorrere solo quelle (`/app/banche-dati/<id>?preferite=1`). La stella c'è anche
+  in studio e nella revisione dopo la consegna (terza mappa di bit nella stessa riga).
 
 Se rifai l'estrazione di una banca dati (i numeri delle domande possono
 cambiare), i progressi su quella banca ripartono da zero.
@@ -353,7 +474,17 @@ cambiare), i progressi su quella banca ripartono da zero.
 - **Prezzi** (`LISTINO` in `packages/core/src/domain.ts`): Medium 9,99 € / 30 giorni, 19,99 € / 90 giorni,
   39,99 € / anno; Pro 14,99 € / 30 giorni, 29,99 € / 90 giorni, 69,99 € / anno. La pagina Piani propone il
   trimestre.
-- **Ritorno al Free** (scadenza, scelta o admin): resta seguito solo l'ultimo concorso seguito; gli
+- **Acquisti con un piano attivo** (`packages/core/src/acquisti.ts`, valgono per la pagina Piani e per il
+  server): stesso piano = i giorni comprati si **aggiungono** alla scadenza (Pro di un anno + trimestrale =
+  +90 giorni); da Medium a Pro = i giorni Medium rimasti diventano giorni Pro in proporzione ai prezzi, più
+  quelli comprati; da Pro a Medium mentre il Pro è attivo = non si può ("Non disponibile", con il motivo).
+  La scheda di ogni piano spiega cosa succede prima di pagare.
+- **Ricevuta** (se non arriva: finché SES è in sandbox parte solo verso gli indirizzi verificati;
+  `scripts/deploy.sh ses-status`, `scripts/deploy.sh email-prova indirizzo`, `scripts/deploy.sh logs billing`
+  e cerca "Ricevuta dell'acquisto non inviata"; "Rimanda la ricevuta" ora dice il motivo): dopo ogni pagamento parte un'email "Ricevuta del tuo acquisto" (data, ordine, piano, prezzo,
+  sconto, totale, scadenza, consenso). L'utente la fa rimandare da **Profilo → I tuoi pagamenti →
+  Rimanda la ricevuta** (al massimo una ogni 10 minuti); in modalità live anche Stripe manda la sua.
+- **Ritorno al Free** (alla scadenza o dall'admin; con Medium o Pro attivi l'utente non può sceglierlo a mano): resta seguito solo l'ultimo concorso seguito; gli
   altri finiscono nello **storico** del profilo (menu "Storico dei concorsi seguiti": nome e giorno).
 - **Banche dati per il Free**: 3 utilizzi a settimana (da lunedì). Un utilizzo = una sessione di studio
   o simulazione su una banca dati, oppure la prima consultazione di una banca dati nella settimana.
@@ -367,7 +498,7 @@ cambiare), i progressi su quella banca ripartono da zero.
 
 Il tutor usa Claude Haiku 4.5 su Amazon Bedrock, profilo d'inferenza **EU** (i
 dati restano in Europa), pagato a consumo sulla bolletta AWS. Ogni utente Pro ha
-300 gettoni al mese: 1 per risposta del tutor, 3 per un allenamento da 5
+150 crediti AI al mese (nel codice "gettoni"): 1 per risposta del tutor, 3 per un allenamento da 5
 domande. Costo indicativo: ~0,3 centesimi a risposta, ~1,5 centesimi ad
 allenamento, quindi al massimo 1-2 € al mese per utente Pro.
 
@@ -385,7 +516,7 @@ modello aggiorna anche `PREZZI_AI_USD` (servono a stimare la spesa).
 **Limiti contro le spese indesiderate**, dal primo all'ultimo controllo:
 | Limite | Valore | Dove si cambia |
 |---|---|---|
-| Gettoni per utente | 300 al mese | `GETTONI_AI_PRO`, `COSTI_AI` (domain.ts) |
+| Crediti AI per utente | 150 al mese | `GETTONI_AI_PRO`, `COSTI_AI` (domain.ts) |
 | Spesa per utente | 3 $ al mese (stimata dai token) | `ai_tetto_utente_usd` (terraform.tfvars) |
 | Ritmo | 6 richieste al minuto per utente | `AI_AL_MINUTO` (domain.ts) |
 | Spesa di tutta la piattaforma | 50 $ al mese: email all'80%, pausa al 100% | `ai_tetto_mensile_usd` (terraform.tfvars) |
@@ -406,8 +537,8 @@ tetti di spesa. Un passo in più, se servisse: un Guardrail di Amazon Bedrock
 (argomenti vietati e filtri di contenuto), che costa a parte per ogni testo
 controllato.
 
-Nell'app: voce **Tutor AI** nel menu (allenamento sui punti deboli + chat
-libera) e **Chiedi al tutor AI** sotto ogni domanda corretta, in studio e nella
+Nell'app: voce **Tutor AI** nel menu (su telefono è il pulsante rotondo al centro della
+barra in basso; allenamento sui punti deboli + chat libera) e **Chiedi al tutor AI** sotto ogni domanda corretta, in studio e nella
 revisione dopo la consegna. Free e Medium vedono l'invito al piano Pro.
 
 ## 5. Dopo una modifica al codice
@@ -537,6 +668,61 @@ Solo se SES non serve più a nessun ambiente:
 ```bash
 scripts/deploy.sh destroy-shared   # scrivi "si", poi "yes"
 ```
+
+## 10. Produzione
+
+`environments/prod` è la copia di dev con: indirizzo **https://imieiconcorsi.it**, WAF
+davanti a sito e API, tabelle/utenti/bucket protetti dalla cancellazione, login senza
+localhost, email senza "[dev]", Stripe in modalità live. Ogni comando di questa pagina vale
+anche per prod mettendo `ENVIRONMENT=prod` davanti; con prod `infra` e `destroy` mostrano
+un avviso rosso e chiedono "si" (poi Terraform chiede "yes"). `local` funziona solo su dev.
+
+**Prima volta**
+1. Credenziali di prod:
+   ```bash
+   cp infra/terraform/environments/prod/terraform.tfvars.example infra/terraform/environments/prod/terraform.tfvars
+   ```
+   Compila `admin_email` e, se usi il login social, gli stessi id/secret di Google e Facebook.
+   Le chiavi **live** di Stripe (`sk_live_…` e il segreto di un webhook live su
+   `https://imieiconcorsi.it/api/pubblico/stripe/webhook`) servono solo per vendere: **vuote =
+   acquisti chiusi** (i piani si vedono ma non si comprano; funzionano i codici sconto al 100% e i
+   piani dati dall'admin). In prod non esiste il "mock" di dev, che darebbe i piani gratis.
+   Metti `budget_mensile_usd = 0` se il budget c'è già in dev (stesso account).
+2. Compila e crea l'ambiente (la build è la stessa di dev):
+   ```bash
+   scripts/deploy.sh build
+   ENVIRONMENT=prod scripts/deploy.sh infra      # scrivi "si", poi "yes" (circa 15 minuti la prima volta: certificato e CloudFront)
+   ```
+3. Bandi, storico dei chiusi e admin:
+   ```bash
+   ENVIRONMENT=prod scripts/deploy.sh seed
+   ENVIRONMENT=prod scripts/deploy.sh storico-bandi
+   ENVIRONMENT=prod scripts/deploy.sh make-admin tua@email.it   # dopo esserti registrato su imieiconcorsi.it
+   ENVIRONMENT=prod scripts/deploy.sh urls
+   ```
+4. Login social: su Google e Facebook aggiungi l'URI "Redirect Google/Facebook" stampato da
+   `ENVIRONMENT=prod scripts/deploy.sh urls` (in prod il dominio Cognito è `imieiconcorsi-prod.auth…`).
+5. Email: finché SES è in sandbox arrivano solo agli indirizzi verificati. Prima di aprire
+   agli utenti serve l'accesso di produzione di SES (vedi [Uscire dalla sandbox SES](#uscire-dalla-sandbox-ses)).
+6. Conferma le email di AWS "Subscription Confirmation" di prod: allarmi
+   (`imieiconcorsi-prod-monitoraggio`) e avvisi admin (`imieiconcorsi-prod-avvisi-admin`, ci
+   arrivano anche i messaggi del modulo Contatti).
+7. Le banche dati pubblicate in dev non passano da sole: in prod si ricaricano i PDF da
+   Admin → Banche dati.
+
+**Aggiornare la produzione** (dopo aver provato su dev):
+```bash
+scripts/deploy.sh build
+scripts/deploy.sh infra                     # dev
+ENVIRONMENT=prod scripts/deploy.sh infra    # prod: "si", poi "yes"
+```
+
+Log, job e allarmi di prod: `ENVIRONMENT=prod scripts/deploy.sh logs study`,
+`ENVIRONMENT=prod scripts/deploy.sh job inpa-scraper`, `ENVIRONMENT=prod scripts/deploy.sh allarmi`.
+
+Quando cambi `environments/dev/main.tf` (route, tabelle, job, permessi) riporta la stessa
+modifica in `environments/prod/main.tf`: i due file sono uguali tranne le differenze elencate
+in testa a quello di prod.
 
 ## Prova a secco
 

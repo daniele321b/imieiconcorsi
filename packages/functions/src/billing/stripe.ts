@@ -72,7 +72,12 @@ export function creaSessione(args: {
       },
       // Nella dashboard Stripe ogni pagamento dice da quale app arriva.
       metadata: { app: "imieiconcorsi", ordine: args.ordineId },
-      payment_intent_data: { description: `iMieiConcorsi — ${args.descrizione}`, metadata: { app: "imieiconcorsi", ordine: args.ordineId } },
+      // receipt_email: anche Stripe manda la sua ricevuta (in modalità live), oltre alla nostra.
+      payment_intent_data: {
+        description: `iMieiConcorsi — ${args.descrizione}`,
+        receipt_email: args.email,
+        metadata: { app: "imieiconcorsi", ordine: args.ordineId },
+      },
     },
     // Lo stesso ordine non crea mai due sessioni.
     `imieiconcorsi-${args.ordineId}`,

@@ -11,6 +11,7 @@ import { CopyObjectCommand, DeleteObjectsCommand, GetObjectCommand, PutObjectCom
 import { BatchWriteCommand, DeleteCommand, GetCommand, PutCommand, QueryCommand, ScanCommand, UpdateCommand } from "@aws-sdk/lib-dynamodb";
 import { inviaEmail } from "@imieiconcorsi/core/email";
 import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
+import { eliminaAccount } from "@imieiconcorsi/core/account";
 import { attributo, cognito, gruppiDi, userPoolId, utentiNelGruppo } from "@imieiconcorsi/core/cognito";
 import { batchGet, db, tables } from "@imieiconcorsi/core/db";
 import {
@@ -24,6 +25,7 @@ import {
   type CodiceSconto,
   type Concorso,
   type Domanda,
+  type ModificheConcorso,
   type Profilo,
   type Richiesta,
   concorsiDellaBanca,
@@ -35,6 +37,7 @@ import { emailPianoAttivato, emailTornatoFree } from "@imieiconcorsi/core/email-
 import { HttpError, notFound, richiediAdmin, service } from "@imieiconcorsi/core/http";
 import { assegnaPiano } from "@imieiconcorsi/core/piani";
 import { FORMATO_CODICE, generaCodice, normalizzaCodice } from "@imieiconcorsi/core/sconti";
+import { conMaiuscola, conModificheAdmin, nomeConcorso, senzaModificheAdmin } from "@imieiconcorsi/core/concorsi";
 import { rispostePerUtenti, type DomandaDelFile } from "../banche-dati/pubblica";
 import type { Ordine } from "../billing/ordini";
 import { z } from "zod";
@@ -88,7 +91,7 @@ const RispostaRichiesta = z
   .refine((r) => r.testo || r.stato, "Scrivi una risposta o cambia lo stato");
 
 /** Come è segnata la risposta giusta nel PDF (vedi banche-dati/parser.ts). */
-const FORMATI = ["auto", "indicata", "segnata", "chiave", "prima"] as const;
+const FORMATI = ["auto", "indicata", "segnata", "chiave", "prima", "risposta"] as const;
 /** Ordine predefinito delle risposte agli utenti (ognuno può poi scegliere il suo). */
 const ORDINI = ["mescolate", "pdf"] as const;
 /** PDF più grande accettato: 200 MB. */
@@ -110,6 +113,23 @@ const NuovaBanca = z.object({
   nomeFile: z.string().max(300),
   dimensione: z.number().int().min(1).max(MAX_PDF, "Il PDF supera i 200 MB"),
 });
+
+/** Correzioni a un bando (solo i campi da cambiare). */
+const ModificaConcorso = z
+  .object({
+    figura: z.string().trim().min(3, "Il nome è troppo corto").max(200),
+    titolo: z.string().trim().min(3).max(1000),
+    ente: z.string().trim().min(2).max(300),
+    scadenza: z.iso.datetime(),
+    posti: z.number().int().min(0).max(100_000),
+    sedi: z.array(z.string().trim().min(1).max(120)).max(50),
+    comparto: z.enum(COMPARTO_IDS),
+    materie: z.array(z.enum(MATERIA_IDS)).min(1, "Almeno una materia").max(20),
+    descrizione: z.string().trim().max(10_000),
+    bancaDatiPrevista: z.boolean(),
+  })
+  .partial()
+  .strict();
 
 /** Modifiche a una banca dati; cambiare il formato rifà l'estrazione. */
 const ModificaBanca = z.object({
@@ -241,10 +261,17 @@ async function salvaConcorsiDellaBanca(prima: BancaDati, concorsi: { id: string;
   }
 }
 
+/** Come si ricorda un concorso collegato sulla banca dati: nome (con l'anno) ed ente. */
+const voceConcorso = (c: Concorso) => ({ id: c.id, titolo: nomeConcorso(c), ente: conMaiuscola(c.ente) });
+
 /** Concorsi da collegare: devono esistere e non avere già un'altra banca dati pubblicata. */
 async function concorsiCollegabili(ids: string[], bancaId?: string) {
   const unici = [...new Set(ids)];
-  const trovati = await batchGet<Concorso>(tables.concorsi, unici.map((id) => ({ id })), "id, ente, figura, titolo, comparto, bancaDatiId");
+  const trovati = await batchGet<Concorso>(
+    tables.concorsi,
+    unici.map((id) => ({ id })),
+    "id, ente, figura, titolo, comparto, bancaDatiId, pubblicatoIl, scadenza",
+  );
   const perId = new Map(trovati.map((c) => [c.id, c]));
   const mancanti = unici.filter((id) => !perId.has(id));
   if (mancanti.length) throw new HttpError(404, `Concorso non trovato: ${mancanti.join(", ")}`);
@@ -306,7 +333,9 @@ async function pubblicaBanca(banca: BancaDati) {
     livello: 3,
     testo: d.testo,
     ...rispostePerUtenti(d, banca.ordineRisposte),
-    spiegazione: "Risposta indicata nella banca dati ufficiale del concorso.",
+    spiegazione: d.alternativeRicavate
+      ? "Risposta indicata nella banca dati ufficiale del concorso. Il file ufficiale riporta solo la risposta esatta: le altre alternative sono risposte di domande simili della stessa banca dati."
+      : "Risposta indicata nella banca dati ufficiale del concorso.",
     fonte: `${banca.titolo} (banca dati ufficiale)`,
     versione: "ufficiale",
     ...(banca.materia ? { materiaDiStudio: banca.materia } : {}),
@@ -426,7 +455,7 @@ export const handler = service({
     const profili = await batchGet<Profilo>(
       tables.users,
       utenti.map((u) => ({ userId: attributo(u, "sub") })),
-      "userId, scadenzaPiano, periodo, onboarded, feedback",
+      "userId, scadenzaPiano, periodo, onboarded, feedback, ultimoAccessoIl, accessi",
     );
     const profiloDi = new Map(profili.map((p) => [p.userId, p]));
 
@@ -449,10 +478,30 @@ export const handler = service({
           periodo: p?.periodo,
           onboarded: p?.onboarded ?? false,
           feedback: p?.feedback,
+          ultimoAccessoIl: p?.ultimoAccessoIl,
+          accessi: p?.accessi,
         };
       }),
       pagina: lista.PaginationToken,
     };
+  },
+
+  /** Gli ultimi 50 accessi di un utente (data e modo), dal più recente: li registra Cognito a ogni login. */
+  "GET /admin/utenti/{username}/accessi": async (ctx) => {
+    richiediAdmin(ctx);
+    const user = await utenteCognito(ctx.params.username!);
+    const sub = attributo({ Attributes: user.UserAttributes }, "sub");
+    if (!sub) throw new HttpError(500, "Utente senza sub");
+    const res = await db.send(
+      new QueryCommand({
+        TableName: tables.accessi,
+        KeyConditionExpression: "userId = :u",
+        ExpressionAttributeValues: { ":u": sub },
+        ScanIndexForward: false,
+        Limit: 50,
+      }),
+    );
+    return { accessi: ((res.Items ?? []) as { il: string; metodo: string }[]).map((a) => ({ il: a.il.split("#")[0], metodo: a.metodo })) };
   },
 
   /** Cambia piano e scadenza a un utente (omaggi, assistenza); gli arriva un'email. */
@@ -659,7 +708,9 @@ export const handler = service({
         new ListUsersCommand({ UserPoolId: userPoolId(), Filter: `email ^= "${email.trim().replace(/"/g, "")}"`, Limit: 20 }),
       );
       const subs = new Set((res.Users ?? []).map((u) => attributo(u, "sub")));
-      ordini = ordini.filter((o) => subs.has(o.userId));
+      // Anche gli ordini di account eliminati, con l'email salvata sull'ordine.
+      const q = email.trim().toLowerCase();
+      ordini = ordini.filter((o) => subs.has(o.userId) || !!o.email?.toLowerCase().startsWith(q));
     }
 
     const n = Math.max(0, Number(pagina) || 0);
@@ -669,7 +720,11 @@ export const handler = service({
       totali,
       ordini: fetta.map((o) => ({
         id: o.id,
-        email: emails.get(o.username),
+        // Email attuale da Cognito; se l'account non c'è più, quella salvata sull'ordine.
+        email: emails.get(o.username) ?? (o.email || undefined),
+        nome: o.nome || undefined,
+        accountEliminato: !emails.get(o.username),
+        ricevuta: o.ricevuta,
         piano: o.piano,
         periodo: o.periodo,
         prezzo: o.prezzo,
@@ -708,7 +763,7 @@ export const handler = service({
     const dati = ctx.body(NuovaBanca);
     // Concorsi collegati da subito: quello principale e gli altri scelti (suggeriti o cercati).
     const collegati = await concorsiCollegabili([...(dati.concorsoId ? [dati.concorsoId] : []), ...(dati.concorsiIds ?? [])]);
-    const concorsi = collegati.map((c) => ({ id: c.id, titolo: nomeConcorsoBreve(c) }));
+    const concorsi = collegati.map(voceConcorso);
     const comparto = dati.comparto ?? collegati[0]?.comparto;
     if (!comparto) throw new HttpError(400, "Indica il comparto o un concorso");
 
@@ -803,7 +858,7 @@ export const handler = service({
     if (attuali.some((c) => c.id === concorsoId)) return banca;
     const [concorso] = await concorsiCollegabili([concorsoId], banca.id);
     // Prima la lista (se è cambiata nel frattempo non si tocca nulla), poi il concorso.
-    const nuova = [...attuali, { id: concorso!.id, titolo: nomeConcorsoBreve(concorso!) }];
+    const nuova = [...attuali, voceConcorso(concorso!)];
     await salvaConcorsiDellaBanca(banca, nuova);
     if (banca.stato === "pubblicata" && !(await collegaConcorso(banca.id, concorsoId))) {
       await salvaConcorsiDellaBanca({ ...banca, concorsi: nuova }, attuali).catch(() => {});
@@ -861,6 +916,35 @@ export const handler = service({
     return { ok: true, domande };
   },
 
+  /**
+   * Corregge un bando (nome, ente, scadenza, posti, sedi, comparto, materie, testo, banca dati
+   * prevista). Si mandano solo i campi cambiati; restano anche dopo l'import del mattino da inPA.
+   */
+  "PUT /admin/concorsi/{id}": async (ctx) => {
+    richiediAdmin(ctx);
+    const nuove = ctx.body(ModificaConcorso) as ModificheConcorso;
+    if (!Object.keys(nuove).length) throw new HttpError(400, "Nessuna modifica");
+    // Materie scelte dall'admin: non sono più "stimate dal comparto".
+    if (nuove.materie) nuove.materieStimate = false;
+    const res = await db.send(new GetCommand({ TableName: tables.concorsi, Key: { id: ctx.params.id } }));
+    if (!res.Item) throw notFound("Concorso");
+    const prima = res.Item as Concorso;
+    const dopo: Concorso = { ...conModificheAdmin(prima, { ...prima.modificheAdmin, ...nuove }), modificatoIl: new Date().toISOString() };
+    await db.send(new PutCommand({ TableName: tables.concorsi, Item: dopo, ConditionExpression: "attribute_exists(id)" }));
+    console.log(`Concorso ${prima.id} corretto da ${ctx.email ?? ctx.username}: ${Object.keys(nuove).join(", ")}`);
+    return dopo;
+  },
+
+  /** Annulla le correzioni dell'admin: tornano i valori di inPA. */
+  "DELETE /admin/concorsi/{id}/modifiche": async (ctx) => {
+    richiediAdmin(ctx);
+    const res = await db.send(new GetCommand({ TableName: tables.concorsi, Key: { id: ctx.params.id } }));
+    if (!res.Item) throw notFound("Concorso");
+    const dopo = senzaModificheAdmin(res.Item as Concorso);
+    await db.send(new PutCommand({ TableName: tables.concorsi, Item: dopo, ConditionExpression: "attribute_exists(id)" }));
+    return dopo;
+  },
+
   /** Concorso finito: sparisce anche dai bandi scaduti (o ricompare, togliendo il segno). */
   "PUT /admin/concorsi/{id}/concluso": async (ctx) => {
     richiediAdmin(ctx);
@@ -890,6 +974,25 @@ export const handler = service({
     if (username === ctx.username) throw new HttpError(400, "Non puoi disattivare il tuo account");
     const Command = abilitato ? AdminEnableUserCommand : AdminDisableUserCommand;
     await cognito.send(new Command({ UserPoolId: userPoolId(), Username: username }));
+    return { ok: true };
+  },
+
+  /**
+   * Elimina per sempre un utente: tutti i suoi dati e il login, come "Elimina account" del
+   * profilo (core/account.ts). Restano solo gli ordini (obbligo contabile). Non il proprio.
+   */
+  "DELETE /admin/utenti/{username}": async (ctx) => {
+    richiediAdmin(ctx);
+    const username = ctx.params.username!;
+    if (username === ctx.username) throw new HttpError(400, "Non puoi eliminare il tuo account da qui: usa il tuo profilo.");
+    const user = await utenteCognito(username);
+    const sub = attributo({ Attributes: user.UserAttributes }, "sub");
+    if (!sub) throw new HttpError(500, "Utente senza sub");
+    await eliminaAccount(sub, username, {
+      email: attributo({ Attributes: user.UserAttributes }, "email"),
+      nome: attributo({ Attributes: user.UserAttributes }, "name"),
+    });
+    console.log(`Utente ${sub} eliminato dall'admin ${ctx.email ?? ctx.username}`);
     return { ok: true };
   },
 });

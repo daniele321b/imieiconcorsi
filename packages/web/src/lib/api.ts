@@ -112,7 +112,8 @@ export interface MateriaApi {
 
 /** Una sessione con le domande complete (con soluzione in studio e dopo la consegna). */
 export type SessioneApi = Omit<Sessione, "userId" | "domande"> & {
-  domande: (Domanda | DomandaPubblica)[];
+  /** Domande delle banche dati: `preferita` = salvata con la stella */
+  domande: ((Domanda | DomandaPubblica) & { preferita?: boolean })[];
 };
 
 /** Cosa si manda a POST /sessioni per avviare studio o simulazione. */
@@ -131,6 +132,8 @@ export interface NuovaSessione {
 export interface Statistiche {
   domandeRisposte: number;
   perMateria: { materia: MateriaId; corrette: number; totale: number; percentuale: number }[];
+  /** Risposte giuste nelle banche dati ufficiali (assente nelle risposte di prima) */
+  perBancaDati?: { bancaId: string; titolo: string; corrette: number; totale: number; percentuale: number }[];
   simulazioni: { id: string; data: string; percentuale: number; superata: boolean }[];
   recenti: { id: string; tipo: TipoSessione; materie: MateriaId[]; concorsoId?: string; data: string; percentuale: number; durataMs?: number; bancaDati?: string }[];
 }
@@ -201,6 +204,9 @@ export interface AdminUtente {
   periodo?: Periodo;
   onboarded: boolean;
   feedback?: Feedback;
+  /** Ultimo login e quanti in tutto (registrati da Cognito) */
+  ultimoAccessoIl?: string;
+  accessi?: number;
 }
 
 /** Codici sconto nel pannello admin. */

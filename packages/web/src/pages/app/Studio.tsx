@@ -1,5 +1,6 @@
 import { DOMANDE_STUDIO } from "@imieiconcorsi/core/domain";
-import { BookOpenCheck, Lock } from "lucide-react";
+import { BookOpenCheck, ChevronRight, Database, Lock } from "lucide-react";
+import { Link } from "react-router";
 import { useState } from "react";
 import { IconaMateria } from "../../components/brand";
 import { Alert, Button, Card, PageHeader, PremiumModal, Spinner, UpgradeBanner, cx } from "../../components/ui";
@@ -7,8 +8,8 @@ import { useApi, type MateriaApi } from "../../lib/api";
 import { useUtente } from "../../lib/auth";
 import { useAvviaSessione } from "../../lib/sessioni";
 
-// Studio (/app/studio): scelta delle materie e del numero di domande per una sessione di
-// studio, e simulazione libera sulle materie scelte.
+// Studio (/app/studio): riquadro d'ingresso alle banche dati ufficiali, scelta delle materie e del
+// numero di domande per una sessione di studio, e simulazione libera sulle materie scelte.
 
 /** Pagina /app/studio. */
 export function Studio() {
@@ -22,6 +23,25 @@ export function Studio() {
   return (
     <div>
       <PageHeader title="Studio" subtitle="Scegli una materia: la spiegazione arriva subito dopo ogni risposta." />
+
+      {/* Le banche dati ufficiali stanno qui dentro (non più nel menu): si entra toccando il riquadro. */}
+      <Link
+        to="/app/banche-dati"
+        className="mb-6 flex items-center gap-4 rounded-2xl bg-gradient-to-r from-brand-950 via-brand-800 to-brand-600 p-5 text-white shadow-sm transition hover:shadow-md"
+      >
+        <span className="grid size-12 shrink-0 place-items-center rounded-xl bg-white/10 text-accent-300">
+          <Database className="size-6" />
+        </span>
+        <span className="min-w-0 flex-1">
+          <span className="block text-lg font-bold">Banche dati ufficiali</span>
+          <span className="block text-sm text-brand-100">
+            Le domande pubblicate dagli enti per i concorsi: consultale, studiale o fai una simulazione.
+          </span>
+        </span>
+        <ChevronRight className="size-5 shrink-0 text-brand-200" />
+      </Link>
+
+      <h2 className="mb-3 text-lg font-bold text-slate-900">Le materie</h2>
 
       <div className="mb-6 flex flex-wrap items-center gap-3">
         <span className="text-sm font-semibold text-slate-600">Domande per sessione</span>

@@ -1,4 +1,5 @@
 import { SendEmailCommand, SESv2Client } from "@aws-sdk/client-sesv2";
+import { PublishCommand, SNSClient } from "@aws-sdk/client-sns";
 import { env } from "./env";
 
 // Invio delle email con Amazon SES. Mittente e "configuration set" (che registra consegne,
@@ -6,6 +7,7 @@ import { env } from "./env";
 // Lambda che scrivono agli utenti o all'amministratore; serve il permesso local.invia_email.
 
 const ses = new SESv2Client({});
+const sns = new SNSClient({});
 
 /**
  * Email transazionale con SES (identità e configuration set dall'ambiente "shared").
@@ -42,8 +44,33 @@ export async function inviaEmail({
   );
 }
 
-/** Avviso all'amministratore (ADMIN_EMAIL). Senza indirizzo configurato scrive solo nei log. */
+/** Oggetto valido per SNS: solo caratteri ASCII, una riga, meno di 100 caratteri. */
+export const oggettoSns = (testo: string) =>
+  testo
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[—–]/g, "-")
+    .replace(/[^\x20-\x7e]/g, "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, 99);
+
+/**
+ * Avviso all'amministratore (nuovi bandi con banca dati, richieste di assistenza, ricevute non
+ * partite, spesa AI…). Passa dal topic SNS ADMIN_TOPIC_ARN, che scrive ad admin_email senza la
+ * sandbox di SES (basta confermare una volta l'iscrizione); senza topic, email con SES.
+ * Senza nessuno dei due scrive solo nei log.
+ */
 export async function avvisaAdmin(oggetto: string, testo: string) {
+  const topic = process.env.ADMIN_TOPIC_ARN;
+  if (topic) {
+    try {
+      await sns.send(new PublishCommand({ TopicArn: topic, Subject: oggettoSns(`[iMieiConcorsi] ${oggetto}`), Message: testo }));
+      return;
+    } catch (err) {
+      console.error("Avviso all'admin non pubblicato su SNS, provo con l'email", err);
+    }
+  }
   const admin = process.env.ADMIN_EMAIL;
   if (!admin) {
     console.warn(`ADMIN_EMAIL non impostato, avviso non inviato: ${oggetto}`);

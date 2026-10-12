@@ -1,4 +1,4 @@
-import { concorsiSuggeriti, scaduto, type ConcorsoInLista } from "@imieiconcorsi/core/concorsi";
+import { concorsiSuggeriti, conMaiuscola, nomeConcorso, scaduto, type ConcorsoInLista } from "@imieiconcorsi/core/concorsi";
 import {
   COMPARTI,
   COMPARTO_IDS,
@@ -11,12 +11,12 @@ import {
   type CompartoId,
   type MateriaId,
 } from "@imieiconcorsi/core/domain";
-import { ArrowLeft, Database, FileUp, Link2, Loader2, Plus, RefreshCw, Trash2, X } from "lucide-react";
+import { ArrowLeft, Bell, Database, FileUp, Link2, Loader2, Plus, RefreshCw, Trash2, X } from "lucide-react";
 import { type FormEvent, type ReactNode, useEffect, useMemo, useState } from "react";
 import { Link, Navigate } from "react-router";
 import { Alert, Badge, Button, Card, PageHeader, Spinner, cx } from "../../components/ui";
 import { api, ApiError, useApi } from "../../lib/api";
-import { caricaBandi } from "../../lib/bandi";
+import { caricaBandi, segnaBandiVisti } from "../../lib/bandi";
 import { useUtente } from "../../lib/auth";
 import { dataBreve } from "../../lib/format";
 
@@ -28,6 +28,11 @@ const FORMATI: { id: Formato; nome: string; spiegazione: string }[] = [
   { id: "segnata", nome: "Segnata", spiegazione: "La giusta ha un segno: * oppure (X)." },
   { id: "chiave", nome: "Tabella soluzioni", spiegazione: "In fondo: «Soluzioni» e poi 1 B, 2 A…" },
   { id: "prima", nome: "Sempre la prima", spiegazione: "Il bando dice che la giusta è sempre la A." },
+  {
+    id: "risposta",
+    nome: "Solo risposta esatta",
+    spiegazione: "Tabella numero | domanda | risposta (es. Carabinieri): le altre alternative si ricavano da domande simili.",
+  },
 ];
 
 const STATO: Record<BancaDati["stato"], { testo: string; tone: "slate" | "brand" | "green" | "red" | "amber" }> = {
@@ -59,6 +64,8 @@ export function AdminBancheDati() {
 function Pannello() {
   const { data, loading, error, reload } = useApi<{ banche: BancaDati[] }>("/admin/banche-dati");
   const { bandi, errore: erroreBandi } = useBandi();
+  // Bando scelto da "Bandi da caricare": il modulo di caricamento parte già collegato a lui.
+  const [preselezionato, setPreselezionato] = useState<ConcorsoInLista>();
   const inLavorazione = data?.banche.some((b) => b.stato === "caricamento" || b.stato === "estrazione");
 
   // Mentre una banca dati è in estrazione la lista si aggiorna da sola.
@@ -79,7 +86,14 @@ function Pannello() {
       />
 
       {erroreBandi && <Alert tone="error">Elenco dei bandi non disponibile: {erroreBandi}</Alert>}
-      <Caricamento bandi={bandi} onCaricata={() => void reload()} />
+      <DaCaricare
+        bandi={bandi}
+        onCarica={(c) => {
+          setPreselezionato(c);
+          document.getElementById("carica-banca")?.scrollIntoView({ behavior: "smooth" });
+        }}
+      />
+      <Caricamento bandi={bandi} preselezionato={preselezionato} onCaricata={() => void reload()} />
 
       <section className="space-y-3">
         <div className="flex items-center justify-between">
@@ -114,16 +128,36 @@ function useBandi() {
 }
 
 /** Modulo per caricare una nuova banca dati (comparto e anno, titolo, concorsi da collegare, formato, PDF). */
-function Caricamento({ bandi, onCaricata }: { bandi?: ConcorsoInLista[]; onCaricata: () => void }) {
+function Caricamento({
+  bandi,
+  preselezionato,
+  onCaricata,
+}: {
+  bandi?: ConcorsoInLista[];
+  /** Bando scelto da "Bandi da caricare": si aggiunge ai collegati e propone il titolo */
+  preselezionato?: ConcorsoInLista;
+  onCaricata: () => void;
+}) {
   const [comparto, setComparto] = useState<CompartoId | "">("");
   const [anno, setAnno] = useState(String(new Date().getFullYear()));
-  const [collegati, setCollegati] = useState<{ id: string; titolo: string; comparto: CompartoId }[]>([]);
+  const [collegati, setCollegati] = useState<{ id: string; titolo: string; ente?: string; comparto: CompartoId }[]>([]);
   const [titolo, setTitolo] = useState("");
   const [materia, setMateria] = useState<MateriaId | "">("");
   const [formato, setFormato] = useState<Formato>("auto");
   const [file, setFile] = useState<File>();
   const [fase, setFase] = useState<string>();
   const [esito, setEsito] = useState<{ tone: "success" | "error"; testo: string }>();
+
+  useEffect(() => {
+    if (!preselezionato) return;
+    setCollegati((l) =>
+      l.some((c) => c.id === preselezionato.id)
+        ? l
+        : [...l, { id: preselezionato.id, titolo: nomeConcorso(preselezionato), ente: conMaiuscola(preselezionato.ente), comparto: preselezionato.comparto }],
+    );
+    setTitolo((t) => t || `Banca dati ${nomeConcorso(preselezionato)}`);
+    setComparto((c) => c || preselezionato.comparto);
+  }, [preselezionato]);
 
   async function carica(e: FormEvent) {
     e.preventDefault();
@@ -160,8 +194,8 @@ function Caricamento({ bandi, onCaricata }: { bandi?: ConcorsoInLista[]; onCaric
   }
 
   return (
-    <Card className="space-y-4">
-      <div className="flex items-center gap-2">
+    <Card className="scroll-mt-24 space-y-4">
+      <div id="carica-banca" className="flex items-center gap-2">
         <FileUp className="size-5 text-brand-600" />
         <h2 className="text-lg font-bold text-slate-900">Carica una banca dati</h2>
       </div>
@@ -196,7 +230,9 @@ function Caricamento({ bandi, onCaricata }: { bandi?: ConcorsoInLista[]; onCaric
             bandi={bandi}
             banca={{ titolo, comparto: comparto || undefined, anno: anno ? Number(anno) : undefined }}
             collegati={collegati}
-            onAggiungi={(c) => setCollegati((l) => (l.some((x) => x.id === c.id) ? l : [...l, { id: c.id, titolo: nomeConcorsoBreve(c), comparto: c.comparto }]))}
+            onAggiungi={(c) =>
+              setCollegati((l) => (l.some((x) => x.id === c.id) ? l : [...l, { id: c.id, titolo: nomeConcorso(c), ente: conMaiuscola(c.ente), comparto: c.comparto }]))
+            }
             onTogli={(id) => setCollegati((l) => l.filter((c) => c.id !== id))}
           />
         </div>
@@ -248,6 +284,76 @@ function Caricamento({ bandi, onCaricata }: { bandi?: ConcorsoInLista[]; onCaric
   );
 }
 
+/** Giorni in cui un bando da caricare è "nuovo". */
+const GIORNI_NUOVO = 7;
+
+/**
+ * Bandi aperti che citano una banca dati ufficiale non ancora caricata: i nuovi (ultima
+ * settimana) in cima. "Carica la banca dati" precompila il modulo qui sotto. Ogni mattina lo
+ * scraper manda anche un'email per i nuovi.
+ */
+function DaCaricare({ bandi, onCarica }: { bandi?: ConcorsoInLista[]; onCarica: (c: ConcorsoInLista) => void }) {
+  const [tutti, setTutti] = useState(false);
+  const lista = useMemo(
+    () =>
+      (bandi ?? [])
+        .filter((c) => c.bancaDatiPrevista && !c.bancaDati && !scaduto(c))
+        .sort((a, b) => (b.pubblicatoIl ?? "").localeCompare(a.pubblicatoIl ?? "")),
+    [bandi],
+  );
+  const nuovo = (c: ConcorsoInLista) => !!c.pubblicatoIl && Date.now() - Date.parse(c.pubblicatoIl) < GIORNI_NUOVO * 86_400_000;
+  // Elenco aperto: questi bandi sono visti e il pallino rosso su "Admin" si spegne.
+  useEffect(() => {
+    if (lista.length) segnaBandiVisti(lista.map((c) => c.id));
+  }, [lista]);
+  const nuovi = lista.filter(nuovo).length;
+  const mostrati = tutti ? lista : lista.slice(0, 5);
+  if (!bandi) return null;
+
+  return (
+    <section id="da-caricare" className="scroll-mt-24">
+      <Card className="space-y-3">
+        <div className="flex flex-wrap items-center gap-2">
+          <Bell className="size-5 text-amber-500" />
+          <h2 className="text-lg font-bold text-slate-900">Bandi da caricare</h2>
+          <Badge tone={nuovi ? "amber" : "slate"}>{nuovi ? `${nuovi} ${nuovi === 1 ? "nuovo" : "nuovi"} questa settimana` : `${lista.length} in attesa`}</Badge>
+        </div>
+        <p className="text-sm text-slate-500">
+          Bandi aperti che citano una banca dati ufficiale non ancora caricata. Quando l'ente la pubblica, carica il PDF: il bando resta
+          qui finché non lo colleghi a una banca dati pubblicata.
+        </p>
+        {!lista.length ? (
+          <p className="text-sm text-slate-500">Nessun bando in attesa.</p>
+        ) : (
+          <ul className="divide-y divide-slate-100">
+            {mostrati.map((c) => (
+              <li key={c.id} className="flex flex-col gap-2 py-3 sm:flex-row sm:items-center">
+                <div className="min-w-0 flex-1">
+                  <Link to={`/app/concorsi/${c.id}`} className="font-semibold break-words text-slate-900 hover:text-brand-700">
+                    {nomeConcorso(c)}
+                  </Link>
+                  {nuovo(c) && <Badge tone="amber" className="ml-2 align-middle">nuovo</Badge>}
+                  <p className="text-xs break-words text-slate-500">
+                    {conMaiuscola(c.ente)} · pubblicato il {dataBreve(c.pubblicatoIl)} · scade il {dataBreve(c.scadenza)}
+                  </p>
+                </div>
+                <Button size="sm" variant="secondary" className="self-start sm:self-auto" onClick={() => onCarica(c)}>
+                  <FileUp className="size-4" /> Carica la banca dati
+                </Button>
+              </li>
+            ))}
+          </ul>
+        )}
+        {lista.length > 5 && (
+          <button onClick={() => setTutti((t) => !t)} className="text-sm font-semibold text-brand-600 hover:text-brand-700">
+            {tutti ? "Mostra meno" : `Mostra tutti (${lista.length})`}
+          </button>
+        )}
+      </Card>
+    </section>
+  );
+}
+
 /**
  * Concorsi collegati a una banca dati: quelli già scelti (con ×), i suggeriti (bandi aperti
  * simili per titolo, comparto e anno: core/concorsi.ts → concorsiSuggeriti) e la ricerca a mano
@@ -263,7 +369,7 @@ function SceltaConcorsi({
 }: {
   bandi?: ConcorsoInLista[];
   banca: { titolo: string; comparto?: CompartoId; anno?: number };
-  collegati: { id: string; titolo: string }[];
+  collegati: { id: string; titolo: string; ente?: string }[];
   /** Restituisce una promessa se collega sul server: "Collega i molto simili" le aspetta una per una */
   onAggiungi: (c: ConcorsoInLista) => void | Promise<unknown>;
   onTogli: (id: string) => void;
@@ -285,50 +391,65 @@ function SceltaConcorsi({
       .slice(0, 8);
   }, [bandi, cerca, soloAperti, giaCollegati]);
 
+  /** Scadenza a parole, per le righe. */
+  const quando = (c: Pick<ConcorsoInLista, "scadenza">) => (scaduto(c) ? "domande chiuse" : `scade il ${dataBreve(c.scadenza)}`);
+
+  /** Un bando da collegare: nome grande, ente e scadenza sotto, pulsante + a destra. */
   const riga = (c: ConcorsoInLista, extra?: ReactNode) => (
-    <li key={c.id} className="flex items-center gap-2">
+    <li key={c.id} className="flex items-start gap-3 rounded-xl bg-white p-3 ring-1 ring-slate-200">
+      <div className="min-w-0 flex-1">
+        <p className="font-semibold break-words text-slate-900">
+          {nomeConcorso(c)} {extra}
+        </p>
+        <p className="mt-0.5 text-xs break-words text-slate-500">
+          {conMaiuscola(c.ente)} · {quando(c)}
+          {c.bancaDati && <span className="text-amber-600"> · ha già una banca dati</span>}
+        </p>
+      </div>
       <button
         type="button"
         disabled={!!inCorso}
         onClick={() => onAggiungi(c)}
-        className="grid size-6 shrink-0 place-items-center rounded-md bg-white text-brand-600 ring-1 ring-slate-200 hover:bg-brand-50 disabled:opacity-50"
+        className="grid size-9 shrink-0 place-items-center rounded-lg bg-brand-600 text-white shadow-sm hover:bg-brand-700 disabled:opacity-50"
         title="Collega"
+        aria-label={`Collega ${nomeConcorso(c)}`}
       >
-        {inCorso === c.id ? <Loader2 className="size-3.5 animate-spin" /> : <Plus className="size-3.5" />}
+        {inCorso === c.id ? <Loader2 className="size-4 animate-spin" /> : <Plus className="size-4" />}
       </button>
-      <span className="min-w-0 flex-1 truncate">
-        {nomeConcorsoBreve(c)} <span className="text-slate-400">· {scaduto(c) ? "domande chiuse" : `scade ${dataBreve(c.scadenza)}`}</span>
-        {c.bancaDati && <span className="text-amber-600"> · ha già una banca dati</span>}
-      </span>
-      {extra}
     </li>
   );
 
   return (
-    <div className="mt-3 space-y-3 text-sm">
+    <div className="mt-3 space-y-4 text-sm">
       {collegati.length > 0 && (
-        <div className="flex flex-wrap gap-2">
+        <ul className="space-y-2">
           {collegati.map((c) => {
+            // Dati aggiornati dalla lista dei bandi, se il bando c'è ancora; altrimenti quelli salvati.
             const bando = perId.get(c.id);
             return (
-              <span key={c.id} className="inline-flex max-w-full items-center gap-1.5 rounded-full bg-white py-1 pr-1 pl-3 text-xs font-medium text-slate-700 ring-1 ring-slate-200">
-                <Link to={`/app/concorsi/${c.id}`} className="truncate hover:text-brand-700" title={c.titolo}>
-                  {c.titolo}
-                </Link>
-                {bando?.scadenza && <span className="shrink-0 text-slate-400">{scaduto(bando) ? "chiuso" : `scade ${dataBreve(bando.scadenza)}`}</span>}
+              <li key={c.id} className="flex items-start gap-3 rounded-xl bg-emerald-50 p-3 ring-1 ring-emerald-200">
+                <div className="min-w-0 flex-1">
+                  <Link to={`/app/concorsi/${c.id}`} className="font-semibold break-words text-slate-900 hover:text-brand-700">
+                    {bando ? nomeConcorso(bando) : c.titolo}
+                  </Link>
+                  <p className="mt-0.5 text-xs break-words text-slate-500">
+                    {[bando ? conMaiuscola(bando.ente) : c.ente, bando && quando(bando)].filter(Boolean).join(" · ") || "collegato"}
+                  </p>
+                </div>
                 <button
                   type="button"
                   disabled={!!inCorso}
                   onClick={() => onTogli(c.id)}
-                  className="grid size-5 shrink-0 place-items-center rounded-full text-slate-400 hover:bg-rose-50 hover:text-rose-600"
+                  className="grid size-9 shrink-0 place-items-center rounded-lg text-slate-500 ring-1 ring-slate-200 hover:bg-rose-50 hover:text-rose-600 disabled:opacity-50"
                   title="Scollega"
+                  aria-label="Scollega"
                 >
-                  {inCorso === c.id ? <Loader2 className="size-3 animate-spin" /> : <X className="size-3" />}
+                  {inCorso === c.id ? <Loader2 className="size-4 animate-spin" /> : <X className="size-4" />}
                 </button>
-              </span>
+              </li>
             );
           })}
-        </div>
+        </ul>
       )}
 
       {!bandi ? (
@@ -354,7 +475,7 @@ function SceltaConcorsi({
                   </Button>
                 )}
               </div>
-              <ul className="mt-1 space-y-1">
+              <ul className="mt-2 space-y-2">
                 {suggeriti.map((s) => riga(s.concorso, s.forte ? <Badge tone="green">molto simile</Badge> : undefined))}
               </ul>
             </div>
@@ -365,7 +486,7 @@ function SceltaConcorsi({
                 value={cerca}
                 onChange={(e) => setCerca(e.target.value)}
                 placeholder="Cerca un altro concorso: ente, titolo o id inPA…"
-                className="h-9 min-w-56 flex-1 rounded-lg border-0 bg-white px-3 text-sm ring-1 ring-slate-300 focus:ring-2 focus:ring-brand-500"
+                className="h-10 w-full rounded-lg border-0 bg-white px-3 text-sm ring-1 ring-slate-300 focus:ring-2 focus:ring-brand-500 sm:w-auto sm:flex-1"
               />
               <label className="flex items-center gap-1.5 text-xs text-slate-600">
                 <input type="checkbox" checked={soloAperti} onChange={(e) => setSoloAperti(e.target.checked)} className="size-4 rounded border-slate-300" />
@@ -373,7 +494,7 @@ function SceltaConcorsi({
               </label>
             </div>
             {cerca.trim().length >= 3 && (
-              <ul className="mt-2 space-y-1">{trovati.length ? trovati.map((c) => riga(c)) : <li className="text-xs text-slate-500">Nessun bando trovato.</li>}</ul>
+              <ul className="mt-2 space-y-2">{trovati.length ? trovati.map((c) => riga(c)) : <li className="text-xs text-slate-500">Nessun bando trovato.</li>}</ul>
             )}
           </div>
         </>
@@ -565,6 +686,13 @@ function RigaBanca({ banca, bandi, onCambio }: { banca: BancaDati; bandi?: Conco
               Qui le risposte sono nell'ordine del PDF. Gli utenti scelgono entrando nella banca dati se vedere la giusta sempre per
               prima o mescolata.
             </p>
+            {!!banca.alternativeRicavate && (
+              <p className="mt-1 text-xs text-amber-800">
+                Il PDF riporta solo la risposta esatta: per {banca.alternativeRicavate} domande le altre alternative (in grigio, "ricavata")
+                sono risposte di domande simili dello stesso file, scelte in modo che siano sbagliate. Le domande al negativo ("Non ha
+                nulla a che fare con…") e quelle senza le parole tra cui scegliere sono tra le scartate.
+              </p>
+            )}
           </div>
           {banca.esempi.map((d) => (
             <div key={d.numero}>
@@ -576,6 +704,7 @@ function RigaBanca({ banca, bandi, onCambio }: { banca: BancaDati; bandi?: Conco
                 {d.opzioni.map((o, i) => (
                   <li key={i} className={i === d.corretta ? "font-semibold text-emerald-700" : "text-slate-600"}>
                     {String.fromCharCode(65 + i)}) {o}
+                    {d.alternativeRicavate && i !== d.corretta && <span className="ml-1.5 text-xs text-slate-400">ricavata</span>}
                   </li>
                 ))}
               </ul>

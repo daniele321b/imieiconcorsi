@@ -6,6 +6,9 @@ import {
   PREFISSO_BANCA_DATI,
   REGOLE_DEFAULT,
   SELEZIONI_BANCA,
+  DOMANDE_MIN,
+  SIMULAZIONE_MAX,
+  SIMULAZIONE_STANDARD,
   concorsiDellaBanca,
   type BancaDati,
   type Concorso,
@@ -15,7 +18,16 @@ import {
   type Sessione,
 } from "@imieiconcorsi/core/domain";
 import { HttpError, notFound, service } from "@imieiconcorsi/core/http";
-import { aggiornaProgresso, bitAcceso, candidatePerSelezione, numeroDomanda, type EsitoDomanda } from "@imieiconcorsi/core/progressi";
+import {
+  aggiornaProgresso,
+  bitAcceso,
+  candidatePerSelezione,
+  conPreferita,
+  idDomanda,
+  numeriAccesi,
+  numeroDomanda,
+  type EsitoDomanda,
+} from "@imieiconcorsi/core/progressi";
 import { dispongiRisposte } from "@imieiconcorsi/core/risposte";
 import { sortableId, timePrefix } from "@imieiconcorsi/core/ids";
 import { z } from "zod";
@@ -41,7 +53,7 @@ const NuovaSessione = z.object({
   ordineRisposte: z.enum(["prima", "mescolate"]).optional(),
   /** Banca dati: prima le domande mai fatte (predefinito), solo le sbagliate, o tutte */
   selezione: z.enum(SELEZIONI_BANCA).optional(),
-  numero: z.number().int().min(5).max(60).optional(),
+  numero: z.number().int().min(DOMANDE_MIN).max(SIMULAZIONE_MAX).optional(),
 });
 
 /** Banche dati pubblicate, per la sezione Banche dati (poche righe: basta uno Scan). */
@@ -65,7 +77,7 @@ async function bancheDatiPubblicate() {
 
 /** Risposte date, nell'ordine delle domande (null = non risposta). */
 const Consegna = z.object({
-  risposte: z.array(z.number().int().min(0).max(9).nullable()).max(60),
+  risposte: z.array(z.number().int().min(0).max(9).nullable()).max(SIMULAZIONE_MAX),
 });
 
 /** Domande di una materia della banca statica, o di una banca dati ufficiale (bd#<id>). */
@@ -124,20 +136,26 @@ async function progressiDellUtente(userId: string) {
       TableName: tables.progressi,
       KeyConditionExpression: "userId = :u",
       ExpressionAttributeValues: { ":u": userId },
-      ProjectionExpression: "bancaId, nFatte, nSbagliate, estrattaIl",
+      ProjectionExpression: "bancaId, nFatte, nSbagliate, nPreferite, estrattaIl",
     }),
   );
-  return new Map(((res.Items ?? []) as Pick<ProgressoBanca, "bancaId" | "nFatte" | "nSbagliate" | "estrattaIl">[]).map((p) => [p.bancaId, p]));
+  return new Map(
+    ((res.Items ?? []) as Pick<ProgressoBanca, "bancaId" | "nFatte" | "nSbagliate" | "nPreferite" | "estrattaIl">[]).map((p) => [p.bancaId, p]),
+  );
 }
 
 const condizioneFallita = (err: unknown) => err instanceof Error && err.name === "ConditionalCheckFailedException";
 
+/** I campi della riga dei progressi che una modifica può cambiare. */
+type CampiProgresso = Partial<Pick<ProgressoBanca, "fatte" | "sbagliate" | "nFatte" | "nSbagliate" | "preferite" | "nPreferite">>;
+
 /**
- * Segna le domande di una sessione consegnata come fatte (e sbagliate o no). Lettura e
- * scrittura con il numero di revisione: se nel frattempo un'altra consegna ha scritto, si riprova.
+ * Modifica la riga dei progressi di un utente in una banca dati: si legge, si cambia con
+ * `cambia` (che riceve la riga attuale, o niente) e si riscrive con il numero di revisione;
+ * se nel frattempo un'altra scrittura l'ha cambiata, si riprova (fino a 3 volte).
+ * I campi che `cambia` non tocca restano com'erano (es. le preferite alla consegna).
  */
-async function salvaProgresso(userId: string, bancaId: string, esiti: EsitoDomanda[]) {
-  if (!esiti.length) return;
+async function modificaProgresso(userId: string, bancaId: string, cambia: (base: ProgressoBanca | undefined) => CampiProgresso) {
   const banca = await db.send(new GetCommand({ TableName: tables.bancheDati, Key: { id: bancaId }, ProjectionExpression: "estrattaIl" }));
   const estrattaIl = banca.Item?.estrattaIl as string | undefined;
   for (let tentativo = 0; tentativo < 3; tentativo++) {
@@ -145,10 +163,16 @@ async function salvaProgresso(userId: string, bancaId: string, esiti: EsitoDoman
     const prima = res.Item as ProgressoBanca | undefined;
     // Banca estratta di nuovo dall'admin: i numeri possono essere cambiati, si riparte da zero.
     const base = prima && prima.estrattaIl === estrattaIl ? prima : undefined;
+    const vuota = new Uint8Array();
     const riga: ProgressoBanca = {
       userId,
       bancaId,
-      ...aggiornaProgresso(base, esiti),
+      fatte: base?.fatte ?? vuota,
+      sbagliate: base?.sbagliate ?? vuota,
+      nFatte: base?.nFatte ?? 0,
+      nSbagliate: base?.nSbagliate ?? 0,
+      ...(base?.preferite ? { preferite: base.preferite, nPreferite: base.nPreferite ?? 0 } : {}),
+      ...cambia(base),
       estrattaIl,
       rev: (prima?.rev ?? 0) + 1,
       aggiornatoIl: new Date().toISOString(),
@@ -162,12 +186,18 @@ async function salvaProgresso(userId: string, bancaId: string, esiti: EsitoDoman
           ...(prima ? { ExpressionAttributeNames: { "#rev": "rev" }, ExpressionAttributeValues: { ":rev": prima.rev } } : {}),
         }),
       );
-      return;
+      return riga;
     } catch (err) {
       if (!condizioneFallita(err)) throw err;
     }
   }
   throw new Error("Progressi non salvati: troppe scritture contemporanee");
+}
+
+/** Segna le domande di una sessione consegnata come fatte (e sbagliate o no). */
+async function salvaProgresso(userId: string, bancaId: string, esiti: EsitoDomanda[]) {
+  if (!esiti.length) return;
+  await modificaProgresso(userId, bancaId, (base) => aggiornaProgresso(base, esiti));
 }
 
 /** Ordine delle risposte di una banca dati: quello scelto dall'utente, altrimenti quello dell'admin. */
@@ -197,7 +227,16 @@ async function vista(s: Sessione) {
   const domande = await domandeDellaSessione(s);
   const conSoluzioni = s.tipo === "studio" || s.stato === "consegnata";
   const { userId, ...resto } = s;
-  return { ...resto, domande: conSoluzioni ? domande : domande.map(pubblica) };
+  return { ...resto, domande: await conPreferite(s, conSoluzioni ? domande : domande.map(pubblica)) };
+}
+
+/** Sessioni su una banca dati: ogni domanda dice se è tra le preferite (la stella accesa). */
+async function conPreferite<T extends { materia: string; id: string }>(s: Sessione, domande: T[]): Promise<(T & { preferita?: boolean })[]> {
+  if (!s.bancaDati) return domande;
+  const banca = await db.send(new GetCommand({ TableName: tables.bancheDati, Key: { id: s.bancaDati.id }, ProjectionExpression: "id, estrattaIl" }));
+  const progresso = await progressoDi(s.userId, { id: s.bancaDati.id, estrattaIl: banca.Item?.estrattaIl as string | undefined });
+  const materia = `${PREFISSO_BANCA_DATI}${s.bancaDati.id}`;
+  return domande.map((d) => (d.materia === materia ? { ...d, preferita: bitAcceso(progresso?.preferite, numeroDomanda(d.id)) } : d));
 }
 
 export const handler = service({
@@ -240,7 +279,10 @@ export const handler = service({
       banche: banche
         .map((b) => {
           const p = progressi.get(b.id);
-          return { b, progresso: p && p.estrattaIl === b.estrattaIl ? { fatte: p.nFatte, sbagliate: p.nSbagliate } : undefined };
+          return {
+            b,
+            progresso: p && p.estrattaIl === b.estrattaIl ? { fatte: p.nFatte, sbagliate: p.nSbagliate, preferite: p.nPreferite ?? 0 } : undefined,
+          };
         })
         .map(({ b, progresso }) => ({
           id: b.id,
@@ -275,25 +317,47 @@ export const handler = service({
     const PAGINA = 20;
     const indietro = ctx.query.fino !== undefined;
     const numero = Math.max(1, Number(indietro ? ctx.query.fino : (ctx.query.da ?? 1)) || 1);
-    const chiave = `n${String(numero).padStart(5, "0")}`;
-    const out = await db.send(
-      new QueryCommand({
-        TableName: tables.questions,
-        KeyConditionExpression: `materia = :m AND id ${indietro ? "<=" : ">="} :k`,
-        ExpressionAttributeValues: { ":m": `${PREFISSO_BANCA_DATI}${banca.id}`, ":k": chiave },
-        ScanIndexForward: !indietro,
-        Limit: PAGINA,
-      }),
-    );
+    const materia = `${PREFISSO_BANCA_DATI}${banca.id}`;
+    const progresso = await progressoDi(ctx.userId, banca);
+    let trovate: Domanda[];
+    let altre: boolean;
+    if (ctx.query.preferite === "1") {
+      // Solo le preferite: i loro numeri dalla mappa di bit, 20 per volta, poi le domande.
+      const tutte = numeriAccesi(progresso?.preferite);
+      const verso = indietro ? tutte.filter((n) => n <= numero).reverse() : tutte.filter((n) => n >= numero);
+      const scelti = verso.slice(0, PAGINA);
+      altre = verso.length > PAGINA;
+      trovate = await batchGet<Domanda>(tables.questions, scelti.map((n) => ({ materia, id: idDomanda(n) })));
+    } else {
+      const out = await db.send(
+        new QueryCommand({
+          TableName: tables.questions,
+          KeyConditionExpression: `materia = :m AND id ${indietro ? "<=" : ">="} :k`,
+          ExpressionAttributeValues: { ":m": materia, ":k": idDomanda(numero) },
+          ScanIndexForward: !indietro,
+          Limit: PAGINA,
+        }),
+      );
+      trovate = (out.Items ?? []) as Domanda[];
+      altre = !!out.LastEvaluatedKey;
+    }
     const q = ctx.query.ordine;
     const ordine = ordineDi(banca, q === "prima" || q === "mescolate" ? q : undefined);
-    const progresso = await progressoDi(ctx.userId, banca);
-    const domande = ((out.Items ?? []) as Domanda[])
+    const domande = trovate
       .map((d) => dispongiRisposte(d, ordine, `${d.materia}/${d.id}`))
       .map(({ id, argomento, testo, opzioni, corretta }) => {
         const numero = numeroDomanda(id);
         // Già fatta in una sessione, e se l'ultima volta era sbagliata.
-        return { numero, argomento, testo, opzioni, corretta, fatta: bitAcceso(progresso?.fatte, numero), sbagliata: bitAcceso(progresso?.sbagliate, numero) };
+        return {
+          numero,
+          argomento,
+          testo,
+          opzioni,
+          corretta,
+          fatta: bitAcceso(progresso?.fatte, numero),
+          sbagliata: bitAcceso(progresso?.sbagliate, numero),
+          preferita: bitAcceso(progresso?.preferite, numero),
+        };
       })
       .sort((a, b) => a.numero - b.numero);
     return {
@@ -303,12 +367,14 @@ export const handler = service({
         domande: banca.domande ?? 0,
         indiceSezioni: banca.indiceSezioni ?? [],
         mescolate: ordine === "mescolate",
+        /** Il file ufficiale dava solo la risposta esatta: le alternative sono ricavate */
+        alternativeRicavate: !!banca.alternativeRicavate,
         ordine,
       },
       domande,
       // C'è altro in quella direzione?
-      altre: !!out.LastEvaluatedKey,
-      progresso: progresso ? { fatte: progresso.nFatte, sbagliate: progresso.nSbagliate } : undefined,
+      altre,
+      progresso: progresso ? { fatte: progresso.nFatte, sbagliate: progresso.nSbagliate, preferite: progresso.nPreferite ?? 0 } : undefined,
       usi: await statoUsi(ctx),
     };
   },
@@ -369,7 +435,15 @@ export const handler = service({
           );
         }
       }
-      numero = input.numero ?? 60;
+      numero = input.numero ?? SIMULAZIONE_STANDARD;
+      // Oltre 60 domande si sceglie a mano, con Medium e Pro (fino a 100).
+      if (numero > limiti.domandePerSimulazione) {
+        throw new HttpError(
+          403,
+          `Nel piano Free le simulazioni arrivano a ${limiti.domandePerSimulazione} domande. Con Medium e Pro scegli tu quante, fino a ${SIMULAZIONE_MAX}.`,
+          "LIMITE_PIANO",
+        );
+      }
     } else {
       numero = Math.min(input.numero ?? 10, limiti.domandePerSessioneStudio);
     }
@@ -385,6 +459,9 @@ export const handler = service({
       const { prima, poi } = candidatePerSelezione(tutte, progresso, selezione);
       if (selezione === "sbagliate" && !prima.length) {
         throw new HttpError(409, "Non hai domande sbagliate da ripassare in questa banca dati: ottimo!", "NESSUNA_DOMANDA");
+      }
+      if (selezione === "preferite" && !prima.length) {
+        throw new HttpError(409, "Non hai ancora domande preferite in questa banca dati: salvale con la stella.", "NESSUNA_DOMANDA");
       }
       const chiave = bancaDati as MateriaId;
       const scelte = selezionaDomande(new Map([[chiave, prima]]), numero, profilo.livelli);
@@ -429,7 +506,7 @@ export const handler = service({
     // Il timer è lato client: allo scadere il browser consegna da solo.
     const now = new Date();
     const domande = await domandeDellaSessione(sessione);
-    const esito = calcolaEsito(domande, risposte, sessione.regole);
+    const esito = calcolaEsito(domande, risposte, sessione.regole, sessione.tipo);
     const aggiornata: Sessione = { ...sessione, stato: "consegnata", consegnataIl: now.toISOString(), risposte, esito };
 
     await db.send(
@@ -457,12 +534,31 @@ export const handler = service({
       await salvaProgresso(ctx.userId, sessione.bancaDati.id, esiti).catch((err) => console.error("Progressi della banca dati non salvati", err));
     }
     const { userId, ...resto } = aggiornata;
-    return { ...resto, domande };
+    return { ...resto, domande: await conPreferite(sessione, domande) };
   },
 
-  /** Ricomincia da capo una banca dati: si dimenticano le domande fatte e sbagliate. */
+  /** Salva (o toglie) una domanda della banca dati tra le preferite, per ritrovarla dopo. */
+  "PUT /me/progressi/{bancaId}/preferite/{numero}": async (ctx) => {
+    const { preferita } = ctx.body(z.object({ preferita: z.boolean() }));
+    const numero = Number(ctx.params.numero);
+    if (!Number.isInteger(numero) || numero < 1 || numero > 99_999) throw new HttpError(400, "Numero di domanda non valido");
+    const banca = await db.send(new GetCommand({ TableName: tables.bancheDati, Key: { id: ctx.params.bancaId }, ProjectionExpression: "id, stato" }));
+    if (banca.Item?.stato !== "pubblicata") throw notFound("Banca dati");
+    const riga = await modificaProgresso(ctx.userId, ctx.params.bancaId!, (base) => conPreferita(base, numero, preferita));
+    return { preferita, preferite: riga.nPreferite ?? 0 };
+  },
+
+  /** Ricomincia da capo una banca dati: si dimenticano le domande fatte e sbagliate (le preferite restano). */
   "DELETE /me/progressi/{bancaId}": async (ctx) => {
-    await db.send(new DeleteCommand({ TableName: tables.progressi, Key: { userId: ctx.userId, bancaId: ctx.params.bancaId } }));
+    const chiave = { userId: ctx.userId, bancaId: ctx.params.bancaId };
+    const res = await db.send(new GetCommand({ TableName: tables.progressi, Key: chiave, ProjectionExpression: "nPreferite" }));
+    if (res.Item?.nPreferite) {
+      // Ci sono preferite: si azzerano solo fatte e sbagliate.
+      const vuota = new Uint8Array();
+      await modificaProgresso(ctx.userId, ctx.params.bancaId!, () => ({ fatte: vuota, sbagliate: vuota, nFatte: 0, nSbagliate: 0 }));
+    } else {
+      await db.send(new DeleteCommand({ TableName: tables.progressi, Key: chiave }));
+    }
     return { ok: true };
   },
 
@@ -479,23 +575,31 @@ export const handler = service({
     );
     const sessioni = ((res.Items ?? []) as Sessione[]).filter((s) => s.stato === "consegnata" && s.esito);
 
+    // Le domande delle banche dati hanno materia "bd#<id>": vanno a parte, con il titolo della banca.
     const materie = new Map<MateriaId, { corrette: number; totale: number }>();
+    const banche = new Map<string, { titolo: string; corrette: number; totale: number }>();
     for (const s of sessioni) {
       for (const m of s.esito!.perMateria) {
+        if (m.materia.startsWith(PREFISSO_BANCA_DATI)) {
+          const bancaId = m.materia.slice(PREFISSO_BANCA_DATI.length);
+          const acc = banche.get(bancaId) ?? { titolo: s.bancaDati?.titolo ?? "Banca dati ufficiale", corrette: 0, totale: 0 };
+          acc.corrette += m.corrette;
+          acc.totale += m.totale;
+          banche.set(bancaId, acc);
+          continue;
+        }
         const acc = materie.get(m.materia) ?? { corrette: 0, totale: 0 };
         acc.corrette += m.corrette;
         acc.totale += m.totale;
         materie.set(m.materia, acc);
       }
     }
+    const percentuale = (v: { corrette: number; totale: number }) => (v.totale ? Math.round((v.corrette / v.totale) * 100) : 0);
 
     return {
-      domandeRisposte: [...materie.values()].reduce((n, m) => n + m.totale, 0),
-      perMateria: [...materie].map(([materia, v]) => ({
-        materia,
-        ...v,
-        percentuale: Math.round((v.corrette / v.totale) * 100),
-      })),
+      domandeRisposte: [...materie.values(), ...banche.values()].reduce((n, m) => n + m.totale, 0),
+      perMateria: [...materie].filter(([, v]) => v.totale > 0).map(([materia, v]) => ({ materia, ...v, percentuale: percentuale(v) })),
+      perBancaDati: [...banche].filter(([, v]) => v.totale > 0).map(([bancaId, v]) => ({ bancaId, ...v, percentuale: percentuale(v) })),
       simulazioni: sessioni
         .filter((s) => s.tipo === "simulazione")
         .slice(0, 20)

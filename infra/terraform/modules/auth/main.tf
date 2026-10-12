@@ -13,7 +13,7 @@ resource "aws_cognito_user_pool" "main" {
   name                     = var.name
   username_attributes      = ["email"]
   auto_verified_attributes = ["email"]
-  deletion_protection      = "INACTIVE"
+  deletion_protection      = var.protezione ? "ACTIVE" : "INACTIVE"
 
   password_policy {
     minimum_length                   = 8
@@ -43,15 +43,29 @@ resource "aws_cognito_user_pool" "main" {
   }
 
   # Una persona = un account: collega i login social all'account con la stessa email.
+  # Accessi: a ogni login (email e password, Google, Facebook) il trigger "pre token generation"
+  # registra l'accesso nella tabella accessi (modules/data), visibile nel pannello admin.
   dynamic "lambda_config" {
-    for_each = var.pre_sign_up_enabled ? [1] : []
+    for_each = var.pre_sign_up_enabled || var.accessi_enabled ? [1] : []
     content {
-      pre_sign_up = var.pre_sign_up_lambda_arn
+      pre_sign_up          = var.pre_sign_up_enabled ? var.pre_sign_up_lambda_arn : null
+      pre_token_generation = var.accessi_enabled ? var.accessi_lambda_arn : null
     }
   }
 }
 
 # Permesso a Cognito di chiamare il trigger pre sign-up (functions/src/auth/pre-signup.ts).
+# Permesso a Cognito di chiamare il trigger degli accessi.
+resource "aws_lambda_permission" "accessi" {
+  # Un booleano e non "arn != null": l'ARN si conosce solo dopo aver creato la Lambda.
+  count         = var.accessi_enabled ? 1 : 0
+  statement_id  = "AllowCognitoAccessi"
+  action        = "lambda:InvokeFunction"
+  function_name = var.accessi_lambda_arn
+  principal     = "cognito-idp.amazonaws.com"
+  source_arn    = aws_cognito_user_pool.main.arn
+}
+
 resource "aws_lambda_permission" "pre_sign_up" {
   count         = var.pre_sign_up_enabled ? 1 : 0
   statement_id  = "AllowCognito"

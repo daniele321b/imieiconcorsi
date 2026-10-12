@@ -11,6 +11,7 @@ output "table_arns" {
     richieste = aws_dynamodb_table.richieste.arn
     progressi = aws_dynamodb_table.progressi.arn
     contatori = aws_dynamodb_table.contatori.arn
+    accessi   = aws_dynamodb_table.accessi.arn
   }
 }
 
@@ -32,6 +33,7 @@ output "table_env" {
     RICHIESTE_TABLE   = aws_dynamodb_table.richieste.name
     PROGRESSI_TABLE   = aws_dynamodb_table.progressi.name
     CONTATORI_TABLE   = aws_dynamodb_table.contatori.name
+    ACCESSI_TABLE     = aws_dynamodb_table.accessi.name
   }
 }
 
@@ -48,5 +50,6 @@ output "table_names" {
     richieste = aws_dynamodb_table.richieste.name
     progressi = aws_dynamodb_table.progressi.name
     contatori = aws_dynamodb_table.contatori.name
+    accessi   = aws_dynamodb_table.accessi.name
   }
 }

@@ -167,14 +167,21 @@ Pagamenti singoli, senza rinnovo automatico: Medium o Pro per 30 o 365 giorni.
   domande di studio. AdSense è facoltativo (`adsense_client`, `adsense_slot`);
   senza, l'annuncio è interno.
 
-## Produzione (da fare)
+## Produzione
 
-Requisiti già decisi, dettagli nel piano MVP ("Produzione e banche dati"):
-WAF su CloudFront (`web_acl_arn` del modulo `web`, ACL creata in `us-east-1`),
-test di carico a 1.000 utenti in parallelo, dati personali solo in Cognito con
-pagina privacy da accettare, banche dati ufficiali su S3 per i piani Medium e
-Pro. Per prod si crea `infra/terraform/environments/prod` sullo stesso modello di
-dev.
+`infra/terraform/environments/prod` è la copia di dev con le differenze della produzione
+(elencate in testa al suo `main.tf`): dominio radice `imieiconcorsi.it`, WAF
+(`modules/waf`: regole gestite AWS Common, Known bad inputs, IP reputation e un limite di
+2.000 richieste ogni 5 minuti per IP; spegnibile con `waf_attivo = false`), `protezione = true`
+su tabelle DynamoDB, user pool Cognito e bucket (un `destroy` si ferma), login senza
+localhost, email senza prefisso "[dev]", Stripe live. Stato in `prod/terraform.tfstate` nello
+stesso bucket. Comandi: [COMANDI-RAPIDI.md → Produzione](COMANDI-RAPIDI.md#10-produzione).
+
+Restano da fare prima del lancio: accesso di produzione di SES, test di carico a 1.000
+utenti in parallelo, dati del titolare nelle pagine legali (`packages/web/src/lib/legale.ts`)
+rivisti da un legale. L'API Gateway risponde anche al suo indirizzo diretto, senza passare
+dal WAF: per chiuderlo serve un'intestazione segreta aggiunta da CloudFront e controllata
+dalle Lambda (non ancora fatto).
 
 ## Smontare
 

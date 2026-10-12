@@ -1,3 +1,4 @@
+import { esitoAcquisto } from "@imieiconcorsi/core/acquisti";
 import { PERIODI, periodo as durata, PREZZI_DI_PROVA, type Periodo, type PianoId } from "@imieiconcorsi/core/domain";
 import { prezzoScontato } from "@imieiconcorsi/core/sconti";
 import { Check, Crown, Sparkles, Tag, X } from "lucide-react";
@@ -10,6 +11,7 @@ import { data as dataLunga, euro } from "../../lib/format";
 
 // Piani (/app/piani): Free, Medium e Pro con prezzi per 30/90/365 giorni, codice sconto,
 // consenso alla rinuncia al recesso e acquisto (Stripe Checkout, o cambio immediato in "mock").
+// Con un piano attivo i giorni comprati si aggiungono (core/acquisti.ts): ogni scheda lo spiega.
 
 /** Pagina /app/piani (l'admin ha già tutto e torna al pannello). */
 export function Piani() {
@@ -50,7 +52,7 @@ function SceltaPiano() {
     setInCorso(piano);
     setEsito(undefined);
     try {
-      const res = await api<{ pagamento?: string }>("/me/abbonamento", {
+      const res = await api<{ pagamento?: string; scadenza?: string }>("/me/abbonamento", {
         method: "POST",
         body: {
           piano,
@@ -70,7 +72,11 @@ function SceltaPiano() {
       // Il piano è un gruppo Cognito: serve un token nuovo perché l'app lo veda.
       await ricarica({ rinnovaToken: true });
       await reload();
-      setEsito({ tone: "success", testo: `Fatto! Ora hai il piano ${data?.piani.find((p) => p.id === piano)?.nome}.` });
+      const nome = data?.piani.find((p) => p.id === piano)?.nome;
+      setEsito({
+        tone: "success",
+        testo: res.scadenza ? `Fatto! Il tuo piano ${nome} vale fino al ${dataLunga(res.scadenza)}.` : `Fatto! Ora hai il piano ${nome}.`,
+      });
     } catch (err) {
       setEsito({ tone: "error", testo: messaggioErrore(err) });
     } finally {
@@ -105,6 +111,12 @@ function SceltaPiano() {
         {data.modalita === "mock" && (
           <Alert tone="info">
             <strong>Beta:</strong> i pagamenti non sono ancora attivi. Il cambio di piano è immediato e gratuito, così puoi provare tutto.
+          </Alert>
+        )}
+        {data.modalita === "chiuso" && (
+          <Alert tone="info">
+            <strong>Acquisti in arrivo:</strong> i piani a pagamento non si possono ancora comprare. Intanto usa pure il Free; se
+            hai un codice sconto che copre tutto il prezzo, puoi già usarlo.
           </Alert>
         )}
         {data.modalita === "stripe" && PREZZI_DI_PROVA && (
@@ -209,6 +221,9 @@ function SceltaPiano() {
           const pieno = p.prezzo[periodo];
           const scontoPiano = scontoSu(p.id);
           const prezzo = scontoPiano ? prezzoScontato(pieno, scontoPiano.percentuale) : pieno;
+          // Cosa succede al piano che c'è già: tempo aggiunto, giorni Medium convertiti in Pro, o no.
+          const esitoPiano =
+            p.id === "free" ? undefined : esitoAcquisto({ piano: utente.piano, scadenza: utente.scadenzaPiano, periodo: utente.periodo }, { piano: p.id, periodo });
           return (
             <div
               key={p.id}
@@ -252,25 +267,43 @@ function SceltaPiano() {
               </ul>
 
               {p.id === "free" && utente.piano !== "free" && (
-                <p className="mt-6 text-xs text-slate-500">
-                  Tornando a Free resta seguito solo l'ultimo concorso che hai seguito: gli altri li ritrovi nello storico del profilo.
+                <p className="mt-6 rounded-xl bg-slate-50 p-3 text-xs text-slate-600">
+                  {utente.scadenzaPiano
+                    ? `Torni al Free in automatico alla scadenza del tuo piano, il ${dataLunga(utente.scadenzaPiano)}.`
+                    : "Il tuo piano non ha scadenza."}{" "}
+                  Al Free resta seguito solo l'ultimo concorso che hai seguito: gli altri li ritrovi nello storico del profilo.
+                </p>
+              )}
+              {esitoPiano && (!esitoPiano.consentito || esitoPiano.tipo !== "nuovo") && (
+                <p className={cx("mt-6 rounded-xl p-3 text-xs", evidenziato ? "bg-white/10 text-brand-100" : "bg-slate-50 text-slate-600")}>
+                  {!esitoPiano.consentito
+                    ? esitoPiano.motivo
+                    : esitoPiano.tipo === "aggiunta"
+                      ? `I ${durata(periodo).giorni} giorni si aggiungono al tuo ${p.nome}: valido fino al ${dataLunga(esitoPiano.scadenza)}.`
+                      : `I ${esitoPiano.giorniRimasti} giorni Medium che ti restano diventano ${esitoPiano.giorniConvertiti} giorni ${p.nome}, più i ${durata(periodo).giorni} che acquisti: valido fino al ${dataLunga(esitoPiano.scadenza)}.`}
                 </p>
               )}
               <Button
                 className="mt-8 w-full"
                 size="lg"
                 variant={evidenziato ? "accent" : attuale ? "secondary" : "primary"}
-                disabled={(attuale && (p.id === "free" || utente.periodo === periodo)) || (p.id !== "free" && !rinunciaRecesso)}
+                // Il Free non si sceglie a mano con un piano a pagamento attivo: ci si torna alla scadenza.
+                // Acquisti chiusi (prod senza Stripe): solo con un codice sconto che copre tutto il prezzo.
+                disabled={p.id === "free" ? true : !esitoPiano?.consentito || !rinunciaRecesso || (data.modalita === "chiuso" && sconto?.percentuale !== 100)}
                 loading={inCorso === p.id}
                 onClick={() => void scegli(p.id)}
               >
-                {attuale && (p.id === "free" || utente.periodo === periodo)
-                  ? "Piano attuale"
-                  : attuale
-                    ? `Passa a ${durata(periodo).nome}`
-                    : p.id === "free"
-                      ? "Torna a Free"
-                      : `Scegli ${p.nome}`}
+                {p.id === "free"
+                  ? attuale
+                    ? "Piano attuale"
+                    : "Alla scadenza"
+                  : !esitoPiano?.consentito
+                    ? "Non disponibile"
+                    : esitoPiano.tipo === "aggiunta"
+                      ? `Aggiungi ${durata(periodo).nome}`
+                      : esitoPiano.tipo === "passaggio"
+                        ? `Passa a ${p.nome}`
+                        : `Scegli ${p.nome}`}
               </Button>
             </div>
           );

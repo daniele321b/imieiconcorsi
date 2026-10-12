@@ -76,17 +76,26 @@ export interface Limiti {
   concorsiSeguiti: number | null;
   simulazioniSettimana: number | null;
   domandePerSessioneStudio: number;
+  /** Massimo di domande in una simulazione; oltre SIMULAZIONE_STANDARD si sceglie a mano (Medium e Pro). */
+  domandePerSimulazione: number;
   /** Banche dati ufficiali senza limiti (Medium e Pro). */
   bancheDati: boolean;
   /** Utilizzi delle banche dati a settimana (sessioni o consultazione); null = illimitati. */
   usiBancheDatiSettimana: number | null;
   /** Tutor e domande generate (solo Pro). */
   ai: boolean;
-  /** Gettoni AI al mese (vedi COSTI_AI); 0 = niente AI. */
+  /** Crediti AI al mese (vedi COSTI_AI); 0 = niente AI. */
   gettoniAi: number;
   /** Un annuncio ogni DOMANDE_TRA_ANNUNCI domande di studio (solo Free). */
   pubblicita: boolean;
 }
+
+/** Domande massime di una simulazione nel Free (le scelte 30, 50, 60). */
+export const SIMULAZIONE_STANDARD = 60;
+/** Medium e Pro scelgono a mano quante domande, fino a questo numero. */
+export const SIMULAZIONE_MAX = 100;
+/** Domande minime di una sessione. */
+export const DOMANDE_MIN = 5;
 
 /** Lunghezze di una sessione di studio tra cui scegliere; il piano ne fissa il massimo. */
 export const DOMANDE_STUDIO = [10, 20, 30] as const;
@@ -97,11 +106,11 @@ export const DOMANDE_TRA_ANNUNCI = 5;
 /**
  * Quanti gettoni costa ogni azione AI. Il costo vero dipende dai token: una risposta del
  * tutor ne usa ~1.500, un allenamento da 5 domande ~5.000 (Claude Haiku 4.5 su Bedrock,
- * ~0,2 e ~1 centesimo). Con GETTONI_AI_PRO al mese un utente Pro costa al massimo ~1-2 €.
+ * ~0,2 e ~1 centesimo). Con GETTONI_AI_PRO al mese un utente Pro costa al massimo ~0,5-1 €.
  */
 export const COSTI_AI = { tutor: 1, allenamento: 3 } as const;
 /** Gettoni AI al mese del piano Pro. */
-export const GETTONI_AI_PRO = 300;
+export const GETTONI_AI_PRO = 150;
 
 /**
  * Prezzi del modello in dollari per milione di token (Claude Haiku 4.5 su Bedrock, profilo EU),
@@ -167,7 +176,7 @@ export const PIANI: Record<PianoId, Piano> = {
       "1 simulazione a settimana",
       "Con pubblicità ogni 5 domande",
     ],
-    limiti: { concorsiSeguiti: 1, simulazioniSettimana: 1, domandePerSessioneStudio: 10, bancheDati: false, usiBancheDatiSettimana: USI_BANCHE_DATI_FREE, ai: false, gettoniAi: 0, pubblicita: true },
+    limiti: { concorsiSeguiti: 1, simulazioniSettimana: 1, domandePerSessioneStudio: 10, domandePerSimulazione: SIMULAZIONE_STANDARD, bancheDati: false, usiBancheDatiSettimana: USI_BANCHE_DATI_FREE, ai: false, gettoniAi: 0, pubblicita: true },
   },
   medium: {
     id: "medium",
@@ -177,12 +186,12 @@ export const PIANI: Record<PianoId, Piano> = {
     funzioni: [
       "Banche dati ufficiali senza limiti, appena escono",
       "Concorsi seguiti illimitati",
-      "Simulazioni illimitate da 50/60 domande",
+      `Simulazioni illimitate, con il numero di domande che vuoi (fino a ${SIMULAZIONE_MAX})`,
       "Sessioni di studio da 10, 20 o 30 domande",
       "Statistiche per materia",
       "Senza pubblicità",
     ],
-    limiti: { concorsiSeguiti: null, simulazioniSettimana: null, domandePerSessioneStudio: 30, bancheDati: true, usiBancheDatiSettimana: null, ai: false, gettoniAi: 0, pubblicita: false },
+    limiti: { concorsiSeguiti: null, simulazioniSettimana: null, domandePerSessioneStudio: 30, domandePerSimulazione: SIMULAZIONE_MAX, bancheDati: true, usiBancheDatiSettimana: null, ai: false, gettoniAi: 0, pubblicita: false },
   },
   pro: {
     id: "pro",
@@ -192,10 +201,10 @@ export const PIANI: Record<PianoId, Piano> = {
     funzioni: [
       "Tutto il piano Medium, banche dati comprese",
       "Tutor AI che spiega argomenti ed errori, domanda per domanda",
-      "Allenamenti AI con domande nuove sui tuoi punti deboli",
-      `${GETTONI_AI_PRO} gettoni AI al mese (1 per risposta del tutor, 3 per allenamento)`,
+      "Allenamenti mirati: domande nuove, scritte dal tutor sugli argomenti in cui sbagli",
+      `${GETTONI_AI_PRO} crediti AI al mese: ${COSTI_AI.tutor} per ogni domanda al tutor, ${COSTI_AI.allenamento} per un allenamento`,
     ],
-    limiti: { concorsiSeguiti: null, simulazioniSettimana: null, domandePerSessioneStudio: 30, bancheDati: true, usiBancheDatiSettimana: null, ai: true, gettoniAi: GETTONI_AI_PRO, pubblicita: false },
+    limiti: { concorsiSeguiti: null, simulazioniSettimana: null, domandePerSessioneStudio: 30, domandePerSimulazione: SIMULAZIONE_MAX, bancheDati: true, usiBancheDatiSettimana: null, ai: true, gettoniAi: GETTONI_AI_PRO, pubblicita: false },
   },
 };
 
@@ -289,7 +298,7 @@ export interface Richiesta {
 // ── Documenti legali ─────────────────────────────────────────────────────────
 
 /** Versione di Termini e Informativa: cambia quando cambiano i testi (pagine /termini, /privacy). */
-export const VERSIONE_TERMINI = "2026-10-09";
+export const VERSIONE_TERMINI = "2026-10-10";
 
 // ── Gruppi Cognito: piano e ruolo stanno qui, non nel database ──────────────
 
@@ -365,6 +374,9 @@ export interface Profilo {
   /** Minuto (YYYY-MM-DDTHH:MM) e richieste AI fatte in quel minuto: massimo AI_AL_MINUTO. */
   aiMinuto?: string;
   aiNelMinuto?: number;
+  /** Ultimo login (trigger Cognito, functions/src/auth/accesso.ts) e quanti in tutto */
+  ultimoAccessoIl?: string;
+  accessi?: number;
   createdAt: string;
   updatedAt: string;
 }
@@ -400,17 +412,33 @@ export interface Concorso {
   materie: MateriaId[];
   /** true finché le materie sono dedotte in automatico e non lette dal bando */
   materieStimate: boolean;
-  /** Il testo del bando cita una banca dati: quando esce va scaricata (avviso all'admin). */
+  /** Il testo del bando prevede una banca dati di domande: quando esce va scaricata (avviso all'admin). */
   bancaDatiPrevista: boolean;
+  /** La frase del bando da cui lo si capisce, mostrata nella pagina del bando */
+  bancaDatiFrase?: string;
   /** La banca dati ufficiale è stata pubblicata e importata. */
   bancaDati: boolean;
   /** Banca dati pubblicata per questo concorso (tabella banche-dati) */
   bancaDatiId?: string;
   /** Segnato dall'admin: il concorso è finito e sparisce anche dai bandi scaduti */
   conclusoIl?: string;
+  /**
+   * Campi corretti dall'admin (nome, ente, scadenza…): sono già applicati al bando e l'import
+   * del mattino li riapplica sopra i dati di inPA (core/concorsi.ts, conModificheAdmin).
+   */
+  modificheAdmin?: ModificheConcorso;
+  /** Valori di inPA dei campi corretti (null = su inPA il campo manca): per annullare le modifiche */
+  originaliInpa?: Partial<Record<CampoModificabile, unknown>>;
+  modificatoIl?: string;
   fonte: "inpa";
   aggiornatoIl: string;
 }
+
+/** Campi di un bando che l'admin può correggere. "figura" è il nome che si vede (l'anno si aggiunge da solo). */
+export const CAMPI_MODIFICABILI = ["figura", "titolo", "ente", "scadenza", "posti", "sedi", "comparto", "materie", "descrizione", "bancaDatiPrevista"] as const;
+export type CampoModificabile = (typeof CAMPI_MODIFICABILI)[number] | "materieStimate";
+/** Le correzioni dell'admin a un bando. */
+export type ModificheConcorso = Partial<Pick<Concorso, CampoModificabile>>;
 
 /**
  * Banca dati ufficiale di un concorso, caricata dall'admin come PDF (tabella banche-dati).
@@ -430,12 +458,15 @@ export interface BancaDati {
    * da pubblicata, ognuno ha bancaDatiId = questa banca, il link alla consultazione e le
    * simulazioni con le domande ufficiali. Si legge con concorsiDellaBanca().
    */
-  concorsi?: { id: string; titolo: string }[];
+  concorsi?: { id: string; titolo: string; ente?: string }[];
   titolo: string;
   /** Materia di tutte le domande, se la banca dati è di una sola materia */
   materia?: MateriaId;
-  /** Come è indicata la risposta giusta nel PDF (auto = prova tutti i modi) */
-  formato: "auto" | "indicata" | "segnata" | "chiave" | "prima";
+  /**
+   * Come è indicata la risposta giusta nel PDF (auto = prova tutti i modi). "risposta" = tabella
+   * con la sola risposta esatta: le alternative si ricavano (functions/src/banche-dati/tabella.ts).
+   */
+  formato: "auto" | "indicata" | "segnata" | "chiave" | "prima" | "risposta";
   /**
    * Ordine delle risposte agli utenti. Assente o "mescolate": ordine casuale fisso per domanda,
    * così non si impara la lettera (in molti PDF la giusta è sempre la A). "pdf": come nel file.
@@ -452,7 +483,9 @@ export interface BancaDati {
   /** Quante domande per modo di trovare la giusta, es. { chiave: 980 } */
   formati?: Record<string, number>;
   /** Domande estratte da controllare prima di pubblicare, nell'ordine del PDF (le prime di ogni sezione) */
-  esempi?: { numero: number; testo: string; opzioni: string[]; corretta: number; sezione?: string }[];
+  esempi?: { numero: number; testo: string; opzioni: string[]; corretta: number; sezione?: string; alternativeRicavate?: boolean }[];
+  /** Domande con le alternative ricavate da domande simili (il PDF dava solo la risposta esatta) */
+  alternativeRicavate?: number;
   /** Sezioni del PDF (es. "Matematica"): diventano l'argomento delle domande */
   sezioni?: string[];
   /** Dove inizia ogni sezione (numero della prima domanda) e quante domande ha: per saltarci consultando */
@@ -465,13 +498,13 @@ export interface BancaDati {
 }
 
 /** Concorsi collegati a una banca dati (anche quelle salvate prima della lista `concorsi`). */
-export function concorsiDellaBanca(b: Pick<BancaDati, "concorsi" | "concorsoId" | "concorsoTitolo">): { id: string; titolo: string }[] {
+export function concorsiDellaBanca(b: Pick<BancaDati, "concorsi" | "concorsoId" | "concorsoTitolo">): { id: string; titolo: string; ente?: string }[] {
   if (b.concorsi) return b.concorsi;
   return b.concorsoId ? [{ id: b.concorsoId, titolo: b.concorsoTitolo ?? b.concorsoId }] : [];
 }
 
-/** Nome di un concorso da mostrare accanto alla banca dati: "Ente — figura". */
-export const nomeConcorsoBreve = (c: Pick<Concorso, "ente" | "figura" | "titolo">) => `${c.ente} — ${c.figura ?? c.titolo}`.slice(0, 300);
+/** Nome di un concorso con l'ente, in una riga: "Ente — figura" (es. nelle email all'admin). */
+export const nomeConcorsoBreve = (c: Pick<Concorso, "ente" | "figura" | "titolo">) => `${c.ente} — ${c.figura || c.titolo}`.slice(0, 300);
 
 // ── Progressi nelle banche dati ──────────────────────────────────────────────
 
@@ -489,6 +522,9 @@ export interface ProgressoBanca {
   sbagliate: Uint8Array;
   nFatte: number;
   nSbagliate: number;
+  /** Bit acceso = domanda salvata tra le preferite (stella), per ritrovarla dopo */
+  preferite?: Uint8Array;
+  nPreferite?: number;
   /** Estrazione della banca a cui si riferiscono i numeri: se l'admin la rifà, si riparte da zero */
   estrattaIl?: string;
   /** Sale a ogni scrittura: due consegne insieme non si cancellano a vicenda */
@@ -497,7 +533,7 @@ export interface ProgressoBanca {
 }
 
 /** Quali domande di una banca dati proporre in una sessione. */
-export const SELEZIONI_BANCA = ["nuove", "sbagliate", "tutte"] as const;
+export const SELEZIONI_BANCA = ["nuove", "sbagliate", "preferite", "tutte"] as const;
 export type SelezioneBanca = (typeof SELEZIONI_BANCA)[number];
 
 // ── Invita un amico ──────────────────────────────────────────────────────────

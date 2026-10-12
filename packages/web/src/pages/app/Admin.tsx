@@ -1,12 +1,13 @@
-import { PIANI, type CodiceSconto, type PianoId } from "@imieiconcorsi/core/domain";
-import { Bot, Copy, Crown, Database, LifeBuoy, Receipt, Search, ShieldCheck, Sparkles, Tag, Users } from "lucide-react";
+import { COMPARTO_IDS, PIANI, type CodiceSconto, type PianoId } from "@imieiconcorsi/core/domain";
+import { Bell, Bot, Copy, Crown, Trash2, Database, LifeBuoy, Receipt, Search, ShieldCheck, Sparkles, Tag, Users } from "lucide-react";
 import { type FormEvent, useEffect, useState } from "react";
-import { Navigate } from "react-router";
+import { Link, Navigate } from "react-router";
+import { useBandiDaCaricare } from "../../lib/bandi";
 import { Alert, Badge, Button, ButtonLink, Card, PageHeader, Spinner, cx } from "../../components/ui";
 import { copiaTesto } from "../../lib/appunti";
 import { api, ApiError, useApi, type AdminCodici, type AdminRiepilogo, type AdminUtente, type AdminUtenti } from "../../lib/api";
 import { useUtente } from "../../lib/auth";
-import { dataBreve } from "../../lib/format";
+import { dataBreve, dataOra } from "../../lib/format";
 
 const toDate = (iso?: string) => (iso ? iso.slice(0, 10) : "");
 
@@ -106,6 +107,8 @@ function Pannello() {
         ))}
       </div>
 
+      <BandiDaCaricare />
+
       <CodiciSconto />
 
       <h2 className="pt-2 text-lg font-bold text-slate-900">Utenti</h2>
@@ -123,7 +126,15 @@ function Pannello() {
 
       <div className="space-y-3">
         {utenti.map((u) => (
-          <RigaUtente key={u.username} utente={u} onAggiornato={aggiorna} />
+          <RigaUtente
+            key={u.username}
+            utente={u}
+            onAggiornato={aggiorna}
+            onEliminato={() => {
+              setUtenti((lista) => lista.filter((x) => x.username !== u.username));
+              void riepilogo.reload();
+            }}
+          />
         ))}
         {caricamento ? (
           <Spinner label="Carico gli utenti…" />
@@ -143,7 +154,28 @@ function Pannello() {
 }
 
 /** Un utente nell'elenco: piano, scadenza, accesso, stato; si modifica in linea. */
-function RigaUtente({ utente, onAggiornato }: { utente: AdminUtente; onAggiornato: (u: AdminUtente) => void }) {
+function RigaUtente({
+  utente,
+  onAggiornato,
+  onEliminato,
+}: {
+  utente: AdminUtente;
+  onAggiornato: (u: AdminUtente) => void;
+  onEliminato: () => void;
+}) {
+  // Eliminare è definitivo: serve un secondo clic di conferma.
+  const [confermaElimina, setConfermaElimina] = useState(false);
+  // Storico degli accessi (registrati da Cognito a ogni login), caricato quando lo si apre.
+  const [accessi, setAccessi] = useState<{ il: string; metodo: string }[]>();
+
+  async function apriAccessi() {
+    if (accessi) return setAccessi(undefined);
+    try {
+      setAccessi((await api<{ accessi: { il: string; metodo: string }[] }>(`/admin/utenti/${encodeURIComponent(utente.username)}/accessi`)).accessi);
+    } catch (err) {
+      setEsito({ tone: "error", testo: err instanceof ApiError ? err.message : "Errore di rete" });
+    }
+  }
   const [piano, setPiano] = useState<PianoId>(utente.piano);
   const [scadenza, setScadenza] = useState(toDate(utente.scadenzaPiano));
   const [salvataggio, setSalvataggio] = useState(false);
@@ -184,8 +216,20 @@ function RigaUtente({ utente, onAggiornato }: { utente: AdminUtente; onAggiornat
     }
   }
 
+  async function elimina() {
+    setSalvataggio(true);
+    setEsito(undefined);
+    try {
+      await api(`/admin/utenti/${encodeURIComponent(utente.username)}`, { method: "DELETE" });
+      onEliminato();
+    } catch (err) {
+      setEsito({ tone: "error", testo: err instanceof ApiError ? err.message : "Errore di rete" });
+      setSalvataggio(false);
+    }
+  }
+
   return (
-    <Card className={cx("flex flex-col gap-4 lg:flex-row lg:items-center", !utente.abilitato && "opacity-60")}>
+    <Card className={cx("flex flex-col gap-4 lg:flex-row lg:flex-wrap lg:items-center", !utente.abilitato && "opacity-60")}>
       <div className="min-w-0 flex-1">
         <div className="flex flex-wrap items-center gap-2">
           <p className="truncate font-semibold text-slate-900">{utente.email ?? utente.username}</p>
@@ -197,6 +241,30 @@ function RigaUtente({ utente, onAggiornato }: { utente: AdminUtente; onAggiornat
           {utente.nome ? `${utente.nome} · ` : ""}accesso con {utente.accesso} · iscritto il {dataBreve(utente.creatoIl)}
           {!utente.onboarded && " · onboarding da fare"}
         </p>
+        <p className="mt-0.5 text-sm text-slate-500">
+          {utente.ultimoAccessoIl ? `Ultimo accesso: ${dataOra(utente.ultimoAccessoIl)}` : "Nessun accesso registrato"}
+          {!!utente.accessi && (
+            <>
+              {" · "}
+              <button onClick={() => void apriAccessi()} className="font-semibold text-brand-600 hover:text-brand-700">
+                {accessi ? "Nascondi gli accessi" : `Accessi (${utente.accessi})`}
+              </button>
+            </>
+          )}
+        </p>
+        {accessi && (
+          <ul className="mt-2 max-h-48 space-y-0.5 overflow-y-auto rounded-xl bg-slate-50 p-3 text-xs text-slate-600">
+            {accessi.length ? (
+              accessi.map((a, i) => (
+                <li key={i}>
+                  {dataOra(a.il)} · {a.metodo}
+                </li>
+              ))
+            ) : (
+              <li>Nessun accesso negli ultimi 12 mesi.</li>
+            )}
+          </ul>
+        )}
         {utente.feedback && (
           <p className="mt-1 text-sm text-slate-600">
             <span className="text-accent-500">{"★".repeat(utente.feedback.voto)}</span>
@@ -244,12 +312,65 @@ function RigaUtente({ utente, onAggiornato }: { utente: AdminUtente; onAggiornat
         <Button variant={utente.abilitato ? "ghost" : "secondary"} disabled={salvataggio} onClick={() => void cambiaStato()}>
           {utente.abilitato ? "Disattiva" : "Riattiva"}
         </Button>
+        {/* Gli admin non si eliminano da qui (prima si toglie il ruolo). */}
+        {!utente.admin && !confermaElimina && (
+          <Button variant="ghost" disabled={salvataggio} onClick={() => setConfermaElimina(true)} className="text-rose-600 hover:bg-rose-50">
+            <Trash2 className="size-4" /> Elimina
+          </Button>
+        )}
       </div>
+
+      {confermaElimina && (
+        <div className="flex w-full flex-wrap items-center gap-3 rounded-xl bg-rose-50 p-3 text-sm text-rose-900 ring-1 ring-rose-200">
+          <p className="min-w-0 flex-1">
+            Elimino per sempre <strong>{utente.email ?? utente.username}</strong>: profilo, sessioni, progressi, concorsi seguiti,
+            richieste e login. Non si può annullare. Gli ordini restano (obbligo contabile), senza dati personali.
+          </p>
+          <Button variant="ghost" size="sm" disabled={salvataggio} onClick={() => setConfermaElimina(false)}>
+            Annulla
+          </Button>
+          <Button variant="danger" size="sm" loading={salvataggio} onClick={() => void elimina()}>
+            Elimina definitivamente
+          </Button>
+        </div>
+      )}
 
       {esito && (
         <p className={cx("text-sm font-medium lg:w-20", esito.tone === "success" ? "text-emerald-600" : "text-rose-600")}>{esito.testo}</p>
       )}
     </Card>
+  );
+}
+
+// ── Bandi da caricare ────────────────────────────────────────────────────────
+
+/**
+ * Promemoria nel cruscotto: bandi aperti che citano una banca dati non ancora caricata (dalla
+ * lista in cache), con quanti sono usciti nell'ultima settimana. Il dettaglio è in Banche dati.
+ */
+function BandiDaCaricare() {
+  const conteggio = useBandiDaCaricare(true);
+  if (!conteggio?.tutti) return null;
+  return (
+    <Link
+      to="/admin/banche-dati#da-caricare"
+      className={cx(
+        "flex flex-wrap items-center gap-3 rounded-2xl p-4 ring-1 transition hover:shadow-sm",
+        conteggio.nuovi ? "bg-amber-50 ring-amber-200" : "bg-white ring-slate-200",
+      )}
+    >
+      <Bell className={cx("size-5", conteggio.nuovi ? "text-amber-500" : "text-slate-400")} />
+      <p className="min-w-0 flex-1 text-sm text-slate-700">
+        <strong>{conteggio.tutti === 1 ? "1 bando aperto cita" : `${conteggio.tutti} bandi aperti citano`}</strong> una banca dati ancora da caricare
+        {conteggio.nuovi > 0 && (
+          <>
+            , di cui <strong>{conteggio.nuovi === 1 ? "1 nuovo" : `${conteggio.nuovi} nuovi`}</strong> questa settimana
+          </>
+        )}
+        .
+      </p>
+      <span className="text-sm font-semibold text-brand-700">Vedi e carica →</span>
+    </Link>
   );
 }
 

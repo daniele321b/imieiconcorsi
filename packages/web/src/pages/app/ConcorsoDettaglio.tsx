@@ -1,10 +1,13 @@
+import { conMaiuscola, nomeConcorso } from "@imieiconcorsi/core/concorsi";
 import { MATERIE, nomeComparto } from "@imieiconcorsi/core/domain";
-import { ArrowLeft, Bookmark, BookmarkCheck, CalendarClock, Database, ExternalLink, Info, MapPin, Timer, Users } from "lucide-react";
+import { ArrowLeft, Bookmark, BookmarkCheck, BookOpenCheck, CalendarClock, Database, ExternalLink, Eye, Info, MapPin, ShieldCheck, Timer, Users } from "lucide-react";
 import { useState } from "react";
+import { ModificaBando } from "../../components/ModificaBando";
+import { NumeroAMano } from "../../components/NumeroDomande";
 import { Link, useParams } from "react-router";
 import { IconaMateria } from "../../components/brand";
 import { OrdineRisposte } from "../../components/OrdineRisposte";
-import { Alert, Badge, Button, Card, Spinner, UpgradeBanner, cx } from "../../components/ui";
+import { Alert, Badge, Button, ButtonLink, Card, Spinner, UpgradeBanner, cx } from "../../components/ui";
 import { api, ApiError, useApi, type ConcorsoApi } from "../../lib/api";
 import { useUtente } from "../../lib/auth";
 import { data, giorniA, scadenzaTesto, tipoProcedura } from "../../lib/format";
@@ -32,7 +35,8 @@ export function ConcorsoDettaglio() {
     setData((c) => c && { ...c, seguito }),
   );
   const { avvia, inCorso, errore, chiudiErrore } = useAvviaSessione();
-  const [lunghezza, setLunghezza] = useState(60);
+  // undefined: numero scritto a mano non (ancora) valido.
+  const [lunghezza, setLunghezza] = useState<number | undefined>(60);
   // Con la banca dati ufficiale i piani a pagamento scelgono da dove pescare le domande.
   const [fonte, setFonte] = useState<Fonte>("banca");
   const [studioBanca, setStudioBanca] = useState(STUDIO_BANCA[0]);
@@ -55,9 +59,13 @@ export function ConcorsoDettaglio() {
       </Link>
 
       <header className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-200/70 sm:p-8">
-        <p className="text-sm font-semibold tracking-wide text-brand-600 uppercase">{concorso.ente}</p>
-        <h1 className="mt-2 text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl">{concorso.figura ?? concorso.titolo}</h1>
-        {concorso.figura && <p className="mt-2 text-slate-500">{concorso.titolo}</p>}
+        <p className="text-sm font-semibold tracking-wide break-words text-brand-600 uppercase">{conMaiuscola(concorso.ente)}</p>
+        <h1 className="mt-2 text-2xl font-extrabold tracking-tight break-words text-slate-900 sm:text-3xl">{nomeConcorso(concorso)}</h1>
+        {concorso.figura && <p className="mt-2 break-words text-slate-500">{conMaiuscola(concorso.titolo)}</p>}
+        <p className="mt-1 text-xs text-slate-400">
+          Codice inPA <span className="font-mono">{concorso.id}</span>
+          {concorso.pubblicatoIl && ` · pubblicato il ${data(concorso.pubblicatoIl)}`}
+        </p>
         {giorni !== undefined && giorni < 0 && (
           <p className="mt-3 rounded-xl bg-amber-50 px-3 py-2 text-sm text-amber-900 ring-1 ring-amber-200">
             {concorso.conclusoIl
@@ -97,14 +105,20 @@ export function ConcorsoDettaglio() {
           >
             Bando su inPA <ExternalLink className="size-4" />
           </a>
-          {utente.admin && giorni !== undefined && giorni < 0 && (
-            <SegnaConcluso
-              id={concorso.id}
-              concluso={!!concorso.conclusoIl}
-              onCambio={(conclusoIl) => setData((c) => c && { ...c, conclusoIl })}
-            />
-          )}
         </div>
+
+        {/* Solo admin: correzione di nome e dati del bando (restano anche dopo l'import da inPA). */}
+        {utente.admin && <ModificaBando concorso={concorso} onSalvato={(c) => setData((x) => x && { ...c, seguito: x.seguito, bancaDatiTitolo: x.bancaDatiTitolo, bancaDatiDomande: x.bancaDatiDomande })} />}
+
+        {/* Solo admin, solo bandi con le domande chiuse: quando il concorso è davvero finito
+            (graduatoria uscita) lo si toglie anche dalla ricerca dei bandi chiusi. */}
+        {utente.admin && giorni !== undefined && giorni < 0 && (
+          <SegnaConcluso
+            id={concorso.id}
+            concluso={!!concorso.conclusoIl}
+            onCambio={(conclusoIl) => setData((c) => c && { ...c, conclusoIl })}
+          />
+        )}
       </header>
 
       {erroreMostrato &&
@@ -132,49 +146,65 @@ export function ConcorsoDettaglio() {
       <div className="grid gap-6 lg:grid-cols-[1.4fr_1fr]">
         <section className="space-y-4">
           {conBanca && (
-            <Card className="flex flex-wrap items-center gap-4 p-4 ring-brand-200">
-              <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-brand-50 text-brand-600">
-                <Database className="size-5" />
-              </span>
-              <div className="min-w-0 flex-1">
-                <p className="font-semibold">Banca dati ufficiale</p>
-                {concorso.bancaDatiTitolo && (
-                  <p className="text-sm text-slate-700">
-                    {concorso.bancaDatiTitolo}
-                    {!!concorso.bancaDatiDomande && <span className="text-slate-500"> · {concorso.bancaDatiDomande.toLocaleString("it-IT")} domande</span>}
+            // Su telefono tutto in colonna: titolo e testo a tutta larghezza, poi i comandi.
+            <Card className="space-y-4 p-4 ring-brand-200 sm:p-5">
+              <div className="flex items-start gap-3">
+                <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-brand-50 text-brand-600">
+                  <Database className="size-5" />
+                </span>
+                <div className="min-w-0 flex-1">
+                  <p className="font-semibold">Banca dati ufficiale</p>
+                  {concorso.bancaDatiTitolo && (
+                    <p className="text-sm break-words text-slate-700">
+                      {concorso.bancaDatiTitolo}
+                      {!!concorso.bancaDatiDomande && <span className="text-slate-500"> · {concorso.bancaDatiDomande.toLocaleString("it-IT")} domande</span>}
+                    </p>
+                  )}
+                  <p className="mt-1 text-xs text-slate-500">
+                    Le domande pubblicate dall'ente, con la risposta giusta subito.
+                    {usiLimitati !== null && ` Piano Free: ${usiLimitati} utilizzi a settimana.`}
                   </p>
-                )}
-                <p className="text-xs text-slate-500">
-                  Le domande pubblicate dall'ente, con la risposta giusta subito.{" "}
-                  <Link to={`/app/banche-dati/${concorso.bancaDatiId}`} className="font-semibold text-brand-600 hover:text-brand-700">
-                    Consultala domanda per domanda
-                  </Link>
-                  {usiLimitati !== null && ` · Free: ${usiLimitati} utilizzi a settimana`}
-                </p>
-                <div className="mt-2">
-                  <OrdineRisposte />
                 </div>
               </div>
-              <div className="flex items-center gap-2">
-                <div className="inline-grid grid-cols-3 rounded-lg bg-slate-100 p-0.5 text-xs font-semibold">
-                  {STUDIO_BANCA.map((n) => (
-                    <button
-                      key={n}
-                      onClick={() => setStudioBanca(n)}
-                      className={cx("rounded-md px-2.5 py-1 transition", studioBanca === n ? "bg-white text-brand-700 shadow-sm" : "text-slate-500")}
-                    >
-                      {n}
-                    </button>
-                  ))}
+              <OrdineRisposte />
+              <div className="flex flex-wrap items-center justify-between gap-3">
+                <ButtonLink to={`/app/banche-dati/${concorso.bancaDatiId}`} size="sm" variant="secondary">
+                  <Eye className="size-4" /> Consulta domanda per domanda
+                </ButtonLink>
+                <div className="flex items-center gap-2">
+                  <div className="inline-grid grid-cols-3 rounded-lg bg-slate-100 p-0.5 text-xs font-semibold">
+                    {STUDIO_BANCA.map((n) => (
+                      <button
+                        key={n}
+                        onClick={() => setStudioBanca(n)}
+                        className={cx("rounded-md px-2.5 py-1 transition", studioBanca === n ? "bg-white text-brand-700 shadow-sm" : "text-slate-500")}
+                      >
+                        {n}
+                      </button>
+                    ))}
+                  </div>
+                  <Button
+                    size="sm"
+                    loading={inCorso === "banca-studio"}
+                    onClick={() => void avvia({ tipo: "studio", bancaDatiId: concorso.bancaDatiId, concorsoId: concorso.id, numero: studioBanca }, "banca-studio")}
+                  >
+                    <BookOpenCheck className="size-4" /> Studia
+                  </Button>
                 </div>
-                <Button
-                  size="sm"
-                  loading={inCorso === "banca-studio"}
-                  onClick={() => void avvia({ tipo: "studio", bancaDatiId: concorso.bancaDatiId, concorsoId: concorso.id, numero: studioBanca }, "banca-studio")}
-                >
-                  Studia
-                </Button>
               </div>
+            </Card>
+          )}
+
+          {/* Banca dati prevista dal bando ma non ancora caricata: la frase del bando da cui lo capiamo. */}
+          {!conBanca && concorso.bancaDatiPrevista && (
+            <Card className="space-y-1 p-4 text-sm">
+              <p className="flex items-center gap-2 font-semibold text-slate-900">
+                <Database className="size-4 text-brand-600" /> Il bando prevede una banca dati di domande
+              </p>
+              {concorso.bancaDatiFrase && <p className="break-words text-slate-600 italic">«{concorso.bancaDatiFrase}»</p>}
+              <p className="text-xs text-slate-500">
+                Appena l'ente la pubblica la carichiamo qui. Lo deduciamo dal testo del bando su inPA: in caso di dubbio fa fede il bando.
+              </p>
             </Card>
           )}
 
@@ -188,23 +218,25 @@ export function ConcorsoDettaglio() {
               Le materie sono dedotte dal tipo di ente. Presto le leggeremo direttamente dal bando.
             </p>
           )}
-          <div className="grid gap-3">
+          {/* Un solo riquadro con una riga per materia: da telefono un riquadro per materia occupava troppo. */}
+          <div className="divide-y divide-slate-100 rounded-2xl bg-white shadow-sm ring-1 ring-slate-200/70">
             {materie.map((m) => (
-              <Card key={m.id} className="flex items-center gap-4 p-4">
-                <IconaMateria icona={m.icona} materia={m.id} />
-                <div className="flex-1">
-                  <p className="font-semibold">{m.nome}</p>
+              <div key={m.id} className="flex items-center gap-3 px-4 py-2.5">
+                <IconaMateria icona={m.icona} materia={m.id} piccola />
+                <div className="min-w-0 flex-1">
+                  <p className="text-sm font-semibold break-words text-slate-900">{m.nome}</p>
                   <p className="text-xs text-slate-500">Il tuo livello: {utente.livelli[m.id] ?? "—"}/5</p>
                 </div>
                 <Button
                   size="sm"
-                  variant="secondary"
+                  variant="ghost"
+                  className="shrink-0 text-brand-600"
                   loading={inCorso === m.id}
                   onClick={() => void avvia({ tipo: "studio", materie: [m.id], concorsoId: concorso.id }, m.id)}
                 >
                   Studia
                 </Button>
-              </Card>
+              </div>
             ))}
           </div>
 
@@ -278,10 +310,17 @@ export function ConcorsoDettaglio() {
                 </button>
               ))}
             </div>
+            {/* Pro: quante domande vuole, fino a 100 (es. la prova vera ne ha 80). */}
+            {utente.limiti.domandePerSimulazione > Math.max(...LUNGHEZZE) && (
+              <div className="mt-3">
+                <NumeroAMano valore={lunghezza} onChange={setLunghezza} max={utente.limiti.domandePerSimulazione} fissi={LUNGHEZZE} scuro />
+              </div>
+            )}
             <Button
               variant="accent"
               size="lg"
               className="mt-4 w-full"
+              disabled={!lunghezza}
               loading={inCorso === "simulazione"}
               onClick={() =>
                 void avvia({
@@ -324,11 +363,21 @@ function SegnaConcluso({ id, concluso, onCambio }: { id: string; concluso: boole
     }
   }
   return (
-    <span className="inline-flex items-center gap-2">
-      <Button variant="ghost" loading={inCorso} onClick={() => void cambia()}>
-        {concluso ? "Admin: riapri il concorso" : "Admin: segna come concluso"}
-      </Button>
-      {errore && <span className="text-sm text-rose-600">{errore}</span>}
-    </span>
+    <div className="mt-6 space-y-2 rounded-2xl bg-amber-50/60 p-4 text-sm ring-1 ring-amber-200">
+      <p className="flex items-center gap-2 font-semibold text-amber-900">
+        <ShieldCheck className="size-4" /> Solo per te (admin)
+      </p>
+      <p className="text-amber-900/80">
+        {concluso
+          ? "Questo concorso è segnato come concluso: non compare più tra i bandi chiusi della ricerca. Riaprilo se è stato un errore."
+          : "Le domande sono chiuse ma il bando resta nella ricerca, perché chi l'ha fatta continua a prepararsi. Quando il concorso è davvero finito (graduatoria pubblicata), segnalo come concluso: sparisce dalla ricerca per tutti."}
+      </p>
+      <div className="flex flex-wrap items-center gap-2">
+        <Button variant="secondary" size="sm" loading={inCorso} onClick={() => void cambia()}>
+          {concluso ? "Riapri il concorso" : "Segna come concluso"}
+        </Button>
+        {errore && <span className="text-rose-600">{errore}</span>}
+      </div>
+    </div>
   );
 }

@@ -1,5 +1,5 @@
 import { BellRing, CheckCircle2, Target, Timer, TrendingUp } from "lucide-react";
-import { Navigate } from "react-router";
+import { Link, Navigate } from "react-router";
 import { AuthCard } from "../components/AuthCard";
 import { PiePagina } from "./legale/LegalePagina";
 import { Logo } from "../components/brand";
@@ -43,8 +43,19 @@ export function Landing() {
       <div className="relative mx-auto grid min-h-screen max-w-7xl content-center items-center gap-10 px-4 py-8 sm:px-6 lg:grid-cols-[1.15fr_1fr] lg:gap-16 lg:px-8">
         {/* Racconto */}
         <section className="animate-fade-up text-white">
-          <div>
+          <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-3">
             <Logo light className="text-xl" />
+            <nav className="flex flex-wrap gap-x-5 gap-y-1 text-sm font-semibold text-brand-100/80">
+              <Link to="/prezzi" className="hover:text-white">
+                Prezzi
+              </Link>
+              <Link to="/domande-frequenti" className="hover:text-white">
+                Domande frequenti
+              </Link>
+              <Link to="/chi-siamo" className="hover:text-white">
+                Chi siamo
+              </Link>
+            </nav>
           </div>
 
           <div className="mt-10 inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold text-brand-100 ring-1 ring-white/15 backdrop-blur">

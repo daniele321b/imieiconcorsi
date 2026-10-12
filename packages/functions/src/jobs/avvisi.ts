@@ -1,6 +1,7 @@
 import { AdminGetUserCommand } from "@aws-sdk/client-cognito-identity-provider";
 import { QueryCommand, ScanCommand, UpdateCommand } from "@aws-sdk/lib-dynamodb";
 import { cognito, userPoolId } from "@imieiconcorsi/core/cognito";
+import { nomeConcorso } from "@imieiconcorsi/core/concorsi";
 import { db, tables } from "@imieiconcorsi/core/db";
 import { linkDisiscrizione, linkLettura } from "@imieiconcorsi/core/disiscrizione";
 import { COMPARTO_IDS, type CompartoId, type Concorso, type Profilo } from "@imieiconcorsi/core/domain";
@@ -79,7 +80,7 @@ function intro(bandi: Concorso[], settimanale: boolean) {
 /** Versione solo testo dell'email (per i programmi di posta che non mostrano l'HTML). */
 function testoEmail(nome: string | undefined, bandi: Concorso[], settimanale: boolean, disiscrizione: string) {
   const sito = env("SITE_URL");
-  const righe = bandi.slice(0, MAX_NELL_EMAIL).map((c) => `- ${c.figura ?? c.titolo}\n  ${righeBando(c)}\n  ${sito}/app/concorsi/${c.id}`);
+  const righe = bandi.slice(0, MAX_NELL_EMAIL).map((c) => `- ${nomeConcorso(c)}\n  ${righeBando(c)}\n  ${sito}/app/concorsi/${c.id}`);
   if (bandi.length > MAX_NELL_EMAIL) righe.push(`… e altri ${bandi.length - MAX_NELL_EMAIL}: ${sito}/app/concorsi`);
   return [
     `Ciao${nome ? ` ${nome}` : ""},`,
@@ -103,7 +104,7 @@ function htmlEmail(nome: string | undefined, bandi: Concorso[], settimanale: boo
     .slice(0, MAX_NELL_EMAIL)
     .map(
       (c) =>
-        `<li style="margin:0 0 12px"><a href="${escape(lettura.clic(`/app/concorsi/${c.id}`))}" style="color:#4338ca;font-weight:600">${escape(c.figura ?? c.titolo)}</a><br><span style="color:#64748b">${escape(righeBando(c))}</span></li>`,
+        `<li style="margin:0 0 12px"><a href="${escape(lettura.clic(`/app/concorsi/${c.id}`))}" style="color:#4338ca;font-weight:600">${escape(nomeConcorso(c))}</a><br><span style="color:#64748b">${escape(righeBando(c))}</span></li>`,
     )
     .join("");
   const altri = bandi.length > MAX_NELL_EMAIL ? p(`<a href="${escape(lettura.clic("/app/concorsi"))}">… e altri ${bandi.length - MAX_NELL_EMAIL}</a>`) : "";

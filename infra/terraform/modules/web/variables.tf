@@ -35,3 +35,9 @@ variable "zone_id" {
   type        = string
   default     = null
 }
+
+variable "protezione" {
+  description = "Prod: il bucket del sito non si svuota da solo con terraform destroy"
+  type        = bool
+  default     = false
+}

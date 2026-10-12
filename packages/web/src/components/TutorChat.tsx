@@ -116,7 +116,7 @@ export function TutorChat({
         <Sparkles className="size-4 text-accent-300" />
         <p className="text-sm font-bold">Tutor AI</p>
         <p className="ml-auto text-xs text-brand-100">
-          {gettoni ? `${gettoni.restanti} gettoni rimasti` : "1 gettone a risposta"}
+          {gettoni ? `ancora ${gettoni.restanti} crediti AI questo mese` : ""}
         </p>
       </div>
 

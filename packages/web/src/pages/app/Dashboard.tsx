@@ -1,5 +1,6 @@
+import { nomeConcorso } from "@imieiconcorsi/core/concorsi";
 import { MATERIE, nomeMateria, PIANI } from "@imieiconcorsi/core/domain";
-import { ArrowRight, BookOpenCheck, Clock, Search, Sparkles, Timer, Trophy } from "lucide-react";
+import { ArrowRight, BookOpenCheck, Clock, Database, Search, Sparkles, Timer, Trophy } from "lucide-react";
 import { Link } from "react-router";
 import { IconaMateria } from "../../components/brand";
 import { ConcorsoCard } from "../../components/ConcorsoCard";
@@ -23,8 +24,11 @@ export function Dashboard() {
   const giorni = giorniA(prossimo?.scadenza);
 
   // La materia su cui l'utente va peggio (o si sente più debole) è quella da allenare oggi.
+  // Solo le materie della banca statica (le banche dati hanno righe a parte).
+  const perMateria = (stats.data?.perMateria ?? []).filter((m) => MATERIE.some((x) => x.id === m.materia));
+  const perBancaDati = stats.data?.perBancaDati ?? [];
   const materiaDebole =
-    stats.data?.perMateria.slice().sort((a, b) => a.percentuale - b.percentuale)[0]?.materia ??
+    perMateria.slice().sort((a, b) => a.percentuale - b.percentuale)[0]?.materia ??
     MATERIE.slice().sort((a, b) => (utente.livelli[a.id] ?? 3) - (utente.livelli[b.id] ?? 3))[0].id;
 
   return (
@@ -42,7 +46,7 @@ export function Dashboard() {
                   : "Continua a prepararti"
                 : "Scegli il concorso da preparare"}
             </h1>
-            {prossimo && <p className="mt-1 line-clamp-1 max-w-xl text-brand-100">{prossimo.figura ?? prossimo.titolo}</p>}
+            {prossimo && <p className="mt-1 line-clamp-1 max-w-xl text-brand-100">{nomeConcorso(prossimo)}</p>}
           </div>
           <div className="flex flex-wrap gap-2">
             <Button
@@ -124,9 +128,9 @@ export function Dashboard() {
 
               <Card>
                 <p className="mb-4 font-semibold text-slate-900">Risposte giuste per materia</p>
-                {stats.data?.perMateria.length ? (
+                {perMateria.length || perBancaDati.length ? (
                   <ul className="space-y-3">
-                    {stats.data.perMateria.map((m) => {
+                    {perMateria.map((m) => {
                       const info = MATERIE.find((x) => x.id === m.materia)!;
                       return (
                         <li key={m.materia} className="flex items-center gap-3">
@@ -141,6 +145,22 @@ export function Dashboard() {
                         </li>
                       );
                     })}
+                    {perBancaDati.map((b) => (
+                      <li key={b.bancaId} className="flex items-center gap-3">
+                        <span className="grid size-8 shrink-0 place-items-center rounded-lg bg-brand-50 text-brand-600">
+                          <Database className="size-4" />
+                        </span>
+                        <div className="min-w-0 flex-1">
+                          <div className="flex justify-between gap-2 text-sm">
+                            <Link to={`/app/banche-dati/${b.bancaId}`} className="truncate font-medium hover:text-brand-700">
+                              {b.titolo}
+                            </Link>
+                            <span className="font-semibold text-slate-600">{b.percentuale}%</span>
+                          </div>
+                          <ProgressBar value={b.percentuale} tone={b.percentuale >= 70 ? "green" : b.percentuale >= 50 ? "amber" : "red"} className="mt-1" />
+                        </div>
+                      </li>
+                    ))}
                   </ul>
                 ) : (
                   <p className="text-sm text-slate-500">Completa una sessione di studio per vedere i tuoi punti forti e deboli.</p>

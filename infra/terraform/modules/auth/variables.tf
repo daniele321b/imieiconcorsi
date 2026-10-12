@@ -52,3 +52,21 @@ variable "facebook_app_secret" {
   default     = ""
   sensitive   = true
 }
+
+variable "protezione" {
+  description = "Prod: il pool degli utenti non si può cancellare finché non la si spegne"
+  type        = bool
+  default     = false
+}
+
+variable "accessi_enabled" {
+  description = "Registra ogni accesso con il trigger pre token generation (serve accessi_lambda_arn)"
+  type        = bool
+  default     = false
+}
+
+variable "accessi_lambda_arn" {
+  description = "Lambda che registra ogni accesso (obbligatoria con accessi_enabled)"
+  type        = string
+  default     = null
+}

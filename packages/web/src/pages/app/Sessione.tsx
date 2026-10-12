@@ -1,10 +1,12 @@
-import { DOMANDE_TRA_ANNUNCI, nomeMateria } from "@imieiconcorsi/core/domain";
-import { ArrowRight, CheckCircle2, ChevronDown, Flag, RotateCcw, Timer, Trophy, XCircle } from "lucide-react";
+import { DOMANDE_TRA_ANNUNCI, nomeMateria, PREFISSO_BANCA_DATI } from "@imieiconcorsi/core/domain";
+import { numeroDomanda } from "@imieiconcorsi/core/progressi";
+import { ArrowLeft, ArrowRight, CheckCircle2, ChevronDown, Flag, RotateCcw, Timer, Trophy, X, XCircle } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { Link, useLocation, useParams } from "react-router";
+import { Link, useLocation, useNavigate, useParams } from "react-router";
 import { Pubblicita } from "../../components/Pubblicita";
 import { ChiediAlTutor } from "../../components/ChiediAlTutor";
 import { SegnalaErrore } from "../../components/Richieste";
+import { StellaPreferita } from "../../components/StellaPreferita";
 import { Alert, Badge, Button, ButtonLink, Card, ProgressBar, Spinner, cx } from "../../components/ui";
 import { api, ApiError, haSoluzione, useApi, type ContestoRichiesta, type SessioneApi } from "../../lib/api";
 import { useUtente } from "../../lib/auth";
@@ -16,6 +18,12 @@ import { durata } from "../../lib/format";
 
 /** Risposte date, nell'ordine delle domande (null = non risposta). */
 type Risposte = (number | null)[];
+
+/** Stella "preferita" sulle domande delle banche dati ufficiali (le altre non ce l'hanno). */
+function StellaSessione({ sessione, domanda }: { sessione: SessioneApi; domanda: SessioneApi["domande"][number] }) {
+  if (!sessione.bancaDati || domanda.materia !== `${PREFISSO_BANCA_DATI}${sessione.bancaDati.id}`) return null;
+  return <StellaPreferita conTesto bancaId={sessione.bancaDati.id} numero={numeroDomanda(domanda.id)} preferita={!!domanda.preferita} />;
+}
 
 /** Per "Segnala un errore": quale domanda, e di quale banca dati o concorso. */
 function contestoDomanda(sessione: SessioneApi, d: { materia: string; id: string; testo: string }): ContestoRichiesta {
@@ -91,6 +99,64 @@ function useConsegna(sessione: SessioneApi, onConsegnata: (s: SessioneApi) => vo
   return { consegna, inCorso, errore };
 }
 
+// ── Cronometro ───────────────────────────────────────────────────────────────
+
+/** Millisecondi trascorsi da `inizio`, aggiornati ogni secondo. */
+function useTrascorso(inizio: string) {
+  const [ora, setOra] = useState(() => Date.now());
+  useEffect(() => {
+    const t = setInterval(() => setOra(Date.now()), 1000);
+    return () => clearInterval(t);
+  }, []);
+  return Math.max(0, ora - Date.parse(inizio));
+}
+
+/**
+ * Cronometro della prova d'esame: tempo rimasto in grande, tempo trascorso, barra del tempo e
+ * ritmo (risposte date rispetto al tempo passato: con un minuto a domanda si vede subito se si
+ * è indietro). Rosso e lampeggiante negli ultimi 5 minuti.
+ */
+function CronometroProva({ inizio, fine, date, totale }: { inizio: string; fine: string; date: number; totale: number }) {
+  const trascorso = useTrascorso(inizio);
+  const durataTotale = Date.parse(fine) - Date.parse(inizio);
+  const rimanente = Math.max(0, durataTotale - trascorso);
+  const quota = Math.min(1, trascorso / durataTotale);
+  const pocoTempo = rimanente < 5 * 60_000;
+  // Domande che "dovresti" aver fatto a questo punto, con il tempo diviso in parti uguali.
+  const attese = Math.floor(quota * totale);
+  const ritmo = date >= attese ? "in linea" : `${attese - date} ${attese - date === 1 ? "domanda" : "domande"} indietro`;
+  return (
+    <div className="flex flex-col items-end gap-1">
+      <span
+        className={cx(
+          "inline-flex items-center gap-1.5 rounded-full px-3 py-1 font-mono text-base font-bold tabular-nums",
+          pocoTempo ? "animate-pulse bg-rose-100 text-rose-700" : "bg-brand-950 text-white",
+        )}
+        role="timer"
+        aria-label={`Tempo rimasto ${durata(rimanente)}`}
+      >
+        <Timer className="size-4" /> {durata(rimanente)}
+      </span>
+      <span className="text-[11px] font-medium text-slate-500 tabular-nums">
+        trascorsi {durata(trascorso)} · ritmo {ritmo}
+      </span>
+      <span className="block h-1 w-28 overflow-hidden rounded-full bg-slate-200" aria-hidden>
+        <span className={cx("block h-full rounded-full", pocoTempo ? "bg-rose-500" : "bg-brand-500")} style={{ width: `${quota * 100}%` }} />
+      </span>
+    </div>
+  );
+}
+
+/** Cronometro dello studio: solo il tempo trascorso, senza limite. */
+function CronometroStudio({ inizio }: { inizio: string }) {
+  const trascorso = useTrascorso(inizio);
+  return (
+    <span className="inline-flex items-center gap-1 font-mono text-xs font-semibold text-slate-500 tabular-nums" role="timer" aria-label={`Tempo trascorso ${durata(trascorso)}`}>
+      <Timer className="size-3.5" /> {durata(trascorso)}
+    </span>
+  );
+}
+
 // ── Studio: una domanda alla volta con correzione immediata ──────────────────
 
 /** Studio: una domanda alla volta, con la risposta giusta e la spiegazione subito dopo. */
@@ -100,10 +166,33 @@ function StudioRunner({ sessione, onConsegnata }: { sessione: SessioneApi; onCon
   const [risposte, setRisposte] = useState<Risposte>(() => sessione.domande.map(() => null));
   const [annuncio, setAnnuncio] = useState(false);
   const { consegna, inCorso, errore } = useConsegna(sessione, onConsegnata);
+  const [interrompi, setInterrompi] = useState(false);
+  const [uscita, setUscita] = useState(false);
+  const navigate = useNavigate();
+  const { key } = useLocation();
+
+  /**
+   * Interrompi ed esci: le risposte date finora si consegnano (contano nei progressi e nelle
+   * statistiche, le domande non fatte no), poi si torna alla pagina di prima.
+   */
+  async function esci() {
+    setUscita(true);
+    try {
+      if (risposte.some((r) => r !== null)) {
+        await api(`/sessioni/${sessione.id}/consegna`, { method: "POST", body: { risposte } });
+      }
+    } catch {
+      // Anche se il salvataggio non riesce si esce: la sessione resta "in corso" e basta.
+    }
+    // Pagina aperta direttamente (nessuna pagina prima nell'app): si va allo studio.
+    if (key === "default") navigate("/app/studio", { replace: true });
+    else navigate(-1);
+  }
 
   // Piano Free: un annuncio dopo ogni 5 domande (mai prima del risultato finale).
   const avanti = () => {
-    if (utente.limiti.pubblicita && (indice + 1) % DOMANDE_TRA_ANNUNCI === 0) setAnnuncio(true);
+    // L'annuncio solo andando verso domande nuove, non ripassando quelle già fatte.
+    if (utente.limiti.pubblicita && (indice + 1) % DOMANDE_TRA_ANNUNCI === 0 && risposte[indice + 1] === null) setAnnuncio(true);
     else setIndice((i) => i + 1);
   };
 
@@ -121,14 +210,37 @@ function StudioRunner({ sessione, onConsegnata }: { sessione: SessioneApi; onCon
       <div className="mb-6 flex items-center justify-between gap-4">
         <div>
           <p className="text-sm font-semibold text-brand-600">{sessione.bancaDati?.titolo ?? sessione.materie.map(nomeMateria).join(", ")}</p>
-          <p className="text-sm text-slate-500">
-            Domanda {indice + 1} di {sessione.domande.length}
+          <p className="flex items-center gap-3 text-sm text-slate-500">
+            Domanda {indice + 1} di {sessione.domande.length} <CronometroStudio inizio={sessione.creataIl} />
           </p>
         </div>
-        <Badge tone="green">
-          <CheckCircle2 className="size-3" /> {giuste} giuste
-        </Badge>
+        <div className="flex shrink-0 items-center gap-2">
+          <Badge tone="green">
+            <CheckCircle2 className="size-3" /> {giuste} giuste
+          </Badge>
+          <Button variant="secondary" size="sm" onClick={() => setInterrompi(true)} aria-label="Interrompi e esci">
+            <X className="size-4" /> Esci
+          </Button>
+        </div>
       </div>
+      {interrompi && (
+        <Card className="mb-6 space-y-3 ring-amber-300">
+          <p className="font-semibold text-slate-900">Vuoi interrompere lo studio?</p>
+          <p className="text-sm text-slate-600">
+            {risposte.some((r) => r !== null)
+              ? `Le ${risposte.filter((r) => r !== null).length} risposte date finora restano nei tuoi progressi e nelle statistiche; le domande che non hai fatto non contano.`
+              : "Non hai ancora risposto a nessuna domanda: non viene salvato nulla."}
+          </p>
+          <div className="flex flex-wrap gap-2">
+            <Button variant="secondary" size="sm" disabled={uscita} onClick={() => setInterrompi(false)}>
+              Continua a studiare
+            </Button>
+            <Button size="sm" loading={uscita} onClick={() => void esci()}>
+              Interrompi ed esci
+            </Button>
+          </div>
+        </Card>
+      )}
       <ProgressBar value={((indice + (rivelata ? 1 : 0)) / sessione.domande.length) * 100} className="mb-6" />
       <NotaOrdineRisposte sessione={sessione} />
 
@@ -177,7 +289,10 @@ function StudioRunner({ sessione, onConsegnata }: { sessione: SessioneApi; onCon
             <p className="font-semibold text-slate-900">{scelta === domanda.corretta ? "Esatto!" : "Non proprio."}</p>
             <p className="mt-1 text-slate-600">{domanda.spiegazione}</p>
             <ChiediAlTutor domanda={domanda} risposta={scelta} />
-            <SegnalaErrore className="mt-3 flex" contesto={contestoDomanda(sessione, domanda)} />
+            <div className="mt-3 flex flex-wrap items-center gap-3">
+              <StellaSessione sessione={sessione} domanda={domanda} />
+              <SegnalaErrore contesto={contestoDomanda(sessione, domanda)} />
+            </div>
           </div>
         )}
       </Card>
@@ -189,7 +304,11 @@ function StudioRunner({ sessione, onConsegnata }: { sessione: SessioneApi; onCon
         </div>
       )}
 
-      <div className={cx("mt-6 flex justify-end", annuncio && "hidden")}>
+      {/* Precedente: si rivede una domanda già fatta, con la risposta data (non si cambia). */}
+      <div className={cx("mt-6 flex items-center justify-between gap-3", annuncio && "hidden")}>
+        <Button size="lg" variant="secondary" disabled={indice === 0} onClick={() => setIndice((i) => i - 1)}>
+          <ArrowLeft className="size-4" /> Precedente
+        </Button>
         {ultima ? (
           <Button size="lg" disabled={!rivelata} loading={inCorso} onClick={() => void consegna(risposte)}>
             Vedi il risultato <ArrowRight className="size-4" />
@@ -248,7 +367,6 @@ function SimulazioneRunner({ sessione, onConsegnata }: { sessione: SessioneApi; 
 
   const domanda = sessione.domande[indice];
   const date = risposte.filter((r) => r !== null).length;
-  const pocoTempo = rimanente < 5 * 60_000;
 
   return (
     <div className="grid gap-6 lg:grid-cols-[1fr_18rem]">
@@ -257,15 +375,7 @@ function SimulazioneRunner({ sessione, onConsegnata }: { sessione: SessioneApi; 
           <p className="text-sm font-semibold text-slate-600">
             Domanda {indice + 1}/{sessione.domande.length} · {nomeMateria(domanda.materia)}
           </p>
-          <span
-            className={cx(
-              "inline-flex items-center gap-1.5 rounded-full px-3 py-1 font-mono text-sm font-bold tabular-nums",
-              pocoTempo ? "animate-pulse bg-rose-100 text-rose-700" : "bg-brand-950 text-white",
-            )}
-            aria-live="off"
-          >
-            <Timer className="size-4" /> {durata(rimanente)}
-          </span>
+          <CronometroProva inizio={sessione.creataIl} fine={sessione.scadeIl!} date={date} totale={sessione.domande.length} />
         </div>
 
         <NotaOrdineRisposte sessione={sessione} />
@@ -389,6 +499,12 @@ function Risultati({ sessione }: { sessione: SessioneApi }) {
             {simulazione ? (esito.superata ? "Prova superata" : "Prova non superata") : "Sessione completata"}
           </p>
           <p className="mt-1 text-5xl font-extrabold tracking-tight">{esito.percentuale}%</p>
+          {!simulazione && (
+            <p className="mt-1 text-sm opacity-80">
+              {esito.corrette} giuste su {esito.corrette + esito.errate} risposte
+              {esito.omesse > 0 && ` · ${esito.omesse} domande non fatte`}
+            </p>
+          )}
           {simulazione && (
             <p className="mt-1 text-sm opacity-80">
               Punteggio {esito.punteggio.toLocaleString("it-IT")} su {esito.massimo} · soglia {Math.round(sessione.regole.soglia * 100)}%
@@ -399,6 +515,11 @@ function Risultati({ sessione }: { sessione: SessioneApi }) {
               <Timer className="size-4" /> Tempo impiegato{" "}
               {durata(Math.min(Date.parse(sessione.consegnataIl), Date.parse(sessione.scadeIl)) - Date.parse(sessione.creataIl))} su{" "}
               {durata(Date.parse(sessione.scadeIl) - Date.parse(sessione.creataIl))}
+            </p>
+          )}
+          {!simulazione && sessione.consegnataIl && (
+            <p className="mt-1 inline-flex items-center gap-1 text-sm opacity-80">
+              <Timer className="size-4" /> Tempo impiegato {durata(Date.parse(sessione.consegnataIl) - Date.parse(sessione.creataIl))}
             </p>
           )}
         </div>
@@ -482,7 +603,10 @@ function Risultati({ sessione }: { sessione: SessioneApi }) {
                     </p>
                     <p className="text-slate-600">{d.spiegazione}</p>
                     <ChiediAlTutor domanda={d} risposta={r} />
-                    <SegnalaErrore className="flex" contesto={contestoDomanda(sessione, d)} />
+                    <div className="flex flex-wrap items-center gap-3">
+                      <StellaSessione sessione={sessione} domanda={d} />
+                      <SegnalaErrore contesto={contestoDomanda(sessione, d)} />
+                    </div>
                   </div>
                 )}
               </Card>

@@ -7,6 +7,7 @@ import { env } from "@imieiconcorsi/core/env";
 import type { S3Event } from "aws-lambda";
 import { extractText, getDocumentProxy } from "unpdf";
 import { estraiDomande } from "./parser";
+import { estraiDomandeRisposta, type Elemento } from "./tabella";
 
 // Estrazione delle domande da una banca dati caricata dall'admin.
 // Parte da sola quando arriva il PDF (banche-dati/<id>.pdf nel bucket dei contenuti) oppure
@@ -49,6 +50,19 @@ function indiceSezioni(domande: { numero: number; sezione?: string }[]) {
   return out;
 }
 
+/** I pezzi di testo di tutte le pagine con la loro posizione (servono alle tabelle, vedi tabella.ts). */
+async function elementiDelPdf(doc: Awaited<ReturnType<typeof getDocumentProxy>>): Promise<Elemento[]> {
+  const out: Elemento[] = [];
+  for (let pagina = 1; pagina <= doc.numPages; pagina++) {
+    const { items } = await (await doc.getPage(pagina)).getTextContent();
+    for (const it of items) {
+      if (!("str" in it)) continue;
+      out.push({ pagina, testo: it.str, x: it.transform[4] as number, y: it.transform[5] as number, larghezza: it.width });
+    }
+  }
+  return out;
+}
+
 /** Legge il PDF, ne estrae il testo e le domande, salva il file JSON e il riepilogo per l'admin. */
 async function estrai(id: string) {
   const res = await db.send(new GetCommand({ TableName: tables.bancheDati, Key: { id } }));
@@ -64,7 +78,14 @@ async function estrai(id: string) {
       throw new Error("Nel PDF non c'è testo leggibile: probabilmente è una scansione (immagini). Serve un PDF con il testo selezionabile.");
     }
 
-    const { domande, scartate, formati } = estraiDomande(text as string, banca.formato);
+    // Tabella "domanda | risposta esatta" (solo la giusta): si legge con le posizioni. In
+    // automatico si prova anche quella e si tiene il modo che trova più domande.
+    let estrazione = banca.formato === "risposta" ? undefined : estraiDomande(text as string, banca.formato);
+    if (banca.formato === "risposta" || banca.formato === "auto") {
+      const tabella = estraiDomandeRisposta(await elementiDelPdf(doc));
+      if (!estrazione || tabella.domande.length > estrazione.domande.length) estrazione = tabella;
+    }
+    const { domande, scartate, formati } = estrazione!;
     // Esempi da controllare nell'ordine del PDF (la giusta è quella che il PDF indica),
     // le prime due domande di ogni sezione.
     const perSezione = new Map<string, typeof domande>();
@@ -75,7 +96,14 @@ async function estrai(id: string) {
     const esempi = [...perSezione.values()]
       .flat()
       .slice(0, 16)
-      .map((d) => ({ numero: d.numero, testo: d.testo, opzioni: d.pdf.opzioni, corretta: d.pdf.corretta, ...(d.sezione ? { sezione: d.sezione } : {}) }));
+      .map((d) => ({
+        numero: d.numero,
+        testo: d.testo,
+        opzioni: d.pdf.opzioni,
+        corretta: d.pdf.corretta,
+        ...(d.sezione ? { sezione: d.sezione } : {}),
+        ...(d.alternativeRicavate ? { alternativeRicavate: true } : {}),
+      }));
     await s3.send(
       new PutObjectCommand({
         Bucket: bucket(),
@@ -91,6 +119,8 @@ async function estrai(id: string) {
       domande: domande.length,
       scartate: scartate.length,
       formati,
+      // Quante domande hanno le alternative ricavate (il PDF dava solo la risposta esatta).
+      alternativeRicavate: domande.filter((d) => d.alternativeRicavate).length,
       esempi,
       sezioni: [...perSezione.keys()].filter(Boolean),
       indiceSezioni: indiceSezioni(domande),

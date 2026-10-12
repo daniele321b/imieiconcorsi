@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 import { LEGALE } from "../../lib/legale";
 import { LegalePagina } from "./LegalePagina";
+import { ComeContattarci, Titolare } from "./parti";
 
 // Informativa ai sensi degli artt. 13 e 14 del Regolamento (UE) 2016/679 (GDPR).
 // Descrive come funziona davvero l'app: se cambia il trattamento, va aggiornata
@@ -18,8 +19,7 @@ export function Privacy() {
 
       <h2>Titolare del trattamento</h2>
       <p>
-        {LEGALE.titolare}, {LEGALE.indirizzo}, {LEGALE.partitaIva}. Per qualsiasi richiesta sulla privacy scrivi a{" "}
-        <strong>{LEGALE.email}</strong>.
+        <Titolare />. Per qualsiasi richiesta sulla privacy scrivici <ComeContattarci />: rispondiamo entro 30 giorni.
       </p>
 
       <h2>Quali dati trattiamo</h2>
@@ -39,8 +39,8 @@ export function Privacy() {
           codice d'ordine e la tua email per la ricevuta. Non vediamo e non conserviamo i dati della tua carta o del tuo conto.
         </li>
         <li>
-          <strong>Ordini:</strong> per ogni acquisto un codice d'ordine, piano, periodo, importo, eventuale codice sconto ed
-          esito del pagamento, collegati all'identificativo anonimo.
+          <strong>Ordini:</strong> per ogni acquisto un codice d'ordine, piano, periodo, importo, eventuale codice sconto,
+          esito del pagamento, e la tua email e il tuo nome come intestatario dell'acquisto.
         </li>
         <li>
           <strong>Inviti:</strong> se ti iscrivi con il link di un amico, salviamo quale account ti ha invitato (identificativo
@@ -54,8 +54,9 @@ export function Privacy() {
           <strong>Parere sull'app:</strong> se lo lasci dal profilo, il voto e il commento; ci arrivano anche per email.
         </li>
         <li>
-          <strong>Progressi nelle banche dati:</strong> quali domande di ogni banca dati hai già fatto e quali hai sbagliato
-          l'ultima volta, per proporti quelle nuove o da ripassare. Puoi azzerarli quando vuoi con "Ricomincia".
+          <strong>Progressi nelle banche dati:</strong> quali domande di ogni banca dati hai già fatto, quali hai sbagliato
+          l'ultima volta e quali hai salvato tra le preferite, per proporti quelle nuove, da ripassare o preferite. Puoi azzerare
+          fatte e sbagliate quando vuoi con "Ricomincia".
         </li>
         <li>
           <strong>Richieste di assistenza:</strong> se ci scrivi dalla pagina Assistenza, il tipo di richiesta, i messaggi
@@ -65,8 +66,17 @@ export function Privacy() {
         <li>
           <strong>Tutor AI (solo piano Pro):</strong> quando lo usi, le tue domande al tutor e la domanda di studio su cui chiedi
           vengono inviate al modello di intelligenza artificiale per avere la risposta, senza il tuo nome né la tua email. Non
-          conserviamo le conversazioni: salviamo solo quanti gettoni e token hai usato nel mese e la spesa stimata, per i limiti
+          conserviamo le conversazioni: salviamo solo quante domande hai fatto al tutor nel mese e il consumo stimato, per i limiti
           di utilizzo. Il tutor risponde solo su argomenti di studio. Non scrivere dati personali nel tutor.
+        </li>
+        <li>
+          <strong>Modulo contatti:</strong> se ci scrivi dalla pagina Contatti, nome, email, argomento e messaggio. Ci arrivano
+          per email e li usiamo solo per risponderti; li conserviamo per il tempo necessario a gestire la richiesta e al massimo
+          12 mesi. Per evitare invii automatici salviamo per 24 ore un'impronta cifrata del tuo indirizzo IP, non l'indirizzo.
+        </li>
+        <li>
+          <strong>Accessi:</strong> data, ora e modo (email e password, oppure Google o Facebook) di ogni accesso al tuo
+          account, per sicurezza e assistenza; si cancellano da soli dopo 12 mesi o subito se elimini l'account.
         </li>
         <li>
           <strong>Dati tecnici:</strong> log dei servizi (data e ora delle richieste, errori), conservati per 14 giorni per
@@ -112,10 +122,10 @@ export function Privacy() {
           lì entro quel termine.
         </li>
         <li>
-          Ordini e dati dei pagamenti: 10 anni, come richiesto dalla legge per le scritture contabili (art. 2220 c.c.), anche
-          dopo l'eliminazione dell'account; restano collegati solo all'identificativo anonimo.
+          Ordini e dati dei pagamenti, con email e nome dell'intestatario: 10 anni, come richiesto dalla legge per le scritture
+          contabili (art. 2220 c.c.), anche dopo l'eliminazione dell'account. Non vengono usati per altro.
         </li>
-        <li>Log tecnici: 14 giorni.</li>
+        <li>Log tecnici: 14 giorni. Registro degli accessi: 12 mesi.</li>
       </ul>
 
       <h2>Dove sono e chi li tratta per noi</h2>
@@ -143,8 +153,9 @@ export function Privacy() {
       <h2>Cookie e memoria del browser</h2>
       <p>
         Non usiamo cookie di profilazione né strumenti di statistica di terze parti. Il sito salva nella memoria del browser
-        solo quanto serve a tenerti collegato (i token di accesso) e, durante una simulazione, le risposte già date. Sono
-        strumenti tecnici: non richiedono consenso.
+        solo quanto serve a tenerti collegato (i token di accesso), alcune tue preferenze e, durante una simulazione, le
+        risposte già date. Sono strumenti tecnici: non richiedono consenso. L'elenco completo è nella pagina{" "}
+        <Link to="/cookie">Cookie</Link>; le email che ti mandiamo sono descritte in <Link to="/email">Le nostre email</Link>.
       </p>
       <p>
         Nel piano Free, tra una domanda e l'altra, mostriamo annunci interni sui nostri piani: non usano cookie e non
@@ -154,7 +165,7 @@ export function Privacy() {
       <h2>I tuoi diritti</h2>
       <p>
         Puoi chiedere in qualsiasi momento di accedere ai tuoi dati, correggerli, cancellarli, limitarne il trattamento,
-        opporti o riceverli in un formato leggibile (artt. 15–22 GDPR), scrivendo a <strong>{LEGALE.email}</strong>. Nome,
+        opporti o riceverli in un formato leggibile (artt. 15–22 GDPR), scrivendoci <ComeContattarci />. Nome,
         interessi e avvisi li modifichi da solo dal profilo; l'account lo elimini dal profilo stesso (vedi{" "}
         <Link to="/eliminazione-dati">Eliminazione dei dati</Link>). Se ritieni che il trattamento violi il GDPR puoi fare
         reclamo al Garante per la protezione dei dati personali (

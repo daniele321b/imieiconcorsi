@@ -1,8 +1,8 @@
-import type { StatoRichiesta, TipoRichiesta } from "@imieiconcorsi/core/domain";
-import { Flag, Send } from "lucide-react";
+import { TIPI_RICHIESTA, type StatoRichiesta, type TipoRichiesta } from "@imieiconcorsi/core/domain";
+import { ArrowLeft, CheckCircle2, Flag, Send } from "lucide-react";
 import { type ReactNode, useState } from "react";
 import { Link } from "react-router";
-import type { ContestoRichiesta, RichiestaApi } from "../lib/api";
+import { api, ApiError, type ContestoRichiesta, type RichiestaApi } from "../lib/api";
 import { dataOra } from "../lib/format";
 import { Badge, Button, cx } from "./ui";
 
@@ -28,17 +28,89 @@ export function StatoRichiestaBadge({ stato }: { stato: StatoRichiesta }) {
   return <Badge tone={s.tone}>{s.nome}</Badge>;
 }
 
-/** Link "Segnala un errore" sotto una domanda: apre una richiesta già compilata. */
+/** Traccia del messaggio per una domanda sbagliata (la stessa della pagina Assistenza). */
+const TRACCIA_ERRORE = TIPI_RICHIESTA.find((t) => t.id === "domanda-errata")!.modello;
+
+/**
+ * "Segnala un errore" sotto una domanda: si apre qui, sotto la domanda, senza cambiare pagina
+ * (in una sessione di studio si perderebbe il punto). Inviata la segnalazione, "Torna alla
+ * domanda" chiude il riquadro e si riprende da dove si era; la risposta arriva in Assistenza.
+ */
 export function SegnalaErrore({ contesto, className }: { contesto: ContestoRichiesta; className?: string }) {
-  const apertura: AperturaRichiesta = { tipo: "domanda-errata", contesto };
+  const [aperta, setAperta] = useState(false);
+  const [testo, setTesto] = useState<string>(TRACCIA_ERRORE);
+  const [invio, setInvio] = useState(false);
+  const [inviata, setInviata] = useState(false);
+  const [errore, setErrore] = useState<string>();
+  const torna = () => {
+    setAperta(false);
+    setInviata(false);
+    setErrore(undefined);
+    setTesto(TRACCIA_ERRORE);
+  };
+
+  async function invia() {
+    setInvio(true);
+    setErrore(undefined);
+    try {
+      await api("/me/richieste", { method: "POST", body: { tipo: "domanda-errata", testo: testo.trim(), contesto } });
+      setInviata(true);
+    } catch (err) {
+      setErrore(err instanceof ApiError ? err.message : "Invio non riuscito: riprova.");
+    } finally {
+      setInvio(false);
+    }
+  }
+
+  if (!aperta) {
+    return (
+      <button
+        type="button"
+        onClick={() => setAperta(true)}
+        className={cx("inline-flex items-center gap-1.5 text-xs font-semibold text-slate-400 hover:text-rose-600", className)}
+      >
+        <Flag className="size-3.5" /> Segnala un errore
+      </button>
+    );
+  }
+  // Il testo conta solo se si è scritto qualcosa oltre la traccia.
+  const scritto = testo.trim().length >= 10 && testo !== TRACCIA_ERRORE;
   return (
-    <Link
-      to="/app/assistenza"
-      state={apertura}
-      className={cx("inline-flex items-center gap-1.5 text-xs font-semibold text-slate-400 hover:text-rose-600", className)}
-    >
-      <Flag className="size-3.5" /> Segnala un errore
-    </Link>
+    <div className="mt-3 w-full basis-full animate-fade-up space-y-3 rounded-xl bg-white p-4 text-sm ring-1 ring-rose-200">
+      {inviata ? (
+        <>
+          <p className="flex items-center gap-2 font-semibold text-emerald-700">
+            <CheckCircle2 className="size-4" /> Segnalazione inviata, grazie!
+          </p>
+          <p className="text-slate-600">
+            La controlliamo e ti rispondiamo in{" "}
+            <Link to="/app/assistenza" className="font-semibold text-brand-600 hover:underline">
+              Assistenza
+            </Link>
+            , con un'email quando c'è la risposta.
+          </p>
+          <Button size="sm" onClick={torna}>
+            <ArrowLeft className="size-4" /> Torna alla domanda
+          </Button>
+        </>
+      ) : (
+        <>
+          <p className="flex items-center gap-2 font-semibold text-slate-900">
+            <Flag className="size-4 text-rose-500" /> Cosa non va in questa domanda?
+          </p>
+          <textarea value={testo} onChange={(e) => setTesto(e.target.value)} rows={4} maxLength={3000} autoFocus className={areaTesto} />
+          {errore && <p className="text-rose-600">{errore}</p>}
+          <div className="flex flex-wrap gap-2">
+            <Button size="sm" variant="secondary" disabled={invio} onClick={torna}>
+              <ArrowLeft className="size-4" /> Torna alla domanda
+            </Button>
+            <Button size="sm" disabled={!scritto} loading={invio} onClick={() => void invia()}>
+              <Send className="size-4" /> Invia segnalazione
+            </Button>
+          </div>
+        </>
+      )}
+    </div>
   );
 }
 

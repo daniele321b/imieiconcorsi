@@ -2,9 +2,10 @@
 
 # Servizio profilo: profilo, onboarding e piano dell'utente.
 resource "aws_dynamodb_table" "users" {
-  name         = "${var.name}-users"
-  billing_mode = "PAY_PER_REQUEST"
-  hash_key     = "userId"
+  name                        = "${var.name}-users"
+  billing_mode                = "PAY_PER_REQUEST"
+  deletion_protection_enabled = var.protezione
+  hash_key                    = "userId"
 
   attribute {
     name = "userId"
@@ -18,9 +19,10 @@ resource "aws_dynamodb_table" "users" {
 
 # Servizio concorsi: bandi importati da inPA.
 resource "aws_dynamodb_table" "concorsi" {
-  name         = "${var.name}-concorsi"
-  billing_mode = "PAY_PER_REQUEST"
-  hash_key     = "id"
+  name                        = "${var.name}-concorsi"
+  billing_mode                = "PAY_PER_REQUEST"
+  deletion_protection_enabled = var.protezione
+  hash_key                    = "id"
 
   attribute {
     name = "id"
@@ -52,10 +54,11 @@ resource "aws_dynamodb_table" "concorsi" {
 
 # Servizio concorsi: concorsi seguiti dagli utenti.
 resource "aws_dynamodb_table" "follows" {
-  name         = "${var.name}-follows"
-  billing_mode = "PAY_PER_REQUEST"
-  hash_key     = "userId"
-  range_key    = "concorsoId"
+  name                        = "${var.name}-follows"
+  billing_mode                = "PAY_PER_REQUEST"
+  deletion_protection_enabled = var.protezione
+  hash_key                    = "userId"
+  range_key                   = "concorsoId"
 
   attribute {
     name = "userId"
@@ -69,10 +72,11 @@ resource "aws_dynamodb_table" "follows" {
 
 # Servizio studio: banca domande, partizionata per materia.
 resource "aws_dynamodb_table" "questions" {
-  name         = "${var.name}-questions"
-  billing_mode = "PAY_PER_REQUEST"
-  hash_key     = "materia"
-  range_key    = "id"
+  name                        = "${var.name}-questions"
+  billing_mode                = "PAY_PER_REQUEST"
+  deletion_protection_enabled = var.protezione
+  hash_key                    = "materia"
+  range_key                   = "id"
 
   attribute {
     name = "materia"
@@ -86,10 +90,11 @@ resource "aws_dynamodb_table" "questions" {
 
 # Servizio studio: sessioni di studio e simulazioni (id ordinabile per data).
 resource "aws_dynamodb_table" "attempts" {
-  name         = "${var.name}-attempts"
-  billing_mode = "PAY_PER_REQUEST"
-  hash_key     = "userId"
-  range_key    = "id"
+  name                        = "${var.name}-attempts"
+  billing_mode                = "PAY_PER_REQUEST"
+  deletion_protection_enabled = var.protezione
+  hash_key                    = "userId"
+  range_key                   = "id"
 
   attribute {
     name = "userId"
@@ -107,9 +112,10 @@ resource "aws_dynamodb_table" "attempts" {
 
 # Servizio billing: codici sconto generati dall'admin (pannello di controllo).
 resource "aws_dynamodb_table" "codici" {
-  name         = "${var.name}-codici"
-  billing_mode = "PAY_PER_REQUEST"
-  hash_key     = "codice"
+  name                        = "${var.name}-codici"
+  billing_mode                = "PAY_PER_REQUEST"
+  deletion_protection_enabled = var.protezione
+  hash_key                    = "codice"
 
   attribute {
     name = "codice"
@@ -124,9 +130,10 @@ resource "aws_dynamodb_table" "codici" {
 # Servizio billing: ordini dei piani a pagamento (uno per ogni tentativo di acquisto).
 # Niente dati personali: l'email si legge da Cognito quando serve.
 resource "aws_dynamodb_table" "ordini" {
-  name         = "${var.name}-ordini"
-  billing_mode = "PAY_PER_REQUEST"
-  hash_key     = "id"
+  name                        = "${var.name}-ordini"
+  billing_mode                = "PAY_PER_REQUEST"
+  deletion_protection_enabled = var.protezione
+  hash_key                    = "id"
 
   attribute {
     name = "id"
@@ -162,9 +169,10 @@ resource "aws_dynamodb_table" "ordini" {
 
 # Pannello admin: banche dati ufficiali caricate in PDF (stato dell'estrazione, riepilogo).
 resource "aws_dynamodb_table" "banche_dati" {
-  name         = "${var.name}-banche-dati"
-  billing_mode = "PAY_PER_REQUEST"
-  hash_key     = "id"
+  name                        = "${var.name}-banche-dati"
+  billing_mode                = "PAY_PER_REQUEST"
+  deletion_protection_enabled = var.protezione
+  hash_key                    = "id"
 
   attribute {
     name = "id"
@@ -175,10 +183,11 @@ resource "aws_dynamodb_table" "banche_dati" {
 # Richieste di assistenza degli utenti (una conversazione per richiesta). L'indice perStato
 # serve al pannello admin: le aperte, le in lavorazione, le chiuse, dalla più recente.
 resource "aws_dynamodb_table" "richieste" {
-  name         = "${var.name}-richieste"
-  billing_mode = "PAY_PER_REQUEST"
-  hash_key     = "userId"
-  range_key    = "id"
+  name                        = "${var.name}-richieste"
+  billing_mode                = "PAY_PER_REQUEST"
+  deletion_protection_enabled = var.protezione
+  hash_key                    = "userId"
+  range_key                   = "id"
 
   attribute {
     name = "userId"
@@ -219,10 +228,11 @@ resource "aws_dynamodb_table" "richieste" {
 # Domande delle banche dati già fatte da ogni utente: una riga per utente e banca dati,
 # con due mappe di bit (fatte, sbagliate l'ultima volta) indicizzate dal numero della domanda.
 resource "aws_dynamodb_table" "progressi" {
-  name         = "${var.name}-progressi"
-  billing_mode = "PAY_PER_REQUEST"
-  hash_key     = "userId"
-  range_key    = "bancaId"
+  name                        = "${var.name}-progressi"
+  billing_mode                = "PAY_PER_REQUEST"
+  deletion_protection_enabled = var.protezione
+  hash_key                    = "userId"
+  range_key                   = "bancaId"
 
   attribute {
     name = "userId"
@@ -237,12 +247,44 @@ resource "aws_dynamodb_table" "progressi" {
 # Contatori della piattaforma, una riga per contatore: per ora la spesa AI del mese
 # ("ai#2026-10": token e dollari stimati), per il tetto di spesa mensile del tutor.
 resource "aws_dynamodb_table" "contatori" {
-  name         = "${var.name}-contatori"
-  billing_mode = "PAY_PER_REQUEST"
-  hash_key     = "id"
+  name                        = "${var.name}-contatori"
+  billing_mode                = "PAY_PER_REQUEST"
+  deletion_protection_enabled = var.protezione
+  hash_key                    = "id"
 
   attribute {
     name = "id"
     type = "S"
+  }
+
+  # Contatori temporanei (es. limite del modulo contatti per IP) con "scade": si cancellano da
+  # soli. Quelli senza "scade" (spesa AI del mese) restano.
+  ttl {
+    attribute_name = "scade"
+    enabled        = true
+  }
+}
+
+# Accessi degli utenti (login con email e password, Google o Facebook), registrati da Cognito
+# (functions/src/auth/accesso.ts). Si cancellano da soli dopo 12 mesi (TTL su "scade").
+resource "aws_dynamodb_table" "accessi" {
+  name                        = "${var.name}-accessi"
+  billing_mode                = "PAY_PER_REQUEST"
+  deletion_protection_enabled = var.protezione
+  hash_key                    = "userId"
+  range_key                   = "il"
+
+  attribute {
+    name = "userId"
+    type = "S"
+  }
+  attribute {
+    name = "il"
+    type = "S"
+  }
+
+  ttl {
+    attribute_name = "scade"
+    enabled        = true
   }
 }

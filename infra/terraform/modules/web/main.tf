@@ -54,7 +54,7 @@ resource "aws_acm_certificate_validation" "web" {
 # Bucket del sito (file di packages/web/dist) e della lista dei bandi in cache.
 resource "aws_s3_bucket" "web" {
   bucket_prefix = "${var.name}-web-"
-  force_destroy = true
+  force_destroy = !var.protezione
 }
 
 # Privato: i file si leggono solo passando da CloudFront.

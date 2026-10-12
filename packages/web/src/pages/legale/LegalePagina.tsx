@@ -2,12 +2,14 @@ import { ArrowLeft } from "lucide-react";
 import type { ReactNode } from "react";
 import { Link } from "react-router";
 import { Logo } from "../../components/brand";
-import { Alert } from "../../components/ui";
 import { data } from "../../lib/format";
-import { LEGALE, legaleInBozza } from "../../lib/legale";
+import { LEGALE } from "../../lib/legale";
 
-/** Impaginazione comune di Privacy, Termini ed Eliminazione dati (pagine pubbliche). */
-export function LegalePagina({ titolo, children }: { titolo: string; children: ReactNode }) {
+/**
+ * Impaginazione comune delle pagine pubbliche (Privacy, Termini, Chi siamo, Prezzi, Contatti…).
+ * `versione` = mostra la data della versione (per i documenti legali).
+ */
+export function LegalePagina({ titolo, sotto, versione = true, children }: { titolo: string; sotto?: string; versione?: boolean; children: ReactNode }) {
   return (
     <div className="min-h-screen bg-slate-50">
       <header className="border-b border-slate-200 bg-white">
@@ -22,15 +24,8 @@ export function LegalePagina({ titolo, children }: { titolo: string; children: R
       </header>
       <main className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
         <h1 className="text-3xl font-extrabold tracking-tight text-slate-900">{titolo}</h1>
-        <p className="mt-2 text-sm text-slate-500">Versione del {data(LEGALE.versione)}</p>
-        {legaleInBozza && (
-          <div className="mt-6">
-            <Alert tone="error">
-              Bozza: mancano i dati del titolare (packages/web/src/lib/legale.ts) e il testo va fatto rivedere da un legale prima
-              del lancio.
-            </Alert>
-          </div>
-        )}
+        {sotto && <p className="mt-2 text-lg text-slate-600">{sotto}</p>}
+        {versione && <p className="mt-2 text-sm text-slate-500">Versione del {data(LEGALE.versione)}</p>}
         <article className="legale mt-8 space-y-4 text-slate-700">{children}</article>
       </main>
       <PiePagina />
@@ -38,21 +33,32 @@ export function LegalePagina({ titolo, children }: { titolo: string; children: R
   );
 }
 
-/** Piè di pagina con i link a Termini, Privacy ed Eliminazione dei dati; `scuro` per la home. */
+/** Link del piè di pagina, in tutte le pagine pubbliche e nell'app. */
+const LINK_PIE = [
+  { to: "/chi-siamo", nome: "Chi siamo" },
+  { to: "/prezzi", nome: "Prezzi" },
+  { to: "/domande-frequenti", nome: "Domande frequenti" },
+  { to: "/contatti", nome: "Contatti" },
+  { to: "/email", nome: "Le nostre email" },
+  { to: "/privacy", nome: "Privacy" },
+  { to: "/cookie", nome: "Cookie" },
+  { to: "/termini", nome: "Termini e condizioni" },
+  { to: "/eliminazione-dati", nome: "Eliminazione dei dati" },
+];
+
+/** Piè di pagina con i link alle pagine pubbliche; `scuro` per la home. */
 export function PiePagina({ scuro }: { scuro?: boolean }) {
   const cls = scuro ? "text-brand-200/70 hover:text-white" : "text-slate-500 hover:text-slate-800";
   return (
-    <footer className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-5 gap-y-1 px-4 py-6 text-xs">
-      <span className={scuro ? "text-brand-200/50" : "text-slate-400"}>© {new Date().getFullYear()} iMieiConcorsi</span>
-      <Link to="/privacy" className={cls}>
-        Privacy
-      </Link>
-      <Link to="/termini" className={cls}>
-        Termini e condizioni
-      </Link>
-      <Link to="/eliminazione-dati" className={cls}>
-        Eliminazione dei dati
-      </Link>
+    <footer className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-5 gap-y-1.5 px-4 py-6 text-xs">
+      <span className={scuro ? "text-brand-200/50" : "text-slate-400"}>
+        © {new Date().getFullYear()} {LEGALE.nome}
+      </span>
+      {LINK_PIE.map((l) => (
+        <Link key={l.to} to={l.to} className={cls}>
+          {l.nome}
+        </Link>
+      ))}
     </footer>
   );
 }

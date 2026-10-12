@@ -45,3 +45,9 @@ variable "email_policy_statements" {
   type        = list(any)
   default     = []
 }
+
+variable "protezione" {
+  description = "Prod: il bucket dei contenuti (PDF delle banche dati) non si svuota da solo con terraform destroy"
+  type        = bool
+  default     = false
+}

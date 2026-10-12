@@ -6,6 +6,7 @@ import {
   type ConcorsoInLista,
   type FiltriConcorsi,
   type Ordinamento,
+  nomiDistinti,
 } from "@imieiconcorsi/core/concorsi";
 import { COMPARTI, COMPARTO_IDS, type CompartoId } from "@imieiconcorsi/core/domain";
 import { ArrowUpDown, Search, SearchX, SlidersHorizontal } from "lucide-react";
@@ -97,6 +98,8 @@ export function Concorsi() {
       : (data?.concorsi ?? []);
     return ordinaConcorsi(filtraConcorsi(trovati, filtri), ordine);
   }, [data, testo, ordine, filtri]);
+  // Stesso ente e stesso nome (concorsi che si ripetono): si aggiunge la data o il codice.
+  const nomi = useMemo(() => nomiDistinti(filtrati), [filtrati]);
 
   const procedure = useMemo(
     () => [...new Set((data?.concorsi ?? []).map((c) => c.tipoProcedura).filter((p): p is string => !!p))].sort(),
@@ -118,7 +121,9 @@ export function Concorsi() {
         subtitle="I bandi di inPA, aperti e con le domande chiuse, aggiornati ogni mattina. Dai Filtri scegli se vedere solo gli aperti o solo i chiusi."
       />
 
-      <div className="sticky top-16 z-20 -mx-4 space-y-3 bg-slate-50/90 px-4 py-3 backdrop-blur sm:-mx-6 sm:px-6">
+      {/* Barra fissa in alto, tranne con i filtri aperti: sul telefono il pannello è più alto dello
+          schermo e, fisso, non si potrebbe scorrere. */}
+      <div className={cx("z-20 -mx-4 space-y-3 bg-slate-50/90 px-4 py-3 backdrop-blur sm:-mx-6 sm:px-6", !pannello && "sticky top-16")}>
         <div className="flex flex-col gap-3 sm:flex-row">
           <label className="relative block flex-1">
             <Search className="pointer-events-none absolute top-1/2 left-3.5 size-4 -translate-y-1/2 text-slate-400" />
@@ -212,19 +217,12 @@ export function Concorsi() {
           <>
             <p className="text-sm text-slate-500">
               {filtrati.length} {filtrati.length === 1 ? "bando" : "bandi"}
-              {filtri.aperti === false ? " con le domande chiuse" : filtri.chiusi === false ? " aperti" : ""}, ordinati per{" "}
-              {
-                {
-                  scadenza: "scadenza più vicina",
-                  pubblicazione: "data di uscita, dai più recenti",
-                  "piu-posti": "numero di posti, dai più numerosi",
-                  "meno-posti": "numero di posti, dai meno numerosi",
-                }[ordine]
-              }
+              {filtri.aperti === false ? " con le domande chiuse" : filtri.chiusi === false ? " aperti" : ""}, ordine:{" "}
+              {ORDINAMENTI.find((o) => o.id === ordine)?.nome.toLowerCase()}
             </p>
             <div className="grid gap-4 md:grid-cols-2">
               {filtrati.slice(0, mostrati).map((c) => (
-                <ConcorsoCard key={c.id} concorso={c} onSegui={(x) => void segui(x)} inCorso={inCorso === c.id} />
+                <ConcorsoCard key={c.id} concorso={c} nome={nomi.get(c.id)} onSegui={(x) => void segui(x)} inCorso={inCorso === c.id} />
               ))}
             </div>
             {mostrati < filtrati.length && (

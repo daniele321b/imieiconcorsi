@@ -39,11 +39,11 @@ locals {
     pubblicita = { adsenseClient = var.adsense_client, adsenseSlot = var.adsense_slot }
   }
 
-  # Permessi riusati da più Lambda.
+  # Permessi riusati da più Lambda: email con SES e avvisi all'admin sul topic SNS.
   invia_email = {
     Effect   = "Allow"
-    Action   = ["ses:SendEmail"]
-    Resource = concat(local.shared.ses_identity_arns, [local.shared.ses_configuration_set_arn])
+    Action   = ["ses:SendEmail", "sns:Publish"]
+    Resource = concat(local.shared.ses_identity_arns, [local.shared.ses_configuration_set_arn, aws_sns_topic.avvisi_admin.arn])
   }
   cognito_piani = {
     Effect   = "Allow"
@@ -55,6 +55,8 @@ locals {
     SES_SENDER            = local.shared.ses_sender_email
     SES_CONFIGURATION_SET = local.shared.ses_configuration_set_name
     ADMIN_EMAIL           = var.admin_email
+    # Avvisi all'admin: via SNS (niente sandbox di SES), vedi aws_sns_topic.avvisi_admin.
+    ADMIN_TOPIC_ARN = aws_sns_topic.avvisi_admin.arn
     # Le email di dev si riconoscono a colpo d'occhio.
     EMAIL_SUBJECT_PREFIX = "[dev] "
   }
@@ -74,6 +76,20 @@ locals {
 
   # Modello del profilo d'inferenza senza il prefisso di area (eu., us., global.…).
   ai_base_model = replace(var.ai_model, "/^(eu|us|apac|jp|global)\\./", "")
+}
+
+# Avvisi all'admin (nuovi bandi con banca dati, richieste di assistenza, ricevute non partite,
+# spesa AI…): un topic SNS con l'iscrizione email ad admin_email. Al primo apply arriva l'email
+# "AWS Notification - Subscription Confirmation": il link va cliccato una volta.
+resource "aws_sns_topic" "avvisi_admin" {
+  name = "${local.name}-avvisi-admin"
+}
+
+resource "aws_sns_topic_subscription" "avvisi_admin" {
+  count     = var.admin_email == "" ? 0 : 1
+  topic_arn = aws_sns_topic.avvisi_admin.arn
+  protocol  = "email"
+  endpoint  = var.admin_email
 }
 
 # Segreto che firma i link delle email (disiscrizione, lettura): generato una volta e tenuto nello stato.
@@ -119,6 +135,16 @@ module "auth_trigger" {
   }]
 }
 
+# Trigger Cognito degli accessi: a ogni login scrive una riga nella tabella accessi (12 mesi) e
+# l'ultimo accesso sul profilo. Non blocca mai il login, anche se non riesce a scrivere.
+module "auth_accessi" {
+  source       = "../../modules/lambda"
+  name         = "${local.name}-auth-accessi"
+  source_dir   = "${local.functions_dir}/auth-accessi"
+  environment  = module.data.table_env
+  write_tables = [module.data.table_arns.accessi, module.data.table_arns.users]
+}
+
 # Id dell'account AWS (per gli ARN dei permessi Bedrock).
 data "aws_caller_identity" "current" {}
 
@@ -130,6 +156,8 @@ module "auth" {
 
   pre_sign_up_enabled    = true
   pre_sign_up_lambda_arn = module.auth_trigger.arn
+  accessi_enabled        = true
+  accessi_lambda_arn     = module.auth_accessi.arn
 
   # Solo in dev il login accetta anche il sito in locale (scripts/deploy.sh local).
   app_origins = ["http://localhost:5173", module.web.url]
@@ -154,9 +182,11 @@ module "api" {
     profile = {
       routes = ["GET /me", "PUT /me/profilo", "PUT /me/feedback", "DELETE /me"]
       # DELETE /me cancella l'account: profilo, concorsi seguiti, sessioni, richieste, progressi e utente Cognito.
+      # Ordini: eliminando l'account ci si scrivono email e nome (restano 10 anni per legge).
       write_tables = [
         module.data.table_arns.users, module.data.table_arns.follows, module.data.table_arns.attempts,
-        module.data.table_arns.richieste, module.data.table_arns.progressi,
+        module.data.table_arns.richieste, module.data.table_arns.progressi, module.data.table_arns.ordini,
+        module.data.table_arns.accessi,
       ]
       read_tables = []
       # Il nome è un dato personale: si salva su Cognito, non nel database.
@@ -181,7 +211,7 @@ module "api" {
       routes = [
         "GET /materie", "POST /sessioni", "GET /sessioni/{id}",
         "POST /sessioni/{id}/consegna", "GET /me/statistiche", "GET /banche-dati", "GET /banche-dati/{id}/domande",
-        "DELETE /me/progressi/{bancaId}",
+        "DELETE /me/progressi/{bancaId}", "PUT /me/progressi/{bancaId}/preferite/{numero}",
       ]
       # Sul profilo: il contatore degli utilizzi settimanali delle banche dati (piano Free).
       # Progressi: domande delle banche dati già fatte e sbagliate, aggiornati a ogni consegna.
@@ -198,7 +228,7 @@ module "api" {
     }
     billing = {
       routes = [
-        "GET /piani", "POST /me/abbonamento", "POST /me/codice-sconto", "GET /me/ordini", "GET /me/ordini/{id}",
+        "GET /piani", "POST /me/abbonamento", "POST /me/codice-sconto", "GET /me/ordini", "GET /me/ordini/{id}", "POST /me/ordini/{id}/ricevuta",
         "GET /me/invito", "POST /me/invito",
       ]
       # Conferme di Stripe: rotta senza login, protetta dalla firma del webhook.
@@ -263,22 +293,25 @@ module "api" {
       # Disiscrizione dagli avvisi in un clic, dal link firmato nell'email o da Gmail & co.
       routes = []
       # Lettura degli avvisi: immagine invisibile e link delle email (firmati come la disiscrizione).
-      public_routes = ["POST /pubblico/disiscrivi", "GET /pubblico/aperto", "GET /pubblico/clic"]
-      write_tables  = [module.data.table_arns.users]
+      # Modulo della pagina /contatti: il messaggio va all'admin sul topic SNS; contatori = limite per IP.
+      public_routes = ["POST /pubblico/disiscrivi", "GET /pubblico/aperto", "GET /pubblico/clic", "POST /pubblico/contatto"]
+      write_tables  = [module.data.table_arns.users, module.data.table_arns.contatori]
       read_tables   = []
-      environment   = local.disiscrizione_env
+      environment   = merge(local.disiscrizione_env, local.email_env)
+      policies      = jsonencode([local.invia_email])
     }
     admin = {
       # Pannello di controllo: ogni route controlla il gruppo "admin" del token.
       routes = [
         "GET /admin/riepilogo", "GET /admin/utenti",
-        "PUT /admin/utenti/{username}/piano", "PUT /admin/utenti/{username}/stato",
+        "PUT /admin/utenti/{username}/piano", "PUT /admin/utenti/{username}/stato", "DELETE /admin/utenti/{username}",
+        "GET /admin/utenti/{username}/accessi",
         "GET /admin/codici", "POST /admin/codici", "PUT /admin/codici/{codice}",
         "GET /admin/banche-dati", "POST /admin/banche-dati", "PUT /admin/banche-dati/{id}",
         "POST /admin/banche-dati/{id}/estrai", "POST /admin/banche-dati/{id}/pubblica", "POST /admin/banche-dati/{id}/ritira",
         "DELETE /admin/banche-dati/{id}",
         "POST /admin/banche-dati/{id}/concorsi", "DELETE /admin/banche-dati/{id}/concorsi/{concorsoId}",
-        "PUT /admin/concorsi/{id}/concluso",
+        "PUT /admin/concorsi/{id}/concluso", "PUT /admin/concorsi/{id}", "DELETE /admin/concorsi/{id}/modifiche",
         "GET /admin/ordini",
         "GET /admin/richieste", "POST /admin/richieste/{userId}/{id}",
       ]
@@ -287,9 +320,14 @@ module "api" {
         module.data.table_arns.users, module.data.table_arns.codici, module.data.table_arns.banche,
         module.data.table_arns.questions, module.data.table_arns.concorsi, module.data.table_arns.follows,
         module.data.table_arns.richieste,
+        # Eliminare un utente cancella anche le sue sessioni e i progressi.
+        module.data.table_arns.attempts, module.data.table_arns.progressi,
+        # Ordini: email e nome dell'utente eliminato restano sui suoi ordini.
+        # Accessi: storico dei login di ogni utente, e cancellati con l'utente.
+        module.data.table_arns.ordini, module.data.table_arns.accessi,
       ]
       # Contatori: spesa AI del mese nel riepilogo del pannello.
-      read_tables = [module.data.table_arns.ordini, module.data.table_arns.contatori]
+      read_tables = [module.data.table_arns.contatori]
       # Cambiando piano a un utente gli arriva l'email (piano attivato / tornato Free).
       environment = merge(local.cognito_env, local.email_env, local.site_env, {
         CONTENUTI_BUCKET     = module.contenuti.bucket
@@ -316,6 +354,7 @@ module "api" {
           "cognito-idp:ListUsers", "cognito-idp:ListUsersInGroup", "cognito-idp:AdminGetUser",
           "cognito-idp:AdminListGroupsForUser",
           "cognito-idp:DescribeUserPool", "cognito-idp:AdminEnableUser", "cognito-idp:AdminDisableUser",
+          "cognito-idp:AdminDeleteUser",
         ]
         Resource = module.auth.user_pool_arn
       }])
@@ -337,8 +376,9 @@ module "jobs" {
       # Il massimo di Lambda: l'import dello storico dei chiusi (storico-bandi) va a blocchi da ~13 minuti.
       timeout      = 900
       write_tables = [module.data.table_arns.concorsi]
-      environment  = local.cache_bandi_env
-      policies     = jsonencode([local.invia_email, local.cache_bandi])
+      # SITE_URL: nell'email all'admin il link ai bandi da caricare.
+      environment = merge(local.cache_bandi_env, local.site_env)
+      policies    = jsonencode([local.invia_email, local.cache_bandi])
     }
     pulizia-bandi = {
       description = "Domenica e mercoledì: toglie i bandi che inPA non elenca più e rifà la lista in cache"
@@ -434,9 +474,7 @@ module "monitoraggio" {
   api_id          = module.api.api_id
   api_functions   = module.api.function_names
   job_functions   = module.jobs.function_names
-  other_functions = merge(module.contenuti.function_names, { auth-pre-signup = module.auth_trigger.function_name })
-  # Giorni massimi senza esecuzioni prima dell'allarme (CloudWatch: al massimo 7).
-  # pulizia-bandi gira la domenica: in 7 giorni di fila ce n'è sempre una.
+  other_functions = merge(module.contenuti.function_names, { auth-pre-signup = module.auth_trigger.function_name, auth-accessi = module.auth_accessi.function_name })
   # Giorni senza esecuzioni prima dell'allarme: 2 per i job di ogni giorno, 5 per la pulizia
   # (domenica e mercoledì, al massimo 4 giorni tra un giro e l'altro). Con 1 giorno l'allarme
   # scatterebbe ogni notte tra la mezzanotte e l'ora del job.

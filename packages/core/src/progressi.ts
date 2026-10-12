@@ -6,6 +6,9 @@ import type { ProgressoBanca, SelezioneBanca } from "./domain";
 /** Numero della domanda dall'id nella tabella delle domande ("n00042" → 42). */
 export const numeroDomanda = (id: string) => Number(id.slice(1));
 
+/** Id della domanda nella tabella dal suo numero (42 → "n00042"). */
+export const idDomanda = (numero: number) => `n${String(numero).padStart(5, "0")}`;
+
 /** true se il bit n della mappa è acceso (mappa assente = tutto spento). */
 export function bitAcceso(bits: Uint8Array | undefined, n: number) {
   const byte = n >> 3;
@@ -35,6 +38,21 @@ export function contaBit(bits: Uint8Array | undefined) {
   return n;
 }
 
+/** I numeri con il bit acceso, in ordine (es. le domande preferite). */
+export function numeriAccesi(bits: Uint8Array | undefined) {
+  const out: number[] = [];
+  bits?.forEach((b, i) => {
+    for (let j = 0; j < 8; j++) if (b & (1 << j)) out.push(i * 8 + j);
+  });
+  return out;
+}
+
+/** Salva o toglie una domanda dalle preferite. */
+export function conPreferita(prima: Pick<ProgressoBanca, "preferite"> | undefined, numero: number, preferita: boolean) {
+  const preferite = conBit(prima?.preferite ?? new Uint8Array(), numero, preferita);
+  return { preferite, nPreferite: contaBit(preferite) };
+}
+
 /** Esito di una domanda in una sessione consegnata (le domande lasciate in bianco non si passano). */
 export interface EsitoDomanda {
   numero: number;
@@ -56,15 +74,17 @@ export function aggiornaProgresso(prima: Pick<ProgressoBanca, "fatte" | "sbaglia
  * Le domande da proporre per prime e quelle per completare il numero richiesto:
  * - nuove: prima quelle mai fatte; finite quelle, le già fatte;
  * - sbagliate: solo quelle sbagliate l'ultima volta;
+ * - preferite: solo quelle salvate con la stella;
  * - tutte: tutte allo stesso modo.
  */
 export function candidatePerSelezione<T extends { id: string }>(
   domande: T[],
-  progresso: Pick<ProgressoBanca, "fatte" | "sbagliate"> | undefined,
+  progresso: Pick<ProgressoBanca, "fatte" | "sbagliate" | "preferite"> | undefined,
   selezione: SelezioneBanca,
 ): { prima: T[]; poi: T[] } {
   if (selezione === "tutte" || (!progresso && selezione === "nuove")) return { prima: domande, poi: [] };
   if (selezione === "sbagliate") return { prima: domande.filter((d) => bitAcceso(progresso?.sbagliate, numeroDomanda(d.id))), poi: [] };
+  if (selezione === "preferite") return { prima: domande.filter((d) => bitAcceso(progresso?.preferite, numeroDomanda(d.id))), poi: [] };
   const fatta = (d: T) => bitAcceso(progresso?.fatte, numeroDomanda(d.id));
   return { prima: domande.filter((d) => !fatta(d)), poi: domande.filter(fatta) };
 }

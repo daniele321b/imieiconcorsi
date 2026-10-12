@@ -1,6 +1,6 @@
 import { GetCommand, PutCommand, QueryCommand } from "@aws-sdk/lib-dynamodb";
 import { batchGet, db, getProfilo, tables } from "@imieiconcorsi/core/db";
-import { inizioBandiScaduti } from "@imieiconcorsi/core/concorsi";
+import { conMaiuscola, inizioBandiScaduti, nomeConcorso } from "@imieiconcorsi/core/concorsi";
 import { attivi, righeSeguiti, smettiDiSeguire } from "@imieiconcorsi/core/seguiti";
 import { COMPARTO_IDS, type CompartoId, type Concorso } from "@imieiconcorsi/core/domain";
 import { HttpError, notFound, service } from "@imieiconcorsi/core/http";
@@ -13,7 +13,7 @@ import { HttpError, notFound, service } from "@imieiconcorsi/core/http";
 /** Bandi aperti al massimo per comparto in una risposta. */
 const MAX_PER_COMPARTO = 300;
 /**
- * Bandi chiusi in una ricerca: sono decine di migliaia in 18 mesi. Si tengono i più
+ * Bandi chiusi in una ricerca: sono decine di migliaia in 24 mesi. Si tengono i più
  * recenti, divisi tra i comparti cercati, per stare sotto i 6 MB di risposta della Lambda.
  */
 const MAX_CHIUSI = 3000;
@@ -85,8 +85,9 @@ async function idSeguiti(userId: string) {
   return attivi(await righeSeguiti(userId)).map((r) => r.concorsoId);
 }
 
-/** Nome da ricordare nello storico: resta anche se il bando sparisce. */
-const nomeConcorso = (c: Pick<Concorso, "ente" | "figura" | "titolo">) => `${c.ente} — ${c.figura ?? c.titolo}`.slice(0, 300);
+/** Nome da ricordare nello storico (resta anche se il bando sparisce): "Figura 2026 — Ente". */
+const nomeNelloStorico = (c: Pick<Concorso, "ente" | "figura" | "titolo" | "pubblicatoIl" | "scadenza">) =>
+  `${nomeConcorso(c)} — ${conMaiuscola(c.ente)}`.slice(0, 300);
 
 export const handler = service({
   /**
@@ -178,7 +179,7 @@ export const handler = service({
     await db.send(
       new PutCommand({
         TableName: tables.follows,
-        Item: { userId, concorsoId, dal: new Date().toISOString(), titolo: nomeConcorso(concorso.Item as Concorso) },
+        Item: { userId, concorsoId, dal: new Date().toISOString(), titolo: nomeNelloStorico(concorso.Item as Concorso) },
       }),
     );
     return { ok: true };
@@ -189,8 +190,8 @@ export const handler = service({
     const righe = await righeSeguiti(userId);
     // Righe di prima dello storico: il nome si prende dal bando, se c'è ancora.
     const senzaNome = righe.filter((r) => !r.titolo);
-    const bandi = await batchGet<Concorso>(tables.concorsi, senzaNome.map((r) => ({ id: r.concorsoId })), "id, ente, figura, titolo");
-    const nomi = new Map(bandi.map((c) => [c.id, nomeConcorso(c)]));
+    const bandi = await batchGet<Concorso>(tables.concorsi, senzaNome.map((r) => ({ id: r.concorsoId })), "id, ente, figura, titolo, pubblicatoIl, scadenza");
+    const nomi = new Map(bandi.map((c) => [c.id, nomeNelloStorico(c)]));
     return {
       storico: righe
         .map((r) => ({ concorsoId: r.concorsoId, titolo: r.titolo ?? nomi.get(r.concorsoId) ?? r.concorsoId, dal: r.dal, seguito: !r.rimossoIl }))

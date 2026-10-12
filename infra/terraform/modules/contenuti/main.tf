@@ -7,7 +7,7 @@
 # Il bucket (nome con un suffisso casuale: i nomi S3 sono unici nel mondo).
 resource "aws_s3_bucket" "contenuti" {
   bucket_prefix = "${var.name}-contenuti-"
-  force_destroy = true
+  force_destroy = !var.protezione
 }
 
 # Niente di pubblico: lo leggono solo le Lambda con i permessi giusti.

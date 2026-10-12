@@ -1,5 +1,5 @@
 import { BatchWriteCommand } from "@aws-sdk/lib-dynamodb";
-import { inizioBandiScaduti } from "@imieiconcorsi/core/concorsi";
+import { conModificheAdmin, inizioBandiScaduti, nomeConcorso } from "@imieiconcorsi/core/concorsi";
 import { batchGet, db, tables } from "@imieiconcorsi/core/db";
 import type { Concorso } from "@imieiconcorsi/core/domain";
 import { avvisaAdmin } from "@imieiconcorsi/core/email";
@@ -10,7 +10,7 @@ import { bandi, bandiAperti, paginaPiuVecchiaDi, toConcorso, type InpaBando } fr
 // Job del mattino (06:00, EventBridge Scheduler): importa da inPA tutti i bandi aperti e i
 // chiusi degli ultimi giorni nella tabella concorsi, avvisa l'admin dei bandi nuovi che citano
 // una banca dati e rifà la lista dei bandi in cache (S3 + CloudFront) che legge la ricerca.
-// Lanciato a mano con { storico } importa i chiusi degli ultimi 18 mesi (scripts/deploy.sh storico-bandi).
+// Lanciato a mano con { storico } importa i chiusi degli ultimi 24 mesi (scripts/deploy.sh storico-bandi).
 // L'accesso all'API di inPA sta in inpa.ts.
 
 /** Bandi elencati al massimo nell'email all'admin. */
@@ -27,17 +27,16 @@ const dataBreve = (iso?: string) =>
 
 /**
  * Salva una pagina di bandi senza perdere i dati aggiunti dopo l'import (banca dati
- * collegata, concluso). Restituisce i bandi aperti mai visti prima che citano una banca dati.
+ * collegata, concluso, correzioni dell'admin). Restituisce i bandi aperti mai visti prima che
+ * citano una banca dati.
  */
 export async function salva(pagina: InpaBando[], chiusi: boolean) {
-  const concorsi = pagina.map((b) => toConcorso(b));
+  let concorsi = pagina.map((b) => toConcorso(b));
   const nuoviConBancaDati: Concorso[] = [];
 
-  const esistenti = await batchGet<Pick<Concorso, "id" | "bancaDati" | "bancaDatiId" | "conclusoIl" | "primoImportoIl" | "pubblicatoIl">>(
-    tables.concorsi,
-    concorsi.map((c) => ({ id: c.id })),
-    "id, bancaDati, bancaDatiId, conclusoIl, primoImportoIl, pubblicatoIl",
-  );
+  const esistenti = await batchGet<
+    Pick<Concorso, "id" | "bancaDati" | "bancaDatiId" | "conclusoIl" | "primoImportoIl" | "pubblicatoIl" | "modificheAdmin" | "modificatoIl">
+  >(tables.concorsi, concorsi.map((c) => ({ id: c.id })), "id, bancaDati, bancaDatiId, conclusoIl, primoImportoIl, pubblicatoIl, modificheAdmin, modificatoIl");
   const giaVisti = new Map(esistenti.map((e) => [e.id, e]));
   const adesso = new Date().toISOString();
   for (const c of concorsi) {
@@ -48,6 +47,7 @@ export async function salva(pagina: InpaBando[], chiusi: boolean) {
       if (prima.conclusoIl) c.conclusoIl = prima.conclusoIl;
       // Bandi importati prima di questo campo: contano dalla pubblicazione, così non sembrano tutti nuovi.
       c.primoImportoIl = prima.primoImportoIl ?? prima.pubblicatoIl ?? "1970-01-01T00:00:00.000Z";
+      if (prima.modificatoIl) c.modificatoIl = prima.modificatoIl;
     } else if (chiusi) {
       // Un bando già chiuso non è una novità da segnalare a nessuno.
       c.primoImportoIl = c.pubblicatoIl ?? "1970-01-01T00:00:00.000Z";
@@ -56,6 +56,13 @@ export async function salva(pagina: InpaBando[], chiusi: boolean) {
       if (c.bancaDatiPrevista) nuoviConBancaDati.push(c);
     }
   }
+
+  // Correzioni dell'admin (nome, scadenza…) di nuovo sopra i dati freschi di inPA, che restano
+  // come originali per poterle annullare.
+  concorsi = concorsi.map((c) => {
+    const modifiche = giaVisti.get(c.id)?.modificheAdmin;
+    return modifiche ? conModificheAdmin(c, modifiche, true) : c;
+  });
 
   for (let i = 0; i < concorsi.length; i += 25) {
     let pending = concorsi.slice(i, i + 25).map((Item) => ({ PutRequest: { Item } }));
@@ -100,11 +107,18 @@ async function avvisaBancheDati(nuovi: Concorso[]) {
   if (!nuovi.length) return;
   const righe = nuovi
     .slice(0, MAX_NELL_AVVISO)
-    .map((c) => `- ${c.ente} — ${c.figura ?? c.titolo}\n  scade il ${dataBreve(c.scadenza)} · ${c.url}`);
+    .map((c) => `- ${nomeConcorso(c)} — ${c.ente}\n  scade il ${dataBreve(c.scadenza)} · ${c.url}`);
   if (nuovi.length > MAX_NELL_AVVISO) righe.push(`… e altri ${nuovi.length - MAX_NELL_AVVISO}.`);
   await avvisaAdmin(
     `${nuovi.length} nuovi bandi con banca dati`,
-    [`Oggi su inPA ci sono ${nuovi.length} bandi nuovi che citano una banca dati:`, "", ...righe].join("\n"),
+    [
+      `Oggi su inPA ci sono ${nuovi.length} bandi nuovi che citano una banca dati:`,
+      "",
+      ...righe,
+      "",
+      "Quando l'ente pubblica la banca dati, caricala dal pannello: i bandi in attesa sono in",
+      `${process.env.SITE_URL ?? ""}/admin/banche-dati#da-caricare`,
+    ].join("\n"),
   );
 }
 

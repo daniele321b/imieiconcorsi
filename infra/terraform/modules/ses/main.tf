@@ -80,6 +80,13 @@ resource "aws_sesv2_email_identity" "recipient" {
   email_identity = each.value
 }
 
+# Soppressione anche a livello di account (tutte le email della regione, non solo quelle con il
+# configuration set): un indirizzo che rimbalza o segnala spam non riceve più nulla. AWS lo
+# guarda quando valuta l'uscita dalla sandbox.
+resource "aws_sesv2_account_suppression_attributes" "account" {
+  suppressed_reasons = ["BOUNCE", "COMPLAINT"]
+}
+
 # Insieme di regole usato da tutte le email dell'app (nome passato alle Lambda).
 resource "aws_sesv2_configuration_set" "main" {
   configuration_set_name = var.name

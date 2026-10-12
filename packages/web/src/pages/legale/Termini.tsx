@@ -3,6 +3,7 @@ import { Link } from "react-router";
 import { euro } from "../../lib/format";
 import { LEGALE } from "../../lib/legale";
 import { LegalePagina } from "./LegalePagina";
+import { ComeContattarci, Titolare } from "./parti";
 
 // Termini e condizioni. I punti su pagamento unico, nessun rinnovo e recesso devono
 // restare allineati al flusso di acquisto (pagina Piani e servizio billing).
@@ -12,9 +13,8 @@ export function Termini() {
   return (
     <LegalePagina titolo="Termini e condizioni">
       <p>
-        Questi termini regolano l'uso di iMieiConcorsi ({LEGALE.sito}), fornito da {LEGALE.titolare}, {LEGALE.indirizzo},{" "}
-        {LEGALE.partitaIva}. Contatti: <strong>{LEGALE.email}</strong>. Registrandoti li accetti, insieme all'
-        <Link to="/privacy">Informativa sulla privacy</Link>.
+        Questi termini regolano l'uso di iMieiConcorsi ({LEGALE.sito}). Il servizio è fornito da: <Titolare />. Puoi
+        scriverci <ComeContattarci />. Registrandoti li accetti, insieme all'<Link to="/privacy">Informativa sulla privacy</Link>.
       </p>
 
       <h2>1. Il servizio</h2>
@@ -63,8 +63,12 @@ export function Termini() {
           giorni prima della scadenza; per continuare basta un nuovo acquisto.
         </li>
         <li>
-          Se cambi piano prima della scadenza, il nuovo periodo parte dal giorno del pagamento e il periodo residuo del piano
-          precedente non viene rimborsato né recuperato.
+          <strong>Acquisti con un piano attivo.</strong> Se acquisti di nuovo lo stesso piano, i giorni acquistati si aggiungono
+          alla scadenza attuale (es. un anno di {PIANI.pro.nome} più 90 giorni: la scadenza si sposta di 90 giorni). Se passi da{" "}
+          {PIANI.medium.nome} a {PIANI.pro.nome}, i giorni {PIANI.medium.nome} che ti restano diventano giorni {PIANI.pro.nome} in
+          proporzione ai prezzi di listino, in aggiunta a quelli acquistati; la pagina Piani te lo mostra prima del pagamento.
+          Mentre hai il piano {PIANI.pro.nome} non puoi acquistare il {PIANI.medium.nome}: puoi farlo dopo la scadenza. Il periodo
+          residuo non viene rimborsato in denaro.
         </li>
         <li>
           Possiamo offrire codici sconto: ognuno vale una sola volta per account, sui piani e fino alla data indicati, e
@@ -73,7 +77,8 @@ export function Termini() {
         <li>
           <strong>Pagamento:</strong> avviene sulla pagina sicura di Stripe, con carta, PayPal, Apple Pay o Google Pay. Il piano
           si attiva appena Stripe conferma il pagamento; se il pagamento non va a buon fine non ti viene addebitato nulla e il
-          piano non cambia. Stripe ti invia la ricevuta; per la fattura scrivi a <strong>{LEGALE.email}</strong>.
+          piano non cambia. Ti inviamo per email la ricevuta dell'acquisto (puoi farla rimandare da Profilo → I tuoi pagamenti);
+          per la fattura scrivici <ComeContattarci />, indicando il codice dell'ordine.
         </li>
       </ul>
 
@@ -104,7 +109,7 @@ export function Termini() {
         <li>
           Le funzioni di intelligenza artificiale del piano {PIANI.pro.nome} producono risposte generate automaticamente: sono
           un aiuto allo studio e possono contenere errori, da verificare sulle fonti ufficiali. Rispondono solo su argomenti di
-          studio per i concorsi e hanno limiti di utilizzo: i gettoni del mese, un numero massimo di richieste al minuto e un
+          studio per i concorsi e hanno limiti di utilizzo: un numero massimo di crediti AI al mese, un numero massimo di richieste al minuto e un
           tetto di consumo mensile per account, per un uso corretto e sostenibile del servizio. Se si raggiunge un limite, le
           funzioni AI tornano disponibili il mese successivo (o dopo pochi secondi, per il limite al minuto).
         </li>
@@ -123,7 +128,7 @@ export function Termini() {
         <li>
           Ti scriviamo per email per le comunicazioni sul tuo account e sul piano (conferme d'acquisto, scadenze). Gli avvisi
           sui nuovi bandi arrivano solo se li attivi nel profilo e si disattivano dal profilo o con il link in fondo a ogni
-          email.
+          email. Non mandiamo pubblicità per email. L'elenco completo è in <Link to="/email">Le nostre email</Link>.
         </li>
         <li>
           Se ci lasci un parere sull'app dal profilo, possiamo usarlo per migliorare il servizio. Non lo pubblichiamo con il
@@ -146,7 +151,7 @@ export function Termini() {
 
       <h2>9. Reclami e legge applicabile</h2>
       <p>
-        Per qualsiasi problema scrivi a <strong>{LEGALE.email}</strong>: rispondiamo entro 15 giorni. Si applica la legge
+        Per qualsiasi problema scrivici <ComeContattarci />: rispondiamo entro 15 giorni. Si applica la legge
         italiana. Se sei un consumatore puoi rivolgerti anche a un organismo di risoluzione alternativa delle controversie
         (ADR, artt. 141 e seguenti del Codice del consumo); per le controversie è competente il foro del tuo luogo di residenza
         o domicilio.

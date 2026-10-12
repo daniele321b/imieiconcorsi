@@ -6,10 +6,11 @@
 //   chiave    tabella delle soluzioni dopo un titolo come "Soluzioni" / "Risposte esatte":
 //             "1 B  2 A  3-C  4) D …"
 //   prima     "la risposta esatta è sempre la prima (A)": vale per tutte le domande
+//   risposta  tabella "numero | domanda | risposta esatta", senza alternative (tabella.ts)
 // "auto" li prova tutti; un formato scelto a mano forza quello.
 
 /** Come è indicata la risposta giusta nel PDF (vedi sopra). */
-export type Formato = "auto" | "indicata" | "segnata" | "chiave" | "prima";
+export type Formato = "auto" | "indicata" | "segnata" | "chiave" | "prima" | "risposta";
 
 /** Una domanda letta dal PDF, pronta da controllare e pubblicare. */
 export interface DomandaEstratta {
@@ -22,6 +23,8 @@ export interface DomandaEstratta {
   sezione?: string;
   /** Come nel PDF: per confrontare gli esempi con il file */
   pdf: { opzioni: string[]; corretta: number };
+  /** Il PDF dava solo la risposta esatta: le altre sono ricavate (tabella.ts) */
+  alternativeRicavate?: true;
 }
 
 /** Risultato dell'estrazione: domande valide, scartate con il motivo e conteggio per formato. */
@@ -77,12 +80,12 @@ interface Grezza {
 }
 
 /** Spazi normali al posto di quelli speciali, niente spazi doppi. */
-const pulisci = (s: string) => s.replace(/ /g, " ").replace(/[ \t]+/g, " ").trim();
+export const pulisci = (s: string) => s.replace(/ /g, " ").replace(/[ \t]+/g, " ").trim();
 /** Righe spezzate dal PDF in un testo solo (riattacca le parole divise con il trattino). */
-const unisci = (parti: string[]) => pulisci(parti.join(" ").replace(/(\w)- (\w)/g, "$1$2"));
+export const unisci = (parti: string[]) => pulisci(parti.join(" ").replace(/(\w)- (\w)/g, "$1$2"));
 
 /** Mescola le opzioni in modo stabile (stesso PDF → stessa domanda), così la giusta non è sempre la A. */
-function mescolaStabile<T>(arr: T[], seme: number): T[] {
+export function mescolaStabile<T>(arr: T[], seme: number): T[] {
   const out = [...arr];
   let x = seme * 2654435761 || 1;
   for (let i = out.length - 1; i > 0; i--) {

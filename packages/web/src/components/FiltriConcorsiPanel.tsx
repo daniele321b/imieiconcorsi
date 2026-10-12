@@ -1,4 +1,4 @@
-import type { FiltriConcorsi } from "@imieiconcorsi/core/concorsi";
+import { TIPI_BANDO, type FiltriConcorsi } from "@imieiconcorsi/core/concorsi";
 import { tipoProcedura } from "../lib/format";
 import { cx } from "./ui";
 
@@ -25,6 +25,32 @@ export function FiltriConcorsiPanel({
   return (
     <div className="grid gap-3 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-200 sm:grid-cols-2 lg:grid-cols-3">
       {/* La scadenza è per inviare la domanda: chi l'ha già inviata continua a prepararsi sui chiusi. */}
+      <fieldset className="sm:col-span-2 lg:col-span-3">
+        <legend className="text-xs font-semibold text-slate-500">Tipo di bando</legend>
+        <div className="mt-1 flex flex-wrap gap-2">
+          {TIPI_BANDO.map((t) => {
+            const scelto = !!value.tipi?.includes(t.id);
+            return (
+              <button
+                key={t.id}
+                type="button"
+                aria-pressed={scelto}
+                onClick={() => {
+                  const tipi = scelto ? (value.tipi ?? []).filter((x) => x !== t.id) : [...(value.tipi ?? []), t.id];
+                  set({ tipi: tipi.length ? tipi : undefined });
+                }}
+                className={cx(
+                  "rounded-full px-3 py-1.5 text-sm font-semibold transition",
+                  scelto ? "bg-brand-600 text-white" : "bg-white text-slate-600 ring-1 ring-slate-200 hover:ring-slate-300",
+                )}
+              >
+                {t.nome}
+              </button>
+            );
+          })}
+        </div>
+        <p className="mt-1 text-xs text-slate-500">Nessuno scelto = tutti. Il tipo si riconosce dal titolo del bando.</p>
+      </fieldset>
       <fieldset className="sm:col-span-2 lg:col-span-3">
         <legend className="text-xs font-semibold text-slate-500">Bandi</legend>
         <div className="mt-1 flex flex-wrap gap-x-6 gap-y-2">
@@ -100,14 +126,19 @@ export function FiltriConcorsiPanel({
           ))}
         </select>
       </label>
-      <label className="flex items-center gap-2 self-end pb-2 text-sm font-medium text-slate-700">
+      <label className="flex items-start gap-2 self-end pb-2 text-sm font-medium text-slate-700">
         <input
           type="checkbox"
           checked={!!value.soloBancaDati}
           onChange={(e) => set({ soloBancaDati: e.target.checked || undefined })}
           className="size-4 rounded border-slate-300 text-brand-600 focus:ring-brand-500"
         />
-        Solo con banca dati ufficiale
+        <span>
+          Solo bandi con banca dati
+          <span className="block text-xs font-normal text-slate-500">
+            Il testo del bando cita una "banca dati" (le domande ufficiali pubblicate dall'ente), oppure la banca dati è già caricata
+          </span>
+        </span>
       </label>
     </div>
   );

@@ -65,7 +65,7 @@ const dataIt = (iso: string) => new Intl.DateTimeFormat("it-IT", { day: "numeric
 const gettoniFiniti = (ctx: Ctx) =>
   new HttpError(
     429,
-    `Hai usato tutti i ${ctx.limiti.gettoniAi} gettoni AI di questo mese: si rinnovano il ${dataIt(rinnovoGettoni())}.`,
+    `Hai usato tutti i ${ctx.limiti.gettoniAi} crediti AI di questo mese: ripartono il ${dataIt(rinnovoGettoni())}.`,
     "GETTONI_FINITI",
   );
 
@@ -101,7 +101,7 @@ async function controllaTettoPiattaforma() {
     spesaPiattaforma = { mese, micro: Number(res.Item?.spesaMicroUsd ?? 0), lettaIl: Date.now() };
   }
   if (spesaPiattaforma.micro >= tettoMese()) {
-    throw new HttpError(503, "Il tutor AI è in pausa per qualche tempo: riprova più tardi. Non ti abbiamo scalato gettoni.", "AI_IN_PAUSA");
+    throw new HttpError(503, "Il tutor AI è in pausa per qualche tempo: riprova più tardi. Questa domanda non ti è stata conteggiata.", "AI_IN_PAUSA");
   }
 }
 
@@ -273,7 +273,7 @@ async function chiamaAi<T>(ctx: Ctx, costo: number, chiamata: () => Promise<Esit
     if (err instanceof HttpError) throw err;
     // Niente contenuti nei log: solo il tipo di errore.
     console.error("Chiamata AI non riuscita", err instanceof AnthropicBedrock.APIError ? `${err.status} ${err.name}` : err);
-    throw new HttpError(503, "Il tutor AI non risponde in questo momento: riprova tra poco. Non ti abbiamo scalato gettoni.", "AI_NON_DISPONIBILE");
+    throw new HttpError(503, "Il tutor AI non risponde in questo momento: riprova tra poco. Questa domanda non ti è stata conteggiata.", "AI_NON_DISPONIBILE");
   }
   await registraConsumo(ctx, esito.uso);
   if (esito.fuoriTema) {
@@ -282,7 +282,7 @@ async function chiamaAi<T>(ctx: Ctx, costo: number, chiamata: () => Promise<Esit
   }
   if (esito.risultato === undefined) {
     await restituisciGettoni(ctx, costo);
-    throw new HttpError(503, "Il tutor AI non ha dato una risposta valida: riprova. Non ti abbiamo scalato gettoni.", "AI_NON_DISPONIBILE");
+    throw new HttpError(503, "Il tutor AI non ha dato una risposta valida: riprova. Questa domanda non ti è stata conteggiata.", "AI_NON_DISPONIBILE");
   }
   return { risultato: esito.risultato };
 }

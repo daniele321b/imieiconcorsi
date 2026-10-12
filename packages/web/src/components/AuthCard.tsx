@@ -121,8 +121,13 @@ export function AuthCard() {
     });
   };
 
-  const social = (provider: SocialProvider) =>
+  const social = (provider: SocialProvider) => {
+    // Ogni nuovo accesso social ha diritto al suo nuovo tentativo automatico (vedi AuthCallback).
+    try {
+      sessionStorage.removeItem("login-social-riprova");
+    } catch {}
     void esegui(() => signInWithRedirect({ provider: provider === "google" ? "Google" : "Facebook" }));
+  };
 
   const intestazioni: Record<Modo, { titolo: string; sotto: string }> = {
     accedi: { titolo: "Bentornato", sotto: "Accedi per continuare a prepararti." },

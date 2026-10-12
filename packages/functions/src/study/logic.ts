@@ -47,8 +47,13 @@ export function mescola<T>(items: T[], random: () => number = Math.random): T[] 
 /** La domanda senza soluzione, spiegazione e fonte: è quella che vede chi fa una simulazione. */
 export const pubblica = ({ corretta, spiegazione, fonte, ...d }: Domanda): DomandaPubblica => d;
 
-/** Punteggio di una sessione consegnata: giuste, sbagliate, non date, percentuale e per materia. */
-export function calcolaEsito(domande: Domanda[], risposte: (number | null)[], regole: Regole): Esito {
+/**
+ * Punteggio di una sessione consegnata: giuste, sbagliate, non date, percentuale e per materia.
+ * Simulazione: punteggio d'esame (giuste − penalità sulle sbagliate) sul massimo, come al concorso.
+ * Studio: percentuale delle risposte giuste su quelle date, senza penalità (2 giuste su 10 = 20%);
+ * le domande non fatte (sessione interrotta) non contano, nemmeno nelle statistiche per materia.
+ */
+export function calcolaEsito(domande: Domanda[], risposte: (number | null)[], regole: Regole, tipo: "studio" | "simulazione" = "simulazione"): Esito {
   let corrette = 0;
   let errate = 0;
   let omesse = 0;
@@ -57,7 +62,7 @@ export function calcolaEsito(domande: Domanda[], risposte: (number | null)[], re
   domande.forEach((d, i) => {
     const r = risposte[i] ?? null;
     const m = perMateria.get(d.materia) ?? { corrette: 0, totale: 0 };
-    m.totale++;
+    if (r !== null || tipo === "simulazione") m.totale++;
     if (r === null) omesse++;
     else if (r === d.corretta) {
       corrette++;
@@ -68,7 +73,9 @@ export function calcolaEsito(domande: Domanda[], risposte: (number | null)[], re
 
   const massimo = domande.length * regole.corretta;
   const punteggio = round2(corrette * regole.corretta + errate * regole.errata + omesse * regole.omessa);
-  const percentuale = massimo ? round2((Math.max(punteggio, 0) / massimo) * 100) : 0;
+  const date = corrette + errate;
+  const percentuale =
+    tipo === "studio" ? (date ? round2((corrette / date) * 100) : 0) : massimo ? round2((Math.max(punteggio, 0) / massimo) * 100) : 0;
 
   return {
     corrette,
@@ -78,7 +85,7 @@ export function calcolaEsito(domande: Domanda[], risposte: (number | null)[], re
     massimo,
     percentuale,
     superata: massimo > 0 && punteggio >= massimo * regole.soglia,
-    perMateria: [...perMateria].map(([materia, v]) => ({ materia, ...v })),
+    perMateria: [...perMateria].filter(([, v]) => v.totale > 0).map(([materia, v]) => ({ materia, ...v })),
   };
 }
 

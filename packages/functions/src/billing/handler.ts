@@ -1,5 +1,5 @@
 import { randomUUID } from "node:crypto";
-import { GetCommand, QueryCommand } from "@aws-sdk/lib-dynamodb";
+import { GetCommand, QueryCommand, UpdateCommand } from "@aws-sdk/lib-dynamodb";
 import { db, getProfilo, tables } from "@imieiconcorsi/core/db";
 import {
   periodo as durata,
@@ -13,18 +13,21 @@ import {
 import { emailTornatoFree } from "@imieiconcorsi/core/email-piani";
 import { env } from "@imieiconcorsi/core/env";
 import { type Event, HttpError, notFound, service } from "@imieiconcorsi/core/http";
+import { esitoAcquisto } from "@imieiconcorsi/core/acquisti";
 import { assegnaPiano } from "@imieiconcorsi/core/piani";
 import { motivoRifiuto, normalizzaCodice, prezzoScontato } from "@imieiconcorsi/core/sconti";
 import type { APIGatewayProxyEventV2, APIGatewayProxyResultV2 } from "aws-lambda";
 import { z } from "zod";
 import { codiceDi, usaCodiceInvito } from "./inviti";
-import { chiudiOrdine, completaOrdine, leggiOrdine, salvaOrdine, type Ordine } from "./ordini";
+import { chiudiOrdine, completaOrdine, inviaConferma, leggiOrdine, registraRicevuta, salvaOrdine, type Ordine } from "./ordini";
 import { creaSessione, firmaWebhookValida, leggiSessione, MINIMO_STRIPE } from "./stripe";
 
 // Piani a pagamento. BILLING_MODE (da Terraform):
 //   "stripe": l'acquisto crea un ordine e la pagina di pagamento Stripe; il piano si attiva
 //             con la conferma di Stripe (webhook) o quando la pagina di ritorno trova il pagamento;
-//   "mock":   stesso giro, ma l'ordine si completa subito, senza pagare (prove).
+//   "mock":   stesso giro, ma l'ordine si completa subito, senza pagare (prove, solo dev);
+//   "chiuso": prod senza chiavi Stripe: i piani a pagamento non si comprano (restano i codici
+//             sconto al 100% e i piani dati dall'admin), così nessuno li ottiene gratis.
 
 /** Acquisto (o ritorno al Free): piano, durata, consenso e codice sconto facoltativo. */
 const Abbonamento = z
@@ -152,12 +155,32 @@ const servizio = service({
     const { piano, periodo, codice } = ctx.body(Abbonamento);
 
     if (piano === "free") {
+      // Con Medium o Pro attivi non si torna al Free a mano: ci si torna da soli alla scadenza.
+      if (ctx.piano !== "free") {
+        const attuale = await getProfilo(ctx.userId);
+        const scade = attuale?.scadenzaPiano;
+        if (!scade || Date.parse(scade) > Date.now()) {
+          throw new HttpError(
+            409,
+            scade
+              ? `Il piano ${PIANI[ctx.piano].nome} resta attivo fino al ${new Intl.DateTimeFormat("it-IT", { day: "numeric", month: "long", year: "numeric" }).format(new Date(scade))}: alla scadenza torni al Free in automatico.`
+              : `Il piano ${PIANI[ctx.piano].nome} non ha scadenza: per cambiarlo scrivici dall'Assistenza.`,
+            "PIANO_ATTIVO",
+          );
+        }
+      }
       await assegnaPiano({ userId: ctx.userId, username: ctx.username, piano, scadenza: null });
       if (ctx.piano !== "free" && ctx.email) {
         await emailTornatoFree({ a: ctx.email, nome: ctx.nome, pianoPrecedente: ctx.piano, motivo: "scelta" });
       }
       return { piano, scadenza: null };
     }
+
+    // Con un piano attivo: stesso piano = si aggiunge tempo, Medium → Pro = giorni convertiti,
+    // Pro → Medium = no (core/acquisti.ts). Il conto vero lo rifà completaOrdine al pagamento.
+    const profilo = await getProfilo(ctx.userId);
+    const esito = esitoAcquisto({ piano: ctx.piano, scadenza: profilo?.scadenzaPiano, periodo: profilo?.periodo }, { piano, periodo });
+    if (!esito.consentito) throw new HttpError(409, esito.motivo, "ACQUISTO_NON_CONSENTITO");
 
     // Il codice si controlla adesso ma si consuma solo a pagamento riuscito (completaOrdine).
     const sconto = codice?.trim() ? await codiceValido(ctx.userId, codice, piano) : undefined;
@@ -177,11 +200,17 @@ const servizio = service({
       importo,
       ...(sconto ? { codiceSconto: sconto.codice, percentualeSconto: sconto.percentuale } : {}),
       stato: "in-attesa",
+      // Restano nello storico pagamenti anche se l'account viene eliminato.
+      ...(ctx.email ? { email: ctx.email } : {}),
+      ...(ctx.nome ? { nome: ctx.nome } : {}),
       // Consenso dato adesso, prima del pagamento: è quello che conta.
       consenso: { rinunciaRecesso: true, versioneTermini: VERSIONE_TERMINI, il: ora },
       creatoIl: ora,
       aggiornatoIl: ora,
     };
+    if (process.env.BILLING_MODE === "chiuso" && importo > 0) {
+      throw new HttpError(403, "Gli acquisti non sono ancora aperti: i piani a pagamento arrivano presto.", "PAGAMENTI_CHIUSI");
+    }
     await salvaOrdine(ordine);
 
     if (process.env.BILLING_MODE === "stripe" && importo > 0) {
@@ -236,6 +265,29 @@ const servizio = service({
         scadenzaPiano: o.scadenzaPiano,
       })),
     };
+  },
+
+  /** Rimanda la ricevuta di un ordine pagato all'email dell'account (al massimo una volta ogni 10 minuti). */
+  "POST /me/ordini/{id}/ricevuta": async (ctx) => {
+    const ordine = await leggiOrdine(ctx.params.id!);
+    if (!ordine || ordine.userId !== ctx.userId) throw notFound("Ordine");
+    if (ordine.stato !== "pagato" || !ordine.scadenzaPiano) throw new HttpError(409, "La ricevuta c'è solo per i pagamenti completati.");
+    const ora = new Date();
+    if (ordine.ricevutaInviataIl && ora.getTime() - Date.parse(ordine.ricevutaInviataIl) < 10 * 60_000) {
+      throw new HttpError(429, "Te l'abbiamo appena rimandata: controlla anche nella cartella spam.");
+    }
+    await db.send(
+      new UpdateCommand({
+        TableName: tables.ordini,
+        Key: { id: ordine.id },
+        UpdateExpression: "SET ricevutaInviataIl = :o",
+        ExpressionAttributeValues: { ":o": ora.toISOString() },
+      }),
+    );
+    const errore = await inviaConferma(ordine, ordine.scadenzaPiano);
+    await registraRicevuta(ordine, errore);
+    if (errore) throw new HttpError(502, `La ricevuta non è partita: ${errore}. Riprova più tardi o scrivici dall'Assistenza.`);
+    return { ok: true, email: ctx.email };
   },
 
   /** Stato di un ordine (pagina di ritorno da Stripe); se il webhook tarda lo si chiede a Stripe. */

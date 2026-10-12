@@ -1,5 +1,5 @@
-import { AlertTriangle, CheckCircle2, Info, Loader2, Sparkles, X } from "lucide-react";
-import { useEffect, type ButtonHTMLAttributes, type InputHTMLAttributes, type ReactNode } from "react";
+import { AlertTriangle, CheckCircle2, ChevronDown, Eye, EyeOff, Info, Loader2, Sparkles, X } from "lucide-react";
+import { useEffect, useState, type ButtonHTMLAttributes, type InputHTMLAttributes, type ReactNode } from "react";
 import { Link } from "react-router";
 
 // Componenti grafici di base (Tailwind CSS), usati da tutte le pagine: pulsanti, schede,
@@ -100,17 +100,36 @@ interface FieldProps extends InputHTMLAttributes<HTMLInputElement> {
   hint?: string;
 }
 
-/** Campo di testo con etichetta e suggerimento. */
-export function Field({ label, hint, id, className, ...props }: FieldProps) {
+/** Campo di testo con etichetta e suggerimento; le password hanno l'occhio per mostrarle. */
+export function Field({ label, hint, id, className, type, ...props }: FieldProps) {
   const inputId = id ?? props.name;
+  const password = type === "password";
+  const [visibile, setVisibile] = useState(false);
   return (
     <label htmlFor={inputId} className={cx("block", className)}>
       <span className="mb-1.5 block text-sm font-medium text-slate-700">{label}</span>
-      <input
-        id={inputId}
-        className="block h-11 w-full rounded-xl border-0 bg-white px-3.5 text-slate-900 ring-1 ring-slate-300 transition placeholder:text-slate-400 focus:ring-2 focus:ring-brand-500 focus:outline-none"
-        {...props}
-      />
+      <span className="relative block">
+        <input
+          id={inputId}
+          type={password && visibile ? "text" : type}
+          className={cx(
+            "block h-11 w-full rounded-xl border-0 bg-white px-3.5 text-slate-900 ring-1 ring-slate-300 transition placeholder:text-slate-400 focus:ring-2 focus:ring-brand-500 focus:outline-none",
+            password && "pr-11",
+          )}
+          {...props}
+        />
+        {password && (
+          <button
+            type="button"
+            onClick={() => setVisibile((v) => !v)}
+            aria-label={visibile ? "Nascondi la password" : "Mostra la password"}
+            aria-pressed={visibile}
+            className="absolute inset-y-0 right-0 grid w-11 place-items-center text-slate-400 hover:text-slate-700"
+          >
+            {visibile ? <EyeOff className="size-4" /> : <Eye className="size-4" />}
+          </button>
+        )}
+      </span>
       {hint && <span className="mt-1 block text-xs text-slate-500">{hint}</span>}
     </label>
   );
@@ -250,5 +269,42 @@ export function PremiumModal({ titolo, children, onClose }: { titolo: string; ch
         </div>
       </div>
     </div>
+  );
+}
+
+/**
+ * Sezione a scomparsa: si vede solo il titolo (con un riassunto facoltativo) finché non la si
+ * apre. Serve a non allungare troppo le pagine sul telefono (es. pagamenti, livelli nel profilo).
+ */
+export function Espandibile({
+  titolo,
+  icona,
+  riassunto,
+  aperta: apertaIniziale = false,
+  id,
+  children,
+}: {
+  titolo: string;
+  icona?: ReactNode;
+  /** Testo breve a destra del titolo quando è chiusa (es. "2 pagamenti") */
+  riassunto?: ReactNode;
+  aperta?: boolean;
+  id?: string;
+  children: ReactNode;
+}) {
+  const [aperta, setAperta] = useState(apertaIniziale);
+  useEffect(() => {
+    if (apertaIniziale) setAperta(true);
+  }, [apertaIniziale]);
+  return (
+    <section id={id} className="scroll-mt-24 rounded-2xl bg-white ring-1 ring-slate-200/70">
+      <button onClick={() => setAperta((a) => !a)} aria-expanded={aperta} className="flex w-full items-center gap-2 p-4 text-left">
+        {icona}
+        <span className="text-lg font-bold text-slate-900">{titolo}</span>
+        {!aperta && riassunto && <span className="ml-auto truncate pl-2 text-sm text-slate-500">{riassunto}</span>}
+        <ChevronDown className={cx("size-5 shrink-0 text-slate-400 transition", aperta ? "ml-auto rotate-180" : !riassunto && "ml-auto")} />
+      </button>
+      {aperta && <div className="space-y-3 border-t border-slate-100 p-4">{children}</div>}
+    </section>
   );
 }

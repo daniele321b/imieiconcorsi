@@ -44,7 +44,7 @@ Lambda billing ◀──▶ Stripe Checkout (pagamenti) · SES (email) · CloudW
 | `packages/core` | Modello dei dati e regole condivise (piani, limiti, filtri, sconti, ordine delle risposte, progressi) e i "mattoni" AWS comuni (DynamoDB, Cognito, email, `service()`) | Nelle Lambda; i file senza AWS anche nel browser |
 | `packages/functions` | Il backend: una cartella per servizio API, i job, l'estrazione delle banche dati, il trigger di Cognito. Test in `test/` | AWS Lambda (Node.js 22, arm64) |
 | `packages/web` | Il sito React (Vite + Tailwind + React Router + Amplify per il login) | Browser |
-| `infra/terraform` | Tutta l'infrastruttura: moduli riutilizzabili e l'ambiente `dev` che li collega | `terraform apply` da `scripts/deploy.sh infra` |
+| `infra/terraform` | Tutta l'infrastruttura: moduli riutilizzabili e gli ambienti `dev` e `prod` che li collegano (prod = copia di dev con WAF, protezioni e dominio radice) | `terraform apply` da `scripts/deploy.sh infra` (`ENVIRONMENT=prod` per prod) |
 | `scripts/deploy.sh` | Un comando per ogni operazione (build, infra, job, log, prove) | Terminale |
 | `data/domande`, `contenuti/` | Banca domande statica (un JSON per materia) e le sue fonti | Caricati da Terraform su S3 |
 
@@ -109,8 +109,9 @@ variabile d'ambiente passata da Terraform.
 | `ordini` | `id` | `perUtente` (userId + creatoIl) | Un acquisto ciascuno (stato, importo, consenso, sessione Stripe); l'indice dà lo storico pagamenti dell'utente | billing |
 | `banche-dati` | `id` | — | Banche dati caricate: stato dell'estrazione, conteggi, esempi, sezioni | admin, estrai-banca-dati |
 | `richieste` | `userId` + `id` | `perStato` (stato + aggiornataIl) | Richieste di assistenza con i messaggi | richieste, admin |
-| `progressi` | `userId` + `bancaId` | — | Domande fatte/sbagliate per banca dati (mappe di bit) | study |
+| `progressi` | `userId` + `bancaId` | — | Domande fatte, sbagliate e preferite per banca dati (mappe di bit) | study |
 | `contatori` | `id` | — | Contatori della piattaforma, es. `ai#2026-10` = token e spesa AI del mese | ai |
+| `accessi` | `userId` + `il` | — (TTL 12 mesi) | Un login per riga: data e modo (email o social) | trigger Cognito `auth/accesso.ts` |
 
 Gli id "ordinabili" (`core/src/ids.ts`) iniziano con il timestamp: le righe di un utente
 escono già in ordine di data con una semplice Query.
@@ -128,11 +129,11 @@ nei due posti**: nel codice (chiavi della mappa passata a `service()`) e in Terr
 |---|---|---|
 | `profile` | `GET /me`, `PUT /me/profilo`, `PUT /me/feedback`, `DELETE /me` | Profilo (nasce al primo `GET /me`), parere, eliminazione account |
 | `concorsi` | `GET /concorsi[/{id}]`, `GET/PUT/DELETE /me/concorsi/{id}`, `GET /me/storico-concorsi` | Bandi e concorsi seguiti |
-| `study` | `GET /materie`, `POST /sessioni`, `GET /sessioni/{id}`, `POST /sessioni/{id}/consegna`, `GET /me/statistiche`, `GET /banche-dati`, `GET /banche-dati/{id}/domande`, `DELETE /me/progressi/{bancaId}` | Studio, simulazioni, banche dati, progressi, statistiche |
-| `billing` | `GET /piani`, `POST /me/abbonamento`, `POST /me/codice-sconto`, `GET /me/ordini[/{id}]`, `GET/POST /me/invito`, pubblica `POST /pubblico/stripe/webhook` | Acquisti con Stripe, codici sconto, inviti |
+| `study` | `GET /materie`, `POST /sessioni`, `GET /sessioni/{id}`, `POST /sessioni/{id}/consegna`, `GET /me/statistiche`, `GET /banche-dati`, `GET /banche-dati/{id}/domande`, `DELETE /me/progressi/{bancaId}`, `PUT /me/progressi/{bancaId}/preferite/{numero}` | Studio, simulazioni, banche dati, progressi e preferite, statistiche |
+| `billing` | `GET /piani`, `POST /me/abbonamento`, `POST /me/codice-sconto`, `GET /me/ordini[/{id}]`, `POST /me/ordini/{id}/ricevuta`, `GET/POST /me/invito`, pubblica `POST /pubblico/stripe/webhook` | Acquisti con Stripe, codici sconto, inviti |
 | `ai` | `GET /ai/stato`, `POST /ai/tutor`, `POST /ai/allenamento` | Tutor e allenamento del piano Pro (Bedrock) |
 | `richieste` | `GET/POST /me/richieste`, `POST /me/richieste/{id}/messaggi`, `PUT /me/richieste/{id}/letta` | Assistenza agli utenti |
-| `pubblico` | pubbliche: `POST /pubblico/disiscrivi`, `GET /pubblico/aperto`, `GET /pubblico/clic` | Link delle email (firmati), senza login |
+| `pubblico` | pubbliche: `POST /pubblico/disiscrivi`, `GET /pubblico/aperto`, `GET /pubblico/clic`, `POST /pubblico/contatto` | Link delle email (firmati) e modulo Contatti (all'admin via SNS, max 5/ora per IP con `contatori`), senza login |
 | `admin` | `/admin/...` (riepilogo, utenti, codici, banche dati e concorsi collegati, ordini, richieste, concorsi) | Pannello di controllo, solo gruppo `admin` |
 
 Le route **pubbliche** non hanno login: si proteggono con una firma (HMAC per i link
@@ -181,16 +182,20 @@ all'**onboarding** (comparti, livelli, avvisi, Termini).
    (`core/src/risposte.ts → dispongiRisposte`: ordine casuale ma fisso per domanda). La scelta
    viaggia con ogni richiesta e vale anche per il punteggio.
 5. **Progressi**: alla consegna, `study/handler.ts → salvaProgresso` accende i bit delle
-   domande fatte e sbagliate (`core/src/progressi.ts`); le sessioni nuove propongono prima le
-   mai fatte, o solo quelle da ripassare.
+   domande fatte e sbagliate (`core/src/progressi.ts`); la stella salva una domanda tra le
+   preferite (terza mappa nella stessa riga, `modificaProgresso` la conserva). Le sessioni
+   propongono prima le mai fatte, o solo quelle da ripassare, o le preferite.
 6. Piano Free: 3 utilizzi a settimana (`study/usi.ts`).
 
 ### Acquisto di un piano
-1. `POST /me/abbonamento` crea un **ordine** `in-attesa` (`billing/ordini.ts`) con il consenso
+1. `POST /me/abbonamento` controlla con `core/src/acquisti.ts → esitoAcquisto` cosa succede al
+   piano in corso (stesso piano: giorni aggiunti; Medium → Pro: giorni convertiti; Pro → Medium:
+   rifiutato) e crea un **ordine** `in-attesa` (`billing/ordini.ts`) con il consenso
    alla rinuncia al recesso, e una sessione **Stripe Checkout** (`billing/stripe.ts`, API REST
    senza SDK); il sito porta l'utente alla pagina di Stripe.
 2. Pagato, Stripe chiama il **webhook** (`POST /pubblico/stripe/webhook`, firma controllata) →
-   `completaOrdine` → `assegnaPiano` (gruppo Cognito + scadenza) → email di conferma →
+   `completaOrdine` → di nuovo `esitoAcquisto` sul piano di quel momento → `assegnaPiano` (gruppo
+   Cognito + scadenza) → email con la **ricevuta** (rimandabile da `POST /me/ordini/{id}/ricevuta`) →
    eventuale premio a chi ha invitato (`billing/inviti.ts`).
 3. Intanto `/app/pagamento` interroga `GET /me/ordini/{id}`; se il webhook tarda, il server
    chiede lo stato direttamente a Stripe. Senza chiave Stripe (`BILLING_MODE=mock`) l'ordine si
@@ -208,13 +213,13 @@ finché non torna nell'app.
 ### Tutor AI (piano Pro)
 `POST /ai/tutor` e `POST /ai/allenamento` (`ai/handler.ts`) chiamano Claude Haiku 4.5 su
 Bedrock (profilo d'inferenza EU). Prima di ogni chiamata, in ordine: tetto di spesa della
-piattaforma (tabella `contatori`), ritmo (6 al minuto), gettoni (300 al mese) e tetto di
+piattaforma (tabella `contatori`), ritmo (6 al minuto), gettoni (150 al mese) e tetto di
 spesa dell'utente; dopo, si registrano token e spesa stimata. Il tutor risponde solo su
 argomenti di studio: per il resto dà il segnale `[FUORI_TEMA]` e il gettone torna indietro.
 Prompt e regole pure in `ai/logic.ts`.
 
 ### Assistenza
-`POST /me/richieste` (pagina Assistenza o "Segnala un errore" sotto una domanda) → email
+`POST /me/richieste` (pagina Assistenza, o "Segnala un errore" che si apre sotto la domanda senza cambiare pagina) → email
 all'admin → l'admin risponde da `/admin/richieste` (`POST /admin/richieste/{userId}/{id}`) →
 email all'utente e `daLeggere` sulla richiesta → `GET /me` restituisce `richiesteDaLeggere`
 → pallino rosso sull'icona dell'assistenza.
@@ -232,7 +237,9 @@ budget) → topic SNS `imieiconcorsi-dev-monitoraggio` → email all'admin. Dash
    Valida il corpo con uno schema zod (`ctx.body(Schema)`); per le pagine admin chiama
    `richiediAdmin(ctx)`.
 2. Aggiungi la stessa chiave (`"POST /me/qualcosa"`) a `routes` del servizio in
-   `infra/terraform/environments/dev/main.tf`, e i permessi sulle tabelle se servono.
+   `infra/terraform/environments/dev/main.tf` **e** `environments/prod/main.tf`, e i permessi
+   sulle tabelle se servono. Ogni modifica a dev va riportata in prod (i due file sono uguali
+   tranne le differenze elencate in testa a quello di prod).
 3. Nel sito chiamala con `api()` o `useApi()` e aggiungi il tipo della risposta in `lib/api.ts`.
 4. `scripts/deploy.sh build && scripts/deploy.sh infra`.
 
@@ -240,8 +247,8 @@ budget) → topic SNS `imieiconcorsi-dev-monitoraggio` → email all'admin. Dash
 1. `packages/functions/src/<nome>/handler.ts` con `export const handler = service({...})`.
 2. In `scripts/deploy.sh`, aggiungi `"<nome>:<nome>/handler.ts"` all'elenco `LAMBDAS`
    (`:aws` in fondo se deve includere l'SDK AWS nel pacchetto, come `ai`).
-3. In `environments/dev/main.tf`, una voce in `services` con `routes`, `write_tables`,
-   `read_tables` e, se serve, `environment` e `policies`.
+3. In `environments/dev/main.tf` e `environments/prod/main.tf`, una voce in `services` con
+   `routes`, `write_tables`, `read_tables` e, se serve, `environment` e `policies`.
 
 ### Una tabella nuova
 1. `infra/terraform/modules/data/main.tf` (risorsa) e `outputs.tf` (`table_arns`, `table_env`,
@@ -254,7 +261,7 @@ budget) → topic SNS `imieiconcorsi-dev-monitoraggio` → email all'admin. Dash
 1. `packages/functions/src/jobs/<nome>.ts` con `export const handler`; la logica pura in un
    `<nome>-logic.ts` a parte, così si prova con i test.
 2. `LAMBDAS` in `scripts/deploy.sh` e la lista dei job di `cmd_job`.
-3. Voce in `jobs` di `environments/dev/main.tf` (orario `cron(...)` in ora italiana) e in
+3. Voce in `jobs` di `environments/dev/main.tf` e `prod/main.tf` (orario `cron(...)` in ora italiana) e in
    `job_heartbeat` del modulo `monitoraggio` (giorni senza esecuzioni prima dell'allarme, 1-7:
    l'intervallo tra due esecuzioni più un giorno, quindi 2 per un job di ogni giorno).
 

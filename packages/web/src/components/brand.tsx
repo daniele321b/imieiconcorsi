@@ -66,11 +66,22 @@ export const COLORI_MATERIA: Record<string, string> = {
 };
 
 /** Icona colorata di una materia. */
-export function IconaMateria({ icona, materia, className }: { icona: MateriaApi["icona"]; materia: string; className?: string }) {
+export function IconaMateria({
+  icona,
+  materia,
+  className,
+  piccola = false,
+}: {
+  icona: MateriaApi["icona"];
+  materia: string;
+  className?: string;
+  /** Versione piccola, per gli elenchi compatti */
+  piccola?: boolean;
+}) {
   const Icon = ICONE[icona];
   return (
-    <span className={cx("grid size-10 shrink-0 place-items-center rounded-xl", COLORI_MATERIA[materia], className)}>
-      <Icon className="size-5" />
+    <span className={cx("grid shrink-0 place-items-center", piccola ? "size-8 rounded-lg" : "size-10 rounded-xl", COLORI_MATERIA[materia], className)}>
+      <Icon className={piccola ? "size-4" : "size-5"} />
     </span>
   );
 }

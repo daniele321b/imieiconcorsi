@@ -42,9 +42,9 @@ function TutorPro() {
         <div className="min-w-48 flex-1">
           <div className="flex items-baseline justify-between gap-2">
             <p className="font-bold text-slate-900">
-              {gettoni.restanti} gettoni su {gettoni.totale}
+              Ti restano {gettoni.restanti} crediti AI su {gettoni.totale}
             </p>
-            <p className="text-xs text-slate-500">si rinnovano il {data(gettoni.rinnovoIl)}</p>
+            <p className="text-xs text-slate-500">ripartono il {data(gettoni.rinnovoIl)}</p>
           </div>
           <ProgressBar
             value={(gettoni.restanti / Math.max(1, gettoni.totale)) * 100}
@@ -52,7 +52,8 @@ function TutorPro() {
             className="mt-2"
           />
           <p className="mt-1.5 text-xs text-slate-500">
-            Risposta del tutor: {stato.costi.tutor} gettone · Allenamento da {DOMANDE_ALLENAMENTO_AI} domande: {stato.costi.allenamento} gettoni
+            Ogni risposta del tutor conta come una domanda; un allenamento da {DOMANDE_ALLENAMENTO_AI} domande nuove conta come{" "}
+            {stato.costi.allenamento}.
           </p>
         </div>
       </Card>
@@ -172,7 +173,7 @@ function Allenamento({ puntiDeboli, onGettoni }: { puntiDeboli: AiStato["puntiDe
           </div>
           {errore && (errore.code === "LIMITE_PIANO" ? <UpgradeBanner message={errore.message} /> : <Alert tone={toneErroreAi(errore)}>{errore.message}</Alert>)}
           <Button size="lg" disabled={!materia} loading={inCorso} onClick={() => void genera()}>
-            <Sparkles className="size-4" /> Genera {DOMANDE_ALLENAMENTO_AI} domande · {COSTI_AI.allenamento} gettoni
+            <Sparkles className="size-4" /> Genera {DOMANDE_ALLENAMENTO_AI} domande nuove
           </Button>
           {inCorso && <p className="text-xs text-slate-500">Il tutor sta scrivendo le domande: ci vogliono una decina di secondi.</p>}
         </Card>
@@ -212,7 +213,7 @@ function QuizAi({
             <RotateCcw className="size-4" /> Rifai queste
           </Button>
           <Button loading={generando} onClick={onAltre}>
-            <Sparkles className="size-4" /> Altre {DOMANDE_ALLENAMENTO_AI} domande · {COSTI_AI.allenamento} gettoni
+            <Sparkles className="size-4" /> Altre {DOMANDE_ALLENAMENTO_AI} domande
           </Button>
         </div>
       </Card>
@@ -312,9 +313,17 @@ function TutorBloccato() {
         <h2 className="mt-4 max-w-xl text-2xl font-extrabold tracking-tight sm:text-3xl">Smetti di ripetere gli stessi errori.</h2>
         <div className="mt-6 grid gap-4 sm:grid-cols-3">
           {[
-            { Icon: Target, titolo: "Allenamenti mirati", testo: `${DOMANDE_ALLENAMENTO_AI} domande nuove scritte sulle domande che sbagli, ogni volta diverse.` },
+            {
+              Icon: Target,
+              titolo: "Allenamenti mirati",
+              testo: `Il tutor scrive per te ${DOMANDE_ALLENAMENTO_AI} domande nuove sugli argomenti in cui sbagli di più. Ogni allenamento è diverso dal precedente.`,
+            },
             { Icon: MessageCircleQuestion, titolo: "Spiegazioni su misura", testo: "Hai sbagliato? Il tutor ti spiega perché e ti dà un trucco per ricordarlo." },
-            { Icon: Coins, titolo: `${GETTONI_AI_PRO} gettoni al mese`, testo: `1 per ogni risposta del tutor, ${COSTI_AI.allenamento} per ogni allenamento.` },
+            {
+              Icon: Coins,
+              titolo: `${GETTONI_AI_PRO} crediti AI al mese`,
+              testo: `Ogni domanda al tutor usa ${COSTI_AI.tutor} credito, ogni allenamento ${COSTI_AI.allenamento}.`,
+            },
           ].map(({ Icon, titolo, testo }) => (
             <div key={titolo} className="rounded-2xl bg-white/10 p-4 ring-1 ring-white/10">
               <Icon className="size-5 text-accent-300" />

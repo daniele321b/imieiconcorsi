@@ -11,7 +11,7 @@
 #   scripts/deploy.sh infra                  # terraform init + apply dell'ambiente
 #   scripts/deploy.sh seed                   # importa subito i bandi aperti da inPA (lo scraper gira poi ogni mattina)
 #   scripts/deploy.sh job NOME               # lancia subito un job: inpa-scraper, pulizia-bandi, avvisi, scadenze, import-domande
-#   scripts/deploy.sh storico-bandi [PAGINA] # importa i bandi chiusi degli ultimi 18 mesi da inPA (una volta; riprende da PAGINA)
+#   scripts/deploy.sh storico-bandi [PAGINA] # importa i bandi chiusi degli ultimi 24 mesi da inPA (una volta; riprende da PAGINA)
 #   scripts/deploy.sh ai-prova               # controlla che il tutor AI (Claude su Bedrock) risponda
 #   scripts/deploy.sh allarmi                # allarmi del monitoraggio in questo momento (CloudWatch)
 #   scripts/deploy.sh allarme-prova          # messaggio di prova sul topic SNS del monitoraggio
@@ -61,6 +61,7 @@ LAMBDAS=(
   "richieste:richieste/handler.ts"
   "ai:ai/handler.ts:aws"
   "auth-pre-signup:auth/pre-signup.ts"
+  "auth-accessi:auth/accesso.ts"
   "inpa-scraper:jobs/inpa-scraper.ts"
   "pulizia-bandi:jobs/pulizia-bandi.ts"
   "avvisi:jobs/avvisi.ts"
@@ -113,6 +114,12 @@ tf_output() { capture "<$1>" terraform -chdir="$TF_DIR" output -raw "$1"; }
 account_id() { capture "123456789012" aws sts get-caller-identity --query Account --output text; }
 # Nome del bucket dello stato di Terraform (con l'id dell'account).
 state_bucket() { printf '%s-tfstate-%s' "$PROJECT" "$(account_id)"; }
+# Con ENVIRONMENT=prod: avviso in evidenza e conferma (scrivendo "si") prima di andare avanti.
+avviso_prod() {
+  [[ "$ENVIRONMENT" == "prod" ]] || return 0
+  printf '\033[41;97m PRODUZIONE \033[0m %s\n' "$1"
+  confirm "Confermi di voler procedere sulla produzione?" || die "annullato"
+}
 
 # Dipendenze Node del codice applicativo: installate solo se mancano o se il lockfile è cambiato.
 node_deps() {
@@ -255,6 +262,7 @@ cmd_shared() {
 cmd_infra() {
   [[ "$DRY_RUN" == "1" || ( -d "$DIST_FUNCTIONS" && -f "${DIST_WEB}/index.html" ) ]] \
     || die "mancano le Lambda o il sito compilati: lancia prima  scripts/deploy.sh build"
+  avviso_prod "aggiorni la PRODUZIONE (https://${DOMAIN}): gli utenti vedono subito le modifiche"
   bold "terraform init + apply (${ENVIRONMENT})"
   tf_init
   run terraform -chdir="$TF_DIR" apply
@@ -302,12 +310,12 @@ cmd_job() {
   rm -f "$out"
 }
 
-# Bandi chiusi degli ultimi 18 mesi (decine di migliaia): la Lambda ne importa un blocco
+# Bandi chiusi degli ultimi 24 mesi (decine di migliaia): la Lambda ne importa un blocco
 # per volta (~13 minuti) e dice da che pagina ripartire. Si può interrompere e riprendere.
 cmd_storico_bandi() {
   local pagina="${1:-0}" fn="${NAME}-inpa-scraper" out risposta
   out="$(mktemp)"
-  bold "Storico dei bandi chiusi da inPA (ultimi 18 mesi), dalla pagina ${pagina}"
+  bold "Storico dei bandi chiusi da inPA (ultimi 24 mesi), dalla pagina ${pagina}"
   printf '  Ci vuole circa mezz'"'"'ora. Se si interrompe: scripts/deploy.sh storico-bandi <pagina indicata>\n'
   while [[ -n "$pagina" && "$pagina" != "null" ]]; do
     if [[ "$DRY_RUN" == "1" ]]; then
@@ -444,7 +452,7 @@ cmd_ses_production() {
   confirm "Invio la richiesta per l'account (email transazionali di iMieiConcorsi)?" || die "annullato"
   run aws sesv2 put-account-details --region "$REGION" \
     --production-access-enabled --mail-type TRANSACTIONAL --website-url "$url" --contact-language EN \
-    --use-case-description "Our AWS account hosts two small Italian web applications. A previous request for one of them (Fleet Audit, September 2026) was declined; since then we added SNS notifications for every bounce, complaint and rejection (delivered to the account owner), account-level suppression for bounces and complaints, one-click unsubscribe (RFC 8058 List-Unsubscribe headers) on every recurring email, and we have been sending in the sandbox to verified testers only. This request is for iMieiConcorsi (${url}), a study app for Italian public-sector job competitions. We send only to people who registered on our website with their own address (email confirmation through Amazon Cognito): purchase confirmations, a plan-expiry reminder (once, 3 days before), a notice when a plan ends, and - only if the user opts in from their profile - a daily or weekly digest of new public competitions, with an unsubscribe link and List-Unsubscribe headers. No purchased, imported or scraped address lists, no marketing campaigns. Expected volume during the beta: under 100 emails per day. Domain verified with DKIM, custom MAIL FROM with SPF, and DMARC. Privacy policy: ${url}/privacy. Example digest email: subject '3 nuovi bandi per te', body: list of the new competitions with deadline and link, the reason the user receives it, and a one-click unsubscribe link."
+    --use-case-description "Our AWS account hosts two small Italian web applications. A previous request for one of them (Fleet Audit, September 2026) was declined; since then we added SNS notifications for every bounce, complaint and rejection (delivered to the account owner), account-level suppression for bounces and complaints, one-click unsubscribe (RFC 8058 List-Unsubscribe headers) on every recurring email, and we have been sending in the sandbox to verified testers only. This request is for iMieiConcorsi (${url}), a study app for Italian public-sector job competitions. We send only to people who registered on our website with their own address (email confirmation through Amazon Cognito): purchase confirmations, a plan-expiry reminder (once, 3 days before), a notice when a plan ends, and - only if the user opts in from their profile - a daily or weekly digest of new public competitions, with an unsubscribe link and List-Unsubscribe headers. No purchased, imported or scraped address lists, no marketing campaigns. Expected volume during the beta: under 100 emails per day. Domain verified with DKIM, custom MAIL FROM with SPF, and DMARC. Every email we send, with frequency and how to stop it, is described publicly at ${url}/email; privacy policy ${url}/privacy, contact page ${url}/contatti, about ${url}/chi-siamo, pricing ${url}/prezzi. Example digest email: subject '3 nuovi bandi per te', body: list of the new competitions with deadline and link, the reason the user receives it, and a one-click unsubscribe link."
   ok "richiesta inviata: AWS risponde di solito entro 24-48 ore (scripts/deploy.sh ses-status)"
 }
 
@@ -526,6 +534,8 @@ cmd_logs() {
 # ------------------------------------------------------------------- local ---
 
 cmd_local() {
+  # Il login di prod non accetta localhost: in locale si lavora sempre su dev.
+  [[ "$ENVIRONMENT" != "prod" ]] || die "il sito in locale si collega solo a dev: lancia senza ENVIRONMENT=prod"
   node_deps
   bold "Sito in locale collegato all'ambiente ${ENVIRONMENT}: http://localhost:5173  (Ctrl+C per chiudere)"
   if [[ "$DRY_RUN" == "1" ]]; then
@@ -570,6 +580,9 @@ cmd_test() {
 # ----------------------------------------------------------------- destroy ---
 
 cmd_destroy() {
+  # In prod tabelle, utenti e bucket sono protetti (protezione = true): il destroy si ferma
+  # finché non la togli a mano in environments/prod/main.tf. È voluto.
+  avviso_prod "stai per ELIMINARE la produzione: utenti, pagamenti e dati veri"
   bold "ATTENZIONE: elimina TUTTO l'ambiente ${ENVIRONMENT} (utenti Cognito e dati compresi)"
   confirm "Sei sicuro?" || die "annullato"
   tf_init

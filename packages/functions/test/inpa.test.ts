@@ -52,9 +52,16 @@ describe("toConcorso", () => {
 describe("citaBancaDati", () => {
   it.each([
     ["La prova si svolgerà sulla banca dati pubblicata sul sito", true],
-    ["Le BANCHE DATI saranno rese disponibili", true],
+    ["Le BANCHE DATI dei quesiti saranno rese disponibili", true],
     ["quesiti estratti dalla banca-dati", true],
+    ["La banca dati dei quesiti sarà pubblicata non oltre 20 giorni prima della prova", true],
     ["Prova scritta e orale", false],
+    ["Non è prevista la pubblicazione di alcuna banca dati dei quesiti della prova preselettiva", false],
+    ["Per la prova preselettiva non sarà pubblicata la banca dati", false],
+    ["La prova si svolgerà senza banca dati", false],
+    ["Iscrizione alla banca dati nazionale dei contratti pubblici (ANAC)", false],
+    ["Materie della prova: diritto amministrativo, uso delle banche dati giuridiche", false],
+    ["I dati saranno inseriti nella banca dati del personale", false],
   ])("%s → %s", (descrizione, atteso) => {
     expect(citaBancaDati({ ...bando("Comune di Pavia"), descrizione: `<p>${descrizione}</p>` })).toBe(atteso);
   });

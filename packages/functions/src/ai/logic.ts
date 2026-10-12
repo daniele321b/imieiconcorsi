@@ -79,7 +79,7 @@ export const RichiestaTutor = z.object({
 export const FUORI_TEMA = "[FUORI_TEMA]";
 /** Cosa vede l'utente quando chiede qualcosa fuori tema. */
 export const MESSAGGIO_FUORI_TEMA =
-  "Posso aiutarti solo con lo studio per i concorsi pubblici: materie d'esame, bandi e prove, metodo di studio. Prova a chiedermi qualcosa su questi argomenti! (Per questa risposta non ti abbiamo scalato gettoni.)";
+  "Posso aiutarti solo con lo studio per i concorsi pubblici: materie d'esame, bandi e prove, metodo di studio. Prova a chiedermi qualcosa su questi argomenti! (Questa domanda non ti è stata conteggiata.)";
 
 /** La risposta del modello è il segnale "fuori tema" (anche se ci ha scritto qualcosa intorno). */
 export const eFuoriTema = (testo: string) => testo.includes(FUORI_TEMA);

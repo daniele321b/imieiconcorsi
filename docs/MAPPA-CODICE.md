@@ -35,16 +35,18 @@ nel sito.
 | `db.ts` | Client DynamoDB, nomi delle tabelle (`tables.*` dalle variabili d'ambiente), `batchGet` a blocchi da 100, `getProfilo` | Backend |
 | `env.ts` | `env("NOME")`: variabile d'ambiente obbligatoria | Backend |
 | `ids.ts` | Id ordinabili per data (`sortableId`, `timePrefix`) | study, richieste, billing |
+| `account.ts` | `eliminaAccount`: cancella sessioni, seguiti, richieste, progressi, profilo e utente Cognito (restano gli ordini) | profile (`DELETE /me`), admin (`DELETE /admin/utenti/{username}`) |
 | `cognito.ts` | Gruppi (piano, admin), nome, eliminazione dell'utente, elenco degli utenti di un gruppo | billing, admin, profile, job scadenze, piani.ts |
 | `email.ts` | `inviaEmail` (SES, testo + HTML facoltativo), `avvisaAdmin` | Backend |
 | `email-piani.ts` | Email "piano attivato" e "tornato al Free"; `dataIt` | piani, admin, job scadenze |
 | `piani.ts` | `assegnaPiano` (gruppo Cognito + scadenza sul profilo; tornando al Free riduce i seguiti), `scadenzaDa` | billing, admin, job scadenze |
 | `seguiti.ts` | Concorsi seguiti e storico (tabella `follows`): `righeSeguiti`, `attivi`, `smettiDiSeguire`, `riduciSeguiti`, `daTogliere` | concorsi, piani |
-| `concorsi.ts` ◆ | Ordinamenti e filtri della ricerca dei bandi, campi delle liste, bandi scaduti (18 mesi), bandi aperti da suggerire per una banca dati | Sito (ricerca), concorsi, cache-bandi |
+| `concorsi.ts` ◆ | Ordinamenti e filtri della ricerca dei bandi, campi delle liste, bandi scaduti (24 mesi), nomi dei concorsi (maiuscola, anno, `nomiDistinti`), bandi aperti da suggerire per una banca dati | Sito (ricerca), concorsi, cache-bandi |
+| `acquisti.ts` ◆ | `esitoAcquisto`: cosa succede comprando con un piano attivo (giorni aggiunti, Medium → Pro convertito, Pro → Medium rifiutato) | billing (acquisto e pagamento), sito (Piani) |
 | `sconti.ts` ◆ | Codici sconto: formato, generazione, prezzo scontato, motivo di rifiuto | billing, admin, sito (Piani) |
 | `registrazione.ts` ◆ | Domini email ammessi alla registrazione | Sito (`AuthCard`), trigger pre sign-up |
 | `risposte.ts` ◆ | `dispongiRisposte`: giusta sempre per prima o mescolata in modo fisso per domanda | study (sessioni e consultazione) |
-| `progressi.ts` ◆ | Mappe di bit delle domande fatte/sbagliate di una banca dati; scelta "nuove / da ripassare / tutte" | study, test |
+| `progressi.ts` ◆ | Mappe di bit delle domande fatte, sbagliate e preferite di una banca dati; scelta "nuove / da ripassare / preferite / tutte" | study, sito, test |
 | `disiscrizione.ts` | Firme HMAC dei link delle email (disiscrizione, lettura, clic), destinazioni sicure | avvisi, pubblico, profile |
 | `domande.ts` ◆ | Schema zod dei file della banca statica | import-domande, test |
 
@@ -65,7 +67,7 @@ file) è `LAMBDAS` in `scripts/deploy.sh`. Route e permessi in `environments/dev
 | `study/logic.ts` | Puro: `selezionaDomande` (ripartizione tra materie, vicino al livello), `mescola`, `pubblica` (senza soluzione), `calcolaEsito` |
 | `study/usi.ts` | Utilizzi settimanali delle banche dati nel piano Free (3 a settimana) |
 | `billing/handler.ts` | Piani, acquisto (ordine + Stripe Checkout, o `mock`), verifica del codice sconto, storico dei pagamenti dell'utente, stato dell'ordine (chiede a Stripe se il webhook tarda), invito di un amico, **webhook di Stripe** |
-| `billing/ordini.ts` | Tabella `ordini`: salva, legge, `completaOrdine` (attiva il piano una volta sola, email di conferma, premio invito), `chiudiOrdine` |
+| `billing/ordini.ts` | Tabella `ordini`: salva, legge, `completaOrdine` (attiva il piano una volta sola con le regole di `acquisti.ts`, ricevuta via email, premio invito), `chiudiOrdine`, `inviaConferma` (la ricevuta) |
 | `billing/stripe.ts` | API REST di Stripe senza SDK: crea/legge la sessione di pagamento, firma del webhook |
 | `billing/inviti.ts` | "Invita un amico": codice personale, codice di chi ha invitato, premio di 30 giorni al primo acquisto dell'amico (massimo 12 l'anno) |
 | `ai/handler.ts` | Tutor e allenamento (Bedrock, Claude Haiku 4.5 EU) con tutte le protezioni: tetto della piattaforma, ritmo, gettoni, tetto per utente, fuori tema |
@@ -79,6 +81,7 @@ file) è `LAMBDAS` in `scripts/deploy.sh`. Route e permessi in `environments/dev
 | File | Cosa fa |
 |---|---|
 | `banche-dati/estrai.ts` | Lambda lanciata dall'arrivo di un PDF su S3 (o dal pannello): testo con `unpdf`, domande con il parser, file JSON, riepilogo ed esempi, email all'admin |
+| `banche-dati/tabella.ts` | Puro: PDF a tabella con la sola risposta esatta (es. Carabinieri). Colonne dalle posizioni del testo, sezioni "Materia : …", alternative ricavate da domande simili (coppie incrociate, relazioni calcolate, numeri vicini), scarto delle domande al negativo |
 | `banche-dati/parser.ts` | Puro: dal testo alle domande. Riconosce risposta indicata, segnata (`*`, `(X)`, `✓`), tabella delle soluzioni, "sempre la prima"; sezioni del PDF; numeri di pagina da scartare |
 | `banche-dati/pubblica.ts` | Dal file estratto alle risposte che vedono gli utenti (ordine del PDF o mescolato) |
 
@@ -86,7 +89,7 @@ file) è `LAMBDAS` in `scripts/deploy.sh`. Route e permessi in `environments/dev
 
 | File | Quando | Cosa fa |
 |---|---|---|
-| `jobs/inpa-scraper.ts` | Ogni giorno 06:00 | Bandi aperti e chiusi recenti da inPA → `concorsi`; email all'admin per i nuovi con banca dati; rifà la cache. Con `{ storico }` importa 18 mesi di chiusi |
+| `jobs/inpa-scraper.ts` | Ogni giorno 06:00 | Bandi aperti e chiusi recenti da inPA → `concorsi`; email all'admin per i nuovi con banca dati; rifà la cache. Con `{ storico }` importa 24 mesi di chiusi |
 | `jobs/inpa.ts` | — | API di inPA, paginazione, comparto e materie dedotti dal testo, `toConcorso` |
 | `jobs/cache-bandi.ts` | Dopo ogni import | File JSON gzip per comparto nel bucket del sito (`dati/bandi/<versione>/`) + `indice.json` |
 | `jobs/pulizia-bandi.ts` | Domenica e mercoledì 03:00 | Toglie i bandi che inPA non elenca più (si rilancia da sola se il tempo non basta; si ferma oltre il 25%) |
@@ -100,6 +103,7 @@ file) è `LAMBDAS` in `scripts/deploy.sh`. Route e permessi in `environments/dev
 | File | Cosa fa |
 |---|---|
 | `auth/pre-signup.ts` | Trigger di Cognito prima di ogni registrazione: domini email ammessi, collegamento dei login social all'account esistente |
+| `auth/accesso.ts` | Trigger di Cognito "pre token generation": registra ogni login nella tabella `accessi` e l'ultimo accesso sul profilo (non blocca mai il login) |
 | `auth/collega-account.ts` | Puro: decisione del trigger (procedi, collega, rifiuta) |
 | `contenuti/import-domande.ts` | Lambda lanciata da un JSON in `domande/` su S3: scrive le domande della banca statica e toglie quelle sparite |
 
@@ -112,6 +116,7 @@ file) è `LAMBDAS` in `scripts/deploy.sh`. Route e permessi in `environments/dev
 | `progressi.test.ts` | Mappe di bit e selezione nuove/da ripassare/tutte |
 | `assistenza-limiti-ai.test.ts` | Spesa stimata, soglie di avviso, segnale fuori tema, limiti delle richieste |
 | `collegamenti-banche.test.ts` | Bandi aperti suggeriti per una banca dati, lista dei concorsi collegati |
+| `acquisti-nomi-preferite.test.ts` | Acquisti con un piano attivo, nomi dei concorsi (maiuscola, anno, doppioni), domande preferite |
 | `bandi-chiusi-ai.test.ts` | Filtro aperti/chiusi, storico, gettoni, punti deboli, domande generate, messaggi del tutor |
 | `inviti-avvisi-seguiti.test.ts` | Prezzi e durate, utilizzi Free, ritorno al Free, inviti, avvisi a chi legge, pulizia bandi |
 | `sconti-ricerca-registrazione.test.ts` | Ordinamenti e filtri, codici sconto, email ammesse, piani |
@@ -138,6 +143,7 @@ main.tsx  (caricaConfig → AuthProvider → router)
 ├── /auth/callback         AuthCallback (ritorno da Google/Facebook)
 ├── /privacy /termini /eliminazione-dati   pagine legali (LegalePagina)
 ├── /disiscrivi            Disiscrivi (link delle email, senza login)
+├── /chi-siamo /prezzi /domande-frequenti /contatti /email /cookie   pagine pubbliche (pages/info)
 ├── /app                   AppLayout (menu, assistenza, profilo; login e onboarding obbligatori)
 │   ├── (indice)           Dashboard
 │   ├── onboarding         Onboarding ── ProfiloPickers
@@ -188,9 +194,12 @@ main.tsx  (caricaConfig → AuthProvider → router)
 | `ChiediAlTutor.tsx` | "Chiedi al tutor AI" sotto una domanda (Pro: chat; altri: invito al Pro) |
 | `TutorChat.tsx` | Chat con il tutor (testo semplice con elenchi e grassetto, gettoni, avvisi) |
 | `Pubblicita.tsx` | Annuncio tra le domande del piano Free (AdSense o annuncio interno) |
-| `Richieste.tsx` | Assistenza: `SegnalaErrore`, `Conversazione`, `RispondiBox`, `ContestoBox`, stati |
+| `Richieste.tsx` | Assistenza: `SegnalaErrore` (si apre sotto la domanda), `Conversazione`, `RispondiBox`, `ContestoBox`, stati |
+| `ModificaBando.tsx` | Admin: correzione di nome e dati di un bando, e ritorno ai dati di inPA |
+| `NumeroDomande.tsx` | "Altro numero" di domande per le simulazioni (Medium e Pro, fino a 100) |
 | `InvitaAmico.tsx` | Codice personale da condividere e codice di chi ti ha invitato |
 | `StoricoSeguiti.tsx` | Storico dei concorsi seguiti (menu a tendina nel profilo) |
+| `StellaPreferita.tsx` | Stella per salvare una domanda di banca dati tra le preferite (consultazione, studio, revisione) |
 | `StoricoPagamenti.tsx` | "I tuoi pagamenti" nel profilo: ordini pagati, tentativi non completati a parte, aiuto sull'ordine |
 | `FeedbackApp.tsx` | Voto e commento sull'app (modificabile ogni 15 giorni) |
 
@@ -201,7 +210,8 @@ main.tsx  (caricaConfig → AuthProvider → router)
 | `Landing.tsx` | Home pubblica con `AuthCard` |
 | `AuthCallback.tsx` | Ritorno dal login social (con un nuovo tentativo automatico al primo collegamento) |
 | `Disiscrivi.tsx` | Disiscrizione dagli avvisi con conferma |
-| `legale/*.tsx` | Privacy, Termini, Eliminazione dei dati, impaginazione comune e piè di pagina |
+| `legale/*.tsx` | Privacy, Termini, Eliminazione dei dati, impaginazione comune (`LegalePagina`) e piè di pagina; `parti.tsx` = titolare e "come contattarci" (dati in `lib/legale.ts`) |
+| `info/*.tsx` | Pagine pubbliche: Chi siamo, Prezzi (da `PIANI`), Domande frequenti, Contatti (modulo → `POST /pubblico/contatto`), Le nostre email (elenco di tutte le email: tenerlo allineato), Cookie |
 | `app/AppLayout.tsx` | Cornice dell'area riservata: menu (in alto e in basso su telefono), icona assistenza con pallino, profilo |
 | `app/Dashboard.tsx` | Concorsi seguiti, statistiche, ultime sessioni |
 | `app/Onboarding.tsx` | Primo accesso in tre passi + Termini |
@@ -235,6 +245,7 @@ main.tsx  (caricaConfig → AuthProvider → router)
 | `environments/dev/variables.tf` | Variabili dell'ambiente (regione, email dell'admin, chiavi Stripe, credenziali social, modello AI, tetti di spesa AI, budget) |
 | `environments/dev/terraform.tfvars.example` | Esempio commentato da copiare in `terraform.tfvars` (che non va in git) |
 | `environments/dev/outputs.tf` | Indirizzi (sito, API, redirect per Google/Facebook), nomi delle funzioni, `web_config`, topic e dashboard del monitoraggio |
+| `environments/prod/` | Copia di dev per la produzione: dominio radice, WAF, `protezione = true`, niente localhost, Stripe live. Le differenze sono elencate in testa al suo `main.tf`; ogni modifica a dev va riportata qui |
 | `environments/*/backend.tf` | Dove sta lo stato (bucket S3, lock nativo) |
 
 ### Moduli
@@ -244,11 +255,12 @@ main.tsx  (caricaConfig → AuthProvider → router)
 | `lambda/` | Zip del codice, log (14 giorni), ruolo IAM, permessi sulle tabelle, funzione Node 22 arm64 | Usato da `api`, `jobs`, `contenuti` e dal trigger di Cognito |
 | `api/` | API Gateway HTTP, stage con limiti di richieste, authorizer JWT di Cognito, una Lambda + integrazione + route per servizio | Le route pubbliche hanno `authorization NONE` |
 | `auth/` | User pool Cognito, dominio per il login social, Google e Facebook (se configurati), client del sito, gruppi `medium`, `pro`, `admin` | Trigger pre sign-up collegato da `environments/dev` |
-| `data/` | Le 11 tabelle DynamoDB (vedi [ARCHITETTURA.md](ARCHITETTURA.md#5-i-dati-dynamodb)) | `outputs.tf` dà ARN, variabili d'ambiente e nomi |
+| `data/` | Le 12 tabelle DynamoDB (vedi [ARCHITETTURA.md](ARCHITETTURA.md#5-i-dati-dynamodb)) | `outputs.tf` dà ARN, variabili d'ambiente e nomi |
 | `web/` | Bucket del sito, CloudFront (sito + `/api` + `/dati/bandi`), certificato e DNS, file del sito e `config.json`, regola che cancella le versioni vecchie della lista bandi | `functions/spa.js` e `functions/api-prefix.js` sono le CloudFront Function |
 | `contenuti/` | Bucket dei contenuti (versionato), import della banca statica, estrazione delle banche dati, notifiche S3 → Lambda, CORS per il caricamento dei PDF | I file di `data/domande/` si caricano da qui |
 | `jobs/` | Una Lambda per job, ruolo dello Scheduler, orari in ora italiana con 2 tentativi | Elenco dei job in `environments/dev/main.tf` |
 | `ses/` | Identità del mittente e del dominio, record DNS, configuration set (soppressione di rimbalzi e spam), notifiche SNS | Usato da `environments/shared` |
+| `waf/` | Web ACL in us-east-1 per CloudFront: regole gestite AWS (Common, Known bad inputs, IP reputation) e limite di richieste per IP | Solo prod (`waf_attivo`) |
 | `monitoraggio/` | Topic SNS (anche in us-east-1), allarmi CloudWatch, budget, dashboard (`dashboard.tf`) | Riceve dall'ambiente le Lambda, le tabelle, i job e le soglie |
 
 ---

@@ -59,4 +59,17 @@ describe("calcolaEsito", () => {
   it("non va sotto zero in percentuale", () => {
     expect(calcolaEsito(domande, [1, 1, 1, 1], REGOLE_DEFAULT).percentuale).toBe(0);
   });
+
+  it("studio: giuste su risposte date, senza penalità (2 giuste su 10 = 20%, non 0%)", () => {
+    const dieci = Array.from({ length: 10 }, (_, i) => domanda("logica", String(i)));
+    const risposte = [0, 0, 1, 1, 1, 1, 1, 1, 1, 1];
+    expect(calcolaEsito(dieci, risposte, REGOLE_DEFAULT).percentuale).toBe(0); // simulazione: 2 − 8 × 0,25 = 0
+    expect(calcolaEsito(dieci, risposte, REGOLE_DEFAULT, "studio").percentuale).toBe(20);
+  });
+
+  it("studio interrotto: le domande non fatte non contano", () => {
+    const esito = calcolaEsito(domande, [0, 1, null, null], REGOLE_DEFAULT, "studio");
+    expect(esito.percentuale).toBe(50);
+    expect(esito.perMateria).toEqual([{ materia: "storia", corrette: 1, totale: 2 }]);
+  });
 });

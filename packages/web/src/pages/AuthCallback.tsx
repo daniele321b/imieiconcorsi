@@ -22,12 +22,19 @@ function providerDaRiprovare(): "Google" | "Facebook" | undefined {
   return m[1].toLowerCase() === "google" ? "Google" : "Facebook";
 }
 
-/** Ritorno dal login Google/Facebook: Amplify scambia il codice, poi l'AuthProvider aggiorna lo stato. */
+/**
+ * Ritorno dal login Google/Facebook: Amplify scambia il codice, poi l'AuthProvider aggiorna lo
+ * stato. Al primo accesso social con un'email già registrata si rifà il login una volta da soli
+ * (Facebook può chiedere di nuovo la conferma, solo quella volta). Se resta un errore lo si
+ * mostra con il dettaglio di Cognito, utile per l'assistenza.
+ */
 export function AuthCallback() {
   const { stato } = useAuth();
-  const [errore, setErrore] = useState(false);
+  const [errore, setErrore] = useState<string>();
+  const [collego, setCollego] = useState(false);
 
   useEffect(() => {
+    const params = new URLSearchParams(location.search);
     const provider = providerDaRiprovare();
     let giaRiprovato = false;
     try {
@@ -37,13 +44,23 @@ export function AuthCallback() {
       try {
         sessionStorage.setItem(CHIAVE_RIPROVA, "1");
       } catch {}
-      void signInWithRedirect({ provider }).catch(() => setErrore(true));
+      setCollego(true);
+      void signInWithRedirect({ provider }).catch((err: unknown) => {
+        // Già collegati (sessione valida): si entra direttamente.
+        if (err instanceof Error && err.name === "UserAlreadyAuthenticatedException") location.assign("/app");
+        else setErrore(err instanceof Error ? err.message : "accesso non riuscito");
+      });
       return;
     }
-    if (new URLSearchParams(location.search).has("error")) setErrore(true);
+    if (params.has("error")) {
+      setErrore(params.get("error_description")?.replace(/^PreSignUp failed with error\s*/i, "") || params.get("error") || "accesso non riuscito");
+      try {
+        sessionStorage.removeItem(CHIAVE_RIPROVA);
+      } catch {}
+    }
 
     return Hub.listen("auth", ({ payload }) => {
-      if (payload.event === "signInWithRedirect_failure") setErrore(true);
+      if (payload.event === "signInWithRedirect_failure") setErrore("accesso non riuscito");
     });
   }, []);
 
@@ -58,13 +75,16 @@ export function AuthCallback() {
     <div className="grid min-h-screen place-items-center bg-slate-50 px-4">
       {errore ? (
         <div className="max-w-sm space-y-4 text-center">
-          <Alert tone="error">Non siamo riusciti a completare l'accesso. Riprova.</Alert>
+          <Alert tone="error">
+            Non siamo riusciti a completare l'accesso. Riprova.
+            <span className="mt-1 block text-xs opacity-80">Dettaglio: {errore}</span>
+          </Alert>
           <Link to="/" className="text-sm font-semibold text-brand-600">
             Torna alla pagina di accesso
           </Link>
         </div>
       ) : (
-        <Spinner label="Accesso in corso…" />
+        <Spinner label={collego ? "Collego il tuo account social a quello che hai già: un attimo…" : "Accesso in corso…"} />
       )}
     </div>
   );

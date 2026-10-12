@@ -15,6 +15,11 @@ type Stato = "pagato" | "in-attesa" | "scaduto" | "fallito";
 interface OrdineAdmin {
   id: string;
   email?: string;
+  nome?: string;
+  /** L'utente ha eliminato l'account: email e nome sono quelli salvati sull'ordine */
+  accountEliminato?: boolean;
+  /** Esito dell'ultima ricevuta per email */
+  ricevuta?: { stato: "inviata" | "non inviata"; motivo?: string; il: string };
   piano: "medium" | "pro";
   periodo: Periodo;
   prezzo: number;
@@ -155,6 +160,7 @@ function Storico() {
               <th className="px-4 py-3 font-semibold">Importo</th>
               <th className="px-4 py-3 font-semibold">Stato</th>
               <th className="px-4 py-3 font-semibold">Valido fino al</th>
+              <th className="px-4 py-3 font-semibold">Ricevuta</th>
               <th className="px-4 py-3 font-semibold">Ordine</th>
             </tr>
           </thead>
@@ -164,7 +170,15 @@ function Storico() {
               return (
                 <tr key={o.id}>
                   <td className="px-4 py-3 whitespace-nowrap">{dataBreve(o.pagatoIl ?? o.creatoIl)}</td>
-                  <td className="px-4 py-3">{o.email ?? <span className="text-slate-400">account eliminato</span>}</td>
+                  <td className="px-4 py-3">
+                    {o.nome && <span className="block font-medium text-slate-900">{o.nome}</span>}
+                    {o.email ?? <span className="text-slate-400">email non salvata</span>}
+                    {o.accountEliminato && (
+                      <Badge tone="slate" className="ml-1.5 align-middle">
+                        account eliminato
+                      </Badge>
+                    )}
+                  </td>
                   <td className="px-4 py-3 whitespace-nowrap">
                     {PIANI[o.piano].nome} · {durata(o.periodo).nome}
                   </td>
@@ -180,6 +194,16 @@ function Storico() {
                     <Badge tone={s.tone}>{s.nome}</Badge>
                   </td>
                   <td className="px-4 py-3 whitespace-nowrap">{o.scadenzaPiano ? data(o.scadenzaPiano) : "—"}</td>
+                  <td className="px-4 py-3">
+                    {o.ricevuta ? (
+                      <span title={o.ricevuta.motivo}>
+                        <Badge tone={o.ricevuta.stato === "inviata" ? "green" : "red"}>{o.ricevuta.stato}</Badge>
+                        {o.ricevuta.motivo && <span className="mt-0.5 block max-w-48 text-xs text-rose-600">{o.ricevuta.motivo}</span>}
+                      </span>
+                    ) : (
+                      <span className="text-slate-400">—</span>
+                    )}
+                  </td>
                   <td className="px-4 py-3">
                     <button
                       onClick={() => void copiaTesto(o.stripeSessionId ? `${o.id} · Stripe ${o.stripeSessionId}` : o.id)}

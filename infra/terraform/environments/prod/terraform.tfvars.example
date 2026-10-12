@@ -1,0 +1,41 @@
+# PRODUZIONE. Copia in terraform.tfvars (non versionato): chiavi e segreti veri, non quelli di dev.
+
+# Avvisi per l'admin (nuovi bandi con banca dati, scraper fermo).
+# Finché SES è in sandbox l'indirizzo va verificato: mettilo anche in
+# environments/shared (sender_email o sandbox_recipients).
+admin_email = ""
+
+# Login social: in prod il dominio Cognito è diverso da dev (imieiconcorsi-prod.auth…):
+# aggiungi su Google e Facebook l'URI che stampa ENVIRONMENT=prod scripts/deploy.sh urls
+# (guida: docs/LOGIN-SOCIAL.md). Puoi usare le stesse app di dev o crearne di nuove.
+google_client_id     = ""
+google_client_secret = ""
+facebook_app_id      = ""
+facebook_app_secret  = ""
+
+# Pubblicità del piano Free (facoltativa). Vuoti = annunci interni sui piani.
+# Prima di attivare AdSense serve il banner di consenso ai cookie.
+adsense_client = ""
+adsense_slot   = ""
+
+# Pagamenti con Stripe in modalità LIVE (docs/GUIDA-PAGAMENTI.md): chiave sk_live_… e il
+# segreto di un webhook live che punta a https://imieiconcorsi.it/api/pubblico/stripe/webhook.
+# Vuoti = acquisti CHIUSI: i piani a pagamento si vedono ma non si comprano (restano i codici
+# sconto al 100% e i piani dati dall'admin). Da compilare quando la società è costituita.
+stripe_secret_key     = ""   # sk_live_... (Dashboard Stripe, modalità live -> Developers -> API keys)
+stripe_webhook_secret = ""   # whsec_...  (Developers -> Webhooks -> endpoint di prod)
+
+# Tutor AI del piano Pro (Amazon Bedrock). Vuoto = Claude Haiku 4.5, profilo EU.
+# ai_model = "eu.anthropic.claude-haiku-4-5-20251001-v1:0"
+# Tetti di spesa del tutor AI al mese, in dollari: per utente e per tutta la piattaforma
+# (all'80% del secondo arriva un'email, al 100% l'AI va in pausa fino al mese dopo).
+# ai_tetto_utente_usd  = 3
+# ai_tetto_mensile_usd = 50
+
+# Monitoraggio: gli allarmi arrivano ad admin_email (topic SNS imieiconcorsi-prod-monitoraggio).
+# Budget mensile di TUTTO l'account AWS, in dollari; 0 = nessun budget. Se c'è già quello di
+# dev (stesso account), qui puoi metterlo a 0 per non ricevere due volte lo stesso avviso.
+# budget_mensile_usd = 50
+
+# WAF davanti al sito e all'API (circa 8-10 $ al mese). false = spento.
+# waf_attivo = true

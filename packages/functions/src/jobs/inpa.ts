@@ -1,3 +1,4 @@
+import { conMaiuscola } from "@imieiconcorsi/core/concorsi";
 import type { CompartoId, Concorso, MateriaId } from "@imieiconcorsi/core/domain";
 
 // Accesso a inPA (il portale dei concorsi pubblici) e conversione dei suoi bandi nei nostri
@@ -142,21 +143,50 @@ const testoSemplice = (html?: string | null) =>
     .replace(/\s+/g, " ")
     .trim();
 
-/** Il bando cita una banca dati ("banca dati", "banche dati", "banca-dati")? */
-const BANCA_DATI = /banc(a|he)[\s-]*dati/i;
-export const citaBancaDati = (b: InpaBando) =>
-  BANCA_DATI.test([b.titolo, b.descrizioneBreve, testoSemplice(b.descrizione)].filter(Boolean).join(" "));
+// ── Il bando prevede una banca dati di domande? ──────────────────────────────
+// Non basta trovare le parole "banca dati": un bando può dire che NON ci sarà ("non è prevista la
+// pubblicazione di alcuna banca dati"), o parlare di altre banche dati (contratti pubblici,
+// INPS, banche dati giuridiche come materia d'esame). Si guarda ogni frase che le contiene.
+
+const BANCA_DATI = /banc(?:a|he)[\s-]*dati/i;
+/** La frase parla delle domande della prova. */
+const DI_PROVA = /quesit|domand|\bprov[ae]\b|preselett|\btest\b|quiz|\brispost/i;
+/** Frasi che dicono che la banca dati non ci sarà ("non oltre", "non prima" non contano). */
+const NEGAZIONE = /\b(?:nessuna|alcuna|senza)\b|\bnon\b(?!\s+(?:oltre|meno|prima|appena|solo|soltanto))/i;
+/** Altre banche dati che non sono domande d'esame. */
+const ALTRE_BANCHE = /contratti pubblici|anac|bdncp|\binps\b|del personale|curricul|anagraf|giuridic|normativ|bibliografic|catastal/i;
+
+/**
+ * Se il testo prevede una banca dati di domande, la frase che lo dice (per mostrarla nella pagina
+ * del bando); altrimenti undefined. Le frasi si separano a punti, punti e virgola e a capo.
+ */
+export function fraseBancaDati(testo: string): string | undefined {
+  for (const frase of testo.split(/(?<=[.;!?])\s+|\n+/)) {
+    if (!BANCA_DATI.test(frase) || ALTRE_BANCHE.test(frase) || !DI_PROVA.test(frase) || NEGAZIONE.test(frase)) continue;
+    const pulita = frase.replace(/\s+/g, " ").trim();
+    return pulita.length > 240 ? `${pulita.slice(0, 237)}…` : pulita;
+  }
+  return undefined;
+}
+
+/** Testo del bando in cui cercare: titolo, descrizione breve e completa. */
+const testoBando = (b: InpaBando) => [b.titolo, b.descrizioneBreve, testoSemplice(b.descrizione)].filter(Boolean).join(". ");
+
+/** Il bando prevede una banca dati di domande ufficiale? */
+export const citaBancaDati = (b: InpaBando) => fraseBancaDati(testoBando(b)) !== undefined;
 
 /** Da un bando di inPA al nostro Concorso (comparto, materie, link al dettaglio). */
 export function toConcorso(b: InpaBando, now = new Date()): Concorso {
   const comparto = classificaComparto(b);
+  const frase = fraseBancaDati(testoBando(b));
   // Con almeno due materie trovate nel bando ci fidiamo del testo; altrimenti stima per comparto.
   const lette = materieDalTesto([b.titolo, b.descrizioneBreve, testoSemplice(b.descrizione)].filter(Boolean).join(" "));
   const dalBando = lette.length >= 2;
   return {
     id: b.id,
-    titolo: b.titolo.trim(),
-    ente: b.entiRiferimento?.[0]?.trim() ?? "Ente non indicato",
+    // Nomi con la maiuscola iniziale: su inPA alcuni sono tutti minuscoli.
+    titolo: conMaiuscola(b.titolo),
+    ente: b.entiRiferimento?.[0]?.trim() ? conMaiuscola(b.entiRiferimento[0]) : "Ente non indicato",
     sedi: b.sedi ?? [],
     comparto,
     // Senza scadenza il concorso non entra nell'indice per comparto (che ordina per scadenza).
@@ -164,12 +194,13 @@ export function toConcorso(b: InpaBando, now = new Date()): Concorso {
     pubblicatoIl: b.dataPubblicazione ?? undefined,
     tipoProcedura: b.tipoProcedura ?? undefined,
     posti: b.numPosti ?? undefined,
-    figura: b.figuraRicercata?.trim() || undefined,
+    figura: b.figuraRicercata?.trim() ? conMaiuscola(b.figuraRicercata) : undefined,
     descrizione: testoSemplice(b.descrizione)?.slice(0, 4000) || b.descrizioneBreve || undefined,
     url: DETTAGLIO_URL + b.id,
     materie: dalBando ? lette : MATERIE_TIPICHE[comparto],
     materieStimate: !dalBando,
-    bancaDatiPrevista: citaBancaDati(b),
+    bancaDatiPrevista: !!frase,
+    ...(frase ? { bancaDatiFrase: frase } : {}),
     bancaDati: false,
     fonte: "inpa",
     aggiornatoIl: now.toISOString(),

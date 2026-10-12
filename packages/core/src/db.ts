@@ -38,6 +38,9 @@ export const tables = {
   get contatori() {
     return env("CONTATORI_TABLE");
   },
+  get accessi() {
+    return env("ACCESSI_TABLE");
+  },
 };
 
 /** Client DynamoDB che lavora con oggetti JavaScript normali (i campi undefined non si salvano). */

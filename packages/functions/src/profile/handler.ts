@@ -1,5 +1,6 @@
-import { BatchWriteCommand, DeleteCommand, PutCommand, QueryCommand, UpdateCommand } from "@aws-sdk/lib-dynamodb";
-import { aggiornaNome, eliminaUtenteCognito } from "@imieiconcorsi/core/cognito";
+import { PutCommand, QueryCommand, UpdateCommand } from "@aws-sdk/lib-dynamodb";
+import { eliminaAccount } from "@imieiconcorsi/core/account";
+import { aggiornaNome } from "@imieiconcorsi/core/cognito";
 import { db, getProfilo, tables } from "@imieiconcorsi/core/db";
 import {
   COMPARTO_IDS,
@@ -60,30 +61,6 @@ async function richiesteDaLeggere(userId: string) {
   return res.Count ?? 0;
 }
 
-/** Tutte le righe di un utente in una tabella con chiave composta (userId + sortKey). */
-async function eliminaRighe(table: string, sortKey: string, userId: string) {
-  let start: Record<string, unknown> | undefined;
-  do {
-    const res = await db.send(
-      new QueryCommand({
-        TableName: table,
-        KeyConditionExpression: "userId = :u",
-        ExpressionAttributeValues: { ":u": userId },
-        ProjectionExpression: `userId, ${sortKey}`,
-        ExclusiveStartKey: start,
-      }),
-    );
-    const chiavi = res.Items ?? [];
-    for (let i = 0; i < chiavi.length; i += 25) {
-      let pending = chiavi.slice(i, i + 25).map((Key) => ({ DeleteRequest: { Key } }));
-      while (pending.length) {
-        const out = await db.send(new BatchWriteCommand({ RequestItems: { [table]: pending } }));
-        pending = (out.UnprocessedItems?.[table] ?? []) as typeof pending;
-      }
-    }
-    start = res.LastEvaluatedKey;
-  } while (start);
-}
 
 export const handler = service({
   // Il profilo nasce al primo accesso, qualunque sia il metodo di login.
@@ -190,12 +167,7 @@ export const handler = service({
    * I dati dei pagamenti restano solo sulla piattaforma di pagamento, per obblighi fiscali.
    */
   "DELETE /me": async (ctx) => {
-    await eliminaRighe(tables.attempts, "id", ctx.userId);
-    await eliminaRighe(tables.follows, "concorsoId", ctx.userId);
-    await eliminaRighe(tables.richieste, "id", ctx.userId);
-    await eliminaRighe(tables.progressi, "bancaId", ctx.userId);
-    await db.send(new DeleteCommand({ TableName: tables.users, Key: { userId: ctx.userId } }));
-    await eliminaUtenteCognito(ctx.username);
+    await eliminaAccount(ctx.userId, ctx.username, { email: ctx.email, nome: ctx.nome });
     console.log(`Account eliminato: ${ctx.userId}`);
     return { ok: true };
   },
