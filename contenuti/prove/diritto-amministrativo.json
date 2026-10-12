@@ -1003,5 +1003,505 @@
     "id": "amm-201",
     "file": "norma_L190-2012_anticorruzione.txt",
     "frase": "I comuni con popolazione inferiore a 15.000 abitanti possono aggregarsi"
+  },
+  {
+    "id": "amm-202",
+    "file": "norma_L190-2012_anticorruzione.txt",
+    "frase": "Il Piano ha durata triennale ed è aggiornato annualmente"
+  },
+  {
+    "id": "amm-203",
+    "file": "norma_L190-2012_anticorruzione.txt",
+    "frase": "della corruzione e della trasparenza entro il 31 gennaio di ogni anno"
+  },
+  {
+    "id": "amm-204",
+    "file": "norma_L190-2012_anticorruzione.txt",
+    "frase": "Negli enti locali il piano è approvato dalla giunta"
+  },
+  {
+    "id": "amm-205",
+    "file": "norma_L190-2012_anticorruzione.txt",
+    "frase": "L'attività di elaborazione del piano non può essere affidata a soggetti estranei all'amministrazione"
+  },
+  {
+    "id": "amm-206",
+    "file": "norma_L190-2012_anticorruzione.txt",
+    "frase": "è individuato, di norma, nel segretario o nel dirigente apicale"
+  },
+  {
+    "id": "amm-207",
+    "file": "norma_L190-2012_anticorruzione.txt",
+    "frase": "Entro il 15 dicembre di ogni anno, il dirigente individuato ai sensi del comma 7"
+  },
+  {
+    "id": "amm-208",
+    "file": "norma_L190-2012_anticorruzione.txt",
+    "frase": "delle misure di prevenzione previste dal Piano costituisce illecito disciplinare"
+  },
+  {
+    "id": "amm-209",
+    "file": "norma_L190-2012_anticorruzione.txt",
+    "frase": "non può essere inferiore alla sospensione dal servizio con privazione della retribuzione da un minimo di un mese ad un massimo di sei mesi"
+  },
+  {
+    "id": "amm-210",
+    "file": "norma_L190-2012_anticorruzione.txt",
+    "frase": "nei tre anni successivi alla cessazione del rapporto di pubblico impiego"
+  },
+  {
+    "id": "amm-211",
+    "file": "norma_L190-2012_anticorruzione.txt",
+    "frase": "I contratti conclusi e gli incarichi conferiti in violazione di quanto previsto dal presente comma sono nulli"
+  },
+  {
+    "id": "amm-212",
+    "file": "norma_L190-2012_anticorruzione.txt",
+    "frase": "non possono fare parte, anche con compiti di segreteria, di commissioni per l'accesso o la selezione a pubblici impieghi"
+  },
+  {
+    "id": "amm-213",
+    "file": "norma_L190-2012_anticorruzione.txt",
+    "frase": "concorsi e prove selettive per l'assunzione del personale e progressioni di carriera"
+  },
+  {
+    "id": "amm-214",
+    "file": "norma_L190-2012_anticorruzione.txt",
+    "frase": "nei patti di integrità costituisce causa di esclusione dalla gara"
+  },
+  {
+    "id": "amm-215",
+    "file": "norma_L190-2012_anticorruzione.txt",
+    "frase": "almeno un indirizzo di posta elettronica certificata cui il cittadino possa rivolgersi"
+  },
+  {
+    "id": "amm-216",
+    "file": "norma_L190-2012_anticorruzione.txt",
+    "frase": "è vietata, pena la decadenza dagli incarichi e la nullità degli atti compiuti, la partecipazione a collegi arbitrali"
+  },
+  {
+    "id": "amm-217",
+    "file": "norma_L190-2012_anticorruzione.txt",
+    "frase": "L'Organismo indipendente di valutazione verifica, anche ai fini della validazione della Relazione sulla performance"
+  },
+  {
+    "id": "amm-218",
+    "file": "norma_L190-2012_anticorruzione.txt",
+    "frase": "presentando una relazione entro il 31 dicembre di ciascun anno"
+  },
+  {
+    "id": "amm-219",
+    "file": "norma_L190-2012_anticorruzione.txt",
+    "frase": "approvato con decreto del Presidente della Repubblica, previa deliberazione del Consiglio dei ministri"
+  },
+  {
+    "id": "amm-220",
+    "file": "norma_L190-2012_anticorruzione.txt",
+    "frase": "consegnato al dipendente, che lo sottoscrive all'atto dell'assunzione"
+  },
+  {
+    "id": "amm-221",
+    "file": "norma_L190-2012_anticorruzione.txt",
+    "frase": "compresi quelli relativi all'attuazione del Piano di prevenzione della corruzione, è fonte di responsabilità disciplinare"
+  },
+  {
+    "id": "amm-222",
+    "file": "norma_L190-2012_anticorruzione.txt",
+    "frase": "Entro quindici giorni dall'erogazione del compenso per gli incarichi di cui al comma 6"
+  },
+  {
+    "id": "amm-223",
+    "file": "norma_DLgs33-2013_trasparenza.txt",
+    "frase": "L'istanza di accesso civico identifica i dati, le informazioni o i documenti richiesti e non richiede motivazione"
+  },
+  {
+    "id": "amm-224",
+    "file": "norma_DLgs33-2013_trasparenza.txt",
+    "frase": "Il rilascio di dati o documenti in formato elettronico o cartaceo è gratuito"
+  },
+  {
+    "id": "amm-225",
+    "file": "norma_DLgs33-2013_trasparenza.txt",
+    "frase": "Entro dieci giorni dalla ricezione della comunicazione, i controinteressati possono presentare una motivata opposizione"
+  },
+  {
+    "id": "amm-226",
+    "file": "norma_DLgs33-2013_trasparenza.txt",
+    "frase": "deve concludersi con provvedimento espresso e motivato nel termine di trenta giorni"
+  },
+  {
+    "id": "amm-227",
+    "file": "norma_DLgs33-2013_trasparenza.txt",
+    "frase": "che decide con provvedimento motivato, entro il termine di venti giorni"
+  },
+  {
+    "id": "amm-228",
+    "file": "norma_DLgs33-2013_trasparenza.txt",
+    "frase": "il quale si pronuncia entro il termine di dieci giorni dalla richiesta"
+  },
+  {
+    "id": "amm-229",
+    "file": "norma_DLgs33-2013_trasparenza.txt",
+    "frase": "il richiedente può altresì presentare ricorso al difensore civico competente per ambito territoriale"
+  },
+  {
+    "id": "amm-230",
+    "file": "norma_DLgs33-2013_trasparenza.txt",
+    "frase": "la sicurezza pubblica e l'ordine pubblico"
+  },
+  {
+    "id": "amm-231",
+    "file": "norma_DLgs33-2013_trasparenza.txt",
+    "frase": "deve essere consentito l'accesso agli altri dati o alle altre parti"
+  },
+  {
+    "id": "amm-232",
+    "file": "norma_DLgs33-2013_trasparenza.txt",
+    "frase": "non prima di quindici giorni dalla ricezione della stessa comunicazione da parte del controinteressato"
+  },
+  {
+    "id": "amm-233",
+    "file": "norma_DLgs33-2013_trasparenza.txt",
+    "frase": "sono condizioni per l'acquisizione dell'efficacia dell'atto e per la liquidazione dei relativi compensi"
+  },
+  {
+    "id": "amm-234",
+    "file": "norma_DLgs33-2013_trasparenza.txt",
+    "frase": "entro tre mesi dal conferimento dell'incarico e per i tre anni successivi alla cessazione dell'incarico"
+  },
+  {
+    "id": "amm-235",
+    "file": "norma_DLgs33-2013_trasparenza.txt",
+    "frase": "di importo superiore a mille euro"
+  },
+  {
+    "id": "amm-236",
+    "file": "norma_DLgs33-2013_trasparenza.txt",
+    "frase": "È esclusa la pubblicazione dei dati identificativi delle persone fisiche destinatarie dei provvedimenti"
+  },
+  {
+    "id": "amm-237",
+    "file": "norma_DLgs33-2013_trasparenza.txt",
+    "frase": "del bilancio preventivo e del conto consuntivo entro trenta giorni dalla loro adozione"
+  },
+  {
+    "id": "amm-238",
+    "file": "norma_DLgs33-2013_trasparenza.txt",
+    "frase": "a una sanzione amministrativa pecuniaria da 500 a 10.000 euro"
+  },
+  {
+    "id": "amm-239",
+    "file": "norma_DLgs33-2013_trasparenza.txt",
+    "frase": "sono irrogate dall'Autorità nazionale anticorruzione"
+  },
+  {
+    "id": "amm-240",
+    "file": "norma_DLgs33-2013_trasparenza.txt",
+    "frase": "l'atto di nomina o di proclamazione, con l'indicazione della durata dell'incarico o del mandato elettivo"
+  },
+  {
+    "id": "amm-241",
+    "file": "norma_DLgs33-2013_trasparenza.txt",
+    "frase": "costituiscono elemento di valutazione negativa della responsabilità dirigenziale"
+  },
+  {
+    "id": "amm-242",
+    "file": "norma_DLgs33-2013_trasparenza.txt",
+    "frase": "provvedono a rendere non intelligibili i dati personali non pertinenti"
+  },
+  {
+    "id": "amm-243",
+    "file": "norma_DLgs33-2013_trasparenza.txt",
+    "frase": "L'amministrazione pubblica sul proprio sito istituzionale l'ammontare complessivo dei suddetti emolumenti per ciascun dirigente"
+  },
+  {
+    "id": "amm-244",
+    "file": "norma_DLgs33-2013_trasparenza.txt",
+    "frase": "La mancata pubblicazione dei rendiconti comporta la riduzione del 50 per cento delle risorse"
+  },
+  {
+    "id": "amm-245",
+    "file": "norma_DLgs36-2023_codice-contratti.txt",
+    "frase": "euro 5.382.000 per gli appalti pubblici di lavori e per le concessioni"
+  },
+  {
+    "id": "amm-246",
+    "file": "norma_DLgs36-2023_codice-contratti.txt",
+    "frase": "euro 215.000 per gli appalti pubblici di forniture, di servizi e per i concorsi pubblici di progettazione"
+  },
+  {
+    "id": "amm-247",
+    "file": "norma_DLgs36-2023_codice-contratti.txt",
+    "frase": "euro 140.000 per gli appalti pubblici di forniture, di servizi"
+  },
+  {
+    "id": "amm-248",
+    "file": "norma_DLgs36-2023_codice-contratti.txt",
+    "frase": "euro 750.000 per gli appalti di servizi sociali e assimilati"
+  },
+  {
+    "id": "amm-249",
+    "file": "norma_DLgs36-2023_codice-contratti.txt",
+    "frase": "Un appalto non può essere frazionato per evitare l'applicazione delle norme del codice"
+  },
+  {
+    "id": "amm-250",
+    "file": "norma_DLgs36-2023_codice-contratti.txt",
+    "frase": "Nel primo atto di avvio dell'intervento pubblico da realizzare mediante un contratto"
+  },
+  {
+    "id": "amm-251",
+    "file": "norma_DLgs36-2023_codice-contratti.txt",
+    "frase": "tra i dipendenti assunti anche a tempo determinato della stazione appaltante"
+  },
+  {
+    "id": "amm-252",
+    "file": "norma_DLgs36-2023_codice-contratti.txt",
+    "frase": "Il contratto è stipulato, a pena di nullità, in forma scritta"
+  },
+  {
+    "id": "amm-253",
+    "file": "norma_DLgs36-2023_codice-contratti.txt",
+    "frase": "mediante corrispondenza secondo l'uso commerciale, consistente in un apposito scambio di lettere"
+  },
+  {
+    "id": "amm-254",
+    "file": "norma_DLgs36-2023_codice-contratti.txt",
+    "frase": "la stipula del contratto ha luogo entro i successivi sessanta giorni anche in pendenza di contenzioso"
+  },
+  {
+    "id": "amm-255",
+    "file": "norma_DLgs36-2023_codice-contratti.txt",
+    "frase": "Il contratto non può essere stipulato prima di ((trentadue)) giorni dall'invio dell'ultima delle comunicazioni"
+  },
+  {
+    "id": "amm-256",
+    "file": "norma_DLgs36-2023_codice-contratti.txt",
+    "frase": "adottano il programma triennale dei lavori pubblici e il programma triennale degli acquisti di beni e servizi"
+  },
+  {
+    "id": "amm-257",
+    "file": "norma_DLgs36-2023_codice-contratti.txt",
+    "frase": "Nelle procedure aperte qualsiasi operatore economico interessato può presentare un'offerta"
+  },
+  {
+    "id": "amm-258",
+    "file": "norma_DLgs36-2023_codice-contratti.txt",
+    "frase": "Nei soli casi previsti dall'articolo 76 le stazioni appaltanti possono utilizzare la procedura negoziata senza pubblicazione di un bando"
+  },
+  {
+    "id": "amm-259",
+    "file": "norma_DLgs36-2023_codice-contratti.txt",
+    "frase": "un termine non inferiore a cinque giorni e non superiore a dieci giorni"
+  },
+  {
+    "id": "amm-260",
+    "file": "norma_DLgs36-2023_codice-contratti.txt",
+    "frase": "con esclusione della documentazione che compone l'offerta tecnica e l'offerta economica"
+  },
+  {
+    "id": "amm-261",
+    "file": "norma_DLgs36-2023_codice-contratti.txt",
+    "frase": "garanzia provvisoria pari al 2 per cento del valore complessivo della procedura"
+  },
+  {
+    "id": "amm-262",
+    "file": "norma_DLgs36-2023_codice-contratti.txt",
+    "frase": "ridurre l'importo sino all'1 per cento oppure incrementarlo sino al 4 per cento"
+  },
+  {
+    "id": "amm-263",
+    "file": "norma_DLgs36-2023_codice-contratti.txt",
+    "frase": "pari al 10 per cento dell'importo contrattuale"
+  },
+  {
+    "id": "amm-264",
+    "file": "norma_DLgs36-2023_codice-contratti.txt",
+    "frase": "assegnando a tal fine un termine non superiore a quindici giorni"
+  },
+  {
+    "id": "amm-265",
+    "file": "norma_DLgs36-2023_codice-contratti.txt",
+    "frase": "Il subappalto è il contratto con il quale l'appaltatore affida a terzi l'esecuzione di parte delle prestazioni"
+  },
+  {
+    "id": "amm-266",
+    "file": "norma_DLgs36-2023_codice-contratti.txt",
+    "frase": "la cessione del contratto è nulla"
+  },
+  {
+    "id": "amm-267",
+    "file": "norma_DLgs36-2023_codice-contratti.txt",
+    "frase": "un tetto massimo per il punteggio economico entro il limite del 30 per cento"
+  },
+  {
+    "id": "amm-268",
+    "file": "norma_DLgs36-2023_codice-contratti.txt",
+    "frase": "la condanna con sentenza definitiva o decreto penale di condanna divenuto irrevocabile"
+  },
+  {
+    "id": "amm-269",
+    "file": "norma_DLgs36-2023_codice-contratti.txt",
+    "frase": "la pubblicazione e la trasmissione dei dati e documenti alla Banca dati nazionale dei contratti pubblici"
+  },
+  {
+    "id": "amm-270",
+    "file": "norma_DLgs267-2000_TUEL.txt",
+    "frase": "all'albo pretorio, nella sede dell'ente, per quindici giorni consecutivi"
+  },
+  {
+    "id": "amm-271",
+    "file": "norma_DLgs267-2000_TUEL.txt",
+    "frase": "diventano esecutive dopo il decimo giorno dalla loro pubblicazione"
+  },
+  {
+    "id": "amm-272",
+    "file": "norma_DLgs267-2000_TUEL.txt",
+    "frase": "possono essere dichiarate immediatamente eseguibili con il voto espresso dalla maggioranza dei componenti"
+  },
+  {
+    "id": "amm-273",
+    "file": "norma_DLgs267-2000_TUEL.txt",
+    "frase": "in ordine alla sola regolarità tecnica, del responsabile del servizio interessato"
+  },
+  {
+    "id": "amm-274",
+    "file": "norma_DLgs267-2000_TUEL.txt",
+    "frase": "devono darne adeguata motivazione nel testo della deliberazione"
+  },
+  {
+    "id": "amm-275",
+    "file": "norma_DLgs267-2000_TUEL.txt",
+    "frase": "il parere è espresso dal segretario dell'ente, in relazione alle sue competenze"
+  },
+  {
+    "id": "amm-276",
+    "file": "norma_DLgs267-2000_TUEL.txt",
+    "frase": "con il voto favorevole dei due terzi dei consiglieri assegnati"
+  },
+  {
+    "id": "amm-277",
+    "file": "norma_DLgs267-2000_TUEL.txt",
+    "frase": "devono riguardare materie di esclusiva competenza locale"
+  },
+  {
+    "id": "amm-278",
+    "file": "norma_DLgs267-2000_TUEL.txt",
+    "frase": "valorizzano le libere forme associative e promuovono organismi di partecipazione popolare"
+  },
+  {
+    "id": "amm-279",
+    "file": "norma_DLgs267-2000_TUEL.txt",
+    "frase": "rispondono, entro 30 giorni, alle interrogazioni"
+  },
+  {
+    "id": "amm-280",
+    "file": "norma_DLgs267-2000_TUEL.txt",
+    "frase": "tutte le notizie e le informazioni in loro possesso, utili all'espletamento del proprio mandato"
+  },
+  {
+    "id": "amm-281",
+    "file": "norma_DLgs267-2000_TUEL.txt",
+    "frase": "Il rendiconto della gestione è deliberato entro il 30 aprile dell'anno successivo"
+  },
+  {
+    "id": "amm-282",
+    "file": "norma_DLgs267-2000_TUEL.txt",
+    "frase": "il quale comprende il conto del bilancio, il conto economico e lo stato patrimoniale"
+  },
+  {
+    "id": "amm-283",
+    "file": "norma_DLgs267-2000_TUEL.txt",
+    "frase": "almeno una volta entro il ((31 luglio)) di ciascun anno"
+  },
+  {
+    "id": "amm-284",
+    "file": "norma_DLgs267-2000_TUEL.txt",
+    "frase": "Se il bilancio di previsione non è approvato dal Consiglio entro il 31 dicembre dell'anno precedente"
+  },
+  {
+    "id": "amm-285",
+    "file": "norma_DLgs267-2000_TUEL.txt",
+    "frase": "un collegio di revisori composto da tre membri"
+  },
+  {
+    "id": "amm-286",
+    "file": "norma_DLgs267-2000_TUEL.txt",
+    "frase": "la revisione economico-finanziaria è affidata ad un solo revisore"
+  },
+  {
+    "id": "amm-287",
+    "file": "norma_DLgs267-2000_TUEL.txt",
+    "frase": "L'organo di revisione contabile dura in carica tre anni"
+  },
+  {
+    "id": "amm-288",
+    "file": "norma_DLgs267-2000_TUEL.txt",
+    "frase": "i contratti nei quali l'ente è parte e autentica"
+  },
+  {
+    "id": "amm-289",
+    "file": "norma_DLgs267-2000_TUEL.txt",
+    "frase": "partecipa con funzioni consultive, referenti e di assistenza alle riunioni del consiglio e della giunta e ne cura la verbalizzazione"
+  },
+  {
+    "id": "amm-290",
+    "file": "norma_DLgs267-2000_TUEL.txt",
+    "frase": "le deliberazioni adottate dalla giunta sono trasmesse in elenco ai capigruppo consiliari"
+  },
+  {
+    "id": "amm-291",
+    "file": "norma_DLgs165-2001_pubblico-impiego.txt",
+    "frase": "adeguata pubblicità della selezione e modalità di svolgimento che garantiscano l'imparzialità"
+  },
+  {
+    "id": "amm-292",
+    "file": "norma_DLgs165-2001_pubblico-impiego.txt",
+    "frase": "composizione delle commissioni esclusivamente con esperti di provata competenza nelle materie di concorso"
+  },
+  {
+    "id": "amm-293",
+    "file": "norma_DLgs165-2001_pubblico-impiego.txt",
+    "frase": "rimangono vigenti per un termine di due anni dalla data di approvazione"
+  },
+  {
+    "id": "amm-294",
+    "file": "norma_DLgs165-2001_pubblico-impiego.txt",
+    "frase": "almeno un terzo dei posti di componente delle commissioni di concorso"
+  },
+  {
+    "id": "amm-295",
+    "file": "norma_DLgs165-2001_pubblico-impiego.txt",
+    "frase": "Comitato unico di garanzia per le pari opportunità, la valorizzazione del benessere di chi lavora e contro le discriminazioni"
+  },
+  {
+    "id": "amm-296",
+    "file": "norma_DLgs165-2001_pubblico-impiego.txt",
+    "frase": "decentramento delle procedure di reclutamento"
+  },
+  {
+    "id": "amm-297",
+    "file": "norma_DLgs165-2001_pubblico-impiego.txt",
+    "frase": "individua l'ufficio per i procedimenti disciplinari competente per le infrazioni punibili con sanzione superiore al rimprovero verbale"
+  },
+  {
+    "id": "amm-298",
+    "file": "norma_DLgs165-2001_pubblico-impiego.txt",
+    "frase": "con un preavviso di almeno venti giorni, per l'audizione in contraddittorio a sua difesa"
+  },
+  {
+    "id": "amm-299",
+    "file": "norma_DLgs165-2001_pubblico-impiego.txt",
+    "frase": "Il dipendente può farsi assistere da un procuratore ovvero da un rappresentante"
+  },
+  {
+    "id": "amm-300",
+    "file": "norma_DLgs165-2001_pubblico-impiego.txt",
+    "frase": "entro centoventi giorni dalla contestazione dell'addebito"
+  },
+  {
+    "id": "amm-301",
+    "file": "norma_DLgs165-2001_pubblico-impiego.txt",
+    "frase": "superiore a tre nell'arco di un biennio o comunque per più di sette giorni nel corso degli ultimi dieci anni"
   }
 ]

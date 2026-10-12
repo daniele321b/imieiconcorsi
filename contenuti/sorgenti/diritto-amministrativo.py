@@ -1030,3 +1030,508 @@ D("amm-201", "Anticorruzione", 4, "I comuni sotto 15.000 abitanti possono defini
   "Sì, possono aggregarsi tramite accordi", ["No, ognuno deve fare da sé", "Solo con autorizzazione del prefetto", "Solo se appartengono alla stessa unione montana"],
   "La L. 190/2012 consente ai piccoli comuni di aggregarsi.",
   "L. 190/2012, art. 1", L190, "I comuni con popolazione inferiore a 15.000 abitanti possono aggregarsi")
+
+# --- v2: anticorruzione, incarichi, codice di comportamento (L. 190/2012) ---
+D("amm-202", "Anticorruzione", 2, "Quanto dura il Piano nazionale anticorruzione (PNA) e ogni quanto si aggiorna?",
+  "Ha durata triennale ed è aggiornato annualmente", ["È annuale e non si aggiorna", "Ha durata quinquennale ed è aggiornato ogni due anni", "Non ha scadenza e si aggiorna solo per legge"],
+  "Art. 1, comma 2-bis, L. 190/2012: il Piano ha durata triennale ed è aggiornato annualmente; è atto di indirizzo per i piani delle singole amministrazioni.",
+  "L. 190/2012, art. 1, c. 2-bis", L190, "Il Piano ha durata triennale ed è aggiornato annualmente")
+
+D("amm-203", "Anticorruzione", 3, "Entro quale data l'organo di indirizzo adotta ogni anno il piano triennale per la prevenzione della corruzione?",
+  "Entro il 31 gennaio", ["Entro il 31 dicembre", "Entro il 30 giugno", "Entro il 15 dicembre"],
+  "Art. 1, comma 8: l'organo di indirizzo adotta il Piano su proposta del RPCT entro il 31 gennaio di ogni anno e lo trasmette all'ANAC.",
+  "L. 190/2012, art. 1, c. 8", L190, "della corruzione e della trasparenza entro il 31 gennaio di ogni anno")
+
+D("amm-204", "Anticorruzione", 2, "Negli enti locali, quale organo approva il piano triennale per la prevenzione della corruzione?",
+  "La giunta", ["Il consiglio comunale", "Il sindaco con proprio decreto", "Il segretario comunale"],
+  "Art. 1, comma 8, L. 190/2012: negli enti locali il piano è approvato dalla giunta, su proposta del Responsabile della prevenzione della corruzione e della trasparenza.",
+  "L. 190/2012, art. 1, c. 8", L190, "Negli enti locali il piano è approvato dalla giunta")
+
+D("amm-205", "Anticorruzione", 3, "L'elaborazione del piano anticorruzione di un ente può essere affidata a una società di consulenza esterna?",
+  "No, non può essere affidata a soggetti estranei all'amministrazione", ["Sì, sempre", "Sì, se il comune ha meno di 15.000 abitanti", "Sì, con il parere favorevole dell'ANAC"],
+  "Art. 1, comma 8: l'attività di elaborazione del piano non può essere affidata a soggetti estranei all'amministrazione.",
+  "L. 190/2012, art. 1, c. 8", L190, "L'attività di elaborazione del piano non può essere affidata a soggetti estranei all'amministrazione")
+
+D("amm-206", "Anticorruzione", 3, "Negli enti locali, chi è individuato di norma come Responsabile della prevenzione della corruzione e della trasparenza?",
+  "Il segretario o il dirigente apicale", ["Il sindaco", "Il presidente del consiglio comunale", "Il revisore dei conti"],
+  "Art. 1, comma 7: negli enti locali l'RPCT è individuato, di norma, nel segretario o nel dirigente apicale, salva diversa e motivata determinazione; nelle unioni di comuni può esserci un unico responsabile.",
+  "L. 190/2012, art. 1, c. 7", L190, "è individuato, di norma, nel segretario o nel dirigente apicale")
+
+D("amm-207", "Anticorruzione", 3, "Entro quale data l'RPCT trasmette all'organismo indipendente di valutazione e all'organo di indirizzo la relazione sull'attività svolta?",
+  "Entro il 15 dicembre di ogni anno", ["Entro il 31 gennaio di ogni anno", "Entro il 30 aprile di ogni anno", "Entro il 31 luglio di ogni anno"],
+  "Art. 1, comma 14: entro il 15 dicembre l'RPCT trasmette la relazione con i risultati dell'attività svolta e la pubblica sul sito dell'amministrazione.",
+  "L. 190/2012, art. 1, c. 14", L190, "Entro il 15 dicembre di ogni anno, il dirigente individuato ai sensi del comma 7")
+
+D("amm-208", "Anticorruzione", 2, "Che cosa costituisce, per il dipendente, la violazione delle misure di prevenzione previste dal piano anticorruzione?",
+  "Un illecito disciplinare", ["Un semplice inadempimento senza conseguenze", "Sempre un reato", "Una causa automatica di decadenza dall'impiego"],
+  "Art. 1, comma 14: la violazione, da parte dei dipendenti, delle misure di prevenzione previste dal Piano costituisce illecito disciplinare.",
+  "L. 190/2012, art. 1, c. 14", L190, "delle misure di prevenzione previste dal Piano costituisce illecito disciplinare")
+
+D("amm-209", "Anticorruzione", 4, "Se nell'amministrazione è commesso un reato di corruzione accertato con sentenza definitiva, qual è la sanzione disciplinare minima per l'RPCT che non prova di aver vigilato?",
+  "La sospensione dal servizio senza retribuzione da un mese a sei mesi", ["Il richiamo verbale", "La multa fino a quattro ore di retribuzione", "Il licenziamento senza preavviso"],
+  "Art. 1, comma 13: la sanzione a carico del responsabile non può essere inferiore alla sospensione dal servizio con privazione della retribuzione da un mese a sei mesi.",
+  "L. 190/2012, art. 1, c. 13", L190, "non può essere inferiore alla sospensione dal servizio con privazione della retribuzione da un minimo di un mese ad un massimo di sei mesi")
+
+D("amm-210", "Anticorruzione", 4, "Il dipendente che negli ultimi tre anni di servizio ha esercitato poteri autoritativi o negoziali, per quanto tempo dopo la cessazione non può lavorare per i privati destinatari di quei poteri («pantouflage»)?",
+  "Per tre anni", ["Per un anno", "Per sei mesi", "Per cinque anni"],
+  "Art. 53, comma 16-ter, D.Lgs. 165/2001 (introdotto dalla L. 190/2012): il divieto dura nei tre anni successivi alla cessazione del rapporto di pubblico impiego.",
+  "L. 190/2012, art. 1, c. 42 (art. 53, c. 16-ter, D.Lgs. 165/2001)", L190, "nei tre anni successivi alla cessazione del rapporto di pubblico impiego")
+
+D("amm-211", "Anticorruzione", 4, "Che sorte hanno i contratti conclusi con un ex dipendente in violazione del divieto di «pantouflage»?",
+  "Sono nulli, e il privato non può contrattare con le PA per tre anni", ["Sono validi ma il dipendente paga una multa", "Sono annullabili solo su richiesta dell'ANAC", "Restano validi se il compenso è restituito"],
+  "Art. 53, comma 16-ter, D.Lgs. 165/2001: i contratti e gli incarichi sono nulli e i privati che li hanno conclusi non possono contrattare con le pubbliche amministrazioni per i tre anni successivi.",
+  "L. 190/2012, art. 1, c. 42 (art. 53, c. 16-ter, D.Lgs. 165/2001)", L190, "I contratti conclusi e gli incarichi conferiti in violazione di quanto previsto dal presente comma sono nulli")
+
+D("amm-212", "Anticorruzione", 3, "Chi è stato condannato, anche con sentenza non definitiva, per un reato contro la pubblica amministrazione può far parte di una commissione di concorso?",
+  "No, nemmeno con compiti di segreteria", ["Sì, se la condanna non è definitiva", "Sì, ma solo come segretario", "Sì, se autorizzato dal dirigente"],
+  "Art. 35-bis D.Lgs. 165/2001 (introdotto dalla L. 190/2012): i condannati, anche con sentenza non passata in giudicato, per i reati contro la PA non possono fare parte, anche con compiti di segreteria, di commissioni per l'accesso o la selezione a pubblici impieghi.",
+  "L. 190/2012, art. 1, c. 46 (art. 35-bis D.Lgs. 165/2001)", L190, "non possono fare parte, anche con compiti di segreteria, di commissioni per l'accesso o la selezione a pubblici impieghi")
+
+D("amm-213", "Anticorruzione", 2, "Per quali procedimenti la L. 190/2012 chiede in particolare di garantire i livelli essenziali di trasparenza?",
+  "Autorizzazioni e concessioni, scelta del contraente, contributi e vantaggi economici, concorsi e progressioni di carriera", ["Solo i procedimenti penali", "Solo i matrimoni e le unioni civili", "Solo le elezioni amministrative"],
+  "Art. 1, comma 16: autorizzazione o concessione; scelta del contraente; concessione di sovvenzioni e vantaggi economici; concorsi e prove selettive per l'assunzione del personale e progressioni di carriera.",
+  "L. 190/2012, art. 1, c. 16", L190, "concorsi e prove selettive per l'assunzione del personale e progressioni di carriera")
+
+D("amm-214", "Anticorruzione", 3, "Cosa possono prevedere le stazioni appaltanti nei bandi per il mancato rispetto dei protocolli di legalità o dei patti di integrità?",
+  "L'esclusione dalla gara", ["Solo una sanzione pecuniaria", "La sospensione del bando", "Nessuna conseguenza: sono impegni morali"],
+  "Art. 1, comma 17: le stazioni appaltanti possono prevedere che il mancato rispetto delle clausole dei protocolli di legalità o dei patti di integrità sia causa di esclusione dalla gara.",
+  "L. 190/2012, art. 1, c. 17", L190, "nei patti di integrità costituisce causa di esclusione dalla gara")
+
+D("amm-215", "Anticorruzione", 2, "Cosa deve rendere noto ogni amministrazione sul proprio sito, per le istanze e le informazioni dei cittadini (L. 190/2012)?",
+  "Almeno un indirizzo di posta elettronica certificata", ["Il numero di cellulare del sindaco", "L'elenco dei dipendenti con l'indirizzo di casa", "Un numero di fax per ogni ufficio"],
+  "Art. 1, comma 29: ogni amministrazione rende noto, tramite il sito, almeno un indirizzo PEC a cui il cittadino possa trasmettere istanze e chiedere informazioni sui provvedimenti che lo riguardano.",
+  "L. 190/2012, art. 1, c. 29", L190, "almeno un indirizzo di posta elettronica certificata cui il cittadino possa rivolgersi")
+
+D("amm-216", "Anticorruzione", 4, "I magistrati possono partecipare a collegi arbitrali o assumere l'incarico di arbitro unico?",
+  "No, pena la decadenza dagli incarichi e la nullità degli atti compiuti", ["Sì, se autorizzati dal capo dell'ufficio", "Sì, solo per gli arbitrati con la PA", "Sì, se l'incarico è gratuito"],
+  "Art. 1, comma 18, L. 190/2012: a magistrati ordinari, amministrativi, contabili e militari, avvocati e procuratori dello Stato è vietata la partecipazione a collegi arbitrali, pena la decadenza e la nullità degli atti.",
+  "L. 190/2012, art. 1, c. 18", L190, "è vietata, pena la decadenza dagli incarichi e la nullità degli atti compiuti, la partecipazione a collegi arbitrali")
+
+D("amm-217", "Anticorruzione", 3, "Chi verifica che i piani anticorruzione siano coerenti con gli obiettivi dei documenti di programmazione strategico-gestionale?",
+  "L'Organismo indipendente di valutazione (OIV)", ["La Corte dei conti", "Il revisore dei conti", "Il prefetto"],
+  "Art. 1, comma 8-bis: l'OIV verifica, anche ai fini della validazione della Relazione sulla performance, la coerenza dei piani con gli obiettivi strategico-gestionali e riferisce all'ANAC.",
+  "L. 190/2012, art. 1, c. 8-bis", L190, "L'Organismo indipendente di valutazione verifica, anche ai fini della validazione della Relazione sulla performance")
+
+D("amm-218", "Anticorruzione", 3, "Entro quale data l'Autorità nazionale anticorruzione riferisce al Parlamento sull'attività di contrasto della corruzione?",
+  "Entro il 31 dicembre di ciascun anno", ["Entro il 31 gennaio di ciascun anno", "Entro il 30 giugno di ciascun anno", "Ogni tre anni, con il nuovo Piano nazionale"],
+  "Art. 1, comma 2, lettera g): l'ANAC riferisce al Parlamento presentando una relazione entro il 31 dicembre di ciascun anno.",
+  "L. 190/2012, art. 1, c. 2", L190, "presentando una relazione entro il 31 dicembre di ciascun anno")
+
+D("amm-219", "Codice di comportamento", 2, "Con quale atto è approvato il codice di comportamento nazionale dei dipendenti pubblici?",
+  "Con decreto del Presidente della Repubblica, previa deliberazione del Consiglio dei ministri", ["Con legge ordinaria del Parlamento", "Con delibera dell'ANAC", "Con decreto del ministro dell'interno"],
+  "Art. 54, comma 2, D.Lgs. 165/2001 (testo della L. 190/2012): il codice è approvato con DPR previa deliberazione del Consiglio dei ministri (oggi è il DPR 62/2013).",
+  "L. 190/2012, art. 1, c. 44 (art. 54 D.Lgs. 165/2001)", L190, "approvato con decreto del Presidente della Repubblica, previa deliberazione del Consiglio dei ministri")
+
+D("amm-220", "Codice di comportamento", 2, "Quando il dipendente pubblico sottoscrive il codice di comportamento?",
+  "All'atto dell'assunzione", ["Alla fine del periodo di prova", "Solo se diventa dirigente", "Ogni anno, con la valutazione della performance"],
+  "Art. 54, comma 2, D.Lgs. 165/2001: il codice è pubblicato in Gazzetta Ufficiale e consegnato al dipendente, che lo sottoscrive all'atto dell'assunzione.",
+  "L. 190/2012, art. 1, c. 44 (art. 54 D.Lgs. 165/2001)", L190, "consegnato al dipendente, che lo sottoscrive all'atto dell'assunzione")
+
+D("amm-221", "Codice di comportamento", 3, "Che tipo di responsabilità comporta la violazione dei doveri del codice di comportamento?",
+  "Responsabilità disciplinare (e, se collegate, anche civile, amministrativa e contabile)", ["Nessuna: il codice è solo etico", "Solo responsabilità penale", "Solo una nota sul fascicolo personale"],
+  "Art. 54, comma 3, D.Lgs. 165/2001: la violazione dei doveri del codice, compresi quelli del piano anticorruzione, è fonte di responsabilità disciplinare; violazioni gravi o reiterate portano al licenziamento (art. 55-quater, comma 1).",
+  "L. 190/2012, art. 1, c. 44 (art. 54 D.Lgs. 165/2001)", L190, "compresi quelli relativi all'attuazione del Piano di prevenzione della corruzione, è fonte di responsabilità disciplinare")
+
+D("amm-222", "Pubblico impiego", 3, "Entro quanti giorni dall'erogazione del compenso chi conferisce un incarico a un dipendente pubblico deve comunicarlo all'amministrazione di appartenenza?",
+  "Entro quindici giorni", ["Entro trenta giorni", "Entro sessanta giorni", "Entro la fine dell'anno"],
+  "Art. 53, comma 11, D.Lgs. 165/2001 (testo della L. 190/2012): entro quindici giorni dall'erogazione i soggetti pubblici o privati comunicano l'ammontare dei compensi erogati ai dipendenti pubblici.",
+  "L. 190/2012, art. 1, c. 42 (art. 53, c. 11, D.Lgs. 165/2001)", L190, "Entro quindici giorni dall'erogazione del compenso per gli incarichi di cui al comma 6")
+
+# --- v2: trasparenza e accesso civico (D.Lgs. 33/2013) ---
+D("amm-223", "Trasparenza", 2, "La richiesta di accesso civico (D.Lgs. 33/2013) deve essere motivata?",
+  "No, identifica i dati richiesti ma non richiede motivazione", ["Sì, va sempre spiegato l'interesse", "Sì, se riguarda dati personali", "Sì, se la presenta un'impresa"],
+  "Art. 5, comma 3: l'istanza identifica i dati, le informazioni o i documenti richiesti e non richiede motivazione.",
+  "D.Lgs. 33/2013, art. 5, c. 3", D33, "L'istanza di accesso civico identifica i dati, le informazioni o i documenti richiesti e non richiede motivazione")
+
+D("amm-224", "Trasparenza", 2, "Quanto costa ottenere dati o documenti con l'accesso civico?",
+  "È gratuito, salvo il rimborso del costo di riproduzione su supporti materiali", ["Si paga una marca da bollo da 16 euro", "Si paga un diritto fisso di ricerca", "È gratuito solo per i residenti"],
+  "Art. 5, comma 4: il rilascio è gratuito, salvo il rimborso del costo effettivamente sostenuto e documentato per la riproduzione su supporti materiali.",
+  "D.Lgs. 33/2013, art. 5, c. 4", D33, "Il rilascio di dati o documenti in formato elettronico o cartaceo è gratuito")
+
+D("amm-225", "Trasparenza", 3, "Entro quanti giorni i controinteressati possono opporsi a una richiesta di accesso civico generalizzato?",
+  "Dieci giorni dalla ricezione della comunicazione", ["Cinque giorni", "Trenta giorni", "Sessanta giorni"],
+  "Art. 5, comma 5: entro dieci giorni dalla ricezione della comunicazione i controinteressati possono presentare una motivata opposizione; nel frattempo il termine per decidere è sospeso.",
+  "D.Lgs. 33/2013, art. 5, c. 5", D33, "Entro dieci giorni dalla ricezione della comunicazione, i controinteressati possono presentare una motivata opposizione")
+
+D("amm-226", "Trasparenza", 2, "Entro quale termine deve concludersi il procedimento di accesso civico?",
+  "Trenta giorni dalla presentazione dell'istanza, con provvedimento espresso e motivato", ["Novanta giorni, con silenzio assenso", "Dieci giorni", "Non c'è un termine"],
+  "Art. 5, comma 6: il procedimento si conclude con provvedimento espresso e motivato entro trenta giorni dalla presentazione dell'istanza.",
+  "D.Lgs. 33/2013, art. 5, c. 6", D33, "deve concludersi con provvedimento espresso e motivato nel termine di trenta giorni")
+
+D("amm-227", "Trasparenza", 3, "Se l'accesso civico è negato o non c'è risposta, a chi si chiede il riesame ed entro quanto deve decidere?",
+  "Al Responsabile della prevenzione della corruzione e della trasparenza, che decide entro venti giorni", ["Al sindaco, entro trenta giorni", "Al TAR, entro sessanta giorni", "All'ANAC, entro novanta giorni"],
+  "Art. 5, comma 7: il richiedente può presentare richiesta di riesame all'RPCT, che decide con provvedimento motivato entro venti giorni; resta poi il ricorso al TAR.",
+  "D.Lgs. 33/2013, art. 5, c. 7", D33, "che decide con provvedimento motivato, entro il termine di venti giorni")
+
+D("amm-228", "Trasparenza", 4, "Nel riesame di un accesso civico negato per tutela dei dati personali, chi deve sentire l'RPCT e in quanto tempo si pronuncia?",
+  "Il Garante per la protezione dei dati personali, entro dieci giorni", ["L'ANAC, entro trenta giorni", "Il prefetto, entro quindici giorni", "Il difensore civico, entro venti giorni"],
+  "Art. 5, comma 7: se il diniego tutela la protezione dei dati personali, l'RPCT provvede sentito il Garante, che si pronuncia entro dieci giorni.",
+  "D.Lgs. 33/2013, art. 5, c. 7", D33, "il quale si pronuncia entro il termine di dieci giorni dalla richiesta")
+
+D("amm-229", "Trasparenza", 3, "Per gli atti di regioni ed enti locali, a chi può ricorrere il richiedente contro il diniego di accesso civico, oltre al TAR?",
+  "Al difensore civico competente per territorio", ["Al presidente della Repubblica", "Al prefetto", "Al consiglio comunale"],
+  "Art. 5, comma 8: per gli atti di regioni ed enti locali si può ricorrere anche al difensore civico competente per ambito territoriale, che si pronuncia entro trenta giorni.",
+  "D.Lgs. 33/2013, art. 5, c. 8", D33, "il richiedente può altresì presentare ricorso al difensore civico competente per ambito territoriale")
+
+D("amm-230", "Trasparenza", 3, "Quale di questi interessi pubblici può giustificare il rifiuto dell'accesso civico generalizzato?",
+  "La sicurezza pubblica e l'ordine pubblico", ["Il carico di lavoro dell'ufficio", "L'opportunità politica per la giunta", "Il desiderio di riservatezza del dirigente"],
+  "Art. 5-bis, comma 1: l'accesso è rifiutato se serve a evitare un pregiudizio concreto a interessi come sicurezza pubblica e ordine pubblico, sicurezza nazionale, difesa, relazioni internazionali, stabilità finanziaria, indagini sui reati, attività ispettive.",
+  "D.Lgs. 33/2013, art. 5-bis, c. 1", D33, "la sicurezza pubblica e l'ordine pubblico")
+
+D("amm-231", "Trasparenza", 3, "Se i limiti all'accesso civico riguardano solo alcune parti di un documento, cosa deve fare l'amministrazione?",
+  "Consentire l'accesso alle altre parti", ["Negare l'accesso a tutto il documento", "Chiedere il parere dell'ANAC", "Rinviare la decisione di un anno"],
+  "Art. 5-bis, comma 4: se i limiti riguardano soltanto alcuni dati o alcune parti, deve essere consentito l'accesso agli altri dati o alle altre parti.",
+  "D.Lgs. 33/2013, art. 5-bis, c. 4", D33, "deve essere consentito l'accesso agli altri dati o alle altre parti")
+
+D("amm-232", "Trasparenza", 4, "Se l'accesso civico è accolto nonostante l'opposizione del controinteressato, quando si trasmettono i documenti al richiedente (salvo indifferibilità)?",
+  "Non prima di quindici giorni dalla comunicazione al controinteressato", ["Subito, il giorno stesso", "Dopo sessanta giorni", "Solo dopo una sentenza del TAR"],
+  "Art. 5, comma 6: l'amministrazione trasmette i dati non prima di quindici giorni dalla ricezione della comunicazione da parte del controinteressato, che così può reagire.",
+  "D.Lgs. 33/2013, art. 5, c. 6", D33, "non prima di quindici giorni dalla ricezione della stessa comunicazione da parte del controinteressato")
+
+D("amm-233", "Trasparenza", 4, "La pubblicazione degli incarichi di consulenza retribuiti affidati a soggetti esterni è:",
+  "Condizione per l'efficacia dell'atto e per la liquidazione dei compensi", ["Facoltativa", "Richiesta solo sopra 40.000 euro", "Un semplice obbligo statistico senza effetti"],
+  "Art. 15, comma 2: la pubblicazione degli estremi degli atti di conferimento e la comunicazione al Dipartimento della funzione pubblica sono condizioni per l'acquisizione dell'efficacia dell'atto e per la liquidazione dei compensi.",
+  "D.Lgs. 33/2013, art. 15, c. 2", D33, "sono condizioni per l'acquisizione dell'efficacia dell'atto e per la liquidazione dei relativi compensi")
+
+D("amm-234", "Trasparenza", 3, "Entro quando e per quanto tempo vanno pubblicati i dati degli incarichi di collaborazione e consulenza?",
+  "Entro tre mesi dal conferimento e per i tre anni successivi alla cessazione", ["Entro un anno e per sempre", "Entro trenta giorni e per un anno", "Solo alla fine dell'incarico, per sei mesi"],
+  "Art. 15, comma 4: i dati si pubblicano entro tre mesi dal conferimento dell'incarico e per i tre anni successivi alla cessazione.",
+  "D.Lgs. 33/2013, art. 15, c. 4", D33, "entro tre mesi dal conferimento dell'incarico e per i tre anni successivi alla cessazione dell'incarico")
+
+D("amm-235", "Trasparenza", 3, "Sopra quale importo gli atti di concessione di contributi e vantaggi economici devono essere pubblicati (art. 26 D.Lgs. 33/2013)?",
+  "Sopra i mille euro", ["Sopra i diecimila euro", "Sopra i centomila euro", "Qualunque importo, anche un euro"],
+  "Art. 26, comma 2: si pubblicano gli atti di concessione di importo superiore a mille euro; la pubblicazione è condizione legale di efficacia dei provvedimenti oltre i mille euro annui per beneficiario.",
+  "D.Lgs. 33/2013, art. 26, c. 2", D33, "di importo superiore a mille euro")
+
+D("amm-236", "Trasparenza", 4, "Quando non si pubblicano i dati identificativi delle persone fisiche che ricevono un contributo pubblico?",
+  "Quando rivelerebbero lo stato di salute o la situazione di disagio economico-sociale", ["Mai: si pubblicano sempre", "Quando il contributo è inferiore a 5.000 euro", "Quando il beneficiario lo chiede per iscritto"],
+  "Art. 26, comma 4: è esclusa la pubblicazione dei dati identificativi delle persone fisiche se da essi si ricavano informazioni su salute o disagio economico-sociale.",
+  "D.Lgs. 33/2013, art. 26, c. 4", D33, "È esclusa la pubblicazione dei dati identificativi delle persone fisiche destinatarie dei provvedimenti")
+
+D("amm-237", "Trasparenza", 3, "Entro quanti giorni dall'adozione vanno pubblicati bilancio preventivo e conto consuntivo?",
+  "Trenta giorni", ["Novanta giorni", "Centoventi giorni", "Un anno"],
+  "Art. 29, comma 1: le amministrazioni pubblicano documenti e allegati del bilancio preventivo e del conto consuntivo entro trenta giorni dalla loro adozione, anche in forma sintetica e semplificata.",
+  "D.Lgs. 33/2013, art. 29, c. 1", D33, "del bilancio preventivo e del conto consuntivo entro trenta giorni dalla loro adozione")
+
+D("amm-238", "Trasparenza", 4, "Che sanzione è prevista per la mancata comunicazione dei dati patrimoniali da parte del titolare di un incarico politico (art. 47 D.Lgs. 33/2013)?",
+  "Una sanzione amministrativa da 500 a 10.000 euro", ["La decadenza automatica dalla carica", "La reclusione fino a un anno", "Un semplice richiamo scritto"],
+  "Art. 47, comma 1: la mancata o incompleta comunicazione dà luogo a una sanzione amministrativa pecuniaria da 500 a 10.000 euro, pubblicata sul sito dell'ente.",
+  "D.Lgs. 33/2013, art. 47, c. 1", D33, "a una sanzione amministrativa pecuniaria da 500 a 10.000 euro")
+
+D("amm-239", "Trasparenza", 3, "Chi irroga le sanzioni per la violazione degli obblighi di trasparenza dell'art. 47 del D.Lgs. 33/2013?",
+  "L'Autorità nazionale anticorruzione", ["Il Garante per la privacy", "Il prefetto", "La Corte dei conti"],
+  "Art. 47, comma 3: le sanzioni sono irrogate dall'ANAC, che disciplina il procedimento con un proprio regolamento.",
+  "D.Lgs. 33/2013, art. 47, c. 3", D33, "sono irrogate dall'Autorità nazionale anticorruzione")
+
+D("amm-240", "Trasparenza", 2, "Quali dati dei titolari di incarichi politici devono pubblicare Stato, regioni ed enti locali (art. 14)?",
+  "Atto di nomina con la durata, curriculum, compensi e altre cariche", ["Solo il nome e il partito", "Le cartelle cliniche", "I dati dei conti correnti dei figli"],
+  "Art. 14, comma 1: atto di nomina o di proclamazione con la durata dell'incarico, curriculum, compensi, spese per viaggi di servizio, altre cariche e incarichi, dichiarazioni patrimoniali.",
+  "D.Lgs. 33/2013, art. 14, c. 1", D33, "l'atto di nomina o di proclamazione, con l'indicazione della durata dell'incarico o del mandato elettivo")
+
+D("amm-241", "Trasparenza", 3, "Cosa costituisce per il dirigente l'inadempimento degli obblighi di pubblicazione o il rifiuto ingiustificato dell'accesso civico?",
+  "Elemento di valutazione negativa della responsabilità dirigenziale", ["Un reato di omissione d'atti d'ufficio in ogni caso", "Nulla, se l'ufficio ha poco personale", "Una causa di decadenza automatica dall'incarico"],
+  "Art. 46, comma 1: costituiscono elemento di valutazione negativa della responsabilità dirigenziale ed eventuale causa di responsabilità per danno all'immagine, e incidono sulla retribuzione di risultato.",
+  "D.Lgs. 33/2013, art. 46, c. 1", D33, "costituiscono elemento di valutazione negativa della responsabilità dirigenziale")
+
+D("amm-242", "Trasparenza", 4, "Se una norma impone di pubblicare un atto che contiene dati personali non pertinenti alla finalità di trasparenza, cosa fa l'amministrazione?",
+  "Rende non intelligibili quei dati personali", ["Pubblica l'atto integralmente", "Non pubblica l'atto", "Chiede il consenso agli interessati"],
+  "Art. 7-bis, comma 4: le amministrazioni rendono non intelligibili i dati personali non pertinenti o, se sensibili o giudiziari, non indispensabili rispetto alle finalità della pubblicazione.",
+  "D.Lgs. 33/2013, art. 7-bis, c. 4", D33, "provvedono a rendere non intelligibili i dati personali non pertinenti")
+
+D("amm-243", "Trasparenza", 4, "Cosa pubblica l'amministrazione sul proprio sito riguardo agli emolumenti dei dirigenti (art. 14, comma 1-ter)?",
+  "L'ammontare complessivo degli emolumenti a carico della finanza pubblica per ciascun dirigente", ["Solo lo stipendio medio di tutti i dirigenti", "Le buste paga mensili con i dati bancari", "Nulla, sono dati riservati"],
+  "Art. 14, comma 1-ter: ogni dirigente comunica gli emolumenti complessivi percepiti a carico della finanza pubblica e l'amministrazione ne pubblica l'ammontare complessivo per ciascun dirigente.",
+  "D.Lgs. 33/2013, art. 14, c. 1-ter", D33, "L'amministrazione pubblica sul proprio sito istituzionale l'ammontare complessivo dei suddetti emolumenti per ciascun dirigente")
+
+D("amm-244", "Trasparenza", 5, "Che conseguenza ha la mancata pubblicazione dei rendiconti dei gruppi consiliari regionali e provinciali?",
+  "La riduzione del 50 per cento delle risorse da trasferire nell'anno", ["Lo scioglimento del gruppo", "Una multa di 500 euro a ogni consigliere", "Nessuna conseguenza economica"],
+  "Art. 28, comma 2: la mancata pubblicazione dei rendiconti comporta la riduzione del 50 per cento delle risorse da trasferire o assegnare nel corso dell'anno.",
+  "D.Lgs. 33/2013, art. 28, c. 2", D33, "La mancata pubblicazione dei rendiconti comporta la riduzione del 50 per cento delle risorse")
+
+# --- v2: codice dei contratti pubblici (D.Lgs. 36/2023, testo vigente) ---
+D("amm-245", "Contratti pubblici", 3, "Qual è la soglia di rilevanza europea per gli appalti pubblici di lavori e per le concessioni (D.Lgs. 36/2023)?",
+  "5.382.000 euro", ["140.000 euro", "1.000.000 di euro", "10.000.000 di euro"],
+  "Art. 14, comma 1, lett. a): 5.382.000 euro per gli appalti pubblici di lavori e per le concessioni. Le soglie sono aggiornate periodicamente dalla Commissione europea.",
+  "D.Lgs. 36/2023, art. 14", D36, "euro 5.382.000 per gli appalti pubblici di lavori e per le concessioni")
+
+D("amm-246", "Contratti pubblici", 3, "Qual è la soglia europea per forniture e servizi aggiudicati da stazioni appaltanti sub-centrali, come i comuni?",
+  "215.000 euro", ["140.000 euro", "750.000 euro", "5.382.000 euro"],
+  "Art. 14, comma 1, lett. c): 215.000 euro per forniture, servizi e concorsi di progettazione delle stazioni appaltanti sub-centrali; 140.000 per le autorità governative centrali.",
+  "D.Lgs. 36/2023, art. 14", D36, "euro 215.000 per gli appalti pubblici di forniture, di servizi e per i concorsi pubblici di progettazione")
+
+D("amm-247", "Contratti pubblici", 4, "Qual è la soglia europea per forniture e servizi aggiudicati dalle autorità governative centrali?",
+  "140.000 euro", ["215.000 euro", "431.000 euro", "40.000 euro"],
+  "Art. 14, comma 1, lett. b): 140.000 euro per le autorità governative centrali indicate nell'allegato I alla direttiva 2014/24/UE.",
+  "D.Lgs. 36/2023, art. 14", D36, "euro 140.000 per gli appalti pubblici di forniture, di servizi")
+
+D("amm-248", "Contratti pubblici", 4, "Qual è la soglia europea per gli appalti di servizi sociali e assimilati nei settori ordinari?",
+  "750.000 euro", ["215.000 euro", "1.000.000 di euro", "5.382.000 euro"],
+  "Art. 14, comma 1, lett. d): 750.000 euro per i servizi sociali e assimilati elencati nell'allegato XIV della direttiva 2014/24/UE.",
+  "D.Lgs. 36/2023, art. 14", D36, "euro 750.000 per gli appalti di servizi sociali e assimilati")
+
+D("amm-249", "Contratti pubblici", 2, "Si può dividere artificiosamente un appalto in più parti per restare sotto le soglie europee?",
+  "No, salvo ragioni oggettive che lo giustifichino", ["Sì, è sempre consentito", "Sì, se ogni parte è sotto i 40.000 euro", "Sì, con l'autorizzazione del sindaco"],
+  "Art. 14: un appalto non può essere frazionato per evitare l'applicazione delle norme del codice, tranne nel caso in cui ragioni oggettive lo giustifichino.",
+  "D.Lgs. 36/2023, art. 14", D36, "Un appalto non può essere frazionato per evitare l'applicazione delle norme del codice")
+
+D("amm-250", "Contratti pubblici", 3, "Quando la stazione appaltante nomina il RUP (responsabile unico del progetto)?",
+  "Nel primo atto di avvio dell'intervento pubblico", ["Dopo l'aggiudicazione", "Alla stipula del contratto", "Al collaudo"],
+  "Art. 15, comma 1: il RUP è nominato nel primo atto di avvio dell'intervento, per programmazione, progettazione, affidamento ed esecuzione.",
+  "D.Lgs. 36/2023, art. 15", D36, "Nel primo atto di avvio dell'intervento pubblico da realizzare mediante un contratto")
+
+D("amm-251", "Contratti pubblici", 3, "Tra chi è nominato il RUP nelle pubbliche amministrazioni?",
+  "Tra i dipendenti della stazione appaltante, anche a tempo determinato", ["Solo tra liberi professionisti esterni", "Tra i consiglieri comunali", "Tra i dipendenti dell'impresa aggiudicataria"],
+  "Art. 15, comma 2: il RUP è nominato tra i dipendenti assunti anche a tempo determinato, preferibilmente dell'unità organizzativa titolare del potere di spesa, con requisiti e competenze adeguate.",
+  "D.Lgs. 36/2023, art. 15", D36, "tra i dipendenti assunti anche a tempo determinato della stazione appaltante")
+
+D("amm-252", "Contratti pubblici", 2, "In che forma va stipulato il contratto d'appalto pubblico?",
+  "In forma scritta, a pena di nullità, in modalità elettronica", ["Anche solo verbalmente", "Solo con atto notarile cartaceo", "Con una stretta di mano davanti a testimoni"],
+  "Art. 18, comma 1: il contratto è stipulato, a pena di nullità, in forma scritta e in modalità elettronica: forma pubblica amministrativa, atto pubblico notarile informatico o scrittura privata.",
+  "D.Lgs. 36/2023, art. 18", D36, "Il contratto è stipulato, a pena di nullità, in forma scritta")
+
+D("amm-253", "Contratti pubblici", 4, "Per affidamenti diretti e procedure negoziate, come può essere stipulato il contratto?",
+  "Anche mediante scambio di lettere secondo l'uso commerciale, pure via PEC", ["Solo in forma pubblica amministrativa", "Solo con atto notarile", "Con una delibera del consiglio comunale"],
+  "Art. 18, comma 1: per procedura negoziata e affidamenti diretti il contratto può essere stipulato mediante corrispondenza secondo l'uso commerciale, anche tramite posta elettronica certificata.",
+  "D.Lgs. 36/2023, art. 18", D36, "mediante corrispondenza secondo l'uso commerciale, consistente in un apposito scambio di lettere")
+
+D("amm-254", "Contratti pubblici", 3, "Entro quanto tempo dall'efficacia dell'aggiudicazione si stipula, di regola, il contratto?",
+  "Entro sessanta giorni, anche se c'è un contenzioso", ["Entro dieci giorni", "Entro un anno", "Solo dopo la sentenza definitiva su eventuali ricorsi"],
+  "Art. 18, comma 2: divenuta efficace l'aggiudicazione, la stipula ha luogo entro i successivi sessanta giorni anche in pendenza di contenzioso, salve le eccezioni previste.",
+  "D.Lgs. 36/2023, art. 18", D36, "la stipula del contratto ha luogo entro i successivi sessanta giorni anche in pendenza di contenzioso")
+
+D("amm-255", "Contratti pubblici", 4, "Quanti giorni devono passare, nel testo vigente del D.Lgs. 36/2023, dall'ultima comunicazione dell'aggiudicazione prima di poter stipulare il contratto («stand still»)?",
+  "32 giorni", ["35 giorni", "15 giorni", "60 giorni"],
+  "Art. 18, comma 3: il contratto non può essere stipulato prima di trentadue giorni dall'invio dell'ultima comunicazione dell'aggiudicazione (prima del correttivo erano 35). Il termine non vale ad esempio sotto le soglie europee.",
+  "D.Lgs. 36/2023, art. 18", D36, "Il contratto non può essere stipulato prima di ((trentadue)) giorni dall'invio dell'ultima delle comunicazioni")
+
+D("amm-256", "Contratti pubblici", 2, "Quali programmi adottano le stazioni appaltanti secondo il D.Lgs. 36/2023?",
+  "Il programma triennale dei lavori pubblici e il programma triennale degli acquisti di beni e servizi", ["Solo un programma annuale delle spese", "Un programma quinquennale delle opere", "Nessun programma: si decide gara per gara"],
+  "Art. 37: le stazioni appaltanti adottano il programma triennale dei lavori pubblici e il programma triennale degli acquisti di beni e servizi, in coerenza con il bilancio.",
+  "D.Lgs. 36/2023, art. 37", D36, "adottano il programma triennale dei lavori pubblici e il programma triennale degli acquisti di beni e servizi")
+
+D("amm-257", "Contratti pubblici", 1, "Nella procedura aperta, chi può presentare un'offerta?",
+  "Qualsiasi operatore economico interessato", ["Solo gli operatori invitati dalla stazione appaltante", "Solo le imprese con sede nel comune", "Solo chi ha già lavorato con l'ente"],
+  "Art. 71: nelle procedure aperte qualsiasi operatore economico interessato può presentare un'offerta in risposta a un avviso di indizione di gara.",
+  "D.Lgs. 36/2023, art. 71", D36, "Nelle procedure aperte qualsiasi operatore economico interessato può presentare un'offerta")
+
+D("amm-258", "Contratti pubblici", 4, "Quando si può usare la procedura negoziata senza pubblicazione di un bando di gara?",
+  "Solo nei casi previsti dall'articolo 76", ["Sempre, a scelta del RUP", "Per tutti gli appalti di lavori", "Quando l'ente ha fretta di spendere"],
+  "Art. 70, comma 2: nei soli casi previsti dall'articolo 76 le stazioni appaltanti possono utilizzare la procedura negoziata senza pubblicazione di un bando.",
+  "D.Lgs. 36/2023, art. 70", D36, "Nei soli casi previsti dall'articolo 76 le stazioni appaltanti possono utilizzare la procedura negoziata senza pubblicazione di un bando")
+
+D("amm-259", "Contratti pubblici", 3, "Nel soccorso istruttorio, che termine assegna la stazione appaltante per integrare i documenti mancanti?",
+  "Non inferiore a cinque e non superiore a dieci giorni", ["Ventiquattro ore", "Trenta giorni", "Sessanta giorni"],
+  "Art. 101, comma 1: la stazione appaltante assegna un termine non inferiore a cinque giorni e non superiore a dieci giorni.",
+  "D.Lgs. 36/2023, art. 101", D36, "un termine non inferiore a cinque giorni e non superiore a dieci giorni")
+
+D("amm-260", "Contratti pubblici", 3, "Il soccorso istruttorio permette di integrare l'offerta tecnica o l'offerta economica?",
+  "No, l'offerta tecnica e quella economica sono escluse", ["Sì, sempre", "Sì, ma solo l'offerta economica", "Sì, se lo chiede l'operatore entro dieci giorni"],
+  "Art. 101: si integrano domanda di partecipazione, DGUE e documenti richiesti, con esclusione della documentazione che compone l'offerta tecnica e l'offerta economica.",
+  "D.Lgs. 36/2023, art. 101", D36, "con esclusione della documentazione che compone l'offerta tecnica e l'offerta economica")
+
+D("amm-261", "Contratti pubblici", 3, "A quanto ammonta, di regola, la garanzia provvisoria che accompagna l'offerta?",
+  "Al 2 per cento del valore complessivo della procedura", ["Al 10 per cento dell'importo contrattuale", "Al 20 per cento del valore", "A una cifra fissa di 1.000 euro"],
+  "Art. 106, comma 1: l'offerta è corredata da una garanzia provvisoria pari al 2 per cento del valore complessivo della procedura.",
+  "D.Lgs. 36/2023, art. 106", D36, "garanzia provvisoria pari al 2 per cento del valore complessivo della procedura")
+
+D("amm-262", "Contratti pubblici", 4, "Entro quali limiti la stazione appaltante può modificare, motivando, la garanzia provvisoria?",
+  "Ridurla fino all'1 per cento o aumentarla fino al 4 per cento", ["Solo azzerarla", "Ridurla fino allo 0,5 o aumentarla fino al 10 per cento", "Non può modificarla"],
+  "Art. 106, comma 1: la stazione appaltante può motivatamente ridurre l'importo sino all'1 per cento oppure incrementarlo sino al 4 per cento.",
+  "D.Lgs. 36/2023, art. 106", D36, "ridurre l'importo sino all'1 per cento oppure incrementarlo sino al 4 per cento")
+
+D("amm-263", "Contratti pubblici", 3, "A quanto ammonta la garanzia definitiva richiesta all'appaltatore per sottoscrivere il contratto?",
+  "Al 10 per cento dell'importo contrattuale", ["Al 2 per cento del valore della procedura", "Al 50 per cento", "Nessuna: non è prevista"],
+  "Art. 117, comma 1: l'appaltatore costituisce una garanzia definitiva, cauzione o fideiussione, pari al 10 per cento dell'importo contrattuale.",
+  "D.Lgs. 36/2023, art. 117", D36, "pari al 10 per cento dell'importo contrattuale")
+
+D("amm-264", "Contratti pubblici", 4, "Davanti a un'offerta che appare anormalmente bassa, che termine si dà all'operatore per le spiegazioni?",
+  "Non superiore a quindici giorni", ["Non superiore a tre giorni", "Novanta giorni", "Nessuno: l'offerta va esclusa subito"],
+  "Art. 110, comma 2: la stazione appaltante chiede per iscritto spiegazioni sul prezzo o sui costi, assegnando un termine non superiore a quindici giorni.",
+  "D.Lgs. 36/2023, art. 110", D36, "assegnando a tal fine un termine non superiore a quindici giorni")
+
+D("amm-265", "Contratti pubblici", 2, "Che cos'è il subappalto?",
+  "Il contratto con cui l'appaltatore affida a terzi l'esecuzione di parte delle prestazioni", ["La cessione dell'intero contratto a un'altra impresa", "Un contratto tra due stazioni appaltanti", "La revisione dei prezzi dell'appalto"],
+  "Art. 119, comma 2: è il contratto con cui l'appaltatore affida a terzi l'esecuzione di parte delle prestazioni, con organizzazione di mezzi e rischi a carico del subappaltatore.",
+  "D.Lgs. 36/2023, art. 119", D36, "Il subappalto è il contratto con il quale l'appaltatore affida a terzi l'esecuzione di parte delle prestazioni")
+
+D("amm-266", "Contratti pubblici", 3, "L'appaltatore può cedere a un'altra impresa il contratto d'appalto?",
+  "No, la cessione del contratto è nulla (salvi i casi di modifica soggettiva previsti)", ["Sì, liberamente", "Sì, con un preavviso di trenta giorni", "Sì, se l'impresa è della stessa regione"],
+  "Art. 119, comma 1: i contratti si eseguono in proprio e, fatto salvo l'art. 120, comma 1, lett. d), la cessione del contratto è nulla.",
+  "D.Lgs. 36/2023, art. 119", D36, "la cessione del contratto è nulla")
+
+D("amm-267", "Contratti pubblici", 5, "Nei contratti ad alta intensità di manodopera, entro quale limite la stazione appaltante fissa il tetto al punteggio economico?",
+  "30 per cento", ["10 per cento", "50 per cento", "70 per cento"],
+  "Art. 108: per i contratti ad alta intensità di manodopera la stazione appaltante stabilisce un tetto massimo per il punteggio economico entro il limite del 30 per cento, per premiare la qualità.",
+  "D.Lgs. 36/2023, art. 108", D36, "un tetto massimo per il punteggio economico entro il limite del 30 per cento")
+
+D("amm-268", "Contratti pubblici", 3, "Quale di queste è una causa di esclusione automatica dell'operatore economico dalla gara?",
+  "La condanna con sentenza definitiva per uno dei reati indicati dal codice", ["Avere sede in un'altra regione", "Aver presentato l'offerta l'ultimo giorno", "Non aver mai lavorato con quella stazione appaltante"],
+  "Art. 94: è causa di esclusione la condanna con sentenza definitiva o decreto penale di condanna irrevocabile per i reati elencati (associazione per delinquere, corruzione, frode, terrorismo…).",
+  "D.Lgs. 36/2023, art. 94", D36, "la condanna con sentenza definitiva o decreto penale di condanna divenuto irrevocabile")
+
+D("amm-269", "Contratti pubblici", 3, "Dove vanno trasmessi dati e documenti delle procedure di gara digitali?",
+  "Alla Banca dati nazionale dei contratti pubblici", ["Al registro delle imprese", "All'albo pretorio cartaceo", "Al Ministero dell'interno"],
+  "Il codice del 2023 digitalizza l'intero ciclo dei contratti: le piattaforme assicurano la pubblicazione e la trasmissione di dati e documenti alla Banca dati nazionale dei contratti pubblici, gestita dall'ANAC.",
+  "D.Lgs. 36/2023, art. 22", D36, "la pubblicazione e la trasmissione dei dati e documenti alla Banca dati nazionale dei contratti pubblici")
+
+# --- v2: enti locali — atti, controlli e finanza (D.Lgs. 267/2000, TUEL) ---
+D("amm-270", "Enti locali", 2, "Per quanto tempo sono pubblicate all'albo pretorio le deliberazioni del comune?",
+  "Quindici giorni consecutivi", ["Sette giorni", "Trenta giorni", "Sessanta giorni"],
+  "Art. 124 TUEL: tutte le deliberazioni del comune e della provincia sono pubblicate all'albo pretorio per quindici giorni consecutivi, salvo specifiche disposizioni di legge.",
+  "D.Lgs. 267/2000, art. 124", TUEL, "all'albo pretorio, nella sede dell'ente, per quindici giorni consecutivi")
+
+D("amm-271", "Enti locali", 3, "Quando diventa esecutiva una deliberazione non soggetta a controllo?",
+  "Dopo il decimo giorno dalla pubblicazione", ["Il giorno stesso dell'adozione", "Dopo trenta giorni dall'adozione", "Dopo il visto del prefetto"],
+  "Art. 134, comma 3, TUEL: le deliberazioni non soggette a controllo diventano esecutive dopo il decimo giorno dalla loro pubblicazione.",
+  "D.Lgs. 267/2000, art. 134", TUEL, "diventano esecutive dopo il decimo giorno dalla loro pubblicazione")
+
+D("amm-272", "Enti locali", 3, "In caso di urgenza, con quale voto una delibera di consiglio o giunta può essere dichiarata immediatamente eseguibile?",
+  "Con il voto della maggioranza dei componenti", ["All'unanimità dei presenti", "Con i due terzi dei consiglieri assegnati", "Con decreto del sindaco, senza voto"],
+  "Art. 134, comma 4, TUEL: nel caso di urgenza le deliberazioni possono essere dichiarate immediatamente eseguibili con il voto espresso dalla maggioranza dei componenti.",
+  "D.Lgs. 267/2000, art. 134", TUEL, "possono essere dichiarate immediatamente eseguibili con il voto espresso dalla maggioranza dei componenti")
+
+D("amm-273", "Enti locali", 3, "Quali pareri servono su una proposta di deliberazione di giunta o consiglio che non sia mero atto di indirizzo?",
+  "Regolarità tecnica del responsabile del servizio e, se ci sono riflessi finanziari, regolarità contabile del responsabile di ragioneria", ["Solo il parere del sindaco", "Il parere del Consiglio di Stato", "Il parere dei revisori su ogni delibera"],
+  "Art. 49 TUEL: parere di regolarità tecnica del responsabile del servizio e, se la delibera ha riflessi economico-finanziari o patrimoniali, di regolarità contabile del responsabile di ragioneria.",
+  "D.Lgs. 267/2000, art. 49", TUEL, "in ordine alla sola regolarità tecnica, del responsabile del servizio interessato")
+
+D("amm-274", "Enti locali", 4, "Giunta e consiglio possono deliberare in modo diverso da quanto indicano i pareri di regolarità?",
+  "Sì, ma devono darne adeguata motivazione nel testo della deliberazione", ["No, i pareri sono sempre vincolanti", "Sì, senza alcuna motivazione", "Solo con il consenso del prefetto"],
+  "Art. 49, comma 4, TUEL: se non intendono conformarsi ai pareri, devono darne adeguata motivazione nel testo della deliberazione.",
+  "D.Lgs. 267/2000, art. 49", TUEL, "devono darne adeguata motivazione nel testo della deliberazione")
+
+D("amm-275", "Enti locali", 3, "Se l'ente non ha responsabili dei servizi, chi esprime i pareri sulle proposte di deliberazione?",
+  "Il segretario dell'ente, in relazione alle sue competenze", ["Il sindaco", "Il presidente del consiglio comunale", "Nessuno: se ne fa a meno"],
+  "Art. 49, comma 2, TUEL: in assenza dei responsabili dei servizi il parere è espresso dal segretario dell'ente.",
+  "D.Lgs. 267/2000, art. 49", TUEL, "il parere è espresso dal segretario dell'ente, in relazione alle sue competenze")
+
+D("amm-276", "Enti locali", 3, "Con quale maggioranza il consiglio comunale approva lo statuto (alla prima votazione)?",
+  "I due terzi dei consiglieri assegnati", ["La maggioranza semplice dei presenti", "La maggioranza assoluta dei votanti", "L'unanimità"],
+  "Art. 6, comma 4, TUEL: gli statuti sono deliberati con il voto favorevole dei due terzi dei consiglieri assegnati; se non si raggiunge, si ripete la votazione in successive sedute entro trenta giorni.",
+  "D.Lgs. 267/2000, art. 6", TUEL, "con il voto favorevole dei due terzi dei consiglieri assegnati")
+
+D("amm-277", "Enti locali", 2, "Su quali materie possono vertere i referendum comunali previsti dal TUEL?",
+  "Solo su materie di esclusiva competenza locale", ["Su qualunque materia, anche le leggi nazionali", "Solo sulle tasse statali", "Sulla politica estera"],
+  "Art. 8, comma 4, TUEL: consultazioni e referendum devono riguardare materie di esclusiva competenza locale.",
+  "D.Lgs. 267/2000, art. 8", TUEL, "devono riguardare materie di esclusiva competenza locale")
+
+D("amm-278", "Enti locali", 2, "Cosa promuovono i comuni per la partecipazione dei cittadini, secondo l'art. 8 del TUEL?",
+  "Le libere forme associative e organismi di partecipazione popolare", ["Solo i partiti politici", "Le società partecipate", "I consorzi di bonifica"],
+  "Art. 8, comma 1, TUEL: i comuni, anche su base di quartiere o di frazione, valorizzano le libere forme associative e promuovono organismi di partecipazione popolare.",
+  "D.Lgs. 267/2000, art. 8", TUEL, "valorizzano le libere forme associative e promuovono organismi di partecipazione popolare")
+
+D("amm-279", "Organi", 3, "Entro quanti giorni sindaco o assessori delegati rispondono alle interrogazioni dei consiglieri?",
+  "Entro 30 giorni", ["Entro 7 giorni", "Entro 90 giorni", "Alla prima seduta utile, senza termine"],
+  "Art. 43, comma 3, TUEL: il sindaco o gli assessori delegati rispondono entro 30 giorni alle interrogazioni e alle altre istanze di sindacato ispettivo.",
+  "D.Lgs. 267/2000, art. 43", TUEL, "rispondono, entro 30 giorni, alle interrogazioni")
+
+D("amm-280", "Organi", 3, "Che diritto hanno i consiglieri comunali verso gli uffici del comune?",
+  "Ottenere tutte le notizie e informazioni utili al mandato, con obbligo di segreto nei casi di legge", ["Solo i documenti già pubblicati", "Nessuno: devono fare accesso come i cittadini", "Solo le informazioni sul bilancio"],
+  "Art. 43, comma 2, TUEL: i consiglieri hanno diritto di ottenere dagli uffici tutte le notizie e le informazioni utili all'espletamento del mandato; sono tenuti al segreto nei casi previsti dalla legge.",
+  "D.Lgs. 267/2000, art. 43", TUEL, "tutte le notizie e le informazioni in loro possesso, utili all'espletamento del proprio mandato")
+
+D("amm-281", "Contabilità locale", 2, "Entro quale data il consiglio approva il rendiconto della gestione dell'anno precedente?",
+  "Entro il 30 aprile", ["Entro il 31 dicembre", "Entro il 31 luglio", "Entro il 31 gennaio"],
+  "Art. 227, comma 2, TUEL: il rendiconto è deliberato entro il 30 aprile dell'anno successivo, tenendo conto della relazione dell'organo di revisione.",
+  "D.Lgs. 267/2000, art. 227", TUEL, "Il rendiconto della gestione è deliberato entro il 30 aprile dell'anno successivo")
+
+D("amm-282", "Contabilità locale", 3, "Da quali documenti è composto il rendiconto della gestione di un ente locale?",
+  "Conto del bilancio, conto economico e stato patrimoniale", ["Solo dal bilancio di previsione", "Dal DUP e dal PEG", "Dalla relazione del sindaco e dal piano delle opere"],
+  "Art. 227, comma 1, TUEL: il rendiconto comprende il conto del bilancio, il conto economico e lo stato patrimoniale.",
+  "D.Lgs. 267/2000, art. 227", TUEL, "il quale comprende il conto del bilancio, il conto economico e lo stato patrimoniale")
+
+D("amm-283", "Contabilità locale", 4, "Almeno entro quale data di ogni anno il consiglio verifica il permanere degli equilibri di bilancio?",
+  "Entro il 31 luglio", ["Entro il 31 marzo", "Entro il 30 novembre", "Solo con il rendiconto, entro il 30 aprile"],
+  "Art. 193, comma 2, TUEL: almeno una volta entro il 31 luglio il consiglio dà atto del permanere degli equilibri generali o adotta le misure di riequilibrio.",
+  "D.Lgs. 267/2000, art. 193", TUEL, "almeno una volta entro il ((31 luglio)) di ciascun anno")
+
+D("amm-284", "Contabilità locale", 3, "Cosa succede se il bilancio di previsione non è approvato entro il 31 dicembre dell'anno precedente?",
+  "L'ente opera in esercizio provvisorio o gestione provvisoria", ["Il comune non può spendere nulla", "Il bilancio dell'anno prima vale per sempre", "Il sindaco decade automaticamente"],
+  "Art. 163 TUEL: senza bilancio approvato entro il 31 dicembre, la gestione si svolge secondo le regole dell'esercizio provvisorio o della gestione provvisoria.",
+  "D.Lgs. 267/2000, art. 163", TUEL, "Se il bilancio di previsione non è approvato dal Consiglio entro il 31 dicembre dell'anno precedente")
+
+D("amm-285", "Controlli interni", 3, "Da quanti membri è composto il collegio dei revisori dei conti nei comuni più grandi?",
+  "Da tre membri", ["Da un solo membro", "Da cinque membri", "Da sette membri"],
+  "Art. 234, comma 1, TUEL: i consigli eleggono con voto limitato a due componenti un collegio di revisori composto da tre membri.",
+  "D.Lgs. 267/2000, art. 234", TUEL, "un collegio di revisori composto da tre membri")
+
+D("amm-286", "Controlli interni", 3, "Nei comuni con meno di 15.000 abitanti, a chi è affidata la revisione economico-finanziaria?",
+  "A un solo revisore", ["A un collegio di cinque revisori", "Al segretario comunale", "Alla Corte dei conti"],
+  "Art. 234, comma 3, TUEL: nei comuni sotto 15.000 abitanti, nelle unioni di comuni e nelle comunità montane la revisione è affidata a un solo revisore.",
+  "D.Lgs. 267/2000, art. 234", TUEL, "la revisione economico-finanziaria è affidata ad un solo revisore")
+
+D("amm-287", "Controlli interni", 4, "Quanto dura in carica l'organo di revisione contabile di un ente locale?",
+  "Tre anni, e non si può svolgere l'incarico più di due volte nello stesso ente", ["Cinque anni, rinnovabili senza limiti", "Un anno, rinnovabile", "Quanto il mandato del sindaco"],
+  "Art. 235, comma 1, TUEL: l'organo di revisione dura in carica tre anni e i componenti non possono svolgere l'incarico per più di due volte nello stesso ente.",
+  "D.Lgs. 267/2000, art. 235", TUEL, "L'organo di revisione contabile dura in carica tre anni")
+
+D("amm-288", "Enti locali", 3, "Quale di queste è una funzione del segretario comunale secondo l'art. 97 del TUEL?",
+  "Rogare, su richiesta dell'ente, i contratti in cui l'ente è parte", ["Approvare il bilancio", "Nominare la giunta", "Presiedere il consiglio comunale"],
+  "Art. 97, comma 4, TUEL: il segretario roga i contratti nei quali l'ente è parte e autentica scritture private e atti unilaterali nell'interesse dell'ente.",
+  "D.Lgs. 267/2000, art. 97", TUEL, "i contratti nei quali l'ente è parte e autentica")
+
+D("amm-289", "Enti locali", 2, "Che ruolo ha il segretario comunale nelle riunioni di consiglio e giunta?",
+  "Partecipa con funzioni consultive, referenti e di assistenza e cura la verbalizzazione", ["Le presiede e vota", "Non vi partecipa mai", "Vi partecipa solo se lo chiede l'opposizione"],
+  "Art. 97, comma 4, lett. a), TUEL: il segretario partecipa con funzioni consultive, referenti e di assistenza alle riunioni del consiglio e della giunta e ne cura la verbalizzazione.",
+  "D.Lgs. 267/2000, art. 97", TUEL, "partecipa con funzioni consultive, referenti e di assistenza alle riunioni del consiglio e della giunta e ne cura la verbalizzazione")
+
+D("amm-290", "Enti locali", 3, "A chi vengono trasmesse in elenco le deliberazioni della giunta, contestualmente alla pubblicazione all'albo?",
+  "Ai capigruppo consiliari", ["Al prefetto", "Alla Corte dei conti", "A tutti i cittadini via email"],
+  "Art. 125 TUEL: contestualmente all'affissione all'albo le deliberazioni della giunta sono trasmesse in elenco ai capigruppo consiliari.",
+  "D.Lgs. 267/2000, art. 125", TUEL, "le deliberazioni adottate dalla giunta sono trasmesse in elenco ai capigruppo consiliari")
+
+# --- v2: reclutamento e procedimento disciplinare (D.Lgs. 165/2001) ---
+D("amm-291", "Pubblico impiego", 2, "Quale principio devono rispettare le procedure di reclutamento nelle pubbliche amministrazioni (art. 35 D.Lgs. 165/2001)?",
+  "Adeguata pubblicità della selezione e modalità che garantiscano l'imparzialità", ["Assunzione diretta su segnalazione politica", "Selezione riservata ai residenti nel comune", "Scelta libera del dirigente senza bando"],
+  "Art. 35, comma 3, lett. a): adeguata pubblicità della selezione e modalità di svolgimento che garantiscano l'imparzialità e assicurino economicità e celerità.",
+  "D.Lgs. 165/2001, art. 35", D165, "adeguata pubblicità della selezione e modalità di svolgimento che garantiscano l'imparzialità")
+
+D("amm-292", "Pubblico impiego", 3, "Chi può far parte delle commissioni di concorso secondo l'art. 35 del D.Lgs. 165/2001?",
+  "Esperti di provata competenza, che non siano componenti dell'organo politico, né abbiano cariche politiche o sindacali", ["Gli assessori della giunta", "I rappresentanti sindacali designati dalle confederazioni", "Chiunque scelga il sindaco"],
+  "Art. 35, comma 3, lett. e): commissioni composte esclusivamente da esperti di provata competenza (funzionari, docenti, estranei) che non siano componenti dell'organo di direzione politica, non ricoprano cariche politiche e non siano rappresentanti sindacali.",
+  "D.Lgs. 165/2001, art. 35", D165, "composizione delle commissioni esclusivamente con esperti di provata competenza nelle materie di concorso")
+
+D("amm-293", "Pubblico impiego", 3, "Per quanto tempo restano vigenti le graduatorie dei concorsi pubblici?",
+  "Due anni dalla data di approvazione", ["Sei mesi", "Cinque anni", "Fino al concorso successivo, senza limite"],
+  "Art. 35, comma 5-ter: le graduatorie dei concorsi rimangono vigenti per un termine di due anni dalla data di approvazione.",
+  "D.Lgs. 165/2001, art. 35", D165, "rimangono vigenti per un termine di due anni dalla data di approvazione")
+
+D("amm-294", "Pubblico impiego", 3, "Quale quota dei posti nelle commissioni di concorso è riservata alle donne, salvo motivata impossibilità?",
+  "Almeno un terzo", ["Almeno la metà", "Almeno un quarto", "Nessuna quota"],
+  "Art. 57, comma 1, lett. a): le amministrazioni riservano alle donne, salva motivata impossibilità, almeno un terzo dei posti di componente delle commissioni di concorso.",
+  "D.Lgs. 165/2001, art. 57", D165, "almeno un terzo dei posti di componente delle commissioni di concorso")
+
+D("amm-295", "Pubblico impiego", 3, "Come si chiama l'organismo delle PA per le pari opportunità, il benessere di chi lavora e contro le discriminazioni?",
+  "Comitato unico di garanzia (CUG)", ["Organismo indipendente di valutazione (OIV)", "Ufficio per i procedimenti disciplinari (UPD)", "Ufficio relazioni con il pubblico (URP)"],
+  "Art. 57 D.Lgs. 165/2001: le amministrazioni costituiscono il Comitato unico di garanzia per le pari opportunità, la valorizzazione del benessere di chi lavora e contro le discriminazioni.",
+  "D.Lgs. 165/2001, art. 57", D165, "Comitato unico di garanzia per le pari opportunità, la valorizzazione del benessere di chi lavora e contro le discriminazioni")
+
+D("amm-296", "Pubblico impiego", 4, "Quale di questi è tra i principi del reclutamento elencati dall'art. 35, comma 3, del D.Lgs. 165/2001?",
+  "Il decentramento delle procedure di reclutamento", ["L'assunzione per chiamata diretta", "La riserva totale ai figli dei dipendenti", "L'obbligo di prova orale in dialetto"],
+  "Art. 35, comma 3: tra i principi figurano pubblicità, imparzialità, meccanismi oggettivi di verifica, pari opportunità, decentramento delle procedure e commissioni di esperti.",
+  "D.Lgs. 165/2001, art. 35", D165, "decentramento delle procedure di reclutamento")
+
+D("amm-297", "Pubblico impiego", 3, "Quale ufficio è competente per le infrazioni punibili con sanzione superiore al rimprovero verbale?",
+  "L'ufficio per i procedimenti disciplinari (UPD)", ["Il responsabile della struttura", "Il sindaco", "Il giudice del lavoro"],
+  "Art. 55-bis: ogni amministrazione individua l'ufficio per i procedimenti disciplinari competente per le infrazioni punibili con sanzione superiore al rimprovero verbale; il rimprovero verbale spetta al responsabile della struttura.",
+  "D.Lgs. 165/2001, art. 55-bis", D165, "individua l'ufficio per i procedimenti disciplinari competente per le infrazioni punibili con sanzione superiore al rimprovero verbale")
+
+D("amm-298", "Pubblico impiego", 4, "Con quale preavviso il dipendente è convocato per l'audizione a sua difesa nel procedimento disciplinare?",
+  "Almeno venti giorni", ["Almeno tre giorni", "Almeno sessanta giorni", "Nessun preavviso"],
+  "Art. 55-bis, comma 4: l'ufficio contesta per iscritto l'addebito e convoca l'interessato, con un preavviso di almeno venti giorni, per l'audizione in contraddittorio.",
+  "D.Lgs. 165/2001, art. 55-bis", D165, "con un preavviso di almeno venti giorni, per l'audizione in contraddittorio a sua difesa")
+
+D("amm-299", "Pubblico impiego", 3, "Durante l'audizione disciplinare, da chi può farsi assistere il dipendente?",
+  "Da un procuratore o da un rappresentante sindacale", ["Solo da un familiare", "Da nessuno: deve presentarsi da solo", "Solo da un collega dello stesso ufficio"],
+  "Art. 55-bis, comma 4: il dipendente può farsi assistere da un procuratore ovvero da un rappresentante dell'associazione sindacale cui aderisce o conferisce mandato.",
+  "D.Lgs. 165/2001, art. 55-bis", D165, "Il dipendente può farsi assistere da un procuratore ovvero da un rappresentante")
+
+D("amm-300", "Pubblico impiego", 4, "Entro quanto tempo dalla contestazione dell'addebito si conclude il procedimento disciplinare?",
+  "Entro centoventi giorni", ["Entro trenta giorni", "Entro un anno", "Non c'è un termine"],
+  "Art. 55-bis, comma 4: l'ufficio conclude il procedimento, con archiviazione o irrogazione della sanzione, entro centoventi giorni dalla contestazione dell'addebito.",
+  "D.Lgs. 165/2001, art. 55-bis", D165, "entro centoventi giorni dalla contestazione dell'addebito")
+
+D("amm-301", "Pubblico impiego", 4, "Quante assenze ingiustificate possono portare al licenziamento disciplinare del dipendente pubblico?",
+  "Più di tre giorni, anche non continuativi, nell'arco di un biennio (o più di sette in dieci anni)", ["Un solo giorno", "Più di trenta giorni in un anno", "Nessun numero: l'assenza si punisce solo con la multa"],
+  "Art. 55-quater: è causa di licenziamento l'assenza priva di valida giustificazione per più di tre giorni, anche non continuativi, nell'arco di un biennio o per più di sette giorni negli ultimi dieci anni.",
+  "D.Lgs. 165/2001, art. 55-quater", D165, "superiore a tre nell'arco di un biennio o comunque per più di sette giorni nel corso degli ultimi dieci anni")
