@@ -1031,3 +1031,320 @@ S("sto-202", "Repubblica", 3, "Di quale gruppo di grandi economie l'Italia fu tr
   "Il G6 (poi G7)", ["L'OPEC", "Il Patto di Varsavia", "Il Commonwealth"],
   "Voce «Storia d'Italia».",
   "tra le nazioni fondanti del G6 (poi G7, G8 e nuovamente G7) nel 1975")
+
+# --- Ampliamento a 300: Risorgimento, guerre mondiali, fascismo, Repubblica, Guerra fredda, Europa ---
+def RI(id, arg, liv, testo, giusta, sbagliate, spieg, frase):
+    D(id, arg, liv, testo, giusta, sbagliate, spieg, W("Risorgimento"), RIS, frase)
+def P1(id, arg, liv, testo, giusta, sbagliate, spieg, frase):
+    D(id, arg, liv, testo, giusta, sbagliate, spieg, W("Prima guerra mondiale"), G1, frase)
+def FA(id, arg, liv, testo, giusta, sbagliate, spieg, frase):
+    D(id, arg, liv, testo, giusta, sbagliate, spieg, W("Fascismo"), FAS, frase)
+def P2(id, arg, liv, testo, giusta, sbagliate, spieg, frase):
+    D(id, arg, liv, testo, giusta, sbagliate, spieg, W("Seconda guerra mondiale"), G2, frase)
+def RE(id, arg, liv, testo, giusta, sbagliate, spieg, frase):
+    D(id, arg, liv, testo, giusta, sbagliate, spieg, W("Storia dell'Italia repubblicana"), REP, frase)
+def GFR(id, arg, liv, testo, giusta, sbagliate, spieg, frase):
+    D(id, arg, liv, testo, giusta, sbagliate, spieg, W("Guerra fredda"), GF, frase)
+def EU(id, arg, liv, testo, giusta, sbagliate, spieg, frase):
+    D(id, arg, liv, testo, giusta, sbagliate, spieg, W("Storia dell'Unione europea"), UE, frase)
+
+RI("sto-203", "Risorgimento", 4, "Quale evento del 15 giugno 1820 è indicato da alcuni storici come inizio del Risorgimento?",
+  "I moti siciliani", ["Le Cinque giornate di Milano", "La spedizione dei Mille", "Il Congresso di Vienna"],
+  "Altri fanno partire il Risorgimento dalla prima guerra d'indipendenza (1848-1849).", "ai moti siciliani del 15 giugno 1820")
+RI("sto-204", "Risorgimento", 4, "Quale proclama del 1815 è considerato da alcuni storici l'inizio del Risorgimento?",
+  "Il proclama di Rimini", ["Il proclama di Moncalieri", "Il proclama di Teano", "Il proclama di Torino"],
+  "Per questi storici il Risorgimento va dal proclama di Rimini (1815) alla breccia di Porta Pia (1870).", "fra il proclama di Rimini (1815) e la breccia di Porta Pia")
+RI("sto-205", "Risorgimento", 3, "Da quale organizzazione derivavano società segrete come la Carboneria?",
+  "Dalla massoneria", ["Dall'ordine dei Gesuiti", "Dai partiti politici inglesi", "Dalle corporazioni medievali"],
+  "Furono i laboratori in cui la classe dirigente patriottica pianificò i moti.", "Questi circoli iniziatici, derivati dalla massoneria")
+RI("sto-206", "Risorgimento", 3, "Quando Leopoldo II concesse lo Statuto in Toscana?",
+  "Il 17 febbraio 1848", ["Il 4 marzo 1848", "Il 14 marzo 1848", "Il 17 marzo 1861"],
+  "Seguirono lo Statuto albertino (4 marzo) e lo statuto dello Stato Pontificio (14 marzo).", "Leopoldo II di Toscana concesse lo Statuto il 17 febbraio")
+RI("sto-207", "Risorgimento", 3, "Quanto durò la Repubblica Romana del 1849?",
+  "Da febbraio a luglio 1849", ["Due anni", "Dieci giorni", "Dal 1849 al 1870"],
+  "Durante la Repubblica Pio IX fuggì da Roma; Napoleone III la represse.", "Dal febbraio al luglio 1849 si svolse la vicenda della Repubblica Romana")
+RI("sto-208", "Risorgimento", 3, "Chi guidò la spedizione di Sapri del 1857, finita con la morte sua e dei compagni?",
+  "Carlo Pisacane", ["Giuseppe Garibaldi", "Felice Orsini", "Ciro Menotti"],
+  "Era ispirata al credo mazziniano di «dare l'esempio».", "conclusasi con la morte di Carlo Pisacane e dei suoi 23 compagni")
+RI("sto-209", "Risorgimento", 3, "Da chi furono sconfitti i garibaldini nella battaglia di Mentana del 1867?",
+  "Dalle truppe francesi", ["Dall'esercito austriaco", "Dall'esercito italiano", "Dai borbonici"],
+  "Nel 1862 Garibaldi era stato fermato in Aspromonte dall'esercito italiano.", "sconfitto dalle truppe francesi nella battaglia di Mentana")
+RI("sto-210", "Risorgimento", 4, "Dove fu fermato Garibaldi dall'esercito italiano nel 1862, nel tentativo di marciare su Roma?",
+  "In Aspromonte", ["A Mentana", "A Teano", "A Bezzecca"],
+  "L'esercito fu inviato dal governo Rattazzi.", "'Aspromonte dall'esercito italiano inviato da Urbano Rattazzi")
+RI("sto-211", "Risorgimento", 3, "In che anno il Veneto fu incorporato nel Regno d'Italia?",
+  "Nel 1866", ["Nel 1859", "Nel 1861", "Nel 1870"],
+  "Dopo la terza guerra d'indipendenza; Roma fu presa nel 1870.", "Il Risorgimento continuò con l'incorporazione del Veneto nel 1866")
+RI("sto-212", "Risorgimento", 3, "Cosa fece Vittorio Emanuele II dello Statuto albertino, diversamente dagli altri sovrani italiani dopo il 1849?",
+  "Non lo ritirò", ["Lo abolì", "Lo sostituì con una costituzione repubblicana", "Lo sospese fino al 1861"],
+  "Gli altri sovrani revocarono le costituzioni concesse nel 1848.", "non ritirò lo Statuto Albertino concesso dal padre")
+RI("sto-213", "Risorgimento", 3, "Quale papa, eletto il 16 giugno 1846, fu inizialmente ritenuto un «liberale»?",
+  "Pio IX", ["Gregorio XVI", "Leone XIII", "Pio VII"],
+  "Su di lui puntò il movimento neoguelfo.", "1846 di papa Pio IX, ritenuto un \"liberale\"")
+RI("sto-214", "Risorgimento", 4, "Quali patrioti erano unitaristi repubblicani e federalisti contrari alla monarchia?",
+  "Nicolò Tommaseo e Carlo Cattaneo", ["Cavour e D'Azeglio", "Gioberti e Rosmini", "Vittorio Emanuele II e La Marmora"],
+  "I cattolici neoguelfi come Gioberti e Rosmini puntavano invece su una confederazione guidata dal papa.", "federalisti radicali contrari alla monarchia come Nicolò Tommaseo e Carlo Cattaneo")
+RI("sto-215", "Risorgimento", 3, "Quali pensatori cattolici auspicavano una soluzione neoguelfa?",
+  "Vincenzo Gioberti e Antonio Rosmini", ["Mazzini e Garibaldi", "Cattaneo e Ferrari", "Cavour e Ricasoli"],
+  "Il neoguelfismo immaginava un'Italia federata sotto la guida del papa.", "vi furono cattolici come Vincenzo Gioberti, Antonio Rosmini")
+RI("sto-216", "Risorgimento", 4, "Che cosa indica la storiografia con «quarta guerra d'indipendenza»?",
+  "La Prima guerra mondiale, che portò all'annessione delle terre irredente", ["La guerra di Crimea", "La guerra del 1866", "La guerra di Libia"],
+  "Così il compimento dell'unità si estende fino al primo Novecento.", "creando quindi il concetto di quarta guerra di indipendenza")
+RI("sto-217", "Risorgimento", 2, "Da quanti volontari era formata, all'incirca, la spedizione dei Mille?",
+  "Poco più di un migliaio", ["Circa 10.000", "Circa 300", "Circa 50.000"],
+  "Garibaldi partì da Quarto nel maggio 1860.", "Essa era formata da poco più di un migliaio di volontari")
+RI("sto-218", "Risorgimento", 4, "In quale località fu arrestato Garibaldi dopo Mentana, prima di essere riportato a Caprera?",
+  "Figline Valdarno", ["Aspromonte", "Teano", "Varignano"],
+  "Lo fece arrestare il governo Menabrea.", "fece arrestare Garibaldi a Figline Valdarno")
+
+P1("sto-219", "Prima guerra mondiale", 2, "Chi uccise l'arciduca Francesco Ferdinando a Sarajevo nel 1914?",
+  "Gavrilo Princip, studente bosniaco della Giovane Bosnia", ["Un ufficiale austriaco", "Un anarchico italiano", "Un agente russo"],
+  "L'attentato del 28 giugno 1914 innescò il conflitto.", "Gavrilo Princip, studente bosniaco facente parte della")
+P1("sto-220", "Prima guerra mondiale", 3, "Quando l'Italia ruppe la Triplice alleanza, prima di entrare in guerra?",
+  "Il 3 maggio 1915", ["Il 24 maggio 1915", "Il 26 aprile 1915", "Il 4 novembre 1918"],
+  "Il 24 maggio dichiarò guerra all'Austria-Ungheria, non alla Germania.", "Il 3 maggio successivo fu rotta la Triplice alleanza")
+P1("sto-221", "Prima guerra mondiale", 2, "Chi era il capo di stato maggiore dell'esercito italiano all'entrata in guerra nel 1915?",
+  "Luigi Cadorna", ["Armando Diaz", "Pietro Badoglio", "Vittorio Emanuele III"],
+  "Dopo Caporetto fu sostituito da Armando Diaz.", "capo di stato maggiore Luigi Cadorna")
+P1("sto-222", "Prima guerra mondiale", 3, "Quale battaglia del settembre 1914 fermò l'avanzata tedesca in Francia, spegnendo le speranze di una guerra breve?",
+  "La prima battaglia della Marna", ["Verdun", "La Somme", "Ypres"],
+  "Da allora il conflitto degenerò in una logorante guerra di trincea.", "nel corso della prima battaglia della Marna nel settembre 1914")
+P1("sto-223", "Prima guerra mondiale", 3, "Quale transatlantico affondato dai tedeschi contribuì a orientare l'opinione pubblica americana contro la Germania?",
+  "Il Lusitania", ["Il Titanic", "La Bismarck", "Il Britannic"],
+  "Wilson restò comunque neutrale fino al 1917.", "a partire dall'affondamento del RMS Lusitania")
+P1("sto-224", "Prima guerra mondiale", 4, "Come si chiama il telegramma con cui la Germania cercò di spingere il Messico ad attaccare gli Stati Uniti?",
+  "Il telegramma Zimmermann", ["Il telegramma di Ems", "Il lungo telegramma", "Il telegramma di Kruger"],
+  "Contribuì alla decisione di Wilson di entrare in guerra.", "il caso del \"telegramma Zimmermann\"")
+P1("sto-225", "Prima guerra mondiale", 3, "Quando gli Stati Uniti dichiararono guerra alla Germania?",
+  "Il 6 aprile 1917", ["Il 7 dicembre 1917", "Il 4 agosto 1914", "L'11 novembre 1918"],
+  "Wilson aveva presentato la proposta al Congresso il 4 aprile.", "il 6 aprile gli Stati Uniti dichiararono guerra alla Germania")
+P1("sto-226", "Prima guerra mondiale", 4, "Con quale trattato del 1919 fu regolata la pace con l'Austria?",
+  "Il trattato di Saint-Germain-en-Laye", ["Il trattato del Trianon", "Il trattato di Neuilly", "Il trattato di Sèvres"],
+  "Il Trianon riguardò l'Ungheria, Neuilly la Bulgaria, Sèvres l'Impero ottomano.", "il 10 settembre dal trattato di Saint-Germain-en-Laye con l'Austria")
+P1("sto-227", "Prima guerra mondiale", 4, "Con quale trattato del 1920 fu regolata la pace con l'Ungheria?",
+  "Il trattato del Trianon", ["Il trattato di Saint-Germain", "Il trattato di Versailles", "Il trattato di Rapallo"],
+  "Fu firmato il 4 giugno 1920.", "il 4 giugno 1920 dal trattato del Trianon con l'Ungheria")
+P1("sto-228", "Prima guerra mondiale", 2, "In quale città aveva sede la Società delle Nazioni?",
+  "Ginevra", ["New York", "Parigi", "Londra"],
+  "Fu istituita dopo la Prima guerra mondiale.", "La sede della Società delle Nazioni a")
+P1("sto-229", "Prima guerra mondiale", 3, "Come è conosciuta in Italia l'offensiva austro-ungarica del maggio 1916 sugli Altipiani?",
+  "Strafexpedition («spedizione punitiva»)", ["Disfatta di Caporetto", "Battaglia del solstizio", "Offensiva Brusilov"],
+  "Iniziò il 15 maggio 1916 tra la valle dell'Adige e la Valsugana.", "in Italia conosciuta come Strafexpedition, \"spedizione punitiva\"")
+P1("sto-230", "Prima guerra mondiale", 4, "Quale politico britannico sostenne con vigore l'attacco ai Dardanelli (campagna di Gallipoli)?",
+  "Winston Churchill, primo lord dell'Ammiragliato", ["David Lloyd George", "Herbert Asquith", "Lord Kitchener soltanto"],
+  "L'operazione fallì con pesanti perdite.", "con il vigoroso appoggio del primo lord dell'Ammiragliato Winston Churchill")
+P1("sto-231", "Prima guerra mondiale", 3, "In quale battaglia del 1915 i tedeschi usarono per la prima volta su vasta scala gas venefici (cloro)?",
+  "Nella seconda battaglia di Ypres", ["Nella battaglia della Marna", "A Verdun", "A Caporetto"],
+  "Iniziò così la «guerra dei gas».", "prese avvio la seconda battaglia di Ypres: impiegando per la prima volta e su vasta scala gas venefici")
+P1("sto-232", "Prima guerra mondiale", 4, "Quale generale tedesco fu richiamato dalla pensione e vinse a Tannenberg contro i russi?",
+  "Paul von Hindenburg", ["Erich von Falkenhayn", "Helmuth von Moltke", "Maximilian von Prittwitz"],
+  "Sostituì Prittwitz al comando sul fronte orientale.", "dal generale in pensione Paul von Hindenburg")
+P1("sto-233", "Prima guerra mondiale", 3, "Quale generale francese ebbe il comando unificato degli Alleati sul fronte occidentale nel 1918?",
+  "Ferdinand Foch", ["Philippe Pétain", "Joseph Joffre", "Robert Nivelle"],
+  "Predispose la serie di attacchi dell'offensiva dei cento giorni.", "nella persona del generale francese Ferdinand Foch")
+P1("sto-234", "Prima guerra mondiale", 4, "Chi guidò la Turchia verso la repubblica dopo la Prima guerra mondiale?",
+  "Mustafa Kemal", ["Ismail Enver", "Mehmed VI", "Talat Pascià"],
+  "Nel 1923 il sultanato fu abolito.", "sotto la guida di Mustafa Kemal le forze turche")
+P1("sto-235", "Prima guerra mondiale", 2, "Come era definita inizialmente la Prima guerra mondiale dai contemporanei?",
+  "«Guerra europea»", ["«Guerra lampo»", "«Guerra fredda»", "«Guerra dei trent'anni»"],
+  "Prese poi il nome di guerra mondiale o Grande guerra.", "Inizialmente definita \"guerra europea\" dai contemporanei")
+
+FA("sto-236", "Fascismo", 3, "Quale legge elettorale con un grande premio di maggioranza favorì il «listone» fascista nelle elezioni del 1924?",
+  "La legge Acerbo", ["La legge Rocco", "La legge Casati", "La legge Coppino"],
+  "Le elezioni furono segnate da brogli e violenze, denunciati da Matteotti.", "Grazie poi alla legge Acerbo")
+FA("sto-237", "Fascismo", 3, "Quanti deputati fascisti furono eletti nelle elezioni del 1921?",
+  "35", ["Nessuno", "120", "300"],
+  "Nel 1919 i Fasci non avevano ottenuto alcun seggio.", "Nelle successive elezioni del 1921 vennero invece eletti 35 deputati")
+FA("sto-238", "Fascismo", 4, "Con chi Mussolini elaborò nel 1932 una sintesi dottrinaria del fascismo?",
+  "Giovanni Gentile", ["Benedetto Croce", "Gabriele D'Annunzio", "Alfredo Rocco"],
+  "Secondo Mussolini il fascismo non nacque da una dottrina preesistente ma dall'azione.", "L'ideologia fascista, di cui Gentile e Mussolini elaborarono una sintesi dottrinaria nel 1932")
+FA("sto-239", "Fascismo", 3, "Come si chiamava il primo programma del movimento fascista (1919)?",
+  "Programma di San Sepolcro", ["Manifesto di Verona", "Carta del lavoro", "Programma di Erfurt"],
+  "Il Manifesto di Verona è invece del periodo della RSI.", "Programma di San Sepolcro")
+FA("sto-240", "Fascismo", 3, "In quale anno, secondo la voce, il fascismo si costituì in dittatura?",
+  "Nel 1925", ["Nel 1922", "Nel 1929", "Nel 1936"],
+  "Raggiunse il potere nel 1922 con la marcia su Roma.", "e si costituì in dittatura nel 1925")
+FA("sto-241", "Fascismo", 3, "Come si presentava il fascismo rispetto a capitalismo liberale e comunismo marxista?",
+  "Come una «terza via» alternativa a entrambi", ["Come una variante del liberalismo", "Come un movimento comunista", "Come un partito monarchico liberale"],
+  "Si fondava su una visione interclassista e corporativa.", "Il fascismo descrive se stesso come una terza via alternativa a capitalismo liberale e comunismo marxista")
+FA("sto-242", "Fascismo", 3, "Quale politica economica di autosufficienza esaltò il fascismo?",
+  "L'autarchia", ["Il libero scambio", "Il keynesismo", "La pianificazione sovietica"],
+  "Si accompagnò a un nazionalismo anche linguistico.", "l'esaltazione dell'autarchia in economia")
+FA("sto-243", "Fascismo", 3, "Cosa subirono le minoranze linguistiche durante il fascismo?",
+  "Una politica di italianizzazione forzata", ["Il riconoscimento dell'autonomia", "Il bilinguismo obbligatorio", "La tutela costituzionale"],
+  "Rientrava nel nazionalismo anche linguistico del regime.", "si perseguì una politica di italianizzazione forzata")
+FA("sto-244", "Fascismo", 2, "In quale periodo il governo Mussolini varò la normativa antiebraica (leggi razziali)?",
+  "Nell'autunno 1938", ["Nel 1922", "Nel 1929", "Nel 1943"],
+  "In parte a imitazione di quanto avveniva in Germania.", "Nell'autunno 1938")
+FA("sto-245", "Fascismo", 4, "Quali gerarchi promossero l'ordine del giorno del 25 luglio 1943 al Gran Consiglio?",
+  "Grandi, Bottai e Ciano", ["Farinacci, Starace e Balbo", "Badoglio, Ciano e Graziani", "Gentile, Rocco e Volpe"],
+  "Chiedeva al Re di riprendere il potere e portò all'arresto di Mussolini.", "per iniziativa di alcuni gerarchi (Grandi, Bottai e Ciano)")
+FA("sto-246", "Fascismo", 2, "Come si chiama il ricorso alla violenza come metodo di lotta politica tipico del primo fascismo?",
+  "Squadrismo", ["Arditismo", "Brigantaggio", "Terrorismo rosso"],
+  "Caratterizzò il fascismo fin dall'inizio, insieme all'ostilità alla democrazia.", "per il ricorso alla violenza come metodo di lotta politica (squadrismo)")
+FA("sto-247", "Fascismo", 4, "Secondo le stime di Gaetano Salvemini, quante vittime causarono le violenze del biennio 1921-22?",
+  "Circa tremila", ["Circa trenta", "Circa trecentomila", "Nessuna"],
+  "Le violenze colpivano soprattutto sindacati e partiti socialisti.", "circa tremila nel solo biennio 1921-22")
+FA("sto-248", "Fascismo", 3, "Quali governi formarono la coalizione del primo governo Mussolini?",
+  "Fascisti con nazionalisti, liberali e popolari", ["Solo fascisti", "Fascisti e socialisti", "Fascisti e comunisti"],
+  "Dopo il delitto Matteotti il regime assunse connotazioni dittatoriali.", "un governo di coalizione composto da nazionalisti, liberali e popolari")
+
+P2("sto-249", "Seconda guerra mondiale", 3, "Quando fu firmato il patto Molotov-Ribbentrop tra Germania e URSS?",
+  "Il 24 agosto 1939", ["Il 1° settembre 1939", "Il 22 giugno 1941", "Il 23 giugno 1940"],
+  "Un protocollo segreto prevedeva la spartizione della Polonia.", "il 24 agosto 1939 il ministro degli esteri sovietico")
+P2("sto-250", "Seconda guerra mondiale", 4, "Quale durata prevedeva il patto di non aggressione Molotov-Ribbentrop?",
+  "Dieci anni", ["Un anno", "Cinque anni", "Venticinque anni"],
+  "Fu violato dalla Germania con l'operazione Barbarossa nel 1941.", "un patto di non aggressione tra le due nazioni della durata di dieci anni")
+P2("sto-251", "Seconda guerra mondiale", 3, "Come si chiamò l'invasione tedesca di Danimarca e Norvegia del 9 aprile 1940?",
+  "Operazione Weserübung", ["Operazione Barbarossa", "Operazione Leone marino", "Fall Gelb"],
+  "Interruppe la «strana guerra».", "(operazione Weserübung)")
+P2("sto-252", "Seconda guerra mondiale", 3, "In quale battaglia navale del marzo 1941 la flotta italiana perse tre incrociatori pesanti?",
+  "Capo Matapan", ["Lissa", "Taranto", "Midway"],
+  "La sortita avvenne nelle acque a sud di Creta.", "nel corso della battaglia di Capo Matapan gli italiani persero tre incrociatori pesanti")
+P2("sto-253", "Seconda guerra mondiale", 4, "Quale depressione naturale rendeva El Alamein l'ultimo ostacolo geografico prima del Cairo?",
+  "La depressione di Qattara", ["La depressione del Mar Morto", "Il deserto del Sinai", "Il delta del Nilo"],
+  "El Alamein era stretta tra il mare a nord e la depressione a sud.", "intransitabile depressione di Qattara")
+P2("sto-254", "Seconda guerra mondiale", 3, "Dove sbarcarono gli anglo-statunitensi il 22 gennaio 1944 per aggirare la linea Gustav?",
+  "Tra Anzio e Nettuno", ["A Salerno", "In Normandia", "A Gela"],
+  "L'obiettivo era aprire la strada verso Roma.", "sbarcarono alle spalle dei tedeschi lungo la costa tra Anzio e Nettuno")
+P2("sto-255", "Seconda guerra mondiale", 2, "Quale antica abbazia fu completamente distrutta dai bombardamenti alleati nel 1944?",
+  "Montecassino", ["San Galgano", "Subiaco", "Pomposa"],
+  "Si trovava lungo la linea Gustav.", "l'antica abbazia di Montecassino finì")
+P2("sto-256", "Seconda guerra mondiale", 3, "Tra quali città si estendeva la Linea Gotica?",
+  "Da Massa a Pesaro", ["Da Gaeta a Ortona", "Da Genova a Venezia", "Da Roma a Pescara"],
+  "Vi ripiegarono i tedeschi dopo la liberazione di Roma.", "Linea Gotica, estesa da Massa a Pesaro")
+P2("sto-257", "Seconda guerra mondiale", 3, "Quando fu liberata Firenze?",
+  "Il 13 agosto 1944", ["Il 4 giugno 1944", "Il 25 aprile 1945", "Il 18 luglio 1944"],
+  "Ancona era stata liberata il 18 luglio.", "Firenze il 13 agosto")
+P2("sto-258", "Seconda guerra mondiale", 4, "Dove avvenne il 25 aprile 1945 il primo incontro tra truppe sovietiche e statunitensi?",
+  "A Torgau, sul fiume Elba", ["A Berlino", "A Vienna", "A Praga"],
+  "Lo stesso giorno in Italia si celebra la Liberazione.", "a Torgau, sul fiume Elba, il 25 aprile")
+P2("sto-259", "Seconda guerra mondiale", 3, "Quando fu liberata Bologna?",
+  "Il 21 aprile 1945", ["Il 25 aprile 1945", "Il 4 giugno 1944", "Il 1° maggio 1945"],
+  "Gli Alleati valicarono poi il Po.", "su Bologna, liberata il 21 aprile")
+P2("sto-260", "Seconda guerra mondiale", 3, "Come si chiamava il programma statunitense per la bomba atomica, coordinato da Oppenheimer?",
+  "Progetto Manhattan", ["Progetto Apollo", "Operazione Overlord", "Progetto Trinity Bay"],
+  "Vi collaborarono centinaia di scienziati statunitensi e britannici.", "sotto il nome in codice di \"Progetto Manhattan\"")
+P2("sto-261", "Seconda guerra mondiale", 4, "Quando fu testato con successo il primo prototipo di bomba atomica?",
+  "Il 16 luglio 1945, ad Alamogordo", ["Il 6 agosto 1945, a Hiroshima", "Il 2 settembre 1945, nel Pacifico", "Nel 1949, in Kazakistan"],
+  "Il prototipo era chiamato «The Gadget».", "venne testato con successo il 16 luglio 1945 nel poligono di Alamogordo")
+P2("sto-262", "Seconda guerra mondiale", 4, "Quale confine orientale fu fissato per la Germania alla conferenza di Potsdam del luglio 1945?",
+  "La linea Oder-Neiße", ["La linea Curzon", "La linea Maginot", "Il fiume Reno"],
+  "Slesia e Pomerania passarono alla Polonia.", "la frontiera orientale fu arretrata alla linea Oder-Neiße")
+P2("sto-263", "Seconda guerra mondiale", 2, "Chi sostituì Mussolini alla guida del governo dopo il 25 luglio 1943?",
+  "Il maresciallo Pietro Badoglio", ["Dino Grandi", "Vittorio Emanuele III", "Ivanoe Bonomi"],
+  "Il nuovo governo dichiarò inizialmente di voler continuare la guerra.", "rimpiazzato alla guida del governo dal maresciallo Pietro")
+P2("sto-264", "Seconda guerra mondiale", 2, "Quando si arrese il Giappone, chiudendo la guerra in Asia?",
+  "Il 2 settembre 1945", ["L'8 maggio 1945", "Il 6 agosto 1945", "Il 7 dicembre 1945"],
+  "Dopo i bombardamenti atomici di Hiroshima e Nagasaki.", "in quello asiatico, il successivo 2 settembre")
+P2("sto-265", "Seconda guerra mondiale", 2, "Quanti morti causò, secondo le stime, la Seconda guerra mondiale?",
+  "Tra 55 e 60 milioni", ["Circa 5 milioni", "Circa 15 milioni", "Oltre 200 milioni"],
+  "È il conflitto più sanguinoso della storia.", "55 e i 60 milioni di individui")
+P2("sto-266", "Seconda guerra mondiale", 3, "Quali città liberò l'operazione sovietica «Stella» nel febbraio 1943?",
+  "Kursk e Char'kov", ["Leningrado e Mosca", "Berlino e Varsavia", "Kiev e Minsk"],
+  "Costrinse i tedeschi a sgombrare il Caucaso.", "l'operazione Stella portò le colonne corazzate sovietiche a liberare Kursk e Char'kov")
+
+RE("sto-267", "Repubblica", 3, "In che data nacque ufficialmente la Repubblica Italiana, con la proclamazione dei risultati definitivi del referendum?",
+  "Il 18 giugno 1946", ["Il 2 giugno 1946", "Il 1° gennaio 1948", "Il 25 aprile 1945"],
+  "La Corte di cassazione respinse i ricorsi e completò lo scrutinio.", "La Repubblica Italiana nacque ufficialmente il 18 giugno 1946")
+RE("sto-268", "Repubblica", 3, "Come si chiama il provvedimento del 22 giugno 1946 per la riconciliazione nazionale?",
+  "Amnistia Togliatti", ["Legge Scelba", "Decreto De Gasperi", "Lodo Moro"],
+  "Prese il nome dal guardasigilli che l'aveva concepita.", "fu emanata poi la cosiddetta amnistia Togliatti")
+RE("sto-269", "Repubblica", 3, "Quale ministro delle Finanze realizzò un riassetto fiscale negli anni del centrismo?",
+  "Ezio Vanoni", ["Luigi Einaudi", "Ugo La Malfa", "Giulio Andreotti"],
+  "Nello stesso periodo nacque la Cassa per il Mezzogiorno.", "operato dal ministro delle Finanze Ezio Vanoni")
+RE("sto-270", "Repubblica", 3, "Quale ente nacque nel 1964 dopo la nazionalizzazione dell'energia elettrica?",
+  "L'Enel", ["L'ENI", "L'IRI", "L'Agip"],
+  "La nazionalizzazione fu osteggiata dal PLI e da Edison e SADE.", "che nel 1964 porterà alla nascita dell'Enel")
+RE("sto-271", "Repubblica", 3, "Fino a quale età fu estesa la scuola dell'obbligo dal primo centro-sinistra?",
+  "14 anni", ["11 anni", "16 anni", "18 anni"],
+  "Fu uno degli atti di rilievo del governo di centro-sinistra.", "l'estensione della scuola dell'obbligo fino ai 14 anni")
+RE("sto-272", "Repubblica", 3, "Quale ministro volle lo Statuto dei lavoratori, approvato il 20 maggio 1970?",
+  "Giacomo Brodolini", ["Carlo Donat-Cattin", "Pietro Nenni", "Amintore Fanfani"],
+  "Nello stesso periodo furono approvate le norme sui referendum.", "lo statuto dei lavoratori voluto dal ministro Giacomo Brodolini")
+RE("sto-273", "Repubblica", 3, "Con quale legge del 1970 furono istituite le Regioni a statuto ordinario?",
+  "La legge del 16 maggio 1970", ["La legge del 1° gennaio 1948", "La legge del 1963", "La legge del 2001"],
+  "Fu una delle riforme in risposta al Sessantotto.", "l'istituzione delle Regioni con legge del 16 maggio 1970")
+RE("sto-274", "Repubblica", 2, "Quando avvenne la strage di piazza Fontana a Milano?",
+  "Il 12 dicembre 1969", ["Il 2 agosto 1980", "Il 16 marzo 1978", "Il 28 maggio 1974"],
+  "Uccise diciassette persone; le indagini puntarono inizialmente sugli anarchici.", "Il 12 dicembre 1969 la strage di piazza Fontana")
+RE("sto-275", "Repubblica", 3, "Come è ricordata l'ondata di scioperi del 1969 che coinvolse circa 1,5 milioni di lavoratori?",
+  "Autunno caldo", ["Biennio rosso", "Maggio francese", "Marcia dei quarantamila"],
+  "Portò al rinnovo del contratto collettivo nazionale.", "sfociarono nell'\"autunno caldo\" del 1969")
+RE("sto-276", "Repubblica", 3, "Quale disastro del 9 ottobre 1963 distrusse Longarone causando circa duemila morti?",
+  "Il disastro del Vajont", ["L'alluvione di Firenze", "Il terremoto del Belice", "Il disastro di Seveso"],
+  "Fu attribuito alla sottovalutazione del rischio idrogeologico.", "il 9 ottobre si verificò il disastro del Vajont, che distrusse Longarone")
+RE("sto-277", "Repubblica", 3, "Quale linea politica promosse Berlinguer per legittimare il PCI come forza di governo?",
+  "L'eurocomunismo", ["Il centrismo", "Il compromesso di Yalta", "Il pentapartito"],
+  "Affermava l'autonomia da Mosca e la fedeltà alla NATO.", "Berlinguer promosse l'eurocomunismo")
+RE("sto-278", "Repubblica", 2, "Chi fu Presidente della Repubblica dal 1978 al 1985?",
+  "Sandro Pertini", ["Giovanni Leone", "Francesco Cossiga", "Giuseppe Saragat"],
+  "Fu eletto con il sostegno decisivo di Craxi.", "Sandro Pertini, Presidente della")
+RE("sto-279", "Repubblica", 2, "Chi furono le vittime principali della strage di Capaci del 1992?",
+  "Il giudice Giovanni Falcone, la moglie e tre agenti di scorta", ["Paolo Borsellino e la scorta", "Aldo Moro e la scorta", "Carlo Alberto dalla Chiesa"],
+  "Pochi mesi dopo la strage di via D'Amelio uccise Borsellino.", "in cui persero la vita il magistrato antimafia Giovanni Falcone")
+RE("sto-280", "Repubblica", 3, "Chi guidò nel 1993 il primo governo presieduto da un tecnico non parlamentare?",
+  "Carlo Azeglio Ciampi", ["Giuliano Amato", "Lamberto Dini", "Mario Monti"],
+  "Traghettò il sistema politico verso la Seconda Repubblica.", "da un tecnico indipendente, Carlo Azeglio Ciampi")
+RE("sto-281", "Repubblica", 3, "In quale miniera belga morirono nel 1956 numerosi minatori italiani?",
+  "Marcinelle", ["Charleroi Nord", "Liegi", "Anversa"],
+  "Il disastro mise in luce le condizioni dell'emigrazione italiana.", "il disastro di Marcinelle in una miniera del Belgio nel 1956")
+RE("sto-282", "Repubblica", 3, "Quale presidente della Repubblica, della sinistra DC, era amico di Enrico Mattei?",
+  "Giovanni Gronchi", ["Luigi Einaudi", "Antonio Segni", "Giovanni Leone"],
+  "Guardava con favore all'apertura ai socialisti.", "il nuovo presidente della Repubblica Giovanni Gronchi")
+RE("sto-283", "Repubblica", 3, "Con quale trattato del 1951 l'Italia aderì alla CECA?",
+  "Il Trattato di Parigi", ["I Trattati di Roma", "Il Trattato di Maastricht", "Il Patto Atlantico"],
+  "La CECA fu il primo embrione dell'integrazione europea.", "nel 1951 l'Italia aderì al Trattato di Parigi che istituiva la CECA")
+RE("sto-284", "Repubblica", 4, "Come fu chiamato il governo monocolore DC di Giovanni Leone del 1963?",
+  "«Governo balneare»", ["«Governo delle convergenze parallele»", "«Governo della non sfiducia»", "«Governo dei tecnici»"],
+  "Durante il suo breve mandato avvenne il disastro del Vajont.", "il cosiddetto \"governo balneare\"")
+RE("sto-285", "Repubblica", 3, "Come fu chiamato il terzo governo Andreotti sostenuto dall'astensione di quasi tutti i partiti?",
+  "Governo della non sfiducia", ["Governo balneare", "Governo di unità nazionale del CLN", "Pentapartito"],
+  "Aprì la stagione della «solidarietà nazionale» tra DC e PCI.", "La complessità del risultato impose la nascita di un \"governo della non sfiducia\"")
+RE("sto-286", "Repubblica", 3, "Quale ministro dell'Interno represse con fermezza le proteste sindacali dei primi anni Cinquanta?",
+  "Mario Scelba", ["Paolo Emilio Taviani", "Francesco Cossiga", "Amintore Fanfani"],
+  "Celebre la repressione alle Fonderie Riunite di Modena nel 1950.", "vennero fermamente represse dal ministro dell'Interno Mario Scelba")
+
+GFR("sto-287", "Guerra fredda", 2, "Quale fu il primo satellite artificiale, lanciato dall'URSS nel 1957?",
+  "Lo Sputnik 1", ["L'Apollo 11", "L'Explorer 1", "La Vostok 1"],
+  "Avviò la corsa allo spazio tra le due superpotenze.", "lanciarono il primo satellite artificiale, lo Sputnik 1")
+GFR("sto-288", "Guerra fredda", 3, "Come si concluse la rivoluzione ungherese del 1956?",
+  "I carri armati sovietici riconquistarono Budapest e Nagy fu giustiziato", ["Con l'uscita dell'Ungheria dal Patto di Varsavia", "Con l'intervento della NATO", "Con libere elezioni"],
+  "Gli eventi provocarono una frattura nei partiti comunisti occidentali.", "il 4 novembre Budapest venne")
+GFR("sto-289", "Guerra fredda", 2, "Quale paese invase l'URSS nel 1968 per fermare la Primavera di Praga?",
+  "La Cecoslovacchia", ["L'Ungheria", "La Polonia", "La Jugoslavia"],
+  "Fu una delle crisi più gravi del blocco orientale.", "invase la Cecoslovacchia per fermare la Primavera")
+GFR("sto-290", "Guerra fredda", 2, "Come si chiamavano le riforme di Michail Gorbačëv?",
+  "Glasnost («trasparenza») e perestrojka («riorganizzazione»)", ["Destalinizzazione e disgelo", "Grande balzo in avanti", "NEP e collettivizzazione"],
+  "Furono introdotte dalla metà degli anni Ottanta.", "glasnost (\"trasparenza\") e perestrojka (\"riorganizzazione\")")
+GFR("sto-291", "Guerra fredda", 3, "Quale evento del 1979 pose fine alla fase di distensione?",
+  "L'invasione sovietica dell'Afghanistan", ["La crisi di Suez", "La costruzione del Muro di Berlino", "La guerra di Corea"],
+  "Seguì una fase di forte tensione con gli Stati Uniti di Reagan.", "La distensione finì con l'invasione sovietica dell'Afghanistan del 1979")
+GFR("sto-292", "Guerra fredda", 3, "Quale trattato sul controllo degli armamenti firmarono Nixon e Brežnev nel 1972?",
+  "Il SALT I", ["Il trattato INF", "Il START II", "Il trattato di non proliferazione"],
+  "Fu il primo patto di limitazione globale tra le superpotenze.", "SALT I, il primo patto di limitazione globale firmato dalle due superpotenze")
+GFR("sto-293", "Guerra fredda", 2, "Chi vinse la guerra civile cinese nel 1949?",
+  "Mao Zedong", ["Chiang Kai-shek", "Sun Yat-sen", "Deng Xiaoping"],
+  "Chiang Kai-shek si rifugiò con il suo governo a Taiwan.", "l'Esercito Popolare di Liberazione di Mao Zedong")
+GFR("sto-294", "Guerra fredda", 4, "Quale strategia elaborò l'amministrazione Kennedy per ridurre il rischio di guerra nucleare totale?",
+  "La «risposta flessibile»", ["La «rappresaglia massiccia»", "Il «roll back»", "Lo «scudo spaziale»"],
+  "Sostituiva la dottrina della rappresaglia massiccia.", "elaborò la strategia della \"risposta flessibile\"")
+GFR("sto-295", "Guerra fredda", 2, "Quando si dissolse formalmente l'Unione Sovietica?",
+  "Nel dicembre 1991", ["Nel novembre 1989", "Nel 1985", "Nel 1995"],
+  "La caduta della cortina di ferro era avvenuta nel 1989.", "alla dissoluzione formale dell'Unione Sovietica nel dicembre 1991")
+
+EU("sto-296", "Integrazione europea", 4, "Con quale trattato del 1948 si fa iniziare il processo di integrazione europea, secondo la voce?",
+  "Il Trattato di Bruxelles", ["Il Trattato di Roma", "Il Trattato di Parigi", "Il Trattato di Maastricht"],
+  "Seguirono molti altri trattati e referendum.", "iniziato nel 1948 con il Trattato di Bruxelles")
+EU("sto-297", "Integrazione europea", 3, "Quale ministro degli esteri belga studiò il progetto di mercato comune confluito nei Trattati di Roma?",
+  "Paul-Henri Spaak", ["Robert Schuman", "Jean Monnet", "Konrad Adenauer"],
+  "La sua proposta si unì a quella di Monnet sull'energia.", "ministro degli esteri belga Paul-Henri Spaak su un mercato comune")
+EU("sto-298", "Integrazione europea", 4, "Quale paese respinse il Trattato di Maastricht con un referendum nel 1992, approvandolo l'anno dopo?",
+  "La Danimarca", ["La Francia", "L'Irlanda", "Il Regno Unito"],
+  "Il secondo referendum fu positivo.", "lo approvò l'anno dopo in un nuovo referendum")
+EU("sto-299", "Integrazione europea", 3, "Quale spazio economico fu formato nel 1992 dall'UE e dall'EFTA?",
+  "Lo Spazio economico europeo (SEE)", ["L'area Schengen", "L'Eurozona", "Il Consiglio d'Europa"],
+  "L'EFTA è l'Associazione europea di libero scambio.", "Spazio economico europeo (SEE) nel 1992")
+EU("sto-300", "Integrazione europea", 4, "Quale maggioranza serviva all'assemblea comune dei Trattati di Roma per censurare le decisioni della Commissione?",
+  "I due terzi", ["La maggioranza semplice", "L'unanimità", "Tre quinti"],
+  "L'assemblea è l'antenata del Parlamento europeo.", "maggioranza fissata in 2/3")

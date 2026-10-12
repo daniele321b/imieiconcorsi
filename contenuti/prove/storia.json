@@ -1008,5 +1008,495 @@
     "id": "sto-202",
     "file": "Wikipedia_Storia-d-Italia.txt",
     "frase": "tra le nazioni fondanti del G6 (poi G7, G8 e nuovamente G7) nel 1975"
+  },
+  {
+    "id": "sto-203",
+    "file": "Wikipedia_Risorgimento.txt",
+    "frase": "ai moti siciliani del 15 giugno 1820"
+  },
+  {
+    "id": "sto-204",
+    "file": "Wikipedia_Risorgimento.txt",
+    "frase": "fra il proclama di Rimini (1815) e la breccia di Porta Pia"
+  },
+  {
+    "id": "sto-205",
+    "file": "Wikipedia_Risorgimento.txt",
+    "frase": "Questi circoli iniziatici, derivati dalla massoneria"
+  },
+  {
+    "id": "sto-206",
+    "file": "Wikipedia_Risorgimento.txt",
+    "frase": "Leopoldo II di Toscana concesse lo Statuto il 17 febbraio"
+  },
+  {
+    "id": "sto-207",
+    "file": "Wikipedia_Risorgimento.txt",
+    "frase": "Dal febbraio al luglio 1849 si svolse la vicenda della Repubblica Romana"
+  },
+  {
+    "id": "sto-208",
+    "file": "Wikipedia_Risorgimento.txt",
+    "frase": "conclusasi con la morte di Carlo Pisacane e dei suoi 23 compagni"
+  },
+  {
+    "id": "sto-209",
+    "file": "Wikipedia_Risorgimento.txt",
+    "frase": "sconfitto dalle truppe francesi nella battaglia di Mentana"
+  },
+  {
+    "id": "sto-210",
+    "file": "Wikipedia_Risorgimento.txt",
+    "frase": "'Aspromonte dall'esercito italiano inviato da Urbano Rattazzi"
+  },
+  {
+    "id": "sto-211",
+    "file": "Wikipedia_Risorgimento.txt",
+    "frase": "Il Risorgimento continuò con l'incorporazione del Veneto nel 1866"
+  },
+  {
+    "id": "sto-212",
+    "file": "Wikipedia_Risorgimento.txt",
+    "frase": "non ritirò lo Statuto Albertino concesso dal padre"
+  },
+  {
+    "id": "sto-213",
+    "file": "Wikipedia_Risorgimento.txt",
+    "frase": "1846 di papa Pio IX, ritenuto un \"liberale\""
+  },
+  {
+    "id": "sto-214",
+    "file": "Wikipedia_Risorgimento.txt",
+    "frase": "federalisti radicali contrari alla monarchia come Nicolò Tommaseo e Carlo Cattaneo"
+  },
+  {
+    "id": "sto-215",
+    "file": "Wikipedia_Risorgimento.txt",
+    "frase": "vi furono cattolici come Vincenzo Gioberti, Antonio Rosmini"
+  },
+  {
+    "id": "sto-216",
+    "file": "Wikipedia_Risorgimento.txt",
+    "frase": "creando quindi il concetto di quarta guerra di indipendenza"
+  },
+  {
+    "id": "sto-217",
+    "file": "Wikipedia_Risorgimento.txt",
+    "frase": "Essa era formata da poco più di un migliaio di volontari"
+  },
+  {
+    "id": "sto-218",
+    "file": "Wikipedia_Risorgimento.txt",
+    "frase": "fece arrestare Garibaldi a Figline Valdarno"
+  },
+  {
+    "id": "sto-219",
+    "file": "Wikipedia_Prima-guerra-mondiale.txt",
+    "frase": "Gavrilo Princip, studente bosniaco facente parte della"
+  },
+  {
+    "id": "sto-220",
+    "file": "Wikipedia_Prima-guerra-mondiale.txt",
+    "frase": "Il 3 maggio successivo fu rotta la Triplice alleanza"
+  },
+  {
+    "id": "sto-221",
+    "file": "Wikipedia_Prima-guerra-mondiale.txt",
+    "frase": "capo di stato maggiore Luigi Cadorna"
+  },
+  {
+    "id": "sto-222",
+    "file": "Wikipedia_Prima-guerra-mondiale.txt",
+    "frase": "nel corso della prima battaglia della Marna nel settembre 1914"
+  },
+  {
+    "id": "sto-223",
+    "file": "Wikipedia_Prima-guerra-mondiale.txt",
+    "frase": "a partire dall'affondamento del RMS Lusitania"
+  },
+  {
+    "id": "sto-224",
+    "file": "Wikipedia_Prima-guerra-mondiale.txt",
+    "frase": "il caso del \"telegramma Zimmermann\""
+  },
+  {
+    "id": "sto-225",
+    "file": "Wikipedia_Prima-guerra-mondiale.txt",
+    "frase": "il 6 aprile gli Stati Uniti dichiararono guerra alla Germania"
+  },
+  {
+    "id": "sto-226",
+    "file": "Wikipedia_Prima-guerra-mondiale.txt",
+    "frase": "il 10 settembre dal trattato di Saint-Germain-en-Laye con l'Austria"
+  },
+  {
+    "id": "sto-227",
+    "file": "Wikipedia_Prima-guerra-mondiale.txt",
+    "frase": "il 4 giugno 1920 dal trattato del Trianon con l'Ungheria"
+  },
+  {
+    "id": "sto-228",
+    "file": "Wikipedia_Prima-guerra-mondiale.txt",
+    "frase": "La sede della Società delle Nazioni a"
+  },
+  {
+    "id": "sto-229",
+    "file": "Wikipedia_Prima-guerra-mondiale.txt",
+    "frase": "in Italia conosciuta come Strafexpedition, \"spedizione punitiva\""
+  },
+  {
+    "id": "sto-230",
+    "file": "Wikipedia_Prima-guerra-mondiale.txt",
+    "frase": "con il vigoroso appoggio del primo lord dell'Ammiragliato Winston Churchill"
+  },
+  {
+    "id": "sto-231",
+    "file": "Wikipedia_Prima-guerra-mondiale.txt",
+    "frase": "prese avvio la seconda battaglia di Ypres: impiegando per la prima volta e su vasta scala gas venefici"
+  },
+  {
+    "id": "sto-232",
+    "file": "Wikipedia_Prima-guerra-mondiale.txt",
+    "frase": "dal generale in pensione Paul von Hindenburg"
+  },
+  {
+    "id": "sto-233",
+    "file": "Wikipedia_Prima-guerra-mondiale.txt",
+    "frase": "nella persona del generale francese Ferdinand Foch"
+  },
+  {
+    "id": "sto-234",
+    "file": "Wikipedia_Prima-guerra-mondiale.txt",
+    "frase": "sotto la guida di Mustafa Kemal le forze turche"
+  },
+  {
+    "id": "sto-235",
+    "file": "Wikipedia_Prima-guerra-mondiale.txt",
+    "frase": "Inizialmente definita \"guerra europea\" dai contemporanei"
+  },
+  {
+    "id": "sto-236",
+    "file": "Wikipedia_Fascismo.txt",
+    "frase": "Grazie poi alla legge Acerbo"
+  },
+  {
+    "id": "sto-237",
+    "file": "Wikipedia_Fascismo.txt",
+    "frase": "Nelle successive elezioni del 1921 vennero invece eletti 35 deputati"
+  },
+  {
+    "id": "sto-238",
+    "file": "Wikipedia_Fascismo.txt",
+    "frase": "L'ideologia fascista, di cui Gentile e Mussolini elaborarono una sintesi dottrinaria nel 1932"
+  },
+  {
+    "id": "sto-239",
+    "file": "Wikipedia_Fascismo.txt",
+    "frase": "Programma di San Sepolcro"
+  },
+  {
+    "id": "sto-240",
+    "file": "Wikipedia_Fascismo.txt",
+    "frase": "e si costituì in dittatura nel 1925"
+  },
+  {
+    "id": "sto-241",
+    "file": "Wikipedia_Fascismo.txt",
+    "frase": "Il fascismo descrive se stesso come una terza via alternativa a capitalismo liberale e comunismo marxista"
+  },
+  {
+    "id": "sto-242",
+    "file": "Wikipedia_Fascismo.txt",
+    "frase": "l'esaltazione dell'autarchia in economia"
+  },
+  {
+    "id": "sto-243",
+    "file": "Wikipedia_Fascismo.txt",
+    "frase": "si perseguì una politica di italianizzazione forzata"
+  },
+  {
+    "id": "sto-244",
+    "file": "Wikipedia_Fascismo.txt",
+    "frase": "Nell'autunno 1938"
+  },
+  {
+    "id": "sto-245",
+    "file": "Wikipedia_Fascismo.txt",
+    "frase": "per iniziativa di alcuni gerarchi (Grandi, Bottai e Ciano)"
+  },
+  {
+    "id": "sto-246",
+    "file": "Wikipedia_Fascismo.txt",
+    "frase": "per il ricorso alla violenza come metodo di lotta politica (squadrismo)"
+  },
+  {
+    "id": "sto-247",
+    "file": "Wikipedia_Fascismo.txt",
+    "frase": "circa tremila nel solo biennio 1921-22"
+  },
+  {
+    "id": "sto-248",
+    "file": "Wikipedia_Fascismo.txt",
+    "frase": "un governo di coalizione composto da nazionalisti, liberali e popolari"
+  },
+  {
+    "id": "sto-249",
+    "file": "Wikipedia_Seconda-guerra-mondiale.txt",
+    "frase": "il 24 agosto 1939 il ministro degli esteri sovietico"
+  },
+  {
+    "id": "sto-250",
+    "file": "Wikipedia_Seconda-guerra-mondiale.txt",
+    "frase": "un patto di non aggressione tra le due nazioni della durata di dieci anni"
+  },
+  {
+    "id": "sto-251",
+    "file": "Wikipedia_Seconda-guerra-mondiale.txt",
+    "frase": "(operazione Weserübung)"
+  },
+  {
+    "id": "sto-252",
+    "file": "Wikipedia_Seconda-guerra-mondiale.txt",
+    "frase": "nel corso della battaglia di Capo Matapan gli italiani persero tre incrociatori pesanti"
+  },
+  {
+    "id": "sto-253",
+    "file": "Wikipedia_Seconda-guerra-mondiale.txt",
+    "frase": "intransitabile depressione di Qattara"
+  },
+  {
+    "id": "sto-254",
+    "file": "Wikipedia_Seconda-guerra-mondiale.txt",
+    "frase": "sbarcarono alle spalle dei tedeschi lungo la costa tra Anzio e Nettuno"
+  },
+  {
+    "id": "sto-255",
+    "file": "Wikipedia_Seconda-guerra-mondiale.txt",
+    "frase": "l'antica abbazia di Montecassino finì"
+  },
+  {
+    "id": "sto-256",
+    "file": "Wikipedia_Seconda-guerra-mondiale.txt",
+    "frase": "Linea Gotica, estesa da Massa a Pesaro"
+  },
+  {
+    "id": "sto-257",
+    "file": "Wikipedia_Seconda-guerra-mondiale.txt",
+    "frase": "Firenze il 13 agosto"
+  },
+  {
+    "id": "sto-258",
+    "file": "Wikipedia_Seconda-guerra-mondiale.txt",
+    "frase": "a Torgau, sul fiume Elba, il 25 aprile"
+  },
+  {
+    "id": "sto-259",
+    "file": "Wikipedia_Seconda-guerra-mondiale.txt",
+    "frase": "su Bologna, liberata il 21 aprile"
+  },
+  {
+    "id": "sto-260",
+    "file": "Wikipedia_Seconda-guerra-mondiale.txt",
+    "frase": "sotto il nome in codice di \"Progetto Manhattan\""
+  },
+  {
+    "id": "sto-261",
+    "file": "Wikipedia_Seconda-guerra-mondiale.txt",
+    "frase": "venne testato con successo il 16 luglio 1945 nel poligono di Alamogordo"
+  },
+  {
+    "id": "sto-262",
+    "file": "Wikipedia_Seconda-guerra-mondiale.txt",
+    "frase": "la frontiera orientale fu arretrata alla linea Oder-Neiße"
+  },
+  {
+    "id": "sto-263",
+    "file": "Wikipedia_Seconda-guerra-mondiale.txt",
+    "frase": "rimpiazzato alla guida del governo dal maresciallo Pietro"
+  },
+  {
+    "id": "sto-264",
+    "file": "Wikipedia_Seconda-guerra-mondiale.txt",
+    "frase": "in quello asiatico, il successivo 2 settembre"
+  },
+  {
+    "id": "sto-265",
+    "file": "Wikipedia_Seconda-guerra-mondiale.txt",
+    "frase": "55 e i 60 milioni di individui"
+  },
+  {
+    "id": "sto-266",
+    "file": "Wikipedia_Seconda-guerra-mondiale.txt",
+    "frase": "l'operazione Stella portò le colonne corazzate sovietiche a liberare Kursk e Char'kov"
+  },
+  {
+    "id": "sto-267",
+    "file": "Wikipedia_Storia-dell-Italia-repubblicana.txt",
+    "frase": "La Repubblica Italiana nacque ufficialmente il 18 giugno 1946"
+  },
+  {
+    "id": "sto-268",
+    "file": "Wikipedia_Storia-dell-Italia-repubblicana.txt",
+    "frase": "fu emanata poi la cosiddetta amnistia Togliatti"
+  },
+  {
+    "id": "sto-269",
+    "file": "Wikipedia_Storia-dell-Italia-repubblicana.txt",
+    "frase": "operato dal ministro delle Finanze Ezio Vanoni"
+  },
+  {
+    "id": "sto-270",
+    "file": "Wikipedia_Storia-dell-Italia-repubblicana.txt",
+    "frase": "che nel 1964 porterà alla nascita dell'Enel"
+  },
+  {
+    "id": "sto-271",
+    "file": "Wikipedia_Storia-dell-Italia-repubblicana.txt",
+    "frase": "l'estensione della scuola dell'obbligo fino ai 14 anni"
+  },
+  {
+    "id": "sto-272",
+    "file": "Wikipedia_Storia-dell-Italia-repubblicana.txt",
+    "frase": "lo statuto dei lavoratori voluto dal ministro Giacomo Brodolini"
+  },
+  {
+    "id": "sto-273",
+    "file": "Wikipedia_Storia-dell-Italia-repubblicana.txt",
+    "frase": "l'istituzione delle Regioni con legge del 16 maggio 1970"
+  },
+  {
+    "id": "sto-274",
+    "file": "Wikipedia_Storia-dell-Italia-repubblicana.txt",
+    "frase": "Il 12 dicembre 1969 la strage di piazza Fontana"
+  },
+  {
+    "id": "sto-275",
+    "file": "Wikipedia_Storia-dell-Italia-repubblicana.txt",
+    "frase": "sfociarono nell'\"autunno caldo\" del 1969"
+  },
+  {
+    "id": "sto-276",
+    "file": "Wikipedia_Storia-dell-Italia-repubblicana.txt",
+    "frase": "il 9 ottobre si verificò il disastro del Vajont, che distrusse Longarone"
+  },
+  {
+    "id": "sto-277",
+    "file": "Wikipedia_Storia-dell-Italia-repubblicana.txt",
+    "frase": "Berlinguer promosse l'eurocomunismo"
+  },
+  {
+    "id": "sto-278",
+    "file": "Wikipedia_Storia-dell-Italia-repubblicana.txt",
+    "frase": "Sandro Pertini, Presidente della"
+  },
+  {
+    "id": "sto-279",
+    "file": "Wikipedia_Storia-dell-Italia-repubblicana.txt",
+    "frase": "in cui persero la vita il magistrato antimafia Giovanni Falcone"
+  },
+  {
+    "id": "sto-280",
+    "file": "Wikipedia_Storia-dell-Italia-repubblicana.txt",
+    "frase": "da un tecnico indipendente, Carlo Azeglio Ciampi"
+  },
+  {
+    "id": "sto-281",
+    "file": "Wikipedia_Storia-dell-Italia-repubblicana.txt",
+    "frase": "il disastro di Marcinelle in una miniera del Belgio nel 1956"
+  },
+  {
+    "id": "sto-282",
+    "file": "Wikipedia_Storia-dell-Italia-repubblicana.txt",
+    "frase": "il nuovo presidente della Repubblica Giovanni Gronchi"
+  },
+  {
+    "id": "sto-283",
+    "file": "Wikipedia_Storia-dell-Italia-repubblicana.txt",
+    "frase": "nel 1951 l'Italia aderì al Trattato di Parigi che istituiva la CECA"
+  },
+  {
+    "id": "sto-284",
+    "file": "Wikipedia_Storia-dell-Italia-repubblicana.txt",
+    "frase": "il cosiddetto \"governo balneare\""
+  },
+  {
+    "id": "sto-285",
+    "file": "Wikipedia_Storia-dell-Italia-repubblicana.txt",
+    "frase": "La complessità del risultato impose la nascita di un \"governo della non sfiducia\""
+  },
+  {
+    "id": "sto-286",
+    "file": "Wikipedia_Storia-dell-Italia-repubblicana.txt",
+    "frase": "vennero fermamente represse dal ministro dell'Interno Mario Scelba"
+  },
+  {
+    "id": "sto-287",
+    "file": "Wikipedia_Guerra-fredda.txt",
+    "frase": "lanciarono il primo satellite artificiale, lo Sputnik 1"
+  },
+  {
+    "id": "sto-288",
+    "file": "Wikipedia_Guerra-fredda.txt",
+    "frase": "il 4 novembre Budapest venne"
+  },
+  {
+    "id": "sto-289",
+    "file": "Wikipedia_Guerra-fredda.txt",
+    "frase": "invase la Cecoslovacchia per fermare la Primavera"
+  },
+  {
+    "id": "sto-290",
+    "file": "Wikipedia_Guerra-fredda.txt",
+    "frase": "glasnost (\"trasparenza\") e perestrojka (\"riorganizzazione\")"
+  },
+  {
+    "id": "sto-291",
+    "file": "Wikipedia_Guerra-fredda.txt",
+    "frase": "La distensione finì con l'invasione sovietica dell'Afghanistan del 1979"
+  },
+  {
+    "id": "sto-292",
+    "file": "Wikipedia_Guerra-fredda.txt",
+    "frase": "SALT I, il primo patto di limitazione globale firmato dalle due superpotenze"
+  },
+  {
+    "id": "sto-293",
+    "file": "Wikipedia_Guerra-fredda.txt",
+    "frase": "l'Esercito Popolare di Liberazione di Mao Zedong"
+  },
+  {
+    "id": "sto-294",
+    "file": "Wikipedia_Guerra-fredda.txt",
+    "frase": "elaborò la strategia della \"risposta flessibile\""
+  },
+  {
+    "id": "sto-295",
+    "file": "Wikipedia_Guerra-fredda.txt",
+    "frase": "alla dissoluzione formale dell'Unione Sovietica nel dicembre 1991"
+  },
+  {
+    "id": "sto-296",
+    "file": "Wikipedia_Storia-dell-Unione-europea.txt",
+    "frase": "iniziato nel 1948 con il Trattato di Bruxelles"
+  },
+  {
+    "id": "sto-297",
+    "file": "Wikipedia_Storia-dell-Unione-europea.txt",
+    "frase": "ministro degli esteri belga Paul-Henri Spaak su un mercato comune"
+  },
+  {
+    "id": "sto-298",
+    "file": "Wikipedia_Storia-dell-Unione-europea.txt",
+    "frase": "lo approvò l'anno dopo in un nuovo referendum"
+  },
+  {
+    "id": "sto-299",
+    "file": "Wikipedia_Storia-dell-Unione-europea.txt",
+    "frase": "Spazio economico europeo (SEE) nel 1992"
+  },
+  {
+    "id": "sto-300",
+    "file": "Wikipedia_Storia-dell-Unione-europea.txt",
+    "frase": "maggioranza fissata in 2/3"
   }
 ]

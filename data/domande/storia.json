@@ -3432,5 +3432,1671 @@
     "spiegazione": "Voce «Storia d'Italia».",
     "fonte": "Wikipedia, «Storia d'Italia» (CC BY-SA 4.0)",
     "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-203",
+    "argomento": "Risorgimento",
+    "livello": 4,
+    "testo": "Quale evento del 15 giugno 1820 è indicato da alcuni storici come inizio del Risorgimento?",
+    "opzioni": [
+      "Il Congresso di Vienna",
+      "Le Cinque giornate di Milano",
+      "I moti siciliani",
+      "La spedizione dei Mille"
+    ],
+    "corretta": 2,
+    "spiegazione": "Altri fanno partire il Risorgimento dalla prima guerra d'indipendenza (1848-1849).",
+    "fonte": "Wikipedia, «Risorgimento» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-204",
+    "argomento": "Risorgimento",
+    "livello": 4,
+    "testo": "Quale proclama del 1815 è considerato da alcuni storici l'inizio del Risorgimento?",
+    "opzioni": [
+      "Il proclama di Teano",
+      "Il proclama di Torino",
+      "Il proclama di Moncalieri",
+      "Il proclama di Rimini"
+    ],
+    "corretta": 3,
+    "spiegazione": "Per questi storici il Risorgimento va dal proclama di Rimini (1815) alla breccia di Porta Pia (1870).",
+    "fonte": "Wikipedia, «Risorgimento» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-205",
+    "argomento": "Risorgimento",
+    "livello": 3,
+    "testo": "Da quale organizzazione derivavano società segrete come la Carboneria?",
+    "opzioni": [
+      "Dalla massoneria",
+      "Dall'ordine dei Gesuiti",
+      "Dalle corporazioni medievali",
+      "Dai partiti politici inglesi"
+    ],
+    "corretta": 0,
+    "spiegazione": "Furono i laboratori in cui la classe dirigente patriottica pianificò i moti.",
+    "fonte": "Wikipedia, «Risorgimento» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-206",
+    "argomento": "Risorgimento",
+    "livello": 3,
+    "testo": "Quando Leopoldo II concesse lo Statuto in Toscana?",
+    "opzioni": [
+      "Il 17 marzo 1861",
+      "Il 17 febbraio 1848",
+      "Il 4 marzo 1848",
+      "Il 14 marzo 1848"
+    ],
+    "corretta": 1,
+    "spiegazione": "Seguirono lo Statuto albertino (4 marzo) e lo statuto dello Stato Pontificio (14 marzo).",
+    "fonte": "Wikipedia, «Risorgimento» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-207",
+    "argomento": "Risorgimento",
+    "livello": 3,
+    "testo": "Quanto durò la Repubblica Romana del 1849?",
+    "opzioni": [
+      "Due anni",
+      "Dal 1849 al 1870",
+      "Da febbraio a luglio 1849",
+      "Dieci giorni"
+    ],
+    "corretta": 2,
+    "spiegazione": "Durante la Repubblica Pio IX fuggì da Roma; Napoleone III la represse.",
+    "fonte": "Wikipedia, «Risorgimento» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-208",
+    "argomento": "Risorgimento",
+    "livello": 3,
+    "testo": "Chi guidò la spedizione di Sapri del 1857, finita con la morte sua e dei compagni?",
+    "opzioni": [
+      "Ciro Menotti",
+      "Felice Orsini",
+      "Giuseppe Garibaldi",
+      "Carlo Pisacane"
+    ],
+    "corretta": 3,
+    "spiegazione": "Era ispirata al credo mazziniano di «dare l'esempio».",
+    "fonte": "Wikipedia, «Risorgimento» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-209",
+    "argomento": "Risorgimento",
+    "livello": 3,
+    "testo": "Da chi furono sconfitti i garibaldini nella battaglia di Mentana del 1867?",
+    "opzioni": [
+      "Dalle truppe francesi",
+      "Dall'esercito italiano",
+      "Dai borbonici",
+      "Dall'esercito austriaco"
+    ],
+    "corretta": 0,
+    "spiegazione": "Nel 1862 Garibaldi era stato fermato in Aspromonte dall'esercito italiano.",
+    "fonte": "Wikipedia, «Risorgimento» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-210",
+    "argomento": "Risorgimento",
+    "livello": 4,
+    "testo": "Dove fu fermato Garibaldi dall'esercito italiano nel 1862, nel tentativo di marciare su Roma?",
+    "opzioni": [
+      "A Teano",
+      "In Aspromonte",
+      "A Bezzecca",
+      "A Mentana"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'esercito fu inviato dal governo Rattazzi.",
+    "fonte": "Wikipedia, «Risorgimento» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-211",
+    "argomento": "Risorgimento",
+    "livello": 3,
+    "testo": "In che anno il Veneto fu incorporato nel Regno d'Italia?",
+    "opzioni": [
+      "Nel 1859",
+      "Nel 1861",
+      "Nel 1866",
+      "Nel 1870"
+    ],
+    "corretta": 2,
+    "spiegazione": "Dopo la terza guerra d'indipendenza; Roma fu presa nel 1870.",
+    "fonte": "Wikipedia, «Risorgimento» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-212",
+    "argomento": "Risorgimento",
+    "livello": 3,
+    "testo": "Cosa fece Vittorio Emanuele II dello Statuto albertino, diversamente dagli altri sovrani italiani dopo il 1849?",
+    "opzioni": [
+      "Lo sospese fino al 1861",
+      "Lo sostituì con una costituzione repubblicana",
+      "Lo abolì",
+      "Non lo ritirò"
+    ],
+    "corretta": 3,
+    "spiegazione": "Gli altri sovrani revocarono le costituzioni concesse nel 1848.",
+    "fonte": "Wikipedia, «Risorgimento» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-213",
+    "argomento": "Risorgimento",
+    "livello": 3,
+    "testo": "Quale papa, eletto il 16 giugno 1846, fu inizialmente ritenuto un «liberale»?",
+    "opzioni": [
+      "Pio IX",
+      "Gregorio XVI",
+      "Pio VII",
+      "Leone XIII"
+    ],
+    "corretta": 0,
+    "spiegazione": "Su di lui puntò il movimento neoguelfo.",
+    "fonte": "Wikipedia, «Risorgimento» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-214",
+    "argomento": "Risorgimento",
+    "livello": 4,
+    "testo": "Quali patrioti erano unitaristi repubblicani e federalisti contrari alla monarchia?",
+    "opzioni": [
+      "Gioberti e Rosmini",
+      "Nicolò Tommaseo e Carlo Cattaneo",
+      "Cavour e D'Azeglio",
+      "Vittorio Emanuele II e La Marmora"
+    ],
+    "corretta": 1,
+    "spiegazione": "I cattolici neoguelfi come Gioberti e Rosmini puntavano invece su una confederazione guidata dal papa.",
+    "fonte": "Wikipedia, «Risorgimento» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-215",
+    "argomento": "Risorgimento",
+    "livello": 3,
+    "testo": "Quali pensatori cattolici auspicavano una soluzione neoguelfa?",
+    "opzioni": [
+      "Cavour e Ricasoli",
+      "Cattaneo e Ferrari",
+      "Vincenzo Gioberti e Antonio Rosmini",
+      "Mazzini e Garibaldi"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il neoguelfismo immaginava un'Italia federata sotto la guida del papa.",
+    "fonte": "Wikipedia, «Risorgimento» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-216",
+    "argomento": "Risorgimento",
+    "livello": 4,
+    "testo": "Che cosa indica la storiografia con «quarta guerra d'indipendenza»?",
+    "opzioni": [
+      "La guerra del 1866",
+      "La guerra di Crimea",
+      "La guerra di Libia",
+      "La Prima guerra mondiale, che portò all'annessione delle terre irredente"
+    ],
+    "corretta": 3,
+    "spiegazione": "Così il compimento dell'unità si estende fino al primo Novecento.",
+    "fonte": "Wikipedia, «Risorgimento» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-217",
+    "argomento": "Risorgimento",
+    "livello": 2,
+    "testo": "Da quanti volontari era formata, all'incirca, la spedizione dei Mille?",
+    "opzioni": [
+      "Poco più di un migliaio",
+      "Circa 10.000",
+      "Circa 50.000",
+      "Circa 300"
+    ],
+    "corretta": 0,
+    "spiegazione": "Garibaldi partì da Quarto nel maggio 1860.",
+    "fonte": "Wikipedia, «Risorgimento» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-218",
+    "argomento": "Risorgimento",
+    "livello": 4,
+    "testo": "In quale località fu arrestato Garibaldi dopo Mentana, prima di essere riportato a Caprera?",
+    "opzioni": [
+      "Teano",
+      "Figline Valdarno",
+      "Varignano",
+      "Aspromonte"
+    ],
+    "corretta": 1,
+    "spiegazione": "Lo fece arrestare il governo Menabrea.",
+    "fonte": "Wikipedia, «Risorgimento» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-219",
+    "argomento": "Prima guerra mondiale",
+    "livello": 2,
+    "testo": "Chi uccise l'arciduca Francesco Ferdinando a Sarajevo nel 1914?",
+    "opzioni": [
+      "Un ufficiale austriaco",
+      "Un agente russo",
+      "Gavrilo Princip, studente bosniaco della Giovane Bosnia",
+      "Un anarchico italiano"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'attentato del 28 giugno 1914 innescò il conflitto.",
+    "fonte": "Wikipedia, «Prima guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-220",
+    "argomento": "Prima guerra mondiale",
+    "livello": 3,
+    "testo": "Quando l'Italia ruppe la Triplice alleanza, prima di entrare in guerra?",
+    "opzioni": [
+      "Il 26 aprile 1915",
+      "Il 4 novembre 1918",
+      "Il 24 maggio 1915",
+      "Il 3 maggio 1915"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il 24 maggio dichiarò guerra all'Austria-Ungheria, non alla Germania.",
+    "fonte": "Wikipedia, «Prima guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-221",
+    "argomento": "Prima guerra mondiale",
+    "livello": 2,
+    "testo": "Chi era il capo di stato maggiore dell'esercito italiano all'entrata in guerra nel 1915?",
+    "opzioni": [
+      "Luigi Cadorna",
+      "Pietro Badoglio",
+      "Armando Diaz",
+      "Vittorio Emanuele III"
+    ],
+    "corretta": 0,
+    "spiegazione": "Dopo Caporetto fu sostituito da Armando Diaz.",
+    "fonte": "Wikipedia, «Prima guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-222",
+    "argomento": "Prima guerra mondiale",
+    "livello": 3,
+    "testo": "Quale battaglia del settembre 1914 fermò l'avanzata tedesca in Francia, spegnendo le speranze di una guerra breve?",
+    "opzioni": [
+      "Ypres",
+      "La prima battaglia della Marna",
+      "La Somme",
+      "Verdun"
+    ],
+    "corretta": 1,
+    "spiegazione": "Da allora il conflitto degenerò in una logorante guerra di trincea.",
+    "fonte": "Wikipedia, «Prima guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-223",
+    "argomento": "Prima guerra mondiale",
+    "livello": 3,
+    "testo": "Quale transatlantico affondato dai tedeschi contribuì a orientare l'opinione pubblica americana contro la Germania?",
+    "opzioni": [
+      "Il Britannic",
+      "La Bismarck",
+      "Il Lusitania",
+      "Il Titanic"
+    ],
+    "corretta": 2,
+    "spiegazione": "Wilson restò comunque neutrale fino al 1917.",
+    "fonte": "Wikipedia, «Prima guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-224",
+    "argomento": "Prima guerra mondiale",
+    "livello": 4,
+    "testo": "Come si chiama il telegramma con cui la Germania cercò di spingere il Messico ad attaccare gli Stati Uniti?",
+    "opzioni": [
+      "Il lungo telegramma",
+      "Il telegramma di Kruger",
+      "Il telegramma di Ems",
+      "Il telegramma Zimmermann"
+    ],
+    "corretta": 3,
+    "spiegazione": "Contribuì alla decisione di Wilson di entrare in guerra.",
+    "fonte": "Wikipedia, «Prima guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-225",
+    "argomento": "Prima guerra mondiale",
+    "livello": 3,
+    "testo": "Quando gli Stati Uniti dichiararono guerra alla Germania?",
+    "opzioni": [
+      "Il 6 aprile 1917",
+      "L'11 novembre 1918",
+      "Il 4 agosto 1914",
+      "Il 7 dicembre 1917"
+    ],
+    "corretta": 0,
+    "spiegazione": "Wilson aveva presentato la proposta al Congresso il 4 aprile.",
+    "fonte": "Wikipedia, «Prima guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-226",
+    "argomento": "Prima guerra mondiale",
+    "livello": 4,
+    "testo": "Con quale trattato del 1919 fu regolata la pace con l'Austria?",
+    "opzioni": [
+      "Il trattato di Neuilly",
+      "Il trattato di Saint-Germain-en-Laye",
+      "Il trattato del Trianon",
+      "Il trattato di Sèvres"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il Trianon riguardò l'Ungheria, Neuilly la Bulgaria, Sèvres l'Impero ottomano.",
+    "fonte": "Wikipedia, «Prima guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-227",
+    "argomento": "Prima guerra mondiale",
+    "livello": 4,
+    "testo": "Con quale trattato del 1920 fu regolata la pace con l'Ungheria?",
+    "opzioni": [
+      "Il trattato di Versailles",
+      "Il trattato di Rapallo",
+      "Il trattato del Trianon",
+      "Il trattato di Saint-Germain"
+    ],
+    "corretta": 2,
+    "spiegazione": "Fu firmato il 4 giugno 1920.",
+    "fonte": "Wikipedia, «Prima guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-228",
+    "argomento": "Prima guerra mondiale",
+    "livello": 2,
+    "testo": "In quale città aveva sede la Società delle Nazioni?",
+    "opzioni": [
+      "Parigi",
+      "New York",
+      "Londra",
+      "Ginevra"
+    ],
+    "corretta": 3,
+    "spiegazione": "Fu istituita dopo la Prima guerra mondiale.",
+    "fonte": "Wikipedia, «Prima guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-229",
+    "argomento": "Prima guerra mondiale",
+    "livello": 3,
+    "testo": "Come è conosciuta in Italia l'offensiva austro-ungarica del maggio 1916 sugli Altipiani?",
+    "opzioni": [
+      "Strafexpedition («spedizione punitiva»)",
+      "Offensiva Brusilov",
+      "Battaglia del solstizio",
+      "Disfatta di Caporetto"
+    ],
+    "corretta": 0,
+    "spiegazione": "Iniziò il 15 maggio 1916 tra la valle dell'Adige e la Valsugana.",
+    "fonte": "Wikipedia, «Prima guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-230",
+    "argomento": "Prima guerra mondiale",
+    "livello": 4,
+    "testo": "Quale politico britannico sostenne con vigore l'attacco ai Dardanelli (campagna di Gallipoli)?",
+    "opzioni": [
+      "David Lloyd George",
+      "Winston Churchill, primo lord dell'Ammiragliato",
+      "Lord Kitchener soltanto",
+      "Herbert Asquith"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'operazione fallì con pesanti perdite.",
+    "fonte": "Wikipedia, «Prima guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-231",
+    "argomento": "Prima guerra mondiale",
+    "livello": 3,
+    "testo": "In quale battaglia del 1915 i tedeschi usarono per la prima volta su vasta scala gas venefici (cloro)?",
+    "opzioni": [
+      "A Caporetto",
+      "A Verdun",
+      "Nella seconda battaglia di Ypres",
+      "Nella battaglia della Marna"
+    ],
+    "corretta": 2,
+    "spiegazione": "Iniziò così la «guerra dei gas».",
+    "fonte": "Wikipedia, «Prima guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-232",
+    "argomento": "Prima guerra mondiale",
+    "livello": 4,
+    "testo": "Quale generale tedesco fu richiamato dalla pensione e vinse a Tannenberg contro i russi?",
+    "opzioni": [
+      "Helmuth von Moltke",
+      "Maximilian von Prittwitz",
+      "Erich von Falkenhayn",
+      "Paul von Hindenburg"
+    ],
+    "corretta": 3,
+    "spiegazione": "Sostituì Prittwitz al comando sul fronte orientale.",
+    "fonte": "Wikipedia, «Prima guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-233",
+    "argomento": "Prima guerra mondiale",
+    "livello": 3,
+    "testo": "Quale generale francese ebbe il comando unificato degli Alleati sul fronte occidentale nel 1918?",
+    "opzioni": [
+      "Ferdinand Foch",
+      "Robert Nivelle",
+      "Philippe Pétain",
+      "Joseph Joffre"
+    ],
+    "corretta": 0,
+    "spiegazione": "Predispose la serie di attacchi dell'offensiva dei cento giorni.",
+    "fonte": "Wikipedia, «Prima guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-234",
+    "argomento": "Prima guerra mondiale",
+    "livello": 4,
+    "testo": "Chi guidò la Turchia verso la repubblica dopo la Prima guerra mondiale?",
+    "opzioni": [
+      "Talat Pascià",
+      "Mustafa Kemal",
+      "Ismail Enver",
+      "Mehmed VI"
+    ],
+    "corretta": 1,
+    "spiegazione": "Nel 1923 il sultanato fu abolito.",
+    "fonte": "Wikipedia, «Prima guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-235",
+    "argomento": "Prima guerra mondiale",
+    "livello": 2,
+    "testo": "Come era definita inizialmente la Prima guerra mondiale dai contemporanei?",
+    "opzioni": [
+      "«Guerra fredda»",
+      "«Guerra dei trent'anni»",
+      "«Guerra europea»",
+      "«Guerra lampo»"
+    ],
+    "corretta": 2,
+    "spiegazione": "Prese poi il nome di guerra mondiale o Grande guerra.",
+    "fonte": "Wikipedia, «Prima guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-236",
+    "argomento": "Fascismo",
+    "livello": 3,
+    "testo": "Quale legge elettorale con un grande premio di maggioranza favorì il «listone» fascista nelle elezioni del 1924?",
+    "opzioni": [
+      "La legge Rocco",
+      "La legge Coppino",
+      "La legge Casati",
+      "La legge Acerbo"
+    ],
+    "corretta": 3,
+    "spiegazione": "Le elezioni furono segnate da brogli e violenze, denunciati da Matteotti.",
+    "fonte": "Wikipedia, «Fascismo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-237",
+    "argomento": "Fascismo",
+    "livello": 3,
+    "testo": "Quanti deputati fascisti furono eletti nelle elezioni del 1921?",
+    "opzioni": [
+      "35",
+      "120",
+      "300",
+      "Nessuno"
+    ],
+    "corretta": 0,
+    "spiegazione": "Nel 1919 i Fasci non avevano ottenuto alcun seggio.",
+    "fonte": "Wikipedia, «Fascismo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-238",
+    "argomento": "Fascismo",
+    "livello": 4,
+    "testo": "Con chi Mussolini elaborò nel 1932 una sintesi dottrinaria del fascismo?",
+    "opzioni": [
+      "Alfredo Rocco",
+      "Giovanni Gentile",
+      "Benedetto Croce",
+      "Gabriele D'Annunzio"
+    ],
+    "corretta": 1,
+    "spiegazione": "Secondo Mussolini il fascismo non nacque da una dottrina preesistente ma dall'azione.",
+    "fonte": "Wikipedia, «Fascismo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-239",
+    "argomento": "Fascismo",
+    "livello": 3,
+    "testo": "Come si chiamava il primo programma del movimento fascista (1919)?",
+    "opzioni": [
+      "Manifesto di Verona",
+      "Carta del lavoro",
+      "Programma di San Sepolcro",
+      "Programma di Erfurt"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il Manifesto di Verona è invece del periodo della RSI.",
+    "fonte": "Wikipedia, «Fascismo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-240",
+    "argomento": "Fascismo",
+    "livello": 3,
+    "testo": "In quale anno, secondo la voce, il fascismo si costituì in dittatura?",
+    "opzioni": [
+      "Nel 1922",
+      "Nel 1929",
+      "Nel 1936",
+      "Nel 1925"
+    ],
+    "corretta": 3,
+    "spiegazione": "Raggiunse il potere nel 1922 con la marcia su Roma.",
+    "fonte": "Wikipedia, «Fascismo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-241",
+    "argomento": "Fascismo",
+    "livello": 3,
+    "testo": "Come si presentava il fascismo rispetto a capitalismo liberale e comunismo marxista?",
+    "opzioni": [
+      "Come una «terza via» alternativa a entrambi",
+      "Come una variante del liberalismo",
+      "Come un movimento comunista",
+      "Come un partito monarchico liberale"
+    ],
+    "corretta": 0,
+    "spiegazione": "Si fondava su una visione interclassista e corporativa.",
+    "fonte": "Wikipedia, «Fascismo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-242",
+    "argomento": "Fascismo",
+    "livello": 3,
+    "testo": "Quale politica economica di autosufficienza esaltò il fascismo?",
+    "opzioni": [
+      "Il libero scambio",
+      "L'autarchia",
+      "La pianificazione sovietica",
+      "Il keynesismo"
+    ],
+    "corretta": 1,
+    "spiegazione": "Si accompagnò a un nazionalismo anche linguistico.",
+    "fonte": "Wikipedia, «Fascismo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-243",
+    "argomento": "Fascismo",
+    "livello": 3,
+    "testo": "Cosa subirono le minoranze linguistiche durante il fascismo?",
+    "opzioni": [
+      "Il riconoscimento dell'autonomia",
+      "Il bilinguismo obbligatorio",
+      "Una politica di italianizzazione forzata",
+      "La tutela costituzionale"
+    ],
+    "corretta": 2,
+    "spiegazione": "Rientrava nel nazionalismo anche linguistico del regime.",
+    "fonte": "Wikipedia, «Fascismo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-244",
+    "argomento": "Fascismo",
+    "livello": 2,
+    "testo": "In quale periodo il governo Mussolini varò la normativa antiebraica (leggi razziali)?",
+    "opzioni": [
+      "Nel 1922",
+      "Nel 1929",
+      "Nel 1943",
+      "Nell'autunno 1938"
+    ],
+    "corretta": 3,
+    "spiegazione": "In parte a imitazione di quanto avveniva in Germania.",
+    "fonte": "Wikipedia, «Fascismo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-245",
+    "argomento": "Fascismo",
+    "livello": 4,
+    "testo": "Quali gerarchi promossero l'ordine del giorno del 25 luglio 1943 al Gran Consiglio?",
+    "opzioni": [
+      "Grandi, Bottai e Ciano",
+      "Gentile, Rocco e Volpe",
+      "Farinacci, Starace e Balbo",
+      "Badoglio, Ciano e Graziani"
+    ],
+    "corretta": 0,
+    "spiegazione": "Chiedeva al Re di riprendere il potere e portò all'arresto di Mussolini.",
+    "fonte": "Wikipedia, «Fascismo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-246",
+    "argomento": "Fascismo",
+    "livello": 2,
+    "testo": "Come si chiama il ricorso alla violenza come metodo di lotta politica tipico del primo fascismo?",
+    "opzioni": [
+      "Arditismo",
+      "Squadrismo",
+      "Brigantaggio",
+      "Terrorismo rosso"
+    ],
+    "corretta": 1,
+    "spiegazione": "Caratterizzò il fascismo fin dall'inizio, insieme all'ostilità alla democrazia.",
+    "fonte": "Wikipedia, «Fascismo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-247",
+    "argomento": "Fascismo",
+    "livello": 4,
+    "testo": "Secondo le stime di Gaetano Salvemini, quante vittime causarono le violenze del biennio 1921-22?",
+    "opzioni": [
+      "Nessuna",
+      "Circa trecentomila",
+      "Circa tremila",
+      "Circa trenta"
+    ],
+    "corretta": 2,
+    "spiegazione": "Le violenze colpivano soprattutto sindacati e partiti socialisti.",
+    "fonte": "Wikipedia, «Fascismo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-248",
+    "argomento": "Fascismo",
+    "livello": 3,
+    "testo": "Quali governi formarono la coalizione del primo governo Mussolini?",
+    "opzioni": [
+      "Fascisti e socialisti",
+      "Solo fascisti",
+      "Fascisti e comunisti",
+      "Fascisti con nazionalisti, liberali e popolari"
+    ],
+    "corretta": 3,
+    "spiegazione": "Dopo il delitto Matteotti il regime assunse connotazioni dittatoriali.",
+    "fonte": "Wikipedia, «Fascismo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-249",
+    "argomento": "Seconda guerra mondiale",
+    "livello": 3,
+    "testo": "Quando fu firmato il patto Molotov-Ribbentrop tra Germania e URSS?",
+    "opzioni": [
+      "Il 24 agosto 1939",
+      "Il 23 giugno 1940",
+      "Il 1° settembre 1939",
+      "Il 22 giugno 1941"
+    ],
+    "corretta": 0,
+    "spiegazione": "Un protocollo segreto prevedeva la spartizione della Polonia.",
+    "fonte": "Wikipedia, «Seconda guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-250",
+    "argomento": "Seconda guerra mondiale",
+    "livello": 4,
+    "testo": "Quale durata prevedeva il patto di non aggressione Molotov-Ribbentrop?",
+    "opzioni": [
+      "Un anno",
+      "Dieci anni",
+      "Cinque anni",
+      "Venticinque anni"
+    ],
+    "corretta": 1,
+    "spiegazione": "Fu violato dalla Germania con l'operazione Barbarossa nel 1941.",
+    "fonte": "Wikipedia, «Seconda guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-251",
+    "argomento": "Seconda guerra mondiale",
+    "livello": 3,
+    "testo": "Come si chiamò l'invasione tedesca di Danimarca e Norvegia del 9 aprile 1940?",
+    "opzioni": [
+      "Operazione Leone marino",
+      "Fall Gelb",
+      "Operazione Weserübung",
+      "Operazione Barbarossa"
+    ],
+    "corretta": 2,
+    "spiegazione": "Interruppe la «strana guerra».",
+    "fonte": "Wikipedia, «Seconda guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-252",
+    "argomento": "Seconda guerra mondiale",
+    "livello": 3,
+    "testo": "In quale battaglia navale del marzo 1941 la flotta italiana perse tre incrociatori pesanti?",
+    "opzioni": [
+      "Midway",
+      "Lissa",
+      "Taranto",
+      "Capo Matapan"
+    ],
+    "corretta": 3,
+    "spiegazione": "La sortita avvenne nelle acque a sud di Creta.",
+    "fonte": "Wikipedia, «Seconda guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-253",
+    "argomento": "Seconda guerra mondiale",
+    "livello": 4,
+    "testo": "Quale depressione naturale rendeva El Alamein l'ultimo ostacolo geografico prima del Cairo?",
+    "opzioni": [
+      "La depressione di Qattara",
+      "La depressione del Mar Morto",
+      "Il delta del Nilo",
+      "Il deserto del Sinai"
+    ],
+    "corretta": 0,
+    "spiegazione": "El Alamein era stretta tra il mare a nord e la depressione a sud.",
+    "fonte": "Wikipedia, «Seconda guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-254",
+    "argomento": "Seconda guerra mondiale",
+    "livello": 3,
+    "testo": "Dove sbarcarono gli anglo-statunitensi il 22 gennaio 1944 per aggirare la linea Gustav?",
+    "opzioni": [
+      "A Salerno",
+      "Tra Anzio e Nettuno",
+      "A Gela",
+      "In Normandia"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'obiettivo era aprire la strada verso Roma.",
+    "fonte": "Wikipedia, «Seconda guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-255",
+    "argomento": "Seconda guerra mondiale",
+    "livello": 2,
+    "testo": "Quale antica abbazia fu completamente distrutta dai bombardamenti alleati nel 1944?",
+    "opzioni": [
+      "San Galgano",
+      "Subiaco",
+      "Montecassino",
+      "Pomposa"
+    ],
+    "corretta": 2,
+    "spiegazione": "Si trovava lungo la linea Gustav.",
+    "fonte": "Wikipedia, «Seconda guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-256",
+    "argomento": "Seconda guerra mondiale",
+    "livello": 3,
+    "testo": "Tra quali città si estendeva la Linea Gotica?",
+    "opzioni": [
+      "Da Roma a Pescara",
+      "Da Genova a Venezia",
+      "Da Gaeta a Ortona",
+      "Da Massa a Pesaro"
+    ],
+    "corretta": 3,
+    "spiegazione": "Vi ripiegarono i tedeschi dopo la liberazione di Roma.",
+    "fonte": "Wikipedia, «Seconda guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-257",
+    "argomento": "Seconda guerra mondiale",
+    "livello": 3,
+    "testo": "Quando fu liberata Firenze?",
+    "opzioni": [
+      "Il 13 agosto 1944",
+      "Il 18 luglio 1944",
+      "Il 4 giugno 1944",
+      "Il 25 aprile 1945"
+    ],
+    "corretta": 0,
+    "spiegazione": "Ancona era stata liberata il 18 luglio.",
+    "fonte": "Wikipedia, «Seconda guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-258",
+    "argomento": "Seconda guerra mondiale",
+    "livello": 4,
+    "testo": "Dove avvenne il 25 aprile 1945 il primo incontro tra truppe sovietiche e statunitensi?",
+    "opzioni": [
+      "A Praga",
+      "A Torgau, sul fiume Elba",
+      "A Vienna",
+      "A Berlino"
+    ],
+    "corretta": 1,
+    "spiegazione": "Lo stesso giorno in Italia si celebra la Liberazione.",
+    "fonte": "Wikipedia, «Seconda guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-259",
+    "argomento": "Seconda guerra mondiale",
+    "livello": 3,
+    "testo": "Quando fu liberata Bologna?",
+    "opzioni": [
+      "Il 1° maggio 1945",
+      "Il 25 aprile 1945",
+      "Il 21 aprile 1945",
+      "Il 4 giugno 1944"
+    ],
+    "corretta": 2,
+    "spiegazione": "Gli Alleati valicarono poi il Po.",
+    "fonte": "Wikipedia, «Seconda guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-260",
+    "argomento": "Seconda guerra mondiale",
+    "livello": 3,
+    "testo": "Come si chiamava il programma statunitense per la bomba atomica, coordinato da Oppenheimer?",
+    "opzioni": [
+      "Progetto Apollo",
+      "Progetto Trinity Bay",
+      "Operazione Overlord",
+      "Progetto Manhattan"
+    ],
+    "corretta": 3,
+    "spiegazione": "Vi collaborarono centinaia di scienziati statunitensi e britannici.",
+    "fonte": "Wikipedia, «Seconda guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-261",
+    "argomento": "Seconda guerra mondiale",
+    "livello": 4,
+    "testo": "Quando fu testato con successo il primo prototipo di bomba atomica?",
+    "opzioni": [
+      "Il 16 luglio 1945, ad Alamogordo",
+      "Il 6 agosto 1945, a Hiroshima",
+      "Il 2 settembre 1945, nel Pacifico",
+      "Nel 1949, in Kazakistan"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il prototipo era chiamato «The Gadget».",
+    "fonte": "Wikipedia, «Seconda guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-262",
+    "argomento": "Seconda guerra mondiale",
+    "livello": 4,
+    "testo": "Quale confine orientale fu fissato per la Germania alla conferenza di Potsdam del luglio 1945?",
+    "opzioni": [
+      "La linea Curzon",
+      "La linea Oder-Neiße",
+      "Il fiume Reno",
+      "La linea Maginot"
+    ],
+    "corretta": 1,
+    "spiegazione": "Slesia e Pomerania passarono alla Polonia.",
+    "fonte": "Wikipedia, «Seconda guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-263",
+    "argomento": "Seconda guerra mondiale",
+    "livello": 2,
+    "testo": "Chi sostituì Mussolini alla guida del governo dopo il 25 luglio 1943?",
+    "opzioni": [
+      "Dino Grandi",
+      "Vittorio Emanuele III",
+      "Il maresciallo Pietro Badoglio",
+      "Ivanoe Bonomi"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il nuovo governo dichiarò inizialmente di voler continuare la guerra.",
+    "fonte": "Wikipedia, «Seconda guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-264",
+    "argomento": "Seconda guerra mondiale",
+    "livello": 2,
+    "testo": "Quando si arrese il Giappone, chiudendo la guerra in Asia?",
+    "opzioni": [
+      "L'8 maggio 1945",
+      "Il 6 agosto 1945",
+      "Il 7 dicembre 1945",
+      "Il 2 settembre 1945"
+    ],
+    "corretta": 3,
+    "spiegazione": "Dopo i bombardamenti atomici di Hiroshima e Nagasaki.",
+    "fonte": "Wikipedia, «Seconda guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-265",
+    "argomento": "Seconda guerra mondiale",
+    "livello": 2,
+    "testo": "Quanti morti causò, secondo le stime, la Seconda guerra mondiale?",
+    "opzioni": [
+      "Tra 55 e 60 milioni",
+      "Circa 15 milioni",
+      "Oltre 200 milioni",
+      "Circa 5 milioni"
+    ],
+    "corretta": 0,
+    "spiegazione": "È il conflitto più sanguinoso della storia.",
+    "fonte": "Wikipedia, «Seconda guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-266",
+    "argomento": "Seconda guerra mondiale",
+    "livello": 3,
+    "testo": "Quali città liberò l'operazione sovietica «Stella» nel febbraio 1943?",
+    "opzioni": [
+      "Kiev e Minsk",
+      "Kursk e Char'kov",
+      "Leningrado e Mosca",
+      "Berlino e Varsavia"
+    ],
+    "corretta": 1,
+    "spiegazione": "Costrinse i tedeschi a sgombrare il Caucaso.",
+    "fonte": "Wikipedia, «Seconda guerra mondiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-267",
+    "argomento": "Repubblica",
+    "livello": 3,
+    "testo": "In che data nacque ufficialmente la Repubblica Italiana, con la proclamazione dei risultati definitivi del referendum?",
+    "opzioni": [
+      "Il 2 giugno 1946",
+      "Il 25 aprile 1945",
+      "Il 18 giugno 1946",
+      "Il 1° gennaio 1948"
+    ],
+    "corretta": 2,
+    "spiegazione": "La Corte di cassazione respinse i ricorsi e completò lo scrutinio.",
+    "fonte": "Wikipedia, «Storia dell'Italia repubblicana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-268",
+    "argomento": "Repubblica",
+    "livello": 3,
+    "testo": "Come si chiama il provvedimento del 22 giugno 1946 per la riconciliazione nazionale?",
+    "opzioni": [
+      "Decreto De Gasperi",
+      "Lodo Moro",
+      "Legge Scelba",
+      "Amnistia Togliatti"
+    ],
+    "corretta": 3,
+    "spiegazione": "Prese il nome dal guardasigilli che l'aveva concepita.",
+    "fonte": "Wikipedia, «Storia dell'Italia repubblicana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-269",
+    "argomento": "Repubblica",
+    "livello": 3,
+    "testo": "Quale ministro delle Finanze realizzò un riassetto fiscale negli anni del centrismo?",
+    "opzioni": [
+      "Ezio Vanoni",
+      "Giulio Andreotti",
+      "Luigi Einaudi",
+      "Ugo La Malfa"
+    ],
+    "corretta": 0,
+    "spiegazione": "Nello stesso periodo nacque la Cassa per il Mezzogiorno.",
+    "fonte": "Wikipedia, «Storia dell'Italia repubblicana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-270",
+    "argomento": "Repubblica",
+    "livello": 3,
+    "testo": "Quale ente nacque nel 1964 dopo la nazionalizzazione dell'energia elettrica?",
+    "opzioni": [
+      "L'ENI",
+      "L'Enel",
+      "L'Agip",
+      "L'IRI"
+    ],
+    "corretta": 1,
+    "spiegazione": "La nazionalizzazione fu osteggiata dal PLI e da Edison e SADE.",
+    "fonte": "Wikipedia, «Storia dell'Italia repubblicana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-271",
+    "argomento": "Repubblica",
+    "livello": 3,
+    "testo": "Fino a quale età fu estesa la scuola dell'obbligo dal primo centro-sinistra?",
+    "opzioni": [
+      "11 anni",
+      "18 anni",
+      "14 anni",
+      "16 anni"
+    ],
+    "corretta": 2,
+    "spiegazione": "Fu uno degli atti di rilievo del governo di centro-sinistra.",
+    "fonte": "Wikipedia, «Storia dell'Italia repubblicana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-272",
+    "argomento": "Repubblica",
+    "livello": 3,
+    "testo": "Quale ministro volle lo Statuto dei lavoratori, approvato il 20 maggio 1970?",
+    "opzioni": [
+      "Pietro Nenni",
+      "Carlo Donat-Cattin",
+      "Amintore Fanfani",
+      "Giacomo Brodolini"
+    ],
+    "corretta": 3,
+    "spiegazione": "Nello stesso periodo furono approvate le norme sui referendum.",
+    "fonte": "Wikipedia, «Storia dell'Italia repubblicana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-273",
+    "argomento": "Repubblica",
+    "livello": 3,
+    "testo": "Con quale legge del 1970 furono istituite le Regioni a statuto ordinario?",
+    "opzioni": [
+      "La legge del 16 maggio 1970",
+      "La legge del 1° gennaio 1948",
+      "La legge del 1963",
+      "La legge del 2001"
+    ],
+    "corretta": 0,
+    "spiegazione": "Fu una delle riforme in risposta al Sessantotto.",
+    "fonte": "Wikipedia, «Storia dell'Italia repubblicana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-274",
+    "argomento": "Repubblica",
+    "livello": 2,
+    "testo": "Quando avvenne la strage di piazza Fontana a Milano?",
+    "opzioni": [
+      "Il 16 marzo 1978",
+      "Il 12 dicembre 1969",
+      "Il 2 agosto 1980",
+      "Il 28 maggio 1974"
+    ],
+    "corretta": 1,
+    "spiegazione": "Uccise diciassette persone; le indagini puntarono inizialmente sugli anarchici.",
+    "fonte": "Wikipedia, «Storia dell'Italia repubblicana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-275",
+    "argomento": "Repubblica",
+    "livello": 3,
+    "testo": "Come è ricordata l'ondata di scioperi del 1969 che coinvolse circa 1,5 milioni di lavoratori?",
+    "opzioni": [
+      "Marcia dei quarantamila",
+      "Biennio rosso",
+      "Autunno caldo",
+      "Maggio francese"
+    ],
+    "corretta": 2,
+    "spiegazione": "Portò al rinnovo del contratto collettivo nazionale.",
+    "fonte": "Wikipedia, «Storia dell'Italia repubblicana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-276",
+    "argomento": "Repubblica",
+    "livello": 3,
+    "testo": "Quale disastro del 9 ottobre 1963 distrusse Longarone causando circa duemila morti?",
+    "opzioni": [
+      "Il terremoto del Belice",
+      "L'alluvione di Firenze",
+      "Il disastro di Seveso",
+      "Il disastro del Vajont"
+    ],
+    "corretta": 3,
+    "spiegazione": "Fu attribuito alla sottovalutazione del rischio idrogeologico.",
+    "fonte": "Wikipedia, «Storia dell'Italia repubblicana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-277",
+    "argomento": "Repubblica",
+    "livello": 3,
+    "testo": "Quale linea politica promosse Berlinguer per legittimare il PCI come forza di governo?",
+    "opzioni": [
+      "L'eurocomunismo",
+      "Il pentapartito",
+      "Il compromesso di Yalta",
+      "Il centrismo"
+    ],
+    "corretta": 0,
+    "spiegazione": "Affermava l'autonomia da Mosca e la fedeltà alla NATO.",
+    "fonte": "Wikipedia, «Storia dell'Italia repubblicana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-278",
+    "argomento": "Repubblica",
+    "livello": 2,
+    "testo": "Chi fu Presidente della Repubblica dal 1978 al 1985?",
+    "opzioni": [
+      "Francesco Cossiga",
+      "Sandro Pertini",
+      "Giuseppe Saragat",
+      "Giovanni Leone"
+    ],
+    "corretta": 1,
+    "spiegazione": "Fu eletto con il sostegno decisivo di Craxi.",
+    "fonte": "Wikipedia, «Storia dell'Italia repubblicana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-279",
+    "argomento": "Repubblica",
+    "livello": 2,
+    "testo": "Chi furono le vittime principali della strage di Capaci del 1992?",
+    "opzioni": [
+      "Paolo Borsellino e la scorta",
+      "Aldo Moro e la scorta",
+      "Il giudice Giovanni Falcone, la moglie e tre agenti di scorta",
+      "Carlo Alberto dalla Chiesa"
+    ],
+    "corretta": 2,
+    "spiegazione": "Pochi mesi dopo la strage di via D'Amelio uccise Borsellino.",
+    "fonte": "Wikipedia, «Storia dell'Italia repubblicana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-280",
+    "argomento": "Repubblica",
+    "livello": 3,
+    "testo": "Chi guidò nel 1993 il primo governo presieduto da un tecnico non parlamentare?",
+    "opzioni": [
+      "Lamberto Dini",
+      "Mario Monti",
+      "Giuliano Amato",
+      "Carlo Azeglio Ciampi"
+    ],
+    "corretta": 3,
+    "spiegazione": "Traghettò il sistema politico verso la Seconda Repubblica.",
+    "fonte": "Wikipedia, «Storia dell'Italia repubblicana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-281",
+    "argomento": "Repubblica",
+    "livello": 3,
+    "testo": "In quale miniera belga morirono nel 1956 numerosi minatori italiani?",
+    "opzioni": [
+      "Marcinelle",
+      "Liegi",
+      "Charleroi Nord",
+      "Anversa"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il disastro mise in luce le condizioni dell'emigrazione italiana.",
+    "fonte": "Wikipedia, «Storia dell'Italia repubblicana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-282",
+    "argomento": "Repubblica",
+    "livello": 3,
+    "testo": "Quale presidente della Repubblica, della sinistra DC, era amico di Enrico Mattei?",
+    "opzioni": [
+      "Antonio Segni",
+      "Giovanni Gronchi",
+      "Giovanni Leone",
+      "Luigi Einaudi"
+    ],
+    "corretta": 1,
+    "spiegazione": "Guardava con favore all'apertura ai socialisti.",
+    "fonte": "Wikipedia, «Storia dell'Italia repubblicana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-283",
+    "argomento": "Repubblica",
+    "livello": 3,
+    "testo": "Con quale trattato del 1951 l'Italia aderì alla CECA?",
+    "opzioni": [
+      "Il Trattato di Maastricht",
+      "I Trattati di Roma",
+      "Il Trattato di Parigi",
+      "Il Patto Atlantico"
+    ],
+    "corretta": 2,
+    "spiegazione": "La CECA fu il primo embrione dell'integrazione europea.",
+    "fonte": "Wikipedia, «Storia dell'Italia repubblicana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-284",
+    "argomento": "Repubblica",
+    "livello": 4,
+    "testo": "Come fu chiamato il governo monocolore DC di Giovanni Leone del 1963?",
+    "opzioni": [
+      "«Governo delle convergenze parallele»",
+      "«Governo della non sfiducia»",
+      "«Governo dei tecnici»",
+      "«Governo balneare»"
+    ],
+    "corretta": 3,
+    "spiegazione": "Durante il suo breve mandato avvenne il disastro del Vajont.",
+    "fonte": "Wikipedia, «Storia dell'Italia repubblicana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-285",
+    "argomento": "Repubblica",
+    "livello": 3,
+    "testo": "Come fu chiamato il terzo governo Andreotti sostenuto dall'astensione di quasi tutti i partiti?",
+    "opzioni": [
+      "Governo della non sfiducia",
+      "Pentapartito",
+      "Governo di unità nazionale del CLN",
+      "Governo balneare"
+    ],
+    "corretta": 0,
+    "spiegazione": "Aprì la stagione della «solidarietà nazionale» tra DC e PCI.",
+    "fonte": "Wikipedia, «Storia dell'Italia repubblicana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-286",
+    "argomento": "Repubblica",
+    "livello": 3,
+    "testo": "Quale ministro dell'Interno represse con fermezza le proteste sindacali dei primi anni Cinquanta?",
+    "opzioni": [
+      "Francesco Cossiga",
+      "Mario Scelba",
+      "Amintore Fanfani",
+      "Paolo Emilio Taviani"
+    ],
+    "corretta": 1,
+    "spiegazione": "Celebre la repressione alle Fonderie Riunite di Modena nel 1950.",
+    "fonte": "Wikipedia, «Storia dell'Italia repubblicana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-287",
+    "argomento": "Guerra fredda",
+    "livello": 2,
+    "testo": "Quale fu il primo satellite artificiale, lanciato dall'URSS nel 1957?",
+    "opzioni": [
+      "L'Explorer 1",
+      "L'Apollo 11",
+      "Lo Sputnik 1",
+      "La Vostok 1"
+    ],
+    "corretta": 2,
+    "spiegazione": "Avviò la corsa allo spazio tra le due superpotenze.",
+    "fonte": "Wikipedia, «Guerra fredda» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-288",
+    "argomento": "Guerra fredda",
+    "livello": 3,
+    "testo": "Come si concluse la rivoluzione ungherese del 1956?",
+    "opzioni": [
+      "Con l'intervento della NATO",
+      "Con libere elezioni",
+      "Con l'uscita dell'Ungheria dal Patto di Varsavia",
+      "I carri armati sovietici riconquistarono Budapest e Nagy fu giustiziato"
+    ],
+    "corretta": 3,
+    "spiegazione": "Gli eventi provocarono una frattura nei partiti comunisti occidentali.",
+    "fonte": "Wikipedia, «Guerra fredda» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-289",
+    "argomento": "Guerra fredda",
+    "livello": 2,
+    "testo": "Quale paese invase l'URSS nel 1968 per fermare la Primavera di Praga?",
+    "opzioni": [
+      "La Cecoslovacchia",
+      "La Jugoslavia",
+      "La Polonia",
+      "L'Ungheria"
+    ],
+    "corretta": 0,
+    "spiegazione": "Fu una delle crisi più gravi del blocco orientale.",
+    "fonte": "Wikipedia, «Guerra fredda» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-290",
+    "argomento": "Guerra fredda",
+    "livello": 2,
+    "testo": "Come si chiamavano le riforme di Michail Gorbačëv?",
+    "opzioni": [
+      "NEP e collettivizzazione",
+      "Glasnost («trasparenza») e perestrojka («riorganizzazione»)",
+      "Grande balzo in avanti",
+      "Destalinizzazione e disgelo"
+    ],
+    "corretta": 1,
+    "spiegazione": "Furono introdotte dalla metà degli anni Ottanta.",
+    "fonte": "Wikipedia, «Guerra fredda» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-291",
+    "argomento": "Guerra fredda",
+    "livello": 3,
+    "testo": "Quale evento del 1979 pose fine alla fase di distensione?",
+    "opzioni": [
+      "La guerra di Corea",
+      "La crisi di Suez",
+      "L'invasione sovietica dell'Afghanistan",
+      "La costruzione del Muro di Berlino"
+    ],
+    "corretta": 2,
+    "spiegazione": "Seguì una fase di forte tensione con gli Stati Uniti di Reagan.",
+    "fonte": "Wikipedia, «Guerra fredda» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-292",
+    "argomento": "Guerra fredda",
+    "livello": 3,
+    "testo": "Quale trattato sul controllo degli armamenti firmarono Nixon e Brežnev nel 1972?",
+    "opzioni": [
+      "Il trattato INF",
+      "Il START II",
+      "Il trattato di non proliferazione",
+      "Il SALT I"
+    ],
+    "corretta": 3,
+    "spiegazione": "Fu il primo patto di limitazione globale tra le superpotenze.",
+    "fonte": "Wikipedia, «Guerra fredda» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-293",
+    "argomento": "Guerra fredda",
+    "livello": 2,
+    "testo": "Chi vinse la guerra civile cinese nel 1949?",
+    "opzioni": [
+      "Mao Zedong",
+      "Deng Xiaoping",
+      "Chiang Kai-shek",
+      "Sun Yat-sen"
+    ],
+    "corretta": 0,
+    "spiegazione": "Chiang Kai-shek si rifugiò con il suo governo a Taiwan.",
+    "fonte": "Wikipedia, «Guerra fredda» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-294",
+    "argomento": "Guerra fredda",
+    "livello": 4,
+    "testo": "Quale strategia elaborò l'amministrazione Kennedy per ridurre il rischio di guerra nucleare totale?",
+    "opzioni": [
+      "Lo «scudo spaziale»",
+      "La «risposta flessibile»",
+      "La «rappresaglia massiccia»",
+      "Il «roll back»"
+    ],
+    "corretta": 1,
+    "spiegazione": "Sostituiva la dottrina della rappresaglia massiccia.",
+    "fonte": "Wikipedia, «Guerra fredda» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-295",
+    "argomento": "Guerra fredda",
+    "livello": 2,
+    "testo": "Quando si dissolse formalmente l'Unione Sovietica?",
+    "opzioni": [
+      "Nel novembre 1989",
+      "Nel 1985",
+      "Nel dicembre 1991",
+      "Nel 1995"
+    ],
+    "corretta": 2,
+    "spiegazione": "La caduta della cortina di ferro era avvenuta nel 1989.",
+    "fonte": "Wikipedia, «Guerra fredda» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-296",
+    "argomento": "Integrazione europea",
+    "livello": 4,
+    "testo": "Con quale trattato del 1948 si fa iniziare il processo di integrazione europea, secondo la voce?",
+    "opzioni": [
+      "Il Trattato di Parigi",
+      "Il Trattato di Roma",
+      "Il Trattato di Maastricht",
+      "Il Trattato di Bruxelles"
+    ],
+    "corretta": 3,
+    "spiegazione": "Seguirono molti altri trattati e referendum.",
+    "fonte": "Wikipedia, «Storia dell'Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-297",
+    "argomento": "Integrazione europea",
+    "livello": 3,
+    "testo": "Quale ministro degli esteri belga studiò il progetto di mercato comune confluito nei Trattati di Roma?",
+    "opzioni": [
+      "Paul-Henri Spaak",
+      "Robert Schuman",
+      "Konrad Adenauer",
+      "Jean Monnet"
+    ],
+    "corretta": 0,
+    "spiegazione": "La sua proposta si unì a quella di Monnet sull'energia.",
+    "fonte": "Wikipedia, «Storia dell'Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-298",
+    "argomento": "Integrazione europea",
+    "livello": 4,
+    "testo": "Quale paese respinse il Trattato di Maastricht con un referendum nel 1992, approvandolo l'anno dopo?",
+    "opzioni": [
+      "Il Regno Unito",
+      "La Danimarca",
+      "La Francia",
+      "L'Irlanda"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il secondo referendum fu positivo.",
+    "fonte": "Wikipedia, «Storia dell'Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-299",
+    "argomento": "Integrazione europea",
+    "livello": 3,
+    "testo": "Quale spazio economico fu formato nel 1992 dall'UE e dall'EFTA?",
+    "opzioni": [
+      "Il Consiglio d'Europa",
+      "L'area Schengen",
+      "Lo Spazio economico europeo (SEE)",
+      "L'Eurozona"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'EFTA è l'Associazione europea di libero scambio.",
+    "fonte": "Wikipedia, «Storia dell'Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "storia",
+    "id": "sto-300",
+    "argomento": "Integrazione europea",
+    "livello": 4,
+    "testo": "Quale maggioranza serviva all'assemblea comune dei Trattati di Roma per censurare le decisioni della Commissione?",
+    "opzioni": [
+      "Tre quinti",
+      "La maggioranza semplice",
+      "L'unanimità",
+      "I due terzi"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'assemblea è l'antenata del Parlamento europeo.",
+    "fonte": "Wikipedia, «Storia dell'Unione europea» (CC BY-SA 4.0)",
+    "versione": "v1"
   }
 ]
