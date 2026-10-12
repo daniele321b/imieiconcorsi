@@ -1003,5 +1003,505 @@
     "id": "pen-201",
     "file": "norma_Codice-penale.txt",
     "frase": "mediante introduzione in un edificio o in altro luogo destinato in tutto o in parte a privata dimora"
+  },
+  {
+    "id": "pen-202",
+    "file": "norma_Codice-penale.txt",
+    "frase": "È punito secondo la legge italiana il cittadino o lo straniero che commette in territorio estero"
+  },
+  {
+    "id": "pen-203",
+    "file": "norma_Codice-penale.txt",
+    "frase": "sempre che si trovi nel territorio dello Stato"
+  },
+  {
+    "id": "pen-204",
+    "file": "norma_Codice-penale.txt",
+    "frase": "Le disposizioni di questo codice si applicano anche alle materie regolate da altre leggi penali, in quanto non sia da queste stabilito altrimenti"
+  },
+  {
+    "id": "pen-205",
+    "file": "norma_Codice-penale.txt",
+    "frase": "quelle accessorie conseguono di diritto alla condanna, come effetti penali di essa"
+  },
+  {
+    "id": "pen-206",
+    "file": "norma_Codice-penale.txt",
+    "frase": "del diritto di elettorato o di eleggibilità in qualsiasi comizio elettorale"
+  },
+  {
+    "id": "pen-207",
+    "file": "norma_Codice-penale.txt",
+    "frase": "non può avere una durata inferiore a un mese, né superiore a cinque anni"
+  },
+  {
+    "id": "pen-208",
+    "file": "norma_Codice-penale.txt",
+    "frase": "importa l'interdizione temporanea dai pubblici uffici"
+  },
+  {
+    "id": "pen-209",
+    "file": "norma_Codice-penale.txt",
+    "frase": "importa il divieto di concludere contratti con la pubblica amministrazione, salvo che per ottenere le prestazioni di un pubblico servizio"
+  },
+  {
+    "id": "pen-210",
+    "file": "norma_Codice-penale.txt",
+    "frase": "Essa consegue ad ogni condanna alla reclusione non inferiore a sei mesi per delitti commessi con abuso dei poteri"
+  },
+  {
+    "id": "pen-211",
+    "file": "norma_Codice-penale.txt",
+    "frase": "la pena accessoria ha una durata eguale a quella della pena principale inflitta"
+  },
+  {
+    "id": "pen-212",
+    "file": "norma_Codice-penale.txt",
+    "frase": "nel sito internet del Ministero della giustizia"
+  },
+  {
+    "id": "pen-213",
+    "file": "norma_Codice-penale.txt",
+    "frase": "anche se l'evento, da cui dipende il verificarsi della condizione, non è da lui voluto"
+  },
+  {
+    "id": "pen-214",
+    "file": "norma_Codice-penale.txt",
+    "frase": "del fatto commesso dalla persona ingannata risponde chi l'ha determinata a commetterlo"
+  },
+  {
+    "id": "pen-215",
+    "file": "norma_Codice-penale.txt",
+    "frase": "non sono poste a carico dell'agente le circostanze aggravanti"
+  },
+  {
+    "id": "pen-216",
+    "file": "norma_Codice-penale.txt",
+    "frase": "l'aumento o la diminuzione di pena si opera sulla quantità di essa risultante dall'aumento o dalla diminuzione precedente"
+  },
+  {
+    "id": "pen-217",
+    "file": "norma_Codice-penale.txt",
+    "frase": "non può superare il triplo del massimo stabilito dalla legge per il reato"
+  },
+  {
+    "id": "pen-218",
+    "file": "norma_Codice-penale.txt",
+    "frase": "si applica una pena unica, per un tempo eguale alla durata complessiva delle pene"
+  },
+  {
+    "id": "pen-219",
+    "file": "norma_Codice-penale.txt",
+    "frase": "non può essere superiore al quintuplo della più grave fra le pene concorrenti"
+  },
+  {
+    "id": "pen-220",
+    "file": "norma_Codice-penale.txt",
+    "frase": "si applica l'ergastolo"
+  },
+  {
+    "id": "pen-221",
+    "file": "norma_Codice-penale.txt",
+    "frase": "è cagionata offesa a persona diversa da quella alla quale l'offesa era diretta"
+  },
+  {
+    "id": "pen-222",
+    "file": "norma_Codice-penale.txt",
+    "frase": "il colpevole risponde, a titolo di colpa, dell'evento non voluto"
+  },
+  {
+    "id": "pen-223",
+    "file": "norma_Codice-penale.txt",
+    "frase": "Reato complesso"
+  },
+  {
+    "id": "pen-224",
+    "file": "norma_Codice-penale.txt",
+    "frase": "del reato commesso dalla persona resa incapace risponde chi ha cagionato lo stato d'incapacità"
+  },
+  {
+    "id": "pen-225",
+    "file": "norma_Codice-penale.txt",
+    "frase": "Non è imputabile chi, nel momento in cui ha commesso il fatto, era, per infermità, in tale stato di mente da escludere la capacità"
+  },
+  {
+    "id": "pen-226",
+    "file": "norma_Codice-penale.txt",
+    "frase": "a cagione di piena ubriachezza derivata da caso fortuito o da forza maggiore"
+  },
+  {
+    "id": "pen-227",
+    "file": "norma_Codice-penale.txt",
+    "frase": "Quando il reato è commesso in stato di ubriachezza, e questa è abituale, la pena è aumentata"
+  },
+  {
+    "id": "pen-228",
+    "file": "norma_Codice-penale.txt",
+    "frase": "si applicano le disposizioni contenute negli articoli 88 e 89"
+  },
+  {
+    "id": "pen-229",
+    "file": "norma_Codice-penale.txt",
+    "frase": "debba ritenersi che egli viva abitualmente, anche in parte soltanto, dei proventi del reato"
+  },
+  {
+    "id": "pen-230",
+    "file": "norma_Codice-penale.txt",
+    "frase": "se il numero delle persone, che sono concorse nel reato, è di cinque o più"
+  },
+  {
+    "id": "pen-231",
+    "file": "norma_Codice-penale.txt",
+    "frase": "abbia avuto minima importanza nella preparazione o nell'esecuzione del reato, può diminuire la pena"
+  },
+  {
+    "id": "pen-232",
+    "file": "norma_Codice-penale.txt",
+    "frase": "nessuna di esse è punibile per il solo fatto dell'accordo"
+  },
+  {
+    "id": "pen-233",
+    "file": "norma_Codice-penale.txt",
+    "frase": "esso deve indicare i motivi che giustificano l'uso di tal potere discrezionale"
+  },
+  {
+    "id": "pen-234",
+    "file": "norma_Codice-penale.txt",
+    "frase": "dalla intensità del dolo o dal grado della colpa"
+  },
+  {
+    "id": "pen-235",
+    "file": "norma_Codice-penale.txt",
+    "frase": "la remissione estingue il reato"
+  },
+  {
+    "id": "pen-236",
+    "file": "norma_Codice-penale.txt",
+    "frase": "quando il querelante ha compiuto fatti incompatibili con la volontà di persistere nella querela"
+  },
+  {
+    "id": "pen-237",
+    "file": "norma_Codice-penale.txt",
+    "frase": "per il reato permanente o continuato, dal giorno in cui è cessata la permanenza o la continuazione"
+  },
+  {
+    "id": "pen-238",
+    "file": "norma_Codice-penale.txt",
+    "frase": "L'interruzione della prescrizione ha effetto per tutti coloro che hanno commesso il reato"
+  },
+  {
+    "id": "pen-239",
+    "file": "norma_Codice-penale.txt",
+    "frase": "una somma corrispondente alla terza parte del massimo della pena stabilita dalla legge"
+  },
+  {
+    "id": "pen-240",
+    "file": "norma_Codice-penale.txt",
+    "frase": "e adempie gli obblighi impostigli, il reato è estinto"
+  },
+  {
+    "id": "pen-241",
+    "file": "norma_Codice-penale.txt",
+    "frase": "Perdono giudiziale per i minori degli anni diciotto"
+  },
+  {
+    "id": "pen-242",
+    "file": "norma_Codice-penale.txt",
+    "frase": "La pena della reclusione si estingue col decorso di un tempo pari al doppio della pena inflitta"
+  },
+  {
+    "id": "pen-243",
+    "file": "norma_Codice-penale.txt",
+    "frase": "Le pene dell'arresto e dell'ammenda si estinguono nel termine di cinque anni"
+  },
+  {
+    "id": "pen-244",
+    "file": "norma_Codice-penale.txt",
+    "frase": "La riabilitazione estingue le pene accessorie ed ogni altro effetto penale della condanna"
+  },
+  {
+    "id": "pen-245",
+    "file": "norma_Codice-penale.txt",
+    "frase": "La liberazione condizionale è revocata, se la persona liberata commette un delitto o una contravvenzione della stessa indole"
+  },
+  {
+    "id": "pen-246",
+    "file": "norma_Codice-penale.txt",
+    "frase": "si applicano anche a chi da o promette al pubblico ufficiale o all'incaricato di un pubblico servizio il denaro od altra utilità"
+  },
+  {
+    "id": "pen-247",
+    "file": "norma_Codice-penale.txt",
+    "frase": "rifiuta o ritarda indebitamente di eseguire una richiesta fattagli dall'Autorità competente"
+  },
+  {
+    "id": "pen-248",
+    "file": "norma_Codice-penale.txt",
+    "frase": "che impiega, a proprio o altrui profitto, invenzioni o scoperte scientifiche"
+  },
+  {
+    "id": "pen-249",
+    "file": "norma_Codice-penale.txt",
+    "frase": "esercitando imprese di servizi pubblici o di pubblica necessità, interrompe il servizio"
+  },
+  {
+    "id": "pen-250",
+    "file": "norma_Codice-penale.txt",
+    "frase": "Chiunque sottrae, sopprime, distrugge, disperde o deteriora una cosa sottoposta a sequestro"
+  },
+  {
+    "id": "pen-251",
+    "file": "norma_Codice-penale.txt",
+    "frase": "per costringerlo a fare un atto contrario ai propri doveri"
+  },
+  {
+    "id": "pen-252",
+    "file": "norma_Codice-penale.txt",
+    "frase": "per impedirne, in tutto o in parte, anche temporaneamente, o per turbarne comunque l'attività"
+  },
+  {
+    "id": "pen-253",
+    "file": "norma_Codice-penale.txt",
+    "frase": "cagiona una interruzione o turba la regolarità di un ufficio o servizio pubblico"
+  },
+  {
+    "id": "pen-254",
+    "file": "norma_Codice-penale.txt",
+    "frase": "Chiunque offende l'onore o il prestigio di un magistrato in udienza"
+  },
+  {
+    "id": "pen-255",
+    "file": "norma_Codice-penale.txt",
+    "frase": "continua ad esercitarle"
+  },
+  {
+    "id": "pen-256",
+    "file": "norma_Codice-penale.txt",
+    "frase": "Se il colpevole è colui che ha in custodia la cosa, la pena è della reclusione da tre a cinque anni"
+  },
+  {
+    "id": "pen-257",
+    "file": "norma_Codice-penale.txt",
+    "frase": "turba il procedimento amministrativo diretto a stabilire il contenuto del bando"
+  },
+  {
+    "id": "pen-258",
+    "file": "norma_Codice-penale.txt",
+    "frase": "Chiunque commette frode nella esecuzione dei contratti di fornitura"
+  },
+  {
+    "id": "pen-259",
+    "file": "norma_Codice-penale.txt",
+    "frase": "la cessazione di tale qualità, nel momento in cui il reato è commesso, non esclude la esistenza di questo"
+  },
+  {
+    "id": "pen-260",
+    "file": "norma_Codice-penale.txt",
+    "frase": "afferma falsamente essere avvenuto un reato, ovvero simula le tracce di un reato"
+  },
+  {
+    "id": "pen-261",
+    "file": "norma_Codice-penale.txt",
+    "frase": "incolpa sé stesso di un reato che egli sa non avvenuto"
+  },
+  {
+    "id": "pen-262",
+    "file": "norma_Codice-penale.txt",
+    "frase": "immuta artificiosamente lo stato dei luoghi o delle cose o delle persone"
+  },
+  {
+    "id": "pen-263",
+    "file": "norma_Codice-penale.txt",
+    "frase": "rendendosi infedele ai suoi doveri professionali, arreca nocumento agli interessi della parte"
+  },
+  {
+    "id": "pen-264",
+    "file": "norma_Codice-penale.txt",
+    "frase": "dalla necessità di salvare se medesimo o un prossimo congiunto da un grave e inevitabile nocumento nella libertà o nell'onore"
+  },
+  {
+    "id": "pen-265",
+    "file": "norma_Codice-penale.txt",
+    "frase": "si applicano anche all'imputato che essendo in stato di arresto nella propria abitazione"
+  },
+  {
+    "id": "pen-266",
+    "file": "norma_Codice-penale.txt",
+    "frase": "Chiunque, come parte in giudizio civile, giura il falso"
+  },
+  {
+    "id": "pen-267",
+    "file": "norma_Codice-procedura-penale.txt",
+    "frase": "Gli atti del procedimento penale sono compiuti in lingua italiana"
+  },
+  {
+    "id": "pen-268",
+    "file": "norma_Codice-procedura-penale.txt",
+    "frase": "L'imputato ha diritto di nominare non più di due difensori di fiducia"
+  },
+  {
+    "id": "pen-269",
+    "file": "norma_Codice-procedura-penale.txt",
+    "frase": "è assistito da un difensore di ufficio"
+  },
+  {
+    "id": "pen-270",
+    "file": "norma_Codice-procedura-penale.txt",
+    "frase": "ha diritto di farsi assistere gratuitamente, indipendentemente dall'esito del procedimento, da un interprete"
+  },
+  {
+    "id": "pen-271",
+    "file": "norma_Codice-procedura-penale.txt",
+    "frase": "Il tribunale è competente per i reati che non appartengono alla competenza della corte di assise"
+  },
+  {
+    "id": "pen-272",
+    "file": "norma_Codice-procedura-penale.txt",
+    "frase": "La competenza per territorio è determinata dal luogo in cui il reato è stato consumato"
+  },
+  {
+    "id": "pen-273",
+    "file": "norma_Codice-procedura-penale.txt",
+    "frase": "dal soggetto al quale il reato ha recato danno ovvero dai suoi successori universali"
+  },
+  {
+    "id": "pen-274",
+    "file": "norma_Codice-procedura-penale.txt",
+    "frase": "in ogni stato e grado del procedimento può presentare memorie"
+  },
+  {
+    "id": "pen-275",
+    "file": "norma_Codice-procedura-penale.txt",
+    "frase": "I prossimi congiunti dell'imputato non sono obbligati a deporre"
+  },
+  {
+    "id": "pen-276",
+    "file": "norma_Codice-procedura-penale.txt",
+    "frase": "Quando vi è fondato motivo di ritenere che taluno occulti sulla persona il corpo del reato"
+  },
+  {
+    "id": "pen-277",
+    "file": "norma_Codice-procedura-penale.txt",
+    "frase": "Sono corpo del reato le cose sulle quali o mediante le quali il reato è stato commesso"
+  },
+  {
+    "id": "pen-278",
+    "file": "norma_Codice-procedura-penale.txt",
+    "frase": "delitti non colposi per i quali è prevista la pena dell'ergastolo o della reclusione superiore nel massimo a cinque anni"
+  },
+  {
+    "id": "pen-279",
+    "file": "norma_Codice-procedura-penale.txt",
+    "frase": "tiene conto della specifica idoneità di ciascuna in relazione alla natura e al grado delle esigenze cautelari"
+  },
+  {
+    "id": "pen-280",
+    "file": "norma_Codice-procedura-penale.txt",
+    "frase": "di non uscire dal territorio nazionale senza l'autorizzazione del giudice che procede"
+  },
+  {
+    "id": "pen-281",
+    "file": "norma_Codice-procedura-penale.txt",
+    "frase": "di non allontanarsi, senza l'autorizzazione del giudice che procede, dal territorio del comune di dimora abituale"
+  },
+  {
+    "id": "pen-282",
+    "file": "norma_Codice-procedura-penale.txt",
+    "frase": "Entro dieci giorni dalla esecuzione o notificazione del provvedimento"
+  },
+  {
+    "id": "pen-283",
+    "file": "norma_Codice-procedura-penale.txt",
+    "frase": "possa aggravare o protrarre le conseguenze di esso ovvero agevolare la commissione di altri reati"
+  },
+  {
+    "id": "pen-284",
+    "file": "norma_Codice-procedura-penale.txt",
+    "frase": "le indagini necessarie per le determinazioni inerenti all'esercizio dell'azione penale"
+  },
+  {
+    "id": "pen-285",
+    "file": "norma_Codice-procedura-penale.txt",
+    "frase": "sono coperti dal segreto fino a quando l'imputato non ne possa avere conoscenza"
+  },
+  {
+    "id": "pen-286",
+    "file": "norma_Codice-procedura-penale.txt",
+    "frase": "quando deve compiere un atto al quale il difensore ha diritto di assistere"
+  },
+  {
+    "id": "pen-287",
+    "file": "norma_Codice-procedura-penale.txt",
+    "frase": "per il quale la legge stabilisce la pena della reclusione superiore nel massimo a tre anni"
+  },
+  {
+    "id": "pen-288",
+    "file": "norma_Codice-procedura-penale.txt",
+    "frase": "Avviso all'indagato della conclusione delle indagini preliminari"
+  },
+  {
+    "id": "pen-289",
+    "file": "norma_Codice-procedura-penale.txt",
+    "frase": "il giudice pronuncia sentenza di non luogo a procedere"
+  },
+  {
+    "id": "pen-290",
+    "file": "norma_Codice-procedura-penale.txt",
+    "frase": "Decreto che dispone il giudizio"
+  },
+  {
+    "id": "pen-291",
+    "file": "norma_Codice-procedura-penale.txt",
+    "frase": "Sono irrevocabili le sentenze pronunciate in giudizio contro le quali non è ammessa impugnazione diversa dalla revisione"
+  },
+  {
+    "id": "pen-292",
+    "file": "norma_Codice-procedura-penale.txt",
+    "frase": "i provvedimenti con i quali il giudice decide sulla libertà personale e le sentenze"
+  },
+  {
+    "id": "pen-293",
+    "file": "norma_Codice-procedura-penale.txt",
+    "frase": "inosservanza o erronea applicazione della legge penale"
+  },
+  {
+    "id": "pen-294",
+    "file": "norma_L689-1981_illecito-amministrativo.txt",
+    "frase": "ciascuna di esse soggiace alla sanzione per questa disposta"
+  },
+  {
+    "id": "pen-295",
+    "file": "norma_L689-1981_illecito-amministrativo.txt",
+    "frase": "L'obbligazione di pagare la somma dovuta per la violazione non si trasmette agli eredi"
+  },
+  {
+    "id": "pen-296",
+    "file": "norma_L689-1981_illecito-amministrativo.txt",
+    "frase": "si applica la disposizione speciale"
+  },
+  {
+    "id": "pen-297",
+    "file": "norma_L689-1981_illecito-amministrativo.txt",
+    "frase": "Non si applicano alle violazioni disciplinari"
+  },
+  {
+    "id": "pen-298",
+    "file": "norma_L689-1981_illecito-amministrativo.txt",
+    "frase": "nel termine di quindici giorni dalla comunicazione dell'esito della prima analisi"
+  },
+  {
+    "id": "pen-299",
+    "file": "norma_L689-1981_illecito-amministrativo.txt",
+    "frase": "venga pagata in rate mensili da tre a trenta"
+  },
+  {
+    "id": "pen-300",
+    "file": "norma_L689-1981_illecito-amministrativo.txt",
+    "frase": "il giudice penale competente a conoscere del reato è pure competente a decidere sulla predetta violazione"
+  },
+  {
+    "id": "pen-301",
+    "file": "norma_L689-1981_illecito-amministrativo.txt",
+    "frase": "non sono applicabili fino a che è pendente il giudizio di opposizione"
   }
 ]
