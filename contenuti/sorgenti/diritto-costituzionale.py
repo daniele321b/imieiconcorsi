@@ -702,3 +702,322 @@ K("cost-199", "Diritti e libertà", 5, "Il questore dispone una perquisizione do
 K("cost-200", "Rapporti politici", 4, "A quale scopo la Repubblica, secondo l'art. 51, adotta appositi provvedimenti?",
   "Per promuovere le pari opportunità tra donne e uomini", ["Per garantire posti riservati ai partiti", "Per favorire i cittadini residenti", "Per limitare l'accesso ai pubblici uffici"],
   "Comma aggiunto dalla L. cost. 1/2003.", "art. 51", "la Repubblica promuove con appositi provvedimenti le pari opportunità tra donne e uomini")
+
+# --- Ampliamento a 300: L. 400/1988 (Governo), L. 352/1970 (referendum), L. 87/1953 (Corte costituzionale) ---
+L400 = "norma_L400-1988_Governo.txt"
+L352 = "norma_L352-1970_referendum.txt"
+L87 = "norma_L87-1953_Corte-costituzionale.txt"
+
+def G(id, arg, liv, testo, giusta, sbagliate, spieg, art, frase):
+    D(id, arg, liv, testo, giusta, sbagliate, spieg, f"L. 400/1988, {art}", L400, frase)
+
+def R(id, arg, liv, testo, giusta, sbagliate, spieg, art, frase):
+    D(id, arg, liv, testo, giusta, sbagliate, spieg, f"L. 352/1970, {art}", L352, frase)
+
+def P(id, arg, liv, testo, giusta, sbagliate, spieg, art, frase):
+    D(id, arg, liv, testo, giusta, sbagliate, spieg, f"L. 87/1953, {art}", L87, frase)
+
+G("cost-201", "Governo", 4, "Come sono effettuate le nomine alla presidenza di enti, istituti o aziende nazionali di competenza statale (esclusi gli enti pubblici creditizi)?",
+  "Con decreto del Presidente della Repubblica, su proposta del Presidente del Consiglio e previa deliberazione del Consiglio dei ministri", ["Con decreto del ministro competente, senza deliberazione collegiale", "Con elezione del Parlamento in seduta comune", "Con concorso pubblico per titoli"],
+  "Art. 3 della L. 400/1988: la proposta al Consiglio dei ministri viene dal ministro competente; resta fermo il parere delle Commissioni parlamentari.", "art. 3", "sono effettuate con decreto del Presidente della Repubblica emanato su proposta del Presidente del Consiglio dei ministri, previa deliberazione del Consiglio dei ministri")
+G("cost-202", "Governo", 4, "Con quale atto è emanato il regolamento interno del Consiglio dei ministri?",
+  "Con decreto del Presidente del Consiglio dei ministri, previa deliberazione del Consiglio", ["Con decreto del Presidente della Repubblica", "Con legge ordinaria", "Con delibera dei Presidenti delle Camere"],
+  "Art. 4, comma 4: il regolamento interno è pubblicato nella Gazzetta Ufficiale.", "art. 4", "Il regolamento interno del Consiglio dei ministri è emanato con decreto del Presidente del Consiglio dei ministri")
+G("cost-203", "Governo", 2, "Come si conclude la formula di giuramento dei membri del Governo («Giuro di essere fedele alla Repubblica… e di esercitare le mie funzioni…»)?",
+  "nell'interesse esclusivo della nazione", ["nel rispetto del programma di Governo", "secondo le direttive del Presidente del Consiglio", "a tutela dei diritti dei cittadini"],
+  "La formula impegna a osservare lealmente la Costituzione e le leggi e a esercitare le funzioni nell'interesse esclusivo della nazione.", "art. 1", "esercitare le mie funzioni nell'interesse esclusivo della nazione")
+G("cost-204", "Governo", 3, "Chi controfirma il decreto di nomina del Presidente del Consiglio dei ministri?",
+  "Lo stesso Presidente del Consiglio nominato", ["Il Presidente del Consiglio uscente", "Il ministro della giustizia", "Il Presidente del Senato"],
+  "Il decreto di nomina è controfirmato dal nuovo Presidente del Consiglio, insieme ai decreti di accettazione delle dimissioni del Governo precedente.", "art. 1", "Il decreto di nomina del Presidente del Consiglio dei ministri è da lui controfirmato")
+G("cost-205", "Governo", 2, "Secondo l'art. 2 della L. 400/1988, quale organo determina la politica generale del Governo?",
+  "Il Consiglio dei ministri", ["Il Presidente della Repubblica", "Il Consiglio di Gabinetto", "Il Parlamento in seduta comune"],
+  "Il Consiglio dei ministri determina la politica generale del Governo e l'indirizzo generale dell'azione amministrativa.", "art. 2", "Il Consiglio dei ministri determina la politica generale del Governo")
+G("cost-206", "Governo", 3, "Chi dirime i conflitti di attribuzione tra i ministri?",
+  "Il Consiglio dei ministri", ["La Corte costituzionale", "Il Consiglio di Stato", "Il Presidente della Repubblica"],
+  "È una delle attribuzioni del Consiglio dei ministri elencate nell'art. 2, comma 1, della L. 400/1988.", "art. 2", "Dirime i conflitti di attribuzione tra i ministri")
+G("cost-207", "Governo", 3, "Per porre la questione di fiducia davanti alle Camere, il Presidente del Consiglio ha bisogno:",
+  "dell'assenso del Consiglio dei ministri", ["del parere del Presidente della Repubblica", "della richiesta di un decimo dei parlamentari", "dell'autorizzazione dei Presidenti delle Camere"],
+  "L'art. 2, comma 2, attribuisce al Consiglio dei ministri l'assenso all'iniziativa del Presidente del Consiglio.", "art. 2", "Il Consiglio dei ministri esprime l'assenso alla iniziativa del Presidente del Consiglio dei ministri di porre la questione di fiducia")
+G("cost-208", "Governo", 4, "L'elenco degli atti da sottoporre alla deliberazione del Consiglio dei ministri (art. 2, comma 3) è:",
+  "tassativo", ["meramente esemplificativo", "integrabile con decreto del Presidente del Consiglio", "rimesso al regolamento interno del Consiglio"],
+  "Il comma 4 dell'art. 2 precisa che l'individuazione degli atti da deliberare è tassativa.", "art. 2", "L'individuazione degli atti da sottoporre alla deliberazione del Consiglio dei Ministri è tassativa")
+G("cost-209", "Governo", 2, "Chi convoca il Consiglio dei ministri e ne fissa l'ordine del giorno?",
+  "Il Presidente del Consiglio dei ministri", ["Il Presidente della Repubblica", "Il ministro più anziano", "Il segretario generale della Presidenza del Consiglio"],
+  "Art. 4, comma 1, della L. 400/1988.", "art. 4", "Il Consiglio dei ministri è convocato dal Presidente del Consiglio dei ministri, che ne fissa l'ordine del giorno")
+G("cost-210", "Governo", 3, "Chi svolge le funzioni di segretario del Consiglio dei ministri?",
+  "Il sottosegretario di Stato alla Presidenza del Consiglio designato nel decreto di nomina", ["Il ministro più giovane", "Il Vicepresidente del Consiglio", "Un consigliere di Stato"],
+  "Il sottosegretario alla Presidenza cura anche la verbalizzazione e il registro delle deliberazioni.", "art. 4", "Il sottosegretario di Stato alla Presidenza del Consiglio dei ministri, designato nel decreto di nomina, è il segretario del Consiglio")
+G("cost-211", "Governo", 3, "Tra le attribuzioni del Presidente del Consiglio a nome del Governo, l'art. 5 della L. 400/1988 prevede che egli:",
+  "controfirma gli atti di promulgazione delle leggi", ["promulga le leggi", "scioglie le Camere", "nomina i giudici costituzionali"],
+  "Promulgazione e scioglimento spettano al Presidente della Repubblica; il Presidente del Consiglio controfirma.", "art. 5", "controfirma gli atti di promulgazione delle leggi")
+G("cost-212", "Governo", 4, "In ordine a questioni politiche e amministrative, il Presidente del Consiglio può sospendere l'adozione di atti dei ministri:",
+  "sottoponendoli al Consiglio dei ministri nella riunione immediatamente successiva", ["annullandoli con proprio decreto", "rimettendoli al Presidente della Repubblica", "chiedendo il parere della Corte dei conti"],
+  "È uno dei poteri di coordinamento previsti dall'art. 5, comma 2, in attuazione dell'art. 95 della Costituzione.", "art. 5", "può sospendere l'adozione di atti da parte dei ministri competenti in ordine a questioni politiche e amministrative, sottoponendoli al Consiglio dei ministri nella riunione immediatamente successiva")
+G("cost-213", "Governo", 3, "Chi esercita le attribuzioni conferite dalla legge in materia di servizi di sicurezza e di segreto di Stato?",
+  "Il Presidente del Consiglio dei ministri", ["Il ministro dell'interno", "Il ministro della difesa", "Il Presidente della Repubblica"],
+  "Lo prevede l'art. 5, comma 2, lett. g), della L. 400/1988.", "art. 5", "esercita le attribuzioni conferitegli dalla legge in materia di servizi di sicurezza e di segreto di Stato")
+G("cost-214", "Governo", 3, "Come si chiama il comitato di ministri che può coadiuvare il Presidente del Consiglio nella direzione della politica generale?",
+  "Consiglio di Gabinetto", ["Consiglio supremo di difesa", "Conferenza Stato-Regioni", "Comitato interministeriale per la programmazione"],
+  "È composto dai ministri designati dal Presidente del Consiglio, sentito il Consiglio dei ministri.", "art. 6", "può essere coadiuvato da un Comitato, che prende nome di Consiglio di Gabinetto")
+G("cost-215", "Governo", 3, "Se sono nominati più Vicepresidenti del Consiglio, a chi spetta la supplenza del Presidente assente o impedito?",
+  "Al Vicepresidente più anziano secondo l'età", ["Al Vicepresidente nominato per primo", "Al Vicepresidente indicato dal Presidente della Repubblica", "A turno, mese per mese"],
+  "Art. 8, comma 1, della L. 400/1988.", "art. 8", "al Vicepresidente più anziano secondo l'età")
+G("cost-216", "Governo", 4, "Se non è stato nominato un Vicepresidente e manca una diversa disposizione del Presidente del Consiglio, la supplenza spetta:",
+  "al ministro più anziano secondo l'età", ["al ministro dell'interno", "al sottosegretario alla Presidenza del Consiglio", "al ministro dell'economia"],
+  "Art. 8, comma 2.", "art. 8", "al ministro più anziano secondo l'età")
+G("cost-217", "Governo", 3, "Presso quale struttura sono nominati i ministri senza portafoglio?",
+  "Presso la Presidenza del Consiglio dei ministri", ["Presso il Ministero dell'economia", "Presso il Quirinale", "Presso il Ministero dell'interno"],
+  "Svolgono le funzioni loro delegate dal Presidente del Consiglio, sentito il Consiglio dei ministri.", "art. 9", "può nominare, presso la Presidenza del Consiglio dei ministri, ministri senza portafoglio")
+G("cost-218", "Governo", 3, "Il Presidente della Repubblica, su proposta del Consiglio dei ministri, può affidare al Presidente del Consiglio o a un ministro:",
+  "l'incarico di reggere ad interim un Dicastero", ["la presidenza di una Camera", "la funzione di giudice costituzionale", "il comando delle Forze armate"],
+  "Art. 9, comma 4: l'interim si conferisce con decreto di cui si dà notizia in Gazzetta Ufficiale.", "art. 9", "l'incarico di reggere ad interim un Dicastero")
+G("cost-219", "Governo", 3, "Nelle mani di chi giurano i sottosegretari di Stato?",
+  "Del Presidente del Consiglio dei ministri", ["Del Presidente della Repubblica", "Del ministro che coadiuvano", "Del Presidente della Camera"],
+  "A differenza di ministri e Presidente del Consiglio, i sottosegretari giurano davanti al Presidente del Consiglio, con la stessa formula.", "art. 10", "Prima di assumere le funzioni i sottosegretari di Stato prestano giuramento nelle mani del Presidente del Consiglio dei ministri")
+G("cost-220", "Governo", 4, "A quanti sottosegretari, al massimo, può essere attribuito il titolo di vice ministro?",
+  "Dieci", ["Cinque", "Quindici", "Non c'è un limite"],
+  "Art. 10, comma 3: il titolo spetta se sono conferite deleghe su strutture dipartimentali o più direzioni generali.", "art. 10", "a non più di dieci Sottosegretari può essere attribuito il titolo di vice ministro")
+G("cost-221", "Governo", 4, "I vice ministri invitati alle sedute del Consiglio dei ministri vi partecipano:",
+  "senza diritto di voto, per riferire sulla materia delegata", ["con pieno diritto di voto", "con voto solo sulle materie del proprio ministero", "solo se manca il ministro competente, con diritto di voto"],
+  "Art. 10, comma 4.", "art. 10", "a partecipare alle sedute del Consiglio dei Ministri, senza diritto di voto")
+G("cost-222", "Fonti del diritto", 4, "Quando deve essere trasmesso al Presidente della Repubblica il testo di un decreto legislativo per l'emanazione?",
+  "Almeno venti giorni prima della scadenza della delega", ["Almeno sessanta giorni prima della scadenza", "Entro il giorno di scadenza della delega", "Almeno novanta giorni prima della scadenza"],
+  "Art. 14, comma 2: l'emanazione deve comunque avvenire entro il termine fissato dalla legge di delegazione.", "art. 14", "è trasmesso al Presidente della Repubblica, per la emanazione, almeno venti giorni prima della scadenza")
+G("cost-223", "Fonti del diritto", 4, "Se il termine per esercitare una delega legislativa supera i due anni, il Governo deve:",
+  "chiedere il parere delle Camere sugli schemi dei decreti delegati", ["chiedere una nuova legge di delegazione", "ottenere il parere della Corte costituzionale", "sottoporre gli schemi a referendum"],
+  "Art. 14, comma 4: il parere è espresso dalle Commissioni permanenti competenti.", "art. 14", "qualora il termine previsto per l'esercizio della delega ecceda i due anni, il Governo è tenuto a richiedere il parere delle Camere sugli schemi dei decreti delegati")
+G("cost-224", "Fonti del diritto", 3, "Quale di questi contenuti è vietato al decreto-legge dall'art. 15 della L. 400/1988?",
+  "Conferire deleghe legislative", ["Introdurre misure di immediata applicazione", "Disciplinare materie economiche", "Modificare leggi ordinarie"],
+  "Il decreto-legge non può conferire deleghe, intervenire nelle materie dell'art. 72, quarto comma, Cost., reiterare decreti non convertiti né ripristinare norme dichiarate illegittime per vizi sostanziali.", "art. 15", "Il Governo non può, mediante decreto-legge: a) conferire deleghe legislative")
+G("cost-225", "Fonti del diritto", 3, "Secondo l'art. 15 della L. 400/1988, il contenuto del decreto-legge deve essere:",
+  "specifico, omogeneo e corrispondente al titolo", ["generale e programmatico", "limitato alle materie finanziarie", "approvato preventivamente dalle Commissioni parlamentari"],
+  "Il decreto deve contenere misure di immediata applicazione.", "art. 15", "il loro contenuto deve essere specifico, omogeneo e corrispondente al titolo")
+G("cost-226", "Fonti del diritto", 4, "Da quando hanno efficacia, di regola, le modifiche apportate al decreto-legge in sede di conversione?",
+  "Dal giorno successivo alla pubblicazione della legge di conversione", ["Dalla data del decreto-legge", "Dal sessantesimo giorno dopo il decreto", "Dal quindicesimo giorno dopo la pubblicazione della legge di conversione"],
+  "Art. 15, comma 5: salvo che la legge di conversione disponga diversamente; le modifiche sono elencate in allegato.", "art. 15", "hanno efficacia dal giorno successivo a quello della pubblicazione della legge di conversione")
+G("cost-227", "Fonti del diritto", 5, "I decreti legislativi e i decreti-legge, emanati su deliberazione del Consiglio dei ministri, sono soggetti al controllo preventivo di legittimità della Corte dei conti?",
+  "No, ne sono esclusi per legge", ["Sì, sempre", "Solo i decreti-legge", "Solo se comportano nuove spese"],
+  "Art. 16, comma 1, della L. 400/1988.", "art. 16", "Non sono soggetti al controllo preventivo di legittimità della Corte dei conti i decreti del Presidente della Repubblica")
+G("cost-228", "Fonti del diritto", 4, "Sui regolamenti governativi dell'art. 17, comma 1, il Consiglio di Stato deve pronunciarsi:",
+  "entro novanta giorni dalla richiesta", ["entro trenta giorni", "entro sessanta giorni", "senza alcun termine"],
+  "I regolamenti sono emanati con decreto del Presidente della Repubblica, previa deliberazione del Consiglio dei ministri.", "art. 17", "sentito il parere del Consiglio di Stato che deve pronunziarsi entro novanta giorni dalla richiesta")
+G("cost-229", "Fonti del diritto", 5, "Nei regolamenti di delegificazione (art. 17, comma 2, L. 400/1988), da quando opera l'abrogazione delle norme di legge vigenti?",
+  "Dall'entrata in vigore delle norme regolamentari", ["Dall'entrata in vigore della legge di autorizzazione", "Dalla deliberazione del Consiglio dei ministri", "Dal parere del Consiglio di Stato"],
+  "La legge autorizza il regolamento, detta le norme generali e dispone l'abrogazione, con effetto dall'entrata in vigore del regolamento.", "art. 17", "dispongono l'abrogazione delle norme vigenti, con effetto dall'entrata in vigore delle norme regolamentari")
+G("cost-230", "Fonti del diritto", 4, "Nella gerarchia dei regolamenti, i regolamenti ministeriali e interministeriali:",
+  "non possono dettare norme contrarie a quelle dei regolamenti governativi", ["prevalgono sui regolamenti governativi", "possono derogare alle leggi", "non richiedono alcuna autorizzazione di legge"],
+  "Art. 17, comma 3: servono inoltre un'espressa autorizzazione di legge e la comunicazione preventiva al Presidente del Consiglio.", "art. 17", "I regolamenti ministeriali ed interministeriali non possono dettare norme contrarie a quelle dei regolamenti emanati dal Governo")
+
+R("cost-231", "Referendum", 2, "Con quale formula comincia il quesito del referendum abrogativo?",
+  "«Volete che sia abrogata…»", ["«Approvate il testo della legge…»", "«Siete favorevoli alla legge…»", "«Volete che sia modificata…»"],
+  "Art. 27 della L. 352/1970: la formula è completata con data, numero e titolo della legge.", "art. 27", "volete che sia abrogata")
+R("cost-232", "Referendum", 4, "Entro quale termine devono essere depositati in Cassazione i fogli con le firme per il referendum abrogativo?",
+  "Entro tre mesi dalla data del timbro apposto sui fogli", ["Entro sei mesi dalla vidimazione", "Entro un anno dalla prima firma", "Entro trenta giorni dalla raccolta"],
+  "Art. 28: il deposito va fatto presso la cancelleria della Corte di cassazione.", "art. 28", "deve essere effettuato entro tre mesi dalla data del timbro apposto sui fogli medesimi")
+R("cost-233", "Referendum", 4, "Da quanti promotori, almeno, deve essere effettuato il deposito delle firme per il referendum abrogativo?",
+  "Tre", ["Uno", "Dieci", "Cinque"],
+  "Art. 28: i promotori dichiarano al cancelliere il numero delle firme.", "art. 28", "Tale deposito deve essere effettuato da almeno tre dei promotori")
+R("cost-234", "Referendum", 4, "Con quale maggioranza il consiglio regionale delibera di chiedere un referendum abrogativo?",
+  "Maggioranza dei consiglieri assegnati alla Regione", ["Due terzi dei consiglieri", "Maggioranza dei presenti", "Unanimità"],
+  "Art. 30 della L. 352/1970; la richiesta richiede almeno cinque consigli regionali (art. 75 Cost.).", "art. 30", "deve essere approvata dal consiglio regionale con il voto della maggioranza dei consiglieri assegnati alla regione")
+R("cost-235", "Referendum", 4, "In quale periodo non può essere depositata una richiesta di referendum abrogativo?",
+  "Nell'anno anteriore alla scadenza di una delle Camere e nei sei mesi successivi alla convocazione dei comizi elettorali", ["Nei tre mesi estivi", "Durante la sessione di bilancio", "Nei sei mesi successivi all'elezione del Presidente della Repubblica"],
+  "Art. 31 della L. 352/1970.", "art. 31", "Non può essere depositata richiesta di referendum nell'anno anteriore alla scadenza di una delle due Camere")
+R("cost-236", "Referendum", 3, "In quale periodo dell'anno devono essere depositate le richieste di referendum abrogativo?",
+  "Dal 1° gennaio al 30 settembre", ["Dal 1° marzo al 31 dicembre", "Dal 15 aprile al 15 giugno", "In qualsiasi momento"],
+  "Art. 32: alla scadenza del 30 settembre l'Ufficio centrale esamina tutte le richieste.", "art. 32", "le richieste di referendum devono essere depositate in ciascun anno dal 1 gennaio al 30 settembre")
+R("cost-237", "Referendum", 3, "Dove è costituito l'Ufficio centrale per il referendum?",
+  "Presso la Corte di cassazione", ["Presso la Corte costituzionale", "Presso il Ministero dell'interno", "Presso il Consiglio di Stato"],
+  "Art. 12: verifica la conformità della richiesta alla legge; l'ammissibilità costituzionale spetta invece alla Corte costituzionale.", "art. 12", "Presso la Corte di cassazione è costituito un ufficio centrale per il referendum")
+R("cost-238", "Referendum", 4, "Entro quale data va pubblicata la sentenza della Corte costituzionale sull'ammissibilità dei referendum abrogativi?",
+  "Entro il 10 febbraio", ["Entro il 31 dicembre", "Entro il 20 gennaio", "Entro il 15 aprile"],
+  "Art. 33: la camera di consiglio è fissata non oltre il 20 gennaio, la sentenza si pubblica entro il 10 febbraio.", "art. 33", "decide con sentenza, da pubblicarsi entro il 10 febbraio")
+R("cost-239", "Referendum", 3, "In quale periodo si vota il referendum abrogativo?",
+  "In una domenica tra il 15 aprile e il 15 giugno", ["In una domenica tra il 1° marzo e il 30 aprile", "In qualsiasi domenica dell'anno", "In una domenica tra il 15 settembre e il 15 novembre"],
+  "Art. 34: il referendum è indetto con decreto del Presidente della Repubblica, su deliberazione del Consiglio dei ministri.", "art. 34", "in una domenica compresa tra il 15 aprile ed il 15 giugno")
+R("cost-240", "Referendum", 4, "Cosa accade a un referendum abrogativo già indetto se le Camere vengono sciolte anticipatamente?",
+  "Si intende automaticamente sospeso", ["Si svolge comunque nella data fissata", "Decade definitivamente", "Si vota insieme alle elezioni politiche"],
+  "Art. 34: i termini riprendono dal 365° giorno successivo all'elezione.", "art. 34", "il referendum già indetto si intende automaticamente sospeso")
+R("cost-241", "Referendum", 3, "Se vince il sì al referendum abrogativo, come si produce l'abrogazione?",
+  "Il Presidente della Repubblica la dichiara con proprio decreto", ["La dichiara la Corte di cassazione con sentenza", "Le Camere approvano una legge di abrogazione", "Opera dal giorno stesso del voto, senza altri atti"],
+  "Art. 37: l'abrogazione ha effetto dal giorno successivo alla pubblicazione del decreto in Gazzetta Ufficiale.", "art. 37", "il Presidente della Repubblica, con proprio decreto, dichiara l'avvenuta abrogazione della legge")
+R("cost-242", "Referendum", 5, "Per quanto tempo, al massimo, può essere ritardata l'entrata in vigore dell'abrogazione referendaria?",
+  "Non più di 60 giorni dalla pubblicazione del decreto", ["Non più di un anno", "Non più di 30 giorni", "Non più di 6 mesi"],
+  "Art. 37: lo dispone il decreto stesso, su proposta del ministro interessato e previa deliberazione del Consiglio dei ministri.", "art. 37", "può ritardare l'entrata in vigore della abrogazione per un termine non superiore a 60 giorni")
+R("cost-243", "Referendum", 3, "Se il referendum abrogativo dà esito contrario all'abrogazione, dopo quanto tempo può essere riproposto sulla stessa legge?",
+  "Dopo cinque anni", ["Dopo un anno", "Mai più", "Dopo tre anni"],
+  "Art. 38 della L. 352/1970.", "art. 38", "prima che siano trascorsi cinque anni")
+R("cost-244", "Referendum", 4, "Se prima del voto la legge sottoposta a referendum viene abrogata (senza essere sostituita da una disciplina equivalente), cosa avviene?",
+  "L'Ufficio centrale dichiara che le operazioni non hanno più corso", ["Il referendum si svolge comunque", "Decide il Presidente della Repubblica", "La Corte costituzionale annulla l'abrogazione"],
+  "Art. 39; la sentenza 68/1978 della Corte costituzionale ha previsto che il voto si sposti sulle nuove norme se la nuova disciplina non ne cambia i principi.", "art. 39", "l'Ufficio centrale per il referendum dichiara che le operazioni relative non hanno più corso")
+R("cost-245", "Revisione costituzionale", 4, "Entro quale termine va presentata la richiesta di referendum su una legge costituzionale (art. 138 Cost.)?",
+  "Entro tre mesi dalla pubblicazione della legge", ["Entro trenta giorni dall'approvazione", "Entro sei mesi dalla promulgazione", "Entro un anno dalla seconda deliberazione"],
+  "Art. 4 della L. 352/1970: la richiesta va alla cancelleria della Corte di cassazione.", "art. 4", "La predetta richiesta deve pervenire alla cancelleria della Corte di cassazione entro tre mesi dalla pubblicazione")
+R("cost-246", "Revisione costituzionale", 5, "Il referendum costituzionale si tiene in una domenica compresa:",
+  "tra il 50° e il 70° giorno dopo il decreto di indizione", ["tra il 15 aprile e il 15 giugno", "tra il 30° e il 45° giorno dopo il decreto", "entro 90 giorni dall'ordinanza della Cassazione"],
+  "Art. 15 della L. 352/1970; la finestra 15 aprile-15 giugno vale invece per il referendum abrogativo.", "art. 15", "La data del referendum è fissata in una domenica compresa tra il 50° ed il 70° giorno successivo alla emanazione del decreto di indizione")
+R("cost-247", "Revisione costituzionale", 3, "Con quale formula inizia il quesito del referendum costituzionale?",
+  "«Approvate il testo della legge di revisione…»", ["«Volete che sia abrogata…»", "«Siete favorevoli alla modifica…»", "«Confermate la legge…»"],
+  "Art. 16 della L. 352/1970.", "art. 16", "Approvate il testo della legge di revisione dell'articolo")
+R("cost-248", "Formazione delle leggi", 3, "A chi va presentata la proposta di legge di iniziativa popolare, firmata da almeno 50.000 elettori?",
+  "Al Presidente di una delle due Camere", ["Al Presidente della Repubblica", "Alla Corte di cassazione", "Al Presidente del Consiglio dei ministri"],
+  "Art. 48: la Camera che la riceve verifica e conta le firme.", "art. 48", "deve essere presentata, corredata delle firme degli elettori proponenti, al Presidente di una delle due Camere")
+R("cost-249", "Formazione delle leggi", 4, "Per una proposta di legge di iniziativa popolare, non sono validi i fogli firme vidimati:",
+  "oltre sei mesi prima della presentazione", ["oltre un anno prima della presentazione", "oltre tre mesi prima della presentazione", "oltre trenta giorni prima della presentazione"],
+  "Art. 49: la proposta deve essere redatta in articoli e accompagnata da una relazione.", "art. 49", "Non sono validi i fogli che siano stati vidimati oltre sei mesi prima della presentazione della proposta")
+
+P("cost-250", "Corte costituzionale", 3, "Quanti giudici costituzionali eleggono i collegi della Corte di cassazione?",
+  "Tre", ["Uno", "Cinque", "Due"],
+  "Delle cinque nomine spettanti alle supreme magistrature, tre vanno alla Cassazione, una al Consiglio di Stato, una alla Corte dei conti.", "art. 2", "tre da un collegio del quale fanno parte il presidente della Corte di cassazione")
+P("cost-251", "Corte costituzionale", 4, "Quanti giudici costituzionali elegge il collegio del Consiglio di Stato?",
+  "Uno", ["Due", "Tre", "Nessuno"],
+  "Art. 2, lett. b), della L. 87/1953; un altro giudice è eletto dal collegio della Corte dei conti.", "art. 2", "uno da un collegio del quale fanno parte il presidente del Consiglio di Stato")
+P("cost-252", "Corte costituzionale", 3, "Con quale atto la Corte costituzionale giudica in via definitiva?",
+  "Con sentenza", ["Con ordinanza", "Con decreto", "Con parere"],
+  "Art. 18: gli altri provvedimenti della Corte sono ordinanze, quelli del Presidente sono decreti.", "art. 18", "La Corte giudica in via definitiva con sentenza")
+P("cost-253", "Corte costituzionale", 2, "In nome di chi sono pronunciate le sentenze della Corte costituzionale?",
+  "Del popolo italiano", ["Della Repubblica", "Del Presidente della Repubblica", "Della Costituzione"],
+  "Art. 18 della L. 87/1953.", "art. 18", "Le sentenze sono pronunciate in nome del popolo italiano")
+P("cost-254", "Corte costituzionale", 4, "Chi può difendere le parti nei giudizi davanti alla Corte costituzionale?",
+  "Solo avvocati abilitati al patrocinio davanti alla Corte di cassazione", ["Qualsiasi avvocato iscritto all'albo", "Anche le parti personalmente", "Solo l'Avvocatura dello Stato"],
+  "Art. 20 della L. 87/1953.", "art. 20", "può essere affidata soltanto ad avvocati abilitati al patrocinio innanzi alla Corte di cassazione")
+P("cost-255", "Corte costituzionale", 4, "Da chi è rappresentato e difeso il Governo nei giudizi davanti alla Corte costituzionale?",
+  "Dall'Avvocato generale dello Stato o da un suo sostituto", ["Dal ministro della giustizia", "Da un avvocato del libero foro scelto dal Governo", "Dal Procuratore generale della Cassazione"],
+  "Art. 20, terzo comma, anche quando interviene il Presidente del Consiglio o un ministro delegato.", "art. 20", "è rappresentato e difeso dall'Avvocato generale dello Stato")
+P("cost-256", "Corte costituzionale", 4, "Nel giudizio in via incidentale, quando il giudice rimette la questione alla Corte costituzionale?",
+  "Quando la questione è rilevante per decidere e non è manifestamente infondata", ["Sempre, se una parte lo chiede", "Solo se lo chiede il pubblico ministero", "Solo se la legge è stata approvata da meno di un anno"],
+  "Art. 23: rilevanza e non manifesta infondatezza sono i due filtri del giudice a quo.", "art. 23", "qualora il giudizio non possa essere definito indipendentemente dalla risoluzione della questione di legittimità costituzionale o non ritenga che la questione sollevata sia manifestamente infondata")
+P("cost-257", "Corte costituzionale", 3, "Cosa succede al processo in cui il giudice solleva una questione di legittimità costituzionale?",
+  "Viene sospeso e gli atti sono trasmessi alla Corte", ["Prosegue normalmente", "Si estingue", "Passa alla Corte di cassazione"],
+  "Art. 23: l'ordinanza di rimessione dispone la trasmissione degli atti e sospende il giudizio.", "art. 23", "dispone l'immediata trasmissione degli atti alla Corte costituzionale e sospende il giudizio in corso")
+P("cost-258", "Corte costituzionale", 5, "Come si chiama la dichiarazione con cui la Corte estende l'incostituzionalità ad altre norme collegate a quella impugnata?",
+  "Illegittimità consequenziale", ["Interpretazione adeguatrice", "Sentenza additiva", "Abrogazione tacita"],
+  "Art. 27: la Corte dichiara anche le disposizioni la cui illegittimità deriva come conseguenza dalla decisione.", "art. 27", "quali sono le altre disposizioni legislative, la cui illegittimità deriva come conseguenza dalla decisione adottata")
+P("cost-259", "Corte costituzionale", 4, "Il controllo di legittimità della Corte costituzionale sulle leggi:",
+  "esclude ogni valutazione politica e ogni sindacato sulla discrezionalità del Parlamento", ["comprende la valutazione dell'opportunità politica", "riguarda anche i regolamenti parlamentari interni", "può sostituire le scelte del legislatore"],
+  "Art. 28 della L. 87/1953.", "art. 28", "esclude ogni valutazione di natura politica e ogni sindacato sull'uso del potere discrezionale del Parlamento")
+P("cost-260", "Corte costituzionale", 3, "Da quando le norme dichiarate incostituzionali non possono più essere applicate?",
+  "Dal giorno successivo alla pubblicazione della decisione", ["Dal giorno della decisione", "Dopo 60 giorni dalla pubblicazione", "Dall'abrogazione da parte del Parlamento"],
+  "Art. 30, terzo comma; coincide con l'art. 136 Cost.", "art. 30", "Le norme dichiarate incostituzionali non possono avere applicazione dal giorno successivo alla pubblicazione della decisione")
+P("cost-261", "Corte costituzionale", 5, "Se in base a una norma penale poi dichiarata incostituzionale è stata pronunciata una condanna irrevocabile:",
+  "ne cessano l'esecuzione e tutti gli effetti penali", ["la condanna resta valida perché irrevocabile", "serve una grazia del Presidente della Repubblica", "si riduce la pena di un terzo"],
+  "Art. 30, ultimo comma, della L. 87/1953.", "art. 30", "ne cessano la esecuzione e tutti gli effetti penali")
+P("cost-262", "Corte costituzionale", 4, "Entro quanto tempo dalla decisione devono essere depositate in cancelleria le sentenze della Corte costituzionale nei giudizi in via incidentale?",
+  "Venti giorni", ["Dieci giorni", "Sessanta giorni", "Novanta giorni"],
+  "Art. 26 della L. 87/1953; con il deposito chiunque può prenderne visione e ottenerne copia (art. 19).", "art. 26", "Le sentenze devono essere depositate in cancelleria nel termine di venti giorni dalla decisione")
+P("cost-263", "Corte costituzionale", 5, "Entro quale termine il Governo può impugnare uno statuto regionale ordinario davanti alla Corte costituzionale?",
+  "Entro trenta giorni dalla pubblicazione", ["Entro sessanta giorni dalla pubblicazione", "Entro tre mesi dall'approvazione", "Entro un anno"],
+  "Art. 31, comma 1, della L. 87/1953, richiamando l'art. 123 Cost.", "art. 31", "essere promossa entro il termine di trenta giorni dalla pubblicazione")
+P("cost-264", "Corte costituzionale", 5, "Perché sorga un conflitto di attribuzione tra poteri dello Stato, gli organi in conflitto devono essere:",
+  "competenti a dichiarare definitivamente la volontà del potere cui appartengono", ["organi costituzionali elettivi", "organi collegiali", "organi dotati di bilancio autonomo"],
+  "Art. 37: la Corte decide prima, in camera di consiglio, sull'ammissibilità del ricorso.", "art. 37", "se insorge tra organi competenti a dichiarare definitivamente la volontà del potere cui appartengono")
+P("cost-265", "Corte costituzionale", 4, "Qual è il termine per proporre ricorso per conflitto di attribuzione tra Stato e Regioni?",
+  "Sessanta giorni dalla notificazione, pubblicazione o conoscenza dell'atto", ["Trenta giorni dall'adozione dell'atto", "Novanta giorni dalla pubblicazione", "Un anno dall'adozione dell'atto"],
+  "Art. 39: per lo Stato ricorre il Presidente del Consiglio, per la Regione il Presidente della Giunta.", "art. 39", "Il termine per produrre ricorso è di sessanta giorni")
+P("cost-266", "Corte costituzionale", 5, "Nel conflitto di attribuzione tra Stato e Regioni, l'esecuzione dell'atto contestato può essere sospesa?",
+  "Sì, dalla Corte per gravi ragioni con ordinanza motivata", ["No, mai", "Sì, dal Presidente del Consiglio", "Sì, automaticamente con il ricorso"],
+  "Art. 40 della L. 87/1953.", "art. 40", "sospesa per gravi ragioni, con ordinanza motivata, dalla Corte")
+
+# --- Articoli della Costituzione non ancora coperti ---
+K("cost-267", "Principi fondamentali", 1, "Quali minoranze la Repubblica tutela con apposite norme, secondo l'art. 6 della Costituzione?",
+  "Le minoranze linguistiche", ["Le minoranze politiche in Parlamento", "Le minoranze azionarie", "Le minoranze religiose soltanto"],
+  "L'art. 6 è tra i principi fondamentali.", "art. 6", "La Repubblica tutela con apposite norme le minoranze linguistiche")
+K("cost-268", "Diritti e libertà", 3, "Secondo l'art. 20 della Costituzione, il fine di religione o di culto di un'associazione:",
+  "non può essere causa di speciali limitazioni legislative né di speciali gravami fiscali", ["comporta l'esenzione da ogni tributo", "richiede un'autorizzazione del Ministero dell'interno", "è ammesso solo per le confessioni con intesa"],
+  "L'art. 20 vieta discriminazioni legislative e fiscali legate al carattere ecclesiastico o religioso.", "art. 20", "non possono essere causa di speciali limitazioni legislative, né di speciali gravami fiscali")
+K("cost-269", "Rapporti etico-sociali", 2, "Nell'agevolare la formazione della famiglia, l'art. 31 riserva particolare riguardo:",
+  "alle famiglie numerose", ["alle famiglie con un solo genitore lavoratore", "alle famiglie residenti nei piccoli comuni", "alle famiglie di nuova immigrazione"],
+  "L'art. 31 prevede misure economiche e altre provvidenze per la famiglia.", "art. 31", "con particolare riguardo alle famiglie numerose")
+K("cost-270", "Rapporti etico-sociali", 2, "Quali soggetti la Repubblica protegge, secondo il secondo comma dell'art. 31?",
+  "La maternità, l'infanzia e la gioventù", ["Gli anziani e i disabili", "I lavoratori autonomi", "Gli studenti universitari"],
+  "La Repubblica favorisce gli istituti necessari a tale scopo.", "art. 31", "Protegge la maternità, l'infanzia e la gioventù")
+K("cost-271", "Rapporti economici", 1, "Secondo l'art. 35, la Repubblica tutela il lavoro:",
+  "in tutte le sue forme ed applicazioni", ["solo quello subordinato", "solo quello svolto in Italia", "solo quello pubblico"],
+  "Primo comma dell'art. 35.", "art. 35", "La Repubblica tutela il lavoro in tutte le sue forme ed applicazioni")
+K("cost-272", "Rapporti economici", 2, "Oltre alla tutela del lavoro, l'art. 35 affida alla Repubblica la cura:",
+  "della formazione e dell'elevazione professionale dei lavoratori", ["della fissazione per legge di tutti i salari", "della gestione delle imprese private", "dell'iscrizione obbligatoria ai sindacati"],
+  "Art. 35, secondo comma.", "art. 35", "Cura la formazione e l'elevazione professionale dei lavoratori")
+K("cost-273", "Rapporti economici", 3, "Come tratta l'art. 35 la libertà di emigrazione?",
+  "La riconosce, salvo gli obblighi stabiliti dalla legge nell'interesse generale", ["La vieta ai lavoratori qualificati", "La subordina all'autorizzazione del Governo", "Non ne parla"],
+  "La Repubblica tutela anche il lavoro italiano all'estero.", "art. 35", "Riconosce la libertà di emigrazione, salvo gli obblighi stabiliti dalla legge nell'interesse generale")
+K("cost-274", "Rapporti economici", 4, "Secondo l'art. 43, la legge può riservare o trasferire allo Stato, a enti pubblici o a comunità di lavoratori o utenti imprese che riguardano:",
+  "servizi pubblici essenziali, fonti di energia o situazioni di monopolio", ["qualunque attività commerciale", "solo il settore agricolo", "solo le banche"],
+  "Il trasferimento avviene mediante espropriazione e salvo indennizzo, a fini di utilità generale.", "art. 43", "che si riferiscano a servizi pubblici essenziali o a fonti di energia o a situazioni di monopolio")
+K("cost-275", "Rapporti economici", 3, "Per quali finalità l'art. 44 consente alla legge di imporre obblighi e vincoli alla proprietà terriera privata?",
+  "Il razionale sfruttamento del suolo e l'instaurazione di equi rapporti sociali", ["L'aumento delle entrate fiscali", "La difesa militare del territorio", "La tutela dei grandi latifondi"],
+  "L'art. 44 prevede anche limiti all'estensione della proprietà, la bonifica e la trasformazione del latifondo.", "art. 44", "Al fine di conseguire il razionale sfruttamento del suolo e di stabilire equi rapporti sociali")
+K("cost-276", "Rapporti economici", 3, "A favore di quali zone l'art. 44 prevede espressamente provvedimenti di legge?",
+  "Le zone montane", ["Le zone costiere", "Le zone di confine", "Le aree metropolitane"],
+  "Ultimo comma dell'art. 44.", "art. 44", "La legge dispone provvedimenti a favore delle zone montane")
+K("cost-277", "Rapporti economici", 3, "Quale tipo di cooperazione la Repubblica riconosce secondo l'art. 45?",
+  "Quella a carattere di mutualità e senza fini di speculazione privata", ["Ogni forma di società commerciale", "Solo la cooperazione internazionale", "Quella con capitale pubblico"],
+  "La Repubblica ne riconosce la funzione sociale.", "art. 45", "la funzione sociale della cooperazione a carattere di mutualità e senza fini di speculazione privata")
+K("cost-278", "Rapporti economici", 2, "Quale attività economica è espressamente richiamata nell'ultimo comma dell'art. 45?",
+  "L'artigianato", ["Il commercio al dettaglio", "Il turismo", "La pesca"],
+  "«La legge provvede alla tutela e allo sviluppo dell'artigianato».", "art. 45", "La legge provvede alla tutela e allo sviluppo dell'artigianato")
+K("cost-279", "Rapporti economici", 4, "Quale diritto dei lavoratori riconosce l'art. 46 della Costituzione?",
+  "Collaborare alla gestione delle aziende, nei modi e nei limiti stabiliti dalle leggi", ["Eleggere il consiglio di amministrazione", "Partecipare agli utili in misura fissa", "Acquistare l'azienda in caso di vendita"],
+  "Il diritto è riconosciuto ai fini dell'elevazione economica e sociale del lavoro e in armonia con le esigenze della produzione.", "art. 46", "il diritto dei lavoratori a collaborare, nei modi e nei limiti stabiliti dalle leggi, alla gestione delle aziende")
+K("cost-280", "Parlamento", 1, "Da quale fonte è stabilita l'indennità dei membri del Parlamento?",
+  "Dalla legge", ["Dal regolamento di ciascuna Camera", "Da un decreto del Presidente della Repubblica", "Dalla Costituzione, in misura fissa"],
+  "Art. 69 della Costituzione.", "art. 69", "I membri del Parlamento ricevono una indennità stabilita dalla legge")
+K("cost-281", "Formazione delle leggi", 1, "Secondo l'art. 70 della Costituzione, la funzione legislativa è esercitata:",
+  "collettivamente dalle due Camere", ["dalla sola Camera dei deputati", "dal Governo e dal Parlamento insieme", "dal Parlamento in seduta comune"],
+  "È il bicameralismo perfetto: ogni legge deve essere approvata da entrambe le Camere nello stesso testo.", "art. 70", "La funzione legislativa è esercitata collettivamente dalle due Camere")
+K("cost-282", "Magistratura", 2, "A chi spettano assunzioni, trasferimenti, promozioni e provvedimenti disciplinari dei magistrati?",
+  "Al Consiglio superiore della magistratura", ["Al Ministro della giustizia", "Alla Corte di cassazione", "Al Presidente della Repubblica"],
+  "Art. 105 della Costituzione.", "art. 105", "Spettano al Consiglio superiore della magistratura, secondo le norme dell'ordinamento giudiziario, le assunzioni")
+K("cost-283", "Magistratura", 3, "Con quale fonte sono stabilite le norme sull'ordinamento giudiziario?",
+  "Con legge", ["Con regolamento del CSM", "Con decreto del Ministro della giustizia", "Con legge costituzionale"],
+  "Art. 108: è una riserva di legge.", "art. 108", "Le norme sull'ordinamento giudiziario e su ogni magistratura sono stabilite con legge")
+K("cost-284", "Magistratura", 4, "L'art. 108 affida alla legge il compito di assicurare l'indipendenza:",
+  "dei giudici delle giurisdizioni speciali, del relativo pubblico ministero e degli estranei che partecipano alla giustizia", ["solo dei giudici di pace", "solo dei magistrati della Corte di cassazione", "degli avvocati del libero foro"],
+  "Secondo comma dell'art. 108.", "art. 108", "La legge assicura l'indipendenza dei giudici delle giurisdizioni speciali")
+K("cost-285", "Magistratura", 3, "Fatte salve le competenze del CSM, a chi spettano organizzazione e funzionamento dei servizi relativi alla giustizia?",
+  "Al Ministro della giustizia", ["Al Presidente della Corte di cassazione", "Al Presidente della Repubblica", "Ai capi degli uffici giudiziari, senza controllo"],
+  "Art. 110 della Costituzione.", "art. 110", "spettano al Ministro della giustizia l'organizzazione e il funzionamento dei servizi relativi alla giustizia")
+K("cost-286", "Magistratura", 3, "Secondo l'art. 125 della Costituzione, cosa è istituito nella Regione?",
+  "Organi di giustizia amministrativa di primo grado", ["Una sezione della Corte costituzionale", "Una Corte d'appello regionale", "Un Consiglio superiore regionale"],
+  "Sono i Tribunali amministrativi regionali (TAR), ordinati da legge della Repubblica.", "art. 125", "Nella Regione sono istituiti organi di giustizia amministrativa di primo grado")
+K("cost-287", "Magistratura", 4, "Gli organi di giustizia amministrativa di primo grado possono avere sezioni fuori dal capoluogo regionale?",
+  "Sì, possono istituirsi sezioni con sede diversa dal capoluogo", ["No, mai", "Solo nelle Regioni a statuto speciale", "Solo con legge costituzionale"],
+  "Art. 125, secondo periodo; ad esempio le sezioni staccate dei TAR.", "art. 125", "Possono istituirsi sezioni con sede diversa dal capoluogo della Regione")
+K("cost-288", "Regioni ed enti locali", 2, "Quale di queste Regioni compare nell'elenco dell'art. 131 della Costituzione?",
+  "Molise", ["Romagna", "Salento", "Alto Adige"],
+  "L'art. 131 elenca venti Regioni; il Molise è stato aggiunto con la L. cost. 3/1963.", "art. 131", "Molise")
+K("cost-289", "Regioni ed enti locali", 4, "Come può un Comune essere staccato da una Regione e aggregato a un'altra (art. 132, secondo comma)?",
+  "Con referendum delle popolazioni interessate e legge della Repubblica, sentiti i Consigli regionali", ["Con legge costituzionale e parere della Corte costituzionale", "Con delibera del Consiglio comunale", "Con decreto del Presidente della Repubblica su richiesta del sindaco"],
+  "Serve la richiesta degli enti interessati, l'approvazione della maggioranza delle popolazioni con referendum e una legge ordinaria.", "art. 132", "siano staccati da una Regione ed aggregati ad un'altra")
+K("cost-290", "Regioni ed enti locali", 4, "Con quale atto si dispone la fusione di Regioni esistenti?",
+  "Con legge costituzionale, sentiti i Consigli regionali", ["Con legge ordinaria", "Con decreto del Presidente della Repubblica", "Con delibera dei Consigli regionali interessati"],
+  "Art. 132, primo comma; occorre anche l'approvazione con referendum delle popolazioni interessate.", "art. 132", "Si può con legge costituzionale, sentiti i Consigli regionali, disporre la fusione di Regioni esistenti")
+K("cost-291", "Rapporti economici", 4, "Secondo l'art. 43, il trasferimento di imprese di preminente interesse generale allo Stato o a enti pubblici avviene:",
+  "mediante espropriazione e salvo indennizzo", ["senza alcun indennizzo", "solo con il consenso del proprietario", "mediante confisca penale"],
+  "L'art. 43 consente riserva originaria o trasferimento, a fini di utilità generale.", "art. 43", "mediante espropriazione e salvo indennizzo")
+K("cost-292", "Regioni ed enti locali", 4, "L'istituzione di nuove Province nell'ambito di una Regione è stabilita:",
+  "con leggi della Repubblica, su iniziativa dei Comuni, sentita la Regione", ["con legge regionale", "con decreto prefettizio", "con referendum provinciale"],
+  "Art. 133, primo comma.", "art. 133", "sono stabiliti con leggi della Repubblica, su iniziative dei Comuni, sentita la stessa Regione")
+K("cost-293", "Regioni ed enti locali", 4, "Per quali ragioni il Presidente della Repubblica può sciogliere il Consiglio regionale, oltre agli atti contrari alla Costituzione e alle gravi violazioni di legge?",
+  "Per ragioni di sicurezza nazionale", ["Per inefficienza della Giunta", "Per mancata approvazione dello statuto entro un anno", "Su richiesta di un terzo dei sindaci"],
+  "Art. 126, primo comma: il decreto è adottato sentita la Commissione parlamentare per le questioni regionali.", "art. 126", "Lo scioglimento e la rimozione possono altresì essere disposti per ragioni di sicurezza nazionale")
+K("cost-294", "Rapporti economici", 3, "Sul piano internazionale, cosa promuove e favorisce la Repubblica secondo l'art. 35?",
+  "Gli accordi e le organizzazioni internazionali che affermano e regolano i diritti del lavoro", ["L'uscita dalle organizzazioni internazionali", "Solo gli accordi commerciali bilaterali", "La libera circolazione dei capitali senza limiti"],
+  "Art. 35, terzo comma.", "art. 35", "Promuove e favorisce gli accordi e le organizzazioni internazionali intesi ad affermare e regolare i diritti del lavoro")
+K("cost-295", "Organi ausiliari", 3, "La Corte dei conti, secondo l'art. 100, a chi riferisce direttamente sul risultato dei controlli?",
+  "Alle Camere", ["Al Presidente della Repubblica", "Al Ministro dell'economia", "Al Consiglio di Stato"],
+  "Art. 100, secondo comma.", "art. 100", "Riferisce direttamente alle Camere sul risultato del riscontro eseguito")
+K("cost-296", "Organi ausiliari", 4, "Rispetto a chi la legge assicura l'indipendenza del Consiglio di Stato e della Corte dei conti?",
+  "Di fronte al Governo", ["Di fronte alla magistratura ordinaria", "Di fronte alle Regioni", "Di fronte al Parlamento in seduta comune"],
+  "Ultimo comma dell'art. 100.", "art. 100", "La legge assicura l'indipendenza dei due Istituti e dei loro componenti di fronte al Governo")
+K("cost-297", "Magistratura", 4, "Tra chi è eletto il vicepresidente del Consiglio superiore della magistratura?",
+  "Tra i componenti designati dal Parlamento", ["Tra i magistrati eletti", "Tra i membri di diritto", "Tra i ministri"],
+  "Art. 104: il CSM è presieduto dal Presidente della Repubblica, che non lo guida nell'attività ordinaria.", "art. 104", "Il Consiglio elegge un vicepresidente fra i componenti designati dal Parlamento")
+K("cost-298", "Magistratura", 5, "Quale incompatibilità prevede l'art. 104 per i membri elettivi del CSM finché sono in carica?",
+  "Non possono essere iscritti negli albi professionali né far parte del Parlamento o di un Consiglio regionale", ["Non possono votare alle elezioni politiche", "Non possono insegnare all'università", "Non possono pubblicare libri"],
+  "Durano in carica quattro anni e non sono immediatamente rieleggibili.", "art. 104", "Non possono, finchè sono in carica, essere iscritti negli albi professionali")
+K("cost-299", "Rapporti economici", 3, "Quale proprietà agricola la legge aiuta, secondo l'art. 44?",
+  "La piccola e la media proprietà", ["Solo il latifondo", "Solo la proprietà pubblica", "Solo le grandi imprese agricole"],
+  "L'art. 44 fissa limiti all'estensione della proprietà terriera e promuove la trasformazione del latifondo.", "art. 44", "aiuta la piccola e la media proprietà")
+K("cost-300", "Pubblica amministrazione", 3, "Se un pubblico impiegato è membro del Parlamento, come può essere promosso?",
+  "Soltanto per anzianità", ["Solo per merito", "Non può essere promosso in alcun modo", "Con il voto della Camera di appartenenza"],
+  "Art. 98, secondo periodo.", "art. 98", "non possono conseguire promozioni se non per anzianità")

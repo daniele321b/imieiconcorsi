@@ -3398,5 +3398,1705 @@
     "spiegazione": "Comma aggiunto dalla L. cost. 1/2003.",
     "fonte": "Costituzione, art. 51",
     "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-201",
+    "argomento": "Governo",
+    "livello": 4,
+    "testo": "Come sono effettuate le nomine alla presidenza di enti, istituti o aziende nazionali di competenza statale (esclusi gli enti pubblici creditizi)?",
+    "opzioni": [
+      "Con decreto del Presidente della Repubblica, su proposta del Presidente del Consiglio e previa deliberazione del Consiglio dei ministri",
+      "Con elezione del Parlamento in seduta comune",
+      "Con decreto del ministro competente, senza deliberazione collegiale",
+      "Con concorso pubblico per titoli"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 3 della L. 400/1988: la proposta al Consiglio dei ministri viene dal ministro competente; resta fermo il parere delle Commissioni parlamentari.",
+    "fonte": "L. 400/1988, art. 3",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-202",
+    "argomento": "Governo",
+    "livello": 4,
+    "testo": "Con quale atto è emanato il regolamento interno del Consiglio dei ministri?",
+    "opzioni": [
+      "Con legge ordinaria",
+      "Con decreto del Presidente del Consiglio dei ministri, previa deliberazione del Consiglio",
+      "Con delibera dei Presidenti delle Camere",
+      "Con decreto del Presidente della Repubblica"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 4, comma 4: il regolamento interno è pubblicato nella Gazzetta Ufficiale.",
+    "fonte": "L. 400/1988, art. 4",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-203",
+    "argomento": "Governo",
+    "livello": 2,
+    "testo": "Come si conclude la formula di giuramento dei membri del Governo («Giuro di essere fedele alla Repubblica… e di esercitare le mie funzioni…»)?",
+    "opzioni": [
+      "secondo le direttive del Presidente del Consiglio",
+      "nel rispetto del programma di Governo",
+      "nell'interesse esclusivo della nazione",
+      "a tutela dei diritti dei cittadini"
+    ],
+    "corretta": 2,
+    "spiegazione": "La formula impegna a osservare lealmente la Costituzione e le leggi e a esercitare le funzioni nell'interesse esclusivo della nazione.",
+    "fonte": "L. 400/1988, art. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-204",
+    "argomento": "Governo",
+    "livello": 3,
+    "testo": "Chi controfirma il decreto di nomina del Presidente del Consiglio dei ministri?",
+    "opzioni": [
+      "Il Presidente del Senato",
+      "Il Presidente del Consiglio uscente",
+      "Il ministro della giustizia",
+      "Lo stesso Presidente del Consiglio nominato"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il decreto di nomina è controfirmato dal nuovo Presidente del Consiglio, insieme ai decreti di accettazione delle dimissioni del Governo precedente.",
+    "fonte": "L. 400/1988, art. 1",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-205",
+    "argomento": "Governo",
+    "livello": 2,
+    "testo": "Secondo l'art. 2 della L. 400/1988, quale organo determina la politica generale del Governo?",
+    "opzioni": [
+      "Il Consiglio dei ministri",
+      "Il Parlamento in seduta comune",
+      "Il Presidente della Repubblica",
+      "Il Consiglio di Gabinetto"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il Consiglio dei ministri determina la politica generale del Governo e l'indirizzo generale dell'azione amministrativa.",
+    "fonte": "L. 400/1988, art. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-206",
+    "argomento": "Governo",
+    "livello": 3,
+    "testo": "Chi dirime i conflitti di attribuzione tra i ministri?",
+    "opzioni": [
+      "La Corte costituzionale",
+      "Il Consiglio dei ministri",
+      "Il Presidente della Repubblica",
+      "Il Consiglio di Stato"
+    ],
+    "corretta": 1,
+    "spiegazione": "È una delle attribuzioni del Consiglio dei ministri elencate nell'art. 2, comma 1, della L. 400/1988.",
+    "fonte": "L. 400/1988, art. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-207",
+    "argomento": "Governo",
+    "livello": 3,
+    "testo": "Per porre la questione di fiducia davanti alle Camere, il Presidente del Consiglio ha bisogno:",
+    "opzioni": [
+      "dell'autorizzazione dei Presidenti delle Camere",
+      "del parere del Presidente della Repubblica",
+      "dell'assenso del Consiglio dei ministri",
+      "della richiesta di un decimo dei parlamentari"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'art. 2, comma 2, attribuisce al Consiglio dei ministri l'assenso all'iniziativa del Presidente del Consiglio.",
+    "fonte": "L. 400/1988, art. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-208",
+    "argomento": "Governo",
+    "livello": 4,
+    "testo": "L'elenco degli atti da sottoporre alla deliberazione del Consiglio dei ministri (art. 2, comma 3) è:",
+    "opzioni": [
+      "rimesso al regolamento interno del Consiglio",
+      "integrabile con decreto del Presidente del Consiglio",
+      "meramente esemplificativo",
+      "tassativo"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il comma 4 dell'art. 2 precisa che l'individuazione degli atti da deliberare è tassativa.",
+    "fonte": "L. 400/1988, art. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-209",
+    "argomento": "Governo",
+    "livello": 2,
+    "testo": "Chi convoca il Consiglio dei ministri e ne fissa l'ordine del giorno?",
+    "opzioni": [
+      "Il Presidente del Consiglio dei ministri",
+      "Il segretario generale della Presidenza del Consiglio",
+      "Il Presidente della Repubblica",
+      "Il ministro più anziano"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 4, comma 1, della L. 400/1988.",
+    "fonte": "L. 400/1988, art. 4",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-210",
+    "argomento": "Governo",
+    "livello": 3,
+    "testo": "Chi svolge le funzioni di segretario del Consiglio dei ministri?",
+    "opzioni": [
+      "Il ministro più giovane",
+      "Il sottosegretario di Stato alla Presidenza del Consiglio designato nel decreto di nomina",
+      "Un consigliere di Stato",
+      "Il Vicepresidente del Consiglio"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il sottosegretario alla Presidenza cura anche la verbalizzazione e il registro delle deliberazioni.",
+    "fonte": "L. 400/1988, art. 4",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-211",
+    "argomento": "Governo",
+    "livello": 3,
+    "testo": "Tra le attribuzioni del Presidente del Consiglio a nome del Governo, l'art. 5 della L. 400/1988 prevede che egli:",
+    "opzioni": [
+      "scioglie le Camere",
+      "promulga le leggi",
+      "controfirma gli atti di promulgazione delle leggi",
+      "nomina i giudici costituzionali"
+    ],
+    "corretta": 2,
+    "spiegazione": "Promulgazione e scioglimento spettano al Presidente della Repubblica; il Presidente del Consiglio controfirma.",
+    "fonte": "L. 400/1988, art. 5",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-212",
+    "argomento": "Governo",
+    "livello": 4,
+    "testo": "In ordine a questioni politiche e amministrative, il Presidente del Consiglio può sospendere l'adozione di atti dei ministri:",
+    "opzioni": [
+      "annullandoli con proprio decreto",
+      "rimettendoli al Presidente della Repubblica",
+      "chiedendo il parere della Corte dei conti",
+      "sottoponendoli al Consiglio dei ministri nella riunione immediatamente successiva"
+    ],
+    "corretta": 3,
+    "spiegazione": "È uno dei poteri di coordinamento previsti dall'art. 5, comma 2, in attuazione dell'art. 95 della Costituzione.",
+    "fonte": "L. 400/1988, art. 5",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-213",
+    "argomento": "Governo",
+    "livello": 3,
+    "testo": "Chi esercita le attribuzioni conferite dalla legge in materia di servizi di sicurezza e di segreto di Stato?",
+    "opzioni": [
+      "Il Presidente del Consiglio dei ministri",
+      "Il Presidente della Repubblica",
+      "Il ministro della difesa",
+      "Il ministro dell'interno"
+    ],
+    "corretta": 0,
+    "spiegazione": "Lo prevede l'art. 5, comma 2, lett. g), della L. 400/1988.",
+    "fonte": "L. 400/1988, art. 5",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-214",
+    "argomento": "Governo",
+    "livello": 3,
+    "testo": "Come si chiama il comitato di ministri che può coadiuvare il Presidente del Consiglio nella direzione della politica generale?",
+    "opzioni": [
+      "Comitato interministeriale per la programmazione",
+      "Consiglio di Gabinetto",
+      "Consiglio supremo di difesa",
+      "Conferenza Stato-Regioni"
+    ],
+    "corretta": 1,
+    "spiegazione": "È composto dai ministri designati dal Presidente del Consiglio, sentito il Consiglio dei ministri.",
+    "fonte": "L. 400/1988, art. 6",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-215",
+    "argomento": "Governo",
+    "livello": 3,
+    "testo": "Se sono nominati più Vicepresidenti del Consiglio, a chi spetta la supplenza del Presidente assente o impedito?",
+    "opzioni": [
+      "A turno, mese per mese",
+      "Al Vicepresidente indicato dal Presidente della Repubblica",
+      "Al Vicepresidente più anziano secondo l'età",
+      "Al Vicepresidente nominato per primo"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 8, comma 1, della L. 400/1988.",
+    "fonte": "L. 400/1988, art. 8",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-216",
+    "argomento": "Governo",
+    "livello": 4,
+    "testo": "Se non è stato nominato un Vicepresidente e manca una diversa disposizione del Presidente del Consiglio, la supplenza spetta:",
+    "opzioni": [
+      "al ministro dell'economia",
+      "al ministro dell'interno",
+      "al sottosegretario alla Presidenza del Consiglio",
+      "al ministro più anziano secondo l'età"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 8, comma 2.",
+    "fonte": "L. 400/1988, art. 8",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-217",
+    "argomento": "Governo",
+    "livello": 3,
+    "testo": "Presso quale struttura sono nominati i ministri senza portafoglio?",
+    "opzioni": [
+      "Presso la Presidenza del Consiglio dei ministri",
+      "Presso il Ministero dell'interno",
+      "Presso il Ministero dell'economia",
+      "Presso il Quirinale"
+    ],
+    "corretta": 0,
+    "spiegazione": "Svolgono le funzioni loro delegate dal Presidente del Consiglio, sentito il Consiglio dei ministri.",
+    "fonte": "L. 400/1988, art. 9",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-218",
+    "argomento": "Governo",
+    "livello": 3,
+    "testo": "Il Presidente della Repubblica, su proposta del Consiglio dei ministri, può affidare al Presidente del Consiglio o a un ministro:",
+    "opzioni": [
+      "la presidenza di una Camera",
+      "l'incarico di reggere ad interim un Dicastero",
+      "la funzione di giudice costituzionale",
+      "il comando delle Forze armate"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 9, comma 4: l'interim si conferisce con decreto di cui si dà notizia in Gazzetta Ufficiale.",
+    "fonte": "L. 400/1988, art. 9",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-219",
+    "argomento": "Governo",
+    "livello": 3,
+    "testo": "Nelle mani di chi giurano i sottosegretari di Stato?",
+    "opzioni": [
+      "Del Presidente della Repubblica",
+      "Del ministro che coadiuvano",
+      "Del Presidente del Consiglio dei ministri",
+      "Del Presidente della Camera"
+    ],
+    "corretta": 2,
+    "spiegazione": "A differenza di ministri e Presidente del Consiglio, i sottosegretari giurano davanti al Presidente del Consiglio, con la stessa formula.",
+    "fonte": "L. 400/1988, art. 10",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-220",
+    "argomento": "Governo",
+    "livello": 4,
+    "testo": "A quanti sottosegretari, al massimo, può essere attribuito il titolo di vice ministro?",
+    "opzioni": [
+      "Quindici",
+      "Non c'è un limite",
+      "Cinque",
+      "Dieci"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 10, comma 3: il titolo spetta se sono conferite deleghe su strutture dipartimentali o più direzioni generali.",
+    "fonte": "L. 400/1988, art. 10",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-221",
+    "argomento": "Governo",
+    "livello": 4,
+    "testo": "I vice ministri invitati alle sedute del Consiglio dei ministri vi partecipano:",
+    "opzioni": [
+      "senza diritto di voto, per riferire sulla materia delegata",
+      "con voto solo sulle materie del proprio ministero",
+      "solo se manca il ministro competente, con diritto di voto",
+      "con pieno diritto di voto"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 10, comma 4.",
+    "fonte": "L. 400/1988, art. 10",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-222",
+    "argomento": "Fonti del diritto",
+    "livello": 4,
+    "testo": "Quando deve essere trasmesso al Presidente della Repubblica il testo di un decreto legislativo per l'emanazione?",
+    "opzioni": [
+      "Entro il giorno di scadenza della delega",
+      "Almeno venti giorni prima della scadenza della delega",
+      "Almeno sessanta giorni prima della scadenza",
+      "Almeno novanta giorni prima della scadenza"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 14, comma 2: l'emanazione deve comunque avvenire entro il termine fissato dalla legge di delegazione.",
+    "fonte": "L. 400/1988, art. 14",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-223",
+    "argomento": "Fonti del diritto",
+    "livello": 4,
+    "testo": "Se il termine per esercitare una delega legislativa supera i due anni, il Governo deve:",
+    "opzioni": [
+      "sottoporre gli schemi a referendum",
+      "ottenere il parere della Corte costituzionale",
+      "chiedere il parere delle Camere sugli schemi dei decreti delegati",
+      "chiedere una nuova legge di delegazione"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 14, comma 4: il parere è espresso dalle Commissioni permanenti competenti.",
+    "fonte": "L. 400/1988, art. 14",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-224",
+    "argomento": "Fonti del diritto",
+    "livello": 3,
+    "testo": "Quale di questi contenuti è vietato al decreto-legge dall'art. 15 della L. 400/1988?",
+    "opzioni": [
+      "Introdurre misure di immediata applicazione",
+      "Disciplinare materie economiche",
+      "Modificare leggi ordinarie",
+      "Conferire deleghe legislative"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il decreto-legge non può conferire deleghe, intervenire nelle materie dell'art. 72, quarto comma, Cost., reiterare decreti non convertiti né ripristinare norme dichiarate illegittime per vizi sostanziali.",
+    "fonte": "L. 400/1988, art. 15",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-225",
+    "argomento": "Fonti del diritto",
+    "livello": 3,
+    "testo": "Secondo l'art. 15 della L. 400/1988, il contenuto del decreto-legge deve essere:",
+    "opzioni": [
+      "specifico, omogeneo e corrispondente al titolo",
+      "limitato alle materie finanziarie",
+      "approvato preventivamente dalle Commissioni parlamentari",
+      "generale e programmatico"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il decreto deve contenere misure di immediata applicazione.",
+    "fonte": "L. 400/1988, art. 15",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-226",
+    "argomento": "Fonti del diritto",
+    "livello": 4,
+    "testo": "Da quando hanno efficacia, di regola, le modifiche apportate al decreto-legge in sede di conversione?",
+    "opzioni": [
+      "Dal sessantesimo giorno dopo il decreto",
+      "Dal giorno successivo alla pubblicazione della legge di conversione",
+      "Dal quindicesimo giorno dopo la pubblicazione della legge di conversione",
+      "Dalla data del decreto-legge"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 15, comma 5: salvo che la legge di conversione disponga diversamente; le modifiche sono elencate in allegato.",
+    "fonte": "L. 400/1988, art. 15",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-227",
+    "argomento": "Fonti del diritto",
+    "livello": 5,
+    "testo": "I decreti legislativi e i decreti-legge, emanati su deliberazione del Consiglio dei ministri, sono soggetti al controllo preventivo di legittimità della Corte dei conti?",
+    "opzioni": [
+      "Solo i decreti-legge",
+      "Sì, sempre",
+      "No, ne sono esclusi per legge",
+      "Solo se comportano nuove spese"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 16, comma 1, della L. 400/1988.",
+    "fonte": "L. 400/1988, art. 16",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-228",
+    "argomento": "Fonti del diritto",
+    "livello": 4,
+    "testo": "Sui regolamenti governativi dell'art. 17, comma 1, il Consiglio di Stato deve pronunciarsi:",
+    "opzioni": [
+      "entro trenta giorni",
+      "entro sessanta giorni",
+      "senza alcun termine",
+      "entro novanta giorni dalla richiesta"
+    ],
+    "corretta": 3,
+    "spiegazione": "I regolamenti sono emanati con decreto del Presidente della Repubblica, previa deliberazione del Consiglio dei ministri.",
+    "fonte": "L. 400/1988, art. 17",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-229",
+    "argomento": "Fonti del diritto",
+    "livello": 5,
+    "testo": "Nei regolamenti di delegificazione (art. 17, comma 2, L. 400/1988), da quando opera l'abrogazione delle norme di legge vigenti?",
+    "opzioni": [
+      "Dall'entrata in vigore delle norme regolamentari",
+      "Dalla deliberazione del Consiglio dei ministri",
+      "Dal parere del Consiglio di Stato",
+      "Dall'entrata in vigore della legge di autorizzazione"
+    ],
+    "corretta": 0,
+    "spiegazione": "La legge autorizza il regolamento, detta le norme generali e dispone l'abrogazione, con effetto dall'entrata in vigore del regolamento.",
+    "fonte": "L. 400/1988, art. 17",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-230",
+    "argomento": "Fonti del diritto",
+    "livello": 4,
+    "testo": "Nella gerarchia dei regolamenti, i regolamenti ministeriali e interministeriali:",
+    "opzioni": [
+      "possono derogare alle leggi",
+      "non possono dettare norme contrarie a quelle dei regolamenti governativi",
+      "non richiedono alcuna autorizzazione di legge",
+      "prevalgono sui regolamenti governativi"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 17, comma 3: servono inoltre un'espressa autorizzazione di legge e la comunicazione preventiva al Presidente del Consiglio.",
+    "fonte": "L. 400/1988, art. 17",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-231",
+    "argomento": "Referendum",
+    "livello": 2,
+    "testo": "Con quale formula comincia il quesito del referendum abrogativo?",
+    "opzioni": [
+      "«Volete che sia modificata…»",
+      "«Siete favorevoli alla legge…»",
+      "«Volete che sia abrogata…»",
+      "«Approvate il testo della legge…»"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 27 della L. 352/1970: la formula è completata con data, numero e titolo della legge.",
+    "fonte": "L. 352/1970, art. 27",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-232",
+    "argomento": "Referendum",
+    "livello": 4,
+    "testo": "Entro quale termine devono essere depositati in Cassazione i fogli con le firme per il referendum abrogativo?",
+    "opzioni": [
+      "Entro sei mesi dalla vidimazione",
+      "Entro un anno dalla prima firma",
+      "Entro trenta giorni dalla raccolta",
+      "Entro tre mesi dalla data del timbro apposto sui fogli"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 28: il deposito va fatto presso la cancelleria della Corte di cassazione.",
+    "fonte": "L. 352/1970, art. 28",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-233",
+    "argomento": "Referendum",
+    "livello": 4,
+    "testo": "Da quanti promotori, almeno, deve essere effettuato il deposito delle firme per il referendum abrogativo?",
+    "opzioni": [
+      "Tre",
+      "Dieci",
+      "Cinque",
+      "Uno"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 28: i promotori dichiarano al cancelliere il numero delle firme.",
+    "fonte": "L. 352/1970, art. 28",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-234",
+    "argomento": "Referendum",
+    "livello": 4,
+    "testo": "Con quale maggioranza il consiglio regionale delibera di chiedere un referendum abrogativo?",
+    "opzioni": [
+      "Maggioranza dei presenti",
+      "Maggioranza dei consiglieri assegnati alla Regione",
+      "Unanimità",
+      "Due terzi dei consiglieri"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 30 della L. 352/1970; la richiesta richiede almeno cinque consigli regionali (art. 75 Cost.).",
+    "fonte": "L. 352/1970, art. 30",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-235",
+    "argomento": "Referendum",
+    "livello": 4,
+    "testo": "In quale periodo non può essere depositata una richiesta di referendum abrogativo?",
+    "opzioni": [
+      "Nei tre mesi estivi",
+      "Nei sei mesi successivi all'elezione del Presidente della Repubblica",
+      "Nell'anno anteriore alla scadenza di una delle Camere e nei sei mesi successivi alla convocazione dei comizi elettorali",
+      "Durante la sessione di bilancio"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 31 della L. 352/1970.",
+    "fonte": "L. 352/1970, art. 31",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-236",
+    "argomento": "Referendum",
+    "livello": 3,
+    "testo": "In quale periodo dell'anno devono essere depositate le richieste di referendum abrogativo?",
+    "opzioni": [
+      "Dal 1° marzo al 31 dicembre",
+      "Dal 15 aprile al 15 giugno",
+      "In qualsiasi momento",
+      "Dal 1° gennaio al 30 settembre"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 32: alla scadenza del 30 settembre l'Ufficio centrale esamina tutte le richieste.",
+    "fonte": "L. 352/1970, art. 32",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-237",
+    "argomento": "Referendum",
+    "livello": 3,
+    "testo": "Dove è costituito l'Ufficio centrale per il referendum?",
+    "opzioni": [
+      "Presso la Corte di cassazione",
+      "Presso la Corte costituzionale",
+      "Presso il Ministero dell'interno",
+      "Presso il Consiglio di Stato"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 12: verifica la conformità della richiesta alla legge; l'ammissibilità costituzionale spetta invece alla Corte costituzionale.",
+    "fonte": "L. 352/1970, art. 12",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-238",
+    "argomento": "Referendum",
+    "livello": 4,
+    "testo": "Entro quale data va pubblicata la sentenza della Corte costituzionale sull'ammissibilità dei referendum abrogativi?",
+    "opzioni": [
+      "Entro il 20 gennaio",
+      "Entro il 10 febbraio",
+      "Entro il 31 dicembre",
+      "Entro il 15 aprile"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 33: la camera di consiglio è fissata non oltre il 20 gennaio, la sentenza si pubblica entro il 10 febbraio.",
+    "fonte": "L. 352/1970, art. 33",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-239",
+    "argomento": "Referendum",
+    "livello": 3,
+    "testo": "In quale periodo si vota il referendum abrogativo?",
+    "opzioni": [
+      "In una domenica tra il 1° marzo e il 30 aprile",
+      "In qualsiasi domenica dell'anno",
+      "In una domenica tra il 15 aprile e il 15 giugno",
+      "In una domenica tra il 15 settembre e il 15 novembre"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 34: il referendum è indetto con decreto del Presidente della Repubblica, su deliberazione del Consiglio dei ministri.",
+    "fonte": "L. 352/1970, art. 34",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-240",
+    "argomento": "Referendum",
+    "livello": 4,
+    "testo": "Cosa accade a un referendum abrogativo già indetto se le Camere vengono sciolte anticipatamente?",
+    "opzioni": [
+      "Decade definitivamente",
+      "Si svolge comunque nella data fissata",
+      "Si vota insieme alle elezioni politiche",
+      "Si intende automaticamente sospeso"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 34: i termini riprendono dal 365° giorno successivo all'elezione.",
+    "fonte": "L. 352/1970, art. 34",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-241",
+    "argomento": "Referendum",
+    "livello": 3,
+    "testo": "Se vince il sì al referendum abrogativo, come si produce l'abrogazione?",
+    "opzioni": [
+      "Il Presidente della Repubblica la dichiara con proprio decreto",
+      "La dichiara la Corte di cassazione con sentenza",
+      "Opera dal giorno stesso del voto, senza altri atti",
+      "Le Camere approvano una legge di abrogazione"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 37: l'abrogazione ha effetto dal giorno successivo alla pubblicazione del decreto in Gazzetta Ufficiale.",
+    "fonte": "L. 352/1970, art. 37",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-242",
+    "argomento": "Referendum",
+    "livello": 5,
+    "testo": "Per quanto tempo, al massimo, può essere ritardata l'entrata in vigore dell'abrogazione referendaria?",
+    "opzioni": [
+      "Non più di 30 giorni",
+      "Non più di 60 giorni dalla pubblicazione del decreto",
+      "Non più di 6 mesi",
+      "Non più di un anno"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 37: lo dispone il decreto stesso, su proposta del ministro interessato e previa deliberazione del Consiglio dei ministri.",
+    "fonte": "L. 352/1970, art. 37",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-243",
+    "argomento": "Referendum",
+    "livello": 3,
+    "testo": "Se il referendum abrogativo dà esito contrario all'abrogazione, dopo quanto tempo può essere riproposto sulla stessa legge?",
+    "opzioni": [
+      "Mai più",
+      "Dopo tre anni",
+      "Dopo cinque anni",
+      "Dopo un anno"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 38 della L. 352/1970.",
+    "fonte": "L. 352/1970, art. 38",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-244",
+    "argomento": "Referendum",
+    "livello": 4,
+    "testo": "Se prima del voto la legge sottoposta a referendum viene abrogata (senza essere sostituita da una disciplina equivalente), cosa avviene?",
+    "opzioni": [
+      "La Corte costituzionale annulla l'abrogazione",
+      "Il referendum si svolge comunque",
+      "Decide il Presidente della Repubblica",
+      "L'Ufficio centrale dichiara che le operazioni non hanno più corso"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 39; la sentenza 68/1978 della Corte costituzionale ha previsto che il voto si sposti sulle nuove norme se la nuova disciplina non ne cambia i principi.",
+    "fonte": "L. 352/1970, art. 39",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-245",
+    "argomento": "Revisione costituzionale",
+    "livello": 4,
+    "testo": "Entro quale termine va presentata la richiesta di referendum su una legge costituzionale (art. 138 Cost.)?",
+    "opzioni": [
+      "Entro tre mesi dalla pubblicazione della legge",
+      "Entro trenta giorni dall'approvazione",
+      "Entro sei mesi dalla promulgazione",
+      "Entro un anno dalla seconda deliberazione"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 4 della L. 352/1970: la richiesta va alla cancelleria della Corte di cassazione.",
+    "fonte": "L. 352/1970, art. 4",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-246",
+    "argomento": "Revisione costituzionale",
+    "livello": 5,
+    "testo": "Il referendum costituzionale si tiene in una domenica compresa:",
+    "opzioni": [
+      "tra il 30° e il 45° giorno dopo il decreto",
+      "tra il 50° e il 70° giorno dopo il decreto di indizione",
+      "entro 90 giorni dall'ordinanza della Cassazione",
+      "tra il 15 aprile e il 15 giugno"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 15 della L. 352/1970; la finestra 15 aprile-15 giugno vale invece per il referendum abrogativo.",
+    "fonte": "L. 352/1970, art. 15",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-247",
+    "argomento": "Revisione costituzionale",
+    "livello": 3,
+    "testo": "Con quale formula inizia il quesito del referendum costituzionale?",
+    "opzioni": [
+      "«Volete che sia abrogata…»",
+      "«Confermate la legge…»",
+      "«Approvate il testo della legge di revisione…»",
+      "«Siete favorevoli alla modifica…»"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 16 della L. 352/1970.",
+    "fonte": "L. 352/1970, art. 16",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-248",
+    "argomento": "Formazione delle leggi",
+    "livello": 3,
+    "testo": "A chi va presentata la proposta di legge di iniziativa popolare, firmata da almeno 50.000 elettori?",
+    "opzioni": [
+      "Al Presidente del Consiglio dei ministri",
+      "Alla Corte di cassazione",
+      "Al Presidente della Repubblica",
+      "Al Presidente di una delle due Camere"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 48: la Camera che la riceve verifica e conta le firme.",
+    "fonte": "L. 352/1970, art. 48",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-249",
+    "argomento": "Formazione delle leggi",
+    "livello": 4,
+    "testo": "Per una proposta di legge di iniziativa popolare, non sono validi i fogli firme vidimati:",
+    "opzioni": [
+      "oltre sei mesi prima della presentazione",
+      "oltre un anno prima della presentazione",
+      "oltre tre mesi prima della presentazione",
+      "oltre trenta giorni prima della presentazione"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 49: la proposta deve essere redatta in articoli e accompagnata da una relazione.",
+    "fonte": "L. 352/1970, art. 49",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-250",
+    "argomento": "Corte costituzionale",
+    "livello": 3,
+    "testo": "Quanti giudici costituzionali eleggono i collegi della Corte di cassazione?",
+    "opzioni": [
+      "Cinque",
+      "Tre",
+      "Uno",
+      "Due"
+    ],
+    "corretta": 1,
+    "spiegazione": "Delle cinque nomine spettanti alle supreme magistrature, tre vanno alla Cassazione, una al Consiglio di Stato, una alla Corte dei conti.",
+    "fonte": "L. 87/1953, art. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-251",
+    "argomento": "Corte costituzionale",
+    "livello": 4,
+    "testo": "Quanti giudici costituzionali elegge il collegio del Consiglio di Stato?",
+    "opzioni": [
+      "Nessuno",
+      "Tre",
+      "Uno",
+      "Due"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 2, lett. b), della L. 87/1953; un altro giudice è eletto dal collegio della Corte dei conti.",
+    "fonte": "L. 87/1953, art. 2",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-252",
+    "argomento": "Corte costituzionale",
+    "livello": 3,
+    "testo": "Con quale atto la Corte costituzionale giudica in via definitiva?",
+    "opzioni": [
+      "Con parere",
+      "Con decreto",
+      "Con ordinanza",
+      "Con sentenza"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 18: gli altri provvedimenti della Corte sono ordinanze, quelli del Presidente sono decreti.",
+    "fonte": "L. 87/1953, art. 18",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-253",
+    "argomento": "Corte costituzionale",
+    "livello": 2,
+    "testo": "In nome di chi sono pronunciate le sentenze della Corte costituzionale?",
+    "opzioni": [
+      "Del popolo italiano",
+      "Della Costituzione",
+      "Del Presidente della Repubblica",
+      "Della Repubblica"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 18 della L. 87/1953.",
+    "fonte": "L. 87/1953, art. 18",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-254",
+    "argomento": "Corte costituzionale",
+    "livello": 4,
+    "testo": "Chi può difendere le parti nei giudizi davanti alla Corte costituzionale?",
+    "opzioni": [
+      "Anche le parti personalmente",
+      "Solo avvocati abilitati al patrocinio davanti alla Corte di cassazione",
+      "Qualsiasi avvocato iscritto all'albo",
+      "Solo l'Avvocatura dello Stato"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 20 della L. 87/1953.",
+    "fonte": "L. 87/1953, art. 20",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-255",
+    "argomento": "Corte costituzionale",
+    "livello": 4,
+    "testo": "Da chi è rappresentato e difeso il Governo nei giudizi davanti alla Corte costituzionale?",
+    "opzioni": [
+      "Da un avvocato del libero foro scelto dal Governo",
+      "Dal Procuratore generale della Cassazione",
+      "Dall'Avvocato generale dello Stato o da un suo sostituto",
+      "Dal ministro della giustizia"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 20, terzo comma, anche quando interviene il Presidente del Consiglio o un ministro delegato.",
+    "fonte": "L. 87/1953, art. 20",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-256",
+    "argomento": "Corte costituzionale",
+    "livello": 4,
+    "testo": "Nel giudizio in via incidentale, quando il giudice rimette la questione alla Corte costituzionale?",
+    "opzioni": [
+      "Solo se lo chiede il pubblico ministero",
+      "Sempre, se una parte lo chiede",
+      "Solo se la legge è stata approvata da meno di un anno",
+      "Quando la questione è rilevante per decidere e non è manifestamente infondata"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 23: rilevanza e non manifesta infondatezza sono i due filtri del giudice a quo.",
+    "fonte": "L. 87/1953, art. 23",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-257",
+    "argomento": "Corte costituzionale",
+    "livello": 3,
+    "testo": "Cosa succede al processo in cui il giudice solleva una questione di legittimità costituzionale?",
+    "opzioni": [
+      "Viene sospeso e gli atti sono trasmessi alla Corte",
+      "Passa alla Corte di cassazione",
+      "Si estingue",
+      "Prosegue normalmente"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 23: l'ordinanza di rimessione dispone la trasmissione degli atti e sospende il giudizio.",
+    "fonte": "L. 87/1953, art. 23",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-258",
+    "argomento": "Corte costituzionale",
+    "livello": 5,
+    "testo": "Come si chiama la dichiarazione con cui la Corte estende l'incostituzionalità ad altre norme collegate a quella impugnata?",
+    "opzioni": [
+      "Sentenza additiva",
+      "Illegittimità consequenziale",
+      "Interpretazione adeguatrice",
+      "Abrogazione tacita"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 27: la Corte dichiara anche le disposizioni la cui illegittimità deriva come conseguenza dalla decisione.",
+    "fonte": "L. 87/1953, art. 27",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-259",
+    "argomento": "Corte costituzionale",
+    "livello": 4,
+    "testo": "Il controllo di legittimità della Corte costituzionale sulle leggi:",
+    "opzioni": [
+      "riguarda anche i regolamenti parlamentari interni",
+      "può sostituire le scelte del legislatore",
+      "esclude ogni valutazione politica e ogni sindacato sulla discrezionalità del Parlamento",
+      "comprende la valutazione dell'opportunità politica"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 28 della L. 87/1953.",
+    "fonte": "L. 87/1953, art. 28",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-260",
+    "argomento": "Corte costituzionale",
+    "livello": 3,
+    "testo": "Da quando le norme dichiarate incostituzionali non possono più essere applicate?",
+    "opzioni": [
+      "Dal giorno della decisione",
+      "Dall'abrogazione da parte del Parlamento",
+      "Dopo 60 giorni dalla pubblicazione",
+      "Dal giorno successivo alla pubblicazione della decisione"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 30, terzo comma; coincide con l'art. 136 Cost.",
+    "fonte": "L. 87/1953, art. 30",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-261",
+    "argomento": "Corte costituzionale",
+    "livello": 5,
+    "testo": "Se in base a una norma penale poi dichiarata incostituzionale è stata pronunciata una condanna irrevocabile:",
+    "opzioni": [
+      "ne cessano l'esecuzione e tutti gli effetti penali",
+      "si riduce la pena di un terzo",
+      "serve una grazia del Presidente della Repubblica",
+      "la condanna resta valida perché irrevocabile"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 30, ultimo comma, della L. 87/1953.",
+    "fonte": "L. 87/1953, art. 30",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-262",
+    "argomento": "Corte costituzionale",
+    "livello": 4,
+    "testo": "Entro quanto tempo dalla decisione devono essere depositate in cancelleria le sentenze della Corte costituzionale nei giudizi in via incidentale?",
+    "opzioni": [
+      "Dieci giorni",
+      "Venti giorni",
+      "Novanta giorni",
+      "Sessanta giorni"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 26 della L. 87/1953; con il deposito chiunque può prenderne visione e ottenerne copia (art. 19).",
+    "fonte": "L. 87/1953, art. 26",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-263",
+    "argomento": "Corte costituzionale",
+    "livello": 5,
+    "testo": "Entro quale termine il Governo può impugnare uno statuto regionale ordinario davanti alla Corte costituzionale?",
+    "opzioni": [
+      "Entro un anno",
+      "Entro tre mesi dall'approvazione",
+      "Entro trenta giorni dalla pubblicazione",
+      "Entro sessanta giorni dalla pubblicazione"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 31, comma 1, della L. 87/1953, richiamando l'art. 123 Cost.",
+    "fonte": "L. 87/1953, art. 31",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-264",
+    "argomento": "Corte costituzionale",
+    "livello": 5,
+    "testo": "Perché sorga un conflitto di attribuzione tra poteri dello Stato, gli organi in conflitto devono essere:",
+    "opzioni": [
+      "organi collegiali",
+      "organi costituzionali elettivi",
+      "organi dotati di bilancio autonomo",
+      "competenti a dichiarare definitivamente la volontà del potere cui appartengono"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 37: la Corte decide prima, in camera di consiglio, sull'ammissibilità del ricorso.",
+    "fonte": "L. 87/1953, art. 37",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-265",
+    "argomento": "Corte costituzionale",
+    "livello": 4,
+    "testo": "Qual è il termine per proporre ricorso per conflitto di attribuzione tra Stato e Regioni?",
+    "opzioni": [
+      "Sessanta giorni dalla notificazione, pubblicazione o conoscenza dell'atto",
+      "Trenta giorni dall'adozione dell'atto",
+      "Un anno dall'adozione dell'atto",
+      "Novanta giorni dalla pubblicazione"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 39: per lo Stato ricorre il Presidente del Consiglio, per la Regione il Presidente della Giunta.",
+    "fonte": "L. 87/1953, art. 39",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-266",
+    "argomento": "Corte costituzionale",
+    "livello": 5,
+    "testo": "Nel conflitto di attribuzione tra Stato e Regioni, l'esecuzione dell'atto contestato può essere sospesa?",
+    "opzioni": [
+      "No, mai",
+      "Sì, dalla Corte per gravi ragioni con ordinanza motivata",
+      "Sì, dal Presidente del Consiglio",
+      "Sì, automaticamente con il ricorso"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 40 della L. 87/1953.",
+    "fonte": "L. 87/1953, art. 40",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-267",
+    "argomento": "Principi fondamentali",
+    "livello": 1,
+    "testo": "Quali minoranze la Repubblica tutela con apposite norme, secondo l'art. 6 della Costituzione?",
+    "opzioni": [
+      "Le minoranze religiose soltanto",
+      "Le minoranze politiche in Parlamento",
+      "Le minoranze linguistiche",
+      "Le minoranze azionarie"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'art. 6 è tra i principi fondamentali.",
+    "fonte": "Costituzione, art. 6",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-268",
+    "argomento": "Diritti e libertà",
+    "livello": 3,
+    "testo": "Secondo l'art. 20 della Costituzione, il fine di religione o di culto di un'associazione:",
+    "opzioni": [
+      "richiede un'autorizzazione del Ministero dell'interno",
+      "comporta l'esenzione da ogni tributo",
+      "è ammesso solo per le confessioni con intesa",
+      "non può essere causa di speciali limitazioni legislative né di speciali gravami fiscali"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'art. 20 vieta discriminazioni legislative e fiscali legate al carattere ecclesiastico o religioso.",
+    "fonte": "Costituzione, art. 20",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-269",
+    "argomento": "Rapporti etico-sociali",
+    "livello": 2,
+    "testo": "Nell'agevolare la formazione della famiglia, l'art. 31 riserva particolare riguardo:",
+    "opzioni": [
+      "alle famiglie numerose",
+      "alle famiglie con un solo genitore lavoratore",
+      "alle famiglie residenti nei piccoli comuni",
+      "alle famiglie di nuova immigrazione"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'art. 31 prevede misure economiche e altre provvidenze per la famiglia.",
+    "fonte": "Costituzione, art. 31",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-270",
+    "argomento": "Rapporti etico-sociali",
+    "livello": 2,
+    "testo": "Quali soggetti la Repubblica protegge, secondo il secondo comma dell'art. 31?",
+    "opzioni": [
+      "Gli anziani e i disabili",
+      "La maternità, l'infanzia e la gioventù",
+      "Gli studenti universitari",
+      "I lavoratori autonomi"
+    ],
+    "corretta": 1,
+    "spiegazione": "La Repubblica favorisce gli istituti necessari a tale scopo.",
+    "fonte": "Costituzione, art. 31",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-271",
+    "argomento": "Rapporti economici",
+    "livello": 1,
+    "testo": "Secondo l'art. 35, la Repubblica tutela il lavoro:",
+    "opzioni": [
+      "solo quello svolto in Italia",
+      "solo quello subordinato",
+      "in tutte le sue forme ed applicazioni",
+      "solo quello pubblico"
+    ],
+    "corretta": 2,
+    "spiegazione": "Primo comma dell'art. 35.",
+    "fonte": "Costituzione, art. 35",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-272",
+    "argomento": "Rapporti economici",
+    "livello": 2,
+    "testo": "Oltre alla tutela del lavoro, l'art. 35 affida alla Repubblica la cura:",
+    "opzioni": [
+      "della fissazione per legge di tutti i salari",
+      "della gestione delle imprese private",
+      "dell'iscrizione obbligatoria ai sindacati",
+      "della formazione e dell'elevazione professionale dei lavoratori"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 35, secondo comma.",
+    "fonte": "Costituzione, art. 35",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-273",
+    "argomento": "Rapporti economici",
+    "livello": 3,
+    "testo": "Come tratta l'art. 35 la libertà di emigrazione?",
+    "opzioni": [
+      "La riconosce, salvo gli obblighi stabiliti dalla legge nell'interesse generale",
+      "Non ne parla",
+      "La vieta ai lavoratori qualificati",
+      "La subordina all'autorizzazione del Governo"
+    ],
+    "corretta": 0,
+    "spiegazione": "La Repubblica tutela anche il lavoro italiano all'estero.",
+    "fonte": "Costituzione, art. 35",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-274",
+    "argomento": "Rapporti economici",
+    "livello": 4,
+    "testo": "Secondo l'art. 43, la legge può riservare o trasferire allo Stato, a enti pubblici o a comunità di lavoratori o utenti imprese che riguardano:",
+    "opzioni": [
+      "qualunque attività commerciale",
+      "servizi pubblici essenziali, fonti di energia o situazioni di monopolio",
+      "solo le banche",
+      "solo il settore agricolo"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il trasferimento avviene mediante espropriazione e salvo indennizzo, a fini di utilità generale.",
+    "fonte": "Costituzione, art. 43",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-275",
+    "argomento": "Rapporti economici",
+    "livello": 3,
+    "testo": "Per quali finalità l'art. 44 consente alla legge di imporre obblighi e vincoli alla proprietà terriera privata?",
+    "opzioni": [
+      "L'aumento delle entrate fiscali",
+      "La difesa militare del territorio",
+      "Il razionale sfruttamento del suolo e l'instaurazione di equi rapporti sociali",
+      "La tutela dei grandi latifondi"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'art. 44 prevede anche limiti all'estensione della proprietà, la bonifica e la trasformazione del latifondo.",
+    "fonte": "Costituzione, art. 44",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-276",
+    "argomento": "Rapporti economici",
+    "livello": 3,
+    "testo": "A favore di quali zone l'art. 44 prevede espressamente provvedimenti di legge?",
+    "opzioni": [
+      "Le zone di confine",
+      "Le zone costiere",
+      "Le aree metropolitane",
+      "Le zone montane"
+    ],
+    "corretta": 3,
+    "spiegazione": "Ultimo comma dell'art. 44.",
+    "fonte": "Costituzione, art. 44",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-277",
+    "argomento": "Rapporti economici",
+    "livello": 3,
+    "testo": "Quale tipo di cooperazione la Repubblica riconosce secondo l'art. 45?",
+    "opzioni": [
+      "Quella a carattere di mutualità e senza fini di speculazione privata",
+      "Ogni forma di società commerciale",
+      "Quella con capitale pubblico",
+      "Solo la cooperazione internazionale"
+    ],
+    "corretta": 0,
+    "spiegazione": "La Repubblica ne riconosce la funzione sociale.",
+    "fonte": "Costituzione, art. 45",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-278",
+    "argomento": "Rapporti economici",
+    "livello": 2,
+    "testo": "Quale attività economica è espressamente richiamata nell'ultimo comma dell'art. 45?",
+    "opzioni": [
+      "Il commercio al dettaglio",
+      "L'artigianato",
+      "La pesca",
+      "Il turismo"
+    ],
+    "corretta": 1,
+    "spiegazione": "«La legge provvede alla tutela e allo sviluppo dell'artigianato».",
+    "fonte": "Costituzione, art. 45",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-279",
+    "argomento": "Rapporti economici",
+    "livello": 4,
+    "testo": "Quale diritto dei lavoratori riconosce l'art. 46 della Costituzione?",
+    "opzioni": [
+      "Eleggere il consiglio di amministrazione",
+      "Acquistare l'azienda in caso di vendita",
+      "Collaborare alla gestione delle aziende, nei modi e nei limiti stabiliti dalle leggi",
+      "Partecipare agli utili in misura fissa"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il diritto è riconosciuto ai fini dell'elevazione economica e sociale del lavoro e in armonia con le esigenze della produzione.",
+    "fonte": "Costituzione, art. 46",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-280",
+    "argomento": "Parlamento",
+    "livello": 1,
+    "testo": "Da quale fonte è stabilita l'indennità dei membri del Parlamento?",
+    "opzioni": [
+      "Dal regolamento di ciascuna Camera",
+      "Da un decreto del Presidente della Repubblica",
+      "Dalla Costituzione, in misura fissa",
+      "Dalla legge"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 69 della Costituzione.",
+    "fonte": "Costituzione, art. 69",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-281",
+    "argomento": "Formazione delle leggi",
+    "livello": 1,
+    "testo": "Secondo l'art. 70 della Costituzione, la funzione legislativa è esercitata:",
+    "opzioni": [
+      "collettivamente dalle due Camere",
+      "dal Parlamento in seduta comune",
+      "dalla sola Camera dei deputati",
+      "dal Governo e dal Parlamento insieme"
+    ],
+    "corretta": 0,
+    "spiegazione": "È il bicameralismo perfetto: ogni legge deve essere approvata da entrambe le Camere nello stesso testo.",
+    "fonte": "Costituzione, art. 70",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-282",
+    "argomento": "Magistratura",
+    "livello": 2,
+    "testo": "A chi spettano assunzioni, trasferimenti, promozioni e provvedimenti disciplinari dei magistrati?",
+    "opzioni": [
+      "Al Presidente della Repubblica",
+      "Al Consiglio superiore della magistratura",
+      "Alla Corte di cassazione",
+      "Al Ministro della giustizia"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 105 della Costituzione.",
+    "fonte": "Costituzione, art. 105",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-283",
+    "argomento": "Magistratura",
+    "livello": 3,
+    "testo": "Con quale fonte sono stabilite le norme sull'ordinamento giudiziario?",
+    "opzioni": [
+      "Con legge costituzionale",
+      "Con decreto del Ministro della giustizia",
+      "Con legge",
+      "Con regolamento del CSM"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 108: è una riserva di legge.",
+    "fonte": "Costituzione, art. 108",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-284",
+    "argomento": "Magistratura",
+    "livello": 4,
+    "testo": "L'art. 108 affida alla legge il compito di assicurare l'indipendenza:",
+    "opzioni": [
+      "degli avvocati del libero foro",
+      "solo dei giudici di pace",
+      "solo dei magistrati della Corte di cassazione",
+      "dei giudici delle giurisdizioni speciali, del relativo pubblico ministero e degli estranei che partecipano alla giustizia"
+    ],
+    "corretta": 3,
+    "spiegazione": "Secondo comma dell'art. 108.",
+    "fonte": "Costituzione, art. 108",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-285",
+    "argomento": "Magistratura",
+    "livello": 3,
+    "testo": "Fatte salve le competenze del CSM, a chi spettano organizzazione e funzionamento dei servizi relativi alla giustizia?",
+    "opzioni": [
+      "Al Ministro della giustizia",
+      "Al Presidente della Repubblica",
+      "Ai capi degli uffici giudiziari, senza controllo",
+      "Al Presidente della Corte di cassazione"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 110 della Costituzione.",
+    "fonte": "Costituzione, art. 110",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-286",
+    "argomento": "Magistratura",
+    "livello": 3,
+    "testo": "Secondo l'art. 125 della Costituzione, cosa è istituito nella Regione?",
+    "opzioni": [
+      "Un Consiglio superiore regionale",
+      "Organi di giustizia amministrativa di primo grado",
+      "Una sezione della Corte costituzionale",
+      "Una Corte d'appello regionale"
+    ],
+    "corretta": 1,
+    "spiegazione": "Sono i Tribunali amministrativi regionali (TAR), ordinati da legge della Repubblica.",
+    "fonte": "Costituzione, art. 125",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-287",
+    "argomento": "Magistratura",
+    "livello": 4,
+    "testo": "Gli organi di giustizia amministrativa di primo grado possono avere sezioni fuori dal capoluogo regionale?",
+    "opzioni": [
+      "No, mai",
+      "Solo con legge costituzionale",
+      "Sì, possono istituirsi sezioni con sede diversa dal capoluogo",
+      "Solo nelle Regioni a statuto speciale"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 125, secondo periodo; ad esempio le sezioni staccate dei TAR.",
+    "fonte": "Costituzione, art. 125",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-288",
+    "argomento": "Regioni ed enti locali",
+    "livello": 2,
+    "testo": "Quale di queste Regioni compare nell'elenco dell'art. 131 della Costituzione?",
+    "opzioni": [
+      "Romagna",
+      "Salento",
+      "Alto Adige",
+      "Molise"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'art. 131 elenca venti Regioni; il Molise è stato aggiunto con la L. cost. 3/1963.",
+    "fonte": "Costituzione, art. 131",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-289",
+    "argomento": "Regioni ed enti locali",
+    "livello": 4,
+    "testo": "Come può un Comune essere staccato da una Regione e aggregato a un'altra (art. 132, secondo comma)?",
+    "opzioni": [
+      "Con referendum delle popolazioni interessate e legge della Repubblica, sentiti i Consigli regionali",
+      "Con decreto del Presidente della Repubblica su richiesta del sindaco",
+      "Con delibera del Consiglio comunale",
+      "Con legge costituzionale e parere della Corte costituzionale"
+    ],
+    "corretta": 0,
+    "spiegazione": "Serve la richiesta degli enti interessati, l'approvazione della maggioranza delle popolazioni con referendum e una legge ordinaria.",
+    "fonte": "Costituzione, art. 132",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-290",
+    "argomento": "Regioni ed enti locali",
+    "livello": 4,
+    "testo": "Con quale atto si dispone la fusione di Regioni esistenti?",
+    "opzioni": [
+      "Con decreto del Presidente della Repubblica",
+      "Con legge costituzionale, sentiti i Consigli regionali",
+      "Con delibera dei Consigli regionali interessati",
+      "Con legge ordinaria"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 132, primo comma; occorre anche l'approvazione con referendum delle popolazioni interessate.",
+    "fonte": "Costituzione, art. 132",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-291",
+    "argomento": "Rapporti economici",
+    "livello": 4,
+    "testo": "Secondo l'art. 43, il trasferimento di imprese di preminente interesse generale allo Stato o a enti pubblici avviene:",
+    "opzioni": [
+      "senza alcun indennizzo",
+      "solo con il consenso del proprietario",
+      "mediante espropriazione e salvo indennizzo",
+      "mediante confisca penale"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'art. 43 consente riserva originaria o trasferimento, a fini di utilità generale.",
+    "fonte": "Costituzione, art. 43",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-292",
+    "argomento": "Regioni ed enti locali",
+    "livello": 4,
+    "testo": "L'istituzione di nuove Province nell'ambito di una Regione è stabilita:",
+    "opzioni": [
+      "con decreto prefettizio",
+      "con referendum provinciale",
+      "con legge regionale",
+      "con leggi della Repubblica, su iniziativa dei Comuni, sentita la Regione"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 133, primo comma.",
+    "fonte": "Costituzione, art. 133",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-293",
+    "argomento": "Regioni ed enti locali",
+    "livello": 4,
+    "testo": "Per quali ragioni il Presidente della Repubblica può sciogliere il Consiglio regionale, oltre agli atti contrari alla Costituzione e alle gravi violazioni di legge?",
+    "opzioni": [
+      "Per ragioni di sicurezza nazionale",
+      "Per inefficienza della Giunta",
+      "Su richiesta di un terzo dei sindaci",
+      "Per mancata approvazione dello statuto entro un anno"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 126, primo comma: il decreto è adottato sentita la Commissione parlamentare per le questioni regionali.",
+    "fonte": "Costituzione, art. 126",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-294",
+    "argomento": "Rapporti economici",
+    "livello": 3,
+    "testo": "Sul piano internazionale, cosa promuove e favorisce la Repubblica secondo l'art. 35?",
+    "opzioni": [
+      "La libera circolazione dei capitali senza limiti",
+      "Gli accordi e le organizzazioni internazionali che affermano e regolano i diritti del lavoro",
+      "L'uscita dalle organizzazioni internazionali",
+      "Solo gli accordi commerciali bilaterali"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 35, terzo comma.",
+    "fonte": "Costituzione, art. 35",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-295",
+    "argomento": "Organi ausiliari",
+    "livello": 3,
+    "testo": "La Corte dei conti, secondo l'art. 100, a chi riferisce direttamente sul risultato dei controlli?",
+    "opzioni": [
+      "Al Presidente della Repubblica",
+      "Al Ministro dell'economia",
+      "Alle Camere",
+      "Al Consiglio di Stato"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 100, secondo comma.",
+    "fonte": "Costituzione, art. 100",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-296",
+    "argomento": "Organi ausiliari",
+    "livello": 4,
+    "testo": "Rispetto a chi la legge assicura l'indipendenza del Consiglio di Stato e della Corte dei conti?",
+    "opzioni": [
+      "Di fronte alle Regioni",
+      "Di fronte al Parlamento in seduta comune",
+      "Di fronte alla magistratura ordinaria",
+      "Di fronte al Governo"
+    ],
+    "corretta": 3,
+    "spiegazione": "Ultimo comma dell'art. 100.",
+    "fonte": "Costituzione, art. 100",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-297",
+    "argomento": "Magistratura",
+    "livello": 4,
+    "testo": "Tra chi è eletto il vicepresidente del Consiglio superiore della magistratura?",
+    "opzioni": [
+      "Tra i componenti designati dal Parlamento",
+      "Tra i membri di diritto",
+      "Tra i ministri",
+      "Tra i magistrati eletti"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 104: il CSM è presieduto dal Presidente della Repubblica, che non lo guida nell'attività ordinaria.",
+    "fonte": "Costituzione, art. 104",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-298",
+    "argomento": "Magistratura",
+    "livello": 5,
+    "testo": "Quale incompatibilità prevede l'art. 104 per i membri elettivi del CSM finché sono in carica?",
+    "opzioni": [
+      "Non possono insegnare all'università",
+      "Non possono essere iscritti negli albi professionali né far parte del Parlamento o di un Consiglio regionale",
+      "Non possono pubblicare libri",
+      "Non possono votare alle elezioni politiche"
+    ],
+    "corretta": 1,
+    "spiegazione": "Durano in carica quattro anni e non sono immediatamente rieleggibili.",
+    "fonte": "Costituzione, art. 104",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-299",
+    "argomento": "Rapporti economici",
+    "livello": 3,
+    "testo": "Quale proprietà agricola la legge aiuta, secondo l'art. 44?",
+    "opzioni": [
+      "Solo il latifondo",
+      "Solo le grandi imprese agricole",
+      "La piccola e la media proprietà",
+      "Solo la proprietà pubblica"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'art. 44 fissa limiti all'estensione della proprietà terriera e promuove la trasformazione del latifondo.",
+    "fonte": "Costituzione, art. 44",
+    "versione": "v1"
+  },
+  {
+    "materia": "diritto-costituzionale",
+    "id": "cost-300",
+    "argomento": "Pubblica amministrazione",
+    "livello": 3,
+    "testo": "Se un pubblico impiegato è membro del Parlamento, come può essere promosso?",
+    "opzioni": [
+      "Solo per merito",
+      "Non può essere promosso in alcun modo",
+      "Con il voto della Camera di appartenenza",
+      "Soltanto per anzianità"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 98, secondo periodo.",
+    "fonte": "Costituzione, art. 98",
+    "versione": "v1"
   }
 ]
