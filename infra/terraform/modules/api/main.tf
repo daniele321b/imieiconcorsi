@@ -10,16 +10,17 @@ resource "aws_apigatewayv2_api" "main" {
   protocol_type = "HTTP"
 }
 
-# Unico stage, pubblicato a ogni modifica. Limite di richieste: 50 al secondo (picchi fino a 100),
-# per contenere costi e abusi.
+# Unico stage, pubblicato a ogni modifica. Limite di richieste di tutta l'API (somma di tutti gli
+# utenti): var.richieste_al_secondo, con picchi fino a var.picco_richieste. Contro gli abusi del
+# singolo ci sono il WAF (per IP, in prod) e i limiti propri (AI, contatti).
 resource "aws_apigatewayv2_stage" "default" {
   api_id      = aws_apigatewayv2_api.main.id
   name        = "$default"
   auto_deploy = true
 
   default_route_settings {
-    throttling_burst_limit = 100
-    throttling_rate_limit  = 50
+    throttling_burst_limit = var.picco_richieste
+    throttling_rate_limit  = var.richieste_al_secondo
   }
 }
 
@@ -54,7 +55,7 @@ module "service" {
   name              = "${var.name}-${each.key}"
   source_dir        = "${var.functions_dir}/${each.key}"
   environment       = merge(var.environment, each.value.environment)
-  write_tables      = each.value.write_tables
+  write_tables      = concat(each.value.write_tables, var.write_tables_comuni)
   read_tables       = each.value.read_tables
   policy_statements = jsondecode(each.value.policies)
   timeout           = each.value.timeout

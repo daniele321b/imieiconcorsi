@@ -1,4 +1,6 @@
 import type { APIGatewayProxyEventV2WithJWTAuthorizer, APIGatewayProxyResultV2 } from "aws-lambda";
+import { timingSafeEqual } from "node:crypto";
+import { registraAttivita } from "./attivita";
 import { ZodError, type ZodType } from "zod";
 import { GRUPPI, PIANI, pianoDaGruppi, type Limiti, type PianoId } from "./domain";
 
@@ -63,12 +65,31 @@ export function parseGruppi(claim: unknown): string[] {
     .filter(Boolean);
 }
 
+/** Intestazione che CloudFront aggiunge a ogni chiamata all'API (modules/web, origine "api"). */
+export const INTESTAZIONE_ORIGINE = "x-origine-cloudfront";
+
+/**
+ * La richiesta è passata da CloudFront? L'API Gateway ha anche un indirizzo pubblico diretto
+ * (…execute-api…): chi lo usa salterebbe il WAF e i limiti per IP. CloudFront aggiunge
+ * un'intestazione con un segreto (ORIGINE_SEGRETA, da Terraform) e qui la si controlla.
+ * Senza segreto configurato (prove in locale) non si controlla nulla.
+ */
+export function daCloudFront(headers: Record<string, string | undefined> | undefined) {
+  const atteso = process.env.ORIGINE_SEGRETA;
+  if (!atteso) return true;
+  const arrivato = headers?.[INTESTAZIONE_ORIGINE] ?? "";
+  const a = Buffer.from(arrivato);
+  const b = Buffer.from(atteso);
+  return a.length === b.length && timingSafeEqual(a, b);
+}
+
 /**
  * Crea l'handler Lambda di un microservizio: una mappa "METODO /path" → funzione,
  * con le stesse chiavi delle route in infra/terraform (environments/<env>/main.tf).
  */
 export function service(routes: Record<string, Route>) {
   return async (event: Event): Promise<APIGatewayProxyResultV2> => {
+    if (!daCloudFront(event.headers)) return json(403, { error: "Accesso non consentito" });
     const route = routes[event.routeKey];
     if (!route) return json(404, { error: "Route non trovata" });
 
@@ -97,6 +118,8 @@ export function service(routes: Record<string, Route>) {
       },
     };
 
+    // Utente attivo (pannello admin → Utenti attivi): in parallelo alla risposta, senza farla aspettare.
+    const attivita = ctx.admin || !claims.sub ? undefined : registraAttivita(ctx.userId);
     try {
       return json(200, (await route(ctx)) ?? { ok: true });
     } catch (err) {
@@ -105,6 +128,9 @@ export function service(routes: Record<string, Route>) {
       if (err instanceof SyntaxError) return json(400, { error: "JSON non valido" });
       console.error(err);
       return json(500, { error: "Errore interno" });
+    } finally {
+      // La Lambda si "congela" appena risponde: la scrittura va finita prima (non fallisce mai).
+      await attivita;
     }
   };
 }

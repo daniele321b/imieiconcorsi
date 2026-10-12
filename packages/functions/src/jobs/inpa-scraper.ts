@@ -1,5 +1,5 @@
 import { BatchWriteCommand } from "@aws-sdk/lib-dynamodb";
-import { conModificheAdmin, inizioBandiScaduti, nomeConcorso } from "@imieiconcorsi/core/concorsi";
+import { conModificheAdmin, inizioBandiScaduti, nomeConcorso, scadenzaVera } from "@imieiconcorsi/core/concorsi";
 import { batchGet, db, tables } from "@imieiconcorsi/core/db";
 import type { Concorso } from "@imieiconcorsi/core/domain";
 import { avvisaAdmin } from "@imieiconcorsi/core/email";
@@ -107,7 +107,7 @@ async function avvisaBancheDati(nuovi: Concorso[]) {
   if (!nuovi.length) return;
   const righe = nuovi
     .slice(0, MAX_NELL_AVVISO)
-    .map((c) => `- ${nomeConcorso(c)} — ${c.ente}\n  scade il ${dataBreve(c.scadenza)} · ${c.url}`);
+    .map((c) => `- ${nomeConcorso(c)} — ${c.ente}\n  ${scadenzaVera(c.scadenza) ? `scade il ${dataBreve(c.scadenza)}` : "senza scadenza"} · ${c.url}`);
   if (nuovi.length > MAX_NELL_AVVISO) righe.push(`… e altri ${nuovi.length - MAX_NELL_AVVISO}.`);
   await avvisaAdmin(
     `${nuovi.length} nuovi bandi con banca dati`,

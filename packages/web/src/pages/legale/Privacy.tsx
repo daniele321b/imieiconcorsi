@@ -79,6 +79,11 @@ export function Privacy() {
           account, per sicurezza e assistenza; si cancellano da soli dopo 12 mesi o subito se elimini l'account.
         </li>
         <li>
+          <strong>Utilizzo dell'app:</strong> i giorni e i minuti in cui usi l'app, registrati con un codice anonimo al posto
+          del tuo identificativo, solo per contare quante persone la usano (oggi, nella settimana, nel mese). I minuti si
+          cancellano dopo 2 giorni, i giorni dopo 400.
+        </li>
+        <li>
           <strong>Dati tecnici:</strong> log dei servizi (data e ora delle richieste, errori), conservati per 14 giorni per
           sicurezza e risoluzione dei problemi.
         </li>
@@ -125,7 +130,7 @@ export function Privacy() {
           Ordini e dati dei pagamenti, con email e nome dell'intestatario: 10 anni, come richiesto dalla legge per le scritture
           contabili (art. 2220 c.c.), anche dopo l'eliminazione dell'account. Non vengono usati per altro.
         </li>
-        <li>Log tecnici: 14 giorni. Registro degli accessi: 12 mesi.</li>
+        <li>Log tecnici: 14 giorni. Registro degli accessi: 12 mesi. Conteggi di utilizzo (anonimi): fino a 400 giorni.</li>
       </ul>
 
       <h2>Dove sono e chi li tratta per noi</h2>

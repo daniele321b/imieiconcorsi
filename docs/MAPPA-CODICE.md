@@ -35,6 +35,7 @@ nel sito.
 | `db.ts` | Client DynamoDB, nomi delle tabelle (`tables.*` dalle variabili d'ambiente), `batchGet` a blocchi da 100, `getProfilo` | Backend |
 | `env.ts` | `env("NOME")`: variabile d'ambiente obbligatoria | Backend |
 | `ids.ts` | Id ordinabili per data (`sortableId`, `timePrefix`) | study, richieste, billing |
+| `attivita.ts` | Utenti attivi: `registraAttivita` (chiamata da `service()` a ogni richiesta con login, una scrittura al minuto per utente), `periodi`, `riepilogoAttivita` | tutte le Lambda dell'API, admin |
 | `account.ts` | `eliminaAccount`: cancella sessioni, seguiti, richieste, progressi, profilo e utente Cognito (restano gli ordini) | profile (`DELETE /me`), admin (`DELETE /admin/utenti/{username}`) |
 | `cognito.ts` | Gruppi (piano, admin), nome, eliminazione dell'utente, elenco degli utenti di un gruppo | billing, admin, profile, job scadenze, piani.ts |
 | `email.ts` | `inviaEmail` (SES, testo + HTML facoltativo), `avvisaAdmin` | Backend |
@@ -195,6 +196,7 @@ main.tsx  (caricaConfig → AuthProvider → router)
 | `TutorChat.tsx` | Chat con il tutor (testo semplice con elenchi e grassetto, gettoni, avvisi) |
 | `Pubblicita.tsx` | Annuncio tra le domande del piano Free (AdSense o annuncio interno) |
 | `Richieste.tsx` | Assistenza: `SegnalaErrore` (si apre sotto la domanda), `Conversazione`, `RispondiBox`, `ContestoBox`, stati |
+| `UtentiAttivi.tsx` | Admin: online ora, oggi, 7 e 30 giorni, mese, grafico (GET /admin/attivita) |
 | `ModificaBando.tsx` | Admin: correzione di nome e dati di un bando, e ritorno ai dati di inPA |
 | `NumeroDomande.tsx` | "Altro numero" di domande per le simulazioni (Medium e Pro, fino a 100) |
 | `InvitaAmico.tsx` | Codice personale da condividere e codice di chi ti ha invitato |

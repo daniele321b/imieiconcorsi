@@ -12,6 +12,7 @@ import { BatchWriteCommand, DeleteCommand, GetCommand, PutCommand, QueryCommand,
 import { inviaEmail } from "@imieiconcorsi/core/email";
 import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
 import { eliminaAccount } from "@imieiconcorsi/core/account";
+import { giorniPrima, periodi, riepilogoAttivita } from "@imieiconcorsi/core/attivita";
 import { attributo, cognito, gruppiDi, userPoolId, utentiNelGruppo } from "@imieiconcorsi/core/cognito";
 import { batchGet, db, tables } from "@imieiconcorsi/core/db";
 import {
@@ -113,6 +114,26 @@ const NuovaBanca = z.object({
   nomeFile: z.string().max(300),
   dimensione: z.number().int().min(1).max(MAX_PDF, "Il PDF supera i 200 MB"),
 });
+
+/** Le impronte degli utenti attivi in un periodo della tabella attivita ("g#…" o "m#…"). */
+async function impronteDel(periodo: string) {
+  const out: string[] = [];
+  let ExclusiveStartKey: Record<string, unknown> | undefined;
+  do {
+    const res = await db.send(
+      new QueryCommand({
+        TableName: tables.attivita,
+        KeyConditionExpression: "periodo = :p",
+        ExpressionAttributeValues: { ":p": periodo },
+        ProjectionExpression: "userId",
+        ExclusiveStartKey,
+      }),
+    );
+    out.push(...(res.Items ?? []).map((i) => i.userId as string));
+    ExclusiveStartKey = res.LastEvaluatedKey;
+  } while (ExclusiveStartKey);
+  return out;
+}
 
 /** Correzioni a un bando (solo i campi da cambiare). */
 const ModificaConcorso = z
@@ -486,6 +507,33 @@ export const handler = service({
     };
   },
 
+  /**
+   * Utenti attivi (chi usa l'app, admin esclusi): online negli ultimi 5 minuti, oggi, ieri,
+   * ultimi 7 e 30 giorni, mese in corso e mese scorso, e i giornalieri degli ultimi 30 giorni.
+   * Dati dalla tabella attivita (core/attivita.ts); si contano dal giorno in cui è attiva.
+   */
+  "GET /admin/attivita": async (ctx) => {
+    richiediAdmin(ctx);
+    const ora = new Date();
+    const minuti = Array.from({ length: 5 }, (_, i) => periodi(new Date(ora.getTime() - i * 60_000)).minuto);
+    // Oggi + i 61 giorni prima: bastano per il mese scorso intero.
+    const giorni = giorniPrima(periodi(ora).giorno, 62);
+    const [perMinuto, perGiorno] = await Promise.all([
+      Promise.all(minuti.map((m) => impronteDel(`m#${m}`))),
+      // A gruppi di 10 interrogazioni per volta, per non saturare la tabella.
+      (async () => {
+        const out: { giorno: string; utenti: string[] }[] = [];
+        for (let i = 0; i < giorni.length; i += 10) {
+          const blocco = giorni.slice(i, i + 10);
+          const utenti = await Promise.all(blocco.map((g) => impronteDel(`g#${g}`)));
+          blocco.forEach((giorno, j) => out.push({ giorno, utenti: utenti[j]! }));
+        }
+        return out;
+      })(),
+    ]);
+    return { online: new Set(perMinuto.flat()).size, aggiornatoIl: ora.toISOString(), ...riepilogoAttivita(perGiorno) };
+  },
+
   /** Gli ultimi 50 accessi di un utente (data e modo), dal più recente: li registra Cognito a ogni login. */
   "GET /admin/utenti/{username}/accessi": async (ctx) => {
     richiediAdmin(ctx);
@@ -589,6 +637,30 @@ export const handler = service({
       if (err instanceof Error && err.name === "ConditionalCheckFailedException") throw notFound("Codice");
       throw err;
     }
+    return { ok: true };
+  },
+
+  /**
+   * Elimina un codice sconto per sempre (disattivarlo invece è reversibile). Gli ordini che
+   * l'hanno usato tengono il nome del codice e lo sconto applicato; chi l'ha già usato non può
+   * riusarlo nemmeno se lo ricrei con lo stesso nome. I codici "invita un amico" non si toccano.
+   */
+  "DELETE /admin/codici/{codice}": async (ctx) => {
+    richiediAdmin(ctx);
+    try {
+      await db.send(
+        new DeleteCommand({
+          TableName: tables.codici,
+          Key: { codice: ctx.params.codice },
+          ConditionExpression: "attribute_exists(codice) AND (attribute_not_exists(tipo) OR tipo <> :invito)",
+          ExpressionAttributeValues: { ":invito": "invito" },
+        }),
+      );
+    } catch (err) {
+      if (err instanceof Error && err.name === "ConditionalCheckFailedException") throw notFound("Codice sconto");
+      throw err;
+    }
+    console.log(`Codice sconto ${ctx.params.codice} eliminato da ${ctx.email ?? ctx.username}`);
     return { ok: true };
   },
 
@@ -792,8 +864,9 @@ export const handler = service({
   },
 
   /**
-   * Cambia titolo, materia, formato o ordine delle risposte. Cambiando il formato l'estrazione
-   * riparte; cambiando l'ordine di una banca già pubblicata, le domande si ripubblicano.
+   * Cambia titolo, comparto, anno, materia, formato o ordine delle risposte. Cambiando il formato
+   * l'estrazione riparte; su una banca già pubblicata, cambiando titolo, materia o ordine le
+   * domande si ripubblicano (titolo e materia sono scritti anche su ogni domanda).
    */
   "PUT /admin/banche-dati/{id}": async (ctx) => {
     richiediAdmin(ctx);
@@ -814,8 +887,19 @@ export const handler = service({
     const nuovoOrdine = !!ordineRisposte && ordineRisposte !== (banca.ordineRisposte ?? "mescolate");
     if (ordineRisposte) (set.push("ordineRisposte = :o"), (valori[":o"] = ordineRisposte));
     if (!set.length && !remove.length) return banca;
-    // Prima si ripubblica con il nuovo ordine: se non si può (estrazione vecchia), non si salva nulla.
-    if (nuovoOrdine && banca.stato === "pubblicata" && !riestrai) await pubblicaBanca({ ...banca, ordineRisposte });
+    // Prima si ripubblica con i dati nuovi: se non si può (estrazione vecchia), non si salva nulla.
+    // materia: undefined = non cambia, null = tolta.
+    const materiaDopo = materia === undefined ? banca.materia : (materia ?? undefined);
+    const nuovoTitolo = !!titolo && titolo !== banca.titolo;
+    if ((nuovoOrdine || nuovoTitolo || materiaDopo !== banca.materia) && banca.stato === "pubblicata" && !riestrai) {
+      const { materia: _vecchia, ...resto } = banca;
+      await pubblicaBanca({
+        ...resto,
+        ...(ordineRisposte ? { ordineRisposte } : {}),
+        titolo: titolo ?? banca.titolo,
+        ...(materiaDopo ? { materia: materiaDopo } : {}),
+      });
+    }
     await db.send(
       new UpdateCommand({
         TableName: tables.bancheDati,
@@ -826,6 +910,41 @@ export const handler = service({
     );
     if (riestrai) await rilanciaEstrazione(banca.id);
     return leggiBanca(banca.id);
+  },
+
+  /**
+   * Sostituisce il PDF (versione corretta, file sbagliato): risponde con l'indirizzo per
+   * caricarlo; appena arriva su S3 l'estrazione riparte da sola. Non su una banca pubblicata
+   * (prima si ritira): con un file nuovo le domande cambiano numero, e agli utenti resterebbe
+   * un misto di vecchie e nuove. Le domande vecchie, se pubblicate prima, si cancellano.
+   */
+  "POST /admin/banche-dati/{id}/pdf": async (ctx) => {
+    richiediAdmin(ctx);
+    const banca = await leggiBanca(ctx.params.id!);
+    const { nomeFile, dimensione } = ctx.body(NuovaBanca.pick({ nomeFile: true, dimensione: true }));
+    if (banca.stato === "pubblicata") throw new HttpError(409, "La banca dati è pubblicata: ritirala, poi sostituisci il PDF e ripubblicala.");
+    if (banca.stato === "caricamento" || banca.stato === "estrazione") throw new HttpError(409, "Aspetta che finisca l'estrazione in corso.");
+    await cancellaDomande(banca.id);
+    await db.send(
+      new UpdateCommand({
+        TableName: tables.bancheDati,
+        Key: { id: banca.id },
+        UpdateExpression: "SET nomeFile = :n, dimensione = :d, caricataIl = :i, caricataDa = :da, stato = :s REMOVE errore, esempi, problemi",
+        ExpressionAttributeValues: {
+          ":n": nomeFile,
+          ":d": dimensione,
+          ":i": new Date().toISOString(),
+          ":da": ctx.email ?? ctx.username,
+          ":s": "caricamento",
+        },
+      }),
+    );
+    const upload = await getSignedUrl(
+      s3,
+      new PutObjectCommand({ Bucket: env("CONTENUTI_BUCKET"), Key: chiavePdf(banca.id), ContentType: "application/pdf" }),
+      { expiresIn: 900 },
+    );
+    return { upload };
   },
 
   /** Rifà l'estrazione delle domande dal PDF. */

@@ -3,6 +3,7 @@ import { Bell, Bot, Copy, Crown, Trash2, Database, LifeBuoy, Receipt, Search, Sh
 import { type FormEvent, useEffect, useState } from "react";
 import { Link, Navigate } from "react-router";
 import { useBandiDaCaricare } from "../../lib/bandi";
+import { UtentiAttivi } from "../../components/UtentiAttivi";
 import { Alert, Badge, Button, ButtonLink, Card, PageHeader, Spinner, cx } from "../../components/ui";
 import { copiaTesto } from "../../lib/appunti";
 import { api, ApiError, useApi, type AdminCodici, type AdminRiepilogo, type AdminUtente, type AdminUtenti } from "../../lib/api";
@@ -84,6 +85,8 @@ function Pannello() {
           </div>
         }
       />
+
+      <UtentiAttivi />
 
       <div className="grid grid-cols-2 gap-4 lg:grid-cols-3">
         {[
@@ -391,6 +394,24 @@ function CodiciSconto() {
   const [inCorso, setInCorso] = useState(false);
   const [esito, setEsito] = useState<{ tone: "success" | "error"; testo: string }>();
   const [copiato, setCopiato] = useState<string>();
+  // Eliminare è definitivo: serve un secondo clic di conferma.
+  const [daEliminare, setDaEliminare] = useState<string>();
+  const [eliminando, setEliminando] = useState<string>();
+
+  async function elimina(c: CodiceSconto) {
+    setEliminando(c.codice);
+    setEsito(undefined);
+    try {
+      await api(`/admin/codici/${encodeURIComponent(c.codice)}`, { method: "DELETE" });
+      setData((d) => d && { codici: d.codici.filter((x) => x.codice !== c.codice) });
+      setEsito({ tone: "success", testo: `Codice ${c.codice} eliminato. Gli ordini che l'hanno usato restano com'erano.` });
+    } catch (err) {
+      setEsito({ tone: "error", testo: err instanceof ApiError ? err.message : "Errore di rete" });
+    } finally {
+      setEliminando(undefined);
+      setDaEliminare(undefined);
+    }
+  }
 
   async function copia(codice: string) {
     if (await copiaTesto(codice)) {
@@ -515,9 +536,28 @@ function CodiciSconto() {
                 {c.nota ? ` · ${c.nota}` : ""}
               </span>
               {!c.attivo && <Badge tone="red">disattivato</Badge>}
-              <Button variant="ghost" size="sm" className="ml-auto" onClick={() => void cambiaStato(c)}>
-                {c.attivo ? "Disattiva" : "Riattiva"}
-              </Button>
+              <div className="ml-auto flex items-center gap-1">
+                {daEliminare === c.codice ? (
+                  <>
+                    <span className="text-xs text-rose-700">Eliminare per sempre?</span>
+                    <Button variant="ghost" size="sm" onClick={() => setDaEliminare(undefined)}>
+                      No
+                    </Button>
+                    <Button variant="danger" size="sm" loading={eliminando === c.codice} onClick={() => void elimina(c)}>
+                      Elimina
+                    </Button>
+                  </>
+                ) : (
+                  <>
+                    <Button variant="ghost" size="sm" onClick={() => void cambiaStato(c)}>
+                      {c.attivo ? "Disattiva" : "Riattiva"}
+                    </Button>
+                    <Button variant="ghost" size="sm" className="text-rose-600 hover:bg-rose-50" onClick={() => setDaEliminare(c.codice)} aria-label={`Elimina ${c.codice}`}>
+                      <Trash2 className="size-4" />
+                    </Button>
+                  </>
+                )}
+              </div>
             </div>
           ))}
         </div>

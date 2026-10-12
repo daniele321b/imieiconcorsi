@@ -34,9 +34,11 @@ export function ordinaConcorsi<T extends Ordinabile>(concorsi: readonly T[], ord
     const chiusoA = !!a.scadenza && a.scadenza < adesso;
     const chiusoB = !!b.scadenza && b.scadenza < adesso;
     if (chiusoA !== chiusoB) return chiusoA ? 1 : -1;
-    // Senza scadenza in fondo anche qui.
-    if (!a.scadenza || !b.scadenza) return a.scadenza ? -1 : b.scadenza ? 1 : 0;
-    return chiusoA ? a.scadenza.localeCompare(b.scadenza) : b.scadenza.localeCompare(a.scadenza);
+    // Senza scadenza (o con una di comodo) in fondo anche qui.
+    const veraA = scadenzaVera(a.scadenza);
+    const veraB = scadenzaVera(b.scadenza);
+    if (!veraA || !veraB) return veraA ? -1 : veraB ? 1 : 0;
+    return chiusoA ? veraA.localeCompare(veraB) : veraB.localeCompare(veraA);
   };
   const nome = (c: T) => conMaiuscola(c.figura || c.titolo || "");
   const alfabetico = (x: string, y: string) => x.localeCompare(y, "it", { sensitivity: "base" });
@@ -194,6 +196,22 @@ export const inizioBandiScaduti = (ora = new Date()) => {
 /** true se il termine per inviare la domanda è passato. */
 export const scaduto = (c: Pick<Concorso, "scadenza">, ora = new Date()) => c.scadenza !== undefined && Date.parse(c.scadenza) < ora.getTime();
 
+// ── Scadenze di comodo ───────────────────────────────────────────────────────
+// Per i bandi aperti "fino a esaurimento" (avvisi sempre aperti, rilevatori, elenchi) inPA mette
+// una scadenza di comodo lontanissima (2099, 4999…): mostrarla darebbe "Scade tra 1.085.978
+// giorni". Nel database resta com'è (serve all'indice ordinato per scadenza), ma ovunque si
+// mostri vale "senza scadenza".
+
+/** Oltre questi anni da oggi una scadenza è di comodo. */
+const ANNI_SCADENZA_VERA = 5;
+
+/** La scadenza è una data di comodo di inPA (bando aperto senza termine)? */
+export const scadenzaDiComodo = (iso?: string, ora = new Date()) =>
+  !!iso && Date.parse(iso) - ora.getTime() > ANNI_SCADENZA_VERA * 365 * GIORNO;
+
+/** La scadenza da mostrare e da usare nei conti: undefined se manca o è di comodo. */
+export const scadenzaVera = (iso?: string, ora = new Date()) => (iso && !scadenzaDiComodo(iso, ora) ? iso : undefined);
+
 // ── Nomi dei concorsi ────────────────────────────────────────────────────────
 
 /** Prima lettera maiuscola (il resto com'è): inPA ha anche titoli come "istruttore amministrativo". */
@@ -201,7 +219,7 @@ export const conMaiuscola = (testo: string) => testo.trim().replace(/\p{L}/u, (l
 
 /** Anno del bando: di pubblicazione o, se manca, della scadenza. */
 export function annoBando(c: Pick<Concorso, "pubblicatoIl" | "scadenza">) {
-  const data = c.pubblicatoIl ?? c.scadenza;
+  const data = c.pubblicatoIl ?? scadenzaVera(c.scadenza);
   return data ? new Date(data).getUTCFullYear() : undefined;
 }
 
@@ -232,7 +250,7 @@ export function nomiDistinti<T extends Pick<Concorso, "id" | "ente" | "titolo" |
     return lista.filter((c) => conta.get(perChiave(c))! > 1);
   };
   for (const c of doppi(chiave)) {
-    const data = c.pubblicatoIl ?? c.scadenza;
+    const data = c.pubblicatoIl ?? scadenzaVera(c.scadenza);
     if (data) nomi.set(c.id, `${conMaiuscola(c.figura || c.titolo)} · ${dataNome.format(new Date(data))}`);
   }
   for (const c of doppi(chiave)) nomi.set(c.id, `${nomi.get(c.id)} · cod. ${c.id.slice(-6)}`);

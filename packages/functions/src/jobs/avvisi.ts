@@ -1,7 +1,7 @@
 import { AdminGetUserCommand } from "@aws-sdk/client-cognito-identity-provider";
 import { QueryCommand, ScanCommand, UpdateCommand } from "@aws-sdk/lib-dynamodb";
 import { cognito, userPoolId } from "@imieiconcorsi/core/cognito";
-import { nomeConcorso } from "@imieiconcorsi/core/concorsi";
+import { nomeConcorso, scadenzaVera } from "@imieiconcorsi/core/concorsi";
 import { db, tables } from "@imieiconcorsi/core/db";
 import { linkDisiscrizione, linkLettura } from "@imieiconcorsi/core/disiscrizione";
 import { COMPARTO_IDS, type CompartoId, type Concorso, type Profilo } from "@imieiconcorsi/core/domain";
@@ -67,7 +67,7 @@ const escape = (t: string) => t.replace(/&/g, "&amp;").replace(/</g, "&lt;").rep
 
 /** Riga di dettaglio di un bando: ente, posti, scadenza. */
 function righeBando(c: Concorso) {
-  return [c.ente, c.posti ? `${c.posti} ${c.posti === 1 ? "posto" : "posti"}` : "", c.scadenza ? `scade il ${dataIt(c.scadenza)}` : ""]
+  return [c.ente, c.posti ? `${c.posti} ${c.posti === 1 ? "posto" : "posti"}` : "", scadenzaVera(c.scadenza) ? `scade il ${dataIt(c.scadenza!)}` : "senza scadenza"]
     .filter(Boolean)
     .join(" · ");
 }

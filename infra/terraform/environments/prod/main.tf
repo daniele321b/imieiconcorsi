@@ -90,6 +90,9 @@ locals {
 # "AWS Notification - Subscription Confirmation": il link va cliccato una volta.
 resource "aws_sns_topic" "avvisi_admin" {
   name = "${local.name}-avvisi-admin"
+  # Cifrato: ci passano i messaggi del modulo contatti. Pubblicano solo le nostre Lambda,
+  # quindi basta la chiave gestita da AWS.
+  kms_master_key_id = "alias/aws/sns"
 }
 
 resource "aws_sns_topic_subscription" "avvisi_admin" {
@@ -100,6 +103,13 @@ resource "aws_sns_topic_subscription" "avvisi_admin" {
 }
 
 # Segreto che firma i link delle email (disiscrizione, lettura): generato una volta e tenuto nello stato.
+# Segreto tra CloudFront e le Lambda dell'API: senza, l'indirizzo diretto dell'API Gateway
+# scavalcherebbe WAF e limiti (core/http.ts, daCloudFront).
+resource "random_password" "origine" {
+  length  = 40
+  special = false
+}
+
 resource "random_password" "disiscrizione" {
   length  = 48
   special = false
@@ -140,6 +150,16 @@ module "web" {
   }
 
   app_config = local.app_config
+
+  # CSP: oltre al nostro sito, il login (Cognito) e l'invio dei PDF delle banche dati (S3).
+  origine_segreta = random_password.origine.result
+  csp_connect_src = [
+    "https://cognito-idp.${var.aws_region}.amazonaws.com",
+    "https://${module.auth.domain}",
+    "https://${module.contenuti.bucket}.s3.${var.aws_region}.amazonaws.com",
+    "https://${module.contenuti.bucket}.s3.amazonaws.com",
+  ]
+  pubblicita_esterna = var.adsense_client != ""
 }
 
 # Trigger Cognito: collega Google/Facebook all'account con la stessa email.
@@ -198,7 +218,10 @@ module "api" {
   functions_dir = local.functions_dir
   jwt_issuer    = module.auth.issuer
   jwt_audience  = module.auth.client_id
-  environment   = module.data.table_env
+  # Variabili di tutte le Lambda dell'API: tabelle e segreto dell'origine CloudFront.
+  environment = merge(module.data.table_env, { ORIGINE_SEGRETA = random_password.origine.result })
+  # Ogni richiesta con login segna l'utente come attivo (pannello admin → Utenti attivi).
+  write_tables_comuni = [module.data.table_arns.attivita]
 
   services = {
     profile = {
@@ -328,10 +351,10 @@ module "api" {
       routes = [
         "GET /admin/riepilogo", "GET /admin/utenti",
         "PUT /admin/utenti/{username}/piano", "PUT /admin/utenti/{username}/stato", "DELETE /admin/utenti/{username}",
-        "GET /admin/utenti/{username}/accessi",
-        "GET /admin/codici", "POST /admin/codici", "PUT /admin/codici/{codice}",
+        "GET /admin/utenti/{username}/accessi", "GET /admin/attivita",
+        "GET /admin/codici", "POST /admin/codici", "PUT /admin/codici/{codice}", "DELETE /admin/codici/{codice}",
         "GET /admin/banche-dati", "POST /admin/banche-dati", "PUT /admin/banche-dati/{id}",
-        "POST /admin/banche-dati/{id}/estrai", "POST /admin/banche-dati/{id}/pubblica", "POST /admin/banche-dati/{id}/ritira",
+        "POST /admin/banche-dati/{id}/estrai", "POST /admin/banche-dati/{id}/pdf", "POST /admin/banche-dati/{id}/pubblica", "POST /admin/banche-dati/{id}/ritira",
         "DELETE /admin/banche-dati/{id}",
         "POST /admin/banche-dati/{id}/concorsi", "DELETE /admin/banche-dati/{id}/concorsi/{concorsoId}",
         "PUT /admin/concorsi/{id}/concluso", "PUT /admin/concorsi/{id}", "DELETE /admin/concorsi/{id}/modifiche",

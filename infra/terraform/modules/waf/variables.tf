@@ -8,3 +8,9 @@ variable "richieste_per_ip" {
   type        = number
   default     = 2000
 }
+
+variable "richieste_pubbliche_per_ip" {
+  description = "Richieste massime dallo stesso IP in 5 minuti sulle rotte senza login (/api/pubblico/)"
+  type        = number
+  default     = 100
+}

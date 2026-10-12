@@ -1,5 +1,5 @@
 import { esitoAcquisto } from "@imieiconcorsi/core/acquisti";
-import { conMaiuscola, conModificheAdmin, filtraConcorsi, filtriAttivi, nomeConcorso, nomiDistinti, ordinaConcorsi, senzaModificheAdmin, tipoBando } from "@imieiconcorsi/core/concorsi";
+import { conMaiuscola, conModificheAdmin, filtraConcorsi, filtriAttivi, nomeConcorso, nomiDistinti, ordinaConcorsi, scadenzaDiComodo, scadenzaVera, senzaModificheAdmin, tipoBando } from "@imieiconcorsi/core/concorsi";
 import { PIANI, type Concorso } from "@imieiconcorsi/core/domain";
 import { aggiornaProgresso, candidatePerSelezione, conPreferita, idDomanda, numeriAccesi } from "@imieiconcorsi/core/progressi";
 import { describe, expect, it } from "vitest";
@@ -156,5 +156,30 @@ describe("correzioni dell'admin ai bandi", () => {
     expect(dopo.scadenza).toBe("2026-12-15T00:00:00Z");
     expect(dopo.ente).toBe("Ministero dell'Interno");
     expect(dopo.originaliInpa).toEqual({ scadenza: "2026-12-01T00:00:00Z" });
+  });
+});
+
+describe("scadenze di comodo di inPA (bandi aperti fino a esaurimento)", () => {
+  const ora = new Date("2026-10-12T10:00:00Z");
+  it("2099 e 4999 non sono scadenze vere, il prossimo anno sì", () => {
+    expect(scadenzaDiComodo("4999-12-31T00:00:00Z", ora)).toBe(true);
+    expect(scadenzaDiComodo("2099-12-31T00:00:00Z", ora)).toBe(true);
+    expect(scadenzaDiComodo("2027-06-30T00:00:00Z", ora)).toBe(false);
+    expect(scadenzaVera("2099-12-31T00:00:00Z", ora)).toBeUndefined();
+    expect(scadenzaVera(undefined, ora)).toBeUndefined();
+  });
+
+  it("il nome non prende l'anno dalla data di comodo", () => {
+    expect(nomeConcorso({ titolo: "Rilevatore statistico", scadenza: "2099-12-31T00:00:00Z" })).toBe("Rilevatore statistico");
+  });
+
+  it("con «scadenza più lontana» vanno in fondo, come quelli senza scadenza", () => {
+    const bandi = [
+      { id: "a", titolo: "A", scadenza: "4999-12-31T00:00:00Z" },
+      { id: "b", titolo: "B", scadenza: "2026-12-01T00:00:00Z" },
+      { id: "c", titolo: "C", scadenza: "2026-11-01T00:00:00Z" },
+    ];
+    expect(ordinaConcorsi(bandi, "scadenza-lontana", ora).map((c) => c.id)).toEqual(["b", "c", "a"]);
+    expect(ordinaConcorsi(bandi, "scadenza", ora).map((c) => c.id)).toEqual(["c", "b", "a"]);
   });
 });

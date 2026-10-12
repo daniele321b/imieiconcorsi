@@ -1,4 +1,4 @@
-import { concorsiSuggeriti, conMaiuscola, nomeConcorso, scaduto, type ConcorsoInLista } from "@imieiconcorsi/core/concorsi";
+import { concorsiSuggeriti, conMaiuscola, nomeConcorso, scadenzaVera, scaduto, type ConcorsoInLista } from "@imieiconcorsi/core/concorsi";
 import {
   COMPARTI,
   COMPARTO_IDS,
@@ -11,7 +11,7 @@ import {
   type CompartoId,
   type MateriaId,
 } from "@imieiconcorsi/core/domain";
-import { ArrowLeft, Bell, Database, FileUp, Link2, Loader2, Plus, RefreshCw, Trash2, X } from "lucide-react";
+import { ArrowLeft, Bell, Database, FileUp, Link2, Loader2, Pencil, Plus, RefreshCw, Trash2, X } from "lucide-react";
 import { type FormEvent, type ReactNode, useEffect, useMemo, useState } from "react";
 import { Link, Navigate } from "react-router";
 import { Alert, Badge, Button, Card, PageHeader, Spinner, cx } from "../../components/ui";
@@ -334,7 +334,7 @@ function DaCaricare({ bandi, onCarica }: { bandi?: ConcorsoInLista[]; onCarica: 
                   </Link>
                   {nuovo(c) && <Badge tone="amber" className="ml-2 align-middle">nuovo</Badge>}
                   <p className="text-xs break-words text-slate-500">
-                    {conMaiuscola(c.ente)} · pubblicato il {dataBreve(c.pubblicatoIl)} · scade il {dataBreve(c.scadenza)}
+                    {conMaiuscola(c.ente)} · pubblicato il {dataBreve(c.pubblicatoIl)} · {scadenzaVera(c.scadenza) ? `scade il ${dataBreve(c.scadenza)}` : "senza scadenza"}
                   </p>
                 </div>
                 <Button size="sm" variant="secondary" className="self-start sm:self-auto" onClick={() => onCarica(c)}>
@@ -392,7 +392,7 @@ function SceltaConcorsi({
   }, [bandi, cerca, soloAperti, giaCollegati]);
 
   /** Scadenza a parole, per le righe. */
-  const quando = (c: Pick<ConcorsoInLista, "scadenza">) => (scaduto(c) ? "domande chiuse" : `scade il ${dataBreve(c.scadenza)}`);
+  const quando = (c: Pick<ConcorsoInLista, "scadenza">) => (scaduto(c) ? "domande chiuse" : scadenzaVera(c.scadenza) ? `scade il ${dataBreve(c.scadenza)}` : "senza scadenza");
 
   /** Un bando da collegare: nome grande, ente e scadenza sotto, pulsante + a destra. */
   const riga = (c: ConcorsoInLista, extra?: ReactNode) => (
@@ -503,6 +503,146 @@ function SceltaConcorsi({
   );
 }
 
+/**
+ * Modifica dei dati inseriti al caricamento: titolo, comparto, anno, materia, formato e, se la
+ * banca non è pubblicata, il PDF. Si mandano solo i campi cambiati (PUT /admin/banche-dati/{id});
+ * il PDF nuovo passa da POST …/pdf e l'estrazione riparte da sola.
+ */
+function ModificaBanca({ banca, onFatto, onAnnulla }: { banca: BancaDati; onFatto: (avviso: string) => void; onAnnulla: () => void }) {
+  const [titolo, setTitolo] = useState(banca.titolo);
+  const [comparto, setComparto] = useState<CompartoId | "">(banca.comparto ?? "");
+  const [anno, setAnno] = useState(banca.anno ? String(banca.anno) : "");
+  const [materia, setMateria] = useState<MateriaId | "">(banca.materia ?? "");
+  const [formato, setFormato] = useState<Formato>(banca.formato);
+  const [file, setFile] = useState<File>();
+  const [fase, setFase] = useState<string>();
+  const [errore, setErrore] = useState<string>();
+  const pubblicata = banca.stato === "pubblicata";
+  const lavorazione = banca.stato === "caricamento" || banca.stato === "estrazione";
+
+  // Solo i campi cambiati.
+  const modifiche: Record<string, unknown> = {};
+  if (titolo.trim() !== banca.titolo) modifiche.titolo = titolo.trim();
+  if (comparto && comparto !== banca.comparto) modifiche.comparto = comparto;
+  if (anno !== (banca.anno ? String(banca.anno) : "")) modifiche.anno = anno ? Number(anno) : null;
+  if (materia !== (banca.materia ?? "")) modifiche.materia = materia || null;
+  if (formato !== banca.formato) modifiche.formato = formato;
+  const cambiato = Object.keys(modifiche).length > 0 || !!file;
+
+  async function salva(e: FormEvent) {
+    e.preventDefault();
+    setErrore(undefined);
+    try {
+      const avvisi: string[] = [];
+      if (Object.keys(modifiche).length) {
+        setFase(pubblicata && (modifiche.titolo || modifiche.materia !== undefined) ? "Salvo e aggiorno le domande pubblicate…" : "Salvo…");
+        await api(`/admin/banche-dati/${banca.id}`, { method: "PUT", body: modifiche });
+        avvisi.push(modifiche.formato ? "Dati salvati: con il formato nuovo l'estrazione è ripartita." : "Dati salvati.");
+      }
+      if (file) {
+        setFase("Preparo il caricamento…");
+        const { upload } = await api<{ upload: string }>(`/admin/banche-dati/${banca.id}/pdf`, {
+          method: "POST",
+          body: { nomeFile: file.name, dimensione: file.size },
+        });
+        setFase(`Carico il PDF (${(file.size / 1024 / 1024).toFixed(1)} MB)…`);
+        const res = await fetch(upload, { method: "PUT", headers: { "content-type": "application/pdf" }, body: file });
+        if (!res.ok) throw new Error(`Caricamento non riuscito (${res.status})`);
+        avvisi.push("PDF sostituito: l'estrazione è partita, ti arriva un'email quando finisce.");
+      }
+      onFatto(avvisi.join(" "));
+    } catch (err) {
+      setErrore(messaggio(err));
+    } finally {
+      setFase(undefined);
+    }
+  }
+
+  return (
+    <form onSubmit={(e) => void salva(e)} className="grid gap-3 rounded-xl bg-slate-50 p-4 sm:grid-cols-2">
+      <p className="text-sm font-semibold text-slate-800 sm:col-span-2">Modifica la banca dati</p>
+      <label className="text-xs font-semibold text-slate-500 sm:col-span-2">
+        Titolo
+        <input required minLength={3} maxLength={200} value={titolo} onChange={(e) => setTitolo(e.target.value)} className={campo} />
+      </label>
+      <label className="text-xs font-semibold text-slate-500">
+        Comparto
+        <select value={comparto} onChange={(e) => setComparto(e.target.value as CompartoId)} className={campo}>
+          {COMPARTI.map((c) => (
+            <option key={c.id} value={c.id}>
+              {c.nome}
+            </option>
+          ))}
+        </select>
+      </label>
+      <label className="text-xs font-semibold text-slate-500">
+        Anno
+        <input type="number" min={2000} max={2100} value={anno} onChange={(e) => setAnno(e.target.value)} className={campo} />
+      </label>
+      <label className="text-xs font-semibold text-slate-500">
+        Materia (se è una sola)
+        <select value={materia} onChange={(e) => setMateria(e.target.value as MateriaId | "")} className={campo}>
+          <option value="">Più materie / non indicata</option>
+          {MATERIE.map((m) => (
+            <option key={m.id} value={m.id}>
+              {m.nome}
+            </option>
+          ))}
+        </select>
+      </label>
+      <label className="text-xs font-semibold text-slate-500">
+        Risposta giusta nel PDF
+        <select value={formato} disabled={lavorazione} onChange={(e) => setFormato(e.target.value as Formato)} className={campo}>
+          {FORMATI.map((f) => (
+            <option key={f.id} value={f.id}>
+              {f.nome}
+            </option>
+          ))}
+        </select>
+        {formato !== banca.formato && (
+          <span className="mt-1 block font-normal text-amber-700">
+            L'estrazione riparte{pubblicata && ": la banca esce dalla sezione Banche dati finché non la ripubblichi"}.
+          </span>
+        )}
+      </label>
+      <label className="text-xs font-semibold text-slate-500 sm:col-span-2">
+        Sostituisci il PDF (ora: {banca.nomeFile})
+        <input
+          type="file"
+          accept="application/pdf"
+          disabled={pubblicata || lavorazione}
+          onChange={(e) => setFile(e.target.files?.[0])}
+          className="mt-1 block w-full text-sm text-slate-700 file:mr-3 file:rounded-lg file:border-0 file:bg-brand-50 file:px-3 file:py-2 file:font-semibold file:text-brand-700 disabled:opacity-50"
+        />
+        <span className="mt-1 block font-normal text-slate-400">
+          {pubblicata
+            ? "Per sostituire il PDF di una banca pubblicata, prima premi Ritira: con un file nuovo le domande cambiano numero."
+            : lavorazione
+              ? "Aspetta che finisca l'estrazione in corso."
+              : "L'estrazione riparte dal file nuovo; le domande estratte prima si cancellano."}
+        </span>
+      </label>
+      {pubblicata && (modifiche.titolo !== undefined || modifiche.materia !== undefined) && (
+        <p className="text-xs text-slate-500 sm:col-span-2">Titolo e materia sono scritti anche sulle domande: salvando, la banca si ripubblica da sola.</p>
+      )}
+      {errore && (
+        <div className="sm:col-span-2">
+          <Alert tone="error">{errore}</Alert>
+        </div>
+      )}
+      <div className="flex flex-wrap items-center gap-2 sm:col-span-2">
+        <Button type="button" variant="secondary" size="sm" disabled={!!fase} onClick={onAnnulla}>
+          Annulla
+        </Button>
+        <Button type="submit" size="sm" disabled={!cambiato || !titolo.trim()} loading={!!fase}>
+          Salva
+        </Button>
+        {fase && <span className="text-sm text-slate-500">{fase}</span>}
+      </div>
+    </form>
+  );
+}
+
 /** Una banca dati: stato, numeri dell'estrazione, esempi da controllare e azioni. */
 function RigaBanca({ banca, bandi, onCambio }: { banca: BancaDati; bandi?: ConcorsoInLista[]; onCambio: () => void }) {
   const [aperta, setAperta] = useState(banca.stato === "estratta");
@@ -514,6 +654,7 @@ function RigaBanca({ banca, bandi, onCambio }: { banca: BancaDati; bandi?: Conco
   const [errore, setErrore] = useState<string>();
   // Eliminare è definitivo: serve un secondo clic di conferma.
   const [confermaElimina, setConfermaElimina] = useState(false);
+  const [modifica, setModifica] = useState(false);
 
   async function azione(nome: string, fn: () => Promise<unknown>) {
     setInCorso(nome);
@@ -610,6 +751,9 @@ function RigaBanca({ banca, bandi, onCambio }: { banca: BancaDati; bandi?: Conco
               Ritira
             </Button>
           )}
+          <Button variant="ghost" size="sm" onClick={() => setModifica((m) => !m)}>
+            <Pencil className="size-4" /> Modifica
+          </Button>
           <Button variant="ghost" size="sm" onClick={() => setConcorsiAperti((a) => !a)}>
             <Link2 className="size-4" /> Concorsi ({collegati.length})
           </Button>
@@ -646,6 +790,18 @@ function RigaBanca({ banca, bandi, onCambio }: { banca: BancaDati; bandi?: Conco
             Elimina definitivamente
           </Button>
         </div>
+      )}
+
+      {modifica && (
+        <ModificaBanca
+          banca={banca}
+          onAnnulla={() => setModifica(false)}
+          onFatto={(testo) => {
+            setModifica(false);
+            setAvviso(testo);
+            onCambio();
+          }}
+        />
       )}
 
       {errore && <Alert tone="error">{errore}</Alert>}

@@ -2,6 +2,7 @@ import { UpdateCommand } from "@aws-sdk/lib-dynamodb";
 import { db, tables } from "@imieiconcorsi/core/db";
 import { firmaValida, LETTURA_AVVISI, percorsoSicuro, valoriLettura } from "@imieiconcorsi/core/disiscrizione";
 import { avvisaAdmin } from "@imieiconcorsi/core/email";
+import { daCloudFront } from "@imieiconcorsi/core/http";
 import { env } from "@imieiconcorsi/core/env";
 import type { APIGatewayProxyEventV2, APIGatewayProxyResultV2 } from "aws-lambda";
 import { createHmac } from "node:crypto";
@@ -122,6 +123,8 @@ async function contatto(event: APIGatewayProxyEventV2) {
 }
 
 export const handler = async (event: APIGatewayProxyEventV2): Promise<APIGatewayProxyResultV2> => {
+  // Solo richieste passate da CloudFront (WAF e limiti per IP), come le altre API (core/http.ts).
+  if (!daCloudFront(event.headers)) return json(403, { error: "Accesso non consentito" });
   const q = event.queryStringParameters ?? {};
   if (event.routeKey === "POST /pubblico/contatto") {
     try {

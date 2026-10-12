@@ -99,6 +99,19 @@ resource "aws_cognito_identity_provider" "google" {
     name     = "name"
     username = "sub"
   }
+
+  # Cognito aggiunge da solo gli indirizzi delle API di Google (authorize_url, token_url…):
+  # senza ignorarli Terraform proverebbe a toglierli a ogni deploy. id e secret restano nostri.
+  lifecycle {
+    ignore_changes = [
+      provider_details["attributes_url"],
+      provider_details["attributes_url_add_attributes"],
+      provider_details["authorize_url"],
+      provider_details["oidc_issuer"],
+      provider_details["token_request_method"],
+      provider_details["token_url"],
+    ]
+  }
 }
 
 # Accesso con Facebook: solo se ci sono app id e secret.
@@ -118,6 +131,18 @@ resource "aws_cognito_identity_provider" "facebook" {
     email    = "email"
     name     = "name"
     username = "id"
+  }
+
+  # Come per Google: gli indirizzi della Graph API (con la versione, es. v21.0) li gestisce
+  # Cognito; scriverli qui bloccherebbe una versione che Facebook prima o poi ritira.
+  lifecycle {
+    ignore_changes = [
+      provider_details["attributes_url"],
+      provider_details["attributes_url_add_attributes"],
+      provider_details["authorize_url"],
+      provider_details["token_request_method"],
+      provider_details["token_url"],
+    ]
   }
 }
 

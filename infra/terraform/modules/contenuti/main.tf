@@ -10,6 +10,17 @@ resource "aws_s3_bucket" "contenuti" {
   force_destroy = !var.protezione
 }
 
+# Cifrato a riposo (SSE-S3, AES-256), anche i PDF caricati dall'admin.
+resource "aws_s3_bucket_server_side_encryption_configuration" "contenuti" {
+  bucket = aws_s3_bucket.contenuti.id
+  rule {
+    apply_server_side_encryption_by_default {
+      sse_algorithm = "AES256"
+    }
+    bucket_key_enabled = true
+  }
+}
+
 # Niente di pubblico: lo leggono solo le Lambda con i permessi giusti.
 resource "aws_s3_bucket_public_access_block" "contenuti" {
   bucket                  = aws_s3_bucket.contenuti.id
@@ -17,6 +28,23 @@ resource "aws_s3_bucket_public_access_block" "contenuti" {
   block_public_policy     = true
   ignore_public_acls      = true
   restrict_public_buckets = true
+}
+
+# Solo connessioni cifrate (HTTPS), per chiunque: anche le Lambda e i caricamenti dell'admin.
+resource "aws_s3_bucket_policy" "contenuti" {
+  bucket     = aws_s3_bucket.contenuti.id
+  depends_on = [aws_s3_bucket_public_access_block.contenuti]
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [{
+      Sid       = "SoloHttps"
+      Effect    = "Deny"
+      Principal = "*"
+      Action    = "s3:*"
+      Resource  = [aws_s3_bucket.contenuti.arn, "${aws_s3_bucket.contenuti.arn}/*"]
+      Condition = { Bool = { "aws:SecureTransport" = "false" } }
+    }]
+  })
 }
 
 # Versioni: un file sovrascritto o cancellato per errore si può recuperare.

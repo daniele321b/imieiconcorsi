@@ -1,3 +1,6 @@
+// Font servito dal nostro sito (non da Google Fonts): niente IP dei visitatori a terzi e una
+// Content-Security-Policy più stretta (modules/web, font-src 'self').
+import "@fontsource-variable/plus-jakarta-sans";
 import "./index.css";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";

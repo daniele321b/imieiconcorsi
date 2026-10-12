@@ -41,3 +41,21 @@ variable "protezione" {
   type        = bool
   default     = false
 }
+
+variable "csp_connect_src" {
+  description = "Indirizzi esterni a cui il sito si collega (Cognito, bucket dei PDF caricati dall'admin): connect-src della CSP"
+  type        = list(string)
+  default     = []
+}
+
+variable "pubblicita_esterna" {
+  description = "AdSense attivo: la CSP permette gli script e i frame di Google per gli annunci"
+  type        = bool
+  default     = false
+}
+
+variable "origine_segreta" {
+  description = "Segreto che CloudFront aggiunge alle chiamate all'API (intestazione x-origine-cloudfront)"
+  type        = string
+  sensitive   = true
+}

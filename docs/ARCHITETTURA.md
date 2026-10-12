@@ -1,5 +1,7 @@
 # Architettura di iMieiConcorsi — guida per sviluppatori
 
+Schema ad alto livello di ogni ambiente (account, region, rete, servizi e flussi): [architettura/iMieiConcorsi-HLD.drawio](architettura/iMieiConcorsi-HLD.drawio), pagine Dev, Prod e Shared (si apre con draw.io; si rigenera con `docs/architettura/genera_hld.py`).
+
 Questa guida spiega **come è fatta l'app e come ragiona il codice**: i pezzi, il
 percorso di una richiesta, i flussi principali e come aggiungere qualcosa senza
 rompere il resto. La mappa file per file è in [MAPPA-CODICE.md](MAPPA-CODICE.md);
@@ -111,6 +113,7 @@ variabile d'ambiente passata da Terraform.
 | `richieste` | `userId` + `id` | `perStato` (stato + aggiornataIl) | Richieste di assistenza con i messaggi | richieste, admin |
 | `progressi` | `userId` + `bancaId` | — | Domande fatte, sbagliate e preferite per banca dati (mappe di bit) | study |
 | `contatori` | `id` | — | Contatori della piattaforma, es. `ai#2026-10` = token e spesa AI del mese | ai |
+| `attivita` | `periodo` + `userId` | — (TTL: minuti 2 giorni, giorni 400) | Utenti attivi: "m#minuto" e "g#giorno" con l'impronta anonima dell'utente | tutte le Lambda dell'API (`core/attivita.ts`), letta da admin |
 | `accessi` | `userId` + `il` | — (TTL 12 mesi) | Un login per riga: data e modo (email o social) | trigger Cognito `auth/accesso.ts` |
 
 Gli id "ordinabili" (`core/src/ids.ts`) iniziano con il timestamp: le righe di un utente
@@ -133,6 +136,7 @@ nei due posti**: nel codice (chiavi della mappa passata a `service()`) e in Terr
 | `billing` | `GET /piani`, `POST /me/abbonamento`, `POST /me/codice-sconto`, `GET /me/ordini[/{id}]`, `POST /me/ordini/{id}/ricevuta`, `GET/POST /me/invito`, pubblica `POST /pubblico/stripe/webhook` | Acquisti con Stripe, codici sconto, inviti |
 | `ai` | `GET /ai/stato`, `POST /ai/tutor`, `POST /ai/allenamento` | Tutor e allenamento del piano Pro (Bedrock) |
 | `richieste` | `GET/POST /me/richieste`, `POST /me/richieste/{id}/messaggi`, `PUT /me/richieste/{id}/letta` | Assistenza agli utenti |
+| _(tutte)_ | Le Lambda dell'API accettano solo richieste con l'intestazione segreta di CloudFront (`daCloudFront` in `core/http.ts`) | Niente accessi diretti all'API Gateway che scavalchino WAF e limiti |
 | `pubblico` | pubbliche: `POST /pubblico/disiscrivi`, `GET /pubblico/aperto`, `GET /pubblico/clic`, `POST /pubblico/contatto` | Link delle email (firmati) e modulo Contatti (all'admin via SNS, max 5/ora per IP con `contatori`), senza login |
 | `admin` | `/admin/...` (riepilogo, utenti, codici, banche dati e concorsi collegati, ordini, richieste, concorsi) | Pannello di controllo, solo gruppo `admin` |
 

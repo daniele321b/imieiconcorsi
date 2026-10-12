@@ -40,3 +40,21 @@ variable "services" {
     policies = optional(string, "[]")
   }))
 }
+
+variable "richieste_al_secondo" {
+  description = "Richieste al secondo che l'API accetta in tutto (oltre: 429). 1000 regge circa 1.000 utenti attivi insieme"
+  type        = number
+  default     = 1000
+}
+
+variable "picco_richieste" {
+  description = "Picco momentaneo di richieste accettate (burst)"
+  type        = number
+  default     = 2000
+}
+
+variable "write_tables_comuni" {
+  description = "Tabelle che tutte le Lambda dell'API possono scrivere (es. attivita: utenti attivi)"
+  type        = list(string)
+  default     = []
+}

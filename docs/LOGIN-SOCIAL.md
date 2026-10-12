@@ -159,6 +159,50 @@ sito. Il `config.json` del sito si aggiorna da solo e i pulsanti "Continua con
 Google / Facebook" compaiono. Ricarica la pagina, eventualmente svuotando la
 cache.
 
+## Aprire il login a tutti
+
+Finché le app sono in "Test" (Google) o in "Sviluppo" (Facebook) entrano solo gli utenti
+di test. Le stesse app servono dev e prod: aprendole, valgono per entrambi. Prima controlla
+che le pagine pubbliche siano online: https://imieiconcorsi.it/privacy, /termini,
+/eliminazione-dati.
+
+### Google (pochi minuti, nessuna verifica)
+
+1. https://console.cloud.google.com → progetto dell'app → **Google Auth Platform**.
+2. **Branding**:
+   - Home page dell'applicazione: `https://imieiconcorsi.it`
+   - Link alle norme sulla privacy: `https://imieiconcorsi.it/privacy`
+   - Link ai termini di servizio: `https://imieiconcorsi.it/termini`
+   - Domini autorizzati: `imieiconcorsi.it` e `amazoncognito.com`
+   - **Non caricare il logo**: con il logo Google chiede la verifica del brand (giorni o
+     settimane). Senza logo e con i soli `openid`, `email`, `profile` non serve verifica.
+   - Salva.
+3. **Pubblico** → **Pubblica app** → conferma. Lo stato diventa "In produzione": da subito
+   può entrare chiunque abbia un account Google.
+
+### Facebook (circa mezz'ora, nessuna revisione per email e profilo)
+
+1. https://developers.facebook.com/apps → l'app → **Impostazioni app → Di base**:
+   - URL dell'informativa sulla privacy: `https://imieiconcorsi.it/privacy`
+   - URL dei Termini di servizio: `https://imieiconcorsi.it/termini`
+   - Eliminazione dei dati dell'utente → "URL con le istruzioni":
+     `https://imieiconcorsi.it/eliminazione-dati`
+   - Icona dell'app 1024 × 1024: `docs/brand/icona-1024.png`
+   - Categoria: **Istruzione**; email di contatto: la tua.
+   - Salva modifiche.
+2. **Casi d'uso** (o "Revisione app → Autorizzazioni e funzioni"): `email` e
+   `public_profile` devono avere **accesso standard**. Bastano così: niente revisione di Meta.
+3. In alto, **Modalità app: Sviluppo → Live**. Se Meta segnala campi mancanti
+   ("Currently ineligible"), completa quelli indicati e riprova. Per email e profilo non serve
+   la verifica dell'azienda.
+4. Prova da un account Facebook che non ha ruoli sull'app (es. di un amico).
+
+### Dopo
+
+- Nessun deploy da fare: Cognito e il sito non cambiano.
+- Più avanti, con la società costituita, si può dare a Cognito un dominio nostro
+  (`accesso.imieiconcorsi.it`) al posto di `…amazoncognito.com`, e caricare il logo su Google.
+
 ## Problemi tipici
 
 | Errore | Causa e soluzione |
@@ -172,9 +216,9 @@ cache.
 
 ## Da sapere
 
-- **Account separati.** Se ti registri con email e password e poi entri con
-  Google usando la stessa email, Cognito crea **due utenti diversi**. Il
-  collegamento automatico degli account lo aggiungeremo più avanti.
+- **Stessa email, un solo account.** Se ti registri con email e password e poi entri con
+  Google o Facebook con la stessa email, il trigger di pre-registrazione collega il social
+  all'account che c'è già (la prima volta il login si ripete da solo).
 - **I secret** stanno solo in `terraform.tfvars` (locale) e nello stato
   Terraform (bucket S3 privato e cifrato). Non vanno mai su git né in chat.
 - **Distruggere e ricreare dev** non richiede di toccare Google e Facebook: il
@@ -185,8 +229,7 @@ cache.
   Live, non i test in sviluppo. Per pubblicare servono:
   - categoria **Istruzione**;
   - icona 1024 × 1024: `docs/brand/icona-1024.png`;
-  - URL dell'informativa privacy: `https://dev.imieiconcorsi.it/privacy`;
-  - URL con le istruzioni per eliminare i dati: `https://dev.imieiconcorsi.it/eliminazione-dati`.
+  - URL dell'informativa privacy: `https://imieiconcorsi.it/privacy`;
+  - URL con le istruzioni per eliminare i dati: `https://imieiconcorsi.it/eliminazione-dati`.
 
-  Prima della pubblicazione vanno compilati i dati del titolare in
-  `packages/web/src/lib/legale.ts`, e i testi vanno rivisti da un legale.
+  Procedura completa in "Aprire il login a tutti" qui sopra.

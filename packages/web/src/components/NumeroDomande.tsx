@@ -48,11 +48,20 @@ export function NumeroAMano({
           onChange(e.target.value !== "" && Number.isInteger(v) && v >= DOMANDE_MIN && v <= max ? v : undefined);
         }}
         aria-invalid={fuori}
+        // Una sola classe per proprietà (cx non risolve i conflitti tra classi): su sfondo scuro il
+        // numero resta bianco, quando è quello scelto ha il bordo bianco pieno.
         className={cx(
-          "h-8 w-20 rounded-lg border-0 px-2 text-sm font-bold tabular-nums ring-1 focus:ring-2 focus:outline-none",
-          scuro ? "bg-white/10 text-white ring-white/20 placeholder:text-brand-200 focus:ring-white" : "bg-white text-slate-900 ring-slate-300 focus:ring-brand-500",
-          attivo && !fuori && (scuro ? "bg-white !text-brand-900" : "ring-2 ring-brand-500"),
-          fuori && "ring-2 !ring-rose-400",
+          "h-8 w-20 rounded-lg border-0 px-2 text-sm font-bold tabular-nums focus:outline-none",
+          scuro ? "text-white caret-white placeholder:text-brand-200" : "bg-white text-slate-900",
+          fuori
+            ? cx("ring-2 ring-rose-400", scuro && "bg-white/10")
+            : attivo && testo
+              ? scuro
+                ? "bg-white/25 ring-2 ring-white"
+                : "ring-2 ring-brand-500"
+              : scuro
+                ? "bg-white/10 ring-1 ring-white/30 focus:ring-2 focus:ring-white"
+                : "ring-1 ring-slate-300 focus:ring-2 focus:ring-brand-500",
         )}
       />
       {fuori && <span className={scuro ? "text-rose-200" : "text-rose-600"}>da {DOMANDE_MIN} a {max}</span>}

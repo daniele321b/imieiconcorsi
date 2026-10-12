@@ -1,4 +1,4 @@
-import { conMaiuscola, nomeConcorso } from "@imieiconcorsi/core/concorsi";
+import { conMaiuscola, nomeConcorso, scadenzaVera } from "@imieiconcorsi/core/concorsi";
 import { MATERIE, nomeComparto } from "@imieiconcorsi/core/domain";
 import { ArrowLeft, Bookmark, BookmarkCheck, BookOpenCheck, CalendarClock, Database, ExternalLink, Eye, Info, MapPin, ShieldCheck, Timer, Users } from "lucide-react";
 import { useState } from "react";
@@ -76,7 +76,8 @@ export function ConcorsoDettaglio() {
 
         <div className="mt-5 flex flex-wrap gap-2">
           <Badge tone={giorni !== undefined && giorni <= 7 ? "red" : "brand"}>
-            <CalendarClock className="size-3" /> {scadenzaTesto(concorso.scadenza)} · {data(concorso.scadenza)}
+            <CalendarClock className="size-3" /> {scadenzaTesto(concorso.scadenza)}
+            {scadenzaVera(concorso.scadenza) && ` · ${data(concorso.scadenza)}`}
           </Badge>
           <Badge>{nomeComparto(concorso.comparto)}</Badge>
           {tipoProcedura(concorso.tipoProcedura) && <Badge>{tipoProcedura(concorso.tipoProcedura)}</Badge>}

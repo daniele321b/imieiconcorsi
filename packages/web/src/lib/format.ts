@@ -1,4 +1,5 @@
 // Formattazione all'italiana di date, importi e durate, usata in tutte le pagine.
+import { scadenzaDiComodo } from "@imieiconcorsi/core/concorsi";
 
 const dataFmt = new Intl.DateTimeFormat("it-IT", { day: "numeric", month: "long", year: "numeric" });
 const dataBreveFmt = new Intl.DateTimeFormat("it-IT", { day: "numeric", month: "short" });
@@ -16,12 +17,14 @@ export const euro = (n: number) => euroFmt.format(n);
 
 /** Giorni da oggi alla data (negativi se è passata; undefined se manca). */
 export function giorniA(iso?: string) {
-  if (!iso) return undefined;
+  // Scadenze di comodo di inPA (2099, 4999…): il bando non ha un termine.
+  if (!iso || scadenzaDiComodo(iso)) return undefined;
   return Math.ceil((new Date(iso).getTime() - Date.now()) / 86_400_000);
 }
 
 /** Scadenza di un bando a parole: "Scade tra 5 giorni", "Scade oggi", "Domande chiuse". */
 export function scadenzaTesto(iso?: string) {
+  if (scadenzaDiComodo(iso)) return "Senza scadenza";
   const g = giorniA(iso);
   if (g === undefined) return "Scadenza non indicata";
   // Scaduto il termine per la domanda: il bando resta, ci si può ancora esercitare.

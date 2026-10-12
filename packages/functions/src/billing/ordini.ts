@@ -185,6 +185,8 @@ export async function completaOrdine(id: string): Promise<Ordine | undefined> {
           TableName: tables.codici,
           Key: { codice: ordine.codiceSconto },
           UpdateExpression: "SET usi = usi + :uno",
+          // Codice eliminato dall'admin nel frattempo: niente da contare (e niente codice "fantasma").
+          ConditionExpression: "attribute_exists(codice)",
           ExpressionAttributeValues: { ":uno": 1 },
         }),
       )

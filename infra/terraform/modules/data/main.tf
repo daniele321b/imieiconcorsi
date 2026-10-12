@@ -288,3 +288,29 @@ resource "aws_dynamodb_table" "accessi" {
     enabled        = true
   }
 }
+
+# Utenti attivi (pannello admin → Utenti attivi): una riga per utente e per giorno ("g#2026-10-12")
+# e per minuto ("m#2026-10-12T10:35"), scritta alla prima richiesta all'API di quel periodo
+# (core/attivita.ts). Online = minuti degli ultimi 5; giornalieri, settimanali e mensili = giorni.
+# I minuti si cancellano dopo 2 giorni, i giorni dopo 400 (TTL "scade").
+resource "aws_dynamodb_table" "attivita" {
+  name                        = "${var.name}-attivita"
+  billing_mode                = "PAY_PER_REQUEST"
+  deletion_protection_enabled = var.protezione
+  hash_key                    = "periodo"
+  range_key                   = "userId"
+
+  attribute {
+    name = "periodo"
+    type = "S"
+  }
+  attribute {
+    name = "userId"
+    type = "S"
+  }
+
+  ttl {
+    attribute_name = "scade"
+    enabled        = true
+  }
+}

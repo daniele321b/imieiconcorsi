@@ -116,7 +116,10 @@ entro un'ora, e riceve un'email ("piano attivato" o "tornato al Free").
 il codice lo scegli tu (es. `BENVENUTO20`) o lo genera il sistema. L'utente lo
 inserisce in **Piani** → "Hai un codice sconto?" e vede subito i prezzi
 scontati. Ogni codice vale una volta per utente; con "Disattiva" smette subito
-di funzionare. Usi e importo pagato restano sul profilo (`ultimoAcquisto`).
+di funzionare (e "Riattiva" lo rimette). Il cestino lo **elimina per sempre**, con
+conferma: gli ordini che l'hanno usato restano com'erano e chi l'ha già usato non può
+riusarlo neanche se ricrei un codice con lo stesso nome. Usi e importo pagato restano sul
+profilo (`ultimoAcquisto`).
 
 **Account doppi** (stessa email con email e password e con Facebook/Google). Dai
 nuovi accessi in poi non succede più: il login social viene collegato da solo
@@ -147,6 +150,14 @@ giorno per utente.
 spesa AI, scraper fermo): arrivano ad `admin_email` dal topic SNS `imieiconcorsi-dev-avvisi-admin`,
 che non ha i limiti della sandbox di SES. **Dopo il primo `infra` arriva l'email "AWS Notification -
 Subscription Confirmation": clicca il link**, altrimenti gli avvisi non arrivano (stessa cosa per prod).
+
+**Utenti attivi.** In cima al pannello: quanti sono online ora (hanno usato l'app negli
+ultimi 5 minuti), oggi, ieri, negli ultimi 7 e 30 giorni, nel mese in corso e in quello
+scorso (persone diverse), più il grafico degli ultimi 30 giorni; si aggiorna da solo ogni
+minuto. Conta chi usa davvero l'app (ogni azione con l'accesso fatto, admin esclusi), non chi
+ha solo una scheda aperta: ogni Lambda dell'API segna l'utente nella tabella `attivita` al
+massimo una volta al minuto, con un'impronta anonima (`core/attivita.ts`). Si conta dal giorno
+del primo deploy di questa funzione.
 
 **Accessi.** A ogni login (email e password, Google o Facebook) Cognito registra data, ora e modo
 nella tabella `accessi` (si cancellano da soli dopo 12 mesi). Nel pannello, per ogni utente:
@@ -375,7 +386,14 @@ l'ente la pubblica:
    porta alla consultazione (compare dal mattino dopo, quando si rifà la lista in
    cache). Collegando un concorso a una banca già pubblicata, tutto questo vale
    subito. **Ritira** la toglie da tutti i concorsi e la lascia ripubblicabile.
-6. **Elimina** (riga della banca dati, con conferma): la toglie per sempre, con
+6. **Modifica** (riga della banca dati): titolo, comparto, anno, materia e formato della
+   risposta giusta si cambiano quando vuoi. Su una banca pubblicata, cambiando titolo o
+   materia le domande si ripubblicano da sole; cambiando il formato l'estrazione riparte e la
+   banca va ripubblicata. **Sostituisci il PDF** (versione corretta o file sbagliato): solo
+   con la banca non pubblicata (prima **Ritira**), perché con un file nuovo le domande cambiano
+   numero; le domande estratte prima si cancellano e l'estrazione riparte. I concorsi collegati
+   si cambiano dal pulsante **Concorsi**.
+7. **Elimina** (riga della banca dati, con conferma): la toglie per sempre, con
    PDF, domande estratte e domande pubblicate; i concorsi collegati tornano alle
    nostre domande. Le sessioni già fatte restano nelle statistiche. Il PDF resta
    recuperabile per 30 giorni come versione vecchia nel bucket, poi sparisce.
@@ -580,6 +598,53 @@ guida passo passo in [GUIDA-PAGAMENTI.md](GUIDA-PAGAMENTI.md). Con
 test, carta `4242 4242 4242 4242`); senza, il cambio di piano è gratuito
 ("mock"). Prezzi di prova a 0,50 € finché `PREZZI_DI_PROVA = true` in
 `packages/core/src/domain.ts`.
+
+## Sicurezza
+
+Cosa protegge l'app (dev e prod, salvo dove indicato):
+
+- **Accesso**: Cognito con login SRP (la password non viaggia mai), password di almeno 8
+  caratteri con maiuscole, minuscole e numeri, nessun indizio su quali email sono registrate,
+  niente email temporanee. Ogni API vuole un token valido (authorizer JWT), tranne
+  `/pubblico/…`, che usa link firmati o limiti propri. Il pannello admin controlla il gruppo
+  `admin` nel token firmato, su ognuna delle sue route.
+- **Dati di un utente**: ogni lettura e scrittura usa l'id preso dal token, mai dall'indirizzo
+  o dal corpo della richiesta (sessioni, ordini, richieste, progressi).
+- **Solo da CloudFront**: CloudFront aggiunge alle chiamate all'API un'intestazione segreta
+  (`x-origine-cloudfront`); le Lambda respingono chi chiama l'indirizzo diretto dell'API
+  Gateway, che altrimenti scavalcherebbe WAF e limiti (`core/http.ts`, `daCloudFront`).
+- **Intestazioni di sicurezza** su sito e API: HTTPS obbligatorio (HSTS 2 anni),
+  Content-Security-Policy (solo il codice del nostro sito, più Cognito e il caricamento dei
+  PDF; AdSense solo se attivo), niente frame da altri siti, niente sniffing dei tipi, referrer
+  ridotto, permessi del browser spenti. Se il sito comincia a usare un servizio esterno nuovo,
+  va aggiunto alla CSP in `modules/web`. Il font è servito dal nostro sito (niente Google Fonts).
+- **WAF (solo prod)**: regole AWS per gli attacchi comuni (OWASP), input malevoli noti, IP con
+  cattiva reputazione; massimo 2.000 richieste in 5 minuti per IP e 100 invii (POST) alle rotte
+  senza login. In dev non c'è (costa circa 8-10 $ al mese).
+- **Limiti**: API Gateway 1.000 richieste al secondo in tutto (picchi 2.000; variabili
+  `richieste_al_secondo` e `picco_richieste` del modulo `api`); tutor AI con crediti, 6 al
+  minuto e tetti di spesa; modulo contatti 5 l'ora per IP.
+- **Dati**: bucket S3 privati, solo HTTPS, cifrati; tabelle DynamoDB cifrate con backup
+  continuo; in prod protezione dalla cancellazione. Ogni Lambda ha un ruolo IAM con le sole
+  tabelle che le servono.
+- **Cifratura a riposo**: DynamoDB, Cognito, log CloudWatch e variabili delle Lambda (cifrature
+  di AWS, sempre attive); bucket S3 sito, contenuti e stato Terraform con SSE-S3 (AES-256);
+  topic SNS degli avvisi admin (`alias/aws/sns`) e delle notifiche SES (chiave KMS nostra con
+  rotazione annuale, circa 1 $ al mese). Non cifrati solo i topic degli allarmi
+  (`…-monitoraggio`), che non contengono dati personali: servirebbe una chiave KMS per regione.
+- **Cifratura in transito**: browser → CloudFront solo HTTPS (TLS 1.2+, HSTS); CloudFront →
+  API Gateway e → S3 solo HTTPS; caricamento dei PDF su S3 con URL firmato HTTPS; Lambda →
+  servizi AWS (DynamoDB, S3, SES, SNS, Bedrock, Cognito) sempre HTTPS con firma IAM; Stripe,
+  inPA, Google e Facebook in HTTPS; SES consegna le email solo con TLS (`tls_policy = REQUIRE`).
+  Niente VPC: il traffico tra le Lambda e i servizi AWS va agli endpoint AWS cifrato e
+  autenticato, non su una rete privata (servirebbero VPC, endpoint e NAT, circa 40-70 $ al mese).
+- **Pagamenti**: i dati della carta restano su Stripe; il webhook è accettato solo con la firma
+  di Stripe; in prod senza chiavi gli acquisti sono chiusi.
+- **Dipendenze**: `npm audit` senza vulnerabilità note (12 ottobre 2026).
+
+Al primo `infra` dopo questa modifica, per qualche minuto (finché CloudFront non ha propagato
+l'intestazione segreta) le chiamate all'API possono rispondere "Accesso non consentito": basta
+aspettare e ricaricare.
 
 ## Monitoraggio
 

@@ -89,16 +89,77 @@ function TutorPro() {
           key={materiaChat}
           materia={materiaChat || undefined}
           onGettoni={aggiornaGettoni}
-          suggerimenti={[
-            "Differenza tra annullabilità e nullità di un atto",
-            "Come funziona il bilancio di un comune?",
-            "Spiegami le proporzioni con un esempio",
-          ]}
+          suggerimenti={SUGGERIMENTI[materiaChat || "qualsiasi"]}
         />
       </section>
     </div>
   );
 }
+
+/** Domande di partenza sotto la chat del tutor, per la materia scelta ("qualsiasi" = nessuna). */
+const SUGGERIMENTI: Record<MateriaId | "qualsiasi", string[]> = {
+  qualsiasi: ["Differenza tra annullabilità e nullità di un atto", "Come funziona il bilancio di un comune?", "Spiegami le proporzioni con un esempio"],
+  "diritto-amministrativo": [
+    "Differenza tra annullabilità e nullità di un atto amministrativo",
+    "Cos'è il silenzio-assenso e quando si applica?",
+    "Spiegami l'accesso agli atti (legge 241/1990)",
+  ],
+  "diritto-costituzionale": [
+    "Come si approva una legge ordinaria?",
+    "Quali sono i poteri del Presidente della Repubblica?",
+    "Differenza tra decreto-legge e decreto legislativo",
+  ],
+  "contabilita-pubblica": [
+    "Come funziona il bilancio di un comune?",
+    "Cosa sono i residui attivi e passivi?",
+    "Spiegami le fasi della spesa: impegno, liquidazione, ordinazione, pagamento",
+  ],
+  "diritto-lavoro": [
+    "Quali sono gli obblighi del dipendente pubblico?",
+    "Come funziona il procedimento disciplinare nel pubblico impiego?",
+    "Differenza tra pensione di vecchiaia e anticipata",
+  ],
+  "diritto-penale": [
+    "Differenza tra dolo e colpa con un esempio",
+    "Cosa sono i reati contro la pubblica amministrazione?",
+    "Differenza tra peculato e concussione",
+  ],
+  italiano: [
+    "Quando si usa il congiuntivo? Fammi degli esempi",
+    "Differenza tra complemento oggetto e complemento di termine",
+    "Come si analizza un periodo: principale e subordinate",
+  ],
+  storia: [
+    "Riassumimi le tappe dell'unità d'Italia",
+    "Quali furono le cause della prima guerra mondiale?",
+    "Come nacque la Repubblica italiana nel 1946?",
+  ],
+  geografia: [
+    "Quali sono le regioni a statuto speciale e perché?",
+    "Quali sono i fiumi più lunghi d'Italia?",
+    "Come si leggono latitudine e longitudine?",
+  ],
+  logica: [
+    "Spiegami le proporzioni con un esempio",
+    "Come si risolvono le serie numeriche?",
+    "Come si nega una frase con «tutti» o «alcuni»?",
+  ],
+  matematica: [
+    "Come si calcola una percentuale di sconto?",
+    "Spiegami le equazioni di primo grado con un esempio",
+    "Come si calcola la probabilità di un evento?",
+  ],
+  informatica: [
+    "Differenza tra hardware e software",
+    "Cos'è la PEC e quando ha valore legale?",
+    "Come si usa la funzione SOMMA.SE in Excel?",
+  ],
+  inglese: [
+    "Quando si usa il present perfect?",
+    "Differenza tra «some» e «any»",
+    "Come si formano i comparativi e i superlativi?",
+  ],
+};
 
 /** Allenamento: genera domande nuove sulla materia scelta (o la più debole) e le corregge subito. */
 function Allenamento({ puntiDeboli, onGettoni }: { puntiDeboli: AiStato["puntiDeboli"]; onGettoni: (g: GettoniAi) => void }) {

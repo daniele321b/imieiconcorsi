@@ -1,6 +1,6 @@
 import { nomeConcorso } from "@imieiconcorsi/core/concorsi";
 import { MATERIE, nomeMateria, PIANI } from "@imieiconcorsi/core/domain";
-import { ArrowRight, BookOpenCheck, Clock, Database, Search, Sparkles, Timer, Trophy } from "lucide-react";
+import { ArrowRight, BookOpenCheck, CheckCircle2, Clock, Database, Search, Sparkles, Timer, Trophy } from "lucide-react";
 import { Link } from "react-router";
 import { IconaMateria } from "../../components/brand";
 import { ConcorsoCard } from "../../components/ConcorsoCard";
@@ -113,11 +113,24 @@ export function Dashboard() {
             <Spinner />
           ) : (
             <>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-3 gap-3 sm:gap-4">
                 <Card>
                   <BookOpenCheck className="size-5 text-brand-500" />
                   <p className="mt-2 text-2xl font-extrabold">{stats.data?.domandeRisposte ?? 0}</p>
                   <p className="text-sm text-slate-500">domande risposte</p>
+                </Card>
+                {/* Giuste sul totale, con la percentuale. */}
+                <Card>
+                  <CheckCircle2 className="size-5 text-emerald-500" />
+                  <p className="mt-2 text-2xl font-extrabold">{stats.data?.risposteCorrette ?? 0}</p>
+                  <p className="text-sm text-slate-500">
+                    risposte corrette
+                    {!!stats.data?.domandeRisposte && (
+                      <span className="block font-semibold text-emerald-700">
+                        {Math.round(((stats.data.risposteCorrette ?? 0) / stats.data.domandeRisposte) * 100)}%
+                      </span>
+                    )}
+                  </p>
                 </Card>
                 <Card>
                   <Trophy className="size-5 text-accent-500" />
@@ -126,15 +139,16 @@ export function Dashboard() {
                 </Card>
               </div>
 
+              {/* Le materie di studio e le banche dati ufficiali in due riquadri separati. */}
               <Card>
                 <p className="mb-4 font-semibold text-slate-900">Risposte giuste per materia</p>
-                {perMateria.length || perBancaDati.length ? (
+                {perMateria.length ? (
                   <ul className="space-y-3">
                     {perMateria.map((m) => {
                       const info = MATERIE.find((x) => x.id === m.materia)!;
                       return (
                         <li key={m.materia} className="flex items-center gap-3">
-                          <IconaMateria icona={info.icona} materia={m.materia} className="size-8" />
+                          <IconaMateria icona={info.icona} materia={m.materia} piccola />
                           <div className="min-w-0 flex-1">
                             <div className="flex justify-between gap-2 text-sm">
                               <span className="truncate font-medium">{info.nome}</span>
@@ -145,6 +159,16 @@ export function Dashboard() {
                         </li>
                       );
                     })}
+                  </ul>
+                ) : (
+                  <p className="text-sm text-slate-500">Completa una sessione di studio sulle materie per vedere i tuoi punti forti e deboli.</p>
+                )}
+              </Card>
+
+              {perBancaDati.length > 0 && (
+                <Card>
+                  <p className="mb-4 font-semibold text-slate-900">Risultati nelle banche dati ufficiali</p>
+                  <ul className="space-y-3">
                     {perBancaDati.map((b) => (
                       <li key={b.bancaId} className="flex items-center gap-3">
                         <span className="grid size-8 shrink-0 place-items-center rounded-lg bg-brand-50 text-brand-600">
@@ -155,17 +179,18 @@ export function Dashboard() {
                             <Link to={`/app/banche-dati/${b.bancaId}`} className="truncate font-medium hover:text-brand-700">
                               {b.titolo}
                             </Link>
-                            <span className="font-semibold text-slate-600">{b.percentuale}%</span>
+                            <span className="shrink-0 font-semibold text-slate-600">{b.percentuale}%</span>
                           </div>
                           <ProgressBar value={b.percentuale} tone={b.percentuale >= 70 ? "green" : b.percentuale >= 50 ? "amber" : "red"} className="mt-1" />
+                          <p className="mt-0.5 text-xs text-slate-500">
+                            {b.corrette} giuste su {b.totale} risposte
+                          </p>
                         </div>
                       </li>
                     ))}
                   </ul>
-                ) : (
-                  <p className="text-sm text-slate-500">Completa una sessione di studio per vedere i tuoi punti forti e deboli.</p>
-                )}
-              </Card>
+                </Card>
+              )}
 
               {!!stats.data?.recenti.length && (
                 <Card>

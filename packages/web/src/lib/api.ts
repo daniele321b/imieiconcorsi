@@ -131,6 +131,8 @@ export interface NuovaSessione {
 /** Statistiche della dashboard (GET /me/statistiche). */
 export interface Statistiche {
   domandeRisposte: number;
+  /** Risposte giuste in tutte le sessioni */
+  risposteCorrette: number;
   perMateria: { materia: MateriaId; corrette: number; totale: number; percentuale: number }[];
   /** Risposte giuste nelle banche dati ufficiali (assente nelle risposte di prima) */
   perBancaDati?: { bancaId: string; titolo: string; corrette: number; totale: number; percentuale: number }[];

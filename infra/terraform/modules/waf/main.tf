@@ -51,6 +51,63 @@ resource "aws_wafv2_web_acl" "main" {
     }
   }
 
+  # Invii alle rotte senza login (POST /api/pubblico/…: modulo contatti, disiscrizione, webhook
+  # di Stripe): limite molto più basso, contro chi prova a inondarle.
+  rule {
+    name     = "limite-pubblico-per-ip"
+    priority = 2
+
+    action {
+      block {}
+    }
+
+    statement {
+      rate_based_statement {
+        limit              = var.richieste_pubbliche_per_ip
+        aggregate_key_type = "IP"
+
+        # Solo i POST (contatti, disiscrizione, webhook): i GET sono i link e l'immagine degli
+        # avvisi, che Gmail & co. scaricano dai loro server, molti dallo stesso IP.
+        scope_down_statement {
+          and_statement {
+            statement {
+              byte_match_statement {
+                search_string         = "/api/pubblico/"
+                positional_constraint = "STARTS_WITH"
+                field_to_match {
+                  uri_path {}
+                }
+                text_transformation {
+                  priority = 0
+                  type     = "LOWERCASE"
+                }
+              }
+            }
+            statement {
+              byte_match_statement {
+                search_string         = "POST"
+                positional_constraint = "EXACTLY"
+                field_to_match {
+                  method {}
+                }
+                text_transformation {
+                  priority = 0
+                  type     = "NONE"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    visibility_config {
+      cloudwatch_metrics_enabled = true
+      metric_name                = "${var.name}-limite-pubblico-per-ip"
+      sampled_requests_enabled   = true
+    }
+  }
+
   dynamic "rule" {
     for_each = local.gestite
     content {

@@ -57,6 +57,17 @@ resource "aws_s3_bucket" "web" {
   force_destroy = !var.protezione
 }
 
+# Cifrato a riposo (SSE-S3, AES-256). AWS lo fa già da sé: qui è dichiarato e non cambia.
+resource "aws_s3_bucket_server_side_encryption_configuration" "web" {
+  bucket = aws_s3_bucket.web.id
+  rule {
+    apply_server_side_encryption_by_default {
+      sse_algorithm = "AES256"
+    }
+    bucket_key_enabled = true
+  }
+}
+
 # Privato: i file si leggono solo passando da CloudFront.
 resource "aws_s3_bucket_public_access_block" "web" {
   bucket                  = aws_s3_bucket.web.id
@@ -108,6 +119,76 @@ resource "aws_cloudfront_cache_policy" "api" {
   }
 }
 
+# ── Intestazioni di sicurezza ────────────────────────────────────────────────
+# Su ogni risposta (sito e API): HTTPS obbligatorio (HSTS), niente pagine dentro frame di altri
+# siti (clickjacking), niente "indovina il tipo" dei file, referrer ridotto, permessi del browser
+# spenti e una Content-Security-Policy che fa eseguire solo il codice del nostro sito.
+# Se il sito comincia a usare un servizio esterno nuovo (script, font, API), va aggiunto qui.
+
+locals {
+  # Google AdSense (solo se attivo): script, frame e chiamate verso i domini degli annunci.
+  google_ads = var.pubblicita_esterna ? [
+    "https://pagead2.googlesyndication.com", "https://*.googlesyndication.com", "https://*.doubleclick.net",
+    "https://*.google.com", "https://*.googleadservices.com", "https://*.gstatic.com",
+  ] : []
+  csp = join("; ", [
+    "default-src 'self'",
+    "script-src ${join(" ", concat(["'self'"], local.google_ads))}",
+    # 'unsafe-inline' solo per gli stili (attributi style di React e degli annunci), mai per gli script.
+    "style-src 'self' 'unsafe-inline'",
+    "font-src 'self'",
+    "img-src 'self' data:${var.pubblicita_esterna ? " https:" : ""}",
+    "connect-src ${join(" ", concat(["'self'"], var.csp_connect_src, local.google_ads))}",
+    "frame-src ${var.pubblicita_esterna ? join(" ", local.google_ads) : "'none'"}",
+    "frame-ancestors 'none'",
+    "object-src 'none'",
+    "base-uri 'self'",
+    "form-action 'self'",
+    "upgrade-insecure-requests",
+  ])
+}
+
+resource "aws_cloudfront_response_headers_policy" "sicurezza" {
+  name    = "${var.name}-sicurezza"
+  comment = "Intestazioni di sicurezza di ${var.name} (HSTS, CSP, anti-frame)"
+
+  security_headers_config {
+    strict_transport_security {
+      access_control_max_age_sec = 63072000
+      include_subdomains         = true
+      override                   = true
+    }
+    content_type_options {
+      override = true
+    }
+    frame_options {
+      frame_option = "DENY"
+      override     = true
+    }
+    referrer_policy {
+      referrer_policy = "strict-origin-when-cross-origin"
+      override        = true
+    }
+    content_security_policy {
+      content_security_policy = local.csp
+      override                = true
+    }
+  }
+
+  custom_headers_config {
+    items {
+      header   = "Permissions-Policy"
+      value    = "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()"
+      override = true
+    }
+    items {
+      header   = "Cross-Origin-Opener-Policy"
+      value    = "same-origin-allow-popups"
+      override = true
+    }
+  }
+}
+
 # Sito a pagina unica: un indirizzo come /app/profilo serve index.html (decide React).
 resource "aws_cloudfront_function" "spa" {
   name    = "${var.name}-spa"
@@ -144,6 +225,13 @@ resource "aws_cloudfront_distribution" "web" {
     origin_id   = "api"
     domain_name = var.api_domain
 
+    # Segreto che dice alle Lambda "arrivo da CloudFront": chi chiama l'API Gateway direttamente
+    # non ce l'ha e viene respinto (core/http.ts, daCloudFront). Sostituisce quello del visitatore.
+    custom_header {
+      name  = "x-origine-cloudfront"
+      value = var.origine_segreta
+    }
+
     custom_origin_config {
       http_port              = 80
       https_port             = 443
@@ -153,12 +241,13 @@ resource "aws_cloudfront_distribution" "web" {
   }
 
   default_cache_behavior {
-    target_origin_id       = "web"
-    viewer_protocol_policy = "redirect-to-https"
-    allowed_methods        = ["GET", "HEAD"]
-    cached_methods         = ["GET", "HEAD"]
-    cache_policy_id        = data.aws_cloudfront_cache_policy.caching_optimized.id
-    compress               = true
+    target_origin_id           = "web"
+    viewer_protocol_policy     = "redirect-to-https"
+    allowed_methods            = ["GET", "HEAD"]
+    cached_methods             = ["GET", "HEAD"]
+    cache_policy_id            = data.aws_cloudfront_cache_policy.caching_optimized.id
+    response_headers_policy_id = aws_cloudfront_response_headers_policy.sicurezza.id
+    compress                   = true
 
     function_association {
       event_type   = "viewer-request"
@@ -167,14 +256,15 @@ resource "aws_cloudfront_distribution" "web" {
   }
 
   ordered_cache_behavior {
-    path_pattern             = "/api/*"
-    target_origin_id         = "api"
-    viewer_protocol_policy   = "https-only"
-    allowed_methods          = ["DELETE", "GET", "HEAD", "OPTIONS", "PATCH", "POST", "PUT"]
-    cached_methods           = ["GET", "HEAD"]
-    cache_policy_id          = aws_cloudfront_cache_policy.api.id
-    origin_request_policy_id = data.aws_cloudfront_origin_request_policy.all_viewer_except_host.id
-    compress                 = true
+    path_pattern               = "/api/*"
+    target_origin_id           = "api"
+    viewer_protocol_policy     = "https-only"
+    allowed_methods            = ["DELETE", "GET", "HEAD", "OPTIONS", "PATCH", "POST", "PUT"]
+    cached_methods             = ["GET", "HEAD"]
+    cache_policy_id            = aws_cloudfront_cache_policy.api.id
+    origin_request_policy_id   = data.aws_cloudfront_origin_request_policy.all_viewer_except_host.id
+    response_headers_policy_id = aws_cloudfront_response_headers_policy.sicurezza.id
+    compress                   = true
 
     function_association {
       event_type   = "viewer-request"
@@ -196,18 +286,28 @@ resource "aws_cloudfront_distribution" "web" {
   }
 }
 
-# Il bucket si lascia leggere solo da questa distribuzione CloudFront.
+# Il bucket si lascia leggere solo da questa distribuzione CloudFront, e solo in HTTPS.
 resource "aws_s3_bucket_policy" "web" {
   bucket = aws_s3_bucket.web.id
   policy = jsonencode({
     Version = "2012-10-17"
-    Statement = [{
-      Effect    = "Allow"
-      Principal = { Service = "cloudfront.amazonaws.com" }
-      Action    = "s3:GetObject"
-      Resource  = "${aws_s3_bucket.web.arn}/*"
-      Condition = { StringEquals = { "AWS:SourceArn" = aws_cloudfront_distribution.web.arn } }
-    }]
+    Statement = [
+      {
+        Effect    = "Allow"
+        Principal = { Service = "cloudfront.amazonaws.com" }
+        Action    = "s3:GetObject"
+        Resource  = "${aws_s3_bucket.web.arn}/*"
+        Condition = { StringEquals = { "AWS:SourceArn" = aws_cloudfront_distribution.web.arn } }
+      },
+      {
+        Sid       = "SoloHttps"
+        Effect    = "Deny"
+        Principal = "*"
+        Action    = "s3:*"
+        Resource  = [aws_s3_bucket.web.arn, "${aws_s3_bucket.web.arn}/*"]
+        Condition = { Bool = { "aws:SecureTransport" = "false" } }
+      },
+    ]
   })
 }
 

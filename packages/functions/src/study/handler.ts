@@ -598,6 +598,8 @@ export const handler = service({
 
     return {
       domandeRisposte: [...materie.values(), ...banche.values()].reduce((n, m) => n + m.totale, 0),
+      /** Risposte giuste in tutte le sessioni (materie e banche dati) */
+      risposteCorrette: [...materie.values(), ...banche.values()].reduce((n, m) => n + m.corrette, 0),
       perMateria: [...materie].filter(([, v]) => v.totale > 0).map(([materia, v]) => ({ materia, ...v, percentuale: percentuale(v) })),
       perBancaDati: [...banche].filter(([, v]) => v.totale > 0).map(([bancaId, v]) => ({ bancaId, ...v, percentuale: percentuale(v) })),
       simulazioni: sessioni

@@ -103,15 +103,55 @@ resource "aws_sesv2_configuration_set" "main" {
   sending_options {
     sending_enabled = true
   }
+
+  # Le email (ricevute, avvisi) si consegnano solo con TLS: se il server del destinatario non lo
+  # supporta, SES non la manda in chiaro (rimbalza e lo vediamo dalle notifiche).
+  delivery_options {
+    tls_policy = "REQUIRE"
+  }
 }
 
 # Ogni rimbalzo, segnalazione di spam o invio rifiutato arriva anche per email
 # (SES -> SNS -> email): AWS chiede che chi spedisce se ne accorga subito.
 data "aws_caller_identity" "current" {}
 
-# Topic che riceve rimbalzi e segnalazioni di spam da SES.
+# Chiave KMS del topic: i messaggi contengono gli indirizzi email che rimbalzano (dati
+# personali). Serve una chiave nostra (circa 1 $ al mese): con quella gestita da AWS
+# (alias/aws/sns) SES non potrebbe pubblicare.
+resource "aws_kms_key" "notifiche" {
+  description         = "Cifratura del topic ${var.name}-ses-notifiche"
+  enable_key_rotation = true
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Sid       = "Account"
+        Effect    = "Allow"
+        Principal = { AWS = "arn:aws:iam::${data.aws_caller_identity.current.account_id}:root" }
+        Action    = "kms:*"
+        Resource  = "*"
+      },
+      {
+        Sid       = "SesPubblica"
+        Effect    = "Allow"
+        Principal = { Service = "ses.amazonaws.com" }
+        Action    = ["kms:GenerateDataKey*", "kms:Decrypt"]
+        Resource  = "*"
+        Condition = { StringEquals = { "aws:SourceAccount" = data.aws_caller_identity.current.account_id } }
+      },
+    ]
+  })
+}
+
+resource "aws_kms_alias" "notifiche" {
+  name          = "alias/${var.name}-ses-notifiche"
+  target_key_id = aws_kms_key.notifiche.key_id
+}
+
+# Topic che riceve rimbalzi e segnalazioni di spam da SES (cifrato).
 resource "aws_sns_topic" "notifiche" {
-  name = "${var.name}-ses-notifiche"
+  name              = "${var.name}-ses-notifiche"
+  kms_master_key_id = aws_kms_key.notifiche.arn
 }
 
 # Solo SES (di questo account) può pubblicare sul topic.
