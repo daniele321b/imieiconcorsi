@@ -998,5 +998,505 @@
     "id": "inf-200",
     "file": "Wikipedia_Rete-informatica.txt",
     "frase": "Spesso le reti informatiche sono organizzate sotto un'architettura client-server"
+  },
+  {
+    "id": "inf-201",
+    "file": "Wikipedia_Malware.txt",
+    "frase": "Un esempio di sabotaggio è stato Stuxnet"
+  },
+  {
+    "id": "inf-202",
+    "file": "Wikipedia_Malware.txt",
+    "frase": "Computer zombie per l'invio di email di Spam"
+  },
+  {
+    "id": "inf-203",
+    "file": "Wikipedia_Malware.txt",
+    "frase": "Il canale di diffusione più usato dai criminali è Internet: principalmente tramite e-mail e World Wide Web"
+  },
+  {
+    "id": "inf-204",
+    "file": "Wikipedia_Malware.txt",
+    "frase": "Un malware è caratterizzato dal suo intento malevolo"
+  },
+  {
+    "id": "inf-205",
+    "file": "Wikipedia_Sicurezza-informatica.txt",
+    "frase": "Una vulnerabilità è una debolezza presente in un sistema informatico"
+  },
+  {
+    "id": "inf-206",
+    "file": "Wikipedia_Sicurezza-informatica.txt",
+    "frase": "l'impatto, cioè l'entità del danno che deriverebbe dall'evento, e la probabilità che l'evento si verifichi"
+  },
+  {
+    "id": "inf-207",
+    "file": "Wikipedia_Sicurezza-informatica.txt",
+    "frase": "Lo standard ISO/IEC 27001 definisce i requisiti di un sistema di gestione della sicurezza delle informazioni"
+  },
+  {
+    "id": "inf-208",
+    "file": "Wikipedia_Sicurezza-informatica.txt",
+    "frase": "single point of failure (SPOF)"
+  },
+  {
+    "id": "inf-209",
+    "file": "Wikipedia_Sicurezza-informatica.txt",
+    "frase": "Un esempio è rappresentato dalle configurazioni RAID"
+  },
+  {
+    "id": "inf-210",
+    "file": "Wikipedia_Sicurezza-informatica.txt",
+    "frase": "il concetto di resilienza"
+  },
+  {
+    "id": "inf-211",
+    "file": "Wikipedia_Sicurezza-informatica.txt",
+    "frase": "meccanismi basati sulle funzioni di hash, come gli algoritmi della famiglia SHA"
+  },
+  {
+    "id": "inf-212",
+    "file": "Wikipedia_Firewall.txt",
+    "frase": "muro tagliafuoco"
+  },
+  {
+    "id": "inf-213",
+    "file": "Wikipedia_Firewall.txt",
+    "frase": "La prima generazione fu quella dei packet filter firewall o stateless firewall"
+  },
+  {
+    "id": "inf-214",
+    "file": "Wikipedia_Firewall.txt",
+    "frase": "la possibilità di salvare e monitorare lo stato di una connessione"
+  },
+  {
+    "id": "inf-215",
+    "file": "Wikipedia_Firewall.txt",
+    "frase": "fino al livello applicativo (livello 7) del modello OSI"
+  },
+  {
+    "id": "inf-216",
+    "file": "Wikipedia_Backup.txt",
+    "frase": "Un backup può anche risultare utile per proteggersi dai ransomware"
+  },
+  {
+    "id": "inf-217",
+    "file": "Wikipedia_Backup.txt",
+    "frase": "si indica un processo di disaster recovery"
+  },
+  {
+    "id": "inf-218",
+    "file": "Wikipedia_Backup.txt",
+    "frase": "utilizzano spesso il termine job"
+  },
+  {
+    "id": "inf-219",
+    "file": "Wikipedia_Cloud-computing.txt",
+    "frase": "i servizi sono acquisiti dall'organizzazione utilizzatrice da almeno due provider distinti e autonomi"
+  },
+  {
+    "id": "inf-220",
+    "file": "Wikipedia_Cloud-computing.txt",
+    "frase": "cloud ibrido ⇒ soluzione mista di pubblico e privato"
+  },
+  {
+    "id": "inf-221",
+    "file": "Wikipedia_Cloud-computing.txt",
+    "frase": "La direttiva UE 2022/2555 NIS2 definisce"
+  },
+  {
+    "id": "inf-222",
+    "file": "Wikipedia_Crittografia.txt",
+    "frase": "La Germania nazista considerava inattaccabile la sua macchina Enigma"
+  },
+  {
+    "id": "inf-223",
+    "file": "Wikipedia_Crittografia.txt",
+    "frase": "chiavi segrete casuali lunghe almeno quanto il messaggio"
+  },
+  {
+    "id": "inf-224",
+    "file": "Wikipedia_Crittografia.txt",
+    "frase": "è detto invece crittoanalisi"
+  },
+  {
+    "id": "inf-225",
+    "file": "Wikipedia_Crittografia.txt",
+    "frase": "Claude Shannon, padre della teoria dell'informazione"
+  },
+  {
+    "id": "inf-226",
+    "file": "Wikipedia_Software-libero.txt",
+    "frase": "Unix, quindi, era il software libero utilizzato nelle università americane"
+  },
+  {
+    "id": "inf-227",
+    "file": "Wikipedia_Software-libero.txt",
+    "frase": "nel 1980, viene emessa la US Software Copyright Act"
+  },
+  {
+    "id": "inf-228",
+    "file": "Wikipedia_Posta-elettronica-certificata.txt",
+    "frase": "per un periodo di trenta mesi"
+  },
+  {
+    "id": "inf-229",
+    "file": "Wikipedia_Posta-elettronica-certificata.txt",
+    "frase": "Decreto del presidente della Repubblica n. 68/2005"
+  },
+  {
+    "id": "inf-230",
+    "file": "Wikipedia_Posta-elettronica-certificata.txt",
+    "frase": "è trasmessa col protocollo REM"
+  },
+  {
+    "id": "inf-231",
+    "file": "Wikipedia_Posta-elettronica-certificata.txt",
+    "frase": "una ricevuta che costituirà valore legale dell'avvenuta (o mancata) trasmissione del messaggio"
+  },
+  {
+    "id": "inf-232",
+    "file": "Wikipedia_SPID.txt",
+    "frase": "su proposta del deputato Stefano Quintarelli"
+  },
+  {
+    "id": "inf-233",
+    "file": "Wikipedia_SPID.txt",
+    "frase": "InfoCert S.p.A., Poste Italiane S.p.A. e Telecom Italia Trust Technologies S.r.l."
+  },
+  {
+    "id": "inf-234",
+    "file": "Wikipedia_SPID.txt",
+    "frase": "dai 5 anni fino ai 14 può essere utilizzato solo per l'accesso ai servizi scolastici"
+  },
+  {
+    "id": "inf-235",
+    "file": "Wikipedia_SPID.txt",
+    "frase": "decreto del Presidente del Consiglio dei Ministri del 24 ottobre 2014"
+  },
+  {
+    "id": "inf-236",
+    "file": "Wikipedia_Wi-Fi.txt",
+    "frase": "rappresenta il marchio commerciale utilizzato per indicare la famiglia di protocolli IEEE 802.11"
+  },
+  {
+    "id": "inf-237",
+    "file": "Wikipedia_Wi-Fi.txt",
+    "frase": "velocità di collegamento fino a 11 Mbit/s"
+  },
+  {
+    "id": "inf-238",
+    "file": "Wikipedia_Wi-Fi.txt",
+    "frase": "il termine Wi-Fi non ha alcun significato"
+  },
+  {
+    "id": "inf-239",
+    "file": "Wikipedia_Wi-Fi.txt",
+    "frase": "può avere una portata di circa 20 metri"
+  },
+  {
+    "id": "inf-240",
+    "file": "Wikipedia_USB.txt",
+    "frase": "La tensione di alimentazione prevista dallo standard di base è 5 volt"
+  },
+  {
+    "id": "inf-241",
+    "file": "Wikipedia_USB.txt",
+    "frase": "senza dover riavviare il computer (hot swap)"
+  },
+  {
+    "id": "inf-242",
+    "file": "Wikipedia_USB.txt",
+    "frase": "Nel 1998 l'iMac G3 è stato il primo prodotto mainstream con USB"
+  },
+  {
+    "id": "inf-243",
+    "file": "Wikipedia_USB.txt",
+    "frase": "La specifica USB 1.0 è stata introdotta nel gennaio 1996"
+  },
+  {
+    "id": "inf-244",
+    "file": "Wikipedia_Intelligenza-artificiale.txt",
+    "frase": "con l'introduzione dell'architettura Transformer"
+  },
+  {
+    "id": "inf-245",
+    "file": "Wikipedia_Intelligenza-artificiale.txt",
+    "frase": "inverni dell'IA"
+  },
+  {
+    "id": "inf-246",
+    "file": "Wikipedia_Intelligenza-artificiale.txt",
+    "frase": "l'IA generale (AGI)"
+  },
+  {
+    "id": "inf-247",
+    "file": "Wikipedia_Intelligenza-artificiale.txt",
+    "frase": "Lo standard internazionale ISO/IEC 42001:2023"
+  },
+  {
+    "id": "inf-248",
+    "file": "Wikipedia_Internet.txt",
+    "frase": "collegando quattro nodi: l'Università della California di Los Angeles"
+  },
+  {
+    "id": "inf-249",
+    "file": "Wikipedia_Internet.txt",
+    "frase": "Defence Advanced Research Projects Agency"
+  },
+  {
+    "id": "inf-250",
+    "file": "Wikipedia_Internet.txt",
+    "frase": "Intergalactic Computer Network"
+  },
+  {
+    "id": "inf-251",
+    "file": "Wikipedia_Internet.txt",
+    "frase": "High performance computing act"
+  },
+  {
+    "id": "inf-252",
+    "file": "Wikipedia_Regolamento-generale-sulla-protezione-dei-dati.txt",
+    "frase": "Direttiva 95/46/CE"
+  },
+  {
+    "id": "inf-253",
+    "file": "Wikipedia_Regolamento-generale-sulla-protezione-dei-dati.txt",
+    "frase": "possono raggiungere il 4% del volume globale di affari"
+  },
+  {
+    "id": "inf-254",
+    "file": "Wikipedia_Regolamento-generale-sulla-protezione-dei-dati.txt",
+    "frase": "la privacy by default (le misure privacy devono essere attuate per impostazione predefinita)"
+  },
+  {
+    "id": "inf-255",
+    "file": "Wikipedia_Regolamento-generale-sulla-protezione-dei-dati.txt",
+    "frase": "il concetto di accountability"
+  },
+  {
+    "id": "inf-256",
+    "file": "Wikipedia_Regolamento-generale-sulla-protezione-dei-dati.txt",
+    "frase": "decreto legislativo n. 101 del 10 agosto 2018"
+  },
+  {
+    "id": "inf-257",
+    "file": "Wikipedia_Regolamento-generale-sulla-protezione-dei-dati.txt",
+    "frase": "The Right to Privacy rappresenta la pietra angolare"
+  },
+  {
+    "id": "inf-258",
+    "file": "Ghio_Appunti-reti-calcolatori.txt",
+    "frase": "è un contatore di hop"
+  },
+  {
+    "id": "inf-259",
+    "file": "Ghio_Appunti-reti-calcolatori.txt",
+    "frase": "checksum: protegge solo l'intestazione"
+  },
+  {
+    "id": "inf-260",
+    "file": "Ghio_Appunti-reti-calcolatori.txt",
+    "frase": "router: interconnette reti di livello 3, e implementa IP"
+  },
+  {
+    "id": "inf-261",
+    "file": "Ghio_Appunti-reti-calcolatori.txt",
+    "frase": "bridge o switch1 : interconnette reti di livello 2"
+  },
+  {
+    "id": "inf-262",
+    "file": "Ghio_Appunti-reti-calcolatori.txt",
+    "frase": "L'interconnessione di due domini di collisione crea un unico dominio di collisione"
+  },
+  {
+    "id": "inf-263",
+    "file": "Ghio_Appunti-reti-calcolatori.txt",
+    "frase": "L'Internet Protocol (IP) è il livello di rete di TCP/IP"
+  },
+  {
+    "id": "inf-264",
+    "file": "Ghio_Appunti-reti-calcolatori.txt",
+    "frase": "è un servizio non connesso"
+  },
+  {
+    "id": "inf-265",
+    "file": "Ghio_Appunti-reti-calcolatori.txt",
+    "frase": "il riassemblaggio è delegato alla destinazione"
+  },
+  {
+    "id": "inf-266",
+    "file": "Ghio_Appunti-reti-calcolatori.txt",
+    "frase": "una parte del campo host diventa il campo subnet"
+  },
+  {
+    "id": "inf-267",
+    "file": "Ghio_Appunti-reti-calcolatori.txt",
+    "frase": "Il doppino è costituito da due fili di rame intrecciati"
+  },
+  {
+    "id": "inf-268",
+    "file": "Ghio_Appunti-reti-calcolatori.txt",
+    "frase": "5e. reti locali fino a 1 Gb/s"
+  },
+  {
+    "id": "inf-269",
+    "file": "Ghio_Appunti-reti-calcolatori.txt",
+    "frase": "serve per il recupero della posta elettronica dal server di posta"
+  },
+  {
+    "id": "inf-270",
+    "file": "Ghio_Appunti-reti-calcolatori.txt",
+    "frase": "load distribution: allo stesso nome possono essere associati più indirizzi IP"
+  },
+  {
+    "id": "inf-271",
+    "file": "Ghio_Appunti-reti-calcolatori.txt",
+    "frase": "Svantaggio vulnerabilità ai guasti del centro stella"
+  },
+  {
+    "id": "inf-272",
+    "file": "Ghio_Appunti-calcolatori-elettronici.txt",
+    "frase": "bus dati, bus indirizzi e bus di controllo"
+  },
+  {
+    "id": "inf-273",
+    "file": "Ghio_Appunti-calcolatori-elettronici.txt",
+    "frase": "la cancellazione avviene grazie a raggi ultra-violetti"
+  },
+  {
+    "id": "inf-274",
+    "file": "Ghio_Appunti-calcolatori-elettronici.txt",
+    "frase": "Le memorie flash richiedono delle operazioni di scrittura a blocchi"
+  },
+  {
+    "id": "inf-275",
+    "file": "Ghio_Appunti-calcolatori-elettronici.txt",
+    "frase": "Ogni cella di una memoria RAM statica richiede 6 transistor"
+  },
+  {
+    "id": "inf-276",
+    "file": "Ghio_Appunti-calcolatori-elettronici.txt",
+    "frase": "Le memorie sono caratterizzate dalla località dei riferimenti"
+  },
+  {
+    "id": "inf-277",
+    "file": "Ghio_Appunti-calcolatori-elettronici.txt",
+    "frase": "write-through: il processore scrive parallelamente sia in memoria sia in cache"
+  },
+  {
+    "id": "inf-278",
+    "file": "Ghio_Appunti-calcolatori-elettronici.txt",
+    "frase": "La memoria virtuale è suddivisa in blocchi detti pagine"
+  },
+  {
+    "id": "inf-279",
+    "file": "Ghio_Appunti-calcolatori-elettronici.txt",
+    "frase": "detto Memory Management Unit (MMU)"
+  },
+  {
+    "id": "inf-280",
+    "file": "Ghio_Appunti-calcolatori-elettronici.txt",
+    "frase": "in grado di gestire il trasferimento di grosse moli di dati tra una periferica e la memoria"
+  },
+  {
+    "id": "inf-281",
+    "file": "Ghio_Appunti-calcolatori-elettronici.txt",
+    "frase": "Il processore campiona (= polling) il segnale di ready"
+  },
+  {
+    "id": "inf-282",
+    "file": "Ghio_Appunti-calcolatori-elettronici.txt",
+    "frase": "con la rappresentazione little endian"
+  },
+  {
+    "id": "inf-283",
+    "file": "Ghio_Appunti-calcolatori-elettronici.txt",
+    "frase": "L'unità di controllo cablata (o hardwired) è un circuito sequenziale"
+  },
+  {
+    "id": "inf-284",
+    "file": "Ghio_Appunti-calcolatori-elettronici.txt",
+    "frase": "Il processore è un dispositivo capace di"
+  },
+  {
+    "id": "inf-285",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "promuovono iniziative volte a favorire la diffusione della cultura digitale tra i cittadini"
+  },
+  {
+    "id": "inf-286",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "per promuovere una maggiore partecipazione dei cittadini, anche residenti all'estero, al processo democratico"
+  },
+  {
+    "id": "inf-287",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "L'Agenzia per l'Italia Digitale (AgID) è preposta alla realizzazione degli obiettivi dell'Agenda Digitale Italiana"
+  },
+  {
+    "id": "inf-288",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "La firma digitale deve riferirsi in maniera univoca ad un solo soggetto"
+  },
+  {
+    "id": "inf-289",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "integra e sostituisce l'apposizione di sigilli, punzoni, timbri, contrassegni e marchi"
+  },
+  {
+    "id": "inf-290",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "deve adoperarsi un certificato qualificato che, al momento della sottoscrizione, non risulti scaduto di validità"
+  },
+  {
+    "id": "inf-291",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "è altresì tenuto ad utilizzare personalmente il dispositivo di firma"
+  },
+  {
+    "id": "inf-292",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "cessa l'obbligo di conservazione a carico dei cittadini e delle imprese"
+  },
+  {
+    "id": "inf-293",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "avvengono mediante l'utilizzo della posta elettronica o in cooperazione applicativa"
+  },
+  {
+    "id": "inf-294",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "si intendono rilasciati come dati di tipo aperto"
+  },
+  {
+    "id": "inf-295",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "rispettano i principi di accessibilità, nonché di elevata usabilità e reperibilità"
+  },
+  {
+    "id": "inf-296",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "tramite il punto di accesso telematico attivato presso la Presidenza del Consiglio dei ministri"
+  },
+  {
+    "id": "inf-297",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "quale insieme di infrastrutture tecnologiche e di regole tecniche che assicura l'interoperabilità"
+  },
+  {
+    "id": "inf-298",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "sono individuate le soluzioni tecniche idonee a garantire la protezione, la disponibilità"
+  },
+  {
+    "id": "inf-299",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "finalizzate alla conoscenza e all'uso delle tecnologie dell'informazione e della comunicazione"
+  },
+  {
+    "id": "inf-300",
+    "file": "norma_DLgs82-2005_CAD.txt",
+    "frase": "È realizzata presso l'AgID una piattaforma per la consultazione pubblica"
   }
 ]

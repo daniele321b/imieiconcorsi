@@ -3398,5 +3398,1705 @@
     "spiegazione": "Esempio: browser (client) e server web.",
     "fonte": "Wikipedia, «Rete informatica» (CC BY-SA 4.0)",
     "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-201",
+    "argomento": "Sicurezza",
+    "livello": 3,
+    "testo": "Quale celebre malware fu usato per sabotare e distruggere attrezzature industriali specifiche?",
+    "opzioni": [
+      "Stuxnet",
+      "ILOVEYOU",
+      "Melissa",
+      "WannaCry"
+    ],
+    "corretta": 0,
+    "spiegazione": "È citato come esempio di malware usato per sabotaggio, non per guadagno diretto.",
+    "fonte": "Wikipedia, «Malware» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-202",
+    "argomento": "Sicurezza",
+    "livello": 3,
+    "testo": "Come si chiamano i computer infettati usati all'insaputa del proprietario per inviare spam o attacchi DoS?",
+    "opzioni": [
+      "Honeypot",
+      "Computer zombie",
+      "Thin client",
+      "Server proxy"
+    ],
+    "corretta": 1,
+    "spiegazione": "Insieme formano reti di macchine controllate da remoto.",
+    "fonte": "Wikipedia, «Malware» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-203",
+    "argomento": "Sicurezza",
+    "livello": 3,
+    "testo": "Qual è il canale di diffusione del malware più usato dai criminali?",
+    "opzioni": [
+      "Le reti telefoniche analogiche",
+      "I CD-ROM",
+      "Internet, soprattutto tramite e-mail e World Wide Web",
+      "Le stampanti di rete"
+    ],
+    "corretta": 2,
+    "spiegazione": "Per questo servono firewall e antivirus su ogni computer collegato.",
+    "fonte": "Wikipedia, «Malware» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-204",
+    "argomento": "Sicurezza",
+    "livello": 4,
+    "testo": "Un software che danneggia un sistema per un difetto involontario è un malware?",
+    "opzioni": [
+      "Sì, se è un software libero",
+      "Sì, sempre",
+      "Solo se si diffonde via rete",
+      "No: il malware è caratterizzato dall'intento malevolo"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il malware agisce contro le necessità dell'utente in modo intenzionale.",
+    "fonte": "Wikipedia, «Malware» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-205",
+    "argomento": "Sicurezza",
+    "livello": 3,
+    "testo": "Nella sicurezza informatica, cosa si intende per «vulnerabilità»?",
+    "opzioni": [
+      "Una debolezza di un sistema che può essere sfruttata da una minaccia",
+      "Un attacco già avvenuto",
+      "Un software antivirus scaduto",
+      "Una copia di backup danneggiata"
+    ],
+    "corretta": 0,
+    "spiegazione": "Può riguardare hardware, software, configurazione o procedure; viene sfruttata anche tramite exploit.",
+    "fonte": "Wikipedia, «Sicurezza informatica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-206",
+    "argomento": "Sicurezza",
+    "livello": 3,
+    "testo": "In funzione di quali due fattori si esprime generalmente il rischio informatico?",
+    "opzioni": [
+      "Numero di utenti e di server",
+      "Impatto e probabilità dell'evento",
+      "Costo e durata",
+      "Velocità e banda"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il rischio è la possibilità che una minaccia sfrutti una vulnerabilità.",
+    "fonte": "Wikipedia, «Sicurezza informatica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-207",
+    "argomento": "Sicurezza",
+    "livello": 4,
+    "testo": "Quale standard definisce i requisiti di un sistema di gestione della sicurezza delle informazioni?",
+    "opzioni": [
+      "ISO/IEC 42001",
+      "ISO 9001",
+      "ISO/IEC 27001",
+      "IEEE 802.11"
+    ],
+    "corretta": 2,
+    "spiegazione": "Prevede un processo di gestione del rischio; la ISO/IEC 42001 riguarda invece l'IA.",
+    "fonte": "Wikipedia, «Sicurezza informatica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-208",
+    "argomento": "Sicurezza",
+    "livello": 4,
+    "testo": "Cosa indica l'acronimo SPOF nella progettazione dei sistemi?",
+    "opzioni": [
+      "Un tipo di firewall",
+      "Un protocollo di posta sicura",
+      "Un formato di backup",
+      "Single point of failure: un componente il cui guasto blocca l'intero sistema"
+    ],
+    "corretta": 3,
+    "spiegazione": "Per evitarlo si usano ridondanza e architetture adeguate.",
+    "fonte": "Wikipedia, «Sicurezza informatica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-209",
+    "argomento": "Sicurezza",
+    "livello": 3,
+    "testo": "Quale configurazione dei dischi aumenta la tolleranza ai guasti dei dispositivi di archiviazione?",
+    "opzioni": [
+      "RAID",
+      "FAT32",
+      "DHCP",
+      "BIOS"
+    ],
+    "corretta": 0,
+    "spiegazione": "È un esempio di ridondanza a favore della disponibilità.",
+    "fonte": "Wikipedia, «Sicurezza informatica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-210",
+    "argomento": "Sicurezza",
+    "livello": 3,
+    "testo": "Cosa si intende per «resilienza» di un sistema informatico?",
+    "opzioni": [
+      "La capacità di cifrare i dati",
+      "La capacità di continuare a fornire i servizi o ripristinarli rapidamente dopo un guasto",
+      "La velocità di calcolo",
+      "Il numero di utenti collegabili"
+    ],
+    "corretta": 1,
+    "spiegazione": "È strettamente legata alla disponibilità.",
+    "fonte": "Wikipedia, «Sicurezza informatica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-211",
+    "argomento": "Sicurezza",
+    "livello": 3,
+    "testo": "Quali strumenti tutelano l'integrità dei dati?",
+    "opzioni": [
+      "Solo il backup su nastro",
+      "La compressione ZIP",
+      "Funzioni di hash (es. SHA), firme digitali e controllo delle modifiche",
+      "Solo la password del Wi-Fi"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'integrità garantisce che i dati non siano alterati in modo non autorizzato.",
+    "fonte": "Wikipedia, «Sicurezza informatica» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-212",
+    "argomento": "Sicurezza",
+    "livello": 3,
+    "testo": "Qual è il significato originario della parola «firewall»?",
+    "opzioni": [
+      "Antenna di rete",
+      "Cavo schermato",
+      "Porta blindata",
+      "Muro tagliafuoco"
+    ],
+    "corretta": 3,
+    "spiegazione": "Indicava un muro destinato a confinare un incendio all'interno di un edificio.",
+    "fonte": "Wikipedia, «Firewall» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-213",
+    "argomento": "Sicurezza",
+    "livello": 4,
+    "testo": "Come si chiamava la prima generazione di firewall, che filtrava i pacchetti in base all'intestazione?",
+    "opzioni": [
+      "Packet filter (stateless) firewall",
+      "Proxy inverso",
+      "Next generation firewall",
+      "Application gateway"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il primo esemplare fu sviluppato nel 1988 dalla Digital Equipment Corporation.",
+    "fonte": "Wikipedia, «Firewall» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-214",
+    "argomento": "Sicurezza",
+    "livello": 4,
+    "testo": "Cosa introdusse la seconda generazione di firewall (stateful)?",
+    "opzioni": [
+      "Il controllo parentale",
+      "La possibilità di salvare e monitorare lo stato di una connessione",
+      "Il filtro antispam",
+      "La cifratura dei dischi"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il primo stateful firewall fu sviluppato tra il 1989 e il 1990 ai Bell Laboratories.",
+    "fonte": "Wikipedia, «Firewall» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-215",
+    "argomento": "Sicurezza",
+    "livello": 4,
+    "testo": "Fino a quale livello del modello OSI proteggono gli application firewall (proxy firewall)?",
+    "opzioni": [
+      "Fino al livello di rete (3)",
+      "Fino al livello di trasporto (4)",
+      "Fino al livello applicativo (livello 7)",
+      "Solo il livello fisico"
+    ],
+    "corretta": 2,
+    "spiegazione": "Riescono a individuare minacce dentro il traffico web.",
+    "fonte": "Wikipedia, «Firewall» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-216",
+    "argomento": "Sicurezza",
+    "livello": 3,
+    "testo": "Contro quale minaccia un backup può risultare particolarmente utile?",
+    "opzioni": [
+      "Lo spam",
+      "I cookie di terze parti",
+      "Il phishing vocale",
+      "I ransomware"
+    ],
+    "corretta": 3,
+    "spiegazione": "Con una copia di riserva si possono ripristinare i dati cifrati dal ransomware.",
+    "fonte": "Wikipedia, «Backup» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-217",
+    "argomento": "Sicurezza",
+    "livello": 3,
+    "testo": "A quale processo appartiene il backup nella sicurezza informatica?",
+    "opzioni": [
+      "Al disaster recovery",
+      "Al load balancing",
+      "Al routing",
+      "Al phishing"
+    ],
+    "corretta": 0,
+    "spiegazione": "Crea ridondanza delle informazioni per poterle ripristinare.",
+    "fonte": "Wikipedia, «Backup» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-218",
+    "argomento": "Sicurezza",
+    "livello": 4,
+    "testo": "Come si chiama, nei programmi di backup, la singola esecuzione programmata o manuale di un backup?",
+    "opzioni": [
+      "Thread",
+      "Job",
+      "Ticket",
+      "Token"
+    ],
+    "corretta": 1,
+    "spiegazione": "Indica una determinata sessione di backup in un dato momento.",
+    "fonte": "Wikipedia, «Backup» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-219",
+    "argomento": "Cloud",
+    "livello": 3,
+    "testo": "Cosa si intende per «multicloud»?",
+    "opzioni": [
+      "Un cloud senza connessione Internet",
+      "Un cloud con più data center dello stesso fornitore",
+      "L'uso di servizi cloud acquisiti da almeno due provider distinti e autonomi",
+      "Un cloud solo privato"
+    ],
+    "corretta": 2,
+    "spiegazione": "Ad esempio un'organizzazione che usa sia Microsoft sia Amazon o Google.",
+    "fonte": "Wikipedia, «Cloud computing» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-220",
+    "argomento": "Cloud",
+    "livello": 3,
+    "testo": "Cosa caratterizza il «cloud ibrido»?",
+    "opzioni": [
+      "È solo pubblico",
+      "Funziona solo offline",
+      "È riservato alle PA",
+      "È una soluzione mista di cloud pubblico e privato"
+    ],
+    "corretta": 3,
+    "spiegazione": "Può comprendere anche un datacenter on premise.",
+    "fonte": "Wikipedia, «Cloud computing» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-221",
+    "argomento": "Cloud",
+    "livello": 4,
+    "testo": "Quale direttiva UE definisce il cloud come servizio che consente l'amministrazione su richiesta di un pool scalabile ed elastico di risorse?",
+    "opzioni": [
+      "La direttiva NIS2 (UE 2022/2555)",
+      "Il GDPR",
+      "Il regolamento eIDAS",
+      "La direttiva e-Privacy"
+    ],
+    "corretta": 0,
+    "spiegazione": "Precisa anche che un datacenter non è necessariamente cloud.",
+    "fonte": "Wikipedia, «Cloud computing» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-222",
+    "argomento": "Sicurezza",
+    "livello": 4,
+    "testo": "Quale macchina cifrante tedesca della Seconda guerra mondiale fu forzata già nel 1932 dai crittografi polacchi?",
+    "opzioni": [
+      "Lorenz",
+      "Enigma",
+      "Magic",
+      "Purple"
+    ],
+    "corretta": 1,
+    "spiegazione": "Anche gli inglesi decifrarono più volte i messaggi tedeschi.",
+    "fonte": "Wikipedia, «Crittografia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-223",
+    "argomento": "Sicurezza",
+    "livello": 4,
+    "testo": "Quale cifrario, perfezionato da Gilbert Vernam nel 1918, usa chiavi casuali lunghe quanto il messaggio?",
+    "opzioni": [
+      "Il cifrario di Cesare",
+      "L'RSA",
+      "Il cifrario di Vernam (one-time pad)",
+      "L'AES"
+    ],
+    "corretta": 2,
+    "spiegazione": "Claude Shannon dimostrò nel 1949 che è l'unico metodo totalmente sicuro.",
+    "fonte": "Wikipedia, «Crittografia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-224",
+    "argomento": "Sicurezza",
+    "livello": 3,
+    "testo": "Come si chiama lo studio volto a rompere un meccanismo crittografico?",
+    "opzioni": [
+      "Steganografia",
+      "Hashing",
+      "Compressione",
+      "Crittoanalisi"
+    ],
+    "corretta": 3,
+    "spiegazione": "Insieme alla crittografia forma la crittologia.",
+    "fonte": "Wikipedia, «Crittografia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-225",
+    "argomento": "Sicurezza",
+    "livello": 4,
+    "testo": "Chi è considerato il padre della teoria dell'informazione?",
+    "opzioni": [
+      "Claude Shannon",
+      "Tim Berners-Lee",
+      "John von Neumann",
+      "Alan Turing"
+    ],
+    "corretta": 0,
+    "spiegazione": "Nel 1949 pubblicò un lavoro sulla teoria della comunicazione nei sistemi crittografici.",
+    "fonte": "Wikipedia, «Crittografia» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-226",
+    "argomento": "Software",
+    "livello": 3,
+    "testo": "Quale sistema operativo, sviluppato da AT&T, circolava liberamente nelle università americane fino al 1984?",
+    "opzioni": [
+      "MS-DOS",
+      "Unix",
+      "macOS",
+      "Linux"
+    ],
+    "corretta": 1,
+    "spiegazione": "Dopo il frazionamento di AT&T la società ricominciò a venderlo.",
+    "fonte": "Wikipedia, «Software libero» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-227",
+    "argomento": "Software",
+    "livello": 4,
+    "testo": "Quale legge statunitense del 1980 estese la tutela del diritto d'autore al software?",
+    "opzioni": [
+      "Il Patriot Act",
+      "Il Digital Millennium Copyright Act",
+      "Il Software Copyright Act",
+      "Il Bayh-Dole Act"
+    ],
+    "corretta": 2,
+    "spiegazione": "Da allora copia, modifica e distribuzione dei programmi divennero facoltà esclusive dell'autore: nacque il software proprietario.",
+    "fonte": "Wikipedia, «Software libero» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-228",
+    "argomento": "Posta elettronica",
+    "livello": 3,
+    "testo": "Per quanto tempo i gestori PEC conservano la traccia informatica delle ricevute, con lo stesso valore legale?",
+    "opzioni": [
+      "Un anno",
+      "Sei mesi",
+      "Dieci anni",
+      "Trenta mesi"
+    ],
+    "corretta": 3,
+    "spiegazione": "Serve in caso di smarrimento delle ricevute.",
+    "fonte": "Wikipedia, «Posta elettronica certificata» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-229",
+    "argomento": "Posta elettronica",
+    "livello": 4,
+    "testo": "Quale decreto del Presidente della Repubblica fissa le regole della PEC?",
+    "opzioni": [
+      "Il D.P.R. n. 68/2005",
+      "Il D.P.R. n. 62/2013",
+      "Il D.P.R. n. 600/1973",
+      "Il D.P.R. n. 445/2000"
+    ],
+    "corretta": 0,
+    "spiegazione": "Le regole tecniche sono allegate al D.M. 2 novembre 2005.",
+    "fonte": "Wikipedia, «Posta elettronica certificata» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-230",
+    "argomento": "Posta elettronica",
+    "livello": 4,
+    "testo": "Con quale protocollo è trasmessa la PEC dal 2024, con autenticazione a due fattori?",
+    "opzioni": [
+      "POP3",
+      "REM",
+      "SMTP semplice",
+      "FTP"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il protocollo REM qualifica l'identità di mittente e destinatario con SPID o CIE.",
+    "fonte": "Wikipedia, «Posta elettronica certificata» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-231",
+    "argomento": "Posta elettronica",
+    "livello": 3,
+    "testo": "Cosa riceve il mittente dal proprio gestore PEC al momento dell'invio?",
+    "opzioni": [
+      "Una fattura elettronica",
+      "La conferma di lettura del destinatario",
+      "Una ricevuta con valore legale dell'avvenuta (o mancata) trasmissione",
+      "Una copia cartacea del messaggio"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il gestore del destinatario invia poi la ricevuta di avvenuta consegna.",
+    "fonte": "Wikipedia, «Posta elettronica certificata» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-232",
+    "argomento": "PA digitale",
+    "livello": 4,
+    "testo": "Su proposta di quale deputato iniziarono nel 2013 i lavori del sistema SPID?",
+    "opzioni": [
+      "Diego Piacentini",
+      "Alessio Butti",
+      "Paola Pisano",
+      "Stefano Quintarelli"
+    ],
+    "corretta": 3,
+    "spiegazione": "Divenne poi presidente del comitato di indirizzo dell'AgID.",
+    "fonte": "Wikipedia, «SPID» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-233",
+    "argomento": "PA digitale",
+    "livello": 4,
+    "testo": "Quali furono i primi tre gestori di identità SPID accreditati da AgID nel dicembre 2015?",
+    "opzioni": [
+      "InfoCert, Poste Italiane e Telecom Italia Trust Technologies",
+      "Register.it, Lepida e Intesa",
+      "Aruba, Sielte e Namirial",
+      "TIM, Vodafone e Wind"
+    ],
+    "corretta": 0,
+    "spiegazione": "Aruba e Sielte furono accreditati nel 2016, Namirial e Register.it nel 2017.",
+    "fonte": "Wikipedia, «SPID» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-234",
+    "argomento": "PA digitale",
+    "livello": 4,
+    "testo": "Per quali servizi possono usare lo SPID i minori tra 5 e 14 anni, secondo le linee guida AgID del 2022?",
+    "opzioni": [
+      "Solo per i servizi sanitari",
+      "Solo per i servizi scolastici",
+      "Per tutti i servizi",
+      "Non possono usarlo"
+    ],
+    "corretta": 1,
+    "spiegazione": "Gli over 14 possono accedere a tutti i servizi che li riguardano.",
+    "fonte": "Wikipedia, «SPID» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-235",
+    "argomento": "PA digitale",
+    "livello": 3,
+    "testo": "Con quale decreto fu attuato per la prima volta il sistema SPID?",
+    "opzioni": [
+      "Il D.Lgs. 82/2005",
+      "La L. 241/1990",
+      "Il DPCM 24 ottobre 2014",
+      "Il D.P.R. 68/2005"
+    ],
+    "corretta": 2,
+    "spiegazione": "Fu pubblicato in Gazzetta Ufficiale il 9 dicembre 2014.",
+    "fonte": "Wikipedia, «SPID» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-236",
+    "argomento": "Reti",
+    "livello": 3,
+    "testo": "Su quale famiglia di standard si basa il Wi-Fi?",
+    "opzioni": [
+      "Bluetooth",
+      "ISO 9660",
+      "IEEE 802.3",
+      "IEEE 802.11"
+    ],
+    "corretta": 3,
+    "spiegazione": "La prima versione del protocollo 802.11 è del 1997.",
+    "fonte": "Wikipedia, «Wi-Fi» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-237",
+    "argomento": "Reti",
+    "livello": 4,
+    "testo": "Quale velocità massima consentiva lo standard 802.11b del 1999?",
+    "opzioni": [
+      "11 Mbit/s",
+      "54 Mbit/s",
+      "2 Mbit/s",
+      "1 Gbit/s"
+    ],
+    "corretta": 0,
+    "spiegazione": "La prima versione 802.11 del 1997 arrivava a 2 Mbit/s.",
+    "fonte": "Wikipedia, «Wi-Fi» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-238",
+    "argomento": "Reti",
+    "livello": 3,
+    "testo": "«Wi-Fi» è l'acronimo ufficiale di «Wireless Fidelity»?",
+    "opzioni": [
+      "Sì, è l'acronimo ufficiale",
+      "No, è un marchio commerciale senza significato tecnico",
+      "Significa «Wireless Firewall»",
+      "Significa «Wide Field»"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il nome fu coniato dalla società Interbrand per la Wi-Fi Alliance.",
+    "fonte": "Wikipedia, «Wi-Fi» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-239",
+    "argomento": "Reti",
+    "livello": 3,
+    "testo": "Qual è la portata indicativa di un access point Wi-Fi all'interno di un edificio?",
+    "opzioni": [
+      "Circa 5 chilometri",
+      "Circa 2 metri",
+      "Circa 20 metri",
+      "Circa 500 metri"
+    ],
+    "corretta": 2,
+    "spiegazione": "All'esterno può coprire un raggio di circa 100 metri.",
+    "fonte": "Wikipedia, «Wi-Fi» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-240",
+    "argomento": "Hardware",
+    "livello": 3,
+    "testo": "Qual è la tensione di alimentazione prevista dallo standard USB di base?",
+    "opzioni": [
+      "1,5 volt",
+      "220 volt",
+      "12 volt",
+      "5 volt"
+    ],
+    "corretta": 3,
+    "spiegazione": "Con USB Power Delivery si possono richiedere tensioni maggiori.",
+    "fonte": "Wikipedia, «USB» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-241",
+    "argomento": "Hardware",
+    "livello": 3,
+    "testo": "Cosa significa che con USB si può fare «hot swap»?",
+    "opzioni": [
+      "Che si possono collegare e scollegare periferiche senza riavviare il computer",
+      "Che i dati vengono cifrati",
+      "Che serve un driver per ogni porta",
+      "Che i cavi si scaldano"
+    ],
+    "corretta": 0,
+    "spiegazione": "Migliora la funzionalità plug and play.",
+    "fonte": "Wikipedia, «USB» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-242",
+    "argomento": "Hardware",
+    "livello": 4,
+    "testo": "Quale fu il primo prodotto di largo consumo con USB, nel 1998?",
+    "opzioni": [
+      "Il Nintendo 64",
+      "L'iMac G3 di Apple",
+      "L'IBM PC",
+      "Il Commodore 64"
+    ],
+    "corretta": 1,
+    "spiegazione": "Apple rimosse le porte legacy, spingendo la diffusione dello standard.",
+    "fonte": "Wikipedia, «USB» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-243",
+    "argomento": "Hardware",
+    "livello": 4,
+    "testo": "Quando è stata introdotta la specifica USB 1.0?",
+    "opzioni": [
+      "Nel 1989",
+      "Nel 2008",
+      "Nel gennaio 1996",
+      "Nel 2000"
+    ],
+    "corretta": 2,
+    "spiegazione": "USB 2.0 è dell'aprile 2000, USB 3.0 del novembre 2008.",
+    "fonte": "Wikipedia, «USB» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-244",
+    "argomento": "Intelligenza artificiale",
+    "livello": 3,
+    "testo": "Quale architettura, introdotta nel 2017, ha dato un forte impulso all'IA generativa?",
+    "opzioni": [
+      "RISC",
+      "Von Neumann",
+      "Client-server",
+      "Transformer"
+    ],
+    "corretta": 3,
+    "spiegazione": "Dal 2012 le GPU avevano già permesso al deep learning di superare le tecniche precedenti.",
+    "fonte": "Wikipedia, «Intelligenza artificiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-245",
+    "argomento": "Intelligenza artificiale",
+    "livello": 3,
+    "testo": "Come si chiamano i periodi storici di riduzione dei finanziamenti alla ricerca sull'IA?",
+    "opzioni": [
+      "Inverni dell'IA",
+      "Ere glaciali digitali",
+      "Crisi del silicio",
+      "Bolle dell'IA"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il settore ha conosciuto molti alti e bassi dal 1956.",
+    "fonte": "Wikipedia, «Intelligenza artificiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-246",
+    "argomento": "Intelligenza artificiale",
+    "livello": 3,
+    "testo": "Come si chiama l'ipotetica IA capace di eguagliare o superare le capacità cognitive umane in ogni ambito?",
+    "opzioni": [
+      "IA ristretta",
+      "IA generale (AGI)",
+      "Sistema esperto",
+      "IA debole"
+    ],
+    "corretta": 1,
+    "spiegazione": "Tutti i sistemi oggi esistenti sono IA debole, specializzata in compiti specifici.",
+    "fonte": "Wikipedia, «Intelligenza artificiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-247",
+    "argomento": "Intelligenza artificiale",
+    "livello": 4,
+    "testo": "Quale standard internazionale disciplina la certificazione dei sistemi di gestione dell'IA?",
+    "opzioni": [
+      "IEEE 754",
+      "ISO 14001",
+      "ISO/IEC 42001:2023",
+      "ISO/IEC 27001"
+    ],
+    "corretta": 2,
+    "spiegazione": "Riguarda gli AI Management Systems (AIMS).",
+    "fonte": "Wikipedia, «Intelligenza artificiale» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-248",
+    "argomento": "Internet",
+    "livello": 3,
+    "testo": "Quali erano i quattro nodi originari di ARPANET nel 1969?",
+    "opzioni": [
+      "MIT, Harvard, Yale e Princeton",
+      "Quattro basi militari",
+      "CERN, MIT, IBM e Bell Labs",
+      "UCLA, SRI di Stanford, UC Santa Barbara e Università dello Utah"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'ampiezza di banda era di 50 kbps.",
+    "fonte": "Wikipedia, «Internet» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-249",
+    "argomento": "Internet",
+    "livello": 4,
+    "testo": "Quale agenzia statunitense finanziò il progetto ARPANET?",
+    "opzioni": [
+      "La DARPA, dipendente dal Dipartimento della Difesa",
+      "Il CERN",
+      "La NSA",
+      "La NASA"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'agenzia si occupava di progetti di ricerca avanzata per la difesa.",
+    "fonte": "Wikipedia, «Internet» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-250",
+    "argomento": "Internet",
+    "livello": 4,
+    "testo": "Quale nome diedero Licklider e Clark nel 1962 alla rete di computer mondiale da loro teorizzata?",
+    "opzioni": [
+      "World Wide Web",
+      "Intergalactic Computer Network",
+      "Ethernet",
+      "Usenet"
+    ],
+    "corretta": 1,
+    "spiegazione": "Erano ricercatori del MIT.",
+    "fonte": "Wikipedia, «Internet» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-251",
+    "argomento": "Internet",
+    "livello": 4,
+    "testo": "Quale legge statunitense del 1991 aprì Internet allo sfruttamento commerciale privato?",
+    "opzioni": [
+      "Il Patriot Act",
+      "Il Digital Millennium Copyright Act",
+      "L'High performance computing act",
+      "Il Telecommunications Act"
+    ],
+    "corretta": 2,
+    "spiegazione": "Fino ad allora la rete era di proprietà statale e destinata al mondo scientifico.",
+    "fonte": "Wikipedia, «Internet» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-252",
+    "argomento": "Privacy",
+    "livello": 3,
+    "testo": "Quale direttiva europea è stata sostituita dal GDPR?",
+    "opzioni": [
+      "La direttiva 2019/790",
+      "La direttiva NIS2",
+      "La direttiva 2002/58/CE",
+      "La direttiva 95/46/CE"
+    ],
+    "corretta": 3,
+    "spiegazione": "In Italia il GDPR ha abrogato le norme incompatibili del Codice privacy.",
+    "fonte": "Wikipedia, «Regolamento generale sulla protezione dei dati» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-253",
+    "argomento": "Privacy",
+    "livello": 3,
+    "testo": "Fino a quale percentuale del volume d'affari globale possono arrivare le sanzioni del GDPR?",
+    "opzioni": [
+      "Il 4%",
+      "Il 10%",
+      "Il 25%",
+      "Lo 0,5%"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il regime prevede una disciplina severa con sanzioni rilevanti.",
+    "fonte": "Wikipedia, «Regolamento generale sulla protezione dei dati» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-254",
+    "argomento": "Privacy",
+    "livello": 3,
+    "testo": "Cosa si intende per «privacy by default»?",
+    "opzioni": [
+      "Che i dati siano pubblici per impostazione predefinita",
+      "Che le misure di tutela della privacy siano attuate per impostazione predefinita",
+      "Che la privacy valga solo su richiesta",
+      "Che il consenso sia sempre presunto"
+    ],
+    "corretta": 1,
+    "spiegazione": "La «privacy by design» richiede invece che i requisiti privacy entrino nella progettazione.",
+    "fonte": "Wikipedia, «Regolamento generale sulla protezione dei dati» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-255",
+    "argomento": "Privacy",
+    "livello": 4,
+    "testo": "Quale principio del GDPR (art. 24) indica il dovere del titolare di dar conto delle misure adottate?",
+    "opzioni": [
+      "Minimizzazione della pena",
+      "Interoperabilità",
+      "Accountability (responsabilizzazione)",
+      "Trasparenza passiva"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il titolare deve poter dimostrare la conformità del trattamento.",
+    "fonte": "Wikipedia, «Regolamento generale sulla protezione dei dati» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-256",
+    "argomento": "Privacy",
+    "livello": 4,
+    "testo": "Con quale decreto l'Italia ha adeguato il Codice privacy al GDPR?",
+    "opzioni": [
+      "Il D.Lgs. 33/2013",
+      "Il D.Lgs. 82/2005",
+      "La L. 675/1996",
+      "Il D.Lgs. 10 agosto 2018, n. 101"
+    ],
+    "corretta": 3,
+    "spiegazione": "La prima legge italiana sulla privacy era la L. 675/1996.",
+    "fonte": "Wikipedia, «Regolamento generale sulla protezione dei dati» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-257",
+    "argomento": "Privacy",
+    "livello": 4,
+    "testo": "Quale saggio del 1890 di Warren e Brandeis definì la privacy come «the right to be let alone»?",
+    "opzioni": [
+      "The Right to Privacy",
+      "On Liberty",
+      "Nineteen Eighty-Four",
+      "The Data Protection Act"
+    ],
+    "corretta": 0,
+    "spiegazione": "Fu pubblicato sulla Harvard Law Review.",
+    "fonte": "Wikipedia, «Regolamento generale sulla protezione dei dati» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-258",
+    "argomento": "Reti",
+    "livello": 3,
+    "testo": "A cosa serve il campo TTL (Time To Live) nell'intestazione di un pacchetto IP?",
+    "opzioni": [
+      "Indica l'ora di invio del pacchetto",
+      "È un contatore di hop decrementato a ogni router: a zero il pacchetto viene scartato",
+      "Contiene la password di rete",
+      "Indica la priorità del traffico"
+    ],
+    "corretta": 1,
+    "spiegazione": "Evita che i pacchetti vaghino all'infinito; lo sfrutta il comando traceroute.",
+    "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-259",
+    "argomento": "Reti",
+    "livello": 4,
+    "testo": "Nell'intestazione IPv4, cosa protegge il campo checksum?",
+    "opzioni": [
+      "Nulla, è facoltativo",
+      "L'intero pacchetto",
+      "Solo l'intestazione",
+      "Solo il payload"
+    ],
+    "corretta": 2,
+    "spiegazione": "Gli errori nel payload sono gestiti dai livelli superiori.",
+    "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-260",
+    "argomento": "Reti",
+    "livello": 3,
+    "testo": "Quale apparato interconnette reti a livello 3 e implementa IP?",
+    "opzioni": [
+      "Il bridge",
+      "L'hub",
+      "Il repeater",
+      "Il router"
+    ],
+    "corretta": 3,
+    "spiegazione": "Hub e repeater lavorano al livello 1, bridge e switch al livello 2, il gateway al livello 7.",
+    "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-261",
+    "argomento": "Reti",
+    "livello": 3,
+    "testo": "A quale livello lavorano bridge e switch?",
+    "opzioni": [
+      "Al livello 2 (collegamento)",
+      "Al livello 3 (rete)",
+      "Al livello 7 (applicazione)",
+      "Al livello 1 (fisico)"
+    ],
+    "corretta": 0,
+    "spiegazione": "Devono gestire gli indirizzi MAC.",
+    "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-262",
+    "argomento": "Reti",
+    "livello": 4,
+    "testo": "Che effetto ha collegare due domini di collisione con un repeater?",
+    "opzioni": [
+      "Si separano le collisioni",
+      "Si crea un unico dominio di collisione",
+      "Si raddoppia la banda",
+      "Si filtra il traffico per indirizzo MAC"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il repeater si limita a rigenerare e trasmettere i bit.",
+    "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-263",
+    "argomento": "Reti",
+    "livello": 3,
+    "testo": "A quale livello del modello OSI appartiene il protocollo IP?",
+    "opzioni": [
+      "Al livello di collegamento",
+      "Al livello di trasporto",
+      "Al livello di rete",
+      "Al livello di presentazione"
+    ],
+    "corretta": 2,
+    "spiegazione": "IP è un servizio non connesso di tipo datagram.",
+    "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-264",
+    "argomento": "Reti",
+    "livello": 3,
+    "testo": "Che tipo di servizio offre il protocollo IP?",
+    "opzioni": [
+      "Solo broadcast",
+      "Circuito dedicato",
+      "Connesso e affidabile",
+      "Non connesso, basato su datagrammi"
+    ],
+    "corretta": 3,
+    "spiegazione": "Affidabilità e controllo di flusso sono demandati al livello di trasporto (TCP).",
+    "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-265",
+    "argomento": "Reti",
+    "livello": 4,
+    "testo": "Chi effettua il riassemblaggio dei pacchetti IP frammentati?",
+    "opzioni": [
+      "La destinazione finale",
+      "Il primo router",
+      "Il server DNS",
+      "Ogni router lungo il percorso"
+    ],
+    "corretta": 0,
+    "spiegazione": "I router effettuano solo la frammentazione.",
+    "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-266",
+    "argomento": "Reti",
+    "livello": 3,
+    "testo": "Cosa fa il subnetting?",
+    "opzioni": [
+      "Cifra gli indirizzi IP",
+      "Crea reti logiche più piccole usando parte del campo host come campo subnet",
+      "Assegna indirizzi MAC",
+      "Unisce più reti in un'unica rete fisica"
+    ],
+    "corretta": 1,
+    "spiegazione": "La subnet mask indica quali bit appartengono al prefisso di rete.",
+    "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-267",
+    "argomento": "Reti",
+    "livello": 3,
+    "testo": "Come è fatto il doppino usato nelle reti?",
+    "opzioni": [
+      "Da un filo centrale schermato da una maglia",
+      "Da una fibra di vetro",
+      "Da due fili di rame intrecciati per ridurre le interferenze",
+      "Da due cavi coassiali paralleli"
+    ],
+    "corretta": 2,
+    "spiegazione": "La versione UTP non ha schermature; il cavo coassiale ha invece un filo centrale schermato.",
+    "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-268",
+    "argomento": "Reti",
+    "livello": 4,
+    "testo": "Quale categoria di doppino supporta reti locali fino a 1 Gb/s?",
+    "opzioni": [
+      "La categoria 1",
+      "La categoria 3",
+      "La categoria 4",
+      "La categoria 5e"
+    ],
+    "corretta": 3,
+    "spiegazione": "La categoria 5 arriva a 100 Mb/s.",
+    "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-269",
+    "argomento": "Reti",
+    "livello": 3,
+    "testo": "A cosa serve il protocollo POP3?",
+    "opzioni": [
+      "Al recupero della posta elettronica dal server",
+      "All'invio della posta tra server",
+      "Alla risoluzione dei nomi",
+      "Al trasferimento di pagine web"
+    ],
+    "corretta": 0,
+    "spiegazione": "IMAP migliora POP3, che è stateless.",
+    "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-270",
+    "argomento": "Reti",
+    "livello": 4,
+    "testo": "Quale funzione del DNS consente di associare più indirizzi IP allo stesso nome per bilanciare il carico?",
+    "opzioni": [
+      "Mail server aliasing",
+      "Load distribution",
+      "Host aliasing",
+      "Reverse lookup"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il DNS è un database distribuito.",
+    "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-271",
+    "argomento": "Reti",
+    "livello": 4,
+    "testo": "In una topologia a stella attiva, qual è il principale svantaggio?",
+    "opzioni": [
+      "L'assenza di un nodo centrale",
+      "La comunicazione sempre broadcast",
+      "La vulnerabilità ai guasti del centro stella",
+      "La complessità di controllo"
+    ],
+    "corretta": 2,
+    "spiegazione": "Tutte le informazioni passano attraverso il centro stella.",
+    "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-272",
+    "argomento": "Hardware",
+    "livello": 3,
+    "testo": "In quali tre bus è diviso il bus esterno tra processore e memoria?",
+    "opzioni": [
+      "Bus USB, bus PCI e bus SATA",
+      "Bus seriale, parallelo e misto",
+      "Bus video, bus audio e bus rete",
+      "Bus dati, bus indirizzi e bus di controllo"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il registro MAR passa alla memoria l'indirizzo della cella da leggere.",
+    "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-273",
+    "argomento": "Hardware",
+    "livello": 3,
+    "testo": "Come vengono cancellate le memorie EPROM per essere riprogrammate?",
+    "opzioni": [
+      "Con raggi ultravioletti",
+      "Con un campo magnetico",
+      "Elettricamente byte per byte",
+      "Non possono essere riprogrammate"
+    ],
+    "corretta": 0,
+    "spiegazione": "Le EEPROM invece si riprogrammano senza raggi ultravioletti.",
+    "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-274",
+    "argomento": "Hardware",
+    "livello": 4,
+    "testo": "Che caratteristica hanno le operazioni di scrittura nelle memorie flash?",
+    "opzioni": [
+      "Richiedono raggi ultravioletti",
+      "Avvengono a blocchi, e il blocco va cancellato prima di essere riscritto",
+      "Sono impossibili",
+      "Avvengono bit per bit senza cancellazione"
+    ],
+    "corretta": 1,
+    "spiegazione": "Sono la base di chiavette USB e SSD.",
+    "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-275",
+    "argomento": "Hardware",
+    "livello": 4,
+    "testo": "Quanti transistor richiede ogni cella di una RAM statica (SRAM)?",
+    "opzioni": [
+      "Uno",
+      "Due",
+      "Sei",
+      "Otto"
+    ],
+    "corretta": 2,
+    "spiegazione": "Una RAM dinamica usa un condensatore e un transistor per bit, ed è più densa.",
+    "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-276",
+    "argomento": "Hardware",
+    "livello": 3,
+    "testo": "Cosa si intende per «località dei riferimenti» delle memorie?",
+    "opzioni": [
+      "Che ogni cella ha un indirizzo univoco",
+      "Che i dati sono salvati in locale e non nel cloud",
+      "Che la memoria è sempre vicina al processore",
+      "Che i programmi accedono per un certo tempo solo a zone limitate della memoria"
+    ],
+    "corretta": 3,
+    "spiegazione": "Su questo principio si basano cache e memoria virtuale.",
+    "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-277",
+    "argomento": "Hardware",
+    "livello": 4,
+    "testo": "Nella politica di cache «write-through»:",
+    "opzioni": [
+      "il processore scrive contemporaneamente in memoria e in cache",
+      "si scrive solo in cache",
+      "si scrive su disco",
+      "si scrive solo in memoria"
+    ],
+    "corretta": 0,
+    "spiegazione": "Nel write-back i dati modificati vanno in memoria solo prima che la linea venga sovrascritta.",
+    "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-278",
+    "argomento": "Hardware",
+    "livello": 3,
+    "testo": "Come si chiamano i blocchi in cui è suddivisa la memoria virtuale?",
+    "opzioni": [
+      "Settori",
+      "Pagine",
+      "Cluster",
+      "Tracce"
+    ],
+    "corretta": 1,
+    "spiegazione": "Sono grandi da 1 KB a 64 KB.",
+    "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-279",
+    "argomento": "Hardware",
+    "livello": 4,
+    "testo": "Quale componente hardware converte gli indirizzi logici del processore in indirizzi fisici nella memoria virtuale?",
+    "opzioni": [
+      "L'ALU",
+      "Il DMA Controller",
+      "La MMU (Memory Management Unit)",
+      "Il Program Counter"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il processore vede un'unica memoria grande quanto la memoria complessiva.",
+    "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-280",
+    "argomento": "Hardware",
+    "livello": 4,
+    "testo": "A cosa serve il DMA Controller?",
+    "opzioni": [
+      "A gestire la cache di primo livello",
+      "A eseguire calcoli in virgola mobile",
+      "A generare il clock",
+      "A trasferire grandi quantità di dati tra periferica e memoria senza passare dal processore"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il DMA Controller può diventare bus master, con arbitraggio del bus.",
+    "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-281",
+    "argomento": "Hardware",
+    "livello": 3,
+    "testo": "Cos'è il «polling» nella gestione dell'input/output?",
+    "opzioni": [
+      "Il processore controlla ripetutamente se la periferica è pronta",
+      "La periferica interrompe il processore",
+      "Il trasferimento diretto in memoria",
+      "La compressione dei dati"
+    ],
+    "corretta": 0,
+    "spiegazione": "Svantaggio: il processore resta impegnato nel ciclo di attesa.",
+    "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-282",
+    "argomento": "Hardware",
+    "livello": 4,
+    "testo": "Con quale rappresentazione l'8086 memorizza un numero su 2 byte?",
+    "opzioni": [
+      "Big endian",
+      "Little endian: il byte meno significativo precede quello più significativo",
+      "In BCD",
+      "In complemento a 1"
+    ],
+    "corretta": 1,
+    "spiegazione": "Ogni istruzione in codice macchina occupa da 1 a 6 byte.",
+    "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-283",
+    "argomento": "Hardware",
+    "livello": 4,
+    "testo": "Che cos'è un'unità di controllo «cablata» (hardwired)?",
+    "opzioni": [
+      "Un controller di rete",
+      "Un'unità programmata con microistruzioni in memoria",
+      "Un circuito sequenziale che genera i segnali di controllo con flip-flop e rete combinatoria",
+      "Un cavo che collega CPU e RAM"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'alternativa è l'unità di controllo microprogrammata.",
+    "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-284",
+    "argomento": "Hardware",
+    "livello": 3,
+    "testo": "Quali sono le due capacità principali di un processore?",
+    "opzioni": [
+      "Stampare e scansionare",
+      "Memorizzare file e navigare",
+      "Alimentare e raffreddare il computer",
+      "Elaborare istruzioni (fetch ed esecuzione) e interagire con l'esterno tramite le periferiche"
+    ],
+    "corretta": 3,
+    "spiegazione": "Reagisce alle richieste di interrupt provenienti dall'esterno.",
+    "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-285",
+    "argomento": "PA digitale",
+    "livello": 3,
+    "testo": "A quale finalità sono rivolte le iniziative di «alfabetizzazione informatica dei cittadini» previste dal CAD?",
+    "opzioni": [
+      "Diffondere la cultura digitale, con attenzione ai minori e alle categorie a rischio di esclusione",
+      "Insegnare la programmazione ai dipendenti pubblici",
+      "Certificare le competenze dei professionisti",
+      "Vendere computer a prezzo agevolato"
+    ],
+    "corretta": 0,
+    "spiegazione": "Lo Stato può avvalersi anche del servizio radiotelevisivo.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 8",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-286",
+    "argomento": "PA digitale",
+    "livello": 3,
+    "testo": "Cosa favoriscono le PA secondo l'art. 9 del CAD (partecipazione democratica elettronica)?",
+    "opzioni": [
+      "La pubblicazione dei dati sanitari",
+      "L'uso delle nuove tecnologie per una maggiore partecipazione dei cittadini al processo democratico",
+      "Il voto elettronico obbligatorio",
+      "La chiusura degli sportelli fisici"
+    ],
+    "corretta": 1,
+    "spiegazione": "Anche con consultazioni telematiche preventive sugli schemi di atti.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 9",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-287",
+    "argomento": "PA digitale",
+    "livello": 3,
+    "testo": "Quale ente è preposto alla realizzazione degli obiettivi dell'Agenda Digitale Italiana?",
+    "opzioni": [
+      "La Consip",
+      "L'ANAC",
+      "L'Agenzia per l'Italia digitale (AgID)",
+      "Il Garante privacy"
+    ],
+    "corretta": 2,
+    "spiegazione": "Opera in coerenza con l'Agenda digitale europea.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 14-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-288",
+    "argomento": "PA digitale",
+    "livello": 3,
+    "testo": "Secondo il CAD, a quanti soggetti deve riferirsi la firma digitale?",
+    "opzioni": [
+      "A tutti i dipendenti dell'ufficio",
+      "A due soggetti, firmatario e testimone",
+      "A nessuno in particolare",
+      "A un solo soggetto, in maniera univoca"
+    ],
+    "corretta": 3,
+    "spiegazione": "Si riferisce anche al documento o all'insieme di documenti cui è apposta.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 24",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-289",
+    "argomento": "PA digitale",
+    "livello": 3,
+    "testo": "Cosa sostituisce l'apposizione della firma digitale?",
+    "opzioni": [
+      "Sigilli, punzoni, timbri, contrassegni e marchi di qualsiasi genere",
+      "La marca da bollo",
+      "Il protocollo informatico",
+      "Solo la firma autografa"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 24, comma 2, del CAD.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 24",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-290",
+    "argomento": "PA digitale",
+    "livello": 4,
+    "testo": "Quale certificato serve per generare una firma digitale valida?",
+    "opzioni": [
+      "Qualsiasi certificato autofirmato",
+      "Un certificato qualificato non scaduto, né revocato o sospeso",
+      "Un certificato SSL di un sito web",
+      "Un certificato di residenza"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 24, comma 3, del CAD.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 24",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-291",
+    "argomento": "PA digitale",
+    "livello": 3,
+    "testo": "Quale obbligo ha il titolare di un certificato di firma digitale?",
+    "opzioni": [
+      "Rinnovarlo ogni mese",
+      "Prestarlo ai colleghi in caso di urgenza",
+      "Custodire il dispositivo di firma e utilizzarlo personalmente",
+      "Depositarne copia in Comune"
+    ],
+    "corretta": 2,
+    "spiegazione": "Deve anche adottare misure idonee a evitare danno ad altri.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 32",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-292",
+    "argomento": "PA digitale",
+    "livello": 4,
+    "testo": "Se un documento informatico è conservato per legge da una PA, cosa accade all'obbligo di conservazione di cittadini e imprese?",
+    "opzioni": [
+      "Raddoppia",
+      "Passa al notaio",
+      "Resta invariato",
+      "Cessa: possono chiederne accesso in ogni momento alla PA"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 43, comma 1-bis, del CAD.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 43",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-293",
+    "argomento": "PA digitale",
+    "livello": 3,
+    "testo": "Come avvengono le comunicazioni di documenti tra pubbliche amministrazioni secondo il CAD?",
+    "opzioni": [
+      "Tramite posta elettronica o cooperazione applicativa",
+      "Tramite consegna a mano",
+      "Solo tramite raccomandata",
+      "Solo via fax"
+    ],
+    "corretta": 0,
+    "spiegazione": "Sono valide una volta verificata la provenienza; la violazione comporta responsabilità dirigenziale e disciplinare.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 47",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-294",
+    "argomento": "PA digitale",
+    "livello": 4,
+    "testo": "Quali dati pubblicati dalle PA senza una licenza espressa si intendono rilasciati come dati di tipo aperto?",
+    "opzioni": [
+      "Nessuno",
+      "I dati e documenti pubblicati, salvo quelli personali",
+      "Solo i dati di bilancio",
+      "Tutti, compresi i dati personali"
+    ],
+    "corretta": 1,
+    "spiegazione": "È il principio «open by default» dell'art. 52 del CAD.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 52",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-295",
+    "argomento": "PA digitale",
+    "livello": 3,
+    "testo": "Quali principi devono rispettare i siti Internet delle pubbliche amministrazioni secondo l'art. 53 del CAD?",
+    "opzioni": [
+      "Solo l'estetica grafica",
+      "L'uso esclusivo della lingua inglese",
+      "Accessibilità, usabilità e reperibilità, anche per le persone disabili",
+      "La presenza di pubblicità"
+    ],
+    "corretta": 2,
+    "spiegazione": "Anche completezza di informazione, chiarezza di linguaggio e affidabilità.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 53",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-296",
+    "argomento": "PA digitale",
+    "livello": 4,
+    "testo": "Dove è attivato il punto di accesso telematico unico ai servizi delle PA (art. 64-bis CAD)?",
+    "opzioni": [
+      "Presso le Camere di commercio",
+      "Presso l'INPS",
+      "Presso ogni Comune",
+      "Presso la Presidenza del Consiglio dei ministri"
+    ],
+    "corretta": 3,
+    "spiegazione": "È il punto di accesso a cui fa riferimento il diritto a servizi online semplici e integrati.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 64-bis",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-297",
+    "argomento": "PA digitale",
+    "livello": 4,
+    "testo": "Che cos'è il Sistema pubblico di connettività e cooperazione (SPC)?",
+    "opzioni": [
+      "L'insieme di infrastrutture e regole tecniche che assicura l'interoperabilità tra i sistemi informativi delle PA",
+      "Il registro delle PEC",
+      "Il portale dei concorsi pubblici",
+      "La rete Wi-Fi gratuita dei Comuni"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 73 del CAD.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 73",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-298",
+    "argomento": "PA digitale",
+    "livello": 3,
+    "testo": "Cosa individuano le Linee guida previste dall'art. 51 del CAD?",
+    "opzioni": [
+      "Le tariffe dei servizi online",
+      "Le soluzioni tecniche per garantire protezione, disponibilità, integrità e riservatezza dei dati e continuità operativa",
+      "Gli orari degli uffici",
+      "I modelli di firma autografa"
+    ],
+    "corretta": 1,
+    "spiegazione": "AgID attua anche il Piano nazionale per la sicurezza cibernetica.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 51",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-299",
+    "argomento": "PA digitale",
+    "livello": 3,
+    "testo": "A cosa sono finalizzate le politiche di formazione informatica dei dipendenti pubblici (art. 13 CAD)?",
+    "opzioni": [
+      "Alla riparazione dei computer",
+      "Alla programmazione di videogiochi",
+      "Alla conoscenza e all'uso delle tecnologie dell'informazione, anche sull'accessibilità e le tecnologie assistive",
+      "Solo all'uso dei social network"
+    ],
+    "corretta": 2,
+    "spiegazione": "Per i dirigenti riguardano anche competenze manageriali e di informatica giuridica.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 13",
+    "versione": "v1"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-300",
+    "argomento": "PA digitale",
+    "livello": 4,
+    "testo": "Quale piattaforma è realizzata presso l'AgID per la consultazione pubblica sui provvedimenti dell'agenda digitale?",
+    "opzioni": [
+      "Il portale INI-PEC",
+      "La piattaforma pagoPA",
+      "L'app IO",
+      "La Piattaforma nazionale per la governance della trasformazione digitale"
+    ],
+    "corretta": 3,
+    "spiegazione": "Raccoglie suggerimenti e proposte dai portatori di interesse.",
+    "fonte": "D.Lgs. 82/2005 (CAD), art. 18",
+    "versione": "v1"
   }
 ]
