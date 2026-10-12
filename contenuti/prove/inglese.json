@@ -998,5 +998,505 @@
     "id": "eng-200",
     "file": "Wikipedia-EN_Indirect-speech.txt",
     "frase": "He said that he could get it for free"
+  },
+  {
+    "id": "eng-201",
+    "file": "Wikipedia-EN_English-prepositions.txt",
+    "frase": "English prepositions are words – such as of, in, on, at, from, etc."
+  },
+  {
+    "id": "eng-202",
+    "file": "Wikipedia-EN_English-prepositions.txt",
+    "frase": "Semantically, they most typically denote relations in space and time"
+  },
+  {
+    "id": "eng-203",
+    "file": "Wikipedia-EN_English-prepositions.txt",
+    "frase": "we expect to see prepositional phrases like near me and at her rather than near I and at she"
+  },
+  {
+    "id": "eng-204",
+    "file": "Wikipedia-EN_English-prepositions.txt",
+    "frase": "They form a closed lexical category"
+  },
+  {
+    "id": "eng-205",
+    "file": "Wikipedia-EN_English-prepositions.txt",
+    "frase": "of typically corresponds to the genitive"
+  },
+  {
+    "id": "eng-206",
+    "file": "Wikipedia-EN_English-prepositions.txt",
+    "frase": "notwithstanding, which can appear either before the object"
+  },
+  {
+    "id": "eng-207",
+    "file": "Wikipedia-EN_English-determiners.txt",
+    "frase": "I live in small house is ungrammatical"
+  },
+  {
+    "id": "eng-208",
+    "file": "Wikipedia-EN_English-determiners.txt",
+    "frase": "this book, these books"
+  },
+  {
+    "id": "eng-209",
+    "file": "Wikipedia-EN_English-determiners.txt",
+    "frase": "some of the people but not *happy of the people"
+  },
+  {
+    "id": "eng-210",
+    "file": "Wikipedia-EN_English-determiners.txt",
+    "frase": "cheap → cheaply"
+  },
+  {
+    "id": "eng-211",
+    "file": "Wikipedia-EN_Infinitive.txt",
+    "frase": "the form introduced by to is called the full infinitive or to-infinitive"
+  },
+  {
+    "id": "eng-212",
+    "file": "Wikipedia-EN_Infinitive.txt",
+    "frase": "I want them to eat their dinner"
+  },
+  {
+    "id": "eng-213",
+    "file": "Wikipedia-EN_Infinitive.txt",
+    "frase": "Infinitives are negated by simply preceding them with not"
+  },
+  {
+    "id": "eng-214",
+    "file": "Wikipedia-EN_Infinitive.txt",
+    "frase": "(to) be eaten (passive)"
+  },
+  {
+    "id": "eng-215",
+    "file": "Wikipedia-EN_Infinitive.txt",
+    "frase": "(to) have eaten (perfect active)"
+  },
+  {
+    "id": "eng-216",
+    "file": "Wikipedia-EN_Infinitive.txt",
+    "frase": "had better or ought to as substitutes for should"
+  },
+  {
+    "id": "eng-217",
+    "file": "Wikipedia-EN_Count-noun.txt",
+    "frase": "\"few\", \"many\", \"those\", and numbers (\"one\") are used with count nouns"
+  },
+  {
+    "id": "eng-218",
+    "file": "Wikipedia-EN_Count-noun.txt",
+    "frase": "There are some pieces of furniture in the room"
+  },
+  {
+    "id": "eng-219",
+    "file": "Wikipedia-EN_Count-noun.txt",
+    "frase": "can co-occur with quantificational determiners like every, each, several"
+  },
+  {
+    "id": "eng-220",
+    "file": "Wikipedia-EN_Count-noun.txt",
+    "frase": "I'll have two coffees."
+  },
+  {
+    "id": "eng-221",
+    "file": "Wikipedia-EN_Count-noun.txt",
+    "frase": "\"fewer\" and \"fewest\" is reserved for count nouns and \"less\" and \"least\" for mass nouns"
+  },
+  {
+    "id": "eng-222",
+    "file": "Wikipedia-EN_English-compound.txt",
+    "frase": "Examples are \"housewife\", \"lawsuit\", \"wallpaper\", \"basketball\""
+  },
+  {
+    "id": "eng-223",
+    "file": "Wikipedia-EN_English-compound.txt",
+    "frase": "\"rent-a-cop\", \"mother-of-pearl\" and \"hide-and-seek\""
+  },
+  {
+    "id": "eng-224",
+    "file": "Wikipedia-EN_English-compound.txt",
+    "frase": "compounds tend to solidify as they age"
+  },
+  {
+    "id": "eng-225",
+    "file": "Wikipedia-EN_English-compound.txt",
+    "frase": "noun + verb + -er, where the noun is the object of the verb"
+  },
+  {
+    "id": "eng-226",
+    "file": "Wikipedia-EN_English-compound.txt",
+    "frase": "Close to two-thirds of the words in the Old English poem Beowulf are found to be compounds"
+  },
+  {
+    "id": "eng-227",
+    "file": "Wikipedia-EN_Future-perfect.txt",
+    "frase": "He won't have done (or will not have done) it by this evening"
+  },
+  {
+    "id": "eng-228",
+    "file": "Wikipedia-EN_Future-perfect.txt",
+    "frase": "He will have woken up by now"
+  },
+  {
+    "id": "eng-229",
+    "file": "Wikipedia-EN_Future-perfect.txt",
+    "frase": "the \"second future tense.\""
+  },
+  {
+    "id": "eng-230",
+    "file": "Wikipedia-EN_Future-perfect.txt",
+    "frase": "In 1982, I knew that by 1986 I would have already gone to prison"
+  },
+  {
+    "id": "eng-231",
+    "file": "Wikipedia-EN_Future-perfect.txt",
+    "frase": "I'll have made the dinner by 6 PM"
+  },
+  {
+    "id": "eng-232",
+    "file": "Wikipedia-EN_Verb.txt",
+    "frase": "marked by adding \"-s\" ( walks) or \"-es\" (fishes)"
+  },
+  {
+    "id": "eng-233",
+    "file": "Wikipedia-EN_Verb.txt",
+    "frase": "\"The boy wept.\""
+  },
+  {
+    "id": "eng-234",
+    "file": "Wikipedia-EN_Verb.txt",
+    "frase": "A way to identify a transitive verb is to invert the sentence, making it passive"
+  },
+  {
+    "id": "eng-235",
+    "file": "Wikipedia-EN_List-of-English-irregular-verbs.txt",
+    "frase": "learn (learnt vs. learned)"
+  },
+  {
+    "id": "eng-236",
+    "file": "Wikipedia-EN_List-of-English-irregular-verbs.txt",
+    "frase": "newly formed verbs are always regular"
+  },
+  {
+    "id": "eng-237",
+    "file": "Wikipedia-EN_List-of-English-irregular-verbs.txt",
+    "frase": "there are only four of them"
+  },
+  {
+    "id": "eng-238",
+    "file": "Wikipedia-EN_List-of-English-irregular-verbs.txt",
+    "frase": "he does not = he doesn't"
+  },
+  {
+    "id": "eng-239",
+    "file": "Wikipedia-EN_List-of-English-irregular-verbs.txt",
+    "frase": "ending in -ing, are always regular"
+  },
+  {
+    "id": "eng-240",
+    "file": "Wikipedia-EN_English-plurals.txt",
+    "frase": "deer (and all species in the deer family"
+  },
+  {
+    "id": "eng-241",
+    "file": "Wikipedia-EN_English-plurals.txt",
+    "frase": "craft (meaning 'vessel'), including aircraft"
+  },
+  {
+    "id": "eng-242",
+    "file": "Wikipedia-EN_English-plurals.txt",
+    "frase": "series, species"
+  },
+  {
+    "id": "eng-243",
+    "file": "Wikipedia-EN_English-plurals.txt",
+    "frase": "penny—pence"
+  },
+  {
+    "id": "eng-244",
+    "file": "Wikipedia-EN_English-plurals.txt",
+    "frase": "datum, data"
+  },
+  {
+    "id": "eng-245",
+    "file": "Wikipedia-EN_English-plurals.txt",
+    "frase": "the plural of appendix is appendices"
+  },
+  {
+    "id": "eng-246",
+    "file": "Wikipedia-EN_English-plurals.txt",
+    "frase": "postmen, policewomen"
+  },
+  {
+    "id": "eng-247",
+    "file": "Wikipedia-EN_English-plurals.txt",
+    "frase": "an entomologist deals with antennae"
+  },
+  {
+    "id": "eng-248",
+    "file": "Wikipedia-EN_English-numerals.txt",
+    "frase": "the number 100 is always written \"one hundred\""
+  },
+  {
+    "id": "eng-249",
+    "file": "Wikipedia-EN_English-numerals.txt",
+    "frase": "In English the point (.) is used as the decimal separator"
+  },
+  {
+    "id": "eng-250",
+    "file": "Wikipedia-EN_English-numerals.txt",
+    "frase": "nil: in general sport scores, British usage"
+  },
+  {
+    "id": "eng-251",
+    "file": "Wikipedia-EN_English-numerals.txt",
+    "frase": "love: in tennis, badminton, squash"
+  },
+  {
+    "id": "eng-252",
+    "file": "Wikipedia-EN_English-numerals.txt",
+    "frase": "If a googol is ten to the one hundredth power"
+  },
+  {
+    "id": "eng-253",
+    "file": "Wikipedia-EN_Homophone.txt",
+    "frase": "Homophones that are spelled differently are also called heterographs"
+  },
+  {
+    "id": "eng-254",
+    "file": "Wikipedia-EN_Homophone.txt",
+    "frase": "rose (flower) and rose (past tense of \"rise\")"
+  },
+  {
+    "id": "eng-255",
+    "file": "Wikipedia-EN_Homophone.txt",
+    "frase": "flour and flower"
+  },
+  {
+    "id": "eng-256",
+    "file": "Wikipedia-EN_Contraction-grammar.txt",
+    "frase": "such as the now-standard form \"o'clock\""
+  },
+  {
+    "id": "eng-257",
+    "file": "Wikipedia-EN_Contraction-grammar.txt",
+    "frase": "they'll see that it's just what we're like"
+  },
+  {
+    "id": "eng-258",
+    "file": "Wikipedia-EN_English-phrasal-verbs.txt",
+    "frase": "She takes after her mother"
+  },
+  {
+    "id": "eng-259",
+    "file": "Wikipedia-EN_English-phrasal-verbs.txt",
+    "frase": "I ran into an old friend"
+  },
+  {
+    "id": "eng-260",
+    "file": "Wikipedia-EN_English-phrasal-verbs.txt",
+    "frase": "Susan had to sit in for me"
+  },
+  {
+    "id": "eng-261",
+    "file": "Wikipedia-EN_English-phrasal-verbs.txt",
+    "frase": "He thought the situation over"
+  },
+  {
+    "id": "eng-262",
+    "file": "Wikipedia-EN_English-phrasal-verbs.txt",
+    "frase": "You should stand by your friend"
+  },
+  {
+    "id": "eng-263",
+    "file": "Wikipedia-EN_False-friend.txt",
+    "frase": "Actual, which in English is usually a synonym of real"
+  },
+  {
+    "id": "eng-264",
+    "file": "Wikipedia-EN_False-friend.txt",
+    "frase": "in Italian, the corresponding word is coriandoli"
+  },
+  {
+    "id": "eng-265",
+    "file": "Wikipedia-EN_English-adverbs.txt",
+    "frase": "So you have the happy child, but not *the happily child"
+  },
+  {
+    "id": "eng-266",
+    "file": "Wikipedia-EN_English-adverbs.txt",
+    "frase": "some adjectives end in -ly (e.g., friendly)"
+  },
+  {
+    "id": "eng-267",
+    "file": "Wikipedia-EN_English-adverbs.txt",
+    "frase": "There are two interrogative adverbs: how and why"
+  },
+  {
+    "id": "eng-268",
+    "file": "Wikipedia-EN_English-adverbs.txt",
+    "frase": "very happy & very happily, but not *very enjoyed"
+  },
+  {
+    "id": "eng-269",
+    "file": "Wikipedia-EN_English-adverbs.txt",
+    "frase": "These include even, only, and alone"
+  },
+  {
+    "id": "eng-270",
+    "file": "Wikipedia-EN_Personal-pronouns-in-English.txt",
+    "frase": "this book is mine"
+  },
+  {
+    "id": "eng-271",
+    "file": "Wikipedia-EN_Personal-pronouns-in-English.txt",
+    "frase": "which has the objective form whom"
+  },
+  {
+    "id": "eng-272",
+    "file": "Wikipedia-EN_Personal-pronouns-in-English.txt",
+    "frase": "which has the reflexive oneself"
+  },
+  {
+    "id": "eng-273",
+    "file": "Wikipedia-EN_Personal-pronouns-in-English.txt",
+    "frase": "thou, thee, thy, thine, thyself"
+  },
+  {
+    "id": "eng-274",
+    "file": "Wikipedia-EN_Personal-pronouns-in-English.txt",
+    "frase": "as in I prefer mine"
+  },
+  {
+    "id": "eng-275",
+    "file": "Wikipedia-EN_Degrees-of-comparison-of-adjectives-and-adverbs.txt",
+    "frase": "\"May the better man win\" would be considered correct if there are two individuals competing"
+  },
+  {
+    "id": "eng-276",
+    "file": "Wikipedia-EN_Degrees-of-comparison-of-adjectives-and-adverbs.txt",
+    "frase": "\"Ram is as good as Shyam\""
+  },
+  {
+    "id": "eng-277",
+    "file": "Wikipedia-EN_Degrees-of-comparison-of-adjectives-and-adverbs.txt",
+    "frase": "except for a few words such as fun, real, right, wrong"
+  },
+  {
+    "id": "eng-278",
+    "file": "Wikipedia-EN_Degrees-of-comparison-of-adjectives-and-adverbs.txt",
+    "frase": "words of three or more syllables require \"more\" or \"most\""
+  },
+  {
+    "id": "eng-279",
+    "file": "Wikipedia-EN_Degrees-of-comparison-of-adjectives-and-adverbs.txt",
+    "frase": "full, complete, unique, or empty"
+  },
+  {
+    "id": "eng-280",
+    "file": "Wikipedia-EN_Adjective.txt",
+    "frase": "where \"the meek\" means \"those who are meek\""
+  },
+  {
+    "id": "eng-281",
+    "file": "Wikipedia-EN_Adjective.txt",
+    "frase": "but an adverb in \"he drove fast\""
+  },
+  {
+    "id": "eng-282",
+    "file": "Wikipedia-EN_Adjective.txt",
+    "frase": "where English uses \"to be hungry\""
+  },
+  {
+    "id": "eng-283",
+    "file": "Wikipedia-EN_Adjective.txt",
+    "frase": "attributive adjective phrases that include complements typically follow the noun"
+  },
+  {
+    "id": "eng-284",
+    "file": "Wikipedia-EN_Indirect-speech.txt",
+    "frase": "He said that he had painted the ceiling blue"
+  },
+  {
+    "id": "eng-285",
+    "file": "Wikipedia-EN_Indirect-speech.txt",
+    "frase": "I asked them to leave the room"
+  },
+  {
+    "id": "eng-286",
+    "file": "Wikipedia-EN_Indirect-speech.txt",
+    "frase": "She said that Ed was/is a bore"
+  },
+  {
+    "id": "eng-287",
+    "file": "Wikipedia-EN_Indirect-speech.txt",
+    "frase": "I asked him how people managed to live in that city"
+  },
+  {
+    "id": "eng-288",
+    "file": "Wikipedia-EN_Indirect-speech.txt",
+    "frase": "also called backshifting"
+  },
+  {
+    "id": "eng-289",
+    "file": "Wikipedia-EN_Pluperfect.txt",
+    "frase": "is now usually called the past perfect"
+  },
+  {
+    "id": "eng-290",
+    "file": "Wikipedia-EN_Pluperfect.txt",
+    "frase": "\"we had arrived\" before the game began"
+  },
+  {
+    "id": "eng-291",
+    "file": "Wikipedia-EN_Pluperfect.txt",
+    "frase": "The word is derived from the Latin plus quam perfectum"
+  },
+  {
+    "id": "eng-292",
+    "file": "Wikipedia-EN_Pluperfect.txt",
+    "frase": "It had already been raining for a week when the big storm started"
+  },
+  {
+    "id": "eng-293",
+    "file": "Wikipedia-EN_Interrogative-word.txt",
+    "frase": "the word which is an interrogative determiner for the noun road"
+  },
+  {
+    "id": "eng-294",
+    "file": "Wikipedia-EN_Interrogative-word.txt",
+    "frase": "Whose gorgeous, pink painting is that?"
+  },
+  {
+    "id": "eng-295",
+    "file": "Wikipedia-EN_Interrogative-word.txt",
+    "frase": "The country where he was born"
+  },
+  {
+    "id": "eng-296",
+    "file": "Wikipedia-EN_Imperative-mood.txt",
+    "frase": "Could you come here for a moment?"
+  },
+  {
+    "id": "eng-297",
+    "file": "Wikipedia-EN_Imperative-mood.txt",
+    "frase": "They usually begin with the verb \"don't\""
+  },
+  {
+    "id": "eng-298",
+    "file": "Wikipedia-EN_Imperative-mood.txt",
+    "frase": "Have a nice trip! (wish)"
+  },
+  {
+    "id": "eng-299",
+    "file": "Wikipedia-EN_Imperative-mood.txt",
+    "frase": "Eat the apple if you want. (permission)"
+  },
+  {
+    "id": "eng-300",
+    "file": "Wikipedia-EN_Personal-pronouns-in-English.txt",
+    "frase": "For someone like myself"
   }
 ]

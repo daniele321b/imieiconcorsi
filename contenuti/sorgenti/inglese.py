@@ -468,3 +468,248 @@ E("eng-197", "Comparatives", 3, "What is the superlative of inferiority of «big
 E("eng-198", "Question tags", 2, "Complete: «I'll make tea, ___?»", "shall I", ["will I", "won't I", "do I"], "Offerta con «shall I?».", *TQ, "I'll make tea, shall I?")
 E("eng-199", "Phrasal verbs", 2, "Which of these is a phrasal verb meaning «rifiutare»?", "turn down", ["sit up", "run into", "get together"], "Es. «She turned down the offer».", *PV, "turn down, run into, or sit up")
 E("eng-200", "Reported speech", 3, "Direct: «I can get it for free». Reported (past reporting verb):", "He said that he could get it for free.", ["He said that he can got it for free.", "He said that I could get it for free.", "He said he gets it for free."], "can → could nel discorso indiretto.", *IS, "He said that he could get it for free")
+
+# --- Ampliamento a 300: preposizioni, determinanti, infinito, nomi, composti, verbi, numeri, avverbi ---
+PRE = ("English prepositions", "English-prepositions")
+E("eng-201", "Prepositions", 2, "Which of these words is a preposition?", "on", ["quickly", "beautiful", "they"],
+  "Le preposizioni (of, in, on, at, from…) introducono un sintagma preposizionale.", *PRE, "English prepositions are words – such as of, in, on, at, from, etc.")
+E("eng-202", "Prepositions", 3, "What do English prepositions most typically express?", "Relations in space and time", ["Actions and events", "Qualities of nouns", "Questions"],
+  "Es. «in the water», «at noon».", *PRE, "Semantically, they most typically denote relations in space and time")
+E("eng-203", "Prepositions", 3, "Complete: «Come and sit near ___.»", "me", ["I", "my", "mine"],
+  "Dopo una preposizione si usa il pronome complemento (near me, at her).", *PRE, "we expect to see prepositional phrases like near me and at her rather than near I and at she")
+E("eng-204", "Prepositions", 4, "Are prepositions an open or a closed class of words?", "A closed lexical category", ["An open class, new ones are created every year", "They are a kind of verb", "They are a kind of noun"],
+  "Le preposizioni sono poche e non flettono.", *PRE, "They form a closed lexical category")
+E("eng-205", "Prepositions", 4, "Which English preposition typically corresponds to the Latin genitive?", "of", ["to", "by", "with"],
+  "Es. «the king of Spain».", *PRE, "of typically corresponds to the genitive")
+E("eng-206", "Prepositions", 5, "Which preposition can also follow its object, as in «the contrary ___»?", "notwithstanding", ["despite", "during", "among"],
+  "È uno dei rari casi di posposizione in inglese.", *PRE, "notwithstanding, which can appear either before the object")
+
+DET = ("English determiners", "English-determiners")
+E("eng-207", "Determiners", 3, "Why is «I live in small house» ungrammatical?", "A singular countable noun needs a determiner (a, my, that…)", ["«small» must follow the noun", "«house» is uncountable", "«live» needs «at»"],
+  "Corretto: «I live in a small house» o «I live in my house».", *DET, "I live in small house is ungrammatical")
+E("eng-208", "Determiners", 2, "Complete: «___ books are mine.» (= questi libri)", "These", ["This", "That", "Thats"],
+  "Alcuni determinanti concordano nel numero: this book, these books.", *DET, "this book, these books")
+E("eng-209", "Determiners", 3, "Which form is correct?", "some of the people", ["happy of the people", "my of the people", "every of people"],
+  "I determinanti compaiono nelle costruzioni partitive, aggettivi e possessivi no.", *DET, "some of the people but not *happy of the people")
+E("eng-210", "Adverbs", 2, "What is the adverb formed from «cheap»?", "cheaply", ["cheapful", "cheapness", "cheaper"],
+  "Molti avverbi si formano aggiungendo -ly all'aggettivo.", *DET, "cheap → cheaply")
+
+INF = ("Infinitive", "Infinitive")
+E("eng-211", "Gerund and infinitive", 2, "In «I want to sit on the other chair», «to sit» is:", "a full infinitive (to-infinitive)", ["a bare infinitive", "a gerund", "a past participle"],
+  "La forma senza «to» si chiama bare infinitive.", *INF, "the form introduced by to is called the full infinitive or to-infinitive")
+E("eng-212", "Gerund and infinitive", 3, "Complete: «I want ___ to eat their dinner.»", "them", ["they", "their", "theirs"],
+  "Il soggetto implicito dell'infinito è al caso oggetto.", *INF, "I want them to eat their dinner")
+E("eng-213", "Gerund and infinitive", 3, "How is an infinitive made negative?", "By putting «not» before it (e.g. «not to go»)", ["With «don't» before it", "By adding -n't", "With «no» after it"],
+  "Es. «I decided not to go».", *INF, "Infinitives are negated by simply preceding them with not")
+E("eng-214", "Gerund and infinitive", 4, "What is the passive infinitive of «eat»?", "to be eaten", ["to have eaten", "to be eating", "to eaten"],
+  "«to have eaten» è l'infinito perfetto, «to be eating» quello progressivo.", *INF, "(to) be eaten (passive)")
+E("eng-215", "Gerund and infinitive", 4, "Which is the perfect infinitive?", "to have eaten", ["to be eaten", "to eat", "to be eating"],
+  "Es. «I'm happy to have met you».", *INF, "(to) have eaten (perfect active)")
+E("eng-216", "Modal verbs", 3, "Complete: «You had better ___ now.»", "go", ["to go", "going", "went"],
+  "«had better», come i modali, è seguito dall'infinito senza to.", *INF, "had better or ought to as substitutes for should")
+
+CN = ("Count noun", "Count-noun")
+E("eng-217", "Countable and uncountable", 2, "Which determiner is used only with countable nouns?", "many", ["much", "little", "a little"],
+  "few, many e i numeri vanno con i numerabili; little e much con i non numerabili.", *CN, "\"few\", \"many\", \"those\", and numbers (\"one\") are used with count nouns")
+E("eng-218", "Countable and uncountable", 2, "Complete: «There are some ___ of furniture in the room.»", "pieces", ["furnitures", "many", "a"],
+  "«furniture» è non numerabile: si conta con «pieces of».", *CN, "There are some pieces of furniture in the room")
+E("eng-219", "Countable and uncountable", 3, "Which quantifiers can go with count nouns but not with mass nouns?", "every, each, several", ["much, little", "some, no", "all, any"],
+  "I nomi numerabili hanno singolare e plurale e accettano numeri.", *CN, "can co-occur with quantificational determiners like every, each, several")
+E("eng-220", "Countable and uncountable", 3, "Complete: «I'll have two ___.» (= due caffè, in un bar)", "coffees", ["coffee", "coffee's", "coffeies"],
+  "«coffee» può essere usato come numerabile per indicare le tazze.", *CN, "I'll have two coffees.")
+E("eng-221", "Countable and uncountable", 4, "According to traditional prescription, «fewer» is used with ___ nouns and «less» with ___ nouns.", "count / mass", ["mass / count", "proper / common", "plural / singular only for people"],
+  "Es. «fewer cars», «less traffic».", *CN, "\"fewer\" and \"fewest\" is reserved for count nouns and \"less\" and \"least\" for mass nouns")
+
+CMPD = ("English compound", "English-compound")
+E("eng-222", "Vocabulary", 2, "Which of these is a «solid» (closed) compound?", "basketball", ["ice cream", "mother-of-pearl", "high school"],
+  "I composti si scrivono aperti, con trattino o uniti.", *CMPD, "Examples are \"housewife\", \"lawsuit\", \"wallpaper\", \"basketball\"")
+E("eng-223", "Vocabulary", 3, "How is the compound «hide-and-seek» written?", "Hyphenated", ["Open (with spaces)", "Solid (one word)", "With an apostrophe"],
+  "I composti con articoli, preposizioni o congiunzioni sono spesso con trattino.", *CMPD, "\"rent-a-cop\", \"mother-of-pearl\" and \"hide-and-seek\"")
+E("eng-224", "Vocabulary", 3, "What tends to happen to compounds like «data set» over time?", "They tend to solidify (dataset)", ["They split into separate words", "They become verbs", "They take a hyphen permanently"],
+  "Es. coal mine → coalmine, bottle cap → bottlecap.", *CMPD, "compounds tend to solidify as they age")
+E("eng-225", "Vocabulary", 3, "Which pattern is typical for compounds naming people, like «fire-fighter»?", "noun + verb + -er", ["verb + noun", "adjective + noun", "preposition + noun"],
+  "Il nome è l'oggetto del verbo: chi combatte il fuoco.", *CMPD, "noun + verb + -er, where the noun is the object of the verb")
+E("eng-226", "Vocabulary", 4, "About what share of the words in the Old English poem Beowulf are compounds?", "Close to two-thirds", ["About 5%", "About 20%", "All of them"],
+  "La composizione è il processo di formazione delle parole più produttivo dell'inglese.", *CMPD, "Close to two-thirds of the words in the Old English poem Beowulf are found to be compounds")
+
+FPF = ("Future perfect", "Future-perfect")
+E("eng-227", "Verb tenses", 3, "What is the negative of «He will have done it by this evening»?", "He won't have done it by this evening.", ["He will have not did it.", "He don't have done it.", "He won't has done it."],
+  "Negativo: will not / won't + have + participio passato.", *FPF, "He won't have done (or will not have done) it by this evening")
+E("eng-228", "Verb tenses", 4, "«He will have woken up by now» expresses:", "a confident assumption about the present", ["a future plan", "a past habit", "an order"],
+  "Il future perfect con will può indicare una supposizione sul presente.", *FPF, "He will have woken up by now")
+E("eng-229", "Verb tenses", 4, "What was the old name of the future perfect in traditional grammars?", "Second future tense", ["Past future", "Perfect conditional", "Future continuous"],
+  "Il termine è oggi obsoleto.", *FPF, "the \"second future tense.\"")
+E("eng-230", "Verb tenses", 4, "Complete: «In 1982, I knew that by 1986 I ___ to prison.»", "would have already gone", ["will have already gone", "had already went", "would already go"],
+  "«would have + participio» esprime il futuro anteriore visto dal passato.", *FPF, "In 1982, I knew that by 1986 I would have already gone to prison")
+E("eng-231", "Verb tenses", 3, "Complete: «I'll have ___ the dinner by 6 PM.»", "made", ["make", "making", "makes"],
+  "Future perfect: will have + past participle.", *FPF, "I'll have made the dinner by 6 PM")
+
+VRB = ("Verb", "Verb")
+E("eng-232", "Verb forms", 1, "Complete: «He ___ to work every day.»", "walks", ["walk", "walking", "walkes"],
+  "Al presente la terza persona singolare prende -s (o -es: fishes).", *VRB, "marked by adding \"-s\" ( walks) or \"-es\" (fishes)")
+E("eng-233", "Verb forms", 3, "In «The boy wept», the verb «wept» is:", "intransitive (no direct object)", ["transitive", "ditransitive", "a modal"],
+  "Un verbo intransitivo non ha complemento oggetto.", *VRB, "\"The boy wept.\"")
+E("eng-234", "Verb forms", 3, "How can you check that a verb is transitive?", "Turn the sentence into the passive", ["Add -ing", "Put it in the future", "Remove the subject"],
+  "«My friend read the newspaper» → «The newspaper was read by my friend».", *VRB, "A way to identify a transitive verb is to invert the sentence, making it passive")
+
+IRR = ("List of English irregular verbs", "List-of-English-irregular-verbs")
+E("eng-235", "Verb forms", 3, "Which form of «learn» is more typical of American English?", "learned", ["learnt", "lorn", "learen"],
+  "L'inglese americano preferisce le forme regolari (learned, spelled), quello britannico spesso quelle irregolari (learnt, spelt).", *IRR, "learn (learnt vs. learned)")
+E("eng-236", "Verb forms", 3, "Are newly created English verbs regular or irregular?", "Always regular: irregular verbs are a closed group", ["Always irregular", "They follow the pattern of «sing, sang, sung»", "It depends on the length of the verb"],
+  "Es. «to google» → googled.", *IRR, "newly formed verbs are always regular")
+E("eng-237", "Verb forms", 4, "Which verbs are irregular in the present tense (besides modals)?", "be, do, have and say", ["go, come, take and make", "can, may, will and shall", "eat, drink, sleep and run"],
+  "Es. he is, he does, he has, he says (pronunciato in modo irregolare).", *IRR, "there are only four of them")
+E("eng-238", "Verb forms", 2, "What is the contracted negative of «he does not»?", "he doesn't", ["he don't", "he doesnt'", "he not does"],
+  "Le contrazioni di do si usano solo al negativo.", *IRR, "he does not = he doesn't")
+E("eng-239", "Verb forms", 4, "Is the -ing form (present participle/gerund) of English verbs ever irregular?", "No, it is always regular", ["Yes, for all strong verbs", "Only for modal verbs", "Only in British English"],
+  "Anche i verbi irregolari formano -ing in modo regolare (go → going).", *IRR, "ending in -ing, are always regular")
+
+PLU2 = ("English plurals", "English-plurals")
+E("eng-240", "Plurals", 2, "What is the plural of «deer»?", "deer", ["deers", "deeren", "dear"],
+  "Alcuni nomi di animali hanno plurale uguale al singolare: deer, sheep, salmon, trout.", *PLU2, "deer (and all species in the deer family")
+E("eng-241", "Plurals", 3, "What is the plural of «aircraft»?", "aircraft", ["aircrafts", "aircraves", "airscraft"],
+  "Anche spacecraft, hovercraft: plurale invariato.", *PLU2, "craft (meaning 'vessel'), including aircraft")
+E("eng-242", "Plurals", 3, "What is the plural of «series»?", "series", ["serieses", "serie", "seriess"],
+  "Anche «species» resta uguale.", *PLU2, "series, species")
+E("eng-243", "Plurals", 4, "As a fraction of a pound, what is the plural of «penny»?", "pence", ["pennies", "pennys", "pens"],
+  "«pennies» indica invece le monete.", *PLU2, "penny—pence")
+E("eng-244", "Plurals", 3, "What is the plural of «datum»?", "data", ["datums", "datae", "datas"],
+  "I neutri latini in -um fanno il plurale in -a (stadium, stadia).", *PLU2, "datum, data")
+E("eng-245", "Plurals", 4, "For a scholar, what is the plural of «appendix»?", "appendices", ["appendixs", "appendixi", "appendixen"],
+  "Alcuni medici usano «appendixes»: le forme latine e inglesi coesistono.", *PLU2, "the plural of appendix is appendices")
+E("eng-246", "Plurals", 3, "What is the plural of «postman»?", "postmen", ["postmans", "postmens", "postmannes"],
+  "I composti con man/woman fanno il plurale come man → men.", *PLU2, "postmen, policewomen")
+E("eng-247", "Plurals", 4, "An entomologist talks about insects'…", "antennae", ["antennas", "antennaes", "antennum"],
+  "Un tecnico radio parla invece di «antennas».", *PLU2, "an entomologist deals with antennae")
+
+NUM = ("English numerals", "English-numerals")
+E("eng-248", "Numbers", 3, "On a cheque, how is 100 always written?", "one hundred", ["a hundred", "hundred", "an hundred"],
+  "Mai «a hundred» sugli assegni.", *NUM, "the number 100 is always written \"one hundred\"")
+E("eng-249", "Numbers", 3, "In English, which symbol is the decimal separator?", "The point (.)", ["The comma (,)", "The apostrophe (')", "The colon (:)"],
+  "La virgola separa invece le migliaia (1,000).", *NUM, "In English the point (.) is used as the decimal separator")
+E("eng-250", "Numbers", 3, "How is zero usually called in British football scores («The score is two–___»)?", "nil", ["love", "oh", "aught"],
+  "Nel tennis si dice «love»; nei numeri di telefono «oh».", *NUM, "nil: in general sport scores, British usage")
+E("eng-251", "Numbers", 2, "How is zero called in tennis?", "love", ["nil", "nothing", "naught"],
+  "L'origine del termine è discussa.", *NUM, "love: in tennis, badminton, squash")
+E("eng-252", "Numbers", 4, "What is a googol?", "Ten to the one hundredth power (10¹⁰⁰)", ["A million million", "A thousand million", "The largest prime number"],
+  "Un googolplex è 1 seguito da un googol di zeri.", *NUM, "If a googol is ten to the one hundredth power")
+
+HOM = ("Homophone", "Homophone")
+E("eng-253", "Vocabulary", 3, "Homophones spelled differently, like «to», «too» and «two», are also called:", "heterographs", ["synonyms", "antonyms", "acronyms"],
+  "Gli omofoni scritti allo stesso modo sono anche omografi.", *HOM, "Homophones that are spelled differently are also called heterographs")
+E("eng-254", "Vocabulary", 3, "«rose» (flower) and «rose» (past of «rise») are:", "homophones spelled the same (also homographs)", ["synonyms", "antonyms", "false friends"],
+  "Hanno stesso suono e grafia ma significato diverso.", *HOM, "rose (flower) and rose (past tense of \"rise\")")
+E("eng-255", "Vocabulary", 3, "Which pair are homophones?", "flour – flower", ["flour – floor", "flower – flow", "floor – flower"],
+  "In origine erano varianti grafiche della stessa parola.", *HOM, "flour and flower")
+
+CTR = ("Contraction (grammar)", "Contraction-grammar")
+E("eng-256", "Contractions", 2, "Which contraction is fully standard even in formal writing?", "o'clock", ["gonna", "ain't", "wanna"],
+  "Le contrazioni sono comuni nel parlato e nella scrittura informale.", *CTR, "such as the now-standard form \"o'clock\"")
+E("eng-257", "Contractions", 3, "Rewrite naturally: «they will see that it is just what we are like»", "they'll see that it's just what we're like", ["they'l see that its just what were like", "the'll see that tis just what wer like", "they will'nt see"],
+  "Evitare del tutto le contrazioni può far suonare il testo innaturale.", *CTR, "they'll see that it's just what we're like")
+
+PHV = ("English phrasal verbs", "English-phrasal-verbs")
+E("eng-258", "Phrasal verbs", 2, "What does «She takes after her mother» mean?", "She resembles her mother", ["She follows her mother", "She takes care of her mother", "She leaves after her mother"],
+  "«take after» = assomigliare (a un genitore).", *PHV, "She takes after her mother")
+E("eng-259", "Phrasal verbs", 2, "What does «I ran into an old friend» mean?", "I met an old friend by chance", ["I hit an old friend with my car", "I ran away from an old friend", "I raced against an old friend"],
+  "«run into» = incontrare per caso.", *PHV, "I ran into an old friend")
+E("eng-260", "Phrasal verbs", 3, "What does «Susan had to sit in for me» mean?", "Susan had to replace me", ["Susan had to sit next to me", "Susan had to wait for me", "Susan had to come in with me"],
+  "«sit in for» = sostituire qualcuno.", *PHV, "Susan had to sit in for me")
+E("eng-261", "Phrasal verbs", 4, "Which sentence is correct?", "He thought the situation over.", ["He got the situation over.", "You can bank Susan on.", "He looked the problem forward to."],
+  "Una particella può seguire l'oggetto (think over); una preposizione no (get over).", *PHV, "He thought the situation over")
+E("eng-262", "Phrasal verbs", 3, "What does «You should stand by your friend» mean?", "You should support your friend", ["You should stand next to your friend", "You should wait for your friend", "You should leave your friend"],
+  "«stand by» = sostenere, restare al fianco.", *PHV, "You should stand by your friend")
+
+FF2 = ("False friend", "False-friend")
+E("eng-263", "Vocabulary", 2, "What does the English word «actual» usually mean?", "Real", ["Current (attuale)", "Active", "Recent"],
+  "È un falso amico: «attuale» si dice «current».", *FF2, "Actual, which in English is usually a synonym of real")
+E("eng-264", "Vocabulary", 3, "In English, «confetti» means:", "Small pieces of coloured paper thrown at celebrations (coriandoli)", ["Sugared almonds", "Sweets in general", "Wedding favours"],
+  "In italiano i confetti sono mandorle zuccherate; in inglese «confetti» sono i coriandoli.", *FF2, "in Italian, the corresponding word is coriandoli")
+
+ADV = ("English adverbs", "English-adverbs")
+E("eng-265", "Adverbs", 2, "Which is correct?", "the happy child", ["the happily child", "the child happy is", "the happyly child"],
+  "Gli avverbi non modificano i nomi in posizione attributiva.", *ADV, "So you have the happy child, but not *the happily child")
+E("eng-266", "Adverbs", 3, "Is «friendly» an adverb?", "No, it is an adjective ending in -ly", ["Yes, all words in -ly are adverbs", "It is a noun", "It is a preposition"],
+  "Per l'avverbio si usa «in a friendly way».", *ADV, "some adjectives end in -ly (e.g., friendly)")
+E("eng-267", "Adverbs", 3, "Which are the two interrogative adverbs?", "how and why", ["who and whom", "which and what", "this and that"],
+  "Who/which/what sono pronomi o determinanti interrogativi.", *ADV, "There are two interrogative adverbs: how and why")
+E("eng-268", "Adverbs", 3, "Which is correct?", "very happy", ["very enjoyed", "very liked it", "very love"],
+  "«very» modifica aggettivi e avverbi, non verbi (si dice «enjoyed it very much»).", *ADV, "very happy & very happily, but not *very enjoyed")
+E("eng-269", "Adverbs", 4, "Which adverbs can modify a whole noun phrase, as in «___ my neighbour»?", "even, only, alone", ["very, quite, rather", "how, why", "not, never"],
+  "Es. «Even my neighbour knew».", *ADV, "These include even, only, and alone")
+
+PRN = ("Personal pronouns in English", "Personal-pronouns-in-English")
+E("eng-270", "Pronouns", 2, "Complete: «Is this car ___ or mine?» (= tua)", "yours", ["your", "you", "yourself"],
+  "I pronomi possessivi (mine, yours…) non precedono il nome.", *PRN, "this book is mine")
+E("eng-271", "Pronouns", 3, "What is the objective form of «who», now mainly formal?", "whom", ["whose", "which", "whoever"],
+  "«whose» è il possessivo.", *PRN, "which has the objective form whom")
+E("eng-272", "Pronouns", 4, "What is the reflexive of the indefinite pronoun «one»?", "oneself", ["oneselves", "ones", "one's self only"],
+  "Il possessivo si scrive «one's».", *PRN, "which has the reflexive oneself")
+E("eng-273", "Pronouns", 4, "Which archaic pronoun corresponds to singular «you» (subject)?", "thou", ["ye", "thee", "thine"],
+  "thou (soggetto), thee (oggetto), thy/thine (possessivi), thyself (riflessivo).", *PRN, "thou, thee, thy, thine, thyself")
+E("eng-274", "Pronouns", 2, "Complete: «I prefer ___.» (= il mio)", "mine", ["my", "me", "myself"],
+  "I pronomi possessivi sostituiscono il nome già citato.", *PRN, "as in I prefer mine")
+
+CMP2 = ("Degrees of comparison of adjectives and adverbs", "Degrees-of-comparison-of-adjectives-and-adverbs")
+E("eng-275", "Comparatives", 3, "With two competitors, traditional grammar requires:", "May the better man win", ["May the best man win", "May the most good man win", "May the gooder man win"],
+  "Con due elementi si usa il comparativo; nell'uso informale si sente anche «best».", *CMP2, "\"May the better man win\" would be considered correct if there are two individuals competing")
+E("eng-276", "Comparatives", 2, "Complete: «Ram is ___ good ___ Shyam.» (uguaglianza)", "as … as", ["more … than", "so … that", "the … the"],
+  "Comparativo di uguaglianza: as + aggettivo + as.", *CMP2, "\"Ram is as good as Shyam\"")
+E("eng-277", "Comparatives", 3, "Which one-syllable adjective does NOT take -er/-est?", "fun", ["big", "tall", "fast"],
+  "Eccezioni: fun, real, right, wrong (more fun, most real…).", *CMP2, "except for a few words such as fun, real, right, wrong")
+E("eng-278", "Comparatives", 3, "How do adjectives of three or more syllables form the comparative?", "With «more» (e.g. more expensive)", ["With -er", "With -est", "With «much»"],
+  "I monosillabi prendono -er/-est; i bisillabi variano.", *CMP2, "words of three or more syllables require \"more\" or \"most\"")
+E("eng-279", "Comparatives", 4, "Why do some grammarians object to «more unique»?", "«unique» is an absolute adjective that denotes a totality", ["«unique» is a noun", "«unique» is always plural", "«unique» takes -er"],
+  "Anche full, complete, empty sono considerati assoluti.", *CMP2, "full, complete, unique, or empty")
+
+ADJ = ("Adjective", "Adjective")
+E("eng-280", "Adjectives", 3, "In «The meek shall inherit the Earth», «the meek» means:", "those who are meek (a group of people)", ["a single meek person", "the meekness", "a place"],
+  "Aggettivi sostantivati: the rich, the poor, the famous.", *ADJ, "where \"the meek\" means \"those who are meek\"")
+E("eng-281", "Adjectives", 3, "In «he drove fast», «fast» is:", "an adverb", ["an adjective", "a noun", "a verb"],
+  "In «a fast car» è invece un aggettivo.", *ADJ, "but an adverb in \"he drove fast\"")
+E("eng-282", "Adjectives", 3, "How do you say «avere fame» in English?", "to be hungry", ["to have hunger", "to make hungry", "to do hungry"],
+  "L'inglese usa be + aggettivo (hungry), l'italiano avere + nome.", *ADJ, "where English uses \"to be hungry\"")
+E("eng-283", "Adjectives", 4, "Where does an adjective phrase with a complement usually go?", "After the noun (e.g. «a box full of toys»)", ["Always before the noun", "At the end of the sentence", "Before the article"],
+  "Es. «an evildoer devoid of redeeming qualities».", *ADJ, "attributive adjective phrases that include complements typically follow the noun")
+
+IS2 = ("Indirect speech", "Indirect-speech")
+E("eng-284", "Reported speech", 3, "Direct: «I have painted the ceiling blue». Reported:", "He said that he had painted the ceiling blue.", ["He said that he has painted the ceiling blue yesterday.", "He said that I painted the ceiling.", "He said he paints the ceiling."],
+  "Present perfect → past perfect se il verbo introduttivo è al passato.", *IS2, "He said that he had painted the ceiling blue")
+E("eng-285", "Reported speech", 3, "Direct: «Please leave the room». Reported:", "I asked them to leave the room.", ["I asked them that they leave the room please.", "I asked them leaving the room.", "I said them leave the room."],
+  "Le richieste si riportano con verbo + oggetto + to-infinitive.", *IS2, "I asked them to leave the room")
+E("eng-286", "Reported speech", 4, "Is backshifting obligatory if the situation is still true («Ed is a bore»)?", "No: «She said that Ed was/is a bore» are both possible", ["Yes, always", "Only in American English", "Only with «tell»"],
+  "Il cambio di tempo è facoltativo se il fatto resta valido.", *IS2, "She said that Ed was/is a bore")
+E("eng-287", "Reported speech", 3, "Direct: «How do people manage to live in this city?» Reported:", "I asked him how people managed to live in that city.", ["I asked him how do people manage to live in this city.", "I asked him how people did manage to live in this city?", "I asked how people manage live in that city."],
+  "Nelle domande indirette non c'è inversione e il dimostrativo cambia (this → that).", *IS2, "I asked him how people managed to live in that city")
+E("eng-288", "Reported speech", 4, "What is the change of tense in reported speech called?", "Backshifting", ["Inversion", "Do-support", "Ellipsis"],
+  "Avviene perché il verbo principale (said, asked) è al passato.", *IS2, "also called backshifting")
+
+PLP2 = ("Pluperfect", "Pluperfect")
+E("eng-289", "Verb tenses", 2, "What is the pluperfect usually called in English grammar?", "Past perfect", ["Present perfect", "Simple past", "Future perfect"],
+  "Combina tempo passato e aspetto perfettivo (had written).", *PLP2, "is now usually called the past perfect")
+E("eng-290", "Verb tenses", 3, "Complete: «We ___ before the game began.»", "had arrived", ["have arrived", "arrive", "were arrive"],
+  "Past perfect: azione anteriore a un'altra azione passata.", *PLP2, "\"we had arrived\" before the game began")
+E("eng-291", "Verb tenses", 4, "From which Latin expression does «pluperfect» come?", "plus quam perfectum («more than perfect»)", ["post perfectum", "per fectum", "ante perfectum"],
+  "«perfect» significa qui «completato».", *PLP2, "The word is derived from the Latin plus quam perfectum")
+E("eng-292", "Verb tenses", 4, "Complete: «It ___ for a week when the big storm started.»", "had already been raining", ["has already rained", "was already raining since", "already rains"],
+  "Past perfect continuous: azione iniziata prima di un momento passato.", *PLP2, "It had already been raining for a week when the big storm started")
+
+QW2 = ("Interrogative word", "Interrogative-word")
+E("eng-293", "Questions and negatives", 3, "In «Which road leads to the city center?», «which» is:", "an interrogative determiner", ["an interrogative pronoun", "an interrogative adverb", "a relative pronoun"],
+  "In «Which leads to the city center?» è invece un pronome.", *QW2, "the word which is an interrogative determiner for the noun road")
+E("eng-294", "Questions and negatives", 2, "Complete: «___ gorgeous pink painting is that?» (= di chi)", "Whose", ["Who's", "Whom", "Which"],
+  "«whose» chiede il possessore.", *QW2, "Whose gorgeous, pink painting is that?")
+E("eng-295", "Questions and negatives", 3, "In «The country where he was born», «where» is used as:", "a relative word", ["an interrogative adverb", "a preposition", "a noun"],
+  "Le stesse forme delle parole interrogative si usano anche nelle relative.", *QW2, "The country where he was born")
+
+IMP2 = ("Imperative mood", "Imperative-mood")
+E("eng-296", "Imperative", 2, "Which is a more polite way to say «Come here!»?", "Could you come here for a moment?", ["Come here now!", "You come here!", "Here come!"],
+  "Nel registro cortese gli ordini si formulano come domande.", *IMP2, "Could you come here for a moment?")
+E("eng-297", "Imperative", 2, "How do negative imperatives usually begin?", "With «don't» (e.g. «Don't be like that»)", ["With «no»", "With «not»", "With «never to»"],
+  "Es. «Don't go too near the tiger».", *IMP2, "They usually begin with the verb \"don't\"")
+E("eng-298", "Imperative", 3, "«Have a nice trip!» is an imperative used to express:", "a wish", ["an order", "a prohibition", "a question"],
+  "Gli imperativi servono anche per inviti, permessi, auguri e scuse.", *IMP2, "Have a nice trip! (wish)")
+E("eng-299", "Imperative", 3, "«Eat the apple if you want» expresses:", "permission", ["an obligation", "a threat", "a past habit"],
+  "«Come to the party tomorrow!» esprime invece un invito.", *IMP2, "Eat the apple if you want. (permission)")
+E("eng-300", "Pronouns", 3, "Complete: «For someone like ___, this is easy.» (uso non riflessivo, sconsigliato dalle guide di stile)", "myself", ["I", "mine", "my"],
+  "La forma riflessiva usata al posto di «me» è comune ma alcune guide la sconsigliano.", *PRN, "For someone like myself")
