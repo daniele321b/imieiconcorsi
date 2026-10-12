@@ -1055,3 +1055,315 @@ D("ita-201", "Punteggiatura", 4, "Chi propose nel 1962 il «punto esclarrogativo
   "Il pubblicitario americano Martin K. Speckter", ["Francesco Flora", "Hervé Bazin", "Pietro Bembo"],
   "Voce «Punteggiatura».",
   W("Punteggiatura"), PUN, "il pubblicitario americano Martin K. Speckter propose il punto esclarrogativo")
+
+# --- Ampliamento a 300: letteratura, grammatica, articolo, verbo, dittonghi, punteggiatura ---
+def GR(id, arg, liv, testo, giusta, sbagliate, spieg, frase):
+    D(id, arg, liv, testo, giusta, sbagliate, spieg, W("Grammatica italiana"), GRA, frase)
+
+L("ita-202", "Letteratura", 3, "Quale antico documento in volgare paragona la scrittura al lavoro del seminatore?",
+  "L'Indovinello veronese", ["Il Placito capuano", "Il Cantico delle creature", "Il Ritmo laurenziano"],
+  "Fu scoperto nel 1924 in un codice della Biblioteca Capitolare di Verona (fine VIII-inizio IX secolo).", "l'Indovinello veronese, composto da quattro brevi versi")
+L("ita-203", "Letteratura", 3, "A quale anno risale il Placito capuano, con la formula «Sao ko kelle terre…»?",
+  "Al 960", ["Al 1224", "Al 1100", "Al 800"],
+  "Riporta la testimonianza in una lite di confini tra il monastero di Montecassino e Rodelgrimo d'Aquino.", "In un placito capuano del 960")
+L("ita-204", "Letteratura", 3, "Quale lauda di Jacopone da Todi segna il vertice della poesia religiosa del Duecento?",
+  "Lo Stabat Mater", ["Il Cantico delle creature", "Il Dies irae", "Il Te Deum"],
+  "È una lauda dialogata in volgare umbro con latinismi.", "con Jacopone da Todi e con lo Stabat Mater")
+L("ita-205", "Letteratura", 4, "Chi diffuse in Toscana la lirica della Scuola siciliana?",
+  "Guittone d'Arezzo", ["Brunetto Latini", "Cecco Angiolieri", "Guido Cavalcanti"],
+  "Guittone ne trasse spunti linguistici e poetici.", "principalmente a opera di Guittone d'Arezzo")
+L("ita-206", "Letteratura", 3, "Chi è considerato l'iniziatore del «dolce stil novo»?",
+  "Il bolognese Guido Guinizelli", ["Dante Alighieri", "Cino da Pistoia", "Francesco Petrarca"],
+  "Tra gli altri stilnovisti: Guido Cavalcanti, Dante, Cino da Pistoia, Lapo Gianni.", "L'iniziatore di questa scuola fu il bolognese Guido Guinizelli")
+L("ita-207", "Letteratura", 3, "Quali sono i due poeti più significativi della poesia comico-realistica?",
+  "Cecco Angiolieri e Folgore da San Gimignano", ["Guinizelli e Cavalcanti", "Petrarca e Boccaccio", "Jacopone e Bonaventura"],
+  "La corrente esalta denaro, gioco e taverna, in opposizione alla lirica cortese.", "furono Cecco Angiolieri, Folgóre da San Gimignano")
+L("ita-208", "Letteratura", 3, "A chi Marco Polo dettò il Milione, e in quale lingua?",
+  "A Rustichello da Pisa, in francese", ["A Brunetto Latini, in latino", "A Dante, in volgare toscano", "A Boccaccio, in veneziano"],
+  "Il francese era allora diffuso come lingua letteraria.", "al Milione che Marco Polo dettò a Rustichello da Pisa in francese")
+L("ita-209", "Letteratura", 2, "In che data Petrarca incontrò Laura, secondo la tradizione?",
+  "Il 6 aprile 1327", ["Il 25 dicembre 1300", "Il 14 settembre 1321", "Il 1° gennaio 1348"],
+  "Da questo amore nacquero molte liriche del Canzoniere.", "Il 6 aprile del 1327 incontrò una giovane donna di nome Laura")
+L("ita-210", "Letteratura", 3, "Chi è considerato il «padre spirituale» dell'Umanesimo?",
+  "Francesco Petrarca", ["Dante Alighieri", "Lorenzo Valla", "Angelo Poliziano"],
+  "Petrarca desiderava conoscere gli antichi e recuperarne le opere dimenticate.", "può infatti essere considerato il \"padre spirituale\" dell'Umanesimo")
+L("ita-211", "Letteratura", 3, "In quale anno la peste uccise Laura e il cardinale Colonna, protettore di Petrarca?",
+  "Nel 1348", ["Nel 1327", "Nel 1374", "Nel 1300"],
+  "È la grande peste nera descritta anche da Boccaccio.", "Era infatti scoppiata nel 1348 la peste")
+L("ita-212", "Letteratura", 3, "Dove nacque Giovanni Boccaccio, secondo i critici?",
+  "A Certaldo", ["A Firenze", "A Napoli", "Ad Arezzo"],
+  "A dodici anni fu mandato a Napoli per imparare la mercatura.", "Giovanni nacque, come concordano i critici contemporanei, a Certaldo")
+L("ita-213", "Letteratura", 4, "Quale opera di Boccaccio, in 473 ottave, racconta una favola sulle origini di Fiesole e Firenze?",
+  "Il Ninfale fiesolano", ["Il Corbaccio", "La Caccia di Diana", "Il Filocolo"],
+  "È l'ultima opera composta prima del Decameron.", "in 473 ottave dal titolo il Ninfale fiesolano")
+L("ita-214", "Letteratura", 3, "Quale scrittore del Seicento scrisse l'Istoria del concilio tridentino, messa all'Indice?",
+  "Il frate veneziano Paolo Sarpi", ["Daniello Bartoli", "Galileo Galilei", "Tommaso Campanella"],
+  "Fu edita a Londra nel 1619.", "l'Istoria del concilio tridentino del frate veneziano Paolo Sarpi")
+L("ita-215", "Letteratura", 2, "Quale filosofo fu arso vivo per le sue idee, mentre Galileo fu costretto ad abiurare?",
+  "Giordano Bruno", ["Tommaso Campanella", "Paolo Sarpi", "Pico della Mirandola"],
+  "Le loro idee furono considerate eretiche dalla Chiesa controriformista.", "Bruno verrà arso vivo")
+L("ita-216", "Letteratura", 3, "Chi scrisse il saggio «Dei delitti e delle pene», contro la pena di morte?",
+  "Cesare Beccaria", ["Pietro Verri", "Giambattista Vico", "Gaetano Filangieri"],
+  "Fu tra i protagonisti dell'Illuminismo milanese.", "Cesare Beccaria, autore del famoso saggio Dei delitti e delle pene")
+L("ita-217", "Letteratura", 3, "Chi fondò l'Accademia dell'Arcadia a Roma nel 1690?",
+  "Giovanni Vincenzo Gravina e Giovanni Mario Crescimbeni", ["Pietro Metastasio e Carlo Goldoni", "Pietro e Alessandro Verri", "Giuseppe Parini e Vittorio Alfieri"],
+  "L'Arcadia promosse l'anti-barocchismo e la restaurazione classicistica.", "da Giovanni Vincenzo Gravina e da Giovanni Mario Crescimbeni")
+L("ita-218", "Letteratura", 3, "Quali sono le parti originarie del poemetto «Il Giorno» di Parini?",
+  "Mattino, Mezzogiorno e Sera", ["Alba, Meriggio e Tramonto", "Inverno, Primavera ed Estate", "Infanzia, Giovinezza e Vecchiaia"],
+  "Il poemetto, in endecasillabi sciolti, satireggia l'aristocrazia decaduta.", "Il poemetto era inizialmente diviso in tre parti: Mattino, Mezz")
+L("ita-219", "Letteratura", 3, "A quale romanzo europeo si ispirano le «Ultime lettere di Jacopo Ortis» di Foscolo?",
+  "I dolori del giovane Werther di Goethe", ["Il rosso e il nero di Stendhal", "Robinson Crusoe di Defoe", "I miserabili di Hugo"],
+  "Foscolo ne converte la vicenda nel gusto patriottico italiano.", "Ispirato a \"I dolori del giovane Werther\" di Goethe")
+L("ita-220", "Letteratura", 3, "Quante redazioni dei Promessi sposi scrisse Manzoni, e quale è detta «quarantana»?",
+  "Tre; la quarantana è quella del 1840", ["Due; la quarantana è del 1827", "Una sola, del 1840", "Quattro; la quarantana è del 1823"],
+  "La prima è del 1823 con titolo diverso, la «ventisettana» del 1827.", "e l'ultima nel 1840, la \"quarantana\"")
+L("ita-221", "Letteratura", 3, "Di quale illuminista Alessandro Manzoni era nipote?",
+  "Cesare Beccaria", ["Pietro Verri", "Giuseppe Parini", "Vittorio Alfieri"],
+  "Nelle opere giovanili di Manzoni è presente il pensiero illuminista.", "essendo nipote di Cesare Beccaria")
+L("ita-222", "Letteratura", 3, "Quale romanzo di Verga è il secondo del «ciclo dei Vinti»?",
+  "Mastro-don Gesualdo (1888)", ["I Malavoglia", "Storia di una capinera", "Vita dei campi"],
+  "Il primo è I Malavoglia (1881).", "Mastro-don Gesualdo (1888)")
+L("ita-223", "Letteratura", 3, "Qual è l'opera più famosa di Federico De Roberto?",
+  "I Viceré", ["Il marchese di Roccaverdina", "Piccolo mondo antico", "Canne al vento"],
+  "È ambientata nella Sicilia della seconda metà dell'Ottocento.", "La sua opera più famosa è I Viceré")
+L("ita-224", "Letteratura", 3, "Chi fu la prima donna italiana a fondare e dirigere un giornale (Il Mattino)?",
+  "Matilde Serao", ["Grazia Deledda", "Sibilla Aleramo", "Ada Negri"],
+  "È tra le autrici del verismo e del secondo Ottocento.", "Matilde Serao, la prima donna italiana a fondare e dirigere un giornale")
+L("ita-225", "Letteratura", 2, "Chi è l'autore di «Le avventure di Pinocchio» (1883)?",
+  "Carlo Collodi", ["Edmondo De Amicis", "Emilio Salgari", "Gianni Rodari"],
+  "Il libro ha venduto circa 80 milioni di copie.", "Lo scrittore e umorista toscano Carlo Collodi è il padre di Pinocchio")
+L("ita-226", "Letteratura", 2, "Chi è il più noto romanziere italiano di avventura, autore de «Le tigri di Mompracem»?",
+  "Emilio Salgari", ["Carlo Collodi", "Antonio Fogazzaro", "Italo Calvino"],
+  "Fu giudicato negativamente dai critici contemporanei e rivalutato in seguito.", "Emilio Salgari, vissuto a Verona e Torino, è il più noto romanziere italiano di avventura")
+L("ita-227", "Letteratura", 3, "Chi è l'autore di «Piccolo mondo antico»?",
+  "Antonio Fogazzaro", ["Federico De Roberto", "Luigi Capuana", "Giovanni Verga"],
+  "Opera del secondo Ottocento.", "Antonio Fogazzaro (Piccolo mondo antico)")
+L("ita-228", "Letteratura", 3, "Quale romanzo di Pirandello anticipa soluzioni metanarrative?",
+  "Il fu Mattia Pascal", ["La coscienza di Zeno", "Senilità", "Il piacere"],
+  "Pirandello è anche autore di «Uno, nessuno e centomila» e delle «Novelle per un anno».", "con Il fu Mattia Pascal")
+L("ita-229", "Letteratura", 3, "Come si chiama la corrente letteraria creata da Luigi Pirandello?",
+  "Umorismo", ["Verismo", "Ermetismo", "Futurismo"],
+  "Da qui l'aggettivo «pirandelliano» per situazioni strane o tragicomiche.", "definita come \"umorismo\"")
+L("ita-230", "Letteratura", 4, "Quali autori furono scoperti tardi, Svevo grazie a James Joyce e Tozzi decenni dopo la morte?",
+  "Italo Svevo e Federigo Tozzi", ["Pascoli e D'Annunzio", "Montale e Ungaretti", "Gozzano e Corazzini"],
+  "La critica del primo Novecento non comprese molti grandi autori.", "due casi emblematici sono quelli di Italo Svevo e di Federigo Tozzi")
+L("ita-231", "Letteratura", 3, "Chi fondò nel 1908 la rivista «La Voce»?",
+  "Giuseppe Prezzolini e Giovanni Papini", ["Filippo Tommaso Marinetti", "Benedetto Croce", "Pietro Verri"],
+  "Fu una delle più importanti riviste culturali italiane del Novecento.", "Nel 1908 fu fondata, da Giuseppe Prezzolini e Giovanni Papini, La Voce")
+L("ita-232", "Letteratura", 3, "Quale critico definì «crepuscolari» un gruppo di poeti del primo Novecento?",
+  "Giuseppe Antonio Borgese", ["Francesco Flora", "Benedetto Croce", "Natalino Sapegno"],
+  "Il nome richiama il gusto per la penombra e i toni smorzati.", "Crepuscolari fu l'aggettivo con cui il critico Giuseppe Antonio Borgese")
+L("ita-233", "Letteratura", 3, "Da quale dio greco deriva il termine «ermetismo»?",
+  "Hermes (Mercurio per i Romani)", ["Apollo", "Dioniso", "Zeus"],
+  "Indica una poesia dal linguaggio difficile e talvolta misterioso.", "il termine è derivato dal nome del dio greco Hèrmes")
+L("ita-234", "Letteratura", 4, "Dove si costituì nell'ottobre 1963 la neoavanguardia del «Gruppo 63»?",
+  "A Palermo", ["A Milano", "A Roma", "A Firenze"],
+  "Tra gli esponenti: Umberto Eco, Nanni Balestrini, Edoardo Sanguineti.", "Gruppo 63 costituitosi a Palermo nell'ottobre di quell'anno")
+L("ita-235", "Letteratura", 3, "Quale rivista fiorentina del periodo fascista ospitò autori come Montale e Gadda?",
+  "Solaria", ["Il Caffè", "La Voce", "Lacerba"],
+  "Le riviste fiorentine mantennero vivo il confronto letterario.", "come Solaria, alla quale collaboravano autori quali Eugenio Montale")
+L("ita-236", "Letteratura", 4, "Quale romanzo barocco il critico Giovanni Getto indicò come il manoscritto «trovato» da Manzoni?",
+  "Historia del cavalier perduto di Pace Pasini", ["Del cane di Diogene di Frugoni", "L'Adone di Marino", "La Secchia rapita di Tassoni"],
+  "Il romanzo è del 1634.", "Historia del cavalier perduto (1634) di Pace Pasini")
+
+GR("ita-237", "Morfologia", 2, "Qual è la differenza d'uso tra articolo indeterminativo e determinativo?",
+  "L'indeterminativo introduce un'informazione nuova, il determinativo una già data", ["Non c'è differenza", "Il determinativo si usa solo al plurale", "L'indeterminativo si usa solo con i nomi propri"],
+  "Es. «ho visto un cerbiatto» / «il cerbiatto è già sparito».", "Gli indeterminativi hanno inoltre la proprietà di introdurre un'informazione nuova")
+GR("ita-238", "Morfologia", 2, "Quale articolo si usa davanti a «zaino»?",
+  "lo", ["il", "l'", "la"],
+  "«lo» si usa davanti a z, gn, x, ps, s impura e i semiconsonante.", "il suo zaino lo zaino")
+GR("ita-239", "Morfologia", 3, "Quale articolo indeterminativo si usa davanti a «gnomo»?",
+  "uno", ["un", "un'", "una"],
+  "Come per l'articolo «lo», si usa «uno» davanti a gn, z, ps, x, s impura.", "uno (davanti prima tema invariabile comune ad una famiglia lessicale")
+GR("ita-240", "Morfologia", 3, "Esiste in italiano un articolo indeterminativo plurale?",
+  "No: si usa il partitivo (dei, degli, delle) o un indefinito", ["Sì: «uni» e «une»", "Sì: «gli un»", "Sì, ma solo nei testi antichi"],
+  "Es. «dei libri», «alcuni libri».", "Non esiste una forma plurale vera e propria")
+GR("ita-241", "Morfologia", 3, "In base a cosa si sceglie la forma dell'articolo?",
+  "In base al suono iniziale della parola immediatamente successiva", ["In base al sostantivo a cui si riferisce, anche se lontano", "In base al verbo", "Liberamente"],
+  "Es. «lo specchio» ma «il bello specchio».", "La scelta dell'articolo è effettuata in base al suono iniziale della parola immediatamente successiva")
+GR("ita-242", "Morfologia", 3, "Quale posizione hanno gli aggettivi di colore, forma o nazionalità rispetto al nome?",
+  "Seguono sempre il sostantivo", ["Lo precedono sempre", "Possono stare ovunque", "Si mettono dopo il verbo"],
+  "Es. «una penna rossa», «un vino francese».", "quelli che indicano colore, forma o nazionalità seguono sempre il sostantivo")
+GR("ita-243", "Morfologia", 3, "Che differenza c'è tra «una bella casa» e «una casa bella»?",
+  "Nel secondo caso l'aggettivo distingue quella casa dalle altre", ["Nessuna", "Il primo è scorretto", "Il secondo indica una casa piccola"],
+  "L'aggettivo posposto ha funzione distintiva.", "una bella casa (aggettivo caratterizzante), una casa bella")
+GR("ita-244", "Morfologia", 2, "Qual è il plurale di «la virtù»?",
+  "le virtù", ["le virtui", "le virtue", "i virtù"],
+  "I nomi che terminano con vocale accentata sono invariabili.", "la virtù / le virtù, il re / i re")
+GR("ita-245", "Morfologia", 3, "Come si chiamano i sostantivi privi della forma singolare o plurale, come «le nozze»?",
+  "Difettivi", ["Invariabili", "Sovrabbondanti", "Collettivi"],
+  "Gli invariabili hanno invece singolare e plurale identici.", "Sostantivi privi della forma singolare o della forma plurale vengono detti difettivi")
+GR("ita-246", "Morfologia", 2, "Qual è il plurale di «poeta»?",
+  "poeti", ["poete", "poetas", "poeta"],
+  "I maschili in -a fanno il plurale in -i.", "poeta, poeti")
+GR("ita-247", "Morfologia", 2, "Qual è il plurale di «la crisi»?",
+  "le crisi", ["le crise", "le crisis", "i crisi"],
+  "I nomi in -i non accentata sono invariabili.", "la crisi / le crisi")
+GR("ita-248", "Morfologia", 2, "Quale forma è corretta?",
+  "le penne rosa", ["le penne rose", "le penne rosee", "le penne rosi"],
+  "Alcuni aggettivi di colore (rosa, blu, viola) sono invariabili.", "la penna rosa - le penne rosa")
+GR("ita-249", "Morfologia", 3, "Quale frase è corretta?",
+  "Mio padre è medico", ["Il mio padre è medico", "Lo mio padre è medico", "Padre mio il è medico"],
+  "Davanti ai nomi di parentela singolari con il possessivo (tranne «loro») l'articolo si omette.", "L'articolo si omette davanti ai nomi di parentela preceduti da un aggettivo possessivo che non sia \"loro\"")
+GR("ita-250", "Morfologia", 3, "Quale forma è corretta?",
+  "il loro padre", ["loro padre il", "lo loro padre", "il padre di loro sua"],
+  "Con «loro» l'articolo si mantiene anche davanti ai nomi di parentela.", "ma: il loro padre, la loro madre")
+GR("ita-251", "Morfologia", 3, "Cosa indica il dimostrativo «codesto»?",
+  "Un oggetto vicino a chi ascolta", ["Un oggetto vicino a chi parla", "Un oggetto lontano da entrambi", "Un oggetto già nominato"],
+  "«questo» = vicino a chi parla, «quello» = lontano da chi parla.", "vicino a chi parla, lontano da chi parla e vicino a chi ascolta")
+GR("ita-252", "Morfologia", 3, "In «Mi piace questa musica», «mi» è un pronome:",
+  "atono (clitico)", ["tonico", "riflessivo", "relativo"],
+  "In «A me piace questa musica», «me» è tonico.", "Mi piace questa musica A me piace questa musica")
+GR("ita-253", "Morfologia", 4, "A chi si riferiscono «egli» ed «ella»?",
+  "Solo a persone", ["Solo ad animali", "A cose e animali", "A persone, animali e cose indistintamente"],
+  "Lui, lei e loro si riferiscono a persone o animali e talvolta a cose.", "Egli ed ella si riferiscono solo a persone")
+GR("ita-254", "Morfologia", 2, "In italiano il pronome personale soggetto è obbligatorio?",
+  "No, è facoltativo e spesso omesso", ["Sì, sempre", "Solo alla terza persona", "Solo nelle domande"],
+  "Si esprime per enfasi o per evitare ambiguità, a differenza di inglese e francese.", "il pronome personale soggetto in italiano è facoltativo e viene sovente omesso")
+GR("ita-255", "Morfologia", 3, "Quale ausiliare si usa per i tempi composti dei verbi transitivi in forma attiva?",
+  "Avere", ["Essere", "Venire", "Andare"],
+  "Essere si usa per la maggior parte degli intransitivi, per il passivo e per il riflessivo.", "Il verbo ausiliare è avere nelle frasi attive quando il verbo è transitivo")
+GR("ita-256", "Verbi", 3, "In una frase passiva, quale verbo può sostituire «essere» per esprimere un obbligo (es. «la domanda va presentata»)?",
+  "Andare", ["Venire", "Stare", "Avere"],
+  "«Venire» si usa invece per enfatizzare l'azione, solo nei tempi semplici.", "viene sostituito da andare quando la frase esprime un obbligo od una prescrizione")
+GR("ita-257", "Verbi", 3, "A quale coniugazione appartengono tradizionalmente «fare» e «dire»?",
+  "Alla seconda, perché derivano da facĕre e dicĕre", ["Alla prima e alla terza", "Alla terza", "Sono senza coniugazione"],
+  "Benché escano in -are e -ire.", "I verbi fare e dire, benché uscenti rispettivamente in -are e -ire, vengono spesso considerati facenti parte della 2a coniugazione")
+GR("ita-258", "Verbi", 3, "Come si chiamano i verbi come «capire» che inseriscono -isc- (capisco)?",
+  "Incoativi", ["Servili", "Fraseologici", "Difettivi"],
+  "In italiano l'interfisso -isc- non ha valore semantico.", "vengono detti, forse impropriamente, verbi incoativi")
+GR("ita-259", "Verbi", 4, "Quale tempo dell'indicativo si forma con passato remoto + participio passato?",
+  "Il trapassato remoto", ["Il trapassato prossimo", "Il passato prossimo", "Il futuro anteriore"],
+  "Il trapassato prossimo si forma con l'imperfetto dell'ausiliare.", "trapassato remoto (passato remoto+pp)")
+GR("ita-260", "Verbi", 3, "Quale tempo dell'indicativo può esprimere una supposizione sul presente (es. «Sarà stanco»)?",
+  "Il futuro semplice", ["Il passato remoto", "L'imperfetto", "Il trapassato prossimo"],
+  "Il futuro anteriore indica invece una supposizione su un fatto già compiuto.", "come forma che indica delle supposizioni, anche sul presente")
+GR("ita-261", "Verbi", 4, "«Credevo che la via ___ dritta»: quale forma esprime contemporaneità nel passato?",
+  "fosse", ["sia", "sarà", "sia stata"],
+  "Concordanza dei tempi: principale al passato → congiuntivo imperfetto.", "Credevo che la via fosse dritta")
+GR("ita-262", "Verbi", 4, "«Immaginavo che il bimbo ___ buono»: quale forma esprime posteriorità rispetto al passato?",
+  "sarebbe stato", ["fosse", "sarà", "sia"],
+  "Si usa il condizionale passato (futuro nel passato).", "Immaginavo che il bimbo sarebbe stato buono")
+GR("ita-263", "Verbi", 3, "Come si chiama l'insieme delle regole sul rapporto tra i tempi della principale e della subordinata?",
+  "Consecutio temporum (concordanza dei tempi)", ["Periodo ipotetico", "Analisi logica", "Diatesi"],
+  "È un'eredità della grammatica latina.", "la consecùtio tèmporum")
+GR("ita-264", "Verbi", 3, "Quale forma usa l'imperativo per la terza persona (es. «Signora, mi guardi!»)?",
+  "Il congiuntivo esortativo", ["L'indicativo presente", "L'infinito", "Il condizionale"],
+  "In questo caso il pronome atono è anteposto.", "viene usata la corrispondente voce del congiuntivo (congiuntivo esortativo)")
+GR("ita-265", "Morfologia", 2, "Quali parti del discorso esprimono l'espressione affettiva del parlante (ah, oh, ahi)?",
+  "Le interiezioni", ["Le congiunzioni", "Le preposizioni", "Gli avverbi di luogo"],
+  "Sono invariabili e non hanno un ruolo particolare nel costrutto della frase.", "Le interiezioni, che denotano l'espressione affettiva del parlante")
+GR("ita-266", "Morfologia", 2, "Che tipo di avverbio è «volentieri»?",
+  "Di modo", ["Di tempo", "Di luogo", "Di quantità"],
+  "Di modo: bene, male, volentieri; di tempo: ieri, adesso.", "di modo (bene, male, volentieri)")
+
+D("ita-267", "Morfologia", 3, "Da quale parola latina deriva «articolo»?",
+  "Articulus, da artus, «membro, arto»", ["Ars, «arte»", "Articulare, «parlare»", "Arcus, «arco»"],
+  "In greco antico è árthron.", W("Articolo (linguistica)"), ART, "dal latino articulus, da artus")
+D("ita-268", "Morfologia", 3, "In quale lingua l'articolo determinativo è un suffisso enclitico, come in «omul» (l'uomo)?",
+  "Il rumeno", ["L'italiano", "Lo spagnolo", "Il francese"],
+  "Anche nelle lingue scandinave il determinativo è un suffisso.", W("Articolo (linguistica)"), ART, "omul, in rumeno \"l'uomo\"")
+D("ita-269", "Morfologia", 3, "Quale di queste lingue NON usa articoli?",
+  "Il latino", ["Il greco", "Lo spagnolo", "Il tedesco"],
+  "L'articolo è assente anche in giapponese e cinese.", W("Articolo (linguistica)"), ART, "L'articolo è assente nel latino, nel giapponese e nel cinese")
+D("ita-270", "Morfologia", 2, "Quale nome di città ha l'articolo come parte integrante?",
+  "L'Aquila", ["Roma", "Milano", "Firenze"],
+  "Così anche La Spezia, Il Cairo, La Mecca, L'Aia.", W("Articolo (linguistica)"), ART, "La Spezia, L'Aquila, Il Cairo")
+D("ita-271", "Morfologia", 3, "Da quale parola latina derivano per lo più gli articoli romanzi?",
+  "Dal dimostrativo ille, illa", ["Da unus", "Da hic, haec", "Da is, ea"],
+  "In sardo derivano invece da ipsum, ipsam.", W("Articolo (linguistica)"), ART, "Derivano per lo più dal dimostrativo latino ille, illa")
+D("ita-272", "Morfologia", 3, "Nelle frasi proverbiali come «can che abbaia non morde» l'articolo:",
+  "si omette", ["è obbligatorio", "si raddoppia", "diventa partitivo"],
+  "Si omette anche nei titoli e nel linguaggio telegrafico.", W("Articolo (linguistica)"), ART, "nelle frasi proverbiali (buon vino fa buon sangue, can che abbaia non morde)")
+D("ita-273", "Morfologia", 4, "Con quali nomi propri si può usare l'articolo in registro familiare-affettivo?",
+  "Con i nomi propri femminili (es. «la Maria»), non con i maschili", ["Con tutti i nomi propri", "Solo con i maschili", "Mai"],
+  "L'uso è regionale e colloquiale.", W("Articolo (linguistica)"), ART, "Può inoltre essere usato davanti ai nomi propri femminili")
+D("ita-274", "Morfologia", 3, "In «abito da sera», «sala da pranzo», l'articolo:",
+  "è omesso", ["è obbligatorio", "è sempre determinativo", "si unisce alla preposizione"],
+  "Quando un sostantivo integra il significato di un altro, l'articolo non si usa.", W("Articolo (linguistica)"), ART, "carte da gioco, sala da pranzo, abito da sera")
+
+VRB = "Wikipedia_Verbo.txt"
+D("ita-275", "Verbi", 1, "Da quale parola latina deriva «verbo»?",
+  "Verbum, «parola»", ["Vertere, «girare»", "Vir, «uomo»", "Verus, «vero»"],
+  "Il verbo è una parte del discorso variabile.", W("Verbo"), VRB, "Il verbo (dal latino verbum, \"parola\")")
+D("ita-276", "Verbi", 3, "Cosa esprime la diatesi del verbo?",
+  "Il rapporto del verbo con il soggetto o l'oggetto (attiva, passiva, riflessiva)", ["Il tempo dell'azione", "La persona del soggetto", "Il modo verbale"],
+  "Può essere attiva, passiva, riflessiva o media.", W("Verbo"), VRB, "La diatesi esprime il rapporto del verbo con il soggetto o l'oggetto")
+D("ita-277", "Verbi", 4, "«Scrivo» e «Sto scrivendo» sono entrambe al presente. Cosa le distingue?",
+  "L'aspetto: durativo il primo, progressivo il secondo", ["Il modo", "La diatesi", "La persona"],
+  "L'aspetto riguarda durata, momentaneità e compiutezza dell'azione.", W("Verbo"), VRB, "ma la prima ha aspetto durativo, la seconda progressivo")
+D("ita-278", "Verbi", 4, "Quale filosofo definì il verbo come la forma che «aggiunge al suo significato il tempo»?",
+  "Aristotele", ["Platone", "Cicerone", "Dante"],
+  "Lo fa nel De Interpretatione.", W("Verbo"), VRB, "Già Aristotele aveva evidenziato, nel De Interpretatione")
+D("ita-279", "Verbi", 3, "Quale frase è corretta?",
+  "Io mi nutro", ["Io mi cibo (senza altro)", "Io mi nutrisco di", "Io mi cibo da solo"],
+  "«Cibarsi» richiede l'indicazione del cibo: «mi cibo di broccoli».", W("Verbo"), VRB, "La forma corretta è \"io mi nutro\"")
+D("ita-280", "Verbi", 4, "Come si chiamano gli elementi della frase che non possono essere eliminati senza renderla agrammaticale?",
+  "Elementi nucleari (argomenti)", ["Elementi circostanziali", "Apposizioni", "Interiezioni"],
+  "Gli elementi circostanziali (luogo, tempo, causa) si possono invece eliminare.", W("Verbo"), VRB, "sono detti elementi \"nucleari\"")
+D("ita-281", "Verbi", 4, "In «Domani vedremo chi ha avuto ragione», il passato prossimo si riferisce a:",
+  "un evento futuro", ["un evento remoto", "un'abitudine passata", "un ordine"],
+  "Il tempo grammaticale non coincide sempre con quello reale.", W("Verbo"), VRB, "Domani vedremo chi ha avuto ragione")
+
+D("ita-282", "Fonetica", 3, "In «pàusa», il nesso «au» è:",
+  "un dittongo discendente", ["uno iato", "un dittongo ascendente", "un trittongo"],
+  "Nei dittonghi discendenti l'accento è sul primo elemento.", W("Dittongo"), DIT, "/au/ come in pàusa")
+D("ita-283", "Fonetica", 3, "In «piàno», il nesso «ia» è:",
+  "un dittongo ascendente", ["un dittongo discendente", "uno iato", "una vocale lunga"],
+  "Tradizionalmente chiamato «falso dittongo».", W("Dittongo"), DIT, "/ja/ come in piàno")
+D("ita-284", "Fonetica", 3, "In «zìo» le due vocali formano:",
+  "uno iato", ["un dittongo", "un trittongo", "una sillaba sola"],
+  "Quando la i è tonica si ha iato.", W("Dittongo"), DIT, "/ˈio/ come in zìo")
+D("ita-285", "Fonetica", 4, "Quali sono i «dittonghi mobili» dell'italiano?",
+  "ie e uo", ["ai e au", "ia e io", "ei e eu"],
+  "Derivano dalle vocali brevi latine e ed o (es. uomo, piede).", W("Dittongo"), DIT, "In italiano ci sono due nessi /ie, uo/")
+D("ita-286", "Fonetica", 3, "In «cielo» e «scienza», la i dopo c e sc:",
+  "è un segno grafico che non va pronunciato", ["forma un dittongo", "forma uno iato", "indica l'accento"],
+  "È un residuo etimologico.", W("Dittongo"), DIT, "la i è seguita da una e ed è quindi un segno grafico che non va pronunciato")
+D("ita-287", "Fonetica", 4, "In metrica, quale segno indica che due vocali vanno pronunciate separate (dieresi)?",
+  "I due puntini sulla prima vocale (dieresi)", ["L'accento grave", "L'apostrofo", "Il trattino"],
+  "Altrimenti in poesia ogni coppia di vocali è considerata dittongo.", W("Dittongo"), DIT, "a meno che il poeta non ponga la dieresi sulla prima vocale grafica")
+
+D("ita-288", "Punteggiatura", 3, "In quale antica iscrizione compaiono i primi segni che indicano pause nel discorso?",
+  "Nella stele di Mesha dei Moabiti (IX sec. a.C.)", ["Nella stele di Rosetta", "Nelle Dodici Tavole", "Nel Codice di Hammurabi"],
+  "Greci e Romani usarono poi punti variamente disposti.", W("Punteggiatura"), PUN, "nella stele di Mesha dei Moabiti")
+D("ita-289", "Punteggiatura", 3, "Da quale parola latina deriverebbe il punto interrogativo?",
+  "Quaestio, «domanda»", ["Quare, «perché»", "Quis, «chi»", "Quid, «che cosa»"],
+  "La «q» si spostò sopra la «o», che divenne un punto.", W("Punteggiatura"), PUN, "\"q\" ed \"o\" di quaestio (\"domanda\")")
+D("ita-290", "Punteggiatura", 3, "Secondo l'Enciclopedia dell'italiano Treccani, punto e virgola e due punti sono:",
+  "pause intermedie", ["pause fortissime", "segni senza valore di pausa", "segni di intonazione"],
+  "Il punto è pausa forte e chiusa, la virgola debole e aperta.", W("Punteggiatura"), PUN, "Secondo l'Enciclopedia dell'italiano Treccani sono pause intermedie")
+D("ita-291", "Punteggiatura", 4, "Come si chiamano in francese le virgolette basse « »?",
+  "Guillemets", ["Caporali", "Apici", "Doppi accenti"],
+  "In francese richiedono uno spazio che le separi dal testo.", W("Punteggiatura"), PUN, "dette guillemets")
+D("ita-292", "Punteggiatura", 4, "Chi propose una serie di sei nuovi segni di punteggiatura, tra cui il «punto d'ironia»?",
+  "Hervé Bazin", ["Martin K. Speckter", "Francesco Flora", "Umberto Eco"],
+  "Lo fece nel libro «Plumons l'Oiseau».", W("Punteggiatura"), PUN, "è un libro del francese Hervé Bazin")
+D("ita-293", "Punteggiatura", 3, "Quale studioso affermò che i moderni tendono «con ragione a diradare i troppi segni di interpunzione»?",
+  "Francesco Flora", ["Benedetto Croce", "Alessandro Manzoni", "Gianfranco Contini"],
+  "Aggiunse che talvolta li aboliscono per raffinatezza o per ignoranza.", W("Punteggiatura"), PUN, "i moderni tendono con ragione a diradare i troppi segni di interpunzione")
+
+GR("ita-294", "Morfologia", 3, "Quale forma della preposizione articolata con «con» è ancora frequente anche nello scritto?",
+  "col e coi", ["colla e colle", "cogli", "collo"],
+  "Le altre forme con «con» sono tendenzialmente desuete.", "ad eccezione di col e coi che sono a tutt'oggi frequenti anche nello scritto")
+GR("ita-295", "Morfologia", 4, "Quali preposizioni articolate con «per», ancora usate in registro elevato o burocratico, sopravvivono?",
+  "pel e pei", ["pello e pella", "perlo e perla", "pegli e pelle"],
+  "Le altre forme non sono in uso dalla prima metà del Novecento.", "di esse sopravvivono soprattutto pel e pei")
+GR("ita-296", "Verbi", 3, "Nel passivo, quale verbo può sostituire «essere» nei tempi semplici per enfatizzare l'azione (es. «la lettera viene spedita»)?",
+  "Venire", ["Andare", "Stare", "Avere"],
+  "«Andare» esprime invece obbligo o prescrizione («va spedita»).", "può essere sostituito da venire (coniugato nei soli tempi semplici) per enfatizzare l'azione")
+GR("ita-297", "Verbi", 3, "Come si forma il condizionale passato?",
+  "Condizionale presente dell'ausiliare + participio passato (es. avrei parlato)", ["Condizionale presente + gerundio", "Imperfetto + participio", "Futuro + infinito"],
+  "Il condizionale presente è il tempo semplice.", "io avrei parlato, io sarei caduto")
+GR("ita-298", "Verbi", 3, "Qual è la desinenza del participio presente dei verbi in -are?",
+  "-ante (es. parlante)", ["-ente", "-ando", "-ato"],
+  "Per -ere e -ire: -ente (o -iente).", "presente -ante -ente -ente / -iente")
+GR("ita-299", "Verbi", 4, "Come si nega la seconda persona singolare dell'imperativo (es. «non parlare!»)?",
+  "Con «non» + infinito", ["Con «non» + imperativo", "Con «no» + congiuntivo", "Con «mai» + gerundio"],
+  "Es. «parla!» → «non parlare!».", "preceduto da non, come negazione della seconda persona singolare dell'imperativo presente")
+GR("ita-300", "Verbi", 3, "In «vedo gli uccelli volare», l'infinito sostituisce:",
+  "una proposizione relativa («che volano»)", ["una causale", "una temporale", "un complemento di luogo"],
+  "Il soggetto della subordinata passa all'accusativo: «lo vedo volare».", "\"vedo gli uccelli volare\" = \"vedo gli uccelli che volano\"")
+GR("ita-301", "Morfologia", 3, "Qual è il plurale di «l'auto»?",
+  "le auto", ["le auti", "gli auti", "le autos"],
+  "I sostantivi accorciati (auto da automobile) sono invariabili.", "l'auto, le auto")

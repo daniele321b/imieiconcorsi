@@ -3415,5 +3415,1705 @@
     "spiegazione": "Voce «Punteggiatura».",
     "fonte": "Wikipedia, «Punteggiatura» (CC BY-SA 4.0)",
     "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-202",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Quale antico documento in volgare paragona la scrittura al lavoro del seminatore?",
+    "opzioni": [
+      "Il Placito capuano",
+      "L'Indovinello veronese",
+      "Il Ritmo laurenziano",
+      "Il Cantico delle creature"
+    ],
+    "corretta": 1,
+    "spiegazione": "Fu scoperto nel 1924 in un codice della Biblioteca Capitolare di Verona (fine VIII-inizio IX secolo).",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-203",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "A quale anno risale il Placito capuano, con la formula «Sao ko kelle terre…»?",
+    "opzioni": [
+      "Al 1224",
+      "Al 800",
+      "Al 960",
+      "Al 1100"
+    ],
+    "corretta": 2,
+    "spiegazione": "Riporta la testimonianza in una lite di confini tra il monastero di Montecassino e Rodelgrimo d'Aquino.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-204",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Quale lauda di Jacopone da Todi segna il vertice della poesia religiosa del Duecento?",
+    "opzioni": [
+      "Il Te Deum",
+      "Il Dies irae",
+      "Il Cantico delle creature",
+      "Lo Stabat Mater"
+    ],
+    "corretta": 3,
+    "spiegazione": "È una lauda dialogata in volgare umbro con latinismi.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-205",
+    "argomento": "Letteratura",
+    "livello": 4,
+    "testo": "Chi diffuse in Toscana la lirica della Scuola siciliana?",
+    "opzioni": [
+      "Guittone d'Arezzo",
+      "Guido Cavalcanti",
+      "Cecco Angiolieri",
+      "Brunetto Latini"
+    ],
+    "corretta": 0,
+    "spiegazione": "Guittone ne trasse spunti linguistici e poetici.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-206",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Chi è considerato l'iniziatore del «dolce stil novo»?",
+    "opzioni": [
+      "Francesco Petrarca",
+      "Il bolognese Guido Guinizelli",
+      "Cino da Pistoia",
+      "Dante Alighieri"
+    ],
+    "corretta": 1,
+    "spiegazione": "Tra gli altri stilnovisti: Guido Cavalcanti, Dante, Cino da Pistoia, Lapo Gianni.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-207",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Quali sono i due poeti più significativi della poesia comico-realistica?",
+    "opzioni": [
+      "Petrarca e Boccaccio",
+      "Jacopone e Bonaventura",
+      "Cecco Angiolieri e Folgore da San Gimignano",
+      "Guinizelli e Cavalcanti"
+    ],
+    "corretta": 2,
+    "spiegazione": "La corrente esalta denaro, gioco e taverna, in opposizione alla lirica cortese.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-208",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "A chi Marco Polo dettò il Milione, e in quale lingua?",
+    "opzioni": [
+      "A Boccaccio, in veneziano",
+      "A Dante, in volgare toscano",
+      "A Brunetto Latini, in latino",
+      "A Rustichello da Pisa, in francese"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il francese era allora diffuso come lingua letteraria.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-209",
+    "argomento": "Letteratura",
+    "livello": 2,
+    "testo": "In che data Petrarca incontrò Laura, secondo la tradizione?",
+    "opzioni": [
+      "Il 6 aprile 1327",
+      "Il 14 settembre 1321",
+      "Il 1° gennaio 1348",
+      "Il 25 dicembre 1300"
+    ],
+    "corretta": 0,
+    "spiegazione": "Da questo amore nacquero molte liriche del Canzoniere.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-210",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Chi è considerato il «padre spirituale» dell'Umanesimo?",
+    "opzioni": [
+      "Angelo Poliziano",
+      "Francesco Petrarca",
+      "Lorenzo Valla",
+      "Dante Alighieri"
+    ],
+    "corretta": 1,
+    "spiegazione": "Petrarca desiderava conoscere gli antichi e recuperarne le opere dimenticate.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-211",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "In quale anno la peste uccise Laura e il cardinale Colonna, protettore di Petrarca?",
+    "opzioni": [
+      "Nel 1300",
+      "Nel 1327",
+      "Nel 1348",
+      "Nel 1374"
+    ],
+    "corretta": 2,
+    "spiegazione": "È la grande peste nera descritta anche da Boccaccio.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-212",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Dove nacque Giovanni Boccaccio, secondo i critici?",
+    "opzioni": [
+      "A Firenze",
+      "Ad Arezzo",
+      "A Napoli",
+      "A Certaldo"
+    ],
+    "corretta": 3,
+    "spiegazione": "A dodici anni fu mandato a Napoli per imparare la mercatura.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-213",
+    "argomento": "Letteratura",
+    "livello": 4,
+    "testo": "Quale opera di Boccaccio, in 473 ottave, racconta una favola sulle origini di Fiesole e Firenze?",
+    "opzioni": [
+      "Il Ninfale fiesolano",
+      "La Caccia di Diana",
+      "Il Filocolo",
+      "Il Corbaccio"
+    ],
+    "corretta": 0,
+    "spiegazione": "È l'ultima opera composta prima del Decameron.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-214",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Quale scrittore del Seicento scrisse l'Istoria del concilio tridentino, messa all'Indice?",
+    "opzioni": [
+      "Galileo Galilei",
+      "Il frate veneziano Paolo Sarpi",
+      "Tommaso Campanella",
+      "Daniello Bartoli"
+    ],
+    "corretta": 1,
+    "spiegazione": "Fu edita a Londra nel 1619.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-215",
+    "argomento": "Letteratura",
+    "livello": 2,
+    "testo": "Quale filosofo fu arso vivo per le sue idee, mentre Galileo fu costretto ad abiurare?",
+    "opzioni": [
+      "Tommaso Campanella",
+      "Paolo Sarpi",
+      "Giordano Bruno",
+      "Pico della Mirandola"
+    ],
+    "corretta": 2,
+    "spiegazione": "Le loro idee furono considerate eretiche dalla Chiesa controriformista.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-216",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Chi scrisse il saggio «Dei delitti e delle pene», contro la pena di morte?",
+    "opzioni": [
+      "Gaetano Filangieri",
+      "Pietro Verri",
+      "Giambattista Vico",
+      "Cesare Beccaria"
+    ],
+    "corretta": 3,
+    "spiegazione": "Fu tra i protagonisti dell'Illuminismo milanese.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-217",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Chi fondò l'Accademia dell'Arcadia a Roma nel 1690?",
+    "opzioni": [
+      "Giovanni Vincenzo Gravina e Giovanni Mario Crescimbeni",
+      "Pietro Metastasio e Carlo Goldoni",
+      "Pietro e Alessandro Verri",
+      "Giuseppe Parini e Vittorio Alfieri"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'Arcadia promosse l'anti-barocchismo e la restaurazione classicistica.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-218",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Quali sono le parti originarie del poemetto «Il Giorno» di Parini?",
+    "opzioni": [
+      "Infanzia, Giovinezza e Vecchiaia",
+      "Mattino, Mezzogiorno e Sera",
+      "Alba, Meriggio e Tramonto",
+      "Inverno, Primavera ed Estate"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il poemetto, in endecasillabi sciolti, satireggia l'aristocrazia decaduta.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-219",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "A quale romanzo europeo si ispirano le «Ultime lettere di Jacopo Ortis» di Foscolo?",
+    "opzioni": [
+      "I miserabili di Hugo",
+      "Il rosso e il nero di Stendhal",
+      "I dolori del giovane Werther di Goethe",
+      "Robinson Crusoe di Defoe"
+    ],
+    "corretta": 2,
+    "spiegazione": "Foscolo ne converte la vicenda nel gusto patriottico italiano.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-220",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Quante redazioni dei Promessi sposi scrisse Manzoni, e quale è detta «quarantana»?",
+    "opzioni": [
+      "Due; la quarantana è del 1827",
+      "Quattro; la quarantana è del 1823",
+      "Una sola, del 1840",
+      "Tre; la quarantana è quella del 1840"
+    ],
+    "corretta": 3,
+    "spiegazione": "La prima è del 1823 con titolo diverso, la «ventisettana» del 1827.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-221",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Di quale illuminista Alessandro Manzoni era nipote?",
+    "opzioni": [
+      "Cesare Beccaria",
+      "Vittorio Alfieri",
+      "Giuseppe Parini",
+      "Pietro Verri"
+    ],
+    "corretta": 0,
+    "spiegazione": "Nelle opere giovanili di Manzoni è presente il pensiero illuminista.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-222",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Quale romanzo di Verga è il secondo del «ciclo dei Vinti»?",
+    "opzioni": [
+      "I Malavoglia",
+      "Mastro-don Gesualdo (1888)",
+      "Storia di una capinera",
+      "Vita dei campi"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il primo è I Malavoglia (1881).",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-223",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Qual è l'opera più famosa di Federico De Roberto?",
+    "opzioni": [
+      "Canne al vento",
+      "Il marchese di Roccaverdina",
+      "I Viceré",
+      "Piccolo mondo antico"
+    ],
+    "corretta": 2,
+    "spiegazione": "È ambientata nella Sicilia della seconda metà dell'Ottocento.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-224",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Chi fu la prima donna italiana a fondare e dirigere un giornale (Il Mattino)?",
+    "opzioni": [
+      "Sibilla Aleramo",
+      "Ada Negri",
+      "Grazia Deledda",
+      "Matilde Serao"
+    ],
+    "corretta": 3,
+    "spiegazione": "È tra le autrici del verismo e del secondo Ottocento.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-225",
+    "argomento": "Letteratura",
+    "livello": 2,
+    "testo": "Chi è l'autore di «Le avventure di Pinocchio» (1883)?",
+    "opzioni": [
+      "Carlo Collodi",
+      "Emilio Salgari",
+      "Edmondo De Amicis",
+      "Gianni Rodari"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il libro ha venduto circa 80 milioni di copie.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-226",
+    "argomento": "Letteratura",
+    "livello": 2,
+    "testo": "Chi è il più noto romanziere italiano di avventura, autore de «Le tigri di Mompracem»?",
+    "opzioni": [
+      "Italo Calvino",
+      "Emilio Salgari",
+      "Antonio Fogazzaro",
+      "Carlo Collodi"
+    ],
+    "corretta": 1,
+    "spiegazione": "Fu giudicato negativamente dai critici contemporanei e rivalutato in seguito.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-227",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Chi è l'autore di «Piccolo mondo antico»?",
+    "opzioni": [
+      "Federico De Roberto",
+      "Luigi Capuana",
+      "Antonio Fogazzaro",
+      "Giovanni Verga"
+    ],
+    "corretta": 2,
+    "spiegazione": "Opera del secondo Ottocento.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-228",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Quale romanzo di Pirandello anticipa soluzioni metanarrative?",
+    "opzioni": [
+      "Senilità",
+      "Il piacere",
+      "La coscienza di Zeno",
+      "Il fu Mattia Pascal"
+    ],
+    "corretta": 3,
+    "spiegazione": "Pirandello è anche autore di «Uno, nessuno e centomila» e delle «Novelle per un anno».",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-229",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Come si chiama la corrente letteraria creata da Luigi Pirandello?",
+    "opzioni": [
+      "Umorismo",
+      "Verismo",
+      "Ermetismo",
+      "Futurismo"
+    ],
+    "corretta": 0,
+    "spiegazione": "Da qui l'aggettivo «pirandelliano» per situazioni strane o tragicomiche.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-230",
+    "argomento": "Letteratura",
+    "livello": 4,
+    "testo": "Quali autori furono scoperti tardi, Svevo grazie a James Joyce e Tozzi decenni dopo la morte?",
+    "opzioni": [
+      "Montale e Ungaretti",
+      "Italo Svevo e Federigo Tozzi",
+      "Gozzano e Corazzini",
+      "Pascoli e D'Annunzio"
+    ],
+    "corretta": 1,
+    "spiegazione": "La critica del primo Novecento non comprese molti grandi autori.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-231",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Chi fondò nel 1908 la rivista «La Voce»?",
+    "opzioni": [
+      "Benedetto Croce",
+      "Filippo Tommaso Marinetti",
+      "Giuseppe Prezzolini e Giovanni Papini",
+      "Pietro Verri"
+    ],
+    "corretta": 2,
+    "spiegazione": "Fu una delle più importanti riviste culturali italiane del Novecento.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-232",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Quale critico definì «crepuscolari» un gruppo di poeti del primo Novecento?",
+    "opzioni": [
+      "Francesco Flora",
+      "Natalino Sapegno",
+      "Benedetto Croce",
+      "Giuseppe Antonio Borgese"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il nome richiama il gusto per la penombra e i toni smorzati.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-233",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Da quale dio greco deriva il termine «ermetismo»?",
+    "opzioni": [
+      "Hermes (Mercurio per i Romani)",
+      "Zeus",
+      "Apollo",
+      "Dioniso"
+    ],
+    "corretta": 0,
+    "spiegazione": "Indica una poesia dal linguaggio difficile e talvolta misterioso.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-234",
+    "argomento": "Letteratura",
+    "livello": 4,
+    "testo": "Dove si costituì nell'ottobre 1963 la neoavanguardia del «Gruppo 63»?",
+    "opzioni": [
+      "A Firenze",
+      "A Palermo",
+      "A Roma",
+      "A Milano"
+    ],
+    "corretta": 1,
+    "spiegazione": "Tra gli esponenti: Umberto Eco, Nanni Balestrini, Edoardo Sanguineti.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-235",
+    "argomento": "Letteratura",
+    "livello": 3,
+    "testo": "Quale rivista fiorentina del periodo fascista ospitò autori come Montale e Gadda?",
+    "opzioni": [
+      "La Voce",
+      "Il Caffè",
+      "Solaria",
+      "Lacerba"
+    ],
+    "corretta": 2,
+    "spiegazione": "Le riviste fiorentine mantennero vivo il confronto letterario.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-236",
+    "argomento": "Letteratura",
+    "livello": 4,
+    "testo": "Quale romanzo barocco il critico Giovanni Getto indicò come il manoscritto «trovato» da Manzoni?",
+    "opzioni": [
+      "La Secchia rapita di Tassoni",
+      "L'Adone di Marino",
+      "Del cane di Diogene di Frugoni",
+      "Historia del cavalier perduto di Pace Pasini"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il romanzo è del 1634.",
+    "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-237",
+    "argomento": "Morfologia",
+    "livello": 2,
+    "testo": "Qual è la differenza d'uso tra articolo indeterminativo e determinativo?",
+    "opzioni": [
+      "L'indeterminativo introduce un'informazione nuova, il determinativo una già data",
+      "Il determinativo si usa solo al plurale",
+      "L'indeterminativo si usa solo con i nomi propri",
+      "Non c'è differenza"
+    ],
+    "corretta": 0,
+    "spiegazione": "Es. «ho visto un cerbiatto» / «il cerbiatto è già sparito».",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-238",
+    "argomento": "Morfologia",
+    "livello": 2,
+    "testo": "Quale articolo si usa davanti a «zaino»?",
+    "opzioni": [
+      "l'",
+      "lo",
+      "la",
+      "il"
+    ],
+    "corretta": 1,
+    "spiegazione": "«lo» si usa davanti a z, gn, x, ps, s impura e i semiconsonante.",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-239",
+    "argomento": "Morfologia",
+    "livello": 3,
+    "testo": "Quale articolo indeterminativo si usa davanti a «gnomo»?",
+    "opzioni": [
+      "un'",
+      "un",
+      "uno",
+      "una"
+    ],
+    "corretta": 2,
+    "spiegazione": "Come per l'articolo «lo», si usa «uno» davanti a gn, z, ps, x, s impura.",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-240",
+    "argomento": "Morfologia",
+    "livello": 3,
+    "testo": "Esiste in italiano un articolo indeterminativo plurale?",
+    "opzioni": [
+      "Sì, ma solo nei testi antichi",
+      "Sì: «gli un»",
+      "Sì: «uni» e «une»",
+      "No: si usa il partitivo (dei, degli, delle) o un indefinito"
+    ],
+    "corretta": 3,
+    "spiegazione": "Es. «dei libri», «alcuni libri».",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-241",
+    "argomento": "Morfologia",
+    "livello": 3,
+    "testo": "In base a cosa si sceglie la forma dell'articolo?",
+    "opzioni": [
+      "In base al suono iniziale della parola immediatamente successiva",
+      "In base al sostantivo a cui si riferisce, anche se lontano",
+      "In base al verbo",
+      "Liberamente"
+    ],
+    "corretta": 0,
+    "spiegazione": "Es. «lo specchio» ma «il bello specchio».",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-242",
+    "argomento": "Morfologia",
+    "livello": 3,
+    "testo": "Quale posizione hanno gli aggettivi di colore, forma o nazionalità rispetto al nome?",
+    "opzioni": [
+      "Possono stare ovunque",
+      "Seguono sempre il sostantivo",
+      "Lo precedono sempre",
+      "Si mettono dopo il verbo"
+    ],
+    "corretta": 1,
+    "spiegazione": "Es. «una penna rossa», «un vino francese».",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-243",
+    "argomento": "Morfologia",
+    "livello": 3,
+    "testo": "Che differenza c'è tra «una bella casa» e «una casa bella»?",
+    "opzioni": [
+      "Nessuna",
+      "Il secondo indica una casa piccola",
+      "Nel secondo caso l'aggettivo distingue quella casa dalle altre",
+      "Il primo è scorretto"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'aggettivo posposto ha funzione distintiva.",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-244",
+    "argomento": "Morfologia",
+    "livello": 2,
+    "testo": "Qual è il plurale di «la virtù»?",
+    "opzioni": [
+      "i virtù",
+      "le virtue",
+      "le virtui",
+      "le virtù"
+    ],
+    "corretta": 3,
+    "spiegazione": "I nomi che terminano con vocale accentata sono invariabili.",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-245",
+    "argomento": "Morfologia",
+    "livello": 3,
+    "testo": "Come si chiamano i sostantivi privi della forma singolare o plurale, come «le nozze»?",
+    "opzioni": [
+      "Difettivi",
+      "Sovrabbondanti",
+      "Invariabili",
+      "Collettivi"
+    ],
+    "corretta": 0,
+    "spiegazione": "Gli invariabili hanno invece singolare e plurale identici.",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-246",
+    "argomento": "Morfologia",
+    "livello": 2,
+    "testo": "Qual è il plurale di «poeta»?",
+    "opzioni": [
+      "poetas",
+      "poeti",
+      "poete",
+      "poeta"
+    ],
+    "corretta": 1,
+    "spiegazione": "I maschili in -a fanno il plurale in -i.",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-247",
+    "argomento": "Morfologia",
+    "livello": 2,
+    "testo": "Qual è il plurale di «la crisi»?",
+    "opzioni": [
+      "le crisis",
+      "le crise",
+      "le crisi",
+      "i crisi"
+    ],
+    "corretta": 2,
+    "spiegazione": "I nomi in -i non accentata sono invariabili.",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-248",
+    "argomento": "Morfologia",
+    "livello": 2,
+    "testo": "Quale forma è corretta?",
+    "opzioni": [
+      "le penne rosi",
+      "le penne rose",
+      "le penne rosee",
+      "le penne rosa"
+    ],
+    "corretta": 3,
+    "spiegazione": "Alcuni aggettivi di colore (rosa, blu, viola) sono invariabili.",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-249",
+    "argomento": "Morfologia",
+    "livello": 3,
+    "testo": "Quale frase è corretta?",
+    "opzioni": [
+      "Mio padre è medico",
+      "Il mio padre è medico",
+      "Padre mio il è medico",
+      "Lo mio padre è medico"
+    ],
+    "corretta": 0,
+    "spiegazione": "Davanti ai nomi di parentela singolari con il possessivo (tranne «loro») l'articolo si omette.",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-250",
+    "argomento": "Morfologia",
+    "livello": 3,
+    "testo": "Quale forma è corretta?",
+    "opzioni": [
+      "loro padre il",
+      "il loro padre",
+      "lo loro padre",
+      "il padre di loro sua"
+    ],
+    "corretta": 1,
+    "spiegazione": "Con «loro» l'articolo si mantiene anche davanti ai nomi di parentela.",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-251",
+    "argomento": "Morfologia",
+    "livello": 3,
+    "testo": "Cosa indica il dimostrativo «codesto»?",
+    "opzioni": [
+      "Un oggetto vicino a chi parla",
+      "Un oggetto lontano da entrambi",
+      "Un oggetto vicino a chi ascolta",
+      "Un oggetto già nominato"
+    ],
+    "corretta": 2,
+    "spiegazione": "«questo» = vicino a chi parla, «quello» = lontano da chi parla.",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-252",
+    "argomento": "Morfologia",
+    "livello": 3,
+    "testo": "In «Mi piace questa musica», «mi» è un pronome:",
+    "opzioni": [
+      "relativo",
+      "riflessivo",
+      "tonico",
+      "atono (clitico)"
+    ],
+    "corretta": 3,
+    "spiegazione": "In «A me piace questa musica», «me» è tonico.",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-253",
+    "argomento": "Morfologia",
+    "livello": 4,
+    "testo": "A chi si riferiscono «egli» ed «ella»?",
+    "opzioni": [
+      "Solo a persone",
+      "A cose e animali",
+      "Solo ad animali",
+      "A persone, animali e cose indistintamente"
+    ],
+    "corretta": 0,
+    "spiegazione": "Lui, lei e loro si riferiscono a persone o animali e talvolta a cose.",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-254",
+    "argomento": "Morfologia",
+    "livello": 2,
+    "testo": "In italiano il pronome personale soggetto è obbligatorio?",
+    "opzioni": [
+      "Solo alla terza persona",
+      "No, è facoltativo e spesso omesso",
+      "Solo nelle domande",
+      "Sì, sempre"
+    ],
+    "corretta": 1,
+    "spiegazione": "Si esprime per enfasi o per evitare ambiguità, a differenza di inglese e francese.",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-255",
+    "argomento": "Morfologia",
+    "livello": 3,
+    "testo": "Quale ausiliare si usa per i tempi composti dei verbi transitivi in forma attiva?",
+    "opzioni": [
+      "Essere",
+      "Venire",
+      "Avere",
+      "Andare"
+    ],
+    "corretta": 2,
+    "spiegazione": "Essere si usa per la maggior parte degli intransitivi, per il passivo e per il riflessivo.",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-256",
+    "argomento": "Verbi",
+    "livello": 3,
+    "testo": "In una frase passiva, quale verbo può sostituire «essere» per esprimere un obbligo (es. «la domanda va presentata»)?",
+    "opzioni": [
+      "Venire",
+      "Stare",
+      "Avere",
+      "Andare"
+    ],
+    "corretta": 3,
+    "spiegazione": "«Venire» si usa invece per enfatizzare l'azione, solo nei tempi semplici.",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-257",
+    "argomento": "Verbi",
+    "livello": 3,
+    "testo": "A quale coniugazione appartengono tradizionalmente «fare» e «dire»?",
+    "opzioni": [
+      "Alla seconda, perché derivano da facĕre e dicĕre",
+      "Sono senza coniugazione",
+      "Alla terza",
+      "Alla prima e alla terza"
+    ],
+    "corretta": 0,
+    "spiegazione": "Benché escano in -are e -ire.",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-258",
+    "argomento": "Verbi",
+    "livello": 3,
+    "testo": "Come si chiamano i verbi come «capire» che inseriscono -isc- (capisco)?",
+    "opzioni": [
+      "Fraseologici",
+      "Incoativi",
+      "Difettivi",
+      "Servili"
+    ],
+    "corretta": 1,
+    "spiegazione": "In italiano l'interfisso -isc- non ha valore semantico.",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-259",
+    "argomento": "Verbi",
+    "livello": 4,
+    "testo": "Quale tempo dell'indicativo si forma con passato remoto + participio passato?",
+    "opzioni": [
+      "Il trapassato prossimo",
+      "Il passato prossimo",
+      "Il trapassato remoto",
+      "Il futuro anteriore"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il trapassato prossimo si forma con l'imperfetto dell'ausiliare.",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-260",
+    "argomento": "Verbi",
+    "livello": 3,
+    "testo": "Quale tempo dell'indicativo può esprimere una supposizione sul presente (es. «Sarà stanco»)?",
+    "opzioni": [
+      "Il trapassato prossimo",
+      "L'imperfetto",
+      "Il passato remoto",
+      "Il futuro semplice"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il futuro anteriore indica invece una supposizione su un fatto già compiuto.",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-261",
+    "argomento": "Verbi",
+    "livello": 4,
+    "testo": "«Credevo che la via ___ dritta»: quale forma esprime contemporaneità nel passato?",
+    "opzioni": [
+      "fosse",
+      "sia stata",
+      "sarà",
+      "sia"
+    ],
+    "corretta": 0,
+    "spiegazione": "Concordanza dei tempi: principale al passato → congiuntivo imperfetto.",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-262",
+    "argomento": "Verbi",
+    "livello": 4,
+    "testo": "«Immaginavo che il bimbo ___ buono»: quale forma esprime posteriorità rispetto al passato?",
+    "opzioni": [
+      "sarà",
+      "sarebbe stato",
+      "sia",
+      "fosse"
+    ],
+    "corretta": 1,
+    "spiegazione": "Si usa il condizionale passato (futuro nel passato).",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-263",
+    "argomento": "Verbi",
+    "livello": 3,
+    "testo": "Come si chiama l'insieme delle regole sul rapporto tra i tempi della principale e della subordinata?",
+    "opzioni": [
+      "Diatesi",
+      "Periodo ipotetico",
+      "Consecutio temporum (concordanza dei tempi)",
+      "Analisi logica"
+    ],
+    "corretta": 2,
+    "spiegazione": "È un'eredità della grammatica latina.",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-264",
+    "argomento": "Verbi",
+    "livello": 3,
+    "testo": "Quale forma usa l'imperativo per la terza persona (es. «Signora, mi guardi!»)?",
+    "opzioni": [
+      "L'infinito",
+      "Il condizionale",
+      "L'indicativo presente",
+      "Il congiuntivo esortativo"
+    ],
+    "corretta": 3,
+    "spiegazione": "In questo caso il pronome atono è anteposto.",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-265",
+    "argomento": "Morfologia",
+    "livello": 2,
+    "testo": "Quali parti del discorso esprimono l'espressione affettiva del parlante (ah, oh, ahi)?",
+    "opzioni": [
+      "Le interiezioni",
+      "Le preposizioni",
+      "Le congiunzioni",
+      "Gli avverbi di luogo"
+    ],
+    "corretta": 0,
+    "spiegazione": "Sono invariabili e non hanno un ruolo particolare nel costrutto della frase.",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-266",
+    "argomento": "Morfologia",
+    "livello": 2,
+    "testo": "Che tipo di avverbio è «volentieri»?",
+    "opzioni": [
+      "Di tempo",
+      "Di modo",
+      "Di luogo",
+      "Di quantità"
+    ],
+    "corretta": 1,
+    "spiegazione": "Di modo: bene, male, volentieri; di tempo: ieri, adesso.",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-267",
+    "argomento": "Morfologia",
+    "livello": 3,
+    "testo": "Da quale parola latina deriva «articolo»?",
+    "opzioni": [
+      "Articulare, «parlare»",
+      "Arcus, «arco»",
+      "Articulus, da artus, «membro, arto»",
+      "Ars, «arte»"
+    ],
+    "corretta": 2,
+    "spiegazione": "In greco antico è árthron.",
+    "fonte": "Wikipedia, «Articolo (linguistica)» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-268",
+    "argomento": "Morfologia",
+    "livello": 3,
+    "testo": "In quale lingua l'articolo determinativo è un suffisso enclitico, come in «omul» (l'uomo)?",
+    "opzioni": [
+      "Il francese",
+      "L'italiano",
+      "Lo spagnolo",
+      "Il rumeno"
+    ],
+    "corretta": 3,
+    "spiegazione": "Anche nelle lingue scandinave il determinativo è un suffisso.",
+    "fonte": "Wikipedia, «Articolo (linguistica)» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-269",
+    "argomento": "Morfologia",
+    "livello": 3,
+    "testo": "Quale di queste lingue NON usa articoli?",
+    "opzioni": [
+      "Il latino",
+      "Il greco",
+      "Lo spagnolo",
+      "Il tedesco"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'articolo è assente anche in giapponese e cinese.",
+    "fonte": "Wikipedia, «Articolo (linguistica)» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-270",
+    "argomento": "Morfologia",
+    "livello": 2,
+    "testo": "Quale nome di città ha l'articolo come parte integrante?",
+    "opzioni": [
+      "Milano",
+      "L'Aquila",
+      "Firenze",
+      "Roma"
+    ],
+    "corretta": 1,
+    "spiegazione": "Così anche La Spezia, Il Cairo, La Mecca, L'Aia.",
+    "fonte": "Wikipedia, «Articolo (linguistica)» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-271",
+    "argomento": "Morfologia",
+    "livello": 3,
+    "testo": "Da quale parola latina derivano per lo più gli articoli romanzi?",
+    "opzioni": [
+      "Da unus",
+      "Da is, ea",
+      "Dal dimostrativo ille, illa",
+      "Da hic, haec"
+    ],
+    "corretta": 2,
+    "spiegazione": "In sardo derivano invece da ipsum, ipsam.",
+    "fonte": "Wikipedia, «Articolo (linguistica)» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-272",
+    "argomento": "Morfologia",
+    "livello": 3,
+    "testo": "Nelle frasi proverbiali come «can che abbaia non morde» l'articolo:",
+    "opzioni": [
+      "è obbligatorio",
+      "si raddoppia",
+      "diventa partitivo",
+      "si omette"
+    ],
+    "corretta": 3,
+    "spiegazione": "Si omette anche nei titoli e nel linguaggio telegrafico.",
+    "fonte": "Wikipedia, «Articolo (linguistica)» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-273",
+    "argomento": "Morfologia",
+    "livello": 4,
+    "testo": "Con quali nomi propri si può usare l'articolo in registro familiare-affettivo?",
+    "opzioni": [
+      "Con i nomi propri femminili (es. «la Maria»), non con i maschili",
+      "Con tutti i nomi propri",
+      "Mai",
+      "Solo con i maschili"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'uso è regionale e colloquiale.",
+    "fonte": "Wikipedia, «Articolo (linguistica)» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-274",
+    "argomento": "Morfologia",
+    "livello": 3,
+    "testo": "In «abito da sera», «sala da pranzo», l'articolo:",
+    "opzioni": [
+      "è sempre determinativo",
+      "è omesso",
+      "si unisce alla preposizione",
+      "è obbligatorio"
+    ],
+    "corretta": 1,
+    "spiegazione": "Quando un sostantivo integra il significato di un altro, l'articolo non si usa.",
+    "fonte": "Wikipedia, «Articolo (linguistica)» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-275",
+    "argomento": "Verbi",
+    "livello": 1,
+    "testo": "Da quale parola latina deriva «verbo»?",
+    "opzioni": [
+      "Vertere, «girare»",
+      "Vir, «uomo»",
+      "Verbum, «parola»",
+      "Verus, «vero»"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il verbo è una parte del discorso variabile.",
+    "fonte": "Wikipedia, «Verbo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-276",
+    "argomento": "Verbi",
+    "livello": 3,
+    "testo": "Cosa esprime la diatesi del verbo?",
+    "opzioni": [
+      "La persona del soggetto",
+      "Il modo verbale",
+      "Il tempo dell'azione",
+      "Il rapporto del verbo con il soggetto o l'oggetto (attiva, passiva, riflessiva)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Può essere attiva, passiva, riflessiva o media.",
+    "fonte": "Wikipedia, «Verbo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-277",
+    "argomento": "Verbi",
+    "livello": 4,
+    "testo": "«Scrivo» e «Sto scrivendo» sono entrambe al presente. Cosa le distingue?",
+    "opzioni": [
+      "L'aspetto: durativo il primo, progressivo il secondo",
+      "La persona",
+      "Il modo",
+      "La diatesi"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'aspetto riguarda durata, momentaneità e compiutezza dell'azione.",
+    "fonte": "Wikipedia, «Verbo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-278",
+    "argomento": "Verbi",
+    "livello": 4,
+    "testo": "Quale filosofo definì il verbo come la forma che «aggiunge al suo significato il tempo»?",
+    "opzioni": [
+      "Platone",
+      "Aristotele",
+      "Dante",
+      "Cicerone"
+    ],
+    "corretta": 1,
+    "spiegazione": "Lo fa nel De Interpretatione.",
+    "fonte": "Wikipedia, «Verbo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-279",
+    "argomento": "Verbi",
+    "livello": 3,
+    "testo": "Quale frase è corretta?",
+    "opzioni": [
+      "Io mi nutrisco di",
+      "Io mi cibo da solo",
+      "Io mi nutro",
+      "Io mi cibo (senza altro)"
+    ],
+    "corretta": 2,
+    "spiegazione": "«Cibarsi» richiede l'indicazione del cibo: «mi cibo di broccoli».",
+    "fonte": "Wikipedia, «Verbo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-280",
+    "argomento": "Verbi",
+    "livello": 4,
+    "testo": "Come si chiamano gli elementi della frase che non possono essere eliminati senza renderla agrammaticale?",
+    "opzioni": [
+      "Elementi circostanziali",
+      "Apposizioni",
+      "Interiezioni",
+      "Elementi nucleari (argomenti)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Gli elementi circostanziali (luogo, tempo, causa) si possono invece eliminare.",
+    "fonte": "Wikipedia, «Verbo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-281",
+    "argomento": "Verbi",
+    "livello": 4,
+    "testo": "In «Domani vedremo chi ha avuto ragione», il passato prossimo si riferisce a:",
+    "opzioni": [
+      "un evento futuro",
+      "un'abitudine passata",
+      "un evento remoto",
+      "un ordine"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il tempo grammaticale non coincide sempre con quello reale.",
+    "fonte": "Wikipedia, «Verbo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-282",
+    "argomento": "Fonetica",
+    "livello": 3,
+    "testo": "In «pàusa», il nesso «au» è:",
+    "opzioni": [
+      "uno iato",
+      "un dittongo discendente",
+      "un dittongo ascendente",
+      "un trittongo"
+    ],
+    "corretta": 1,
+    "spiegazione": "Nei dittonghi discendenti l'accento è sul primo elemento.",
+    "fonte": "Wikipedia, «Dittongo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-283",
+    "argomento": "Fonetica",
+    "livello": 3,
+    "testo": "In «piàno», il nesso «ia» è:",
+    "opzioni": [
+      "un dittongo discendente",
+      "una vocale lunga",
+      "un dittongo ascendente",
+      "uno iato"
+    ],
+    "corretta": 2,
+    "spiegazione": "Tradizionalmente chiamato «falso dittongo».",
+    "fonte": "Wikipedia, «Dittongo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-284",
+    "argomento": "Fonetica",
+    "livello": 3,
+    "testo": "In «zìo» le due vocali formano:",
+    "opzioni": [
+      "un dittongo",
+      "un trittongo",
+      "una sillaba sola",
+      "uno iato"
+    ],
+    "corretta": 3,
+    "spiegazione": "Quando la i è tonica si ha iato.",
+    "fonte": "Wikipedia, «Dittongo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-285",
+    "argomento": "Fonetica",
+    "livello": 4,
+    "testo": "Quali sono i «dittonghi mobili» dell'italiano?",
+    "opzioni": [
+      "ie e uo",
+      "ei e eu",
+      "ia e io",
+      "ai e au"
+    ],
+    "corretta": 0,
+    "spiegazione": "Derivano dalle vocali brevi latine e ed o (es. uomo, piede).",
+    "fonte": "Wikipedia, «Dittongo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-286",
+    "argomento": "Fonetica",
+    "livello": 3,
+    "testo": "In «cielo» e «scienza», la i dopo c e sc:",
+    "opzioni": [
+      "indica l'accento",
+      "è un segno grafico che non va pronunciato",
+      "forma un dittongo",
+      "forma uno iato"
+    ],
+    "corretta": 1,
+    "spiegazione": "È un residuo etimologico.",
+    "fonte": "Wikipedia, «Dittongo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-287",
+    "argomento": "Fonetica",
+    "livello": 4,
+    "testo": "In metrica, quale segno indica che due vocali vanno pronunciate separate (dieresi)?",
+    "opzioni": [
+      "L'apostrofo",
+      "Il trattino",
+      "I due puntini sulla prima vocale (dieresi)",
+      "L'accento grave"
+    ],
+    "corretta": 2,
+    "spiegazione": "Altrimenti in poesia ogni coppia di vocali è considerata dittongo.",
+    "fonte": "Wikipedia, «Dittongo» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-288",
+    "argomento": "Punteggiatura",
+    "livello": 3,
+    "testo": "In quale antica iscrizione compaiono i primi segni che indicano pause nel discorso?",
+    "opzioni": [
+      "Nel Codice di Hammurabi",
+      "Nella stele di Rosetta",
+      "Nelle Dodici Tavole",
+      "Nella stele di Mesha dei Moabiti (IX sec. a.C.)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Greci e Romani usarono poi punti variamente disposti.",
+    "fonte": "Wikipedia, «Punteggiatura» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-289",
+    "argomento": "Punteggiatura",
+    "livello": 3,
+    "testo": "Da quale parola latina deriverebbe il punto interrogativo?",
+    "opzioni": [
+      "Quaestio, «domanda»",
+      "Quis, «chi»",
+      "Quid, «che cosa»",
+      "Quare, «perché»"
+    ],
+    "corretta": 0,
+    "spiegazione": "La «q» si spostò sopra la «o», che divenne un punto.",
+    "fonte": "Wikipedia, «Punteggiatura» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-290",
+    "argomento": "Punteggiatura",
+    "livello": 3,
+    "testo": "Secondo l'Enciclopedia dell'italiano Treccani, punto e virgola e due punti sono:",
+    "opzioni": [
+      "segni di intonazione",
+      "pause intermedie",
+      "pause fortissime",
+      "segni senza valore di pausa"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il punto è pausa forte e chiusa, la virgola debole e aperta.",
+    "fonte": "Wikipedia, «Punteggiatura» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-291",
+    "argomento": "Punteggiatura",
+    "livello": 4,
+    "testo": "Come si chiamano in francese le virgolette basse « »?",
+    "opzioni": [
+      "Caporali",
+      "Doppi accenti",
+      "Guillemets",
+      "Apici"
+    ],
+    "corretta": 2,
+    "spiegazione": "In francese richiedono uno spazio che le separi dal testo.",
+    "fonte": "Wikipedia, «Punteggiatura» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-292",
+    "argomento": "Punteggiatura",
+    "livello": 4,
+    "testo": "Chi propose una serie di sei nuovi segni di punteggiatura, tra cui il «punto d'ironia»?",
+    "opzioni": [
+      "Umberto Eco",
+      "Martin K. Speckter",
+      "Francesco Flora",
+      "Hervé Bazin"
+    ],
+    "corretta": 3,
+    "spiegazione": "Lo fece nel libro «Plumons l'Oiseau».",
+    "fonte": "Wikipedia, «Punteggiatura» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-293",
+    "argomento": "Punteggiatura",
+    "livello": 3,
+    "testo": "Quale studioso affermò che i moderni tendono «con ragione a diradare i troppi segni di interpunzione»?",
+    "opzioni": [
+      "Francesco Flora",
+      "Alessandro Manzoni",
+      "Gianfranco Contini",
+      "Benedetto Croce"
+    ],
+    "corretta": 0,
+    "spiegazione": "Aggiunse che talvolta li aboliscono per raffinatezza o per ignoranza.",
+    "fonte": "Wikipedia, «Punteggiatura» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-294",
+    "argomento": "Morfologia",
+    "livello": 3,
+    "testo": "Quale forma della preposizione articolata con «con» è ancora frequente anche nello scritto?",
+    "opzioni": [
+      "colla e colle",
+      "col e coi",
+      "cogli",
+      "collo"
+    ],
+    "corretta": 1,
+    "spiegazione": "Le altre forme con «con» sono tendenzialmente desuete.",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-295",
+    "argomento": "Morfologia",
+    "livello": 4,
+    "testo": "Quali preposizioni articolate con «per», ancora usate in registro elevato o burocratico, sopravvivono?",
+    "opzioni": [
+      "perlo e perla",
+      "pello e pella",
+      "pel e pei",
+      "pegli e pelle"
+    ],
+    "corretta": 2,
+    "spiegazione": "Le altre forme non sono in uso dalla prima metà del Novecento.",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-296",
+    "argomento": "Verbi",
+    "livello": 3,
+    "testo": "Nel passivo, quale verbo può sostituire «essere» nei tempi semplici per enfatizzare l'azione (es. «la lettera viene spedita»)?",
+    "opzioni": [
+      "Stare",
+      "Andare",
+      "Avere",
+      "Venire"
+    ],
+    "corretta": 3,
+    "spiegazione": "«Andare» esprime invece obbligo o prescrizione («va spedita»).",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-297",
+    "argomento": "Verbi",
+    "livello": 3,
+    "testo": "Come si forma il condizionale passato?",
+    "opzioni": [
+      "Condizionale presente dell'ausiliare + participio passato (es. avrei parlato)",
+      "Imperfetto + participio",
+      "Futuro + infinito",
+      "Condizionale presente + gerundio"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il condizionale presente è il tempo semplice.",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-298",
+    "argomento": "Verbi",
+    "livello": 3,
+    "testo": "Qual è la desinenza del participio presente dei verbi in -are?",
+    "opzioni": [
+      "-ato",
+      "-ante (es. parlante)",
+      "-ando",
+      "-ente"
+    ],
+    "corretta": 1,
+    "spiegazione": "Per -ere e -ire: -ente (o -iente).",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-299",
+    "argomento": "Verbi",
+    "livello": 4,
+    "testo": "Come si nega la seconda persona singolare dell'imperativo (es. «non parlare!»)?",
+    "opzioni": [
+      "Con «mai» + gerundio",
+      "Con «no» + congiuntivo",
+      "Con «non» + infinito",
+      "Con «non» + imperativo"
+    ],
+    "corretta": 2,
+    "spiegazione": "Es. «parla!» → «non parlare!».",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-300",
+    "argomento": "Verbi",
+    "livello": 3,
+    "testo": "In «vedo gli uccelli volare», l'infinito sostituisce:",
+    "opzioni": [
+      "un complemento di luogo",
+      "una causale",
+      "una temporale",
+      "una proposizione relativa («che volano»)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il soggetto della subordinata passa all'accusativo: «lo vedo volare».",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
+  },
+  {
+    "materia": "italiano",
+    "id": "ita-301",
+    "argomento": "Morfologia",
+    "livello": 3,
+    "testo": "Qual è il plurale di «l'auto»?",
+    "opzioni": [
+      "le auto",
+      "le autos",
+      "le auti",
+      "gli auti"
+    ],
+    "corretta": 0,
+    "spiegazione": "I sostantivi accorciati (auto da automobile) sono invariabili.",
+    "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
+    "versione": "v1"
   }
 ]
