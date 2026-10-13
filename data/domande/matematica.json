@@ -14,7 +14,7 @@
     "corretta": 0,
     "spiegazione": "Un numero p > 1 è primo se è divisibile solo per se stesso e per 1; altrimenti è composto.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -31,7 +31,7 @@
     "corretta": 1,
     "spiegazione": "97 non è divisibile per 2, 3, 5, 7 (i primi fino alla sua radice). 91 = 7 × 13, 51 = 3 × 17, 87 = 3 × 29.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -48,7 +48,7 @@
     "corretta": 2,
     "spiegazione": "Ogni n > 1 ammette un'unica scomposizione in fattori primi (a meno dell'ordine).",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -65,7 +65,7 @@
     "corretta": 3,
     "spiegazione": "Criterio di divisibilità per 3: la somma delle cifre deve essere divisibile per 3.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -82,7 +82,7 @@
     "corretta": 0,
     "spiegazione": "1+2+3+4+5+6+7 = 28, che non è divisibile per 3.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -99,7 +99,7 @@
     "corretta": 1,
     "spiegazione": "Criterio di divisibilità per 5: l'ultima cifra è 0 o 5.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -116,7 +116,7 @@
     "corretta": 2,
     "spiegazione": "12 = 2²·3, 18 = 2·3²: il mcm prende i fattori con esponente massimo, 2²·3² = 36. Il MCD è 6.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -133,7 +133,7 @@
     "corretta": 3,
     "spiegazione": "48 = 2⁴·3, 36 = 2²·3²: il MCD prende i fattori comuni con esponente minimo, 2²·3 = 12.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -150,7 +150,7 @@
     "corretta": 0,
     "spiegazione": "Il prodotto di potenze con la stessa base ha per esponente la somma degli esponenti: 2⁵ · 2³ = 2⁸ = 256.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -167,7 +167,7 @@
     "corretta": 1,
     "spiegazione": "La potenza di una potenza ha per esponente il prodotto degli esponenti: (3²)³ = 3⁶ = 729.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -184,7 +184,7 @@
     "corretta": 2,
     "spiegazione": "Qualunque numero diverso da zero elevato a zero è uguale a 1.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -201,7 +201,7 @@
     "corretta": 3,
     "spiegazione": "Proprietà fondamentale: A · D = B · C.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -218,7 +218,7 @@
     "corretta": 0,
     "spiegazione": "Prodotto dei medi = prodotto degli estremi: 5x = 3 · 40 = 120, quindi x = 24.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -235,7 +235,7 @@
     "corretta": 1,
     "spiegazione": "Il 20% di 80 è 16; 80 − 16 = 64 €.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -252,7 +252,7 @@
     "corretta": 2,
     "spiegazione": "Il 15% di 120 è 18; 120 + 18 = 138 €.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -269,7 +269,7 @@
     "corretta": 3,
     "spiegazione": "25% = 25/100 = 1/4; 360 : 4 = 90.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -286,7 +286,7 @@
     "corretta": 0,
     "spiegazione": "Somma dei dati diviso il loro numero: (4 + 7 + 10 + 11) : 4 = 32 : 4 = 8.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -303,7 +303,7 @@
     "corretta": 1,
     "spiegazione": "Si ordinano i dati: 2, 3, 5, 8, 10. Il valore centrale è 5. La media sarebbe invece 5,6.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -320,7 +320,7 @@
     "corretta": 2,
     "spiegazione": "3x = 22 − 7 = 15, quindi x = 15 : 3 = 5.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -337,7 +337,7 @@
     "corretta": 3,
     "spiegazione": "Lo scritto lo superano 1.000 · 0,40 = 400 candidati; l'orale 400 · 0,25 = 100.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -354,7 +354,7 @@
     "corretta": 0,
     "spiegazione": "n : 0 con n ≠ 0 è impossibile; 0 : 0 è indeterminata; 0 : 5 = 0.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -371,7 +371,7 @@
     "corretta": 1,
     "spiegazione": "5 · 3 = 15 ≤ 17; 17 − 15 = 2.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -388,7 +388,7 @@
     "corretta": 2,
     "spiegazione": "L'operazione modulo restituisce il resto: 23 = 7 · 3 + 2.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -405,7 +405,7 @@
     "corretta": 3,
     "spiegazione": "Cinque fattori uguali a 2: 2·2·2·2·2 = 32.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -422,7 +422,7 @@
     "corretta": 0,
     "spiegazione": "4 · 4 · 4 = 64.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -439,7 +439,7 @@
     "corretta": 1,
     "spiegazione": "Sono i divisori diversi dal numero stesso e dall'unità.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -456,7 +456,7 @@
     "corretta": 2,
     "spiegazione": "Algebra 1, teorema 1.4.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -473,7 +473,7 @@
     "corretta": 3,
     "spiegazione": "630 = 2 · 315 = 2 · 3 · 105 = 2 · 3 · 3 · 35 = 2 · 3² · 5 · 7.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -490,7 +490,7 @@
     "corretta": 0,
     "spiegazione": "MCD(12, 25) = 1: non hanno fattori primi comuni.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -507,7 +507,7 @@
     "corretta": 1,
     "spiegazione": "6 = 2·3, 15 = 3·5: mcm = 2·3·5 = 30.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -524,7 +524,7 @@
     "corretta": 2,
     "spiegazione": "Divisori comuni: 1, 2, 3, 6.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -541,7 +541,7 @@
     "corretta": 3,
     "spiegazione": "+3 e +5 sono concordi; +3 e −5 sono discordi.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -558,7 +558,7 @@
     "corretta": 0,
     "spiegazione": "Il valore assoluto è il numero senza segno.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -575,7 +575,7 @@
     "corretta": 1,
     "spiegazione": "Esempio: +3 e −3.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -592,7 +592,7 @@
     "corretta": 2,
     "spiegazione": "Concordi: si sommano i valori assoluti e si mantiene il segno.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -609,7 +609,7 @@
     "corretta": 3,
     "spiegazione": "Discordi: si sottraggono i valori assoluti e si prende il segno del maggiore in valore assoluto.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -626,7 +626,7 @@
     "corretta": 0,
     "spiegazione": "Regola dei segni: meno per meno dà più.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -643,7 +643,7 @@
     "corretta": 1,
     "spiegazione": "Tre fattori negativi: il prodotto è negativo.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -660,7 +660,7 @@
     "corretta": 2,
     "spiegazione": "Rappresenta una grandezza minore dell'intero.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -677,7 +677,7 @@
     "corretta": 3,
     "spiegazione": "Il numeratore è maggiore del denominatore ma non ne è multiplo.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -694,7 +694,7 @@
     "corretta": 0,
     "spiegazione": "Il numeratore è multiplo del denominatore: 12/4 = 3.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -711,7 +711,7 @@
     "corretta": 1,
     "spiegazione": "Proprietà invariantiva: numeratore e denominatore moltiplicati per 4.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -728,7 +728,7 @@
     "corretta": 2,
     "spiegazione": "Si dividono numeratore e denominatore per MCD(18, 24) = 6.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -745,7 +745,7 @@
     "corretta": 3,
     "spiegazione": "Denominatore comune 12: 3/12 + 2/12 = 5/12.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -762,7 +762,7 @@
     "corretta": 0,
     "spiegazione": "Numeratori per numeratori e denominatori per denominatori: 18/12 = 3/2.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -779,7 +779,7 @@
     "corretta": 1,
     "spiegazione": "Si moltiplica per l'inverso: 2/3 · 9/4 = 3/2.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -796,7 +796,7 @@
     "corretta": 2,
     "spiegazione": "Il prodotto di un numero per il suo reciproco è 1.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -813,7 +813,7 @@
     "corretta": 3,
     "spiegazione": "Esponente negativo: si prende il reciproco della base con esponente opposto.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -830,7 +830,7 @@
     "corretta": 0,
     "spiegazione": "Il coefficiente deve essere compreso tra 1 (incluso) e 10 (escluso).",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -847,7 +847,7 @@
     "corretta": 1,
     "spiegazione": "Il coefficiente deve essere compreso tra 1 e 10.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -864,7 +864,7 @@
     "corretta": 2,
     "spiegazione": "È la potenza di 10 più vicina: 8.200 è più vicino a 10.000 che a 1.000.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -881,7 +881,7 @@
     "corretta": 3,
     "spiegazione": "Il rapporto è il quoziente del primo numero per il secondo.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -898,7 +898,7 @@
     "corretta": 0,
     "spiegazione": "B e C sono i medi.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -915,7 +915,7 @@
     "corretta": 1,
     "spiegazione": "x² = 4 · 9 = 36, x = 6.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -932,7 +932,7 @@
     "corretta": 2,
     "spiegazione": "È la proprietà del permutare.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -949,7 +949,7 @@
     "corretta": 3,
     "spiegazione": "Il rapporto y/x = k è costante.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -966,7 +966,7 @@
     "corretta": 0,
     "spiegazione": "x · y = k.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -983,7 +983,7 @@
     "corretta": 1,
     "spiegazione": "Proporzionalità inversa: 6 · 10 = 4 · x, x = 15.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1000,7 +1000,7 @@
     "corretta": 2,
     "spiegazione": "Proporzionalità diretta: 2,50 € al kg · 5.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1017,7 +1017,7 @@
     "corretta": 3,
     "spiegazione": "12,5/100 = 125/1000 = 1/8.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1034,7 +1034,7 @@
     "corretta": 0,
     "spiegazione": "1·2³ + 0·2² + 1·2 + 1 = 11.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1051,7 +1051,7 @@
     "corretta": 1,
     "spiegazione": "Somma delle cifre moltiplicate per le potenze della base.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1068,7 +1068,7 @@
     "corretta": 2,
     "spiegazione": "Si indica con ∅ o {}.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1085,7 +1085,7 @@
     "corretta": 3,
     "spiegazione": "È il numero dei suoi elementi.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1102,7 +1102,7 @@
     "corretta": 0,
     "spiegazione": "I sottoinsiemi di un insieme di n elementi sono 2ⁿ (compresi ∅ e l'insieme stesso).",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1119,7 +1119,7 @@
     "corretta": 1,
     "spiegazione": "La loro intersezione è vuota.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1136,7 +1136,7 @@
     "corretta": 2,
     "spiegazione": "Elementi di A che non appartengono a B.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1153,7 +1153,7 @@
     "corretta": 3,
     "spiegazione": "Bastano: non vuoti, disgiunti a due a due, unione uguale ad A.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1170,7 +1170,7 @@
     "corretta": 0,
     "spiegazione": "3 · 2 = 6 coppie (a; b).",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1187,7 +1187,7 @@
     "corretta": 1,
     "spiegazione": "Antisimmetrica e transitiva caratterizzano invece le relazioni d'ordine.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1204,7 +1204,7 @@
     "corretta": 2,
     "spiegazione": "Esempio: 5a²b.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1221,7 +1221,7 @@
     "corretta": 3,
     "spiegazione": "x²y è la parte letterale.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1238,7 +1238,7 @@
     "corretta": 0,
     "spiegazione": "Monomi simili hanno parte letterale identica.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1255,7 +1255,7 @@
     "corretta": 1,
     "spiegazione": "Somma degli esponenti: 3 + 2.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1272,7 +1272,7 @@
     "corretta": 2,
     "spiegazione": "Sono simili con coefficienti opposti: la loro somma è zero.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1289,7 +1289,7 @@
     "corretta": 3,
     "spiegazione": "Si moltiplicano i coefficienti e si sommano gli esponenti delle stesse lettere.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1306,7 +1306,7 @@
     "corretta": 0,
     "spiegazione": "(−2)³ = −8; (a²)³ = a⁶; b³.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1323,7 +1323,7 @@
     "corretta": 1,
     "spiegazione": "Si sommano i coefficienti dei monomi simili.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1340,7 +1340,7 @@
     "corretta": 2,
     "spiegazione": "Esempio: 6a + 2b.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1357,7 +1357,7 @@
     "corretta": 3,
     "spiegazione": "È il massimo dei gradi dei termini: x³y ha grado 4, 2x²y³ grado 5.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1374,7 +1374,7 @@
     "corretta": 0,
     "spiegazione": "Tutti i termini hanno grado 3.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1391,7 +1391,7 @@
     "corretta": 1,
     "spiegazione": "Contiene tutte le potenze di x di grado inferiore a 3, compreso il termine noto.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1408,7 +1408,7 @@
     "corretta": 2,
     "spiegazione": "Quadrato del primo, più doppio prodotto, più quadrato del secondo.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1425,7 +1425,7 @@
     "corretta": 3,
     "spiegazione": "Il doppio prodotto ha segno negativo.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1442,7 +1442,7 @@
     "corretta": 0,
     "spiegazione": "Somma per differenza: differenza dei quadrati.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1459,7 +1459,7 @@
     "corretta": 1,
     "spiegazione": "(50 + 1)(50 − 1) = 2.500 − 1.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1476,7 +1476,7 @@
     "corretta": 2,
     "spiegazione": "Cubo di un binomio.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1493,7 +1493,7 @@
     "corretta": 3,
     "spiegazione": "È una differenza di due quadrati.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1510,7 +1510,7 @@
     "corretta": 0,
     "spiegazione": "MCD dei termini: 3x.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1527,7 +1527,7 @@
     "corretta": 1,
     "spiegazione": "Teorema del resto: A(2) = 8 − 4 + 1 = 5.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1544,7 +1544,7 @@
     "corretta": 2,
     "spiegazione": "Teorema di Ruffini: A(2) = 4 − 10 + 6 = 0.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1561,7 +1561,7 @@
     "corretta": 3,
     "spiegazione": "Altrimenti è irriducibile.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1578,7 +1578,7 @@
     "corretta": 0,
     "spiegazione": "Le formule chiuse con «essere uguale» sono uguaglianze.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1595,7 +1595,7 @@
     "corretta": 1,
     "spiegazione": "Algebra 1, definizione 15.3.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1612,7 +1612,7 @@
     "corretta": 2,
     "spiegazione": "Consente di «trasportare» termini cambiandone il segno.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1629,7 +1629,7 @@
     "corretta": 3,
     "spiegazione": "Il numero deve essere diverso da zero.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1646,7 +1646,7 @@
     "corretta": 0,
     "spiegazione": "3x − 2x = 5 + 7.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1663,7 +1663,7 @@
     "corretta": 1,
     "spiegazione": "5x − 10 = 3x + 4 → 2x = 14.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1680,7 +1680,7 @@
     "corretta": 2,
     "spiegazione": "Moltiplicando per 6: 2x + x = 30.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1697,7 +1697,7 @@
     "corretta": 3,
     "spiegazione": "Si riduce a 0 · x = 2: nessun valore la soddisfa.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1714,7 +1714,7 @@
     "corretta": 0,
     "spiegazione": "Si riduce a 0 · x = 0.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1731,7 +1731,7 @@
     "corretta": 1,
     "spiegazione": "Bisogna porre le condizioni di esistenza.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1748,7 +1748,7 @@
     "corretta": 2,
     "spiegazione": "Si moltiplica per 2 e si divide per b.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1765,7 +1765,7 @@
     "corretta": 3,
     "spiegazione": "L'intervallo chiuso [2, 5] li include.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1782,7 +1782,7 @@
     "corretta": 0,
     "spiegazione": "Esempio: −x > 2 diventa x < −2.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1799,7 +1799,7 @@
     "corretta": 1,
     "spiegazione": "Dividendo per −2 il verso si inverte.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1816,7 +1816,7 @@
     "corretta": 2,
     "spiegazione": "Si ottiene 3x ≤ 15, quindi x ≤ 5.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1833,7 +1833,7 @@
     "corretta": 3,
     "spiegazione": "Si scrive raggruppando le equazioni con una parentesi graffa.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1850,7 +1850,7 @@
     "corretta": 0,
     "spiegazione": "Sommando: 2x = 14.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1867,7 +1867,7 @@
     "corretta": 1,
     "spiegazione": "Sommando: 3x = 9.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1884,7 +1884,7 @@
     "corretta": 2,
     "spiegazione": "x + y = 16, x − y = 6 → x = 11, y = 5.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1901,7 +1901,7 @@
     "corretta": 3,
     "spiegazione": "AB : A'B' = BC : B'C'.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1918,7 +1918,7 @@
     "corretta": 0,
     "spiegazione": "A è il dominio, B il codominio.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1935,7 +1935,7 @@
     "corretta": 1,
     "spiegazione": "Se è anche suriettiva è biunivoca.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1952,7 +1952,7 @@
     "corretta": 2,
     "spiegazione": "Algebra 1, definizione 8.5.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1969,7 +1969,7 @@
     "corretta": 3,
     "spiegazione": "È detta funzione lineare.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -1986,7 +1986,7 @@
     "corretta": 0,
     "spiegazione": "2 · 4 + 3 = 11.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2003,7 +2003,7 @@
     "corretta": 1,
     "spiegazione": "Ascissa negativa e ordinata positiva.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2020,7 +2020,7 @@
     "corretta": 2,
     "spiegazione": "Media delle ascisse e media delle ordinate.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2037,7 +2037,7 @@
     "corretta": 3,
     "spiegazione": "x · y = 12 costante.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2054,7 +2054,7 @@
     "corretta": 0,
     "spiegazione": "La radice quadrata aritmetica è il numero non negativo che elevato al quadrato dà 49.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2071,7 +2071,7 @@
     "corretta": 1,
     "spiegazione": "La radice quadrata è definita per a ≥ 0.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2088,7 +2088,7 @@
     "corretta": 2,
     "spiegazione": "(−3)³ = −27: la radice cubica è definita anche per i negativi.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2105,7 +2105,7 @@
     "corretta": 3,
     "spiegazione": "8^(2/3) = (∛8)² = 2² = 4.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2122,7 +2122,7 @@
     "corretta": 0,
     "spiegazione": "Solo i radicali simili si possono sommare.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2139,7 +2139,7 @@
     "corretta": 1,
     "spiegazione": "Radicali simili: si sommano i coefficienti.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2156,7 +2156,7 @@
     "corretta": 2,
     "spiegazione": "√12 = √(4 · 3) = 2√3; 2 diventa il coefficiente del radicale.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2173,7 +2173,7 @@
     "corretta": 3,
     "spiegazione": "√(2 · 8) = √16 = 4.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2190,7 +2190,7 @@
     "corretta": 0,
     "spiegazione": "6/√3 · √3/√3 = 6√3/3 = 2√3.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2207,7 +2207,7 @@
     "corretta": 1,
     "spiegazione": "√9 = 3; 0,5 e 3/7 sono razionali.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2224,7 +2224,7 @@
     "corretta": 2,
     "spiegazione": "Se a = 0 l'equazione è di primo grado.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2241,7 +2241,7 @@
     "corretta": 3,
     "spiegazione": "Si indica con Δ.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2258,7 +2258,7 @@
     "corretta": 0,
     "spiegazione": "Se Δ = 0 coincidenti, se Δ < 0 nessuna reale.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2275,7 +2275,7 @@
     "corretta": 1,
     "spiegazione": "x₁ = x₂ = −b/2a.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2292,7 +2292,7 @@
     "corretta": 2,
     "spiegazione": "Δ = 1 − 12 = −11 < 0.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2309,7 +2309,7 @@
     "corretta": 3,
     "spiegazione": "Δ = 25 − 24 = 1; x = (5 ± 1)/2.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2326,7 +2326,7 @@
     "corretta": 0,
     "spiegazione": "Δ = 144 − 144 = 0; x = 12/8 = 3/2.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2343,7 +2343,7 @@
     "corretta": 1,
     "spiegazione": "x₁ + x₂ = −b/a = 8/2.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2360,7 +2360,7 @@
     "corretta": 2,
     "spiegazione": "x₁ · x₂ = c/a.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2377,7 +2377,7 @@
     "corretta": 3,
     "spiegazione": "Da x² = 16 si ricava x = ±4.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2394,7 +2394,7 @@
     "corretta": 0,
     "spiegazione": "x(x − 5) = 0.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2411,7 +2411,7 @@
     "corretta": 1,
     "spiegazione": "Segni dei coefficienti + − +: due variazioni, due radici positive (2 e 3).",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2428,7 +2428,7 @@
     "corretta": 2,
     "spiegazione": "È una funzione polinomiale di secondo grado.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2445,7 +2445,7 @@
     "corretta": 3,
     "spiegazione": "Da x³ = 8 si ricava x = 2.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2462,7 +2462,7 @@
     "corretta": 0,
     "spiegazione": "Ponendo t = x²: t² − 5t + 4 = 0 → t = 1 o t = 4.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2479,7 +2479,7 @@
     "corretta": 1,
     "spiegazione": "Algebra 2, definizione 8.1.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2496,7 +2496,7 @@
     "corretta": 2,
     "spiegazione": "È il prodotto dei gradi: 2 · 1.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2513,7 +2513,7 @@
     "corretta": 3,
     "spiegazione": "Esempio: x + y = s, xy = p.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2530,7 +2530,7 @@
     "corretta": 0,
     "spiegazione": "Algebra 2, definizione 9.1.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2547,7 +2547,7 @@
     "corretta": 1,
     "spiegazione": "Ogni suo elemento è un evento elementare.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2564,7 +2564,7 @@
     "corretta": 2,
     "spiegazione": "Un evento composto è invece un sottoinsieme qualsiasi di Ω.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2581,7 +2581,7 @@
     "corretta": 3,
     "spiegazione": "A ∩ B = ∅.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2598,7 +2598,7 @@
     "corretta": 0,
     "spiegazione": "Teorema delle probabilità totali per eventi compatibili: 10/40 + 12/40 − 3/40.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2615,7 +2615,7 @@
     "corretta": 1,
     "spiegazione": "P(non A) = 1 − P(A).",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2632,7 +2632,7 @@
     "corretta": 2,
     "spiegazione": "Altrimenti sono dipendenti.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2649,7 +2649,7 @@
     "corretta": 3,
     "spiegazione": "Eventi indipendenti: 3/5 · 3/5.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2666,7 +2666,7 @@
     "corretta": 0,
     "spiegazione": "Probabilità condizionata: 3/5 · 2/4 = 6/20.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2683,7 +2683,7 @@
     "corretta": 1,
     "spiegazione": "Si indica con ∅; ha probabilità 0.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2700,7 +2700,7 @@
     "corretta": 2,
     "spiegazione": "Per questo R è un insieme continuo.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2717,7 +2717,7 @@
     "corretta": 3,
     "spiegazione": "La radice quadrata di un quadrato di un numero positivo è il numero stesso.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2734,7 +2734,7 @@
     "corretta": 0,
     "spiegazione": "c² = a² + b².",
     "fonte": "Wikipedia, «Teorema di Pitagora» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2751,7 +2751,7 @@
     "corretta": 1,
     "spiegazione": "√(9 + 16) = √25.",
     "fonte": "Wikipedia, «Teorema di Pitagora» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2768,7 +2768,7 @@
     "corretta": 2,
     "spiegazione": "√(36 + 64) = √100.",
     "fonte": "Wikipedia, «Teorema di Pitagora» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2785,7 +2785,7 @@
     "corretta": 3,
     "spiegazione": "√(169 − 25) = √144.",
     "fonte": "Wikipedia, «Teorema di Pitagora» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2802,7 +2802,7 @@
     "corretta": 0,
     "spiegazione": "25 + 144 = 169.",
     "fonte": "Wikipedia, «Teorema di Pitagora» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2819,7 +2819,7 @@
     "corretta": 1,
     "spiegazione": "L'enunciato, non la dimostrazione.",
     "fonte": "Wikipedia, «Teorema di Pitagora» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2836,7 +2836,7 @@
     "corretta": 2,
     "spiegazione": "È un angolo piatto.",
     "fonte": "Wikipedia, «Triangolo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2853,7 +2853,7 @@
     "corretta": 3,
     "spiegazione": "180° − 110°.",
     "fonte": "Wikipedia, «Triangolo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2870,7 +2870,7 @@
     "corretta": 0,
     "spiegazione": "Gli angoli sono uguali: 180°/3.",
     "fonte": "Wikipedia, «Triangolo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2887,7 +2887,7 @@
     "corretta": 1,
     "spiegazione": "Ha anche due angoli uguali.",
     "fonte": "Wikipedia, «Triangolo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2904,7 +2904,7 @@
     "corretta": 2,
     "spiegazione": "Ha anche i tre angoli diversi.",
     "fonte": "Wikipedia, «Triangolo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2921,7 +2921,7 @@
     "corretta": 3,
     "spiegazione": "Ha un angolo maggiore di 90°.",
     "fonte": "Wikipedia, «Triangolo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2938,7 +2938,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Triangolo».",
     "fonte": "Wikipedia, «Triangolo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2955,7 +2955,7 @@
     "corretta": 1,
     "spiegazione": "Un angolo giro.",
     "fonte": "Wikipedia, «Quadrilatero» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2972,7 +2972,7 @@
     "corretta": 2,
     "spiegazione": "180° · (6 − 2).",
     "fonte": "Wikipedia, «Poligono» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -2989,7 +2989,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Poligono».",
     "fonte": "Wikipedia, «Poligono» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3006,7 +3006,7 @@
     "corretta": 0,
     "spiegazione": "Base per altezza.",
     "fonte": "Wikipedia, «Rettangolo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3023,7 +3023,7 @@
     "corretta": 1,
     "spiegazione": "Ha tutti i lati congruenti e tutti gli angoli retti.",
     "fonte": "Wikipedia, «Rettangolo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3040,7 +3040,7 @@
     "corretta": 2,
     "spiegazione": "(10 + 6) · 4 / 2.",
     "fonte": "Wikipedia, «Trapezio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3057,7 +3057,7 @@
     "corretta": 3,
     "spiegazione": "I lati paralleli sono le basi.",
     "fonte": "Wikipedia, «Trapezio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3074,7 +3074,7 @@
     "corretta": 0,
     "spiegazione": "L = 2πr = 2π · 5 = 10π.",
     "fonte": "Wikipedia, «Circonferenza» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3091,7 +3091,7 @@
     "corretta": 1,
     "spiegazione": "A = πr² = π · 3² = 9π.",
     "fonte": "Wikipedia, «Cerchio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3108,7 +3108,7 @@
     "corretta": 2,
     "spiegazione": "Divide il cerchio in due semicerchi.",
     "fonte": "Wikipedia, «Cerchio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3125,7 +3125,7 @@
     "corretta": 3,
     "spiegazione": "Vale circa 3,14159.",
     "fonte": "Wikipedia, «Pi greco» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3142,7 +3142,7 @@
     "corretta": 0,
     "spiegazione": "Lindemann dimostrò nel 1882 che è trascendente.",
     "fonte": "Wikipedia, «Pi greco» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3159,7 +3159,7 @@
     "corretta": 1,
     "spiegazione": "Dimostrato da Ferdinand von Lindemann nel 1882.",
     "fonte": "Wikipedia, «Pi greco» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3176,7 +3176,7 @@
     "corretta": 2,
     "spiegazione": "È l'intersezione tra un angolo al centro e il cerchio.",
     "fonte": "Wikipedia, «Cerchio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3193,7 +3193,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Cerchio».",
     "fonte": "Wikipedia, «Cerchio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3210,7 +3210,7 @@
     "corretta": 0,
     "spiegazione": "È la metà di un angolo piatto.",
     "fonte": "Wikipedia, «Angolo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3227,7 +3227,7 @@
     "corretta": 1,
     "spiegazione": "È minore di un angolo retto.",
     "fonte": "Wikipedia, «Angolo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3244,7 +3244,7 @@
     "corretta": 2,
     "spiegazione": "Voce «Angolo».",
     "fonte": "Wikipedia, «Angolo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3261,7 +3261,7 @@
     "corretta": 3,
     "spiegazione": "Un angolo giro misura 2π radianti.",
     "fonte": "Wikipedia, «Angolo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3278,7 +3278,7 @@
     "corretta": 0,
     "spiegazione": "6 facce, 8 vertici, 12 spigoli.",
     "fonte": "Wikipedia, «Cubo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3295,7 +3295,7 @@
     "corretta": 1,
     "spiegazione": "V = a³ = 3³ = 27.",
     "fonte": "Wikipedia, «Cubo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3312,7 +3312,7 @@
     "corretta": 2,
     "spiegazione": "Area di base (2 · 3) per l'altezza 4.",
     "fonte": "Wikipedia, «Parallelepipedo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3329,7 +3329,7 @@
     "corretta": 3,
     "spiegazione": "4πR² è la superficie sferica.",
     "fonte": "Wikipedia, «Sfera» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3346,7 +3346,7 @@
     "corretta": 0,
     "spiegazione": "Metro, chilogrammo, secondo, ampere, kelvin, mole, candela.",
     "fonte": "Wikipedia, «Sistema internazionale di unità di misura» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3363,7 +3363,7 @@
     "corretta": 1,
     "spiegazione": "Il sistema MKS usava metro, chilogrammo e secondo.",
     "fonte": "Wikipedia, «Sistema internazionale di unità di misura» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3380,7 +3380,7 @@
     "corretta": 2,
     "spiegazione": "Introdotta come grandezza fondamentale nel 1954.",
     "fonte": "Wikipedia, «Sistema internazionale di unità di misura» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3397,7 +3397,7 @@
     "corretta": 3,
     "spiegazione": "M = C(1 + it) = 1.000 · (1 + 0,05 · 3).",
     "fonte": "Wikipedia, «Capitalizzazione semplice» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3414,7 +3414,7 @@
     "corretta": 0,
     "spiegazione": "81 = 3⁴, 85 = 5 · 17, 87 = 3 · 29; 83 ha solo due divisori.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3431,7 +3431,7 @@
     "corretta": 1,
     "spiegazione": "84 = 2 · 2 · 3 · 7 = 2² · 3 · 7.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3448,7 +3448,7 @@
     "corretta": 2,
     "spiegazione": "8 = 2³, 12 = 2² · 3, 20 = 2² · 5: mcm = 2³ · 3 · 5 = 120.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3465,7 +3465,7 @@
     "corretta": 3,
     "spiegazione": "54 = 2 · 3³, 72 = 2³ · 3²: MCD = 2 · 3² = 18.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3482,7 +3482,7 @@
     "corretta": 0,
     "spiegazione": "2 + 7 + 1 + 8 = 18, multiplo di 3.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3499,7 +3499,7 @@
     "corretta": 1,
     "spiegazione": "Stessa base: si sommano gli esponenti.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3516,7 +3516,7 @@
     "corretta": 2,
     "spiegazione": "Stessa base: si sottraggono gli esponenti.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3533,7 +3533,7 @@
     "corretta": 3,
     "spiegazione": "Potenza di potenza: si moltiplicano gli esponenti.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3550,7 +3550,7 @@
     "corretta": 0,
     "spiegazione": "Una potenza di base negativa con esponente dispari è negativa.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3567,7 +3567,7 @@
     "corretta": 1,
     "spiegazione": "Segni discordi: il quoziente è negativo.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3584,7 +3584,7 @@
     "corretta": 2,
     "spiegazione": "Numeri discordi: si sottraggono i valori assoluti e si prende il segno del maggiore.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3601,7 +3601,7 @@
     "corretta": 3,
     "spiegazione": "m.c.d. 12: 9/12 + 2/12 = 11/12.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3618,7 +3618,7 @@
     "corretta": 0,
     "spiegazione": "Con denominatore 12: 10/12 − 3/12 = 7/12.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3635,7 +3635,7 @@
     "corretta": 1,
     "spiegazione": "3/5 · 10/9 = 30/45 = 2/3.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3652,7 +3652,7 @@
     "corretta": 2,
     "spiegazione": "4/7 · 21/2 = 84/14 = 6.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3669,7 +3669,7 @@
     "corretta": 3,
     "spiegazione": "Si divide per MCD(45, 60) = 15.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3686,7 +3686,7 @@
     "corretta": 0,
     "spiegazione": "Esponente negativo: si prende il reciproco della base con esponente positivo.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3703,7 +3703,7 @@
     "corretta": 1,
     "spiegazione": "Il coefficiente deve essere tra 1 e 10.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3720,7 +3720,7 @@
     "corretta": 2,
     "spiegazione": "Si sposta la virgola di 3 posti verso destra.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3737,7 +3737,7 @@
     "corretta": 3,
     "spiegazione": "4 · x = 7 · 12 → x = 84/4 = 21.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3754,7 +3754,7 @@
     "corretta": 0,
     "spiegazione": "Prodotto dei medi = prodotto degli estremi: 15x = 60, x = 4.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3771,7 +3771,7 @@
     "corretta": 1,
     "spiegazione": "Il medio è la radice del prodotto degli estremi: x² = 144.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3788,7 +3788,7 @@
     "corretta": 2,
     "spiegazione": "80 · 35 / 100 = 28.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3805,7 +3805,7 @@
     "corretta": 3,
     "spiegazione": "60/250 = 0,24, cioè il 24%.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3822,7 +3822,7 @@
     "corretta": 0,
     "spiegazione": "Prezzo iniziale = 154 / 1,10 = 140.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3839,7 +3839,7 @@
     "corretta": 1,
     "spiegazione": "Proporzionalità diretta: ogni penna costa 1,50 €.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3856,7 +3856,7 @@
     "corretta": 2,
     "spiegazione": "Proporzionalità inversa: 8 · 6 = 12 · x → x = 4.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3873,7 +3873,7 @@
     "corretta": 3,
     "spiegazione": "La somma 90 divisa per 5 dati.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3890,7 +3890,7 @@
     "corretta": 0,
     "spiegazione": "Ordinati: 2, 4, 5, 7, 8, 9; con un numero pari di dati è la media dei due centrali: (5 + 7)/2 = 6.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3907,7 +3907,7 @@
     "corretta": 1,
     "spiegazione": "1·8 + 1·4 + 0·2 + 1·1 = 13.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3924,7 +3924,7 @@
     "corretta": 2,
     "spiegazione": "L'insieme delle parti ha 2⁴ = 16 elementi.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3941,7 +3941,7 @@
     "corretta": 3,
     "spiegazione": "Ogni elemento di A si accoppia con ogni elemento di B: 4 · 3 = 12.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3958,7 +3958,7 @@
     "corretta": 0,
     "spiegazione": "Gli elementi di A che non appartengono a B.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3975,7 +3975,7 @@
     "corretta": 1,
     "spiegazione": "Si moltiplicano i coefficienti e si sommano gli esponenti delle lettere uguali.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -3992,7 +3992,7 @@
     "corretta": 2,
     "spiegazione": "Il quadrato di un numero negativo è positivo.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4009,7 +4009,7 @@
     "corretta": 3,
     "spiegazione": "Somma degli esponenti: 2 + 3 + 1 = 6.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4026,7 +4026,7 @@
     "corretta": 0,
     "spiegazione": "Monomi simili: si sommano i coefficienti (5 − 8 + 1 = −2).",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4043,7 +4043,7 @@
     "corretta": 1,
     "spiegazione": "Quadrato del primo, doppio prodotto, quadrato del secondo.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4060,7 +4060,7 @@
     "corretta": 2,
     "spiegazione": "(2a)² − 2·2a·3b + (3b)².",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4077,7 +4077,7 @@
     "corretta": 3,
     "spiegazione": "Somma per differenza: differenza dei quadrati.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4094,7 +4094,7 @@
     "corretta": 0,
     "spiegazione": "(100 + 3)(100 − 3) = 10.000 − 9.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4111,7 +4111,7 @@
     "corretta": 1,
     "spiegazione": "Cubo di un binomio con il segno alternato.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4128,7 +4128,7 @@
     "corretta": 2,
     "spiegazione": "È una differenza di due quadrati.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4145,7 +4145,7 @@
     "corretta": 3,
     "spiegazione": "Il fattore comune massimo è 5ab.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4162,7 +4162,7 @@
     "corretta": 0,
     "spiegazione": "Per il teorema del resto: A(−1) = −1 + 2 − 1 = 0.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4179,7 +4179,7 @@
     "corretta": 1,
     "spiegazione": "2x = 16 → x = 8.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4196,7 +4196,7 @@
     "corretta": 2,
     "spiegazione": "3x + 6 = 5x − 4 → 10 = 2x → x = 5.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4213,7 +4213,7 @@
     "corretta": 3,
     "spiegazione": "Moltiplicando per 6: 3x + 2x = 60 → x = 12.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4230,7 +4230,7 @@
     "corretta": 0,
     "spiegazione": "Svolgendo si ottiene 0 = 0.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4247,7 +4247,7 @@
     "corretta": 1,
     "spiegazione": "−2x < 6 → dividendo per −2 il verso si inverte: x > −3.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4264,7 +4264,7 @@
     "corretta": 2,
     "spiegazione": "Sommando le equazioni: 2x = 14, quindi x = 7 e y = 5.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4281,7 +4281,7 @@
     "corretta": 3,
     "spiegazione": "Sottraendo la seconda dalla prima: 2x = 6.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4298,7 +4298,7 @@
     "corretta": 0,
     "spiegazione": "Posto x il minore: x + 2x = 30, x = 10.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4315,7 +4315,7 @@
     "corretta": 1,
     "spiegazione": "Posto x l'età del figlio: x + 3x = 48, x = 12.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4332,7 +4332,7 @@
     "corretta": 2,
     "spiegazione": "y = −3 · (−1) + 2 = 5.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4349,7 +4349,7 @@
     "corretta": 3,
     "spiegazione": "Media delle coordinate: ((−2 + 4)/2; (6 + 0)/2).",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4366,7 +4366,7 @@
     "corretta": 0,
     "spiegazione": "Ascissa e ordinata negative.",
     "fonte": "MatematicaC3, Algebra 1 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4383,7 +4383,7 @@
     "corretta": 1,
     "spiegazione": "9 + 4 = 13; la somma delle radici non è la radice della somma.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4400,7 +4400,7 @@
     "corretta": 2,
     "spiegazione": "Radicali simili: si sommano i coefficienti (3 + 4 − 1).",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4417,7 +4417,7 @@
     "corretta": 3,
     "spiegazione": "√3 · √12 = √36 = 6.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4434,7 +4434,7 @@
     "corretta": 0,
     "spiegazione": "10√5 / 5 = 2√5.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4451,7 +4451,7 @@
     "corretta": 1,
     "spiegazione": "(⁴√16)³ = 2³ = 8.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4468,7 +4468,7 @@
     "corretta": 2,
     "spiegazione": "(−5)³ = −125: la radice cubica esiste anche per i negativi.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4485,7 +4485,7 @@
     "corretta": 3,
     "spiegazione": "Δ = 49 − 40 = 9 > 0: x = (7 ± 3)/2.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4502,7 +4502,7 @@
     "corretta": 0,
     "spiegazione": "Δ = 36 − 36 = 0: è (x + 3)² = 0.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4519,7 +4519,7 @@
     "corretta": 1,
     "spiegazione": "Δ = 4 − 20 = −16, negativo.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4536,7 +4536,7 @@
     "corretta": 2,
     "spiegazione": "Equazione pura: x² = 25, x = ±5.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4553,7 +4553,7 @@
     "corretta": 3,
     "spiegazione": "Equazione spuria: 3x(x + 4) = 0.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4570,7 +4570,7 @@
     "corretta": 0,
     "spiegazione": "Δ = b² − 4ac = 16 − 4 = 12.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4587,7 +4587,7 @@
     "corretta": 1,
     "spiegazione": "Somma = −b/a = 9 (le soluzioni sono 2 e 7).",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4604,7 +4604,7 @@
     "corretta": 2,
     "spiegazione": "Eventi indipendenti: 5/8 · 5/8 = 25/64.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4621,7 +4621,7 @@
     "corretta": 3,
     "spiegazione": "P(non A) = 1 − 2/5 = 3/5.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4638,7 +4638,7 @@
     "corretta": 0,
     "spiegazione": "P(pari) + P(>4) − P(pari e >4) = 3/6 + 2/6 − 1/6 = 4/6.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4655,7 +4655,7 @@
     "corretta": 1,
     "spiegazione": "x³ = −27, quindi x = −3.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4672,7 +4672,7 @@
     "corretta": 2,
     "spiegazione": "Posto t = x²: t² − 10t + 9 = 0 → t = 1 o t = 9.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4689,7 +4689,7 @@
     "corretta": 3,
     "spiegazione": "Il grado del sistema è il prodotto dei gradi: 2 · 2 = 4.",
     "fonte": "MatematicaC3, Algebra 2 (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4706,7 +4706,7 @@
     "corretta": 0,
     "spiegazione": "180° − 35° − 85° = 60°.",
     "fonte": "Wikipedia, «Triangolo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4723,7 +4723,7 @@
     "corretta": 1,
     "spiegazione": "(5 − 2) · 180° = 540°.",
     "fonte": "Wikipedia, «Poligono» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4740,7 +4740,7 @@
     "corretta": 2,
     "spiegazione": "(8 − 2) · 180° / 8 = 1080° / 8 = 135°.",
     "fonte": "Wikipedia, «Poligono» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4757,7 +4757,7 @@
     "corretta": 3,
     "spiegazione": "Complementare: ciò che manca per arrivare a 90°.",
     "fonte": "Wikipedia, «Angolo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4774,7 +4774,7 @@
     "corretta": 0,
     "spiegazione": "Supplementare: ciò che manca per arrivare a 180°.",
     "fonte": "Wikipedia, «Angolo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4791,7 +4791,7 @@
     "corretta": 1,
     "spiegazione": "Area = base per altezza = 12 · 5.",
     "fonte": "Wikipedia, «Rettangolo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4808,7 +4808,7 @@
     "corretta": 2,
     "spiegazione": "Per Pitagora: √(144 + 25) = √169 = 13.",
     "fonte": "Wikipedia, «Teorema di Pitagora» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4825,7 +4825,7 @@
     "corretta": 3,
     "spiegazione": "Perimetro = 2 · (8 + 5) = 26.",
     "fonte": "Wikipedia, «Rettangolo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4842,7 +4842,7 @@
     "corretta": 0,
     "spiegazione": "Area = (12 + 8) · 5 / 2 = 50.",
     "fonte": "Wikipedia, «Trapezio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4859,7 +4859,7 @@
     "corretta": 1,
     "spiegazione": "b · h / 2 = 30: il triangolo è metà di un parallelogramma.",
     "fonte": "Wikipedia, «Triangolo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4876,7 +4876,7 @@
     "corretta": 2,
     "spiegazione": "Usa il semiperimetro p: A = √(p(p − a)(p − b)(p − c)).",
     "fonte": "Wikipedia, «Triangolo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4893,7 +4893,7 @@
     "corretta": 3,
     "spiegazione": "L = 2πr = 2π · 7.",
     "fonte": "Wikipedia, «Circonferenza» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4910,7 +4910,7 @@
     "corretta": 0,
     "spiegazione": "L = dπ, con d = 10.",
     "fonte": "Wikipedia, «Circonferenza» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4927,7 +4927,7 @@
     "corretta": 1,
     "spiegazione": "A = πr² = π · 5².",
     "fonte": "Wikipedia, «Cerchio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4944,7 +4944,7 @@
     "corretta": 2,
     "spiegazione": "Il raggio è 4: π · 4² = 16π.",
     "fonte": "Wikipedia, «Cerchio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4961,7 +4961,7 @@
     "corretta": 3,
     "spiegazione": "A = 4πR² = 4π · 9.",
     "fonte": "Wikipedia, «Sfera» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4978,7 +4978,7 @@
     "corretta": 0,
     "spiegazione": "V = (4/3)πR³ = (4/3)π · 27 = 36π.",
     "fonte": "Wikipedia, «Sfera» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -4995,7 +4995,7 @@
     "corretta": 1,
     "spiegazione": "Il cubo ha 6 facce quadrate: 6 · 16 = 96.",
     "fonte": "Wikipedia, «Cubo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -5012,7 +5012,7 @@
     "corretta": 2,
     "spiegazione": "V = 3 · 4 · 5 = 60.",
     "fonte": "Wikipedia, «Parallelepipedo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -5029,7 +5029,7 @@
     "corretta": 3,
     "spiegazione": "√(81 + 144) = √225 = 15.",
     "fonte": "Wikipedia, «Teorema di Pitagora» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -5046,7 +5046,7 @@
     "corretta": 0,
     "spiegazione": "√(625 − 49) = √576 = 24.",
     "fonte": "Wikipedia, «Teorema di Pitagora» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -5063,7 +5063,7 @@
     "corretta": 1,
     "spiegazione": "Il valore 355/113 si deve invece a Zu Chongzhi.",
     "fonte": "Wikipedia, «Pi greco» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -5080,7 +5080,7 @@
     "corretta": 2,
     "spiegazione": "Fu aggiunta nel 1954 insieme alla temperatura assoluta.",
     "fonte": "Wikipedia, «Sistema internazionale di unità di misura» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "matematica",
@@ -5097,6 +5097,6 @@
     "corretta": 3,
     "spiegazione": "La quantità di sostanza è diventata grandezza fondamentale nel 1971.",
     "fonte": "Wikipedia, «Sistema internazionale di unità di misura» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   }
 ]

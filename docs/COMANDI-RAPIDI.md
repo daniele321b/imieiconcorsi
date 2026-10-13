@@ -56,7 +56,7 @@ scripts/deploy.sh all         # terraform chiede "yes" due volte (shared e dev);
 5. import dei bandi da inPA
 6. stampa degli indirizzi
 
-La banca domande (oltre 200 domande per ognuna delle 12 materie) la carica l'import dopo `infra`.
+La banca domande (almeno 300 domande per ognuna delle 12 materie) la carica l'import dopo `infra`.
 
 **Dopo il primo `all`:**
 1. Apri l'email di AWS ("Amazon Web Services – Email Address Verification
@@ -300,7 +300,7 @@ alla home). Servono agli utenti e a chi valuta il servizio (AWS per SES, Stripe,
 
 ## Banca domande (piano Free)
 
-Oggi c'è la **v1**: almeno 200 domande per ognuna delle 12 materie (2.407 in
+Oggi c'è la **v2**: almeno 300 domande per ognuna delle 12 materie (3.605 in
 tutto), scritte da libri di testo e fonti online. Le fonti sono elencate in fondo
 alla pagina Studio, insieme alla versione della banca.
 

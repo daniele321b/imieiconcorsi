@@ -14,7 +14,7 @@
     "corretta": 0,
     "spiegazione": "«Qual» è un troncamento, non un'elisione: non vuole l'apostrofo. Lo stesso vale per «tal è».",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -31,7 +31,7 @@
     "corretta": 1,
     "spiegazione": "In «pover'uomo» c'è elisione: l'apostrofo è obbligatorio.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -48,7 +48,7 @@
     "corretta": 2,
     "spiegazione": "Con l'elisione l'apostrofo è obbligatorio; nel troncamento e nell'aferesi solo in alcuni casi.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -65,7 +65,7 @@
     "corretta": 3,
     "spiegazione": "L'apostrofo distingue l'elisione di «una» (femminile) dal troncamento di «uno» (maschile).",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -82,7 +82,7 @@
     "corretta": 0,
     "spiegazione": "La h distingue le voci del verbo avere dalla congiunzione o, dalla preposizione ai e a, dal sostantivo anno.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -99,7 +99,7 @@
     "corretta": 1,
     "spiegazione": "Il grado intensivo si scrive normalmente «cqu» (acqua, nacque); «qqu» solo in soqquadro, beqquadro e derivati.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -116,7 +116,7 @@
     "corretta": 2,
     "spiegazione": "Le parole in -cia e -gia atone mantengono la i al plurale se precedute da vocale (valigie, camicie), la perdono se precedute da consonante (arance, piogge).",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -133,7 +133,7 @@
     "corretta": 3,
     "spiegazione": "Se -cia è preceduto da consonante, al plurale la i cade: arancia → arance, pioggia → piogge.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -150,7 +150,7 @@
     "corretta": 0,
     "spiegazione": "L'accento acuto segnala i suoni più chiusi (é, ó); il grave i suoni più aperti (à, è, ò). Si scrive quindi perché, poiché, affinché.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -167,7 +167,7 @@
     "corretta": 1,
     "spiegazione": "L'accento grave segna i suoni più aperti à, è, ò e si usa di norma anche su ì e ù.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -184,7 +184,7 @@
     "corretta": 2,
     "spiegazione": "Cuore si scrive con c; la q è sempre seguita da u più un'altra vocale (qua, que, qui, quo), ma non tutte le parole con questo suono si scrivono con q.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -201,7 +201,7 @@
     "corretta": 3,
     "spiegazione": "La q compare solo nei nessi qua, que, qui, quo, con valore /kw/.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -218,7 +218,7 @@
     "corretta": 0,
     "spiegazione": "I verbi si flettono per modo: indicativo, congiuntivo, condizionale, imperativo (finiti) e infinito, gerundio, participio (indefiniti). Presente, passato e futuro sono tempi.",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -235,7 +235,7 @@
     "corretta": 1,
     "spiegazione": "Le parole variabili cambiano forma (desinenza) secondo genere, numero, persona; le invariabili, come avverbi e preposizioni, no.",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -252,7 +252,7 @@
     "corretta": 2,
     "spiegazione": "«Un'» si usa davanti a vocale, ma non davanti a i semiconsonantica: quindi «una iena».",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -269,7 +269,7 @@
     "corretta": 3,
     "spiegazione": "Il periodo è una frase complessa con due o più predicati; l'analisi logica studia la frase, l'analisi del periodo il rapporto tra le proposizioni.",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -286,7 +286,7 @@
     "corretta": 0,
     "spiegazione": "L'analisi grammaticale ha per oggetto le parole; l'analisi logica le funzioni sintattiche nella frase.",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -303,7 +303,7 @@
     "corretta": 1,
     "spiegazione": "Si scrive «qual è» (troncamento, senza apostrofo) e «un po'» (apocope, con apostrofo). «Un'altra» è corretto: elisione di «una».",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -320,7 +320,7 @@
     "corretta": 2,
     "spiegazione": "A questi si aggiungono 5 lettere «straniere»: j, k, w, x, y.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -337,7 +337,7 @@
     "corretta": 3,
     "spiegazione": "Sono usate soprattutto per parole di origine straniera.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -354,7 +354,7 @@
     "corretta": 0,
     "spiegazione": "I digrammi sono ch, ci, gh, gi, gl, gn, sc.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -371,7 +371,7 @@
     "corretta": 1,
     "spiegazione": "In italiano la h è muta: ha funzioni diacritiche e distintive.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -388,7 +388,7 @@
     "corretta": 2,
     "spiegazione": "Allo stesso modo ho/o, hai/ai, ha/a.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -405,7 +405,7 @@
     "corretta": 3,
     "spiegazione": "L'elisione di «gli» è ammessa solo davanti a i-; davanti ad altre vocali si scrive per intero (begli occhi, gli amici).",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -422,7 +422,7 @@
     "corretta": 0,
     "spiegazione": "«c'ha» e «c'offrì» sono considerate errate: si scrive «ci ha», «ci offrì».",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -439,7 +439,7 @@
     "corretta": 1,
     "spiegazione": "Davanti a e- o i- la h è obbligatoria: anch'io, anch'egli.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -456,7 +456,7 @@
     "corretta": 2,
     "spiegazione": "Le parole in -cia/-gia atone perdono la i al plurale se la c/g è preceduta da consonante (arance, piogge), la mantengono se preceduta da vocale (camicie, valigie).",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -473,7 +473,7 @@
     "corretta": 3,
     "spiegazione": "Prima di -gia c'è una vocale (i), quindi la i si mantiene al plurale.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -490,7 +490,7 @@
     "corretta": 0,
     "spiegazione": "La i è etimologica nelle parole da -cientis (sufficiente, efficiente, cosciente); non c'è in beneficente, conoscente, magnificente.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -507,7 +507,7 @@
     "corretta": 1,
     "spiegazione": "La i è etimologica (dal latino superficies), come in effigie e specie.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -524,7 +524,7 @@
     "corretta": 2,
     "spiegazione": "Le forme in -ggiero (passeggiero, messaggiero, leggiero) sono antiquate.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -541,7 +541,7 @@
     "corretta": 3,
     "spiegazione": "Si scrive senza i, anche se deriva dal suffisso -(i)ere.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -558,7 +558,7 @@
     "corretta": 0,
     "spiegazione": "Cieco e cielo mantengono la i (residuo di -ae- latino); «celo» è voce del verbo celare.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -575,7 +575,7 @@
     "corretta": 1,
     "spiegazione": "Esempio: campo, bambino; fanno eccezione pochi composti come panpepato e benpensante.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -592,7 +592,7 @@
     "corretta": 2,
     "spiegazione": "Il grado intensivo di qu si scrive -cqu-.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -609,7 +609,7 @@
     "corretta": 3,
     "spiegazione": "Scuola, cuore, cuoco, cuoio derivano dalla dittongazione di -ŏ- latina e si scrivono con c.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -626,7 +626,7 @@
     "corretta": 0,
     "spiegazione": "«Piacqui» viene dal latino PLACŬI.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -643,7 +643,7 @@
     "corretta": 1,
     "spiegazione": "Taccuino si scrive con -cc- e non con -cq-.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -660,7 +660,7 @@
     "corretta": 2,
     "spiegazione": "Sulla a si usa solo il grave.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -677,7 +677,7 @@
     "corretta": 3,
     "spiegazione": "Su e e o si usa l'acuto per le vocali chiuse, il grave per quelle aperte (cioè).",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -694,7 +694,7 @@
     "corretta": 0,
     "spiegazione": "Qua e qui non vogliono mai l'accento.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -711,7 +711,7 @@
     "corretta": 1,
     "spiegazione": "Voce «Ortografia italiana».",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -728,7 +728,7 @@
     "corretta": 2,
     "spiegazione": "Hanno accento distintivo è, dà, dì, là, lì, né, sé, sì, tè, ché.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -745,7 +745,7 @@
     "corretta": 3,
     "spiegazione": "La o tonica finale è quasi sempre aperta.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -762,7 +762,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Ortografia italiana».",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -779,7 +779,7 @@
     "corretta": 1,
     "spiegazione": "Davanti ad a, o, u serve il trigramma sci (sciopero, sciupare).",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -796,7 +796,7 @@
     "corretta": 2,
     "spiegazione": "Per questo è difficile decidere tra -z- e -zz- (es. azione / pazzo).",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -813,7 +813,7 @@
     "corretta": 3,
     "spiegazione": "Davanti a -zia, -zie, -zio la z è scempia (azione, grazie, ozio).",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -830,7 +830,7 @@
     "corretta": 0,
     "spiegazione": "Le parole in -iere/-iera da basi in -zz- (carrozza, terrazza) mantengono la doppia.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -847,7 +847,7 @@
     "corretta": 1,
     "spiegazione": "Si scriveva à, ànno al posto di ha, hanno.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -864,7 +864,7 @@
     "corretta": 2,
     "spiegazione": "Voce «Ortografia italiana».",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -881,7 +881,7 @@
     "corretta": 3,
     "spiegazione": "«Tutt'ora» è considerata variante.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -898,7 +898,7 @@
     "corretta": 0,
     "spiegazione": "Sopravvive in alcuni nomi e toponimi (Jesi, Jacopo).",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -915,7 +915,7 @@
     "corretta": 1,
     "spiegazione": "Per questo «c'è» è corretto ma «c'ha» no.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -932,7 +932,7 @@
     "corretta": 2,
     "spiegazione": "L'indicativo esprime invece la realtà oggettiva.",
     "fonte": "Wikipedia, «Congiuntivo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -949,7 +949,7 @@
     "corretta": 3,
     "spiegazione": "Il congiuntivo non ha un futuro.",
     "fonte": "Wikipedia, «Congiuntivo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -966,7 +966,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Congiuntivo».",
     "fonte": "Wikipedia, «Congiuntivo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -983,7 +983,7 @@
     "corretta": 1,
     "spiegazione": "Dopo verbi di speranza si usa il congiuntivo.",
     "fonte": "Wikipedia, «Congiuntivo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1000,7 +1000,7 @@
     "corretta": 2,
     "spiegazione": "«Sebbene» regge il congiuntivo.",
     "fonte": "Wikipedia, «Congiuntivo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1017,7 +1017,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Condizionale».",
     "fonte": "Wikipedia, «Condizionale» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1034,7 +1034,7 @@
     "corretta": 0,
     "spiegazione": "Nel periodo ipotetico: se + congiuntivo imperfetto, condizionale nella principale.",
     "fonte": "Wikipedia, «Condizionale» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1051,7 +1051,7 @@
     "corretta": 1,
     "spiegazione": "Voce «Condizionale».",
     "fonte": "Wikipedia, «Condizionale» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1068,7 +1068,7 @@
     "corretta": 2,
     "spiegazione": "Dal latino pro-nomen.",
     "fonte": "Wikipedia, «Pronome» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1085,7 +1085,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Pronome».",
     "fonte": "Wikipedia, «Pronome» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1102,7 +1102,7 @@
     "corretta": 0,
     "spiegazione": "Il pronome può sostituire anche aggettivi o intere frasi.",
     "fonte": "Wikipedia, «Pronome» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1119,7 +1119,7 @@
     "corretta": 1,
     "spiegazione": "Voce «Pronome».",
     "fonte": "Wikipedia, «Pronome» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1136,7 +1136,7 @@
     "corretta": 2,
     "spiegazione": "I determinativi comprendono possessivi, numerali, dimostrativi, indefiniti, interrogativi ed esclamativi.",
     "fonte": "Wikipedia, «Aggettivo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1153,7 +1153,7 @@
     "corretta": 3,
     "spiegazione": "Funzione attributiva: si unisce direttamente al nome.",
     "fonte": "Wikipedia, «Aggettivo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1170,7 +1170,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Aggettivo».",
     "fonte": "Wikipedia, «Aggettivo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1187,7 +1187,7 @@
     "corretta": 1,
     "spiegazione": "Voce «Avverbio».",
     "fonte": "Wikipedia, «Avverbio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1204,7 +1204,7 @@
     "corretta": 2,
     "spiegazione": "Voce «Avverbio».",
     "fonte": "Wikipedia, «Avverbio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1221,7 +1221,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Avverbio».",
     "fonte": "Wikipedia, «Avverbio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1238,7 +1238,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Preposizione».",
     "fonte": "Wikipedia, «Preposizione» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1255,7 +1255,7 @@
     "corretta": 1,
     "spiegazione": "Voce «Preposizione».",
     "fonte": "Wikipedia, «Preposizione» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1272,7 +1272,7 @@
     "corretta": 2,
     "spiegazione": "Le improprie possono essere anche nomi, aggettivi, avverbi o forme verbali.",
     "fonte": "Wikipedia, «Preposizione» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1289,7 +1289,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Preposizione».",
     "fonte": "Wikipedia, «Preposizione» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1306,7 +1306,7 @@
     "corretta": 0,
     "spiegazione": "affinché = a + fine + che; anche cioè, oppure, perché, poiché.",
     "fonte": "Wikipedia, «Congiunzione (linguistica)» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1323,7 +1323,7 @@
     "corretta": 1,
     "spiegazione": "Le coordinanti collegano elementi di uguale rango sintattico.",
     "fonte": "Wikipedia, «Congiunzione (linguistica)» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1340,7 +1340,7 @@
     "corretta": 2,
     "spiegazione": "Voce «Analisi logica della proposizione».",
     "fonte": "Wikipedia, «Analisi logica della proposizione» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1357,7 +1357,7 @@
     "corretta": 3,
     "spiegazione": "Esempio: «Lucia è bionda».",
     "fonte": "Wikipedia, «Analisi logica della proposizione» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1374,7 +1374,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Analisi logica della proposizione».",
     "fonte": "Wikipedia, «Analisi logica della proposizione» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1391,7 +1391,7 @@
     "corretta": 1,
     "spiegazione": "Il soggetto può essere sottinteso.",
     "fonte": "Wikipedia, «Analisi logica della proposizione» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1408,7 +1408,7 @@
     "corretta": 2,
     "spiegazione": "Voce «Complemento oggetto».",
     "fonte": "Wikipedia, «Complemento oggetto» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1425,7 +1425,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Complemento oggetto».",
     "fonte": "Wikipedia, «Complemento oggetto» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1442,7 +1442,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Complemento oggetto».",
     "fonte": "Wikipedia, «Complemento oggetto» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1459,7 +1459,7 @@
     "corretta": 1,
     "spiegazione": "Voce «Analisi logica del periodo».",
     "fonte": "Wikipedia, «Analisi logica del periodo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1476,7 +1476,7 @@
     "corretta": 2,
     "spiegazione": "Ogni predicato segna una proposizione.",
     "fonte": "Wikipedia, «Analisi logica del periodo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1493,7 +1493,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Analisi logica del periodo».",
     "fonte": "Wikipedia, «Analisi logica del periodo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1510,7 +1510,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Analisi logica del periodo».",
     "fonte": "Wikipedia, «Analisi logica del periodo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1527,7 +1527,7 @@
     "corretta": 1,
     "spiegazione": "È esplicita se il verbo è in un modo finito.",
     "fonte": "Wikipedia, «Proposizione subordinata» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1544,7 +1544,7 @@
     "corretta": 2,
     "spiegazione": "Voce «Proposizione subordinata».",
     "fonte": "Wikipedia, «Proposizione subordinata» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1561,7 +1561,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Proposizione subordinata».",
     "fonte": "Wikipedia, «Proposizione subordinata» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1578,7 +1578,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Figura retorica».",
     "fonte": "Wikipedia, «Figura retorica» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1595,7 +1595,7 @@
     "corretta": 1,
     "spiegazione": "Sostituzione per contiguità logica o materiale.",
     "fonte": "Wikipedia, «Figura retorica» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1612,7 +1612,7 @@
     "corretta": 2,
     "spiegazione": "Voce «Figura retorica».",
     "fonte": "Wikipedia, «Figura retorica» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1629,7 +1629,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Figura retorica».",
     "fonte": "Wikipedia, «Figura retorica» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1646,7 +1646,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Figura retorica».",
     "fonte": "Wikipedia, «Figura retorica» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1663,7 +1663,7 @@
     "corretta": 1,
     "spiegazione": "Voce «Metafora».",
     "fonte": "Wikipedia, «Metafora» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1680,7 +1680,7 @@
     "corretta": 2,
     "spiegazione": "Voce «Metafora».",
     "fonte": "Wikipedia, «Metafora» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1697,7 +1697,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Ossimoro».",
     "fonte": "Wikipedia, «Ossimoro» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1714,7 +1714,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Ossimoro».",
     "fonte": "Wikipedia, «Ossimoro» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1731,7 +1731,7 @@
     "corretta": 1,
     "spiegazione": "Eccezione nell'uso dell'articolo.",
     "fonte": "Wikipedia, «Articolo (linguistica)» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1748,7 +1748,7 @@
     "corretta": 2,
     "spiegazione": "Voce «Storia della letteratura italiana».",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1765,7 +1765,7 @@
     "corretta": 3,
     "spiegazione": "Fu attiva dal 1220-50 circa, ispirata ai modelli provenzali.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1782,7 +1782,7 @@
     "corretta": 0,
     "spiegazione": "Tre cantiche di 33 canti più il canto introduttivo.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1799,7 +1799,7 @@
     "corretta": 1,
     "spiegazione": "Voce «Storia della letteratura italiana».",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1816,7 +1816,7 @@
     "corretta": 2,
     "spiegazione": "Vi appartennero Guinizzelli, Cavalcanti e Dante.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1833,7 +1833,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Storia della letteratura italiana».",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1850,7 +1850,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Storia della letteratura italiana».",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1867,7 +1867,7 @@
     "corretta": 1,
     "spiegazione": "Voce «Storia della letteratura italiana».",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1884,7 +1884,7 @@
     "corretta": 2,
     "spiegazione": "Voce «Storia della letteratura italiana».",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1901,7 +1901,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Storia della letteratura italiana».",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1918,7 +1918,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Storia della letteratura italiana».",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1935,7 +1935,7 @@
     "corretta": 1,
     "spiegazione": "La Mandragola è una commedia di Machiavelli.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1952,7 +1952,7 @@
     "corretta": 2,
     "spiegazione": "Voce «Storia della letteratura italiana».",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1969,7 +1969,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Storia della letteratura italiana».",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -1986,7 +1986,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Storia della letteratura italiana».",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2003,7 +2003,7 @@
     "corretta": 1,
     "spiegazione": "Voce «Storia della letteratura italiana».",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2020,7 +2020,7 @@
     "corretta": 2,
     "spiegazione": "Voce «Storia della letteratura italiana».",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2037,7 +2037,7 @@
     "corretta": 3,
     "spiegazione": "Fondata da Gravina e Crescimbeni.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2054,7 +2054,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Storia della letteratura italiana».",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2071,7 +2071,7 @@
     "corretta": 1,
     "spiegazione": "Voce «Storia della letteratura italiana».",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2088,7 +2088,7 @@
     "corretta": 2,
     "spiegazione": "Satira dell'aristocrazia decaduta.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2105,7 +2105,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Storia della letteratura italiana».",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2122,7 +2122,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Storia della letteratura italiana».",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2139,7 +2139,7 @@
     "corretta": 1,
     "spiegazione": "Voce «Storia della letteratura italiana».",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2156,7 +2156,7 @@
     "corretta": 2,
     "spiegazione": "Mastro-don Gesualdo è del 1888.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2173,7 +2173,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Storia della letteratura italiana».",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2190,7 +2190,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Storia della letteratura italiana».",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2207,7 +2207,7 @@
     "corretta": 1,
     "spiegazione": "Seguono L'innocente e Trionfo della morte.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2224,7 +2224,7 @@
     "corretta": 2,
     "spiegazione": "Pirandello vinse il Nobel nel 1934.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2241,7 +2241,7 @@
     "corretta": 3,
     "spiegazione": "Grazia Deledda lo vinse nel 1926, Quasimodo nel 1959, Montale nel 1975.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2258,7 +2258,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Storia della letteratura italiana».",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2275,7 +2275,7 @@
     "corretta": 1,
     "spiegazione": "Autrice di Canne al vento.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2292,7 +2292,7 @@
     "corretta": 2,
     "spiegazione": "Voce «Storia della letteratura italiana».",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2309,7 +2309,7 @@
     "corretta": 3,
     "spiegazione": "Il termine «crepuscolari» fu coniato dal critico Borgese.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2326,7 +2326,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Storia della letteratura italiana».",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2343,7 +2343,7 @@
     "corretta": 1,
     "spiegazione": "Voce «Storia della letteratura italiana».",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2360,7 +2360,7 @@
     "corretta": 2,
     "spiegazione": "Montale vinse il Nobel nel 1975.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2377,7 +2377,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Storia della letteratura italiana».",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2394,7 +2394,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Storia della letteratura italiana».",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2411,7 +2411,7 @@
     "corretta": 1,
     "spiegazione": "Voce «Storia della letteratura italiana».",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2428,7 +2428,7 @@
     "corretta": 2,
     "spiegazione": "Voce «Storia della letteratura italiana».",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2445,7 +2445,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Periodo ipotetico».",
     "fonte": "Wikipedia, «Periodo ipotetico» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2462,7 +2462,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Periodo ipotetico».",
     "fonte": "Wikipedia, «Periodo ipotetico» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2479,7 +2479,7 @@
     "corretta": 1,
     "spiegazione": "Voce «Periodo ipotetico».",
     "fonte": "Wikipedia, «Periodo ipotetico» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2496,7 +2496,7 @@
     "corretta": 2,
     "spiegazione": "Es. ho fatto, ero andato.",
     "fonte": "Wikipedia, «Verbo ausiliare» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2513,7 +2513,7 @@
     "corretta": 3,
     "spiegazione": "Dal latino partem capit.",
     "fonte": "Wikipedia, «Participio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2530,7 +2530,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Participio».",
     "fonte": "Wikipedia, «Participio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2547,7 +2547,7 @@
     "corretta": 1,
     "spiegazione": "Voce «Participio».",
     "fonte": "Wikipedia, «Participio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2564,7 +2564,7 @@
     "corretta": 2,
     "spiegazione": "Voce «Gerundio».",
     "fonte": "Wikipedia, «Gerundio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2581,7 +2581,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Gerundio».",
     "fonte": "Wikipedia, «Gerundio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2598,7 +2598,7 @@
     "corretta": 0,
     "spiegazione": "È un modo indefinito.",
     "fonte": "Wikipedia, «Gerundio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2615,7 +2615,7 @@
     "corretta": 1,
     "spiegazione": "I verbi con radice abbreviata formano il gerundio sulla base dell'imperfetto (facevo → facendo, dicevo → dicendo).",
     "fonte": "Wikipedia, «Gerundio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2632,7 +2632,7 @@
     "corretta": 2,
     "spiegazione": "Tronche: ultima sillaba; sdrucciole: terzultima; bisdrucciole: quartultima. In italiano prevalgono le piane.",
     "fonte": "Wikipedia, «Sillaba» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2649,7 +2649,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Sillaba».",
     "fonte": "Wikipedia, «Sillaba» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2666,7 +2666,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Sillaba».",
     "fonte": "Wikipedia, «Sillaba» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2683,7 +2683,7 @@
     "corretta": 1,
     "spiegazione": "È «chiusa» o «implicata» se termina per consonante.",
     "fonte": "Wikipedia, «Sillaba» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2700,7 +2700,7 @@
     "corretta": 2,
     "spiegazione": "Voce «Sillaba».",
     "fonte": "Wikipedia, «Sillaba» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2717,7 +2717,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Sillaba».",
     "fonte": "Wikipedia, «Sillaba» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2734,7 +2734,7 @@
     "corretta": 0,
     "spiegazione": "Dal greco díphthongos.",
     "fonte": "Wikipedia, «Dittongo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2751,7 +2751,7 @@
     "corretta": 1,
     "spiegazione": "Dal latino hiatus, «apertura».",
     "fonte": "Wikipedia, «Iato» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2768,7 +2768,7 @@
     "corretta": 2,
     "spiegazione": "Nello scritto si segnala con l'apostrofo.",
     "fonte": "Wikipedia, «Elisione» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2785,7 +2785,7 @@
     "corretta": 3,
     "spiegazione": "Anche con dello, allo, quello: dell'oro, quell'uomo.",
     "fonte": "Wikipedia, «Elisione» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2802,7 +2802,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Elisione».",
     "fonte": "Wikipedia, «Elisione» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2819,7 +2819,7 @@
     "corretta": 1,
     "spiegazione": "Voce «Apocope».",
     "fonte": "Wikipedia, «Apocope» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2836,7 +2836,7 @@
     "corretta": 2,
     "spiegazione": "Voce «Apocope».",
     "fonte": "Wikipedia, «Apocope» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2853,7 +2853,7 @@
     "corretta": 3,
     "spiegazione": "L'epifora ripete invece alla fine.",
     "fonte": "Wikipedia, «Anafora (figura retorica)» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2870,7 +2870,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Anafora (figura retorica)».",
     "fonte": "Wikipedia, «Anafora (figura retorica)» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2887,7 +2887,7 @@
     "corretta": 1,
     "spiegazione": "L'asindeto è invece l'assenza di congiunzioni.",
     "fonte": "Wikipedia, «Anafora (figura retorica)» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2904,7 +2904,7 @@
     "corretta": 2,
     "spiegazione": "Voce «Allitterazione».",
     "fonte": "Wikipedia, «Allitterazione» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2921,7 +2921,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Onomatopea».",
     "fonte": "Wikipedia, «Onomatopea» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2938,7 +2938,7 @@
     "corretta": 0,
     "spiegazione": "Le primarie sono come «miao» o «brrr».",
     "fonte": "Wikipedia, «Onomatopea» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2955,7 +2955,7 @@
     "corretta": 1,
     "spiegazione": "La e di tè, caffè, cioè è aperta; i composti di che (perché, affinché) hanno la é chiusa.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2972,7 +2972,7 @@
     "corretta": 2,
     "spiegazione": "I composti di tre vogliono l'accento acuto.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -2989,7 +2989,7 @@
     "corretta": 3,
     "spiegazione": "Le terze persone del passato remoto in -é hanno l'accento acuto.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3006,7 +3006,7 @@
     "corretta": 0,
     "spiegazione": "Lo stesso per da', sta', va'.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3023,7 +3023,7 @@
     "corretta": 1,
     "spiegazione": "«Po'» è apocope di «poco» e vuole l'apostrofo.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3040,7 +3040,7 @@
     "corretta": 2,
     "spiegazione": "L'apostrofo è obbligatorio in questo caso; con elisione se ne usa uno solo (dell'800).",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3057,7 +3057,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Ortografia italiana».",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3074,7 +3074,7 @@
     "corretta": 0,
     "spiegazione": "Nelle abbreviazioni per troncamento il punto va alla fine (sig.).",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3091,7 +3091,7 @@
     "corretta": 1,
     "spiegazione": "Il raddoppio dell'ultima lettera indica il plurale (pp., sgg.).",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3108,7 +3108,7 @@
     "corretta": 2,
     "spiegazione": "Dal latino confer.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3125,7 +3125,7 @@
     "corretta": 3,
     "spiegazione": "Gli altri usi dipendono da stile e consuetudine.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3142,7 +3142,7 @@
     "corretta": 0,
     "spiegazione": "I popoli storici del passato si scrivono di solito con la maiuscola (i Romani).",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3159,7 +3159,7 @@
     "corretta": 1,
     "spiegazione": "Nei patronimici e toponimici antichi restano minuscole (Tommaso d'Aquino).",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3176,7 +3176,7 @@
     "corretta": 2,
     "spiegazione": "Voce «Ortografia italiana».",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3193,7 +3193,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Ortografia italiana».",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3210,7 +3210,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Ortografia italiana».",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3227,7 +3227,7 @@
     "corretta": 1,
     "spiegazione": "Voce «Ortografia italiana».",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3244,7 +3244,7 @@
     "corretta": 2,
     "spiegazione": "Voce «Ortografia italiana».",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3261,7 +3261,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Ortografia italiana».",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3278,7 +3278,7 @@
     "corretta": 0,
     "spiegazione": "«Grande» si elide davanti a vocale e si tronca davanti a consonante (gran giocatore).",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3295,7 +3295,7 @@
     "corretta": 1,
     "spiegazione": "«Un» è troncamento, non vuole apostrofo; «uno» davanti a s impura, z, gn ecc.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3312,7 +3312,7 @@
     "corretta": 2,
     "spiegazione": "Al femminile davanti a vocale si elide «una» con l'apostrofo.",
     "fonte": "Wikipedia, «Ortografia italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3329,7 +3329,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Punteggiatura».",
     "fonte": "Wikipedia, «Punteggiatura» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3346,7 +3346,7 @@
     "corretta": 0,
     "spiegazione": "Punto e virgola e due punti sono pause intermedie secondo la Treccani.",
     "fonte": "Wikipedia, «Punteggiatura» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3363,7 +3363,7 @@
     "corretta": 1,
     "spiegazione": "Voce «Punteggiatura».",
     "fonte": "Wikipedia, «Punteggiatura» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3380,7 +3380,7 @@
     "corretta": 2,
     "spiegazione": "Voce «Punteggiatura».",
     "fonte": "Wikipedia, «Punteggiatura» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3397,7 +3397,7 @@
     "corretta": 3,
     "spiegazione": "Il punto interrogativo deriverebbe invece da quaestio.",
     "fonte": "Wikipedia, «Punteggiatura» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3414,7 +3414,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Punteggiatura».",
     "fonte": "Wikipedia, «Punteggiatura» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3431,7 +3431,7 @@
     "corretta": 1,
     "spiegazione": "Fu scoperto nel 1924 in un codice della Biblioteca Capitolare di Verona (fine VIII-inizio IX secolo).",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3448,7 +3448,7 @@
     "corretta": 2,
     "spiegazione": "Riporta la testimonianza in una lite di confini tra il monastero di Montecassino e Rodelgrimo d'Aquino.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3465,7 +3465,7 @@
     "corretta": 3,
     "spiegazione": "È una lauda dialogata in volgare umbro con latinismi.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3482,7 +3482,7 @@
     "corretta": 0,
     "spiegazione": "Guittone ne trasse spunti linguistici e poetici.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3499,7 +3499,7 @@
     "corretta": 1,
     "spiegazione": "Tra gli altri stilnovisti: Guido Cavalcanti, Dante, Cino da Pistoia, Lapo Gianni.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3516,7 +3516,7 @@
     "corretta": 2,
     "spiegazione": "La corrente esalta denaro, gioco e taverna, in opposizione alla lirica cortese.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3533,7 +3533,7 @@
     "corretta": 3,
     "spiegazione": "Il francese era allora diffuso come lingua letteraria.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3550,7 +3550,7 @@
     "corretta": 0,
     "spiegazione": "Da questo amore nacquero molte liriche del Canzoniere.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3567,7 +3567,7 @@
     "corretta": 1,
     "spiegazione": "Petrarca desiderava conoscere gli antichi e recuperarne le opere dimenticate.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3584,7 +3584,7 @@
     "corretta": 2,
     "spiegazione": "È la grande peste nera descritta anche da Boccaccio.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3601,7 +3601,7 @@
     "corretta": 3,
     "spiegazione": "A dodici anni fu mandato a Napoli per imparare la mercatura.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3618,7 +3618,7 @@
     "corretta": 0,
     "spiegazione": "È l'ultima opera composta prima del Decameron.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3635,7 +3635,7 @@
     "corretta": 1,
     "spiegazione": "Fu edita a Londra nel 1619.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3652,7 +3652,7 @@
     "corretta": 2,
     "spiegazione": "Le loro idee furono considerate eretiche dalla Chiesa controriformista.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3669,7 +3669,7 @@
     "corretta": 3,
     "spiegazione": "Fu tra i protagonisti dell'Illuminismo milanese.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3686,7 +3686,7 @@
     "corretta": 0,
     "spiegazione": "L'Arcadia promosse l'anti-barocchismo e la restaurazione classicistica.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3703,7 +3703,7 @@
     "corretta": 1,
     "spiegazione": "Il poemetto, in endecasillabi sciolti, satireggia l'aristocrazia decaduta.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3720,7 +3720,7 @@
     "corretta": 2,
     "spiegazione": "Foscolo ne converte la vicenda nel gusto patriottico italiano.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3737,7 +3737,7 @@
     "corretta": 3,
     "spiegazione": "La prima è del 1823 con titolo diverso, la «ventisettana» del 1827.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3754,7 +3754,7 @@
     "corretta": 0,
     "spiegazione": "Nelle opere giovanili di Manzoni è presente il pensiero illuminista.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3771,7 +3771,7 @@
     "corretta": 1,
     "spiegazione": "Il primo è I Malavoglia (1881).",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3788,7 +3788,7 @@
     "corretta": 2,
     "spiegazione": "È ambientata nella Sicilia della seconda metà dell'Ottocento.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3805,7 +3805,7 @@
     "corretta": 3,
     "spiegazione": "È tra le autrici del verismo e del secondo Ottocento.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3822,7 +3822,7 @@
     "corretta": 0,
     "spiegazione": "Il libro ha venduto circa 80 milioni di copie.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3839,7 +3839,7 @@
     "corretta": 1,
     "spiegazione": "Fu giudicato negativamente dai critici contemporanei e rivalutato in seguito.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3856,7 +3856,7 @@
     "corretta": 2,
     "spiegazione": "Opera del secondo Ottocento.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3873,7 +3873,7 @@
     "corretta": 3,
     "spiegazione": "Pirandello è anche autore di «Uno, nessuno e centomila» e delle «Novelle per un anno».",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3890,7 +3890,7 @@
     "corretta": 0,
     "spiegazione": "Da qui l'aggettivo «pirandelliano» per situazioni strane o tragicomiche.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3907,7 +3907,7 @@
     "corretta": 1,
     "spiegazione": "La critica del primo Novecento non comprese molti grandi autori.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3924,7 +3924,7 @@
     "corretta": 2,
     "spiegazione": "Fu una delle più importanti riviste culturali italiane del Novecento.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3941,7 +3941,7 @@
     "corretta": 3,
     "spiegazione": "Il nome richiama il gusto per la penombra e i toni smorzati.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3958,7 +3958,7 @@
     "corretta": 0,
     "spiegazione": "Indica una poesia dal linguaggio difficile e talvolta misterioso.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3975,7 +3975,7 @@
     "corretta": 1,
     "spiegazione": "Tra gli esponenti: Umberto Eco, Nanni Balestrini, Edoardo Sanguineti.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -3992,7 +3992,7 @@
     "corretta": 2,
     "spiegazione": "Le riviste fiorentine mantennero vivo il confronto letterario.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4009,7 +4009,7 @@
     "corretta": 3,
     "spiegazione": "Il romanzo è del 1634.",
     "fonte": "Wikipedia, «Storia della letteratura italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4026,7 +4026,7 @@
     "corretta": 0,
     "spiegazione": "Es. «ho visto un cerbiatto» / «il cerbiatto è già sparito».",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4043,7 +4043,7 @@
     "corretta": 1,
     "spiegazione": "«lo» si usa davanti a z, gn, x, ps, s impura e i semiconsonante.",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4060,7 +4060,7 @@
     "corretta": 2,
     "spiegazione": "Come per l'articolo «lo», si usa «uno» davanti a gn, z, ps, x, s impura.",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4077,7 +4077,7 @@
     "corretta": 3,
     "spiegazione": "Es. «dei libri», «alcuni libri».",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4094,7 +4094,7 @@
     "corretta": 0,
     "spiegazione": "Es. «lo specchio» ma «il bello specchio».",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4111,7 +4111,7 @@
     "corretta": 1,
     "spiegazione": "Es. «una penna rossa», «un vino francese».",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4128,7 +4128,7 @@
     "corretta": 2,
     "spiegazione": "L'aggettivo posposto ha funzione distintiva.",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4145,7 +4145,7 @@
     "corretta": 3,
     "spiegazione": "I nomi che terminano con vocale accentata sono invariabili.",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4162,7 +4162,7 @@
     "corretta": 0,
     "spiegazione": "Gli invariabili hanno invece singolare e plurale identici.",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4179,7 +4179,7 @@
     "corretta": 1,
     "spiegazione": "I maschili in -a fanno il plurale in -i.",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4196,7 +4196,7 @@
     "corretta": 2,
     "spiegazione": "I nomi in -i non accentata sono invariabili.",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4213,7 +4213,7 @@
     "corretta": 3,
     "spiegazione": "Alcuni aggettivi di colore (rosa, blu, viola) sono invariabili.",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4230,7 +4230,7 @@
     "corretta": 0,
     "spiegazione": "Davanti ai nomi di parentela singolari con il possessivo (tranne «loro») l'articolo si omette.",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4247,7 +4247,7 @@
     "corretta": 1,
     "spiegazione": "Con «loro» l'articolo si mantiene anche davanti ai nomi di parentela.",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4264,7 +4264,7 @@
     "corretta": 2,
     "spiegazione": "«questo» = vicino a chi parla, «quello» = lontano da chi parla.",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4281,7 +4281,7 @@
     "corretta": 3,
     "spiegazione": "In «A me piace questa musica», «me» è tonico.",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4298,7 +4298,7 @@
     "corretta": 0,
     "spiegazione": "Lui, lei e loro si riferiscono a persone o animali e talvolta a cose.",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4315,7 +4315,7 @@
     "corretta": 1,
     "spiegazione": "Si esprime per enfasi o per evitare ambiguità, a differenza di inglese e francese.",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4332,7 +4332,7 @@
     "corretta": 2,
     "spiegazione": "Essere si usa per la maggior parte degli intransitivi, per il passivo e per il riflessivo.",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4349,7 +4349,7 @@
     "corretta": 3,
     "spiegazione": "«Venire» si usa invece per enfatizzare l'azione, solo nei tempi semplici.",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4366,7 +4366,7 @@
     "corretta": 0,
     "spiegazione": "Benché escano in -are e -ire.",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4383,7 +4383,7 @@
     "corretta": 1,
     "spiegazione": "In italiano l'interfisso -isc- non ha valore semantico.",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4400,7 +4400,7 @@
     "corretta": 2,
     "spiegazione": "Il trapassato prossimo si forma con l'imperfetto dell'ausiliare.",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4417,7 +4417,7 @@
     "corretta": 3,
     "spiegazione": "Il futuro anteriore indica invece una supposizione su un fatto già compiuto.",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4434,7 +4434,7 @@
     "corretta": 0,
     "spiegazione": "Concordanza dei tempi: principale al passato → congiuntivo imperfetto.",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4451,7 +4451,7 @@
     "corretta": 1,
     "spiegazione": "Si usa il condizionale passato (futuro nel passato).",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4468,7 +4468,7 @@
     "corretta": 2,
     "spiegazione": "È un'eredità della grammatica latina.",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4485,7 +4485,7 @@
     "corretta": 3,
     "spiegazione": "In questo caso il pronome atono è anteposto.",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4502,7 +4502,7 @@
     "corretta": 0,
     "spiegazione": "Sono invariabili e non hanno un ruolo particolare nel costrutto della frase.",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4519,7 +4519,7 @@
     "corretta": 1,
     "spiegazione": "Di modo: bene, male, volentieri; di tempo: ieri, adesso.",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4536,7 +4536,7 @@
     "corretta": 2,
     "spiegazione": "In greco antico è árthron.",
     "fonte": "Wikipedia, «Articolo (linguistica)» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4553,7 +4553,7 @@
     "corretta": 3,
     "spiegazione": "Anche nelle lingue scandinave il determinativo è un suffisso.",
     "fonte": "Wikipedia, «Articolo (linguistica)» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4570,7 +4570,7 @@
     "corretta": 0,
     "spiegazione": "L'articolo è assente anche in giapponese e cinese.",
     "fonte": "Wikipedia, «Articolo (linguistica)» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4587,7 +4587,7 @@
     "corretta": 1,
     "spiegazione": "Così anche La Spezia, Il Cairo, La Mecca, L'Aia.",
     "fonte": "Wikipedia, «Articolo (linguistica)» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4604,7 +4604,7 @@
     "corretta": 2,
     "spiegazione": "In sardo derivano invece da ipsum, ipsam.",
     "fonte": "Wikipedia, «Articolo (linguistica)» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4621,7 +4621,7 @@
     "corretta": 3,
     "spiegazione": "Si omette anche nei titoli e nel linguaggio telegrafico.",
     "fonte": "Wikipedia, «Articolo (linguistica)» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4638,7 +4638,7 @@
     "corretta": 0,
     "spiegazione": "L'uso è regionale e colloquiale.",
     "fonte": "Wikipedia, «Articolo (linguistica)» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4655,7 +4655,7 @@
     "corretta": 1,
     "spiegazione": "Quando un sostantivo integra il significato di un altro, l'articolo non si usa.",
     "fonte": "Wikipedia, «Articolo (linguistica)» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4672,7 +4672,7 @@
     "corretta": 2,
     "spiegazione": "Il verbo è una parte del discorso variabile.",
     "fonte": "Wikipedia, «Verbo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4689,7 +4689,7 @@
     "corretta": 3,
     "spiegazione": "Può essere attiva, passiva, riflessiva o media.",
     "fonte": "Wikipedia, «Verbo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4706,7 +4706,7 @@
     "corretta": 0,
     "spiegazione": "L'aspetto riguarda durata, momentaneità e compiutezza dell'azione.",
     "fonte": "Wikipedia, «Verbo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4723,7 +4723,7 @@
     "corretta": 1,
     "spiegazione": "Lo fa nel De Interpretatione.",
     "fonte": "Wikipedia, «Verbo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4740,7 +4740,7 @@
     "corretta": 2,
     "spiegazione": "«Cibarsi» richiede l'indicazione del cibo: «mi cibo di broccoli».",
     "fonte": "Wikipedia, «Verbo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4757,7 +4757,7 @@
     "corretta": 3,
     "spiegazione": "Gli elementi circostanziali (luogo, tempo, causa) si possono invece eliminare.",
     "fonte": "Wikipedia, «Verbo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4774,7 +4774,7 @@
     "corretta": 0,
     "spiegazione": "Il tempo grammaticale non coincide sempre con quello reale.",
     "fonte": "Wikipedia, «Verbo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4791,7 +4791,7 @@
     "corretta": 1,
     "spiegazione": "Nei dittonghi discendenti l'accento è sul primo elemento.",
     "fonte": "Wikipedia, «Dittongo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4808,7 +4808,7 @@
     "corretta": 2,
     "spiegazione": "Tradizionalmente chiamato «falso dittongo».",
     "fonte": "Wikipedia, «Dittongo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4825,7 +4825,7 @@
     "corretta": 3,
     "spiegazione": "Quando la i è tonica si ha iato.",
     "fonte": "Wikipedia, «Dittongo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4842,7 +4842,7 @@
     "corretta": 0,
     "spiegazione": "Derivano dalle vocali brevi latine e ed o (es. uomo, piede).",
     "fonte": "Wikipedia, «Dittongo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4859,7 +4859,7 @@
     "corretta": 1,
     "spiegazione": "È un residuo etimologico.",
     "fonte": "Wikipedia, «Dittongo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4876,7 +4876,7 @@
     "corretta": 2,
     "spiegazione": "Altrimenti in poesia ogni coppia di vocali è considerata dittongo.",
     "fonte": "Wikipedia, «Dittongo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4893,7 +4893,7 @@
     "corretta": 3,
     "spiegazione": "Greci e Romani usarono poi punti variamente disposti.",
     "fonte": "Wikipedia, «Punteggiatura» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4910,7 +4910,7 @@
     "corretta": 0,
     "spiegazione": "La «q» si spostò sopra la «o», che divenne un punto.",
     "fonte": "Wikipedia, «Punteggiatura» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4927,7 +4927,7 @@
     "corretta": 1,
     "spiegazione": "Il punto è pausa forte e chiusa, la virgola debole e aperta.",
     "fonte": "Wikipedia, «Punteggiatura» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4944,7 +4944,7 @@
     "corretta": 2,
     "spiegazione": "In francese richiedono uno spazio che le separi dal testo.",
     "fonte": "Wikipedia, «Punteggiatura» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4961,7 +4961,7 @@
     "corretta": 3,
     "spiegazione": "Lo fece nel libro «Plumons l'Oiseau».",
     "fonte": "Wikipedia, «Punteggiatura» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4978,7 +4978,7 @@
     "corretta": 0,
     "spiegazione": "Aggiunse che talvolta li aboliscono per raffinatezza o per ignoranza.",
     "fonte": "Wikipedia, «Punteggiatura» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -4995,7 +4995,7 @@
     "corretta": 1,
     "spiegazione": "Le altre forme con «con» sono tendenzialmente desuete.",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -5012,7 +5012,7 @@
     "corretta": 2,
     "spiegazione": "Le altre forme non sono in uso dalla prima metà del Novecento.",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -5029,7 +5029,7 @@
     "corretta": 3,
     "spiegazione": "«Andare» esprime invece obbligo o prescrizione («va spedita»).",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -5046,7 +5046,7 @@
     "corretta": 0,
     "spiegazione": "Il condizionale presente è il tempo semplice.",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -5063,7 +5063,7 @@
     "corretta": 1,
     "spiegazione": "Per -ere e -ire: -ente (o -iente).",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -5080,7 +5080,7 @@
     "corretta": 2,
     "spiegazione": "Es. «parla!» → «non parlare!».",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -5097,7 +5097,7 @@
     "corretta": 3,
     "spiegazione": "Il soggetto della subordinata passa all'accusativo: «lo vedo volare».",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "italiano",
@@ -5114,6 +5114,6 @@
     "corretta": 0,
     "spiegazione": "I sostantivi accorciati (auto da automobile) sono invariabili.",
     "fonte": "Wikipedia, «Grammatica italiana» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   }
 ]

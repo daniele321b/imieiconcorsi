@@ -14,7 +14,7 @@
     "corretta": 0,
     "spiegazione": "La congiunzione è vera solo se le due proposizioni sono contestualmente vere; basta una falsa perché sia falsa.",
     "fonte": "MatematicaC3, Logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -31,7 +31,7 @@
     "corretta": 1,
     "spiegazione": "La disgiunzione inclusiva è vera quando almeno una delle due è vera ed è falsa solo se entrambe sono false.",
     "fonte": "MatematicaC3, Logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -48,7 +48,7 @@
     "corretta": 2,
     "spiegazione": "La disgiunzione esclusiva (aut) è vera solo se una delle due è vera; è falsa se sono entrambe vere o entrambe false. Esempio: «oggi il Milan vince o pareggia».",
     "fonte": "MatematicaC3, Logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -65,7 +65,7 @@
     "corretta": 3,
     "spiegazione": "È una disgiunzione inclusiva ed è vera perché una delle due affermazioni è vera: 100 è maggiore di 10.",
     "fonte": "MatematicaC3, Logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -82,7 +82,7 @@
     "corretta": 0,
     "spiegazione": "Nella scrittura p ⇒ q, p è l'antecedente o ipotesi e q il conseguente o tesi.",
     "fonte": "MatematicaC3, Logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -99,7 +99,7 @@
     "corretta": 1,
     "spiegazione": "Da p ⇒ q: p è sufficiente per q, q è necessaria per p.",
     "fonte": "MatematicaC3, Logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -116,7 +116,7 @@
     "corretta": 2,
     "spiegazione": "Se q (studiare) è necessaria per p (promozione), vale p ⇒ q e quindi anche ¬q ⇒ ¬p: senza studio, niente promozione.",
     "fonte": "MatematicaC3, Logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -133,7 +133,7 @@
     "corretta": 3,
     "spiegazione": "La contronominale ¬q ⇒ ¬p è equivalente a p ⇒ q; l'inversa (q ⇒ p) e la contraria (¬p ⇒ ¬q) no.",
     "fonte": "MatematicaC3, Logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -150,7 +150,7 @@
     "corretta": 0,
     "spiegazione": "Esempio di tautologia: «Quest'anno la Juve vince il campionato oppure non lo vince».",
     "fonte": "MatematicaC3, Logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -167,7 +167,7 @@
     "corretta": 1,
     "spiegazione": "Una proposizione sempre falsa, qualunque sia la verità dei suoi elementi, è una contraddizione.",
     "fonte": "MatematicaC3, Logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -184,7 +184,7 @@
     "corretta": 2,
     "spiegazione": "Leggi di De Morgan: ¬(p ∧ q) = ¬p ∨ ¬q e ¬(p ∨ q) = ¬p ∧ ¬q.",
     "fonte": "MatematicaC3, Logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -201,7 +201,7 @@
     "corretta": 3,
     "spiegazione": "Per De Morgan ¬(p ∨ q) = ¬p ∧ ¬q: non parla inglese E non parla francese.",
     "fonte": "MatematicaC3, Logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -218,7 +218,7 @@
     "corretta": 0,
     "spiegazione": "La negazione di un enunciato universale è un enunciato esistenziale: «esiste almeno un… che non…».",
     "fonte": "MatematicaC3, Logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -235,7 +235,7 @@
     "corretta": 1,
     "spiegazione": "∀ si legge «per ogni»; ∃ «esiste»; ¬ è la negazione; ∨ la disgiunzione.",
     "fonte": "MatematicaC3, Logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -252,7 +252,7 @@
     "corretta": 2,
     "spiegazione": "Il termine medio compare in entrambe le premesse e non nella conclusione: qui è «uomini».",
     "fonte": "Wikipedia, «Sillogismo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -269,7 +269,7 @@
     "corretta": 3,
     "spiegazione": "Le combinazioni sono 256, ma le forme valide solo 19, tra cui le quattro «perfette» della prima figura (Barbara, Celarent, Darii, Ferio).",
     "fonte": "Wikipedia, «Sillogismo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -286,7 +286,7 @@
     "corretta": 0,
     "spiegazione": "La validità riguarda la forma: da premesse false si può ricavare una conclusione vera, come nell'esempio di Socrate.",
     "fonte": "Wikipedia, «Sillogismo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -303,7 +303,7 @@
     "corretta": 1,
     "spiegazione": "È il modus ponens: da «p implica q» e «p» segue «q».",
     "fonte": "Wikipedia, «Modus ponens» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -320,7 +320,7 @@
     "corretta": 2,
     "spiegazione": "È il modus tollens: da «p implica q» e «non q» segue «non p».",
     "fonte": "Wikipedia, «Modus tollens» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -337,7 +337,7 @@
     "corretta": 3,
     "spiegazione": "Il conseguente può essere vero anche se l'antecedente è falso.",
     "fonte": "Wikipedia, «Fallacia» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -354,7 +354,7 @@
     "corretta": 0,
     "spiegazione": "Si può essere europei senza essere italiani.",
     "fonte": "Wikipedia, «Fallacia» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -371,7 +371,7 @@
     "corretta": 1,
     "spiegazione": "Voce «Modus ponens».",
     "fonte": "Wikipedia, «Modus ponens» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -388,7 +388,7 @@
     "corretta": 2,
     "spiegazione": "Esempio: respirare è necessario per vivere, ma non sufficiente.",
     "fonte": "Wikipedia, «Condizione necessaria e sufficiente» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -405,7 +405,7 @@
     "corretta": 3,
     "spiegazione": "Esempio: essere divisibile per 6 è sufficiente per essere pari, ma non necessario.",
     "fonte": "Wikipedia, «Condizione necessaria e sufficiente» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -422,7 +422,7 @@
     "corretta": 0,
     "spiegazione": "Esistono numeri pari non divisibili per 6 (es. 4).",
     "fonte": "Wikipedia, «Condizione necessaria e sufficiente» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -439,7 +439,7 @@
     "corretta": 1,
     "spiegazione": "Tutti i primi maggiori di 2 sono dispari, ma non tutti i dispari sono primi (es. 9).",
     "fonte": "Wikipedia, «Condizione necessaria e sufficiente» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -456,7 +456,7 @@
     "corretta": 2,
     "spiegazione": "«Solo se» indica la condizione necessaria: entrare implica avere il biglietto.",
     "fonte": "Wikipedia, «Condizione necessaria e sufficiente» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -473,7 +473,7 @@
     "corretta": 3,
     "spiegazione": "E = universale negativa, I = particolare affermativa, O = particolare negativa.",
     "fonte": "Wikipedia, «Quadrato delle opposizioni» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -490,7 +490,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Quadrato delle opposizioni».",
     "fonte": "Wikipedia, «Quadrato delle opposizioni» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -507,7 +507,7 @@
     "corretta": 1,
     "spiegazione": "Tra contraddittorie una è sempre vera e l'altra falsa.",
     "fonte": "Wikipedia, «Quadrato delle opposizioni» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -524,7 +524,7 @@
     "corretta": 2,
     "spiegazione": "Possono però essere entrambe false.",
     "fonte": "Wikipedia, «Quadrato delle opposizioni» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -541,7 +541,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Fallacia».",
     "fonte": "Wikipedia, «Fallacia» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -558,7 +558,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Fallacia».",
     "fonte": "Wikipedia, «Fallacia» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -575,7 +575,7 @@
     "corretta": 1,
     "spiegazione": "Dà per scontato qualcosa non dimostrato.",
     "fonte": "Wikipedia, «Fallacia» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -592,7 +592,7 @@
     "corretta": 2,
     "spiegazione": "È attribuito al megarico Eubulide; una versione è legata a Epimenide.",
     "fonte": "Wikipedia, «Paradosso del mentitore» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -609,7 +609,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Paradosso del mentitore».",
     "fonte": "Wikipedia, «Paradosso del mentitore» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -626,7 +626,7 @@
     "corretta": 0,
     "spiegazione": "L'unione è invece l'insieme degli elementi di A o di B.",
     "fonte": "Wikipedia, «Insieme» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -643,7 +643,7 @@
     "corretta": 1,
     "spiegazione": "Si indica con ∅ o { }.",
     "fonte": "Wikipedia, «Insieme» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -660,7 +660,7 @@
     "corretta": 2,
     "spiegazione": "Voce «Insieme».",
     "fonte": "Wikipedia, «Insieme» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -677,7 +677,7 @@
     "corretta": 3,
     "spiegazione": "Intersezione: elementi comuni.",
     "fonte": "Wikipedia, «Insieme» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -694,7 +694,7 @@
     "corretta": 0,
     "spiegazione": "Unione: tutti gli elementi di A o di B.",
     "fonte": "Wikipedia, «Insieme» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -711,7 +711,7 @@
     "corretta": 1,
     "spiegazione": "Inglese o francese = 18 + 15 − 7 = 26; 30 − 26 = 4. Il diagramma di Venn aiuta a visualizzarlo.",
     "fonte": "Wikipedia, «Diagramma di Venn» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -728,7 +728,7 @@
     "corretta": 2,
     "spiegazione": "Solo treno = 50 − 25 = 25.",
     "fonte": "Wikipedia, «Diagramma di Venn» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -745,7 +745,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Diagramma di Venn».",
     "fonte": "Wikipedia, «Diagramma di Venn» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -762,7 +762,7 @@
     "corretta": 0,
     "spiegazione": "Principio dei cassetti: con 2 colori («cassetti»), 3 calzini garantiscono una coppia.",
     "fonte": "Wikipedia, «Principio dei cassetti» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -779,7 +779,7 @@
     "corretta": 1,
     "spiegazione": "13 persone in 12 mesi: per il principio dei cassetti almeno un mese ne contiene due.",
     "fonte": "Wikipedia, «Principio dei cassetti» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -796,7 +796,7 @@
     "corretta": 2,
     "spiegazione": "In russo è noto come principio di Dirichlet.",
     "fonte": "Wikipedia, «Principio dei cassetti» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -813,7 +813,7 @@
     "corretta": 3,
     "spiegazione": "Progressione aritmetica di ragione 3.",
     "fonte": "Wikipedia, «Progressione aritmetica» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -830,7 +830,7 @@
     "corretta": 0,
     "spiegazione": "Progressione aritmetica di ragione −7.",
     "fonte": "Wikipedia, «Progressione aritmetica» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -847,7 +847,7 @@
     "corretta": 1,
     "spiegazione": "Progressione geometrica di ragione 2.",
     "fonte": "Wikipedia, «Progressione geometrica» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -864,7 +864,7 @@
     "corretta": 2,
     "spiegazione": "Progressione geometrica di ragione 1/3.",
     "fonte": "Wikipedia, «Progressione geometrica» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -881,7 +881,7 @@
     "corretta": 3,
     "spiegazione": "Ogni termine è il triplo del precedente.",
     "fonte": "Wikipedia, «Progressione geometrica» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -898,7 +898,7 @@
     "corretta": 0,
     "spiegazione": "Progressione geometrica di ragione 1/2.",
     "fonte": "Wikipedia, «Progressione geometrica» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -915,7 +915,7 @@
     "corretta": 1,
     "spiegazione": "a₁₀ = a₁ + 9·d = 4 + 45 = 49.",
     "fonte": "Wikipedia, «Progressione aritmetica» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -932,7 +932,7 @@
     "corretta": 2,
     "spiegazione": "Somma di una progressione aritmetica: n·(a₁ + aₙ)/2 = 100·101/2 = 5050.",
     "fonte": "Wikipedia, «Progressione aritmetica» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -949,7 +949,7 @@
     "corretta": 3,
     "spiegazione": "Sono i quadrati; le differenze 3, 5, 7, 9 formano una progressione aritmetica di ragione 2, quindi la successiva è 11.",
     "fonte": "Wikipedia, «Progressione aritmetica» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -966,7 +966,7 @@
     "corretta": 0,
     "spiegazione": "Le differenze crescono di 1 (1, 2, 3, 4, 5): la successiva è 6.",
     "fonte": "Wikipedia, «Progressione aritmetica» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -983,7 +983,7 @@
     "corretta": 1,
     "spiegazione": "Due progressioni alternate: 1, 2, 3, 4… (posti dispari) e 3, 4, 5… (posti pari). Il settimo termine è 4.",
     "fonte": "Wikipedia, «Progressione aritmetica» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1000,7 +1000,7 @@
     "corretta": 2,
     "spiegazione": "È la successione di Fibonacci: ogni termine è la somma dei due precedenti.",
     "fonte": "Wikipedia, «Successione di Fibonacci» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1017,7 +1017,7 @@
     "corretta": 3,
     "spiegazione": "Ogni termine è la somma dei due precedenti (8 + 13).",
     "fonte": "Wikipedia, «Successione di Fibonacci» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1034,7 +1034,7 @@
     "corretta": 0,
     "spiegazione": "Ogni termine è la somma dei due precedenti (18 + 29), come nella successione di Fibonacci.",
     "fonte": "Wikipedia, «Successione di Fibonacci» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1051,7 +1051,7 @@
     "corretta": 1,
     "spiegazione": "Voce «Successione di Fibonacci».",
     "fonte": "Wikipedia, «Successione di Fibonacci» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1068,7 +1068,7 @@
     "corretta": 2,
     "spiegazione": "Progressione geometrica di ragione 2.",
     "fonte": "Wikipedia, «Progressione geometrica» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1085,7 +1085,7 @@
     "corretta": 3,
     "spiegazione": "Le differenze raddoppiano (2, 4, 8, 16): la successiva è 32, quindi 33 + 32 = 65.",
     "fonte": "Wikipedia, «Progressione geometrica» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1102,7 +1102,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Progressione aritmetica».",
     "fonte": "Wikipedia, «Progressione aritmetica» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1119,7 +1119,7 @@
     "corretta": 1,
     "spiegazione": "5! = 5·4·3·2·1 = 120.",
     "fonte": "Wikipedia, «Fattoriale» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1136,7 +1136,7 @@
     "corretta": 2,
     "spiegazione": "Per la convenzione del prodotto vuoto 0! = 1.",
     "fonte": "Wikipedia, «Fattoriale» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1153,7 +1153,7 @@
     "corretta": 3,
     "spiegazione": "6!/4! = 6·5 = 30.",
     "fonte": "Wikipedia, «Fattoriale» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1170,7 +1170,7 @@
     "corretta": 0,
     "spiegazione": "Il nome «fattoriale» si deve invece ad Arbogast (1800).",
     "fonte": "Wikipedia, «Fattoriale» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1187,7 +1187,7 @@
     "corretta": 1,
     "spiegazione": "5 lettere distinte: 5! = 120 permutazioni.",
     "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1204,7 +1204,7 @@
     "corretta": 2,
     "spiegazione": "Permutazioni di 4 elementi: 4! = 24.",
     "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1221,7 +1221,7 @@
     "corretta": 3,
     "spiegazione": "L'ordine conta, senza ripetizioni: 8·7·6 = 336 disposizioni.",
     "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1238,7 +1238,7 @@
     "corretta": 0,
     "spiegazione": "Combinazioni: (5·4)/2 = 10, perché l'ordine non conta.",
     "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1255,7 +1255,7 @@
     "corretta": 1,
     "spiegazione": "Combinazioni di 10 elementi a 2 a 2: 10·9/2 = 45.",
     "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1272,7 +1272,7 @@
     "corretta": 2,
     "spiegazione": "Combinazioni: 6·5·4/(3·2·1) = 20.",
     "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1289,7 +1289,7 @@
     "corretta": 3,
     "spiegazione": "Disposizioni con ripetizione: 10⁴ = 10.000.",
     "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1306,7 +1306,7 @@
     "corretta": 0,
     "spiegazione": "Disposizioni con ripetizione di 2 esiti su 3 posti: 2³ = 8.",
     "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1323,7 +1323,7 @@
     "corretta": 1,
     "spiegazione": "Voce «Calcolo combinatorio».",
     "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1340,7 +1340,7 @@
     "corretta": 2,
     "spiegazione": "Principio di moltiplicazione: 3·4·2 = 24.",
     "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1357,7 +1357,7 @@
     "corretta": 3,
     "spiegazione": "Un caso favorevole su sei possibili.",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1374,7 +1374,7 @@
     "corretta": 0,
     "spiegazione": "Tre casi favorevoli (2, 4, 6) su sei.",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1391,7 +1391,7 @@
     "corretta": 1,
     "spiegazione": "3 casi favorevoli su 10 possibili.",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1408,7 +1408,7 @@
     "corretta": 2,
     "spiegazione": "4 assi su 40 carte: 4/40 = 1/10.",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1425,7 +1425,7 @@
     "corretta": 3,
     "spiegazione": "Casi possibili TT, TC, CT, CC: uno solo è favorevole.",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1442,7 +1442,7 @@
     "corretta": 0,
     "spiegazione": "6 coppie favorevoli (1-6, 2-5, 3-4, 4-3, 5-2, 6-1) su 36.",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1459,7 +1459,7 @@
     "corretta": 1,
     "spiegazione": "Solo la coppia 6-6 su 36 casi possibili.",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1476,7 +1476,7 @@
     "corretta": 2,
     "spiegazione": "Cinque casi favorevoli su sei.",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1493,7 +1493,7 @@
     "corretta": 3,
     "spiegazione": "La somma minima con due dadi è 2.",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1510,7 +1510,7 @@
     "corretta": 0,
     "spiegazione": "La probabilità va da 0 (evento impossibile) a 1 (evento certo).",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1527,7 +1527,7 @@
     "corretta": 1,
     "spiegazione": "Eventi incompatibili: le probabilità si sommano, 1/6 + 1/6 = 1/3.",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1544,7 +1544,7 @@
     "corretta": 2,
     "spiegazione": "Eventi indipendenti: le probabilità si moltiplicano, 1/6 · 1/6.",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1561,7 +1561,7 @@
     "corretta": 3,
     "spiegazione": "Dalla loro corrispondenza del 1654.",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1578,7 +1578,7 @@
     "corretta": 0,
     "spiegazione": "Tutti gli altri pari sono divisibili per 2.",
     "fonte": "Wikipedia, «Numero primo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1595,7 +1595,7 @@
     "corretta": 1,
     "spiegazione": "51 = 3·17, 57 = 3·19, 91 = 7·13.",
     "fonte": "Wikipedia, «Numero primo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1612,7 +1612,7 @@
     "corretta": 2,
     "spiegazione": "2, 3, 5, 7, 11, 13, 17, 19.",
     "fonte": "Wikipedia, «Numero primo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1629,7 +1629,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Numero primo».",
     "fonte": "Wikipedia, «Numero primo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1646,7 +1646,7 @@
     "corretta": 0,
     "spiegazione": "Già dimostrato da Euclide.",
     "fonte": "Wikipedia, «Numero primo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1663,7 +1663,7 @@
     "corretta": 1,
     "spiegazione": "(4 + 8 + 6 + 10 + 2) / 5 = 30 / 5 = 6.",
     "fonte": "Wikipedia, «Media (statistica)» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1680,7 +1680,7 @@
     "corretta": 2,
     "spiegazione": "Totale necessario 27·5 = 135; 135 − 110 = 25.",
     "fonte": "Wikipedia, «Media (statistica)» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1697,7 +1697,7 @@
     "corretta": 3,
     "spiegazione": "(30·6 + 24·12) / 18 = 468 / 18 = 26.",
     "fonte": "Wikipedia, «Media (statistica)» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1714,7 +1714,7 @@
     "corretta": 0,
     "spiegazione": "Congiunzione e disgiunzione legano invece due proposizioni.",
     "fonte": "MatematicaC3, Logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1731,7 +1731,7 @@
     "corretta": 1,
     "spiegazione": "v(x↔y) = V se e solo se v(x) = v(y).",
     "fonte": "Wikipedia, «Logica proposizionale» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1748,7 +1748,7 @@
     "corretta": 2,
     "spiegazione": "È vera se l'antecedente è falso oppure il conseguente è vero.",
     "fonte": "Wikipedia, «Logica proposizionale» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1765,7 +1765,7 @@
     "corretta": 3,
     "spiegazione": "La contraria è «se non p allora non q», la contronominale «se non q allora non p».",
     "fonte": "MatematicaC3, Logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1782,7 +1782,7 @@
     "corretta": 0,
     "spiegazione": "Voce del manuale MatematicaC3.",
     "fonte": "MatematicaC3, Logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1799,7 +1799,7 @@
     "corretta": 1,
     "spiegazione": "La contronominale di «p ⇒ q» è «¬q ⇒ ¬p».",
     "fonte": "MatematicaC3, Logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1816,7 +1816,7 @@
     "corretta": 2,
     "spiegazione": "Modus tollens.",
     "fonte": "MatematicaC3, Esercizi di logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1833,7 +1833,7 @@
     "corretta": 3,
     "spiegazione": "6 è multiplo di 3 ed è pari: basta un controesempio per smentire un'affermazione universale.",
     "fonte": "MatematicaC3, Esercizi di logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1850,7 +1850,7 @@
     "corretta": 0,
     "spiegazione": "La negazione di «per ogni… non» è «esiste almeno un caso in cui…».",
     "fonte": "MatematicaC3, Esercizi di logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1867,7 +1867,7 @@
     "corretta": 1,
     "spiegazione": "La negazione di un universale affermativo è un particolare negativo.",
     "fonte": "MatematicaC3, Esercizi di logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1884,7 +1884,7 @@
     "corretta": 2,
     "spiegazione": "Si scambiano i quantificatori («ogni» ↔ «almeno uno») e si nega il predicato. Quesito dei Giochi di Archimede 1999.",
     "fonte": "MatematicaC3, Esercizi di logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1901,7 +1901,7 @@
     "corretta": 3,
     "spiegazione": "Ogni cittadino romano è italiano, ma non viceversa.",
     "fonte": "MatematicaC3, Esercizi di logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1918,7 +1918,7 @@
     "corretta": 0,
     "spiegazione": "p è vera e q è falsa, quindi ¬q è vera.",
     "fonte": "MatematicaC3, Esercizi di logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1935,7 +1935,7 @@
     "corretta": 1,
     "spiegazione": "È vera quando esattamente una delle due è vera.",
     "fonte": "MatematicaC3, Esercizi di logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1952,7 +1952,7 @@
     "corretta": 2,
     "spiegazione": "Una proposizione deve poter essere oggettivamente vera o falsa: «12 è dispari» è falsa, ma è una proposizione.",
     "fonte": "MatematicaC3, Esercizi di logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1969,7 +1969,7 @@
     "corretta": 3,
     "spiegazione": "Quesito dei Giochi d'autunno 2010; soluzione riportata nel testo.",
     "fonte": "MatematicaC3, Esercizi di logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -1986,7 +1986,7 @@
     "corretta": 0,
     "spiegazione": "Se fosse Paolo, solo Gabriele direbbe il vero: è l'unico caso coerente. Giochi di Archimede 2011.",
     "fonte": "MatematicaC3, Esercizi di logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2003,7 +2003,7 @@
     "corretta": 1,
     "spiegazione": "Giochi di Archimede 2010; soluzione riportata nel testo.",
     "fonte": "MatematicaC3, Esercizi di logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2020,7 +2020,7 @@
     "corretta": 2,
     "spiegazione": "Almeno un abitante è magro oppure pulito: se sono tutti sporchi, deve esserci un magro.",
     "fonte": "MatematicaC3, Esercizi di logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2037,7 +2037,7 @@
     "corretta": 3,
     "spiegazione": "Sarebbe la negazione dell'antecedente: si può mangiare troppo anche senza fame.",
     "fonte": "MatematicaC3, Esercizi di logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2054,7 +2054,7 @@
     "corretta": 0,
     "spiegazione": "Un cavaliere non lo direbbe (sarebbe falso) e nemmeno un furfante (sarebbe vero): resta il paggio.",
     "fonte": "MatematicaC3, Esercizi di logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2071,7 +2071,7 @@
     "corretta": 1,
     "spiegazione": "Giochi di Archimede 2009; soluzione riportata nel testo.",
     "fonte": "MatematicaC3, Esercizi di logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2088,7 +2088,7 @@
     "corretta": 2,
     "spiegazione": "In simboli ¬(A ∧ ¬A).",
     "fonte": "Wikipedia, «Principio di non contraddizione» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2105,7 +2105,7 @@
     "corretta": 3,
     "spiegazione": "Nella logica moderna è il «principio di esplosione».",
     "fonte": "Wikipedia, «Principio di non contraddizione» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2122,7 +2122,7 @@
     "corretta": 0,
     "spiegazione": "È il principio del terzo escluso.",
     "fonte": "Wikipedia, «Tertium non datur» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2139,7 +2139,7 @@
     "corretta": 1,
     "spiegazione": "La conclusione è quindi solo probabile.",
     "fonte": "Wikipedia, «Abduzione» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2156,7 +2156,7 @@
     "corretta": 2,
     "spiegazione": "Esempio: «tutti gli uomini sono mortali» → «Socrate è mortale».",
     "fonte": "Wikipedia, «Deduzione» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2173,7 +2173,7 @@
     "corretta": 3,
     "spiegazione": "È contrapposto al metodo deduttivo.",
     "fonte": "Wikipedia, «Induzione» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2190,7 +2190,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Deduzione».",
     "fonte": "Wikipedia, «Deduzione» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2207,7 +2207,7 @@
     "corretta": 1,
     "spiegazione": "Il termine minore fa da soggetto; il medio compare solo nelle premesse.",
     "fonte": "Wikipedia, «Sillogismo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2224,7 +2224,7 @@
     "corretta": 2,
     "spiegazione": "Schema: se M è A e B è M, allora B è A.",
     "fonte": "Wikipedia, «Sillogismo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2241,7 +2241,7 @@
     "corretta": 3,
     "spiegazione": "Premessa universale negativa più universale affermativa.",
     "fonte": "Wikipedia, «Sillogismo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2258,7 +2258,7 @@
     "corretta": 0,
     "spiegazione": "Da una premessa particolare segue una conclusione particolare.",
     "fonte": "Wikipedia, «Sillogismo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2275,7 +2275,7 @@
     "corretta": 1,
     "spiegazione": "Gli animali neri potrebbero non essere gatti: premesse vere possono accompagnare una conclusione falsa.",
     "fonte": "Wikipedia, «Sillogismo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2292,7 +2292,7 @@
     "corretta": 2,
     "spiegazione": "La verità delle proposizioni non garantisce la validità della forma.",
     "fonte": "Wikipedia, «Sillogismo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2309,7 +2309,7 @@
     "corretta": 3,
     "spiegazione": "La validità dipende dalla forma, non dalla verità delle premesse.",
     "fonte": "Wikipedia, «Sillogismo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2326,7 +2326,7 @@
     "corretta": 0,
     "spiegazione": "Aristotele classificò tre figure; gli scolastici ne aggiunsero una quarta.",
     "fonte": "Wikipedia, «Sillogismo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2343,7 +2343,7 @@
     "corretta": 1,
     "spiegazione": "Voce «Sillogismo».",
     "fonte": "Wikipedia, «Sillogismo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2360,7 +2360,7 @@
     "corretta": 2,
     "spiegazione": "Le premesse devono essere enunciati dichiarativi, veri o falsi.",
     "fonte": "Wikipedia, «Sillogismo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2377,7 +2377,7 @@
     "corretta": 3,
     "spiegazione": "È la proprietà transitiva.",
     "fonte": "Wikipedia, «Sillogismo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2394,7 +2394,7 @@
     "corretta": 0,
     "spiegazione": "Nel sillogismo sofistico la probabilità è solo apparente.",
     "fonte": "Wikipedia, «Sillogismo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2411,7 +2411,7 @@
     "corretta": 1,
     "spiegazione": "Il contrario delle contrarie, che non possono essere entrambe vere.",
     "fonte": "Wikipedia, «Quadrato delle opposizioni» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2428,7 +2428,7 @@
     "corretta": 2,
     "spiegazione": "Si suppone che un evento debba per forza seguirne un altro.",
     "fonte": "Wikipedia, «Fallacia» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2445,7 +2445,7 @@
     "corretta": 3,
     "spiegazione": "Dal greco pará (contro) e dóxa (opinione).",
     "fonte": "Wikipedia, «Paradosso» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2462,7 +2462,7 @@
     "corretta": 0,
     "spiegazione": "È un risultato controintuitivo ma non contraddittorio.",
     "fonte": "Wikipedia, «Problema di Monty Hall» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2479,7 +2479,7 @@
     "corretta": 1,
     "spiegazione": "Monty Hall ne era il conduttore.",
     "fonte": "Wikipedia, «Problema di Monty Hall» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2496,7 +2496,7 @@
     "corretta": 2,
     "spiegazione": "Il minimo è 2ⁿ − 1.",
     "fonte": "Wikipedia, «Torre di Hanoi» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2513,7 +2513,7 @@
     "corretta": 3,
     "spiegazione": "2⁴ − 1 = 15.",
     "fonte": "Wikipedia, «Torre di Hanoi» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2530,7 +2530,7 @@
     "corretta": 0,
     "spiegazione": "È detta anche Torre di Lucas.",
     "fonte": "Wikipedia, «Torre di Hanoi» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2547,7 +2547,7 @@
     "corretta": 1,
     "spiegazione": "28 = 1 + 2 + 4 + 7 + 14. Gli altri: 12 → 16, 18 → 21, 24 → 36.",
     "fonte": "Wikipedia, «Numero perfetto» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2564,7 +2564,7 @@
     "corretta": 2,
     "spiegazione": "1 + 2 + 3 + 6 = 12, multiplo di 3.",
     "fonte": "Wikipedia, «Criteri di divisibilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2581,7 +2581,7 @@
     "corretta": 3,
     "spiegazione": "3 + 8 + 6 + 1 = 18, multiplo di 9.",
     "fonte": "Wikipedia, «Criteri di divisibilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2598,7 +2598,7 @@
     "corretta": 0,
     "spiegazione": "Le ultime due cifre (16) formano un multiplo di 4.",
     "fonte": "Wikipedia, «Criteri di divisibilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2615,7 +2615,7 @@
     "corretta": 1,
     "spiegazione": "Cifre di posto dispari 8 + 7 = 15, di posto pari 2 + 2 = 4: la differenza 11 è multiplo di 11.",
     "fonte": "Wikipedia, «Criteri di divisibilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2632,7 +2632,7 @@
     "corretta": 2,
     "spiegazione": "Un numero è divisibile per 5 se termina con 0 o 5.",
     "fonte": "Wikipedia, «Criteri di divisibilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2649,7 +2649,7 @@
     "corretta": 3,
     "spiegazione": "Le ultime due cifre devono essere 00, 25, 50 o 75.",
     "fonte": "Wikipedia, «Criteri di divisibilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2666,7 +2666,7 @@
     "corretta": 0,
     "spiegazione": "24 = 2³·3, 36 = 2²·3²: fattori comuni con esponente minore, 2²·3 = 12.",
     "fonte": "Wikipedia, «Massimo comun divisore» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2683,7 +2683,7 @@
     "corretta": 1,
     "spiegazione": "42/56 si semplifica in 3/4 dividendo per 14.",
     "fonte": "Wikipedia, «Massimo comun divisore» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2700,7 +2700,7 @@
     "corretta": 2,
     "spiegazione": "Per esempio 9 e 28 sono coprimi pur non essendo primi.",
     "fonte": "Wikipedia, «Massimo comun divisore» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2717,7 +2717,7 @@
     "corretta": 3,
     "spiegazione": "12 è il più piccolo multiplo comune.",
     "fonte": "Wikipedia, «Minimo comune multiplo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2734,7 +2734,7 @@
     "corretta": 0,
     "spiegazione": "mcm(12, 18) = 36 minuti.",
     "fonte": "Wikipedia, «Minimo comune multiplo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2751,7 +2751,7 @@
     "corretta": 1,
     "spiegazione": "8 = 2³, 12 = 2²·3: 2³·3 = 24.",
     "fonte": "Wikipedia, «Minimo comune multiplo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2768,7 +2768,7 @@
     "corretta": 2,
     "spiegazione": "Serve per sommare le frazioni.",
     "fonte": "Wikipedia, «Minimo comune multiplo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2785,7 +2785,7 @@
     "corretta": 3,
     "spiegazione": "0,32 · 2.000 = 640.",
     "fonte": "Wikipedia, «Percentuale» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2802,7 +2802,7 @@
     "corretta": 0,
     "spiegazione": "(100 − 80)/80 · 100 = 25%.",
     "fonte": "Wikipedia, «Percentuale» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2819,7 +2819,7 @@
     "corretta": 1,
     "spiegazione": "La differenza tra due percentuali si esprime in punti percentuali.",
     "fonte": "Wikipedia, «Percentuale» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2836,7 +2836,7 @@
     "corretta": 2,
     "spiegazione": "100 → 110 → 99: le percentuali si riferiscono a basi diverse e non si sommano.",
     "fonte": "Wikipedia, «Percentuale» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2853,7 +2853,7 @@
     "corretta": 3,
     "spiegazione": "1 binario su 3 di partenza.",
     "fonte": "Wikipedia, «Percentuale» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2870,7 +2870,7 @@
     "corretta": 0,
     "spiegazione": "Il 20% di 150 è 30; 150 − 30 = 120.",
     "fonte": "Wikipedia, «Percentuale» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2887,7 +2887,7 @@
     "corretta": 1,
     "spiegazione": "45 parti su 100.",
     "fonte": "Wikipedia, «Percentuale» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2904,7 +2904,7 @@
     "corretta": 2,
     "spiegazione": "70 € è il 70% del prezzo: 70 / 0,70 = 100.",
     "fonte": "Wikipedia, «Percentuale» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2921,7 +2921,7 @@
     "corretta": 3,
     "spiegazione": "25/200 = 0,125.",
     "fonte": "Wikipedia, «Percentuale» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2938,7 +2938,7 @@
     "corretta": 0,
     "spiegazione": "Il per milione (ppm) usa invece un milione.",
     "fonte": "Wikipedia, «Percentuale» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2955,7 +2955,7 @@
     "corretta": 1,
     "spiegazione": "Successione di Fibonacci: 34 + 55 = 89.",
     "fonte": "Wikipedia, «Successione di Fibonacci» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2972,7 +2972,7 @@
     "corretta": 2,
     "spiegazione": "È la successione dei numeri primi.",
     "fonte": "Wikipedia, «Numero primo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -2989,7 +2989,7 @@
     "corretta": 3,
     "spiegazione": "Sono i fattoriali: 6! = 720.",
     "fonte": "Wikipedia, «Fattoriale» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3006,7 +3006,7 @@
     "corretta": 0,
     "spiegazione": "aₙ = a₁ · rⁿ⁻¹ = 3 · 2⁴ = 48.",
     "fonte": "Wikipedia, «Progressione geometrica» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3023,7 +3023,7 @@
     "corretta": 1,
     "spiegazione": "7, 14, …, 98 è una progressione aritmetica di ragione 7: 98 = 7 + (n − 1)·7 → n = 14.",
     "fonte": "Wikipedia, «Progressione aritmetica» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3040,7 +3040,7 @@
     "corretta": 2,
     "spiegazione": "I giorni possibili sono 366 (compreso il 29 febbraio): con 367 persone, per il principio dei cassetti, almeno due coincidono.",
     "fonte": "Wikipedia, «Principio dei cassetti» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3057,7 +3057,7 @@
     "corretta": 3,
     "spiegazione": "Con 3 colori, nel caso peggiore le prime 3 sono diverse; la quarta forma una coppia.",
     "fonte": "Wikipedia, «Principio dei cassetti» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3074,7 +3074,7 @@
     "corretta": 0,
     "spiegazione": "Tè o caffè = 25 + 20 − 10 = 35; 40 − 35 = 5.",
     "fonte": "Wikipedia, «Diagramma di Venn» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3091,7 +3091,7 @@
     "corretta": 1,
     "spiegazione": "Permutazioni con ripetizione: 4!/(2!·2!) = 6.",
     "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3108,7 +3108,7 @@
     "corretta": 2,
     "spiegazione": "4·3/2 = 6.",
     "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3125,7 +3125,7 @@
     "corretta": 3,
     "spiegazione": "5 · 4 = 20.",
     "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3142,7 +3142,7 @@
     "corretta": 0,
     "spiegazione": "L'ordine conta: 10 · 9 = 90 disposizioni.",
     "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3159,7 +3159,7 @@
     "corretta": 1,
     "spiegazione": "Disposizioni semplici: 4 · 3 · 2 = 24.",
     "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3176,7 +3176,7 @@
     "corretta": 2,
     "spiegazione": "La probabilità della scelta iniziale resta 1/3; cambiando sale a 2/3.",
     "fonte": "Wikipedia, «Problema di Monty Hall» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3193,7 +3193,7 @@
     "corretta": 3,
     "spiegazione": "12/40 = 3/10.",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3210,7 +3210,7 @@
     "corretta": 0,
     "spiegazione": "L'unico caso sfavorevole è CCC su 8 sequenze possibili.",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3227,7 +3227,7 @@
     "corretta": 1,
     "spiegazione": "6 coppie uguali su 36 possibili.",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3244,7 +3244,7 @@
     "corretta": 2,
     "spiegazione": "Coppie (4,6), (5,5), (6,4): 3 su 36.",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3261,7 +3261,7 @@
     "corretta": 3,
     "spiegazione": "Pur ottenendosi da un uguale numero di combinazioni, hanno meno permutazioni.",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3278,7 +3278,7 @@
     "corretta": 0,
     "spiegazione": "Il «Libellus de ratiociniis in ludo aleae».",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3295,7 +3295,7 @@
     "corretta": 1,
     "spiegazione": "Voce «Probabilità».",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3312,7 +3312,7 @@
     "corretta": 2,
     "spiegazione": "Dall'universale al particolare.",
     "fonte": "Wikipedia, «Deduzione» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3329,7 +3329,7 @@
     "corretta": 3,
     "spiegazione": "Dal particolare all'universale: la conclusione non è certa.",
     "fonte": "Wikipedia, «Induzione» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3346,7 +3346,7 @@
     "corretta": 0,
     "spiegazione": "Una formula è contraddizione se non è soddisfacibile.",
     "fonte": "Wikipedia, «Logica proposizionale» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3363,7 +3363,7 @@
     "corretta": 1,
     "spiegazione": "Se è vera in ogni valutazione è una tautologia.",
     "fonte": "Wikipedia, «Logica proposizionale» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3380,7 +3380,7 @@
     "corretta": 2,
     "spiegazione": "Giochi di Archimede 2000; soluzione riportata nel testo.",
     "fonte": "Wikipedia, «MatematicaC3, Esercizi di logica (CC BY 3.0)» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3397,7 +3397,7 @@
     "corretta": 3,
     "spiegazione": "La ragazza può essere solo paggio, quindi il vecchio è paggio e il ragazzo non è cavaliere: anche lui è paggio. Giochi di Archimede 1998.",
     "fonte": "Wikipedia, «MatematicaC3, Esercizi di logica (CC BY 3.0)» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3414,7 +3414,7 @@
     "corretta": 0,
     "spiegazione": "Progressione aritmetica di ragione 5.",
     "fonte": "Wikipedia, «Progressione aritmetica» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3431,7 +3431,7 @@
     "corretta": 1,
     "spiegazione": "Progressione aritmetica di ragione −6.",
     "fonte": "Wikipedia, «Progressione aritmetica» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3448,7 +3448,7 @@
     "corretta": 2,
     "spiegazione": "Progressione geometrica di ragione 3: 135 × 3 = 405.",
     "fonte": "Wikipedia, «Progressione geometrica» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3465,7 +3465,7 @@
     "corretta": 3,
     "spiegazione": "Progressione geometrica di ragione 1/10.",
     "fonte": "Wikipedia, «Progressione geometrica» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3482,7 +3482,7 @@
     "corretta": 0,
     "spiegazione": "Come nella successione di Fibonacci, ogni termine è la somma dei due precedenti: 12 + 19 = 31.",
     "fonte": "Wikipedia, «Successione di Fibonacci» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3499,7 +3499,7 @@
     "corretta": 1,
     "spiegazione": "Ogni termine è la somma dei due precedenti (Fibonacci moltiplicata per 10): 30 + 50 = 80.",
     "fonte": "Wikipedia, «Successione di Fibonacci» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3516,7 +3516,7 @@
     "corretta": 2,
     "spiegazione": "a₂₀ = 10 + 19 × 3 = 67.",
     "fonte": "Wikipedia, «Progressione aritmetica» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3533,7 +3533,7 @@
     "corretta": 3,
     "spiegazione": "n·(n+1)/2 = 50 × 51 / 2 = 1275.",
     "fonte": "Wikipedia, «Progressione aritmetica» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3550,7 +3550,7 @@
     "corretta": 0,
     "spiegazione": "Sono 50 termini: (2 + 100) × 50 / 2 = 2550.",
     "fonte": "Wikipedia, «Progressione aritmetica» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3567,7 +3567,7 @@
     "corretta": 1,
     "spiegazione": "a₅ = 2 × 3⁴ = 2 × 81 = 162.",
     "fonte": "Wikipedia, «Progressione geometrica» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3584,7 +3584,7 @@
     "corretta": 2,
     "spiegazione": "Ogni termine è il doppio del precedente.",
     "fonte": "Wikipedia, «Progressione geometrica» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3601,7 +3601,7 @@
     "corretta": 3,
     "spiegazione": "8!/6! = 8 × 7 = 56: i fattori da 6 in giù si semplificano.",
     "fonte": "Wikipedia, «Fattoriale» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3618,7 +3618,7 @@
     "corretta": 0,
     "spiegazione": "7! = 7 × 720 = 5040.",
     "fonte": "Wikipedia, «Fattoriale» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3635,7 +3635,7 @@
     "corretta": 1,
     "spiegazione": "10!/8! = 10 × 9 = 90.",
     "fonte": "Wikipedia, «Fattoriale» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3652,7 +3652,7 @@
     "corretta": 2,
     "spiegazione": "3! = 6 e 2! = 2: 6 × 2 = 12.",
     "fonte": "Wikipedia, «Fattoriale» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3669,7 +3669,7 @@
     "corretta": 3,
     "spiegazione": "Il nome «fattoriale» era stato coniato poco prima da Antoine Arbogast.",
     "fonte": "Wikipedia, «Fattoriale» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3686,7 +3686,7 @@
     "corretta": 0,
     "spiegazione": "1, 1, 2, 3, 5, 8, 13, 21, 34, 55.",
     "fonte": "Wikipedia, «Successione di Fibonacci» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3703,7 +3703,7 @@
     "corretta": 1,
     "spiegazione": "È detta anche numero di Fidia.",
     "fonte": "Wikipedia, «Successione di Fibonacci» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3720,7 +3720,7 @@
     "corretta": 2,
     "spiegazione": "a₁₀₀ = 4 + 99 × 5 = 499.",
     "fonte": "Wikipedia, «Progressione aritmetica» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3737,7 +3737,7 @@
     "corretta": 3,
     "spiegazione": "3 + 4(n − 1) = 43 → n = 11.",
     "fonte": "Wikipedia, «Progressione aritmetica» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3754,7 +3754,7 @@
     "corretta": 0,
     "spiegazione": "Quattro lettere distinte: 4! = 24 permutazioni.",
     "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3771,7 +3771,7 @@
     "corretta": 1,
     "spiegazione": "4! / 2! = 12, perché la A compare due volte.",
     "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3788,7 +3788,7 @@
     "corretta": 2,
     "spiegazione": "5! = 120 permutazioni.",
     "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3805,7 +3805,7 @@
     "corretta": 3,
     "spiegazione": "L'ordine non conta: C(7,3) = 7·6·5 / 3! = 35.",
     "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3822,7 +3822,7 @@
     "corretta": 0,
     "spiegazione": "C(6,2) = 6·5 / 2 = 15.",
     "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3839,7 +3839,7 @@
     "corretta": 1,
     "spiegazione": "L'ordine conta: 8 × 7 × 6 = 336 disposizioni.",
     "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3856,7 +3856,7 @@
     "corretta": 2,
     "spiegazione": "Disposizioni con ripetizione: 10⁴ = 10.000.",
     "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3873,7 +3873,7 @@
     "corretta": 3,
     "spiegazione": "21³ = 9.261.",
     "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3890,7 +3890,7 @@
     "corretta": 0,
     "spiegazione": "Due esiti per ciascun lancio: 2³ = 8.",
     "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3907,7 +3907,7 @@
     "corretta": 1,
     "spiegazione": "I segmenti tra 6 vertici sono C(6,2) = 15; tolti i 6 lati restano 9 diagonali.",
     "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3924,7 +3924,7 @@
     "corretta": 2,
     "spiegazione": "C(10,2) = 10·9 / 2 = 45.",
     "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3941,7 +3941,7 @@
     "corretta": 3,
     "spiegazione": "5 × 4 = 20 disposizioni semplici.",
     "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3958,7 +3958,7 @@
     "corretta": 0,
     "spiegazione": "5! / (3! × 2!) = 10 (tre M e due A).",
     "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3975,7 +3975,7 @@
     "corretta": 1,
     "spiegazione": "Nelle permutazioni circolari si fissa una persona: (4 − 1)! = 6.",
     "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -3992,7 +3992,7 @@
     "corretta": 2,
     "spiegazione": "C(5,2) × C(3,1) = 10 × 3 = 30.",
     "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4009,7 +4009,7 @@
     "corretta": 3,
     "spiegazione": "L'ordine conta: 10 × 9 × 8 = 720.",
     "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4026,7 +4026,7 @@
     "corretta": 0,
     "spiegazione": "Disposizioni con ripetizione: 3¹³ = 1.594.323.",
     "fonte": "Wikipedia, «Calcolo combinatorio» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4043,7 +4043,7 @@
     "corretta": 1,
     "spiegazione": "Casi favorevoli 3 (2, 4, 6) su 6 possibili.",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4060,7 +4060,7 @@
     "corretta": 2,
     "spiegazione": "Casi favorevoli 2 (5 e 6) su 6.",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4077,7 +4077,7 @@
     "corretta": 3,
     "spiegazione": "4 assi su 40 carte.",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4094,7 +4094,7 @@
     "corretta": 0,
     "spiegazione": "5 favorevoli su 10.",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4111,7 +4111,7 @@
     "corretta": 1,
     "spiegazione": "4/10 × 3/9 = 12/90 = 2/15.",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4128,7 +4128,7 @@
     "corretta": 2,
     "spiegazione": "Esiti: TT, TC, CT, CC; solo TT non ha croci: 3/4.",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4145,7 +4145,7 @@
     "corretta": 3,
     "spiegazione": "Coppie favorevoli (1,3), (2,2), (3,1): 3 casi su 36.",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4162,7 +4162,7 @@
     "corretta": 0,
     "spiegazione": "Solo la coppia (1,1): 1 caso su 36.",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4179,7 +4179,7 @@
     "corretta": 1,
     "spiegazione": "A e «non A» sono incompatibili e la loro unione è certa: 1 − 0,3 = 0,7.",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4196,7 +4196,7 @@
     "corretta": 2,
     "spiegazione": "Favorevoli: 3 e 6, cioè 2 su 6.",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4213,7 +4213,7 @@
     "corretta": 3,
     "spiegazione": "La somma minima di due dadi è 2: la probabilità è 0.",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4230,7 +4230,7 @@
     "corretta": 0,
     "spiegazione": "La probabilità dell'evento certo è 1.",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4247,7 +4247,7 @@
     "corretta": 1,
     "spiegazione": "Eventi indipendenti: (1/2)³ = 1/8.",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4264,7 +4264,7 @@
     "corretta": 2,
     "spiegazione": "I multipli di 10 sono 9 su 90.",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4281,7 +4281,7 @@
     "corretta": 3,
     "spiegazione": "13 carte di cuori su 52.",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4298,7 +4298,7 @@
     "corretta": 0,
     "spiegazione": "Eventi incompatibili: 12/40 + 4/40 = 16/40 = 2/5.",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4315,7 +4315,7 @@
     "corretta": 1,
     "spiegazione": "Eventi indipendenti: 1/6 × 1/2 = 1/12.",
     "fonte": "Wikipedia, «Probabilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4332,7 +4332,7 @@
     "corretta": 2,
     "spiegazione": "1.374 è pari e la somma delle cifre (15) è multipla di 3.",
     "fonte": "Wikipedia, «Criteri di divisibilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4349,7 +4349,7 @@
     "corretta": 3,
     "spiegazione": "4.620: le ultime due cifre (20) sono multiple di 4 e la somma delle cifre (12) è multipla di 3.",
     "fonte": "Wikipedia, «Criteri di divisibilità» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4366,7 +4366,7 @@
     "corretta": 0,
     "spiegazione": "84 = 18·4 + 12; 18 = 12·1 + 6; 12 = 6·2: MCD = 6.",
     "fonte": "Wikipedia, «Massimo comun divisore» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4383,7 +4383,7 @@
     "corretta": 1,
     "spiegazione": "48 = 2⁴·3 e 180 = 2²·3²·5: MCD = 2²·3 = 12.",
     "fonte": "Wikipedia, «Massimo comun divisore» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4400,7 +4400,7 @@
     "corretta": 2,
     "spiegazione": "6 = 2·3, 8 = 2³, 12 = 2²·3: mcm = 2³·3 = 24.",
     "fonte": "Wikipedia, «Minimo comune multiplo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4417,7 +4417,7 @@
     "corretta": 3,
     "spiegazione": "9 = 3², 15 = 3·5: mcm = 3²·5 = 45.",
     "fonte": "Wikipedia, «Minimo comune multiplo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4434,7 +4434,7 @@
     "corretta": 0,
     "spiegazione": "mcm(15, 20) = 60.",
     "fonte": "Wikipedia, «Minimo comune multiplo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4451,7 +4451,7 @@
     "corretta": 1,
     "spiegazione": "MCD(60, 84) = 12.",
     "fonte": "Wikipedia, «Massimo comun divisore» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4468,7 +4468,7 @@
     "corretta": 2,
     "spiegazione": "I divisori di 6 escluso sé stesso sono 1, 2, 3, e 1 + 2 + 3 = 6.",
     "fonte": "Wikipedia, «Numero perfetto» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4485,7 +4485,7 @@
     "corretta": 3,
     "spiegazione": "360 = 8 × 9 × 5; la scomposizione in primi è unica.",
     "fonte": "Wikipedia, «Minimo comune multiplo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4502,7 +4502,7 @@
     "corretta": 0,
     "spiegazione": "91 = 7 × 13, quindi ha più di due divisori.",
     "fonte": "Wikipedia, «Numero primo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4519,7 +4519,7 @@
     "corretta": 1,
     "spiegazione": "1, 2, 3, 4, 6, 12: non è primo perché ne ha più di due.",
     "fonte": "Wikipedia, «Numero primo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4536,7 +4536,7 @@
     "corretta": 2,
     "spiegazione": "È un semplice algoritmo dell'antica Grecia.",
     "fonte": "Wikipedia, «Numero primo» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4553,7 +4553,7 @@
     "corretta": 3,
     "spiegazione": "2⁵ − 1 = 31.",
     "fonte": "Wikipedia, «Torre di Hanoi» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4570,7 +4570,7 @@
     "corretta": 0,
     "spiegazione": "2⁶ − 1 = 63.",
     "fonte": "Wikipedia, «Torre di Hanoi» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4587,7 +4587,7 @@
     "corretta": 1,
     "spiegazione": "√(2 × 8) = √16 = 4.",
     "fonte": "Wikipedia, «Media (statistica)» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4604,7 +4604,7 @@
     "corretta": 2,
     "spiegazione": "(10 + 20 + 30 + 40) / 4 = 25.",
     "fonte": "Wikipedia, «Media (statistica)» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4621,7 +4621,7 @@
     "corretta": 3,
     "spiegazione": "Somma iniziale 60; (60 + 18) / 6 = 13.",
     "fonte": "Wikipedia, «Media (statistica)» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4638,7 +4638,7 @@
     "corretta": 0,
     "spiegazione": "Ordinati: 1, 3, 5, 7, 9; il valore centrale è 5.",
     "fonte": "Wikipedia, «Media (statistica)» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4655,7 +4655,7 @@
     "corretta": 1,
     "spiegazione": "240 × 15 / 100 = 36.",
     "fonte": "Wikipedia, «Percentuale» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4672,7 +4672,7 @@
     "corretta": 2,
     "spiegazione": "18 / 0,30 = 60.",
     "fonte": "Wikipedia, «Percentuale» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4689,7 +4689,7 @@
     "corretta": 3,
     "spiegazione": "15 / 50 = 0,30 = 30%.",
     "fonte": "Wikipedia, «Percentuale» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4706,7 +4706,7 @@
     "corretta": 0,
     "spiegazione": "200 + 22% di 200 = 200 + 44 = 244.",
     "fonte": "Wikipedia, «Percentuale» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4723,7 +4723,7 @@
     "corretta": 1,
     "spiegazione": "0,80 × 0,90 = 0,72: si paga il 72%, lo sconto è il 28%.",
     "fonte": "Wikipedia, «Percentuale» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4740,7 +4740,7 @@
     "corretta": 2,
     "spiegazione": "1.200 × 0,15 = 180.",
     "fonte": "Wikipedia, «Percentuale» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4757,7 +4757,7 @@
     "corretta": 3,
     "spiegazione": "Sono gli elementi comuni ai due insiemi.",
     "fonte": "Wikipedia, «Insieme» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4774,7 +4774,7 @@
     "corretta": 0,
     "spiegazione": "A ∪ B = {1, 2, 3, 4, 6, 8, 10}: gli elementi comuni (2 e 4) si contano una volta sola.",
     "fonte": "Wikipedia, «Insieme» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4791,7 +4791,7 @@
     "corretta": 1,
     "spiegazione": "Non contenendo elementi, tutti i suoi elementi (nessuno) appartengono a ogni insieme.",
     "fonte": "Wikipedia, «Insieme» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4808,7 +4808,7 @@
     "corretta": 2,
     "spiegazione": "Studiano almeno una lingua 18 + 15 − 7 = 26; 30 − 26 = 4.",
     "fonte": "Wikipedia, «Insieme» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4825,7 +4825,7 @@
     "corretta": 3,
     "spiegazione": "12 + 9 − 4 = 17.",
     "fonte": "Wikipedia, «Insieme» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4842,7 +4842,7 @@
     "corretta": 0,
     "spiegazione": "Con 12 mesi («cassetti»), la tredicesima persona finisce per forza in un mese già occupato.",
     "fonte": "Wikipedia, «Principio dei cassetti» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4859,7 +4859,7 @@
     "corretta": 1,
     "spiegazione": "I colori sono 2: il terzo calzino ripete per forza un colore.",
     "fonte": "Wikipedia, «Principio dei cassetti» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4876,7 +4876,7 @@
     "corretta": 2,
     "spiegazione": "¬(p ∧ q) = ¬p ∨ ¬q.",
     "fonte": "MatematicaC3, Logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4893,7 +4893,7 @@
     "corretta": 3,
     "spiegazione": "¬(p ∨ q) = ¬p ∧ ¬q.",
     "fonte": "MatematicaC3, Logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4910,7 +4910,7 @@
     "corretta": 0,
     "spiegazione": "È vera qualunque sia il valore di p.",
     "fonte": "MatematicaC3, Logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4927,7 +4927,7 @@
     "corretta": 1,
     "spiegazione": "Un multiplo di 2 è pari, quindi non può essere dispari.",
     "fonte": "MatematicaC3, Logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4944,7 +4944,7 @@
     "corretta": 2,
     "spiegazione": "Senza studiare non si è promossi, ma studiare non garantisce la promozione.",
     "fonte": "MatematicaC3, Logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4961,7 +4961,7 @@
     "corretta": 3,
     "spiegazione": "È il quantificatore universale; ∃ (esiste) è quello esistenziale.",
     "fonte": "MatematicaC3, Logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4978,7 +4978,7 @@
     "corretta": 0,
     "spiegazione": "La negazione di «tutti» è «almeno uno non», non «nessuno».",
     "fonte": "MatematicaC3, Logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -4995,7 +4995,7 @@
     "corretta": 1,
     "spiegazione": "Modus tollens: da p ⇒ q e ¬q segue ¬p.",
     "fonte": "Wikipedia, «Modus tollens» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -5012,7 +5012,7 @@
     "corretta": 2,
     "spiegazione": "La strada potrebbe essere bagnata per altri motivi.",
     "fonte": "Wikipedia, «Fallacia» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -5029,7 +5029,7 @@
     "corretta": 3,
     "spiegazione": "Dall'implicazione p ⇒ q si deduce la contronominale ¬q ⇒ ¬p.",
     "fonte": "MatematicaC3, Logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -5046,7 +5046,7 @@
     "corretta": 0,
     "spiegazione": "La contronominale ¬q ⇒ ¬p è equivalente all'implicazione; inversa e contraria no.",
     "fonte": "MatematicaC3, Logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -5063,7 +5063,7 @@
     "corretta": 1,
     "spiegazione": "Il conseguente (tesi) è ciò che segue «implica».",
     "fonte": "MatematicaC3, Logica (CC BY 3.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -5080,7 +5080,7 @@
     "corretta": 2,
     "spiegazione": "Ordine: Anna > Bea > Carla > Dora (la relazione «più alto di» è transitiva).",
     "fonte": "Wikipedia, «Deduzione» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   },
   {
     "materia": "logica",
@@ -5097,6 +5097,6 @@
     "corretta": 3,
     "spiegazione": "Sono detti anche diagrammi di Eulero-Venn.",
     "fonte": "Wikipedia, «Diagramma di Venn» (CC BY-SA 4.0)",
-    "versione": "v1"
+    "versione": "v2"
   }
 ]
