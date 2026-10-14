@@ -15,6 +15,7 @@ import { LETTURA_AVVISI, valoriLettura } from "@imieiconcorsi/core/disiscrizione
 import { avvisaAdmin } from "@imieiconcorsi/core/email";
 import { dataIt } from "@imieiconcorsi/core/email-piani";
 import { type Ctx, HttpError, service } from "@imieiconcorsi/core/http";
+import { provenienzaDa } from "@imieiconcorsi/core/provenienza";
 import { z } from "zod";
 
 // Servizio "profile": il profilo di studio dell'utente (interessi, livelli, avvisi), il parere
@@ -63,11 +64,13 @@ async function richiesteDaLeggere(userId: string) {
 
 
 export const handler = service({
-  // Il profilo nasce al primo accesso, qualunque sia il metodo di login.
+  // Il profilo nasce al primo accesso, qualunque sia il metodo di login. I parametri UTM
+  // (?utm_source=…, dal link dei social o di un annuncio) si salvano solo qui, alla nascita.
   "GET /me": async (ctx) => {
     let profilo = await getProfilo(ctx.userId);
     if (!profilo) {
       const now = new Date().toISOString();
+      const provenienza = provenienzaDa(ctx.query);
       profilo = {
         userId: ctx.userId,
         username: ctx.username,
@@ -75,6 +78,7 @@ export const handler = service({
         interessi: [],
         livelli: {},
         avvisi: "settimanale",
+        ...(provenienza ? { provenienza } : {}),
         createdAt: now,
         updatedAt: now,
       } satisfies Profilo;

@@ -4,6 +4,8 @@ import { api, useApi } from "../lib/api";
 import { messaggioErrore } from "../lib/auth";
 import { Alert, Button, Card } from "./ui";
 
+// Card "Invita un amico" del profilo: link d'invito da copiare e campo per il codice di chi ci ha invitato.
+
 interface InvitoApi {
   codice: string;
   link: string;
@@ -22,6 +24,7 @@ export function InvitaAmico() {
   const [inCorso, setInCorso] = useState(false);
   const [esito, setEsito] = useState<{ tone: "success" | "error"; testo: string }>();
 
+  // Copia il link d'invito negli appunti e lo segnala per due secondi.
   async function copia() {
     if (!data) return;
     try {
@@ -31,6 +34,7 @@ export function InvitaAmico() {
     } catch {}
   }
 
+  // Registra il codice dell'amico che ci ha invitato.
   async function inserisci(e: FormEvent) {
     e.preventDefault();
     setInCorso(true);

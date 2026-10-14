@@ -30,6 +30,7 @@ export function Profilo() {
   const [eliminazione, setEliminazione] = useState(false);
   const [erroreEliminazione, setErroreEliminazione] = useState<string>();
 
+  // Elimina l'account e i suoi dati, poi esce e torna alla home.
   async function eliminaAccount() {
     setEliminazione(true);
     setErroreEliminazione(undefined);
@@ -44,6 +45,7 @@ export function Profilo() {
     }
   }
 
+  // Salva nome, interessi, livelli e avvisi.
   async function salva() {
     setSalvataggio(true);
     setEsito(undefined);

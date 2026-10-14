@@ -351,6 +351,7 @@ export function ConcorsoDettaglio() {
 function SegnaConcluso({ id, concluso, onCambio }: { id: string; concluso: boolean; onCambio: (conclusoIl?: string) => void }) {
   const [inCorso, setInCorso] = useState(false);
   const [errore, setErrore] = useState<string>();
+  // Segna il concorso come concluso, o lo riapre.
   async function cambia() {
     setInCorso(true);
     setErrore(undefined);

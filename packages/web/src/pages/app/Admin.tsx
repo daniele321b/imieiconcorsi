@@ -3,6 +3,7 @@ import { Bell, Bot, Copy, Crown, Trash2, Database, LifeBuoy, Receipt, Search, Sh
 import { type FormEvent, useEffect, useState } from "react";
 import { Link, Navigate } from "react-router";
 import { useBandiDaCaricare } from "../../lib/bandi";
+import { ProvenienzaIscritti } from "../../components/ProvenienzaIscritti";
 import { UtentiAttivi } from "../../components/UtentiAttivi";
 import { Alert, Badge, Button, ButtonLink, Card, PageHeader, Spinner, cx } from "../../components/ui";
 import { copiaTesto } from "../../lib/appunti";
@@ -10,11 +11,12 @@ import { api, ApiError, useApi, type AdminCodici, type AdminRiepilogo, type Admi
 import { useUtente } from "../../lib/auth";
 import { dataBreve, dataOra } from "../../lib/format";
 
-const toDate = (iso?: string) => (iso ? iso.slice(0, 10) : "");
-
 // Pannello di controllo (/admin), solo per gli admin: numeri principali (utenti per piano,
 // richieste aperte, spesa AI del mese), link a richieste, pagamenti e banche dati, codici sconto
 // ed elenco degli utenti con cambio di piano e disattivazione. Le API sono in functions/src/admin.
+
+/** Data ISO ridotta al giorno (AAAA-MM-GG), per il campo data del modulo. */
+const toDate = (iso?: string) => (iso ? iso.slice(0, 10) : "");
 
 /** Pagina /admin: chi non è admin torna all'app. */
 export function Admin() {
@@ -39,6 +41,7 @@ function Pannello() {
     return () => clearTimeout(t);
   }, [cerca]);
 
+  // Scarica una pagina di utenti (con il filtro di ricerca); senza `token` riparte dalla prima.
   async function carica(token?: string) {
     setCaricamento(true);
     setErrore(undefined);
@@ -61,6 +64,7 @@ function Pannello() {
     void carica();
   }, [filtro]);
 
+  // Sostituisce l'utente modificato nell'elenco e aggiorna i numeri in alto.
   const aggiorna = (u: AdminUtente) => {
     setUtenti((lista) => lista.map((x) => (x.username === u.username ? u : x)));
     void riepilogo.reload();
@@ -87,6 +91,8 @@ function Pannello() {
       />
 
       <UtentiAttivi />
+
+      <ProvenienzaIscritti />
 
       <div className="grid grid-cols-2 gap-4 lg:grid-cols-3">
         {[
@@ -171,6 +177,7 @@ function RigaUtente({
   // Storico degli accessi (registrati da Cognito a ogni login), caricato quando lo si apre.
   const [accessi, setAccessi] = useState<{ il: string; metodo: string }[]>();
 
+  // Mostra o nasconde gli ultimi accessi dell'utente.
   async function apriAccessi() {
     if (accessi) return setAccessi(undefined);
     try {
@@ -186,6 +193,7 @@ function RigaUtente({
 
   const modificato = piano !== utente.piano || scadenza !== toDate(utente.scadenzaPiano);
 
+  // Cambia piano e scadenza dell'utente (Free non ha scadenza).
   async function salvaPiano() {
     setSalvataggio(true);
     setEsito(undefined);
@@ -203,6 +211,7 @@ function RigaUtente({
     }
   }
 
+  // Disattiva o riattiva l'account.
   async function cambiaStato() {
     setSalvataggio(true);
     setEsito(undefined);
@@ -219,6 +228,7 @@ function RigaUtente({
     }
   }
 
+  // Elimina l'account e tutti i suoi dati.
   async function elimina() {
     setSalvataggio(true);
     setEsito(undefined);
@@ -242,6 +252,8 @@ function RigaUtente({
         </div>
         <p className="mt-0.5 text-sm text-slate-500">
           {utente.nome ? `${utente.nome} · ` : ""}accesso con {utente.accesso} · iscritto il {dataBreve(utente.creatoIl)}
+          {utente.provenienza &&
+            ` · da ${[utente.provenienza.fonte, utente.provenienza.campagna, utente.provenienza.contenuto].filter(Boolean).join(" / ")}`}
           {!utente.onboarded && " · onboarding da fare"}
         </p>
         <p className="mt-0.5 text-sm text-slate-500">
@@ -398,6 +410,7 @@ function CodiciSconto() {
   const [daEliminare, setDaEliminare] = useState<string>();
   const [eliminando, setEliminando] = useState<string>();
 
+  // Elimina un codice sconto (gli ordini che l'hanno usato non cambiano).
   async function elimina(c: CodiceSconto) {
     setEliminando(c.codice);
     setEsito(undefined);
@@ -413,6 +426,7 @@ function CodiciSconto() {
     }
   }
 
+  // Copia il codice negli appunti e lo segnala per due secondi.
   async function copia(codice: string) {
     if (await copiaTesto(codice)) {
       setCopiato(codice);
@@ -422,6 +436,7 @@ function CodiciSconto() {
     }
   }
 
+  // Crea un codice sconto con i dati del modulo.
   async function crea(e: FormEvent) {
     e.preventDefault();
     setInCorso(true);
@@ -449,6 +464,7 @@ function CodiciSconto() {
     }
   }
 
+  // Attiva o disattiva un codice sconto.
   async function cambiaStato(c: CodiceSconto) {
     try {
       await api(`/admin/codici/${encodeURIComponent(c.codice)}`, { method: "PUT", body: { attivo: !c.attivo } });

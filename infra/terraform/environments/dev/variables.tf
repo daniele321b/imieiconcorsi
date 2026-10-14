@@ -1,3 +1,5 @@
+# Variabili dell'ambiente dev (valori in terraform.tfvars e da scripts/deploy.sh).
+
 variable "aws_region" {
   description = "Regione AWS dell'ambiente (Milano: eu-south-1)"
   type        = string

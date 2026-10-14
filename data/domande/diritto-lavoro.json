@@ -14,7 +14,7 @@
     "corretta": 0,
     "spiegazione": "Art. 1 D.Lgs. 81/2015: il contratto di lavoro subordinato a tempo indeterminato costituisce la forma comune di rapporto di lavoro.",
     "fonte": "D.Lgs. 81/2015, art. 1",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -31,7 +31,7 @@
     "corretta": 1,
     "spiegazione": "Art. 19 D.Lgs. 81/2015: il termine non può superare dodici mesi; fino a ventiquattro solo in presenza delle condizioni previste.",
     "fonte": "D.Lgs. 81/2015, art. 19",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -48,7 +48,7 @@
     "corretta": 2,
     "spiegazione": "Art. 19 D.Lgs. 81/2015: oltre i dodici mesi, ma comunque non oltre i ventiquattro, solo con le condizioni indicate (es. casi previsti dai contratti collettivi).",
     "fonte": "D.Lgs. 81/2015, art. 19",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -65,7 +65,7 @@
     "corretta": 3,
     "spiegazione": "Art. 6 D.Lgs. 81/2015: il rifiuto del lavoratore di concordare variazioni dell'orario non costituisce giustificato motivo di licenziamento.",
     "fonte": "D.Lgs. 81/2015, art. 6",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -82,7 +82,7 @@
     "corretta": 0,
     "spiegazione": "Art. 14 L. 300/1970: il diritto è garantito a tutti i lavoratori all'interno dei luoghi di lavoro.",
     "fonte": "L. 300/1970, art. 14",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -99,7 +99,7 @@
     "corretta": 1,
     "spiegazione": "Art. 20 L. 300/1970: assemblee durante l'orario di lavoro nei limiti di dieci ore annue retribuite; i contratti collettivi possono migliorare.",
     "fonte": "L. 300/1970, art. 20",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -116,7 +116,7 @@
     "corretta": 2,
     "spiegazione": "Art. 28 L. 300/1970: procedimento di repressione della condotta antisindacale davanti al giudice del lavoro.",
     "fonte": "L. 300/1970, art. 28",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -133,7 +133,7 @@
     "corretta": 3,
     "spiegazione": "Art. 17 D.Lgs. 81/2008: sono indelegabili la valutazione dei rischi con il DVR (art. 28) e la designazione del responsabile del servizio di prevenzione e protezione.",
     "fonte": "D.Lgs. 81/2008, art. 17",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -150,7 +150,7 @@
     "corretta": 0,
     "spiegazione": "Art. 17 D.Lgs. 81/2008: le due attività non delegabili sono il DVR e la designazione dell'RSPP.",
     "fonte": "D.Lgs. 81/2008, art. 17",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -167,7 +167,7 @@
     "corretta": 1,
     "spiegazione": "Art. 2 D.Lgs. 81/2008: l'RLS è eletto o designato per rappresentare i lavoratori per la salute e la sicurezza.",
     "fonte": "D.Lgs. 81/2008, art. 2",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -184,7 +184,7 @@
     "corretta": 2,
     "spiegazione": "Art. 15 D.Lgs. 81/2008: la prima misura generale di tutela è la valutazione di tutti i rischi.",
     "fonte": "D.Lgs. 81/2008, art. 15",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -201,7 +201,7 @@
     "corretta": 3,
     "spiegazione": "Art. 2 D.Lgs. 81/2008: il medico competente ha titoli e requisiti specifici (art. 38) e collabora con il datore di lavoro.",
     "fonte": "D.Lgs. 81/2008, art. 2",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -218,7 +218,7 @@
     "corretta": 0,
     "spiegazione": "Art. 19 D.Lgs. 81/2015: oltre i dodici mesi servono le condizioni indicate dalla legge; altrimenti il superamento del limite non è consentito.",
     "fonte": "D.Lgs. 81/2015, art. 19",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -235,7 +235,7 @@
     "corretta": 1,
     "spiegazione": "Art. 1: senza distinzione di opinioni politiche, sindacali e di fede religiosa.",
     "fonte": "L. 300/1970, art. 1",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -252,7 +252,7 @@
     "corretta": 2,
     "spiegazione": "Art. 2: non possono vigilare sull'attività lavorativa.",
     "fonte": "L. 300/1970, art. 2",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -269,7 +269,7 @@
     "corretta": 3,
     "spiegazione": "Art. 4, c. 1: serve un accordo sindacale o, in mancanza, l'autorizzazione dell'Ispettorato.",
     "fonte": "L. 300/1970, art. 4",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -286,7 +286,7 @@
     "corretta": 0,
     "spiegazione": "Art. 4, c. 1.",
     "fonte": "L. 300/1970, art. 4",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -303,7 +303,7 @@
     "corretta": 1,
     "spiegazione": "Art. 4, c. 2; le informazioni sono utilizzabili se il lavoratore è adeguatamente informato.",
     "fonte": "L. 300/1970, art. 4",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -320,7 +320,7 @@
     "corretta": 2,
     "spiegazione": "Art. 5: sono vietati gli accertamenti sanitari diretti del datore.",
     "fonte": "L. 300/1970, art. 5",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -337,7 +337,7 @@
     "corretta": 3,
     "spiegazione": "Art. 6 L. 300/1970.",
     "fonte": "L. 300/1970, art. 6",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -354,7 +354,7 @@
     "corretta": 0,
     "spiegazione": "Art. 7, c. 2 L. 300/1970.",
     "fonte": "L. 300/1970, art. 7",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -371,7 +371,7 @@
     "corretta": 1,
     "spiegazione": "Art. 7, c. 4; la sospensione non può superare dieci giorni.",
     "fonte": "L. 300/1970, art. 7",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -388,7 +388,7 @@
     "corretta": 2,
     "spiegazione": "Art. 7, c. 4.",
     "fonte": "L. 300/1970, art. 7",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -405,7 +405,7 @@
     "corretta": 3,
     "spiegazione": "Art. 7, c. 5.",
     "fonte": "L. 300/1970, art. 7",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -422,7 +422,7 @@
     "corretta": 0,
     "spiegazione": "Art. 7, ultimo comma.",
     "fonte": "L. 300/1970, art. 7",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -439,7 +439,7 @@
     "corretta": 1,
     "spiegazione": "Art. 8 L. 300/1970.",
     "fonte": "L. 300/1970, art. 8",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -456,7 +456,7 @@
     "corretta": 2,
     "spiegazione": "Art. 10: hanno anche diritto a turni che agevolino la frequenza e non sono obbligati agli straordinari.",
     "fonte": "L. 300/1970, art. 10",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -473,7 +473,7 @@
     "corretta": 3,
     "spiegazione": "Art. 15 (atti discriminatori).",
     "fonte": "L. 300/1970, art. 15",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -490,7 +490,7 @@
     "corretta": 0,
     "spiegazione": "Art. 17 L. 300/1970.",
     "fonte": "L. 300/1970, art. 17",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -507,7 +507,7 @@
     "corretta": 1,
     "spiegazione": "Art. 18, c. 1 (tutela reale piena).",
     "fonte": "L. 300/1970, art. 18",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -524,7 +524,7 @@
     "corretta": 2,
     "spiegazione": "Art. 18, c. 2.",
     "fonte": "L. 300/1970, art. 18",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -541,7 +541,7 @@
     "corretta": 3,
     "spiegazione": "Art. 18, c. 3: la richiesta va fatta entro trenta giorni e risolve il rapporto.",
     "fonte": "L. 300/1970, art. 18",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -558,7 +558,7 @@
     "corretta": 0,
     "spiegazione": "Art. 18, c. 5 (tutela indennitaria forte), nel testo successivo alla L. 92/2012.",
     "fonte": "L. 300/1970, art. 18",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -575,7 +575,7 @@
     "corretta": 1,
     "spiegazione": "Art. 18, c. 8 (per l'imprenditore agricolo la soglia è cinque).",
     "fonte": "L. 300/1970, art. 18",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -592,7 +592,7 @@
     "corretta": 2,
     "spiegazione": "Art. 18, c. 10.",
     "fonte": "L. 300/1970, art. 18",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -609,7 +609,7 @@
     "corretta": 3,
     "spiegazione": "Art. 19, come risultante dal referendum del 1995; la Corte costituzionale (sent. 231/2013 e 156/2025) ha esteso la possibilità ad altre associazioni.",
     "fonte": "L. 300/1970, art. 19",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -626,7 +626,7 @@
     "corretta": 0,
     "spiegazione": "Art. 20, c. 2.",
     "fonte": "L. 300/1970, art. 20",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -643,7 +643,7 @@
     "corretta": 1,
     "spiegazione": "Art. 21 L. 300/1970.",
     "fonte": "L. 300/1970, art. 21",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -660,7 +660,7 @@
     "corretta": 2,
     "spiegazione": "Art. 22 L. 300/1970.",
     "fonte": "L. 300/1970, art. 22",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -677,7 +677,7 @@
     "corretta": 3,
     "spiegazione": "Art. 24 L. 300/1970.",
     "fonte": "L. 300/1970, art. 24",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -694,7 +694,7 @@
     "corretta": 0,
     "spiegazione": "Art. 27: nelle unità più piccole le RSA possono usare un locale su richiesta.",
     "fonte": "L. 300/1970, art. 27",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -711,7 +711,7 @@
     "corretta": 1,
     "spiegazione": "Art. 25 L. 300/1970.",
     "fonte": "L. 300/1970, art. 25",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -728,7 +728,7 @@
     "corretta": 2,
     "spiegazione": "Art. 28: il decreto motivato è immediatamente esecutivo.",
     "fonte": "L. 300/1970, art. 28",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -745,7 +745,7 @@
     "corretta": 3,
     "spiegazione": "Art. 31 L. 300/1970, applicabile anche ai dipendenti pubblici.",
     "fonte": "L. 300/1970, art. 31",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -762,7 +762,7 @@
     "corretta": 0,
     "spiegazione": "Art. 11 L. 300/1970.",
     "fonte": "L. 300/1970, art. 11",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -779,7 +779,7 @@
     "corretta": 1,
     "spiegazione": "Art. 2, c. 1 (collaborazioni etero-organizzate).",
     "fonte": "D.Lgs. 81/2015, art. 2",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -796,7 +796,7 @@
     "corretta": 2,
     "spiegazione": "Art. 3 D.Lgs. 81/2015, che ha sostituito l'art. 2103 c.c.",
     "fonte": "D.Lgs. 81/2015, art. 3",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -813,7 +813,7 @@
     "corretta": 3,
     "spiegazione": "Art. 5, c. 1.",
     "fonte": "D.Lgs. 81/2015, art. 5",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -830,7 +830,7 @@
     "corretta": 0,
     "spiegazione": "Art. 5, c. 2.",
     "fonte": "D.Lgs. 81/2015, art. 5",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -847,7 +847,7 @@
     "corretta": 1,
     "spiegazione": "Art. 6, c. 1.",
     "fonte": "D.Lgs. 81/2015, art. 6",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -864,7 +864,7 @@
     "corretta": 2,
     "spiegazione": "Art. 8, c. 1.",
     "fonte": "D.Lgs. 81/2015, art. 8",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -881,7 +881,7 @@
     "corretta": 3,
     "spiegazione": "Art. 8, c. 3: vale sia nel settore pubblico sia privato.",
     "fonte": "D.Lgs. 81/2015, art. 8",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -898,7 +898,7 @@
     "corretta": 0,
     "spiegazione": "Art. 13, c. 1.",
     "fonte": "D.Lgs. 81/2015, art. 13",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -915,7 +915,7 @@
     "corretta": 1,
     "spiegazione": "Art. 14, c. 1, lett. a).",
     "fonte": "D.Lgs. 81/2015, art. 14",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -932,7 +932,7 @@
     "corretta": 2,
     "spiegazione": "Art. 21, c. 01; in caso di violazione il contratto si trasforma a tempo indeterminato.",
     "fonte": "D.Lgs. 81/2015, art. 21",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -949,7 +949,7 @@
     "corretta": 3,
     "spiegazione": "Art. 23, c. 1.",
     "fonte": "D.Lgs. 81/2015, art. 23",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -966,7 +966,7 @@
     "corretta": 0,
     "spiegazione": "Art. 24, c. 1.",
     "fonte": "D.Lgs. 81/2015, art. 24",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -983,7 +983,7 @@
     "corretta": 1,
     "spiegazione": "Art. 28, c. 1.",
     "fonte": "D.Lgs. 81/2015, art. 28",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1000,7 +1000,7 @@
     "corretta": 2,
     "spiegazione": "Art. 30 D.Lgs. 81/2015.",
     "fonte": "D.Lgs. 81/2015, art. 30",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1017,7 +1017,7 @@
     "corretta": 3,
     "spiegazione": "Art. 31, c. 1.",
     "fonte": "D.Lgs. 81/2015, art. 31",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1034,7 +1034,7 @@
     "corretta": 0,
     "spiegazione": "Art. 41, c. 1.",
     "fonte": "D.Lgs. 81/2015, art. 41",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1051,7 +1051,7 @@
     "corretta": 1,
     "spiegazione": "Art. 41, c. 2.",
     "fonte": "D.Lgs. 81/2015, art. 41",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1068,7 +1068,7 @@
     "corretta": 2,
     "spiegazione": "Art. 42, c. 1: il contratto è in forma scritta ai fini della prova.",
     "fonte": "D.Lgs. 81/2015, art. 42",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1085,7 +1085,7 @@
     "corretta": 3,
     "spiegazione": "Art. 44, c. 1 (dai 17 anni con qualifica professionale).",
     "fonte": "D.Lgs. 81/2015, art. 44",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1102,7 +1102,7 @@
     "corretta": 0,
     "spiegazione": "Art. 2, c. 1, lett. a); sono esclusi gli addetti ai servizi domestici e familiari.",
     "fonte": "D.Lgs. 81/2008, art. 2",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1119,7 +1119,7 @@
     "corretta": 1,
     "spiegazione": "Art. 2, c. 1, lett. e).",
     "fonte": "D.Lgs. 81/2008, art. 2",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1136,7 +1136,7 @@
     "corretta": 2,
     "spiegazione": "Art. 2, c. 1, lett. d).",
     "fonte": "D.Lgs. 81/2008, art. 2",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1153,7 +1153,7 @@
     "corretta": 3,
     "spiegazione": "Art. 2, c. 1, lett. r) e s).",
     "fonte": "D.Lgs. 81/2008, art. 2",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1170,7 +1170,7 @@
     "corretta": 0,
     "spiegazione": "Art. 2, c. 1, lett. f); la sua designazione è indelegabile (art. 17).",
     "fonte": "D.Lgs. 81/2008, art. 2",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1187,7 +1187,7 @@
     "corretta": 1,
     "spiegazione": "Art. 2, c. 1, lett. aa)-cc).",
     "fonte": "D.Lgs. 81/2008, art. 2",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1204,7 +1204,7 @@
     "corretta": 2,
     "spiegazione": "Art. 2, c. 1, lett. o), che riprende la definizione dell'OMS.",
     "fonte": "D.Lgs. 81/2008, art. 2",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1221,7 +1221,7 @@
     "corretta": 3,
     "spiegazione": "Art. 18, c. 1, lett. a).",
     "fonte": "D.Lgs. 81/2008, art. 18",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1238,7 +1238,7 @@
     "corretta": 0,
     "spiegazione": "Art. 20, c. 1.",
     "fonte": "D.Lgs. 81/2008, art. 20",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1255,7 +1255,7 @@
     "corretta": 1,
     "spiegazione": "Art. 28, c. 1.",
     "fonte": "D.Lgs. 81/2008, art. 28",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1272,7 +1272,7 @@
     "corretta": 2,
     "spiegazione": "Art. 29, c. 1-2.",
     "fonte": "D.Lgs. 81/2008, art. 29",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1289,7 +1289,7 @@
     "corretta": 3,
     "spiegazione": "Art. 29, c. 3.",
     "fonte": "D.Lgs. 81/2008, art. 29",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1306,7 +1306,7 @@
     "corretta": 0,
     "spiegazione": "Art. 32, c. 2.",
     "fonte": "D.Lgs. 81/2008, art. 32",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1323,7 +1323,7 @@
     "corretta": 1,
     "spiegazione": "Art. 35, c. 1: partecipano datore, RSPP, medico competente e RLS.",
     "fonte": "D.Lgs. 81/2008, art. 35",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1340,7 +1340,7 @@
     "corretta": 2,
     "spiegazione": "Art. 36, c. 1.",
     "fonte": "D.Lgs. 81/2008, art. 36",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1357,7 +1357,7 @@
     "corretta": 3,
     "spiegazione": "Art. 41: comprende visita preventiva, periodica e altre visite.",
     "fonte": "D.Lgs. 81/2008, art. 41",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1374,7 +1374,7 @@
     "corretta": 0,
     "spiegazione": "Art. 41, c. 2, lett. a); può avvenire anche in fase preassuntiva.",
     "fonte": "D.Lgs. 81/2008, art. 41",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1391,7 +1391,7 @@
     "corretta": 1,
     "spiegazione": "Art. 44, c. 1.",
     "fonte": "D.Lgs. 81/2008, art. 44",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1408,7 +1408,7 @@
     "corretta": 2,
     "spiegazione": "Art. 47, c. 3.",
     "fonte": "D.Lgs. 81/2008, art. 47",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1425,7 +1425,7 @@
     "corretta": 3,
     "spiegazione": "Art. 50, c. 1, lett. b).",
     "fonte": "D.Lgs. 81/2008, art. 50",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1442,7 +1442,7 @@
     "corretta": 0,
     "spiegazione": "Art. 74 D.Lgs. 81/2008.",
     "fonte": "D.Lgs. 81/2008, art. 74",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1459,7 +1459,7 @@
     "corretta": 1,
     "spiegazione": "Art. 77, c. 1, lett. a): le misure collettive hanno priorità.",
     "fonte": "D.Lgs. 81/2008, art. 77",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1476,7 +1476,7 @@
     "corretta": 2,
     "spiegazione": "Art. 173, c. 1, lett. a).",
     "fonte": "D.Lgs. 81/2008, art. 173",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1493,7 +1493,7 @@
     "corretta": 3,
     "spiegazione": "Art. 19, c. 1, lett. a), come riscritto nel 2021.",
     "fonte": "D.Lgs. 81/2008, art. 19",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1510,7 +1510,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Previdenza sociale».",
     "fonte": "Wikipedia, «Previdenza sociale» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1527,7 +1527,7 @@
     "corretta": 1,
     "spiegazione": "Voce «Previdenza sociale».",
     "fonte": "Wikipedia, «Previdenza sociale» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1544,7 +1544,7 @@
     "corretta": 2,
     "spiegazione": "Voce «Previdenza sociale».",
     "fonte": "Wikipedia, «Previdenza sociale» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1561,7 +1561,7 @@
     "corretta": 3,
     "spiegazione": "Nello stesso anno nacque la Cassa nazionale di previdenza per l'invalidità e la vecchiaia degli operai (oggi INPS).",
     "fonte": "Wikipedia, «Previdenza sociale» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1578,7 +1578,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Previdenza sociale».",
     "fonte": "Wikipedia, «Previdenza sociale» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1595,7 +1595,7 @@
     "corretta": 1,
     "spiegazione": "Voce «Previdenza sociale».",
     "fonte": "Wikipedia, «Previdenza sociale» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1612,7 +1612,7 @@
     "corretta": 2,
     "spiegazione": "Voce «Previdenza sociale».",
     "fonte": "Wikipedia, «Previdenza sociale» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1629,7 +1629,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Previdenza sociale».",
     "fonte": "Wikipedia, «Previdenza sociale» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1646,7 +1646,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Istituto Nazionale della Previdenza Sociale».",
     "fonte": "Wikipedia, «Istituto Nazionale della Previdenza Sociale» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1663,7 +1663,7 @@
     "corretta": 1,
     "spiegazione": "Voce «Istituto Nazionale della Previdenza Sociale».",
     "fonte": "Wikipedia, «Istituto Nazionale della Previdenza Sociale» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1680,7 +1680,7 @@
     "corretta": 2,
     "spiegazione": "Voce «Istituto Nazionale della Previdenza Sociale».",
     "fonte": "Wikipedia, «Istituto Nazionale della Previdenza Sociale» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1697,7 +1697,7 @@
     "corretta": 3,
     "spiegazione": "In precedenza era l'Istituto nazionale fascista della previdenza sociale (INFPS).",
     "fonte": "Wikipedia, «Istituto Nazionale della Previdenza Sociale» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1714,7 +1714,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Istituto Nazionale della Previdenza Sociale».",
     "fonte": "Wikipedia, «Istituto Nazionale della Previdenza Sociale» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1731,7 +1731,7 @@
     "corretta": 1,
     "spiegazione": "Voce «Istituto Nazionale della Previdenza Sociale».",
     "fonte": "Wikipedia, «Istituto Nazionale della Previdenza Sociale» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1748,7 +1748,7 @@
     "corretta": 2,
     "spiegazione": "Voce «Riforma delle pensioni Fornero».",
     "fonte": "Wikipedia, «Riforma delle pensioni Fornero» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1765,7 +1765,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Riforma delle pensioni Fornero»: la Fornero estese il contributivo pro-rata dal 2012.",
     "fonte": "Wikipedia, «Riforma delle pensioni Fornero» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1782,7 +1782,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Riforma delle pensioni Fornero».",
     "fonte": "Wikipedia, «Riforma delle pensioni Fornero» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1799,7 +1799,7 @@
     "corretta": 1,
     "spiegazione": "Voce «Riforma delle pensioni Fornero».",
     "fonte": "Wikipedia, «Riforma delle pensioni Fornero» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1816,7 +1816,7 @@
     "corretta": 2,
     "spiegazione": "Voce «Riforma delle pensioni Fornero».",
     "fonte": "Wikipedia, «Riforma delle pensioni Fornero» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1833,7 +1833,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Trattamento di fine rapporto».",
     "fonte": "Wikipedia, «Trattamento di fine rapporto» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1850,7 +1850,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Trattamento di fine rapporto».",
     "fonte": "Wikipedia, «Trattamento di fine rapporto» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1867,7 +1867,7 @@
     "corretta": 1,
     "spiegazione": "Voce «Trattamento di fine rapporto».",
     "fonte": "Wikipedia, «Trattamento di fine rapporto» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1884,7 +1884,7 @@
     "corretta": 2,
     "spiegazione": "Voce «Trattamento di fine rapporto».",
     "fonte": "Wikipedia, «Trattamento di fine rapporto» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1901,7 +1901,7 @@
     "corretta": 3,
     "spiegazione": "Istituito dall'art. 2 della L. 297/1982.",
     "fonte": "Wikipedia, «Trattamento di fine rapporto» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1918,7 +1918,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Trattamento di fine rapporto».",
     "fonte": "Wikipedia, «Trattamento di fine rapporto» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1935,7 +1935,7 @@
     "corretta": 1,
     "spiegazione": "Voce «Trattamento di fine rapporto».",
     "fonte": "Wikipedia, «Trattamento di fine rapporto» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1952,7 +1952,7 @@
     "corretta": 2,
     "spiegazione": "Voce «Agenzia per la rappresentanza negoziale delle pubbliche amministrazioni».",
     "fonte": "Wikipedia, «Agenzia per la rappresentanza negoziale delle pubbliche amministrazioni» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1969,7 +1969,7 @@
     "corretta": 3,
     "spiegazione": "Poi confermata dai D.Lgs. 165/2001 e 150/2009.",
     "fonte": "Wikipedia, «Agenzia per la rappresentanza negoziale delle pubbliche amministrazioni» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -1986,7 +1986,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Agenzia per la rappresentanza negoziale delle pubbliche amministrazioni».",
     "fonte": "Wikipedia, «Agenzia per la rappresentanza negoziale delle pubbliche amministrazioni» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2003,7 +2003,7 @@
     "corretta": 1,
     "spiegazione": "Voce «Contratto collettivo nazionale di lavoro».",
     "fonte": "Wikipedia, «Contratto collettivo nazionale di lavoro» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2020,7 +2020,7 @@
     "corretta": 2,
     "spiegazione": "Voce «Contratto collettivo nazionale di lavoro».",
     "fonte": "Wikipedia, «Contratto collettivo nazionale di lavoro» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2037,7 +2037,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Sciopero»; la sospensione decisa dal datore si chiama serrata.",
     "fonte": "Wikipedia, «Sciopero» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2054,7 +2054,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Sciopero».",
     "fonte": "Wikipedia, «Sciopero» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2071,7 +2071,7 @@
     "corretta": 1,
     "spiegazione": "Voce «Sciopero».",
     "fonte": "Wikipedia, «Sciopero» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2088,7 +2088,7 @@
     "corretta": 2,
     "spiegazione": "Voce «Sciopero».",
     "fonte": "Wikipedia, «Sciopero» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2105,7 +2105,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Sciopero», che richiama Cass. n. 711/1980.",
     "fonte": "Wikipedia, «Sciopero» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2122,7 +2122,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Sciopero».",
     "fonte": "Wikipedia, «Sciopero» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2139,7 +2139,7 @@
     "corretta": 1,
     "spiegazione": "Voce «Sciopero».",
     "fonte": "Wikipedia, «Sciopero» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2156,7 +2156,7 @@
     "corretta": 2,
     "spiegazione": "Art. 2, c. 2.",
     "fonte": "D.Lgs. 165/2001, art. 2",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2173,7 +2173,7 @@
     "corretta": 3,
     "spiegazione": "Art. 3, c. 1 D.Lgs. 165/2001.",
     "fonte": "D.Lgs. 165/2001, art. 3",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2190,7 +2190,7 @@
     "corretta": 0,
     "spiegazione": "Art. 6, c. 2.",
     "fonte": "D.Lgs. 165/2001, art. 6",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2207,7 +2207,7 @@
     "corretta": 1,
     "spiegazione": "Art. 15, c. 1 e art. 23.",
     "fonte": "D.Lgs. 165/2001, art. 15",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2224,7 +2224,7 @@
     "corretta": 2,
     "spiegazione": "Art. 28, c. 1 (con quota anche per sviluppo di carriera).",
     "fonte": "D.Lgs. 165/2001, art. 28",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2241,7 +2241,7 @@
     "corretta": 3,
     "spiegazione": "Art. 17, c. 1, lett. d).",
     "fonte": "D.Lgs. 165/2001, art. 17",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2258,7 +2258,7 @@
     "corretta": 0,
     "spiegazione": "Art. 16, c. 1, lett. a).",
     "fonte": "D.Lgs. 165/2001, art. 16",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2275,7 +2275,7 @@
     "corretta": 1,
     "spiegazione": "Art. 19, c. 1.",
     "fonte": "D.Lgs. 165/2001, art. 19",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2292,7 +2292,7 @@
     "corretta": 2,
     "spiegazione": "Art. 35, c. 3, lett. a).",
     "fonte": "D.Lgs. 165/2001, art. 35",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2309,7 +2309,7 @@
     "corretta": 3,
     "spiegazione": "Art. 35, c. 3, lett. e).",
     "fonte": "D.Lgs. 165/2001, art. 35",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2326,7 +2326,7 @@
     "corretta": 0,
     "spiegazione": "Art. 36, c. 1; il lavoro flessibile è ammesso solo nei limiti previsti.",
     "fonte": "D.Lgs. 165/2001, art. 36",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2343,7 +2343,7 @@
     "corretta": 1,
     "spiegazione": "Art. 40, c. 1.",
     "fonte": "D.Lgs. 165/2001, art. 40",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2360,7 +2360,7 @@
     "corretta": 2,
     "spiegazione": "Art. 43, c. 1.",
     "fonte": "D.Lgs. 165/2001, art. 43",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2377,7 +2377,7 @@
     "corretta": 3,
     "spiegazione": "Art. 47, c. 1.",
     "fonte": "D.Lgs. 165/2001, art. 47",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2394,7 +2394,7 @@
     "corretta": 0,
     "spiegazione": "Art. 46, c. 1.",
     "fonte": "D.Lgs. 165/2001, art. 46",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2411,7 +2411,7 @@
     "corretta": 1,
     "spiegazione": "Art. 51, c. 2.",
     "fonte": "D.Lgs. 165/2001, art. 51",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2428,7 +2428,7 @@
     "corretta": 2,
     "spiegazione": "Art. 53, c. 1.",
     "fonte": "D.Lgs. 165/2001, art. 53",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2445,7 +2445,7 @@
     "corretta": 3,
     "spiegazione": "Art. 54, c. 1.",
     "fonte": "D.Lgs. 165/2001, art. 54",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2462,7 +2462,7 @@
     "corretta": 0,
     "spiegazione": "Art. 55, c. 1.",
     "fonte": "D.Lgs. 165/2001, art. 55",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2479,7 +2479,7 @@
     "corretta": 1,
     "spiegazione": "Art. 55-quinquies, c. 1; la stessa pena si applica al medico che concorre.",
     "fonte": "D.Lgs. 165/2001, art. 55-quinquies",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2496,7 +2496,7 @@
     "corretta": 2,
     "spiegazione": "Art. 55-septies, c. 1.",
     "fonte": "D.Lgs. 165/2001, art. 55-septies",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2513,7 +2513,7 @@
     "corretta": 3,
     "spiegazione": "Art. 55-septies, c. 2.",
     "fonte": "D.Lgs. 165/2001, art. 55-septies",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2530,7 +2530,7 @@
     "corretta": 0,
     "spiegazione": "Art. 55-sexies, c. 1.",
     "fonte": "D.Lgs. 165/2001, art. 55-sexies",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2547,7 +2547,7 @@
     "corretta": 1,
     "spiegazione": "Art. 63, c. 1: incluse quelle su incarichi dirigenziali e indennità di fine rapporto.",
     "fonte": "D.Lgs. 165/2001, art. 63",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2564,7 +2564,7 @@
     "corretta": 2,
     "spiegazione": "Art. 63, c. 4.",
     "fonte": "D.Lgs. 165/2001, art. 63",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2581,7 +2581,7 @@
     "corretta": 3,
     "spiegazione": "Art. 30, c. 1.",
     "fonte": "D.Lgs. 165/2001, art. 30",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2598,7 +2598,7 @@
     "corretta": 0,
     "spiegazione": "Art. 34, c. 2.",
     "fonte": "D.Lgs. 165/2001, art. 34",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2615,7 +2615,7 @@
     "corretta": 1,
     "spiegazione": "Art. 1 Cost.",
     "fonte": "Costituzione, art. 1",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2632,7 +2632,7 @@
     "corretta": 2,
     "spiegazione": "Art. 4 Cost.: prevede anche il dovere di svolgere un'attività che concorra al progresso della società.",
     "fonte": "Costituzione, art. 4",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2649,7 +2649,7 @@
     "corretta": 3,
     "spiegazione": "Art. 35 Cost.: cura anche la formazione professionale e riconosce la libertà di emigrazione.",
     "fonte": "Costituzione, art. 35",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2666,7 +2666,7 @@
     "corretta": 0,
     "spiegazione": "Art. 36, c. 1 Cost.",
     "fonte": "Costituzione, art. 36",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2683,7 +2683,7 @@
     "corretta": 1,
     "spiegazione": "Art. 36, c. 3 Cost.",
     "fonte": "Costituzione, art. 36",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2700,7 +2700,7 @@
     "corretta": 2,
     "spiegazione": "Art. 36, c. 2 Cost.",
     "fonte": "Costituzione, art. 36",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2717,7 +2717,7 @@
     "corretta": 3,
     "spiegazione": "Art. 37 Cost.",
     "fonte": "Costituzione, art. 37",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2734,7 +2734,7 @@
     "corretta": 0,
     "spiegazione": "Art. 37, c. 2 Cost.",
     "fonte": "Costituzione, art. 37",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2751,7 +2751,7 @@
     "corretta": 1,
     "spiegazione": "Art. 38, c. 2 Cost.",
     "fonte": "Costituzione, art. 38",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2768,7 +2768,7 @@
     "corretta": 2,
     "spiegazione": "Art. 38, c. 1 Cost.",
     "fonte": "Costituzione, art. 38",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2785,7 +2785,7 @@
     "corretta": 3,
     "spiegazione": "Art. 39, c. 1 Cost.",
     "fonte": "Costituzione, art. 39",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2802,7 +2802,7 @@
     "corretta": 0,
     "spiegazione": "Art. 39, c. 3 Cost. (disposizione mai attuata).",
     "fonte": "Costituzione, art. 39",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2819,7 +2819,7 @@
     "corretta": 1,
     "spiegazione": "Art. 40 Cost.",
     "fonte": "Costituzione, art. 40",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2836,7 +2836,7 @@
     "corretta": 2,
     "spiegazione": "Art. 46 Cost.",
     "fonte": "Costituzione, art. 46",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2853,7 +2853,7 @@
     "corretta": 3,
     "spiegazione": "Art. 97 Cost.",
     "fonte": "Costituzione, art. 97",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2870,7 +2870,7 @@
     "corretta": 0,
     "spiegazione": "Art. 98 Cost.",
     "fonte": "Costituzione, art. 98",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2887,7 +2887,7 @@
     "corretta": 1,
     "spiegazione": "Art. 98, c. 2 Cost.",
     "fonte": "Costituzione, art. 98",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2904,7 +2904,7 @@
     "corretta": 2,
     "spiegazione": "Art. 98, c. 3 Cost.",
     "fonte": "Costituzione, art. 98",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2921,7 +2921,7 @@
     "corretta": 3,
     "spiegazione": "Art. 51, c. 3 Cost.",
     "fonte": "Costituzione, art. 51",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2938,7 +2938,7 @@
     "corretta": 0,
     "spiegazione": "Art. 3, c. 1.",
     "fonte": "D.Lgs. 81/2008, art. 3",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2955,7 +2955,7 @@
     "corretta": 1,
     "spiegazione": "Art. 175, c. 3 D.Lgs. 81/2008.",
     "fonte": "D.Lgs. 81/2008, art. 175",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2972,7 +2972,7 @@
     "corretta": 2,
     "spiegazione": "Art. 46, c. 1.",
     "fonte": "D.Lgs. 81/2008, art. 46",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -2989,7 +2989,7 @@
     "corretta": 3,
     "spiegazione": "Art. 34, c. 1.",
     "fonte": "D.Lgs. 81/2008, art. 34",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3006,7 +3006,7 @@
     "corretta": 0,
     "spiegazione": "Art. 26 D.Lgs. 81/2008 (DUVRI).",
     "fonte": "D.Lgs. 81/2008, art. 26",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3023,7 +3023,7 @@
     "corretta": 1,
     "spiegazione": "Art. 55, c. 1 D.Lgs. 81/2008.",
     "fonte": "D.Lgs. 81/2008, art. 55",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3040,7 +3040,7 @@
     "corretta": 2,
     "spiegazione": "Art. 18, c. 1, lett. b).",
     "fonte": "D.Lgs. 81/2008, art. 18",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3057,7 +3057,7 @@
     "corretta": 3,
     "spiegazione": "Art. 15, c. 1, lett. i): priorità delle misure di protezione collettiva rispetto a quelle individuali.",
     "fonte": "D.Lgs. 81/2008, art. 15",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3074,7 +3074,7 @@
     "corretta": 0,
     "spiegazione": "Art. 35 L. 300/1970.",
     "fonte": "L. 300/1970, art. 35",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3091,7 +3091,7 @@
     "corretta": 1,
     "spiegazione": "Art. 37 L. 300/1970.",
     "fonte": "L. 300/1970, art. 37",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3108,7 +3108,7 @@
     "corretta": 2,
     "spiegazione": "Art. 23 L. 300/1970.",
     "fonte": "L. 300/1970, art. 23",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3125,7 +3125,7 @@
     "corretta": 3,
     "spiegazione": "Art. 23 L. 300/1970.",
     "fonte": "L. 300/1970, art. 23",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3142,7 +3142,7 @@
     "corretta": 0,
     "spiegazione": "Art. 5, c. 3 L. 300/1970.",
     "fonte": "L. 300/1970, art. 5",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3159,7 +3159,7 @@
     "corretta": 1,
     "spiegazione": "Art. 11 L. 300/1970.",
     "fonte": "L. 300/1970, art. 11",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3176,7 +3176,7 @@
     "corretta": 2,
     "spiegazione": "Art. 12 L. 300/1970.",
     "fonte": "L. 300/1970, art. 12",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3193,7 +3193,7 @@
     "corretta": 3,
     "spiegazione": "Art. 32 L. 300/1970 (in parte sostituito da leggi successive).",
     "fonte": "L. 300/1970, art. 32",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3210,7 +3210,7 @@
     "corretta": 0,
     "spiegazione": "Art. 4 D.Lgs. 81/2015.",
     "fonte": "D.Lgs. 81/2015, art. 4",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3227,7 +3227,7 @@
     "corretta": 1,
     "spiegazione": "Art. 47, c. 1 D.Lgs. 81/2015.",
     "fonte": "D.Lgs. 81/2015, art. 47",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3244,7 +3244,7 @@
     "corretta": 2,
     "spiegazione": "Art. 8, c. 2.",
     "fonte": "D.Lgs. 81/2015, art. 8",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3261,7 +3261,7 @@
     "corretta": 3,
     "spiegazione": "Art. 14, c. 1, lett. b).",
     "fonte": "D.Lgs. 81/2015, art. 14",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3278,7 +3278,7 @@
     "corretta": 0,
     "spiegazione": "Art. 2, c. 1, lett. a).",
     "fonte": "D.Lgs. 165/2001, art. 2",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3295,7 +3295,7 @@
     "corretta": 1,
     "spiegazione": "Art. 7, c. 1.",
     "fonte": "D.Lgs. 165/2001, art. 7",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3312,7 +3312,7 @@
     "corretta": 2,
     "spiegazione": "Art. 23, c. 1 D.Lgs. 165/2001.",
     "fonte": "D.Lgs. 165/2001, art. 23",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3329,7 +3329,7 @@
     "corretta": 3,
     "spiegazione": "Art. 43, c. 1.",
     "fonte": "D.Lgs. 165/2001, art. 43",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3346,7 +3346,7 @@
     "corretta": 0,
     "spiegazione": "Art. 47, c. 2.",
     "fonte": "D.Lgs. 165/2001, art. 47",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3363,7 +3363,7 @@
     "corretta": 1,
     "spiegazione": "Art. 55-quinquies, c. 2.",
     "fonte": "D.Lgs. 165/2001, art. 55-quinquies",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3380,7 +3380,7 @@
     "corretta": 2,
     "spiegazione": "Art. 2, c. 2 D.Lgs. 165/2001.",
     "fonte": "D.Lgs. 165/2001, art. 2",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3397,7 +3397,7 @@
     "corretta": 3,
     "spiegazione": "Art. 52, c. 1.",
     "fonte": "D.Lgs. 165/2001, art. 52",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3414,7 +3414,7 @@
     "corretta": 0,
     "spiegazione": "Art. 52, c. 1-bis D.Lgs. 165/2001.",
     "fonte": "D.Lgs. 165/2001, art. 52",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3431,7 +3431,7 @@
     "corretta": 1,
     "spiegazione": "Il demansionamento è ammesso di un livello, nella stessa categoria legale, conservando livello e trattamento retributivo.",
     "fonte": "D.Lgs. 81/2015, art. 3",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3448,7 +3448,7 @@
     "corretta": 2,
     "spiegazione": "L'art. 2103 c.c. precisa che il mancato adempimento dell'obbligo formativo non determina la nullità dell'assegnazione.",
     "fonte": "D.Lgs. 81/2015, art. 3",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3465,7 +3465,7 @@
     "corretta": 3,
     "spiegazione": "Il lavoratore conserva livello di inquadramento e trattamento retributivo, salvo gli elementi legati a particolari modalità della prestazione precedente.",
     "fonte": "D.Lgs. 81/2015, art. 3",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3482,7 +3482,7 @@
     "corretta": 0,
     "spiegazione": "Nel settore privato l'assegnazione diventa poi definitiva dopo il periodo fissato dai contratti collettivi o dalla legge.",
     "fonte": "D.Lgs. 81/2015, art. 3",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3499,7 +3499,7 @@
     "corretta": 1,
     "spiegazione": "Art. 6, comma 2, del D.Lgs. 81/2015.",
     "fonte": "D.Lgs. 81/2015, art. 6",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3516,7 +3516,7 @@
     "corretta": 2,
     "spiegazione": "Art. 6, comma 2.",
     "fonte": "D.Lgs. 81/2015, art. 6",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3533,7 +3533,7 @@
     "corretta": 3,
     "spiegazione": "Art. 7: i diritti sono gli stessi, il trattamento economico è riproporzionato alla prestazione.",
     "fonte": "D.Lgs. 81/2015, art. 7",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3550,7 +3550,7 @@
     "corretta": 0,
     "spiegazione": "Art. 9 del D.Lgs. 81/2015.",
     "fonte": "D.Lgs. 81/2015, art. 9",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3567,7 +3567,7 @@
     "corretta": 1,
     "spiegazione": "Art. 10, comma 1: restano dovuti retribuzione e contributi per il periodo precedente.",
     "fonte": "D.Lgs. 81/2015, art. 10",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3584,7 +3584,7 @@
     "corretta": 2,
     "spiegazione": "Le altre norme sul part-time si applicano anche al pubblico impiego, salvo disposizioni speciali.",
     "fonte": "D.Lgs. 81/2015, art. 12",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3601,7 +3601,7 @@
     "corretta": 3,
     "spiegazione": "Art. 13, comma 2, del D.Lgs. 81/2015.",
     "fonte": "D.Lgs. 81/2015, art. 13",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3618,7 +3618,7 @@
     "corretta": 0,
     "spiegazione": "Superato il limite, il rapporto si trasforma a tempo pieno e indeterminato.",
     "fonte": "D.Lgs. 81/2015, art. 13",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3635,7 +3635,7 @@
     "corretta": 1,
     "spiegazione": "Art. 16: la misura è fissata dai contratti collettivi, non sotto il minimo stabilito con decreto ministeriale.",
     "fonte": "D.Lgs. 81/2015, art. 16",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3652,7 +3652,7 @@
     "corretta": 2,
     "spiegazione": "Art. 16, comma 5.",
     "fonte": "D.Lgs. 81/2015, art. 16",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3669,7 +3669,7 @@
     "corretta": 3,
     "spiegazione": "Art. 18 del D.Lgs. 81/2015.",
     "fonte": "D.Lgs. 81/2015, art. 18",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3686,7 +3686,7 @@
     "corretta": 0,
     "spiegazione": "Art. 20: altri divieti riguardano licenziamenti collettivi recenti, cassa integrazione e mancata valutazione dei rischi.",
     "fonte": "D.Lgs. 81/2015, art. 20",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3703,7 +3703,7 @@
     "corretta": 1,
     "spiegazione": "Art. 20, comma 1, lett. d) e comma 2.",
     "fonte": "D.Lgs. 81/2015, art. 20",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3720,7 +3720,7 @@
     "corretta": 2,
     "spiegazione": "Art. 21, comma 1: oltre il limite il contratto si trasforma a tempo indeterminato.",
     "fonte": "D.Lgs. 81/2015, art. 21",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3737,7 +3737,7 @@
     "corretta": 3,
     "spiegazione": "Art. 22: dall'undicesimo giorno la maggiorazione sale al 40 per cento.",
     "fonte": "D.Lgs. 81/2015, art. 22",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3754,7 +3754,7 @@
     "corretta": 0,
     "spiegazione": "Art. 22, comma 2: 30 giorni per i contratti sotto i sei mesi, 50 negli altri casi.",
     "fonte": "D.Lgs. 81/2015, art. 22",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3771,7 +3771,7 @@
     "corretta": 1,
     "spiegazione": "Art. 25: principio di non discriminazione, salvo obiettiva incompatibilità con la natura del contratto.",
     "fonte": "D.Lgs. 81/2015, art. 25",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3788,7 +3788,7 @@
     "corretta": 2,
     "spiegazione": "Art. 29, comma 2: il dirigente può recedere dopo un triennio a norma dell'art. 2118 c.c.",
     "fonte": "D.Lgs. 81/2015, art. 29",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3805,7 +3805,7 @@
     "corretta": 3,
     "spiegazione": "Art. 35, comma 2, del D.Lgs. 81/2015.",
     "fonte": "D.Lgs. 81/2015, art. 35",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3822,7 +3822,7 @@
     "corretta": 0,
     "spiegazione": "Art. 35, comma 1: parità di trattamento a parità di mansioni.",
     "fonte": "D.Lgs. 81/2015, art. 35",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3839,7 +3839,7 @@
     "corretta": 1,
     "spiegazione": "Art. 38, comma 1.",
     "fonte": "D.Lgs. 81/2015, art. 38",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3856,7 +3856,7 @@
     "corretta": 2,
     "spiegazione": "Art. 33: il contratto è scritto e indica tra l'altro numero dei lavoratori, rischi, durata, mansioni, luogo e orario.",
     "fonte": "D.Lgs. 81/2015, art. 33",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3873,7 +3873,7 @@
     "corretta": 3,
     "spiegazione": "Art. 42, comma 2, del D.Lgs. 81/2015.",
     "fonte": "D.Lgs. 81/2015, art. 42",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3890,7 +3890,7 @@
     "corretta": 0,
     "spiegazione": "Art. 43, comma 2: la durata non può superare tre anni (quattro per il diploma quadriennale).",
     "fonte": "D.Lgs. 81/2015, art. 43",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3907,7 +3907,7 @@
     "corretta": 1,
     "spiegazione": "Art. 45: possono essere assunti soggetti tra i 18 e i 29 anni con diploma.",
     "fonte": "D.Lgs. 81/2015, art. 45",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3924,7 +3924,7 @@
     "corretta": 2,
     "spiegazione": "Art. 42, comma 3: per il resto, durante l'apprendistato si applicano le sanzioni per il licenziamento illegittimo.",
     "fonte": "D.Lgs. 81/2015, art. 42",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3941,7 +3941,7 @@
     "corretta": 3,
     "spiegazione": "La formazione deve essere sufficiente e adeguata, anche rispetto alle conoscenze linguistiche.",
     "fonte": "D.Lgs. 81/2008, art. 37",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3958,7 +3958,7 @@
     "corretta": 0,
     "spiegazione": "Art. 37, comma 2, previa consultazione delle parti sociali.",
     "fonte": "D.Lgs. 81/2008, art. 37",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3975,7 +3975,7 @@
     "corretta": 1,
     "spiegazione": "Art. 43, comma 1, lett. d).",
     "fonte": "D.Lgs. 81/2008, art. 43",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -3992,7 +3992,7 @@
     "corretta": 2,
     "spiegazione": "Art. 45, comma 1: si tiene conto di natura dell'attività e dimensioni dell'azienda.",
     "fonte": "D.Lgs. 81/2008, art. 45",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4009,7 +4009,7 @@
     "corretta": 3,
     "spiegazione": "Art. 45, comma 2, del D.Lgs. 81/2008.",
     "fonte": "D.Lgs. 81/2008, art. 45",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4026,7 +4026,7 @@
     "corretta": 0,
     "spiegazione": "Art. 48, comma 1.",
     "fonte": "D.Lgs. 81/2008, art. 48",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4043,7 +4043,7 @@
     "corretta": 1,
     "spiegazione": "Art. 51, comma 2, salvo quanto previsto dalla contrattazione collettiva.",
     "fonte": "D.Lgs. 81/2008, art. 51",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4060,7 +4060,7 @@
     "corretta": 2,
     "spiegazione": "Art. 52, comma 1, del D.Lgs. 81/2008.",
     "fonte": "D.Lgs. 81/2008, art. 52",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4077,7 +4077,7 @@
     "corretta": 3,
     "spiegazione": "Art. 53: l'accesso deve essere limitato ai soggetti abilitati e le modifiche solo aggiuntive.",
     "fonte": "D.Lgs. 81/2008, art. 53",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4094,7 +4094,7 @@
     "corretta": 0,
     "spiegazione": "Art. 59: anche i lavoratori sono destinatari di sanzioni.",
     "fonte": "D.Lgs. 81/2008, art. 59",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4111,7 +4111,7 @@
     "corretta": 1,
     "spiegazione": "Art. 63, comma 1; i luoghi vanno strutturati tenendo conto, se del caso, dei lavoratori disabili.",
     "fonte": "D.Lgs. 81/2008, art. 63",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4128,7 +4128,7 @@
     "corretta": 2,
     "spiegazione": "Art. 64, comma 1, lett. b).",
     "fonte": "D.Lgs. 81/2008, art. 64",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4145,7 +4145,7 @@
     "corretta": 3,
     "spiegazione": "L'art. 65 pone il divieto, con deroghe per particolari esigenze tecniche e condizioni di sicurezza.",
     "fonte": "D.Lgs. 81/2008, art. 65",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4162,7 +4162,7 @@
     "corretta": 0,
     "spiegazione": "Art. 69, lett. c); il «lavoratore esposto» è chi si trova in tutto o in parte in tale zona.",
     "fonte": "D.Lgs. 81/2008, art. 69",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4179,7 +4179,7 @@
     "corretta": 1,
     "spiegazione": "Art. 69, lett. a).",
     "fonte": "D.Lgs. 81/2008, art. 69",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4196,7 +4196,7 @@
     "corretta": 2,
     "spiegazione": "Art. 71, comma 2: condizioni del lavoro, rischi dell'ambiente, rischi dell'attrezzatura e interferenze.",
     "fonte": "D.Lgs. 81/2008, art. 71",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4213,7 +4213,7 @@
     "corretta": 3,
     "spiegazione": "Art. 89, lett. b); negli appalti pubblici è il titolare del potere decisionale e di spesa.",
     "fonte": "D.Lgs. 81/2008, art. 89",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4230,7 +4230,7 @@
     "corretta": 0,
     "spiegazione": "Art. 89, comma 1, lett. a).",
     "fonte": "D.Lgs. 81/2008, art. 89",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4247,7 +4247,7 @@
     "corretta": 1,
     "spiegazione": "Art. 168: se non è evitabile, il datore deve ridurne il rischio, in particolare di patologie dorso-lombari.",
     "fonte": "D.Lgs. 81/2008, art. 168",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4264,7 +4264,7 @@
     "corretta": 2,
     "spiegazione": "Art. 176, comma 3: la periodicità è biennale per gli idonei con prescrizioni e per chi ha compiuto 50 anni.",
     "fonte": "D.Lgs. 81/2008, art. 176",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4281,7 +4281,7 @@
     "corretta": 3,
     "spiegazione": "Se adottato ed efficacemente attuato, il modello può escludere la responsabilità dell'ente per reati in materia di sicurezza.",
     "fonte": "D.Lgs. 81/2008, art. 30",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4298,7 +4298,7 @@
     "corretta": 0,
     "spiegazione": "Art. 31: in alternativa il datore può incaricare persone o servizi esterni.",
     "fonte": "D.Lgs. 81/2008, art. 31",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4315,7 +4315,7 @@
     "corretta": 1,
     "spiegazione": "Art. 31, comma 2: devono anche avere mezzi e tempo adeguati.",
     "fonte": "D.Lgs. 81/2008, art. 31",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4332,7 +4332,7 @@
     "corretta": 2,
     "spiegazione": "Il servizio individua i rischi, propone la formazione e partecipa alla riunione periodica.",
     "fonte": "D.Lgs. 81/2008, art. 33",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4349,7 +4349,7 @@
     "corretta": 3,
     "spiegazione": "Art. 38: valgono anche altri titoli specifici, come la specializzazione in igiene e medicina preventiva o in medicina legale.",
     "fonte": "D.Lgs. 81/2008, art. 38",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4366,7 +4366,7 @@
     "corretta": 0,
     "spiegazione": "Art. 42 del D.Lgs. 81/2008, anche tenendo conto della L. 68/1999.",
     "fonte": "D.Lgs. 81/2008, art. 42",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4383,7 +4383,7 @@
     "corretta": 1,
     "spiegazione": "Art. 47, comma 7: uno fino a 200 lavoratori, tre da 201 a 1.000, sei oltre i 1.000.",
     "fonte": "D.Lgs. 81/2008, art. 47",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4400,7 +4400,7 @@
     "corretta": 2,
     "spiegazione": "Art. 47, comma 4: se mancano le rappresentanze sindacali, è eletto dai lavoratori al loro interno.",
     "fonte": "D.Lgs. 81/2008, art. 47",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4417,7 +4417,7 @@
     "corretta": 3,
     "spiegazione": "Art. 90, comma 3; il coordinatore per l'esecuzione va designato prima dell'affidamento dei lavori.",
     "fonte": "D.Lgs. 81/2008, art. 90",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4434,7 +4434,7 @@
     "corretta": 0,
     "spiegazione": "Art. 100: il PSC comprende relazione tecnica, prescrizioni e stima dei costi della sicurezza.",
     "fonte": "D.Lgs. 81/2008, art. 100",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4451,7 +4451,7 @@
     "corretta": 1,
     "spiegazione": "80 dB(A) è il valore inferiore di azione, 85 dB(A) il valore superiore di azione.",
     "fonte": "D.Lgs. 81/2008, art. 189",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4468,7 +4468,7 @@
     "corretta": 2,
     "spiegazione": "Art. 21: se operano in appalto devono anche avere una tessera di riconoscimento con fotografia.",
     "fonte": "D.Lgs. 81/2008, art. 21",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4485,7 +4485,7 @@
     "corretta": 3,
     "spiegazione": "Art. 21: nei casi più gravi l'incarico può essere revocato o il rapporto risolto, previa contestazione.",
     "fonte": "D.Lgs. 165/2001, art. 21",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4502,7 +4502,7 @@
     "corretta": 0,
     "spiegazione": "Art. 24, comma 1-bis, al netto della retribuzione individuale di anzianità e degli incarichi aggiuntivi.",
     "fonte": "D.Lgs. 165/2001, art. 24",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4519,7 +4519,7 @@
     "corretta": 1,
     "spiegazione": "Art. 30, comma 1, del D.Lgs. 165/2001.",
     "fonte": "D.Lgs. 165/2001, art. 30",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4536,7 +4536,7 @@
     "corretta": 2,
     "spiegazione": "Art. 30, comma 1.",
     "fonte": "D.Lgs. 165/2001, art. 30",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4553,7 +4553,7 @@
     "corretta": 3,
     "spiegazione": "La mobilità del personale in disponibilità precede il concorso.",
     "fonte": "D.Lgs. 165/2001, art. 34-bis",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4570,7 +4570,7 @@
     "corretta": 0,
     "spiegazione": "Art. 35, comma 1, lett. b).",
     "fonte": "D.Lgs. 165/2001, art. 35",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4587,7 +4587,7 @@
     "corretta": 1,
     "spiegazione": "Art. 35, comma 2, previa verifica della compatibilità dell'invalidità con le mansioni.",
     "fonte": "D.Lgs. 165/2001, art. 35",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4604,7 +4604,7 @@
     "corretta": 2,
     "spiegazione": "Art. 35-bis, introdotto dalla legge anticorruzione.",
     "fonte": "D.Lgs. 165/2001, art. 35-bis",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4621,7 +4621,7 @@
     "corretta": 3,
     "spiegazione": "Art. 55-bis, comma 4.",
     "fonte": "D.Lgs. 165/2001, art. 55-bis",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4638,7 +4638,7 @@
     "corretta": 0,
     "spiegazione": "Art. 55-bis, comma 4: il termine decorre dalla segnalazione o dalla piena conoscenza dei fatti.",
     "fonte": "D.Lgs. 165/2001, art. 55-bis",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4655,7 +4655,7 @@
     "corretta": 1,
     "spiegazione": "Art. 55-bis, comma 4: il termine di conclusione si proroga in misura corrispondente.",
     "fonte": "D.Lgs. 165/2001, art. 55-bis",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4672,7 +4672,7 @@
     "corretta": 2,
     "spiegazione": "Art. 55-bis, comma 4: il nome del dipendente è sostituito da un codice identificativo.",
     "fonte": "D.Lgs. 165/2001, art. 55-bis",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4689,7 +4689,7 @@
     "corretta": 3,
     "spiegazione": "Art. 55-ter: la sospensione è possibile solo per infrazioni gravi e accertamenti complessi.",
     "fonte": "D.Lgs. 165/2001, art. 55-ter",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4706,7 +4706,7 @@
     "corretta": 0,
     "spiegazione": "Art. 55-ter, comma 1.",
     "fonte": "D.Lgs. 165/2001, art. 55-ter",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4723,7 +4723,7 @@
     "corretta": 1,
     "spiegazione": "Art. 55-quater, comma 1, lett. c).",
     "fonte": "D.Lgs. 165/2001, art. 55-quater",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4740,7 +4740,7 @@
     "corretta": 2,
     "spiegazione": "Art. 55-quater, comma 1, lett. d).",
     "fonte": "D.Lgs. 165/2001, art. 55-quater",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4757,7 +4757,7 @@
     "corretta": 3,
     "spiegazione": "Art. 55-quater, comma 1, lett. f-quinquies).",
     "fonte": "D.Lgs. 165/2001, art. 55-quater",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4774,7 +4774,7 @@
     "corretta": 0,
     "spiegazione": "Art. 55-quater, comma 1, lett. e).",
     "fonte": "D.Lgs. 165/2001, art. 55-quater",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4791,7 +4791,7 @@
     "corretta": 1,
     "spiegazione": "Art. 55-octies: un regolamento disciplina procedura di verifica e sospensione cautelare.",
     "fonte": "D.Lgs. 165/2001, art. 55-octies",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4808,7 +4808,7 @@
     "corretta": 2,
     "spiegazione": "Art. 55-bis, comma 1: per il rimprovero verbale si applica la disciplina del contratto collettivo.",
     "fonte": "D.Lgs. 165/2001, art. 55-bis",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4825,7 +4825,7 @@
     "corretta": 3,
     "spiegazione": "Art. 55-bis, comma 3.",
     "fonte": "D.Lgs. 165/2001, art. 55-bis",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4842,7 +4842,7 @@
     "corretta": 0,
     "spiegazione": "Art. 55-quater, comma 1, lett. f).",
     "fonte": "D.Lgs. 165/2001, art. 55-quater",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4859,7 +4859,7 @@
     "corretta": 1,
     "spiegazione": "Art. 55-quater, comma 1, lett. f-quater).",
     "fonte": "D.Lgs. 165/2001, art. 55-quater",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4876,7 +4876,7 @@
     "corretta": 2,
     "spiegazione": "Non può però svolgersi in contrasto con l'utilità sociale o recando danno a salute, ambiente, sicurezza, libertà e dignità umana.",
     "fonte": "Costituzione, art. 41",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4893,7 +4893,7 @@
     "corretta": 3,
     "spiegazione": "Nelle materie concorrenti lo Stato fissa i principi fondamentali, le Regioni il resto.",
     "fonte": "Costituzione, art. 117",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4910,7 +4910,7 @@
     "corretta": 0,
     "spiegazione": "Art. 117, secondo comma, lett. o). La previdenza complementare e integrativa è invece materia concorrente.",
     "fonte": "Costituzione, art. 117",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4927,7 +4927,7 @@
     "corretta": 1,
     "spiegazione": "La responsabilità civile si estende allo Stato e agli enti pubblici.",
     "fonte": "Costituzione, art. 28",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4944,7 +4944,7 @@
     "corretta": 2,
     "spiegazione": "Prestano giuramento nei casi stabiliti dalla legge.",
     "fonte": "Costituzione, art. 54",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4961,7 +4961,7 @@
     "corretta": 3,
     "spiegazione": "Su questa base poggia anche la tutela della salute nei luoghi di lavoro.",
     "fonte": "Costituzione, art. 32",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4978,7 +4978,7 @@
     "corretta": 0,
     "spiegazione": "Possono anche promuovere ricerca e attuazione delle misure di tutela della salute.",
     "fonte": "L. 300/1970, art. 9",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -4995,7 +4995,7 @@
     "corretta": 1,
     "spiegazione": "Il datore può essere condannato a versare al fondo adeguamento pensioni l'importo indebitamente corrisposto, per un massimo di un anno.",
     "fonte": "L. 300/1970, art. 16",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -5012,7 +5012,7 @@
     "corretta": 2,
     "spiegazione": "Possono anche fare proselitismo; i commi sulla trattenuta in busta paga sono stati abrogati dal referendum del 1995.",
     "fonte": "L. 300/1970, art. 26",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -5029,7 +5029,7 @@
     "corretta": 3,
     "spiegazione": "I permessi servono a partecipare alle riunioni degli organi, secondo i contratti di lavoro.",
     "fonte": "L. 300/1970, art. 30",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -5046,7 +5046,7 @@
     "corretta": 0,
     "spiegazione": "Vale anche per i benefici concessi dallo Stato agli imprenditori.",
     "fonte": "L. 300/1970, art. 36",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -5063,7 +5063,7 @@
     "corretta": 1,
     "spiegazione": "L'art. 31 vale per Parlamento nazionale ed europeo, assemblee regionali e altre funzioni pubbliche elettive.",
     "fonte": "L. 300/1970, art. 31",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -5080,7 +5080,7 @@
     "corretta": 2,
     "spiegazione": "Art. 21, comma 01; i contratti per attività stagionali fanno eccezione.",
     "fonte": "D.Lgs. 81/2015, art. 21",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -5097,7 +5097,7 @@
     "corretta": 3,
     "spiegazione": "Art. 32, comma 1, lett. b), con eccezioni per sostituzione di assenti o durata iniziale fino a tre mesi.",
     "fonte": "D.Lgs. 81/2015, art. 32",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "diritto-lavoro",
@@ -5114,6 +5114,839 @@
     "corretta": 0,
     "spiegazione": "Art. 38, comma 2: la domanda può essere rivolta anche solo all'utilizzatore.",
     "fonte": "D.Lgs. 81/2015, art. 38",
-    "versione": "v2"
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-302",
+    "argomento": "Lavoro pubblico",
+    "livello": 2,
+    "testo": "In quante aree è articolato il sistema di classificazione del personale del CCNL Funzioni Locali 2019-2021?",
+    "opzioni": [
+      "Tre categorie (A, B, C)",
+      "Quattro aree",
+      "Sei livelli",
+      "Due fasce"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 12: il sistema di classificazione è articolato in quattro aree che corrispondono a quattro differenti livelli di conoscenze, abilità e competenze professionali.",
+    "fonte": "CCNL Funzioni Locali 2019-2021, art. 12",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-303",
+    "argomento": "Lavoro pubblico",
+    "livello": 3,
+    "testo": "Quale tra queste è un'area del sistema di classificazione del CCNL Funzioni Locali 2019-2021?",
+    "opzioni": [
+      "Area dei Quadri direttivi",
+      "Area dei Dirigenti di seconda fascia",
+      "Area dei Funzionari e dell'Elevata Qualificazione",
+      "Categoria D3"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 12: le aree sono Operatori, Operatori esperti, Istruttori, Funzionari e dell'Elevata Qualificazione.",
+    "fonte": "CCNL Funzioni Locali 2019-2021, art. 12",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-304",
+    "argomento": "Lavoro pubblico",
+    "livello": 3,
+    "testo": "Quanto dura il periodo di prova per i dipendenti delle aree degli Operatori e degli Operatori esperti?",
+    "opzioni": [
+      "Sei mesi",
+      "Un mese",
+      "Un anno",
+      "Due mesi"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 25: la prova dura due mesi per gli Operatori e gli Operatori esperti e sei mesi per il personale delle restanti aree.",
+    "fonte": "CCNL Funzioni Locali 2019-2021, art. 25",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-305",
+    "argomento": "Lavoro pubblico",
+    "livello": 3,
+    "testo": "Quanto dura il periodo di prova per Istruttori e Funzionari negli enti locali?",
+    "opzioni": [
+      "Sei mesi",
+      "Due mesi",
+      "Dodici mesi",
+      "Tre mesi"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 25: sei mesi per il personale inquadrato nelle aree diverse da Operatori e Operatori esperti.",
+    "fonte": "CCNL Funzioni Locali 2019-2021, art. 25",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-306",
+    "argomento": "Lavoro pubblico",
+    "livello": 4,
+    "testo": "Da quando ciascuna parte può recedere dal rapporto in prova senza preavviso né indennità?",
+    "opzioni": [
+      "Dal primo giorno",
+      "Decorsa la metà del periodo di prova",
+      "Solo alla fine del periodo",
+      "Dopo trenta giorni, in ogni caso"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 25: decorsa la metà del periodo di prova ciascuna parte può recedere in qualsiasi momento senza obbligo di preavviso né di indennità sostitutiva.",
+    "fonte": "CCNL Funzioni Locali 2019-2021, art. 25",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-307",
+    "argomento": "Assenze",
+    "livello": 3,
+    "testo": "Quanto possono durare, al massimo, i permessi brevi in una giornata?",
+    "opzioni": [
+      "Due ore",
+      "Un'ora",
+      "Non più della metà dell'orario di lavoro giornaliero",
+      "Tutta la giornata"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 42: i permessi brevi non possono superare la metà dell'orario di lavoro giornaliero né le 36 ore annue.",
+    "fonte": "CCNL Funzioni Locali 2019-2021, art. 42",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-308",
+    "argomento": "Assenze",
+    "livello": 3,
+    "testo": "Qual è il tetto annuo dei permessi brevi per il personale delle Funzioni Locali?",
+    "opzioni": [
+      "18 ore annue",
+      "12 ore annue",
+      "150 ore annue",
+      "36 ore annue"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 42: i permessi brevi non possono comunque superare le 36 ore annue e vanno recuperati.",
+    "fonte": "CCNL Funzioni Locali 2019-2021, art. 42",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-309",
+    "argomento": "Assenze",
+    "livello": 4,
+    "testo": "Entro quando va richiesto, di regola, un permesso breve?",
+    "opzioni": [
+      "Non oltre un'ora dopo l'inizio della giornata lavorativa",
+      "Con 15 giorni di preavviso",
+      "Il giorno dopo",
+      "Entro la fine del mese"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 42, c. 2: la richiesta va fatta in tempo utile e comunque non oltre un'ora dopo l'inizio della giornata lavorativa, salvo urgenze.",
+    "fonte": "CCNL Funzioni Locali 2019-2021, art. 42",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-310",
+    "argomento": "Assenze",
+    "livello": 3,
+    "testo": "Quante ore di permesso retribuito all'anno spettano per particolari motivi personali o familiari?",
+    "opzioni": [
+      "24 ore",
+      "18 ore",
+      "36 ore",
+      "8 ore"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 41: possono essere concesse 18 ore di permesso retribuito nell'anno per particolari motivi personali o familiari.",
+    "fonte": "CCNL Funzioni Locali 2019-2021, art. 41",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-311",
+    "argomento": "Assenze",
+    "livello": 4,
+    "testo": "Per i permessi orari per motivi personali o familiari serve presentare documentazione?",
+    "opzioni": [
+      "Sì, sempre il certificato medico",
+      "Sì, un'autocertificazione notarile",
+      "No, non serve una specifica documentazione o giustificazione",
+      "Sì, se superano un'ora"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 41: le 18 ore si concedono senza necessità di specifica documentazione e/o giustificazione; il diniego dev'essere motivato.",
+    "fonte": "CCNL Funzioni Locali 2019-2021, art. 41",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-312",
+    "argomento": "Assenze",
+    "livello": 4,
+    "testo": "I permessi orari retribuiti per motivi personali riducono le ferie?",
+    "opzioni": [
+      "Solo per i neoassunti",
+      "Sì, sempre",
+      "Sì, di un giorno ogni 6 ore",
+      "No, non riducono le ferie"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 41, c. 2: i permessi non riducono le ferie, sono fruibili a frazioni di ora dopo la prima ora e valgono per l'anzianità di servizio.",
+    "fonte": "CCNL Funzioni Locali 2019-2021, art. 41",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-313",
+    "argomento": "Lavoro pubblico",
+    "livello": 3,
+    "testo": "Quando la prestazione giornaliera supera le sei ore, di quale pausa ha diritto il dipendente?",
+    "opzioni": [
+      "Di almeno dieci minuti",
+      "Di nessuna pausa",
+      "Di almeno trenta minuti, non retribuiti",
+      "Di almeno un'ora"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 34: se la prestazione giornaliera eccede le sei ore il personale ha diritto a una pausa di almeno dieci minuti per il recupero delle energie psicofisiche.",
+    "fonte": "CCNL Funzioni Locali 2019-2021, art. 34",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-314",
+    "argomento": "Diritti sindacali",
+    "livello": 3,
+    "testo": "Quante ore annue di assemblea sindacale retribuita spettano ai dipendenti delle Funzioni Locali?",
+    "opzioni": [
+      "36 ore annue",
+      "12 ore annue pro capite",
+      "10 ore annue",
+      "6 ore annue"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 10: i dipendenti partecipano in orario di lavoro ad assemblee sindacali per 12 ore annue pro capite senza decurtazione della retribuzione.",
+    "fonte": "CCNL Funzioni Locali 2019-2021, art. 10",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-315",
+    "argomento": "Lavoro pubblico",
+    "livello": 4,
+    "testo": "Per quanto tempo al massimo sono conferiti gli incarichi di Elevata Qualificazione (EQ)?",
+    "opzioni": [
+      "Senza scadenza",
+      "1 anno non rinnovabile",
+      "Non più di 3 anni, con atto scritto e motivato",
+      "5 anni"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 18: gli incarichi di EQ sono conferiti dai dirigenti per un periodo massimo non superiore a 3 anni con atto scritto e motivato, e sono rinnovabili.",
+    "fonte": "CCNL Funzioni Locali 2019-2021, art. 18",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-316",
+    "argomento": "Lavoro pubblico",
+    "livello": 3,
+    "testo": "Per il CCNL, in quale fascia oraria si colloca il turno notturno?",
+    "opzioni": [
+      "Dalle 20 alle 8",
+      "Dalle 24 alle 5",
+      "Dalle 21 alle 7",
+      "Dalle 22 alle 6 del giorno successivo"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 30: per turno notturno si intende il periodo compreso dalle ore 22 alle ore 6 del giorno successivo.",
+    "fonte": "CCNL Funzioni Locali 2019-2021, art. 30",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-317",
+    "argomento": "Lavoro pubblico",
+    "livello": 3,
+    "testo": "In cosa consiste il turno di lavoro secondo il CCNL Funzioni Locali?",
+    "opzioni": [
+      "In un'effettiva rotazione del personale in articolazioni orarie prestabilite",
+      "Nel lavoro straordinario programmato",
+      "Nella reperibilità notturna",
+      "In un orario fisso uguale per tutti"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 30: il turno consiste in un'effettiva rotazione del personale in prestabilite articolazioni orarie giornaliere.",
+    "fonte": "CCNL Funzioni Locali 2019-2021, art. 30",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-318",
+    "argomento": "Assenze",
+    "livello": 3,
+    "testo": "Per quanto tempo il dipendente non in prova, assente per malattia, ha diritto alla conservazione del posto?",
+    "opzioni": [
+      "Sei mesi",
+      "Diciotto mesi",
+      "Dodici mesi",
+      "Tre anni"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 48 (ex CCNL): il dipendente assente per malattia ha diritto alla conservazione del posto per un periodo di diciotto mesi.",
+    "fonte": "CCNL Funzioni Locali 2019-2021, art. 48",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-319",
+    "argomento": "Assenze",
+    "livello": 4,
+    "testo": "Quali assenze si sommano per calcolare il periodo di comporto per malattia?",
+    "opzioni": [
+      "Solo quelle dell'anno solare",
+      "Solo quelle superiori a 10 giorni",
+      "Tutte quelle dei tre anni precedenti l'ultimo episodio",
+      "Solo quelle dell'ultimo mese"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 48: ai fini del comporto si sommano tutte le assenze per malattia dei tre anni precedenti l'ultimo episodio morboso in corso.",
+    "fonte": "CCNL Funzioni Locali 2019-2021, art. 48",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-320",
+    "argomento": "Assenze",
+    "livello": 3,
+    "testo": "Quante ore massime di permessi retribuiti per il diritto allo studio spettano a ciascun dipendente in un anno?",
+    "opzioni": [
+      "250 ore",
+      "18 ore",
+      "36 ore",
+      "150 ore"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 46: per il diritto allo studio sono concessi permessi retribuiti nella misura massima individuale di 150 ore per anno solare, entro il 3% del personale.",
+    "fonte": "CCNL Funzioni Locali 2019-2021, art. 46",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-321",
+    "argomento": "Procedimento disciplinare",
+    "livello": 4,
+    "testo": "Per quanto tempo l'ente può disporre la sospensione cautelare del dipendente durante il procedimento disciplinare?",
+    "opzioni": [
+      "Non più di trenta giorni, con conservazione della retribuzione",
+      "Sei mesi",
+      "Fino a un anno, senza stipendio",
+      "Senza limiti di tempo"
+    ],
+    "corretta": 0,
+    "spiegazione": "Durante il procedimento l'ente può disporre la sospensione cautelare per non più di trenta giorni, conservando la retribuzione.",
+    "fonte": "CCNL Funzioni Locali 2019-2021, art. 60 CCNL 2016/18",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-322",
+    "argomento": "Contrattazione collettiva",
+    "livello": 4,
+    "testo": "Con quanto anticipo va data disdetta del CCNL perché non si rinnovi tacitamente?",
+    "opzioni": [
+      "Almeno un anno prima",
+      "Almeno sei mesi prima della scadenza",
+      "Almeno un mese prima",
+      "Non può essere disdettato"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 2: il contratto si rinnova tacitamente di anno in anno se non è disdettato almeno sei mesi prima della scadenza; fino al nuovo contratto restano in vigore le sue disposizioni.",
+    "fonte": "CCNL Funzioni Locali 2019-2021, art. 2",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-323",
+    "argomento": "Assenze",
+    "livello": 3,
+    "testo": "Quanti giorni di ferie spettano con orario distribuito su cinque giorni?",
+    "opzioni": [
+      "30 giorni lavorativi",
+      "32 giorni lavorativi",
+      "28 giorni lavorativi",
+      "26 giorni lavorativi"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 38: con orario su cinque giorni le ferie sono 28 giorni lavorativi; su sei giorni sono 32 (comprese le due giornate della L. 937/1977).",
+    "fonte": "CCNL Funzioni Locali 2019-2021, art. 38",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-324",
+    "argomento": "Assenze",
+    "livello": 3,
+    "testo": "Quanti giorni di ferie spettano con orario distribuito su sei giorni?",
+    "opzioni": [
+      "28 giorni",
+      "30 giorni",
+      "36 giorni",
+      "32 giorni"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 38, c. 3: con orario settimanale su sei giorni le ferie sono 32 giorni, comprensivi delle due giornate della L. 937/1977.",
+    "fonte": "CCNL Funzioni Locali 2019-2021, art. 38",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-325",
+    "argomento": "Assenze",
+    "livello": 4,
+    "testo": "Quante ferie spettano a chi è assunto per la prima volta in una pubblica amministrazione, con orario su cinque giorni?",
+    "opzioni": [
+      "26 giorni lavorativi",
+      "28 giorni lavorativi",
+      "30 giorni lavorativi",
+      "20 giorni lavorativi"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 38, c. 4: per i neoassunti nella PA le ferie sono 26 giorni (orario su cinque giorni) o 30 (su sei); dopo tre anni di servizio spettano quelle ordinarie.",
+    "fonte": "CCNL Funzioni Locali 2019-2021, art. 38",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-326",
+    "argomento": "Assenze",
+    "livello": 4,
+    "testo": "Dopo quanto tempo il neoassunto nella PA matura i giorni di ferie ordinari?",
+    "opzioni": [
+      "Dopo il periodo di prova",
+      "Dopo tre anni di servizio in una qualsiasi pubblica amministrazione",
+      "Dopo un anno",
+      "Dopo dieci anni nello stesso ente"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 38, c. 5: dopo tre anni di servizio presso una qualsiasi PA, anche con inquadramento diverso, spettano le ferie dei commi 2 e 3.",
+    "fonte": "CCNL Funzioni Locali 2019-2021, art. 38",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-327",
+    "argomento": "Assenze",
+    "livello": 4,
+    "testo": "Quante giornate di riposo per le festività soppresse (L. 937/1977) spettano ogni anno a tutti i dipendenti?",
+    "opzioni": [
+      "Nessuna",
+      "Sei",
+      "Quattro",
+      "Due"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 38, c. 6: a tutti i dipendenti sono attribuite quattro giornate di riposo da fruire nell'anno solare ai sensi della L. 937/1977.",
+    "fonte": "CCNL Funzioni Locali 2019-2021, art. 38",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-328",
+    "argomento": "Reclutamento",
+    "livello": 4,
+    "testo": "Quale quota dei posti disponibili resta riservata all'accesso dall'esterno quando l'ente fa progressioni tra le aree?",
+    "opzioni": [
+      "Almeno il 10 per cento",
+      "Il 100 per cento",
+      "Nessuna quota",
+      "Almeno il 50 per cento"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 15: le progressioni tra le aree si fanno con procedura comparativa, fatta salva una riserva di almeno il 50 per cento delle posizioni disponibili per l'accesso dall'esterno.",
+    "fonte": "CCNL Funzioni Locali 2019-2021, art. 15",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-329",
+    "argomento": "Lavoro pubblico",
+    "livello": 4,
+    "testo": "Quali attività sono escluse dal lavoro agile secondo il CCNL Funzioni Locali?",
+    "opzioni": [
+      "I lavori in turno e quelli che richiedono l'uso costante di strumentazioni non remotizzabili",
+      "Tutte le attività dei funzionari",
+      "Le attività svolte a tempo parziale",
+      "Nessuna"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 64: l'amministrazione individua le attività che possono essere svolte in lavoro agile; sono esclusi i lavori in turno e quelli che richiedono strumentazioni non remotizzabili.",
+    "fonte": "CCNL Funzioni Locali 2019-2021, art. 64",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-330",
+    "argomento": "Lavoro pubblico",
+    "livello": 4,
+    "testo": "A cosa serve la Banca delle ore prevista dal CCNL?",
+    "opzioni": [
+      "A recuperare i ritardi",
+      "A fruire dello straordinario in modo retribuito o come permessi compensativi",
+      "A sostituire la malattia",
+      "A pagare le ferie non godute"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 33: per consentire di fruire dello straordinario, in modo retribuito o come permessi compensativi, è istituita la Banca delle ore con un conto individuale.",
+    "fonte": "CCNL Funzioni Locali 2019-2021, art. 33",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-331",
+    "argomento": "Lavoro pubblico",
+    "livello": 5,
+    "testo": "Entro quando va fruito, di regola, il riposo compensativo per chi lavora nel proprio giorno di riposo settimanale?",
+    "opzioni": [
+      "Entro l'anno",
+      "Non spetta riposo, solo denaro",
+      "Di regola entro 15 giorni e comunque non oltre il bimestre successivo",
+      "Entro 3 giorni"
+    ],
+    "corretta": 2,
+    "spiegazione": "Chi presta servizio nel giorno di riposo settimanale ha un compenso aggiuntivo e diritto al riposo compensativo, di regola entro 15 giorni e non oltre il bimestre successivo.",
+    "fonte": "CCNL Funzioni Locali 2019-2021, art. 24 CCNL 14.9.2000",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-332",
+    "argomento": "Lavoro pubblico",
+    "livello": 4,
+    "testo": "Cosa caratterizza il «lavoro da remoto» rispetto al lavoro agile nel CCNL Funzioni Locali?",
+    "opzioni": [
+      "Si svolge solo all'estero",
+      "Si svolge senza alcun vincolo di orario",
+      "È riservato ai dirigenti",
+      "Si svolge con vincolo di tempo, in un luogo idoneo diverso dalla sede dell'ufficio"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 68: il lavoro da remoto si presta con vincolo di tempo e obblighi di presenza, modificando il luogo di adempimento in un luogo idoneo diverso dalla sede.",
+    "fonte": "CCNL Funzioni Locali 2019-2021, art. 68",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-333",
+    "argomento": "Lavoro pubblico",
+    "livello": 3,
+    "testo": "In alternativa al servizio mensa, cosa possono attribuire gli enti al personale?",
+    "opzioni": [
+      "Buoni pasto sostitutivi, previo confronto con i sindacati",
+      "Rimborso di ogni spesa alimentare",
+      "Giorni di ferie aggiuntivi",
+      "Un aumento del 10% dello stipendio"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 35: gli enti possono istituire un servizio mensa o, in alternativa, attribuire buoni pasto sostitutivi, previo confronto con le organizzazioni sindacali.",
+    "fonte": "CCNL Funzioni Locali 2019-2021, art. 35",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-334",
+    "argomento": "Previdenza",
+    "livello": 2,
+    "testo": "Che tipo di ente è l'INAIL?",
+    "opzioni": [
+      "Una società per azioni",
+      "Un ente pubblico non economico",
+      "Un'agenzia privata",
+      "Un organo del Parlamento"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'INAIL è un ente pubblico non economico che gestisce l'assicurazione obbligatoria contro gli infortuni sul lavoro e le malattie professionali.",
+    "fonte": "Wikipedia, «Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-335",
+    "argomento": "Previdenza",
+    "livello": 3,
+    "testo": "Quale Ministero vigila sull'INAIL?",
+    "opzioni": [
+      "Il Ministero della giustizia",
+      "Il Ministero della salute",
+      "Il Ministero del lavoro e delle politiche sociali",
+      "Il Ministero dell'interno"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'INAIL è sottoposto alla vigilanza del Ministero del lavoro e delle politiche sociali.",
+    "fonte": "Wikipedia, «Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-336",
+    "argomento": "Previdenza",
+    "livello": 4,
+    "testo": "Dopo la caduta del fascismo, quale governo tolse la parola «Fascista» dal nome dell'istituto per gli infortuni sul lavoro?",
+    "opzioni": [
+      "Il Governo Bonomi II",
+      "Il Governo Parri",
+      "Il Governo De Gasperi I",
+      "Il Governo Badoglio I"
+    ],
+    "corretta": 3,
+    "spiegazione": "Nel 1933 la Cassa divenne «Istituto Nazionale Fascista per l'Assicurazione contro gli Infortuni sul Lavoro»; caduto il fascismo, il Governo Badoglio I eliminò la parola «Fascista».",
+    "fonte": "Wikipedia, «Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-337",
+    "argomento": "Previdenza",
+    "livello": 4,
+    "testo": "Quale atto del 1965 raccoglie i principi fondamentali dell'assicurazione contro infortuni e malattie professionali?",
+    "opzioni": [
+      "Il DPR 30 giugno 1965, n. 1124",
+      "La legge 300 del 1970",
+      "Il D.Lgs. 626 del 1994",
+      "Il codice civile del 1942"
+    ],
+    "corretta": 0,
+    "spiegazione": "Nel 1965 i principi fondamentali dell'assicurazione infortuni furono raccolti nel DPR 30 giugno 1965, n. 1124, che regola tutta la materia INAIL.",
+    "fonte": "Wikipedia, «Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-338",
+    "argomento": "Previdenza",
+    "livello": 4,
+    "testo": "Le funzioni di quali enti ha assorbito l'INAIL nel 2010?",
+    "opzioni": [
+      "ARAN e CNEL",
+      "ISPESL e IPSEMA",
+      "INPDAP ed ENPALS",
+      "INPS e ISTAT"
+    ],
+    "corretta": 1,
+    "spiegazione": "Nel 2010 l'INAIL ha assorbito le funzioni dell'Istituto superiore per la prevenzione e la sicurezza del lavoro (ISPESL) e dell'Istituto di previdenza per il settore marittimo (IPSEMA).",
+    "fonte": "Wikipedia, «Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-339",
+    "argomento": "Previdenza",
+    "livello": 3,
+    "testo": "Cosa distingue la malattia professionale dall'infortunio sul lavoro?",
+    "opzioni": [
+      "Non è tutelata dall'INAIL",
+      "È sempre più grave",
+      "Origina da cause non violente, connesse allo svolgimento dell'attività",
+      "Avviene solo fuori dal luogo di lavoro"
+    ],
+    "corretta": 2,
+    "spiegazione": "La malattia professionale è un evento dannoso che origina da cause non violente (a differenza dell'infortunio), connesse con lo svolgimento dell'attività lavorativa.",
+    "fonte": "Wikipedia, «Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-340",
+    "argomento": "Previdenza",
+    "livello": 4,
+    "testo": "Chi lavora per la cura della propria famiglia e della casa, senza retribuzione, è soggetto all'assicurazione INAIL?",
+    "opzioni": [
+      "Solo se ha più di 67 anni",
+      "Sì, ma solo se ha figli minori",
+      "No, mai",
+      "Sì, se ha tra 18 e 67 anni e lo fa in via esclusiva o non occasionale"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'INAIL ha esteso l'obbligo assicurativo a chi, tra 18 e 67 anni, svolge in modo esclusivo o non occasionale e gratuito lavoro domestico per la famiglia.",
+    "fonte": "Wikipedia, «Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-341",
+    "argomento": "Previdenza",
+    "livello": 4,
+    "testo": "Se il datore di lavoro non versa i premi INAIL, il dipendente infortunato è comunque tutelato?",
+    "opzioni": [
+      "Sì, per il principio di automaticità delle prestazioni",
+      "Solo dopo 5 anni di contributi",
+      "No, perde ogni tutela",
+      "Solo se fa causa al datore"
+    ],
+    "corretta": 0,
+    "spiegazione": "Anche se il datore non versa i premi, il dipendente ha accesso alla tutela: è il principio dell'automaticità delle prestazioni.",
+    "fonte": "Wikipedia, «Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-342",
+    "argomento": "Previdenza",
+    "livello": 4,
+    "testo": "Che effetto ha, in genere, il pagamento del premio INAIL sulla responsabilità civile del datore di lavoro?",
+    "opzioni": [
+      "Lo esonera anche dalla responsabilità penale",
+      "Lo esonera, salvo colpa accertata con sentenza definitiva",
+      "Lo rende responsabile di ogni danno",
+      "Nessun effetto"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il pagamento del premio esonera in genere dalla responsabilità civile il datore, che risponde solo in caso di colpa riconosciuta con sentenza definitiva.",
+    "fonte": "Wikipedia, «Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-343",
+    "argomento": "Previdenza",
+    "livello": 5,
+    "testo": "In che anno nacque, su base volontaria, la prima cassa contro gli infortuni sul lavoro in Italia?",
+    "opzioni": [
+      "Nel 1927",
+      "Nel 1898",
+      "Nel 1883",
+      "Nel 1861"
+    ],
+    "corretta": 2,
+    "spiegazione": "Nata su base volontaria nel 1883, fu il primo organismo di tutela contro gli infortuni sul lavoro sorto in Italia; l'obbligo arrivò nel 1898.",
+    "fonte": "Wikipedia, «Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-344",
+    "argomento": "Contratti di lavoro",
+    "livello": 2,
+    "testo": "Di quale ramo del diritto fa parte il diritto del lavoro?",
+    "opzioni": [
+      "Del diritto internazionale pubblico",
+      "Del diritto canonico",
+      "Del diritto penale",
+      "Del diritto privato"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il diritto del lavoro è il ramo del diritto privato che studia la disciplina del lavoro, del rapporto di lavoro e delle tematiche collegate.",
+    "fonte": "Wikipedia, «Diritto del lavoro» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-345",
+    "argomento": "Contratti di lavoro",
+    "livello": 3,
+    "testo": "Per regolare quali problemi sociali è nato il diritto del lavoro?",
+    "opzioni": [
+      "Quelli sorti con la prima rivoluzione industriale",
+      "Quelli della globalizzazione degli anni 2000",
+      "Quelli della Riforma protestante",
+      "Quelli dell'unificazione d'Italia"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il diritto del lavoro è nato e si è sviluppato per regolare e attenuare le problematiche sociali sorte con la prima rivoluzione industriale.",
+    "fonte": "Wikipedia, «Diritto del lavoro» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-346",
+    "argomento": "Contratti di lavoro",
+    "livello": 3,
+    "testo": "Qual è l'organizzazione internazionale più antica che opera nel campo del lavoro a livello mondiale?",
+    "opzioni": [
+      "L'Organizzazione mondiale del commercio",
+      "L'Organizzazione internazionale del lavoro (OIL)",
+      "L'UNESCO",
+      "Il Fondo monetario internazionale"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'organizzazione internazionale di più antica data nel campo del lavoro è l'OIL, che indirizza raccomandazioni e convenzioni agli Stati.",
+    "fonte": "Wikipedia, «Diritto del lavoro» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-347",
+    "argomento": "Contratti di lavoro",
+    "livello": 4,
+    "testo": "Quale settimana lavorativa legale vige in Francia dal 2000?",
+    "opzioni": [
+      "36 ore",
+      "32 ore",
+      "35 ore",
+      "40 ore"
+    ],
+    "corretta": 2,
+    "spiegazione": "In Francia, dal 2000, i dipendenti sono soggetti a una settimana lavorativa legale di 35 ore.",
+    "fonte": "Wikipedia, «Diritto del lavoro» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-348",
+    "argomento": "Licenziamento",
+    "livello": 4,
+    "testo": "Cosa prevede il principio statunitense dell'«at-will employment»?",
+    "opzioni": [
+      "Serve l'autorizzazione del giudice",
+      "Il licenziamento è sempre vietato",
+      "Il lavoratore non può dimettersi",
+      "Il datore può licenziare senza preavviso né motivo, salvo casi illegali o discriminatori"
+    ],
+    "corretta": 3,
+    "spiegazione": "Negli USA vige l'at-will employment: il datore può licenziare senza preavviso e senza motivo, tranne quando ciò sia illegale o discriminatorio.",
+    "fonte": "Wikipedia, «Diritto del lavoro» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-349",
+    "argomento": "Contrattazione collettiva",
+    "livello": 4,
+    "testo": "Con quale atto del 1927 fu introdotto in Italia il contratto collettivo nazionale di lavoro?",
+    "opzioni": [
+      "Con la Carta del lavoro",
+      "Con lo Statuto dei lavoratori",
+      "Con il protocollo Ciampi",
+      "Con lo Statuto Albertino"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il CCNL fu introdotto durante il fascismo con la Carta del lavoro, pubblicata in Gazzetta Ufficiale il 30 aprile 1927.",
+    "fonte": "Wikipedia, «Contratto collettivo nazionale di lavoro» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "diritto-lavoro",
+    "id": "lav-350",
+    "argomento": "Contrattazione collettiva",
+    "livello": 4,
+    "testo": "Quale protocollo, firmato durante il governo Ciampi, istituzionalizzò la «concertazione sociale»?",
+    "opzioni": [
+      "Il patto di Natale del 1998",
+      "Il protocollo del 23 luglio 1993",
+      "Il Patto per l'Italia del 2002",
+      "La legge 741 del 1959"
+    ],
+    "corretta": 1,
+    "spiegazione": "Negli anni Novanta il nuovo modello di relazioni industriali fu istituzionalizzato dal governo Ciampi con il protocollo del 23 luglio 1993 sulla concertazione sociale.",
+    "fonte": "Wikipedia, «Contratto collettivo nazionale di lavoro» (CC BY-SA 4.0)",
+    "versione": "v4"
   }
 ]

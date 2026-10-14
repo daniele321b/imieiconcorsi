@@ -21,6 +21,7 @@ function inline(testo: string) {
 export function TestoTutor({ testo }: { testo: string }) {
   const blocchi: ReactNode[] = [];
   let elenco: string[] = [];
+  // Chiude l'elenco puntato in corso e lo aggiunge ai blocchi.
   const chiudiElenco = () => {
     if (!elenco.length) return;
     blocchi.push(
@@ -73,6 +74,7 @@ export function TutorChat({
     if (messaggi.length) fondo.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
   }, [messaggi.length, inCorso]);
 
+  // Manda la domanda al tutor con la conversazione fin qui e aggiunge la risposta.
   async function invia(domandaStudente: string) {
     const pulita = domandaStudente.trim();
     if (!pulita || inCorso) return;
@@ -105,6 +107,7 @@ export function TutorChat({
     }
   }
 
+  // Invio del modulo (pulsante o Invio).
   const onSubmit = (e: FormEvent) => {
     e.preventDefault();
     void invia(testo);

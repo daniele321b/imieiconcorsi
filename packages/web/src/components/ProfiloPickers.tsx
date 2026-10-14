@@ -8,6 +8,7 @@ import { cx } from "./ui";
 
 /** Scelta dei comparti di interesse (almeno uno): decidono i bandi mostrati e gli avvisi. */
 export function InteressiPicker({ value, onChange }: { value: CompartoId[]; onChange: (v: CompartoId[]) => void }) {
+  // Aggiunge o toglie un comparto.
   const toggle = (id: CompartoId) => onChange(value.includes(id) ? value.filter((v) => v !== id) : [...value, id]);
   return (
     <div className="grid gap-3 sm:grid-cols-2">

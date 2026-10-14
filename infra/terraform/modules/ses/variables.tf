@@ -1,3 +1,5 @@
+# Ingressi del modulo email (SES: identità, configuration set, notifiche).
+
 variable "name" {
   description = "Nome del configuration set (es. imieiconcorsi)"
   type        = string

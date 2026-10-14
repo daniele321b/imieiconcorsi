@@ -1,6 +1,8 @@
 import { giorniPrima, impronta, periodi, riepilogoAttivita } from "@imieiconcorsi/core/attivita";
 import { describe, expect, it } from "vitest";
 
+// Test del conteggio degli utenti attivi (core/attivita.ts).
+
 describe("utenti attivi", () => {
   it("giorni e minuti in ora italiana", () => {
     // 23:30 UTC del 12 ottobre = 01:30 del 13 a Roma (ora legale).

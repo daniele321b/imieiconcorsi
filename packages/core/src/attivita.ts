@@ -91,6 +91,7 @@ export function giorniPrima(giorno: string, quanti: number): string[] {
  * `perGiorno` ha i giorni dal più recente (oggi) al più vecchio.
  */
 export function riepilogoAttivita(perGiorno: { giorno: string; utenti: string[] }[]) {
+  // Utenti diversi in un gruppo di giorni (chi torna più volte conta una volta).
   const unici = (giorni: typeof perGiorno) => new Set(giorni.flatMap((g) => g.utenti)).size;
   const oggi = perGiorno[0]?.giorno ?? "";
   const meseOra = oggi.slice(0, 7);

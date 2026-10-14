@@ -9,6 +9,9 @@ import { frequenzaEffettiva, SOGLIA_PAUSA_SETTIMANALE, SOGLIA_SETTIMANALE } from
 import { daCancellare } from "../src/jobs/pulizia-bandi";
 import { settimanaDi, usiDellaSettimana } from "../src/study/usi";
 
+// Test di prezzi e durate, utilizzi settimanali, concorsi seguiti al ritorno al Free, inviti,
+// avvisi via email e pulizia dei bandi tolti da inPA.
+
 const GIORNO = 86_400_000;
 
 describe("prezzi e durate", () => {

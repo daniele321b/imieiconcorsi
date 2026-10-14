@@ -36,6 +36,7 @@ export function AuthCard() {
   const [info, setInfo] = useState<string>();
   const [inCorso, setInCorso] = useState(false);
 
+  // Passa a un'altra schermata (accedi, registrati, conferma…) ripulendo errori, avvisi e codice.
   const vai = (m: Modo) => {
     setModo(m);
     setErrore(undefined);
@@ -43,6 +44,7 @@ export function AuthCard() {
     setCodice("");
   };
 
+  // Esegue un'operazione di Cognito con il pulsante in attesa; a un account non confermato rimanda il codice.
   async function esegui(fn: () => Promise<void>) {
     setInCorso(true);
     setErrore(undefined);
@@ -73,6 +75,7 @@ export function AuthCard() {
     });
   };
 
+  // Registrazione con email e password (solo domini email ammessi), poi la schermata del codice.
   const onRegistrati = (e: FormEvent) => {
     e.preventDefault();
     // Lo stesso controllo lo rifà il server (trigger pre sign-up): qui serve a rispondere subito.
@@ -91,6 +94,7 @@ export function AuthCard() {
     });
   };
 
+  // Conferma il codice ricevuto per email ed entra subito.
   const onConferma = (e: FormEvent) => {
     e.preventDefault();
     void esegui(async () => {
@@ -104,6 +108,7 @@ export function AuthCard() {
     });
   };
 
+  // Password dimenticata: chiede a Cognito di mandare il codice per email.
   const onRecupera = (e: FormEvent) => {
     e.preventDefault();
     void esegui(async () => {
@@ -113,6 +118,7 @@ export function AuthCard() {
     });
   };
 
+  // Imposta la nuova password con il codice ricevuto ed entra.
   const onNuovaPassword = (e: FormEvent) => {
     e.preventDefault();
     void esegui(async () => {
@@ -121,6 +127,7 @@ export function AuthCard() {
     });
   };
 
+  // Accesso con Google o Facebook (si lascia il sito per il login ospitato di Cognito).
   const social = (provider: SocialProvider) => {
     // Ogni nuovo accesso social ha diritto al suo nuovo tentativo automatico (vedi AuthCallback).
     try {
@@ -171,8 +178,8 @@ export function AuthCard() {
 
       {modo === "accedi" && (
         <form onSubmit={onAccedi} className="mt-5 space-y-4">
-          <Field label="Email" name="email" type="email" autoComplete="email" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder="nome@esempio.it" />
-          <Field label="Password" name="password" type="password" autoComplete="current-password" required value={password} onChange={(e) => setPassword(e.target.value)} />
+          <Field label="Email" name="email" type="email" autoComplete="email" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Indirizzo e-mail" />
+          <Field label="Password" name="password" type="password" autoComplete="current-password" required value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" />
           <div className="flex justify-end">
             <button type="button" onClick={() => vai("recupera")} className="text-sm font-medium text-brand-600 hover:text-brand-700">
               Password dimenticata?
@@ -186,7 +193,7 @@ export function AuthCard() {
 
       {modo === "registrati" && (
         <form onSubmit={onRegistrati} className="mt-5 space-y-4">
-          <Field label="Nome" name="name" autoComplete="given-name" value={nome} onChange={(e) => setNome(e.target.value)} placeholder="Come ti chiami?" />
+          <Field label="Nome" name="name" autoComplete="given-name" value={nome} onChange={(e) => setNome(e.target.value)} placeholder="Nome" />
           <Field
             label="Email"
             name="email"
@@ -195,8 +202,7 @@ export function AuthCard() {
             required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="nome@gmail.com"
-            hint="Gmail, Outlook/Hotmail, Yahoo, iCloud, Libero, Virgilio, Alice/TIM e altri provider diffusi."
+            placeholder="Indirizzo e-mail"
           />
           <Field
             label="Password"
@@ -207,6 +213,7 @@ export function AuthCard() {
             minLength={8}
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            placeholder="Password"
             hint="Almeno 8 caratteri, con una maiuscola, una minuscola e un numero."
           />
           <label className="flex items-start gap-2.5 text-sm text-slate-600">
@@ -261,7 +268,7 @@ export function AuthCard() {
 
       {modo === "recupera" && (
         <form onSubmit={onRecupera} className="mt-5 space-y-4">
-          <Field label="Email" name="email" type="email" autoComplete="email" required value={email} onChange={(e) => setEmail(e.target.value)} />
+          <Field label="Email" name="email" type="email" autoComplete="email" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Indirizzo e-mail" />
           <Button type="submit" size="lg" className="w-full" loading={inCorso}>
             Invia il codice
           </Button>
@@ -280,6 +287,7 @@ export function AuthCard() {
             minLength={8}
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            placeholder="Nuova password"
             hint="Almeno 8 caratteri, con una maiuscola, una minuscola e un numero."
           />
           <Button type="submit" size="lg" className="w-full" loading={inCorso}>

@@ -1,6 +1,9 @@
 import { describe, expect, it } from "vitest";
 import { citaBancaDati, classificaComparto, materieDalTesto, toConcorso, type InpaBando } from "../src/jobs/inpa";
 
+// Test della conversione dei bandi inPA: comparto, concorso, citazione di banche dati, materie.
+
+/** Bando inPA di prova con l'ente e il titolo dati. */
 const bando = (ente: string, titolo = "Concorso per istruttore amministrativo"): InpaBando => ({
   id: "abc",
   titolo,

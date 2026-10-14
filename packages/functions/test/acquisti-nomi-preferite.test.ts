@@ -4,8 +4,12 @@ import { PIANI, type Concorso } from "@imieiconcorsi/core/domain";
 import { aggiornaProgresso, candidatePerSelezione, conPreferita, idDomanda, numeriAccesi } from "@imieiconcorsi/core/progressi";
 import { describe, expect, it } from "vitest";
 
+// Test di core: acquisto con un piano già attivo, nomi e ordinamenti dei concorsi, tipi di bando,
+// correzioni dell'admin, scadenze di comodo di inPA e domande preferite.
+
 const ora = new Date("2026-10-10T10:00:00Z");
 const GIORNO = 86_400_000;
+/** Data ISO a `giorni` giorni da `ora` (negativi = nel passato). */
 const tra = (giorni: number) => new Date(ora.getTime() + giorni * GIORNO).toISOString();
 
 describe("acquisto con un piano già attivo", () => {
@@ -96,6 +100,7 @@ describe("ordinamenti della ricerca", () => {
     { id: "b", titolo: "agente", ente: "Ministero", scadenza: "2026-12-01T00:00:00Z", pubblicatoIl: "2026-09-01T00:00:00Z", posti: 10 },
     { id: "c", titolo: "Bibliotecario", ente: "Ateneo", scadenza: "2026-09-01T00:00:00Z", pubblicatoIl: "2026-08-01T00:00:00Z" },
   ];
+  // Id dei bandi nell'ordine dato dall'ordinamento `o`.
   const ids = (o: Parameters<typeof ordinaConcorsi>[1]) => ordinaConcorsi(bandi, o, adesso).map((c) => c.id);
 
   it("ogni ordinamento ha il suo opposto", () => {

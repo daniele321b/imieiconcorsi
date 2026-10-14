@@ -85,6 +85,7 @@ export function candidatePerSelezione<T extends { id: string }>(
   if (selezione === "tutte" || (!progresso && selezione === "nuove")) return { prima: domande, poi: [] };
   if (selezione === "sbagliate") return { prima: domande.filter((d) => bitAcceso(progresso?.sbagliate, numeroDomanda(d.id))), poi: [] };
   if (selezione === "preferite") return { prima: domande.filter((d) => bitAcceso(progresso?.preferite, numeroDomanda(d.id))), poi: [] };
+  // La domanda è già stata fatta (bit acceso nei progressi).
   const fatta = (d: T) => bitAcceso(progresso?.fatte, numeroDomanda(d.id));
   return { prima: domande.filter((d) => !fatta(d)), poi: domande.filter(fatta) };
 }

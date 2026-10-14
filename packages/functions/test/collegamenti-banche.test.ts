@@ -2,8 +2,11 @@ import { concorsiSuggeriti, paroleChiave } from "@imieiconcorsi/core/concorsi";
 import { concorsiDellaBanca, nomeConcorsoBreve, type CompartoId } from "@imieiconcorsi/core/domain";
 import { describe, expect, it } from "vitest";
 
+// Test dei concorsi suggeriti da collegare a una banca dati.
+
 const ora = new Date("2026-10-09T10:00:00Z");
 
+/** Bando di prova: comparto forze dell'ordine e scadenza a fine novembre se non indicati. */
 const bando = (id: string, ente: string, titolo: string, extra: Partial<{ figura: string; comparto: CompartoId; scadenza: string; bancaDatiPrevista: boolean; bancaDati: boolean }> = {}) => ({
   id,
   ente,

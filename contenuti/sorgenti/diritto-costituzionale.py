@@ -1021,3 +1021,261 @@ K("cost-299", "Rapporti economici", 3, "Quale proprietà agricola la legge aiuta
 K("cost-300", "Pubblica amministrazione", 3, "Se un pubblico impiegato è membro del Parlamento, come può essere promosso?",
   "Soltanto per anzianità", ["Solo per merito", "Non può essere promosso in alcun modo", "Con il voto della Camera di appartenenza"],
   "Art. 98, secondo periodo.", "art. 98", "non possono conseguire promozioni se non per anzianità")
+
+# ── Verso 350: Corte costituzionale e Parlamento (voci Wikipedia, CC BY-SA 4.0, solo per i fatti)
+#    e l'opuscolo della Camera «Dentro la Camera» (2020).
+WCC = "Wikipedia_Corte-costituzionale-Italia-.txt"
+WPAR = "Wikipedia_Parlamento-italiano.txt"
+CAM = "Camera_Dentro-la-Camera.txt"
+WK = lambda voce: f"Wikipedia, «{voce}» (CC BY-SA 4.0)"
+FCAM = "Camera dei deputati, «Dentro la Camera. Una giornata a Montecitorio» (2020)"
+
+D("cost-301", "Corte costituzionale", 2, "Con quale nome informale è nota la Corte costituzionale, dal palazzo in cui ha sede?",
+  "La Consulta", ["Il Quirinale", "Palazzo Chigi", "Il Viminale"],
+  "È nota anche con il nome informale di Consulta, dalla sua sede, il palazzo della Consulta, a Roma.",
+  WK("Corte costituzionale (Italia)"), WCC, "È nota anche con il nome informale di Consulta")
+
+D("cost-302", "Corte costituzionale", 3, "In che anno la Corte costituzionale tenne la sua prima udienza?",
+  "Nel 1956", ["Nel 1948", "Nel 1953", "Nel 1960"],
+  "Prevista dalla Costituzione del 1948, la Corte trovò attuazione solo nel 1955, per l'alto quorum richiesto per eleggere i giudici di nomina parlamentare, e tenne la prima udienza nel 1956.",
+  WK("Corte costituzionale (Italia)"), WCC, "sua prima udienza nel 1956")
+
+D("cost-303", "Corte costituzionale", 4, "Quanto durava inizialmente il mandato dei giudici costituzionali, poi ridotto a nove anni?",
+  "Dodici anni", ["Sette anni", "Cinque anni", "Quindici anni"],
+  "Inizialmente il mandato dei giudici costituzionali durava dodici anni, poi ridotti a nove.",
+  WK("Corte costituzionale (Italia)"), WCC, "Inizialmente il loro mandato durava dodici anni, poi ridotti a nove")
+
+D("cost-304", "Corte costituzionale", 4, "Con quale maggioranza il Parlamento in seduta comune elegge i giudici costituzionali nei primi tre scrutini?",
+  "Due terzi dei componenti dell'assemblea", ["Maggioranza assoluta", "Maggioranza semplice dei presenti", "Tre quinti dei presenti"],
+  "L'elezione avviene a scrutinio segreto con la maggioranza dei due terzi dei componenti; dopo il terzo scrutinio bastano i tre quinti.",
+  WK("Corte costituzionale (Italia)"), WCC, "a scrutinio segreto e con la maggioranza dei due terzi dei componenti dell'assemblea")
+
+D("cost-305", "Corte costituzionale", 4, "Quanti giudici servono, almeno, perché la Corte costituzionale possa funzionare?",
+  "Undici", ["Quindici", "Nove", "Sette"],
+  "La Corte per funzionare necessita di almeno undici giudici: nel 2002 rinviò per la prima volta una causa per mancanza del quorum.",
+  WK("Corte costituzionale (Italia)"), WCC, "la Corte per funzionare necessita di almeno undici giudici")
+
+D("cost-306", "Corte costituzionale", 3, "Il mandato di un giudice costituzionale scaduto può essere prorogato in attesa del successore?",
+  "No, non è ammessa la prorogatio", ["Sì, fino a un anno", "Sì, fino alla nomina del successore", "Sì, se lo decide il Presidente della Corte"],
+  "Il giudice resta in carica nove anni dal giuramento, il mandato non è rinnovabile e non è possibile la prorogatio del giudice con mandato scaduto.",
+  WK("Corte costituzionale (Italia)"), WCC, "Non è possibile la prorogatio del giudice con mandato scaduto")
+
+D("cost-307", "Corte costituzionale", 5, "Nel giudizio d'accusa contro il Presidente della Repubblica, i giudici aggregati sono estratti da un elenco di quanti cittadini?",
+  "45 cittadini eleggibili a senatore", ["100 magistrati", "16 avvocati", "30 professori universitari"],
+  "La Corte è integrata con 16 membri tratti a sorte da un elenco di 45 cittadini eleggibili a senatore che il Parlamento compila ogni nove anni.",
+  WK("Corte costituzionale (Italia)"), WCC, "16 membri tratti a sorte da un elenco di 45 cittadini eleggibili a senatore")
+
+D("cost-308", "Corte costituzionale", 4, "Quale carica dello Stato è, per prassi, il Presidente della Corte costituzionale?",
+  "La quinta", ["La seconda", "La terza", "La decima"],
+  "Il presidente della Corte, quinta carica dello Stato, è scelto per prassi fra i giudici che stanno concludendo il mandato.",
+  WK("Corte costituzionale (Italia)"), WCC, "che è la quinta carica dello Stato")
+
+D("cost-309", "Corte costituzionale", 5, "Quanto durava in carica il Presidente della Corte costituzionale prima della modifica dell'art. 135 del 1967?",
+  "Quattro anni", ["Tre anni", "Nove anni", "Sei anni"],
+  "Fino alla modifica dell'art. 135 del 1967 il presidente durava in carica quattro anni ed era rieleggibile; oggi resta in carica per un triennio.",
+  WK("Corte costituzionale (Italia)"), WCC, "il presidente durava in carica quattro anni ed era rieleggibile")
+
+D("cost-310", "Corte costituzionale", 4, "Nei giudizi d'accusa, in caso di parità di voti nella Corte costituzionale, quale opinione prevale?",
+  "Quella più favorevole all'accusato", ["Quella del Presidente della Corte", "Quella del giudice relatore", "Si ripete la votazione fino a una maggioranza"],
+  "Il voto del presidente prevale in caso di parità, tranne nei giudizi di accusa, dove prevale l'opinione più favorevole all'accusato.",
+  WK("Corte costituzionale (Italia)"), WCC, "prevale l'opinione più favorevole all'accusato")
+
+D("cost-311", "Corte costituzionale", 3, "Quali forme assumono le decisioni della Corte costituzionale?",
+  "Sentenze, ordinanze e decreti", ["Leggi, decreti e regolamenti", "Solo sentenze", "Pareri e raccomandazioni"],
+  "Le decisioni della Corte assumono la forma di sentenze (decisioni di merito), ordinanze (decisioni processuali) e decreti (decisioni procedurali).",
+  WK("Corte costituzionale (Italia)"), WCC, "\"sentenze\" (decisioni di merito), \"ordinanze\" (decisioni processuali), \"decreti\" (decisioni procedurali)")
+
+D("cost-312", "Corte costituzionale", 5, "Come si chiamano le sentenze della Corte che aggiungono alla disposizione un contenuto normativo che non c'era?",
+  "Additive", ["Ablative", "Interpretative di rigetto", "Monitorie"],
+  "Tra le decisioni manipolative ci sono le riduttive o ablative, che tolgono parte della norma, le additive, che aggiungono un contenuto assente, e le sostitutive.",
+  WK("Corte costituzionale (Italia)"), WCC, "additive: quando aggiungono un contenuto normativo assente nella disposizione")
+
+D("cost-313", "Corte costituzionale", 5, "Come si chiamano le pronunce con cui la Corte riconosce l'illegittimità ma rinvia l'annullamento, per sollecitare il legislatore?",
+  "Sentenze monitorie (incostituzionalità accertata ma non dichiarata)", ["Sentenze additive di prestazione", "Ordinanze di manifesta infondatezza", "Sentenze di accoglimento parziale"],
+  "Con le decisioni pro futuro la Corte rinvia l'annullamento con un dispositivo di rigetto: sentenze-indirizzo o monitorie, di incostituzionalità accertata ma non dichiarata.",
+  WK("Corte costituzionale (Italia)"), WCC, "sentenze di incostituzionalità accertata ma non dichiarata")
+
+D("cost-314", "Corte costituzionale", 4, "In Italia un cittadino può ricorrere direttamente alla Corte costituzionale per la lesione di un suo diritto?",
+  "No, non è ammesso l'accesso diretto del singolo", ["Sì, con ricorso individuale entro 60 giorni", "Sì, ma solo per i diritti politici", "Sì, tramite il difensore civico"],
+  "A differenza di Spagna e Germania, in Italia non è ammesso alcun accesso diretto del singolo individuo al sindacato costituzionale.",
+  WK("Corte costituzionale (Italia)"), WCC, "alcuna ipotesi di accesso diretto del singolo individuo al sindacato costituzionale")
+
+D("cost-315", "Corte costituzionale", 5, "Il pubblico ministero può sollevare una questione di legittimità costituzionale?",
+  "No, perché non emette provvedimenti decisori", ["Sì, sempre", "Sì, solo nei processi penali", "Sì, con il consenso del giudice"],
+  "La legittimazione è stata riconosciuta agli arbitri e alla Corte dei conti in sede di controllo, ma negata al pubblico ministero, che non emette provvedimenti decisori.",
+  WK("Corte costituzionale (Italia)"), WCC, "Mentre è stata negata tale legittimazione al pubblico ministero")
+
+D("cost-316", "Corte costituzionale", 4, "Oltre alla legittimazione del giudice, quali sono i requisiti di ammissibilità della questione in via incidentale?",
+  "Rilevanza e non manifesta infondatezza", ["Urgenza e gravità", "Unanimità delle parti", "Parere favorevole del Governo"],
+  "I requisiti di ammissibilità sono la rilevanza e la non manifesta infondatezza, a cui si aggiunge il fallimento di ogni tentativo di interpretazione adeguatrice.",
+  WK("Corte costituzionale (Italia)"), WCC, "sono dati dalla rilevanza e dalla non manifesta infondatezza")
+
+D("cost-317", "Parlamento", 3, "Dove ha sede la Camera dei deputati?",
+  "A Palazzo Montecitorio, a Roma", ["A Palazzo Madama", "A Palazzo Chigi", "Al Quirinale"],
+  "La Camera dei deputati ha sede a Palazzo Montecitorio; il Senato a Palazzo Madama.",
+  FCAM, CAM, "La Camera dei deputati ha sede a Palazzo Montecitorio a Roma")
+
+D("cost-318", "Parlamento", 2, "Dove ha sede il Senato della Repubblica?",
+  "A Palazzo Madama, a Roma", ["A Palazzo Montecitorio", "A Palazzo della Consulta", "A Palazzo Vecchio, a Firenze"],
+  "Il Senato ha sede a Roma, a Palazzo Madama.",
+  FCAM, CAM, "Il Senato ha sede a Roma, a Palazzo Madama")
+
+D("cost-319", "Parlamento", 3, "Perché si parla di «bicameralismo perfetto» in Italia?",
+  "Perché le due Camere esercitano gli stessi poteri", ["Perché hanno lo stesso numero di membri", "Perché sono elette nello stesso giorno", "Perché una controlla l'altra"],
+  "Le due Camere esercitano gli stessi poteri (bicameralismo perfetto), anche se hanno un numero diverso di componenti.",
+  FCAM, CAM, "parla di bicameralismo perfetto")
+
+D("cost-320", "Parlamento", 3, "Quale strumento di controllo consiste in domande scritte al Governo per avere informazioni su fatti specifici?",
+  "L'interrogazione", ["La mozione di sfiducia", "L'interpellanza urgente di bilancio", "La questione pregiudiziale"],
+  "Le interrogazioni sono domande scritte che i parlamentari presentano al Governo per avere informazioni su fatti specifici; il Governo risponde in Aula o in Commissione.",
+  FCAM, CAM, "Le interrogazioni sono domande scritte che i parlamentari")
+
+D("cost-321", "Parlamento", 3, "Come si chiamano le interrogazioni a risposta immediata, svolte di norma il mercoledì alla Camera in diretta TV?",
+  "Question time", ["Interpellanze urgenti di fine seduta", "Mozioni di indirizzo", "Ordini del giorno"],
+  "Normalmente ogni mercoledì in Aula il Governo risponde, in diretta televisiva, alle interrogazioni a risposta immediata, il cosiddetto question time.",
+  FCAM, CAM, "il cosiddetto question time")
+
+D("cost-322", "Parlamento", 3, "Quante firme servono, almeno, per presentare una mozione di sfiducia al Governo?",
+  "Un decimo dei componenti di una Camera", ["Un terzo dei componenti", "La metà più uno dei componenti", "Cinquanta parlamentari in tutto"],
+  "La mozione di sfiducia deve essere firmata da almeno un decimo dei componenti di una delle due Camere; si vota dopo almeno tre giorni.",
+  FCAM, CAM, "firmata da almeno un decimo dei componenti di una")
+
+D("cost-323", "Parlamento", 4, "Dopo quanto tempo dalla presentazione si discute e si vota la mozione di sfiducia?",
+  "Dopo almeno tre giorni", ["Subito, nella stessa seduta", "Dopo almeno trenta giorni", "Entro ventiquattro ore"],
+  "La mozione di sfiducia si discute e si vota dopo almeno tre giorni dalla presentazione e, se approvata, provoca le dimissioni del Governo.",
+  FCAM, CAM, "La mozione si discute e si vota dopo almeno tre giorni dalla sua presentazione")
+
+D("cost-324", "Parlamento", 4, "Chi pone la «questione di fiducia», e con quale scopo?",
+  "Il Governo, per chiedere a una Camera di approvare senza modifiche il testo da esso scelto", ["L'opposizione, per far cadere il Governo", "Il Presidente della Repubblica, per sciogliere le Camere", "Il Presidente della Camera, per chiudere il dibattito"],
+  "La questione di fiducia è posta dal Governo, di solito su un articolo o un emendamento, per chiedere che gli si rinnovi la fiducia approvando il testo senza modifiche.",
+  FCAM, CAM, "La questione di fiducia può invece essere posta dal Governo")
+
+D("cost-325", "Storia costituzionale", 2, "Chi concesse lo Statuto Albertino, e in che anno?",
+  "Il re Carlo Alberto, nel 1848", ["Vittorio Emanuele II, nel 1861", "Napoleone, nel 1805", "Umberto I, nel 1878"],
+  "Nel 1848 il re Carlo Alberto concesse ai sudditi del Regno di Sardegna una Carta costituzionale, lo Statuto Albertino.",
+  FCAM, CAM, "Carlo Alberto concesse ai sudditi del Regno di")
+
+D("cost-326", "Storia costituzionale", 3, "Nello Statuto Albertino, come erano scelti i membri del Senato del Regno?",
+  "Nominati dal Re, su suggerimento del Governo", ["Eletti a suffragio universale", "Eletti dalla Camera dei deputati", "Sorteggiati tra i nobili"],
+  "Solo la Camera era elettiva; i membri del Senato erano nominati dal Re, su suggerimento del Governo, tra poche categorie di elevato prestigio sociale.",
+  FCAM, CAM, "erano invece nominati dal Re")
+
+D("cost-327", "Storia costituzionale", 3, "Da quale organo fu sostituita la Camera dei deputati nel 1939, durante il fascismo?",
+  "Dalla Camera dei fasci e delle corporazioni", ["Dal Gran Consiglio del fascismo", "Dalla Consulta nazionale", "Dal Senato del Regno"],
+  "Nel 1939 la Camera fu sostituita da una Camera dei fasci e delle corporazioni, formata da consiglieri nazionali nominati da Mussolini.",
+  FCAM, CAM, "fasci e delle corporazioni, formata da consiglieri")
+
+D("cost-328", "Storia costituzionale", 3, "Quale deputato socialista fu rapito e ucciso nel 1924 dopo aver denunciato in Parlamento brogli elettorali?",
+  "Giacomo Matteotti", ["Antonio Gramsci", "Piero Gobetti", "Giovanni Amendola"],
+  "Nel 1924 fu rapito e ucciso il deputato socialista riformista Giacomo Matteotti, dopo aver denunciato i brogli delle elezioni del 1924.",
+  FCAM, CAM, "Giacomo Matteotti")
+
+D("cost-329", "Storia costituzionale", 3, "In quale data fu eletto il primo Parlamento della Repubblica?",
+  "Il 18 aprile 1948", ["Il 2 giugno 1946", "Il 1° gennaio 1948", "Il 25 giugno 1946"],
+  "Il 1° gennaio 1948 entrò in vigore la Costituzione; il primo Parlamento della Repubblica fu eletto il 18 aprile 1948.",
+  FCAM, CAM, "Il primo Parlamento della Repubblica fu eletto il 18 aprile 1948")
+
+D("cost-330", "Storia costituzionale", 3, "In che data l'Assemblea Costituente approvò la Costituzione?",
+  "Il 22 dicembre 1947", ["Il 2 giugno 1946", "Il 1° gennaio 1948", "Il 25 aprile 1945"],
+  "La Costituzione è frutto del lavoro dell'Assemblea Costituente, che l'ha approvata il 22 dicembre 1947.",
+  FCAM, CAM, "che l'ha approvata il 22 dicembre")
+
+D("cost-331", "Storia costituzionale", 2, "Quante disposizioni transitorie e finali contiene la Costituzione, oltre ai 139 articoli?",
+  "18", ["12", "20", "9"],
+  "La Costituzione comprende 139 articoli e 18 disposizioni transitorie e finali; i primi 12 articoli sono i Principi fondamentali.",
+  FCAM, CAM, "La Costituzione comprende 139 articoli e 18")
+
+D("cost-332", "Storia costituzionale", 3, "In quale occasione le donne italiane votarono per la prima volta in una consultazione nazionale?",
+  "Nel referendum istituzionale e nell'elezione della Costituente del 2 giugno 1946", ["Nelle elezioni politiche del 1919", "Nelle elezioni del 18 aprile 1948", "Nel referendum sul divorzio del 1974"],
+  "Il referendum del 2 giugno e le elezioni per l'Assemblea Costituente furono la prima consultazione nazionale in cui le donne italiane votarono.",
+  FCAM, CAM, "rappresentarono la prima consultazione nazionale in cui le donne italiane esercitarono il diritto di voto")
+
+D("cost-333", "Storia costituzionale", 4, "Quante donne furono elette all'Assemblea Costituente nel 1946?",
+  "21", ["5", "56", "100"],
+  "Nel 1946 le donne furono chiamate per la prima volta al voto in tutto il Paese e ne furono elette 21 all'Assemblea Costituente.",
+  FCAM, CAM, "ne furono elette 21")
+
+D("cost-334", "Storia costituzionale", 4, "Con la riforma elettorale del 1912, durante il Governo Giolitti, a chi fu esteso il diritto di voto?",
+  "A tutti i cittadini maschi sopra i 30 anni", ["A tutte le donne", "A tutti i cittadini sopra i 18 anni", "Solo a chi pagava 40 lire di tasse"],
+  "Nel 1912, durante il Governo Giolitti, il diritto di voto fu esteso a tutti i cittadini maschi di età superiore ai 30 anni (e a chi ne aveva 21 con alcuni requisiti).",
+  FCAM, CAM, "cittadini maschi di età superiore ai 30 anni")
+
+D("cost-335", "Storia costituzionale", 4, "Quale fu il primo Paese europeo a riconoscere il voto alle donne?",
+  "La Finlandia, nel 1906", ["Il Regno Unito, nel 1918", "La Francia, nel 1944", "L'Italia, nel 1946"],
+  "In Europa le prime a ottenere il diritto di voto furono le donne finlandesi, nel 1906.",
+  FCAM, CAM, "le prime a ottenerlo furono le finlandesi")
+
+D("cost-336", "Parlamento", 4, "In che anno fu approvato il Regolamento della Camera oggi in vigore?",
+  "Nel 1971", ["Nel 1948", "Nel 1993", "Nel 2012"],
+  "Il Regolamento della Camera in vigore è stato approvato nel 1971, con la Camera presieduta da Sandro Pertini; è stato poi modificato più volte.",
+  FCAM, CAM, "nel 1971, quando la Camera era presieduta")
+
+D("cost-337", "Parlamento", 4, "Quanti Vicepresidenti e quanti deputati Questori compongono l'Ufficio di Presidenza della Camera?",
+  "4 Vicepresidenti e 3 Questori", ["2 Vicepresidenti e 2 Questori", "3 Vicepresidenti e 4 Questori", "5 Vicepresidenti e 1 Questore"],
+  "L'Ufficio di Presidenza comprende 4 Vicepresidenti, 3 deputati Questori (spese, cerimoniale, progetto di bilancio) e almeno 8 deputati Segretari.",
+  FCAM, CAM, "L'Ufficio di Presidenza, composto da 4 Vicepresidenti")
+
+D("cost-338", "Parlamento", 4, "Di cosa si occupano i deputati Questori?",
+  "Delle spese della Camera e del cerimoniale, e predispongono il progetto di bilancio", ["Dell'ordine pubblico fuori dal Palazzo", "Della verifica dei poteri dei deputati", "Delle relazioni con l'Unione europea"],
+  "I 3 deputati Questori sovrintendono alle spese della Camera e al cerimoniale e predispongono il progetto di bilancio interno.",
+  FCAM, CAM, "3 deputati Questori (che sovrintendono alle spese")
+
+D("cost-339", "Parlamento", 4, "Quale organo della Camera rende pareri sull'interpretazione del Regolamento e ne propone le modifiche?",
+  "La Giunta per il Regolamento", ["La Giunta delle elezioni", "Il Comitato per la legislazione", "La Conferenza dei presidenti di Gruppo"],
+  "Alla Giunta per il Regolamento spetta rendere pareri sulle questioni di interpretazione del Regolamento ed elaborare proposte di modifica.",
+  FCAM, CAM, "La Giunta per il Regolamento, cui spetta rendere pareri sulle questioni di interpretazione del Regolamento")
+
+D("cost-340", "Parlamento", 3, "Quanti deputati occorrono, di regola, per costituire un Gruppo parlamentare alla Camera?",
+  "Almeno venti", ["Almeno dieci", "Almeno cinquanta", "Almeno tre"],
+  "Per costituire un Gruppo occorrono almeno venti deputati; con meno servono requisiti del Regolamento e l'autorizzazione dell'Ufficio di Presidenza.",
+  FCAM, CAM, "corrono almeno venti deputati")
+
+D("cost-341", "Parlamento", 3, "Chi raccoglie il Gruppo misto della Camera?",
+  "I deputati che non appartengono a nessun altro Gruppo", ["I deputati della maggioranza", "I deputati eletti all'estero", "I deputati più anziani"],
+  "Il Gruppo misto raccoglie i deputati che non appartengono a nessun altro Gruppo; al suo interno possono costituirsi componenti politiche.",
+  FCAM, CAM, "Il Gruppo misto raccoglie i deputati")
+
+D("cost-342", "Parlamento", 3, "Quante sono le Commissioni permanenti della Camera fissate dal Regolamento?",
+  "14", ["10", "20", "7"],
+  "Il Regolamento fissa in 14 il numero delle Commissioni permanenti e ne definisce le materie di competenza.",
+  FCAM, CAM, "Il Regolamento fissa in 14 il numero delle Com")
+
+D("cost-343", "Formazione delle leggi", 4, "In quale sede la Commissione formula gli articoli di un progetto di legge, lasciando all'Assemblea solo il voto degli articoli e quello finale?",
+  "In sede redigente", ["In sede referente", "In sede consultiva", "In sede legislativa"],
+  "In sede redigente la Commissione formula gli articoli, rimettendo all'Assemblea solo la votazione degli articoli e la votazione finale.",
+  FCAM, CAM, "in sede redigente per la formulazione degli articoli di un progetto di legge")
+
+D("cost-344", "Formazione delle leggi", 4, "Da quanti deputati è composto il Comitato per la legislazione della Camera?",
+  "10 deputati, metà di maggioranza e metà di opposizione", ["5 deputati della maggioranza", "20 deputati scelti dal Governo", "Tutti i presidenti di Commissione"],
+  "Il Comitato per la legislazione è composto da 10 deputati, metà di maggioranza e metà di opposizione, e dà pareri sulla qualità dei testi normativi.",
+  FCAM, CAM, "Il Comitato per la legislazione è un organo composto da 10")
+
+D("cost-345", "Parlamento", 4, "Quale quota degli argomenti o del tempo il Regolamento della Camera riserva alle opposizioni, se il calendario non ha un'ampia maggioranza?",
+  "Un quinto", ["Un terzo", "La metà", "Un decimo"],
+  "Se le decisioni sull'organizzazione dei lavori non hanno almeno i tre quarti dei consensi, il Regolamento riserva alle opposizioni un quinto degli argomenti o del tempo disponibile.",
+  FCAM, CAM, "pari ad un quinto degli argomenti o del tempo complessivamente disponibile per i lavori")
+
+D("cost-346", "Storia costituzionale", 4, "Da quanti membri eletti era composta l'Assemblea Costituente?",
+  "556", ["630", "315", "400"],
+  "Dopo il referendum del 1946 il Parlamento operò per un biennio in monocameralismo, con la sola Assemblea Costituente composta da 556 membri eletti.",
+  WK("Parlamento italiano"), WPAR, "Assemblea Costituente composta da 556 membri eletti")
+
+D("cost-347", "Parlamento", 4, "Quanto durava originariamente il mandato del Senato, prima della legge costituzionale n. 2 del 1963?",
+  "Sei anni", ["Cinque anni", "Sette anni", "Quattro anni"],
+  "In origine la Camera durava cinque anni e il Senato sei; con la l. cost. 2/1963, dalla IV legislatura, entrambe le Camere durano cinque anni.",
+  WK("Parlamento italiano"), WPAR, "la prima con un mandato quinquennale e il secondo con uno di sei anni")
+
+D("cost-348", "Parlamento", 4, "Con quale percentuale fu approvata nel referendum del 2020 la riduzione dei parlamentari a 400 deputati e 200 senatori?",
+  "Circa il 70% dei voti", ["Circa il 51% dei voti", "Circa il 90% dei voti", "Non fu sottoposta a referendum"],
+  "La riforma, sottoposta a referendum confermativo nel settembre 2020, fu approvata con il 70% dei voti ed è la legge costituzionale n. 1/2020.",
+  WK("Parlamento italiano"), WPAR, "è stata approvata con il 70% dei voti")
+
+D("cost-349", "Parlamento", 4, "Quale assemblea non elettiva esercitò la funzione legislativa tra il settembre 1945 e il giugno 1946?",
+  "La Consulta nazionale", ["L'Assemblea Costituente", "Il Senato del Regno", "Il Comitato di Liberazione Nazionale"],
+  "Nella transizione costituzionale la funzione legislativa fu esercitata da un'assemblea non elettiva, la Consulta nazionale (settembre 1945-giugno 1946).",
+  WK("Parlamento italiano"), WPAR, "Consulta nazionale (settembre 1945-giugno 1946)")
+
+D("cost-350", "Parlamento", 5, "Al Senato gli astenuti sono considerati votanti?",
+  "Sì, al Senato sì, mentre alla Camera no", ["No, in nessuna delle due Camere", "Sì, in entrambe le Camere", "Solo nelle votazioni a scrutinio segreto"],
+  "Il computo degli astenuti è diverso: al Senato sono considerati votanti, alla Camera no.",
+  WK("Parlamento italiano"), WPAR, "Gli astenuti al Senato vengono considerati votanti, mentre alla Camera no")

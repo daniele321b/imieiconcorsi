@@ -186,6 +186,7 @@ export async function premiaChiHaInvitato(userId: string) {
 async function emailPremio(chi: Profilo, piano: "medium" | "pro" | "free", scadenza: string) {
   try {
     const u = await cognito.send(new AdminGetUserCommand({ UserPoolId: userPoolId(), Username: chi.username }));
+    // Un attributo Cognito dell'utente (email, name…).
     const attr = (n: string) => u.UserAttributes?.find((a) => a.Name === n)?.Value;
     const email = attr("email");
     if (!email) return;

@@ -1,3 +1,5 @@
+# Ingressi del modulo dati (tabelle DynamoDB).
+
 variable "name" {
   description = "Prefisso delle risorse (es. imieiconcorsi-dev)"
   type        = string

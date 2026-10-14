@@ -728,3 +728,718 @@ G("mat-299", "Misure", 2, "Quale grandezza misura la candela nel Sistema interna
   "Fu aggiunta nel 1954 insieme alla temperatura assoluta.", "Sistema internazionale di unità di misura", "intensità luminosa (definendo poi come sua unità di misura la candela)")
 G("mat-300", "Misure", 3, "Quale unità SI è definita attraverso il numero di Avogadro?", "La mole", ["Il kelvin", "La candela", "L'ampere"],
   "La quantità di sostanza è diventata grandezza fondamentale nel 1971.", "Sistema internazionale di unità di misura", "definisce la mole attraverso il numero di Avogadro")
+
+# ── Verso 350: definizioni e teoremi di «Matematica dolce 1» (MatematicaC3, 2021, CC BY-SA 3.0),
+#    con piccole applicazioni: aritmetica, frazioni, calcolo letterale, geometria, insiemi,
+#    relazioni e funzioni, statistica.
+DOL = "MatematicaDolce_vol1.txt"
+FDOL = "MatematicaC3, Matematica dolce 1 (CC BY-SA 3.0)"
+def Q(id, arg, liv, testo, giusta, sbagliate, spieg, frase):
+    D(id, arg, liv, testo, giusta, sbagliate, spieg, FDOL, DOL, frase)
+
+Q("mat-301", "Numeri naturali", 2, "Quanto vale 47 mod 5, cioè il resto della divisione intera di 47 per 5?", "2", ["9", "7", "0"],
+  "47 = 5 · 9 + 2: l'operazione «modulo» restituisce il resto, 2.", "si chiama modulo di m rispetto a n")
+Q("mat-302", "Divisibilità", 3, "Quanti divisori propri ha il numero 30?", "6", ["8", "4", "3"],
+  "I divisori di 30 sono 1, 2, 3, 5, 6, 10, 15, 30; esclusi 1 e 30 restano 6 divisori propri.", "Chiamiamo divisore proprio di un numero un divisore diverso dal numero stesso e dall'unità")
+Q("mat-303", "Divisibilità", 3, "Quale di questi numeri ha un numero dispari di divisori (ed è quindi un quadrato)?", "36", ["12", "18", "20"],
+  "36 ha 9 divisori (1, 2, 3, 4, 6, 9, 12, 18, 36); gli altri ne hanno 6.", "si dice quadrato se ha un numero dispari di divisori")
+Q("mat-304", "Numeri reali", 3, "Il numero 2,333… (2 con periodo 3) è razionale?", "Sì, perché è un decimale periodico", ["No, perché ha infinite cifre", "No, perché non è intero", "Solo se si arrotonda a 2,3"],
+  "Ogni decimale limitato o periodico è razionale: 2,(3) = 7/3.", "Un numero razionale può essere scritto come numero decimale limitato o come numero decimale periodico")
+Q("mat-305", "Frazioni", 3, "Tra due numeri razionali diversi, quanti altri numeri razionali ci sono?", "Sempre almeno uno, e quindi infiniti", ["Nessuno", "Esattamente uno", "Dipende dai numeri"],
+  "L'insieme dei razionali è denso: tra due razionali diversi c'è sempre la loro media, e così via.", "Tra due numeri razionali diversi esiste sempre almeno un altro numero razionale")
+Q("mat-306", "Frazioni", 2, "Le frazioni 6/8 e 9/12 sono equivalenti?", "Sì, perché 6 · 12 = 8 · 9", ["No, hanno denominatori diversi", "No, perché 6 + 12 ≠ 8 + 9", "Solo se semplificate a 2/3"],
+  "Due frazioni sono equivalenti se i prodotti in croce sono uguali: 72 = 72.", "Due frazioni sono equivalenti se il prodotto del numeratore della prima per il denominatore della seconda")
+Q("mat-307", "Frazioni", 2, "Qual è il reciproco di 0?", "Non è definito", ["0", "1", "Infinito"],
+  "Il reciproco di a è il numero a' tale che a · a' = 1: per lo zero non esiste.", "Il reciproco di zero non è definito")
+Q("mat-308", "Percentuali", 3, "Su un oggetto da 84 € si ottiene uno sconto di 10 €. Che percentuale di sconto è, circa?", "11,9%", ["10%", "8,4%", "12,5%"],
+  "La percentuale è il rapporto tra le due grandezze per 100: 10 / 84 · 100 ≈ 11,9%.", "La percentuale è il rapporto tra due grandezze moltiplicato per 100")
+Q("mat-309", "Frazioni", 4, "Qual è la frazione generatrice di 0,1666… (cioè 0,1 con periodo 6)?", "1/6", ["16/99", "1/16", "16/90"],
+  "Numeratore: 16 − 1 = 15; denominatore: un 9 per la cifra del periodo e uno 0 per l'antiperiodo, 90. 15/90 = 1/6.", "per denominatore tanti 9 quante sono le cifre del periodo")
+Q("mat-310", "Frazioni", 3, "Qual è la frazione generatrice di 0,363636… (periodo 36)?", "4/11", ["36/100", "9/25", "36/90"],
+  "36/99, che semplificata per 9 dà 4/11.", "per denominatore tanti 9 quante sono le cifre del periodo")
+Q("mat-311", "Monomi", 3, "Quando un monomio si dice «fratto»?", "Quando ha lettere al denominatore (esponenti negativi)", ["Quando ha coefficiente frazionario", "Quando ha grado zero", "Quando contiene un'addizione"],
+  "Un monomio è intero se non ha lettere al denominatore, altrimenti è fratto; il coefficiente può essere una frazione.", "Diciamo che un monomio è intero se non ha lettere al denominatore")
+Q("mat-312", "Monomi", 2, "Quale monomio è opposto di 3a²b?", "−3a²b", ["3ab²", "1/(3a²b)", "−3ab"],
+  "Due monomi simili con coefficienti opposti sono opposti: la loro somma è 0.", "Si dicono opposti due monomi simili che hanno coefficiente opposto")
+Q("mat-313", "Geometria", 3, "Come si chiamano due rette che non appartengono a uno stesso piano?", "Sghembe", ["Parallele", "Incidenti", "Coincidenti"],
+  "Due rette nello stesso piano sono complanari; altrimenti sono sghembe e non hanno punti in comune.", "altrimenti si dicono sghembe")
+Q("mat-314", "Geometria", 3, "Come si chiama l'insieme di tutte le rette di un piano che passano per uno stesso punto?", "Fascio proprio di rette", ["Fascio improprio", "Stella di piani", "Semipiano"],
+  "Il punto comune a tutte le rette si dice centro del fascio.", "è detto fascio proprio di rette")
+Q("mat-315", "Geometria", 3, "Quando due segmenti si dicono adiacenti?", "Quando sono consecutivi e appartengono alla stessa retta", ["Quando hanno la stessa lunghezza", "Quando non hanno punti in comune", "Quando sono perpendicolari"],
+  "Consecutivi: un solo estremo in comune; adiacenti: consecutivi e sulla stessa retta.", "Due segmenti si dicono adiacenti se sono consecutivi ed appartengono alla stessa retta")
+Q("mat-316", "Geometria", 3, "Quando una figura si dice convessa?", "Se il segmento che unisce due suoi punti qualsiasi è tutto contenuto nella figura", ["Se ha almeno un angolo ottuso", "Se ha tutti i lati uguali", "Se è un cerchio"],
+  "Se invece esistono due punti per cui il segmento esce dalla figura, la figura è concava.", "il segmento che li unisce è contenuto nella figura")
+Q("mat-317", "Geometria", 1, "Come si chiama l'angolo i cui lati sono uno il prolungamento dell'altro?", "Angolo piatto", ["Angolo retto", "Angolo giro", "Angolo nullo"],
+  "L'angolo piatto misura 180°; l'angolo retto ne è la metà.", "Un angolo si dice piatto se i suoi lati sono uno il prolungamento dell'altro")
+Q("mat-318", "Geometria", 2, "Due angoli adiacenti, quanto misurano insieme?", "180°, cioè un angolo piatto", ["90°", "360°", "Dipende dagli angoli"],
+  "Sono consecutivi e i lati non comuni stanno sulla stessa retta: insieme formano un angolo piatto.", "Due angoli si dicono adiacenti se sono consecutivi e se i lati non comuni giacciono sulla stessa retta")
+Q("mat-319", "Geometria", 2, "Che relazione c'è tra due angoli opposti al vertice?", "Sono congruenti", ["Sono supplementari", "Sono complementari", "Sono sempre retti"],
+  "Teorema: angoli opposti al vertice sono congruenti (supplementari dello stesso angolo).", "Angoli opposti al vertice sono congruenti")
+Q("mat-320", "Geometria", 2, "La bisettrice di un angolo di 70° lo divide in due angoli di:", "35°", ["70°", "20°", "110°"],
+  "La bisettrice è la semiretta dal vertice che divide l'angolo in due parti congruenti.", "Si dice bisettrice di un angolo la semiretta che ha origine nel vertice dell'angolo")
+Q("mat-321", "Geometria", 3, "Come si misura la distanza di un punto P da una retta?", "Con la lunghezza del segmento perpendicolare condotto da P alla retta", ["Con il segmento più lungo da P alla retta", "Con un segmento qualsiasi da P alla retta", "Con l'angolo tra P e la retta"],
+  "La distanza punto-retta è la lunghezza del segmento di perpendicolare condotto dal punto alla retta.", "la lunghezza del segmento di perpendicolare condotta dal punto P alla retta")
+Q("mat-322", "Geometria", 4, "Come si chiama una spezzata chiusa non intrecciata?", "Poligonale", ["Poligono regolare", "Spezzata aperta", "Corda"],
+  "Una poligonale con la parte finita di piano che delimita forma un poligono.", "Si chiama poligonale una spezzata chiusa non intrecciata")
+Q("mat-323", "Piano cartesiano", 3, "Cos'è un riferimento cartesiano ortogonale monometrico?", "Due assi perpendicolari con origine comune e uguale unità di misura", ["Due assi paralleli", "Un solo asse con l'origine", "Due assi con unità di misura diverse"],
+  "Ortogonale: assi perpendicolari; monometrico: stessa unità di misura sui due assi.", "Si chiama riferimento cartesiano ortogonale monometrico la coppia di assi cartesiani perpendicolari")
+Q("mat-324", "Insiemi", 2, "Le coppie ordinate (2, 5) e (5, 2) sono uguali?", "No, perché in una coppia ordinata conta l'ordine", ["Sì, hanno gli stessi elementi", "Sì, se 2 e 5 sono primi", "Solo nel piano cartesiano"],
+  "Una coppia ordinata è formata da due elementi presi in un certo ordine: (a, b) ≠ (b, a) se a ≠ b.", "presi in un certo ordine si dice coppia ordinata")
+Q("mat-325", "Relazioni", 4, "Quali proprietà deve avere una relazione per essere una relazione d'ordine?", "Antisimmetrica e transitiva", ["Riflessiva, simmetrica e transitiva", "Solo simmetrica", "Solo riflessiva"],
+  "Esempio: «minore o uguale a» tra numeri. Riflessiva, simmetrica e transitiva caratterizzano invece l'equivalenza.", "si chiama relazione d'ordine se è antisimmetrica e transitiva")
+Q("mat-326", "Funzioni", 2, "Come si chiama la funzione che associa a ogni valore di x lo stesso valore di y (es. y = 4)?", "Funzione costante", ["Funzione identità", "Proporzionalità diretta", "Funzione lineare crescente"],
+  "Il grafico di una funzione costante è una retta parallela all'asse x.", "Si chiama funzione costante la legge che associa ad ogni valore")
+Q("mat-327", "Funzioni", 2, "Data la funzione f(x) = 2x + 1, qual è l'immagine di 3?", "7", ["6", "5", "3"],
+  "L'immagine di x è il valore y = f(x) del codominio: f(3) = 2 · 3 + 1 = 7.", "viene detto immagine di x nella funzione f")
+Q("mat-328", "Statistica", 2, "In statistica, come si chiama ciascun elemento della popolazione oggetto d'indagine?", "Unità statistica", ["Carattere", "Modalità", "Frequenza"],
+  "L'insieme oggetto dell'indagine è la popolazione (o universo); ogni suo elemento è un'unità statistica.", "mentre ciascun elemento della popolazione è detto unità statistica")
+Q("mat-329", "Statistica", 3, "Cosa indica la frequenza di una modalità di un carattere?", "Il numero di unità statistiche in cui quella modalità si presenta", ["Il valore medio dei dati", "Il dato più alto", "La differenza tra massimo e minimo"],
+  "Se 12 studenti su 30 hanno gli occhi castani, la frequenza della modalità «castani» è 12.", "si definisce frequenza il numero delle unità statistiche su cui una sua modalità si presenta")
+Q("mat-330", "Statistica", 2, "Qual è la moda dei dati 3, 5, 5, 7, 8?", "5", ["5,6", "7", "8"],
+  "La moda è il valore che si presenta più spesso.", "La moda è la modalità del carattere indagato che si presenta più frequentemente")
+Q("mat-331", "Statistica", 3, "Dati 4, 6, 8 (media 6), qual è lo scarto dalla media del valore 8?", "+2", ["8", "−2", "0"],
+  "Lo scarto è la differenza tra valore osservato e media: 8 − 6 = 2.", "Si definisce scarto dalla media (aritmetica) la differenza tra i valori osservati e la media")
+Q("mat-332", "Statistica", 3, "Uno studente ha preso 6 in due verifiche e 9 in una. Qual è la media ponderata?", "7", ["7,5", "6,5", "8"],
+  "(6 · 2 + 9 · 1) / 3 = 21 / 3 = 7: ogni dato pesa per la sua frequenza.", "La media aritmetica ponderata è il valore ottenuto moltiplicando ciascun dato con la propria frequenza")
+Q("mat-333", "Geometria", 3, "Cosa afferma il primo criterio di congruenza dei triangoli?", "Sono congruenti se hanno congruenti due lati e l'angolo tra essi compreso", ["Sono congruenti se hanno tre angoli congruenti", "Sono congruenti se hanno la stessa area", "Sono congruenti se hanno un lato congruente"],
+  "Primo criterio: lato-angolo-lato.", "Due triangoli sono congruenti se hanno congruenti due lati e l'angolo tra essi compreso")
+Q("mat-334", "Geometria", 3, "Cosa afferma il secondo criterio di congruenza dei triangoli?", "Sono congruenti se hanno congruenti due angoli e il lato tra essi compreso", ["Sono congruenti se hanno congruenti le tre coppie di lati", "Sono congruenti se hanno lo stesso perimetro", "Sono congruenti se sono entrambi rettangoli"],
+  "Secondo criterio: angolo-lato-angolo.", "Due triangoli sono congruenti se hanno congruenti due angoli e il lato tra essi compreso")
+Q("mat-335", "Geometria", 3, "Cosa afferma il terzo criterio di congruenza dei triangoli?", "Sono congruenti se hanno congruenti le tre coppie di lati", ["Sono congruenti se hanno congruenti tre angoli", "Sono congruenti se hanno due lati congruenti", "Sono congruenti se hanno la stessa altezza"],
+  "Terzo criterio: lato-lato-lato. Tre angoli congruenti non bastano (triangoli simili).", "Due triangoli sono congruenti se hanno congruenti le tre coppie di lati")
+Q("mat-336", "Geometria", 2, "In un triangolo isoscele, cosa si può dire degli angoli alla base?", "Sono congruenti", ["Sono complementari", "Sono retti", "Sono diversi"],
+  "Teorema diretto del triangolo isoscele.", "In un triangolo isoscele gli angoli alla base sono congruenti")
+Q("mat-337", "Geometria", 3, "Se un triangolo ha due angoli congruenti, allora:", "È isoscele", ["È equilatero", "È rettangolo", "È scaleno"],
+  "Teorema inverso del triangolo isoscele: la base è il lato compreso tra gli angoli congruenti.", "Se un triangolo ha due angoli congruenti, allora è isoscele")
+Q("mat-338", "Geometria", 3, "Quanti punti ci sono, su una retta, tra due suoi punti distinti A e B?", "Infiniti (una quantità illimitata)", ["Nessuno", "Uno solo", "Due"],
+  "Tra A e B c'è un punto C; tra A e C un altro, e così via senza fine.", "Tra due punti di una retta esiste sempre una quantità illimitata di altri punti")
+Q("mat-339", "Geometria", 3, "Due angoli sono congruenti. Cosa si può dire dei loro supplementari?", "Sono anch'essi congruenti", ["Sono complementari", "Sono opposti al vertice", "Non si può dire nulla"],
+  "Angoli supplementari di angoli congruenti sono congruenti.", "Angoli supplementari di angoli congruenti sono congruenti")
+Q("mat-340", "Geometria", 1, "Un angolo convesso di 120° si dice:", "Ottuso", ["Acuto", "Retto", "Piatto"],
+  "Ottuso: maggiore di un angolo retto (e convesso); acuto: minore di un angolo retto.", "Un angolo convesso si dice ottuso se è maggiore di un angolo retto")
+Q("mat-341", "Geometria", 2, "Quando due rette si dicono perpendicolari?", "Quando sono incidenti e formano quattro angoli retti", ["Quando non si incontrano mai", "Quando formano due angoli acuti", "Quando coincidono"],
+  "Si scrive r ⊥ s.", "Due rette si dicono perpendicolari se sono incidenti e formano tra loro quattro angoli retti")
+Q("mat-342", "Geometria", 3, "Cos'è l'asse di un segmento?", "La retta perpendicolare al segmento passante per il suo punto medio", ["La retta che contiene il segmento", "La metà del segmento", "Una retta parallela al segmento"],
+  "Due punti sono simmetrici rispetto a una retta se questa è l'asse del segmento che li unisce.", "Si chiama asse di un segmento la retta perpendicolare al segmento e passante per il suo punto medio")
+Q("mat-343", "Geometria", 2, "Come si chiamano due rette che hanno un solo punto in comune?", "Incidenti", ["Parallele", "Coincidenti", "Sghembe"],
+  "Se hanno almeno due punti in comune sono coincidenti; se nessuno e sono complanari, parallele.", "Due rette che hanno un solo punto in comune si dicono incidenti")
+Q("mat-344", "Geometria", 2, "In un poligono, cos'è una diagonale?", "Una corda che unisce due vertici non consecutivi", ["Un lato del poligono", "Il segmento che unisce due vertici consecutivi", "La retta che divide a metà un angolo"],
+  "Corda: segmento tra due punti del contorno non sullo stesso lato; diagonale: corda tra vertici non consecutivi.", "diagonale ogni corda che unisce due vertici non consecutivi")
+Q("mat-345", "Numeri naturali", 2, "Per la proprietà invariantiva della sottrazione, 83 − 47 è uguale a:", "86 − 50", ["80 − 50", "83 − 50", "86 − 44"],
+  "Aggiungendo 3 a entrambi i termini la differenza non cambia: 36 in entrambi i casi.", "Aggiungendo o togliendo ad entrambi i termini di una sottrazione la stessa quantità la differenza non cambia")
+Q("mat-346", "Numeri naturali", 2, "Per la proprietà invariantiva della divisione, 350 : 50 è uguale a:", "35 : 5", ["350 : 5", "300 : 0", "35 : 50"],
+  "Dividendo entrambi i termini per 10 il quoziente non cambia: 7.", "Moltiplicando o dividendo entrambi i termini di una divisione per la stessa quantità, diversa da zero, il quoziente non cambia")
+Q("mat-347", "Geometria", 3, "Quando una spezzata si dice chiusa?", "Quando il primo estremo del primo segmento coincide con l'ultimo estremo dell'ultimo", ["Quando ha almeno quattro lati", "Quando i lati si intersecano", "Quando tutti i lati sono uguali"],
+  "Altrimenti la spezzata è aperta; se due lati non consecutivi si incontrano è intrecciata.", "si dice chiusa se il primo estremo del primo segmento coincide con l'ultimo estremo dell'ultimo segmento")
+Q("mat-348", "Geometria", 2, "Qual è il punto medio di un segmento AB?", "Il punto interno che lo divide in due parti congruenti", ["Uno degli estremi", "Un punto qualsiasi del segmento", "Il punto più vicino ad A"],
+  "AM ≅ MB; si costruisce con riga e compasso tracciando l'asse del segmento.", "il punto M interno al segmento che lo divide in due parti tra loro congruenti")
+Q("mat-349", "Geometria", 1, "Quanti lati ha un ettagono?", "7", ["6", "8", "9"],
+  "Triangolo 3, quadrilatero 4, pentagono 5, esagono 6, ettagono 7 lati.", "ettagono: 7 lati")
+Q("mat-350", "Insiemi", 3, "Come si chiama un insieme che contiene l'insieme A come sottoinsieme e in cui si studia A?", "Insieme universo (o ambiente)", ["Insieme vuoto", "Insieme delle parti", "Insieme complementare"],
+  "Rispetto all'universo U si definisce il complementare di A: gli elementi di U che non stanno in A.", "si dice insieme universo o insieme ambiente")
+
+# ── Banca dati ministeriale «1° Livello – Algebra» (algebra.pdf): domande riportate così come sono,
+#    la risposta esatta è la A) del PDF. Generato con scripts/domande/da_banca_ministeriale.py.
+D("mat-351", "Radicali", 2, "Il numero 80 si ottiene dalla radice quadrata di:",
+  "6400", ["190", "9600", "8000"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 1: la risposta esatta è «6400».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 1", "algebra.txt", "Il numero 80 si ottiene dalla radice quadrata di:")
+D("mat-352", "Equazioni", 2, "Qual è il valore della x nella proporzione 50 : 5 = 110 : x ?",
+  "11", ["13", "10", "9"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 8: la risposta esatta è «11».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 8", "algebra.txt", "Qual è il valore della x nella proporzione 50 : 5 = 110 : x ?")
+D("mat-353", "Radicali", 2, "Indicare la radice quadrata di 256:",
+  "16", ["23", "0,23", "32"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 15: la risposta esatta è «16».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 15", "algebra.txt", "Indicare la radice quadrata di 256:")
+D("mat-354", "Numeri relativi", 2, "L'espressione (-3a)∙(-4a) è uguale a:",
+  "12a²", ["-12a", "-12a²", "12a"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 23: la risposta esatta è «12a²».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 23", "algebra.txt", "L'espressione (-3a)∙(-4a) è uguale a:")
+D("mat-355", "Probabilità", 2, "Lanciando una moneta, qual è la probabilità che si ottenga testa?",
+  "1/2", ["1/3", "2", "1/5"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 30: la risposta esatta è «1/2».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 30", "algebra.txt", "Lanciando una moneta, qual è la probabilità che si ottenga testa?")
+D("mat-356", "Equazioni", 2, "Risolvere l'equazione 3x + 3 = 2x.",
+  "x = -3", ["x = 4", "x = 2", "x = -2"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 37: la risposta esatta è «x = -3».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 37", "algebra.txt", "Risolvere l'equazione 3x + 3 = 2x.")
+D("mat-357", "Prodotti notevoli", 2, "L'espressione (-8a⁴c)² è uguale a:",
+  "64a⁸ c²", ["64bc", "64a¹²", "-64a⁴ c²"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 46: la risposta esatta è «64a⁸ c²».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 46", "algebra.txt", "L'espressione (-8a⁴c)² è uguale a:")
+D("mat-358", "Monomi", 2, "Calcolare il valore dell'espressione letterale: 5a + 4b – 15. Per a = -7; b = 4",
+  "-34", ["-32", "-45", "-17"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 55: la risposta esatta è «-34».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 55", "algebra.txt", "Calcolare il valore dell'espressione letterale: 5a + 4b – 15. Per a = -7; b = 4")
+D("mat-359", "Potenze", 2, "10⁷ · 10⁴ : 10² =",
+  "10⁹", ["10⁵", "10¹⁴", "10¹³"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 62: la risposta esatta è «10⁹».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 62", "algebra.txt", "10⁷ · 10⁴ : 10² =")
+D("mat-360", "Equazioni", 2, "Calcolare x nell'equazione 2(x + 3) = 4(x - 4)",
+  "11", ["-11", "-3,5", "3,5"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 97: la risposta esatta è «11».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 97", "algebra.txt", "Calcolare x nell'equazione 2(x + 3) = 4(x - 4)")
+D("mat-361", "Potenze", 2, "8¹² · 8³: 8⁶ =",
+  "8⁹", ["8¹⁵", "8²¹", "8⁶"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 104: la risposta esatta è «8⁹».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 104", "algebra.txt", "8¹² · 8³: 8⁶ =")
+D("mat-362", "Probabilità", 2, "La parola GONIOMETRO viene tagliata in bigliettini, ognuno dei quali contiene una sola lettera. Qual è la probabilità che estraendo a caso uno dei biglietti si ottenga la lettera M?",
+  "1/10", ["5/10", "3/10", "0"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 140: la risposta esatta è «1/10».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 140", "algebra.txt", "La parola GONIOMETRO viene tagliata in bigliettini, ognuno dei quali contiene una sola lettera. Qual è la probabilità che estraendo a caso uno dei biglietti si ottenga la lettera M?")
+D("mat-363", "Monomi", 2, "eseguire la seguente addizione algebrica: a + 3a - 7a",
+  "-3a", ["-3", "-3a + a", "-11a"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 185: la risposta esatta è «-3a».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 185", "algebra.txt", "eseguire la seguente addizione algebrica: a + 3a - 7a")
+D("mat-364", "Frazioni", 2, "Eseguire la seguente addizione algebrica: (+5/12a²b²) - (-1/2a²b²) + (-2/3a²b²) - (-3/4a²b²)",
+  "+a²b²", ["-a²b²", "0", "-2a²b²"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 199: la risposta esatta è «+a²b²».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 199", "algebra.txt", "Eseguire la seguente addizione algebrica: (+5/12a²b²) - (-1/2a²b²) + (-2/3a²b²) - (-3/4a²b²)")
+D("mat-365", "Potenze", 2, "Eseguire la seguente addizione algebrica: 3x²y - 2x²y² + 6x²y² - 4x²y",
+  "+4x²y² - x²y", ["+2x²y² - 4x²y", "x²y² + x²y", "+4x²y²"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 206: la risposta esatta è «+4x²y² - x²y».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 206", "algebra.txt", "Eseguire la seguente addizione algebrica: 3x²y - 2x²y² + 6x²y² - 4x²y")
+D("mat-366", "Polinomi", 2, "Eseguire la seguente moltiplicazione di polinomi: (x+y²)(x²+y)",
+  "x³+xy+x²y²+y³", ["x³-xy+x²y²+y³", "x³+xy-x²y²+y³", "x³+xy+x²y²-y³"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 213: la risposta esatta è «x³+xy+x²y²+y³».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 213", "algebra.txt", "Eseguire la seguente moltiplicazione di polinomi: (x+y²)(x²+y)")
+D("mat-367", "Polinomi", 2, "Eseguire la seguente moltiplicazione di polinomi: (a+b)(a³-4a²b+ab²-b³)",
+  "a⁴-3a³b-3a²b²-b⁴", ["a⁴+3a³b+3a²b²-b⁴", "-a⁴+3a³b-3a²b²-b⁴", "a⁴-3a³b-3a²b²+b⁴"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 220: la risposta esatta è «a⁴-3a³b-3a²b²-b⁴».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 220", "algebra.txt", "Eseguire la seguente moltiplicazione di polinomi: (a+b)(a³-4a²b+ab²-b³)")
+D("mat-368", "Potenze", 2, "Risolvere la seguente espressione: 3(2x+y)-2(2x+y²)+3x(1-y)+y²",
+  "5x-3xy+3y-y²", ["-5x-3xy+3y+y²", "5x+3xy-3y-y²", "-5x-3xy+3y-y²"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 234: la risposta esatta è «5x-3xy+3y-y²».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 234", "algebra.txt", "Risolvere la seguente espressione: 3(2x+y)-2(2x+y²)+3x(1-y)+y²")
+D("mat-369", "Prodotti notevoli", 2, "Risolvere la seguente espressione applicando i prodotti notevoli: (a-b)²+2ab",
+  "a²+b²", ["a²", "b²", "2ab"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 255: la risposta esatta è «a²+b²».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 255", "algebra.txt", "Risolvere la seguente espressione applicando i prodotti notevoli: (a-b)²+2ab")
+D("mat-370", "Espressioni", 2, "Eseguire la seguente espressione: (x+y)(x-2y)+(x-y)(x+2y)",
+  "2x²-4y²", ["-2x²-4y²", "2x²", "2x²+4y²"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 262: la risposta esatta è «2x²-4y²».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 262", "algebra.txt", "Eseguire la seguente espressione: (x+y)(x-2y)+(x-y)(x+2y)")
+D("mat-371", "Prodotti notevoli", 2, "Semplificare la seguente espressione: (a+3)³-2(a²-1)(a+1)-3(a+3)²",
+  "-a³+4a²+11a+2", ["-a³-4a²+11a-2", "a³+4a²-11a+2", "-2a³+2a²+11a+1"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 283: la risposta esatta è «-a³+4a²+11a+2».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 283", "algebra.txt", "Semplificare la seguente espressione: (a+3)³-2(a²-1)(a+1)-3(a+3)²")
+D("mat-372", "Polinomi", 2, "Scomporre il numero 66 in fattori primi:",
+  "2 ∙ 3 ∙ 11", ["3² ∙ 11", "2² ∙ 3²", "2² ∙ 3 ∙ 5"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 319: la risposta esatta è «2 ∙ 3 ∙ 11».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 319", "algebra.txt", "Scomporre il numero 66 in fattori primi:")
+D("mat-373", "Frazioni", 2, "Indicare il risultato dell'addizione (1/5) + (5/6):",
+  "31/30", ["5/30", "1/6", "7/3"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 326: la risposta esatta è «31/30».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 326", "algebra.txt", "Indicare il risultato dell'addizione (1/5) + (5/6):")
+D("mat-374", "Frazioni", 2, "Indicare il risultato della sottrazione (12/13) - (3/5):",
+  "21/65", ["21/11", "12/3", "9/8"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 333: la risposta esatta è «21/65».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 333", "algebra.txt", "Indicare il risultato della sottrazione (12/13) - (3/5):")
+D("mat-375", "Piano cartesiano", 2, "Indicare la relazione corretta:",
+  "7/9<7/8", ["7/8>1", "7/8=7/9", "7/8<7/9"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 340: la risposta esatta è «7/9<7/8».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 340", "algebra.txt", "Indicare la relazione corretta:")
+D("mat-376", "Equazioni", 2, "Qual è il valore della x nell'equazione di primo grado: 2x(2 + 1) – 2 = x – 7?",
+  "-1", ["1", "5", "-5"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 354: la risposta esatta è «-1».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 354", "algebra.txt", "Qual è il valore della x nell'equazione di primo grado: 2x(2 + 1) – 2 = x – 7?")
+D("mat-377", "Prodotti notevoli", 2, "Applica le regole dei prodotti notevoli per calcolare il valore della seguente espressione: (a³ + 2b²)²",
+  "a⁶ + 4b⁴ + 4b²a³", ["a⁶ + 4b⁴ + b²a³", "a⁶ + 4b⁴", "a⁶ + 4b⁴ + 4b⁴a⁶"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 361: la risposta esatta è «a⁶ + 4b⁴ + 4b²a³».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 361", "algebra.txt", "Applica le regole dei prodotti notevoli per calcolare il valore della seguente espressione: (a³ + 2b²)²")
+D("mat-378", "Piano cartesiano", 2, "Quale dei seguenti punti appartiene alla retta di equazione x + 2y - 2 = 0?",
+  "(0,1)", ["(1,0)", "(5,6)", "(-1,2)"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 368: la risposta esatta è «(0,1)».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 368", "algebra.txt", "Quale dei seguenti punti appartiene alla retta di equazione x + 2y - 2 = 0?")
+D("mat-379", "Potenze", 2, "5³ + 2³ – 3³ =",
+  "106", ["24", "121", "212"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 391: la risposta esatta è «106».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 391", "algebra.txt", "5³ + 2³ – 3³ =")
+D("mat-380", "Potenze", 2, "5¹² : 5⁷ · 5³ =",
+  "5⁸", ["5⁵", "5²", "5¹⁶"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 461: la risposta esatta è «5⁸».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 461", "algebra.txt", "5¹² : 5⁷ · 5³ =")
+D("mat-381", "Probabilità", 2, "Qual è la probabilità che esca il numero 5 lanciando un dado?",
+  "1/6", ["5", "2/6", "1/3"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 469: la risposta esatta è «1/6».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 469", "algebra.txt", "Qual è la probabilità che esca il numero 5 lanciando un dado?")
+D("mat-382", "Potenze", 2, "Quanto vale l'espressione letterale -12a² se a = -2?",
+  "-48", ["24", "48", "-24"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 483: la risposta esatta è «-48».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 483", "algebra.txt", "Quanto vale l'espressione letterale -12a² se a = -2?")
+D("mat-383", "Piano cartesiano", 2, "Quale delle seguenti rette è parallela all'asse delle y?",
+  "x=12", ["x=2y", "y=1", "y=x-1"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 490: la risposta esatta è «x=12».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 490", "algebra.txt", "Quale delle seguenti rette è parallela all'asse delle y?")
+D("mat-384", "Piano cartesiano", 2, "Quale delle seguenti rette non passa per l'origine?",
+  "y=2x+1", ["y=2x", "3x-y=0", "x=y"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 497: la risposta esatta è «y=2x+1».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 497", "algebra.txt", "Quale delle seguenti rette non passa per l'origine?")
+D("mat-385", "Monomi", 2, "Quale tra i seguenti monomi ha il grado maggiore?",
+  "4ab³c", ["2a²bc", "6abc²", "4a²b²"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 519: la risposta esatta è «4ab³c».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 519", "algebra.txt", "Quale tra i seguenti monomi ha il grado maggiore?")
+D("mat-386", "Probabilità", 2, "In uno scaffale della libreria vi sono 2 libri di narrativa, 15 polizieschi e 3 testi scientifici. Prendendo un libro a caso qual è la probabilità che si tratti di un libro di narrativa?",
+  "1/10", ["1/20", "20/2", "15/20"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 541: la risposta esatta è «1/10».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 541", "algebra.txt", "In uno scaffale della libreria vi sono 2 libri di narrativa, 15 polizieschi e 3 testi scientifici. Prendendo un libro a caso qual è la probabilità che si tratti di un libro di narrativa?")
+D("mat-387", "Potenze", 2, "A quale potenza corrisponde il numero 8?",
+  "2³", ["5³", "4²", "3²"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 548: la risposta esatta è «2³».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 548", "algebra.txt", "A quale potenza corrisponde il numero 8?")
+D("mat-388", "Equazioni", 2, "L'equazione x-9=2x-6 che soluzione ammette?",
+  "x=-3", ["x=2", "x=-2", "x=3"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 555: la risposta esatta è «x=-3».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 555", "algebra.txt", "L'equazione x-9=2x-6 che soluzione ammette?")
+D("mat-389", "Disequazioni", 2, "Risolvere la seguente disequazione 3x+6(1-x)<(x-1)",
+  "x>7/4", ["x>-(1/7)", "x<3/4", "x<4/7"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 562: la risposta esatta è «x>7/4».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 562", "algebra.txt", "Risolvere la seguente disequazione 3x+6(1-x)<(x-1)")
+D("mat-390", "Frazioni", 2, "Disporre in ordine decrescente i valori seguenti: a=-1/2 b=-1,23 c=-0,55 d=-4/9.",
+  "d > a > c > b", ["d > a > b > c", "a > c > d > b", "c > b > a > d"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 577: la risposta esatta è «d > a > c > b».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 577", "algebra.txt", "Disporre in ordine decrescente i valori seguenti: a=-1/2 b=-1,23 c=-0,55 d=-4/9.")
+D("mat-391", "Monomi", 2, "Eseguire la seguente moltiplicazione di monomi: (-4/5xyz)(-15/8xy)",
+  "+ 3/2x²y²z", ["- 3/2x²y²z", "+ x²y²z", "+ 2/3x²y²z"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 598: la risposta esatta è «+ 3/2x²y²z».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 598", "algebra.txt", "Eseguire la seguente moltiplicazione di monomi: (-4/5xyz)(-15/8xy)")
+D("mat-392", "Polinomi", 2, "Eseguire la seguente sottrazione tra polinomi: (2ab+3c) - (2ab-2c)",
+  "5c", ["c", "ab+5c", "-5c"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 613: la risposta esatta è «5c».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 613", "algebra.txt", "Eseguire la seguente sottrazione tra polinomi: (2ab+3c) - (2ab-2c)")
+D("mat-393", "Insiemi", 2, "L'intersezione di due insiemi A e B si indica con:",
+  "A ∩ B", ["A U B", "A - B", "B – A"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 641: la risposta esatta è «A ∩ B».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 641", "algebra.txt", "L'intersezione di due insiemi A e B si indica con:")
+D("mat-394", "Insiemi", 2, "Dato l'insieme dei numeri naturali quale delle seguenti affermazioni è falsa?",
+  "L'insieme dei numeri naturali è un insieme finito", ["L'insieme dei numeri naturali contiene lo 0", "L'insieme dei numeri naturali è un insieme infinito", "L'insieme dei numeri naturali è ordinabile"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 648: la risposta esatta è «L'insieme dei numeri naturali è un insieme finito».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 648", "algebra.txt", "Dato l'insieme dei numeri naturali quale delle seguenti affermazioni è falsa?")
+D("mat-395", "Piano cartesiano", 2, "Quale delle seguenti scritture non è corretta?",
+  "5 < 15 < 12", ["41 > 30", "10 > 7", "0 < 2"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 655: la risposta esatta è «5 < 15 < 12».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 655", "algebra.txt", "Quale delle seguenti scritture non è corretta?")
+D("mat-396", "Insiemi", 2, "L'insieme A è costituito da 8 elementi e l'insieme B da 6 elementi: se A ∩ B = {a, b, c}, quanti sono gli elementi di A U B?",
+  "11", ["10", "9", "14"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 662: la risposta esatta è «11».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 662", "algebra.txt", "L'insieme A è costituito da 8 elementi e l'insieme B da 6 elementi: se A ∩ B = {a, b, c}, quanti sono gli elementi di A U B?")
+D("mat-397", "Monomi", 2, "Il m.c.m. fra due o più monomi è:",
+  "divisibile per tutti i monomi assegnati", ["contenuto in tutti i monomi assegnati", "multiplo solo del monomio di grado minimo", "multiplo del prodotto dei monomi"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 670: la risposta esatta è «divisibile per tutti i monomi assegnati».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 670", "algebra.txt", "Il m.c.m. fra due o più monomi è:")
+D("mat-398", "Monomi", 2, "Qual è il prodotto tra questi monomi 5a³b² ∙ (–2)a⁴b³x² =",
+  "– 10a⁷b⁵x²", ["10a⁷b⁵x²", "8a⁷b⁵x²", "10 a⁶b⁵x²"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 677: la risposta esatta è «– 10a⁷b⁵x²».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 677", "algebra.txt", "Qual è il prodotto tra questi monomi 5a³b² ∙ (–2)a⁴b³x² =")
+D("mat-399", "Disequazioni", 2, "Determinare i valori di k che verificano la disequazione 12 + 3k ≥ k.",
+  "k ≥ -6", ["k ≥ 6", "k ≥ -3", "k ≤ -6"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 723: la risposta esatta è «k ≥ -6».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 723", "algebra.txt", "Determinare i valori di k che verificano la disequazione 12 + 3k ≥ k.")
+D("mat-400", "Piano cartesiano", 2, "Nel piano cartesiano, le rette di equazioni:Y=2*X+A Y=2*X-3-B con A e B numeri reali:",
+  "sono parallele fra loro", ["sono entrambe parallele all'asse delle ascisse (X)", "sono entrambe parallele all'asse delle ordinate (Y)", "sono perpendicolari"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 731: la risposta esatta è «sono parallele fra loro».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 731", "algebra.txt", "Nel piano cartesiano, le rette di equazioni:Y=2*X+A Y=2*X-3-B con A e B numeri reali:")
+D("mat-401", "Espressioni", 2, "Calcolare il risultato dell'espressione 125-(45:5)",
+  "116", ["129", "611", "161"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 738: la risposta esatta è «116».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 738", "algebra.txt", "Calcolare il risultato dell'espressione 125-(45:5)")
+D("mat-402", "Piano cartesiano", 2, "Quali sono le coordinate del punto P' simmetrico di P (5 ; 2), rispetto all'asse x?",
+  "P' (5; – 2)", ["P' (– 5; – 2)", "P' (– 5; 2)", "P' (5; 2)"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 746: la risposta esatta è «P' (5; – 2)».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 746", "algebra.txt", "Quali sono le coordinate del punto P' simmetrico di P (5 ; 2), rispetto all'asse x?")
+D("mat-403", "Equazioni", 2, "Quale delle seguenti equazioni rappresenta la proporzionalità inversa?",
+  "y = 4/x", ["x = 5", "y = 3x", "x + y = k"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 760: la risposta esatta è «y = 4/x».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 760", "algebra.txt", "Quale delle seguenti equazioni rappresenta la proporzionalità inversa?")
+D("mat-404", "Insiemi", 2, "Quale numero non appartiene all'insieme A = {x|x è un numero dispari minore di 12}?",
+  "13", ["7", "1", "3"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 767: la risposta esatta è «13».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 767", "algebra.txt", "Quale numero non appartiene all'insieme A = {x|x è un numero dispari minore di 12}?")
+D("mat-405", "Polinomi", 2, "Quale polinomio si scompone in (a – 2b) (a² + 2ab + 4b²)?",
+  "a³ - 8b³", ["a² – 4b²", "a³ – 2b³", "a³ + 8b³"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 781: la risposta esatta è «a³ - 8b³».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 781", "algebra.txt", "Quale polinomio si scompone in (a – 2b) (a² + 2ab + 4b²)?")
+D("mat-406", "Polinomi", 2, "Qual è il grado del polinomio 2a² + a³x⁴ + x⁵ + 9 rispetto alla lettera a?",
+  "3", ["5", "6", "9"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 788: la risposta esatta è «3».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 788", "algebra.txt", "Qual è il grado del polinomio 2a² + a³x⁴ + x⁵ + 9 rispetto alla lettera a?")
+D("mat-407", "MCD e mcm", 2, "Il minimo comune multiplo dei numeri 5, 2 e 10 vale:",
+  "10", ["1", "100", "20"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 826: la risposta esatta è «10».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 826", "algebra.txt", "Il minimo comune multiplo dei numeri 5, 2 e 10 vale:")
+D("mat-408", "Insiemi", 2, "Dire quale delle seguenti affermazioni equivale a dire che \"due insiemi A e B sono disgiunti\".",
+  "L'intersezione tra A e B è vuota.", ["Uno dei due tra A e B è vuoto", "L'unione di A e B dà come risultato A", "A è sottoinsieme di B o viceversa."],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 840: la risposta esatta è «L'intersezione tra A e B è vuota.».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 840", "algebra.txt", "Dire quale delle seguenti affermazioni equivale a dire che \"due insiemi A e B sono disgiunti\".")
+D("mat-409", "Insiemi", 2, "Dire se la seguente affermazione è vera: \"se A è vuoto, allora A∩B è vuota\".",
+  "Sì", ["No", "Non sempre", "Mai"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 848: la risposta esatta è «Sì».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 848", "algebra.txt", "Dire se la seguente affermazione è vera: \"se A è vuoto, allora A∩B è vuota\".")
+D("mat-410", "Equazioni", 2, "Determinare la differenza X\\A, dove X={7, 14, 21, 28, 35, 42, 49, 57} e A={42, 49, 56, 63, 70}.",
+  "{7, 14, 21, 28, 35, 57}", ["{7, 14, 21, 28, 35, 42, 49, -1}", "{7, 14, 21, 28, 35, 42, 49, 1}", "{7, 14, 21, 28, 35, 42, 49}"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 857: la risposta esatta è «{7, 14, 21, 28, 35, 57}».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 857", "algebra.txt", "Determinare la differenza X\\A, dove X={7, 14, 21, 28, 35, 42, 49, 57} e A={42, 49, 56, 63, 70}.")
+D("mat-411", "Espressioni", 2, "Dati i tre numeri relativi -3, 1, 2, determinare il minimo tra i tre.",
+  "-3", ["1", "2", "Non si può decidere."],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 864: la risposta esatta è «-3».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 864", "algebra.txt", "Dati i tre numeri relativi -3, 1, 2, determinare il minimo tra i tre.")
+D("mat-412", "MCD e mcm", 2, "Calcolare il MCD(60, 96, 144).",
+  "12", ["6", "4", "16"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 871: la risposta esatta è «12».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 871", "algebra.txt", "Calcolare il MCD(60, 96, 144).")
+D("mat-413", "Frazioni", 2, "Determinare la frazione che si ottiene riducendo ai minimi termini la frazione 81/900.",
+  "9/100.", ["1/100.", "81/100.", "900"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 878: la risposta esatta è «9/100.».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 878", "algebra.txt", "Determinare la frazione che si ottiene riducendo ai minimi termini la frazione 81/900.")
+D("mat-414", "Monomi", 2, "Determinare il grado del seguente monomio: x² y³ z⁵.",
+  "10", ["5", "Non si può stabilire.", "2"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 892: la risposta esatta è «10».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 892", "algebra.txt", "Determinare il grado del seguente monomio: x² y³ z⁵.")
+D("mat-415", "Monomi", 2, "Completare la seguente affermazione: \"la somma di due monomi è un monomio...\"",
+  "…solo quando i due addendi sono monomi simili.", ["...in ogni caso.", "...solo quando la x è elevata alla stessa potenza.", "...il cui grado è sempre la somma dei gradi degli addendi."],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 899: la risposta esatta è «…solo quando i due addendi sono monomi simili.».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 899", "algebra.txt", "Completare la seguente affermazione: \"la somma di due monomi è un monomio...\"")
+D("mat-416", "Polinomi", 2, "Decidere se l'espressione x⁵ + 7 x⁴ è un polinomio.",
+  "Sì", ["No.", "Dipende dal valore di x.", "Non si può stabilire con certezza."],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 906: la risposta esatta è «Sì».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 906", "algebra.txt", "Decidere se l'espressione x⁵ + 7 x⁴ è un polinomio.")
+D("mat-417", "Prodotti notevoli", 2, "Sviluppare il seguente quadrato: (-2 x – y)².",
+  "4 x² + 4 x y + y²", ["4 x² - 4 x y + y²", "4 x² + 2 x y + y²", "4 x² - 2 x y + y²"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 920: la risposta esatta è «4 x² + 4 x y + y²».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 920", "algebra.txt", "Sviluppare il seguente quadrato: (-2 x – y)².")
+D("mat-418", "Monomi", 2, "Calcolare il seguente prodotto: (2 a + b)(2 a – b).",
+  "4 a² – b²", ["4 a² + b²", "4 a² – 2 b²", "4 a² – 4 a b + b²"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 927: la risposta esatta è «4 a² – b²».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 927", "algebra.txt", "Calcolare il seguente prodotto: (2 a + b)(2 a – b).")
+D("mat-419", "Polinomi", 2, "Determinare il quoziente e il resto della seguente divisione tra polinomi: (a⁷ – 3 a⁶ – 3 a⁵ + 9 a⁴ + 2 a² – 7 a + 3):(a – 3).",
+  "Quoziente = a⁶ – 3 a⁴ + 2 a – 1, Resto = 0.", ["Quoziente = a⁶ – 2 a⁴ + 3 a – 1, Resto = 0.", "Quoziente = a⁶ – 3 a⁴ + 2 a – 1, Resto = 42.", "Quoziente = a⁶ – 2 a⁴ + 3 a – 1, Resto = 42."],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 934: la risposta esatta è «Quoziente = a⁶ – 3 a⁴ + 2 a – 1, Resto = 0.».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 934", "algebra.txt", "Determinare il quoziente e il resto della seguente divisione tra polinomi: (a⁷ – 3 a⁶ – 3 a⁵ + 9 a⁴ + 2 a² – 7 a + 3):(a – 3).")
+D("mat-420", "Polinomi", 2, "Scomporre in fattori il seguente polinomio: t² – 10 t + 24.",
+  "(t – 6) (t – 4)", ["(t – 3) (t – 8)", "(t + 6) (t + 4)", "(t + 12) (t + 2)"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 942: la risposta esatta è «(t – 6) (t – 4)».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 942", "algebra.txt", "Scomporre in fattori il seguente polinomio: t² – 10 t + 24.")
+D("mat-421", "Frazioni", 2, "Eseguire la seguente addizione tra frazioni algebriche: a² + b² + [(a⁴ + b⁴)/(a² – b²)].",
+  "(2 a⁴)/(a² – b²)", ["0", "(2 b⁴)/(a² – b²)", "(2 a² b²)/(a² – b²)"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 949: la risposta esatta è «(2 a⁴)/(a² – b²)».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 949", "algebra.txt", "Eseguire la seguente addizione tra frazioni algebriche: a² + b² + [(a⁴ + b⁴)/(a² – b²)].")
+D("mat-422", "Radicali", 2, "Dire quale delle seguenti espressioni equivale a √24 * √6.",
+  "12", ["√30", "144", "√72"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 956: la risposta esatta è «12».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 956", "algebra.txt", "Dire quale delle seguenti espressioni equivale a √24 * √6.")
+D("mat-423", "Equazioni", 2, "Risolvere l'equazione 5 x + 6 + 2 x = 3 x + 5 + 4 x.",
+  "L'equazione non ammette soluzioni.", ["L'equazione è un'identità.", "x = 11/14", "x = -11/14"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 963: la risposta esatta è «L'equazione non ammette soluzioni.».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 963", "algebra.txt", "Risolvere l'equazione 5 x + 6 + 2 x = 3 x + 5 + 4 x.")
+D("mat-424", "Espressioni", 2, "Dato il sistema: 2 x + 4 y = 34; x + 2 y = 0, dire quale delle seguenti affermazioni è vera.",
+  "È impossibile.", ["È indeterminato.", "È determinato.", "Non si può decidere."],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 971: la risposta esatta è «È impossibile.».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 971", "algebra.txt", "Dato il sistema: 2 x + 4 y = 34; x + 2 y = 0, dire quale delle seguenti affermazioni è vera.")
+D("mat-425", "Disequazioni", 2, "Data la disequazione x > 2, dire quale delle seguenti disequazioni è equivalente alla disequazione data.",
+  "-x < -2", ["x < -2", "-x < 2", "-x > -2"],
+  "Banca dati ministeriale (1° livello, Algebra), domanda n. 978: la risposta esatta è «-x < -2».",
+  "Banca dati ministeriale, 1° livello – Algebra, n. 978", "algebra.txt", "Data la disequazione x > 2, dire quale delle seguenti disequazioni è equivalente alla disequazione data.")
+
+# ── Banca dati ministeriale «1° Livello – Aritmetica» (matematica.pdf): domande riportate così come sono,
+#    la risposta esatta è la A) del PDF. Generato con scripts/domande/da_banca_ministeriale.py.
+D("mat-426", "Espressioni", 2, "Calcolare il valore della seguente espressione 25 −14 : 2 − 8 + 2 − 40 : 5",
+  "4", ["20", "12", "6"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 1: la risposta esatta è «4».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 1", "matematica.txt", "Calcolare il valore della seguente espressione 25 −14 : 2 − 8 + 2 − 40 : 5")
+D("mat-427", "Misure", 2, "300 ml a quanti litri corrispondono?",
+  "0,3", ["0,003", "3", "0,03"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 11: la risposta esatta è «0,3».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 11", "matematica.txt", "300 ml a quanti litri corrispondono?")
+D("mat-428", "Frazioni", 2, "A quale frazione decimale corrisponde il numero decimale 0,032?",
+  "32/1000", ["32/100", "32/10", "3/10"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 16: la risposta esatta è «32/1000».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 16", "matematica.txt", "A quale frazione decimale corrisponde il numero decimale 0,032?")
+D("mat-429", "Percentuali", 2, "A quanto corrisponde il 20% di 980 ?",
+  "196", ["900", "160", "320"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 22: la risposta esatta è «196».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 22", "matematica.txt", "A quanto corrisponde il 20% di 980 ?")
+D("mat-430", "Frazioni", 2, "La somma 2/5 + 1/4 vale:",
+  "13/20", ["21/54", "3/9", "5/2"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 34: la risposta esatta è «13/20».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 34", "matematica.txt", "La somma 2/5 + 1/4 vale:")
+D("mat-431", "Frazioni", 2, "La somma 3/5 + 1/2 è uguale a:",
+  "11/10", ["4/7", "31/52", "51/32"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 59: la risposta esatta è «11/10».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 59", "matematica.txt", "La somma 3/5 + 1/2 è uguale a:")
+D("mat-432", "Frazioni", 2, "Cosa si ottiene semplificando la frazione 45/65?",
+  "9/13", ["15/13", "9/65", "2/3"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 71: la risposta esatta è «9/13».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 71", "matematica.txt", "Cosa si ottiene semplificando la frazione 45/65?")
+D("mat-433", "Percentuali", 2, "Il 20% di 300 è uguale a:",
+  "60", ["80", "30", "20"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 89: la risposta esatta è «60».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 89", "matematica.txt", "Il 20% di 300 è uguale a:")
+D("mat-434", "Percentuali", 2, "Il 5% di 8500 è uguale a:",
+  "425", ["4250", "42,5", "85"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 101: la risposta esatta è «425».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 101", "matematica.txt", "Il 5% di 8500 è uguale a:")
+D("mat-435", "Percentuali", 2, "Il prezzo di listino di un oggetto è 800 euro. Se ci applicano lo sconto del 5% quanto lo paghiamo ?",
+  "760€", ["40€", "700€", "795€"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 113: la risposta esatta è «760€».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 113", "matematica.txt", "Il prezzo di listino di un oggetto è 800 euro. Se ci applicano lo sconto del 5% quanto lo paghiamo ?")
+D("mat-436", "Piano cartesiano", 2, "Indicare la soluzione corretta per la seguente espressione: [–2 (–4 + 9 – 7) + 10] : 7",
+  "2", ["1", "7", "-2"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 126: la risposta esatta è «2».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 126", "matematica.txt", "Indicare la soluzione corretta per la seguente espressione: [–2 (–4 + 9 – 7) + 10] : 7")
+D("mat-437", "Espressioni", 2, "Indicare il numero più grande:",
+  "2,5", ["1,9", "0,2", "2,4"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 132: la risposta esatta è «2,5».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 132", "matematica.txt", "Indicare il numero più grande:")
+D("mat-438", "Statistica", 2, "Qual è la media tra i numeri 8, 79, 83 e 52 ?",
+  "55,5", ["72,25", "45,5", "58,75"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 150: la risposta esatta è «55,5».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 150", "matematica.txt", "Qual è la media tra i numeri 8, 79, 83 e 52 ?")
+D("mat-439", "Potenze", 2, "6² + 5 – 8 =",
+  "33", ["12", "24", "36"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 162: la risposta esatta è «33».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 162", "matematica.txt", "6² + 5 – 8 =")
+D("mat-440", "Monomi", 2, "Qual è il numero che moltiplicato per 5 va sottratto a 3885 per ottenere 300?",
+  "717", ["153", "1183", "890"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 186: la risposta esatta è «717».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 186", "matematica.txt", "Qual è il numero che moltiplicato per 5 va sottratto a 3885 per ottenere 300?")
+D("mat-441", "Frazioni", 2, "(3/6) : (10/5) =",
+  "1/4", ["-3/2", "5/2", "2/2"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 192: la risposta esatta è «1/4».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 192", "matematica.txt", "(3/6) : (10/5) =")
+D("mat-442", "Frazioni", 2, "(3/8) + (6/7) =",
+  "69/56", ["-27/56", "9/28", "7/16"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 198: la risposta esatta è «69/56».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 198", "matematica.txt", "(3/8) + (6/7) =")
+D("mat-443", "Frazioni", 2, "(6/8) + (7/2) =",
+  "17/4", ["3/14", "-11/4", "21/8"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 204: la risposta esatta è «17/4».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 204", "matematica.txt", "(6/8) + (7/2) =")
+D("mat-444", "Frazioni", 2, "(8/6) + (8/10) =",
+  "32/15", ["5/3", "16/15", "8/15"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 210: la risposta esatta è «32/15».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 210", "matematica.txt", "(8/6) + (8/10) =")
+D("mat-445", "Frazioni", 2, "(7/8) + (1/10) =",
+  "39/40", ["7/80", "35/4", "31/40"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 216: la risposta esatta è «39/40».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 216", "matematica.txt", "(7/8) + (1/10) =")
+D("mat-446", "Espressioni", 2, "Quale dei seguenti numeri è il più grande?",
+  "12/11", ["15/14", "13/12", "9/10"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 240: la risposta esatta è «12/11».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 240", "matematica.txt", "Quale dei seguenti numeri è il più grande?")
+D("mat-447", "Percentuali", 2, "Il 32% di 5200 è uguale a:",
+  "1664", ["2600", "166,4", "450"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 258: la risposta esatta è «1664».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 258", "matematica.txt", "Il 32% di 5200 è uguale a:")
+D("mat-448", "Percentuali", 2, "Il 210% di 580 è uguale a:",
+  "1218", ["1341", "6120", "1485"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 264: la risposta esatta è «1218».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 264", "matematica.txt", "Il 210% di 580 è uguale a:")
+D("mat-449", "Numeri primi", 2, "Quale tra i seguenti è un numero primo?",
+  "41", ["49", "45", "44"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 270: la risposta esatta è «41».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 270", "matematica.txt", "Quale tra i seguenti è un numero primo?")
+D("mat-450", "Frazioni", 2, "Quale tra le seguenti è una frazione apparente?",
+  "76/4", ["57/7", "62/3", "81/7"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 306: la risposta esatta è «76/4».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 306", "matematica.txt", "Quale tra le seguenti è una frazione apparente?")
+D("mat-451", "Frazioni", 2, "Tra le frazioni seguenti quale è minore di 1?",
+  "3/4", ["8/3", "3/2", "7/5"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 342: la risposta esatta è «3/4».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 342", "matematica.txt", "Tra le frazioni seguenti quale è minore di 1?")
+D("mat-452", "Espressioni", 2, "La somma dei numeri 1,42 e 0,091 da come risultato:",
+  "1,511", ["1,4921", "1,611", "1,5011"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 354: la risposta esatta è «1,511».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 354", "matematica.txt", "La somma dei numeri 1,42 e 0,091 da come risultato:")
+D("mat-453", "Frazioni", 2, "(4/3)+(2/7) è pari a:",
+  "34/21", ["36/21", "6/21", "6/10"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 360: la risposta esatta è «34/21».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 360", "matematica.txt", "(4/3)+(2/7) è pari a:")
+D("mat-454", "Insiemi", 2, "Gianfranco, Daniele e Gianluca comprano insieme 12 Kg di funghi, spendendo rispettivamente 20 euro, 24 euro e 36 euro. Se la distribuzione dei funghi avviene in proporzione alla cifra versata, qual è la quantità che spetta a Daniele?",
+  "3,6 Kg", ["1,8 Kg", "3 Kg", "5,4 Kg"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 366: la risposta esatta è «3,6 Kg».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 366", "matematica.txt", "Gianfranco, Daniele e Gianluca comprano insieme 12 Kg di funghi, spendendo rispettivamente 20 euro, 24 euro e 36 euro. Se la distribuzione dei funghi avviene in proporzione alla cifra versata, qual è la quantità che spetta a Daniele?")
+D("mat-455", "Numeri relativi", 2, "Calcolare il risultato della seguente addizione: (+31) + (+104)",
+  "+135", ["+134", "+73", "+136"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 372: la risposta esatta è «+135».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 372", "matematica.txt", "Calcolare il risultato della seguente addizione: (+31) + (+104)")
+D("mat-456", "Numeri relativi", 2, "Qual è la soluzione della seguente sottrazione: (-97) - (-56)",
+  "-41", ["-40", "+153", "+41"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 384: la risposta esatta è «-41».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 384", "matematica.txt", "Qual è la soluzione della seguente sottrazione: (-97) - (-56)")
+D("mat-457", "Frazioni", 2, "Trovare il risultato della seguente addizione frazionaria: (+1/5) + (+1/2)",
+  "7/10", ["1/5", "2/5", "2/7"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 390: la risposta esatta è «7/10».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 390", "matematica.txt", "Trovare il risultato della seguente addizione frazionaria: (+1/5) + (+1/2)")
+D("mat-458", "Numeri relativi", 2, "Trovare la soluzione della seguente addizione con più addendi: (-6) + (+3) + (-7)",
+  "-10", ["10", "-2", "2"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 402: la risposta esatta è «-10».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 402", "matematica.txt", "Trovare la soluzione della seguente addizione con più addendi: (-6) + (+3) + (-7)")
+D("mat-459", "Frazioni", 2, "Eseguire la seguente addizione frazionaria con più addendi: (+1/5)+(-3/10)+(5/4)+(-1/2)",
+  "+13/20", ["+13/10", "+2/21", "+13/21"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 426: la risposta esatta è «+13/20».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 426", "matematica.txt", "Eseguire la seguente addizione frazionaria con più addendi: (+1/5)+(-3/10)+(5/4)+(-1/2)")
+D("mat-460", "Espressioni", 2, "18 + 14 + 15 - 20 - 10 =",
+  "17", ["11", "12", "13"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 606: la risposta esatta è «17».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 606", "matematica.txt", "18 + 14 + 15 - 20 - 10 =")
+D("mat-461", "Statistica", 2, "Arrotondando al centesimo il numero 19,54604 si ottiene:",
+  "19,55", ["19,5", "19,54", "19,6"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 613: la risposta esatta è «19,55».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 613", "matematica.txt", "Arrotondando al centesimo il numero 19,54604 si ottiene:")
+D("mat-462", "Espressioni", 2, "Qual è il risultato corretto?",
+  "68 : 1 = 68", ["68 : 0 = 68", "1 : 68 = 1", "2 : 68 = 0"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 625: la risposta esatta è «68 : 1 = 68».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 625", "matematica.txt", "Qual è il risultato corretto?")
+D("mat-463", "Monomi", 2, "Per ottenere 2458 va aggiunta a 1541 la coppia di numeri…",
+  "585; 332", ["773; 70", "457; 231", "64; 582"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 639: la risposta esatta è «585; 332».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 639", "matematica.txt", "Per ottenere 2458 va aggiunta a 1541 la coppia di numeri…")
+D("mat-464", "Frazioni", 2, "9/3 – 3/7 =",
+  "18/7", ["24/7", "9/7", "7/1"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 645: la risposta esatta è «18/7».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 645", "matematica.txt", "9/3 – 3/7 =")
+D("mat-465", "Frazioni", 2, "9/3 + 7/9 =",
+  "34/9", ["20/9", "27/7", "7/3"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 651: la risposta esatta è «34/9».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 651", "matematica.txt", "9/3 + 7/9 =")
+D("mat-466", "Frazioni", 2, "9/2 – 8/4 =",
+  "5/2", ["9/4", "9/1", "13/2"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 657: la risposta esatta è «5/2».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 657", "matematica.txt", "9/2 – 8/4 =")
+D("mat-467", "Frazioni", 2, "4/2 – 8/5 =",
+  "2/5", ["16/5", "5/4", "18/5"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 675: la risposta esatta è «2/5».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 675", "matematica.txt", "4/2 – 8/5 =")
+D("mat-468", "Frazioni", 2, "7/10 + 10/7 =",
+  "149/70", ["49/100", "1/1", "- 51/70"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 693: la risposta esatta è «149/70».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 693", "matematica.txt", "7/10 + 10/7 =")
+D("mat-469", "Frazioni", 2, "9/7 – 2/4 =",
+  "11/14", ["9/14", "25/14", "18/7"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 699: la risposta esatta è «11/14».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 699", "matematica.txt", "9/7 – 2/4 =")
+D("mat-470", "Frazioni", 2, "6/4 + 10/6 =",
+  "19/6", ["5/2", "9/10", "- 1/6"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 711: la risposta esatta è «19/6».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 711", "matematica.txt", "6/4 + 10/6 =")
+D("mat-471", "Espressioni", 2, "65000 è il quadruplo di…",
+  "16250", ["15200", "15550", "16500"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 717: la risposta esatta è «16250».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 717", "matematica.txt", "65000 è il quadruplo di…")
+D("mat-472", "Espressioni", 2, "Quale delle seguenti terne di numeri contiene solo elementi divisibili per 7?",
+  "56; 105;133", ["77; 114; 128", "86; 92; 118", "56; 92;128"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 723: la risposta esatta è «56; 105;133».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 723", "matematica.txt", "Quale delle seguenti terne di numeri contiene solo elementi divisibili per 7?")
+D("mat-473", "Espressioni", 2, "81 è il triplo di…",
+  "27", ["23", "37", "33"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 729: la risposta esatta è «27».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 729", "matematica.txt", "81 è il triplo di…")
+D("mat-474", "Espressioni", 2, "141 e 245 sono rispettivamente il triplo e il quintuplo di…",
+  "47; 49", ["37; 47", "39; 41", "33; 43"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 735: la risposta esatta è «47; 49».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 735", "matematica.txt", "141 e 245 sono rispettivamente il triplo e il quintuplo di…")
+D("mat-475", "Frazioni", 2, "10/8 – 8/9 =",
+  "13/36", ["10/9", "45/32", "77/36"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 742: la risposta esatta è «13/36».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 742", "matematica.txt", "10/8 – 8/9 =")
+D("mat-476", "Frazioni", 2, "7/2 : 5/1 =",
+  "7/10", ["17/2", "35/2", "- 3/2"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 749: la risposta esatta è «7/10».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 749", "matematica.txt", "7/2 : 5/1 =")
+D("mat-477", "Piano cartesiano", 2, "Il giorno 07/11/17 Luigi riceve un assegno postdatato a 120 giorni. Da che giorno potrà Luigi incassare l'assegno?",
+  "7/3/18", ["9/3/18", "6/3/18", "5/3/18"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 761: la risposta esatta è «7/3/18».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 761", "matematica.txt", "Il giorno 07/11/17 Luigi riceve un assegno postdatato a 120 giorni. Da che giorno potrà Luigi incassare l'assegno?")
+D("mat-478", "Espressioni", 2, "Semplifica la seguente espressione 122*6:8 +2",
+  "93,5", ["115", "106,5", "87,5"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 768: la risposta esatta è «93,5».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 768", "matematica.txt", "Semplifica la seguente espressione 122*6:8 +2")
+D("mat-479", "Monomi", 2, "Per ottenere 456 quali due numeri vanno sommati a 111",
+  "167;178", ["115;115", "171;256", "13;440"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 774: la risposta esatta è «167;178».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 774", "matematica.txt", "Per ottenere 456 quali due numeri vanno sommati a 111")
+D("mat-480", "Geometria", 2, "625 è il quadrato di quale numero?",
+  "25", ["28", "15", "26"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 781: la risposta esatta è «25».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 781", "matematica.txt", "625 è il quadrato di quale numero?")
+D("mat-481", "Monomi", 2, "La zia Giulia, stanca della vecchia lavatrice, ne compra una nuova da 738,00 euro. Versa subito 138 euro e il resto lo pagherà in 4 comode rate trimestrali. A quando corrisponde la rata trimestrale?",
+  "150 euro", ["100 euro", "125 euro", "175 euro"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 787: la risposta esatta è «150 euro».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 787", "matematica.txt", "La zia Giulia, stanca della vecchia lavatrice, ne compra una nuova da 738,00 euro. Versa subito 138 euro e il resto lo pagherà in 4 comode rate trimestrali. A quando corrisponde la rata trimestrale?")
+D("mat-482", "Proporzioni", 2, "Risolvere la seguente proporzione: 9:84=21:x",
+  "196", ["36", "2,25", "50"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 793: la risposta esatta è «196».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 793", "matematica.txt", "Risolvere la seguente proporzione: 9:84=21:x")
+D("mat-483", "Potenze", 2, "Applica le proprietà delle potenze per risolvere la seguente espressione 5¹¹ * 5³ : 25²",
+  "5¹⁰", ["5¹²", "5⁶", "25⁴"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 803: la risposta esatta è «5¹⁰».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 803", "matematica.txt", "Applica le proprietà delle potenze per risolvere la seguente espressione 5¹¹ * 5³ : 25²")
+D("mat-484", "Numeri primi", 2, "Quale delle seguenti terne di numeri non contiene soltanto numeri primi",
+  "1;6;7", ["3;5;7", "13;11;19", "7;29"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 809: la risposta esatta è «1;6;7».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 809", "matematica.txt", "Quale delle seguenti terne di numeri non contiene soltanto numeri primi")
+D("mat-485", "Piano cartesiano", 2, "Una classe è formata da 28 alunni. I 4/7 vanno a scuola in bicicletta. Quanti alunni raggiungono la scuola con altri mezzi?",
+  "12", ["15", "16", "8"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 821: la risposta esatta è «12».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 821", "matematica.txt", "Una classe è formata da 28 alunni. I 4/7 vanno a scuola in bicicletta. Quanti alunni raggiungono la scuola con altri mezzi?")
+D("mat-486", "MCD e mcm", 2, "Quale delle seguenti coppie è formata da tutti multipli di 16",
+  "112; 176", ["89; 65", "35; 156", "18; 90"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 833: la risposta esatta è «112; 176».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 833", "matematica.txt", "Quale delle seguenti coppie è formata da tutti multipli di 16")
+D("mat-487", "Statistica", 2, "Cosa si ottiene arrotondando il seguente numero al millesimo 366,266858",
+  "366,267", ["366,266", "366,27", "366,265"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 851: la risposta esatta è «366,267».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 851", "matematica.txt", "Cosa si ottiene arrotondando il seguente numero al millesimo 366,266858")
+D("mat-488", "MCD e mcm", 2, "Calcola il minimo comune multiplo dei seguenti numeri: 9,4,7",
+  "252", ["63", "36", "28"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 863: la risposta esatta è «252».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 863", "matematica.txt", "Calcola il minimo comune multiplo dei seguenti numeri: 9,4,7")
+D("mat-489", "Espressioni", 2, "Indicare tra le seguenti quale disuguaglianza è quella vera:",
+  "5 > – 20", ["– 5 < – 20", "15 < – 15", "5 < – 20"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 875: la risposta esatta è «5 > – 20».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 875", "matematica.txt", "Indicare tra le seguenti quale disuguaglianza è quella vera:")
+D("mat-490", "Polinomi", 2, "Dato il polinomio 4a² + 2b²+ 2a² – 5b² + a² qual è la riduzione in forma normale?",
+  "7a² – 3b²", ["7a² + 3b²", "7a² – 2b²", "5a² – b²"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 881: la risposta esatta è «7a² – 3b²».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 881", "matematica.txt", "Dato il polinomio 4a² + 2b²+ 2a² – 5b² + a² qual è la riduzione in forma normale?")
+D("mat-491", "Insiemi", 2, "Dato l'insieme A = {x|x è un numero pari minore 8} indicare quale dei seguenti numeri non gli appartiene:",
+  "12", ["6", "4", "2"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 887: la risposta esatta è «12».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 887", "matematica.txt", "Dato l'insieme A = {x|x è un numero pari minore 8} indicare quale dei seguenti numeri non gli appartiene:")
+D("mat-492", "Espressioni", 2, "Indicare qual è la relazione errata:",
+  "5 < 13 < 12", ["44 > 32", "11 > 8", "0 < 6"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 899: la risposta esatta è «5 < 13 < 12».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 899", "matematica.txt", "Indicare qual è la relazione errata:")
+D("mat-493", "Insiemi", 2, "L'insieme A è costituito da 8 elementi e l'insieme B da 5 elementi: sapendo che la loro intersezione è data da A ∩ B = {a, b, c}, allora gli elementi di A U B sono:",
+  "10", ["3", "5", "13"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 905: la risposta esatta è «10».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 905", "matematica.txt", "L'insieme A è costituito da 8 elementi e l'insieme B da 5 elementi: sapendo che la loro intersezione è data da A ∩ B = {a, b, c}, allora gli elementi di A U B sono:")
+D("mat-494", "Insiemi", 2, "Siano dati due insiemi A e B. Sapendo che A è costituito da 8 elementi e B da 2 elementi, indicare quanti sono gli elementi dell'insieme A xB",
+  "16", ["6", "10", "4"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 911: la risposta esatta è «16».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 911", "matematica.txt", "Siano dati due insiemi A e B. Sapendo che A è costituito da 8 elementi e B da 2 elementi, indicare quanti sono gli elementi dell'insieme A xB")
+D("mat-495", "Monomi", 2, "Moltiplicando due monomi qualunque si ottiene sempre:",
+  "un monomio di grado uguale alla somma dei gradi dei monomi che si moltiplicano", ["un monomio simile ai monomi che si moltiplicano", "un monomio di grado uguale al prodotto dei gradi dei monomi che si moltiplicano", "un polinomio"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 919: la risposta esatta è «un monomio di grado uguale alla somma dei gradi dei monomi che si moltiplicano».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 919", "matematica.txt", "Moltiplicando due monomi qualunque si ottiene sempre:")
+D("mat-496", "Monomi", 2, "Indicare quali tra questi non è un monomio:",
+  "15b + 317", ["3b", "8a²b", "– 4axy³"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 925: la risposta esatta è «15b + 317».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 925", "matematica.txt", "Indicare quali tra questi non è un monomio:")
+D("mat-497", "Equazioni", 2, "Per quale valore di x è verificata la seguente equazione 4(x - 1) = 2x - 6?",
+  "x = -1", ["x = 13", "x = 1", "x = -8"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 940: la risposta esatta è «x = -1».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 940", "matematica.txt", "Per quale valore di x è verificata la seguente equazione 4(x - 1) = 2x - 6?")
+D("mat-498", "Equazioni", 2, "La soluzione dell'equazione 3x + 3 = 2x è:",
+  "x = -3", ["x = 8", "x = 3", "x = -4"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 946: la risposta esatta è «x = -3».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 946", "matematica.txt", "La soluzione dell'equazione 3x + 3 = 2x è:")
+D("mat-499", "Espressioni", 2, "Calcola il valore dell'espressione: 12 + 9 : 3 * 2",
+  "18", ["14", "21/6", "30"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 953: la risposta esatta è «18».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 953", "matematica.txt", "Calcola il valore dell'espressione: 12 + 9 : 3 * 2")
+D("mat-500", "Equazioni", 2, "Calcola il valore di x che verifica l'equazione 29x+31=727",
+  "x=24", ["x=-24", "x=667", "x=-667"],
+  "Banca dati ministeriale (1° livello, Aritmetica), domanda n. 959: la risposta esatta è «x=24».",
+  "Banca dati ministeriale, 1° livello – Aritmetica, n. 959", "matematica.txt", "Calcola il valore di x che verifica l'equazione 29x+31=727")

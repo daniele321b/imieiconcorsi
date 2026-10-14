@@ -1498,5 +1498,255 @@
     "id": "eng-300",
     "file": "Wikipedia-EN_Personal-pronouns-in-English.txt",
     "frase": "For someone like myself"
+  },
+  {
+    "id": "eng-301",
+    "file": "Galileo_College-ESL-Writers.txt",
+    "frase": "a sentence that is missing a subject or a verb is called a fragment"
+  },
+  {
+    "id": "eng-302",
+    "file": "Galileo_College-ESL-Writers.txt",
+    "frase": "Fragment: Told her about the broken vase."
+  },
+  {
+    "id": "eng-303",
+    "file": "Galileo_College-ESL-Writers.txt",
+    "frase": "such as since, if, because, when, although, even though, after, without, or unless"
+  },
+  {
+    "id": "eng-304",
+    "file": "Galileo_College-ESL-Writers.txt",
+    "frase": "If the fragment is added at the beginning of a sentence, add a comma."
+  },
+  {
+    "id": "eng-305",
+    "file": "Galileo_College-ESL-Writers.txt",
+    "frase": "When two complete sentences are combined into one without any punctuation, the result is a fused sentence."
+  },
+  {
+    "id": "eng-306",
+    "file": "Galileo_College-ESL-Writers.txt",
+    "frase": "When two complete sentences are joined by a comma, the result is a comma splice."
+  },
+  {
+    "id": "eng-307",
+    "file": "Galileo_College-ESL-Writers.txt",
+    "frase": "Using a semicolon between the two complete sentences will also correct the error."
+  },
+  {
+    "id": "eng-308",
+    "file": "Galileo_College-ESL-Writers.txt",
+    "frase": "After the semicolon, add the transition word and follow it with a comma."
+  },
+  {
+    "id": "eng-309",
+    "file": "Galileo_College-ESL-Writers.txt",
+    "frase": "for, and, nor, but, or, yet, and so"
+  },
+  {
+    "id": "eng-310",
+    "file": "Galileo_College-ESL-Writers.txt",
+    "frase": "Compound subjects combined with and take a plural verb form."
+  },
+  {
+    "id": "eng-311",
+    "file": "Galileo_College-ESL-Writers.txt",
+    "frase": "The verb must agree with the subject that is nearest to the verb."
+  },
+  {
+    "id": "eng-312",
+    "file": "Galileo_College-ESL-Writers.txt",
+    "frase": "The indefinite pronoun everybody takes a singular verb form"
+  },
+  {
+    "id": "eng-313",
+    "file": "Galileo_College-ESL-Writers.txt",
+    "frase": "Because collective nouns are counted as one, they are singular and require a singular verb."
+  },
+  {
+    "id": "eng-314",
+    "file": "Galileo_College-ESL-Writers.txt",
+    "frase": "The subject of a sentence will never be in a prepositional phrase or dependent clause."
+  },
+  {
+    "id": "eng-315",
+    "file": "Galileo_College-ESL-Writers.txt",
+    "frase": "In sentences that begin with here or there, the subject follows the verb."
+  },
+  {
+    "id": "eng-316",
+    "file": "Galileo_College-ESL-Writers.txt",
+    "frase": "To show possession with a plural noun that ends in s, just add an apostrophe"
+  },
+  {
+    "id": "eng-317",
+    "file": "Galileo_College-ESL-Writers.txt",
+    "frase": "Plural noun that does not end in s: The people's votes"
+  },
+  {
+    "id": "eng-318",
+    "file": "Galileo_College-ESL-Writers.txt",
+    "frase": "Notice that singular nouns that end in s still take the apostrophe s"
+  },
+  {
+    "id": "eng-319",
+    "file": "Galileo_College-ESL-Writers.txt",
+    "frase": "Contractions are commonly used in informal writing but not in formal writing."
+  },
+  {
+    "id": "eng-320",
+    "file": "Galileo_College-ESL-Writers.txt",
+    "frase": "Always capitalize nationalities, races, languages, and religions"
+  },
+  {
+    "id": "eng-321",
+    "file": "Galileo_College-ESL-Writers.txt",
+    "frase": "\"e-mail\" and \"online\" are never capitalized"
+  },
+  {
+    "id": "eng-322",
+    "file": "Galileo_College-ESL-Writers.txt",
+    "frase": "Capitalize Proper Nouns"
+  },
+  {
+    "id": "eng-323",
+    "file": "Galileo_College-ESL-Writers.txt",
+    "frase": "Except (conjunction). Means only or but."
+  },
+  {
+    "id": "eng-324",
+    "file": "Galileo_College-ESL-Writers.txt",
+    "frase": "Effect (noun). Means an outcome or result."
+  },
+  {
+    "id": "eng-325",
+    "file": "Galileo_College-ESL-Writers.txt",
+    "frase": "Affect (verb). Means to create a change."
+  },
+  {
+    "id": "eng-326",
+    "file": "Galileo_College-ESL-Writers.txt",
+    "frase": "Lose (verb). Means to forget, to give up, or to fail to earn something."
+  },
+  {
+    "id": "eng-327",
+    "file": "Galileo_College-ESL-Writers.txt",
+    "frase": "Quiet (adjective). Means not loud."
+  },
+  {
+    "id": "eng-328",
+    "file": "Galileo_College-ESL-Writers.txt",
+    "frase": "Than (conjunction). Used to connect two or more items when comparing"
+  },
+  {
+    "id": "eng-329",
+    "file": "Galileo_College-ESL-Writers.txt",
+    "frase": "They're (contraction). Joins the words they and are."
+  },
+  {
+    "id": "eng-330",
+    "file": "Galileo_College-ESL-Writers.txt",
+    "frase": "Whose (pronoun). A form of who that shows possession."
+  },
+  {
+    "id": "eng-331",
+    "file": "Galileo_College-ESL-Writers.txt",
+    "frase": "Used to. Indicates something done in the past but not in the present"
+  },
+  {
+    "id": "eng-332",
+    "file": "Galileo_College-ESL-Writers.txt",
+    "frase": "Sit (verb). Means to lower oneself down"
+  },
+  {
+    "id": "eng-333",
+    "file": "Galileo_College-ESL-Writers.txt",
+    "frase": "I should have helped her with that heavy box"
+  },
+  {
+    "id": "eng-334",
+    "file": "Galileo_College-ESL-Writers.txt",
+    "frase": "An (article). Used before a word that begins with a vowel."
+  },
+  {
+    "id": "eng-335",
+    "file": "Galileo_College-ESL-Writers.txt",
+    "frase": "You're (contraction). Joins the words you and are."
+  },
+  {
+    "id": "eng-336",
+    "file": "Wikipedia-EN_English-grammar.txt",
+    "frase": "Today, only personal pronouns (such as I, me, my) still change their form to show grammatical case."
+  },
+  {
+    "id": "eng-337",
+    "file": "Wikipedia-EN_English-grammar.txt",
+    "frase": "Nouns, verbs, adjectives, and adverbs are open classes"
+  },
+  {
+    "id": "eng-338",
+    "file": "Wikipedia-EN_English-grammar.txt",
+    "frase": "Linguists generally accept nine English word classes"
+  },
+  {
+    "id": "eng-339",
+    "file": "Wikipedia-EN_English-grammar.txt",
+    "frase": "-hood (sisterhood)"
+  },
+  {
+    "id": "eng-340",
+    "file": "Wikipedia-EN_English-grammar.txt",
+    "frase": "Determiner + Pre-modifiers + NOUN + Postmodifiers/Complement"
+  },
+  {
+    "id": "eng-341",
+    "file": "Wikipedia-EN_English-grammar.txt",
+    "frase": "Adjectival modifiers usually come before noun adjuncts."
+  },
+  {
+    "id": "eng-342",
+    "file": "Wikipedia-EN_English-grammar.txt",
+    "frase": "This is a form of synesis, and is more common in British than American English."
+  },
+  {
+    "id": "eng-343",
+    "file": "Wikipedia-EN_English-grammar.txt",
+    "frase": "fell out of use during the Middle English period"
+  },
+  {
+    "id": "eng-344",
+    "file": "Wikipedia-EN_English-grammar.txt",
+    "frase": "feminine pronouns are sometimes used when referring to ships"
+  },
+  {
+    "id": "eng-345",
+    "file": "Wikipedia-EN_English-grammar.txt",
+    "frase": "phrases formed by the determiner the with an adjective, as in the homeless"
+  },
+  {
+    "id": "eng-346",
+    "file": "Wikipedia-EN_English-grammar.txt",
+    "frase": "where two consecutive phrases refer to the same thing"
+  },
+  {
+    "id": "eng-347",
+    "file": "Wikipedia-EN_English-grammar.txt",
+    "frase": "Some nouns can function both as countable and as uncountable such as \"wine\""
+  },
+  {
+    "id": "eng-348",
+    "file": "Wikipedia-EN_English-grammar.txt",
+    "frase": "concrete and abstract nouns (book, laptop vs embarrassment, prejudice)"
+  },
+  {
+    "id": "eng-349",
+    "file": "Wikipedia-EN_English-grammar.txt",
+    "frase": "proper and common nouns (Cyrus, China vs frog, milk)"
+  },
+  {
+    "id": "eng-350",
+    "file": "Wikipedia-EN_English-grammar.txt",
+    "frase": "the man you saw yesterday's sister"
   }
 ]

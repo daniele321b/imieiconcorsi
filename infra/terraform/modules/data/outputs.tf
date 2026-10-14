@@ -1,4 +1,7 @@
+# Uscite del modulo dati, lette dagli ambienti.
+
 output "table_arns" {
+  description = "ARN delle tabelle (per i permessi IAM)"
   value = {
     users     = aws_dynamodb_table.users.arn
     concorsi  = aws_dynamodb_table.concorsi.arn
@@ -17,11 +20,12 @@ output "table_arns" {
 }
 
 output "questions_table_name" {
-  value = aws_dynamodb_table.questions.name
+  description = "Tabella delle domande (per l'import dei contenuti)"
+  value       = aws_dynamodb_table.questions.name
 }
 
-# Variabili d'ambiente delle Lambda, lette da packages/core/src/db.ts
 output "table_env" {
+  description = "Variabili d'ambiente delle Lambda, lette da packages/core/src/db.ts"
   value = {
     USERS_TABLE       = aws_dynamodb_table.users.name
     CONCORSI_TABLE    = aws_dynamodb_table.concorsi.name
@@ -40,6 +44,7 @@ output "table_env" {
 }
 
 output "table_names" {
+  description = "Nomi delle tabelle"
   value = {
     users     = aws_dynamodb_table.users.name
     concorsi  = aws_dynamodb_table.concorsi.name

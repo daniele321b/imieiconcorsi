@@ -1545,3 +1545,256 @@ D("cont-300", "Regole europee", 3, "Cosa prevede il fiscal compact se il deficit
   "Sanzioni semi-automatiche", ["L'espulsione dall'Unione", "La sospensione delle elezioni", "Nessuna conseguenza"],
   "Il trattato conferma l'obbligo di mantenere il deficit sotto il 3% del PIL, come nel Patto di stabilità e crescita; in caso contrario scattano sanzioni semi-automatiche.",
   W("Patto di bilancio europeo"), FC, "in caso contrario scatteranno sanzioni semi-automatiche")
+
+# ── Verso 350: TUEL (ordinamento, entrate, controllo di gestione, investimenti, tesoreria,
+#    revisione, enti deficitari, dissesto) e L. 196/2009 (monitoraggio, rapporti con l'UE).
+
+U("cont-301", "Finanza locale", 2, "Da quali fonti è stabilito l'ordinamento finanziario e contabile degli enti locali?",
+  "Dalla legge dello Stato: principi del TUEL e del D.Lgs. 118/2011", ["Dagli statuti comunali", "Dai regolamenti regionali", "Da un decreto del prefetto"],
+  "Art. 150 TUEL: l'ordinamento finanziario e contabile degli enti locali è riservato alla legge dello Stato ed è stabilito dalle disposizioni di principio del testo unico e del D.Lgs. 118/2011.",
+  "art. 150", "L'ordinamento finanziario e contabile degli enti locali è riservato alla legge dello Stato")
+
+U("cont-302", "Finanza locale", 3, "Con quale atto ciascun ente locale applica i principi contabili con modalità adatte alla propria comunità?",
+  "Con il regolamento di contabilità", ["Con lo statuto", "Con il piano esecutivo di gestione", "Con la delibera di assestamento"],
+  "Art. 152 TUEL: con il regolamento di contabilità ciascun ente applica i principi contabili con modalità organizzative corrispondenti alle caratteristiche della comunità.",
+  "art. 152", "Con il regolamento di contabilità ciascun ente locale applica i principi contabili stabiliti dal presente testo unico")
+
+U("cont-303", "Finanza locale", 4, "Che valore hanno le norme della parte seconda del TUEL per i regolamenti di contabilità degli enti locali?",
+  "Principi generali con valore di limite inderogabile, salvo alcune eccezioni", ["Semplici indicazioni facoltative", "Norme derogabili da ogni regolamento", "Valore solo per i comuni sopra 15.000 abitanti"],
+  "Art. 152, c. 4 TUEL: i regolamenti si approvano nel rispetto della parte seconda, da considerarsi come principi generali con valore di limite inderogabile, salvo le norme elencate.",
+  "art. 152", "da considerarsi come principi generali con valore di limite inderogabile")
+
+U("cont-304", "Bilancio enti locali", 3, "Le quote del risultato di amministrazione accantonate per il fondo crediti di dubbia esigibilità possono essere usate per altro?",
+  "No, non possono essere destinate ad altro utilizzo", ["Sì, per le spese correnti", "Sì, previa delibera di giunta", "Sì, per estinguere mutui"],
+  "Art. 167, c. 2 TUEL: la quota del risultato accantonata per il FCDE è determinata secondo l'allegato 4/2 al D.Lgs. 118/2011 e non può essere destinata ad altro utilizzo.",
+  "art. 167", "e non può essere destinata ad altro utilizzo")
+
+U("cont-305", "Bilancio enti locali", 4, "Sugli stanziamenti del programma «Altri fondi» per passività potenziali si possono assumere impegni e pagamenti?",
+  "No: sono accantonamenti su cui non è possibile impegnare e pagare", ["Sì, liberamente", "Sì, ma solo in conto residui", "Sì, con il parere del revisore"],
+  "Art. 167, c. 3 TUEL: gli enti possono stanziare ulteriori accantonamenti per passività potenziali, sui quali non è possibile impegnare e pagare; a fine esercizio le economie confluiscono nella quota accantonata del risultato.",
+  "art. 167", "sui quali non è possibile impegnare e pagare")
+
+U("cont-306", "Programmazione enti locali", 2, "Entro quale data la Giunta presenta al Consiglio il Documento unico di programmazione (DUP)?",
+  "Entro il 31 luglio di ciascun anno", ["Entro il 10 aprile", "Entro il 31 dicembre", "Entro il 30 giugno"],
+  "Art. 170, c. 1 TUEL: entro il 31 luglio la Giunta presenta il DUP al Consiglio; entro il 15 novembre, con lo schema di bilancio, presenta la nota di aggiornamento.",
+  "art. 170", "Entro il 31 luglio di ciascun anno la Giunta presenta al Consiglio il Documento unico di programmazione")
+
+U("cont-307", "Programmazione enti locali", 3, "Qual è l'orizzonte temporale della Sezione operativa del DUP?",
+  "Pari a quello del bilancio di previsione", ["Pari al mandato amministrativo", "Un solo anno", "Dieci anni"],
+  "Art. 170, c. 3 TUEL: la Sezione strategica copre il mandato amministrativo, la Sezione operativa un periodo pari a quello del bilancio di previsione.",
+  "art. 170", "la seconda pari a quello del bilancio di previsione")
+
+U("cont-308", "Bilancio enti locali", 4, "Quale deliberazione i comuni allegano al bilancio di previsione riguardo ad aree e fabbricati?",
+  "La verifica della quantità e qualità di aree e fabbricati da destinare a residenza e attività produttive", ["Il piano regolatore generale", "L'inventario dei beni demaniali", "Il catasto dei terreni comunali"],
+  "Art. 172, c. 1, lett. b) TUEL: si allega la deliberazione annuale con cui i comuni verificano quantità e qualità di aree e fabbricati da destinare alla residenza e alle attività produttive e terziarie.",
+  "art. 172", "i comuni verificano la quantità e qualità di aree e fabbricati da destinarsi alla residenza")
+
+U("cont-309", "Fondi di riserva", 3, "Fino a quando possono essere deliberati i prelevamenti dal fondo di riserva negli enti locali?",
+  "Sino al 31 dicembre di ciascun anno", ["Sino al 30 novembre", "Sino al 31 luglio", "Sino all'approvazione del rendiconto"],
+  "Art. 176 TUEL: i prelevamenti dal fondo di riserva, dal fondo di riserva di cassa e dai fondi spese potenziali sono di competenza dell'organo esecutivo e si deliberano sino al 31 dicembre.",
+  "art. 176", "possono essere deliberati sino al 31 dicembre di ciascun anno")
+
+U("cont-310", "Gestione dell'entrata", 2, "In cosa consiste la riscossione, nel procedimento dell'entrata degli enti locali?",
+  "Nel materiale introito delle somme dovute all'ente da parte del tesoriere o di altri incaricati", ["Nella previsione dell'entrata in bilancio", "Nel trasferimento delle somme nelle casse dell'ente", "Nell'individuazione del debitore"],
+  "Art. 180, c. 1 TUEL: la riscossione consiste nel materiale introito da parte del tesoriere o di altri incaricati delle somme dovute all'ente.",
+  "art. 180", "consiste nel materiale introito da parte del tesoriere")
+
+U("cont-311", "Gestione dell'entrata", 3, "Con quale atto è disposta la riscossione delle entrate dell'ente locale?",
+  "Con l'ordinativo di incasso", ["Con il mandato di pagamento", "Con la determina di impegno", "Con la delibera di accertamento"],
+  "Art. 180, c. 2 TUEL: la riscossione è disposta a mezzo di ordinativo di incasso, fatto pervenire al tesoriere nei modi previsti dalla convenzione.",
+  "art. 180", "La riscossione è disposta a mezzo di ordinativo di incasso")
+
+U("cont-312", "Gestione dell'entrata", 2, "Qual è l'ultima fase dell'entrata degli enti locali?",
+  "Il versamento", ["L'accertamento", "La riscossione", "La liquidazione"],
+  "Art. 181 TUEL: il versamento è l'ultima fase dell'entrata e consiste nel trasferimento delle somme riscosse nelle casse dell'ente.",
+  "art. 181", "Il versamento costituisce l'ultima fase dell'entrata")
+
+U("cont-313", "Gestione dell'entrata", 4, "Con quale cadenza massima gli incaricati interni versano le somme riscosse alla tesoreria dell'ente?",
+  "Non superiore ai quindici giorni lavorativi", ["Ogni giorno", "Ogni trenta giorni di calendario", "A fine trimestre"],
+  "Art. 181, c. 3 TUEL: gli incaricati interni versano con la cadenza fissata dal regolamento di contabilità, non superiore ai quindici giorni lavorativi.",
+  "art. 181", "non superiori ai quindici giorni lavorativi")
+
+U("cont-314", "Rendiconto", 2, "Cosa costituisce un residuo attivo negli enti locali?",
+  "Le somme accertate e non riscosse entro il termine dell'esercizio", ["Le somme impegnate e non pagate", "Le entrate previste e non accertate", "Gli avanzi di cassa"],
+  "Art. 189, c. 1 TUEL: costituiscono residui attivi le somme accertate e non riscosse entro il termine dell'esercizio.",
+  "art. 189", "Costituiscono residui attivi le somme accertate e non riscosse entro il termine dell'esercizio")
+
+U("cont-315", "Rendiconto", 2, "Cosa costituisce un residuo passivo negli enti locali?",
+  "Le somme impegnate e non pagate entro il termine dell'esercizio", ["Le somme accertate e non riscosse", "Le spese previste e non impegnate", "I debiti fuori bilancio"],
+  "Art. 190, c. 1 TUEL: costituiscono residui passivi le somme impegnate e non pagate entro il termine dell'esercizio.",
+  "art. 190", "Costituiscono residui passivi le somme impegnate e non pagate entro il termine dell'esercizio")
+
+U("cont-316", "Rendiconto", 3, "Cosa diventano le somme di spesa non impegnate entro la fine dell'esercizio?",
+  "Economie di spesa che concorrono ai risultati finali della gestione", ["Residui passivi", "Debiti fuori bilancio", "Fondo pluriennale vincolato automatico"],
+  "Art. 190, c. 3 TUEL: le somme non impegnate entro il termine dell'esercizio costituiscono economia di spesa e concorrono a determinare i risultati della gestione.",
+  "art. 190", "Le somme non impegnate entro il termine dell'esercizio costituiscono economia di spesa")
+
+U("cont-317", "Gestione della spesa", 3, "Tra i debiti fuori bilancio di cui l'ente locale può riconoscere la legittimità rientrano quelli derivanti da:",
+  "Sentenze esecutive", ["Spese di rappresentanza non autorizzate", "Indennità degli amministratori", "Qualsiasi spesa decisa dal sindaco"],
+  "Art. 194, c. 1 TUEL: si riconoscono, tra gli altri, i debiti fuori bilancio derivanti da sentenze esecutive, copertura di disavanzi di aziende e consorzi, ricapitalizzazioni, espropri.",
+  "art. 194", "gli enti locali riconoscono la legittimità dei debiti fuori bilancio derivanti da: a) sentenze esecutive")
+
+U("cont-318", "Gestione della spesa", 5, "Entro quali limiti si riconoscono i debiti fuori bilancio per acquisti di beni e servizi fatti senza impegno contabile?",
+  "Nei limiti dell'utilità e dell'arricchimento per l'ente, accertati e dimostrati", ["Per l'intero importo richiesto dal fornitore", "Fino a 5.000 euro", "Mai: non sono riconoscibili"],
+  "Art. 194, c. 1, lett. e) TUEL: per beni e servizi acquisiti in violazione dell'art. 191 il riconoscimento è nei limiti degli accertati e dimostrati utilità ed arricchimento per l'ente.",
+  "art. 194", "nei limiti degli accertati e dimostrati utilità ed arricchimento per l'ente")
+
+U("cont-319", "Controllo di gestione", 3, "Quali enti locali sono esclusi dall'applicazione del controllo di gestione previsto dal TUEL?",
+  "I comuni con popolazione fino a 5.000 abitanti", ["I comuni capoluogo", "Le città metropolitane", "Nessuno"],
+  "Art. 196, c. 1 TUEL: gli enti locali, ad esclusione dei comuni fino a 5.000 abitanti, applicano il controllo di gestione.",
+  "art. 196", "ad esclusione dei comuni con popolazione fino a 5.000 abitanti")
+
+U("cont-320", "Controllo di gestione", 3, "Cos'è il controllo di gestione negli enti locali?",
+  "La procedura che verifica lo stato di attuazione degli obiettivi e l'efficacia, l'efficienza e l'economicità dell'azione", ["Il controllo della Corte dei conti sui bilanci", "La verifica di cassa trimestrale", "Il controllo di legittimità sugli atti"],
+  "Art. 196, c. 2 TUEL: è la procedura diretta a verificare lo stato di attuazione degli obiettivi, confrontando costi e servizi, e l'efficacia, l'efficienza ed il livello di economicità.",
+  "art. 196", "Il controllo di gestione è la procedura diretta a verificare lo stato di attuazione degli obiettivi")
+
+U("cont-321", "Controllo di gestione", 4, "Quale tra queste è una delle fasi in cui si articola, almeno, il controllo di gestione?",
+  "La rilevazione dei costi, dei proventi e dei risultati raggiunti", ["La nomina del collegio dei revisori", "La dichiarazione di dissesto", "La delibera di assestamento"],
+  "Art. 197, c. 2 TUEL: le fasi sono predisposizione del PEG, rilevazione dei costi, dei proventi e dei risultati, valutazione dei dati rispetto al piano degli obiettivi.",
+  "art. 197", "rilevazione dei dati relativi ai costi ed ai proventi nonché rilevazione dei risultati raggiunti")
+
+U("cont-322", "Controllo di gestione", 4, "A chi fornisce le sue conclusioni la struttura incaricata del controllo di gestione?",
+  "Agli amministratori e ai responsabili dei servizi", ["Solo al prefetto", "Solo alla Corte dei conti", "Ai cittadini, con un'assemblea pubblica"],
+  "Art. 198 TUEL: le conclusioni vanno agli amministratori, per verificare l'attuazione degli obiettivi, e ai responsabili dei servizi, per valutare l'andamento della gestione.",
+  "art. 198", "fornisce le conclusioni del predetto controllo agli amministratori")
+
+U("cont-323", "Indebitamento", 3, "Le entrate da alienazione di beni patrimoniali e i mutui passivi degli enti locali possono finanziare la spesa corrente?",
+  "No, sono destinati esclusivamente agli investimenti", ["Sì, senza limiti", "Sì, fino al 50%", "Sì, se lo decide la giunta"],
+  "Art. 199, c. 1-bis TUEL: le entrate delle lettere a), c), d) ed f) (tra cui alienazioni e mutui) sono destinate esclusivamente a spese di investimento e non possono finanziare la spesa corrente.",
+  "art. 199", "sono destinate esclusivamente al finanziamento di spese di investimento e non possono essere impiegate per la spesa corrente")
+
+U("cont-324", "Indebitamento", 3, "Quale tra queste è una fonte di finanziamento degli investimenti degli enti locali secondo il TUEL?",
+  "L'avanzo di amministrazione, nelle forme dell'art. 187", ["L'anticipazione di tesoreria", "Il fondo di riserva", "Le entrate per conto terzi"],
+  "Art. 199, c. 1 TUEL: tra le fonti ci sono entrate correnti destinate per legge, avanzo di parte corrente, alienazioni, trasferimenti in conto capitale, avanzo di amministrazione, mutui.",
+  "art. 199", "avanzo di amministrazione, nelle forme disciplinate dall'articolo 187")
+
+U("cont-325", "Indebitamento", 4, "A garanzia delle rate di ammortamento dei mutui, su quali entrate gli enti locali possono rilasciare delegazione di pagamento?",
+  "Sulle entrate dei primi tre titoli del bilancio", ["Sulle entrate in conto capitale", "Sulle partite di giro", "Su qualsiasi entrata futura"],
+  "Art. 206, c. 1 TUEL: la delegazione di pagamento si rilascia a valere sulle entrate afferenti ai primi tre titoli del bilancio di previsione.",
+  "art. 206", "a valere sulle entrate afferenti ai primi tre titoli del bilancio di previsione")
+
+U("cont-326", "Indebitamento", 4, "Che natura ha l'atto di delegazione di pagamento notificato al tesoriere?",
+  "Non è soggetto ad accettazione e costituisce titolo esecutivo", ["Va accettato dal tesoriere entro 30 giorni", "È un semplice atto interno", "Richiede l'omologa del tribunale"],
+  "Art. 206, c. 2 TUEL: l'atto di delega, non soggetto ad accettazione, è notificato al tesoriere e costituisce titolo esecutivo.",
+  "art. 206", "L'atto di delega, non soggetto ad accettazione, è notificato al tesoriere da parte dell'ente locale e costituisce titolo esecutivo")
+
+U("cont-327", "Tesoreria", 3, "Con cosa risponde il tesoriere per i danni causati all'ente o a terzi?",
+  "Con tutte le proprie attività e con il proprio patrimonio", ["Solo con la cauzione versata", "Con un massimo di 50.000 euro", "Non risponde: risponde l'ente"],
+  "Art. 211 TUEL: per eventuali danni il tesoriere risponde con tutte le proprie attività e con il proprio patrimonio; è responsabile anche dei depositi intestati all'ente.",
+  "art. 211", "il tesoriere risponde con tutte le proprie attività e con il proprio patrimonio")
+
+U("cont-328", "Tesoreria", 3, "Può il tesoriere estinguere un mandato di pagamento privo della codifica SIOPE?",
+  "No, nessun mandato privo della codifica può essere estinto", ["Sì, se l'importo è modesto", "Sì, a fine esercizio", "Sì, con l'autorizzazione del sindaco"],
+  "Art. 216, c. 2 TUEL: nessun mandato di pagamento può essere estinto dal tesoriere se privo della codifica, compresa la codifica SIOPE.",
+  "art. 216", "Nessun mandato di pagamento può essere estinto dal tesoriere se privo della codifica")
+
+U("cont-329", "Tesoreria", 4, "Come sono eseguiti i mandati non estinti alla data del 31 dicembre?",
+  "Mediante commutazione in assegni postali localizzati o mezzi equipollenti", ["Sono annullati d'ufficio", "Sono pagati in contanti dal sindaco", "Restano sospesi fino al rendiconto"],
+  "Art. 219 TUEL: i mandati interamente o parzialmente non estinti al 31 dicembre sono eseguiti mediante commutazione in assegni postali localizzati o mezzi equipollenti.",
+  "art. 219", "sono eseguiti mediante commutazione in assegni postali localizzati")
+
+U("cont-330", "Revisione", 2, "Con quale cadenza l'organo di revisione dell'ente locale fa la verifica ordinaria di cassa?",
+  "Trimestrale", ["Mensile", "Semestrale", "Annuale"],
+  "Art. 223 TUEL: l'organo di revisione provvede con cadenza trimestrale alla verifica ordinaria di cassa e della gestione del servizio di tesoreria.",
+  "art. 223", "provvede con cadenza trimestrale alla verifica ordinaria di cassa")
+
+U("cont-331", "Revisione", 3, "Quando si procede alla verifica straordinaria di cassa negli enti locali?",
+  "Al mutamento della persona del sindaco o del presidente della provincia", ["A ogni variazione di bilancio", "A ogni cambio del tesoriere", "Quando lo chiede un consigliere"],
+  "Art. 224 TUEL: la verifica straordinaria segue il mutamento della persona del sindaco, del presidente della provincia, del sindaco metropolitano o del presidente della comunità montana.",
+  "art. 224", "Si provvede a verifica straordinaria di cassa a seguito del mutamento della persona del sindaco")
+
+U("cont-332", "Rendiconto", 3, "Cosa evidenzia il conto economico degli enti locali?",
+  "I componenti positivi e negativi della gestione di competenza economica e il risultato economico", ["Solo i flussi di cassa", "Solo le entrate accertate", "La consistenza del patrimonio"],
+  "Art. 229 TUEL: il conto economico evidenzia i componenti positivi e negativi della gestione di competenza economica e rileva il risultato economico dell'esercizio.",
+  "art. 229", "Il conto economico evidenzia i componenti positivi e negativi della gestione di competenza economica")
+
+U("cont-333", "Rendiconto", 3, "Da cosa è costituito il patrimonio degli enti locali secondo il TUEL?",
+  "Dal complesso dei beni e dei rapporti giuridici, attivi e passivi, di pertinenza dell'ente", ["Solo dai beni immobili", "Solo dal fondo di cassa", "Dai beni demaniali esclusi"],
+  "Art. 230, c. 2 TUEL: il patrimonio è il complesso dei beni e dei rapporti giuridici, attivi e passivi, di pertinenza dell'ente; i beni del demanio vi sono inclusi con specifica distinzione.",
+  "art. 230", "Il patrimonio degli enti locali è costituito dal complesso dei beni e dei rapporti giuridici, attivi e passivi")
+
+U("cont-334", "Revisione", 3, "Da quanti membri è composto il collegio dei revisori di comuni, province e città metropolitane?",
+  "Tre membri", ["Cinque membri", "Un solo membro", "Sette membri"],
+  "Art. 234, c. 1 TUEL: i consigli eleggono con voto limitato a due componenti un collegio di revisori composto da tre membri.",
+  "art. 234", "un collegio di revisori composto da tre membri")
+
+U("cont-335", "Revisione", 3, "Nei comuni sotto i 15.000 abitanti, a chi è affidata la revisione economico-finanziaria?",
+  "A un solo revisore", ["A un collegio di tre membri", "Al segretario comunale", "Alla Corte dei conti"],
+  "Art. 234, c. 3 TUEL: nei comuni con popolazione inferiore a 15.000 abitanti, nelle unioni e nelle comunità montane la revisione è affidata ad un solo revisore.",
+  "art. 234", "la revisione economico-finanziaria è affidata ad un solo revisore")
+
+U("cont-336", "Revisione", 3, "Quanto dura in carica l'organo di revisione degli enti locali?",
+  "Tre anni", ["Cinque anni", "Due anni", "Quanto il mandato del sindaco"],
+  "Art. 235, c. 1 TUEL: l'organo di revisione dura in carica tre anni e i componenti non possono svolgere l'incarico per più di due volte nello stesso ente.",
+  "art. 235", "L'organo di revisione contabile dura in carica tre anni")
+
+U("cont-337", "Revisione", 4, "Per quale motivo può essere revocato il revisore dell'ente locale?",
+  "Solo per inadempienza, ad esempio la mancata relazione sul rendiconto", ["Per libera scelta della giunta", "Per motivi politici", "Per il cambio del sindaco"],
+  "Art. 235, c. 2 TUEL: il revisore è revocabile solo per inadempienza, in particolare per la mancata presentazione della relazione sulla proposta di rendiconto.",
+  "art. 235", "Il revisore è revocabile solo per inadempienza")
+
+U("cont-338", "Revisione", 4, "Chi tra questi NON può svolgere l'incarico di revisore di un ente locale?",
+  "Il segretario e i dipendenti dello stesso ente", ["Un iscritto all'albo dei dottori commercialisti", "Un iscritto al registro dei revisori legali", "Un professionista residente in un'altra regione"],
+  "Art. 236, c. 2 TUEL: l'incarico non può essere esercitato dai componenti degli organi dell'ente, dal segretario e dai dipendenti dell'ente locale presso cui va nominato.",
+  "art. 236", "dal segretario e dai dipendenti dell'ente locale presso cui deve essere nominato")
+
+U("cont-339", "Revisione", 3, "Con quale diligenza i revisori degli enti locali adempiono ai loro doveri?",
+  "Con la diligenza del mandatario", ["Con la diligenza del buon padre di famiglia", "Con la massima diligenza professionale", "Senza alcun obbligo di diligenza"],
+  "Art. 240 TUEL: i revisori rispondono della veridicità delle attestazioni, adempiono ai doveri con la diligenza del mandatario e sono tenuti alla riservatezza.",
+  "art. 240", "adempiono ai loro doveri con la diligenza del mandatario")
+
+U("cont-340", "Revisione", 5, "Fino a quale limite l'ente può aumentare il compenso base dei revisori per funzioni ulteriori rispetto a quelle di legge?",
+  "Fino al 20 per cento", ["Fino al 50 per cento", "Fino al 5 per cento", "Senza limiti"],
+  "Art. 241, c. 2 TUEL: il compenso può essere aumentato fino al limite massimo del 20 per cento per le ulteriori funzioni assegnate rispetto all'art. 239.",
+  "art. 241", "fino al limite massimo del 20 per cento")
+
+U("cont-341", "Dissesto", 4, "Quando un ente locale è considerato in condizioni strutturalmente deficitarie?",
+  "Quando almeno la metà dei parametri obiettivi presenta valori deficitari", ["Quando chiude un esercizio in disavanzo", "Quando ha debiti fuori bilancio", "Quando non approva il DUP"],
+  "Art. 242, c. 1 TUEL: sono strutturalmente deficitari gli enti con gravi squilibri rilevati da una tabella allegata al rendiconto, in cui almeno la metà dei parametri obiettivi presenta valori deficitari.",
+  "art. 242", "contenente parametri obiettivi dei quali almeno la metà presentino valori deficitari")
+
+U("cont-342", "Dissesto", 5, "Durante il risanamento dopo il dissesto, quanto possono superare mensilmente i pagamenti in conto competenza?",
+  "Un dodicesimo delle somme impegnabili", ["Un terzo delle somme impegnabili", "Il doppio del mese precedente", "Nessun limite"],
+  "Art. 250, c. 1 TUEL: fino all'ipotesi di bilancio riequilibrato i pagamenti in conto competenza non possono mensilmente superare un dodicesimo delle somme impegnabili.",
+  "art. 250", "non possono mensilmente superare un dodicesimo delle rispettive somme impegnabili")
+
+U("cont-343", "Dissesto", 5, "In quanti anni è ammortizzato il mutuo con cui lo Stato finanzia il risanamento dell'ente dissestato?",
+  "In venti anni", ["In dieci anni", "In trenta anni", "In cinque anni"],
+  "Art. 255, c. 2 TUEL: lo Stato finanzia gli oneri di un mutuo con la Cassa depositi e prestiti, assunto dall'organo straordinario di liquidazione, ammortizzato in venti anni.",
+  "art. 255", "ammortizzato in venti anni")
+
+S("cont-344", "Regole europee", 3, "Entro quale data sono presentati al Consiglio UE e alla Commissione il Programma di stabilità e il Programma nazionale di riforma?",
+  "Entro il 30 aprile", ["Entro il 10 aprile", "Entro il 15 ottobre", "Entro il 31 dicembre"],
+  "Art. 9, c. 1 L. 196/2009: il Programma di stabilità e il Programma nazionale di riforma sono presentati al Consiglio dell'Unione europea e alla Commissione europea entro il 30 aprile.",
+  "art. 9", "sono presentati al Consiglio dell'Unione europea e alla Commissione europea entro il 30 aprile")
+
+S("cont-345", "Regole europee", 4, "Entro quale data il documento programmatico di bilancio è presentato alla Commissione europea e all'Eurogruppo?",
+  "Entro il 15 ottobre", ["Entro il 30 aprile", "Entro il 27 settembre", "Entro il 20 ottobre"],
+  "Art. 9, c. 1-bis L. 196/2009: il progetto di documento programmatico di bilancio è presentato alla Commissione e all'Eurogruppo entro il 15 ottobre e trasmesso alle Camere entro lo stesso termine.",
+  "art. 9", "è presentato alla Commissione europea e all'Eurogruppo entro il 15 ottobre")
+
+S("cont-346", "Enti territoriali", 3, "Con quale documento devono essere coerenti gli obiettivi dei bilanci di regioni ed enti locali?",
+  "Con gli obiettivi programmatici del DEF", ["Con il bilancio della Commissione europea", "Con il piano regolatore", "Con la legge elettorale"],
+  "Art. 8, c. 1 L. 196/2009: regioni, province autonome ed enti locali determinano gli obiettivi dei propri bilanci in coerenza con gli obiettivi programmatici del DEF.",
+  "art. 8", "in coerenza con gli obiettivi programmatici risultanti dal DEF")
+
+S("cont-347", "Finanza pubblica", 3, "Dove è istituita la banca dati unitaria in cui le amministrazioni pubbliche inseriscono i dati dei loro bilanci?",
+  "Presso il Ministero dell'economia e delle finanze", ["Presso la Corte dei conti", "Presso l'ISTAT soltanto", "Presso la Presidenza del Consiglio"],
+  "Art. 13 L. 196/2009: le amministrazioni inseriscono bilanci di previsione, variazioni e consuntivi in una banca dati unitaria istituita presso il Ministero dell'economia e delle finanze.",
+  "art. 13", "in una banca dati unitaria istituita presso il Ministero dell'economia e delle finanze")
+
+S("cont-348", "Finanza pubblica", 4, "Cosa assicura l'art. 16 della L. 196/2009 nei collegi di revisione delle amministrazioni pubbliche non territoriali?",
+  "La presenza di un rappresentante del Ministero dell'economia e delle finanze", ["La presenza di un magistrato della Corte dei conti", "La presenza di un rappresentante dei sindacati", "La nomina da parte del Parlamento"],
+  "Art. 16, c. 1 L. 196/2009: per il monitoraggio della finanza pubblica è assicurata la presenza di un rappresentante del MEF nei collegi di revisione o sindacali delle amministrazioni pubbliche, esclusi gli enti territoriali.",
+  "art. 16", "è assicurata la presenza di un rappresentante del Ministero dell'economia e delle finanze nei collegi di revisione")
+
+S("cont-349", "Copertura delle leggi", 3, "Cosa devono contenere le leggi che comportano oneri, anche come minori entrate, a carico dei bilanci delle amministrazioni pubbliche?",
+  "La previsione dell'onere e l'indicazione della copertura finanziaria", ["Solo la data di entrata in vigore", "Il parere obbligatorio della Banca d'Italia", "L'approvazione con referendum"],
+  "Art. 19, c. 1 L. 196/2009: tali leggi devono contenere la previsione dell'onere e l'indicazione della copertura finanziaria riferita ai relativi bilanci, annuali e pluriennali.",
+  "art. 19", "devono contenere la previsione dell'onere stesso e l'indicazione della copertura finanziaria")
+
+S("cont-350", "Bilancio dello Stato", 5, "A cosa servono i fondi speciali istituiti dall'art. 27 della L. 196/2009 nello stato di previsione del MEF?",
+  "A riassegnare i residui passivi eliminati per perenzione amministrativa", ["A finanziare le spese elettorali", "A coprire i debiti delle regioni", "A pagare gli interessi sul debito pubblico"],
+  "Art. 27 L. 196/2009: sono istituiti fondi speciali, di parte corrente e in conto capitale, per la riassegnazione dei residui passivi eliminati negli esercizi precedenti per perenzione amministrativa.",
+  "art. 27", "fondo speciale per la riassegnazione dei residui passivi della spesa di parte corrente eliminati negli esercizi precedenti per perenzione amministrativa")

@@ -1,5 +1,8 @@
+# Uscite del modulo email (SES), lette da environments/shared.
+
 output "sender_email" {
-  value = var.sender_email
+  description = "Indirizzo mittente"
+  value       = var.sender_email
 }
 
 output "identity_arns" {
@@ -12,11 +15,13 @@ output "identity_arns" {
 }
 
 output "configuration_set_name" {
-  value = aws_sesv2_configuration_set.main.configuration_set_name
+  description = "Nome del configuration set"
+  value       = aws_sesv2_configuration_set.main.configuration_set_name
 }
 
 output "configuration_set_arn" {
-  value = aws_sesv2_configuration_set.main.arn
+  description = "ARN del configuration set (per i permessi IAM)"
+  value       = aws_sesv2_configuration_set.main.arn
 }
 
 output "dkim_records" {

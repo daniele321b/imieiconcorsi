@@ -233,6 +233,7 @@ export function UpgradeBanner({ message, onClose }: { message: string; onClose?:
 /** Popup "funzione dei piani a pagamento": si chiude con la X, con Esc o cliccando fuori. */
 export function PremiumModal({ titolo, children, onClose }: { titolo: string; children: ReactNode; onClose: () => void }) {
   useEffect(() => {
+    // Esc chiude la finestra.
     const esc = (e: KeyboardEvent) => e.key === "Escape" && onClose();
     window.addEventListener("keydown", esc);
     return () => window.removeEventListener("keydown", esc);

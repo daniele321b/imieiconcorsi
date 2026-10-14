@@ -1,7 +1,7 @@
 import { GIORNI_PREMIO_INVITO, MAX_PREMI_INVITO_ANNO, PIANI } from "@imieiconcorsi/core/domain";
 import { Link } from "react-router";
 import { euro } from "../../lib/format";
-import { LEGALE } from "../../lib/legale";
+import { datiSocietari, LEGALE } from "../../lib/legale";
 import { LegalePagina } from "./LegalePagina";
 import { ComeContattarci, Titolare } from "./parti";
 
@@ -13,7 +13,7 @@ export function Termini() {
   return (
     <LegalePagina titolo="Termini e condizioni">
       <p>
-        Questi termini regolano l'uso di iMieiConcorsi ({LEGALE.sito}). Il servizio è fornito da: <Titolare />. Puoi
+        Questi termini regolano l'uso di iMieiConcorsi ({LEGALE.sito}).{datiSocietari && <> Il servizio è fornito da: <Titolare />.</>} Puoi
         scriverci <ComeContattarci />. Registrandoti li accetti, insieme all'<Link to="/privacy">Informativa sulla privacy</Link>.
       </p>
 
@@ -31,8 +31,8 @@ export function Termini() {
         <li>Il servizio è riservato ai maggiorenni.</li>
         <li>Ogni persona può avere un solo account. Credenziali e accesso sono personali e non vanno condivisi.</li>
         <li>
-          Per registrarti con email e password serve un indirizzo di un provider di posta diffuso (Gmail, Outlook, Libero…);
-          gli indirizzi temporanei non sono accettati. Puoi sempre accedere con Google o Facebook.
+          Per la registrazione con email e password non accettiamo tutti gli indirizzi (per esempio quelli temporanei). Puoi
+          sempre accedere con Google o Facebook.
         </li>
         <li>
           Possiamo sospendere o chiudere un account in caso di uso abusivo, ad esempio la copia sistematica dei contenuti o

@@ -1,0 +1,2502 @@
+[
+  {
+    "id": "att-001",
+    "file": "attualita.txt",
+    "frase": "Cosa si festeggia il 2 giugno in Italia?"
+  },
+  {
+    "id": "att-002",
+    "file": "attualita.txt",
+    "frase": "Cosa indica la sigla PIL?"
+  },
+  {
+    "id": "att-003",
+    "file": "attualita.txt",
+    "frase": "L'UNESCO è:"
+  },
+  {
+    "id": "att-004",
+    "file": "attualita.txt",
+    "frase": "Michelangelo Merisi è il vero nome di:"
+  },
+  {
+    "id": "att-005",
+    "file": "attualita.txt",
+    "frase": "Il nome delle Torri Gemelle era:"
+  },
+  {
+    "id": "att-006",
+    "file": "attualita.txt",
+    "frase": "La regione italiana con più comuni e più province è:"
+  },
+  {
+    "id": "att-007",
+    "file": "attualita.txt",
+    "frase": "Chi ha scritto i Promessi Sposi?"
+  },
+  {
+    "id": "att-008",
+    "file": "attualita.txt",
+    "frase": "Cosa causò l'estinzione dei dinosauri?"
+  },
+  {
+    "id": "att-009",
+    "file": "attualita.txt",
+    "frase": "Cosa vuol dire Paleolitico?"
+  },
+  {
+    "id": "att-010",
+    "file": "attualita.txt",
+    "frase": "Il baratto è?"
+  },
+  {
+    "id": "att-011",
+    "file": "attualita.txt",
+    "frase": "Dove nacquero le prime forme di vita?"
+  },
+  {
+    "id": "att-012",
+    "file": "attualita.txt",
+    "frase": "Il Nilo è il fiume in cui nacque?"
+  },
+  {
+    "id": "att-013",
+    "file": "attualita.txt",
+    "frase": "Cosa sono le piramidi?"
+  },
+  {
+    "id": "att-014",
+    "file": "attualita.txt",
+    "frase": "I politeisti credevano:"
+  },
+  {
+    "id": "att-015",
+    "file": "attualita.txt",
+    "frase": "Roma fu costruita su:"
+  },
+  {
+    "id": "att-016",
+    "file": "attualita.txt",
+    "frase": "Con quale sigla si indica l'Istituto Nazionale di Statistica?"
+  },
+  {
+    "id": "att-017",
+    "file": "attualita.txt",
+    "frase": "Cosa si indica con il termine Xenofobia?"
+  },
+  {
+    "id": "att-018",
+    "file": "attualita.txt",
+    "frase": "Chi ha interpretato Guido Orefice nel film \"La vita è bella\"?"
+  },
+  {
+    "id": "att-019",
+    "file": "attualita.txt",
+    "frase": "Dove avvenne il naufragio della Costa Concordia?"
+  },
+  {
+    "id": "att-020",
+    "file": "attualita.txt",
+    "frase": "La sede delle Nazioni Unite è:"
+  },
+  {
+    "id": "att-021",
+    "file": "attualita.txt",
+    "frase": "In che anno è nata la Nato?"
+  },
+  {
+    "id": "att-022",
+    "file": "attualita.txt",
+    "frase": "L'anno dell'attentato alle Torri Gemelle:"
+  },
+  {
+    "id": "att-023",
+    "file": "attualita.txt",
+    "frase": "Quale Ocenao è più grande?"
+  },
+  {
+    "id": "att-024",
+    "file": "attualita.txt",
+    "frase": "Il famoso elefante volante della Disney è?"
+  },
+  {
+    "id": "att-025",
+    "file": "attualita.txt",
+    "frase": "Quale grande giocatore è passato alla Juventus nel 2018?"
+  },
+  {
+    "id": "att-026",
+    "file": "attualita.txt",
+    "frase": "In che anno è scoppiata la prima guerra mondiale?"
+  },
+  {
+    "id": "att-027",
+    "file": "attualita.txt",
+    "frase": "Lo Stato più piccolo del mondo è?"
+  },
+  {
+    "id": "att-028",
+    "file": "attualita.txt",
+    "frase": "Cosa ha inventato Joann Gutenberg?"
+  },
+  {
+    "id": "att-029",
+    "file": "attualita.txt",
+    "frase": "Da quale direzione proviene lo scirocco?"
+  },
+  {
+    "id": "att-030",
+    "file": "attualita.txt",
+    "frase": "In che anno è stata eletta Presidente del Consiglio Giorgia Meloni?"
+  },
+  {
+    "id": "att-031",
+    "file": "attualita.txt",
+    "frase": "Dove si trova la sede del Parlamento Europeo?"
+  },
+  {
+    "id": "att-032",
+    "file": "attualita.txt",
+    "frase": "Dove si trova la sede del Consiglio dell'Unione Europea?"
+  },
+  {
+    "id": "att-033",
+    "file": "attualita.txt",
+    "frase": "Chi è il Ministro della Difesa della Repubblica Italiana?"
+  },
+  {
+    "id": "att-034",
+    "file": "attualita.txt",
+    "frase": "La capitale dell'Australia è?"
+  },
+  {
+    "id": "att-035",
+    "file": "attualita.txt",
+    "frase": "Chi è la Nazionale che ha vinto più Mondiali di Calcio?"
+  },
+  {
+    "id": "att-036",
+    "file": "attualita.txt",
+    "frase": "ChI è l'autore celebre del dipinto \"Dama con l'ermellino\"?"
+  },
+  {
+    "id": "att-037",
+    "file": "attualita.txt",
+    "frase": "Dove si trova il famosissimo \"Muretto di Alassio\"?"
+  },
+  {
+    "id": "att-038",
+    "file": "attualita.txt",
+    "frase": "La città attribuita alla targa PZ è?"
+  },
+  {
+    "id": "att-039",
+    "file": "attualita.txt",
+    "frase": "Cosa è la nictofobia?"
+  },
+  {
+    "id": "att-040",
+    "file": "attualita.txt",
+    "frase": "Anno degli attentati a Nassiria:"
+  },
+  {
+    "id": "att-041",
+    "file": "attualita.txt",
+    "frase": "La sede decisionale e progettuale della FIAT si trova a?"
+  },
+  {
+    "id": "att-042",
+    "file": "attualita.txt",
+    "frase": "Mogadiscio è una città:"
+  },
+  {
+    "id": "att-043",
+    "file": "attualita.txt",
+    "frase": "La nota azienda alimentare Bauli è stata fondata a…"
+  },
+  {
+    "id": "att-044",
+    "file": "attualita.txt",
+    "frase": "In che anno ci fu l'unificazione del Regno d'Italia?"
+  },
+  {
+    "id": "att-045",
+    "file": "attualita.txt",
+    "frase": "Cosa si festeggia il 10 giugno?"
+  },
+  {
+    "id": "att-046",
+    "file": "attualita.txt",
+    "frase": "Chi fu il primo a compiere la circumnavigazione del globo?"
+  },
+  {
+    "id": "att-047",
+    "file": "attualita.txt",
+    "frase": "Phoenix si trova in?"
+  },
+  {
+    "id": "att-048",
+    "file": "attualita.txt",
+    "frase": "Il primo vero film di animazione della Walt Disney?"
+  },
+  {
+    "id": "att-049",
+    "file": "attualita.txt",
+    "frase": "Pergamo è una città della?"
+  },
+  {
+    "id": "att-050",
+    "file": "attualita.txt",
+    "frase": "I macarons e la Saint Honoré sono dei dolci tipici:"
+  },
+  {
+    "id": "att-051",
+    "file": "attualita.txt",
+    "frase": "In che anno è morta Elisabetta II del Regno Unito?"
+  },
+  {
+    "id": "att-052",
+    "file": "attualita.txt",
+    "frase": "In che anno furono eletti Baronetti i Beatles?"
+  },
+  {
+    "id": "att-053",
+    "file": "attualita.txt",
+    "frase": "Liam e Noel Gallagher sono i fratelli del famoso gruppo musicale, quale?"
+  },
+  {
+    "id": "att-054",
+    "file": "attualita.txt",
+    "frase": "Un famoso drammaturgo italiano?"
+  },
+  {
+    "id": "att-055",
+    "file": "attualita.txt",
+    "frase": "Perché gli USA entrarono nel secondo conflitto mondiale?"
+  },
+  {
+    "id": "att-056",
+    "file": "attualita.txt",
+    "frase": "In quale mese e anno fu firmato il \"Protocollo di Minsk\" (Minsk I)?"
+  },
+  {
+    "id": "att-057",
+    "file": "attualita.txt",
+    "frase": "Quanti punti conteneva il Protocollo di Minsk I?"
+  },
+  {
+    "id": "att-058",
+    "file": "attualita.txt",
+    "frase": "Il 21 febbraio 2022 la Russia riconobbe l'indipendenza di quali entità?"
+  },
+  {
+    "id": "att-059",
+    "file": "attualita.txt",
+    "frase": "Quale data segna l'inizio dell'invasione russa in Ucraina su vasta scala?"
+  },
+  {
+    "id": "att-060",
+    "file": "attualita.txt",
+    "frase": "Quale gasdotto baltico fu danneggiato da esplosioni il 26 settembre 2022?"
+  },
+  {
+    "id": "att-061",
+    "file": "attualita.txt",
+    "frase": "Quale ponte strategico sullo stretto di Kerč' fu danneggiato l'8 ottobre 2022?"
+  },
+  {
+    "id": "att-062",
+    "file": "attualita.txt",
+    "frase": "Quale compagnia militare privata russa guidata da Yevgenij Prigožin combatté a Bachmut negli anni 2022-2023?"
+  },
+  {
+    "id": "att-063",
+    "file": "attualita.txt",
+    "frase": "In quale data la Finlandia è entrata ufficialmente nella NATO come 31º membro?"
+  },
+  {
+    "id": "att-064",
+    "file": "attualita.txt",
+    "frase": "Quale presidente USA ha autorizzato il primo invio di munizioni a grappolo a Kyiv nel luglio 2023?"
+  },
+  {
+    "id": "att-065",
+    "file": "attualita.txt",
+    "frase": "Chi ospitò in qualità di capo di Stato i colloqui di Minsk?"
+  },
+  {
+    "id": "att-066",
+    "file": "attualita.txt",
+    "frase": "In quale piazza di Kyiv si concentrarono le manifestazioni di Euromaidan?"
+  },
+  {
+    "id": "att-067",
+    "file": "attualita.txt",
+    "frase": "Quale bacino ucraino industriale orientale vide la nascita di repubbliche separatiste nel 2014?"
+  },
+  {
+    "id": "att-068",
+    "file": "attualita.txt",
+    "frase": "Quale presidente USA (in carica nel 2025) ha proposto nuovi Patriot per Kyiv a condizione di finanziamento europeo?"
+  },
+  {
+    "id": "att-069",
+    "file": "attualita.txt",
+    "frase": "Quale tribunale internazionale ha emesso un mandato d'arresto contro Vladimir Putin nel marzo 2023?"
+  },
+  {
+    "id": "att-070",
+    "file": "attualita.txt",
+    "frase": "In quale anno l'Ucraina proclamò la propria indipendenza dall'URSS?"
+  },
+  {
+    "id": "att-071",
+    "file": "attualita.txt",
+    "frase": "Quale accordo del 1994 garantì la sicurezza ucraina in cambio della rinuncia alle armi nucleari?"
+  },
+  {
+    "id": "att-072",
+    "file": "attualita.txt",
+    "frase": "Con che nome è nota la rivolta popolare che nel 2004 contestò i brogli elettorali in Ucraina?"
+  },
+  {
+    "id": "att-073",
+    "file": "attualita.txt",
+    "frase": "Quale presidente ucraino fu deposto dopo le proteste di Euromaidan nel febbraio 2014?"
+  },
+  {
+    "id": "att-074",
+    "file": "attualita.txt",
+    "frase": "L'accordo di associazione rifiutato da Janukovyč nel 2013 riguardava l'integrazione con…"
+  },
+  {
+    "id": "att-075",
+    "file": "attualita.txt",
+    "frase": "Quale città portuale crimeana ospita la principale base navale russa sul Mar Nero?"
+  },
+  {
+    "id": "att-076",
+    "file": "attualita.txt",
+    "frase": "Quale organo internazionale approvò il Piano di Partizione della Palestina nel 1947?"
+  },
+  {
+    "id": "att-077",
+    "file": "attualita.txt",
+    "frase": "In che anno scoppiò la prima guerra arabo‑israeliana, nota in Israele come \"Guerra d'Indipendenza\"?"
+  },
+  {
+    "id": "att-078",
+    "file": "attualita.txt",
+    "frase": "Quale paese occupava Gaza prima della guerra del 1967?"
+  },
+  {
+    "id": "att-079",
+    "file": "attualita.txt",
+    "frase": "Il nome ebraico della \"Guerra dei Sei Giorni\" è…"
+  },
+  {
+    "id": "att-080",
+    "file": "attualita.txt",
+    "frase": "Quale città sacra venne posta sotto controllo israeliano per la prima volta nel 1967?"
+  },
+  {
+    "id": "att-081",
+    "file": "attualita.txt",
+    "frase": "Quale documento siglato nel 1964 pose le basi per la nascita dell'OLP?"
+  },
+  {
+    "id": "att-082",
+    "file": "attualita.txt",
+    "frase": "Chi fu il comandante dell'esercito israeliano durante la Guerra del Kippur (1973)?"
+  },
+  {
+    "id": "att-083",
+    "file": "attualita.txt",
+    "frase": "Il conflitto israelo‑palestinese del 1982 riguardava principalmente l'invasione di quale paese?"
+  },
+  {
+    "id": "att-084",
+    "file": "attualita.txt",
+    "frase": "In che anno ebbe inizio la Prima Intifada?"
+  },
+  {
+    "id": "att-085",
+    "file": "attualita.txt",
+    "frase": "Quale primo ministro israeliano firmò gli Accordi di Oslo I nel 1993?"
+  },
+  {
+    "id": "att-086",
+    "file": "attualita.txt",
+    "frase": "Il premio Nobel per la Pace 1994 fu conferito a Rabin, Peres e…"
+  },
+  {
+    "id": "att-087",
+    "file": "attualita.txt",
+    "frase": "Che cos'è l'Area C, definita dagli Accordi di Oslo II (1995)?"
+  },
+  {
+    "id": "att-088",
+    "file": "attualita.txt",
+    "frase": "Quale leader israeliano fu assassinato nel 1995 da un estremista interno?"
+  },
+  {
+    "id": "att-089",
+    "file": "attualita.txt",
+    "frase": "La \"Road Map for Peace\" del 2003 fu promossa dal cosiddetto…"
+  },
+  {
+    "id": "att-090",
+    "file": "attualita.txt",
+    "frase": "Quale movimento palestinese vinse le elezioni legislative del 2006?"
+  },
+  {
+    "id": "att-091",
+    "file": "attualita.txt",
+    "frase": "Nel 2005 Israele completò il ritiro unilaterale da:"
+  },
+  {
+    "id": "att-092",
+    "file": "attualita.txt",
+    "frase": "Chi era presidente degli Stati Uniti durante il discorso \"A New Beginning\" al Cairo (2009)?"
+  },
+  {
+    "id": "att-093",
+    "file": "attualita.txt",
+    "frase": "Con quale nome è conosciuta l'operazione israeliana del 2014 contro Gaza?"
+  },
+  {
+    "id": "att-094",
+    "file": "attualita.txt",
+    "frase": "Quale agenzia dell'ONU fornisce assistenza ai rifugiati palestinesi?"
+  },
+  {
+    "id": "att-095",
+    "file": "attualita.txt",
+    "frase": "Quante \"Intifade\" palestinesi sono ufficialmente riconosciute fino al 2025?"
+  },
+  {
+    "id": "att-096",
+    "file": "attualita.txt",
+    "frase": "L'operazione \"Guardiani delle Mura\" (maggio 2021) venne scatenata dopo tensioni a…"
+  },
+  {
+    "id": "att-097",
+    "file": "attualita.txt",
+    "frase": "Chi è l'attuale (2025) leader di Fatah e presidente dell'Autorità Nazionale Palestinese?"
+  },
+  {
+    "id": "att-098",
+    "file": "attualita.txt",
+    "frase": "La cosiddetta \"Linea Verde\" coincide con l'armistizio arabo-israeliano del…"
+  },
+  {
+    "id": "att-099",
+    "file": "attualita.txt",
+    "frase": "Quale organizzazione palestinese fu fondata a Gaza nel 1987 da Ahmed Yassin?"
+  },
+  {
+    "id": "att-100",
+    "file": "attualita.txt",
+    "frase": "Il termine \"Nakba\" si riferisce per i palestinesi…"
+  },
+  {
+    "id": "att-101",
+    "file": "attualita.txt",
+    "frase": "Il vertice di Camp David del 2000 vide protagonisti Barak, Arafat e…"
+  },
+  {
+    "id": "att-102",
+    "file": "attualita.txt",
+    "frase": "Nel 1978 Sadat e Begin firmarono gli Accordi di Camp David sotto la presidenza…"
+  },
+  {
+    "id": "att-103",
+    "file": "attualita.txt",
+    "frase": "La costruzione del \"muro di separazione\" israeliano iniziò nel…"
+  },
+  {
+    "id": "att-104",
+    "file": "attualita.txt",
+    "frase": "Quale area venne posta sotto \"stato d'assedio\" da Israele e Egitto dopo il 2007?"
+  },
+  {
+    "id": "att-105",
+    "file": "attualita.txt",
+    "frase": "Quale accordo del 1994 definì la creazione di un'autorità di governo palestinese temporanea?"
+  },
+  {
+    "id": "att-106",
+    "file": "attualita.txt",
+    "frase": "Che cosa stabiliva la Risoluzione 338 del Consiglio di Sicurezza (1973)?"
+  },
+  {
+    "id": "att-107",
+    "file": "attualita.txt",
+    "frase": "Quale città fu dichiarata capitale di Israele nel 1949?"
+  },
+  {
+    "id": "att-108",
+    "file": "attualita.txt",
+    "frase": "Il 7 ottobre 2023 Hamas lanciò un attacco che causò circa 1 200 vittime israeliane. Come è chiamato quel conflitto dalle fonti internazionali?"
+  },
+  {
+    "id": "att-109",
+    "file": "attualita.txt",
+    "frase": "Quante persone furono prese in ostaggio da Hamas il 7 ottobre 2023?"
+  },
+  {
+    "id": "att-110",
+    "file": "attualita.txt",
+    "frase": "Nel gennaio 2024 la Corte Internazionale di Giustizia dichiarò plausibile…"
+  },
+  {
+    "id": "att-111",
+    "file": "attualita.txt",
+    "frase": "Qual è il film vincitore dell'Oscar 2024 al Miglior film?"
+  },
+  {
+    "id": "att-112",
+    "file": "attualita.txt",
+    "frase": "Quale data segna l'inizio del cessate il fuoco nella guerra Israele-Hamas mediato da Qatar ed Egitto, definito \"accordo decisivo\", nel 2025?"
+  },
+  {
+    "id": "att-113",
+    "file": "attualita.txt",
+    "frase": "Quale ministero sanitario riporta più di 59 000 palestinesi uccisi fino a luglio 2025?"
+  },
+  {
+    "id": "att-114",
+    "file": "attualita.txt",
+    "frase": "Il 20 luglio 2025 Israele distribuì volantini di sfollamento in quale zona di Gaza?"
+  },
+  {
+    "id": "att-115",
+    "file": "attualita.txt",
+    "frase": "Chi ha vinto l'Oscar 2024 come Miglior regista?"
+  },
+  {
+    "id": "att-116",
+    "file": "attualita.txt",
+    "frase": "Quale data segnò l'attacco di Hamas che innescò la nuova crisi israelopalestinese?"
+  },
+  {
+    "id": "att-117",
+    "file": "attualita.txt",
+    "frase": "In quale città siriana un attacco israeliano colpì l'ambasciata iraniana (aprile 2024)?"
+  },
+  {
+    "id": "att-118",
+    "file": "attualita.txt",
+    "frase": "Quale organismo incriminò Netanyahu e Gallant nel maggio 2024?"
+  },
+  {
+    "id": "att-119",
+    "file": "attualita.txt",
+    "frase": "A quale filosofo si attribuisce la \"martellata\" contro etica e religione?"
+  },
+  {
+    "id": "att-120",
+    "file": "attualita.txt",
+    "frase": "Chi ha vinto l'Oscar 2024 come Miglior attore?"
+  },
+  {
+    "id": "att-121",
+    "file": "attualita.txt",
+    "frase": "Quale evento pone fine \"ufficiale\" alla marginalità borghese?"
+  },
+  {
+    "id": "att-122",
+    "file": "attualita.txt",
+    "frase": "Quale rapporto moderno viene paragonato al \"vassallaggio\" medievale?"
+  },
+  {
+    "id": "att-123",
+    "file": "attualita.txt",
+    "frase": "Quale classe sociale ottenne il potere economico sfidando l'aristocrazia?"
+  },
+  {
+    "id": "att-124",
+    "file": "attualita.txt",
+    "frase": "Quale presidente USA è ritratto sul Monte Rushmore come simbolo di \"unità nazionale\"?"
+  },
+  {
+    "id": "att-125",
+    "file": "attualita.txt",
+    "frase": "Chi ha vinto l'Oscar 2024 come Miglior attrice?"
+  },
+  {
+    "id": "att-126",
+    "file": "attualita.txt",
+    "frase": "Quale ex primo ministro giapponese fu assassinato a Nara l'8 luglio 2022?"
+  },
+  {
+    "id": "att-127",
+    "file": "attualita.txt",
+    "frase": "Quale città giapponese fu colpita dalla bomba \"Little Boy\" il 6 agosto 1945?"
+  },
+  {
+    "id": "att-128",
+    "file": "attualita.txt",
+    "frase": "Quale disastro in una centrale nucleare (2011) ravvivò i timori atomici in Giappone?"
+  },
+  {
+    "id": "att-129",
+    "file": "attualita.txt",
+    "frase": "Quale città fu teatro dell'attentato in cui morì l'arciduca Francesco Ferdinando?"
+  },
+  {
+    "id": "att-130",
+    "file": "attualita.txt",
+    "frase": "Quale potenza uscì sconfitta dalla Prima guerra mondiale insieme agli Imperi centrali?"
+  },
+  {
+    "id": "att-131",
+    "file": "attualita.txt",
+    "frase": "Chi guidò la Rivoluzione russa d'Ottobre 1917?"
+  },
+  {
+    "id": "att-132",
+    "file": "attualita.txt",
+    "frase": "L'armistizio che pose fine alla Prima guerra mondiale fu firmato l'11 novembre:"
+  },
+  {
+    "id": "att-133",
+    "file": "attualita.txt",
+    "frase": "Come venne chiamata la pace imposta alla Germania nel 1919?"
+  },
+  {
+    "id": "att-134",
+    "file": "attualita.txt",
+    "frase": "In quale anno Benito Mussolini salì al potere in Italia?"
+  },
+  {
+    "id": "att-135",
+    "file": "attualita.txt",
+    "frase": "Quale paese fu guidato da Franklin D. Roosevelt durante la Grande Depressione?"
+  },
+  {
+    "id": "att-136",
+    "file": "attualita.txt",
+    "frase": "Quale leader divenne cancelliere della Germania nel 1933?"
+  },
+  {
+    "id": "att-137",
+    "file": "attualita.txt",
+    "frase": "Che cosa significano le iniziali \"URSS\"?"
+  },
+  {
+    "id": "att-138",
+    "file": "attualita.txt",
+    "frase": "L'invasione della Polonia nel 1939 diede inizio a:"
+  },
+  {
+    "id": "att-139",
+    "file": "attualita.txt",
+    "frase": "Quale nazione fu attaccata a Pearl Harbor nel 1941?"
+  },
+  {
+    "id": "att-140",
+    "file": "attualita.txt",
+    "frase": "Che cos'era il D Day (6 giugno 1944)?"
+  },
+  {
+    "id": "att-141",
+    "file": "attualita.txt",
+    "frase": "Come si concluse la Seconda guerra mondiale in Europa?"
+  },
+  {
+    "id": "att-142",
+    "file": "attualita.txt",
+    "frase": "In quali città giapponesi furono sganciate le bombe atomiche (1945)?"
+  },
+  {
+    "id": "att-143",
+    "file": "attualita.txt",
+    "frase": "L'Organizzazione delle Nazioni Unite nacque ufficialmente nel:"
+  },
+  {
+    "id": "att-144",
+    "file": "attualita.txt",
+    "frase": "Chi era il leader della Cina alla proclamazione della Repubblica Popolare (1949)?"
+  },
+  {
+    "id": "att-145",
+    "file": "attualita.txt",
+    "frase": "Quale piano USA aiutò la ricostruzione europea dopo il 1947?"
+  },
+  {
+    "id": "att-146",
+    "file": "attualita.txt",
+    "frase": "Il processo di Norimberga giudicò i crimini di quale regime?"
+  },
+  {
+    "id": "att-147",
+    "file": "attualita.txt",
+    "frase": "L'Alleanza Atlantica (NATO) fu creata nel:"
+  },
+  {
+    "id": "att-148",
+    "file": "attualita.txt",
+    "frase": "Il primo satellite artificiale, lo Sputnik 1, fu lanciato dall'URSS nel:"
+  },
+  {
+    "id": "att-149",
+    "file": "attualita.txt",
+    "frase": "Quale conflitto (1950‑1953) vide l'intervento ONU?"
+  },
+  {
+    "id": "att-150",
+    "file": "attualita.txt",
+    "frase": "Nel 1955 nacque il Patto di Varsavia, guidato da:"
+  },
+  {
+    "id": "att-151",
+    "file": "attualita.txt",
+    "frase": "Chi pronunciò il discorso \"I have a dream\" nel 1963?"
+  },
+  {
+    "id": "att-152",
+    "file": "attualita.txt",
+    "frase": "Il muro di Berlino fu eretto nel:"
+  },
+  {
+    "id": "att-153",
+    "file": "attualita.txt",
+    "frase": "Chi fu il primo uomo nello spazio nel 1961?"
+  },
+  {
+    "id": "att-154",
+    "file": "attualita.txt",
+    "frase": "La crisi dei missili di Cuba avvenne durante la presidenza USA di:"
+  },
+  {
+    "id": "att-155",
+    "file": "attualita.txt",
+    "frase": "Quale stato africano guidato da Nelson Mandela abolì l'apartheid?"
+  },
+  {
+    "id": "att-156",
+    "file": "attualita.txt",
+    "frase": "Nel 1969 Neil Armstrong fu il primo uomo a:"
+  },
+  {
+    "id": "att-157",
+    "file": "attualita.txt",
+    "frase": "Il movimento del '68 ebbe origine tra gli studenti di:"
+  },
+  {
+    "id": "att-158",
+    "file": "attualita.txt",
+    "frase": "Quale guerra coinvolse direttamente Stati Uniti e Vietnam del Nord?"
+  },
+  {
+    "id": "att-159",
+    "file": "attualita.txt",
+    "frase": "Quale presidente statunitense si dimise dopo lo scandalo Watergate (1974)?"
+  },
+  {
+    "id": "att-160",
+    "file": "attualita.txt",
+    "frase": "Nel 1973 la crisi petrolifera fu provocata principalmente da:"
+  },
+  {
+    "id": "att-161",
+    "file": "attualita.txt",
+    "frase": "La rivoluzione dei Garofani (1974) pose fine alla dittatura in:"
+  },
+  {
+    "id": "att-162",
+    "file": "attualita.txt",
+    "frase": "Quale leader cinese avviò le riforme di mercato dalla fine degli anni '70?"
+  },
+  {
+    "id": "att-163",
+    "file": "attualita.txt",
+    "frase": "Il trattato che restituisce il Canale di Panama agli omonimi panamensi fu firmato dagli USA nel:"
+  },
+  {
+    "id": "att-164",
+    "file": "attualita.txt",
+    "frase": "La rivoluzione islamica iraniana destituì lo Scià nel:"
+  },
+  {
+    "id": "att-165",
+    "file": "attualita.txt",
+    "frase": "La monarchia di quale paese europeo ristabilì la democrazia con la Costituzione de 1978?"
+  },
+  {
+    "id": "att-166",
+    "file": "attualita.txt",
+    "frase": "Chi fu eletto papa nel 1978 assumendo il nome di Giovanni Paolo II?"
+  },
+  {
+    "id": "att-167",
+    "file": "attualita.txt",
+    "frase": "Il disastro nucleare di Chernobyl avvenne nel:"
+  },
+  {
+    "id": "att-168",
+    "file": "attualita.txt",
+    "frase": "Chi divenne leader sovietico nel 1985 avviando glasnost e perestrojka?"
+  },
+  {
+    "id": "att-169",
+    "file": "attualita.txt",
+    "frase": "Nel 1989 una catena umana collegò le capitali baltiche per chiedere l'indipendenza; fu detta:"
+  },
+  {
+    "id": "att-170",
+    "file": "attualita.txt",
+    "frase": "Il muro di Berlino cadde il 9 novembre:"
+  },
+  {
+    "id": "att-171",
+    "file": "attualita.txt",
+    "frase": "L'Unione Sovietica si dissolse ufficialmente nel dicembre:"
+  },
+  {
+    "id": "att-172",
+    "file": "attualita.txt",
+    "frase": "La prima guerra del Golfo (1990‑91) scoppiò dopo l'invasione di:"
+  },
+  {
+    "id": "att-173",
+    "file": "attualita.txt",
+    "frase": "Quale leader sudafricano fu liberato nel 1990 dopo 27 anni di prigionia?"
+  },
+  {
+    "id": "att-174",
+    "file": "attualita.txt",
+    "frase": "L'Unione europea, erede della CEE, nacque con il Trattato di Maastricht nel:"
+  },
+  {
+    "id": "att-175",
+    "file": "attualita.txt",
+    "frase": "Il genocidio in Ruanda avvenne nel:"
+  },
+  {
+    "id": "att-176",
+    "file": "attualita.txt",
+    "frase": "Gli accordi di Oslo (1993) riguardarono il conflitto:"
+  },
+  {
+    "id": "att-177",
+    "file": "attualita.txt",
+    "frase": "Chi vinse le prime elezioni democratiche in Russia nel 1991?"
+  },
+  {
+    "id": "att-178",
+    "file": "attualita.txt",
+    "frase": "La guerra di Bosnia scoppiò nel 1992 e terminò con gli accordi di:"
+  },
+  {
+    "id": "att-179",
+    "file": "attualita.txt",
+    "frase": "Nel 1995 l'Organizzazione Mondiale del Commercio (WTO) sostituì:"
+  },
+  {
+    "id": "att-180",
+    "file": "attualita.txt",
+    "frase": "Il trattato che vieta le mine antipersona fu firmato a Ottawa nel:"
+  },
+  {
+    "id": "att-181",
+    "file": "attualita.txt",
+    "frase": "Hong Kong tornò alla Cina (dalla Gran Bretagna) nel:"
+  },
+  {
+    "id": "att-182",
+    "file": "attualita.txt",
+    "frase": "Chi fu il presidente degli Stati Uniti durante lo scandalo Monica Lewinsky?"
+  },
+  {
+    "id": "att-183",
+    "file": "attualita.txt",
+    "frase": "In che anno è uscito il film vincitore di 11 premi Oscar \"Titanic\"?"
+  },
+  {
+    "id": "att-184",
+    "file": "attualita.txt",
+    "frase": "L'euro diventò valuta scritturale (senza monete) nel:"
+  },
+  {
+    "id": "att-185",
+    "file": "attualita.txt",
+    "frase": "Quale giocatore di basket morì nel 1991 a causa del virus HIV?"
+  },
+  {
+    "id": "att-186",
+    "file": "attualita.txt",
+    "frase": "La pecora Dolly, primo mammifero clonato, nacque nel:"
+  },
+  {
+    "id": "att-187",
+    "file": "attualita.txt",
+    "frase": "Il principe Carlo divorziò da Diana Spencer nel:"
+  },
+  {
+    "id": "att-188",
+    "file": "attualita.txt",
+    "frase": "L'Accordo del Venerdì Santo (1998) pose fine al conflitto in:"
+  },
+  {
+    "id": "att-189",
+    "file": "attualita.txt",
+    "frase": "Chi succedette a Giovanni Paolo II come papa nel 2005?"
+  },
+  {
+    "id": "att-190",
+    "file": "attualita.txt",
+    "frase": "L'11 settembre 2001 furono colpiti gli Stati Uniti da attentati che distrussero:"
+  },
+  {
+    "id": "att-191",
+    "file": "attualita.txt",
+    "frase": "Quale paese guidò una coalizione nella guerra in Afghanistan del 2001?"
+  },
+  {
+    "id": "att-192",
+    "file": "attualita.txt",
+    "frase": "Il terremoto‑tsunami dell'Oceano Indiano che colpì soprattutto Indonesia avvenne nel:"
+  },
+  {
+    "id": "att-193",
+    "file": "attualita.txt",
+    "frase": "Chi venne eletto presidente USA nel 2008?"
+  },
+  {
+    "id": "att-194",
+    "file": "attualita.txt",
+    "frase": "La crisi finanziaria dei mutui subprime esplose a causa del fallimento di quale banca d'investimento (2008)?"
+  },
+  {
+    "id": "att-195",
+    "file": "attualita.txt",
+    "frase": "Il movimento delle \"Primavere arabe\" iniziò nel 2010 in:"
+  },
+  {
+    "id": "att-196",
+    "file": "attualita.txt",
+    "frase": "L'ONU approvò nel 2015 gli Obiettivi di sviluppo sostenibile noti come:"
+  },
+  {
+    "id": "att-197",
+    "file": "attualita.txt",
+    "frase": "Quale virus causò la pandemia dichiarata dall'OMS nel marzo 2020?"
+  },
+  {
+    "id": "att-198",
+    "file": "attualita.txt",
+    "frase": "La città italiana epicentro dei primi focolai europei di COVID‑19 fu:"
+  },
+  {
+    "id": "att-199",
+    "file": "attualita.txt",
+    "frase": "Il Regno Unito uscì formalmente dall'Unione europea (Brexit) nel:"
+  },
+  {
+    "id": "att-200",
+    "file": "attualita.txt",
+    "frase": "Joe Biden divenne il ___° presidente degli Stati Uniti nel 2021."
+  },
+  {
+    "id": "att-201",
+    "file": "attualita.txt",
+    "frase": "I Giochi Olimpici di Tokyo, previsti nel 2020, si svolsero effettivamente nel:"
+  },
+  {
+    "id": "att-202",
+    "file": "attualita.txt",
+    "frase": "La Russia ha invaso l'Ucraina su vasta scala il 24 febbraio:"
+  },
+  {
+    "id": "att-203",
+    "file": "attualita.txt",
+    "frase": "L'Accordo di Parigi sul clima è stato firmato da quasi tutti i paesi nel:"
+  },
+  {
+    "id": "att-204",
+    "file": "attualita.txt",
+    "frase": "Chi è stato il primo papa proveniente dall'America Latina (2013)?"
+  },
+  {
+    "id": "att-205",
+    "file": "attualita.txt",
+    "frase": "Nel 2018 si celebrò il centenario della fine di quale guerra?"
+  },
+  {
+    "id": "att-206",
+    "file": "attualita.txt",
+    "frase": "L'Expo Milano dedicato al tema \"Nutrire il pianeta\" si tenne nel:"
+  },
+  {
+    "id": "att-207",
+    "file": "attualita.txt",
+    "frase": "Il rover Perseverance è atterrato su Marte nell'anno:"
+  },
+  {
+    "id": "att-208",
+    "file": "attualita.txt",
+    "frase": "Chi è l'autrice della serie \"Harry Potter\", iniziata nel 1997?"
+  },
+  {
+    "id": "att-209",
+    "file": "attualita.txt",
+    "frase": "L'iPhone, primo smartphone Apple, fu presentato nel:"
+  },
+  {
+    "id": "att-210",
+    "file": "attualita.txt",
+    "frase": "Facebook fu fondato da Mark Zuckerberg nel:"
+  },
+  {
+    "id": "att-211",
+    "file": "attualita.txt",
+    "frase": "Quale programma televisivo di talent musicale nacque in Regno Unito nel 2004?"
+  },
+  {
+    "id": "att-212",
+    "file": "attualita.txt",
+    "frase": "Il film \"Titanic\" diretto da James Cameron vinse 11 Oscar nel:"
+  },
+  {
+    "id": "att-213",
+    "file": "attualita.txt",
+    "frase": "Chi fu incoronato re del Regno Unito nel 2023?"
+  },
+  {
+    "id": "att-214",
+    "file": "attualita.txt",
+    "frase": "La valuta digitale \"Bitcoin\" venne descritta per la prima volta in un white paper del:"
+  },
+  {
+    "id": "att-215",
+    "file": "attualita.txt",
+    "frase": "Greta Thunberg avviò gli scioperi scolastici per il clima partendo dalla città di:"
+  },
+  {
+    "id": "att-216",
+    "file": "attualita.txt",
+    "frase": "La serie TV \"Il Trono di Spade\" (Game of Thrones) si concluse nel:"
+  },
+  {
+    "id": "att-217",
+    "file": "attualita.txt",
+    "frase": "L'accordo di pace che premiò con il Nobel Juan Manuel Santos riguardava la Colombia nel:"
+  },
+  {
+    "id": "att-218",
+    "file": "attualita.txt",
+    "frase": "\"Brexit\" è la fusione tra la parola \"Britain\" e la parola:"
+  },
+  {
+    "id": "att-219",
+    "file": "attualita.txt",
+    "frase": "Il movimento \"Black Lives Matter\" divenne globale nel 2020 in seguito alla morte di:"
+  },
+  {
+    "id": "att-220",
+    "file": "attualita.txt",
+    "frase": "L'accordo AUKUS del 2021 coinvolge Australia, Regno Unito e:"
+  },
+  {
+    "id": "att-221",
+    "file": "attualita.txt",
+    "frase": "Quale nazione conquistò la Coppa del Mondo FIFA 2006?"
+  },
+  {
+    "id": "att-222",
+    "file": "attualita.txt",
+    "frase": "L'operatore di streaming musicale Spotify è nato in:"
+  },
+  {
+    "id": "att-223",
+    "file": "attualita.txt",
+    "frase": "Il premio Oscar 2020 come miglior film andò al film sudcoreano:"
+  },
+  {
+    "id": "att-224",
+    "file": "attualita.txt",
+    "frase": "L'Expo mondiale di Dubai si è tenuto effettivamente nel periodo 2021‑:"
+  },
+  {
+    "id": "att-225",
+    "file": "attualita.txt",
+    "frase": "Chi ha vinto il Nobel per la Pace 2014 per la lotta al diritto all'istruzione delle ragazze?"
+  },
+  {
+    "id": "att-226",
+    "file": "attualita.txt",
+    "frase": "Il ponte di Genova Morandi crollò tragicamente nel:"
+  },
+  {
+    "id": "att-227",
+    "file": "attualita.txt",
+    "frase": "La serie televisiva coreana \"Squid Game\" è stata lanciata su Netflix nel:"
+  },
+  {
+    "id": "att-228",
+    "file": "attualita.txt",
+    "frase": "L'enciclica \"Laudato Si' \" di papa Francesco tratta il tema:"
+  },
+  {
+    "id": "att-229",
+    "file": "attualita.txt",
+    "frase": "Il referendum costituzionale italiano che ridusse il numero dei parlamentari si è tenuto nel:"
+  },
+  {
+    "id": "att-230",
+    "file": "attualita.txt",
+    "frase": "Amazon fu fondata da Jeff Bezos nel 1994 come libreria:"
+  },
+  {
+    "id": "att-231",
+    "file": "attualita.txt",
+    "frase": "La sonda \"New Horizons\" sorvolò Plutone nel:"
+  },
+  {
+    "id": "att-232",
+    "file": "attualita.txt",
+    "frase": "Il Premio Nobel per la Letteratura 2021 è stato attribuito allo scrittore:"
+  },
+  {
+    "id": "att-233",
+    "file": "attualita.txt",
+    "frase": "La COP 26 sul clima si è tenuta a Glasgow nel:"
+  },
+  {
+    "id": "att-234",
+    "file": "attualita.txt",
+    "frase": "\"MeToo\" è un movimento nato per denunciare:"
+  },
+  {
+    "id": "att-235",
+    "file": "attualita.txt",
+    "frase": "Quale paese ha ospitato i Mondiali di calcio 2022?"
+  },
+  {
+    "id": "att-236",
+    "file": "attualita.txt",
+    "frase": "Il \"Nobel alternativo\" detto Right Livelihood Award è assegnato in:"
+  },
+  {
+    "id": "att-237",
+    "file": "attualita.txt",
+    "frase": "La missione Artemis I della NASA ha riportato una capsula intorno alla Luna nel:"
+  },
+  {
+    "id": "att-238",
+    "file": "attualita.txt",
+    "frase": "L'Accordo di Camp David del 1978 portò alla pace tra Israele e:"
+  },
+  {
+    "id": "att-239",
+    "file": "attualita.txt",
+    "frase": "Il conflitto delle Falkland (1982) oppose il Regno Unito e:"
+  },
+  {
+    "id": "att-240",
+    "file": "attualita.txt",
+    "frase": "Il simbolo universale \"smile\" giallo fu creato negli Stati Uniti negli anni:"
+  },
+  {
+    "id": "att-241",
+    "file": "attualita.txt",
+    "frase": "Chi ha vinto sette mondiali di Formula 1 eguagliando Schumacher nel 2020?"
+  },
+  {
+    "id": "att-242",
+    "file": "attualita.txt",
+    "frase": "Il ponte sullo stretto di Øresund collega Danimarca e:"
+  },
+  {
+    "id": "att-243",
+    "file": "attualita.txt",
+    "frase": "Il gruppo eco‑attivista \"Extinction Rebellion\" è nato nel:"
+  },
+  {
+    "id": "att-244",
+    "file": "attualita.txt",
+    "frase": "Che cos'è il \"Crowdfunding\"?"
+  },
+  {
+    "id": "att-245",
+    "file": "attualita.txt",
+    "frase": "L'euro è entrato nelle tasche dei cittadini europei il 1° gennaio:"
+  },
+  {
+    "id": "att-246",
+    "file": "attualita.txt",
+    "frase": "La sigla G20 indica un forum di:"
+  },
+  {
+    "id": "att-247",
+    "file": "attualita.txt",
+    "frase": "Il primo vaccino anti‑Covid autorizzato in UE è stato prodotto da:"
+  },
+  {
+    "id": "att-248",
+    "file": "attualita.txt",
+    "frase": "Il termine \"blockchain\" si riferisce a:"
+  },
+  {
+    "id": "att-249",
+    "file": "attualita.txt",
+    "frase": "L'azienda Tesla è nota per:"
+  },
+  {
+    "id": "att-250",
+    "file": "attualita.txt",
+    "frase": "La città di Davos ospita ogni anno il Forum:"
+  },
+  {
+    "id": "att-251",
+    "file": "attualita.txt",
+    "frase": "Il motore di ricerca \"Google\" è stato fondato da Larry Page e:"
+  },
+  {
+    "id": "att-252",
+    "file": "attualita.txt",
+    "frase": "La sigla \"AI\" sta per:"
+  },
+  {
+    "id": "att-253",
+    "file": "attualita.txt",
+    "frase": "La crisi del debito greco esplose nel contesto della grande recessione del:"
+  },
+  {
+    "id": "att-254",
+    "file": "attualita.txt",
+    "frase": "Il sistema operativo Android è di proprietà di:"
+  },
+  {
+    "id": "att-255",
+    "file": "attualita.txt",
+    "frase": "La società SpaceX è guidata dall'imprenditore:"
+  },
+  {
+    "id": "att-256",
+    "file": "attualita.txt",
+    "frase": "Il CERN, dove fu creato il World Wide Web, si trova in:"
+  },
+  {
+    "id": "att-257",
+    "file": "attualita.txt",
+    "frase": "Il \"crowdsourcing\" indica:"
+  },
+  {
+    "id": "att-258",
+    "file": "attualita.txt",
+    "frase": "L'acronimo \"BRICS\" include Brasile, Russia, India, Cina e:"
+  },
+  {
+    "id": "att-259",
+    "file": "attualita.txt",
+    "frase": "Il colosso e‑commerce \"Alibaba\" proviene da quale paese?"
+  },
+  {
+    "id": "att-260",
+    "file": "attualita.txt",
+    "frase": "Il pacchetto \"Fit for 55\" è una proposta dell'Unione:"
+  },
+  {
+    "id": "att-261",
+    "file": "attualita.txt",
+    "frase": "L'accordo NAFTA (1994) ha unito gli Stati Uniti, Canada e:"
+  },
+  {
+    "id": "att-262",
+    "file": "attualita.txt",
+    "frase": "La moneta digitale \"e‑Naira\" è stata emessa dalla banca centrale di:"
+  },
+  {
+    "id": "att-263",
+    "file": "attualita.txt",
+    "frase": "La definizione \"gig economy\" indica il lavoro:"
+  },
+  {
+    "id": "att-264",
+    "file": "attualita.txt",
+    "frase": "Il termine \"unicorn\" in finanza indica una start‑up valutata:"
+  },
+  {
+    "id": "att-265",
+    "file": "attualita.txt",
+    "frase": "L'energia eolica sfrutta:"
+  },
+  {
+    "id": "att-266",
+    "file": "attualita.txt",
+    "frase": "Il protocollo di Kyoto (1997) mirava a:"
+  },
+  {
+    "id": "att-267",
+    "file": "attualita.txt",
+    "frase": "La NASA è l'agenzia spaziale degli:"
+  },
+  {
+    "id": "att-268",
+    "file": "attualita.txt",
+    "frase": "Il \"Micro‑credit\" è stato diffusamente promosso dal Nobel per la Pace:"
+  },
+  {
+    "id": "att-269",
+    "file": "attualita.txt",
+    "frase": "LTE e 5G riguardano la tecnologia:"
+  },
+  {
+    "id": "att-270",
+    "file": "attualita.txt",
+    "frase": "Il \"Global Warming\" è il fenomeno dell':"
+  },
+  {
+    "id": "att-271",
+    "file": "attualita.txt",
+    "frase": "L'indice borsistico \"Dow Jones\" è collegato alla borsa di:"
+  },
+  {
+    "id": "att-272",
+    "file": "attualita.txt",
+    "frase": "\"FAANG\" è l'acronimo che raggruppa Facebook, Amazon, Apple, Netflix e:"
+  },
+  {
+    "id": "att-273",
+    "file": "attualita.txt",
+    "frase": "L'idrogeno \"verde\" si produce utilizzando energia:"
+  },
+  {
+    "id": "att-274",
+    "file": "attualita.txt",
+    "frase": "Il primo volo commerciale del Boeing 787 Dreamliner avvenne nel:"
+  },
+  {
+    "id": "att-275",
+    "file": "attualita.txt",
+    "frase": "La Google Earth Engine serve per analizzare dati:"
+  },
+  {
+    "id": "att-276",
+    "file": "attualita.txt",
+    "frase": "Il materiale \"grafene\" è costituito da un singolo strato di:"
+  },
+  {
+    "id": "att-277",
+    "file": "attualita.txt",
+    "frase": "L'inflazione è la crescita:"
+  },
+  {
+    "id": "att-278",
+    "file": "attualita.txt",
+    "frase": "La \"gigafactory\" è impianto di produzione di:"
+  },
+  {
+    "id": "att-279",
+    "file": "attualita.txt",
+    "frase": "Il \"telelavoro\" è sinonimo di:"
+  },
+  {
+    "id": "att-280",
+    "file": "attualita.txt",
+    "frase": "\"Fair Trade\" indica commercio:"
+  },
+  {
+    "id": "att-281",
+    "file": "attualita.txt",
+    "frase": "Il sistema GPS fu sviluppato dagli:"
+  },
+  {
+    "id": "att-282",
+    "file": "attualita.txt",
+    "frase": "L'acquisto di Twitter da parte di Elon Musk è stato finalizzato nel:"
+  },
+  {
+    "id": "att-283",
+    "file": "attualita.txt",
+    "frase": "Le Nazioni Unite riconoscono oggi ___ Stati membri."
+  },
+  {
+    "id": "att-284",
+    "file": "attualita.txt",
+    "frase": "La Corte Penale Internazionale ha sede a:"
+  },
+  {
+    "id": "att-285",
+    "file": "attualita.txt",
+    "frase": "Amnesty International si occupa di:"
+  },
+  {
+    "id": "att-286",
+    "file": "attualita.txt",
+    "frase": "La bandiera arcobaleno è simbolo dei diritti:"
+  },
+  {
+    "id": "att-287",
+    "file": "attualita.txt",
+    "frase": "La Carta africana dei diritti dell'uomo e dei popoli fu adottata nel:"
+  },
+  {
+    "id": "att-288",
+    "file": "attualita.txt",
+    "frase": "L'isola di Taiwan è rivendicata dalla:"
+  },
+  {
+    "id": "att-289",
+    "file": "attualita.txt",
+    "frase": "Il programma \"One Laptop per Child\" mira a:"
+  },
+  {
+    "id": "att-290",
+    "file": "attualita.txt",
+    "frase": "L'OMS ha dichiarato eradicata la malattia del vaiolo nel:"
+  },
+  {
+    "id": "att-291",
+    "file": "attualita.txt",
+    "frase": "Il referendum sulla nuova Costituzione cilena redatta nel 2022 si è:"
+  },
+  {
+    "id": "att-292",
+    "file": "attualita.txt",
+    "frase": "Il \"Green Pass\" sanitario è sorto per contrastare:"
+  },
+  {
+    "id": "att-293",
+    "file": "attualita.txt",
+    "frase": "L'organo esecutivo dell'Unione africana è la:"
+  },
+  {
+    "id": "att-294",
+    "file": "attualita.txt",
+    "frase": "Quale film ha vinto la Palma d'Oro a Cannes 2019?"
+  },
+  {
+    "id": "att-295",
+    "file": "attualita.txt",
+    "frase": "La capitale riconosciuta dello Stato di Israele secondo gran parte dei paesi è:"
+  },
+  {
+    "id": "att-296",
+    "file": "attualita.txt",
+    "frase": "Il \"Movimento 15‑M\" (Indignados) scoppiò in:"
+  },
+  {
+    "id": "att-297",
+    "file": "attualita.txt",
+    "frase": "La \"Guerra dei Sei Giorni\" si combatté nel:"
+  },
+  {
+    "id": "att-298",
+    "file": "attualita.txt",
+    "frase": "Lo Stato più giovane del mondo, fondato nel 2011, è:"
+  },
+  {
+    "id": "att-299",
+    "file": "attualita.txt",
+    "frase": "Il trattato di non proliferazione nucleare (TNP) è entrato in vigore nel:"
+  },
+  {
+    "id": "att-300",
+    "file": "attualita.txt",
+    "frase": "L'indice di sviluppo umano (HDI) è pubblicato annualmente dal:"
+  },
+  {
+    "id": "att-301",
+    "file": "attualita.txt",
+    "frase": "L'accordo di Schengen regola la libera circolazione tra i paesi firmatari:"
+  },
+  {
+    "id": "att-302",
+    "file": "attualita.txt",
+    "frase": "L'agenzia ONU per i profughi palestinesi è:"
+  },
+  {
+    "id": "att-303",
+    "file": "attualita.txt",
+    "frase": "L'UNICEF si dedica principalmente alla tutela dei:"
+  },
+  {
+    "id": "att-304",
+    "file": "attualita.txt",
+    "frase": "Il Premio Sakharov del Parlamento europeo onora difensori:"
+  },
+  {
+    "id": "att-305",
+    "file": "attualita.txt",
+    "frase": "Quale Corte internazionale può dirimere controversie tra Stati sull'interpretazione dei trattati?"
+  },
+  {
+    "id": "att-306",
+    "file": "attualita.txt",
+    "frase": "Il termine \"soft power\" indica il potere basato su:"
+  },
+  {
+    "id": "att-307",
+    "file": "attualita.txt",
+    "frase": "\"One Belt One Road\" è anche chiamata:"
+  },
+  {
+    "id": "att-308",
+    "file": "attualita.txt",
+    "frase": "L'ONU impiega i caschi blu per:"
+  },
+  {
+    "id": "att-309",
+    "file": "attualita.txt",
+    "frase": "Il Trattato INF del 1987 riguardava l'eliminazione di missili:"
+  },
+  {
+    "id": "att-310",
+    "file": "attualita.txt",
+    "frase": "La conferenza di Bandung (1955) determinò la nascita del nuovo soggetto politico dei Paesi:"
+  },
+  {
+    "id": "att-311",
+    "file": "attualita.txt",
+    "frase": "Quale paese è famoso per il \"Miracolo economico\" postbellico (Wirtschaftswunder)?"
+  },
+  {
+    "id": "att-312",
+    "file": "attualita.txt",
+    "frase": "Il \"Manifesto di Ventotene\" (1941) proponeva:"
+  },
+  {
+    "id": "att-313",
+    "file": "attualita.txt",
+    "frase": "La Corte Europea dei Diritti dell'Uomo ha sede a:"
+  },
+  {
+    "id": "att-314",
+    "file": "attualita.txt",
+    "frase": "Il referendum in Scozia del 2014 chiedeva:"
+  },
+  {
+    "id": "att-315",
+    "file": "attualita.txt",
+    "frase": "Il \"focus group\" è una tecnica di:"
+  },
+  {
+    "id": "att-316",
+    "file": "attualita.txt",
+    "frase": "Il tribunale dell'ASEAN si occupa di:"
+  },
+  {
+    "id": "att-317",
+    "file": "attualita.txt",
+    "frase": "La sede della FAO si trova a:"
+  },
+  {
+    "id": "att-318",
+    "file": "attualita.txt",
+    "frase": "La Convenzione di Ginevra stabilisce regole sul:"
+  },
+  {
+    "id": "att-319",
+    "file": "attualita.txt",
+    "frase": "Il \"Freedom House Index\" valuta:"
+  },
+  {
+    "id": "att-320",
+    "file": "attualita.txt",
+    "frase": "L'accordo del 2023 che ha riavviato i rapporti tra Arabia Saudita e Iran è stato mediato da:"
+  },
+  {
+    "id": "att-321",
+    "file": "attualita.txt",
+    "frase": "Quale trattato istituì formalmente la Comunità Economica Europea (CEE) nel 1957?"
+  },
+  {
+    "id": "att-322",
+    "file": "attualita.txt",
+    "frase": "In quale anno nacque l'Unione europea sostituendo la CEE?"
+  },
+  {
+    "id": "att-323",
+    "file": "attualita.txt",
+    "frase": "Il Trattato di Maastricht è noto anche come:"
+  },
+  {
+    "id": "att-324",
+    "file": "attualita.txt",
+    "frase": "Le banconote e monete in euro sono entrate in circolazione il:"
+  },
+  {
+    "id": "att-325",
+    "file": "attualita.txt",
+    "frase": "Il processo di allargamento del 2004 portò l'UE da 15 a:"
+  },
+  {
+    "id": "att-326",
+    "file": "attualita.txt",
+    "frase": "Quale Paese ha lasciato l'UE nel 2020 (Brexit)?"
+  },
+  {
+    "id": "att-327",
+    "file": "attualita.txt",
+    "frase": "La CECA (Comunità Europea del Carbone e dell'Acciaio) fu sciolta nel 2002 dopo:"
+  },
+  {
+    "id": "att-328",
+    "file": "attualita.txt",
+    "frase": "Tra i \"padri fondatori\" dell'Europa non c'è:"
+  },
+  {
+    "id": "att-329",
+    "file": "attualita.txt",
+    "frase": "Quale Trattato ha conferito personalità giuridica unica all'UE?"
+  },
+  {
+    "id": "att-330",
+    "file": "attualita.txt",
+    "frase": "Il Recovery and Resilience Facility fa parte del piano:"
+  },
+  {
+    "id": "att-331",
+    "file": "attualita.txt",
+    "frase": "Quale film ha vinto la Palma d'Oro a Cannes 2021?"
+  },
+  {
+    "id": "att-332",
+    "file": "attualita.txt",
+    "frase": "L'inno europeo è basato sull'\"Inno alla Gioia\" di:"
+  },
+  {
+    "id": "att-333",
+    "file": "attualita.txt",
+    "frase": "La bandiera UE con 12 stelle dorate su sfondo blu fu adottata nel:"
+  },
+  {
+    "id": "att-334",
+    "file": "attualita.txt",
+    "frase": "Nel 1979 si tennero le prime:"
+  },
+  {
+    "id": "att-335",
+    "file": "attualita.txt",
+    "frase": "Il Consiglio europeo fu formalizzato nel Trattato di:"
+  },
+  {
+    "id": "att-336",
+    "file": "attualita.txt",
+    "frase": "La sede ufficiale del Parlamento europeo è:"
+  },
+  {
+    "id": "att-337",
+    "file": "attualita.txt",
+    "frase": "Il \"pilastro dei diritti sociali\" è stato proclamato a Göteborg nel:"
+  },
+  {
+    "id": "att-338",
+    "file": "attualita.txt",
+    "frase": "Quale organo detiene il potere di iniziativa legislativa quasi esclusivo?"
+  },
+  {
+    "id": "att-339",
+    "file": "attualita.txt",
+    "frase": "Il Consiglio \"Ecofin\" riunisce i ministri:"
+  },
+  {
+    "id": "att-340",
+    "file": "attualita.txt",
+    "frase": "Il Presidente della Commissione è eletto dal:"
+  },
+  {
+    "id": "att-341",
+    "file": "attualita.txt",
+    "frase": "Il mandato degli eurodeputati dura:"
+  },
+  {
+    "id": "att-342",
+    "file": "attualita.txt",
+    "frase": "La Corte di giustizia dell'Unione europea ha sede a:"
+  },
+  {
+    "id": "att-343",
+    "file": "attualita.txt",
+    "frase": "La Banca Centrale Europea (BCE) è stata istituita con il Trattato di:"
+  },
+  {
+    "id": "att-344",
+    "file": "attualita.txt",
+    "frase": "Chi approva il bilancio annuale dell'UE?"
+  },
+  {
+    "id": "att-345",
+    "file": "attualita.txt",
+    "frase": "La procedura di \"codecisione\" in ambito UE è oggi chiamata:"
+  },
+  {
+    "id": "att-346",
+    "file": "attualita.txt",
+    "frase": "Quale istituzione rappresenta \"gli Stati membri UE\" a livello ministeriale?"
+  },
+  {
+    "id": "att-347",
+    "file": "attualita.txt",
+    "frase": "Il Mediatore europeo indaga su:"
+  },
+  {
+    "id": "att-348",
+    "file": "attualita.txt",
+    "frase": "La Corte dei conti europea verifica:"
+  },
+  {
+    "id": "att-349",
+    "file": "attualita.txt",
+    "frase": "Il Consiglio europeo decide di norma:"
+  },
+  {
+    "id": "att-350",
+    "file": "attualita.txt",
+    "frase": "Il SEAE è il:"
+  },
+  {
+    "id": "att-351",
+    "file": "attualita.txt",
+    "frase": "Il Comitato economico e sociale europeo è composto da:"
+  },
+  {
+    "id": "att-352",
+    "file": "attualita.txt",
+    "frase": "La \"maggioranza qualificata\" nel Consiglio richiede almeno il ___ % della popolazione UE."
+  },
+  {
+    "id": "att-353",
+    "file": "attualita.txt",
+    "frase": "La sede della BCE è a:"
+  },
+  {
+    "id": "att-354",
+    "file": "attualita.txt",
+    "frase": "Il meccanismo di allerta sullo Stato di diritto è proposto dalla:"
+  },
+  {
+    "id": "att-355",
+    "file": "attualita.txt",
+    "frase": "Europol si occupa di:"
+  },
+  {
+    "id": "att-356",
+    "file": "attualita.txt",
+    "frase": "La parola \"trilogo\" in ambito UE indica:"
+  },
+  {
+    "id": "att-357",
+    "file": "attualita.txt",
+    "frase": "Il mandato standard del Presidente del Consiglio europeo è di:"
+  },
+  {
+    "id": "att-358",
+    "file": "attualita.txt",
+    "frase": "Il Comitato delle Regioni rappresenta:"
+  },
+  {
+    "id": "att-359",
+    "file": "attualita.txt",
+    "frase": "La BEI (Banca europea per gli investimenti) finanzia:"
+  },
+  {
+    "id": "att-360",
+    "file": "attualita.txt",
+    "frase": "Il \"semestre europeo\" è un ciclo di:"
+  },
+  {
+    "id": "att-361",
+    "file": "attualita.txt",
+    "frase": "Nel Parlamento europeo, i deputati siedono per:"
+  },
+  {
+    "id": "att-362",
+    "file": "attualita.txt",
+    "frase": "L'iniziativa dei cittadini europei richiede almeno:"
+  },
+  {
+    "id": "att-363",
+    "file": "attualita.txt",
+    "frase": "\"Next Generation EU\" è finanziato in parte da:"
+  },
+  {
+    "id": "att-364",
+    "file": "attualita.txt",
+    "frase": "Il regolamento \"GDPR\" (2018) tutela:"
+  },
+  {
+    "id": "att-365",
+    "file": "attualita.txt",
+    "frase": "Il Consiglio Affari Esteri ina mbito UE è presieduto di diritto da:"
+  },
+  {
+    "id": "att-366",
+    "file": "attualita.txt",
+    "frase": "Il Fondo sociale europeo sostiene:"
+  },
+  {
+    "id": "att-367",
+    "file": "attualita.txt",
+    "frase": "Erasmus+ finanzia soprattutto:"
+  },
+  {
+    "id": "att-368",
+    "file": "attualita.txt",
+    "frase": "Il programma \"Horizon Europe\" riguarda:"
+  },
+  {
+    "id": "att-369",
+    "file": "attualita.txt",
+    "frase": "Quale film ha vinto la Palma d'Oro a Cannes 2023?"
+  },
+  {
+    "id": "att-370",
+    "file": "attualita.txt",
+    "frase": "La \"Rete Natura 2000\" tutela:"
+  },
+  {
+    "id": "att-371",
+    "file": "attualita.txt",
+    "frase": "Il Fondo di Coesione finanzia Paesi con PIL pro capite inferiore al ___ % della media UE."
+  },
+  {
+    "id": "att-372",
+    "file": "attualita.txt",
+    "frase": "La politica di vicinato UE non include:"
+  },
+  {
+    "id": "att-373",
+    "file": "attualita.txt",
+    "frase": "Il \"Patto dei sindaci\" riguarda:"
+  },
+  {
+    "id": "att-374",
+    "file": "attualita.txt",
+    "frase": "Schengen consente ai paesi firmatari:"
+  },
+  {
+    "id": "att-375",
+    "file": "attualita.txt",
+    "frase": "Il Fondo europeo di difesa (EDF) finanzia:"
+  },
+  {
+    "id": "att-376",
+    "file": "attualita.txt",
+    "frase": "Il meccanismo \"rescEU\" riguarda:"
+  },
+  {
+    "id": "att-377",
+    "file": "attualita.txt",
+    "frase": "La politica di coesione dispone di tre fondi: FESR, FSE+ e:"
+  },
+  {
+    "id": "att-378",
+    "file": "attualita.txt",
+    "frase": "La \"Garanzia Giovani\" offre opportunità a persone sotto i ___ anni."
+  },
+  {
+    "id": "att-379",
+    "file": "attualita.txt",
+    "frase": "Il \"Green Deal Industrial Plan\" mira a potenziare in Europa:"
+  },
+  {
+    "id": "att-380",
+    "file": "attualita.txt",
+    "frase": "L'UE conta ___ Stati membri al 2025."
+  },
+  {
+    "id": "att-381",
+    "file": "attualita.txt",
+    "frase": "Quale dei seguenti stati usa l'euro ma non fa parte dell'UE?"
+  },
+  {
+    "id": "att-382",
+    "file": "attualita.txt",
+    "frase": "Schengen include Paesi non UE come:"
+  },
+  {
+    "id": "att-383",
+    "file": "attualita.txt",
+    "frase": "La Croazia è entrata nell'UE nel:"
+  },
+  {
+    "id": "att-384",
+    "file": "attualita.txt",
+    "frase": "Lussemburgo ha una popolazione di circa:"
+  },
+  {
+    "id": "att-385",
+    "file": "attualita.txt",
+    "frase": "Il Parlamento europeo utilizza ___ lingue ufficiali."
+  },
+  {
+    "id": "att-386",
+    "file": "attualita.txt",
+    "frase": "Il governo di quale Stato membro risiede a La Valletta?"
+  },
+  {
+    "id": "att-387",
+    "file": "attualita.txt",
+    "frase": "Nicosia è capitale di uno Stato entrato nell'UE nel:"
+  },
+  {
+    "id": "att-388",
+    "file": "attualita.txt",
+    "frase": "La Danimarca ha opt‑out:"
+  },
+  {
+    "id": "att-389",
+    "file": "attualita.txt",
+    "frase": "Quale Stato baltico utilizza l'euro dal 2011?"
+  },
+  {
+    "id": "att-390",
+    "file": "attualita.txt",
+    "frase": "L'Irlanda si è distinta per attirare:"
+  },
+  {
+    "id": "att-391",
+    "file": "attualita.txt",
+    "frase": "La \"rivolta del NO\" al referendum europeo costituzionale del 2005 avvenne in:"
+  },
+  {
+    "id": "att-392",
+    "file": "attualita.txt",
+    "frase": "Il presidente francese che spinse per la PAC fu:"
+  },
+  {
+    "id": "att-393",
+    "file": "attualita.txt",
+    "frase": "Quale Paese ha tenuto tre referendum sull'UE restando fuori dall'euro?"
+  },
+  {
+    "id": "att-394",
+    "file": "attualita.txt",
+    "frase": "La Svezia è entrata nell'UE nel:"
+  },
+  {
+    "id": "att-395",
+    "file": "attualita.txt",
+    "frase": "Quanti Paesi dell'eurozona usano ancora la corona o il fiorino?"
+  },
+  {
+    "id": "att-396",
+    "file": "attualita.txt",
+    "frase": "La Slovacchia ha adottato l'euro nel:"
+  },
+  {
+    "id": "att-397",
+    "file": "attualita.txt",
+    "frase": "Il \"Trattato del Quirinale\" 2021 riguarda cooperazione tra:"
+  },
+  {
+    "id": "att-398",
+    "file": "attualita.txt",
+    "frase": "Il Parlamento ungherese si trova a:"
+  },
+  {
+    "id": "att-399",
+    "file": "attualita.txt",
+    "frase": "Quale film ha vinto la Palma d'Oro a Cannes 2024?"
+  },
+  {
+    "id": "att-400",
+    "file": "attualita.txt",
+    "frase": "Varsavia e Cracovia sono città di:"
+  },
+  {
+    "id": "att-401",
+    "file": "attualita.txt",
+    "frase": "Il \"Triangolo di Weimar\" comprende Francia, Germania e:"
+  },
+  {
+    "id": "att-402",
+    "file": "attualita.txt",
+    "frase": "Quale Paese mediterraneo è entrato nell'UE nel 1981?"
+  },
+  {
+    "id": "att-403",
+    "file": "attualita.txt",
+    "frase": "La capitale della Slovenia è:"
+  },
+  {
+    "id": "att-404",
+    "file": "attualita.txt",
+    "frase": "Andalusia è una regione di:"
+  },
+  {
+    "id": "att-405",
+    "file": "attualita.txt",
+    "frase": "Il Lago di Costanza bagna Germania, Svizzera e:"
+  },
+  {
+    "id": "att-406",
+    "file": "attualita.txt",
+    "frase": "La Catalogna è parte di:"
+  },
+  {
+    "id": "att-407",
+    "file": "attualita.txt",
+    "frase": "Il fiume Danubio attraversa ___ Stati europei."
+  },
+  {
+    "id": "att-408",
+    "file": "attualita.txt",
+    "frase": "\"Benelux\" comprende Belgio, Paesi Bassi e:"
+  },
+  {
+    "id": "att-409",
+    "file": "attualita.txt",
+    "frase": "L'isola di Gozo appartiene a:"
+  },
+  {
+    "id": "att-410",
+    "file": "attualita.txt",
+    "frase": "La Transilvania si trova in:"
+  },
+  {
+    "id": "att-411",
+    "file": "attualita.txt",
+    "frase": "La Valletta è stata capitale europea della cultura nel:"
+  },
+  {
+    "id": "att-412",
+    "file": "attualita.txt",
+    "frase": "Il \"Piano Marshall\" contribuì alla:"
+  },
+  {
+    "id": "att-413",
+    "file": "attualita.txt",
+    "frase": "La giornata dell'Europa si celebra il:"
+  },
+  {
+    "id": "att-414",
+    "file": "attualita.txt",
+    "frase": "Quale film ha vinto il Leone d'Oro a Venezia 2019?"
+  },
+  {
+    "id": "att-415",
+    "file": "attualita.txt",
+    "frase": "Il principale confine terrestre est dell'UE è con:"
+  },
+  {
+    "id": "att-416",
+    "file": "attualita.txt",
+    "frase": "Quale film ha vinto l'Oscar 2018 al Miglior film?"
+  },
+  {
+    "id": "att-417",
+    "file": "attualita.txt",
+    "frase": "I micro‑Stati che usano formalmente l'euro includono Andorra, San Marino, Vaticano e:"
+  },
+  {
+    "id": "att-418",
+    "file": "attualita.txt",
+    "frase": "Il \"Fiscal Compact\" del 2013 è:"
+  },
+  {
+    "id": "att-419",
+    "file": "attualita.txt",
+    "frase": "Bruxelles si trova in:"
+  },
+  {
+    "id": "att-420",
+    "file": "attualita.txt",
+    "frase": "Quale film ha vinto l'Oscar 2017 al Miglior film?"
+  },
+  {
+    "id": "att-421",
+    "file": "attualita.txt",
+    "frase": "Il progetto ferroviario baltico è:"
+  },
+  {
+    "id": "att-422",
+    "file": "attualita.txt",
+    "frase": "L'Italia contribuisce al bilancio UE in base al:"
+  },
+  {
+    "id": "att-423",
+    "file": "attualita.txt",
+    "frase": "Il Piemonte fa parte della Macroregione UE delle Alpi insieme a…"
+  },
+  {
+    "id": "att-424",
+    "file": "attualita.txt",
+    "frase": "Il piano REPowerEU è stato proposto nel:"
+  },
+  {
+    "id": "att-425",
+    "file": "attualita.txt",
+    "frase": "Il confine marittimo più corto tra due Stati membri dell'UE è tra Italia e:"
+  },
+  {
+    "id": "att-426",
+    "file": "attualita.txt",
+    "frase": "Tra gli Stati fondatori, il più piccolo per superficie è:"
+  },
+  {
+    "id": "att-427",
+    "file": "attualita.txt",
+    "frase": "Il canale televisivo multilingue sostenuto dall'UE è:"
+  },
+  {
+    "id": "att-428",
+    "file": "attualita.txt",
+    "frase": "Il programma \"DiscoverEU\" offre ai diciottenni:"
+  },
+  {
+    "id": "att-429",
+    "file": "attualita.txt",
+    "frase": "La Nazionale di calcio che vinse Euro 1968 fu:"
+  },
+  {
+    "id": "att-430",
+    "file": "attualita.txt",
+    "frase": "L'Italia di calcio conquistò il terzo titolo mondiale nel:"
+  },
+  {
+    "id": "att-431",
+    "file": "attualita.txt",
+    "frase": "Chi segnò il \"gol del secolo\" a Messico '70?"
+  },
+  {
+    "id": "att-432",
+    "file": "attualita.txt",
+    "frase": "Il portiere capitano che alzò la Coppa '82 ai mondiali di calcio fu:"
+  },
+  {
+    "id": "att-433",
+    "file": "attualita.txt",
+    "frase": "Chi realizzò la tripletta al Brasile nel 1982?"
+  },
+  {
+    "id": "att-434",
+    "file": "attualita.txt",
+    "frase": "L'Italia vinse i Mondiali 2006 ai rigori contro:"
+  },
+  {
+    "id": "att-435",
+    "file": "attualita.txt",
+    "frase": "Il rigore decisivo 2006 della partita di calcio fu segnato all'Olympiastadion di:"
+  },
+  {
+    "id": "att-436",
+    "file": "attualita.txt",
+    "frase": "Quale film ha vinto l'Oscar 2016 al Miglior film?"
+  },
+  {
+    "id": "att-437",
+    "file": "attualita.txt",
+    "frase": "Il CT di calcio dell'Italia a Euro 2021 era:"
+  },
+  {
+    "id": "att-438",
+    "file": "attualita.txt",
+    "frase": "L'Italia di calcio batté ai rigori in finale Euro 2021:"
+  },
+  {
+    "id": "att-439",
+    "file": "attualita.txt",
+    "frase": "Gli Europei di calcio vinti dall'Italia sono:"
+  },
+  {
+    "id": "att-440",
+    "file": "attualita.txt",
+    "frase": "Il club del \"Triplete\" 2010 è:"
+  },
+  {
+    "id": "att-441",
+    "file": "attualita.txt",
+    "frase": "Quale film ha vinto l'Oscar 2019 come Miglior film d'animazione (cerimonia 2019)?"
+  },
+  {
+    "id": "att-442",
+    "file": "attualita.txt",
+    "frase": "La Juventus vinse la prima Coppa dei Campioni nel:"
+  },
+  {
+    "id": "att-443",
+    "file": "attualita.txt",
+    "frase": "Quale film ha vinto l'Oscar 2024 come Miglior film d'animazione?"
+  },
+  {
+    "id": "att-444",
+    "file": "attualita.txt",
+    "frase": "Chi ha composto la colonna sonora premiata agli Oscar 2024 per \"Oppenheimer\"?"
+  },
+  {
+    "id": "att-445",
+    "file": "attualita.txt",
+    "frase": "Chi ha diretto \"Dune: Parte Due\" (2024)?"
+  },
+  {
+    "id": "att-446",
+    "file": "attualita.txt",
+    "frase": "Chi fu eletto Pallone d'Oro nel 1993?"
+  },
+  {
+    "id": "att-447",
+    "file": "attualita.txt",
+    "frase": "L'\"urlo\" con corsa iconica dopo il 2‑0 alla Germania nella semifinale 2006 di calcio è di:"
+  },
+  {
+    "id": "att-448",
+    "file": "attualita.txt",
+    "frase": "Quale film ha vinto il Leone d'Oro a Venezia 2018?"
+  },
+  {
+    "id": "att-449",
+    "file": "attualita.txt",
+    "frase": "Il Napoli di Maradona vinse il suo primo scudetto nella stagione:"
+  },
+  {
+    "id": "att-450",
+    "file": "attualita.txt",
+    "frase": "Paolo Maldini ha vinto quante Champions League in carriera?"
+  },
+  {
+    "id": "att-451",
+    "file": "attualita.txt",
+    "frase": "Quale film ha vinto il Leone d'Oro a Venezia 2020?"
+  },
+  {
+    "id": "att-452",
+    "file": "attualita.txt",
+    "frase": "Quale portiere italiano ha vinto il Premio Yashin ai Mondiali 2021?"
+  },
+  {
+    "id": "att-453",
+    "file": "attualita.txt",
+    "frase": "Il Milan di Sacchi vinse la Coppa dei Campioni 1989 battendo 4‑0:"
+  },
+  {
+    "id": "att-454",
+    "file": "attualita.txt",
+    "frase": "In che anno la Roma vinse l'unico scudetto dell'era Capello?"
+  },
+  {
+    "id": "att-455",
+    "file": "attualita.txt",
+    "frase": "Il record di reti azzurre in Nazionale (35) appartiene a:"
+  },
+  {
+    "id": "att-456",
+    "file": "attualita.txt",
+    "frase": "Quale squadra italiana conquistò la Coppa Intercontinentale di calcio nel 1996?"
+  },
+  {
+    "id": "att-457",
+    "file": "attualita.txt",
+    "frase": "L'Italia di calcio Under 21 di Cesare Maldini vinse tre Europei consecutivi: 1992, 1994 e…"
+  },
+  {
+    "id": "att-458",
+    "file": "attualita.txt",
+    "frase": "Chi fu il CT di calcio del mondiale 1970 in cui l'Italia raggiunse la finale?"
+  },
+  {
+    "id": "att-459",
+    "file": "attualita.txt",
+    "frase": "Il Parma di Nevio Scala vinse la sua prima Coppa UEFA nel:"
+  },
+  {
+    "id": "att-460",
+    "file": "attualita.txt",
+    "frase": "Quale calciatrice segnò il primo gol dell'Italia ai Mondiali femminili 2019?"
+  },
+  {
+    "id": "att-461",
+    "file": "attualita.txt",
+    "frase": "Quale film ha vinto il Leone d'Oro a Venezia 2023?"
+  },
+  {
+    "id": "att-462",
+    "file": "attualita.txt",
+    "frase": "In quale squadra militava Gianfranco Zola quando vinse la Coppa delle Coppe 1998?"
+  },
+  {
+    "id": "att-463",
+    "file": "attualita.txt",
+    "frase": "Quale film ha vinto l'Oscar 2023 al Miglior film?"
+  },
+  {
+    "id": "att-464",
+    "file": "attualita.txt",
+    "frase": "Chi è stato il primo italiano a vincere un torneo Slam Open Era?"
+  },
+  {
+    "id": "att-465",
+    "file": "attualita.txt",
+    "frase": "Quale coppia vinse il Roland Garros doppio femminile 2012?"
+  },
+  {
+    "id": "att-466",
+    "file": "attualita.txt",
+    "frase": "Flavia Pennetta trionfò agli US Open nel:"
+  },
+  {
+    "id": "att-467",
+    "file": "attualita.txt",
+    "frase": "Chi fu la prima italiana a vincere il Roland Garros in singolare?"
+  },
+  {
+    "id": "att-468",
+    "file": "attualita.txt",
+    "frase": "Matteo Berrettini raggiunse la finale di Wimbledon nel:"
+  },
+  {
+    "id": "att-469",
+    "file": "attualita.txt",
+    "frase": "Chi ha vinto l'Oscar 2023 come Miglior attrice?"
+  },
+  {
+    "id": "att-470",
+    "file": "attualita.txt",
+    "frase": "Fabio Fognini e Simone Bolelli conquistarono l'Australian Open doppio 2015 battendo in finale:"
+  },
+  {
+    "id": "att-471",
+    "file": "attualita.txt",
+    "frase": "Sara Errani arrivò in finale al Roland Garros 2012 perdendo da:"
+  },
+  {
+    "id": "att-472",
+    "file": "attualita.txt",
+    "frase": "Nel 2023 l'Italia vinse la Coppa Davis con capitano:"
+  },
+  {
+    "id": "att-473",
+    "file": "attualita.txt",
+    "frase": "Tre italiane contemporaneamente in top 10 WTA accadde per la prima volta nel:"
+  },
+  {
+    "id": "att-474",
+    "file": "attualita.txt",
+    "frase": "Il Foro Italico ospita gli Internazionali d'Italia dal:"
+  },
+  {
+    "id": "att-475",
+    "file": "attualita.txt",
+    "frase": "Nicola Pietrangeli vinse due Roland Garros negli anni:"
+  },
+  {
+    "id": "att-476",
+    "file": "attualita.txt",
+    "frase": "Chi ha vinto l'Oscar 2023 come Miglior attore?"
+  },
+  {
+    "id": "att-477",
+    "file": "attualita.txt",
+    "frase": "Lorenzo Musetti vinse il primo titolo ATP 500 a:"
+  },
+  {
+    "id": "att-478",
+    "file": "attualita.txt",
+    "frase": "Nel 2024 Jasmine Paolini raggiunse la finale al Roland Garros perdendo da:"
+  },
+  {
+    "id": "att-479",
+    "file": "attualita.txt",
+    "frase": "L'Italia si aggiudicò la Fed Cup (ora Billie Jean King Cup) per la prima volta nel:"
+  },
+  {
+    "id": "att-480",
+    "file": "attualita.txt",
+    "frase": "Il record di presenze in Davis per l'Italia è di:"
+  },
+  {
+    "id": "att-481",
+    "file": "attualita.txt",
+    "frase": "Quale film ha vinto l'Oscar 2022 al Miglior film?"
+  },
+  {
+    "id": "att-482",
+    "file": "attualita.txt",
+    "frase": "Nel 2015 Roberta Vinci interruppe il Grande Slam di Serena Williams agli US Open in:"
+  },
+  {
+    "id": "att-483",
+    "file": "attualita.txt",
+    "frase": "Chi vinse l'oro nei 200 m ai Giochi di Mosca 1980?"
+  },
+  {
+    "id": "att-484",
+    "file": "attualita.txt",
+    "frase": "Gabriella Dorio conquistò il titolo olimpico nei 1 500 m olimpici a:"
+  },
+  {
+    "id": "att-485",
+    "file": "attualita.txt",
+    "frase": "Stefano Baldini vinse l'oro olimpico nella maratona a:"
+  },
+  {
+    "id": "att-486",
+    "file": "attualita.txt",
+    "frase": "Alex Schwazer trionfò nella 50 km di marcia alle Olimpiadi:"
+  },
+  {
+    "id": "att-487",
+    "file": "attualita.txt",
+    "frase": "Fiona May conquistò due argenti olimpici nel:"
+  },
+  {
+    "id": "att-488",
+    "file": "attualita.txt",
+    "frase": "Chi ha stabilito il record europeo dei 100 m (9″80) vincendo l'oro a Tokyo 2021?"
+  },
+  {
+    "id": "att-489",
+    "file": "attualita.txt",
+    "frase": "Gianmarco Tamberi condivise l'oro olimpico dell'alto a Tokyo con:"
+  },
+  {
+    "id": "att-490",
+    "file": "attualita.txt",
+    "frase": "La staffetta 4×100 m maschile vinse l'oro olimpico 2021 con ultimo frazionista:"
+  },
+  {
+    "id": "att-491",
+    "file": "attualita.txt",
+    "frase": "Andrew Howe ottenne l'argento mondiale nel lungo 2007 con salto di:"
+  },
+  {
+    "id": "att-492",
+    "file": "attualita.txt",
+    "frase": "Quale film ha vinto l'Oscar 2021 al Miglior film?"
+  },
+  {
+    "id": "att-493",
+    "file": "attualita.txt",
+    "frase": "Massimo Stano vinse l'oro olimpico nella 20 km di marcia a:"
+  },
+  {
+    "id": "att-494",
+    "file": "attualita.txt",
+    "frase": "Yeman Crippa conquistò l'oro europeo nei 10 000 m a:"
+  },
+  {
+    "id": "att-495",
+    "file": "attualita.txt",
+    "frase": "Mennea stabilì il record mondiale dei 200 m (19″72) a Città del Messico nel:"
+  },
+  {
+    "id": "att-496",
+    "file": "attualita.txt",
+    "frase": "Quale film ha vinto l'Oscar 2020 al Miglior film?"
+  },
+  {
+    "id": "att-497",
+    "file": "attualita.txt",
+    "frase": "Assunta Legnante vinse il lancio del peso alle Paralimpiadi di:"
+  },
+  {
+    "id": "att-498",
+    "file": "attualita.txt",
+    "frase": "Quale film ha vinto l'Oscar 2019 al Miglior film?"
+  },
+  {
+    "id": "att-499",
+    "file": "attualita.txt",
+    "frase": "La prima medaglia olimpica d'oro dell'Italia nella marcia femminile (20 km) fu di:"
+  },
+  {
+    "id": "att-500",
+    "file": "attualita.txt",
+    "frase": "Dorando Pietri vinse ma fu squalificato a Londra 1908; la prima maratona vinta ufficialmente da un italiano fu:"
+  }
+]

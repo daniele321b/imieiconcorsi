@@ -1,3 +1,5 @@
+# Ingressi del modulo sito (CloudFront davanti al bucket S3 e all'API, certificato e DNS).
+
 variable "name" {
   description = "Prefisso dei nomi delle risorse, es. imieiconcorsi-dev"
   type        = string

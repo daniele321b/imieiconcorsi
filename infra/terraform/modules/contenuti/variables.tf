@@ -1,3 +1,5 @@
+# Ingressi del modulo contenuti (bucket S3 con banca domande e PDF delle banche dati, Lambda di import ed estrazione).
+
 variable "name" {
   description = "Prefisso dei nomi delle risorse, es. imieiconcorsi-dev"
   type        = string

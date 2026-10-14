@@ -20,6 +20,11 @@ import { caricaBandi, segnaBandiVisti } from "../../lib/bandi";
 import { useUtente } from "../../lib/auth";
 import { dataBreve } from "../../lib/format";
 
+// Pannello admin → Banche dati (/admin/banche-dati): carica il PDF di una banca dati ufficiale,
+// collegala ai concorsi (suggeriti tra i bandi aperti simili o cercati a mano, anche dopo),
+// segui l'estrazione, controlla gli esempi, poi pubblica, ritira o elimina. Il PDF va
+// direttamente su S3 con un link firmato dal backend.
+
 type Formato = BancaDati["formato"];
 
 const FORMATI: { id: Formato; nome: string; spiegazione: string }[] = [
@@ -32,6 +37,16 @@ const FORMATI: { id: Formato; nome: string; spiegazione: string }[] = [
     id: "risposta",
     nome: "Solo risposta esatta",
     spiegazione: "Tabella numero | domanda | risposta (es. Carabinieri): le altre alternative si ricavano da domande simili.",
+  },
+  {
+    id: "colonne",
+    nome: "Tabella esatta ed errate",
+    spiegazione: "Tabella Id | Livello | Quesito | Risp_esatta | Risp_errata 1-3 (es. Polizia penitenziaria).",
+  },
+  {
+    id: "lettera",
+    nome: "Tabella con lettera giusta",
+    spiegazione: "Tabella codice | domanda | a) | b) | c) | d) | lettera della giusta, senza intestazione (es. Guardia di Finanza).",
   },
 ];
 
@@ -46,12 +61,8 @@ const STATO: Record<BancaDati["stato"], { testo: string; tone: "slate" | "brand"
 const campo =
   "mt-1 block h-10 w-full rounded-xl border-0 bg-white px-3 text-sm text-slate-900 ring-1 ring-slate-300 focus:ring-2 focus:ring-brand-500";
 
+/** Testo dell'errore da mostrare. */
 const messaggio = (err: unknown) => (err instanceof ApiError ? err.message : err instanceof Error ? err.message : "Errore di rete");
-
-// Pannello admin → Banche dati (/admin/banche-dati): carica il PDF di una banca dati ufficiale,
-// collegala ai concorsi (suggeriti tra i bandi aperti simili o cercati a mano, anche dopo),
-// segui l'estrazione, controlla gli esempi, poi pubblica, ritira o elimina. Il PDF va
-// direttamente su S3 con un link firmato dal backend.
 
 /** Pagina /admin/banche-dati: chi non è admin torna all'app. */
 export function AdminBancheDati() {
@@ -159,6 +170,7 @@ function Caricamento({
     setComparto((c) => c || preselezionato.comparto);
   }, [preselezionato]);
 
+  // Crea la banca dati, carica il PDF su S3 con il link firmato e la collega ai concorsi scelti.
   async function carica(e: FormEvent) {
     e.preventDefault();
     if (!file) return;
@@ -301,6 +313,7 @@ function DaCaricare({ bandi, onCarica }: { bandi?: ConcorsoInLista[]; onCarica: 
         .sort((a, b) => (b.pubblicatoIl ?? "").localeCompare(a.pubblicatoIl ?? "")),
     [bandi],
   );
+  // Bando pubblicato da meno di GIORNI_NUOVO giorni.
   const nuovo = (c: ConcorsoInLista) => !!c.pubblicatoIl && Date.now() - Date.parse(c.pubblicatoIl) < GIORNI_NUOVO * 86_400_000;
   // Elenco aperto: questi bandi sono visti e il pallino rosso su "Admin" si spegne.
   useEffect(() => {
@@ -529,6 +542,7 @@ function ModificaBanca({ banca, onFatto, onAnnulla }: { banca: BancaDati; onFatt
   if (formato !== banca.formato) modifiche.formato = formato;
   const cambiato = Object.keys(modifiche).length > 0 || !!file;
 
+  // Salva le modifiche ai dati e, se c'è, carica il nuovo PDF.
   async function salva(e: FormEvent) {
     e.preventDefault();
     setErrore(undefined);
@@ -656,6 +670,7 @@ function RigaBanca({ banca, bandi, onCambio }: { banca: BancaDati; bandi?: Conco
   const [confermaElimina, setConfermaElimina] = useState(false);
   const [modifica, setModifica] = useState(false);
 
+  // Esegue un'azione sulla banca dati (pubblica, ritira, elimina…) con il pulsante `nome` in attesa.
   async function azione(nome: string, fn: () => Promise<unknown>) {
     setInCorso(nome);
     setErrore(undefined);

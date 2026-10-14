@@ -1,6 +1,8 @@
 import { describe, expect, it } from "vitest";
 import { decidi, providerDaUsername } from "../src/auth/collega-account";
 
+// Test del trigger che collega l'accesso social a un account email esistente (auth/collega-account.ts).
+
 describe("providerDaUsername", () => {
   it.each([
     ["facebook_10229", { nome: "Facebook", id: "10229" }],

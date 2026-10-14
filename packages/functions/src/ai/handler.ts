@@ -60,8 +60,10 @@ const SESSIONI_RECENTI = 30;
 /** Domande date al modello come materiale per scrivere quelle nuove. */
 const MATERIALE = 8;
 
+/** Data in italiano, es. "1 novembre". */
 const dataIt = (iso: string) => new Intl.DateTimeFormat("it-IT", { day: "numeric", month: "long" }).format(new Date(iso));
 
+/** Errore 429 quando l'utente ha finito i crediti AI del mese. */
 const gettoniFiniti = (ctx: Ctx) =>
   new HttpError(
     429,
@@ -69,6 +71,7 @@ const gettoniFiniti = (ctx: Ctx) =>
     "GETTONI_FINITI",
   );
 
+/** Errore 429 quando la piattaforma ha raggiunto il tetto di spesa AI del mese. */
 const spesaFinita = () =>
   new HttpError(
     429,
@@ -79,12 +82,15 @@ const spesaFinita = () =>
 /** Tetti di spesa in milionesimi di dollaro: da Terraform, altrimenti i valori di riserva del dominio. */
 const tettoUtente = () => Number(process.env.AI_TETTO_UTENTE_USD || TETTO_AI_UTENTE_USD) * 1e6;
 const tettoMese = () => Number(process.env.AI_TETTO_MENSILE_USD || TETTO_AI_MESE_USD) * 1e6;
+/** Riga della tabella contatori con la spesa AI di un mese. */
 const chiaveContatore = (mese: string) => `ai#${mese}`;
 
+/** Il tutor AI è solo per chi ha il piano Pro (o admin): altrimenti 403. */
 function richiediAi(ctx: Ctx) {
   if (!ctx.limiti.ai) throw new HttpError(403, "Il tutor AI è incluso nel piano Pro.", "LIMITE_PIANO");
 }
 
+/** La scrittura condizionata non è andata (la condizione era falsa). */
 const condizioneFallita = (err: unknown) => err instanceof Error && err.name === "ConditionalCheckFailedException";
 
 /**
@@ -179,6 +185,7 @@ async function riservaGettoni(ctx: Ctx, costo: number) {
   }
 }
 
+/** Ridà i crediti scalati per una richiesta AI non riuscita (solo nello stesso mese). */
 async function restituisciGettoni(ctx: Ctx, costo: number) {
   await db
     .send(
@@ -230,6 +237,7 @@ async function registraConsumo(ctx: Ctx, uso: UsoToken) {
       if (spesaPiattaforma?.mese === mese) spesaPiattaforma.micro = dopo;
       const soglia = sogliaSuperata(dopo - spesa, dopo, tettoMese());
       if (!soglia) return;
+      // Milionesimi di dollaro in testo, es. "12.50 $".
       const usd = (n: number) => `${(n / 1e6).toFixed(2)} $`;
       await avvisaAdmin(
         soglia >= 1 ? "Tutor AI in pausa: raggiunto il tetto di spesa del mese" : "Tutor AI: spesa del mese all'80% del tetto",
@@ -287,12 +295,14 @@ async function chiamaAi<T>(ctx: Ctx, costo: number, chiamata: () => Promise<Esit
   return { risultato: esito.risultato };
 }
 
+/** Crediti AI del mese: totali, usati, restanti e data del rinnovo. */
 async function statoGettoni(ctx: Ctx) {
   const profilo = await getProfilo(ctx.userId);
   const usati = gettoniUsati(profilo?.ai);
   return { totale: ctx.limiti.gettoniAi, usati, restanti: Math.max(0, ctx.limiti.gettoniAi - usati), rinnovoIl: rinnovoGettoni() };
 }
 
+/** Ultime sessioni consegnate dell'utente, per i suggerimenti del tutor. */
 async function sessioniConsegnate(userId: string, quante: number) {
   const res = await db.send(
     new QueryCommand({

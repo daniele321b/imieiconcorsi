@@ -27,6 +27,7 @@ export function Pagamento() {
     let fermo = false;
     let timer: ReturnType<typeof setTimeout>;
 
+    // Rilegge l'ordine a intervalli finché è in attesa; appena pagato rinnova il token per vedere il piano.
     async function controlla() {
       try {
         const o = await api<OrdineApi>(`/me/ordini/${encodeURIComponent(id!)}`);

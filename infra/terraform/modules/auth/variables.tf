@@ -1,3 +1,5 @@
+# Ingressi del modulo login (Cognito: user pool, client web, login social, gruppi).
+
 variable "name" {
   description = "Prefisso delle risorse; è anche il prefisso del dominio Cognito"
   type        = string

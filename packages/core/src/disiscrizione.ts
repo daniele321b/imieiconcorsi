@@ -8,6 +8,7 @@ import { env } from "./env";
 // parte della firma, così un link per un uso non vale per un altro.
 type Scopo = "disiscrivi" | "aperto";
 
+/** Firma HMAC di un link per utente e scopo (base64url, 32 caratteri). */
 const firma = (userId: string, segreto: string, scopo: Scopo = "disiscrivi") =>
   createHmac("sha256", segreto).update(`${scopo}:${userId}`).digest("base64url").slice(0, 32);
 

@@ -1,3 +1,6 @@
+# Ambiente prod: versione di Terraform, provider (AWS in eu-south-1 e us-east-1 per CloudFront)
+# e stato remoto su S3 (prod/terraform.tfstate).
+
 terraform {
   required_version = ">= 1.10"
   required_providers {

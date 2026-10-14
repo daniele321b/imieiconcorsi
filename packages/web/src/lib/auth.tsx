@@ -2,6 +2,7 @@ import { fetchAuthSession, getCurrentUser, signOut } from "aws-amplify/auth";
 import { Hub } from "aws-amplify/utils";
 import { createContext, useCallback, useContext, useEffect, useState, type ReactNode } from "react";
 import { api, type UtenteApi } from "./api";
+import { dimenticaProvenienza, parametriProvenienza } from "./provenienza";
 
 // Stato del login condiviso da tutto il sito: chi è collegato (utente con piano e limiti, da
 // GET /me), ricarica dopo un cambio di piano, uscita. Le pagine lo leggono con useAuth/useUtente.
@@ -30,8 +31,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     try {
       await getCurrentUser();
       if (rinnovaToken) await fetchAuthSession({ forceRefresh: true });
-      // GET /me crea il profilo al primo accesso.
-      setUtente(await api<UtenteApi>("/me"));
+      // GET /me crea il profilo al primo accesso, con la provenienza (link UTM) se c'è.
+      setUtente(await api<UtenteApi>("/me" + parametriProvenienza()));
+      dimenticaProvenienza();
       setStato("autenticato");
     } catch {
       setUtente(undefined);

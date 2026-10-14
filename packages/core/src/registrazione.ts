@@ -27,6 +27,9 @@ export const dominioEmail = (email: string) => email.trim().toLowerCase().split(
 export const emailConsentita = (email: string) =>
   (DOMINI_EMAIL_CONSENTITI as readonly string[]).includes(dominioEmail(email));
 
-/** Messaggio mostrato a chi prova a registrarsi con un indirizzo di un altro dominio. */
+/**
+ * Messaggio mostrato a chi prova a registrarsi con un indirizzo di un altro dominio. Volutamente
+ * generico: la lista dei domini accettati non si mostra né nel modulo né nell'errore.
+ */
 export const MESSAGGIO_EMAIL_NON_CONSENTITA =
-  "Per registrarti usa un indirizzo di un provider diffuso (Gmail, Outlook/Hotmail, Yahoo, iCloud, Libero, Virgilio, Alice/TIM…) oppure accedi con Google o Facebook.";
+  "Questo indirizzo email non è accettato per la registrazione. Usane un altro oppure accedi con Google o Facebook.";

@@ -1,3 +1,5 @@
+# Ingressi del modulo API HTTP (API Gateway + Lambda dei servizi).
+
 variable "name" {
   description = "Prefisso dei nomi delle risorse, es. imieiconcorsi-dev"
   type        = string

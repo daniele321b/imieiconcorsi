@@ -20,11 +20,11 @@ export function FiltriConcorsiPanel({
   /** Tipi di procedura presenti nei bandi caricati */
   procedure: string[];
 }) {
+  // Cambia solo i filtri indicati, lasciando gli altri come sono.
   const set = (parziale: Partial<FiltriConcorsi>) => onChange({ ...value, ...parziale });
 
   return (
     <div className="grid gap-3 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-200 sm:grid-cols-2 lg:grid-cols-3">
-      {/* La scadenza è per inviare la domanda: chi l'ha già inviata continua a prepararsi sui chiusi. */}
       <fieldset className="sm:col-span-2 lg:col-span-3">
         <legend className="text-xs font-semibold text-slate-500">Tipo di bando</legend>
         <div className="mt-1 flex flex-wrap gap-2">
@@ -50,27 +50,6 @@ export function FiltriConcorsiPanel({
           })}
         </div>
         <p className="mt-1 text-xs text-slate-500">Nessuno scelto = tutti. Il tipo si riconosce dal titolo del bando.</p>
-      </fieldset>
-      <fieldset className="sm:col-span-2 lg:col-span-3">
-        <legend className="text-xs font-semibold text-slate-500">Bandi</legend>
-        <div className="mt-1 flex flex-wrap gap-x-6 gap-y-2">
-          {(
-            [
-              ["aperti", "Aperti", "domande ancora aperte"],
-              ["chiusi", "Chiusi", "domande scadute, concorso in corso"],
-            ] as const
-          ).map(([chiave, nome, nota]) => (
-            <label key={chiave} className="flex items-center gap-2 text-sm font-medium text-slate-700">
-              <input
-                type="checkbox"
-                checked={value[chiave] !== false}
-                onChange={(e) => set({ [chiave]: e.target.checked ? undefined : false })}
-                className="size-4 rounded border-slate-300 text-brand-600 focus:ring-brand-500"
-              />
-              {nome} <span className="font-normal text-slate-400">({nota})</span>
-            </label>
-          ))}
-        </div>
       </fieldset>
       <label className="text-xs font-semibold text-slate-500">
         Scadenza

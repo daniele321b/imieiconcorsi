@@ -1,3 +1,5 @@
+# Uscite del modulo monitoraggio, lette dagli ambienti.
+
 output "topic_arn" {
   description = "Topic SNS degli allarmi (regione dell'ambiente)"
   value       = aws_sns_topic.monitoraggio.arn
@@ -9,5 +11,6 @@ output "topic_us_east_1_arn" {
 }
 
 output "dashboard_url" {
-  value = "https://${var.aws_region}.console.aws.amazon.com/cloudwatch/home?region=${var.aws_region}#dashboards/dashboard/${aws_cloudwatch_dashboard.main.dashboard_name}"
+  description = "Indirizzo della dashboard CloudWatch"
+  value       = "https://${var.aws_region}.console.aws.amazon.com/cloudwatch/home?region=${var.aws_region}#dashboards/dashboard/${aws_cloudwatch_dashboard.main.dashboard_name}"
 }

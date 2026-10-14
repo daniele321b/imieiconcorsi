@@ -1,3 +1,5 @@
+# Ingressi del modulo lavori pianificati (Lambda avviate da EventBridge).
+
 variable "name" {
   description = "Prefisso dei nomi delle risorse, es. imieiconcorsi-dev"
   type        = string

@@ -6,7 +6,9 @@ import { avvisaAdmin } from "@imieiconcorsi/core/email";
 import { env } from "@imieiconcorsi/core/env";
 import type { S3Event } from "aws-lambda";
 import { extractText, getDocumentProxy } from "unpdf";
-import { estraiDomande } from "./parser";
+import { estraiDomandeColonne } from "./colonne";
+import { estraiDomandeLettere } from "./lettere";
+import { estraiDomande, type Estrazione } from "./parser";
 import { estraiDomandeRisposta, type Elemento } from "./tabella";
 
 // Estrazione delle domande da una banca dati caricata dall'admin.
@@ -15,6 +17,7 @@ import { estraiDomandeRisposta, type Elemento } from "./tabella";
 // Risultato: banche-dati/<id>.json con tutte le domande + riepilogo ed esempi sul record.
 
 const s3 = new S3Client({});
+/** Bucket dei contenuti, dove stanno i PDF e i JSON estratti. */
 const bucket = () => env("CONTENUTI_BUCKET");
 
 /** Aggiorna alcuni campi della banca dati (stato, conteggi, esempi…). */
@@ -50,14 +53,25 @@ function indiceSezioni(domande: { numero: number; sezione?: string }[]) {
   return out;
 }
 
-/** I pezzi di testo di tutte le pagine con la loro posizione (servono alle tabelle, vedi tabella.ts). */
+/**
+ * I pezzi di testo di tutte le pagine con la loro posizione (servono alle tabelle, vedi tabella.ts
+ * e colonne.ts). Posizioni come si vede la pagina: nelle pagine ruotate (tabelle in orizzontale)
+ * le coordinate del PDF sono scambiate.
+ */
 async function elementiDelPdf(doc: Awaited<ReturnType<typeof getDocumentProxy>>): Promise<Elemento[]> {
   const out: Elemento[] = [];
   for (let pagina = 1; pagina <= doc.numPages; pagina++) {
-    const { items } = await (await doc.getPage(pagina)).getTextContent();
+    const page = await doc.getPage(pagina);
+    const vista = page.getViewport({ scale: 1 });
+    const [a, b, c, d, e, f] = vista.transform as number[];
+    const { items } = await page.getTextContent();
     for (const it of items) {
       if (!("str" in it)) continue;
-      out.push({ pagina, testo: it.str, x: it.transform[4] as number, y: it.transform[5] as number, larghezza: it.width });
+      const [px, py] = [it.transform[4] as number, it.transform[5] as number];
+      // y dal basso della pagina vista, come nel PDF non ruotato.
+      const x = a! * px + c! * py + e!;
+      const y = vista.height - (b! * px + d! * py + f!);
+      out.push({ pagina, testo: it.str, x, y, larghezza: it.width, altezza: it.height });
     }
   }
   return out;
@@ -78,12 +92,23 @@ async function estrai(id: string) {
       throw new Error("Nel PDF non c'è testo leggibile: probabilmente è una scansione (immagini). Serve un PDF con il testo selezionabile.");
     }
 
-    // Tabella "domanda | risposta esatta" (solo la giusta): si legge con le posizioni. In
-    // automatico si prova anche quella e si tiene il modo che trova più domande.
-    let estrazione = banca.formato === "risposta" ? undefined : estraiDomande(text as string, banca.formato);
-    if (banca.formato === "risposta" || banca.formato === "auto") {
-      const tabella = estraiDomandeRisposta(await elementiDelPdf(doc));
-      if (!estrazione || tabella.domande.length > estrazione.domande.length) estrazione = tabella;
+    // Tabelle "domanda | risposta esatta" (solo la giusta), "quesito | esatta | errate" e
+    // "codice | domanda | a)-d) | lettera giusta" in colonna: si leggono con le posizioni. In automatico si provano tutti i modi e si tiene
+    // quello che trova più domande; le alternative ricavate però perdono contro quelle vere
+    // del PDF, se queste non sono molte meno (la tabella a colonne si legge anche come
+    // "domanda | risposta", con quasi lo stesso numero di domande).
+    const tabelle = (["risposta", "colonne", "lettera", "auto"] as const).some((f) => f === banca.formato);
+    let estrazione = tabelle && banca.formato !== "auto" ? undefined : estraiDomande(text as string, banca.formato);
+    if (tabelle) {
+      const elementi = await elementiDelPdf(doc);
+      const peso = (e: Estrazione) => e.domande.length * (e.formati.risposta ? 0.8 : 1);
+      for (const prova of [
+        banca.formato === "auto" || banca.formato === "risposta" ? estraiDomandeRisposta(elementi) : undefined,
+        banca.formato === "auto" || banca.formato === "colonne" ? estraiDomandeColonne(elementi) : undefined,
+        banca.formato === "auto" || banca.formato === "lettera" ? estraiDomandeLettere(elementi) : undefined,
+      ]) {
+        if (prova && (!estrazione || peso(prova) > peso(estrazione))) estrazione = prova;
+      }
     }
     const { domande, scartate, formati } = estrazione!;
     // Esempi da controllare nell'ordine del PDF (la giusta è quella che il PDF indica),

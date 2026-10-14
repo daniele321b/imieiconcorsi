@@ -36,6 +36,7 @@ nel sito.
 | `env.ts` | `env("NOME")`: variabile d'ambiente obbligatoria | Backend |
 | `ids.ts` | Id ordinabili per data (`sortableId`, `timePrefix`) | study, richieste, billing |
 | `attivita.ts` | Utenti attivi: `registraAttivita` (chiamata da `service()` a ogni richiesta con login, una scrittura al minuto per utente), `periodi`, `riepilogoAttivita` | tutte le Lambda dell'API, admin |
+| `provenienza.ts` | Provenienza degli iscritti dai link UTM: `provenienzaDa` (pulizia dei parametri), `queryProvenienza`, `riepilogoProvenienza` | profile (`GET /me`), admin (`GET /admin/provenienza`), web |
 | `account.ts` | `eliminaAccount`: cancella sessioni, seguiti, richieste, progressi, profilo e utente Cognito (restano gli ordini) | profile (`DELETE /me`), admin (`DELETE /admin/utenti/{username}`) |
 | `cognito.ts` | Gruppi (piano, admin), nome, eliminazione dell'utente, elenco degli utenti di un gruppo | billing, admin, profile, job scadenze, piani.ts |
 | `email.ts` | `inviaEmail` (SES, testo + HTML facoltativo), `avvisaAdmin` | Backend |
@@ -82,6 +83,8 @@ file) è `LAMBDAS` in `scripts/deploy.sh`. Route e permessi in `environments/dev
 | File | Cosa fa |
 |---|---|
 | `banche-dati/estrai.ts` | Lambda lanciata dall'arrivo di un PDF su S3 (o dal pannello): testo con `unpdf`, domande con il parser, file JSON, riepilogo ed esempi, email all'admin |
+| `banche-dati/colonne.ts` | Puro: PDF a tabella "Id \| Livello \| Quesito \| Risp_esatta \| Risp_errata_1-3" (es. Polizia penitenziaria). Colonne dall'intestazione di ogni pagina, esponenti riattaccati, domanda e risposta divise se il PDF le unisce, sezione dal titolo "BANCA DATI …" |
+| `banche-dati/lettere.ts` | Puro: PDF a tabella senza intestazione "codice \| domanda \| a)-d) \| lettera giusta" (es. Guardia di Finanza). Colonne dalle risposte "a)", "b)"…, titolo di pagina saltato, trattini delle celle conservati |
 | `banche-dati/tabella.ts` | Puro: PDF a tabella con la sola risposta esatta (es. Carabinieri). Colonne dalle posizioni del testo, sezioni "Materia : …", alternative ricavate da domande simili (coppie incrociate, relazioni calcolate, numeri vicini), scarto delle domande al negativo |
 | `banche-dati/parser.ts` | Puro: dal testo alle domande. Riconosce risposta indicata, segnata (`*`, `(X)`, `✓`), tabella delle soluzioni, "sempre la prima"; sezioni del PDF; numeri di pagina da scartare |
 | `banche-dati/pubblica.ts` | Dal file estratto alle risposte che vedono gli utenti (ordine del PDF o mescolato) |
@@ -175,8 +178,10 @@ main.tsx  (caricaConfig → AuthProvider → router)
 | `api.ts` | `api()` (chiamata con il token), `useApi()` (dati con caricamento ed errore), `ApiError`, tipi delle risposte, `toneErroreAi` |
 | `bandi.ts` | Lista dei bandi dai file in cache su CloudFront (riserva: l'API) |
 | `sessioni.ts` | `useAvviaSessione`: avvia una sessione e apre la sua pagina |
+| `statoSessione.ts` | `useStatoSessione`: come useState ma salvato in sessionStorage (filtri dei bandi al ritorno da un bando) |
 | `ordineRisposte.ts` | Scelta "giusta per prima / mescolata", salvata nel browser e condivisa tra le pagine |
 | `invito.ts` | Codice "invita un amico" dal link `?invito=`, mandato dopo il primo accesso |
+| `provenienza.ts` | Parametri UTM del primo link aperto, ricordati fino all'iscrizione e mandati con il primo `GET /me` |
 | `format.ts` | Date, euro, durate, scadenze a parole, tipi di procedura |
 | `appunti.ts` | Copia negli appunti anche sui telefoni che non hanno `navigator.clipboard` |
 | `legale.ts` | Dati del titolare per Privacy e Termini (da completare prima del lancio) |
@@ -197,6 +202,7 @@ main.tsx  (caricaConfig → AuthProvider → router)
 | `Pubblicita.tsx` | Annuncio tra le domande del piano Free (AdSense o annuncio interno) |
 | `Richieste.tsx` | Assistenza: `SegnalaErrore` (si apre sotto la domanda), `Conversazione`, `RispondiBox`, `ContestoBox`, stati |
 | `UtentiAttivi.tsx` | Admin: online ora, oggi, 7 e 30 giorni, mese, grafico (GET /admin/attivita) |
+| `ProvenienzaIscritti.tsx` | Admin: nuovi iscritti per fonte, mezzo, campagna e contenuto (GET /admin/provenienza) |
 | `ModificaBando.tsx` | Admin: correzione di nome e dati di un bando, e ritorno ai dati di inPA |
 | `NumeroDomande.tsx` | "Altro numero" di domande per le simulazioni (Medium e Pro, fino a 100) |
 | `InvitaAmico.tsx` | Codice personale da condividere e codice di chi ti ha invitato |
@@ -275,5 +281,6 @@ main.tsx  (caricaConfig → AuthProvider → router)
 | `domande/genera.py` | Da `contenuti/sorgenti/<materia>.py` a `data/domande/<materia>.json` e alle frasi-prova |
 | `domande/verifica.py` | Controlla che ogni domanda abbia la sua frase-prova nel testo della fonte |
 | `domande/testi.py` | Testo dei PDF delle fonti (pdftotext) normalizzato |
+| `domande/da_banca_ministeriale.py` | Blocchi `D(...)` dalle banche dati ministeriali «1° Livello» (risposta giusta = A), da aggiungere al sorgente |
 | `domande/cerca.py` | Cerca frasi nei testi di una materia (per scrivere le frasi-prova) |
 | `domande/scarica_wikipedia.py` | Scarica voci di Wikipedia come fonti e le registra in `contenuti/fonti.csv` |

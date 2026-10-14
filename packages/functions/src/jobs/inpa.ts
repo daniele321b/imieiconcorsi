@@ -90,6 +90,7 @@ const REGOLE_COMPARTO: [CompartoId, RegExp][] = [
 
 /** Decide sul nome dell'ente; il titolo serve solo se l'ente non basta (parole come "ricerca" lo renderebbero ambiguo). */
 export function classificaComparto(b: InpaBando): CompartoId {
+  // Primo comparto la cui regola riconosce il testo.
   const match = (testo: string) => REGOLE_COMPARTO.find(([, re]) => re.test(testo))?.[0];
   return match((b.entiRiferimento ?? []).join(" ")) ?? match(b.titolo) ?? "altro";
 }
@@ -101,7 +102,7 @@ export function classificaComparto(b: InpaBando): CompartoId {
 const MATERIE_TIPICHE: Record<CompartoId, MateriaId[]> = {
   "enti-locali": ["diritto-amministrativo", "diritto-costituzionale", "contabilita-pubblica", "informatica", "inglese", "logica"],
   "forze-ordine": [
-    "italiano", "storia", "geografia", "diritto-costituzionale", "diritto-penale",
+    "italiano", "storia", "geografia", "attualita", "diritto-costituzionale", "diritto-penale",
     "logica", "matematica", "informatica", "inglese",
   ],
   inps: ["diritto-amministrativo", "diritto-costituzionale", "diritto-lavoro", "contabilita-pubblica", "informatica", "inglese", "logica"],
@@ -122,8 +123,9 @@ const PAROLE_MATERIA: [MateriaId, RegExp][] = [
   ["diritto-lavoro", /diritto del lavoro|lavoro (alle dipendenze delle )?pubblic|pubblico impiego|previdenz/i],
   ["diritto-penale", /diritto penale|procedura penale|reati contro la pubblica amministrazione/i],
   ["italiano", /lingua italiana|grammatica italiana|comprensione (del|di un) testo/i],
-  ["storia", /\bstoria (d'italia|contemporanea|moderna)|cultura generale/i],
+  ["storia", /\bstoria (d'italia|contemporanea|moderna)/i],
   ["geografia", /\bgeografia\b/i],
+  ["attualita", /\battualit[aà]|cultura generale/i],
   ["logica", /\blogic|ragionamento (logico|verbale|numerico)|(psico)?attitudinal/i],
   ["matematica", /\bmatematic|\baritmetic/i],
   ["informatica", /informatic|competenze digitali|strumenti digitali/i],

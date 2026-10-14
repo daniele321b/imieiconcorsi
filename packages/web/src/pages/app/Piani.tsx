@@ -35,8 +35,10 @@ function SceltaPiano() {
   const [sconto, setSconto] = useState<CodiceScontoApi>();
   const [verifica, setVerifica] = useState<{ inCorso: boolean; errore?: string }>({ inCorso: false });
 
+  // Lo sconto applicato, se vale per questo piano.
   const scontoSu = (piano: PianoId) => (sconto && piano !== "free" && sconto.piani.includes(piano) ? sconto : undefined);
 
+  // Controlla il codice sconto scritto dall'utente.
   async function applicaCodice() {
     setVerifica({ inCorso: true });
     try {
@@ -48,6 +50,7 @@ function SceltaPiano() {
     }
   }
 
+  // Acquista il piano: con un pagamento si va alla pagina di Stripe, altrimenti si attiva subito.
   async function scegli(piano: PianoId) {
     setInCorso(piano);
     setEsito(undefined);

@@ -1355,3 +1355,256 @@ C("lav-300", "Somministrazione", 4, "La somministrazione di lavoro è vietata pr
 C("lav-301", "Somministrazione", 5, "Se la somministrazione avviene oltre i limiti di legge, cosa può chiedere il lavoratore?",
   "La costituzione di un rapporto alle dipendenze dell'utilizzatore dall'inizio della somministrazione", ["Solo un'indennità di 6 mensilità", "Il trasferimento a un'altra agenzia", "Nulla: risponde solo l'agenzia"],
   "Art. 38, comma 2: la domanda può essere rivolta anche solo all'utilizzatore.", "art. 38", "il lavoratore può chiedere, anche soltanto nei confronti dell'utilizzatore, la costituzione di un rapporto di lavoro alle dipendenze di quest'ultimo")
+
+# ── Verso 350: CCNL Funzioni Locali 2019-2021 (ARAN, testo con la raccolta dei precedenti CCNL),
+#    voci Wikipedia (CC BY-SA 4.0, solo per i fatti) su INAIL, diritto del lavoro e CCNL.
+CFL = "CCNL_Funzioni-Locali-2019-2021.txt"
+def F(id, arg, liv, testo, giusta, sbagliate, spieg, art, frase):
+    D(id, arg, liv, testo, giusta, sbagliate, spieg, f"CCNL Funzioni Locali 2019-2021, {art}", CFL, frase)
+INAIL = "Wikipedia_Istituto-Nazionale-per-l-Assicurazione-contro-gli-Infortuni-sul-Lavoro.txt"
+DLAV = "Wikipedia_Diritto-del-lavoro.txt"
+
+F("lav-302", "Lavoro pubblico", 2, "In quante aree è articolato il sistema di classificazione del personale del CCNL Funzioni Locali 2019-2021?",
+  "Quattro aree", ["Tre categorie (A, B, C)", "Sei livelli", "Due fasce"],
+  "Art. 12: il sistema di classificazione è articolato in quattro aree che corrispondono a quattro differenti livelli di conoscenze, abilità e competenze professionali.",
+  "art. 12", "quattro aree che corrispondono a quattro differenti livelli di conoscenze")
+
+F("lav-303", "Lavoro pubblico", 3, "Quale tra queste è un'area del sistema di classificazione del CCNL Funzioni Locali 2019-2021?",
+  "Area dei Funzionari e dell'Elevata Qualificazione", ["Area dei Quadri direttivi", "Categoria D3", "Area dei Dirigenti di seconda fascia"],
+  "Art. 12: le aree sono Operatori, Operatori esperti, Istruttori, Funzionari e dell'Elevata Qualificazione.",
+  "art. 12", "Area dei Funzionari e dell'Elevata Qualificazione")
+
+F("lav-304", "Lavoro pubblico", 3, "Quanto dura il periodo di prova per i dipendenti delle aree degli Operatori e degli Operatori esperti?",
+  "Due mesi", ["Sei mesi", "Un mese", "Un anno"],
+  "Art. 25: la prova dura due mesi per gli Operatori e gli Operatori esperti e sei mesi per il personale delle restanti aree.",
+  "art. 25", "due mesi per i dipendenti inquadrati nelle")
+
+F("lav-305", "Lavoro pubblico", 3, "Quanto dura il periodo di prova per Istruttori e Funzionari negli enti locali?",
+  "Sei mesi", ["Due mesi", "Tre mesi", "Dodici mesi"],
+  "Art. 25: sei mesi per il personale inquadrato nelle aree diverse da Operatori e Operatori esperti.",
+  "art. 25", "sei mesi per il personale inquadrato nelle")
+
+F("lav-306", "Lavoro pubblico", 4, "Da quando ciascuna parte può recedere dal rapporto in prova senza preavviso né indennità?",
+  "Decorsa la metà del periodo di prova", ["Dal primo giorno", "Solo alla fine del periodo", "Dopo trenta giorni, in ogni caso"],
+  "Art. 25: decorsa la metà del periodo di prova ciascuna parte può recedere in qualsiasi momento senza obbligo di preavviso né di indennità sostitutiva.",
+  "art. 25", "Decorsa la metà del periodo di prova")
+
+F("lav-307", "Assenze", 3, "Quanto possono durare, al massimo, i permessi brevi in una giornata?",
+  "Non più della metà dell'orario di lavoro giornaliero", ["Un'ora", "Tutta la giornata", "Due ore"],
+  "Art. 42: i permessi brevi non possono superare la metà dell'orario di lavoro giornaliero né le 36 ore annue.",
+  "art. 42", "possono essere di durata superiore alla metà")
+
+F("lav-308", "Assenze", 3, "Qual è il tetto annuo dei permessi brevi per il personale delle Funzioni Locali?",
+  "36 ore annue", ["18 ore annue", "150 ore annue", "12 ore annue"],
+  "Art. 42: i permessi brevi non possono comunque superare le 36 ore annue e vanno recuperati.",
+  "art. 42", "comunque superare le 36 ore annue")
+
+F("lav-309", "Assenze", 4, "Entro quando va richiesto, di regola, un permesso breve?",
+  "Non oltre un'ora dopo l'inizio della giornata lavorativa", ["Con 15 giorni di preavviso", "Il giorno dopo", "Entro la fine del mese"],
+  "Art. 42, c. 2: la richiesta va fatta in tempo utile e comunque non oltre un'ora dopo l'inizio della giornata lavorativa, salvo urgenze.",
+  "art. 42", "non oltre un'ora dopo l'inizio")
+
+F("lav-310", "Assenze", 3, "Quante ore di permesso retribuito all'anno spettano per particolari motivi personali o familiari?",
+  "18 ore", ["36 ore", "24 ore", "8 ore"],
+  "Art. 41: possono essere concesse 18 ore di permesso retribuito nell'anno per particolari motivi personali o familiari.",
+  "art. 41", "18 ore di permesso retribuito")
+
+F("lav-311", "Assenze", 4, "Per i permessi orari per motivi personali o familiari serve presentare documentazione?",
+  "No, non serve una specifica documentazione o giustificazione", ["Sì, sempre il certificato medico", "Sì, un'autocertificazione notarile", "Sì, se superano un'ora"],
+  "Art. 41: le 18 ore si concedono senza necessità di specifica documentazione e/o giustificazione; il diniego dev'essere motivato.",
+  "art. 41", "senza necessità di specifica documentazione")
+
+F("lav-312", "Assenze", 4, "I permessi orari retribuiti per motivi personali riducono le ferie?",
+  "No, non riducono le ferie", ["Sì, di un giorno ogni 6 ore", "Sì, sempre", "Solo per i neoassunti"],
+  "Art. 41, c. 2: i permessi non riducono le ferie, sono fruibili a frazioni di ora dopo la prima ora e valgono per l'anzianità di servizio.",
+  "art. 41", "a) non riducono le ferie")
+
+F("lav-313", "Lavoro pubblico", 3, "Quando la prestazione giornaliera supera le sei ore, di quale pausa ha diritto il dipendente?",
+  "Di almeno dieci minuti", ["Di almeno un'ora", "Di almeno trenta minuti, non retribuiti", "Di nessuna pausa"],
+  "Art. 34: se la prestazione giornaliera eccede le sei ore il personale ha diritto a una pausa di almeno dieci minuti per il recupero delle energie psicofisiche.",
+  "art. 34", "beneficiare di una pausa di almeno dieci minuti")
+
+F("lav-314", "Diritti sindacali", 3, "Quante ore annue di assemblea sindacale retribuita spettano ai dipendenti delle Funzioni Locali?",
+  "12 ore annue pro capite", ["10 ore annue", "36 ore annue", "6 ore annue"],
+  "Art. 10: i dipendenti partecipano in orario di lavoro ad assemblee sindacali per 12 ore annue pro capite senza decurtazione della retribuzione.",
+  "art. 10", "12 ore annue pro capite")
+
+F("lav-315", "Lavoro pubblico", 4, "Per quanto tempo al massimo sono conferiti gli incarichi di Elevata Qualificazione (EQ)?",
+  "Non più di 3 anni, con atto scritto e motivato", ["5 anni", "Senza scadenza", "1 anno non rinnovabile"],
+  "Art. 18: gli incarichi di EQ sono conferiti dai dirigenti per un periodo massimo non superiore a 3 anni con atto scritto e motivato, e sono rinnovabili.",
+  "art. 18", "superiore a 3 anni con atto scritto e motivato")
+
+F("lav-316", "Lavoro pubblico", 3, "Per il CCNL, in quale fascia oraria si colloca il turno notturno?",
+  "Dalle 22 alle 6 del giorno successivo", ["Dalle 20 alle 8", "Dalle 24 alle 5", "Dalle 21 alle 7"],
+  "Art. 30: per turno notturno si intende il periodo compreso dalle ore 22 alle ore 6 del giorno successivo.",
+  "art. 30", "ricompreso dalle ore 22 alle ore 6 del")
+
+F("lav-317", "Lavoro pubblico", 3, "In cosa consiste il turno di lavoro secondo il CCNL Funzioni Locali?",
+  "In un'effettiva rotazione del personale in articolazioni orarie prestabilite", ["In un orario fisso uguale per tutti", "Nella reperibilità notturna", "Nel lavoro straordinario programmato"],
+  "Art. 30: il turno consiste in un'effettiva rotazione del personale in prestabilite articolazioni orarie giornaliere.",
+  "art. 30", "effettiva rotazione del personale in prestabilite")
+
+F("lav-318", "Assenze", 3, "Per quanto tempo il dipendente non in prova, assente per malattia, ha diritto alla conservazione del posto?",
+  "Diciotto mesi", ["Sei mesi", "Tre anni", "Dodici mesi"],
+  "Art. 48 (ex CCNL): il dipendente assente per malattia ha diritto alla conservazione del posto per un periodo di diciotto mesi.",
+  "art. 48", "per un periodo di diciotto mesi")
+
+F("lav-319", "Assenze", 4, "Quali assenze si sommano per calcolare il periodo di comporto per malattia?",
+  "Tutte quelle dei tre anni precedenti l'ultimo episodio", ["Solo quelle dell'anno solare", "Solo quelle superiori a 10 giorni", "Solo quelle dell'ultimo mese"],
+  "Art. 48: ai fini del comporto si sommano tutte le assenze per malattia dei tre anni precedenti l'ultimo episodio morboso in corso.",
+  "art. 48", "tre anni precedenti l'ultimo episodio morboso")
+
+F("lav-320", "Assenze", 3, "Quante ore massime di permessi retribuiti per il diritto allo studio spettano a ciascun dipendente in un anno?",
+  "150 ore", ["36 ore", "250 ore", "18 ore"],
+  "Art. 46: per il diritto allo studio sono concessi permessi retribuiti nella misura massima individuale di 150 ore per anno solare, entro il 3% del personale.",
+  "art. 46", "misura massima individuale di 150 ore per")
+
+F("lav-321", "Procedimento disciplinare", 4, "Per quanto tempo l'ente può disporre la sospensione cautelare del dipendente durante il procedimento disciplinare?",
+  "Non più di trenta giorni, con conservazione della retribuzione", ["Fino a un anno, senza stipendio", "Sei mesi", "Senza limiti di tempo"],
+  "Durante il procedimento l'ente può disporre la sospensione cautelare per non più di trenta giorni, conservando la retribuzione.",
+  "art. 60 CCNL 2016/18", "cautelare per un periodo di tempo non superiore a trenta giorni")
+
+F("lav-322", "Contrattazione collettiva", 4, "Con quanto anticipo va data disdetta del CCNL perché non si rinnovi tacitamente?",
+  "Almeno sei mesi prima della scadenza", ["Almeno un mese prima", "Almeno un anno prima", "Non può essere disdettato"],
+  "Art. 2: il contratto si rinnova tacitamente di anno in anno se non è disdettato almeno sei mesi prima della scadenza; fino al nuovo contratto restano in vigore le sue disposizioni.",
+  "art. 2", "almeno sei mesi prima della scadenza")
+
+F("lav-323", "Assenze", 3, "Quanti giorni di ferie spettano con orario distribuito su cinque giorni?",
+  "28 giorni lavorativi", ["32 giorni lavorativi", "26 giorni lavorativi", "30 giorni lavorativi"],
+  "Art. 38: con orario su cinque giorni le ferie sono 28 giorni lavorativi; su sei giorni sono 32 (comprese le due giornate della L. 937/1977).",
+  "art. 38", "ferie è di 28 giorni lavorativi")
+
+F("lav-324", "Assenze", 3, "Quanti giorni di ferie spettano con orario distribuito su sei giorni?",
+  "32 giorni", ["28 giorni", "36 giorni", "30 giorni"],
+  "Art. 38, c. 3: con orario settimanale su sei giorni le ferie sono 32 giorni, comprensivi delle due giornate della L. 937/1977.",
+  "art. 38", "di ferie è di 32 giorni, comprensivi delle")
+
+F("lav-325", "Assenze", 4, "Quante ferie spettano a chi è assunto per la prima volta in una pubblica amministrazione, con orario su cinque giorni?",
+  "26 giorni lavorativi", ["28 giorni lavorativi", "20 giorni lavorativi", "30 giorni lavorativi"],
+  "Art. 38, c. 4: per i neoassunti nella PA le ferie sono 26 giorni (orario su cinque giorni) o 30 (su sei); dopo tre anni di servizio spettano quelle ordinarie.",
+  "art. 38", "la durata delle ferie è rispettivamente di 26 e di 30 giorni lavorativi")
+
+F("lav-326", "Assenze", 4, "Dopo quanto tempo il neoassunto nella PA matura i giorni di ferie ordinari?",
+  "Dopo tre anni di servizio in una qualsiasi pubblica amministrazione", ["Dopo un anno", "Dopo il periodo di prova", "Dopo dieci anni nello stesso ente"],
+  "Art. 38, c. 5: dopo tre anni di servizio presso una qualsiasi PA, anche con inquadramento diverso, spettano le ferie dei commi 2 e 3.",
+  "art. 38", "Dopo tre anni di servizio presso una qualsiasi pubblica amministrazione")
+
+F("lav-327", "Assenze", 4, "Quante giornate di riposo per le festività soppresse (L. 937/1977) spettano ogni anno a tutti i dipendenti?",
+  "Quattro", ["Due", "Sei", "Nessuna"],
+  "Art. 38, c. 6: a tutti i dipendenti sono attribuite quattro giornate di riposo da fruire nell'anno solare ai sensi della L. 937/1977.",
+  "art. 38", "quattro giornate di riposo da fruire nell'anno")
+
+F("lav-328", "Reclutamento", 4, "Quale quota dei posti disponibili resta riservata all'accesso dall'esterno quando l'ente fa progressioni tra le aree?",
+  "Almeno il 50 per cento", ["Almeno il 10 per cento", "Il 100 per cento", "Nessuna quota"],
+  "Art. 15: le progressioni tra le aree si fanno con procedura comparativa, fatta salva una riserva di almeno il 50 per cento delle posizioni disponibili per l'accesso dall'esterno.",
+  "art. 15", "il 50 per cento delle posizioni disponibili")
+
+F("lav-329", "Lavoro pubblico", 4, "Quali attività sono escluse dal lavoro agile secondo il CCNL Funzioni Locali?",
+  "I lavori in turno e quelli che richiedono l'uso costante di strumentazioni non remotizzabili", ["Tutte le attività dei funzionari", "Le attività svolte a tempo parziale", "Nessuna"],
+  "Art. 64: l'amministrazione individua le attività che possono essere svolte in lavoro agile; sono esclusi i lavori in turno e quelli che richiedono strumentazioni non remotizzabili.",
+  "art. 64", "Sono esclusi i lavori in turno")
+
+F("lav-330", "Lavoro pubblico", 4, "A cosa serve la Banca delle ore prevista dal CCNL?",
+  "A fruire dello straordinario in modo retribuito o come permessi compensativi", ["A pagare le ferie non godute", "A sostituire la malattia", "A recuperare i ritardi"],
+  "Art. 33: per consentire di fruire dello straordinario, in modo retribuito o come permessi compensativi, è istituita la Banca delle ore con un conto individuale.",
+  "art. 33", "è istituita la Banca delle ore, con un")
+
+F("lav-331", "Lavoro pubblico", 5, "Entro quando va fruito, di regola, il riposo compensativo per chi lavora nel proprio giorno di riposo settimanale?",
+  "Di regola entro 15 giorni e comunque non oltre il bimestre successivo", ["Entro l'anno", "Entro 3 giorni", "Non spetta riposo, solo denaro"],
+  "Chi presta servizio nel giorno di riposo settimanale ha un compenso aggiuntivo e diritto al riposo compensativo, di regola entro 15 giorni e non oltre il bimestre successivo.",
+  "art. 24 CCNL 14.9.2000", "riposo compensativo da fruire di regola entro 15 giorni")
+
+F("lav-332", "Lavoro pubblico", 4, "Cosa caratterizza il «lavoro da remoto» rispetto al lavoro agile nel CCNL Funzioni Locali?",
+  "Si svolge con vincolo di tempo, in un luogo idoneo diverso dalla sede dell'ufficio", ["Si svolge senza alcun vincolo di orario", "Si svolge solo all'estero", "È riservato ai dirigenti"],
+  "Art. 68: il lavoro da remoto si presta con vincolo di tempo e obblighi di presenza, modificando il luogo di adempimento in un luogo idoneo diverso dalla sede.",
+  "art. 68", "luogo idoneo e diverso dalla sede dell'ufficio")
+
+F("lav-333", "Lavoro pubblico", 3, "In alternativa al servizio mensa, cosa possono attribuire gli enti al personale?",
+  "Buoni pasto sostitutivi, previo confronto con i sindacati", ["Un aumento del 10% dello stipendio", "Giorni di ferie aggiuntivi", "Rimborso di ogni spesa alimentare"],
+  "Art. 35: gli enti possono istituire un servizio mensa o, in alternativa, attribuire buoni pasto sostitutivi, previo confronto con le organizzazioni sindacali.",
+  "art. 35", "buoni pasto sostitutivi, previo confronto con le")
+
+D("lav-334", "Previdenza", 2, "Che tipo di ente è l'INAIL?",
+  "Un ente pubblico non economico", ["Una società per azioni", "Un'agenzia privata", "Un organo del Parlamento"],
+  "L'INAIL è un ente pubblico non economico che gestisce l'assicurazione obbligatoria contro gli infortuni sul lavoro e le malattie professionali.",
+  W("Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"), INAIL, "è un ente pubblico non economico italiano che gestisce l'assicurazione obbligatoria")
+
+D("lav-335", "Previdenza", 3, "Quale Ministero vigila sull'INAIL?",
+  "Il Ministero del lavoro e delle politiche sociali", ["Il Ministero della salute", "Il Ministero dell'interno", "Il Ministero della giustizia"],
+  "L'INAIL è sottoposto alla vigilanza del Ministero del lavoro e delle politiche sociali.",
+  W("Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"), INAIL, "È sottoposto alla vigilanza del Ministero del lavoro e delle politiche sociali")
+
+D("lav-336", "Previdenza", 4, "Dopo la caduta del fascismo, quale governo tolse la parola «Fascista» dal nome dell'istituto per gli infortuni sul lavoro?",
+  "Il Governo Badoglio I", ["Il Governo De Gasperi I", "Il Governo Parri", "Il Governo Bonomi II"],
+  "Nel 1933 la Cassa divenne «Istituto Nazionale Fascista per l'Assicurazione contro gli Infortuni sul Lavoro»; caduto il fascismo, il Governo Badoglio I eliminò la parola «Fascista».",
+  W("Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"), INAIL, "il Governo Badoglio I eliminò la parola")
+
+D("lav-337", "Previdenza", 4, "Quale atto del 1965 raccoglie i principi fondamentali dell'assicurazione contro infortuni e malattie professionali?",
+  "Il DPR 30 giugno 1965, n. 1124", ["La legge 300 del 1970", "Il codice civile del 1942", "Il D.Lgs. 626 del 1994"],
+  "Nel 1965 i principi fondamentali dell'assicurazione infortuni furono raccolti nel DPR 30 giugno 1965, n. 1124, che regola tutta la materia INAIL.",
+  W("Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"), INAIL, "decreto del presidente della Repubblica 30 giugno 1965, n. 1124")
+
+D("lav-338", "Previdenza", 4, "Le funzioni di quali enti ha assorbito l'INAIL nel 2010?",
+  "ISPESL e IPSEMA", ["INPDAP ed ENPALS", "ARAN e CNEL", "INPS e ISTAT"],
+  "Nel 2010 l'INAIL ha assorbito le funzioni dell'Istituto superiore per la prevenzione e la sicurezza del lavoro (ISPESL) e dell'Istituto di previdenza per il settore marittimo (IPSEMA).",
+  W("Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"), INAIL, "Nel 2010 l'Inail ha assorbito le funzioni dell'Istituto superiore per la prevenzione e la sicurezza del lavoro")
+
+D("lav-339", "Previdenza", 3, "Cosa distingue la malattia professionale dall'infortunio sul lavoro?",
+  "Origina da cause non violente, connesse allo svolgimento dell'attività", ["È sempre più grave", "Avviene solo fuori dal luogo di lavoro", "Non è tutelata dall'INAIL"],
+  "La malattia professionale è un evento dannoso che origina da cause non violente (a differenza dell'infortunio), connesse con lo svolgimento dell'attività lavorativa.",
+  W("Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"), INAIL, "origina da cause non violente")
+
+D("lav-340", "Previdenza", 4, "Chi lavora per la cura della propria famiglia e della casa, senza retribuzione, è soggetto all'assicurazione INAIL?",
+  "Sì, se ha tra 18 e 67 anni e lo fa in via esclusiva o non occasionale", ["No, mai", "Sì, ma solo se ha figli minori", "Solo se ha più di 67 anni"],
+  "L'INAIL ha esteso l'obbligo assicurativo a chi, tra 18 e 67 anni, svolge in modo esclusivo o non occasionale e gratuito lavoro domestico per la famiglia.",
+  W("Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"), INAIL, "di età compresa tra 18 e 67 anni")
+
+D("lav-341", "Previdenza", 4, "Se il datore di lavoro non versa i premi INAIL, il dipendente infortunato è comunque tutelato?",
+  "Sì, per il principio di automaticità delle prestazioni", ["No, perde ogni tutela", "Solo se fa causa al datore", "Solo dopo 5 anni di contributi"],
+  "Anche se il datore non versa i premi, il dipendente ha accesso alla tutela: è il principio dell'automaticità delle prestazioni.",
+  W("Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"), INAIL, "principio della automaticità delle prestazioni")
+
+D("lav-342", "Previdenza", 4, "Che effetto ha, in genere, il pagamento del premio INAIL sulla responsabilità civile del datore di lavoro?",
+  "Lo esonera, salvo colpa accertata con sentenza definitiva", ["Lo rende responsabile di ogni danno", "Nessun effetto", "Lo esonera anche dalla responsabilità penale"],
+  "Il pagamento del premio esonera in genere dalla responsabilità civile il datore, che risponde solo in caso di colpa riconosciuta con sentenza definitiva.",
+  W("Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"), INAIL, "Il pagamento del premio esonera in genere dalla responsabilità civile il datore di lavoro")
+
+D("lav-343", "Previdenza", 5, "In che anno nacque, su base volontaria, la prima cassa contro gli infortuni sul lavoro in Italia?",
+  "Nel 1883", ["Nel 1861", "Nel 1898", "Nel 1927"],
+  "Nata su base volontaria nel 1883, fu il primo organismo di tutela contro gli infortuni sul lavoro sorto in Italia; l'obbligo arrivò nel 1898.",
+  W("Istituto Nazionale per l'Assicurazione contro gli Infortuni sul Lavoro"), INAIL, "Nata su base volontaria nel 1883")
+
+D("lav-344", "Contratti di lavoro", 2, "Di quale ramo del diritto fa parte il diritto del lavoro?",
+  "Del diritto privato", ["Del diritto penale", "Del diritto internazionale pubblico", "Del diritto canonico"],
+  "Il diritto del lavoro è il ramo del diritto privato che studia la disciplina del lavoro, del rapporto di lavoro e delle tematiche collegate.",
+  W("Diritto del lavoro"), DLAV, "Il diritto del lavoro è quel ramo del diritto privato")
+
+D("lav-345", "Contratti di lavoro", 3, "Per regolare quali problemi sociali è nato il diritto del lavoro?",
+  "Quelli sorti con la prima rivoluzione industriale", ["Quelli della Riforma protestante", "Quelli della globalizzazione degli anni 2000", "Quelli dell'unificazione d'Italia"],
+  "Il diritto del lavoro è nato e si è sviluppato per regolare e attenuare le problematiche sociali sorte con la prima rivoluzione industriale.",
+  W("Diritto del lavoro"), DLAV, "sorte con la prima rivoluzione industriale")
+
+D("lav-346", "Contratti di lavoro", 3, "Qual è l'organizzazione internazionale più antica che opera nel campo del lavoro a livello mondiale?",
+  "L'Organizzazione internazionale del lavoro (OIL)", ["L'Organizzazione mondiale del commercio", "Il Fondo monetario internazionale", "L'UNESCO"],
+  "L'organizzazione internazionale di più antica data nel campo del lavoro è l'OIL, che indirizza raccomandazioni e convenzioni agli Stati.",
+  W("Diritto del lavoro"), DLAV, "L'organizzazione internazionale di più antica data che opera nel campo del lavoro a livello mondiale è l'Organizzazione internazionale del lavoro")
+
+D("lav-347", "Contratti di lavoro", 4, "Quale settimana lavorativa legale vige in Francia dal 2000?",
+  "35 ore", ["40 ore", "36 ore", "32 ore"],
+  "In Francia, dal 2000, i dipendenti sono soggetti a una settimana lavorativa legale di 35 ore.",
+  W("Diritto del lavoro"), DLAV, "Dal 2000, i dipendenti sono soggetti a una settimana lavorativa legale di 35 ore")
+
+D("lav-348", "Licenziamento", 4, "Cosa prevede il principio statunitense dell'«at-will employment»?",
+  "Il datore può licenziare senza preavviso né motivo, salvo casi illegali o discriminatori", ["Il licenziamento è sempre vietato", "Serve l'autorizzazione del giudice", "Il lavoratore non può dimettersi"],
+  "Negli USA vige l'at-will employment: il datore può licenziare senza preavviso e senza motivo, tranne quando ciò sia illegale o discriminatorio.",
+  W("Diritto del lavoro"), DLAV, "il datore di lavoro può licenziare senza preavviso e motivo alcuni")
+
+D("lav-349", "Contrattazione collettiva", 4, "Con quale atto del 1927 fu introdotto in Italia il contratto collettivo nazionale di lavoro?",
+  "Con la Carta del lavoro", ["Con lo Statuto Albertino", "Con lo Statuto dei lavoratori", "Con il protocollo Ciampi"],
+  "Il CCNL fu introdotto durante il fascismo con la Carta del lavoro, pubblicata in Gazzetta Ufficiale il 30 aprile 1927.",
+  W("Contratto collettivo nazionale di lavoro"), CCNL, "Carta del lavoro pubblicata sulla Gazzetta Ufficiale del Regno d'Italia n. 100 del 30 aprile 1927")
+
+D("lav-350", "Contrattazione collettiva", 4, "Quale protocollo, firmato durante il governo Ciampi, istituzionalizzò la «concertazione sociale»?",
+  "Il protocollo del 23 luglio 1993", ["Il patto di Natale del 1998", "Il Patto per l'Italia del 2002", "La legge 741 del 1959"],
+  "Negli anni Novanta il nuovo modello di relazioni industriali fu istituzionalizzato dal governo Ciampi con il protocollo del 23 luglio 1993 sulla concertazione sociale.",
+  W("Contratto collettivo nazionale di lavoro"), CCNL, "protocollo del 23 luglio 1993")

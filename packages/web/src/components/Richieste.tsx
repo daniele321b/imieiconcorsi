@@ -42,6 +42,7 @@ export function SegnalaErrore({ contesto, className }: { contesto: ContestoRichi
   const [invio, setInvio] = useState(false);
   const [inviata, setInviata] = useState(false);
   const [errore, setErrore] = useState<string>();
+  // Chiude il modulo e lo riporta allo stato iniziale.
   const torna = () => {
     setAperta(false);
     setInviata(false);
@@ -49,6 +50,7 @@ export function SegnalaErrore({ contesto, className }: { contesto: ContestoRichi
     setTesto(TRACCIA_ERRORE);
   };
 
+  // Invia la segnalazione di una domanda errata, con il contesto della domanda.
   async function invia() {
     setInvio(true);
     setErrore(undefined);
@@ -197,6 +199,7 @@ export function RispondiBox({
   const [testo, setTesto] = useState("");
   const [invio, setInvio] = useState(false);
 
+  // Invia il messaggio e svuota il campo se è andato.
   async function onInvia() {
     setInvio(true);
     if (await invia(testo.trim())) setTesto("");

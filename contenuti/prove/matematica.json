@@ -1498,5 +1498,1005 @@
     "id": "mat-300",
     "file": "Wikipedia_Sistema-internazionale-di-unità-di-misura.txt",
     "frase": "definisce la mole attraverso il numero di Avogadro"
+  },
+  {
+    "id": "mat-301",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "si chiama modulo di m rispetto a n"
+  },
+  {
+    "id": "mat-302",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "Chiamiamo divisore proprio di un numero un divisore diverso dal numero stesso e dall'unità"
+  },
+  {
+    "id": "mat-303",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "si dice quadrato se ha un numero dispari di divisori"
+  },
+  {
+    "id": "mat-304",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "Un numero razionale può essere scritto come numero decimale limitato o come numero decimale periodico"
+  },
+  {
+    "id": "mat-305",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "Tra due numeri razionali diversi esiste sempre almeno un altro numero razionale"
+  },
+  {
+    "id": "mat-306",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "Due frazioni sono equivalenti se il prodotto del numeratore della prima per il denominatore della seconda"
+  },
+  {
+    "id": "mat-307",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "Il reciproco di zero non è definito"
+  },
+  {
+    "id": "mat-308",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "La percentuale è il rapporto tra due grandezze moltiplicato per 100"
+  },
+  {
+    "id": "mat-309",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "per denominatore tanti 9 quante sono le cifre del periodo"
+  },
+  {
+    "id": "mat-310",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "per denominatore tanti 9 quante sono le cifre del periodo"
+  },
+  {
+    "id": "mat-311",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "Diciamo che un monomio è intero se non ha lettere al denominatore"
+  },
+  {
+    "id": "mat-312",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "Si dicono opposti due monomi simili che hanno coefficiente opposto"
+  },
+  {
+    "id": "mat-313",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "altrimenti si dicono sghembe"
+  },
+  {
+    "id": "mat-314",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "è detto fascio proprio di rette"
+  },
+  {
+    "id": "mat-315",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "Due segmenti si dicono adiacenti se sono consecutivi ed appartengono alla stessa retta"
+  },
+  {
+    "id": "mat-316",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "il segmento che li unisce è contenuto nella figura"
+  },
+  {
+    "id": "mat-317",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "Un angolo si dice piatto se i suoi lati sono uno il prolungamento dell'altro"
+  },
+  {
+    "id": "mat-318",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "Due angoli si dicono adiacenti se sono consecutivi e se i lati non comuni giacciono sulla stessa retta"
+  },
+  {
+    "id": "mat-319",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "Angoli opposti al vertice sono congruenti"
+  },
+  {
+    "id": "mat-320",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "Si dice bisettrice di un angolo la semiretta che ha origine nel vertice dell'angolo"
+  },
+  {
+    "id": "mat-321",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "la lunghezza del segmento di perpendicolare condotta dal punto P alla retta"
+  },
+  {
+    "id": "mat-322",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "Si chiama poligonale una spezzata chiusa non intrecciata"
+  },
+  {
+    "id": "mat-323",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "Si chiama riferimento cartesiano ortogonale monometrico la coppia di assi cartesiani perpendicolari"
+  },
+  {
+    "id": "mat-324",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "presi in un certo ordine si dice coppia ordinata"
+  },
+  {
+    "id": "mat-325",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "si chiama relazione d'ordine se è antisimmetrica e transitiva"
+  },
+  {
+    "id": "mat-326",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "Si chiama funzione costante la legge che associa ad ogni valore"
+  },
+  {
+    "id": "mat-327",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "viene detto immagine di x nella funzione f"
+  },
+  {
+    "id": "mat-328",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "mentre ciascun elemento della popolazione è detto unità statistica"
+  },
+  {
+    "id": "mat-329",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "si definisce frequenza il numero delle unità statistiche su cui una sua modalità si presenta"
+  },
+  {
+    "id": "mat-330",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "La moda è la modalità del carattere indagato che si presenta più frequentemente"
+  },
+  {
+    "id": "mat-331",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "Si definisce scarto dalla media (aritmetica) la differenza tra i valori osservati e la media"
+  },
+  {
+    "id": "mat-332",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "La media aritmetica ponderata è il valore ottenuto moltiplicando ciascun dato con la propria frequenza"
+  },
+  {
+    "id": "mat-333",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "Due triangoli sono congruenti se hanno congruenti due lati e l'angolo tra essi compreso"
+  },
+  {
+    "id": "mat-334",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "Due triangoli sono congruenti se hanno congruenti due angoli e il lato tra essi compreso"
+  },
+  {
+    "id": "mat-335",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "Due triangoli sono congruenti se hanno congruenti le tre coppie di lati"
+  },
+  {
+    "id": "mat-336",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "In un triangolo isoscele gli angoli alla base sono congruenti"
+  },
+  {
+    "id": "mat-337",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "Se un triangolo ha due angoli congruenti, allora è isoscele"
+  },
+  {
+    "id": "mat-338",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "Tra due punti di una retta esiste sempre una quantità illimitata di altri punti"
+  },
+  {
+    "id": "mat-339",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "Angoli supplementari di angoli congruenti sono congruenti"
+  },
+  {
+    "id": "mat-340",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "Un angolo convesso si dice ottuso se è maggiore di un angolo retto"
+  },
+  {
+    "id": "mat-341",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "Due rette si dicono perpendicolari se sono incidenti e formano tra loro quattro angoli retti"
+  },
+  {
+    "id": "mat-342",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "Si chiama asse di un segmento la retta perpendicolare al segmento e passante per il suo punto medio"
+  },
+  {
+    "id": "mat-343",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "Due rette che hanno un solo punto in comune si dicono incidenti"
+  },
+  {
+    "id": "mat-344",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "diagonale ogni corda che unisce due vertici non consecutivi"
+  },
+  {
+    "id": "mat-345",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "Aggiungendo o togliendo ad entrambi i termini di una sottrazione la stessa quantità la differenza non cambia"
+  },
+  {
+    "id": "mat-346",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "Moltiplicando o dividendo entrambi i termini di una divisione per la stessa quantità, diversa da zero, il quoziente non cambia"
+  },
+  {
+    "id": "mat-347",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "si dice chiusa se il primo estremo del primo segmento coincide con l'ultimo estremo dell'ultimo segmento"
+  },
+  {
+    "id": "mat-348",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "il punto M interno al segmento che lo divide in due parti tra loro congruenti"
+  },
+  {
+    "id": "mat-349",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "ettagono: 7 lati"
+  },
+  {
+    "id": "mat-350",
+    "file": "MatematicaDolce_vol1.txt",
+    "frase": "si dice insieme universo o insieme ambiente"
+  },
+  {
+    "id": "mat-351",
+    "file": "algebra.txt",
+    "frase": "Il numero 80 si ottiene dalla radice quadrata di:"
+  },
+  {
+    "id": "mat-352",
+    "file": "algebra.txt",
+    "frase": "Qual è il valore della x nella proporzione 50 : 5 = 110 : x ?"
+  },
+  {
+    "id": "mat-353",
+    "file": "algebra.txt",
+    "frase": "Indicare la radice quadrata di 256:"
+  },
+  {
+    "id": "mat-354",
+    "file": "algebra.txt",
+    "frase": "L'espressione (-3a)∙(-4a) è uguale a:"
+  },
+  {
+    "id": "mat-355",
+    "file": "algebra.txt",
+    "frase": "Lanciando una moneta, qual è la probabilità che si ottenga testa?"
+  },
+  {
+    "id": "mat-356",
+    "file": "algebra.txt",
+    "frase": "Risolvere l'equazione 3x + 3 = 2x."
+  },
+  {
+    "id": "mat-357",
+    "file": "algebra.txt",
+    "frase": "L'espressione (-8a⁴c)² è uguale a:"
+  },
+  {
+    "id": "mat-358",
+    "file": "algebra.txt",
+    "frase": "Calcolare il valore dell'espressione letterale: 5a + 4b – 15. Per a = -7; b = 4"
+  },
+  {
+    "id": "mat-359",
+    "file": "algebra.txt",
+    "frase": "10⁷ · 10⁴ : 10² ="
+  },
+  {
+    "id": "mat-360",
+    "file": "algebra.txt",
+    "frase": "Calcolare x nell'equazione 2(x + 3) = 4(x - 4)"
+  },
+  {
+    "id": "mat-361",
+    "file": "algebra.txt",
+    "frase": "8¹² · 8³: 8⁶ ="
+  },
+  {
+    "id": "mat-362",
+    "file": "algebra.txt",
+    "frase": "La parola GONIOMETRO viene tagliata in bigliettini, ognuno dei quali contiene una sola lettera. Qual è la probabilità che estraendo a caso uno dei biglietti si ottenga la lettera M?"
+  },
+  {
+    "id": "mat-363",
+    "file": "algebra.txt",
+    "frase": "eseguire la seguente addizione algebrica: a + 3a - 7a"
+  },
+  {
+    "id": "mat-364",
+    "file": "algebra.txt",
+    "frase": "Eseguire la seguente addizione algebrica: (+5/12a²b²) - (-1/2a²b²) + (-2/3a²b²) - (-3/4a²b²)"
+  },
+  {
+    "id": "mat-365",
+    "file": "algebra.txt",
+    "frase": "Eseguire la seguente addizione algebrica: 3x²y - 2x²y² + 6x²y² - 4x²y"
+  },
+  {
+    "id": "mat-366",
+    "file": "algebra.txt",
+    "frase": "Eseguire la seguente moltiplicazione di polinomi: (x+y²)(x²+y)"
+  },
+  {
+    "id": "mat-367",
+    "file": "algebra.txt",
+    "frase": "Eseguire la seguente moltiplicazione di polinomi: (a+b)(a³-4a²b+ab²-b³)"
+  },
+  {
+    "id": "mat-368",
+    "file": "algebra.txt",
+    "frase": "Risolvere la seguente espressione: 3(2x+y)-2(2x+y²)+3x(1-y)+y²"
+  },
+  {
+    "id": "mat-369",
+    "file": "algebra.txt",
+    "frase": "Risolvere la seguente espressione applicando i prodotti notevoli: (a-b)²+2ab"
+  },
+  {
+    "id": "mat-370",
+    "file": "algebra.txt",
+    "frase": "Eseguire la seguente espressione: (x+y)(x-2y)+(x-y)(x+2y)"
+  },
+  {
+    "id": "mat-371",
+    "file": "algebra.txt",
+    "frase": "Semplificare la seguente espressione: (a+3)³-2(a²-1)(a+1)-3(a+3)²"
+  },
+  {
+    "id": "mat-372",
+    "file": "algebra.txt",
+    "frase": "Scomporre il numero 66 in fattori primi:"
+  },
+  {
+    "id": "mat-373",
+    "file": "algebra.txt",
+    "frase": "Indicare il risultato dell'addizione (1/5) + (5/6):"
+  },
+  {
+    "id": "mat-374",
+    "file": "algebra.txt",
+    "frase": "Indicare il risultato della sottrazione (12/13) - (3/5):"
+  },
+  {
+    "id": "mat-375",
+    "file": "algebra.txt",
+    "frase": "Indicare la relazione corretta:"
+  },
+  {
+    "id": "mat-376",
+    "file": "algebra.txt",
+    "frase": "Qual è il valore della x nell'equazione di primo grado: 2x(2 + 1) – 2 = x – 7?"
+  },
+  {
+    "id": "mat-377",
+    "file": "algebra.txt",
+    "frase": "Applica le regole dei prodotti notevoli per calcolare il valore della seguente espressione: (a³ + 2b²)²"
+  },
+  {
+    "id": "mat-378",
+    "file": "algebra.txt",
+    "frase": "Quale dei seguenti punti appartiene alla retta di equazione x + 2y - 2 = 0?"
+  },
+  {
+    "id": "mat-379",
+    "file": "algebra.txt",
+    "frase": "5³ + 2³ – 3³ ="
+  },
+  {
+    "id": "mat-380",
+    "file": "algebra.txt",
+    "frase": "5¹² : 5⁷ · 5³ ="
+  },
+  {
+    "id": "mat-381",
+    "file": "algebra.txt",
+    "frase": "Qual è la probabilità che esca il numero 5 lanciando un dado?"
+  },
+  {
+    "id": "mat-382",
+    "file": "algebra.txt",
+    "frase": "Quanto vale l'espressione letterale -12a² se a = -2?"
+  },
+  {
+    "id": "mat-383",
+    "file": "algebra.txt",
+    "frase": "Quale delle seguenti rette è parallela all'asse delle y?"
+  },
+  {
+    "id": "mat-384",
+    "file": "algebra.txt",
+    "frase": "Quale delle seguenti rette non passa per l'origine?"
+  },
+  {
+    "id": "mat-385",
+    "file": "algebra.txt",
+    "frase": "Quale tra i seguenti monomi ha il grado maggiore?"
+  },
+  {
+    "id": "mat-386",
+    "file": "algebra.txt",
+    "frase": "In uno scaffale della libreria vi sono 2 libri di narrativa, 15 polizieschi e 3 testi scientifici. Prendendo un libro a caso qual è la probabilità che si tratti di un libro di narrativa?"
+  },
+  {
+    "id": "mat-387",
+    "file": "algebra.txt",
+    "frase": "A quale potenza corrisponde il numero 8?"
+  },
+  {
+    "id": "mat-388",
+    "file": "algebra.txt",
+    "frase": "L'equazione x-9=2x-6 che soluzione ammette?"
+  },
+  {
+    "id": "mat-389",
+    "file": "algebra.txt",
+    "frase": "Risolvere la seguente disequazione 3x+6(1-x)<(x-1)"
+  },
+  {
+    "id": "mat-390",
+    "file": "algebra.txt",
+    "frase": "Disporre in ordine decrescente i valori seguenti: a=-1/2 b=-1,23 c=-0,55 d=-4/9."
+  },
+  {
+    "id": "mat-391",
+    "file": "algebra.txt",
+    "frase": "Eseguire la seguente moltiplicazione di monomi: (-4/5xyz)(-15/8xy)"
+  },
+  {
+    "id": "mat-392",
+    "file": "algebra.txt",
+    "frase": "Eseguire la seguente sottrazione tra polinomi: (2ab+3c) - (2ab-2c)"
+  },
+  {
+    "id": "mat-393",
+    "file": "algebra.txt",
+    "frase": "L'intersezione di due insiemi A e B si indica con:"
+  },
+  {
+    "id": "mat-394",
+    "file": "algebra.txt",
+    "frase": "Dato l'insieme dei numeri naturali quale delle seguenti affermazioni è falsa?"
+  },
+  {
+    "id": "mat-395",
+    "file": "algebra.txt",
+    "frase": "Quale delle seguenti scritture non è corretta?"
+  },
+  {
+    "id": "mat-396",
+    "file": "algebra.txt",
+    "frase": "L'insieme A è costituito da 8 elementi e l'insieme B da 6 elementi: se A ∩ B = {a, b, c}, quanti sono gli elementi di A U B?"
+  },
+  {
+    "id": "mat-397",
+    "file": "algebra.txt",
+    "frase": "Il m.c.m. fra due o più monomi è:"
+  },
+  {
+    "id": "mat-398",
+    "file": "algebra.txt",
+    "frase": "Qual è il prodotto tra questi monomi 5a³b² ∙ (–2)a⁴b³x² ="
+  },
+  {
+    "id": "mat-399",
+    "file": "algebra.txt",
+    "frase": "Determinare i valori di k che verificano la disequazione 12 + 3k ≥ k."
+  },
+  {
+    "id": "mat-400",
+    "file": "algebra.txt",
+    "frase": "Nel piano cartesiano, le rette di equazioni:Y=2*X+A Y=2*X-3-B con A e B numeri reali:"
+  },
+  {
+    "id": "mat-401",
+    "file": "algebra.txt",
+    "frase": "Calcolare il risultato dell'espressione 125-(45:5)"
+  },
+  {
+    "id": "mat-402",
+    "file": "algebra.txt",
+    "frase": "Quali sono le coordinate del punto P' simmetrico di P (5 ; 2), rispetto all'asse x?"
+  },
+  {
+    "id": "mat-403",
+    "file": "algebra.txt",
+    "frase": "Quale delle seguenti equazioni rappresenta la proporzionalità inversa?"
+  },
+  {
+    "id": "mat-404",
+    "file": "algebra.txt",
+    "frase": "Quale numero non appartiene all'insieme A = {x|x è un numero dispari minore di 12}?"
+  },
+  {
+    "id": "mat-405",
+    "file": "algebra.txt",
+    "frase": "Quale polinomio si scompone in (a – 2b) (a² + 2ab + 4b²)?"
+  },
+  {
+    "id": "mat-406",
+    "file": "algebra.txt",
+    "frase": "Qual è il grado del polinomio 2a² + a³x⁴ + x⁵ + 9 rispetto alla lettera a?"
+  },
+  {
+    "id": "mat-407",
+    "file": "algebra.txt",
+    "frase": "Il minimo comune multiplo dei numeri 5, 2 e 10 vale:"
+  },
+  {
+    "id": "mat-408",
+    "file": "algebra.txt",
+    "frase": "Dire quale delle seguenti affermazioni equivale a dire che \"due insiemi A e B sono disgiunti\"."
+  },
+  {
+    "id": "mat-409",
+    "file": "algebra.txt",
+    "frase": "Dire se la seguente affermazione è vera: \"se A è vuoto, allora A∩B è vuota\"."
+  },
+  {
+    "id": "mat-410",
+    "file": "algebra.txt",
+    "frase": "Determinare la differenza X\\A, dove X={7, 14, 21, 28, 35, 42, 49, 57} e A={42, 49, 56, 63, 70}."
+  },
+  {
+    "id": "mat-411",
+    "file": "algebra.txt",
+    "frase": "Dati i tre numeri relativi -3, 1, 2, determinare il minimo tra i tre."
+  },
+  {
+    "id": "mat-412",
+    "file": "algebra.txt",
+    "frase": "Calcolare il MCD(60, 96, 144)."
+  },
+  {
+    "id": "mat-413",
+    "file": "algebra.txt",
+    "frase": "Determinare la frazione che si ottiene riducendo ai minimi termini la frazione 81/900."
+  },
+  {
+    "id": "mat-414",
+    "file": "algebra.txt",
+    "frase": "Determinare il grado del seguente monomio: x² y³ z⁵."
+  },
+  {
+    "id": "mat-415",
+    "file": "algebra.txt",
+    "frase": "Completare la seguente affermazione: \"la somma di due monomi è un monomio...\""
+  },
+  {
+    "id": "mat-416",
+    "file": "algebra.txt",
+    "frase": "Decidere se l'espressione x⁵ + 7 x⁴ è un polinomio."
+  },
+  {
+    "id": "mat-417",
+    "file": "algebra.txt",
+    "frase": "Sviluppare il seguente quadrato: (-2 x – y)²."
+  },
+  {
+    "id": "mat-418",
+    "file": "algebra.txt",
+    "frase": "Calcolare il seguente prodotto: (2 a + b)(2 a – b)."
+  },
+  {
+    "id": "mat-419",
+    "file": "algebra.txt",
+    "frase": "Determinare il quoziente e il resto della seguente divisione tra polinomi: (a⁷ – 3 a⁶ – 3 a⁵ + 9 a⁴ + 2 a² – 7 a + 3):(a – 3)."
+  },
+  {
+    "id": "mat-420",
+    "file": "algebra.txt",
+    "frase": "Scomporre in fattori il seguente polinomio: t² – 10 t + 24."
+  },
+  {
+    "id": "mat-421",
+    "file": "algebra.txt",
+    "frase": "Eseguire la seguente addizione tra frazioni algebriche: a² + b² + [(a⁴ + b⁴)/(a² – b²)]."
+  },
+  {
+    "id": "mat-422",
+    "file": "algebra.txt",
+    "frase": "Dire quale delle seguenti espressioni equivale a √24 * √6."
+  },
+  {
+    "id": "mat-423",
+    "file": "algebra.txt",
+    "frase": "Risolvere l'equazione 5 x + 6 + 2 x = 3 x + 5 + 4 x."
+  },
+  {
+    "id": "mat-424",
+    "file": "algebra.txt",
+    "frase": "Dato il sistema: 2 x + 4 y = 34; x + 2 y = 0, dire quale delle seguenti affermazioni è vera."
+  },
+  {
+    "id": "mat-425",
+    "file": "algebra.txt",
+    "frase": "Data la disequazione x > 2, dire quale delle seguenti disequazioni è equivalente alla disequazione data."
+  },
+  {
+    "id": "mat-426",
+    "file": "matematica.txt",
+    "frase": "Calcolare il valore della seguente espressione 25 −14 : 2 − 8 + 2 − 40 : 5"
+  },
+  {
+    "id": "mat-427",
+    "file": "matematica.txt",
+    "frase": "300 ml a quanti litri corrispondono?"
+  },
+  {
+    "id": "mat-428",
+    "file": "matematica.txt",
+    "frase": "A quale frazione decimale corrisponde il numero decimale 0,032?"
+  },
+  {
+    "id": "mat-429",
+    "file": "matematica.txt",
+    "frase": "A quanto corrisponde il 20% di 980 ?"
+  },
+  {
+    "id": "mat-430",
+    "file": "matematica.txt",
+    "frase": "La somma 2/5 + 1/4 vale:"
+  },
+  {
+    "id": "mat-431",
+    "file": "matematica.txt",
+    "frase": "La somma 3/5 + 1/2 è uguale a:"
+  },
+  {
+    "id": "mat-432",
+    "file": "matematica.txt",
+    "frase": "Cosa si ottiene semplificando la frazione 45/65?"
+  },
+  {
+    "id": "mat-433",
+    "file": "matematica.txt",
+    "frase": "Il 20% di 300 è uguale a:"
+  },
+  {
+    "id": "mat-434",
+    "file": "matematica.txt",
+    "frase": "Il 5% di 8500 è uguale a:"
+  },
+  {
+    "id": "mat-435",
+    "file": "matematica.txt",
+    "frase": "Il prezzo di listino di un oggetto è 800 euro. Se ci applicano lo sconto del 5% quanto lo paghiamo ?"
+  },
+  {
+    "id": "mat-436",
+    "file": "matematica.txt",
+    "frase": "Indicare la soluzione corretta per la seguente espressione: [–2 (–4 + 9 – 7) + 10] : 7"
+  },
+  {
+    "id": "mat-437",
+    "file": "matematica.txt",
+    "frase": "Indicare il numero più grande:"
+  },
+  {
+    "id": "mat-438",
+    "file": "matematica.txt",
+    "frase": "Qual è la media tra i numeri 8, 79, 83 e 52 ?"
+  },
+  {
+    "id": "mat-439",
+    "file": "matematica.txt",
+    "frase": "6² + 5 – 8 ="
+  },
+  {
+    "id": "mat-440",
+    "file": "matematica.txt",
+    "frase": "Qual è il numero che moltiplicato per 5 va sottratto a 3885 per ottenere 300?"
+  },
+  {
+    "id": "mat-441",
+    "file": "matematica.txt",
+    "frase": "(3/6) : (10/5) ="
+  },
+  {
+    "id": "mat-442",
+    "file": "matematica.txt",
+    "frase": "(3/8) + (6/7) ="
+  },
+  {
+    "id": "mat-443",
+    "file": "matematica.txt",
+    "frase": "(6/8) + (7/2) ="
+  },
+  {
+    "id": "mat-444",
+    "file": "matematica.txt",
+    "frase": "(8/6) + (8/10) ="
+  },
+  {
+    "id": "mat-445",
+    "file": "matematica.txt",
+    "frase": "(7/8) + (1/10) ="
+  },
+  {
+    "id": "mat-446",
+    "file": "matematica.txt",
+    "frase": "Quale dei seguenti numeri è il più grande?"
+  },
+  {
+    "id": "mat-447",
+    "file": "matematica.txt",
+    "frase": "Il 32% di 5200 è uguale a:"
+  },
+  {
+    "id": "mat-448",
+    "file": "matematica.txt",
+    "frase": "Il 210% di 580 è uguale a:"
+  },
+  {
+    "id": "mat-449",
+    "file": "matematica.txt",
+    "frase": "Quale tra i seguenti è un numero primo?"
+  },
+  {
+    "id": "mat-450",
+    "file": "matematica.txt",
+    "frase": "Quale tra le seguenti è una frazione apparente?"
+  },
+  {
+    "id": "mat-451",
+    "file": "matematica.txt",
+    "frase": "Tra le frazioni seguenti quale è minore di 1?"
+  },
+  {
+    "id": "mat-452",
+    "file": "matematica.txt",
+    "frase": "La somma dei numeri 1,42 e 0,091 da come risultato:"
+  },
+  {
+    "id": "mat-453",
+    "file": "matematica.txt",
+    "frase": "(4/3)+(2/7) è pari a:"
+  },
+  {
+    "id": "mat-454",
+    "file": "matematica.txt",
+    "frase": "Gianfranco, Daniele e Gianluca comprano insieme 12 Kg di funghi, spendendo rispettivamente 20 euro, 24 euro e 36 euro. Se la distribuzione dei funghi avviene in proporzione alla cifra versata, qual è la quantità che spetta a Daniele?"
+  },
+  {
+    "id": "mat-455",
+    "file": "matematica.txt",
+    "frase": "Calcolare il risultato della seguente addizione: (+31) + (+104)"
+  },
+  {
+    "id": "mat-456",
+    "file": "matematica.txt",
+    "frase": "Qual è la soluzione della seguente sottrazione: (-97) - (-56)"
+  },
+  {
+    "id": "mat-457",
+    "file": "matematica.txt",
+    "frase": "Trovare il risultato della seguente addizione frazionaria: (+1/5) + (+1/2)"
+  },
+  {
+    "id": "mat-458",
+    "file": "matematica.txt",
+    "frase": "Trovare la soluzione della seguente addizione con più addendi: (-6) + (+3) + (-7)"
+  },
+  {
+    "id": "mat-459",
+    "file": "matematica.txt",
+    "frase": "Eseguire la seguente addizione frazionaria con più addendi: (+1/5)+(-3/10)+(5/4)+(-1/2)"
+  },
+  {
+    "id": "mat-460",
+    "file": "matematica.txt",
+    "frase": "18 + 14 + 15 - 20 - 10 ="
+  },
+  {
+    "id": "mat-461",
+    "file": "matematica.txt",
+    "frase": "Arrotondando al centesimo il numero 19,54604 si ottiene:"
+  },
+  {
+    "id": "mat-462",
+    "file": "matematica.txt",
+    "frase": "Qual è il risultato corretto?"
+  },
+  {
+    "id": "mat-463",
+    "file": "matematica.txt",
+    "frase": "Per ottenere 2458 va aggiunta a 1541 la coppia di numeri…"
+  },
+  {
+    "id": "mat-464",
+    "file": "matematica.txt",
+    "frase": "9/3 – 3/7 ="
+  },
+  {
+    "id": "mat-465",
+    "file": "matematica.txt",
+    "frase": "9/3 + 7/9 ="
+  },
+  {
+    "id": "mat-466",
+    "file": "matematica.txt",
+    "frase": "9/2 – 8/4 ="
+  },
+  {
+    "id": "mat-467",
+    "file": "matematica.txt",
+    "frase": "4/2 – 8/5 ="
+  },
+  {
+    "id": "mat-468",
+    "file": "matematica.txt",
+    "frase": "7/10 + 10/7 ="
+  },
+  {
+    "id": "mat-469",
+    "file": "matematica.txt",
+    "frase": "9/7 – 2/4 ="
+  },
+  {
+    "id": "mat-470",
+    "file": "matematica.txt",
+    "frase": "6/4 + 10/6 ="
+  },
+  {
+    "id": "mat-471",
+    "file": "matematica.txt",
+    "frase": "65000 è il quadruplo di…"
+  },
+  {
+    "id": "mat-472",
+    "file": "matematica.txt",
+    "frase": "Quale delle seguenti terne di numeri contiene solo elementi divisibili per 7?"
+  },
+  {
+    "id": "mat-473",
+    "file": "matematica.txt",
+    "frase": "81 è il triplo di…"
+  },
+  {
+    "id": "mat-474",
+    "file": "matematica.txt",
+    "frase": "141 e 245 sono rispettivamente il triplo e il quintuplo di…"
+  },
+  {
+    "id": "mat-475",
+    "file": "matematica.txt",
+    "frase": "10/8 – 8/9 ="
+  },
+  {
+    "id": "mat-476",
+    "file": "matematica.txt",
+    "frase": "7/2 : 5/1 ="
+  },
+  {
+    "id": "mat-477",
+    "file": "matematica.txt",
+    "frase": "Il giorno 07/11/17 Luigi riceve un assegno postdatato a 120 giorni. Da che giorno potrà Luigi incassare l'assegno?"
+  },
+  {
+    "id": "mat-478",
+    "file": "matematica.txt",
+    "frase": "Semplifica la seguente espressione 122*6:8 +2"
+  },
+  {
+    "id": "mat-479",
+    "file": "matematica.txt",
+    "frase": "Per ottenere 456 quali due numeri vanno sommati a 111"
+  },
+  {
+    "id": "mat-480",
+    "file": "matematica.txt",
+    "frase": "625 è il quadrato di quale numero?"
+  },
+  {
+    "id": "mat-481",
+    "file": "matematica.txt",
+    "frase": "La zia Giulia, stanca della vecchia lavatrice, ne compra una nuova da 738,00 euro. Versa subito 138 euro e il resto lo pagherà in 4 comode rate trimestrali. A quando corrisponde la rata trimestrale?"
+  },
+  {
+    "id": "mat-482",
+    "file": "matematica.txt",
+    "frase": "Risolvere la seguente proporzione: 9:84=21:x"
+  },
+  {
+    "id": "mat-483",
+    "file": "matematica.txt",
+    "frase": "Applica le proprietà delle potenze per risolvere la seguente espressione 5¹¹ * 5³ : 25²"
+  },
+  {
+    "id": "mat-484",
+    "file": "matematica.txt",
+    "frase": "Quale delle seguenti terne di numeri non contiene soltanto numeri primi"
+  },
+  {
+    "id": "mat-485",
+    "file": "matematica.txt",
+    "frase": "Una classe è formata da 28 alunni. I 4/7 vanno a scuola in bicicletta. Quanti alunni raggiungono la scuola con altri mezzi?"
+  },
+  {
+    "id": "mat-486",
+    "file": "matematica.txt",
+    "frase": "Quale delle seguenti coppie è formata da tutti multipli di 16"
+  },
+  {
+    "id": "mat-487",
+    "file": "matematica.txt",
+    "frase": "Cosa si ottiene arrotondando il seguente numero al millesimo 366,266858"
+  },
+  {
+    "id": "mat-488",
+    "file": "matematica.txt",
+    "frase": "Calcola il minimo comune multiplo dei seguenti numeri: 9,4,7"
+  },
+  {
+    "id": "mat-489",
+    "file": "matematica.txt",
+    "frase": "Indicare tra le seguenti quale disuguaglianza è quella vera:"
+  },
+  {
+    "id": "mat-490",
+    "file": "matematica.txt",
+    "frase": "Dato il polinomio 4a² + 2b²+ 2a² – 5b² + a² qual è la riduzione in forma normale?"
+  },
+  {
+    "id": "mat-491",
+    "file": "matematica.txt",
+    "frase": "Dato l'insieme A = {x|x è un numero pari minore 8} indicare quale dei seguenti numeri non gli appartiene:"
+  },
+  {
+    "id": "mat-492",
+    "file": "matematica.txt",
+    "frase": "Indicare qual è la relazione errata:"
+  },
+  {
+    "id": "mat-493",
+    "file": "matematica.txt",
+    "frase": "L'insieme A è costituito da 8 elementi e l'insieme B da 5 elementi: sapendo che la loro intersezione è data da A ∩ B = {a, b, c}, allora gli elementi di A U B sono:"
+  },
+  {
+    "id": "mat-494",
+    "file": "matematica.txt",
+    "frase": "Siano dati due insiemi A e B. Sapendo che A è costituito da 8 elementi e B da 2 elementi, indicare quanti sono gli elementi dell'insieme A xB"
+  },
+  {
+    "id": "mat-495",
+    "file": "matematica.txt",
+    "frase": "Moltiplicando due monomi qualunque si ottiene sempre:"
+  },
+  {
+    "id": "mat-496",
+    "file": "matematica.txt",
+    "frase": "Indicare quali tra questi non è un monomio:"
+  },
+  {
+    "id": "mat-497",
+    "file": "matematica.txt",
+    "frase": "Per quale valore di x è verificata la seguente equazione 4(x - 1) = 2x - 6?"
+  },
+  {
+    "id": "mat-498",
+    "file": "matematica.txt",
+    "frase": "La soluzione dell'equazione 3x + 3 = 2x è:"
+  },
+  {
+    "id": "mat-499",
+    "file": "matematica.txt",
+    "frase": "Calcola il valore dell'espressione: 12 + 9 : 3 * 2"
+  },
+  {
+    "id": "mat-500",
+    "file": "matematica.txt",
+    "frase": "Calcola il valore di x che verifica l'equazione 29x+31=727"
   }
 ]

@@ -5,6 +5,8 @@ import { api } from "../lib/api";
 import { data } from "../lib/format";
 import { cx } from "./ui";
 
+// Storico dei concorsi seguiti in passato (anche quelli tolti), aperto su richiesta.
+
 interface VoceStorico {
   concorsoId: string;
   titolo: string;
@@ -18,6 +20,7 @@ export function StoricoSeguiti() {
   const [voci, setVoci] = useState<VoceStorico[]>();
   const [errore, setErrore] = useState<string>();
 
+  // Apre o chiude lo storico; alla prima apertura lo scarica.
   async function apri() {
     setAperto((a) => !a);
     if (voci) return;

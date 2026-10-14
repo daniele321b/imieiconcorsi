@@ -9,12 +9,14 @@ import type {
   Periodo,
   Piano,
   PianoId,
+  Provenienza,
   Richiesta,
   SelezioneBanca,
   Sessione,
   TipoSessione,
   Utente,
 } from "@imieiconcorsi/core/domain";
+import type { RigaProvenienza } from "@imieiconcorsi/core/provenienza";
 import { fetchAuthSession } from "aws-amplify/auth";
 import { useCallback, useEffect, useState } from "react";
 import { config } from "./config";
@@ -57,6 +59,7 @@ export async function api<T>(path: string, init: { method?: string; body?: unkno
  * richieste di fila, AI in pausa, domanda fuori tema): si mostrano in blu, non in rosso.
  */
 const AVVISI_AI = new Set(["GETTONI_FINITI", "TROPPO_VELOCE", "AI_IN_PAUSA", "FUORI_TEMA"]);
+/** Tono dell'avviso per un errore del tutor: "info" per i limiti previsti, "error" per gli altri. */
 export const toneErroreAi = (err: ApiError) => (err.code && AVVISI_AI.has(err.code) ? ("info" as const) : ("error" as const));
 
 /** GET con stato di caricamento; `path = null` sospende la richiesta. */
@@ -178,6 +181,13 @@ export interface PianiApi {
 
 // ── Pannello admin ───────────────────────────────────────────────────────────
 
+/** Iscritti per provenienza (GET /admin/provenienza, core/provenienza.ts). */
+export interface AdminProvenienza {
+  totali: { ultimi7: number; ultimi30: number; totale: number };
+  righe: RigaProvenienza[];
+  aggiornatoIl: string;
+}
+
 /** Numeri del pannello admin (GET /admin/riepilogo). */
 export interface AdminRiepilogo {
   utenti: number;
@@ -209,6 +219,8 @@ export interface AdminUtente {
   /** Ultimo login e quanti in tutto (registrati da Cognito) */
   ultimoAccessoIl?: string;
   accessi?: number;
+  /** Link dei social o di un annuncio da cui si è iscritto (parametri UTM) */
+  provenienza?: Provenienza;
 }
 
 /** Codici sconto nel pannello admin. */

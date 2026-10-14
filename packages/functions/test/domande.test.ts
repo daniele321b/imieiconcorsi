@@ -6,6 +6,7 @@ import { describe, expect, it } from "vitest";
 // Controlli sulla banca domande statica prima di ogni deploy (scripts/deploy.sh test).
 const CARTELLA = join(__dirname, "../../../data/domande");
 const file = readdirSync(CARTELLA).filter((f) => f.endsWith(".json"));
+/** Testo minuscolo senza punteggiatura, per trovare le domande quasi uguali. */
 const normalizza = (t: string) => t.toLowerCase().replace(/[^a-zà-ù0-9]+/g, " ").trim();
 
 describe.each(file)("data/domande/%s", (nome) => {

@@ -915,3 +915,125 @@ D("log-299", "Problemi logici", 3, "Anna è più alta di Bea, Bea è più alta d
 D("log-300", "Insiemi", 3, "Chi propose nel 1880 i diagrammi per rappresentare le relazioni logiche tra insiemi?",
   "John Venn", ["Leonhard Euler", "George Boole", "Gottlob Frege"],
   "Sono detti anche diagrammi di Eulero-Venn.", W("Diagramma di Venn"), VEN, "proposto nel 1880 dal matematico inglese John Venn")
+
+# ── Verso 350: esercizi di ragionamento (serie, sillogismi, condizioni, combinatoria, probabilità,
+#    percentuali, insiemi, problemi). La frase-prova è la regola della fonte che si applica.
+WPA, WPG, WFIB, WCC = W("Progressione aritmetica"), W("Progressione geometrica"), W("Successione di Fibonacci"), W("Calcolo combinatorio")
+WPRO, WPCT, WINS, WCAS = W("Probabilità"), W("Percentuale"), W("Insieme"), W("Principio dei cassetti")
+
+D("log-301", "Serie numeriche", 2, "Quale numero completa la serie 11, 20, 29, 38, ?", "47", ["45", "48", "56"],
+  "Progressione aritmetica di ragione 9.", WPA, PA, "Tale costante viene detta ragione della progressione")
+D("log-302", "Serie numeriche", 2, "Quale numero completa la serie 1, 3, 9, 27, ?", "81", ["54", "36", "30"],
+  "Progressione geometrica di ragione 3.", WPG, PG, "il rapporto tra un elemento ed il suo precedente sia sempre costante")
+D("log-303", "Serie numeriche", 3, "Quale numero completa la serie 1, 4, 5, 9, 14, 23, ?", "37", ["32", "35", "46"],
+  "Come nella successione di Fibonacci, ogni termine è la somma dei due precedenti: 14 + 23 = 37.", WFIB, FIB, "ciascun numero è la somma dei due precedenti")
+D("log-304", "Serie numeriche", 3, "Quale numero completa la serie 256, 64, 16, 4, ?", "1", ["0", "2", "8"],
+  "Progressione geometrica di ragione 1/4: ogni termine è un quarto del precedente.", WPG, PG, "il rapporto tra un elemento ed il suo precedente sia sempre costante")
+D("log-305", "Serie numeriche", 3, "Quale numero completa la serie 90, 77, 64, 51, ?", "38", ["37", "39", "41"],
+  "Progressione aritmetica di ragione −13.", WPA, PA, "la differenza tra ciascun termine (o elemento) della successione e il suo precedente sia una costante")
+D("log-306", "Serie numeriche", 3, "Quale numero completa la serie 3, 12, 48, 192, ?", "768", ["384", "576", "960"],
+  "Progressione geometrica di ragione 4: 192 · 4 = 768.", WPG, PG, "il rapporto tra un elemento ed il suo precedente sia sempre costante")
+D("log-307", "Serie numeriche", 3, "Quale numero completa la serie 3, 3, 6, 9, 15, 24, ?", "39", ["33", "48", "36"],
+  "Ogni termine è la somma dei due precedenti: 15 + 24 = 39.", WFIB, FIB, "ciascun numero è la somma dei due precedenti")
+D("log-308", "Serie numeriche", 4, "Quale numero completa la serie 2, 10, 4, 20, 8, 40, ?", "16", ["80", "12", "50"],
+  "Sono due serie alternate: 2, 4, 8, 16… (ragione 2) e 10, 20, 40… (ragione 2). Il termine mancante è della prima.", WPG, PG, "il rapporto tra un elemento ed il suo precedente sia sempre costante")
+D("log-309", "Serie numeriche", 4, "Quanto vale la somma dei primi 10 termini della progressione 3, 7, 11, 15, …?", "210", ["195", "240", "390"],
+  "Il 10° termine è 3 + 9·4 = 39; la somma è 10 · (3 + 39) / 2 = 210.", WPA, PA, "La somma dei numeri di una progressione aritmetica finita si chiama serie aritmetica")
+D("log-310", "Serie numeriche", 3, "In una progressione geometrica il primo termine è 5 e il terzo è 20. Qual è il secondo (positivo)?", "10", ["12,5", "15", "8"],
+  "La ragione è 2 (5 · 2 · 2 = 20): il termine centrale è 10.", WPG, PG, "il rapporto tra un elemento ed il suo precedente sia sempre costante")
+
+D("log-311", "Sillogismo", 3, "«Alcuni impiegati sono laureati. Tutti i laureati hanno sostenuto un esame.» Che cosa segue con certezza?",
+  "Alcuni impiegati hanno sostenuto un esame", ["Tutti gli impiegati hanno sostenuto un esame", "Nessun impiegato ha sostenuto un esame", "Nessuna conclusione certa"],
+  "Gli impiegati laureati rientrano tra i laureati, che hanno tutti sostenuto un esame: è una forma valida di sillogismo (Darii).", WS, SIL, "Le forme valide, però, sono soltanto 19")
+D("log-312", "Sillogismo", 2, "«Tutti i gatti sono felini. Tutti i felini sono mammiferi.» Quindi:",
+  "Tutti i gatti sono mammiferi", ["Tutti i mammiferi sono gatti", "Alcuni felini non sono gatti", "Nessuna conclusione"],
+  "Sillogismo in Barbara: la proprietà si trasmette come in una catena.", WS, SIL, "La proprietà transitiva è l'esempio più elementare del sillogismo")
+D("log-313", "Sillogismo", 3, "«Nessun pesce è un mammifero. Tutti i delfini sono mammiferi.» Quindi:",
+  "Nessun delfino è un pesce", ["Alcuni delfini sono pesci", "Tutti i mammiferi sono delfini", "Nessuna conclusione"],
+  "Se ogni delfino è mammifero e nessun mammifero è pesce, nessun delfino è un pesce.", WS, SIL, "(che funge da predicato nella conclusione)")
+D("log-314", "Quantificatori", 3, "Qual è la negazione di «Nessuno studente è assente»?",
+  "Almeno uno studente è assente", ["Tutti gli studenti sono assenti", "Nessuno studente è presente", "Tutti gli studenti sono presenti"],
+  "La contraddittoria di un'universale negativa è la particolare affermativa: «qualche studente è assente».", W("Quadrato delle opposizioni"), QO, "Esempi di contraddizioni sono 'ogni uomo è bianco' e 'qualche uomo non è bianco'")
+D("log-315", "Quantificatori", 3, "Qual è la contraddittoria di «Qualche impiegato è puntuale»?",
+  "Nessun impiegato è puntuale", ["Qualche impiegato non è puntuale", "Tutti gli impiegati sono puntuali", "Tutti gli impiegati sono in ritardo qualche volta"],
+  "La particolare affermativa (I) è contraddittoria dell'universale negativa (E).", W("Quadrato delle opposizioni"), QO, "Esempi di contraddizioni sono 'ogni uomo è bianco' e 'qualche uomo non è bianco'")
+D("log-316", "Opposizioni", 4, "«Tutti i candidati sono promossi» e «Nessun candidato è promosso» sono proposizioni contrarie. Quindi:",
+  "Possono essere entrambe false, ma non entrambe vere", ["Possono essere entrambe vere", "Una è vera e l'altra è sempre falsa", "Sono equivalenti"],
+  "Le contrarie non possono essere vere insieme; se qualcuno è promosso e qualcuno no, sono false entrambe.", W("Quadrato delle opposizioni"), QO, "sono tali che entrambe non possono, allo stesso tempo, essere vere")
+D("log-317", "Opposizioni", 4, "Nel quadrato aristotelico, se «Ogni dipendente è puntuale» è vera, «Qualche dipendente è puntuale» è:",
+  "Vera, perché la particolare è implicata dalla universale (subalterna)", ["Falsa", "Indeterminata", "La sua contraddittoria"],
+  "Nell'alternanza la particolare è subalterna dell'universale ed è implicata da essa: «ogni A è B» implica «qualche A è B».", W("Quadrato delle opposizioni"), QO, "la proposizione particolare è implicata dall'altra")
+D("log-318", "Implicazione", 3, "Qual è la negazione di «Se studio, supero l'esame»?",
+  "Studio e non supero l'esame", ["Non studio e non supero l'esame", "Se non studio, non supero l'esame", "Se supero l'esame, ho studiato"],
+  "Un'implicazione è falsa solo quando l'antecedente è vero e il conseguente è falso.", W("Logica proposizionale"), LP, "v(x→y) = V se e solo se v(x) = F oppure v(y) = V")
+
+D("log-319", "Condizioni", 3, "Essere divisibile per 4 è, per un numero intero, una condizione … per essere pari.",
+  "sufficiente ma non necessaria", ["necessaria ma non sufficiente", "necessaria e sufficiente", "né necessaria né sufficiente"],
+  "Ogni multiplo di 4 è pari (sufficiente), ma 6 è pari senza essere multiplo di 4 (non necessaria).", W("Condizione necessaria e sufficiente"), CNS, "una condizione Q è sufficiente per una proposizione P se Q implica P")
+D("log-320", "Condizioni", 3, "Avere la patente è, per guidare legalmente un'auto, una condizione:",
+  "necessaria ma non sufficiente", ["sufficiente ma non necessaria", "necessaria e sufficiente", "né necessaria né sufficiente"],
+  "Chi guida legalmente ha la patente (necessaria), ma la patente da sola non basta: servono ad esempio un'auto assicurata e l'idoneità.", W("Condizione necessaria e sufficiente"), CNS, "una condizione Q è necessaria per una proposizione P se P implica Q")
+D("log-321", "Condizioni", 3, "Essere divisibile sia per 2 sia per 3 è, per essere divisibile per 6, una condizione:",
+  "necessaria e sufficiente", ["solo necessaria", "solo sufficiente", "né necessaria né sufficiente"],
+  "Un numero è divisibile per 6 se e solo se è divisibile per 2 e per 3.", W("Criteri di divisibilità"), CD, "un numero è divisibile per 6 se e solo se è divisibile sia per 2 sia per 3")
+D("log-322", "Inferenza", 2, "«Se Marco è a Roma, è in Italia. Marco non è in Italia.» Quindi:",
+  "Marco non è a Roma", ["Marco è a Roma", "Marco è all'estero per lavoro", "Non si può concludere nulla"],
+  "Modus tollens: negato il conseguente, si nega l'antecedente.", W("Modus tollens"), MT, "il modo che toglie la verità di una proposizione togliendo quella di un'altra")
+
+D("log-323", "Calcolo combinatorio", 4, "Quanti anagrammi distinti, anche privi di significato, ha la parola MAMMA?", "10", ["120", "20", "60"],
+  "5 lettere con M ripetuta 3 volte e A ripetuta 2 volte: 5! / (3! · 2!) = 120 / 12 = 10.", WCC, CC, "Una permutazione di un insieme di oggetti è una presentazione ordinata")
+D("log-324", "Calcolo combinatorio", 3, "In un gruppo di 8 persone ognuno stringe la mano a tutti gli altri una volta. Quante strette di mano?", "28", ["56", "64", "16"],
+  "Combinazioni di 8 elementi a 2 a 2: 8 · 7 / 2 = 28 (l'ordine non conta).", WCC, CC, "combinazione semplice una presentazione di elementi di un insieme nella quale non ha importanza l'ordine dei componenti")
+D("log-325", "Calcolo combinatorio", 3, "Quante «parole» di 2 lettere diverse si possono formare con le lettere A, B, C, D, E, se l'ordine conta?", "20", ["10", "25", "32"],
+  "Disposizioni semplici di 5 elementi a 2 a 2: 5 · 4 = 20 (AB è diversa da BA).", WCC, CC, "se l'ordinamento è importante")
+D("log-326", "Calcolo combinatorio", 4, "Quante targhe si possono formare con 2 lettere (alfabeto di 26) seguite da 2 cifre, ripetizioni ammesse?", "67.600", ["6.760", "52.000", "1.040"],
+  "Disposizioni con ripetizione: 26 · 26 · 10 · 10 = 67.600.", WCC, CC, "se si possono avere più ripetizioni di uno stesso oggetto")
+D("log-327", "Calcolo combinatorio", 4, "In quanti modi si può formare una commissione di 4 persone scelte tra 9?", "126", ["3024", "36", "252"],
+  "Combinazioni di 9 elementi a 4 a 4: (9 · 8 · 7 · 6) / (4 · 3 · 2 · 1) = 126.", WCC, CC, "combinazione semplice una presentazione di elementi di un insieme nella quale non ha importanza l'ordine dei componenti")
+D("log-328", "Calcolo combinatorio", 4, "In quanti modi diversi 4 persone possono sedersi intorno a un tavolo rotondo, contando uguali le disposizioni ruotate?", "6", ["24", "4", "12"],
+  "Nelle permutazioni circolari si fissa una persona e si ordinano le altre: (4 − 1)! = 3! = 6.", W("Fattoriale"), FAT, "il prodotto dei numeri interi positivi minori o uguali a tale numero")
+D("log-329", "Calcolo combinatorio", 3, "In un girone all'italiana di sola andata con 6 squadre, ognuna incontra una volta tutte le altre. Quante partite si giocano?", "15", ["30", "36", "12"],
+  "Ogni partita è una coppia di squadre, senza ordine: C(6, 2) = 6 · 5 / 2 = 15.", WCC, CC, "combinazione semplice una presentazione di elementi di un insieme nella quale non ha importanza l'ordine dei componenti")
+D("log-330", "Calcolo combinatorio", 3, "Quanto vale 7! / 5!?", "42", ["2", "35", "5040"],
+  "7! / 5! = 7 · 6 = 42.", W("Fattoriale"), FAT, "il prodotto dei numeri interi positivi minori o uguali a tale numero")
+D("log-331", "Probabilità", 2, "Lanciando un dado, qual è la probabilità di ottenere un numero primo?", "1/2", ["1/3", "2/3", "1/6"],
+  "I numeri primi tra 1 e 6 sono 2, 3 e 5: 3 casi su 6 = 1/2 (1 non è primo).", WPRO, PRO, "il rapporto tra casi favorevoli e casi possibili")
+D("log-332", "Probabilità", 2, "Da un mazzo di 52 carte francesi si estrae una carta. Qual è la probabilità che sia di cuori?", "1/4", ["1/13", "1/52", "1/2"],
+  "Le carte di cuori sono 13 su 52: 13/52 = 1/4.", WPRO, PRO, "il rapporto tra casi favorevoli e casi possibili")
+D("log-333", "Probabilità", 3, "Lanciando tre volte una moneta, qual è la probabilità di ottenere sempre testa?", "1/8", ["1/3", "1/6", "3/8"],
+  "Lanci indipendenti: 1/2 · 1/2 · 1/2 = 1/8 (1 caso su 8 possibili).", WPRO, PRO, "il rapporto tra casi favorevoli e casi possibili")
+D("log-334", "Probabilità", 3, "Lanciando due monete, qual è la probabilità di ottenere almeno una testa?", "3/4", ["1/2", "1/4", "2/3"],
+  "I casi possibili sono TT, TC, CT, CC: solo CC non ha teste, quindi 3/4.", WPRO, PRO, "il rapporto tra casi favorevoli e casi possibili")
+D("log-335", "Probabilità", 3, "Lanciando un dado, qual è la probabilità di ottenere un numero pari oppure il 5?", "2/3", ["1/2", "1/6", "5/6"],
+  "Eventi incompatibili: P(pari) + P(5) = 3/6 + 1/6 = 4/6 = 2/3.", WPRO, PRO, "la probabilità del verificarsi di uno di due eventi incompatibili")
+D("log-336", "Probabilità", 3, "Si sceglie a caso un numero intero da 1 a 20. Qual è la probabilità che sia multiplo di 5?", "1/5", ["1/4", "1/20", "4/21"],
+  "I multipli di 5 sono 5, 10, 15, 20: 4 casi su 20 = 1/5.", WPRO, PRO, "il rapporto tra casi favorevoli e casi possibili")
+D("log-337", "Percentuali", 2, "Un prezzo di 80 euro aumenta del 25%. Quanto diventa?", "100 euro", ["105 euro", "85 euro", "120 euro"],
+  "80 · 1,25 = 100: l'aumento è di 20 euro.", WPCT, PCT, "La formula per calcolare la variazione percentuale")
+D("log-338", "Percentuali", 3, "Quanto rende un capitale di 2000 euro al 5% annuo di interesse semplice in 3 anni?", "300 euro", ["100 euro", "315,25 euro", "150 euro"],
+  "Interesse semplice: 2000 · 5% = 100 euro all'anno, per 3 anni = 300 euro.", WPCT, PCT, "Il 32% di 2000 è calcolato come")
+D("log-339", "Percentuali", 3, "Il 40% di un numero è 30. Qual è il numero?", "75", ["12", "70", "120"],
+  "Se il 40% vale 30, l'1% vale 0,75 e il 100% vale 75.", WPCT, PCT, "in cento parti uguali, e prenderne esattamente")
+D("log-340", "Percentuali", 2, "Un valore passa da 250 a 300. Di quanto è aumentato in percentuale?", "20%", ["50%", "16,7%", "25%"],
+  "Variazione percentuale: (300 − 250) / 250 · 100 = 20%.", WPCT, PCT, "La formula per calcolare la variazione percentuale")
+D("log-341", "Percentuali", 2, "Che percentuale di 180 è 45?", "25%", ["20%", "45%", "40%"],
+  "45 / 180 = 0,25 = 25%.", WPCT, PCT, "in cento parti uguali, e prenderne esattamente")
+
+D("log-342", "Insiemi", 3, "Se A = {2, 4, 6, 8} e B = {1, 2, 3, 4}, qual è la differenza A \\ B?", "{6, 8}", ["{1, 3}", "{2, 4}", "{1, 3, 6, 8}"],
+  "La differenza A \\ B contiene gli elementi di A che non stanno in B.", WINS, INS, "Le principali operazioni tra insiemi sono")
+D("log-343", "Insiemi", 3, "Quanti sottoinsiemi ha un insieme di 3 elementi, compresi l'insieme vuoto e l'insieme stesso?", "8", ["3", "6", "9"],
+  "Un insieme di n elementi ha 2^n sottoinsiemi: 2³ = 8; l'insieme vuoto è sottoinsieme di ogni insieme.", WINS, INS, "L'insieme vuoto è sottoinsieme di")
+D("log-344", "Insiemi", 4, "Su 40 persone, 25 bevono caffè, 20 bevono tè e 8 non bevono né caffè né tè. Quante bevono entrambi?", "13", ["5", "17", "8"],
+  "Chi beve almeno uno dei due è 40 − 8 = 32; quindi entrambi = 25 + 20 − 32 = 13.", W("Diagramma di Venn"), VEN, "mostra tutte le possibili relazioni logiche tra una collezione finita di insiemi")
+D("log-345", "Problemi logici", 3, "Un sacchetto contiene palline di 5 colori. Quante bisogna estrarne al buio per averne con certezza due dello stesso colore?", "6", ["5", "2", "10"],
+  "5 colori = 5 cassetti: con 6 palline almeno un colore compare due volte.", WCAS, CAS, "se n+k oggetti sono messi in n cassetti")
+D("log-346", "Problemi logici", 3, "Oggi Anna ha il triplo degli anni di Bea; tra 10 anni ne avrà il doppio. Quanti anni ha oggi Bea?", "10", ["5", "20", "15"],
+  "3b + 10 = 2(b + 10) → b = 10: oggi Bea ha 10 anni e Anna 30.", W("Deduzione"), DED, "Il metodo deduttivo")
+D("log-347", "Problemi logici", 4, "Qual è il numero minimo di mosse per risolvere la Torre di Hanoi con 7 dischi?", "127", ["128", "49", "63"],
+  "Il minimo è 2^n − 1: con 7 dischi 2^7 − 1 = 127.", W("Torre di Hanoi"), HAN, "il numero minimo di mosse necessarie per completare il gioco è")
+D("log-348", "Problemi logici", 2, "Paolo arriva prima di Luca; Marta arriva prima di Paolo. Chi arriva secondo?", "Paolo", ["Marta", "Luca", "Non si può stabilire"],
+  "Ordine d'arrivo: Marta, Paolo, Luca.", ME, ES, "Chiara è arrivata prima di Barbara")
+D("log-349", "Problemi logici", 3, "Due fari lampeggiano insieme; poi uno lampeggia ogni 10 secondi, l'altro ogni 15. Dopo quanti secondi lampeggiano di nuovo insieme?", "30", ["25", "150", "45"],
+  "Il minimo comune multiplo di 10 e 15 è 30.", W("Minimo comune multiplo"), MCM, "è il più piccolo numero intero positivo multiplo sia di")
+D("log-350", "Problemi logici", 4, "Una stanza misura 360 cm × 480 cm. Qual è il lato massimo di piastrelle quadrate che la coprono esattamente, senza tagli?", "120 cm", ["60 cm", "40 cm", "240 cm"],
+  "Il lato massimo è il massimo comun divisore di 360 e 480, cioè 120 cm.", W("Massimo comun divisore"), MCD, "è il numero naturale più grande per il quale entrambi possono essere divisi esattamente")

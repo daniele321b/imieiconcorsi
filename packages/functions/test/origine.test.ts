@@ -1,6 +1,8 @@
 import { daCloudFront } from "@imieiconcorsi/core/http";
 import { afterEach, describe, expect, it } from "vitest";
 
+// Test del controllo che le richieste all'API arrivino da CloudFront (core/http.ts).
+
 describe("solo richieste passate da CloudFront", () => {
   afterEach(() => {
     delete process.env.ORIGINE_SEGRETA;

@@ -1498,5 +1498,255 @@
     "id": "log-300",
     "file": "Wikipedia_Diagramma-di-Venn.txt",
     "frase": "proposto nel 1880 dal matematico inglese John Venn"
+  },
+  {
+    "id": "log-301",
+    "file": "Wikipedia_Progressione-aritmetica.txt",
+    "frase": "Tale costante viene detta ragione della progressione"
+  },
+  {
+    "id": "log-302",
+    "file": "Wikipedia_Progressione-geometrica.txt",
+    "frase": "il rapporto tra un elemento ed il suo precedente sia sempre costante"
+  },
+  {
+    "id": "log-303",
+    "file": "Wikipedia_Successione-di-Fibonacci.txt",
+    "frase": "ciascun numero è la somma dei due precedenti"
+  },
+  {
+    "id": "log-304",
+    "file": "Wikipedia_Progressione-geometrica.txt",
+    "frase": "il rapporto tra un elemento ed il suo precedente sia sempre costante"
+  },
+  {
+    "id": "log-305",
+    "file": "Wikipedia_Progressione-aritmetica.txt",
+    "frase": "la differenza tra ciascun termine (o elemento) della successione e il suo precedente sia una costante"
+  },
+  {
+    "id": "log-306",
+    "file": "Wikipedia_Progressione-geometrica.txt",
+    "frase": "il rapporto tra un elemento ed il suo precedente sia sempre costante"
+  },
+  {
+    "id": "log-307",
+    "file": "Wikipedia_Successione-di-Fibonacci.txt",
+    "frase": "ciascun numero è la somma dei due precedenti"
+  },
+  {
+    "id": "log-308",
+    "file": "Wikipedia_Progressione-geometrica.txt",
+    "frase": "il rapporto tra un elemento ed il suo precedente sia sempre costante"
+  },
+  {
+    "id": "log-309",
+    "file": "Wikipedia_Progressione-aritmetica.txt",
+    "frase": "La somma dei numeri di una progressione aritmetica finita si chiama serie aritmetica"
+  },
+  {
+    "id": "log-310",
+    "file": "Wikipedia_Progressione-geometrica.txt",
+    "frase": "il rapporto tra un elemento ed il suo precedente sia sempre costante"
+  },
+  {
+    "id": "log-311",
+    "file": "Wikipedia_Sillogismo.txt",
+    "frase": "Le forme valide, però, sono soltanto 19"
+  },
+  {
+    "id": "log-312",
+    "file": "Wikipedia_Sillogismo.txt",
+    "frase": "La proprietà transitiva è l'esempio più elementare del sillogismo"
+  },
+  {
+    "id": "log-313",
+    "file": "Wikipedia_Sillogismo.txt",
+    "frase": "(che funge da predicato nella conclusione)"
+  },
+  {
+    "id": "log-314",
+    "file": "Wikipedia_Quadrato-delle-opposizioni.txt",
+    "frase": "Esempi di contraddizioni sono 'ogni uomo è bianco' e 'qualche uomo non è bianco'"
+  },
+  {
+    "id": "log-315",
+    "file": "Wikipedia_Quadrato-delle-opposizioni.txt",
+    "frase": "Esempi di contraddizioni sono 'ogni uomo è bianco' e 'qualche uomo non è bianco'"
+  },
+  {
+    "id": "log-316",
+    "file": "Wikipedia_Quadrato-delle-opposizioni.txt",
+    "frase": "sono tali che entrambe non possono, allo stesso tempo, essere vere"
+  },
+  {
+    "id": "log-317",
+    "file": "Wikipedia_Quadrato-delle-opposizioni.txt",
+    "frase": "la proposizione particolare è implicata dall'altra"
+  },
+  {
+    "id": "log-318",
+    "file": "Wikipedia_Logica-proposizionale.txt",
+    "frase": "v(x→y) = V se e solo se v(x) = F oppure v(y) = V"
+  },
+  {
+    "id": "log-319",
+    "file": "Wikipedia_Condizione-necessaria-e-sufficiente.txt",
+    "frase": "una condizione Q è sufficiente per una proposizione P se Q implica P"
+  },
+  {
+    "id": "log-320",
+    "file": "Wikipedia_Condizione-necessaria-e-sufficiente.txt",
+    "frase": "una condizione Q è necessaria per una proposizione P se P implica Q"
+  },
+  {
+    "id": "log-321",
+    "file": "Wikipedia_Criteri-di-divisibilità.txt",
+    "frase": "un numero è divisibile per 6 se e solo se è divisibile sia per 2 sia per 3"
+  },
+  {
+    "id": "log-322",
+    "file": "Wikipedia_Modus-tollens.txt",
+    "frase": "il modo che toglie la verità di una proposizione togliendo quella di un'altra"
+  },
+  {
+    "id": "log-323",
+    "file": "Wikipedia_Calcolo-combinatorio.txt",
+    "frase": "Una permutazione di un insieme di oggetti è una presentazione ordinata"
+  },
+  {
+    "id": "log-324",
+    "file": "Wikipedia_Calcolo-combinatorio.txt",
+    "frase": "combinazione semplice una presentazione di elementi di un insieme nella quale non ha importanza l'ordine dei componenti"
+  },
+  {
+    "id": "log-325",
+    "file": "Wikipedia_Calcolo-combinatorio.txt",
+    "frase": "se l'ordinamento è importante"
+  },
+  {
+    "id": "log-326",
+    "file": "Wikipedia_Calcolo-combinatorio.txt",
+    "frase": "se si possono avere più ripetizioni di uno stesso oggetto"
+  },
+  {
+    "id": "log-327",
+    "file": "Wikipedia_Calcolo-combinatorio.txt",
+    "frase": "combinazione semplice una presentazione di elementi di un insieme nella quale non ha importanza l'ordine dei componenti"
+  },
+  {
+    "id": "log-328",
+    "file": "Wikipedia_Fattoriale.txt",
+    "frase": "il prodotto dei numeri interi positivi minori o uguali a tale numero"
+  },
+  {
+    "id": "log-329",
+    "file": "Wikipedia_Calcolo-combinatorio.txt",
+    "frase": "combinazione semplice una presentazione di elementi di un insieme nella quale non ha importanza l'ordine dei componenti"
+  },
+  {
+    "id": "log-330",
+    "file": "Wikipedia_Fattoriale.txt",
+    "frase": "il prodotto dei numeri interi positivi minori o uguali a tale numero"
+  },
+  {
+    "id": "log-331",
+    "file": "Wikipedia_Probabilità.txt",
+    "frase": "il rapporto tra casi favorevoli e casi possibili"
+  },
+  {
+    "id": "log-332",
+    "file": "Wikipedia_Probabilità.txt",
+    "frase": "il rapporto tra casi favorevoli e casi possibili"
+  },
+  {
+    "id": "log-333",
+    "file": "Wikipedia_Probabilità.txt",
+    "frase": "il rapporto tra casi favorevoli e casi possibili"
+  },
+  {
+    "id": "log-334",
+    "file": "Wikipedia_Probabilità.txt",
+    "frase": "il rapporto tra casi favorevoli e casi possibili"
+  },
+  {
+    "id": "log-335",
+    "file": "Wikipedia_Probabilità.txt",
+    "frase": "la probabilità del verificarsi di uno di due eventi incompatibili"
+  },
+  {
+    "id": "log-336",
+    "file": "Wikipedia_Probabilità.txt",
+    "frase": "il rapporto tra casi favorevoli e casi possibili"
+  },
+  {
+    "id": "log-337",
+    "file": "Wikipedia_Percentuale.txt",
+    "frase": "La formula per calcolare la variazione percentuale"
+  },
+  {
+    "id": "log-338",
+    "file": "Wikipedia_Percentuale.txt",
+    "frase": "Il 32% di 2000 è calcolato come"
+  },
+  {
+    "id": "log-339",
+    "file": "Wikipedia_Percentuale.txt",
+    "frase": "in cento parti uguali, e prenderne esattamente"
+  },
+  {
+    "id": "log-340",
+    "file": "Wikipedia_Percentuale.txt",
+    "frase": "La formula per calcolare la variazione percentuale"
+  },
+  {
+    "id": "log-341",
+    "file": "Wikipedia_Percentuale.txt",
+    "frase": "in cento parti uguali, e prenderne esattamente"
+  },
+  {
+    "id": "log-342",
+    "file": "Wikipedia_Insieme.txt",
+    "frase": "Le principali operazioni tra insiemi sono"
+  },
+  {
+    "id": "log-343",
+    "file": "Wikipedia_Insieme.txt",
+    "frase": "L'insieme vuoto è sottoinsieme di"
+  },
+  {
+    "id": "log-344",
+    "file": "Wikipedia_Diagramma-di-Venn.txt",
+    "frase": "mostra tutte le possibili relazioni logiche tra una collezione finita di insiemi"
+  },
+  {
+    "id": "log-345",
+    "file": "Wikipedia_Principio-dei-cassetti.txt",
+    "frase": "se n+k oggetti sono messi in n cassetti"
+  },
+  {
+    "id": "log-346",
+    "file": "Wikipedia_Deduzione.txt",
+    "frase": "Il metodo deduttivo"
+  },
+  {
+    "id": "log-347",
+    "file": "Wikipedia_Torre-di-Hanoi.txt",
+    "frase": "il numero minimo di mosse necessarie per completare il gioco è"
+  },
+  {
+    "id": "log-348",
+    "file": "MatematicaC3_Esercizi-logica.txt",
+    "frase": "Chiara è arrivata prima di Barbara"
+  },
+  {
+    "id": "log-349",
+    "file": "Wikipedia_Minimo-comune-multiplo.txt",
+    "frase": "è il più piccolo numero intero positivo multiplo sia di"
+  },
+  {
+    "id": "log-350",
+    "file": "Wikipedia_Massimo-comun-divisore.txt",
+    "frase": "è il numero naturale più grande per il quale entrambi possono essere divisi esattamente"
   }
 ]

@@ -3,6 +3,9 @@ import { estraiDomande } from "../src/banche-dati/parser";
 import { rispostePerUtenti } from "../src/banche-dati/pubblica";
 import { dispongiRisposte } from "@imieiconcorsi/core/risposte";
 
+// Test dell'estrazione delle domande dai PDF delle banche dati e dell'ordine delle risposte mostrate.
+
+/** Testo della risposta giusta di una domanda estratta. */
 const giusta = (d: { opzioni: string[]; corretta: number }) => d.opzioni[d.corretta];
 
 describe("estrazione delle domande dalle banche dati", () => {
@@ -116,6 +119,7 @@ describe("banca dati Polizia di Stato 2026 (righe vere del PDF)", () => {
     "5115. Individuare la lettera che completa la serie: ?", "T Q N I F", "A) Z", "B) X",
   ].join("\n");
   const { domande, scartate, formati } = estraiDomande(testo);
+  // Domanda estratta con il numero `n`.
   const d = (n: number) => domande.find((x) => x.numero === n)!;
 
   it("riconosce la legenda: la giusta è sempre la A", () => {

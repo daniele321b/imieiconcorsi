@@ -28,6 +28,7 @@ data "terraform_remote_state" "shared" {
   }
 }
 
+# Nomi e percorsi comuni dell'ambiente e configurazione letta dal sito.
 locals {
   name          = "${var.project_name}-prod"
   repo          = abspath("${path.root}/../../../..")
@@ -95,6 +96,7 @@ resource "aws_sns_topic" "avvisi_admin" {
   kms_master_key_id = "alias/aws/sns"
 }
 
+# L'email dell'amministratore riceve gli avvisi (si conferma dal link che arriva).
 resource "aws_sns_topic_subscription" "avvisi_admin" {
   count     = var.admin_email == "" ? 0 : 1
   topic_arn = aws_sns_topic.avvisi_admin.arn
@@ -102,7 +104,6 @@ resource "aws_sns_topic_subscription" "avvisi_admin" {
   endpoint  = var.admin_email
 }
 
-# Segreto che firma i link delle email (disiscrizione, lettura): generato una volta e tenuto nello stato.
 # Segreto tra CloudFront e le Lambda dell'API: senza, l'indirizzo diretto dell'API Gateway
 # scavalcherebbe WAF e limiti (core/http.ts, daCloudFront).
 resource "random_password" "origine" {
@@ -110,6 +111,7 @@ resource "random_password" "origine" {
   special = false
 }
 
+# Segreto che firma i link delle email (disiscrizione, lettura): generato una volta e tenuto nello stato.
 resource "random_password" "disiscrizione" {
   length  = 48
   special = false
@@ -351,7 +353,7 @@ module "api" {
       routes = [
         "GET /admin/riepilogo", "GET /admin/utenti",
         "PUT /admin/utenti/{username}/piano", "PUT /admin/utenti/{username}/stato", "DELETE /admin/utenti/{username}",
-        "GET /admin/utenti/{username}/accessi", "GET /admin/attivita",
+        "GET /admin/utenti/{username}/accessi", "GET /admin/attivita", "GET /admin/provenienza",
         "GET /admin/codici", "POST /admin/codici", "PUT /admin/codici/{codice}", "DELETE /admin/codici/{codice}",
         "GET /admin/banche-dati", "POST /admin/banche-dati", "PUT /admin/banche-dati/{id}",
         "POST /admin/banche-dati/{id}/estrai", "POST /admin/banche-dati/{id}/pdf", "POST /admin/banche-dati/{id}/pubblica", "POST /admin/banche-dati/{id}/ritira",
@@ -390,10 +392,11 @@ module "api" {
         Action   = ["dynamodb:Scan"]
         Resource = module.data.table_arns.banche
         }, {
-        # Elenco dei codici sconto e storico pagamenti nel pannello: tabelle piccole, basta uno Scan.
+        # Codici sconto e storico pagamenti (tabelle piccole); provenienza degli iscritti
+        # (users, due soli campi per profilo).
         Effect   = "Allow"
         Action   = ["dynamodb:Scan"]
-        Resource = [module.data.table_arns.codici, module.data.table_arns.ordini]
+        Resource = [module.data.table_arns.codici, module.data.table_arns.ordini, module.data.table_arns.users]
         }, {
         Effect = "Allow"
         Action = [

@@ -1,5 +1,5 @@
 import { COMPARTI, nomeMateria, type CompartoId, type MateriaId, type SelezioneBanca } from "@imieiconcorsi/core/domain";
-import { ArrowLeft, BookOpenCheck, ChevronDown, Database, Eye, RotateCcw, Star, Timer } from "lucide-react";
+import { ArrowLeft, BookOpenCheck, ChevronDown, Database, Eye, Link2, RotateCcw, Star, Timer } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router";
 import { NumeroAMano } from "../../components/NumeroDomande";
@@ -8,6 +8,9 @@ import { Alert, Badge, Button, Card, EmptyState, PageHeader, ProgressBar, Spinne
 import { api, useApi } from "../../lib/api";
 import { useUtente } from "../../lib/auth";
 import { useAvviaSessione } from "../../lib/sessioni";
+
+// Banche dati ufficiali per comparto, anche slegate dai concorsi (es. "Polizia di Stato 2026").
+// Medium e Pro senza limiti; il Free ha USI_BANCHE_DATI_FREE utilizzi a settimana.
 
 interface BancaApi {
   id: string;
@@ -34,8 +37,7 @@ export interface UsiApi {
 const STUDIO = [10, 20, 30] as const;
 const SIMULAZIONE = [30, 60] as const;
 
-// Banche dati ufficiali per comparto, anche slegate dai concorsi (es. "Polizia di Stato 2026").
-// Medium e Pro senza limiti; il Free ha USI_BANCHE_DATI_FREE utilizzi a settimana.
+/** Pagina /app/banche-dati: elenco delle banche dati con progressi e utilizzi rimasti. */
 export function BancheDati() {
   const { data, loading, error, reload } = useApi<{ banche: BancaApi[]; usi: UsiApi | null }>("/banche-dati");
   const { avvia, inCorso, errore, chiudiErrore } = useAvviaSessione();
@@ -112,23 +114,30 @@ export function BancheDati() {
   );
 }
 
-/** Concorsi per cui vale la banca dati: i primi due, gli altri si aprono con "e altri N". */
+/** Concorsi per cui vale la banca dati: sezione chiusa, si apre con il tastino "Concorsi collegati (N)". */
 function ConcorsiCollegati({ concorsi }: { concorsi: BancaApi["concorsi"] }) {
-  const [tutti, setTutti] = useState(false);
-  const mostrati = tutti ? concorsi : concorsi.slice(0, 2);
+  const [aperti, setAperti] = useState(false);
   return (
-    <div className="mt-1 space-y-0.5 text-xs text-slate-500">
-      <p className="font-semibold">{concorsi.length === 1 ? "Concorso" : `Vale per ${concorsi.length} concorsi`}:</p>
-      {mostrati.map((c) => (
-        <Link key={c.id} to={`/app/concorsi/${c.id}`} className="block break-words hover:text-brand-700">
-          <span className="font-semibold text-slate-700">{c.titolo}</span>
-          {c.ente && <span> · {c.ente}</span>}
-        </Link>
-      ))}
-      {concorsi.length > 2 && (
-        <button onClick={() => setTutti((t) => !t)} className="font-semibold text-brand-600 hover:text-brand-700">
-          {tutti ? "Mostra meno" : `e altri ${concorsi.length - 2}`}
-        </button>
+    <div className="mt-2 text-xs text-slate-500">
+      <button
+        type="button"
+        onClick={() => setAperti((a) => !a)}
+        aria-expanded={aperti}
+        className="inline-flex items-center gap-1 rounded-lg bg-slate-100 px-2 py-1 font-semibold text-slate-600 transition hover:bg-slate-200 hover:text-slate-800"
+      >
+        <Link2 className="size-3.5" />
+        {concorsi.length === 1 ? "Concorso collegato" : `Concorsi collegati (${concorsi.length})`}
+        <ChevronDown className={cx("size-3.5 transition", aperti && "rotate-180")} />
+      </button>
+      {aperti && (
+        <div className="mt-1.5 space-y-0.5">
+          {concorsi.map((c) => (
+            <Link key={c.id} to={`/app/concorsi/${c.id}`} className="block break-words hover:text-brand-700">
+              <span className="font-semibold text-slate-700">{c.titolo}</span>
+              {c.ente && <span> · {c.ente}</span>}
+            </Link>
+          ))}
+        </div>
       )}
     </div>
   );
@@ -170,6 +179,7 @@ function SchedaBanca({
   const percentuale = p && banca.domande ? Math.round((p.fatte / banca.domande) * 100) : 0;
   const numero = modo === "studio" ? studio : simulazione;
 
+  // Gruppo di pulsanti a scelta singola (modo, numero di domande…).
   function scelta<T extends string | number>(opzioni: readonly { id: T; nome: string; disabled?: boolean }[], valore: T | undefined, set: (v: T) => void) {
     return (
       <div className="inline-flex flex-wrap gap-0.5 rounded-lg bg-slate-200/70 p-0.5 text-xs font-semibold">
@@ -189,6 +199,7 @@ function SchedaBanca({
       </div>
     );
   }
+  // Numeri come opzioni della scelta.
   const numeri = (n: readonly number[]) => n.map((x) => ({ id: x, nome: String(x) }));
   const riquadro = "flex flex-col items-center gap-1 rounded-xl px-2 py-3 text-center text-sm font-semibold ring-1 transition";
 
@@ -222,118 +233,123 @@ function SchedaBanca({
         </div>
       )}
 
-      {/* Domande già fatte nelle sessioni (studio e simulazioni) su questa banca dati. */}
-      {p && (
-        <div className="mt-4">
-          <ProgressBar value={percentuale} tone="green" />
-          <div className="mt-1.5 flex flex-wrap items-center justify-between gap-x-3 gap-y-1 text-xs text-slate-500">
-            <span>
-              <strong className="text-slate-700">{p.fatte.toLocaleString("it-IT")}</strong> di {banca.domande.toLocaleString("it-IT")} fatte ({percentuale}%)
-              {p.sbagliate > 0 && (
-                <>
-                  {" · "}
-                  <strong className="text-rose-600">{p.sbagliate.toLocaleString("it-IT")}</strong> da ripassare
-                </>
-              )}
-              {p.preferite > 0 && (
-                <>
-                  {" · "}
-                  <Link to={`/app/banche-dati/${banca.id}?preferite=1`} className="inline-flex items-center gap-0.5 font-semibold text-amber-700 hover:underline">
-                    <Star className="size-3 fill-amber-400 text-amber-500" /> {p.preferite} preferite
-                  </Link>
-                </>
-              )}
-            </span>
-            <button
-              onClick={() => window.confirm("Ricominciare da capo? Si azzerano le domande fatte e quelle da ripassare di questa banca dati.") && onRicomincia()}
-              className="inline-flex items-center gap-1 font-semibold hover:text-slate-800"
-            >
-              <RotateCcw className="size-3" /> Ricomincia
-            </button>
-          </div>
-        </div>
-      )}
-
-      {!aperta ? (
-        <button
-          type="button"
-          onClick={() => setAperta(true)}
-          className="mt-4 rounded-xl bg-brand-50 py-2.5 text-sm font-semibold text-brand-700 transition hover:bg-brand-100"
-        >
-          Consulta, studia o fai una simulazione
-        </button>
-      ) : (
-        <div className="mt-4 animate-fade-up space-y-3 border-t border-slate-100 pt-4">
-          <div className="grid grid-cols-3 gap-2">
-            <Link to={`/app/banche-dati/${banca.id}`} className={cx(riquadro, "text-slate-700 ring-slate-200 hover:bg-slate-50")}>
-              <Eye className="size-5 text-brand-600" /> Consulta
-              <span className="text-[11px] font-normal text-slate-500">{giaAperta ? "Già aperta questa settimana" : "Una per una, con la risposta"}</span>
-            </Link>
-            {(
-              [
-                { id: "studio", nome: "Studia", Icon: BookOpenCheck, sotto: "Correzione subito" },
-                { id: "simulazione", nome: "Simulazione", Icon: Timer, sotto: "A tempo, come la prova" },
-              ] as const
-            ).map((m) => (
-              <button
-                key={m.id}
-                type="button"
-                aria-pressed={modo === m.id}
-                onClick={() => setModo(modo === m.id ? undefined : m.id)}
-                className={cx(riquadro, modo === m.id ? "bg-brand-600 text-white ring-brand-600" : "text-slate-700 ring-slate-200 hover:bg-slate-50")}
-              >
-                <m.Icon className={cx("size-5", modo === m.id ? "text-white" : "text-brand-600")} /> {m.nome}
-                <span className={cx("text-[11px] font-normal", modo === m.id ? "text-brand-100" : "text-slate-500")}>{m.sotto}</span>
-              </button>
-            ))}
-          </div>
-
-          {modo && (
-            <div className="animate-fade-up space-y-3 rounded-xl bg-slate-50 p-3">
-              {p && (
-                <div className="space-y-1.5">
-                  <p className="text-xs font-semibold text-slate-500">Quali domande</p>
-                  {scelta<SelezioneBanca>(
-                    [
-                      { id: "nuove", nome: "Nuove" },
-                      { id: "sbagliate", nome: `Da ripassare (${p.sbagliate})`, disabled: !p.sbagliate },
-                      { id: "preferite", nome: `Preferite (${p.preferite})`, disabled: !p.preferite },
-                      { id: "tutte", nome: "Tutte" },
-                    ],
-                    sel,
-                    setSelezione,
-                  )}
-                </div>
-              )}
-              <div className="space-y-1.5">
-                <p className="text-xs font-semibold text-slate-500">Quante domande</p>
-                <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
-                  {modo === "studio" ? scelta(numeri(STUDIO), studio, setStudio) : scelta(numeri(SIMULAZIONE), simulazione, setSimulazione)}
-                  {modo === "simulazione" && maxSimulazione > Math.max(...SIMULAZIONE) && (
-                    <NumeroAMano valore={simulazione} onChange={setSimulazione} max={maxSimulazione} fissi={SIMULAZIONE} />
-                  )}
-                </div>
-              </div>
-              <Button
-                className="w-full"
-                disabled={!numero}
-                loading={inCorso === `${banca.id}-${modo}`}
-                onClick={() => numero && onAvvia(modo, numero, sel)}
-              >
-                {modo === "studio" ? (
+      {/* Progressi e pulsanti in fondo alla scheda: allineati tra le schede vicine. */}
+      <div className="mt-auto pt-4">
+        {/* Domande già fatte nelle sessioni (studio e simulazioni) su questa banca dati. */}
+        {p ? (
+          <div>
+            <ProgressBar value={percentuale} tone="green" />
+            <div className="mt-1.5 flex flex-wrap items-center justify-between gap-x-3 gap-y-1 text-xs text-slate-500">
+              <span>
+                <strong className="text-slate-700">{p.fatte.toLocaleString("it-IT")}</strong> di {banca.domande.toLocaleString("it-IT")} fatte ({percentuale}%)
+                {p.sbagliate > 0 && (
                   <>
-                    <BookOpenCheck className="size-4" /> Inizia lo studio
-                  </>
-                ) : (
-                  <>
-                    <Timer className="size-4" /> Inizia la simulazione
+                    {" · "}
+                    <strong className="text-rose-600">{p.sbagliate.toLocaleString("it-IT")}</strong> da ripassare
                   </>
                 )}
-              </Button>
+                {p.preferite > 0 && (
+                  <>
+                    {" · "}
+                    <Link to={`/app/banche-dati/${banca.id}?preferite=1`} className="inline-flex items-center gap-0.5 font-semibold text-amber-700 hover:underline">
+                      <Star className="size-3 fill-amber-400 text-amber-500" /> {p.preferite} preferite
+                    </Link>
+                  </>
+                )}
+              </span>
+              <button
+                onClick={() => window.confirm("Ricominciare da capo? Si azzerano le domande fatte e quelle da ripassare di questa banca dati.") && onRicomincia()}
+                className="inline-flex items-center gap-1 font-semibold hover:text-slate-800"
+              >
+                <RotateCcw className="size-3" /> Ricomincia
+              </button>
             </div>
-          )}
-        </div>
-      )}
+          </div>
+        ) : (
+          <p className="text-xs text-slate-500">Non hai ancora fatto studio o simulazioni su questa banca dati.</p>
+        )}
+
+        {!aperta ? (
+          <button
+            type="button"
+            onClick={() => setAperta(true)}
+            className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-brand-600 px-4 py-3.5 text-base font-semibold text-white shadow-sm transition hover:bg-brand-700"
+          >
+            <BookOpenCheck className="size-5" /> Consulta, studia o fai una simulazione
+          </button>
+        ) : (
+          <div className="mt-4 animate-fade-up space-y-3 border-t border-slate-100 pt-4">
+            <div className="grid grid-cols-3 gap-2">
+              <Link to={`/app/banche-dati/${banca.id}`} className={cx(riquadro, "text-slate-700 ring-slate-200 hover:bg-slate-50")}>
+                <Eye className="size-5 text-brand-600" /> Consulta
+                <span className="text-[11px] font-normal text-slate-500">{giaAperta ? "Già aperta questa settimana" : "Una per una, con la risposta"}</span>
+              </Link>
+              {(
+                [
+                  { id: "studio", nome: "Studia", Icon: BookOpenCheck, sotto: "Correzione subito" },
+                  { id: "simulazione", nome: "Simulazione", Icon: Timer, sotto: "A tempo, come la prova" },
+                ] as const
+              ).map((m) => (
+                <button
+                  key={m.id}
+                  type="button"
+                  aria-pressed={modo === m.id}
+                  onClick={() => setModo(modo === m.id ? undefined : m.id)}
+                  className={cx(riquadro, modo === m.id ? "bg-brand-600 text-white ring-brand-600" : "text-slate-700 ring-slate-200 hover:bg-slate-50")}
+                >
+                  <m.Icon className={cx("size-5", modo === m.id ? "text-white" : "text-brand-600")} /> {m.nome}
+                  <span className={cx("text-[11px] font-normal", modo === m.id ? "text-brand-100" : "text-slate-500")}>{m.sotto}</span>
+                </button>
+              ))}
+            </div>
+
+            {modo && (
+              <div className="animate-fade-up space-y-3 rounded-xl bg-slate-50 p-3">
+                {p && (
+                  <div className="space-y-1.5">
+                    <p className="text-xs font-semibold text-slate-500">Quali domande</p>
+                    {scelta<SelezioneBanca>(
+                      [
+                        { id: "nuove", nome: "Nuove" },
+                        { id: "sbagliate", nome: `Da ripassare (${p.sbagliate})`, disabled: !p.sbagliate },
+                        { id: "preferite", nome: `Preferite (${p.preferite})`, disabled: !p.preferite },
+                        { id: "tutte", nome: "Tutte" },
+                      ],
+                      sel,
+                      setSelezione,
+                    )}
+                  </div>
+                )}
+                <div className="space-y-1.5">
+                  <p className="text-xs font-semibold text-slate-500">Quante domande</p>
+                  <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
+                    {modo === "studio" ? scelta(numeri(STUDIO), studio, setStudio) : scelta(numeri(SIMULAZIONE), simulazione, setSimulazione)}
+                    {modo === "simulazione" && maxSimulazione > Math.max(...SIMULAZIONE) && (
+                      <NumeroAMano valore={simulazione} onChange={setSimulazione} max={maxSimulazione} fissi={SIMULAZIONE} />
+                    )}
+                  </div>
+                </div>
+                <Button
+                  className="w-full"
+                  disabled={!numero}
+                  loading={inCorso === `${banca.id}-${modo}`}
+                  onClick={() => numero && onAvvia(modo, numero, sel)}
+                >
+                  {modo === "studio" ? (
+                    <>
+                      <BookOpenCheck className="size-4" /> Inizia lo studio
+                    </>
+                  ) : (
+                    <>
+                      <Timer className="size-4" /> Inizia la simulazione
+                    </>
+                  )}
+                </Button>
+              </div>
+            )}
+          </div>
+        )}
+      </div>
     </Card>
   );
 }

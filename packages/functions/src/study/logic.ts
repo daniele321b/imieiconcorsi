@@ -89,4 +89,5 @@ export function calcolaEsito(domande: Domanda[], risposte: (number | null)[], re
   };
 }
 
+/** Arrotonda a due decimali. */
 const round2 = (n: number) => Math.round(n * 100) / 100;

@@ -1348,3 +1348,111 @@ EU("sto-299", "Integrazione europea", 3, "Quale spazio economico fu formato nel 
 EU("sto-300", "Integrazione europea", 4, "Quale maggioranza serviva all'assemblea comune dei Trattati di Roma per censurare le decisioni della Commissione?",
   "I due terzi", ["La maggioranza semplice", "L'unanimità", "Tre quinti"],
   "L'assemblea è l'antenata del Parlamento europeo.", "maggioranza fissata in 2/3")
+
+# ── Verso 350: la nascita e le revisioni della Costituzione, da «La storia della nostra
+#    Costituzione» (Senato della Repubblica, 2022, CC BY-NC-ND 4.0).
+SEN = "SenatoRagazzi_Storia-della-Costituzione-2022.txt"
+FSEN = "Senato della Repubblica, «La storia della nostra Costituzione» (2022)"
+def C(id, liv, testo, giusta, sbagliate, spieg, frase, arg="Repubblica"):
+    D(id, arg, liv, testo, giusta, sbagliate, spieg, FSEN, SEN, frase)
+
+C("sto-301", 2, "In che data si tenne la seduta inaugurale dell'Assemblea Costituente?", "Il 25 giugno 1946", ["Il 2 giugno 1946", "Il 1° gennaio 1948", "Il 18 aprile 1948"],
+  "L'Assemblea Costituente fu eletta il 2 giugno 1946 e si riunì per la prima volta il 25 giugno.", "il 25 giugno si tenne la seduta inaugurale")
+C("sto-302", 4, "Quale organo cessò i suoi lavori il giorno della prima seduta della Costituente?", "La Consulta nazionale", ["Il Senato del Regno", "Il CLN", "Il Gran Consiglio del fascismo"],
+  "Il 25 giugno 1946, con l'insediamento della Costituente, cessarono i lavori della Consulta.", "data vennero a cessare i lavori della Consulta")
+C("sto-303", 2, "Da quanti membri era composta la Commissione per la Costituzione?", "75", ["556", "100", "15"],
+  "Dentro l'Assemblea fu nominata la «Commissione dei 75», con membri di tutte le forze politiche, incaricata di scrivere il Progetto di Costituzione.", "composta da 75 membri appartenenti a tutte le forze politiche")
+C("sto-304", 3, "Quale compito ebbe la «Commissione dei 75»?", "Presentare all'Assemblea un Progetto di Costituzione", ["Eleggere il Capo provvisorio dello Stato", "Organizzare il referendum istituzionale", "Redigere la legge elettorale"],
+  "Alla Commissione per la Costituzione fu affidato il compito di presentare un Progetto di Costituzione.", "venne affidato il compito di presentare un \"Progetto di Costituzione\"")
+C("sto-305", 3, "In quante Sottocommissioni fu divisa la Commissione dei 75?", "Tre", ["Due", "Cinque", "Sette"],
+  "Prima: diritti e doveri dei cittadini; seconda: organizzazione costituzionale dello Stato; terza: rapporti economici e sociali.", "La Commissione venne ripartita in tre Sottocommissioni")
+C("sto-306", 3, "Di cosa si occupò la prima Sottocommissione della Commissione dei 75?", "Dei diritti e doveri dei cittadini", ["Dell'organizzazione dello Stato", "Dei rapporti economici e sociali", "Delle Regioni"],
+  "Prima Sottocommissione: diritti e doveri dei cittadini.", "Prima Sottocommissione: diritti e doveri dei cittadini")
+C("sto-307", 3, "Di cosa si occupò la seconda Sottocommissione della Commissione dei 75?", "Dell'organizzazione costituzionale dello Stato", ["Dei diritti dei cittadini", "Dei rapporti economici", "Della politica estera"],
+  "Seconda Sottocommissione: organizzazione costituzionale dello Stato.", "seconda Sottocommissione: organizzazione costituzionale dello Stato")
+C("sto-308", 3, "Di cosa si occupò la terza Sottocommissione della Commissione dei 75?", "Dei rapporti economici e sociali", ["Della Corte costituzionale", "Dei diritti politici", "Della revisione della Costituzione"],
+  "Terza Sottocommissione: rapporti economici e sociali.", "terza Sottocommissione: rapporti economici e sociali")
+C("sto-309", 2, "Chi presiedette la Commissione dei 75?", "Meuccio Ruini", ["Umberto Terracini", "Alcide De Gasperi", "Giuseppe Saragat"],
+  "La Commissione dei 75 fu presieduta dall'onorevole Meuccio Ruini.", "presieduta dall'onorevole Meuccio Ruini")
+C("sto-310", 4, "Quando iniziò i suoi lavori la Commissione dei 75?", "Il 20 luglio 1946", ["Il 2 giugno 1946", "Il 4 marzo 1947", "Il 31 gennaio 1947"],
+  "La Commissione iniziò il 20 luglio 1946 e presentò il Progetto il 31 gennaio 1947.", "iniziò i suoi lavori il 20 luglio 1946")
+C("sto-311", 4, "Quando la Commissione dei 75 presentò il Progetto di Costituzione alla Presidenza dell'Assemblea?", "Il 31 gennaio 1947", ["Il 25 giugno 1946", "Il 22 dicembre 1947", "Il 1° gennaio 1948"],
+  "Il Progetto di Costituzione della Repubblica Italiana fu presentato il 31 gennaio 1947.", "il 31 gennaio 1947")
+C("sto-312", 2, "Chi presiedeva l'Assemblea Costituente quando approvò la Costituzione?", "Umberto Terracini", ["Meuccio Ruini", "Enrico De Nicola", "Palmiro Togliatti"],
+  "L'Assemblea Costituente, presieduta da Umberto Terracini, approvò la Costituzione il 22 dicembre 1947.", "presieduta dall'onorevole Umberto Terracini")
+C("sto-313", 4, "Quando l'Assemblea Costituente iniziò l'esame del Progetto di Costituzione?", "Il 4 marzo 1947", ["Il 20 luglio 1946", "Il 25 giugno 1946", "Il 27 dicembre 1947"],
+  "L'Assemblea iniziò l'esame del Progetto il 4 marzo 1947 e lo concluse il 22 dicembre 1947.", "iniziò l'esame del Progetto il 4 marzo 1947")
+C("sto-314", 4, "Su quale numero della Gazzetta Ufficiale fu pubblicata la Costituzione?", "N. 298 del 27 dicembre 1947", ["N. 1 del 1° gennaio 1948", "N. 100 del 2 giugno 1946", "N. 22 del 22 dicembre 1947"],
+  "La Carta fu promulgata il 27 dicembre 1947 e pubblicata sulla Gazzetta Ufficiale n. 298 dello stesso giorno.", "pubblicata sulla Gazzetta Ufficiale n. 298 del 27 dicembre 1947")
+C("sto-315", 4, "Chi definì la Costituzione «un inno di speranza e di fede» nella seduta del 22 dicembre 1947?", "Meuccio Ruini", ["Benito Mussolini", "Vittorio Emanuele Orlando", "Luigi Einaudi"],
+  "Meuccio Ruini, presidente della Commissione per la Costituzione: «Questa Carta che stiamo per darci è, essa stessa, un inno di speranza e di fede».", "inno di speranza e di fede")
+C("sto-316", 3, "Chi pronunciò la frase «L'ho letta attentamente! Possiamo firmare con sicura coscienza» firmando la Costituzione?", "Enrico De Nicola", ["Alcide De Gasperi", "Umberto Terracini", "Luigi Einaudi"],
+  "La frase di Enrico De Nicola, Capo provvisorio dello Stato, è tratta da un cinegiornale dell'Istituto Luce del gennaio 1948.", "Possiamo firmare con sicura coscienza")
+C("sto-317", 4, "In quale palazzo si trova la «Sala della Costituzione», dove la Carta fu firmata?", "Palazzo Giustiniani", ["Palazzo Chigi", "Palazzo Madama", "Il Quirinale"],
+  "La Sala della Costituzione si trova a Palazzo Giustiniani, sede di rappresentanza del Senato.", "PALAZZO GIUSTINIANI SALA DELLA COSTITUZIONE")
+C("sto-318", 4, "Quale partito era indicato alla Costituente con la sigla UQ?", "Il Fronte democratico liberale dell'Uomo Qualunque", ["L'Unione dei Quadri", "L'Unione Qualificata", "L'Ulivo"],
+  "Tra i gruppi della Costituente c'era il Fronte democratico liberale dell'Uomo Qualunque (UQ).", "FRONTE DEMOCRATICO LIBERALE DELL'UOMO QUALUNQUE")
+C("sto-319", 4, "Quale partito nacque dalla scissione socialista del 1947 (scissione di Palazzo Barberini)?", "Il PSLI, Partito socialista dei lavoratori italiani", ["Il PCI", "Il Partito d'Azione", "La DC"],
+  "Alla Costituente il PSIUP si divise nel gennaio 1947: nacquero il PSI e il PSLI di Saragat.", "PSLI PARTITO SOCIALISTA DEI LAVORATORI ITALIANI (DOPO LA SCISSIONE DEL 1947)")
+C("sto-320", 4, "Come si chiamava il partito socialista alla Costituente prima della scissione del gennaio 1947?", "PSIUP, Partito socialista di unità proletaria", ["PSI, Partito socialista italiano", "PSDI", "PCI"],
+  "Prima della scissione del gennaio 1947 i socialisti formavano il PSIUP.", "PSIUP PARTITO SOCIALISTA DI UNITÀ PROLETARIA (PRIMA DELLA SCISSIONE DEL GENNAIO 1947)")
+C("sto-321", 5, "Cosa indicava la sigla BNL tra i gruppi dell'Assemblea Costituente?", "Il Blocco nazionale della libertà", ["La Banca nazionale del lavoro", "Il Blocco nazionale liberale", "Il Battaglione nazionale lombardo"],
+  "Tra i gruppi parlamentari della Costituente c'era il BNL, Blocco nazionale della libertà.", "BNL BLOCCO NAZIONALE DELLA LIBERTÀ")
+C("sto-322", 5, "Alla Costituente, cosa indicava la sigla PDL?", "Il Partito democratico del lavoro", ["Il Popolo della libertà", "Il Partito dei lavoratori", "Il Partito democratico liberale"],
+  "Il PDL della Costituente era il Partito democratico del lavoro, da non confondere con partiti successivi.", "PDL PARTITO DEMOCRATICO DEL LAVORO")
+C("sto-323", 3, "Quale futuro presidente del Consiglio fu eletto all'Assemblea Costituente per la DC a Roma?", "Giulio Andreotti", ["Bettino Craxi", "Silvio Berlusconi", "Romano Prodi"],
+  "Nell'elenco dei deputati della Costituente compare Giulio Andreotti, DC, collegio di Roma, dottore in giurisprudenza e giornalista.", "ANDREOTTI GIULIO DC ROMA")
+C("sto-324", 4, "Con quale legge costituzionale cessarono gli effetti dei commi che vietavano ai Savoia l'ingresso in Italia?", "Legge costituzionale 23 ottobre 2002, n. 1", ["Legge costituzionale 1° gennaio 1948", "Legge costituzionale 11 febbraio 2022, n. 1", "Legge costituzionale 18 ottobre 2001, n. 3"],
+  "La l. cost. 1/2002 ha fatto cessare gli effetti dei commi primo e secondo della XIII disposizione transitoria e finale.", "Cessazione degli effetti dei commi primo e secondo della XIII disposizione")
+C("sto-325", 4, "Secondo la XIV disposizione, quali predicati nobiliari valgono come parte del nome?", "Quelli esistenti prima del 28 ottobre 1922", ["Quelli concessi dopo il 1946", "Tutti, senza limiti", "Nessuno"],
+  "I titoli nobiliari non sono riconosciuti; i predicati esistenti prima del 28 ottobre 1922 (marcia su Roma) valgono come parte del nome.", "valgono come parte del nome")
+C("sto-326", 5, "Come è conservato l'Ordine mauriziano secondo la XIV disposizione transitoria?", "Come ente ospedaliero", ["Come ordine cavalleresco", "Come banca pubblica", "Come museo"],
+  "La XIV disposizione conserva l'Ordine mauriziano come ente ospedaliero.", "L'Ordine mauriziano è conservato come ente ospedaliero")
+C("sto-327", 5, "Quale organo la XIV disposizione transitoria prevede di sopprimere per legge?", "La Consulta araldica", ["La Corte dei conti", "Il Consiglio di Stato", "La Consulta nazionale"],
+  "La legge regola la soppressione della Consulta araldica, che si occupava dei titoli nobiliari.", "La legge regola la soppressione della Consulta araldica")
+C("sto-328", 5, "Quale decreto del 25 giugno 1944 sull'ordinamento provvisorio dello Stato fu convertito in legge dalla Costituzione?", "Il decreto legislativo luogotenenziale n. 151", ["Il decreto Acerbo", "Lo Statuto Albertino", "Il decreto Badoglio n. 1"],
+  "La XV disposizione converte in legge il D.L.Lgt. 25 giugno 1944, n. 151, sull'ordinamento provvisorio dello Stato.", "decreto legislativo luogotenenziale 25 giugno 1944, n. 151, sull'ordinamento provvisorio dello Stato")
+C("sto-329", 4, "Su cosa doveva deliberare la Costituente entro il 31 gennaio 1948, secondo la XVII disposizione?", "Legge elettorale del Senato, statuti regionali speciali e legge sulla stampa", ["Elezione del Presidente della Repubblica", "Trattato di pace", "Riforma agraria"],
+  "La XVII disposizione stabiliva la convocazione per deliberare su legge elettorale del Senato, statuti regionali speciali e legge per la stampa.", "sulla legge per la elezione del Senato della Repubblica, sugli statuti regionali speciali e sulla legge per la stampa")
+C("sto-330", 4, "Cosa prevedeva la XII disposizione transitoria per i capi responsabili del regime fascista?", "Limitazioni temporanee, non oltre un quinquennio, al diritto di voto e all'eleggibilità", ["L'esilio perpetuo", "La confisca di tutti i beni", "Nessuna limitazione"],
+  "La XII disposizione, oltre a vietare la ricostituzione del partito fascista, consentiva limitazioni temporanee al voto e all'eleggibilità dei capi responsabili.", "limitazioni temporanee al diritto di voto e alla eleggibilità per i capi responsabili del regime fascista")
+C("sto-331", 3, "Quale legge costituzionale del 2022 ha introdotto la tutela dell'ambiente negli articoli 9 e 41?", "Legge costituzionale 11 febbraio 2022, n. 1", ["Legge costituzionale 18 ottobre 2001, n. 3", "Legge costituzionale 19 ottobre 2020, n. 1", "Legge costituzionale 20 aprile 2012, n. 1"],
+  "La l. cost. 1/2022 ha modificato gli articoli 9 e 41 in materia di tutela dell'ambiente.", "Modifiche agli articoli 9 e 41 della Costituzione in materia di tutela dell'ambiente")
+C("sto-332", 3, "In che anno una legge costituzionale ha escluso la pena di morte anche dalle leggi militari di guerra (art. 27)?", "Nel 2007", ["Nel 1948", "Nel 1994", "Nel 2020"],
+  "La l. cost. 2 ottobre 2007, n. 1 ha modificato l'art. 27: ora «Non è ammessa la pena di morte», senza eccezioni.", "della Costituzione, concernente l'abolizione della pena di morte")
+C("sto-333", 3, "In che anno i principi del «giusto processo» sono entrati nell'art. 111 della Costituzione?", "Nel 1999", ["Nel 1948", "Nel 2012", "Nel 1975"],
+  "La l. cost. 23 novembre 1999, n. 2 ha inserito nell'art. 111 i principi del giusto processo.", "legge costituzionale 23 novembre 1999, n. 2, in materia di giusto processo")
+C("sto-334", 3, "Quale legge costituzionale ha ridotto il numero dei parlamentari a 400 deputati e 200 senatori?", "Legge costituzionale 19 ottobre 2020, n. 1", ["Legge costituzionale 9 febbraio 1963, n. 2", "Legge costituzionale 17 gennaio 2000, n. 1", "Legge costituzionale 30 maggio 2003, n. 1"],
+  "La l. cost. 1/2020 ha modificato gli articoli 56, 57 e 59 riducendo i parlamentari, con effetto dalla XIX legislatura.", "Legge costituzionale 19 ottobre 2020, n. 1")
+C("sto-335", 4, "Con quale legge costituzionale fu istituita la circoscrizione Estero per il voto degli italiani residenti all'estero?", "Legge costituzionale 17 gennaio 2000, n. 1", ["Legge costituzionale 4 novembre 1991, n. 1", "Legge costituzionale 2 ottobre 2007, n. 1", "Legge costituzionale 16 gennaio 1989, n. 1"],
+  "La l. cost. 1/2000 ha modificato l'art. 48 istituendo la circoscrizione Estero.", "Legge costituzionale 17 gennaio 2000, n. 1")
+C("sto-336", 5, "Quale legge costituzionale modificò nel 1967 l'art. 135, riducendo il mandato dei giudici costituzionali?", "La l. cost. 22 novembre 1967, n. 2", ["La l. cost. 11 marzo 1953, n. 1", "La l. cost. 16 gennaio 1989, n. 1", "La l. cost. 23 novembre 1999, n. 2"],
+  "La l. cost. 2/1967 modificò l'art. 135: il mandato dei giudici della Corte passò a nove anni.", "22 novembre 1967, n. 2")
+C("sto-337", 5, "Quale legge costituzionale del 1989 ha riformato il giudizio sui reati ministeriali (art. 96)?", "Legge costituzionale 16 gennaio 1989, n. 1", ["Legge costituzionale 4 novembre 1991, n. 1", "Legge costituzionale 22 novembre 1967, n. 2", "Legge costituzionale 18 ottobre 2001, n. 3"],
+  "La l. cost. 1/1989 ha modificato gli articoli 96, 134 e 135: i reati ministeriali sono giudicati dalla giurisdizione ordinaria, previa autorizzazione delle Camere.", "Legge costituzionale 16 gennaio 1989, n. 1")
+C("sto-338", 5, "Quale legge costituzionale ha modificato nel 1991 il «semestre bianco» (art. 88)?", "Legge costituzionale 4 novembre 1991, n. 1", ["Legge costituzionale 9 febbraio 1963, n. 2", "Legge costituzionale 16 gennaio 1989, n. 1", "Legge costituzionale 30 maggio 2003, n. 1"],
+  "La l. cost. 1/1991 consente lo scioglimento nel semestre bianco se coincide in tutto o in parte con gli ultimi sei mesi della legislatura.", "Legge costituzionale 4 novembre 1991, n. 1")
+C("sto-339", 4, "Quale legge costituzionale del 2003 ha modificato l'art. 51 per promuovere le pari opportunità tra donne e uomini?", "Legge costituzionale 30 maggio 2003, n. 1", ["Legge costituzionale 18 ottobre 2001, n. 3", "Legge costituzionale 20 aprile 2012, n. 1", "Legge costituzionale 17 gennaio 2000, n. 1"],
+  "La l. cost. 1/2003 ha aggiunto all'art. 51 che la Repubblica promuove con appositi provvedimenti le pari opportunità.", "Legge costituzionale 30 maggio 2003, n. 1")
+C("sto-340", 3, "In che anno il principio del pareggio di bilancio è entrato nella Costituzione?", "Nel 2012", ["Nel 1948", "Nel 1992", "Nel 2001"],
+  "La l. cost. 20 aprile 2012, n. 1 ha introdotto il principio del pareggio (equilibrio) di bilancio.", "Legge costituzionale 20 aprile 2012, n. 1")
+C("sto-341", 5, "Quale legge costituzionale del 1963 modificò gli articoli 56, 57 e 60, fissando il numero dei parlamentari e la durata di 5 anni anche per il Senato?", "Legge costituzionale 9 febbraio 1963, n. 2", ["Legge costituzionale 27 dicembre 1963, n. 3", "Legge costituzionale 22 novembre 1967, n. 2", "Legge costituzionale 19 ottobre 2020, n. 1"],
+  "La l. cost. 2/1963 fissò in 630 i deputati e 315 i senatori elettivi e uniformò a cinque anni la durata delle due Camere.", "Legge costituzionale 9 febbraio 1963, n. 2")
+C("sto-342", 4, "Per quale delitto una legge costituzionale del 1967 ha escluso il divieto di estradizione per reati politici?", "Il genocidio", ["La corruzione", "L'evasione fiscale", "Il terrorismo internazionale"],
+  "La l. cost. 21 giugno 1967, n. 1 «Estradizione per i delitti di genocidio» stabilisce che il divieto di estradizione per reati politici non vale per il genocidio.", "Estradizione per i delitti")
+C("sto-343", 3, "Quale legge costituzionale del 2001 ha riformato il Titolo V (Regioni, Province, Comuni)?", "Legge costituzionale 18 ottobre 2001, n. 3", ["Legge costituzionale 20 aprile 2012, n. 1", "Legge costituzionale 9 febbraio 1963, n. 2", "Legge costituzionale 23 ottobre 2002, n. 1"],
+  "La l. cost. 3/2001 ha modificato il titolo V della parte seconda della Costituzione.", "Modifiche al titolo V della parte seconda della Costituzione")
+C("sto-344", 3, "Quale Regione fu istituita con una legge costituzionale del 1963, separandola dall'Abruzzo?", "Il Molise", ["La Basilicata", "La Valle d'Aosta", "Il Trentino-Alto Adige"],
+  "La l. cost. 27 dicembre 1963, n. 3 modificò gli articoli 131 e 57 istituendo la Regione Molise.", "istituzione della Regione Molise")
+C("sto-345", 4, "Cosa ha aggiunto all'art. 119 la legge costituzionale 7 novembre 2022, n. 2?", "Il riconoscimento delle peculiarità delle Isole e degli svantaggi dell'insularità", ["La tutela degli animali", "Il diritto allo sport", "Il voto ai sedicenni"],
+  "Ora l'art. 119 dice che la Repubblica riconosce le peculiarità delle Isole e promuove misure per rimuovere gli svantaggi dell'insularità.", "La Repubblica riconosce le peculiarità delle Isole")
+C("sto-346", 3, "Quali articoli compongono il Titolo V della Parte II (Regioni, Province, Comuni)?", "Gli articoli 114-133", ["Gli articoli 1-12", "Gli articoli 55-82", "Gli articoli 134-139"],
+  "Titolo V: Le Regioni, le Provincie, i Comuni, articoli da 114 a 133.", "Titolo V Le Regioni, le Provincie, i Comuni 114-133")
+C("sto-347", 3, "Quali articoli della Costituzione trattano i rapporti etico-sociali?", "Gli articoli 29-34", ["Gli articoli 13-28", "Gli articoli 35-47", "Gli articoli 48-54"],
+  "Parte I: rapporti civili (13-28), etico-sociali (29-34), economici (35-47), politici (48-54).", "Titolo II Rapporti etico-sociali 29-34")
+C("sto-348", 4, "Cosa contiene la pubblicazione del Senato «La storia della nostra Costituzione», articolo per articolo?", "Progetto della Commissione dei 75, emendamenti, testo approvato e leggi di revisione", ["Solo il testo vigente", "Le sentenze della Corte costituzionale", "I verbali del Consiglio dei ministri"],
+  "La pubblicazione riporta il progetto della Commissione dei Settantacinque, gli emendamenti, il testo approvato e le leggi di revisione.", "originariamente predisposto dalla Commissione dei Settantacinque")
+C("sto-349", 5, "Fino alle elezioni delle nuove Camere, su richiesta di chi poteva essere riconvocata l'Assemblea Costituente (XVII disposizione)?", "Del Governo o di almeno duecento deputati", ["Del Capo provvisorio dello Stato soltanto", "Di almeno cinquanta senatori", "Di cinque Consigli regionali"],
+  "La XVII disposizione prevedeva la convocazione da parte del Presidente su richiesta motivata del Governo o di almeno duecento deputati.", "o di almeno duecento deputati")
+C("sto-350", 4, "A chi era rivolto il messaggio di Enrico De Nicola letto da Terracini il 22 dicembre 1947?", "Al presidente dell'Assemblea Costituente, per l'approvazione della Costituzione", ["Al re Umberto II", "Al Papa Pio XII", "Al presidente degli Stati Uniti"],
+  "De Nicola ringraziava il Presidente dell'Assemblea per avergli comunicato l'approvazione della Costituzione.", "comunicato con cortese sollecitudine l'approvazione della")

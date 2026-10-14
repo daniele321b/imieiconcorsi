@@ -38,6 +38,7 @@ resource "aws_apigatewayv2_authorizer" "cognito" {
   }
 }
 
+# Mappe derivate da var.services, usate per le route qui sotto.
 locals {
   # Route → nome del servizio che la gestisce, es. "GET /me" = "profile".
   routes = merge([

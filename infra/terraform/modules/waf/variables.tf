@@ -1,3 +1,5 @@
+# Ingressi del modulo firewall (WAF davanti a CloudFront).
+
 variable "name" {
   description = "Nome del web ACL, es. imieiconcorsi-prod"
   type        = string

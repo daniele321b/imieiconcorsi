@@ -66,6 +66,7 @@ resource "aws_lambda_permission" "accessi" {
   source_arn    = aws_cognito_user_pool.main.arn
 }
 
+# Cognito può chiamare il trigger pre sign-up (domini email ammessi, account già esistenti).
 resource "aws_lambda_permission" "pre_sign_up" {
   count         = var.pre_sign_up_enabled ? 1 : 0
   statement_id  = "AllowCognito"
@@ -187,6 +188,7 @@ resource "aws_cognito_user_group" "medium" {
   precedence   = 20
 }
 
+# Gruppo del piano Pro: finisce nel token e sblocca le funzioni a pagamento.
 resource "aws_cognito_user_group" "pro" {
   name         = "pro"
   user_pool_id = aws_cognito_user_pool.main.id
@@ -194,6 +196,7 @@ resource "aws_cognito_user_group" "pro" {
   precedence   = 10
 }
 
+# Gruppo degli amministratori (pannello admin).
 resource "aws_cognito_user_group" "admin" {
   name         = "admin"
   user_pool_id = aws_cognito_user_pool.main.id

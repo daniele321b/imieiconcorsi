@@ -19,6 +19,7 @@ terraform {
   }
 }
 
+# Id dell'account, per i permessi dei topic SNS.
 data "aws_caller_identity" "current" {}
 
 # Concorrenza Lambda dell'account: sui conti nuovi può essere bassa (anche 10).
@@ -27,6 +28,7 @@ data "aws_servicequotas_service_quota" "lambda_concorrenza" {
   quota_code   = "L-B99A9384"
 }
 
+# Lambda da sorvegliare, destinazioni degli allarmi e soglia di concorrenza (80% della quota).
 locals {
   tutte_le_lambda    = merge(var.api_functions, var.job_functions, var.other_functions)
   azioni             = [aws_sns_topic.monitoraggio.arn]

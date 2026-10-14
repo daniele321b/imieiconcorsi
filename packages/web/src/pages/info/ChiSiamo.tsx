@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import { datiSocietari } from "../../lib/legale";
 import { LegalePagina } from "../legale/LegalePagina";
 import { ComeContattarci, Titolare } from "../legale/parti";
 
@@ -21,7 +22,7 @@ export function ChiSiamo() {
       <h2>Chi c'è dietro</h2>
       <p>
         iMieiConcorsi è un progetto indipendente nato in Italia nel 2026 ed è in fase di avvio: lo stiamo facendo crescere
-        insieme ai primi utenti, ascoltando i loro pareri. Gestore del servizio: <Titolare />.
+        insieme ai primi utenti, ascoltando i loro pareri.{datiSocietari && <> Gestore del servizio: <Titolare />.</>}
       </p>
 
       <h2>Indipendenti dagli enti</h2>

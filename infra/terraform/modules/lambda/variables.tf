@@ -1,3 +1,5 @@
+# Ingressi del modulo Lambda generica (codice, memoria, variabili d'ambiente, permessi).
+
 variable "name" {
   description = "Nome completo della funzione"
   type        = string

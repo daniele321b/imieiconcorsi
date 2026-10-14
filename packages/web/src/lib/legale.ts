@@ -1,9 +1,9 @@
 import { VERSIONE_TERMINI } from "@imieiconcorsi/core/domain";
 
 // Dati di chi gestisce iMieiConcorsi, per le pagine pubbliche (Privacy, Termini, Chi siamo,
-// Contatti…). Per ora il servizio è un progetto in avvio con il nome iMieiConcorsi: la società
-// che lo gestirà non è ancora costituita. Appena c'è, compila ragione sociale, sede e partita
-// IVA: le pagine li mostrano da sole al posto della frase "in fase di costituzione".
+// Contatti…). Finché ragione sociale, sede e partita IVA sono vuote le pagine non parlano di
+// società: dicono solo "iMieiConcorsi (imieiconcorsi.it)". Compilati, compaiono da soli in
+// Privacy, Termini e Chi siamo.
 // Prima di accettare pagamenti veri (Stripe live) questi dati servono per legge.
 
 export const LEGALE = {

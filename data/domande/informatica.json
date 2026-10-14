@@ -14,7 +14,7 @@
     "corretta": 0,
     "spiegazione": "Tra i sistemi operativi per smartphone e tablet ci sono iOS e Android; Excel è un'applicazione, Firefox un browser, HTML un linguaggio di markup.",
     "fonte": "Wikipedia, «Sistema operativo» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -31,7 +31,7 @@
     "corretta": 1,
     "spiegazione": "Il sistema operativo è composto da kernel, scheduler, file system, gestore della memoria, gestore delle periferiche, interfaccia utente e spooler.",
     "fonte": "Wikipedia, «Sistema operativo» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -48,7 +48,7 @@
     "corretta": 2,
     "spiegazione": "Un sistema multitasking può svolgere più compiti parallelamente attraverso una politica di scheduling.",
     "fonte": "Wikipedia, «Sistema operativo» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -65,7 +65,7 @@
     "corretta": 3,
     "spiegazione": "Windows, macOS e le distribuzioni Linux sono sistemi operativi per computer; Word è un programma di videoscrittura.",
     "fonte": "Wikipedia, «Sistema operativo» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -82,7 +82,7 @@
     "corretta": 0,
     "spiegazione": "LAN (Local Area Network) è la rete locale; WAN e GAN coprono aree geografiche più ampie. Dalla loro interconnessione nasce Internet.",
     "fonte": "Wikipedia, «Rete informatica» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -99,7 +99,7 @@
     "corretta": 1,
     "spiegazione": "Il DNS risolve i nomi (es. www.esempio.it) negli indirizzi IP dei server, tramite un database distribuito.",
     "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -116,7 +116,7 @@
     "corretta": 2,
     "spiegazione": "IPv4 gestisce indirizzi a 32 bit (es. 192.168.1.10); IPv6 usa indirizzi a 128 bit.",
     "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -133,7 +133,7 @@
     "corretta": 3,
     "spiegazione": "TCP e UDP sono protocolli del livello trasporto; IP lavora al livello rete.",
     "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -150,7 +150,7 @@
     "corretta": 0,
     "spiegazione": "La ROM mantiene i dati senza alimentazione; la RAM invece è volatile.",
     "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -167,7 +167,7 @@
     "corretta": 1,
     "spiegazione": "La cache è una memoria piccola e veloce tra processore e memoria principale, che migliora le prestazioni.",
     "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -184,7 +184,7 @@
     "corretta": 2,
     "spiegazione": "Lo SPID, insieme a carta d'identità elettronica e carta nazionale dei servizi, consente di identificarsi online con la PA.",
     "fonte": "D.Lgs. 82/2005 (CAD)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -201,7 +201,7 @@
     "corretta": 3,
     "spiegazione": "Il CAD definisce il domicilio digitale come indirizzo elettronico presso un servizio di posta elettronica certificata o di recapito certificato qualificato.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 1",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -218,7 +218,7 @@
     "corretta": 0,
     "spiegazione": "Il CAD definisce la firma digitale come firma qualificata basata su un sistema di chiavi crittografiche, una pubblica e una privata, correlate tra loro.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 1",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -235,7 +235,7 @@
     "corretta": 1,
     "spiegazione": "Art. 20 CAD: il documento informatico soddisfa la forma scritta e ha l'efficacia dell'art. 2702 c.c. quando vi è apposta una firma digitale o le altre firme previste.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 20",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -252,7 +252,7 @@
     "corretta": 2,
     "spiegazione": "Il CAD definisce la CIE come documento d'identità rilasciato su supporto informatico e munito di elementi per l'identificazione fisica del titolare.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 1",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -269,7 +269,7 @@
     "corretta": 3,
     "spiegazione": "Il CAD definisce la PEC come sistema di comunicazione in grado di attestare l'invio e l'avvenuta consegna di un messaggio, con ricevute opponibili ai terzi.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 1",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -286,7 +286,7 @@
     "corretta": 0,
     "spiegazione": "Il software è invece la parte intangibile.",
     "fonte": "Wikipedia, «Hardware» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -303,7 +303,7 @@
     "corretta": 1,
     "spiegazione": "Sulla scheda madre si trovano processore, RAM, ROM con il BIOS.",
     "fonte": "Wikipedia, «Hardware» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -320,7 +320,7 @@
     "corretta": 2,
     "spiegazione": "Sulla scheda madre sono alloggiate le unità di memoria ROM che contengono il BIOS.",
     "fonte": "Wikipedia, «Hardware» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -337,7 +337,7 @@
     "corretta": 3,
     "spiegazione": "Esempi: scheda video, scheda audio, scheda di rete.",
     "fonte": "Wikipedia, «Hardware» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -354,7 +354,7 @@
     "corretta": 0,
     "spiegazione": "È l'unità di elaborazione centrale, il processore.",
     "fonte": "Wikipedia, «CPU» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -371,7 +371,7 @@
     "corretta": 1,
     "spiegazione": "L'ALU esegue le operazioni aritmetico-logiche; l'unità di controllo coordina.",
     "fonte": "Wikipedia, «CPU» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -388,7 +388,7 @@
     "corretta": 2,
     "spiegazione": "Voce «CPU».",
     "fonte": "Wikipedia, «CPU» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -405,7 +405,7 @@
     "corretta": 3,
     "spiegazione": "Il contenuto si perde allo spegnimento.",
     "fonte": "Wikipedia, «Random Access Memory» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -422,7 +422,7 @@
     "corretta": 0,
     "spiegazione": "Vanno salvate su disco o altra memoria non volatile.",
     "fonte": "Wikipedia, «Random Access Memory» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -439,7 +439,7 @@
     "corretta": 1,
     "spiegazione": "La RAM è la memoria primaria dei computer.",
     "fonte": "Wikipedia, «Random Access Memory» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -456,7 +456,7 @@
     "corretta": 2,
     "spiegazione": "Definizione stabilita dal 1964.",
     "fonte": "Wikipedia, «Byte» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -473,7 +473,7 @@
     "corretta": 3,
     "spiegazione": "2⁸ = 256 (da 0 a 255).",
     "fonte": "Wikipedia, «Byte» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -490,7 +490,7 @@
     "corretta": 0,
     "spiegazione": "La b minuscola indica generalmente il bit.",
     "fonte": "Wikipedia, «Byte» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -507,7 +507,7 @@
     "corretta": 1,
     "spiegazione": "All'inizio del progetto IBM Stretch.",
     "fonte": "Wikipedia, «Byte» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -524,7 +524,7 @@
     "corretta": 2,
     "spiegazione": "Usa solo le cifre 0 e 1.",
     "fonte": "Wikipedia, «Sistema numerico binario» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -541,7 +541,7 @@
     "corretta": 3,
     "spiegazione": "1·8 + 0·4 + 0·2 + 1·1 = 9.",
     "fonte": "Wikipedia, «Sistema numerico binario» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -558,7 +558,7 @@
     "corretta": 0,
     "spiegazione": "8 + 4 + 2 + 1 = 15.",
     "fonte": "Wikipedia, «Sistema numerico binario» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -575,7 +575,7 @@
     "corretta": 1,
     "spiegazione": "8 + 2 = 10.",
     "fonte": "Wikipedia, «Sistema numerico binario» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -592,7 +592,7 @@
     "corretta": 2,
     "spiegazione": "0 e 1 corrispondono anche a falso e vero della logica booleana.",
     "fonte": "Wikipedia, «Sistema numerico binario» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -609,7 +609,7 @@
     "corretta": 3,
     "spiegazione": "Driver e controller di periferica.",
     "fonte": "Wikipedia, «Periferica» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -626,7 +626,7 @@
     "corretta": 0,
     "spiegazione": "Tipica delle periferiche USB.",
     "fonte": "Wikipedia, «Periferica» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -643,7 +643,7 @@
     "corretta": 1,
     "spiegazione": "La periferica segnala alla CPU che richiede attenzione.",
     "fonte": "Wikipedia, «Periferica» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -660,7 +660,7 @@
     "corretta": 2,
     "spiegazione": "Ogni periferica può essere di input, di output o di input/output.",
     "fonte": "Wikipedia, «Periferica» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -677,7 +677,7 @@
     "corretta": 3,
     "spiegazione": "È uno standard di comunicazione seriale.",
     "fonte": "Wikipedia, «Universal Serial Bus» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -694,7 +694,7 @@
     "corretta": 0,
     "spiegazione": "È anche più veloce.",
     "fonte": "Wikipedia, «Universal Serial Bus» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -711,7 +711,7 @@
     "corretta": 1,
     "spiegazione": "Esempi: dischi, DVD, chiavette USB.",
     "fonte": "Wikipedia, «Memoria di massa» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -728,7 +728,7 @@
     "corretta": 2,
     "spiegazione": "La memoria di massa costa meno ma è più lenta.",
     "fonte": "Wikipedia, «Memoria di massa» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -745,7 +745,7 @@
     "corretta": 3,
     "spiegazione": "Diffuse dalla seconda metà del XX secolo.",
     "fonte": "Wikipedia, «Memoria di massa» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -762,7 +762,7 @@
     "corretta": 0,
     "spiegazione": "È contrapposto all'hardware.",
     "fonte": "Wikipedia, «Software» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -779,7 +779,7 @@
     "corretta": 1,
     "spiegazione": "Statistico statunitense.",
     "fonte": "Wikipedia, «Software» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -796,7 +796,7 @@
     "corretta": 2,
     "spiegazione": "La memoria secondaria è trattata come un dispositivo di I/O.",
     "fonte": "Wikipedia, «Memoria di massa» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -813,7 +813,7 @@
     "corretta": 3,
     "spiegazione": "Da «interconnected networks».",
     "fonte": "Wikipedia, «Internet» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -830,7 +830,7 @@
     "corretta": 0,
     "spiegazione": "Prende il nome dai due protocolli principali, TCP e IP.",
     "fonte": "Wikipedia, «Internet» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -847,7 +847,7 @@
     "corretta": 1,
     "spiegazione": "Finanziato dalla DARPA statunitense.",
     "fonte": "Wikipedia, «Internet» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -864,7 +864,7 @@
     "corretta": 2,
     "spiegazione": "Il WWW si basa sul protocollo HTTP ed è nato nel 1991.",
     "fonte": "Wikipedia, «World Wide Web» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -881,7 +881,7 @@
     "corretta": 3,
     "spiegazione": "L'idea nacque al CERN di Ginevra nel 1989.",
     "fonte": "Wikipedia, «World Wide Web» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -898,7 +898,7 @@
     "corretta": 0,
     "spiegazione": "L'idea risale al 1989.",
     "fonte": "Wikipedia, «World Wide Web» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -915,7 +915,7 @@
     "corretta": 1,
     "spiegazione": "Il Web è un grande ipertesto.",
     "fonte": "Wikipedia, «World Wide Web» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -932,7 +932,7 @@
     "corretta": 2,
     "spiegazione": "HyperText Transfer Protocol.",
     "fonte": "Wikipedia, «Hypertext Transfer Protocol» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -949,7 +949,7 @@
     "corretta": 3,
     "spiegazione": "HTTPS usa invece la porta 443.",
     "fonte": "Wikipedia, «Hypertext Transfer Protocol» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -966,7 +966,7 @@
     "corretta": 0,
     "spiegazione": "Di solito l'indirizzo è sbagliato o il contenuto è stato rimosso.",
     "fonte": "Wikipedia, «Hypertext Transfer Protocol» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -983,7 +983,7 @@
     "corretta": 1,
     "spiegazione": "Il client invia la richiesta, il server restituisce la risposta.",
     "fonte": "Wikipedia, «Hypertext Transfer Protocol» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1000,7 +1000,7 @@
     "corretta": 2,
     "spiegazione": "Esempi: Chrome, Firefox, Edge, Safari.",
     "fonte": "Wikipedia, «Browser» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1017,7 +1017,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Browser».",
     "fonte": "Wikipedia, «Browser» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1034,7 +1034,7 @@
     "corretta": 0,
     "spiegazione": "Sviluppato dall'NCSA, poi seguito da Netscape Navigator.",
     "fonte": "Wikipedia, «Browser» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1051,7 +1051,7 @@
     "corretta": 1,
     "spiegazione": "Uniform Resource Locator, es. https://www.esempio.it/pagina.",
     "fonte": "Wikipedia, «Uniform Resource Locator» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1068,7 +1068,7 @@
     "corretta": 2,
     "spiegazione": "Domain Name System.",
     "fonte": "Wikipedia, «Uniform Resource Locator» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1085,7 +1085,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Uniform Resource Locator».",
     "fonte": "Wikipedia, «Uniform Resource Locator» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1102,7 +1102,7 @@
     "corretta": 0,
     "spiegazione": "Il dominio è un nome DNS.",
     "fonte": "Wikipedia, «Posta elettronica» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1119,7 +1119,7 @@
     "corretta": 1,
     "spiegazione": "Fu implementata su ARPANET.",
     "fonte": "Wikipedia, «Posta elettronica» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1136,7 +1136,7 @@
     "corretta": 2,
     "spiegazione": "SMTP per l'invio, POP e IMAP per la ricezione.",
     "fonte": "Wikipedia, «Posta elettronica» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1153,7 +1153,7 @@
     "corretta": 3,
     "spiegazione": "Il campo «Cc» contiene i destinatari in copia conoscenza, visibili.",
     "fonte": "Wikipedia, «Posta elettronica» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1170,7 +1170,7 @@
     "corretta": 0,
     "spiegazione": "Il messaggio resta nella casella finché non viene letto.",
     "fonte": "Wikipedia, «Posta elettronica» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1187,7 +1187,7 @@
     "corretta": 1,
     "spiegazione": "Per avere valore legale si usa la PEC.",
     "fonte": "Wikipedia, «Posta elettronica» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1204,7 +1204,7 @@
     "corretta": 2,
     "spiegazione": "È simile a un indirizzo postale.",
     "fonte": "Wikipedia, «Indirizzo IP» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1221,7 +1221,7 @@
     "corretta": 3,
     "spiegazione": "IPv4 usa invece 32 bit.",
     "fonte": "Wikipedia, «Indirizzo IP» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1238,7 +1238,7 @@
     "corretta": 0,
     "spiegazione": "Il Net_ID serve all'instradamento tra reti.",
     "fonte": "Wikipedia, «Indirizzo IP» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1255,7 +1255,7 @@
     "corretta": 1,
     "spiegazione": "Basato sugli standard IEEE 802.11.",
     "fonte": "Wikipedia, «Wi-Fi» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1272,7 +1272,7 @@
     "corretta": 2,
     "spiegazione": "Detto anche punto di accesso wireless.",
     "fonte": "Wikipedia, «Wi-Fi» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1289,7 +1289,7 @@
     "corretta": 3,
     "spiegazione": "Le risorse sono in remoto, presso il fornitore.",
     "fonte": "Wikipedia, «Cloud computing» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1306,7 +1306,7 @@
     "corretta": 0,
     "spiegazione": "Esempi: posta web, suite per ufficio online.",
     "fonte": "Wikipedia, «Cloud computing» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1323,7 +1323,7 @@
     "corretta": 1,
     "spiegazione": "Fornisce servizi, programmi, librerie per sviluppare.",
     "fonte": "Wikipedia, «Cloud computing» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1340,7 +1340,7 @@
     "corretta": 2,
     "spiegazione": "Confidentiality, Integrity, Availability.",
     "fonte": "Wikipedia, «Sicurezza informatica» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1357,7 +1357,7 @@
     "corretta": 3,
     "spiegazione": "Strumenti: crittografia e controlli di accesso.",
     "fonte": "Wikipedia, «Sicurezza informatica» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1374,7 +1374,7 @@
     "corretta": 0,
     "spiegazione": "Si usano funzioni di hash, firme digitali e controlli delle modifiche.",
     "fonte": "Wikipedia, «Sicurezza informatica» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1391,7 +1391,7 @@
     "corretta": 1,
     "spiegazione": "Si riducono i single point of failure.",
     "fonte": "Wikipedia, «Sicurezza informatica» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1408,7 +1408,7 @@
     "corretta": 2,
     "spiegazione": "Da malicious software.",
     "fonte": "Wikipedia, «Malware» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1425,7 +1425,7 @@
     "corretta": 3,
     "spiegazione": "Esempio: CryptoLocker.",
     "fonte": "Wikipedia, «Malware» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1442,7 +1442,7 @@
     "corretta": 0,
     "spiegazione": "Rende possibile il furto di password e dati.",
     "fonte": "Wikipedia, «Malware» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1459,7 +1459,7 @@
     "corretta": 1,
     "spiegazione": "Prima si parlava di virus per computer.",
     "fonte": "Wikipedia, «Malware» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1476,7 +1476,7 @@
     "corretta": 2,
     "spiegazione": "Avviene soprattutto via email, ma anche via SMS.",
     "fonte": "Wikipedia, «Phishing» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1493,7 +1493,7 @@
     "corretta": 3,
     "spiegazione": "Sfrutta la fiducia della vittima con messaggi che imitano quelli legittimi.",
     "fonte": "Wikipedia, «Phishing» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1510,7 +1510,7 @@
     "corretta": 0,
     "spiegazione": "Gli attaccanti raccolgono informazioni sull'obiettivo.",
     "fonte": "Wikipedia, «Phishing» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1527,7 +1527,7 @@
     "corretta": 1,
     "spiegazione": "Da voice phishing.",
     "fonte": "Wikipedia, «Phishing» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1544,7 +1544,7 @@
     "corretta": 2,
     "spiegazione": "Il nome deriva dal muro tagliafuoco.",
     "fonte": "Wikipedia, «Firewall» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1561,7 +1561,7 @@
     "corretta": 3,
     "spiegazione": "Garantisce la riservatezza.",
     "fonte": "Wikipedia, «Crittografia» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1578,7 +1578,7 @@
     "corretta": 0,
     "spiegazione": "Nella crittografia asimmetrica si usano chiavi diverse (pubblica e privata).",
     "fonte": "Wikipedia, «Crittografia» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1595,7 +1595,7 @@
     "corretta": 1,
     "spiegazione": "Chi vuole ricevere un messaggio segreto diffonde la chiave pubblica.",
     "fonte": "Wikipedia, «Crittografia» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1612,7 +1612,7 @@
     "corretta": 2,
     "spiegazione": "Il cifrario di Cesare.",
     "fonte": "Wikipedia, «Crittografia» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1629,7 +1629,7 @@
     "corretta": 3,
     "spiegazione": "Protegge anche dai ransomware.",
     "fonte": "Wikipedia, «Backup» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1646,7 +1646,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Backup».",
     "fonte": "Wikipedia, «Backup» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1663,7 +1663,7 @@
     "corretta": 1,
     "spiegazione": "Il backup incrementale copia solo le modifiche dall'ultimo backup.",
     "fonte": "Wikipedia, «Backup» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1680,7 +1680,7 @@
     "corretta": 2,
     "spiegazione": "Si contrappone al software proprietario.",
     "fonte": "Wikipedia, «Software libero» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1697,7 +1697,7 @@
     "corretta": 3,
     "spiegazione": "Obiettivo: un sistema operativo completamente libero.",
     "fonte": "Wikipedia, «Software libero» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1714,7 +1714,7 @@
     "corretta": 0,
     "spiegazione": "Eseguire, studiare/modificare, ridistribuire, migliorare e diffondere.",
     "fonte": "Wikipedia, «Software libero» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1731,7 +1731,7 @@
     "corretta": 1,
     "spiegazione": "Esempi: Microsoft Excel, LibreOffice Calc.",
     "fonte": "Wikipedia, «Foglio elettronico» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1748,7 +1748,7 @@
     "corretta": 2,
     "spiegazione": "Ad esempio =A1+B1.",
     "fonte": "Wikipedia, «Foglio elettronico» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1765,7 +1765,7 @@
     "corretta": 3,
     "spiegazione": "Senza $ i riferimenti sono relativi.",
     "fonte": "Wikipedia, «Foglio elettronico» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1782,7 +1782,7 @@
     "corretta": 0,
     "spiegazione": "Trasformò il personal computer in strumento di lavoro.",
     "fonte": "Wikipedia, «Foglio elettronico» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1799,7 +1799,7 @@
     "corretta": 1,
     "spiegazione": "L'interfaccia grafica mostra il testo come sarà stampato.",
     "fonte": "Wikipedia, «Videoscrittura» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1816,7 +1816,7 @@
     "corretta": 2,
     "spiegazione": "Deve essere finito, deterministico, non ambiguo e generale.",
     "fonte": "Wikipedia, «Algoritmo» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1833,7 +1833,7 @@
     "corretta": 3,
     "spiegazione": "Un algoritmo può essere descritto anche con diagrammi di flusso o pseudocodice.",
     "fonte": "Wikipedia, «Algoritmo» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1850,7 +1850,7 @@
     "corretta": 0,
     "spiegazione": "Matematico persiano del IX secolo.",
     "fonte": "Wikipedia, «Algoritmo» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1867,7 +1867,7 @@
     "corretta": 1,
     "spiegazione": "Poi viene tradotto in un linguaggio di programmazione.",
     "fonte": "Wikipedia, «Algoritmo» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1884,7 +1884,7 @@
     "corretta": 2,
     "spiegazione": "L'algoritmo è alla base della teoria della calcolabilità.",
     "fonte": "Wikipedia, «Algoritmo» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1901,7 +1901,7 @@
     "corretta": 3,
     "spiegazione": "È definito da sintassi e semantica.",
     "fonte": "Wikipedia, «Linguaggio di programmazione» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1918,7 +1918,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Linguaggio di programmazione».",
     "fonte": "Wikipedia, «Linguaggio di programmazione» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1935,7 +1935,7 @@
     "corretta": 1,
     "spiegazione": "È un linguaggio a basso livello.",
     "fonte": "Wikipedia, «Linguaggio di programmazione» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1952,7 +1952,7 @@
     "corretta": 2,
     "spiegazione": "Da esso derivò il BASIC (1964).",
     "fonte": "Wikipedia, «Linguaggio di programmazione» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1969,7 +1969,7 @@
     "corretta": 3,
     "spiegazione": "Si distinguono anche linguaggi compilati e interpretati.",
     "fonte": "Wikipedia, «Linguaggio di programmazione» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -1986,7 +1986,7 @@
     "corretta": 0,
     "spiegazione": "Linguaggio orientato agli oggetti.",
     "fonte": "Wikipedia, «Linguaggio di programmazione» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2003,7 +2003,7 @@
     "corretta": 1,
     "spiegazione": "Si gestisce con un DBMS.",
     "fonte": "Wikipedia, «Base di dati» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2020,7 +2020,7 @@
     "corretta": 2,
     "spiegazione": "Database Management System.",
     "fonte": "Wikipedia, «Base di dati» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2037,7 +2037,7 @@
     "corretta": 3,
     "spiegazione": "Ricercatore IBM.",
     "fonte": "Wikipedia, «Base di dati» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2054,7 +2054,7 @@
     "corretta": 0,
     "spiegazione": "È il modello attualmente più diffuso.",
     "fonte": "Wikipedia, «Base di dati» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2071,7 +2071,7 @@
     "corretta": 1,
     "spiegazione": "Serve a collegare le tabelle.",
     "fonte": "Wikipedia, «Base di dati» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2088,7 +2088,7 @@
     "corretta": 2,
     "spiegazione": "Structured Query Language.",
     "fonte": "Wikipedia, «Structured Query Language» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2105,7 +2105,7 @@
     "corretta": 3,
     "spiegazione": "Esempio: SELECT * FROM utenti WHERE eta > 30.",
     "fonte": "Wikipedia, «Structured Query Language» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2122,7 +2122,7 @@
     "corretta": 0,
     "spiegazione": "SELECT serve per interrogare.",
     "fonte": "Wikipedia, «Structured Query Language» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2139,7 +2139,7 @@
     "corretta": 1,
     "spiegazione": "DML per gestire i dati, DQL per interrogarli, DCL per i permessi.",
     "fonte": "Wikipedia, «Structured Query Language» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2156,7 +2156,7 @@
     "corretta": 2,
     "spiegazione": "Inizialmente si chiamava SEQUEL.",
     "fonte": "Wikipedia, «Structured Query Language» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2173,7 +2173,7 @@
     "corretta": 3,
     "spiegazione": "Esempi: riconoscimento vocale, traduzione, visione artificiale.",
     "fonte": "Wikipedia, «Intelligenza artificiale» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2190,7 +2190,7 @@
     "corretta": 0,
     "spiegazione": "Le radici risalgono al lavoro di Alan Turing.",
     "fonte": "Wikipedia, «Intelligenza artificiale» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2207,7 +2207,7 @@
     "corretta": 1,
     "spiegazione": "Definisce i sistemi di IA come sistemi automatizzati con un certo grado di autonomia.",
     "fonte": "Wikipedia, «Intelligenza artificiale» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2224,7 +2224,7 @@
     "corretta": 2,
     "spiegazione": "Altri: deep learning, reinforcement learning, apprendimento supervisionato.",
     "fonte": "Wikipedia, «Intelligenza artificiale» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2241,7 +2241,7 @@
     "corretta": 3,
     "spiegazione": "Operativo dal 25 maggio 2018.",
     "fonte": "Wikipedia, «Regolamento generale sulla protezione dei dati» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2258,7 +2258,7 @@
     "corretta": 0,
     "spiegazione": "Entrato in vigore il 24 maggio 2016.",
     "fonte": "Wikipedia, «Regolamento generale sulla protezione dei dati» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2275,7 +2275,7 @@
     "corretta": 1,
     "spiegazione": "GDPR, art. 33.",
     "fonte": "Wikipedia, «Regolamento generale sulla protezione dei dati» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2292,7 +2292,7 @@
     "corretta": 2,
     "spiegazione": "GDPR, art. 20.",
     "fonte": "Wikipedia, «Regolamento generale sulla protezione dei dati» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2309,7 +2309,7 @@
     "corretta": 3,
     "spiegazione": "Obbligatoria, ad esempio, per le autorità pubbliche.",
     "fonte": "Wikipedia, «Regolamento generale sulla protezione dei dati» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2326,7 +2326,7 @@
     "corretta": 0,
     "spiegazione": "Il dato personale è qualunque informazione relativa a una persona identificata o identificabile.",
     "fonte": "Wikipedia, «Regolamento generale sulla protezione dei dati» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2343,7 +2343,7 @@
     "corretta": 1,
     "spiegazione": "Indice nazionale degli indirizzi PEC.",
     "fonte": "Wikipedia, «Posta elettronica certificata» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2360,7 +2360,7 @@
     "corretta": 2,
     "spiegazione": "Indica il momento della consegna nella casella del destinatario.",
     "fonte": "Wikipedia, «Posta elettronica certificata» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2377,7 +2377,7 @@
     "corretta": 3,
     "spiegazione": "Voce «Posta elettronica certificata».",
     "fonte": "Wikipedia, «Posta elettronica certificata» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2394,7 +2394,7 @@
     "corretta": 0,
     "spiegazione": "Sistema Pubblico di Identità Digitale.",
     "fonte": "Wikipedia, «SPID» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2411,7 +2411,7 @@
     "corretta": 1,
     "spiegazione": "Permette l'accesso ai servizi delle PA di tutta l'Unione.",
     "fonte": "Wikipedia, «SPID» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2428,7 +2428,7 @@
     "corretta": 2,
     "spiegazione": "Il documento analogico è invece la rappresentazione non informatica.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 1",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2445,7 +2445,7 @@
     "corretta": 3,
     "spiegazione": "Art. 1, lett. p-bis).",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 1",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2462,7 +2462,7 @@
     "corretta": 0,
     "spiegazione": "La copia informatica di documento informatico ha invece una diversa sequenza di valori binari.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 1",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2479,7 +2479,7 @@
     "corretta": 1,
     "spiegazione": "Art. 1, lett. l-bis).",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 1",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2496,7 +2496,7 @@
     "corretta": 2,
     "spiegazione": "L'uso è consentito a chiunque, anche per finalità commerciali.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 1",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2513,7 +2513,7 @@
     "corretta": 3,
     "spiegazione": "Art. 1, lett. u-quater).",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 1",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2530,7 +2530,7 @@
     "corretta": 0,
     "spiegazione": "Art. 1, lett. dd).",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 1",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2547,7 +2547,7 @@
     "corretta": 1,
     "spiegazione": "Art. 1, lett. d).",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 1",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2564,7 +2564,7 @@
     "corretta": 2,
     "spiegazione": "Art. 3: diritto all'uso delle tecnologie.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 3",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2581,7 +2581,7 @@
     "corretta": 3,
     "spiegazione": "Per gli altri è una facoltà.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 3-bis",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2598,7 +2598,7 @@
     "corretta": 0,
     "spiegazione": "Art. 5 CAD.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 5",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2615,7 +2615,7 @@
     "corretta": 1,
     "spiegazione": "Le segnalazioni si presentano in un'area del sito AgID.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 17",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2632,7 +2632,7 @@
     "corretta": 2,
     "spiegazione": "Art. 17 CAD.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 17",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2649,7 +2649,7 @@
     "corretta": 3,
     "spiegazione": "Art. 40 CAD.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 40",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2666,7 +2666,7 @@
     "corretta": 0,
     "spiegazione": "Art. 41 CAD.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 41",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2683,7 +2683,7 @@
     "corretta": 1,
     "spiegazione": "Art. 23 CAD.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 23",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2700,7 +2700,7 @@
     "corretta": 2,
     "spiegazione": "Art. 65 CAD.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 65",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2717,7 +2717,7 @@
     "corretta": 3,
     "spiegazione": "Art. 64, comma 2-bis.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 64",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2734,7 +2734,7 @@
     "corretta": 0,
     "spiegazione": "Art. 62 CAD.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 62",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2751,7 +2751,7 @@
     "corretta": 1,
     "spiegazione": "Art. 68: valutazione comparativa tecnica ed economica.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 68",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2768,7 +2768,7 @@
     "corretta": 2,
     "spiegazione": "Art. 69: riuso delle soluzioni.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 69",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2785,7 +2785,7 @@
     "corretta": 3,
     "spiegazione": "Art. 71 CAD.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 71",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2802,7 +2802,7 @@
     "corretta": 0,
     "spiegazione": "Art. 6-bis CAD.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 6-bis",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2819,7 +2819,7 @@
     "corretta": 1,
     "spiegazione": "Codice privacy, art. 2-bis.",
     "fonte": "D.Lgs. 196/2003, art. 2-bis",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2836,7 +2836,7 @@
     "corretta": 2,
     "spiegazione": "Codice privacy, art. 153.",
     "fonte": "D.Lgs. 196/2003, art. 153",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2853,7 +2853,7 @@
     "corretta": 3,
     "spiegazione": "Codice privacy, art. 2-quinquies.",
     "fonte": "D.Lgs. 196/2003, art. 2-quinquies",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2870,7 +2870,7 @@
     "corretta": 0,
     "spiegazione": "La copia informatica di documento analogico ha invece solo il contenuto identico.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 1",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2887,7 +2887,7 @@
     "corretta": 1,
     "spiegazione": "Art. 22 CAD.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 22",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2904,7 +2904,7 @@
     "corretta": 2,
     "spiegazione": "Il mittente invia una ARP request in broadcast.",
     "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2921,7 +2921,7 @@
     "corretta": 3,
     "spiegazione": "Dynamic Host Configuration Protocol.",
     "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2938,7 +2938,7 @@
     "corretta": 0,
     "spiegazione": "Gli host hanno indirizzi privati; il router ha l'indirizzo pubblico.",
     "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2955,7 +2955,7 @@
     "corretta": 1,
     "spiegazione": "Lo switch invece inoltra in base alla destinazione.",
     "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2972,7 +2972,7 @@
     "corretta": 2,
     "spiegazione": "Ha basso overhead e ritardi bassi: adatto a streaming e voce.",
     "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -2989,7 +2989,7 @@
     "corretta": 3,
     "spiegazione": "Tre messaggi tra client e server.",
     "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3006,7 +3006,7 @@
     "corretta": 0,
     "spiegazione": "La consegna tra reti logiche diverse è affidata al router.",
     "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3023,7 +3023,7 @@
     "corretta": 1,
     "spiegazione": "Ogni numero dell'indirizzo è compreso tra 0 e 255.",
     "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3040,7 +3040,7 @@
     "corretta": 2,
     "spiegazione": "Internet Control Message Protocol.",
     "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3057,7 +3057,7 @@
     "corretta": 3,
     "spiegazione": "Livello 1.",
     "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3074,7 +3074,7 @@
     "corretta": 0,
     "spiegazione": "È un indirizzo di livello 2.",
     "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3091,7 +3091,7 @@
     "corretta": 1,
     "spiegazione": "Con tutti 1 nel campo host si identifica invece il broadcast.",
     "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3108,7 +3108,7 @@
     "corretta": 2,
     "spiegazione": "Usato nella fase di fetch.",
     "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3125,7 +3125,7 @@
     "corretta": 3,
     "spiegazione": "A ogni operazione corrisponde un'istruzione (es. ADD).",
     "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3142,7 +3142,7 @@
     "corretta": 0,
     "spiegazione": "I CISC richiedono più colpi di clock per istruzione.",
     "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3159,7 +3159,7 @@
     "corretta": 1,
     "spiegazione": "Fasi standard: fetch, decode, operate, write.",
     "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3176,7 +3176,7 @@
     "corretta": 2,
     "spiegazione": "La SRAM usa invece flip-flop.",
     "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3193,7 +3193,7 @@
     "corretta": 3,
     "spiegazione": "In caso di miss si accede alla memoria principale.",
     "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3210,7 +3210,7 @@
     "corretta": 0,
     "spiegazione": "Seguono le fasi di decodifica ed esecuzione.",
     "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3227,7 +3227,7 @@
     "corretta": 1,
     "spiegazione": "Supporta anche il formato BCD.",
     "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3244,7 +3244,7 @@
     "corretta": 2,
     "spiegazione": "Esempi: Windows, macOS, Linux.",
     "fonte": "Wikipedia, «Sistema operativo» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3261,7 +3261,7 @@
     "corretta": 3,
     "spiegazione": "Il multitasking esegue più compiti con una politica di scheduling.",
     "fonte": "Wikipedia, «Sistema operativo» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3278,7 +3278,7 @@
     "corretta": 0,
     "spiegazione": "Ne esiste una versione libera, FreeDOS.",
     "fonte": "Wikipedia, «Sistema operativo» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3295,7 +3295,7 @@
     "corretta": 1,
     "spiegazione": "Può interpretare anche un semplice linguaggio di scripting.",
     "fonte": "Wikipedia, «Sistema operativo» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3312,7 +3312,7 @@
     "corretta": 2,
     "spiegazione": "Il microkernel delega molte funzioni a moduli esterni.",
     "fonte": "Wikipedia, «Sistema operativo» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3329,7 +3329,7 @@
     "corretta": 3,
     "spiegazione": "La LAN è locale, la WAN geografica.",
     "fonte": "Wikipedia, «Rete informatica» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3346,7 +3346,7 @@
     "corretta": 0,
     "spiegazione": "Internet è l'interconnessione globale di reti.",
     "fonte": "Wikipedia, «Rete informatica» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3363,7 +3363,7 @@
     "corretta": 1,
     "spiegazione": "Si contrappone all'architettura client-server.",
     "fonte": "Wikipedia, «Rete informatica» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3380,7 +3380,7 @@
     "corretta": 2,
     "spiegazione": "Esempi: a stella, ad anello, a bus, a maglia.",
     "fonte": "Wikipedia, «Rete informatica» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3397,7 +3397,7 @@
     "corretta": 3,
     "spiegazione": "Esempio: browser (client) e server web.",
     "fonte": "Wikipedia, «Rete informatica» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3414,7 +3414,7 @@
     "corretta": 0,
     "spiegazione": "È citato come esempio di malware usato per sabotaggio, non per guadagno diretto.",
     "fonte": "Wikipedia, «Malware» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3431,7 +3431,7 @@
     "corretta": 1,
     "spiegazione": "Insieme formano reti di macchine controllate da remoto.",
     "fonte": "Wikipedia, «Malware» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3448,7 +3448,7 @@
     "corretta": 2,
     "spiegazione": "Per questo servono firewall e antivirus su ogni computer collegato.",
     "fonte": "Wikipedia, «Malware» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3465,7 +3465,7 @@
     "corretta": 3,
     "spiegazione": "Il malware agisce contro le necessità dell'utente in modo intenzionale.",
     "fonte": "Wikipedia, «Malware» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3482,7 +3482,7 @@
     "corretta": 0,
     "spiegazione": "Può riguardare hardware, software, configurazione o procedure; viene sfruttata anche tramite exploit.",
     "fonte": "Wikipedia, «Sicurezza informatica» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3499,7 +3499,7 @@
     "corretta": 1,
     "spiegazione": "Il rischio è la possibilità che una minaccia sfrutti una vulnerabilità.",
     "fonte": "Wikipedia, «Sicurezza informatica» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3516,7 +3516,7 @@
     "corretta": 2,
     "spiegazione": "Prevede un processo di gestione del rischio; la ISO/IEC 42001 riguarda invece l'IA.",
     "fonte": "Wikipedia, «Sicurezza informatica» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3533,7 +3533,7 @@
     "corretta": 3,
     "spiegazione": "Per evitarlo si usano ridondanza e architetture adeguate.",
     "fonte": "Wikipedia, «Sicurezza informatica» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3550,7 +3550,7 @@
     "corretta": 0,
     "spiegazione": "È un esempio di ridondanza a favore della disponibilità.",
     "fonte": "Wikipedia, «Sicurezza informatica» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3567,7 +3567,7 @@
     "corretta": 1,
     "spiegazione": "È strettamente legata alla disponibilità.",
     "fonte": "Wikipedia, «Sicurezza informatica» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3584,7 +3584,7 @@
     "corretta": 2,
     "spiegazione": "L'integrità garantisce che i dati non siano alterati in modo non autorizzato.",
     "fonte": "Wikipedia, «Sicurezza informatica» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3601,7 +3601,7 @@
     "corretta": 3,
     "spiegazione": "Indicava un muro destinato a confinare un incendio all'interno di un edificio.",
     "fonte": "Wikipedia, «Firewall» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3618,7 +3618,7 @@
     "corretta": 0,
     "spiegazione": "Il primo esemplare fu sviluppato nel 1988 dalla Digital Equipment Corporation.",
     "fonte": "Wikipedia, «Firewall» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3635,7 +3635,7 @@
     "corretta": 1,
     "spiegazione": "Il primo stateful firewall fu sviluppato tra il 1989 e il 1990 ai Bell Laboratories.",
     "fonte": "Wikipedia, «Firewall» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3652,7 +3652,7 @@
     "corretta": 2,
     "spiegazione": "Riescono a individuare minacce dentro il traffico web.",
     "fonte": "Wikipedia, «Firewall» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3669,7 +3669,7 @@
     "corretta": 3,
     "spiegazione": "Con una copia di riserva si possono ripristinare i dati cifrati dal ransomware.",
     "fonte": "Wikipedia, «Backup» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3686,7 +3686,7 @@
     "corretta": 0,
     "spiegazione": "Crea ridondanza delle informazioni per poterle ripristinare.",
     "fonte": "Wikipedia, «Backup» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3703,7 +3703,7 @@
     "corretta": 1,
     "spiegazione": "Indica una determinata sessione di backup in un dato momento.",
     "fonte": "Wikipedia, «Backup» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3720,7 +3720,7 @@
     "corretta": 2,
     "spiegazione": "Ad esempio un'organizzazione che usa sia Microsoft sia Amazon o Google.",
     "fonte": "Wikipedia, «Cloud computing» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3737,7 +3737,7 @@
     "corretta": 3,
     "spiegazione": "Può comprendere anche un datacenter on premise.",
     "fonte": "Wikipedia, «Cloud computing» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3754,7 +3754,7 @@
     "corretta": 0,
     "spiegazione": "Precisa anche che un datacenter non è necessariamente cloud.",
     "fonte": "Wikipedia, «Cloud computing» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3771,7 +3771,7 @@
     "corretta": 1,
     "spiegazione": "Anche gli inglesi decifrarono più volte i messaggi tedeschi.",
     "fonte": "Wikipedia, «Crittografia» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3788,7 +3788,7 @@
     "corretta": 2,
     "spiegazione": "Claude Shannon dimostrò nel 1949 che è l'unico metodo totalmente sicuro.",
     "fonte": "Wikipedia, «Crittografia» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3805,7 +3805,7 @@
     "corretta": 3,
     "spiegazione": "Insieme alla crittografia forma la crittologia.",
     "fonte": "Wikipedia, «Crittografia» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3822,7 +3822,7 @@
     "corretta": 0,
     "spiegazione": "Nel 1949 pubblicò un lavoro sulla teoria della comunicazione nei sistemi crittografici.",
     "fonte": "Wikipedia, «Crittografia» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3839,7 +3839,7 @@
     "corretta": 1,
     "spiegazione": "Dopo il frazionamento di AT&T la società ricominciò a venderlo.",
     "fonte": "Wikipedia, «Software libero» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3856,7 +3856,7 @@
     "corretta": 2,
     "spiegazione": "Da allora copia, modifica e distribuzione dei programmi divennero facoltà esclusive dell'autore: nacque il software proprietario.",
     "fonte": "Wikipedia, «Software libero» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3873,7 +3873,7 @@
     "corretta": 3,
     "spiegazione": "Serve in caso di smarrimento delle ricevute.",
     "fonte": "Wikipedia, «Posta elettronica certificata» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3890,7 +3890,7 @@
     "corretta": 0,
     "spiegazione": "Le regole tecniche sono allegate al D.M. 2 novembre 2005.",
     "fonte": "Wikipedia, «Posta elettronica certificata» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3907,7 +3907,7 @@
     "corretta": 1,
     "spiegazione": "Il protocollo REM qualifica l'identità di mittente e destinatario con SPID o CIE.",
     "fonte": "Wikipedia, «Posta elettronica certificata» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3924,7 +3924,7 @@
     "corretta": 2,
     "spiegazione": "Il gestore del destinatario invia poi la ricevuta di avvenuta consegna.",
     "fonte": "Wikipedia, «Posta elettronica certificata» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3941,7 +3941,7 @@
     "corretta": 3,
     "spiegazione": "Divenne poi presidente del comitato di indirizzo dell'AgID.",
     "fonte": "Wikipedia, «SPID» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3958,7 +3958,7 @@
     "corretta": 0,
     "spiegazione": "Aruba e Sielte furono accreditati nel 2016, Namirial e Register.it nel 2017.",
     "fonte": "Wikipedia, «SPID» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3975,7 +3975,7 @@
     "corretta": 1,
     "spiegazione": "Gli over 14 possono accedere a tutti i servizi che li riguardano.",
     "fonte": "Wikipedia, «SPID» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -3992,7 +3992,7 @@
     "corretta": 2,
     "spiegazione": "Fu pubblicato in Gazzetta Ufficiale il 9 dicembre 2014.",
     "fonte": "Wikipedia, «SPID» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4009,7 +4009,7 @@
     "corretta": 3,
     "spiegazione": "La prima versione del protocollo 802.11 è del 1997.",
     "fonte": "Wikipedia, «Wi-Fi» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4026,7 +4026,7 @@
     "corretta": 0,
     "spiegazione": "La prima versione 802.11 del 1997 arrivava a 2 Mbit/s.",
     "fonte": "Wikipedia, «Wi-Fi» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4043,7 +4043,7 @@
     "corretta": 1,
     "spiegazione": "Il nome fu coniato dalla società Interbrand per la Wi-Fi Alliance.",
     "fonte": "Wikipedia, «Wi-Fi» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4060,7 +4060,7 @@
     "corretta": 2,
     "spiegazione": "All'esterno può coprire un raggio di circa 100 metri.",
     "fonte": "Wikipedia, «Wi-Fi» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4077,7 +4077,7 @@
     "corretta": 3,
     "spiegazione": "Con USB Power Delivery si possono richiedere tensioni maggiori.",
     "fonte": "Wikipedia, «USB» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4094,7 +4094,7 @@
     "corretta": 0,
     "spiegazione": "Migliora la funzionalità plug and play.",
     "fonte": "Wikipedia, «USB» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4111,7 +4111,7 @@
     "corretta": 1,
     "spiegazione": "Apple rimosse le porte legacy, spingendo la diffusione dello standard.",
     "fonte": "Wikipedia, «USB» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4128,7 +4128,7 @@
     "corretta": 2,
     "spiegazione": "USB 2.0 è dell'aprile 2000, USB 3.0 del novembre 2008.",
     "fonte": "Wikipedia, «USB» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4145,7 +4145,7 @@
     "corretta": 3,
     "spiegazione": "Dal 2012 le GPU avevano già permesso al deep learning di superare le tecniche precedenti.",
     "fonte": "Wikipedia, «Intelligenza artificiale» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4162,7 +4162,7 @@
     "corretta": 0,
     "spiegazione": "Il settore ha conosciuto molti alti e bassi dal 1956.",
     "fonte": "Wikipedia, «Intelligenza artificiale» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4179,7 +4179,7 @@
     "corretta": 1,
     "spiegazione": "Tutti i sistemi oggi esistenti sono IA debole, specializzata in compiti specifici.",
     "fonte": "Wikipedia, «Intelligenza artificiale» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4196,7 +4196,7 @@
     "corretta": 2,
     "spiegazione": "Riguarda gli AI Management Systems (AIMS).",
     "fonte": "Wikipedia, «Intelligenza artificiale» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4213,7 +4213,7 @@
     "corretta": 3,
     "spiegazione": "L'ampiezza di banda era di 50 kbps.",
     "fonte": "Wikipedia, «Internet» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4230,7 +4230,7 @@
     "corretta": 0,
     "spiegazione": "L'agenzia si occupava di progetti di ricerca avanzata per la difesa.",
     "fonte": "Wikipedia, «Internet» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4247,7 +4247,7 @@
     "corretta": 1,
     "spiegazione": "Erano ricercatori del MIT.",
     "fonte": "Wikipedia, «Internet» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4264,7 +4264,7 @@
     "corretta": 2,
     "spiegazione": "Fino ad allora la rete era di proprietà statale e destinata al mondo scientifico.",
     "fonte": "Wikipedia, «Internet» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4281,7 +4281,7 @@
     "corretta": 3,
     "spiegazione": "In Italia il GDPR ha abrogato le norme incompatibili del Codice privacy.",
     "fonte": "Wikipedia, «Regolamento generale sulla protezione dei dati» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4298,7 +4298,7 @@
     "corretta": 0,
     "spiegazione": "Il regime prevede una disciplina severa con sanzioni rilevanti.",
     "fonte": "Wikipedia, «Regolamento generale sulla protezione dei dati» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4315,7 +4315,7 @@
     "corretta": 1,
     "spiegazione": "La «privacy by design» richiede invece che i requisiti privacy entrino nella progettazione.",
     "fonte": "Wikipedia, «Regolamento generale sulla protezione dei dati» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4332,7 +4332,7 @@
     "corretta": 2,
     "spiegazione": "Il titolare deve poter dimostrare la conformità del trattamento.",
     "fonte": "Wikipedia, «Regolamento generale sulla protezione dei dati» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4349,7 +4349,7 @@
     "corretta": 3,
     "spiegazione": "La prima legge italiana sulla privacy era la L. 675/1996.",
     "fonte": "Wikipedia, «Regolamento generale sulla protezione dei dati» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4366,7 +4366,7 @@
     "corretta": 0,
     "spiegazione": "Fu pubblicato sulla Harvard Law Review.",
     "fonte": "Wikipedia, «Regolamento generale sulla protezione dei dati» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4383,7 +4383,7 @@
     "corretta": 1,
     "spiegazione": "Evita che i pacchetti vaghino all'infinito; lo sfrutta il comando traceroute.",
     "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4400,7 +4400,7 @@
     "corretta": 2,
     "spiegazione": "Gli errori nel payload sono gestiti dai livelli superiori.",
     "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4417,7 +4417,7 @@
     "corretta": 3,
     "spiegazione": "Hub e repeater lavorano al livello 1, bridge e switch al livello 2, il gateway al livello 7.",
     "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4434,7 +4434,7 @@
     "corretta": 0,
     "spiegazione": "Devono gestire gli indirizzi MAC.",
     "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4451,7 +4451,7 @@
     "corretta": 1,
     "spiegazione": "Il repeater si limita a rigenerare e trasmettere i bit.",
     "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4468,7 +4468,7 @@
     "corretta": 2,
     "spiegazione": "IP è un servizio non connesso di tipo datagram.",
     "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4485,7 +4485,7 @@
     "corretta": 3,
     "spiegazione": "Affidabilità e controllo di flusso sono demandati al livello di trasporto (TCP).",
     "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4502,7 +4502,7 @@
     "corretta": 0,
     "spiegazione": "I router effettuano solo la frammentazione.",
     "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4519,7 +4519,7 @@
     "corretta": 1,
     "spiegazione": "La subnet mask indica quali bit appartengono al prefisso di rete.",
     "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4536,7 +4536,7 @@
     "corretta": 2,
     "spiegazione": "La versione UTP non ha schermature; il cavo coassiale ha invece un filo centrale schermato.",
     "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4553,7 +4553,7 @@
     "corretta": 3,
     "spiegazione": "La categoria 5 arriva a 100 Mb/s.",
     "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4570,7 +4570,7 @@
     "corretta": 0,
     "spiegazione": "IMAP migliora POP3, che è stateless.",
     "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4587,7 +4587,7 @@
     "corretta": 1,
     "spiegazione": "Il DNS è un database distribuito.",
     "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4604,7 +4604,7 @@
     "corretta": 2,
     "spiegazione": "Tutte le informazioni passano attraverso il centro stella.",
     "fonte": "L. Ghio, Appunti di Reti di calcolatori (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4621,7 +4621,7 @@
     "corretta": 3,
     "spiegazione": "Il registro MAR passa alla memoria l'indirizzo della cella da leggere.",
     "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4638,7 +4638,7 @@
     "corretta": 0,
     "spiegazione": "Le EEPROM invece si riprogrammano senza raggi ultravioletti.",
     "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4655,7 +4655,7 @@
     "corretta": 1,
     "spiegazione": "Sono la base di chiavette USB e SSD.",
     "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4672,7 +4672,7 @@
     "corretta": 2,
     "spiegazione": "Una RAM dinamica usa un condensatore e un transistor per bit, ed è più densa.",
     "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4689,7 +4689,7 @@
     "corretta": 3,
     "spiegazione": "Su questo principio si basano cache e memoria virtuale.",
     "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4706,7 +4706,7 @@
     "corretta": 0,
     "spiegazione": "Nel write-back i dati modificati vanno in memoria solo prima che la linea venga sovrascritta.",
     "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4723,7 +4723,7 @@
     "corretta": 1,
     "spiegazione": "Sono grandi da 1 KB a 64 KB.",
     "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4740,7 +4740,7 @@
     "corretta": 2,
     "spiegazione": "Il processore vede un'unica memoria grande quanto la memoria complessiva.",
     "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4757,7 +4757,7 @@
     "corretta": 3,
     "spiegazione": "Il DMA Controller può diventare bus master, con arbitraggio del bus.",
     "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4774,7 +4774,7 @@
     "corretta": 0,
     "spiegazione": "Svantaggio: il processore resta impegnato nel ciclo di attesa.",
     "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4791,7 +4791,7 @@
     "corretta": 1,
     "spiegazione": "Ogni istruzione in codice macchina occupa da 1 a 6 byte.",
     "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4808,7 +4808,7 @@
     "corretta": 2,
     "spiegazione": "L'alternativa è l'unità di controllo microprogrammata.",
     "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4825,7 +4825,7 @@
     "corretta": 3,
     "spiegazione": "Reagisce alle richieste di interrupt provenienti dall'esterno.",
     "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4842,7 +4842,7 @@
     "corretta": 0,
     "spiegazione": "Lo Stato può avvalersi anche del servizio radiotelevisivo.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 8",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4859,7 +4859,7 @@
     "corretta": 1,
     "spiegazione": "Anche con consultazioni telematiche preventive sugli schemi di atti.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 9",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4876,7 +4876,7 @@
     "corretta": 2,
     "spiegazione": "Opera in coerenza con l'Agenda digitale europea.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 14-bis",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4893,7 +4893,7 @@
     "corretta": 3,
     "spiegazione": "Si riferisce anche al documento o all'insieme di documenti cui è apposta.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 24",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4910,7 +4910,7 @@
     "corretta": 0,
     "spiegazione": "Art. 24, comma 2, del CAD.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 24",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4927,7 +4927,7 @@
     "corretta": 1,
     "spiegazione": "Art. 24, comma 3, del CAD.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 24",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4944,7 +4944,7 @@
     "corretta": 2,
     "spiegazione": "Deve anche adottare misure idonee a evitare danno ad altri.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 32",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4961,7 +4961,7 @@
     "corretta": 3,
     "spiegazione": "Art. 43, comma 1-bis, del CAD.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 43",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4978,7 +4978,7 @@
     "corretta": 0,
     "spiegazione": "Sono valide una volta verificata la provenienza; la violazione comporta responsabilità dirigenziale e disciplinare.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 47",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -4995,7 +4995,7 @@
     "corretta": 1,
     "spiegazione": "È il principio «open by default» dell'art. 52 del CAD.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 52",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -5012,7 +5012,7 @@
     "corretta": 2,
     "spiegazione": "Anche completezza di informazione, chiarezza di linguaggio e affidabilità.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 53",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -5029,7 +5029,7 @@
     "corretta": 3,
     "spiegazione": "È il punto di accesso a cui fa riferimento il diritto a servizi online semplici e integrati.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 64-bis",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -5046,7 +5046,7 @@
     "corretta": 0,
     "spiegazione": "Art. 73 del CAD.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 73",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -5063,7 +5063,7 @@
     "corretta": 1,
     "spiegazione": "AgID attua anche il Piano nazionale per la sicurezza cibernetica.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 51",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -5080,7 +5080,7 @@
     "corretta": 2,
     "spiegazione": "Per i dirigenti riguardano anche competenze manageriali e di informatica giuridica.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 13",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "informatica",
@@ -5097,6 +5097,856 @@
     "corretta": 3,
     "spiegazione": "Raccoglie suggerimenti e proposte dai portatori di interesse.",
     "fonte": "D.Lgs. 82/2005 (CAD), art. 18",
-    "versione": "v2"
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-301",
+    "argomento": "Competenze digitali",
+    "livello": 2,
+    "testo": "Quante competenze compongono la competenza digitale secondo il quadro europeo DigComp?",
+    "opzioni": [
+      "21 competenze",
+      "5 competenze",
+      "12 competenze",
+      "50 competenze"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il DigComp definisce la competenza digitale come una combinazione di 21 competenze raggruppate in cinque aree.",
+    "fonte": "DigComp 2.2, Il Quadro delle Competenze Digitali per i Cittadini (JRC, trad. italiana)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-302",
+    "argomento": "Competenze digitali",
+    "livello": 2,
+    "testo": "In quante aree principali sono raggruppate le competenze del DigComp?",
+    "opzioni": [
+      "Tre",
+      "Cinque",
+      "Dieci",
+      "Otto"
+    ],
+    "corretta": 1,
+    "spiegazione": "Le 21 competenze del DigComp sono raggruppate in cinque aree principali.",
+    "fonte": "DigComp 2.2, Il Quadro delle Competenze Digitali per i Cittadini (JRC, trad. italiana)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-303",
+    "argomento": "Competenze digitali",
+    "livello": 3,
+    "testo": "Quale tra queste è una delle cinque aree del DigComp?",
+    "opzioni": [
+      "Programmazione avanzata",
+      "Hardware",
+      "Sicurezza",
+      "Contabilità digitale"
+    ],
+    "corretta": 2,
+    "spiegazione": "Dal 2016 le cinque aree sono: alfabetizzazione su informazione e dati; comunicazione e collaborazione; creazione di contenuti digitali; sicurezza; risolvere problemi.",
+    "fonte": "DigComp 2.2, Il Quadro delle Competenze Digitali per i Cittadini (JRC, trad. italiana)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-304",
+    "argomento": "Competenze digitali",
+    "livello": 3,
+    "testo": "In che anno è uscito il primo quadro di riferimento DigComp?",
+    "opzioni": [
+      "Nel 1999",
+      "Nel 2020",
+      "Nel 2006",
+      "Nel 2013"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il lavoro sulle competenze digitali iniziò nel 2010; nel 2013 è uscito il primo quadro di riferimento DigComp.",
+    "fonte": "DigComp 2.2, Il Quadro delle Competenze Digitali per i Cittadini (JRC, trad. italiana)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-305",
+    "argomento": "Competenze digitali",
+    "livello": 3,
+    "testo": "Quanti livelli di padronanza prevede il DigComp?",
+    "opzioni": [
+      "Otto",
+      "Dieci",
+      "Tre",
+      "Cinque"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il DigComp prevede otto livelli di padronanza, ispirati alla struttura e al vocabolario dell'EQF e alla tassonomia di Bloom.",
+    "fonte": "DigComp 2.2, Il Quadro delle Competenze Digitali per i Cittadini (JRC, trad. italiana)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-306",
+    "argomento": "Competenze digitali",
+    "livello": 4,
+    "testo": "Quale servizio della Commissione europea ha elaborato il DigComp?",
+    "opzioni": [
+      "L'ENISA",
+      "Il Joint Research Centre (JRC)",
+      "La Banca centrale europea",
+      "Eurostat"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il DigComp 2.2 è un rapporto Science for Policy del Joint Research Centre, il servizio della Commissione europea per la scienza e la conoscenza.",
+    "fonte": "DigComp 2.2, Il Quadro delle Competenze Digitali per i Cittadini (JRC, trad. italiana)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-307",
+    "argomento": "Competenze digitali",
+    "livello": 4,
+    "testo": "Cosa aggiunge principalmente l'aggiornamento DigComp 2.2?",
+    "opzioni": [
+      "Un esame di certificazione obbligatorio",
+      "Una sesta area di competenza",
+      "Più di 250 nuovi esempi di conoscenze, abilità e attitudini",
+      "Nuovi livelli di padronanza"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il DigComp 2.2 fornisce più di 250 nuovi esempi di conoscenze, abilità e attitudini, anche su temi emergenti come l'IA; non cambia aree né livelli.",
+    "fonte": "DigComp 2.2, Il Quadro delle Competenze Digitali per i Cittadini (JRC, trad. italiana)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-308",
+    "argomento": "Competenze digitali",
+    "livello": 3,
+    "testo": "In quale area del DigComp rientra la competenza «Netiquette»?",
+    "opzioni": [
+      "Sicurezza",
+      "Risolvere problemi",
+      "Creazione di contenuti digitali",
+      "Comunicazione e collaborazione"
+    ],
+    "corretta": 3,
+    "spiegazione": "La 2.5 Netiquette fa parte dell'area 2, Comunicazione e collaborazione, insieme ad esempio alla 2.6 Gestire l'identità digitale.",
+    "fonte": "DigComp 2.2, Il Quadro delle Competenze Digitali per i Cittadini (JRC, trad. italiana)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-309",
+    "argomento": "Competenze digitali",
+    "livello": 4,
+    "testo": "In quale area del DigComp rientra la competenza «Proteggere l'ambiente»?",
+    "opzioni": [
+      "Sicurezza",
+      "Alfabetizzazione su informazione e dati",
+      "Creazione di contenuti digitali",
+      "Comunicazione e collaborazione"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'area 4, Sicurezza, comprende: proteggere i dispositivi, i dati personali e la privacy, la salute e il benessere, l'ambiente (4.4).",
+    "fonte": "DigComp 2.2, Il Quadro delle Competenze Digitali per i Cittadini (JRC, trad. italiana)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-310",
+    "argomento": "Competenze digitali",
+    "livello": 3,
+    "testo": "In quale area del DigComp rientra la competenza «Copyright e licenze»?",
+    "opzioni": [
+      "Comunicazione e collaborazione",
+      "Creazione di contenuti digitali",
+      "Sicurezza",
+      "Risolvere problemi"
+    ],
+    "corretta": 1,
+    "spiegazione": "L'area 3, Creazione di contenuti digitali, comprende sviluppare, integrare e rielaborare contenuti, copyright e licenze (3.3) e programmazione (3.4).",
+    "fonte": "DigComp 2.2, Il Quadro delle Competenze Digitali per i Cittadini (JRC, trad. italiana)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-311",
+    "argomento": "Competenze digitali",
+    "livello": 3,
+    "testo": "Come si chiamano gli effetti per cui alcuni algoritmi rafforzano i punti di vista già esistenti di un utente?",
+    "opzioni": [
+      "Firewall e proxy",
+      "Cache e buffer",
+      "Camere d'eco e bolle di filtraggio",
+      "Phishing e spoofing"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il DigComp ricorda che alcuni algoritmi di IA possono rafforzare i punti di vista esistenti creando «camere d'eco» o «bolle di filtraggio».",
+    "fonte": "DigComp 2.2, Il Quadro delle Competenze Digitali per i Cittadini (JRC, trad. italiana)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-312",
+    "argomento": "Competenze digitali",
+    "livello": 3,
+    "testo": "Perché è utile cercare online il proprio nome e cognome, secondo il DigComp?",
+    "opzioni": [
+      "Per cancellare i cookie",
+      "Per aumentare la velocità della connessione",
+      "Per aggiornare il sistema operativo",
+      "Per controllare la propria «impronta digitale» negli ambienti online"
+    ],
+    "corretta": 3,
+    "spiegazione": "Tra le abilità: effettuare una ricerca sul proprio nome per controllare la propria impronta digitale online, ad esempio post o immagini problematici.",
+    "fonte": "DigComp 2.2, Il Quadro delle Competenze Digitali per i Cittadini (JRC, trad. italiana)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-313",
+    "argomento": "Sicurezza",
+    "livello": 2,
+    "testo": "Cosa si usa, insieme alle credenziali, nell'autenticazione a due fattori?",
+    "opzioni": [
+      "Una password temporanea OTP o un codice aggiuntivo",
+      "Il proprio indirizzo email",
+      "Nessun altro elemento",
+      "Una seconda password uguale alla prima"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'autenticazione a due fattori usa, ad esempio, una password temporanea OTP o un codice aggiuntivo assieme alle credenziali di accesso.",
+    "fonte": "DigComp 2.2, Il Quadro delle Competenze Digitali per i Cittadini (JRC, trad. italiana)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-314",
+    "argomento": "Sicurezza",
+    "livello": 2,
+    "testo": "Cosa si intende per cyberbullismo?",
+    "opzioni": [
+      "Un attacco informatico a una banca",
+      "Bullismo perpetrato con l'uso di tecnologie digitali",
+      "Un virus che cancella i file",
+      "La pubblicità ingannevole online"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il cyberbullismo è il bullismo perpetrato con tecnologie digitali: un comportamento ripetuto volto a spaventare, irritare o svergognare le persone prese di mira.",
+    "fonte": "DigComp 2.2, Il Quadro delle Competenze Digitali per i Cittadini (JRC, trad. italiana)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-315",
+    "argomento": "Privacy",
+    "livello": 3,
+    "testo": "Quali funzionalità permettono di limitare il tracciamento delle proprie attività su Internet?",
+    "opzioni": [
+      "La deframmentazione del disco",
+      "L'aumento della risoluzione dello schermo",
+      "La navigazione privata e la cancellazione dei cookie",
+      "L'uso di caratteri maiuscoli nelle password"
+    ],
+    "corretta": 2,
+    "spiegazione": "Esistono modi per limitare il tracciamento online, come la navigazione privata, la cancellazione dei cookie e il consenso personalizzato per i cookie.",
+    "fonte": "DigComp 2.2, Il Quadro delle Competenze Digitali per i Cittadini (JRC, trad. italiana)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-316",
+    "argomento": "Competenze digitali",
+    "livello": 4,
+    "testo": "Come si chiamano, in inglese, le misure tecniche che bloccano o limitano l'accesso a contenuti digitali protetti?",
+    "opzioni": [
+      "VPN",
+      "API",
+      "DNS",
+      "TPM (Technical Protection Measures)"
+    ],
+    "corretta": 3,
+    "spiegazione": "Esistono meccanismi per limitare l'accesso ai contenuti digitali, come password, blocchi geografici e misure di protezione tecniche (TPM).",
+    "fonte": "DigComp 2.2, Il Quadro delle Competenze Digitali per i Cittadini (JRC, trad. italiana)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-317",
+    "argomento": "Basi di dati",
+    "livello": 3,
+    "testo": "Cosa sono gli archivi di dati aperti (open data)?",
+    "opzioni": [
+      "Archivi in cui chiunque può ottenere dati, ad esempio per risolvere problemi",
+      "Database accessibili solo alla polizia",
+      "Backup di sistema crittografati",
+      "Archivi di password"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il DigComp ricorda che esistono archivi di dati aperti in cui chiunque può ottenere dati utili, ad esempio per attività di risoluzione dei problemi.",
+    "fonte": "DigComp 2.2, Il Quadro delle Competenze Digitali per i Cittadini (JRC, trad. italiana)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-318",
+    "argomento": "Intelligenza artificiale",
+    "livello": 3,
+    "testo": "Cosa ha fatto esplodere l'interesse per il deep learning dopo il 2012?",
+    "opzioni": [
+      "L'invenzione del transistor",
+      "L'uso delle GPU per addestrare reti neurali",
+      "L'abbandono delle reti neurali",
+      "La nascita del World Wide Web"
+    ],
+    "corretta": 1,
+    "spiegazione": "Interesse e investimenti sono cresciuti dopo il 2012, quando l'uso delle GPU per addestrare reti neurali ha permesso al deep learning di superare le tecniche precedenti.",
+    "fonte": "Wikipedia, «Intelligenza artificiale» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-319",
+    "argomento": "Intelligenza artificiale",
+    "livello": 3,
+    "testo": "Quale tipo di IA rappresenta oggi la totalità dei sistemi esistenti?",
+    "opzioni": [
+      "L'IA cosciente",
+      "La superintelligenza",
+      "L'IA debole (o ristretta), specializzata in compiti specifici",
+      "L'IA generale (AGI)"
+    ],
+    "corretta": 2,
+    "spiegazione": "L'IA debole o ristretta, specializzata in compiti specifici, rappresenta il 100% dei sistemi oggi esistenti; l'AGI è ipotetica.",
+    "fonte": "Wikipedia, «Intelligenza artificiale» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-320",
+    "argomento": "Intelligenza artificiale",
+    "livello": 4,
+    "testo": "Chi creò nel 1943 quello che è ritenuto il primo lavoro sull'intelligenza artificiale, un modello di neuroni artificiali?",
+    "opzioni": [
+      "Newell e Simon",
+      "Minsky e McCarthy",
+      "Turing e Church",
+      "McCulloch e Pitts"
+    ],
+    "corretta": 3,
+    "spiegazione": "Nel 1943 McCulloch e Pitts crearono il primo lavoro sull'IA: un modello di neuroni artificiali «accesi» o «spenti».",
+    "fonte": "Wikipedia, «Intelligenza artificiale» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-321",
+    "argomento": "Intelligenza artificiale",
+    "livello": 4,
+    "testo": "Come si chiamava la prima rete neurale artificiale, creata nel 1950 da Minsky ed Edmonds?",
+    "opzioni": [
+      "SNARC",
+      "ENIAC",
+      "Logic Theorist",
+      "Perceptron"
+    ],
+    "corretta": 0,
+    "spiegazione": "Nel 1950 Marvin Minsky e Dean Edmonds, studenti di Harvard, crearono la prima rete neurale artificiale, chiamata SNARC.",
+    "fonte": "Wikipedia, «Intelligenza artificiale» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-322",
+    "argomento": "Intelligenza artificiale",
+    "livello": 4,
+    "testo": "Quale programma di Newell e Simon, presentato a Dartmouth nel 1956, sapeva dimostrare teoremi?",
+    "opzioni": [
+      "ELIZA",
+      "Logic Theorist",
+      "Deep Blue",
+      "SHRDLU"
+    ],
+    "corretta": 1,
+    "spiegazione": "A Dartmouth Allen Newell e Herbert Simon presentarono il Logic Theorist, capace di dimostrare teoremi partendo dai principi della matematica.",
+    "fonte": "Wikipedia, «Intelligenza artificiale» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-323",
+    "argomento": "Intelligenza artificiale",
+    "livello": 3,
+    "testo": "Chi introdusse l'espressione «intelligenza artificiale»?",
+    "opzioni": [
+      "Marvin Minsky, nel 1969",
+      "Claude Shannon, nel 1948",
+      "John McCarthy, al convegno di Dartmouth del 1956",
+      "Alan Turing, nel 1936"
+    ],
+    "corretta": 2,
+    "spiegazione": "Nel convegno di Dartmouth del 1956 McCarthy introdusse l'espressione «intelligenza artificiale».",
+    "fonte": "Wikipedia, «Intelligenza artificiale» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-324",
+    "argomento": "Intelligenza artificiale",
+    "livello": 4,
+    "testo": "In quale articolo del 1936 Alan Turing discusse la calcolabilità e introdusse la «macchina di Turing»?",
+    "opzioni": [
+      "A Mathematical Theory of Communication",
+      "Computing Machinery and Intelligence",
+      "Perceptrons",
+      "On Computable Numbers"
+    ],
+    "corretta": 3,
+    "spiegazione": "Nel 1936 Alan Turing, nell'articolo On Computable Numbers, discusse calcolabilità, computabilità e il concetto di macchina di Turing.",
+    "fonte": "Wikipedia, «Intelligenza artificiale» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-325",
+    "argomento": "Intelligenza artificiale",
+    "livello": 3,
+    "testo": "Come definisce l'intelligenza artificiale il Parlamento europeo?",
+    "opzioni": [
+      "La capacità di un sistema di mostrare capacità umane come ragionamento, apprendimento, pianificazione e creatività",
+      "Un robot con sembianze umane",
+      "Una rete di computer collegati a Internet",
+      "Un qualsiasi programma per computer"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il Parlamento europeo definisce l'IA come la possibilità per un sistema di mostrare capacità tipicamente umane: ragionamento, apprendimento, pianificazione e creatività.",
+    "fonte": "Wikipedia, «Intelligenza artificiale» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-326",
+    "argomento": "Intelligenza artificiale",
+    "livello": 3,
+    "testo": "Quale uso improprio si fa spesso, nel linguaggio comune, del termine «intelligenza artificiale»?",
+    "opzioni": [
+      "Lo si usa per indicare i videogiochi",
+      "Lo si usa per indicare la sola IA generativa",
+      "Lo si usa per indicare i robot industriali",
+      "Lo si usa per indicare Internet"
+    ],
+    "corretta": 1,
+    "spiegazione": "Nel linguaggio comune «intelligenza artificiale» indica spesso la sola IA generativa, che crea testi, immagini, audio o video: è solo uno dei sottocampi.",
+    "fonte": "Wikipedia, «Intelligenza artificiale» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-327",
+    "argomento": "Intelligenza artificiale",
+    "livello": 4,
+    "testo": "Quale programma di Newell e Simon fu ideato per imitare i processi umani di risoluzione dei problemi?",
+    "opzioni": [
+      "Geometry Theorem Prover",
+      "SNARC",
+      "General Problem Solver (GPS)",
+      "Logic Theorist"
+    ],
+    "corretta": 2,
+    "spiegazione": "Dopo il Logic Theorist, Newell e Simon crearono il General Problem Solver (GPS), ideato per imitare la risoluzione dei problemi umana (euristica mezzi-fini).",
+    "fonte": "Wikipedia, «Intelligenza artificiale» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-328",
+    "argomento": "Intelligenza artificiale",
+    "livello": 4,
+    "testo": "Quale celebre scienziato, nel 2014, segnalò i rischi potenziali dell'IA per l'umanità?",
+    "opzioni": [
+      "Albert Einstein",
+      "Tim Berners-Lee",
+      "Alan Turing",
+      "Stephen Hawking"
+    ],
+    "corretta": 3,
+    "spiegazione": "Numerosi scienziati e filosofi, tra cui nel 2014 Stephen Hawking, hanno segnalato i rischi potenziali dell'IA.",
+    "fonte": "Wikipedia, «Intelligenza artificiale» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-329",
+    "argomento": "Software",
+    "livello": 3,
+    "testo": "Quale licenza ideò Richard Stallman nel 1989?",
+    "opzioni": [
+      "La GNU General Public License (GPL), una licenza copyleft",
+      "La licenza MIT",
+      "La licenza Creative Commons",
+      "La licenza Apache"
+    ],
+    "corretta": 0,
+    "spiegazione": "Nel 1989 Richard Stallman ideò la GNU General Public License, una licenza copyleft.",
+    "fonte": "Wikipedia, «Software libero» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-330",
+    "argomento": "Software",
+    "livello": 4,
+    "testo": "Cosa impone il copyleft a chi modifica un software distribuito con licenza GPL?",
+    "opzioni": [
+      "Di non pubblicare mai il codice sorgente",
+      "Di distribuire le modifiche con la stessa licenza del software di partenza",
+      "Di cambiare il nome del programma",
+      "Di pagare una royalty all'autore"
+    ],
+    "corretta": 1,
+    "spiegazione": "La GPL incentiva la condivisione del codice imponendo a chi modifica di farlo con la stessa licenza del software di partenza.",
+    "fonte": "Wikipedia, «Software libero» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-331",
+    "argomento": "Software",
+    "livello": 3,
+    "testo": "Cosa significa l'acronimo ricorsivo GNU?",
+    "opzioni": [
+      "GNU New Unix",
+      "General Network Utility",
+      "GNU's Not Unix",
+      "Global Numeric Unit"
+    ],
+    "corretta": 2,
+    "spiegazione": "Nel 1983 Stallman fondò il progetto GNU (GNU's Not Unix) per creare un sistema operativo completamente libero.",
+    "fonte": "Wikipedia, «Software libero» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-332",
+    "argomento": "Software",
+    "livello": 5,
+    "testo": "Quale atto normativo statunitense permise di privatizzare con la proprietà intellettuale i risultati della ricerca accademica?",
+    "opzioni": [
+      "Il Digital Millennium Copyright Act",
+      "Il Patriot Act",
+      "Lo Sherman Act",
+      "Il Bayh-Dole Act"
+    ],
+    "corretta": 3,
+    "spiegazione": "Negli anni Ottanta il Bayh-Dole Act mise in discussione la libera circolazione delle idee accademiche, permettendo di proteggere con proprietà intellettuale i risultati delle ricerche.",
+    "fonte": "Wikipedia, «Software libero» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-333",
+    "argomento": "Sicurezza",
+    "livello": 3,
+    "testo": "Oltre a quella manuale o periodica, quale altra programmazione del backup è possibile?",
+    "opzioni": [
+      "«Su evento», ad esempio all'installazione di un nuovo software",
+      "Solo su richiesta del produttore",
+      "Solo alla fine dell'anno",
+      "Solo quando il disco è pieno"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il backup può essere manuale, automatico periodico, oppure «su evento», ad esempio all'installazione di nuovo software o al superamento di una soglia di allarme.",
+    "fonte": "Wikipedia, «Backup» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-334",
+    "argomento": "Sicurezza",
+    "livello": 3,
+    "testo": "Basta eseguire un backup per essere al sicuro?",
+    "opzioni": [
+      "Sì, se il file è compresso",
+      "No: bisogna verificare che il job sia completo e privo di errori, e conservarlo bene",
+      "Sì, se fatto su chiavetta USB",
+      "Sì, sempre"
+    ],
+    "corretta": 1,
+    "spiegazione": "Eseguire un backup non basta: occorre accertare che il job sia corretto, completo e privo di errori, perché il ripristino sia efficace; conta anche la conservazione.",
+    "fonte": "Wikipedia, «Backup» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-335",
+    "argomento": "Sicurezza",
+    "livello": 4,
+    "testo": "Cosa si salva con il backup di un apparato di rete come un router o un firewall?",
+    "opzioni": [
+      "Le password di tutti i siti visitati",
+      "Il firmware del produttore",
+      "La configurazione, cioè il file delle impostazioni",
+      "Solo i documenti degli utenti"
+    ],
+    "corretta": 2,
+    "spiegazione": "Per gli apparati il backup si applica anche alla configurazione (il file delle impostazioni e personalizzazioni), ad esempio di router, firewall o switch.",
+    "fonte": "Wikipedia, «Backup» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-336",
+    "argomento": "Sicurezza",
+    "livello": 4,
+    "testo": "Come funziona il backup continuo offerto dai servizi online o dai backup appliance?",
+    "opzioni": [
+      "Con una copia manuale settimanale",
+      "Spegnendo il computer ogni sera",
+      "Stampando i documenti",
+      "Tramite agent che individuano i file nuovi e ne fanno subito la copia"
+    ],
+    "corretta": 3,
+    "spiegazione": "Il backup continuo usa agent, software che individuano con criteri i file nuovi da archiviare e ne eseguono subito la copia di sicurezza.",
+    "fonte": "Wikipedia, «Backup» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-337",
+    "argomento": "Privacy",
+    "livello": 4,
+    "testo": "Per quanto tempo il fornitore conserva i dati di traffico telefonico per finalità di accertamento dei reati?",
+    "opzioni": [
+      "Ventiquattro mesi dalla comunicazione",
+      "Sei mesi",
+      "Tre giorni",
+      "Dieci anni"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 132 D.Lgs. 196/2003: i dati di traffico telefonico sono conservati per ventiquattro mesi; quelli di traffico telematico, esclusi i contenuti, per dodici mesi.",
+    "fonte": "D.Lgs. 196/2003, art. 132",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-338",
+    "argomento": "Privacy",
+    "livello": 4,
+    "testo": "Per quanto tempo il fornitore conserva i dati di traffico telematico (esclusi i contenuti) a fini di repressione dei reati?",
+    "opzioni": [
+      "Trenta giorni",
+      "Dodici mesi",
+      "Ventiquattro mesi",
+      "Cinque anni"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 132 D.Lgs. 196/2003: i dati di traffico telematico, esclusi i contenuti delle comunicazioni, sono conservati dal fornitore per dodici mesi.",
+    "fonte": "D.Lgs. 196/2003, art. 132",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-339",
+    "argomento": "Privacy",
+    "livello": 4,
+    "testo": "Chi elegge i componenti del Collegio del Garante per la protezione dei dati personali?",
+    "opzioni": [
+      "Il Consiglio di Stato",
+      "Il Governo",
+      "Due la Camera dei deputati e due il Senato, con voto limitato",
+      "Il Presidente della Repubblica"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 153 D.Lgs. 196/2003: il Collegio è costituito da quattro componenti, eletti due dalla Camera e due dal Senato con voto limitato.",
+    "fonte": "D.Lgs. 196/2003, art. 153",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-340",
+    "argomento": "Privacy",
+    "livello": 4,
+    "testo": "Se l'interessato ha già proposto reclamo al Garante, può poi rivolgersi al giudice per lo stesso oggetto e tra le stesse parti?",
+    "opzioni": [
+      "Sì, ma solo dopo un anno",
+      "Sì, se il Garante non risponde entro una settimana",
+      "Sì, sempre",
+      "No: il reclamo al Garante rende improponibile l'ulteriore domanda al giudice"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 140-bis D.Lgs. 196/2003: reclamo al Garante e ricorso al giudice sono alternativi; presentato il reclamo, è improponibile la domanda al giudice tra le stesse parti e per lo stesso oggetto.",
+    "fonte": "D.Lgs. 196/2003, art. 140-bis",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-341",
+    "argomento": "Privacy",
+    "livello": 5,
+    "testo": "Da quali atti può essere costituita la base giuridica dei trattamenti per compiti di interesse pubblico?",
+    "opzioni": [
+      "Da una norma di legge, di regolamento o da atti amministrativi generali",
+      "Da una circolare interna",
+      "Da un contratto privato",
+      "Solo dal consenso dell'interessato"
+    ],
+    "corretta": 0,
+    "spiegazione": "Art. 2-ter D.Lgs. 196/2003: la base giuridica per i trattamenti di interesse pubblico è una norma di legge o di regolamento o un atto amministrativo generale.",
+    "fonte": "D.Lgs. 196/2003, art. 2-ter",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-342",
+    "argomento": "Privacy",
+    "livello": 4,
+    "testo": "Le chiamate pubblicitarie automatizzate, senza operatore, sono consentite?",
+    "opzioni": [
+      "Mai",
+      "Solo con il consenso del contraente o utente",
+      "Solo di notte",
+      "Sempre"
+    ],
+    "corretta": 1,
+    "spiegazione": "Art. 130 D.Lgs. 196/2003: l'uso di sistemi automatizzati di chiamata senza operatore per pubblicità o vendita diretta è consentito con il consenso del contraente o utente.",
+    "fonte": "D.Lgs. 196/2003, art. 130",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-343",
+    "argomento": "Privacy",
+    "livello": 4,
+    "testo": "Cosa possono fare titolare e responsabile del trattamento secondo l'art. 2-quaterdecies del Codice privacy?",
+    "opzioni": [
+      "Trasferire i dati senza limiti",
+      "Rinunciare alla responsabilità",
+      "Attribuire specifici compiti a persone fisiche espressamente designate sotto la loro autorità",
+      "Delegare tutto al Garante"
+    ],
+    "corretta": 2,
+    "spiegazione": "Art. 2-quaterdecies: titolare o responsabile possono attribuire compiti connessi al trattamento a persone fisiche espressamente designate che operano sotto la loro autorità.",
+    "fonte": "D.Lgs. 196/2003, art. 2-quaterdecies",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-344",
+    "argomento": "Privacy",
+    "livello": 5,
+    "testo": "Con quale pena è punito il trattamento illecito di dati dell'art. 167, c. 1 del Codice privacy?",
+    "opzioni": [
+      "Reclusione da cinque a dieci anni",
+      "Nessuna pena: è solo un illecito civile",
+      "Solo una multa",
+      "Reclusione da sei mesi a un anno e sei mesi"
+    ],
+    "corretta": 3,
+    "spiegazione": "Art. 167, c. 1: chi, per profitto o per arrecare danno, viola le norme indicate e arreca nocumento all'interessato è punito con la reclusione da sei mesi a un anno e sei mesi.",
+    "fonte": "D.Lgs. 196/2003, art. 167",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-345",
+    "argomento": "Hardware",
+    "livello": 3,
+    "testo": "In cosa si differenzia l'architettura Harvard da quella di Von Neumann?",
+    "opzioni": [
+      "Separa la memoria dei dati da quella del codice (istruzioni)",
+      "Non usa memoria",
+      "Usa solo memorie ottiche",
+      "Ha un solo registro"
+    ],
+    "corretta": 0,
+    "spiegazione": "L'architettura Harvard si differenzia da quella di Von Neumann per la separazione della memoria dati e della memoria codice, con cache separate.",
+    "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-346",
+    "argomento": "Hardware",
+    "livello": 4,
+    "testo": "Nel RAID 0, come vengono distribuiti i dati?",
+    "opzioni": [
+      "Duplicati identici su due dischi",
+      "Su strisce (strip) suddivise tra più dischi, con letture e scritture in parallelo",
+      "Su un solo disco con parità",
+      "Solo su nastro"
+    ],
+    "corretta": 1,
+    "spiegazione": "Nel RAID 0 i dati sono distribuiti su strisce, ciascuna su un disco: la banda in lettura/scrittura aumenta perché le operazioni avvengono in parallelo.",
+    "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-347",
+    "argomento": "Hardware",
+    "livello": 4,
+    "testo": "Nella modalità Memory-Mapped-IO, come comunica il processore con le periferiche?",
+    "opzioni": [
+      "Via rete Wi-Fi",
+      "Solo tramite interrupt",
+      "Come con le celle di memoria: periferiche e memoria condividono un unico spazio di indirizzamento",
+      "Con un bus separato per ogni periferica"
+    ],
+    "corretta": 2,
+    "spiegazione": "In Memory-Mapped-IO periferiche e memoria sono mappate in un unico spazio di indirizzamento; in Isolated-IO gli spazi sono distinti.",
+    "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-348",
+    "argomento": "Hardware",
+    "livello": 3,
+    "testo": "Cosa caratterizza i processori superscalari, diffusi dagli anni Novanta?",
+    "opzioni": [
+      "Eseguono un'istruzione ogni dieci colpi di clock",
+      "Funzionano senza clock",
+      "Hanno un solo transistor",
+      "Completano più di un'istruzione a ogni colpo di clock"
+    ],
+    "corretta": 3,
+    "spiegazione": "CISC: più colpi di clock per istruzione; RISC: un'istruzione per colpo; superscalari: più di un'istruzione per colpo; multicore: più processori integrati.",
+    "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-349",
+    "argomento": "Hardware",
+    "livello": 4,
+    "testo": "Che organizzazione hanno i dischi ottici quanto alla velocità di rotazione?",
+    "opzioni": [
+      "Constant Linear Velocity: velocità lineare costante, angolare variabile",
+      "Velocità angolare costante come i dischi fissi",
+      "Rotazione casuale",
+      "Nessuna rotazione"
+    ],
+    "corretta": 0,
+    "spiegazione": "I dischi ottici hanno organizzazione CLV: il motore ruota a velocità lineare costante ma a velocità angolari diverse secondo la posizione del laser.",
+    "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "informatica",
+    "id": "inf-350",
+    "argomento": "Hardware",
+    "livello": 3,
+    "testo": "Che vantaggio hanno le EEPROM rispetto alle EPROM?",
+    "opzioni": [
+      "Sono volatili",
+      "Si riprogrammano senza raggi ultravioletti",
+      "Sono più veloci delle RAM",
+      "Non si possono mai riscrivere"
+    ],
+    "corretta": 1,
+    "spiegazione": "Le memorie EEPROM possono essere riprogrammate senza raggi ultravioletti, ma la programmazione è lenta e sono costose.",
+    "fonte": "L. Ghio, Appunti di Calcolatori elettronici (CC BY-SA 4.0)",
+    "versione": "v4"
   }
 ]

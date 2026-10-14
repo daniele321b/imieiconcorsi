@@ -54,6 +54,7 @@ export function AppLayout() {
   const voci = utente.admin ? [...NAV.filter((v) => v.to !== "/app/piani"), ADMIN] : NAV;
   // In basso: le stesse 5 voci, con il Tutor AI al centro.
   const basso = [voci[0]!, voci[1]!, voci[3]!, voci[2]!, voci[4]!];
+  // La voce di menu della pagina aperta.
   const attiva = (v: Voce) => v.zona.test(pathname);
   // Bandi nuovi con una banca dati da caricare, non ancora visti nell'elenco (pallino rosso su Admin).
   const notifica = (v: Voce) =>
@@ -65,6 +66,7 @@ export function AppLayout() {
         {daCaricare.daVedere > 9 ? "9+" : daCaricare.daVedere}
       </span>
     ) : null;
+  // Admin porta ai bandi da caricare quando ce ne sono di nuovi.
   const destinazione = (v: Voce) => (v === ADMIN && daCaricare?.daVedere ? "/admin/banche-dati#da-caricare" : v.to);
 
   return (

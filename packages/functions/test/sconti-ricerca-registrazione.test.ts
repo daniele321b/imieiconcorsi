@@ -4,6 +4,8 @@ import { emailConsentita } from "@imieiconcorsi/core/registrazione";
 import { FORMATO_CODICE, generaCodice, motivoRifiuto, normalizzaCodice, prezzoScontato } from "@imieiconcorsi/core/sconti";
 import { describe, expect, it } from "vitest";
 
+// Test di ordinamento e filtri dei concorsi, codici sconto, piani ed email ammesse in registrazione.
+
 describe("ordinaConcorsi", () => {
   const bandi = [
     { id: "a", scadenza: "2026-11-10", pubblicatoIl: "2026-09-01", posti: 3 },
@@ -11,6 +13,7 @@ describe("ordinaConcorsi", () => {
     { id: "c", scadenza: "2026-12-01", posti: 40 },
     { id: "d", scadenza: "2026-10-15", pubblicatoIl: "2026-10-05", posti: 3 },
   ];
+  // Solo gli id, per confrontare l'ordine.
   const ids = (l: { id: string }[]) => l.map((c) => c.id);
   // Data fissa: con la data di oggi il test cambierebbe esito quando i bandi di prova scadono.
   const oggi = new Date("2026-10-01T00:00:00Z");
@@ -91,6 +94,7 @@ describe("filtraConcorsi", () => {
     { id: "b", scadenza: "2026-11-30T10:00:00Z", pubblicatoIl: "2026-09-01T08:00:00Z", posti: 12, sedi: ["Roma"], tipoProcedura: "TITOLI_ESAMI", bancaDatiPrevista: false, bancaDati: false },
     { id: "c", scadenza: "2026-10-25T10:00:00Z", sedi: [], bancaDatiPrevista: false, bancaDati: false },
   ];
+  // Solo gli id, per confrontare l'ordine.
   const ids = (l: { id: string }[]) => l.map((c) => c.id);
 
   it.each([

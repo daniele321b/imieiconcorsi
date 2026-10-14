@@ -14,6 +14,10 @@ import {
 } from "../src/ai/logic";
 import { paginaPiuVecchiaDi } from "../src/jobs/inpa";
 
+// Test di filtro aperti/chiusi, storico dei bandi chiusi, gettoni AI, punti deboli e domande
+// generate dal tutor.
+
+/** Solo gli id, per confrontare l'ordine. */
 const ids = (l: { id: string }[]) => l.map((c) => c.id);
 
 describe("filtro Aperti / Chiusi", () => {
@@ -72,6 +76,7 @@ describe("gettoni AI", () => {
 });
 
 describe("punti deboli", () => {
+  // Sessione consegnata di prova con i risultati per materia.
   const esito = (perMateria: { materia: string; corrette: number; totale: number }[]) => ({
     esito: { corrette: 0, errate: 0, omesse: 0, punteggio: 0, massimo: 0, percentuale: 0, superata: false, perMateria },
   });

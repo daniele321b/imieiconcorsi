@@ -67,6 +67,7 @@ export async function registraRicevuta(o: Ordine, errore: string | undefined) {
   }
 }
 
+/** Importo in euro, es. "9,99 €". */
 const euro = (n: number) => n.toLocaleString("it-IT", { style: "currency", currency: "EUR" });
 
 /** Scrive un ordine nuovo. */

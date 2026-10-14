@@ -10,6 +10,7 @@ terraform {
   }
 }
 
+# Gruppi di regole gestite da AWS, con priorità ed eventuali regole spente.
 locals {
   gestite = {
     # Regole di base (OWASP): niente limite di 8 KB sul corpo, le chat del tutor possono superarlo.
@@ -21,6 +22,7 @@ locals {
   }
 }
 
+# Il web ACL: regole gestite più il limite di richieste per IP; il resto passa.
 resource "aws_wafv2_web_acl" "main" {
   provider    = aws.us_east_1
   name        = var.name

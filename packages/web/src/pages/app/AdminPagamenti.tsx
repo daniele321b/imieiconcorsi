@@ -73,6 +73,7 @@ function Storico() {
     return () => clearTimeout(t);
   }, [cerca]);
 
+  // Scarica una pagina di ordini con i filtri scelti.
   async function carica(pagina = 0) {
     setCaricamento(true);
     setErrore(undefined);

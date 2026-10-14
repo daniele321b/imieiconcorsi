@@ -1,5 +1,5 @@
-import { BellRing, CheckCircle2, Target, Timer, TrendingUp } from "lucide-react";
-import { Link, Navigate } from "react-router";
+import { BellRing, CheckCircle2, Sparkles, Target, Timer, TrendingUp } from "lucide-react";
+import { Navigate } from "react-router";
 import { AuthCard } from "../components/AuthCard";
 import { PiePagina } from "./legale/LegalePagina";
 import { Logo } from "../components/brand";
@@ -13,7 +13,7 @@ import { useAuth } from "../lib/auth";
 const PUNTI = [
   { Icon: BellRing, titolo: "Il bando giusto, appena esce", testo: "Ogni mattina leggiamo inPA e ti avvisiamo solo per i comparti che ti interessano." },
   { Icon: Target, titolo: "Studi le materie del tuo bando", testo: "Schede brevi e quiz calibrati sul tuo livello, materia per materia." },
-  { Icon: Timer, titolo: "Simulazioni come all'esame", testo: "60 domande, timer e penalità sugli errori. Poi vedi dove migliorare." },
+  { Icon: Timer, titolo: "Simulazioni come all'esame", testo: "Domande, timer e penalità sugli errori. Poi vedi dove migliorare." },
 ];
 
 /** Pagina "/". */
@@ -43,22 +43,13 @@ export function Landing() {
       <div className="relative mx-auto grid min-h-screen max-w-7xl content-center items-center gap-10 px-4 py-8 sm:px-6 lg:grid-cols-[1.15fr_1fr] lg:gap-16 lg:px-8">
         {/* Racconto */}
         <section className="animate-fade-up text-white">
-          <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-3">
+          {/* Prezzi, Domande frequenti e Chi siamo sono nel piè di pagina. */}
+          <div>
             <Logo light className="text-xl" />
-            <nav className="flex flex-wrap gap-x-5 gap-y-1 text-sm font-semibold text-brand-100/80">
-              <Link to="/prezzi" className="hover:text-white">
-                Prezzi
-              </Link>
-              <Link to="/domande-frequenti" className="hover:text-white">
-                Domande frequenti
-              </Link>
-              <Link to="/chi-siamo" className="hover:text-white">
-                Chi siamo
-              </Link>
-            </nav>
           </div>
 
-          <div className="mt-10 inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold text-brand-100 ring-1 ring-white/15 backdrop-blur">
+          {/* Sotto la scritta iMieiConcorsi, allineata a lei (icona del logo 32px + 8px di spazio). */}
+          <div className="mt-3 ml-10 inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold text-brand-100 ring-1 ring-white/15 backdrop-blur">
             <span className="relative flex size-2">
               <span className="absolute inline-flex size-full animate-ping rounded-full bg-emerald-400 opacity-75" />
               <span className="relative inline-flex size-2 rounded-full bg-emerald-400" />
@@ -66,7 +57,7 @@ export function Landing() {
             Bandi di inPA aggiornati ogni mattina
           </div>
 
-          <h1 className="mt-5 text-4xl leading-[1.1] font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+          <h1 className="mt-8 text-4xl leading-[1.1] font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
             Il tuo concorso pubblico,{" "}
             <span className="bg-gradient-to-r from-accent-300 via-amber-200 to-fuchsia-300 bg-clip-text text-transparent">
               studiato su misura.
@@ -77,7 +68,26 @@ export function Landing() {
             della prova.
           </p>
 
-          <ul className="mt-8 hidden gap-5 sm:grid">
+          {/* Il tutor AI in evidenza; sotto gli altri punti (visibili anche sul telefono). */}
+          <div className="mt-8 max-w-xl rounded-2xl bg-gradient-to-r from-fuchsia-500/25 via-brand-500/20 to-accent-400/20 p-px">
+            <div className="flex gap-4 rounded-2xl bg-brand-950/70 p-4 backdrop-blur">
+              <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-fuchsia-500 to-brand-500 text-white shadow-lg shadow-fuchsia-500/30">
+                <Sparkles className="size-5" />
+              </span>
+              <div>
+                <p className="flex flex-wrap items-center gap-2 font-semibold">
+                  Un tutor AI che parte dal tuo studio
+                  <span className="rounded-full bg-white/10 px-2 py-0.5 text-[11px] font-semibold text-accent-300 ring-1 ring-white/15">Piano Pro</span>
+                </p>
+                <p className="mt-1 text-sm text-brand-100/75">
+                  Ti spiega ogni domanda, anche quelle delle banche dati ufficiali, e perché hai sbagliato. Guarda i tuoi risultati e
+                  ti allena con domande nuove proprio sui tuoi punti deboli.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <ul className="mt-8 grid gap-5">
             {PUNTI.map(({ Icon, titolo, testo }) => (
               <li key={titolo} className="flex gap-4">
                 <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-white/10 text-accent-300 ring-1 ring-white/15">

@@ -32,6 +32,7 @@ const campo =
 function perInput(iso?: string) {
   if (!iso) return "";
   const d = new Date(iso);
+  // Numero a due cifre, es. 7 → "07".
   const due = (n: number) => String(n).padStart(2, "0");
   return `${d.getFullYear()}-${due(d.getMonth() + 1)}-${due(d.getDate())}T${due(d.getHours())}:${due(d.getMinutes())}`;
 }
@@ -50,11 +51,13 @@ const iniziali = (c: Concorso) => ({
   bancaDatiPrevista: c.bancaDatiPrevista,
 });
 
+/** Modulo admin per correggere i dati di un bando (o tornare a quelli di inPA). */
 export function ModificaBando({ concorso, onSalvato }: { concorso: ConcorsoApi; onSalvato: (c: Concorso) => void }) {
   const [aperto, setAperto] = useState(false);
   const [v, setV] = useState(() => iniziali(concorso));
   const [inCorso, setInCorso] = useState<"salva" | "ripristina">();
   const [errore, setErrore] = useState<string>();
+  // Cambia solo i campi indicati del modulo.
   const set = (parziale: Partial<typeof v>) => setV((x) => ({ ...x, ...parziale }));
 
   /** Solo i campi diversi da come sono ora. */
@@ -76,6 +79,7 @@ export function ModificaBando({ concorso, onSalvato }: { concorso: ConcorsoApi; 
   }
   const cambiate = modifiche();
 
+  // Salva le modifiche oppure le cancella (il bando torna come da inPA).
   async function esegui(tipo: "salva" | "ripristina") {
     setInCorso(tipo);
     setErrore(undefined);

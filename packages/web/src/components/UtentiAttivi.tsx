@@ -22,6 +22,7 @@ interface Attivita {
 
 const giornoBreve = new Intl.DateTimeFormat("it-IT", { day: "numeric", month: "short", timeZone: "UTC" });
 
+/** Card del pannello admin con gli utenti attivi oggi, nel mese e giorno per giorno (si aggiorna ogni minuto). */
 export function UtentiAttivi() {
   const { data, error, reload } = useApi<Attivita>("/admin/attivita");
   useEffect(() => {

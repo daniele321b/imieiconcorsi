@@ -11,9 +11,12 @@ export const dataIt = (iso: string) =>
     new Date(iso),
   );
 
+/** Indirizzo del sito, per i link nelle email. */
 const sito = () => process.env.SITE_URL ?? "";
+/** Prima riga dell'email, con il nome se c'è. */
 const saluto = (nome?: string) => `Ciao${nome ? ` ${nome}` : ""},`;
 
+/** Invia un'email di testo con la firma del team; un errore viene solo registrato, non blocca l'operazione. */
 async function invia(a: string, oggetto: string, righe: string[]) {
   try {
     await inviaEmail({ a, oggetto, testo: [...righe, "", "Il team di iMieiConcorsi"].join("\n") });

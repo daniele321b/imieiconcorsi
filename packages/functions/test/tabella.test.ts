@@ -42,6 +42,7 @@ describe("tabella domanda | risposta esatta", () => {
 });
 
 describe("alternative ricavate", () => {
+  // Riga di tabella di prova nella sezione Logica.
   const riga = (numero: number, domanda: string, risposta: string): RigaTabella => ({ numero, domanda, risposta, sezione: "Logica" });
 
   it("dalle risposte di domande dello stesso tipo, mai la giusta", () => {
@@ -60,6 +61,7 @@ describe("alternative ricavate", () => {
   });
 
   it("coppie: incrociate, mai un'altra coppia vera del file", () => {
+    // Testo di una proporzione "a : b = X : Y".
     const testo = (a: string, b: string) => `Quali tra i termini proposti completano correttamente la seguente proporzione? ${a} : ${b} = X : Y`;
     const { domande } = domandeDallaTabella([
       riga(1, testo("Renzo", "I Promessi sposi"), "X = Geppetto; Y = Pinocchio"),

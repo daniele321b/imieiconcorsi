@@ -3,7 +3,7 @@ import { datiSocietari, LEGALE } from "../../lib/legale";
 
 // Pezzi di testo comuni alle pagine pubbliche: chi gestisce il servizio e come contattarlo.
 
-/** "iMieiConcorsi (imieiconcorsi.it), …": con i dati della società quando c'è. */
+/** Chi gestisce il servizio: i dati societari se compilati in lib/legale.ts, altrimenti solo il nome del servizio. */
 export function Titolare() {
   return datiSocietari ? (
     <>
@@ -11,8 +11,7 @@ export function Titolare() {
     </>
   ) : (
     <>
-      {LEGALE.nome} ({LEGALE.sito}), progetto in fase di avvio: i dati della società che gestirà il servizio (ragione sociale,
-      sede e partita IVA) saranno pubblicati in questa pagina appena costituita
+      {LEGALE.nome} ({LEGALE.sito})
     </>
   );
 }

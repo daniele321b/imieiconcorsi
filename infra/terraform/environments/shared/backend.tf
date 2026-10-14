@@ -1,3 +1,6 @@
+# Risorse condivise tra dev e prod: versione di Terraform, provider AWS e stato remoto su S3
+# (shared/terraform.tfstate).
+
 terraform {
   required_version = ">= 1.10"
   required_providers {

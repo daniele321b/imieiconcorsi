@@ -2,6 +2,7 @@ import { ArrowLeft } from "lucide-react";
 import type { ReactNode } from "react";
 import { Link } from "react-router";
 import { Logo } from "../../components/brand";
+import { cx } from "../../components/ui";
 import { data } from "../../lib/format";
 import { LEGALE } from "../../lib/legale";
 
@@ -33,32 +34,46 @@ export function LegalePagina({ titolo, sotto, versione = true, children }: { tit
   );
 }
 
-/** Link del piè di pagina, in tutte le pagine pubbliche e nell'app. */
-const LINK_PIE = [
+/**
+ * Link del piè di pagina, in tutte le pagine pubbliche e nell'app: sopra il servizio, sotto i
+ * documenti legali. "Le nostre email" ed "Eliminazione dei dati" non ci sono: si raggiungono da
+ * Privacy e Domande frequenti (e i loro indirizzi restano quelli dati ad AWS e Meta).
+ */
+const LINK_SERVIZIO = [
   { to: "/chi-siamo", nome: "Chi siamo" },
   { to: "/prezzi", nome: "Prezzi" },
   { to: "/domande-frequenti", nome: "Domande frequenti" },
   { to: "/contatti", nome: "Contatti" },
-  { to: "/email", nome: "Le nostre email" },
+];
+const LINK_LEGALI = [
   { to: "/privacy", nome: "Privacy" },
   { to: "/cookie", nome: "Cookie" },
-  { to: "/termini", nome: "Termini e condizioni" },
-  { to: "/eliminazione-dati", nome: "Eliminazione dei dati" },
+  { to: "/termini", nome: "Termini" },
 ];
 
-/** Piè di pagina con i link alle pagine pubbliche; `scuro` per la home. */
+/** Piè di pagina con i link alle pagine pubbliche, su due righe; `scuro` per la home. */
 export function PiePagina({ scuro }: { scuro?: boolean }) {
   const cls = scuro ? "text-brand-200/70 hover:text-white" : "text-slate-500 hover:text-slate-800";
+  const tenue = scuro ? "text-brand-200/50" : "text-slate-400";
   return (
-    <footer className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-5 gap-y-1.5 px-4 py-6 text-xs">
-      <span className={scuro ? "text-brand-200/50" : "text-slate-400"}>
-        © {new Date().getFullYear()} {LEGALE.nome}
-      </span>
-      {LINK_PIE.map((l) => (
-        <Link key={l.to} to={l.to} className={cls}>
-          {l.nome}
-        </Link>
-      ))}
+    <footer className="mx-auto max-w-6xl space-y-2 px-4 py-6 text-center text-xs">
+      <nav className="flex flex-wrap justify-center gap-x-5 gap-y-1.5">
+        {LINK_SERVIZIO.map((l) => (
+          <Link key={l.to} to={l.to} className={cx("font-semibold", cls)}>
+            {l.nome}
+          </Link>
+        ))}
+      </nav>
+      <div className="flex flex-wrap justify-center gap-x-4 gap-y-1.5">
+        <span className={tenue}>
+          © {new Date().getFullYear()} {LEGALE.nome}
+        </span>
+        {LINK_LEGALI.map((l) => (
+          <Link key={l.to} to={l.to} className={cls}>
+            {l.nome}
+          </Link>
+        ))}
+      </div>
     </footer>
   );
 }

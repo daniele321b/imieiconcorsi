@@ -54,6 +54,7 @@ export const GIORNI_NUOVO = 7;
 const CHIAVE_VISTI = "admin:bandi-da-caricare-visti";
 const EVENTO_VISTI = "bandi-da-caricare-visti";
 
+/** Id dei bandi da caricare già visti dall'admin (salvati nel browser). */
 function bandiVisti(): Set<string> {
   try {
     return new Set(JSON.parse(localStorage.getItem(CHIAVE_VISTI) ?? "[]") as string[]);
@@ -93,6 +94,7 @@ export function useBandiDaCaricare(attivo: boolean) {
         setNuovi(attesa.filter((c) => c.pubblicatoIl && Date.parse(c.pubblicatoIl) > da).map((c) => c.id));
       })
       .catch(() => setNuovi(undefined));
+    // Rilegge i visti quando un'altra parte del sito li cambia.
     const aggiorna = () => setVisti(bandiVisti());
     window.addEventListener(EVENTO_VISTI, aggiorna);
     return () => window.removeEventListener(EVENTO_VISTI, aggiorna);

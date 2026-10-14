@@ -34,6 +34,7 @@ export async function statoUsi(ctx: Ctx) {
   return { limite, usati: u.usi, restanti: Math.max(0, limite - u.usi), aperte: u.aperte ?? [] };
 }
 
+/** La scrittura condizionata non è andata (la condizione era falsa). */
 const fallita = (err: unknown) => err instanceof Error && err.name === "ConditionalCheckFailedException";
 
 /** Errore mostrato quando gli utilizzi gratuiti della settimana sono finiti. */

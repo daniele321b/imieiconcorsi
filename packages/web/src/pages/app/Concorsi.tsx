@@ -17,6 +17,7 @@ import { Alert, Button, EmptyState, PageHeader, Spinner, UpgradeBanner, cx } fro
 import { api, ApiError, useApi, type ConcorsoApi } from "../../lib/api";
 import { useUtente } from "../../lib/auth";
 import { caricaBandi } from "../../lib/bandi";
+import { useStatoSessione } from "../../lib/statoSessione";
 
 // Ricerca dei bandi (/app/concorsi): lista dalla cache su CloudFront (lib/bandi.ts), filtri,
 // ordinamento, ricerca per testo e "Segui". Si mostrano 30 bandi per volta.
@@ -24,11 +25,22 @@ import { caricaBandi } from "../../lib/bandi";
 /** Bandi mostrati per volta ("Mostra altri"). */
 const PAGINA = 30;
 
+/** Scelta accanto alla ricerca: tutti i bandi, solo gli aperti o solo quelli con le domande chiuse. */
+const STATI = [
+  { id: "tutti", nome: "Tutti" },
+  { id: "aperti", nome: "Aperti" },
+  { id: "chiusi", nome: "Chiusi" },
+] as const;
+type StatoBandi = (typeof STATI)[number]["id"];
+/** Lo stato scelto, letto dai filtri (aperti/chiusi = false nasconde quel gruppo). */
+const statoDi = (f: FiltriConcorsi): StatoBandi => (f.aperti === false ? "chiusi" : f.chiusi === false ? "aperti" : "tutti");
+
 /** Segui / smetti di seguire un concorso, con l'errore del limite del piano (usato anche nel dettaglio). */
 export function useSegui(onCambio: (id: string, seguito: boolean) => void) {
   const [inCorso, setInCorso] = useState<string>();
   const [errore, setErrore] = useState<ApiError>();
 
+  // Segue o smette di seguire un bando.
   async function segui(c: { id: string; seguito: boolean }) {
     setInCorso(c.id);
     setErrore(undefined);
@@ -46,15 +58,17 @@ export function useSegui(onCambio: (id: string, seguito: boolean) => void) {
 
 /** Pagina /app/concorsi. */
 export function Concorsi() {
-  const [comparto, setComparto] = useState<CompartoId | "miei" | "tutti">("miei");
-  const [testo, setTesto] = useState("");
-  const [ordine, setOrdine] = useState<Ordinamento>("scadenza");
-  const [filtri, setFiltri] = useState<FiltriConcorsi>({});
+  // Ricerca, filtri e ordine restano quando si apre un bando e si torna indietro.
+  const [comparto, setComparto] = useStatoSessione<CompartoId | "miei" | "tutti">("concorsi:comparto", "miei");
+  const [testo, setTesto] = useStatoSessione("concorsi:testo", "");
+  const [ordine, setOrdine] = useStatoSessione<Ordinamento>("concorsi:ordine", "scadenza");
+  const [filtri, setFiltri] = useStatoSessione<FiltriConcorsi>("concorsi:filtri", {});
   const [pannello, setPannello] = useState(false);
-  const [mostrati, setMostrati] = useState(PAGINA);
+  const [mostrati, setMostrati] = useStatoSessione("concorsi:mostrati", PAGINA);
 
   const { utente } = useUtente();
-  // Tutti i bandi, aperti e chiusi: le caselle Aperti/Chiusi nei filtri scelgono cosa vedere.
+  // Tutti i bandi, aperti e chiusi: la scelta Tutti/Aperti/Chiusi accanto alla ricerca decide cosa
+  // vedere (la scadenza è per inviare la domanda: chi l'ha già inviata si prepara sui chiusi).
   const comparti = useMemo<readonly CompartoId[]>(
     () => (comparto === "tutti" ? COMPARTO_IDS : comparto === "miei" ? (utente.interessi.length ? utente.interessi : COMPARTO_IDS) : [comparto]),
     [comparto, utente.interessi],
@@ -105,7 +119,9 @@ export function Concorsi() {
     () => [...new Set((data?.concorsi ?? []).map((c) => c.tipoProcedura).filter((p): p is string => !!p))].sort(),
     [data],
   );
-  const attivi = filtriAttivi(filtri);
+  // Aperti/chiusi si scelgono accanto alla ricerca: non contano tra i filtri del pannello.
+  const attivi = filtriAttivi({ ...filtri, aperti: undefined, chiusi: undefined });
+  const stato = statoDi(filtri);
 
   // "Tutti" cerca su ogni comparto, anche quelli che non segui.
   const chips: { id: CompartoId | "miei" | "tutti"; nome: string }[] = [
@@ -118,7 +134,7 @@ export function Concorsi() {
     <div>
       <PageHeader
         title="Concorsi"
-        subtitle="I bandi di inPA, aperti e con le domande chiuse, aggiornati ogni mattina. Dai Filtri scegli se vedere solo gli aperti o solo i chiusi."
+        subtitle="I bandi di inPA, aperti e con le domande chiuse, aggiornati ogni mattina. Accanto alla ricerca scegli se vedere solo gli aperti o solo i chiusi."
       />
 
       {/* Barra fissa in alto, tranne con i filtri aperti: sul telefono il pannello è più alto dello
@@ -137,6 +153,26 @@ export function Concorsi() {
               className="h-12 w-full rounded-xl border-0 bg-white pr-4 pl-10 shadow-sm ring-1 ring-slate-200 focus:ring-2 focus:ring-brand-500 focus:outline-none"
             />
           </label>
+          <div role="radiogroup" aria-label="Bandi aperti o chiusi" className="grid h-12 shrink-0 grid-cols-3 rounded-xl bg-white p-1 text-sm font-semibold shadow-sm ring-1 ring-slate-200">
+            {STATI.map((s) => (
+              <button
+                key={s.id}
+                type="button"
+                role="radio"
+                aria-checked={stato === s.id}
+                onClick={() => {
+                  setFiltri((f) => ({ ...f, aperti: s.id === "chiusi" ? false : undefined, chiusi: s.id === "aperti" ? false : undefined }));
+                  setMostrati(PAGINA);
+                }}
+                className={cx(
+                  "rounded-lg px-3.5 transition",
+                  stato === s.id ? "bg-brand-600 text-white" : "text-slate-600 hover:bg-slate-50",
+                )}
+              >
+                {s.nome}
+              </button>
+            ))}
+          </div>
           <label className="relative block sm:w-60">
             <span className="sr-only">Ordina per</span>
             <ArrowUpDown className="pointer-events-none absolute top-1/2 left-3.5 size-4 -translate-y-1/2 text-slate-400" />
@@ -150,7 +186,7 @@ export function Concorsi() {
             >
               {ORDINAMENTI.map((o) => (
                 <option key={o.id} value={o.id}>
-                  Ordina: {o.nome.toLowerCase()}
+                  {o.nome}
                 </option>
               ))}
             </select>
@@ -175,7 +211,10 @@ export function Concorsi() {
               }}
             />
             {attivi > 0 && (
-              <button onClick={() => setFiltri({})} className="text-sm font-semibold text-brand-600 hover:text-brand-700">
+              <button
+                onClick={() => setFiltri((f) => ({ aperti: f.aperti, chiusi: f.chiusi }))}
+                className="text-sm font-semibold text-brand-600 hover:text-brand-700"
+              >
                 Azzera i filtri
               </button>
             )}

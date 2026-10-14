@@ -37,6 +37,7 @@ import { env } from "@imieiconcorsi/core/env";
 import { emailPianoAttivato, emailTornatoFree } from "@imieiconcorsi/core/email-piani";
 import { HttpError, notFound, richiediAdmin, service } from "@imieiconcorsi/core/http";
 import { assegnaPiano } from "@imieiconcorsi/core/piani";
+import { riepilogoProvenienza } from "@imieiconcorsi/core/provenienza";
 import { FORMATO_CODICE, generaCodice, normalizzaCodice } from "@imieiconcorsi/core/sconti";
 import { conMaiuscola, conModificheAdmin, nomeConcorso, senzaModificheAdmin } from "@imieiconcorsi/core/concorsi";
 import { rispostePerUtenti, type DomandaDelFile } from "../banche-dati/pubblica";
@@ -92,7 +93,7 @@ const RispostaRichiesta = z
   .refine((r) => r.testo || r.stato, "Scrivi una risposta o cambia lo stato");
 
 /** Come è segnata la risposta giusta nel PDF (vedi banche-dati/parser.ts). */
-const FORMATI = ["auto", "indicata", "segnata", "chiave", "prima", "risposta"] as const;
+const FORMATI = ["auto", "indicata", "segnata", "chiave", "prima", "risposta", "colonne", "lettera"] as const;
 /** Ordine predefinito delle risposte agli utenti (ognuno può poi scegliere il suo). */
 const ORDINI = ["mescolate", "pdf"] as const;
 /** PDF più grande accettato: 200 MB. */
@@ -208,6 +209,7 @@ async function utenteCognito(username: string) {
   }
 }
 
+/** La scrittura condizionata non è andata (la condizione era falsa). */
 const condizioneFallita = (err: unknown) => err instanceof Error && err.name === "ConditionalCheckFailedException";
 
 /** Il concorso torna alle domande dei nostri libri, se usava proprio questa banca dati. */
@@ -442,6 +444,7 @@ export const handler = service({
         }),
       ),
     ]);
+    // Utenti in un gruppo Cognito.
     const conta = (g: string) => [...gruppi.values()].filter((gs) => gs.includes(g)).length;
     return {
       utenti: pool.UserPool?.EstimatedNumberOfUsers ?? 0,
@@ -476,7 +479,7 @@ export const handler = service({
     const profili = await batchGet<Profilo>(
       tables.users,
       utenti.map((u) => ({ userId: attributo(u, "sub") })),
-      "userId, scadenzaPiano, periodo, onboarded, feedback, ultimoAccessoIl, accessi",
+      "userId, scadenzaPiano, periodo, onboarded, feedback, ultimoAccessoIl, accessi, provenienza",
     );
     const profiloDi = new Map(profili.map((p) => [p.userId, p]));
 
@@ -501,10 +504,29 @@ export const handler = service({
           feedback: p?.feedback,
           ultimoAccessoIl: p?.ultimoAccessoIl,
           accessi: p?.accessi,
+          provenienza: p?.provenienza,
         };
       }),
       pagina: lista.PaginationToken,
     };
+  },
+
+  /**
+   * Iscritti per provenienza (link UTM dei social e degli annunci): ultimi 7 e 30 giorni e in tutto.
+   * Scan della tabella users con due soli campi: va bene finché gli iscritti sono qualche migliaio.
+   */
+  "GET /admin/provenienza": async (ctx) => {
+    richiediAdmin(ctx);
+    const profili: Pick<Profilo, "createdAt" | "provenienza">[] = [];
+    let ExclusiveStartKey: Record<string, unknown> | undefined;
+    do {
+      const res = await db.send(
+        new ScanCommand({ TableName: tables.users, ProjectionExpression: "createdAt, provenienza", ExclusiveStartKey }),
+      );
+      profili.push(...((res.Items ?? []) as Pick<Profilo, "createdAt" | "provenienza">[]));
+      ExclusiveStartKey = res.LastEvaluatedKey;
+    } while (ExclusiveStartKey);
+    return { ...riepilogoProvenienza(profili), aggiornatoIl: new Date().toISOString() };
   },
 
   /**
@@ -763,6 +785,7 @@ export const handler = service({
 
     const pagati = ordini.filter((o) => o.stato === "pagato");
     const mese = new Date().toISOString().slice(0, 7);
+    // Somma degli importi, arrotondata al centesimo.
     const somma = (lista: Ordine[]) => Math.round(lista.reduce((n, o) => n + o.importo, 0) * 100) / 100;
     const totali = {
       ordini: ordini.length,

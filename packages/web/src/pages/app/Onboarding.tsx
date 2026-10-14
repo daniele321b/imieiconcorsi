@@ -34,6 +34,7 @@ export function Onboarding() {
 
   const puoiAvanzare = passo !== 0 || interessi.length > 0;
 
+  // Salva le scelte del primo accesso (con l'accettazione dei termini) ed entra nell'app.
   async function concludi() {
     setSalvataggio(true);
     setErrore(undefined);

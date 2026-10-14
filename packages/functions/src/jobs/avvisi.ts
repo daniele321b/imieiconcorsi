@@ -99,6 +99,7 @@ function testoEmail(nome: string | undefined, bandi: Concorso[], settimanale: bo
 
 /** Versione HTML: i link passano dall'API (lettura registrata) e un'immagine invisibile segna l'apertura. */
 function htmlEmail(nome: string | undefined, bandi: Concorso[], settimanale: boolean, disiscrizione: string, lettura: ReturnType<typeof linkLettura>) {
+  // Paragrafo HTML con il margine dell'email.
   const p = (t: string) => `<p style="margin:0 0 12px">${t}</p>`;
   const voci = bandi
     .slice(0, MAX_NELL_EMAIL)
@@ -142,6 +143,7 @@ export const handler = async () => {
 
       if (nuovi.length) {
         const utente = await cognito.send(new AdminGetUserCommand({ UserPoolId: userPoolId(), Username: u.username }));
+        // Un attributo Cognito dell'utente (email, name…).
         const attr = (n: string) => utente.UserAttributes?.find((a) => a.Name === n)?.Value;
         const email = attr("email");
         if (utente.Enabled !== false && email) {

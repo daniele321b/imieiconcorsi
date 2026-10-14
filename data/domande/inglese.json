@@ -14,7 +14,7 @@
     "corretta": 0,
     "spiegazione": "I modali centrali sono can/could, may/might, shall/should, will/would e must.",
     "fonte": "Wikipedia (EN), «English modal auxiliary verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -31,7 +31,7 @@
     "corretta": 1,
     "spiegazione": "Le coppie sono can/could, may/might, shall/should, will/would.",
     "fonte": "Wikipedia (EN), «English modal auxiliary verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -48,7 +48,7 @@
     "corretta": 2,
     "spiegazione": "«Ought» è seguito da to + infinito: «Nobody ought to say a word». Gli altri modali vogliono l'infinito senza to.",
     "fonte": "Wikipedia (EN), «English modal auxiliary verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -65,7 +65,7 @@
     "corretta": 3,
     "spiegazione": "Le frasi condizionali sono classificate come zero, first, second, third e mixed conditional, in base allo schema grammaticale.",
     "fonte": "Wikipedia (EN), «English conditional sentences» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -82,7 +82,7 @@
     "corretta": 0,
     "spiegazione": "Terzo condizionale: if + past perfect, would have + participio passato. «If you had called me, I would have come.»",
     "fonte": "Wikipedia (EN), «English conditional sentences» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -99,7 +99,7 @@
     "corretta": 1,
     "spiegazione": "Nelle ipotesi irreali si usa «were» anche con I/he/she: «If I were king…».",
     "fonte": "Wikipedia (EN), «English conditional sentences» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -116,7 +116,7 @@
     "corretta": 2,
     "spiegazione": "L'inglese usa la morfologia del passato per indicare che l'antecedente è impossibile o improbabile.",
     "fonte": "Wikipedia (EN), «English conditional sentences» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -133,7 +133,7 @@
     "corretta": 3,
     "spiegazione": "Il passivo si forma con be (o get) seguito dal participio passato: «The enemy was defeated».",
     "fonte": "Wikipedia (EN), «English passive voice» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -150,7 +150,7 @@
     "corretta": 0,
     "spiegazione": "Nel passivo l'oggetto diventa soggetto, il verbo diventa be + participio passato e l'agente si introduce con «by».",
     "fonte": "Wikipedia (EN), «English passive voice» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -167,7 +167,7 @@
     "corretta": 1,
     "spiegazione": "L'agente può essere omesso o espresso con «by»: «The patient was murdered by his own doctor».",
     "fonte": "Wikipedia (EN), «English passive voice» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -184,7 +184,7 @@
     "corretta": 2,
     "spiegazione": "I pronomi relativi di base sono who, which e that; da who derivano whom e whose.",
     "fonte": "Wikipedia (EN), «English relative clauses» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -201,7 +201,7 @@
     "corretta": 3,
     "spiegazione": "«Whose» esprime possesso (la cui auto); è una forma derivata di who.",
     "fonte": "Wikipedia (EN), «English relative clauses» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -218,7 +218,7 @@
     "corretta": 0,
     "spiegazione": "«That» introduce solo relative restrittive e non è preceduto da virgola; who e which si usano in entrambi i tipi.",
     "fonte": "Wikipedia (EN), «English relative clauses» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -235,7 +235,7 @@
     "corretta": 1,
     "spiegazione": "L'inglese non ha una flessione del verbo per il futuro: usa will, shall, to be going to e altre costruzioni.",
     "fonte": "Wikipedia (EN), «Uses of English verb forms» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -252,7 +252,7 @@
     "corretta": 2,
     "spiegazione": "«Be going to» indica un futuro previsto da segnali presenti: «It's going to explode!».",
     "fonte": "Wikipedia (EN), «Uses of English verb forms» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -269,7 +269,7 @@
     "corretta": 3,
     "spiegazione": "Il present perfect si riferisce a eventi passati ma soprattutto alla situazione presente che ne deriva (es. «I have lost my keys»).",
     "fonte": "Wikipedia (EN), «Uses of English verb forms» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -286,7 +286,7 @@
     "corretta": 0,
     "spiegazione": "Si usa «an» davanti a un suono vocalico.",
     "fonte": "Wikipedia (EN), «English articles» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -303,7 +303,7 @@
     "corretta": 1,
     "spiegazione": "In «hour» la h è muta: il suono iniziale è vocalico.",
     "fonte": "Wikipedia (EN), «English articles» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -320,7 +320,7 @@
     "corretta": 2,
     "spiegazione": "«One» si pronuncia «won»: il suono iniziale è consonantico.",
     "fonte": "Wikipedia (EN), «English articles» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -337,7 +337,7 @@
     "corretta": 3,
     "spiegazione": "È l'articolo determinativo.",
     "fonte": "Wikipedia (EN), «English articles» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -354,7 +354,7 @@
     "corretta": 0,
     "spiegazione": "Un sostantivo singolare numerabile richiede di norma un determinante.",
     "fonte": "Wikipedia (EN), «English articles» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -371,7 +371,7 @@
     "corretta": 1,
     "spiegazione": "Con plurali usati in senso generale non si usa l'articolo.",
     "fonte": "Wikipedia (EN), «English articles» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -388,7 +388,7 @@
     "corretta": 2,
     "spiegazione": "Dopo un suono sibilante si aggiunge -es.",
     "fonte": "Wikipedia (EN), «English plurals» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -405,7 +405,7 @@
     "corretta": 3,
     "spiegazione": "Consonante + y: la y cade e si aggiunge -ies.",
     "fonte": "Wikipedia (EN), «English plurals» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -422,7 +422,7 @@
     "corretta": 0,
     "spiegazione": "Molti nomi in consonante + o aggiungono -es.",
     "fonte": "Wikipedia (EN), «English plurals» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -439,7 +439,7 @@
     "corretta": 1,
     "spiegazione": "Alcuni nomi in -f cambiano in -ves.",
     "fonte": "Wikipedia (EN), «English plurals» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -456,7 +456,7 @@
     "corretta": 2,
     "spiegazione": "«Persons» si usa in contesti formali (legali, tecnici).",
     "fonte": "Wikipedia (EN), «English plurals» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -473,7 +473,7 @@
     "corretta": 3,
     "spiegazione": "Plurale irregolare, come man → men.",
     "fonte": "Wikipedia (EN), «English plurals» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -490,7 +490,7 @@
     "corretta": 0,
     "spiegazione": "Plurale irregolare con cambio vocalico.",
     "fonte": "Wikipedia (EN), «English plurals» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -507,7 +507,7 @@
     "corretta": 1,
     "spiegazione": "Alcuni nomi di animali hanno il plurale uguale al singolare.",
     "fonte": "Wikipedia (EN), «English plurals» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -524,7 +524,7 @@
     "corretta": 2,
     "spiegazione": "I singolari sono criterion e phenomenon.",
     "fonte": "Wikipedia (EN), «English plurals» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -541,7 +541,7 @@
     "corretta": 3,
     "spiegazione": "Plurale irregolare.",
     "fonte": "Wikipedia (EN), «English plurals» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -558,7 +558,7 @@
     "corretta": 0,
     "spiegazione": "Il soggetto vuole la forma soggetto (I, we…).",
     "fonte": "Wikipedia (EN), «Personal pronouns in English» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -575,7 +575,7 @@
     "corretta": 1,
     "spiegazione": "Il complemento oggetto vuole la forma oggetto (me, us…).",
     "fonte": "Wikipedia (EN), «Personal pronouns in English» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -592,7 +592,7 @@
     "corretta": 2,
     "spiegazione": "Pronome riflessivo: si riferisce al soggetto della stessa frase.",
     "fonte": "Wikipedia (EN), «Personal pronouns in English» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -609,7 +609,7 @@
     "corretta": 3,
     "spiegazione": "Il pronome possessivo sostituisce il nome; my è aggettivo e precede il nome.",
     "fonte": "Wikipedia (EN), «Personal pronouns in English» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -626,7 +626,7 @@
     "corretta": 0,
     "spiegazione": "Rafforza il soggetto («da sola»).",
     "fonte": "Wikipedia (EN), «Personal pronouns in English» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -643,7 +643,7 @@
     "corretta": 1,
     "spiegazione": "Singular they è morfosintatticamente plurale.",
     "fonte": "Wikipedia (EN), «Personal pronouns in English» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -660,7 +660,7 @@
     "corretta": 2,
     "spiegazione": "Genitivo sassone: -'s.",
     "fonte": "Wikipedia (EN), «English possessive» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -677,7 +677,7 @@
     "corretta": 3,
     "spiegazione": "«its» possessivo non ha l'apostrofo (it's = it is).",
     "fonte": "Wikipedia (EN), «English possessive» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -694,7 +694,7 @@
     "corretta": 0,
     "spiegazione": "Il morfema -'s si attacca all'ultima parola del sintagma.",
     "fonte": "Wikipedia (EN), «English possessive» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -711,7 +711,7 @@
     "corretta": 1,
     "spiegazione": "whose è il possessivo di who.",
     "fonte": "Wikipedia (EN), «English possessive» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -728,7 +728,7 @@
     "corretta": 2,
     "spiegazione": "Anche i nomi singolari in -s prendono di solito -'s.",
     "fonte": "Wikipedia (EN), «English possessive» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -745,7 +745,7 @@
     "corretta": 3,
     "spiegazione": "Gli aggettivi di una sillaba prendono il suffisso -er.",
     "fonte": "Wikipedia (EN), «Degrees of comparison of adjectives and adverbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -762,7 +762,7 @@
     "corretta": 0,
     "spiegazione": "good → better → best (irregolare).",
     "fonte": "Wikipedia (EN), «Degrees of comparison of adjectives and adverbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -779,7 +779,7 @@
     "corretta": 1,
     "spiegazione": "Gli aggettivi di tre o più sillabe usano more/most.",
     "fonte": "Wikipedia (EN), «Degrees of comparison of adjectives and adverbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -796,7 +796,7 @@
     "corretta": 2,
     "spiegazione": "Comparativo di uguaglianza: as … as.",
     "fonte": "Wikipedia (EN), «Degrees of comparison of adjectives and adverbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -813,7 +813,7 @@
     "corretta": 3,
     "spiegazione": "Es. «She is taller than me».",
     "fonte": "Wikipedia (EN), «Degrees of comparison of adjectives and adverbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -830,7 +830,7 @@
     "corretta": 0,
     "spiegazione": "Si usa o il suffisso o more, non entrambi.",
     "fonte": "Wikipedia (EN), «Degrees of comparison of adjectives and adverbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -847,7 +847,7 @@
     "corretta": 1,
     "spiegazione": "Forme irregolari.",
     "fonte": "Wikipedia (EN), «Degrees of comparison of adjectives and adverbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -864,7 +864,7 @@
     "corretta": 2,
     "spiegazione": "Il significato spesso non è deducibile dalle singole parti.",
     "fonte": "Wikipedia (EN), «English phrasal verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -881,7 +881,7 @@
     "corretta": 3,
     "spiegazione": "«I can't put up with this noise» = non sopporto questo rumore.",
     "fonte": "Wikipedia (EN), «English phrasal verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -898,7 +898,7 @@
     "corretta": 0,
     "spiegazione": "Seguito da nome o -ing: «I look forward to hearing from you».",
     "fonte": "Wikipedia (EN), «English phrasal verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -915,7 +915,7 @@
     "corretta": 1,
     "spiegazione": "Esempio di verbo con particella e preposizione.",
     "fonte": "Wikipedia (EN), «English phrasal verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -932,7 +932,7 @@
     "corretta": 2,
     "spiegazione": "Es. «I have finished».",
     "fonte": "Wikipedia (EN), «Present perfect» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -949,7 +949,7 @@
     "corretta": 3,
     "spiegazione": "for + durata; since + punto di inizio.",
     "fonte": "Wikipedia (EN), «Present perfect» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -966,7 +966,7 @@
     "corretta": 0,
     "spiegazione": "since + momento d'inizio.",
     "fonte": "Wikipedia (EN), «Present perfect» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -983,7 +983,7 @@
     "corretta": 1,
     "spiegazione": "already si usa nelle frasi affermative al present perfect.",
     "fonte": "Wikipedia (EN), «Present perfect» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1000,7 +1000,7 @@
     "corretta": 2,
     "spiegazione": "Indica un'azione iniziata nel passato e ancora in corso.",
     "fonte": "Wikipedia (EN), «Present perfect» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1017,7 +1017,7 @@
     "corretta": 3,
     "spiegazione": "Consonante + y → -ied.",
     "fonte": "Wikipedia (EN), «Simple past» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1034,7 +1034,7 @@
     "corretta": 0,
     "spiegazione": "Consonante + vocale + consonante: si raddoppia la consonante finale.",
     "fonte": "Wikipedia (EN), «Simple past» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1051,7 +1051,7 @@
     "corretta": 1,
     "spiegazione": "I verbi in -e aggiungono solo -d.",
     "fonte": "Wikipedia (EN), «Simple past» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1068,7 +1068,7 @@
     "corretta": 2,
     "spiegazione": "be ha due forme al passato: was (I/he/she/it) e were (le altre).",
     "fonte": "Wikipedia (EN), «Simple past» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1085,7 +1085,7 @@
     "corretta": 3,
     "spiegazione": "ago si usa con il simple past.",
     "fonte": "Wikipedia (EN), «Simple past» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1102,7 +1102,7 @@
     "corretta": 0,
     "spiegazione": "Es. «When did they get married?», «I didn't go».",
     "fonte": "Wikipedia (EN), «Simple past» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1119,7 +1119,7 @@
     "corretta": 1,
     "spiegazione": "Es. I/you/he helped.",
     "fonte": "Wikipedia (EN), «Simple past» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1136,7 +1136,7 @@
     "corretta": 2,
     "spiegazione": "be going to esprime un evento imminente con indizi presenti.",
     "fonte": "Wikipedia (EN), «Going-to future» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1153,7 +1153,7 @@
     "corretta": 3,
     "spiegazione": "Es. «I am going to visit Paris».",
     "fonte": "Wikipedia (EN), «Going-to future» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1170,7 +1170,7 @@
     "corretta": 0,
     "spiegazione": "be going to può esprimere intenzione o imminenza.",
     "fonte": "Wikipedia (EN), «Going-to future» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1187,7 +1187,7 @@
     "corretta": 1,
     "spiegazione": "Tipico dell'inglese parlato informale.",
     "fonte": "Wikipedia (EN), «Going-to future» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1204,7 +1204,7 @@
     "corretta": 2,
     "spiegazione": "Voce «Going-to future».",
     "fonte": "Wikipedia (EN), «Going-to future» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1221,7 +1221,7 @@
     "corretta": 3,
     "spiegazione": "Frase affermativa → tag negativo con lo stesso ausiliare.",
     "fonte": "Wikipedia (EN), «Tag question» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1238,7 +1238,7 @@
     "corretta": 0,
     "spiegazione": "Frase negativa → tag positivo.",
     "fonte": "Wikipedia (EN), «Tag question» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1255,7 +1255,7 @@
     "corretta": 1,
     "spiegazione": "Con «let's» il tag è «shall we?».",
     "fonte": "Wikipedia (EN), «Tag question» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1272,7 +1272,7 @@
     "corretta": 2,
     "spiegazione": "«amn't I» è scozzese/irlandese; «ain't I» non standard.",
     "fonte": "Wikipedia (EN), «Tag question» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1289,7 +1289,7 @@
     "corretta": 3,
     "spiegazione": "Dopo un imperativo si usa spesso «will you?» / «won't you?».",
     "fonte": "Wikipedia (EN), «Tag question» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1306,7 +1306,7 @@
     "corretta": 0,
     "spiegazione": "Cambiano persona e tempo verbale.",
     "fonte": "Wikipedia (EN), «Indirect speech» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1323,7 +1323,7 @@
     "corretta": 1,
     "spiegazione": "shall → would; tomorrow → the next day.",
     "fonte": "Wikipedia (EN), «Indirect speech» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1340,7 +1340,7 @@
     "corretta": 2,
     "spiegazione": "Domanda indiretta con if + ordine soggetto-verbo.",
     "fonte": "Wikipedia (EN), «Indirect speech» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1357,7 +1357,7 @@
     "corretta": 3,
     "spiegazione": "Cambiano anche le espressioni di tempo.",
     "fonte": "Wikipedia (EN), «Indirect speech» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1374,7 +1374,7 @@
     "corretta": 0,
     "spiegazione": "enjoy è seguito dalla forma in -ing.",
     "fonte": "Wikipedia (EN), «Gerund» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1391,7 +1391,7 @@
     "corretta": 1,
     "spiegazione": "Il gerundio può fare da soggetto.",
     "fonte": "Wikipedia (EN), «Gerund» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1408,7 +1408,7 @@
     "corretta": 2,
     "spiegazione": "avoid è seguito dalla forma in -ing.",
     "fonte": "Wikipedia (EN), «Gerund» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1425,7 +1425,7 @@
     "corretta": 3,
     "spiegazione": "give up + -ing.",
     "fonte": "Wikipedia (EN), «Gerund» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1442,7 +1442,7 @@
     "corretta": 0,
     "spiegazione": "Si dice «20 litres of water», non «20 waters».",
     "fonte": "Wikipedia (EN), «Mass noun» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1459,7 +1459,7 @@
     "corretta": 1,
     "spiegazione": "much con i non numerabili, many con i numerabili.",
     "fonte": "Wikipedia (EN), «Mass noun» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1476,7 +1476,7 @@
     "corretta": 2,
     "spiegazione": "many con i numerabili plurali.",
     "fonte": "Wikipedia (EN), «Mass noun» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1493,7 +1493,7 @@
     "corretta": 3,
     "spiegazione": "furniture è non numerabile; chair è numerabile.",
     "fonte": "Wikipedia (EN), «Count noun» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1510,7 +1510,7 @@
     "corretta": 0,
     "spiegazione": "Voce «Mass noun».",
     "fonte": "Wikipedia (EN), «Mass noun» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1527,7 +1527,7 @@
     "corretta": 1,
     "spiegazione": "Voce «Mass noun».",
     "fonte": "Wikipedia (EN), «Mass noun» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1544,7 +1544,7 @@
     "corretta": 2,
     "spiegazione": "every/each/several vanno solo con i numerabili.",
     "fonte": "Wikipedia (EN), «Count noun» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1561,7 +1561,7 @@
     "corretta": 3,
     "spiegazione": "Senza altro ausiliare si usa do.",
     "fonte": "Wikipedia (EN), «Do-support» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1578,7 +1578,7 @@
     "corretta": 0,
     "spiegazione": "«I know not» è arcaico.",
     "fonte": "Wikipedia (EN), «Do-support» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1595,7 +1595,7 @@
     "corretta": 1,
     "spiegazione": "Non si usa do con be o con altri ausiliari.",
     "fonte": "Wikipedia (EN), «Do-support» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1612,7 +1612,7 @@
     "corretta": 2,
     "spiegazione": "do può dare enfasi anche in frasi affermative.",
     "fonte": "Wikipedia (EN), «Do-support» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1629,7 +1629,7 @@
     "corretta": 3,
     "spiegazione": "Il soggetto «you» è di solito sottinteso.",
     "fonte": "Wikipedia (EN), «Imperative mood» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1646,7 +1646,7 @@
     "corretta": 0,
     "spiegazione": "Si usa do not.",
     "fonte": "Wikipedia (EN), «Imperative mood» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1663,7 +1663,7 @@
     "corretta": 1,
     "spiegazione": "Es. «Let's go!».",
     "fonte": "Wikipedia (EN), «Imperative mood» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1680,7 +1680,7 @@
     "corretta": 2,
     "spiegazione": "used to + infinito per le abitudini passate.",
     "fonte": "Wikipedia (EN), «English markers of habitual aspect» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1697,7 +1697,7 @@
     "corretta": 3,
     "spiegazione": "Es. «We would often have a drink after class».",
     "fonte": "Wikipedia (EN), «English markers of habitual aspect» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1714,7 +1714,7 @@
     "corretta": 0,
     "spiegazione": "Non esiste un marcatore speciale per le abitudini presenti.",
     "fonte": "Wikipedia (EN), «English markers of habitual aspect» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1731,7 +1731,7 @@
     "corretta": 1,
     "spiegazione": "when = tempo, who = persona, why = causa.",
     "fonte": "Wikipedia (EN), «Interrogative word» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1748,7 +1748,7 @@
     "corretta": 2,
     "spiegazione": "what, which, when, where, who, why…",
     "fonte": "Wikipedia (EN), «Interrogative word» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1765,7 +1765,7 @@
     "corretta": 3,
     "spiegazione": "Nelle domande indirette l'ordine è soggetto + verbo.",
     "fonte": "Wikipedia (EN), «Interrogative word» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1782,7 +1782,7 @@
     "corretta": 0,
     "spiegazione": "È un falso amico: «parenti» si dice relatives.",
     "fonte": "Wikipedia (EN), «False friend» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1799,7 +1799,7 @@
     "corretta": 1,
     "spiegazione": "«Domandare» si dice to ask.",
     "fonte": "Wikipedia (EN), «False friend» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1816,7 +1816,7 @@
     "corretta": 2,
     "spiegazione": "Es. embarrassed ≠ embarazada.",
     "fonte": "Wikipedia (EN), «False friend» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1833,7 +1833,7 @@
     "corretta": 3,
     "spiegazione": "La vocale omessa è sostituita dall'apostrofo.",
     "fonte": "Wikipedia (EN), «Contraction (grammar)» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1850,7 +1850,7 @@
     "corretta": 0,
     "spiegazione": "Sono comuni nel parlato e nella scrittura informale.",
     "fonte": "Wikipedia (EN), «Contraction (grammar)» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1867,7 +1867,7 @@
     "corretta": 1,
     "spiegazione": "Contrazione irregolare.",
     "fonte": "Wikipedia (EN), «Contraction (grammar)» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1884,7 +1884,7 @@
     "corretta": 2,
     "spiegazione": "Es. «I am reading», «he was playing».",
     "fonte": "Wikipedia (EN), «Continuous and progressive aspects» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1901,7 +1901,7 @@
     "corretta": 3,
     "spiegazione": "Past continuous: azione in corso in un momento del passato.",
     "fonte": "Wikipedia (EN), «Continuous and progressive aspects» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1918,7 +1918,7 @@
     "corretta": 0,
     "spiegazione": "Per azioni concluse si usa il simple past.",
     "fonte": "Wikipedia (EN), «Continuous and progressive aspects» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1935,7 +1935,7 @@
     "corretta": 1,
     "spiegazione": "Il simple present esprime stati permanenti e abitudini.",
     "fonte": "Wikipedia (EN), «Uses of English verb forms» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1952,7 +1952,7 @@
     "corretta": 2,
     "spiegazione": "Es. «I am working from home this week».",
     "fonte": "Wikipedia (EN), «Uses of English verb forms» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1969,7 +1969,7 @@
     "corretta": 3,
     "spiegazione": "Es. «I was cooking when you arrived».",
     "fonte": "Wikipedia (EN), «Uses of English verb forms» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -1986,7 +1986,7 @@
     "corretta": 0,
     "spiegazione": "Future perfect: will + have + participio passato.",
     "fonte": "Wikipedia (EN), «Future perfect» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2003,7 +2003,7 @@
     "corretta": 1,
     "spiegazione": "Azione che sarà conclusa prima di un momento futuro.",
     "fonte": "Wikipedia (EN), «Future perfect» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2020,7 +2020,7 @@
     "corretta": 2,
     "spiegazione": "Es. «We had arrived before the game began».",
     "fonte": "Wikipedia (EN), «Pluperfect» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2037,7 +2037,7 @@
     "corretta": 3,
     "spiegazione": "Corrisponde al trapassato prossimo italiano.",
     "fonte": "Wikipedia (EN), «Pluperfect» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2054,7 +2054,7 @@
     "corretta": 0,
     "spiegazione": "Past perfect continuous.",
     "fonte": "Wikipedia (EN), «Pluperfect» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2071,7 +2071,7 @@
     "corretta": 1,
     "spiegazione": "Al presente la terza persona singolare prende -s.",
     "fonte": "Wikipedia (EN), «English verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2088,7 +2088,7 @@
     "corretta": 2,
     "spiegazione": "L'irregolarità riguarda quasi sempre passato e participio.",
     "fonte": "Wikipedia (EN), «English verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2105,7 +2105,7 @@
     "corretta": 3,
     "spiegazione": "Verbo irregolare: le irregolarità riguardano passato e participio.",
     "fonte": "Wikipedia (EN), «English verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2122,7 +2122,7 @@
     "corretta": 0,
     "spiegazione": "see – saw – seen.",
     "fonte": "Wikipedia (EN), «English verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2139,7 +2139,7 @@
     "corretta": 1,
     "spiegazione": "write – wrote – written.",
     "fonte": "Wikipedia (EN), «English verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2156,7 +2156,7 @@
     "corretta": 2,
     "spiegazione": "buy – bought – bought; attenzione a bring – brought.",
     "fonte": "Wikipedia (EN), «English verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2173,7 +2173,7 @@
     "corretta": 3,
     "spiegazione": "take – took – taken.",
     "fonte": "Wikipedia (EN), «English verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2190,7 +2190,7 @@
     "corretta": 0,
     "spiegazione": "be è il verbo più irregolare.",
     "fonte": "Wikipedia (EN), «English verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2207,7 +2207,7 @@
     "corretta": 1,
     "spiegazione": "«have they went» è considerato non standard.",
     "fonte": "Wikipedia (EN), «English verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2224,7 +2224,7 @@
     "corretta": 2,
     "spiegazione": "Dopo i modali si usa l'infinito senza to.",
     "fonte": "Wikipedia (EN), «Infinitive» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2241,7 +2241,7 @@
     "corretta": 3,
     "spiegazione": "Es. «I expect to happily sit here».",
     "fonte": "Wikipedia (EN), «Infinitive» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2258,7 +2258,7 @@
     "corretta": 0,
     "spiegazione": "want è seguito dal to-infinitive.",
     "fonte": "Wikipedia (EN), «Infinitive» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2275,7 +2275,7 @@
     "corretta": 1,
     "spiegazione": "Ordine: opinione, dimensione, età/forma, colore, origine, materiale, scopo.",
     "fonte": "Wikipedia (EN), «Adjective» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2292,7 +2292,7 @@
     "corretta": 2,
     "spiegazione": "Segue un verbo copulativo.",
     "fonte": "Wikipedia (EN), «Adjective» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2309,7 +2309,7 @@
     "corretta": 3,
     "spiegazione": "Es. «That used to be an immensely funny idea».",
     "fonte": "Wikipedia (EN), «Adjective» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2326,7 +2326,7 @@
     "corretta": 0,
     "spiegazione": "Es. probably, especially, finally.",
     "fonte": "Wikipedia (EN), «English adverbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2343,7 +2343,7 @@
     "corretta": 1,
     "spiegazione": "fast, well, right, very sono avverbi semplici.",
     "fonte": "Wikipedia (EN), «English adverbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2360,7 +2360,7 @@
     "corretta": 2,
     "spiegazione": "Voce «English adverbs».",
     "fonte": "Wikipedia (EN), «English adverbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2377,7 +2377,7 @@
     "corretta": 3,
     "spiegazione": "either/neither indicano una scelta tra esattamente due elementi.",
     "fonte": "Wikipedia (EN), «English determiners» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2394,7 +2394,7 @@
     "corretta": 0,
     "spiegazione": "Segnalano una sola scelta.",
     "fonte": "Wikipedia (EN), «English determiners» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2411,7 +2411,7 @@
     "corretta": 1,
     "spiegazione": "Determinanti: the, a, each, some, which, this, numerali…",
     "fonte": "Wikipedia (EN), «English determiners» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2428,7 +2428,7 @@
     "corretta": 2,
     "spiegazione": "Tra 21 e 99 si usa il trattino.",
     "fonte": "Wikipedia (EN), «English numerals» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2445,7 +2445,7 @@
     "corretta": 3,
     "spiegazione": "hundred resta al singolare dopo un numero.",
     "fonte": "Wikipedia (EN), «English numerals» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2462,7 +2462,7 @@
     "corretta": 0,
     "spiegazione": "I cardinali indicano la quantità.",
     "fonte": "Wikipedia (EN), «English numerals» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2479,7 +2479,7 @@
     "corretta": 1,
     "spiegazione": "A dozen = 12.",
     "fonte": "Wikipedia (EN), «English numerals» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2496,7 +2496,7 @@
     "corretta": 2,
     "spiegazione": "Il «long scale» britannico (milione di milioni) è obsoleto.",
     "fonte": "Wikipedia (EN), «English numerals» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2513,7 +2513,7 @@
     "corretta": 3,
     "spiegazione": "Gli omofoni con grafia diversa si dicono anche eterografi.",
     "fonte": "Wikipedia (EN), «Homophone» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2530,7 +2530,7 @@
     "corretta": 0,
     "spiegazione": "Stessa pronuncia, significato e grafia diversi.",
     "fonte": "Wikipedia (EN), «Homophone» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2547,7 +2547,7 @@
     "corretta": 1,
     "spiegazione": "Si risponde con sì o no.",
     "fonte": "Wikipedia (EN), «Question» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2564,7 +2564,7 @@
     "corretta": 2,
     "spiegazione": "Offre una scelta tra alternative.",
     "fonte": "Wikipedia (EN), «Question» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2581,7 +2581,7 @@
     "corretta": 3,
     "spiegazione": "Ammette infinite risposte possibili.",
     "fonte": "Wikipedia (EN), «Question» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2598,7 +2598,7 @@
     "corretta": 0,
     "spiegazione": "Es. ice cream, mother-of-pearl, notebook.",
     "fonte": "Wikipedia (EN), «English compound» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2615,7 +2615,7 @@
     "corretta": 1,
     "spiegazione": "could è il passato di can per l'abilità.",
     "fonte": "Wikipedia (EN), «English modal auxiliary verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2632,7 +2632,7 @@
     "corretta": 2,
     "spiegazione": "Es. «I will be able to come».",
     "fonte": "Wikipedia (EN), «English modal auxiliary verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2649,7 +2649,7 @@
     "corretta": 3,
     "spiegazione": "Es. «You are allowed to leave».",
     "fonte": "Wikipedia (EN), «English modal auxiliary verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2666,7 +2666,7 @@
     "corretta": 0,
     "spiegazione": "Es. «I had to work» (passato di must).",
     "fonte": "Wikipedia (EN), «English modal auxiliary verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2683,7 +2683,7 @@
     "corretta": 1,
     "spiegazione": "I modali non prendono -s alla terza persona e non vogliono to.",
     "fonte": "Wikipedia (EN), «English modal auxiliary verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2700,7 +2700,7 @@
     "corretta": 2,
     "spiegazione": "Si nega aggiungendo not al modale.",
     "fonte": "Wikipedia (EN), «English modal auxiliary verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2717,7 +2717,7 @@
     "corretta": 3,
     "spiegazione": "shall nelle richieste di consiglio o proposte.",
     "fonte": "Wikipedia (EN), «English modal auxiliary verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2734,7 +2734,7 @@
     "corretta": 0,
     "spiegazione": "Es. may, might, must.",
     "fonte": "Wikipedia (EN), «English modal auxiliary verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2751,7 +2751,7 @@
     "corretta": 1,
     "spiegazione": "In alcuni usi.",
     "fonte": "Wikipedia (EN), «English modal auxiliary verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2768,7 +2768,7 @@
     "corretta": 2,
     "spiegazione": "First conditional: if + present, modale nella principale.",
     "fonte": "Wikipedia (EN), «English conditional sentences» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2785,7 +2785,7 @@
     "corretta": 3,
     "spiegazione": "Nella proposizione con if si usa il present simple.",
     "fonte": "Wikipedia (EN), «English conditional sentences» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2802,7 +2802,7 @@
     "corretta": 0,
     "spiegazione": "Es. «Unless you hurry, you'll miss the bus».",
     "fonte": "Wikipedia (EN), «English conditional sentences» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2819,7 +2819,7 @@
     "corretta": 1,
     "spiegazione": "Zero conditional: if + present, present.",
     "fonte": "Wikipedia (EN), «English conditional sentences» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2836,7 +2836,7 @@
     "corretta": 2,
     "spiegazione": "Second conditional: if + past, would + infinito.",
     "fonte": "Wikipedia (EN), «English conditional sentences» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2853,7 +2853,7 @@
     "corretta": 3,
     "spiegazione": "were + to + infinito.",
     "fonte": "Wikipedia (EN), «English conditional sentences» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2870,7 +2870,7 @@
     "corretta": 0,
     "spiegazione": "if + past perfect, would have + participio.",
     "fonte": "Wikipedia (EN), «English conditional sentences» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2887,7 +2887,7 @@
     "corretta": 1,
     "spiegazione": "Voce «English conditional sentences».",
     "fonte": "Wikipedia (EN), «English conditional sentences» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2904,7 +2904,7 @@
     "corretta": 2,
     "spiegazione": "Il passivo omette l'agente.",
     "fonte": "Wikipedia (EN), «English passive voice» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2921,7 +2921,7 @@
     "corretta": 3,
     "spiegazione": "has been + participio passato.",
     "fonte": "Wikipedia (EN), «English passive voice» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2938,7 +2938,7 @@
     "corretta": 0,
     "spiegazione": "Voce «English passive voice».",
     "fonte": "Wikipedia (EN), «English passive voice» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2955,7 +2955,7 @@
     "corretta": 1,
     "spiegazione": "get + participio passato.",
     "fonte": "Wikipedia (EN), «English passive voice» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2972,7 +2972,7 @@
     "corretta": 2,
     "spiegazione": "Present perfect passivo.",
     "fonte": "Wikipedia (EN), «English passive voice» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -2989,7 +2989,7 @@
     "corretta": 3,
     "spiegazione": "be (al tempo dell'attivo) + participio passato.",
     "fonte": "Wikipedia (EN), «English passive voice» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3006,7 +3006,7 @@
     "corretta": 0,
     "spiegazione": "Es. «the man whom I met».",
     "fonte": "Wikipedia (EN), «English relative clauses» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3023,7 +3023,7 @@
     "corretta": 1,
     "spiegazione": "Il pronome relativo oggetto si può omettere.",
     "fonte": "Wikipedia (EN), «English relative clauses» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3040,7 +3040,7 @@
     "corretta": 2,
     "spiegazione": "Es. «My teacher, who…, …».",
     "fonte": "Wikipedia (EN), «English relative clauses» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3057,7 +3057,7 @@
     "corretta": 3,
     "spiegazione": "which per le cose; in una non-restrittiva non si usa that.",
     "fonte": "Wikipedia (EN), «English relative clauses» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3074,7 +3074,7 @@
     "corretta": 0,
     "spiegazione": "bring – brought – brought.",
     "fonte": "Wikipedia (EN), «English verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3091,7 +3091,7 @@
     "corretta": 1,
     "spiegazione": "think – thought – thought.",
     "fonte": "Wikipedia (EN), «English verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3108,7 +3108,7 @@
     "corretta": 2,
     "spiegazione": "begin – began – begun.",
     "fonte": "Wikipedia (EN), «English verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3125,7 +3125,7 @@
     "corretta": 3,
     "spiegazione": "speak – spoke – spoken.",
     "fonte": "Wikipedia (EN), «English verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3142,7 +3142,7 @@
     "corretta": 0,
     "spiegazione": "teach – taught – taught.",
     "fonte": "Wikipedia (EN), «English verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3159,7 +3159,7 @@
     "corretta": 1,
     "spiegazione": "leave – left – left.",
     "fonte": "Wikipedia (EN), «English verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3176,7 +3176,7 @@
     "corretta": 2,
     "spiegazione": "choose – chose – chosen.",
     "fonte": "Wikipedia (EN), «English verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3193,7 +3193,7 @@
     "corretta": 3,
     "spiegazione": "do – did – done; «I seen it, he done it» è non standard.",
     "fonte": "Wikipedia (EN), «English verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3210,7 +3210,7 @@
     "corretta": 0,
     "spiegazione": "Simple past di be.",
     "fonte": "Wikipedia (EN), «Simple past» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3227,7 +3227,7 @@
     "corretta": 1,
     "spiegazione": "Domanda al simple past con did + infinito.",
     "fonte": "Wikipedia (EN), «Simple past» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3244,7 +3244,7 @@
     "corretta": 2,
     "spiegazione": "Es. «I came home at 6 o'clock».",
     "fonte": "Wikipedia (EN), «Simple past» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3261,7 +3261,7 @@
     "corretta": 3,
     "spiegazione": "Referente unico o noto: articolo determinativo.",
     "fonte": "Wikipedia (EN), «English articles» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3278,7 +3278,7 @@
     "corretta": 0,
     "spiegazione": "Si parafrasa con for: shoes for women.",
     "fonte": "Wikipedia (EN), «English possessive» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3295,7 +3295,7 @@
     "corretta": 1,
     "spiegazione": "Gerundio come complemento oggetto.",
     "fonte": "Wikipedia (EN), «Gerund» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3312,7 +3312,7 @@
     "corretta": 2,
     "spiegazione": "Plurale irregolare.",
     "fonte": "Wikipedia (EN), «English plurals» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3329,7 +3329,7 @@
     "corretta": 3,
     "spiegazione": "Con due sillabe alcuni aggettivi ammettono entrambe le forme.",
     "fonte": "Wikipedia (EN), «Degrees of comparison of adjectives and adverbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3346,7 +3346,7 @@
     "corretta": 0,
     "spiegazione": "less = comparativo di minoranza, least = superlativo.",
     "fonte": "Wikipedia (EN), «Degrees of comparison of adjectives and adverbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3363,7 +3363,7 @@
     "corretta": 1,
     "spiegazione": "Offerta con «shall I?».",
     "fonte": "Wikipedia (EN), «Tag question» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3380,7 +3380,7 @@
     "corretta": 2,
     "spiegazione": "Es. «She turned down the offer».",
     "fonte": "Wikipedia (EN), «English phrasal verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3397,7 +3397,7 @@
     "corretta": 3,
     "spiegazione": "can → could nel discorso indiretto.",
     "fonte": "Wikipedia (EN), «Indirect speech» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3414,7 +3414,7 @@
     "corretta": 0,
     "spiegazione": "Le preposizioni (of, in, on, at, from…) introducono un sintagma preposizionale.",
     "fonte": "Wikipedia (EN), «English prepositions» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3431,7 +3431,7 @@
     "corretta": 1,
     "spiegazione": "Es. «in the water», «at noon».",
     "fonte": "Wikipedia (EN), «English prepositions» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3448,7 +3448,7 @@
     "corretta": 2,
     "spiegazione": "Dopo una preposizione si usa il pronome complemento (near me, at her).",
     "fonte": "Wikipedia (EN), «English prepositions» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3465,7 +3465,7 @@
     "corretta": 3,
     "spiegazione": "Le preposizioni sono poche e non flettono.",
     "fonte": "Wikipedia (EN), «English prepositions» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3482,7 +3482,7 @@
     "corretta": 0,
     "spiegazione": "Es. «the king of Spain».",
     "fonte": "Wikipedia (EN), «English prepositions» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3499,7 +3499,7 @@
     "corretta": 1,
     "spiegazione": "È uno dei rari casi di posposizione in inglese.",
     "fonte": "Wikipedia (EN), «English prepositions» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3516,7 +3516,7 @@
     "corretta": 2,
     "spiegazione": "Corretto: «I live in a small house» o «I live in my house».",
     "fonte": "Wikipedia (EN), «English determiners» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3533,7 +3533,7 @@
     "corretta": 3,
     "spiegazione": "Alcuni determinanti concordano nel numero: this book, these books.",
     "fonte": "Wikipedia (EN), «English determiners» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3550,7 +3550,7 @@
     "corretta": 0,
     "spiegazione": "I determinanti compaiono nelle costruzioni partitive, aggettivi e possessivi no.",
     "fonte": "Wikipedia (EN), «English determiners» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3567,7 +3567,7 @@
     "corretta": 1,
     "spiegazione": "Molti avverbi si formano aggiungendo -ly all'aggettivo.",
     "fonte": "Wikipedia (EN), «English determiners» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3584,7 +3584,7 @@
     "corretta": 2,
     "spiegazione": "La forma senza «to» si chiama bare infinitive.",
     "fonte": "Wikipedia (EN), «Infinitive» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3601,7 +3601,7 @@
     "corretta": 3,
     "spiegazione": "Il soggetto implicito dell'infinito è al caso oggetto.",
     "fonte": "Wikipedia (EN), «Infinitive» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3618,7 +3618,7 @@
     "corretta": 0,
     "spiegazione": "Es. «I decided not to go».",
     "fonte": "Wikipedia (EN), «Infinitive» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3635,7 +3635,7 @@
     "corretta": 1,
     "spiegazione": "«to have eaten» è l'infinito perfetto, «to be eating» quello progressivo.",
     "fonte": "Wikipedia (EN), «Infinitive» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3652,7 +3652,7 @@
     "corretta": 2,
     "spiegazione": "Es. «I'm happy to have met you».",
     "fonte": "Wikipedia (EN), «Infinitive» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3669,7 +3669,7 @@
     "corretta": 3,
     "spiegazione": "«had better», come i modali, è seguito dall'infinito senza to.",
     "fonte": "Wikipedia (EN), «Infinitive» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3686,7 +3686,7 @@
     "corretta": 0,
     "spiegazione": "few, many e i numeri vanno con i numerabili; little e much con i non numerabili.",
     "fonte": "Wikipedia (EN), «Count noun» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3703,7 +3703,7 @@
     "corretta": 1,
     "spiegazione": "«furniture» è non numerabile: si conta con «pieces of».",
     "fonte": "Wikipedia (EN), «Count noun» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3720,7 +3720,7 @@
     "corretta": 2,
     "spiegazione": "I nomi numerabili hanno singolare e plurale e accettano numeri.",
     "fonte": "Wikipedia (EN), «Count noun» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3737,7 +3737,7 @@
     "corretta": 3,
     "spiegazione": "«coffee» può essere usato come numerabile per indicare le tazze.",
     "fonte": "Wikipedia (EN), «Count noun» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3754,7 +3754,7 @@
     "corretta": 0,
     "spiegazione": "Es. «fewer cars», «less traffic».",
     "fonte": "Wikipedia (EN), «Count noun» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3771,7 +3771,7 @@
     "corretta": 1,
     "spiegazione": "I composti si scrivono aperti, con trattino o uniti.",
     "fonte": "Wikipedia (EN), «English compound» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3788,7 +3788,7 @@
     "corretta": 2,
     "spiegazione": "I composti con articoli, preposizioni o congiunzioni sono spesso con trattino.",
     "fonte": "Wikipedia (EN), «English compound» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3805,7 +3805,7 @@
     "corretta": 3,
     "spiegazione": "Es. coal mine → coalmine, bottle cap → bottlecap.",
     "fonte": "Wikipedia (EN), «English compound» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3822,7 +3822,7 @@
     "corretta": 0,
     "spiegazione": "Il nome è l'oggetto del verbo: chi combatte il fuoco.",
     "fonte": "Wikipedia (EN), «English compound» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3839,7 +3839,7 @@
     "corretta": 1,
     "spiegazione": "La composizione è il processo di formazione delle parole più produttivo dell'inglese.",
     "fonte": "Wikipedia (EN), «English compound» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3856,7 +3856,7 @@
     "corretta": 2,
     "spiegazione": "Negativo: will not / won't + have + participio passato.",
     "fonte": "Wikipedia (EN), «Future perfect» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3873,7 +3873,7 @@
     "corretta": 3,
     "spiegazione": "Il future perfect con will può indicare una supposizione sul presente.",
     "fonte": "Wikipedia (EN), «Future perfect» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3890,7 +3890,7 @@
     "corretta": 0,
     "spiegazione": "Il termine è oggi obsoleto.",
     "fonte": "Wikipedia (EN), «Future perfect» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3907,7 +3907,7 @@
     "corretta": 1,
     "spiegazione": "«would have + participio» esprime il futuro anteriore visto dal passato.",
     "fonte": "Wikipedia (EN), «Future perfect» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3924,7 +3924,7 @@
     "corretta": 2,
     "spiegazione": "Future perfect: will have + past participle.",
     "fonte": "Wikipedia (EN), «Future perfect» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3941,7 +3941,7 @@
     "corretta": 3,
     "spiegazione": "Al presente la terza persona singolare prende -s (o -es: fishes).",
     "fonte": "Wikipedia (EN), «Verb» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3958,7 +3958,7 @@
     "corretta": 0,
     "spiegazione": "Un verbo intransitivo non ha complemento oggetto.",
     "fonte": "Wikipedia (EN), «Verb» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3975,7 +3975,7 @@
     "corretta": 1,
     "spiegazione": "«My friend read the newspaper» → «The newspaper was read by my friend».",
     "fonte": "Wikipedia (EN), «Verb» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -3992,7 +3992,7 @@
     "corretta": 2,
     "spiegazione": "L'inglese americano preferisce le forme regolari (learned, spelled), quello britannico spesso quelle irregolari (learnt, spelt).",
     "fonte": "Wikipedia (EN), «List of English irregular verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4009,7 +4009,7 @@
     "corretta": 3,
     "spiegazione": "Es. «to google» → googled.",
     "fonte": "Wikipedia (EN), «List of English irregular verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4026,7 +4026,7 @@
     "corretta": 0,
     "spiegazione": "Es. he is, he does, he has, he says (pronunciato in modo irregolare).",
     "fonte": "Wikipedia (EN), «List of English irregular verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4043,7 +4043,7 @@
     "corretta": 1,
     "spiegazione": "Le contrazioni di do si usano solo al negativo.",
     "fonte": "Wikipedia (EN), «List of English irregular verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4060,7 +4060,7 @@
     "corretta": 2,
     "spiegazione": "Anche i verbi irregolari formano -ing in modo regolare (go → going).",
     "fonte": "Wikipedia (EN), «List of English irregular verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4077,7 +4077,7 @@
     "corretta": 3,
     "spiegazione": "Alcuni nomi di animali hanno plurale uguale al singolare: deer, sheep, salmon, trout.",
     "fonte": "Wikipedia (EN), «English plurals» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4094,7 +4094,7 @@
     "corretta": 0,
     "spiegazione": "Anche spacecraft, hovercraft: plurale invariato.",
     "fonte": "Wikipedia (EN), «English plurals» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4111,7 +4111,7 @@
     "corretta": 1,
     "spiegazione": "Anche «species» resta uguale.",
     "fonte": "Wikipedia (EN), «English plurals» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4128,7 +4128,7 @@
     "corretta": 2,
     "spiegazione": "«pennies» indica invece le monete.",
     "fonte": "Wikipedia (EN), «English plurals» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4145,7 +4145,7 @@
     "corretta": 3,
     "spiegazione": "I neutri latini in -um fanno il plurale in -a (stadium, stadia).",
     "fonte": "Wikipedia (EN), «English plurals» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4162,7 +4162,7 @@
     "corretta": 0,
     "spiegazione": "Alcuni medici usano «appendixes»: le forme latine e inglesi coesistono.",
     "fonte": "Wikipedia (EN), «English plurals» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4179,7 +4179,7 @@
     "corretta": 1,
     "spiegazione": "I composti con man/woman fanno il plurale come man → men.",
     "fonte": "Wikipedia (EN), «English plurals» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4196,7 +4196,7 @@
     "corretta": 2,
     "spiegazione": "Un tecnico radio parla invece di «antennas».",
     "fonte": "Wikipedia (EN), «English plurals» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4213,7 +4213,7 @@
     "corretta": 3,
     "spiegazione": "Mai «a hundred» sugli assegni.",
     "fonte": "Wikipedia (EN), «English numerals» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4230,7 +4230,7 @@
     "corretta": 0,
     "spiegazione": "La virgola separa invece le migliaia (1,000).",
     "fonte": "Wikipedia (EN), «English numerals» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4247,7 +4247,7 @@
     "corretta": 1,
     "spiegazione": "Nel tennis si dice «love»; nei numeri di telefono «oh».",
     "fonte": "Wikipedia (EN), «English numerals» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4264,7 +4264,7 @@
     "corretta": 2,
     "spiegazione": "L'origine del termine è discussa.",
     "fonte": "Wikipedia (EN), «English numerals» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4281,7 +4281,7 @@
     "corretta": 3,
     "spiegazione": "Un googolplex è 1 seguito da un googol di zeri.",
     "fonte": "Wikipedia (EN), «English numerals» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4298,7 +4298,7 @@
     "corretta": 0,
     "spiegazione": "Gli omofoni scritti allo stesso modo sono anche omografi.",
     "fonte": "Wikipedia (EN), «Homophone» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4315,7 +4315,7 @@
     "corretta": 1,
     "spiegazione": "Hanno stesso suono e grafia ma significato diverso.",
     "fonte": "Wikipedia (EN), «Homophone» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4332,7 +4332,7 @@
     "corretta": 2,
     "spiegazione": "In origine erano varianti grafiche della stessa parola.",
     "fonte": "Wikipedia (EN), «Homophone» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4349,7 +4349,7 @@
     "corretta": 3,
     "spiegazione": "Le contrazioni sono comuni nel parlato e nella scrittura informale.",
     "fonte": "Wikipedia (EN), «Contraction (grammar)» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4366,7 +4366,7 @@
     "corretta": 0,
     "spiegazione": "Evitare del tutto le contrazioni può far suonare il testo innaturale.",
     "fonte": "Wikipedia (EN), «Contraction (grammar)» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4383,7 +4383,7 @@
     "corretta": 1,
     "spiegazione": "«take after» = assomigliare (a un genitore).",
     "fonte": "Wikipedia (EN), «English phrasal verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4400,7 +4400,7 @@
     "corretta": 2,
     "spiegazione": "«run into» = incontrare per caso.",
     "fonte": "Wikipedia (EN), «English phrasal verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4417,7 +4417,7 @@
     "corretta": 3,
     "spiegazione": "«sit in for» = sostituire qualcuno.",
     "fonte": "Wikipedia (EN), «English phrasal verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4434,7 +4434,7 @@
     "corretta": 0,
     "spiegazione": "Una particella può seguire l'oggetto (think over); una preposizione no (get over).",
     "fonte": "Wikipedia (EN), «English phrasal verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4451,7 +4451,7 @@
     "corretta": 1,
     "spiegazione": "«stand by» = sostenere, restare al fianco.",
     "fonte": "Wikipedia (EN), «English phrasal verbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4468,7 +4468,7 @@
     "corretta": 2,
     "spiegazione": "È un falso amico: «attuale» si dice «current».",
     "fonte": "Wikipedia (EN), «False friend» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4485,7 +4485,7 @@
     "corretta": 3,
     "spiegazione": "In italiano i confetti sono mandorle zuccherate; in inglese «confetti» sono i coriandoli.",
     "fonte": "Wikipedia (EN), «False friend» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4502,7 +4502,7 @@
     "corretta": 0,
     "spiegazione": "Gli avverbi non modificano i nomi in posizione attributiva.",
     "fonte": "Wikipedia (EN), «English adverbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4519,7 +4519,7 @@
     "corretta": 1,
     "spiegazione": "Per l'avverbio si usa «in a friendly way».",
     "fonte": "Wikipedia (EN), «English adverbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4536,7 +4536,7 @@
     "corretta": 2,
     "spiegazione": "Who/which/what sono pronomi o determinanti interrogativi.",
     "fonte": "Wikipedia (EN), «English adverbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4553,7 +4553,7 @@
     "corretta": 3,
     "spiegazione": "«very» modifica aggettivi e avverbi, non verbi (si dice «enjoyed it very much»).",
     "fonte": "Wikipedia (EN), «English adverbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4570,7 +4570,7 @@
     "corretta": 0,
     "spiegazione": "Es. «Even my neighbour knew».",
     "fonte": "Wikipedia (EN), «English adverbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4587,7 +4587,7 @@
     "corretta": 1,
     "spiegazione": "I pronomi possessivi (mine, yours…) non precedono il nome.",
     "fonte": "Wikipedia (EN), «Personal pronouns in English» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4604,7 +4604,7 @@
     "corretta": 2,
     "spiegazione": "«whose» è il possessivo.",
     "fonte": "Wikipedia (EN), «Personal pronouns in English» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4621,7 +4621,7 @@
     "corretta": 3,
     "spiegazione": "Il possessivo si scrive «one's».",
     "fonte": "Wikipedia (EN), «Personal pronouns in English» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4638,7 +4638,7 @@
     "corretta": 0,
     "spiegazione": "thou (soggetto), thee (oggetto), thy/thine (possessivi), thyself (riflessivo).",
     "fonte": "Wikipedia (EN), «Personal pronouns in English» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4655,7 +4655,7 @@
     "corretta": 1,
     "spiegazione": "I pronomi possessivi sostituiscono il nome già citato.",
     "fonte": "Wikipedia (EN), «Personal pronouns in English» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4672,7 +4672,7 @@
     "corretta": 2,
     "spiegazione": "Con due elementi si usa il comparativo; nell'uso informale si sente anche «best».",
     "fonte": "Wikipedia (EN), «Degrees of comparison of adjectives and adverbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4689,7 +4689,7 @@
     "corretta": 3,
     "spiegazione": "Comparativo di uguaglianza: as + aggettivo + as.",
     "fonte": "Wikipedia (EN), «Degrees of comparison of adjectives and adverbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4706,7 +4706,7 @@
     "corretta": 0,
     "spiegazione": "Eccezioni: fun, real, right, wrong (more fun, most real…).",
     "fonte": "Wikipedia (EN), «Degrees of comparison of adjectives and adverbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4723,7 +4723,7 @@
     "corretta": 1,
     "spiegazione": "I monosillabi prendono -er/-est; i bisillabi variano.",
     "fonte": "Wikipedia (EN), «Degrees of comparison of adjectives and adverbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4740,7 +4740,7 @@
     "corretta": 2,
     "spiegazione": "Anche full, complete, empty sono considerati assoluti.",
     "fonte": "Wikipedia (EN), «Degrees of comparison of adjectives and adverbs» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4757,7 +4757,7 @@
     "corretta": 3,
     "spiegazione": "Aggettivi sostantivati: the rich, the poor, the famous.",
     "fonte": "Wikipedia (EN), «Adjective» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4774,7 +4774,7 @@
     "corretta": 0,
     "spiegazione": "In «a fast car» è invece un aggettivo.",
     "fonte": "Wikipedia (EN), «Adjective» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4791,7 +4791,7 @@
     "corretta": 1,
     "spiegazione": "L'inglese usa be + aggettivo (hungry), l'italiano avere + nome.",
     "fonte": "Wikipedia (EN), «Adjective» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4808,7 +4808,7 @@
     "corretta": 2,
     "spiegazione": "Es. «an evildoer devoid of redeeming qualities».",
     "fonte": "Wikipedia (EN), «Adjective» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4825,7 +4825,7 @@
     "corretta": 3,
     "spiegazione": "Present perfect → past perfect se il verbo introduttivo è al passato.",
     "fonte": "Wikipedia (EN), «Indirect speech» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4842,7 +4842,7 @@
     "corretta": 0,
     "spiegazione": "Le richieste si riportano con verbo + oggetto + to-infinitive.",
     "fonte": "Wikipedia (EN), «Indirect speech» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4859,7 +4859,7 @@
     "corretta": 1,
     "spiegazione": "Il cambio di tempo è facoltativo se il fatto resta valido.",
     "fonte": "Wikipedia (EN), «Indirect speech» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4876,7 +4876,7 @@
     "corretta": 2,
     "spiegazione": "Nelle domande indirette non c'è inversione e il dimostrativo cambia (this → that).",
     "fonte": "Wikipedia (EN), «Indirect speech» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4893,7 +4893,7 @@
     "corretta": 3,
     "spiegazione": "Avviene perché il verbo principale (said, asked) è al passato.",
     "fonte": "Wikipedia (EN), «Indirect speech» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4910,7 +4910,7 @@
     "corretta": 0,
     "spiegazione": "Combina tempo passato e aspetto perfettivo (had written).",
     "fonte": "Wikipedia (EN), «Pluperfect» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4927,7 +4927,7 @@
     "corretta": 1,
     "spiegazione": "Past perfect: azione anteriore a un'altra azione passata.",
     "fonte": "Wikipedia (EN), «Pluperfect» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4944,7 +4944,7 @@
     "corretta": 2,
     "spiegazione": "«perfect» significa qui «completato».",
     "fonte": "Wikipedia (EN), «Pluperfect» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4961,7 +4961,7 @@
     "corretta": 3,
     "spiegazione": "Past perfect continuous: azione iniziata prima di un momento passato.",
     "fonte": "Wikipedia (EN), «Pluperfect» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4978,7 +4978,7 @@
     "corretta": 0,
     "spiegazione": "In «Which leads to the city center?» è invece un pronome.",
     "fonte": "Wikipedia (EN), «Interrogative word» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -4995,7 +4995,7 @@
     "corretta": 1,
     "spiegazione": "«whose» chiede il possessore.",
     "fonte": "Wikipedia (EN), «Interrogative word» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -5012,7 +5012,7 @@
     "corretta": 2,
     "spiegazione": "Le stesse forme delle parole interrogative si usano anche nelle relative.",
     "fonte": "Wikipedia (EN), «Interrogative word» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -5029,7 +5029,7 @@
     "corretta": 3,
     "spiegazione": "Nel registro cortese gli ordini si formulano come domande.",
     "fonte": "Wikipedia (EN), «Imperative mood» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -5046,7 +5046,7 @@
     "corretta": 0,
     "spiegazione": "Es. «Don't go too near the tiger».",
     "fonte": "Wikipedia (EN), «Imperative mood» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -5063,7 +5063,7 @@
     "corretta": 1,
     "spiegazione": "Gli imperativi servono anche per inviti, permessi, auguri e scuse.",
     "fonte": "Wikipedia (EN), «Imperative mood» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -5080,7 +5080,7 @@
     "corretta": 2,
     "spiegazione": "«Come to the party tomorrow!» esprime invece un invito.",
     "fonte": "Wikipedia (EN), «Imperative mood» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
   },
   {
     "materia": "inglese",
@@ -5097,6 +5097,856 @@
     "corretta": 3,
     "spiegazione": "La forma riflessiva usata al posto di «me» è comune ma alcune guide la sconsigliano.",
     "fonte": "Wikipedia (EN), «Personal pronouns in English» (CC BY-SA 4.0)",
-    "versione": "v2"
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-301",
+    "argomento": "Sentence structure",
+    "livello": 2,
+    "testo": "What is a sentence fragment?",
+    "opzioni": [
+      "A sentence missing a subject or a verb",
+      "A sentence without punctuation",
+      "A sentence with two verbs",
+      "A very long sentence"
+    ],
+    "corretta": 0,
+    "spiegazione": "Il «fragment» è una frase incompleta: manca il soggetto o il verbo. Si corregge aggiungendo l'elemento mancante.",
+    "fonte": "B. Hall, E. Wallace, «College ESL Writers» (GALILEO Open Learning Materials, 2018)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-302",
+    "argomento": "Sentence structure",
+    "livello": 2,
+    "testo": "What is missing in the fragment «Told her about the broken vase»?",
+    "opzioni": [
+      "The object",
+      "The subject",
+      "Nothing",
+      "The verb"
+    ],
+    "corretta": 1,
+    "spiegazione": "Manca il soggetto: la frase corretta è «I told her about the broken vase».",
+    "fonte": "B. Hall, E. Wallace, «College ESL Writers» (GALILEO Open Learning Materials, 2018)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-303",
+    "argomento": "Sentence structure",
+    "livello": 3,
+    "testo": "Which word begins a dependent clause that can become a fragment if left alone?",
+    "opzioni": [
+      "and",
+      "the",
+      "because",
+      "very"
+    ],
+    "corretta": 2,
+    "spiegazione": "Le proposizioni introdotte da since, if, because, when, although, after, unless… sono dipendenti: da sole sono frammenti.",
+    "fonte": "B. Hall, E. Wallace, «College ESL Writers» (GALILEO Open Learning Materials, 2018)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-304",
+    "argomento": "Punctuation",
+    "livello": 3,
+    "testo": "If you attach a dependent-clause fragment to the beginning of a sentence, what must you add?",
+    "opzioni": [
+      "Nothing",
+      "A colon",
+      "A semicolon",
+      "A comma"
+    ],
+    "corretta": 3,
+    "spiegazione": "Se la subordinata va all'inizio della frase si mette la virgola: «Because it rained, we stayed home».",
+    "fonte": "B. Hall, E. Wallace, «College ESL Writers» (GALILEO Open Learning Materials, 2018)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-305",
+    "argomento": "Punctuation",
+    "livello": 3,
+    "testo": "What is a «fused sentence»?",
+    "opzioni": [
+      "Two complete sentences combined without any punctuation",
+      "A sentence without a verb",
+      "Two sentences joined by a comma",
+      "A question without a question mark"
+    ],
+    "corretta": 0,
+    "spiegazione": "Fused sentence: due frasi complete unite senza alcuna punteggiatura; è un tipo di run-on.",
+    "fonte": "B. Hall, E. Wallace, «College ESL Writers» (GALILEO Open Learning Materials, 2018)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-306",
+    "argomento": "Punctuation",
+    "livello": 3,
+    "testo": "«We looked outside, the kids were hopping on the trampoline.» This is an example of:",
+    "opzioni": [
+      "a fragment",
+      "a comma splice",
+      "a question tag",
+      "a correct compound sentence"
+    ],
+    "corretta": 1,
+    "spiegazione": "Due frasi complete unite solo da una virgola formano una «comma splice», errore tipico delle run-on.",
+    "fonte": "B. Hall, E. Wallace, «College ESL Writers» (GALILEO Open Learning Materials, 2018)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-307",
+    "argomento": "Punctuation",
+    "livello": 3,
+    "testo": "Which punctuation mark can correctly join two independent clauses that are closely related?",
+    "opzioni": [
+      "A comma alone",
+      "An apostrophe",
+      "A semicolon",
+      "A hyphen"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il punto e virgola unisce due frasi indipendenti collegate: «The accident closed both lanes; we waited an hour».",
+    "fonte": "B. Hall, E. Wallace, «College ESL Writers» (GALILEO Open Learning Materials, 2018)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-308",
+    "argomento": "Punctuation",
+    "livello": 4,
+    "testo": "How is a transition word like «however» punctuated between two independent clauses?",
+    "opzioni": [
+      "No punctuation",
+      "Comma before and after",
+      "Colon before it",
+      "Semicolon before it and comma after it"
+    ],
+    "corretta": 3,
+    "spiegazione": "Dopo il punto e virgola si mette la parola di transizione seguita da virgola: «…on hold; however, we didn't…».",
+    "fonte": "B. Hall, E. Wallace, «College ESL Writers» (GALILEO Open Learning Materials, 2018)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-309",
+    "argomento": "Conjunctions",
+    "livello": 3,
+    "testo": "Which seven words does the acronym FANBOYS stand for?",
+    "opzioni": [
+      "for, and, nor, but, or, yet, so",
+      "few, all, none, both, one, yes, some",
+      "for, also, not, because, only, yet, since",
+      "first, after, now, before, once, yesterday, soon"
+    ],
+    "corretta": 0,
+    "spiegazione": "FANBOYS ricorda le sette congiunzioni coordinanti che, con la virgola, uniscono due frasi indipendenti.",
+    "fonte": "B. Hall, E. Wallace, «College ESL Writers» (GALILEO Open Learning Materials, 2018)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-310",
+    "argomento": "Subject-verb agreement",
+    "livello": 2,
+    "testo": "Complete: «My dog and my cat ___ each other all the time.»",
+    "opzioni": [
+      "has chased each",
+      "chase",
+      "chases",
+      "is chasing"
+    ],
+    "corretta": 1,
+    "spiegazione": "Due soggetti uniti da «and» vogliono il verbo al plurale.",
+    "fonte": "B. Hall, E. Wallace, «College ESL Writers» (GALILEO Open Learning Materials, 2018)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-311",
+    "argomento": "Subject-verb agreement",
+    "livello": 4,
+    "testo": "Complete: «Either the teacher or the students ___ the keys.»",
+    "opzioni": [
+      "haves",
+      "has",
+      "have",
+      "is having"
+    ],
+    "corretta": 2,
+    "spiegazione": "Con «or/nor» il verbo concorda con il soggetto più vicino: qui «students», plurale.",
+    "fonte": "B. Hall, E. Wallace, «College ESL Writers» (GALILEO Open Learning Materials, 2018)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-312",
+    "argomento": "Subject-verb agreement",
+    "livello": 3,
+    "testo": "Complete: «Everybody ___ ready for the exam.»",
+    "opzioni": [
+      "are",
+      "be",
+      "were",
+      "is"
+    ],
+    "corretta": 3,
+    "spiegazione": "«Everybody», «anyone», «nobody» e simili vogliono il verbo al singolare.",
+    "fonte": "B. Hall, E. Wallace, «College ESL Writers» (GALILEO Open Learning Materials, 2018)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-313",
+    "argomento": "Subject-verb agreement",
+    "livello": 3,
+    "testo": "Complete: «The team ___ practising every day.» (American usage)",
+    "opzioni": [
+      "is",
+      "are",
+      "be",
+      "am"
+    ],
+    "corretta": 0,
+    "spiegazione": "I nomi collettivi (team, group, family, class) sono contati come un'unità e vogliono il singolare.",
+    "fonte": "B. Hall, E. Wallace, «College ESL Writers» (GALILEO Open Learning Materials, 2018)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-314",
+    "argomento": "Subject-verb agreement",
+    "livello": 3,
+    "testo": "Complete: «The books that are in my library ___ the best I have ever read.»",
+    "opzioni": [
+      "be",
+      "are",
+      "is",
+      "was"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il soggetto è «books», non «library»: il soggetto non è mai in una proposizione preposizionale o dipendente.",
+    "fonte": "B. Hall, E. Wallace, «College ESL Writers» (GALILEO Open Learning Materials, 2018)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-315",
+    "argomento": "Subject-verb agreement",
+    "livello": 3,
+    "testo": "In a sentence beginning with «There», where does the subject go?",
+    "opzioni": [
+      "Before «There»",
+      "There is no subject",
+      "After the verb",
+      "At the end of the paragraph"
+    ],
+    "corretta": 2,
+    "spiegazione": "Nelle frasi con here/there il soggetto segue il verbo: «There are many reasons».",
+    "fonte": "B. Hall, E. Wallace, «College ESL Writers» (GALILEO Open Learning Materials, 2018)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-316",
+    "argomento": "Possessive",
+    "livello": 2,
+    "testo": "How do you form the possessive of a plural noun ending in -s, like «drummers»?",
+    "opzioni": [
+      "Add 's: drummers's",
+      "Add s': drummerss'",
+      "No change",
+      "Add only an apostrophe: drummers'"
+    ],
+    "corretta": 3,
+    "spiegazione": "Plurale in -s: si aggiunge solo l'apostrofo (the drummers' sticks).",
+    "fonte": "B. Hall, E. Wallace, «College ESL Writers» (GALILEO Open Learning Materials, 2018)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-317",
+    "argomento": "Possessive",
+    "livello": 2,
+    "testo": "Which is the correct possessive of «people»?",
+    "opzioni": [
+      "people's",
+      "people'",
+      "peoples'",
+      "peoples"
+    ],
+    "corretta": 0,
+    "spiegazione": "Se il plurale non finisce in -s si aggiunge 's: the people's votes, the children's toys.",
+    "fonte": "B. Hall, E. Wallace, «College ESL Writers» (GALILEO Open Learning Materials, 2018)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-318",
+    "argomento": "Possessive",
+    "livello": 3,
+    "testo": "According to the textbook, how do you form the possessive of the singular name «Jess»?",
+    "opzioni": [
+      "Jess",
+      "Jess's",
+      "Jesses",
+      "Jess'"
+    ],
+    "corretta": 1,
+    "spiegazione": "I nomi singolari che finiscono in -s prendono comunque 's: Jess's sister.",
+    "fonte": "B. Hall, E. Wallace, «College ESL Writers» (GALILEO Open Learning Materials, 2018)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-319",
+    "argomento": "Contractions",
+    "livello": 2,
+    "testo": "In which kind of writing are contractions like «don't» commonly used?",
+    "opzioni": [
+      "Never in writing",
+      "Only in legal texts",
+      "In informal writing",
+      "In formal reports"
+    ],
+    "corretta": 2,
+    "spiegazione": "Le contrazioni sono comuni nella scrittura informale ma non in quella formale.",
+    "fonte": "B. Hall, E. Wallace, «College ESL Writers» (GALILEO Open Learning Materials, 2018)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-320",
+    "argomento": "Capitalization",
+    "livello": 2,
+    "testo": "Which of these must always be capitalized in English?",
+    "opzioni": [
+      "Seasons (e.g. summer)",
+      "The word «online»",
+      "Common nouns like «river»",
+      "Languages and nationalities (e.g. English, Italian)"
+    ],
+    "corretta": 3,
+    "spiegazione": "In inglese si scrivono sempre con la maiuscola nazionalità, lingue e religioni.",
+    "fonte": "B. Hall, E. Wallace, «College ESL Writers» (GALILEO Open Learning Materials, 2018)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-321",
+    "argomento": "Capitalization",
+    "livello": 3,
+    "testo": "Which word is never capitalized in the middle of a sentence, according to the textbook?",
+    "opzioni": [
+      "e-mail",
+      "Monday",
+      "Internet",
+      "January"
+    ],
+    "corretta": 0,
+    "spiegazione": "«Internet» e «World Wide Web» di solito hanno la maiuscola; «e-mail» e «online» mai.",
+    "fonte": "B. Hall, E. Wallace, «College ESL Writers» (GALILEO Open Learning Materials, 2018)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-322",
+    "argomento": "Capitalization",
+    "livello": 2,
+    "testo": "Which of these is a proper noun, always written with a capital letter?",
+    "opzioni": [
+      "museum",
+      "Smith College",
+      "theater",
+      "college"
+    ],
+    "corretta": 1,
+    "spiegazione": "I nomi propri (Smith College, Apollo Theater) vogliono la maiuscola; gli stessi nomi usati in modo generico (college, theater) no.",
+    "fonte": "B. Hall, E. Wallace, «College ESL Writers» (GALILEO Open Learning Materials, 2018)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-323",
+    "argomento": "Vocabulary",
+    "livello": 3,
+    "testo": "Choose the correct word: «They ___ our proposal for the conference.»",
+    "opzioni": [
+      "expected",
+      "exceeded",
+      "accepted",
+      "excepted"
+    ],
+    "corretta": 2,
+    "spiegazione": "Accept = accettare; except = tranne.",
+    "fonte": "B. Hall, E. Wallace, «College ESL Writers» (GALILEO Open Learning Materials, 2018)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-324",
+    "argomento": "Vocabulary",
+    "livello": 3,
+    "testo": "Choose the correct word: «The heavy rains will have an ___ on the crops.»",
+    "opzioni": [
+      "affect",
+      "efect",
+      "afect",
+      "effect"
+    ],
+    "corretta": 3,
+    "spiegazione": "Effect è il sostantivo (effetto, risultato); affect è il verbo (influire).",
+    "fonte": "B. Hall, E. Wallace, «College ESL Writers» (GALILEO Open Learning Materials, 2018)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-325",
+    "argomento": "Vocabulary",
+    "livello": 3,
+    "testo": "Choose the correct word: «Hurricane winds ___ the amount of rainfall.»",
+    "opzioni": [
+      "affect",
+      "effective",
+      "affection",
+      "effect"
+    ],
+    "corretta": 0,
+    "spiegazione": "Affect è il verbo: creare un cambiamento, influire.",
+    "fonte": "B. Hall, E. Wallace, «College ESL Writers» (GALILEO Open Learning Materials, 2018)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-326",
+    "argomento": "Vocabulary",
+    "livello": 3,
+    "testo": "Choose the correct word: «Don't ___ your keys again!»",
+    "opzioni": [
+      "lost",
+      "lose",
+      "looses",
+      "loose"
+    ],
+    "corretta": 1,
+    "spiegazione": "Lose (verbo) = perdere; loose (aggettivo) = largo, allentato.",
+    "fonte": "B. Hall, E. Wallace, «College ESL Writers» (GALILEO Open Learning Materials, 2018)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-327",
+    "argomento": "Vocabulary",
+    "livello": 2,
+    "testo": "Choose the correct word: «I need a ___ room to study.»",
+    "opzioni": [
+      "quit",
+      "quilt",
+      "quiet",
+      "quite"
+    ],
+    "corretta": 2,
+    "spiegazione": "Quiet = silenzioso; quite = piuttosto, davvero; quit = smettere.",
+    "fonte": "B. Hall, E. Wallace, «College ESL Writers» (GALILEO Open Learning Materials, 2018)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-328",
+    "argomento": "Vocabulary",
+    "livello": 2,
+    "testo": "Choose the correct word: «Nurses require less schooling ___ doctors.»",
+    "opzioni": [
+      "them",
+      "that",
+      "then",
+      "than"
+    ],
+    "corretta": 3,
+    "spiegazione": "Than introduce il secondo termine di paragone; then significa «poi, allora».",
+    "fonte": "B. Hall, E. Wallace, «College ESL Writers» (GALILEO Open Learning Materials, 2018)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-329",
+    "argomento": "Vocabulary",
+    "livello": 2,
+    "testo": "Choose the correct word: «___ the sweetest dogs in the neighbourhood.»",
+    "opzioni": [
+      "They're",
+      "Their",
+      "There",
+      "Theyr"
+    ],
+    "corretta": 0,
+    "spiegazione": "They're = they are; their = loro (possesso); there = là / c'è.",
+    "fonte": "B. Hall, E. Wallace, «College ESL Writers» (GALILEO Open Learning Materials, 2018)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-330",
+    "argomento": "Vocabulary",
+    "livello": 2,
+    "testo": "Choose the correct word: «___ schedule allows a campus tour?»",
+    "opzioni": [
+      "Who",
+      "Whose",
+      "Who's",
+      "Whos"
+    ],
+    "corretta": 1,
+    "spiegazione": "Whose indica possesso (di chi); who's = who is / who has.",
+    "fonte": "B. Hall, E. Wallace, «College ESL Writers» (GALILEO Open Learning Materials, 2018)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-331",
+    "argomento": "Used to",
+    "livello": 3,
+    "testo": "What does «He used to hire a team» mean?",
+    "opzioni": [
+      "He does it every day now",
+      "He is getting accustomed to it",
+      "He did it in the past but not anymore",
+      "He will do it in the future"
+    ],
+    "corretta": 2,
+    "spiegazione": "«Used to» + verbo indica un'abitudine passata che oggi non c'è più.",
+    "fonte": "B. Hall, E. Wallace, «College ESL Writers» (GALILEO Open Learning Materials, 2018)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-332",
+    "argomento": "Vocabulary",
+    "livello": 3,
+    "testo": "Choose the correct word: «I'll ___ on the sofa while she brews the tea.»",
+    "opzioni": [
+      "set",
+      "sat",
+      "seat",
+      "sit"
+    ],
+    "corretta": 3,
+    "spiegazione": "Sit = sedersi; set = posare un oggetto (o, come nome, un insieme).",
+    "fonte": "B. Hall, E. Wallace, «College ESL Writers» (GALILEO Open Learning Materials, 2018)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-333",
+    "argomento": "Verb forms",
+    "livello": 3,
+    "testo": "Which is correct?",
+    "opzioni": [
+      "I should have helped her.",
+      "I should has helped her.",
+      "I should helped her.",
+      "I should of helped her."
+    ],
+    "corretta": 0,
+    "spiegazione": "Dopo i modali si usa «have» + participio; «should of» è un errore dovuto alla pronuncia simile.",
+    "fonte": "B. Hall, E. Wallace, «College ESL Writers» (GALILEO Open Learning Materials, 2018)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-334",
+    "argomento": "Articles",
+    "livello": 2,
+    "testo": "Which article goes before «ocean»?",
+    "opzioni": [
+      "the only",
+      "an",
+      "a",
+      "and"
+    ],
+    "corretta": 1,
+    "spiegazione": "«An» si usa davanti a parole che iniziano con suono vocalico: an airplane, an ocean, an igloo.",
+    "fonte": "B. Hall, E. Wallace, «College ESL Writers» (GALILEO Open Learning Materials, 2018)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-335",
+    "argomento": "Vocabulary",
+    "livello": 2,
+    "testo": "Choose the correct word: «___ mother called this morning.»",
+    "opzioni": [
+      "Yours",
+      "You're",
+      "Your",
+      "Youre"
+    ],
+    "corretta": 2,
+    "spiegazione": "Your = tuo (possesso); you're = you are.",
+    "fonte": "B. Hall, E. Wallace, «College ESL Writers» (GALILEO Open Learning Materials, 2018)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-336",
+    "argomento": "Pronouns",
+    "livello": 3,
+    "testo": "Which words still change their form to show grammatical case in modern English?",
+    "opzioni": [
+      "Adjectives",
+      "All nouns",
+      "Articles",
+      "Personal pronouns (I, me, my)"
+    ],
+    "corretta": 3,
+    "spiegazione": "L'inglese moderno ha perso quasi tutte le desinenze; solo i pronomi personali cambiano forma per il caso.",
+    "fonte": "Wikipedia (EN), «English grammar» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-337",
+    "argomento": "Vocabulary",
+    "livello": 3,
+    "testo": "Which word classes are «open», readily accepting new words?",
+    "opzioni": [
+      "Nouns, verbs, adjectives and adverbs",
+      "Pronouns and prepositions",
+      "Determiners only",
+      "Articles and conjunctions"
+    ],
+    "corretta": 0,
+    "spiegazione": "Classi aperte accolgono parole nuove (es. celebutante); quelle chiuse, come i pronomi, raramente.",
+    "fonte": "Wikipedia (EN), «English grammar» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-338",
+    "argomento": "Vocabulary",
+    "livello": 4,
+    "testo": "How many English word classes do linguists generally accept?",
+    "opzioni": [
+      "Four",
+      "Nine",
+      "Twelve",
+      "Six"
+    ],
+    "corretta": 1,
+    "spiegazione": "Nouns, verbs, adjectives, adverbs, pronouns, prepositions, conjunctions, determiners, exclamations.",
+    "fonte": "Wikipedia (EN), «English grammar» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-339",
+    "argomento": "Vocabulary",
+    "livello": 3,
+    "testo": "Which suffix forms the noun «sisterhood»?",
+    "opzioni": [
+      "-ship",
+      "-ness",
+      "-hood",
+      "-dom"
+    ],
+    "corretta": 2,
+    "spiegazione": "Molti suffissi formano nomi da altre parole: -age (shrinkage), -hood (sisterhood).",
+    "fonte": "Wikipedia (EN), «English grammar» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-340",
+    "argomento": "Adjectives",
+    "livello": 4,
+    "testo": "What is the usual order of elements in an English noun phrase?",
+    "opzioni": [
+      "Noun + determiner + adjectives",
+      "Post-modifiers + noun + determiner",
+      "Adjectives + noun + determiner",
+      "Determiner + pre-modifiers + noun + post-modifiers"
+    ],
+    "corretta": 3,
+    "spiegazione": "Es. «that rather attractive young college student to whom you were talking».",
+    "fonte": "Wikipedia (EN), «English grammar» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-341",
+    "argomento": "Adjectives",
+    "livello": 4,
+    "testo": "In «the young college student», why does «young» come before «college»?",
+    "opzioni": [
+      "Adjectival modifiers usually come before noun adjuncts",
+      "There is no rule",
+      "Because it is shorter",
+      "Because it is a verb"
+    ],
+    "corretta": 0,
+    "spiegazione": "Gli aggettivi precedono i nomi usati come modificatori (noun adjuncts).",
+    "fonte": "Wikipedia (EN), «English grammar» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-342",
+    "argomento": "Subject-verb agreement",
+    "livello": 4,
+    "testo": "«The government were…»: using a plural verb with a collective noun is more common in:",
+    "opzioni": [
+      "American English",
+      "British English",
+      "Old English only",
+      "Australian English only"
+    ],
+    "corretta": 1,
+    "spiegazione": "È una forma di «synesis» (accordo a senso), più comune nell'inglese britannico che in quello americano.",
+    "fonte": "Wikipedia (EN), «English grammar» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-343",
+    "argomento": "Pronouns",
+    "livello": 4,
+    "testo": "When did grammatical gender (masculine, feminine, neuter for all nouns) disappear from English?",
+    "opzioni": [
+      "Never: it still exists",
+      "After Shakespeare",
+      "During the Middle English period",
+      "In the 20th century"
+    ],
+    "corretta": 2,
+    "spiegazione": "Il genere grammaticale dell'inglese antico cadde in disuso nel periodo del Middle English.",
+    "fonte": "Wikipedia (EN), «English grammar» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-344",
+    "argomento": "Pronouns",
+    "livello": 3,
+    "testo": "For which objects are feminine pronouns (she) sometimes used in English?",
+    "opzioni": [
+      "Tables and chairs",
+      "Trees",
+      "Numbers",
+      "Ships and nation-states"
+    ],
+    "corretta": 3,
+    "spiegazione": "Per gli oggetti si usa «it», ma «she» si usa talvolta per navi (e più raramente aerei) e Stati.",
+    "fonte": "Wikipedia (EN), «English grammar» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-345",
+    "argomento": "Articles",
+    "livello": 3,
+    "testo": "What does «the homeless» mean?",
+    "opzioni": [
+      "Homeless people in general (plural)",
+      "One homeless person",
+      "A homeless shelter",
+      "The house of someone"
+    ],
+    "corretta": 0,
+    "spiegazione": "The + aggettivo indica una categoria di persone ed è plurale: the homeless, the English.",
+    "fonte": "Wikipedia (EN), «English grammar» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-346",
+    "argomento": "Vocabulary",
+    "livello": 4,
+    "testo": "In «that president, Abraham Lincoln», the two phrases are in:",
+    "opzioni": [
+      "inversion",
+      "apposition",
+      "subordination",
+      "coordination"
+    ],
+    "corretta": 1,
+    "spiegazione": "Apposizione: due sintagmi consecutivi che si riferiscono alla stessa cosa.",
+    "fonte": "Wikipedia (EN), «English grammar» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-347",
+    "argomento": "Countable and uncountable",
+    "livello": 3,
+    "testo": "In «This is a good wine», how is «wine» used?",
+    "opzioni": [
+      "As an uncountable noun",
+      "As a verb",
+      "As a countable noun",
+      "As an adjective"
+    ],
+    "corretta": 2,
+    "spiegazione": "Alcuni nomi sono sia numerabili sia non numerabili: «wine» (vino come sostanza / un tipo di vino).",
+    "fonte": "Wikipedia (EN), «English grammar» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-348",
+    "argomento": "Vocabulary",
+    "livello": 3,
+    "testo": "Which pair contains an abstract noun?",
+    "opzioni": [
+      "frog / milk",
+      "cat / grass",
+      "book / laptop",
+      "laptop / prejudice"
+    ],
+    "corretta": 3,
+    "spiegazione": "Nomi concreti (book, laptop) e astratti (embarrassment, prejudice).",
+    "fonte": "Wikipedia (EN), «English grammar» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-349",
+    "argomento": "Vocabulary",
+    "livello": 3,
+    "testo": "Which of these is a proper noun?",
+    "opzioni": [
+      "China",
+      "frog",
+      "milk",
+      "city"
+    ],
+    "corretta": 0,
+    "spiegazione": "Nomi propri (Cyrus, China) e comuni (frog, milk).",
+    "fonte": "Wikipedia (EN), «English grammar» (CC BY-SA 4.0)",
+    "versione": "v4"
+  },
+  {
+    "materia": "inglese",
+    "id": "eng-350",
+    "argomento": "Possessive",
+    "livello": 4,
+    "testo": "To which word does the possessive -'s attach in «the man you saw yesterday's sister»?",
+    "opzioni": [
+      "Always to «man»",
+      "To the last word of the noun phrase",
+      "To «you»",
+      "To «sister»"
+    ],
+    "corretta": 1,
+    "spiegazione": "Il possessivo si applica all'intero sintagma nominale e si attacca all'ultima parola.",
+    "fonte": "Wikipedia (EN), «English grammar» (CC BY-SA 4.0)",
+    "versione": "v4"
   }
 ]

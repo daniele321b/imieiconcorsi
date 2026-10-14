@@ -7,10 +7,12 @@
 //             "1 B  2 A  3-C  4) D …"
 //   prima     "la risposta esatta è sempre la prima (A)": vale per tutte le domande
 //   risposta  tabella "numero | domanda | risposta esatta", senza alternative (tabella.ts)
+//   colonne   tabella "id | livello | quesito | esatta | errata 1-3" (colonne.ts)
+//   lettera   tabella "codice | domanda | a) | b) | c) | d) | lettera giusta" (lettere.ts)
 // "auto" li prova tutti; un formato scelto a mano forza quello.
 
 /** Come è indicata la risposta giusta nel PDF (vedi sopra). */
-export type Formato = "auto" | "indicata" | "segnata" | "chiave" | "prima" | "risposta";
+export type Formato = "auto" | "indicata" | "segnata" | "chiave" | "prima" | "risposta" | "colonne" | "lettera";
 
 /** Una domanda letta dal PDF, pronta da controllare e pubblicare. */
 export interface DomandaEstratta {
@@ -83,6 +85,12 @@ interface Grezza {
 export const pulisci = (s: string) => s.replace(/ /g, " ").replace(/[ \t]+/g, " ").trim();
 /** Righe spezzate dal PDF in un testo solo (riattacca le parole divise con il trattino). */
 export const unisci = (parti: string[]) => pulisci(parti.join(" ").replace(/(\w)- (\w)/g, "$1$2"));
+/**
+ * Righe di una cella di tabella (PDF esportati da Excel) in un testo solo. Excel non spezza le
+ * parole: un "-" a fine riga è un trattino vero ("economico-" + "finanziaria") e "Au- to- re"
+ * dentro la riga resta com'è (divisione in sillabe).
+ */
+export const unisciCella = (parti: string[]) => pulisci(parti.reduce((t, p) => (!t ? p : t.endsWith("-") ? t + p : `${t} ${p}`), ""));
 
 /** Mescola le opzioni in modo stabile (stesso PDF → stessa domanda), così la giusta non è sempre la A. */
 export function mescolaStabile<T>(arr: T[], seme: number): T[] {
@@ -123,6 +131,7 @@ export function estraiDomande(testo: string, formato: Formato = "auto"): Estrazi
   // Intestazioni ripetute in ogni pagina (es. "BANCA DATI"): si riconoscono perché tornano spesso.
   const conteggi = new Map<string, number>();
   for (const { r } of grezzeRighe) if (r) conteggi.set(r, (conteggi.get(r) ?? 0) + 1);
+  // Riga in maiuscolo ripetuta su almeno 3 pagine: intestazione da togliere.
   const intestazione = (r: string) => maiuscolo(r) && (conteggi.get(r) ?? 0) >= 3;
 
   // Tolte le righe di servizio; si ricorda quali righe aprono una pagina (servono ai titoli di sezione).
@@ -199,6 +208,7 @@ export function estraiDomande(testo: string, formato: Formato = "auto"): Estrazi
   for (const g of grezze) {
     const testoDomanda = unisci(g.testo);
     const opzioni = g.opzioni.map((o) => unisci(o.testo).replace(RE_SEGNO, "").replace(/\s*\*\s*$/, "").trim());
+    // Mette la domanda tra le scartate, con il motivo.
     const scarta = (motivo: string) => risultato.scartate.push({ numero: g.numero, motivo });
 
     if (testoDomanda.length < 5) { scarta("testo della domanda mancante"); continue; }
@@ -209,6 +219,7 @@ export function estraiDomande(testo: string, formato: Formato = "auto"): Estrazi
     const segnate = g.opzioni.flatMap((o, i) => (o.segnata ? [i] : []));
     let corretta: number | undefined;
     let come: Exclude<Formato, "auto"> | undefined;
+    // Prende la risposta giusta dal primo formato che la indica (se il formato è ammesso).
     const prova = (f: Exclude<Formato, "auto">, valore: number | undefined) => {
       if (corretta === undefined && valore !== undefined && valore >= 0 && (formato === "auto" || formato === f)) {
         corretta = valore;

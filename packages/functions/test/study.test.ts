@@ -3,6 +3,9 @@ import { REGOLE_DEFAULT } from "@imieiconcorsi/core/domain";
 import { describe, expect, it } from "vitest";
 import { calcolaEsito, selezionaDomande } from "../src/study/logic";
 
+// Test della scelta delle domande di una sessione e del calcolo dell'esito.
+
+/** Domanda di prova di una materia (livello 3, giusta la prima, se non indicati). */
 const domanda = (materia: MateriaId, id: string, livello = 3, corretta = 0): Domanda => ({
   materia,
   id,

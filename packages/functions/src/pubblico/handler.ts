@@ -102,6 +102,7 @@ async function entroIlLimite(event: APIGatewayProxyEventV2) {
   }
 }
 
+/** POST /pubblico/contatto: controlla il modulo contatti (con trappola anti-bot e limite orario) e lo inoltra all'amministratore. */
 async function contatto(event: APIGatewayProxyEventV2) {
   let dati: unknown;
   try {
@@ -122,6 +123,7 @@ async function contatto(event: APIGatewayProxyEventV2) {
   return json(200, { ok: true });
 }
 
+/** Lambda delle route pubbliche (senza login): modulo contatti, aperture e clic delle email, disiscrizione. */
 export const handler = async (event: APIGatewayProxyEventV2): Promise<APIGatewayProxyResultV2> => {
   // Solo richieste passate da CloudFront (WAF e limiti per IP), come le altre API (core/http.ts).
   if (!daCloudFront(event.headers)) return json(403, { error: "Accesso non consentito" });

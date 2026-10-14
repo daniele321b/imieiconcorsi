@@ -12,6 +12,7 @@ declare global {
   }
 }
 
+/** Carica una volta sola lo script di Google AdSense. */
 function caricaAdsense(client: string) {
   if (document.querySelector("script[data-adsense]")) return;
   const s = document.createElement("script");

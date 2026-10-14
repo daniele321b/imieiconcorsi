@@ -37,6 +37,7 @@ interface PaginaConsulta {
 
 const CHIAVE_RISPOSTE = "consulta:mostra-risposte";
 
+/** L'utente vuole vedere sempre la risposta giusta (preferenza salvata nel browser). */
 function preferenzaRisposte() {
   try {
     return localStorage.getItem(CHIAVE_RISPOSTE) === "1";
@@ -106,6 +107,7 @@ export function BancaDatiConsulta() {
     void vaiA(1);
   }, [vaiA]);
 
+  // Domanda successiva; alla fine di quelle caricate scarica le seguenti.
   async function avanti() {
     setRivelata(false);
     if (indice < domande.length - 1) return setIndice((i) => i + 1);
@@ -117,6 +119,7 @@ export function BancaDatiConsulta() {
     setIndice((i) => i + 1);
   }
 
+  // Domanda precedente; all'inizio di quelle caricate scarica le precedenti.
   async function indietro() {
     setRivelata(false);
     if (indice > 0) return setIndice((i) => i - 1);
@@ -130,6 +133,7 @@ export function BancaDatiConsulta() {
 
   // Frecce della tastiera per scorrere.
   useEffect(() => {
+    // Frecce: avanti e indietro; spazio: mostra o nasconde la risposta.
     const tasto = (e: KeyboardEvent) => {
       // Mentre si scrive (numero da cercare, domanda al tutor) i tasti restano al campo.
       if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
@@ -144,6 +148,7 @@ export function BancaDatiConsulta() {
     return () => window.removeEventListener("keydown", tasto);
   });
 
+  // Cambia e ricorda la preferenza "mostra sempre la risposta".
   function cambiaSempre(valore: boolean) {
     setSempre(valore);
     try {
@@ -151,6 +156,7 @@ export function BancaDatiConsulta() {
     } catch {}
   }
 
+  // Salta alla domanda con il numero scritto.
   function onSalto(e: FormEvent) {
     e.preventDefault();
     const n = Number(salto);
@@ -293,10 +299,12 @@ export function BancaDatiConsulta() {
                   " La banca dati ufficiale riporta solo la risposta esatta: le altre alternative le prendiamo da domande simili della stessa banca dati."}
               </p>
               <ChiediAlTutor domanda={{ argomento: d.argomento, testo: d.testo, opzioni: d.opzioni, corretta: d.corretta }} />
-              <SegnalaErrore
-                className="mt-3 flex"
-                contesto={{ bancaDatiId: banca!.id, domanda: { materia: d.argomento.slice(0, 100), id: `n. ${d.numero}`, testo: d.testo.slice(0, 1500) } }}
-              />
+              {/* Su una riga sua, sotto "Chiedi al tutor AI" (come nella sessione). */}
+              <div className="mt-3">
+                <SegnalaErrore
+                  contesto={{ bancaDatiId: banca!.id, domanda: { materia: d.argomento.slice(0, 100), id: `n. ${d.numero}`, testo: d.testo.slice(0, 1500) } }}
+                />
+              </div>
             </div>
           )}
           {!sempre && (

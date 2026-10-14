@@ -30,6 +30,7 @@ export function StellaPreferita({
   const [errore, setErrore] = useState(false);
   useEffect(() => setAttiva(preferita), [preferita, numero]);
 
+  // Mette o toglie la domanda dalle preferite (subito a schermo, poi sul server).
   async function cambia() {
     const nuovo = !attiva;
     setAttiva(nuovo);

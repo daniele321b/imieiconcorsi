@@ -29,6 +29,7 @@ describe("bandi nuovi", () => {
     { id: "senza-data", primoImportoIl: "2026-10-12T04:30:00Z", scadenza: "2026-12-01" },
     { id: "settimana-scorsa", pubblicatoIl: "2026-10-07T09:00:00Z", scadenza: "2026-12-05" },
   ];
+  // Solo gli id, per confrontare l'ordine.
   const ids = (l: { id: string }[]) => l.map((b) => b.id);
 
   it("giornaliero: solo quelli pubblicati ieri, il più vicino alla scadenza prima", () => {

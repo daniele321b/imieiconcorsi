@@ -1535,3 +1535,256 @@ D("amm-301", "Pubblico impiego", 4, "Quante assenze ingiustificate possono porta
   "Più di tre giorni, anche non continuativi, nell'arco di un biennio (o più di sette in dieci anni)", ["Un solo giorno", "Più di trenta giorni in un anno", "Nessun numero: l'assenza si punisce solo con la multa"],
   "Art. 55-quater: è causa di licenziamento l'assenza priva di valida giustificazione per più di tre giorni, anche non continuativi, nell'arco di un biennio o per più di sette giorni negli ultimi dieci anni.",
   "D.Lgs. 165/2001, art. 55-quater", D165, "superiore a tre nell'arco di un biennio o comunque per più di sette giorni nel corso degli ultimi dieci anni")
+
+# ── Verso 350: nozioni generali (voci Wikipedia, CC BY-SA 4.0, solo per i fatti), D.Lgs. 165/2001,
+#    codice di comportamento (DPR 62/2013) e documentazione amministrativa (DPR 445/2000).
+WATTO = "Wikipedia_Atto-amministrativo.txt"
+WPROC = "Wikipedia_Procedimento-amministrativo.txt"
+WDIR = "Wikipedia_Diritto-amministrativo.txt"
+WV = lambda voce: f"Wikipedia, «{voce}» (CC BY-SA 4.0)"
+
+D("amm-302", "Atto amministrativo", 2, "Perché l'atto amministrativo si dice «unilaterale»?",
+  "Perché produce effetti indipendentemente dalla volontà del destinatario", ["Perché lo firma una sola persona", "Perché riguarda un solo cittadino", "Perché non si può impugnare"],
+  "L'atto amministrativo è unilaterale: ha efficacia indipendentemente dalla volontà del soggetto cui è destinato, al quale può anche essere imposto.",
+  WV("Atto amministrativo"), WATTO, "unilaterale, in quanto ha efficacia indipendentemente dalla volontà del soggetto cui è destinato")
+
+D("amm-303", "Atto amministrativo", 3, "Le circolari con cui l'amministrazione si rivolge ai propri uffici sono atti amministrativi in senso proprio?",
+  "No, sono atti meramente interni", ["Sì, sono provvedimenti esterni", "Sì, hanno forza di legge", "Solo se pubblicate in Gazzetta Ufficiale"],
+  "L'atto amministrativo è esterno: non lo sono gli atti dell'autorità verso sé stessa, detti atti meramente interni, come le circolari.",
+  WV("Atto amministrativo"), WATTO, "detti atti meramente interni, come le circolari")
+
+D("amm-304", "Atto amministrativo", 3, "Cosa significa che un atto amministrativo è «esecutorio»?",
+  "Che la PA può eseguirlo con mezzi propri, anche coattivamente, senza ricorrere al giudice", ["Che è già stato eseguito", "Che va approvato dal Parlamento", "Che il privato deve eseguirlo entro 30 giorni"],
+  "L'esecutorietà è la capacità della PA di dare esecuzione ai propri atti con mezzi propri, anche coattivamente, senza il ricorso all'autorità giudiziaria.",
+  WV("Atto amministrativo"), WATTO, "dare esecuzione ai propri atti con mezzi propri, anche coattivamente, senza il ricorso all'autorità giudiziaria")
+
+D("amm-305", "Invalidità del provvedimento", 3, "Come si chiama l'atto amministrativo contrario al principio di buona amministrazione, ma non a norme giuridiche?",
+  "Atto inopportuno", ["Atto nullo", "Atto inesistente", "Atto illegittimo"],
+  "L'atto contrario a norme giuridiche è illegittimo; quello contrario al principio costituzionale di buona amministrazione (art. 97 Cost.) è inopportuno.",
+  WV("Atto amministrativo"), WATTO, "e allora si tratta di un atto amministrativo inopportuno")
+
+D("amm-306", "Invalidità del provvedimento", 3, "Quale vizio rende un atto amministrativo nullo e non soltanto annullabile?",
+  "L'incompetenza assoluta", ["L'incompetenza relativa", "L'eccesso di potere", "La violazione di legge"],
+  "È nullo l'atto emanato da chi non aveva alcun potere di farlo (incompetenza assoluta); l'incompetenza relativa rende invece l'atto annullabile.",
+  WV("Atto amministrativo"), WATTO, "c'è incompetenza assoluta (colui che ha emanato l'atto non aveva potere di farlo)")
+
+D("amm-307", "Invalidità del provvedimento", 4, "Un atto firmato da un funzionario inferiore gerarchicamente a chi aveva il potere, nello stesso organo competente, è viziato da:",
+  "Incompetenza relativa, che lo rende annullabile", ["Incompetenza assoluta, che lo rende nullo", "Eccesso di potere", "Nessun vizio"],
+  "C'è incompetenza relativa quando l'organo è competente ma non colui che se ne è occupato, ad esempio perché inferiore gerarchicamente: l'atto è annullabile.",
+  WV("Atto amministrativo"), WATTO, "c'è incompetenza relativa (l'organo che ha emanato l'atto è competente")
+
+D("amm-308", "Invalidità del provvedimento", 3, "Quali sono figure tipiche dell'eccesso di potere?",
+  "Disparità di trattamento, illogicità della motivazione, ingiustizia manifesta", ["Mancanza della firma e della data", "Incompetenza assoluta", "Difetto di giurisdizione"],
+  "L'eccesso di potere si manifesta, ad esempio, in disparità di trattamento, illogicità della motivazione, ingiustizia manifesta: rende l'atto annullabile.",
+  WV("Atto amministrativo"), WATTO, "c'è eccesso di potere (disparità di trattamento, illogicità della motivazione, ingiustizia manifesta")
+
+D("amm-309", "Invalidità del provvedimento", 3, "Qual è la differenza principale tra atto nullo e atto annullabile quanto agli effetti?",
+  "L'atto nullo è privo di efficacia sin dall'origine; l'annullabile la perde se viene annullato", ["Nessuna: entrambi sono efficaci", "L'atto annullabile non produce mai effetti", "L'atto nullo diventa valido dopo 60 giorni"],
+  "L'atto annullabile perde efficacia se chi ne ha diritto chiede e ottiene l'annullamento; l'atto nullo è privo di efficacia sin da quando nasce.",
+  WV("Atto amministrativo"), WATTO, "quello nullo è privo di efficacia sin da quando nasce")
+
+D("amm-310", "Efficacia del provvedimento", 3, "Come si chiamano gli atti amministrativi che si limitano ad accertare una situazione senza modificarla?",
+  "Atti dichiarativi", ["Atti costitutivi", "Atti ablatori", "Atti negoziali"],
+  "Per efficacia si distinguono atti costitutivi, che creano, modificano o estinguono un rapporto, e atti dichiarativi, che accertano una situazione senza influire su di essa.",
+  WV("Atto amministrativo"), WATTO, "atti dichiarativi, che si limitano ad accertare una data situazione senza influire su di essa")
+
+D("amm-311", "Atto amministrativo", 3, "Quale parte dell'atto amministrativo indica le norme di legge in base alle quali è stato adottato?",
+  "Il preambolo", ["L'intestazione", "Il dispositivo", "La sottoscrizione"],
+  "Nella struttura dell'atto il preambolo contiene le norme e gli articoli in base ai quali l'atto è stato adottato; il dispositivo è la parte precettiva.",
+  WV("Atto amministrativo"), WATTO, "preambolo (contiene le norme di legge e gli articoli in base ai quali l'atto è stato adottato)")
+
+D("amm-312", "Atto amministrativo", 3, "Come si chiama la parte precettiva dell'atto amministrativo, che esprime la volontà della PA?",
+  "Il dispositivo", ["Il preambolo", "La motivazione", "L'intestazione"],
+  "Il dispositivo è la parte precettiva, che costituisce l'atto di volontà della pubblica amministrazione.",
+  WV("Atto amministrativo"), WATTO, "dispositivo (è la parte precettiva, che costituisce l'atto di volontà della pubblica amministrazione)")
+
+D("amm-313", "Atto amministrativo", 4, "Cosa accade se in un atto amministrativo negoziale è apposta una condizione illecita o impossibile?",
+  "Si considera come non apposta", ["L'atto è nullo", "L'atto è annullabile", "L'atto resta sospeso fino al giudizio"],
+  "Gli elementi accidentali illeciti o impossibili non comportano nullità né annullabilità dell'atto: si considerano come non apposti.",
+  WV("Atto amministrativo"), WATTO, "Gli elementi accidentali illeciti o impossibili non comportano la nullità o l'annullabilità dell'atto amministrativo, ma si considerano come non apposti")
+
+D("amm-314", "Atto amministrativo", 4, "Nel diritto amministrativo, cos'è la «causa» dell'atto?",
+  "La finalità tipica di pubblico interesse prevista dall'ordinamento per quell'atto", ["Il motivo personale del funzionario", "Il fatto che ha dato origine al procedimento", "La norma che attribuisce la competenza"],
+  "La causa è la finalità tipica di pubblico interesse prevista dall'ordinamento per l'atto: ad esempio, nell'espropriazione, il trasferimento coattivo del bene dietro indennizzo.",
+  WV("Atto amministrativo"), WATTO, "La causa è la finalità tipica di pubblico interesse prevista dall'ordinamento per l'atto")
+
+D("amm-315", "Atto amministrativo", 4, "Che forma può avere un segnale stradale, inteso come atto amministrativo?",
+  "Forma simbolica o per immagini", ["Necessariamente scritta", "Necessariamente orale", "Nessuna: non è un atto amministrativo"],
+  "Nel diritto amministrativo la forma è tendenzialmente libera: scritta, orale o simbolica e per immagini, come un segnale stradale.",
+  WV("Atto amministrativo"), WATTO, "sia la forma simbolica o per immagini (es. un segnale stradale")
+
+D("amm-316", "Procedimento amministrativo", 2, "In quali tre fasi si articola il procedimento amministrativo?",
+  "Iniziativa, istruttoria, decisoria", ["Proposta, discussione, voto", "Istanza, ricorso, sentenza", "Avvio, sospensione, archiviazione"],
+  "Il procedimento si articola nella fase dell'iniziativa, nella fase istruttoria e nella fase decisoria.",
+  WV("Procedimento amministrativo"), WPROC, "Il procedimento si articola in tre fasi: la fase dell'iniziativa, la fase istruttoria e la fase decisoria")
+
+D("amm-317", "Procedimento amministrativo", 3, "Come si chiama il principio, ricavato dall'art. 2 della L. 241/1990, per cui la PA deve concludere il procedimento con un provvedimento?",
+  "Principio di doverosità amministrativa", ["Principio di sussidiarietà", "Principio di proporzionalità", "Principio di autotutela"],
+  "Dall'art. 2 si ricava il principio di doverosità: l'amministrazione competente deve svolgere e concludere il procedimento con un provvedimento.",
+  WV("Procedimento amministrativo"), WPROC, "principio di doverosità amministrativa")
+
+D("amm-318", "Partecipazione", 4, "Quale tra queste è una deroga all'obbligo di comunicare l'avvio del procedimento?",
+  "L'adozione di provvedimenti cautelari", ["Il procedimento a istanza di parte", "La presenza di un solo destinatario", "Il procedimento in materia edilizia"],
+  "Le deroghe sono tre: esigenze di celerità, provvedimenti cautelari (art. 7, c. 2) e numero elevato di destinatari (art. 8, c. 3).",
+  WV("Procedimento amministrativo"), WPROC, "adozione di provvedimenti cautelari da parte dell'amministrazione")
+
+D("amm-319", "Procedimento amministrativo", 3, "Che tipo di attività caratterizza la fase istruttoria del procedimento?",
+  "Attività ricognitiva per accertare i fatti e acquisire gli interessi rilevanti", ["L'adozione del provvedimento finale", "La pubblicazione dell'atto", "Il ricorso al giudice"],
+  "La fase istruttoria si caratterizza per un'attività di tipo ricognitivo, volta ad accertare e acquisire tutti i fatti significativi e gli interessi rilevanti.",
+  WV("Procedimento amministrativo"), WPROC, "attività di tipo ricognitivo volta ad accertare e acquisire tutti i fatti significativi")
+
+D("amm-320", "Principi", 3, "Da quale principio, elaborato da Montesquieu, si fa discendere la genesi del diritto amministrativo?",
+  "Dalla divisione tra i poteri dello Stato", ["Dalla sovranità popolare", "Dal principio di sussidiarietà", "Dalla supremazia del diritto canonico"],
+  "La genesi del diritto amministrativo è collegata al principio di divisione dei poteri (legislativo, esecutivo, giudiziario) espresso da Montesquieu nello Spirito delle leggi del 1748.",
+  WV("Diritto amministrativo"), WDIR, "La genesi del diritto amministrativo è da collegare al principio di divisione tra i poteri dello Stato")
+
+D("amm-321", "Principi", 4, "In quale Paese nascono per la prima volta l'espressione «droit administratif» e il termine «fonctionnaire»?",
+  "In Francia, con la Rivoluzione francese", ["In Inghilterra, con la Magna Carta", "In Germania, con Bismarck", "In Italia, con lo Statuto albertino"],
+  "L'espressione droit administratif e il termine fonctionnaire nascono in Francia per effetto della Rivoluzione francese e si diffondono sotto il primo impero.",
+  WV("Diritto amministrativo"), WDIR, "nascono per la prima volta in Francia per effetto della Rivoluzione francese")
+
+D("amm-322", "Pubblico impiego", 3, "In quante fasce si articola il ruolo dei dirigenti delle amministrazioni dello Stato?",
+  "Due: prima e seconda fascia", ["Tre fasce", "Una sola fascia", "Quattro fasce"],
+  "Art. 23 D.Lgs. 165/2001: in ogni amministrazione dello Stato è istituito il ruolo dei dirigenti, che si articola nella prima e nella seconda fascia.",
+  "D.Lgs. 165/2001, art. 23", D165, "è istituito il ruolo dei dirigenti, che si articola nella prima e nella seconda fascia")
+
+D("amm-323", "Pubblico impiego", 4, "Chi bandisce il corso-concorso selettivo di formazione per l'accesso alla dirigenza di seconda fascia?",
+  "La Scuola nazionale dell'amministrazione", ["Il Consiglio di Stato", "La Corte dei conti", "Il Dipartimento della protezione civile"],
+  "Art. 28 D.Lgs. 165/2001: si accede alla seconda fascia per corso-concorso selettivo di formazione bandito dalla Scuola nazionale dell'amministrazione, per concorso o per sviluppo di carriera.",
+  "D.Lgs. 165/2001, art. 28", D165, "per corso-concorso selettivo di formazione bandito dalla Scuola nazionale dell'amministrazione")
+
+D("amm-324", "Pubblico impiego", 3, "Per le esigenze del fabbisogno ordinario, con quali contratti assumono le pubbliche amministrazioni?",
+  "Esclusivamente con contratti a tempo indeterminato", ["Di regola con contratti a termine", "Solo con somministrazione", "Con contratti di collaborazione"],
+  "Art. 36, c. 1 D.Lgs. 165/2001: per il fabbisogno ordinario le PA assumono esclusivamente con contratti di lavoro subordinato a tempo indeterminato, con le procedure dell'art. 35.",
+  "D.Lgs. 165/2001, art. 36", D165, "assumono esclusivamente con contratti di lavoro subordinato a tempo indeterminato")
+
+D("amm-325", "Pubblico impiego", 4, "Cosa rischia l'amministrazione che non fa la ricognizione annuale delle eccedenze di personale?",
+  "Non può assumere: gli atti di assunzione sarebbero nulli", ["Una sanzione di 1.000 euro", "Nessuna conseguenza", "Lo scioglimento degli organi"],
+  "Art. 33, c. 2 D.Lgs. 165/2001: le PA che non fanno la ricognizione annuale non possono effettuare assunzioni con qualunque tipologia di contratto, pena la nullità degli atti.",
+  "D.Lgs. 165/2001, art. 33", D165, "non possono effettuare assunzioni o instaurare rapporti di lavoro con qualunque tipologia di contratto pena la nullità degli atti posti in essere")
+
+D("amm-326", "Pubblico impiego", 3, "Da quale fonte è definito il trattamento economico fondamentale e accessorio dei dipendenti pubblici?",
+  "Dai contratti collettivi", ["Da un decreto del Presidente della Repubblica", "Dai singoli dirigenti", "Dalla legge di bilancio per ogni dipendente"],
+  "Art. 45, c. 1 D.Lgs. 165/2001: il trattamento economico fondamentale ed accessorio è definito dai contratti collettivi.",
+  "D.Lgs. 165/2001, art. 45", D165, "è definito dai contratti collettivi")
+
+D("amm-327", "Pubblico impiego", 4, "Dopo quanti giorni di malattia l'assenza del dipendente pubblico va giustificata solo con certificato di struttura pubblica o medico convenzionato SSN?",
+  "Oltre dieci giorni, e comunque dopo il secondo evento di malattia nell'anno", ["Oltre tre giorni", "Oltre trenta giorni", "Sempre, dal primo giorno"],
+  "Art. 55-septies D.Lgs. 165/2001: per malattia superiore a dieci giorni e, in ogni caso, dopo il secondo evento nell'anno solare serve la certificazione di struttura pubblica o medico convenzionato.",
+  "D.Lgs. 165/2001, art. 55-septies", D165, "assenza per malattia protratta per un periodo superiore a dieci giorni")
+
+D("amm-328", "Pubblico impiego", 3, "A chi è inviata telematicamente la certificazione medica per malattia del dipendente pubblico?",
+  "All'INPS, direttamente dal medico o dalla struttura sanitaria", ["Al sindaco del comune di residenza", "All'INAIL", "Al dipendente, che la consegna a mano"],
+  "Art. 55-septies, c. 2 D.Lgs. 165/2001: la certificazione è inviata per via telematica, direttamente dal medico o dalla struttura, all'Istituto nazionale della previdenza sociale.",
+  "D.Lgs. 165/2001, art. 55-septies", D165, "è inviata per via telematica, direttamente dal medico o dalla struttura sanitaria che la rilascia, all'Istituto nazionale della previdenza sociale")
+
+D("amm-329", "Pubblico impiego", 4, "Cosa fanno i dirigenti degli uffici dirigenziali generali nei confronti del Ministro, secondo l'art. 16 del D.Lgs. 165/2001?",
+  "Formulano proposte ed esprimono pareri nelle materie di sua competenza", ["Ne approvano gli atti di indirizzo", "Ne controllano la legittimità degli atti", "Lo sostituiscono in Consiglio dei ministri"],
+  "Art. 16, c. 1, lett. a) D.Lgs. 165/2001: formulano proposte ed esprimono pareri al Ministro, nelle materie di sua competenza.",
+  "D.Lgs. 165/2001, art. 16", D165, "formulano proposte ed esprimono pareri al Ministro, nelle materie di sua competenza")
+
+D("amm-330", "Pubblico impiego", 4, "Di cosa si tiene conto, tra l'altro, nel conferire un incarico di funzione dirigenziale?",
+  "Delle attitudini e capacità professionali e dei risultati conseguiti in precedenza", ["Dell'età anagrafica", "Dell'appartenenza politica", "Della residenza del dirigente"],
+  "Art. 19, c. 1 D.Lgs. 165/2001: si tiene conto della natura degli obiettivi, delle attitudini e capacità professionali del dirigente, dei risultati precedenti e della relativa valutazione.",
+  "D.Lgs. 165/2001, art. 19", D165, "delle attitudini e delle capacità professionali del singolo dirigente")
+
+D("amm-331", "Codice di comportamento", 3, "Quali adesioni ad associazioni il dipendente NON deve comunicare al responsabile dell'ufficio?",
+  "L'adesione a partiti politici o sindacati", ["Qualsiasi associazione i cui interessi interferiscono con l'ufficio", "Le associazioni riservate", "Le associazioni professionali del suo settore"],
+  "Art. 5 DPR 62/2013: il dipendente comunica le adesioni ad associazioni i cui interessi possono interferire con l'ufficio; la regola non si applica a partiti politici e sindacati.",
+  "DPR 62/2013, art. 5", P62, "Il presente comma non si applica all'adesione a partiti politici o a sindacati")
+
+D("amm-332", "Codice di comportamento", 3, "A chi segnala il dipendente le situazioni di illecito di cui è venuto a conoscenza, secondo il codice di comportamento?",
+  "Al proprio superiore gerarchico, fermo l'obbligo di denuncia all'autorità giudiziaria", ["Solo ai giornalisti", "Ai colleghi dell'ufficio", "A nessuno: deve mantenere il segreto"],
+  "Art. 8 DPR 62/2013: il dipendente rispetta il piano anticorruzione, collabora con il responsabile e segnala al superiore gerarchico eventuali illeciti, fermo l'obbligo di denuncia.",
+  "DPR 62/2013, art. 8", P62, "segnala al proprio superiore gerarchico eventuali situazioni di illecito nell'amministrazione")
+
+D("amm-333", "Codice di comportamento", 3, "Come deve essere garantita la tracciabilità dei processi decisionali dei dipendenti pubblici?",
+  "Con un adeguato supporto documentale che ne consenta in ogni momento la replicabilità", ["Con registrazioni audio delle riunioni", "Con la sola parola del dirigente", "Non è richiesta"],
+  "Art. 9, c. 2 DPR 62/2013: la tracciabilità è garantita attraverso un adeguato supporto documentale, che consenta in ogni momento la replicabilità.",
+  "DPR 62/2013, art. 9", P62, "garantita attraverso un adeguato supporto documentale, che consenta in ogni momento la replicabilità")
+
+D("amm-334", "Codice di comportamento", 2, "Cosa vieta l'art. 11 del codice di comportamento al dipendente, salvo giustificato motivo?",
+  "Ritardare o far ricadere su altri le attività e le decisioni di sua spettanza", ["Partecipare a scioperi", "Usare il telefono personale in pausa", "Iscriversi a un sindacato"],
+  "Art. 11, c. 1 DPR 62/2013: il dipendente non ritarda né adotta comportamenti tali da far ricadere su altri dipendenti attività o decisioni di propria spettanza.",
+  "DPR 62/2013, art. 11", P62, "non ritarda né adotta comportamenti tali da far ricadere su altri dipendenti il compimento di attività")
+
+D("amm-335", "Codice di comportamento", 4, "Nella stipula di contratti per l'amministrazione, cosa non può fare il dipendente secondo l'art. 14 del DPR 62/2013?",
+  "Ricorrere a mediazione di terzi o promettere utilità a titolo di intermediazione", ["Chiedere più preventivi", "Applicare il codice dei contratti", "Firmare il contratto digitalmente"],
+  "Art. 14, c. 1 DPR 62/2013: il dipendente non ricorre a mediazione di terzi, né corrisponde o promette utilità a titolo di intermediazione.",
+  "DPR 62/2013, art. 14", P62, "il dipendente non ricorre a mediazione di terzi")
+
+D("amm-336", "Codice di comportamento", 4, "Le disposizioni particolari per i dirigenti del codice di comportamento si applicano anche ai funzionari con posizione organizzativa?",
+  "Sì, negli enti privi di dirigenza", ["No, mai", "Solo nei ministeri", "Solo se lo prevede il contratto individuale"],
+  "Art. 13, c. 1 DPR 62/2013: le norme si applicano ai dirigenti, anche a contratto, e ai funzionari responsabili di posizione organizzativa negli enti privi di dirigenza.",
+  "DPR 62/2013, art. 13", P62, "ai funzionari responsabili di posizione organizzativa negli enti privi di dirigenza")
+
+D("amm-337", "Documentazione amministrativa", 3, "Nei rapporti con la pubblica amministrazione, i certificati su stati, qualità personali e fatti sono:",
+  "Sempre sostituiti dalle dichiarazioni sostitutive", ["Obbligatori in originale", "Validi solo se autenticati dal notaio", "Validi solo in copia conforme"],
+  "Art. 40 DPR 445/2000: i certificati sono validi e utilizzabili solo nei rapporti tra privati; con la PA e i gestori di pubblici servizi sono sempre sostituiti dalle dichiarazioni degli artt. 46 e 47.",
+  "DPR 445/2000, art. 40", P445, "sono valide e utilizzabili solo nei rapporti tra privati")
+
+D("amm-338", "Documentazione amministrativa", 3, "Quale validità temporale hanno le dichiarazioni sostitutive?",
+  "La stessa degli atti che sostituiscono", ["Sei mesi in ogni caso", "Un anno in ogni caso", "Illimitata"],
+  "Art. 48, c. 1 DPR 445/2000: le dichiarazioni sostitutive hanno la stessa validità temporale degli atti che sostituiscono.",
+  "DPR 445/2000, art. 48", P445, "Le dichiarazioni sostitutive hanno la stessa validità temporale degli atti che sostituiscono")
+
+D("amm-339", "Documentazione amministrativa", 4, "I cittadini extra UE regolarmente soggiornanti possono usare le dichiarazioni sostitutive?",
+  "Sì, per stati, qualità e fatti certificabili da soggetti pubblici italiani", ["No, mai", "Sì, senza alcun limite", "Solo se hanno la residenza da 10 anni"],
+  "Art. 3, c. 2 DPR 445/2000: i cittadini di Stati non UE regolarmente soggiornanti possono usare le dichiarazioni degli artt. 46 e 47 limitatamente a quanto certificabile da soggetti pubblici italiani.",
+  "DPR 445/2000, art. 3", P445, "regolarmente soggiornanti in Italia, possono utilizzare le dichiarazioni sostitutive")
+
+D("amm-340", "Documentazione amministrativa", 4, "Cosa costituisce, secondo il DPR 445/2000, violazione dei doveri d'ufficio del dipendente?",
+  "La mancata accettazione delle dichiarazioni sostitutive rese a norma di legge", ["L'accettazione di una dichiarazione sostitutiva", "L'acquisizione d'ufficio di un dato", "Il controllo a campione delle dichiarazioni"],
+  "Art. 74, c. 1 DPR 445/2000: costituisce violazione dei doveri d'ufficio la mancata accettazione delle dichiarazioni sostitutive di certificazione o di atto di notorietà.",
+  "DPR 445/2000, art. 74", P445, "Costituisce violazione dei doveri d'ufficio la mancata accettazione delle dichiarazioni sostitutive")
+
+# Codice dei contratti pubblici (D.Lgs. 36/2023), articoli non ancora usati.
+D("amm-341", "Contratti pubblici", 3, "In base a quali principi si interpretano e si applicano le disposizioni del codice dei contratti pubblici?",
+  "In base ai principi degli articoli 1, 2 e 3 (risultato, fiducia, accesso al mercato)", ["In base al codice civile soltanto", "In base alle direttive ANAC", "In base alla prassi delle stazioni appaltanti"],
+  "Art. 4 D.Lgs. 36/2023: le disposizioni del codice si interpretano e si applicano in base ai principi di cui agli articoli 1, 2 e 3.",
+  "D.Lgs. 36/2023, art. 4", D36, "Le disposizioni del codice si interpretano e si applicano in base ai principi di cui agli articoli 1, 2 e 3")
+
+D("amm-342", "Contratti pubblici", 4, "Cosa spetta alla parte svantaggiata se circostanze straordinarie e imprevedibili alterano in modo rilevante l'equilibrio del contratto?",
+  "La rinegoziazione secondo buona fede delle condizioni contrattuali", ["La risoluzione automatica del contratto", "Un indennizzo fisso del 10%", "Nulla: il rischio resta suo"],
+  "Art. 9 D.Lgs. 36/2023 (conservazione dell'equilibrio contrattuale): la parte svantaggiata che non abbia assunto volontariamente il rischio ha diritto alla rinegoziazione secondo buona fede.",
+  "D.Lgs. 36/2023, art. 9", D36, "ha diritto alla rinegoziazione secondo buona fede delle condizioni contrattuali")
+
+D("amm-343", "Contratti pubblici", 4, "Quando si ha conflitto di interessi secondo il codice dei contratti pubblici?",
+  "Quando chi interviene nella procedura ha un interesse personale che può essere percepito come minaccia alla sua imparzialità", ["Solo quando c'è una condanna penale", "Quando due imprese partecipano alla stessa gara", "Quando l'appalto supera la soglia europea"],
+  "Art. 16 D.Lgs. 36/2023: c'è conflitto quando chi interviene nell'aggiudicazione o nell'esecuzione e può influenzarne l'esito ha un interesse finanziario, economico o personale che può minacciarne l'imparzialità.",
+  "D.Lgs. 36/2023, art. 16", D36, "alla sua imparzialità e indipendenza nel contesto della procedura di aggiudicazione")
+
+D("amm-344", "Contratti pubblici", 3, "Con quale atto, prima di avviare l'affidamento, la stazione appaltante individua gli elementi essenziali del contratto e i criteri di selezione?",
+  "La decisione di contrarre", ["Il contratto di avvalimento", "Il certificato di collaudo", "Il verbale di aggiudicazione"],
+  "Art. 17, c. 1 D.Lgs. 36/2023: prima dell'avvio le stazioni appaltanti adottano la decisione di contrarre, individuando gli elementi essenziali del contratto e i criteri di selezione.",
+  "D.Lgs. 36/2023, art. 17", D36, "adottano la decisione di contrarre individuando gli elementi essenziali del contratto")
+
+D("amm-345", "Contratti pubblici", 3, "In quanti livelli si articola la progettazione dei lavori pubblici nel codice del 2023?",
+  "Due: progetto di fattibilità tecnico-economica e progetto esecutivo", ["Tre: preliminare, definitivo ed esecutivo", "Uno solo: il progetto esecutivo", "Quattro livelli"],
+  "Art. 41 D.Lgs. 36/2023: la progettazione si articola in due livelli di successivi approfondimenti tecnici, il progetto di fattibilità tecnico-economica e il progetto esecutivo.",
+  "D.Lgs. 36/2023, art. 41", D36, "si articola in due livelli di successivi approfondimenti tecnici: il progetto di fattibilità tecnico-economica e il progetto esecutivo")
+
+D("amm-346", "Contratti pubblici", 4, "Fino a quale importo tutte le stazioni appaltanti possono affidare direttamente e autonomamente i lavori, senza essere qualificate?",
+  "Fino a 500.000 euro", ["Fino a 40.000 euro", "Fino a 5 milioni di euro", "Senza limiti"],
+  "Art. 62, c. 1 D.Lgs. 36/2023: tutte le stazioni appaltanti possono procedere autonomamente per forniture e servizi entro le soglie degli affidamenti diretti e per lavori pari o inferiori a 500.000 euro.",
+  "D.Lgs. 36/2023, art. 62", D36, "all'affidamento di lavori d'importo pari o inferiore a 500.000 euro")
+
+D("amm-347", "Contratti pubblici", 3, "Cos'è l'avvalimento nel codice dei contratti pubblici?",
+  "Il contratto con cui imprese ausiliarie mettono a disposizione di un concorrente risorse tecniche e umane", ["Il subappalto di tutte le prestazioni", "La cessione del contratto a un'altra impresa", "Il ricorso al giudice contro l'aggiudicazione"],
+  "Art. 104 D.Lgs. 36/2023: con l'avvalimento una o più imprese ausiliarie si obbligano a mettere a disposizione del concorrente dotazioni tecniche e risorse umane e strumentali per tutta la durata dell'appalto.",
+  "D.Lgs. 36/2023, art. 104", D36, "L'avvalimento è il contratto con il quale una o più imprese ausiliarie si obbligano a mettere a disposizione")
+
+D("amm-348", "Contratti pubblici", 4, "In quale forma va concluso il contratto di avvalimento?",
+  "In forma scritta a pena di nullità", ["Anche oralmente", "Con atto notarile obbligatorio", "Con semplice e-mail"],
+  "Art. 104, c. 1 D.Lgs. 36/2023: il contratto di avvalimento è concluso in forma scritta a pena di nullità, con indicazione specifica delle risorse messe a disposizione.",
+  "D.Lgs. 36/2023, art. 104", D36, "Il contratto di avvalimento è concluso in forma scritta a pena di nullità")
+
+D("amm-349", "Contratti pubblici", 4, "Entro quale termine deve essere completato, di regola, il collaudo finale o la verifica di conformità?",
+  "Non oltre sei mesi dall'ultimazione dei lavori o delle prestazioni", ["Entro 30 giorni", "Entro tre anni", "Non c'è un termine"],
+  "Art. 116, c. 2 D.Lgs. 36/2023: il collaudo o la verifica di conformità va completato non oltre sei mesi dall'ultimazione; nei casi complessi il termine può arrivare a un anno.",
+  "D.Lgs. 36/2023, art. 116", D36, "deve essere completato non oltre sei mesi dall'ultimazione dei lavori o delle prestazioni")
+
+D("amm-350", "Contratti pubblici", 4, "Entro quali limiti di tempo la stazione appaltante può risolvere un contratto per i casi previsti dall'art. 122 del codice (es. modifica sostanziale)?",
+  "Senza limiti di tempo", ["Entro 30 giorni dalla stipula", "Entro un anno dall'aggiudicazione", "Solo prima dell'inizio dei lavori"],
+  "Art. 122, c. 1 D.Lgs. 36/2023: le stazioni appaltanti possono risolvere un contratto senza limiti di tempo, ad esempio in caso di modifica sostanziale che richiede una nuova procedura.",
+  "D.Lgs. 36/2023, art. 122", D36, "possono risolvere un contratto di appalto senza limiti di tempo")

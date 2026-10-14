@@ -807,3 +807,260 @@ C("inf-299", 3, "A cosa sono finalizzate le politiche di formazione informatica 
 C("inf-300", 4, "Quale piattaforma è realizzata presso l'AgID per la consultazione pubblica sui provvedimenti dell'agenda digitale?",
   "La Piattaforma nazionale per la governance della trasformazione digitale", ["La piattaforma pagoPA", "L'app IO", "Il portale INI-PEC"],
   "Raccoglie suggerimenti e proposte dai portatori di interesse.", "18", "È realizzata presso l'AgID una piattaforma per la consultazione pubblica")
+
+# ── Verso 350: quadro europeo delle competenze digitali (DigComp 2.2, traduzione AgID/Dipartimento
+#    per la trasformazione digitale), IA, software libero, backup, Codice privacy, calcolatori.
+DIG = "AgID_DigComp-2.2-italiano.txt"
+FDIG = "DigComp 2.2, Il Quadro delle Competenze Digitali per i Cittadini (JRC, trad. italiana)"
+WIA, WSL, WBK = "Wikipedia_Intelligenza-artificiale.txt", "Wikipedia_Software-libero.txt", "Wikipedia_Backup.txt"
+P196 = "norma_DLgs196-2003_privacy.txt"
+
+D("inf-301", "Competenze digitali", 2, "Quante competenze compongono la competenza digitale secondo il quadro europeo DigComp?",
+  "21 competenze", ["5 competenze", "12 competenze", "50 competenze"],
+  "Il DigComp definisce la competenza digitale come una combinazione di 21 competenze raggruppate in cinque aree.",
+  FDIG, DIG, "combinazione di 21 competenze")
+
+D("inf-302", "Competenze digitali", 2, "In quante aree principali sono raggruppate le competenze del DigComp?",
+  "Cinque", ["Tre", "Otto", "Dieci"],
+  "Le 21 competenze del DigComp sono raggruppate in cinque aree principali.",
+  FDIG, DIG, "raggruppate in cinque aree principali")
+
+D("inf-303", "Competenze digitali", 3, "Quale tra queste è una delle cinque aree del DigComp?",
+  "Sicurezza", ["Contabilità digitale", "Hardware", "Programmazione avanzata"],
+  "Dal 2016 le cinque aree sono: alfabetizzazione su informazione e dati; comunicazione e collaborazione; creazione di contenuti digitali; sicurezza; risolvere problemi.",
+  FDIG, DIG, "Dal 2016, le cinque aree sono")
+
+D("inf-304", "Competenze digitali", 3, "In che anno è uscito il primo quadro di riferimento DigComp?",
+  "Nel 2013", ["Nel 2006", "Nel 2020", "Nel 1999"],
+  "Il lavoro sulle competenze digitali iniziò nel 2010; nel 2013 è uscito il primo quadro di riferimento DigComp.",
+  FDIG, DIG, "Nel 2013 è uscito il primo quadro di riferimento DigComp")
+
+D("inf-305", "Competenze digitali", 3, "Quanti livelli di padronanza prevede il DigComp?",
+  "Otto", ["Tre", "Cinque", "Dieci"],
+  "Il DigComp prevede otto livelli di padronanza, ispirati alla struttura e al vocabolario dell'EQF e alla tassonomia di Bloom.",
+  FDIG, DIG, "Gli otto livelli di padronanza si ispirano alla struttura e al")
+
+D("inf-306", "Competenze digitali", 4, "Quale servizio della Commissione europea ha elaborato il DigComp?",
+  "Il Joint Research Centre (JRC)", ["L'ENISA", "Eurostat", "La Banca centrale europea"],
+  "Il DigComp 2.2 è un rapporto Science for Policy del Joint Research Centre, il servizio della Commissione europea per la scienza e la conoscenza.",
+  FDIG, DIG, "rapporto Science for Policy del Joint Research Centre (JRC)")
+
+D("inf-307", "Competenze digitali", 4, "Cosa aggiunge principalmente l'aggiornamento DigComp 2.2?",
+  "Più di 250 nuovi esempi di conoscenze, abilità e attitudini", ["Una sesta area di competenza", "Un esame di certificazione obbligatorio", "Nuovi livelli di padronanza"],
+  "Il DigComp 2.2 fornisce più di 250 nuovi esempi di conoscenze, abilità e attitudini, anche su temi emergenti come l'IA; non cambia aree né livelli.",
+  FDIG, DIG, "fornisce più di 250 nuovi esempi")
+
+D("inf-308", "Competenze digitali", 3, "In quale area del DigComp rientra la competenza «Netiquette»?",
+  "Comunicazione e collaborazione", ["Sicurezza", "Risolvere problemi", "Creazione di contenuti digitali"],
+  "La 2.5 Netiquette fa parte dell'area 2, Comunicazione e collaborazione, insieme ad esempio alla 2.6 Gestire l'identità digitale.",
+  FDIG, DIG, "2.5. Netiquette")
+
+D("inf-309", "Competenze digitali", 4, "In quale area del DigComp rientra la competenza «Proteggere l'ambiente»?",
+  "Sicurezza", ["Comunicazione e collaborazione", "Alfabetizzazione su informazione e dati", "Creazione di contenuti digitali"],
+  "L'area 4, Sicurezza, comprende: proteggere i dispositivi, i dati personali e la privacy, la salute e il benessere, l'ambiente (4.4).",
+  FDIG, DIG, "4.4. Proteggere l'ambiente")
+
+D("inf-310", "Competenze digitali", 3, "In quale area del DigComp rientra la competenza «Copyright e licenze»?",
+  "Creazione di contenuti digitali", ["Sicurezza", "Risolvere problemi", "Comunicazione e collaborazione"],
+  "L'area 3, Creazione di contenuti digitali, comprende sviluppare, integrare e rielaborare contenuti, copyright e licenze (3.3) e programmazione (3.4).",
+  FDIG, DIG, "3.3. Copyright e licenze")
+
+D("inf-311", "Competenze digitali", 3, "Come si chiamano gli effetti per cui alcuni algoritmi rafforzano i punti di vista già esistenti di un utente?",
+  "Camere d'eco e bolle di filtraggio", ["Phishing e spoofing", "Cache e buffer", "Firewall e proxy"],
+  "Il DigComp ricorda che alcuni algoritmi di IA possono rafforzare i punti di vista esistenti creando «camere d'eco» o «bolle di filtraggio».",
+  FDIG, DIG, "\"bolle di filtraggio\" (filter bubbles)")
+
+D("inf-312", "Competenze digitali", 3, "Perché è utile cercare online il proprio nome e cognome, secondo il DigComp?",
+  "Per controllare la propria «impronta digitale» negli ambienti online", ["Per aumentare la velocità della connessione", "Per aggiornare il sistema operativo", "Per cancellare i cookie"],
+  "Tra le abilità: effettuare una ricerca sul proprio nome per controllare la propria impronta digitale online, ad esempio post o immagini problematici.",
+  FDIG, DIG, "al fine di controllare la propria \"impronta digitale\"")
+
+D("inf-313", "Sicurezza", 2, "Cosa si usa, insieme alle credenziali, nell'autenticazione a due fattori?",
+  "Una password temporanea OTP o un codice aggiuntivo", ["Una seconda password uguale alla prima", "Il proprio indirizzo email", "Nessun altro elemento"],
+  "L'autenticazione a due fattori usa, ad esempio, una password temporanea OTP o un codice aggiuntivo assieme alle credenziali di accesso.",
+  FDIG, DIG, "attivare l'autenticazione a due fattori quando disponibile")
+
+D("inf-314", "Sicurezza", 2, "Cosa si intende per cyberbullismo?",
+  "Bullismo perpetrato con l'uso di tecnologie digitali", ["Un attacco informatico a una banca", "Un virus che cancella i file", "La pubblicità ingannevole online"],
+  "Il cyberbullismo è il bullismo perpetrato con tecnologie digitali: un comportamento ripetuto volto a spaventare, irritare o svergognare le persone prese di mira.",
+  FDIG, DIG, "si riferisce al bullismo perpetrato con l'uso di tecnologie digitali")
+
+D("inf-315", "Privacy", 3, "Quali funzionalità permettono di limitare il tracciamento delle proprie attività su Internet?",
+  "La navigazione privata e la cancellazione dei cookie", ["L'aumento della risoluzione dello schermo", "La deframmentazione del disco", "L'uso di caratteri maiuscoli nelle password"],
+  "Esistono modi per limitare il tracciamento online, come la navigazione privata, la cancellazione dei cookie e il consenso personalizzato per i cookie.",
+  FDIG, DIG, "navigazione privata e cancellazione dei cookie")
+
+D("inf-316", "Competenze digitali", 4, "Come si chiamano, in inglese, le misure tecniche che bloccano o limitano l'accesso a contenuti digitali protetti?",
+  "TPM (Technical Protection Measures)", ["VPN", "API", "DNS"],
+  "Esistono meccanismi per limitare l'accesso ai contenuti digitali, come password, blocchi geografici e misure di protezione tecniche (TPM).",
+  FDIG, DIG, "misure di protezione tecniche, in inglese TPM")
+
+D("inf-317", "Basi di dati", 3, "Cosa sono gli archivi di dati aperti (open data)?",
+  "Archivi in cui chiunque può ottenere dati, ad esempio per risolvere problemi", ["Database accessibili solo alla polizia", "Archivi di password", "Backup di sistema crittografati"],
+  "Il DigComp ricorda che esistono archivi di dati aperti in cui chiunque può ottenere dati utili, ad esempio per attività di risoluzione dei problemi.",
+  FDIG, DIG, "esistono archivi di dati aperti in cui chiunque può ottenere dati")
+
+D("inf-318", "Intelligenza artificiale", 3, "Cosa ha fatto esplodere l'interesse per il deep learning dopo il 2012?",
+  "L'uso delle GPU per addestrare reti neurali", ["L'invenzione del transistor", "La nascita del World Wide Web", "L'abbandono delle reti neurali"],
+  "Interesse e investimenti sono cresciuti dopo il 2012, quando l'uso delle GPU per addestrare reti neurali ha permesso al deep learning di superare le tecniche precedenti.",
+  W("Intelligenza artificiale"), WIA, "quando l'impiego delle unità di elaborazione grafica (GPU) per addestrare reti neurali")
+
+D("inf-319", "Intelligenza artificiale", 3, "Quale tipo di IA rappresenta oggi la totalità dei sistemi esistenti?",
+  "L'IA debole (o ristretta), specializzata in compiti specifici", ["L'IA generale (AGI)", "La superintelligenza", "L'IA cosciente"],
+  "L'IA debole o ristretta, specializzata in compiti specifici, rappresenta il 100% dei sistemi oggi esistenti; l'AGI è ipotetica.",
+  W("Intelligenza artificiale"), WIA, "IA debole (o ristretta), che rappresenta il 100% dei sistemi AI oggi esistenti")
+
+D("inf-320", "Intelligenza artificiale", 4, "Chi creò nel 1943 quello che è ritenuto il primo lavoro sull'intelligenza artificiale, un modello di neuroni artificiali?",
+  "McCulloch e Pitts", ["Turing e Church", "Minsky e McCarthy", "Newell e Simon"],
+  "Nel 1943 McCulloch e Pitts crearono il primo lavoro sull'IA: un modello di neuroni artificiali «accesi» o «spenti».",
+  W("Intelligenza artificiale"), WIA, "Nel 1943 McCulloch e Pitts crearono ciò che viene ritenuto il primo lavoro")
+
+D("inf-321", "Intelligenza artificiale", 4, "Come si chiamava la prima rete neurale artificiale, creata nel 1950 da Minsky ed Edmonds?",
+  "SNARC", ["ENIAC", "Logic Theorist", "Perceptron"],
+  "Nel 1950 Marvin Minsky e Dean Edmonds, studenti di Harvard, crearono la prima rete neurale artificiale, chiamata SNARC.",
+  W("Intelligenza artificiale"), WIA, "crearono la prima rete neurale artificiale, conosciuta con il nome di \"SNARC\"")
+
+D("inf-322", "Intelligenza artificiale", 4, "Quale programma di Newell e Simon, presentato a Dartmouth nel 1956, sapeva dimostrare teoremi?",
+  "Logic Theorist", ["ELIZA", "Deep Blue", "SHRDLU"],
+  "A Dartmouth Allen Newell e Herbert Simon presentarono il Logic Theorist, capace di dimostrare teoremi partendo dai principi della matematica.",
+  W("Intelligenza artificiale"), WIA, "conosciuto con il nome di \"Logic Theorist\"")
+
+D("inf-323", "Intelligenza artificiale", 3, "Chi introdusse l'espressione «intelligenza artificiale»?",
+  "John McCarthy, al convegno di Dartmouth del 1956", ["Alan Turing, nel 1936", "Claude Shannon, nel 1948", "Marvin Minsky, nel 1969"],
+  "Nel convegno di Dartmouth del 1956 McCarthy introdusse l'espressione «intelligenza artificiale».",
+  W("Intelligenza artificiale"), WIA, "McCarthy introdusse l'espressione \"intelligenza artificiale\"")
+
+D("inf-324", "Intelligenza artificiale", 4, "In quale articolo del 1936 Alan Turing discusse la calcolabilità e introdusse la «macchina di Turing»?",
+  "On Computable Numbers", ["Computing Machinery and Intelligence", "A Mathematical Theory of Communication", "Perceptrons"],
+  "Nel 1936 Alan Turing, nell'articolo On Computable Numbers, discusse calcolabilità, computabilità e il concetto di macchina di Turing.",
+  W("Intelligenza artificiale"), WIA, "Nel 1936 Alan Turing nel suo articolo On Computable Numbers")
+
+D("inf-325", "Intelligenza artificiale", 3, "Come definisce l'intelligenza artificiale il Parlamento europeo?",
+  "La capacità di un sistema di mostrare capacità umane come ragionamento, apprendimento, pianificazione e creatività", ["Un qualsiasi programma per computer", "Un robot con sembianze umane", "Una rete di computer collegati a Internet"],
+  "Il Parlamento europeo definisce l'IA come la possibilità per un sistema di mostrare capacità tipicamente umane: ragionamento, apprendimento, pianificazione e creatività.",
+  W("Intelligenza artificiale"), WIA, "quali il ragionamento, l'apprendimento, la pianificazione e la creatività")
+
+D("inf-326", "Intelligenza artificiale", 3, "Quale uso improprio si fa spesso, nel linguaggio comune, del termine «intelligenza artificiale»?",
+  "Lo si usa per indicare la sola IA generativa", ["Lo si usa per indicare i robot industriali", "Lo si usa per indicare Internet", "Lo si usa per indicare i videogiochi"],
+  "Nel linguaggio comune «intelligenza artificiale» indica spesso la sola IA generativa, che crea testi, immagini, audio o video: è solo uno dei sottocampi.",
+  W("Intelligenza artificiale"), WIA, "viene spesso usato in modo improprio per indicare la sola intelligenza artificiale generativa")
+
+D("inf-327", "Intelligenza artificiale", 4, "Quale programma di Newell e Simon fu ideato per imitare i processi umani di risoluzione dei problemi?",
+  "General Problem Solver (GPS)", ["Logic Theorist", "SNARC", "Geometry Theorem Prover"],
+  "Dopo il Logic Theorist, Newell e Simon crearono il General Problem Solver (GPS), ideato per imitare la risoluzione dei problemi umana (euristica mezzi-fini).",
+  W("Intelligenza artificiale"), WIA, "General Problem Solver, o GPS")
+
+D("inf-328", "Intelligenza artificiale", 4, "Quale celebre scienziato, nel 2014, segnalò i rischi potenziali dell'IA per l'umanità?",
+  "Stephen Hawking", ["Albert Einstein", "Tim Berners-Lee", "Alan Turing"],
+  "Numerosi scienziati e filosofi, tra cui nel 2014 Stephen Hawking, hanno segnalato i rischi potenziali dell'IA.",
+  W("Intelligenza artificiale"), WIA, "nel 2014, Stephen Hawking")
+
+D("inf-329", "Software", 3, "Quale licenza ideò Richard Stallman nel 1989?",
+  "La GNU General Public License (GPL), una licenza copyleft", ["La licenza MIT", "La licenza Creative Commons", "La licenza Apache"],
+  "Nel 1989 Richard Stallman ideò la GNU General Public License, una licenza copyleft.",
+  W("Software libero"), WSL, "Nel 1989, Richard Stallman, ideò anche la GNU General Public License (GNU-GPL), una licenza Copyleft")
+
+D("inf-330", "Software", 4, "Cosa impone il copyleft a chi modifica un software distribuito con licenza GPL?",
+  "Di distribuire le modifiche con la stessa licenza del software di partenza", ["Di pagare una royalty all'autore", "Di non pubblicare mai il codice sorgente", "Di cambiare il nome del programma"],
+  "La GPL incentiva la condivisione del codice imponendo a chi modifica di farlo con la stessa licenza del software di partenza.",
+  W("Software libero"), WSL, "l'obbligo verso coloro che modificano di farlo con la stessa licenza del software di partenza")
+
+D("inf-331", "Software", 3, "Cosa significa l'acronimo ricorsivo GNU?",
+  "GNU's Not Unix", ["General Network Utility", "Global Numeric Unit", "GNU New Unix"],
+  "Nel 1983 Stallman fondò il progetto GNU (GNU's Not Unix) per creare un sistema operativo completamente libero.",
+  W("Software libero"), WSL, "(GNU's Not Unix)")
+
+D("inf-332", "Software", 5, "Quale atto normativo statunitense permise di privatizzare con la proprietà intellettuale i risultati della ricerca accademica?",
+  "Il Bayh-Dole Act", ["Il Patriot Act", "Il Digital Millennium Copyright Act", "Lo Sherman Act"],
+  "Negli anni Ottanta il Bayh-Dole Act mise in discussione la libera circolazione delle idee accademiche, permettendo di proteggere con proprietà intellettuale i risultati delle ricerche.",
+  W("Software libero"), WSL, "Bayh-Dole Act")
+
+D("inf-333", "Sicurezza", 3, "Oltre a quella manuale o periodica, quale altra programmazione del backup è possibile?",
+  "«Su evento», ad esempio all'installazione di un nuovo software", ["Solo alla fine dell'anno", "Solo quando il disco è pieno", "Solo su richiesta del produttore"],
+  "Il backup può essere manuale, automatico periodico, oppure «su evento», ad esempio all'installazione di nuovo software o al superamento di una soglia di allarme.",
+  W("Backup"), WBK, "Un'altra possibilità di programmazione è \"su evento\"")
+
+D("inf-334", "Sicurezza", 3, "Basta eseguire un backup per essere al sicuro?",
+  "No: bisogna verificare che il job sia completo e privo di errori, e conservarlo bene", ["Sì, sempre", "Sì, se fatto su chiavetta USB", "Sì, se il file è compresso"],
+  "Eseguire un backup non basta: occorre accertare che il job sia corretto, completo e privo di errori, perché il ripristino sia efficace; conta anche la conservazione.",
+  W("Backup"), WBK, "occorre accertare che il job ottenuto sia corretto")
+
+D("inf-335", "Sicurezza", 4, "Cosa si salva con il backup di un apparato di rete come un router o un firewall?",
+  "La configurazione, cioè il file delle impostazioni", ["Solo i documenti degli utenti", "Il firmware del produttore", "Le password di tutti i siti visitati"],
+  "Per gli apparati il backup si applica anche alla configurazione (il file delle impostazioni e personalizzazioni), ad esempio di router, firewall o switch.",
+  W("Backup"), WBK, "Per gli apparati il backup si applica pure alla configurazione")
+
+D("inf-336", "Sicurezza", 4, "Come funziona il backup continuo offerto dai servizi online o dai backup appliance?",
+  "Tramite agent che individuano i file nuovi e ne fanno subito la copia", ["Con una copia manuale settimanale", "Stampando i documenti", "Spegnendo il computer ogni sera"],
+  "Il backup continuo usa agent, software che individuano con criteri i file nuovi da archiviare e ne eseguono subito la copia di sicurezza.",
+  W("Backup"), WBK, "attraverso gli agent")
+
+D("inf-337", "Privacy", 4, "Per quanto tempo il fornitore conserva i dati di traffico telefonico per finalità di accertamento dei reati?",
+  "Ventiquattro mesi dalla comunicazione", ["Sei mesi", "Dieci anni", "Tre giorni"],
+  "Art. 132 D.Lgs. 196/2003: i dati di traffico telefonico sono conservati per ventiquattro mesi; quelli di traffico telematico, esclusi i contenuti, per dodici mesi.",
+  "D.Lgs. 196/2003, art. 132", P196, "conservati dal fornitore per ventiquattro mesi dalla data della comunicazione")
+
+D("inf-338", "Privacy", 4, "Per quanto tempo il fornitore conserva i dati di traffico telematico (esclusi i contenuti) a fini di repressione dei reati?",
+  "Dodici mesi", ["Ventiquattro mesi", "Trenta giorni", "Cinque anni"],
+  "Art. 132 D.Lgs. 196/2003: i dati di traffico telematico, esclusi i contenuti delle comunicazioni, sono conservati dal fornitore per dodici mesi.",
+  "D.Lgs. 196/2003, art. 132", P196, "sono conservati dal fornitore per dodici mesi dalla data della comunicazione")
+
+D("inf-339", "Privacy", 4, "Chi elegge i componenti del Collegio del Garante per la protezione dei dati personali?",
+  "Due la Camera dei deputati e due il Senato, con voto limitato", ["Il Presidente della Repubblica", "Il Governo", "Il Consiglio di Stato"],
+  "Art. 153 D.Lgs. 196/2003: il Collegio è costituito da quattro componenti, eletti due dalla Camera e due dal Senato con voto limitato.",
+  "D.Lgs. 196/2003, art. 153", P196, "eletti due dalla Camera dei deputati e due dal Senato della Repubblica con voto limitato")
+
+D("inf-340", "Privacy", 4, "Se l'interessato ha già proposto reclamo al Garante, può poi rivolgersi al giudice per lo stesso oggetto e tra le stesse parti?",
+  "No: il reclamo al Garante rende improponibile l'ulteriore domanda al giudice", ["Sì, sempre", "Sì, ma solo dopo un anno", "Sì, se il Garante non risponde entro una settimana"],
+  "Art. 140-bis D.Lgs. 196/2003: reclamo al Garante e ricorso al giudice sono alternativi; presentato il reclamo, è improponibile la domanda al giudice tra le stesse parti e per lo stesso oggetto.",
+  "D.Lgs. 196/2003, art. 140-bis", P196, "La presentazione del reclamo al Garante rende improponibile un'ulteriore domanda dinanzi all'autorità giudiziaria")
+
+D("inf-341", "Privacy", 5, "Da quali atti può essere costituita la base giuridica dei trattamenti per compiti di interesse pubblico?",
+  "Da una norma di legge, di regolamento o da atti amministrativi generali", ["Solo dal consenso dell'interessato", "Da un contratto privato", "Da una circolare interna"],
+  "Art. 2-ter D.Lgs. 196/2003: la base giuridica per i trattamenti di interesse pubblico è una norma di legge o di regolamento o un atto amministrativo generale.",
+  "D.Lgs. 196/2003, art. 2-ter", P196, "da una norma di legge o ((...)) di regolamento ((o da atti amministrativi generali))")
+
+D("inf-342", "Privacy", 4, "Le chiamate pubblicitarie automatizzate, senza operatore, sono consentite?",
+  "Solo con il consenso del contraente o utente", ["Sempre", "Mai", "Solo di notte"],
+  "Art. 130 D.Lgs. 196/2003: l'uso di sistemi automatizzati di chiamata senza operatore per pubblicità o vendita diretta è consentito con il consenso del contraente o utente.",
+  "D.Lgs. 196/2003, art. 130", P196, "è consentito con il consenso del contraente o utente")
+
+D("inf-343", "Privacy", 4, "Cosa possono fare titolare e responsabile del trattamento secondo l'art. 2-quaterdecies del Codice privacy?",
+  "Attribuire specifici compiti a persone fisiche espressamente designate sotto la loro autorità", ["Delegare tutto al Garante", "Rinunciare alla responsabilità", "Trasferire i dati senza limiti"],
+  "Art. 2-quaterdecies: titolare o responsabile possono attribuire compiti connessi al trattamento a persone fisiche espressamente designate che operano sotto la loro autorità.",
+  "D.Lgs. 196/2003, art. 2-quaterdecies", P196, "siano attribuiti a persone fisiche, espressamente designate, che operano sotto la loro autorità")
+
+D("inf-344", "Privacy", 5, "Con quale pena è punito il trattamento illecito di dati dell'art. 167, c. 1 del Codice privacy?",
+  "Reclusione da sei mesi a un anno e sei mesi", ["Solo una multa", "Reclusione da cinque a dieci anni", "Nessuna pena: è solo un illecito civile"],
+  "Art. 167, c. 1: chi, per profitto o per arrecare danno, viola le norme indicate e arreca nocumento all'interessato è punito con la reclusione da sei mesi a un anno e sei mesi.",
+  "D.Lgs. 196/2003, art. 167", P196, "è punito con la reclusione da sei mesi a un anno e sei mesi")
+
+D("inf-345", "Hardware", 3, "In cosa si differenzia l'architettura Harvard da quella di Von Neumann?",
+  "Separa la memoria dei dati da quella del codice (istruzioni)", ["Non usa memoria", "Usa solo memorie ottiche", "Ha un solo registro"],
+  "L'architettura Harvard si differenzia da quella di Von Neumann per la separazione della memoria dati e della memoria codice, con cache separate.",
+  GCF, GC, "L'architettura Harvard si differenzia dall'architettura di Von Neumann per la separazione della memoria dati e della memoria codice")
+
+D("inf-346", "Hardware", 4, "Nel RAID 0, come vengono distribuiti i dati?",
+  "Su strisce (strip) suddivise tra più dischi, con letture e scritture in parallelo", ["Duplicati identici su due dischi", "Su un solo disco con parità", "Solo su nastro"],
+  "Nel RAID 0 i dati sono distribuiti su strisce, ciascuna su un disco: la banda in lettura/scrittura aumenta perché le operazioni avvengono in parallelo.",
+  GCF, GC, "Nel RAID 0, i dati vengono distribuiti su strisce (strip)")
+
+D("inf-347", "Hardware", 4, "Nella modalità Memory-Mapped-IO, come comunica il processore con le periferiche?",
+  "Come con le celle di memoria: periferiche e memoria condividono un unico spazio di indirizzamento", ["Con un bus separato per ogni periferica", "Solo tramite interrupt", "Via rete Wi-Fi"],
+  "In Memory-Mapped-IO periferiche e memoria sono mappate in un unico spazio di indirizzamento; in Isolated-IO gli spazi sono distinti.",
+  GCF, GC, "le periferiche e la memoria sono mappate in un unico spazio di indirizzamento")
+
+D("inf-348", "Hardware", 3, "Cosa caratterizza i processori superscalari, diffusi dagli anni Novanta?",
+  "Completano più di un'istruzione a ogni colpo di clock", ["Hanno un solo transistor", "Funzionano senza clock", "Eseguono un'istruzione ogni dieci colpi di clock"],
+  "CISC: più colpi di clock per istruzione; RISC: un'istruzione per colpo; superscalari: più di un'istruzione per colpo; multicore: più processori integrati.",
+  GCF, GC, "a ogni colpo di clock completano più di un'istruzione")
+
+D("inf-349", "Hardware", 4, "Che organizzazione hanno i dischi ottici quanto alla velocità di rotazione?",
+  "Constant Linear Velocity: velocità lineare costante, angolare variabile", ["Velocità angolare costante come i dischi fissi", "Nessuna rotazione", "Rotazione casuale"],
+  "I dischi ottici hanno organizzazione CLV: il motore ruota a velocità lineare costante ma a velocità angolari diverse secondo la posizione del laser.",
+  GCF, GC, "I dischi ottici hanno un'organizzazione Constant Linear Velocity (CLV)")
+
+D("inf-350", "Hardware", 3, "Che vantaggio hanno le EEPROM rispetto alle EPROM?",
+  "Si riprogrammano senza raggi ultravioletti", ["Sono volatili", "Sono più veloci delle RAM", "Non si possono mai riscrivere"],
+  "Le memorie EEPROM possono essere riprogrammate senza raggi ultravioletti, ma la programmazione è lenta e sono costose.",
+  GCF, GC, "Le memorie EEPROM possono essere riprogrammate senza raggi ultra-violetti")

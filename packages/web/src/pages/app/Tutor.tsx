@@ -20,6 +20,7 @@ export function Tutor() {
 /** Tutor per il piano Pro: gettoni, allenamento e chat libera. */
 function TutorPro() {
   const { data: stato, loading, error, setData } = useApi<AiStato>("/ai/stato");
+  // Aggiorna i crediti AI dopo ogni uso del tutor.
   const aggiornaGettoni = (gettoni: GettoniAi) => setData((s) => s && { ...s, gettoni });
   const [materiaChat, setMateriaChat] = useState<MateriaId | "">("");
 
@@ -139,6 +140,11 @@ const SUGGERIMENTI: Record<MateriaId | "qualsiasi", string[]> = {
     "Quali sono i fiumi più lunghi d'Italia?",
     "Come si leggono latitudine e longitudine?",
   ],
+  attualita: [
+    "Quali sono le istituzioni dell'Unione europea e cosa fanno?",
+    "Riassumimi le tappe principali della guerra in Ucraina",
+    "Cosa sono l'ONU e la NATO e quando sono nate?",
+  ],
   logica: [
     "Spiegami le proporzioni con un esempio",
     "Come si risolvono le serie numeriche?",
@@ -168,6 +174,7 @@ function Allenamento({ puntiDeboli, onGettoni }: { puntiDeboli: AiStato["puntiDe
   const [inCorso, setInCorso] = useState(false);
   const [errore, setErrore] = useState<ApiError>();
 
+  // Genera un allenamento con domande nuove della materia scelta.
   async function genera() {
     setInCorso(true);
     setErrore(undefined);

@@ -61,6 +61,7 @@ async function cancella(ids: string[]) {
 /** Entrata del job: rilegge i chiusi; se il tempo non basta si rilancia da solo dalla pagina successiva. */
 export const handler = async (event: Evento = {}, context?: Context) => {
   const inizio = event.inizio ?? new Date().toISOString();
+  // Millisecondi che restano prima del timeout della Lambda.
   const tempoRimasto = () => context?.getRemainingTimeInMillis() ?? Infinity;
 
   const giro = await importaChiusi({ daPagina: event.daPagina ?? 0, finoA: inizioBandiScaduti(), maxPagine: Infinity, tempoRimasto });

@@ -713,3 +713,163 @@ E("eng-299", "Imperative", 3, "«Eat the apple if you want» expresses:", "permi
   "«Come to the party tomorrow!» esprime invece un invito.", *IMP2, "Eat the apple if you want. (permission)")
 E("eng-300", "Pronouns", 3, "Complete: «For someone like ___, this is easy.» (uso non riflessivo, sconsigliato dalle guide di stile)", "myself", ["I", "mine", "my"],
   "La forma riflessiva usata al posto di «me» è comune ma alcune guide la sconsigliano.", *PRN, "For someone like myself")
+
+# ── Verso 350: frasi, punteggiatura e parole che si confondono dal manuale «College ESL Writers»
+#    (Hall e Wallace, Georgia State University, 2018, CC BY-NC-SA) e voce «English grammar».
+GAL = "Galileo_College-ESL-Writers.txt"
+FGAL = "B. Hall, E. Wallace, «College ESL Writers» (GALILEO Open Learning Materials, 2018)"
+def G(id, arg, liv, testo, giusta, sbagliate, spieg, frase):
+    D(id, arg, liv, testo, giusta, sbagliate, spieg, FGAL, GAL, frase)
+EG = ("English grammar", "English-grammar")
+
+G("eng-301", "Sentence structure", 2, "What is a sentence fragment?", "A sentence missing a subject or a verb", ["A sentence with two verbs", "A very long sentence", "A sentence without punctuation"],
+  "Il «fragment» è una frase incompleta: manca il soggetto o il verbo. Si corregge aggiungendo l'elemento mancante.",
+  "a sentence that is missing a subject or a verb is called a fragment")
+G("eng-302", "Sentence structure", 2, "What is missing in the fragment «Told her about the broken vase»?", "The subject", ["The verb", "The object", "Nothing"],
+  "Manca il soggetto: la frase corretta è «I told her about the broken vase».",
+  "Fragment: Told her about the broken vase.")
+G("eng-303", "Sentence structure", 3, "Which word begins a dependent clause that can become a fragment if left alone?", "because", ["and", "the", "very"],
+  "Le proposizioni introdotte da since, if, because, when, although, after, unless… sono dipendenti: da sole sono frammenti.",
+  "such as since, if, because, when, although, even though, after, without, or unless")
+G("eng-304", "Punctuation", 3, "If you attach a dependent-clause fragment to the beginning of a sentence, what must you add?", "A comma", ["A semicolon", "A colon", "Nothing"],
+  "Se la subordinata va all'inizio della frase si mette la virgola: «Because it rained, we stayed home».",
+  "If the fragment is added at the beginning of a sentence, add a comma.")
+G("eng-305", "Punctuation", 3, "What is a «fused sentence»?", "Two complete sentences combined without any punctuation", ["Two sentences joined by a comma", "A sentence without a verb", "A question without a question mark"],
+  "Fused sentence: due frasi complete unite senza alcuna punteggiatura; è un tipo di run-on.",
+  "When two complete sentences are combined into one without any punctuation, the result is a fused sentence.")
+G("eng-306", "Punctuation", 3, "«We looked outside, the kids were hopping on the trampoline.» This is an example of:", "a comma splice", ["a correct compound sentence", "a fragment", "a question tag"],
+  "Due frasi complete unite solo da una virgola formano una «comma splice», errore tipico delle run-on.",
+  "When two complete sentences are joined by a comma, the result is a comma splice.")
+G("eng-307", "Punctuation", 3, "Which punctuation mark can correctly join two independent clauses that are closely related?", "A semicolon", ["A comma alone", "An apostrophe", "A hyphen"],
+  "Il punto e virgola unisce due frasi indipendenti collegate: «The accident closed both lanes; we waited an hour».",
+  "Using a semicolon between the two complete sentences will also correct the error.")
+G("eng-308", "Punctuation", 4, "How is a transition word like «however» punctuated between two independent clauses?", "Semicolon before it and comma after it", ["Comma before and after", "No punctuation", "Colon before it"],
+  "Dopo il punto e virgola si mette la parola di transizione seguita da virgola: «…on hold; however, we didn't…».",
+  "After the semicolon, add the transition word and follow it with a comma.")
+G("eng-309", "Conjunctions", 3, "Which seven words does the acronym FANBOYS stand for?", "for, and, nor, but, or, yet, so", ["first, after, now, before, once, yesterday, soon", "for, also, not, because, only, yet, since", "few, all, none, both, one, yes, some"],
+  "FANBOYS ricorda le sette congiunzioni coordinanti che, con la virgola, uniscono due frasi indipendenti.",
+  "for, and, nor, but, or, yet, and so")
+G("eng-310", "Subject-verb agreement", 2, "Complete: «My dog and my cat ___ each other all the time.»", "chase", ["chases", "is chasing", "has chased each"],
+  "Due soggetti uniti da «and» vogliono il verbo al plurale.",
+  "Compound subjects combined with and take a plural verb form.")
+G("eng-311", "Subject-verb agreement", 4, "Complete: «Either the teacher or the students ___ the keys.»", "have", ["has", "is having", "haves"],
+  "Con «or/nor» il verbo concorda con il soggetto più vicino: qui «students», plurale.",
+  "The verb must agree with the subject that is nearest to the verb.")
+G("eng-312", "Subject-verb agreement", 3, "Complete: «Everybody ___ ready for the exam.»", "is", ["are", "be", "were"],
+  "«Everybody», «anyone», «nobody» e simili vogliono il verbo al singolare.",
+  "The indefinite pronoun everybody takes a singular verb form")
+G("eng-313", "Subject-verb agreement", 3, "Complete: «The team ___ practising every day.» (American usage)", "is", ["are", "am", "be"],
+  "I nomi collettivi (team, group, family, class) sono contati come un'unità e vogliono il singolare.",
+  "Because collective nouns are counted as one, they are singular and require a singular verb.")
+G("eng-314", "Subject-verb agreement", 3, "Complete: «The books that are in my library ___ the best I have ever read.»", "are", ["is", "was", "be"],
+  "Il soggetto è «books», non «library»: il soggetto non è mai in una proposizione preposizionale o dipendente.",
+  "The subject of a sentence will never be in a prepositional phrase or dependent clause.")
+G("eng-315", "Subject-verb agreement", 3, "In a sentence beginning with «There», where does the subject go?", "After the verb", ["Before «There»", "At the end of the paragraph", "There is no subject"],
+  "Nelle frasi con here/there il soggetto segue il verbo: «There are many reasons».",
+  "In sentences that begin with here or there, the subject follows the verb.")
+G("eng-316", "Possessive", 2, "How do you form the possessive of a plural noun ending in -s, like «drummers»?", "Add only an apostrophe: drummers'", ["Add 's: drummers's", "Add s': drummerss'", "No change"],
+  "Plurale in -s: si aggiunge solo l'apostrofo (the drummers' sticks).",
+  "To show possession with a plural noun that ends in s, just add an apostrophe")
+G("eng-317", "Possessive", 2, "Which is the correct possessive of «people»?", "people's", ["peoples'", "peoples", "people'"],
+  "Se il plurale non finisce in -s si aggiunge 's: the people's votes, the children's toys.",
+  "Plural noun that does not end in s: The people's votes")
+G("eng-318", "Possessive", 3, "According to the textbook, how do you form the possessive of the singular name «Jess»?", "Jess's", ["Jess'", "Jesses", "Jess"],
+  "I nomi singolari che finiscono in -s prendono comunque 's: Jess's sister.",
+  "Notice that singular nouns that end in s still take the apostrophe s")
+G("eng-319", "Contractions", 2, "In which kind of writing are contractions like «don't» commonly used?", "In informal writing", ["In formal reports", "Only in legal texts", "Never in writing"],
+  "Le contrazioni sono comuni nella scrittura informale ma non in quella formale.",
+  "Contractions are commonly used in informal writing but not in formal writing.")
+G("eng-320", "Capitalization", 2, "Which of these must always be capitalized in English?", "Languages and nationalities (e.g. English, Italian)", ["Seasons (e.g. summer)", "The word «online»", "Common nouns like «river»"],
+  "In inglese si scrivono sempre con la maiuscola nazionalità, lingue e religioni.",
+  "Always capitalize nationalities, races, languages, and religions")
+G("eng-321", "Capitalization", 3, "Which word is never capitalized in the middle of a sentence, according to the textbook?", "e-mail", ["Internet", "Monday", "January"],
+  "«Internet» e «World Wide Web» di solito hanno la maiuscola; «e-mail» e «online» mai.",
+  "\"e-mail\" and \"online\" are never capitalized")
+G("eng-322", "Capitalization", 2, "Which of these is a proper noun, always written with a capital letter?", "Smith College", ["college", "museum", "theater"],
+  "I nomi propri (Smith College, Apollo Theater) vogliono la maiuscola; gli stessi nomi usati in modo generico (college, theater) no.",
+  "Capitalize Proper Nouns")
+G("eng-323", "Vocabulary", 3, "Choose the correct word: «They ___ our proposal for the conference.»", "accepted", ["excepted", "expected", "exceeded"],
+  "Accept = accettare; except = tranne.",
+  "Except (conjunction). Means only or but.")
+G("eng-324", "Vocabulary", 3, "Choose the correct word: «The heavy rains will have an ___ on the crops.»", "effect", ["affect", "afect", "efect"],
+  "Effect è il sostantivo (effetto, risultato); affect è il verbo (influire).",
+  "Effect (noun). Means an outcome or result.")
+G("eng-325", "Vocabulary", 3, "Choose the correct word: «Hurricane winds ___ the amount of rainfall.»", "affect", ["effect", "affection", "effective"],
+  "Affect è il verbo: creare un cambiamento, influire.",
+  "Affect (verb). Means to create a change.")
+G("eng-326", "Vocabulary", 3, "Choose the correct word: «Don't ___ your keys again!»", "lose", ["loose", "lost", "looses"],
+  "Lose (verbo) = perdere; loose (aggettivo) = largo, allentato.",
+  "Lose (verb). Means to forget, to give up, or to fail to earn something.")
+G("eng-327", "Vocabulary", 2, "Choose the correct word: «I need a ___ room to study.»", "quiet", ["quite", "quit", "quilt"],
+  "Quiet = silenzioso; quite = piuttosto, davvero; quit = smettere.",
+  "Quiet (adjective). Means not loud.")
+G("eng-328", "Vocabulary", 2, "Choose the correct word: «Nurses require less schooling ___ doctors.»", "than", ["then", "that", "them"],
+  "Than introduce il secondo termine di paragone; then significa «poi, allora».",
+  "Than (conjunction). Used to connect two or more items when comparing")
+G("eng-329", "Vocabulary", 2, "Choose the correct word: «___ the sweetest dogs in the neighbourhood.»", "They're", ["Their", "There", "Theyr"],
+  "They're = they are; their = loro (possesso); there = là / c'è.",
+  "They're (contraction). Joins the words they and are.")
+G("eng-330", "Vocabulary", 2, "Choose the correct word: «___ schedule allows a campus tour?»", "Whose", ["Who's", "Whos", "Who"],
+  "Whose indica possesso (di chi); who's = who is / who has.",
+  "Whose (pronoun). A form of who that shows possession.")
+G("eng-331", "Used to", 3, "What does «He used to hire a team» mean?", "He did it in the past but not anymore", ["He does it every day now", "He will do it in the future", "He is getting accustomed to it"],
+  "«Used to» + verbo indica un'abitudine passata che oggi non c'è più.",
+  "Used to. Indicates something done in the past but not in the present")
+G("eng-332", "Vocabulary", 3, "Choose the correct word: «I'll ___ on the sofa while she brews the tea.»", "sit", ["set", "seat", "sat"],
+  "Sit = sedersi; set = posare un oggetto (o, come nome, un insieme).",
+  "Sit (verb). Means to lower oneself down")
+G("eng-333", "Verb forms", 3, "Which is correct?", "I should have helped her.", ["I should of helped her.", "I should has helped her.", "I should helped her."],
+  "Dopo i modali si usa «have» + participio; «should of» è un errore dovuto alla pronuncia simile.",
+  "I should have helped her with that heavy box")
+G("eng-334", "Articles", 2, "Which article goes before «ocean»?", "an", ["a", "and", "the only"],
+  "«An» si usa davanti a parole che iniziano con suono vocalico: an airplane, an ocean, an igloo.",
+  "An (article). Used before a word that begins with a vowel.")
+G("eng-335", "Vocabulary", 2, "Choose the correct word: «___ mother called this morning.»", "Your", ["You're", "Youre", "Yours"],
+  "Your = tuo (possesso); you're = you are.",
+  "You're (contraction). Joins the words you and are.")
+
+E("eng-336", "Pronouns", 3, "Which words still change their form to show grammatical case in modern English?", "Personal pronouns (I, me, my)", ["All nouns", "Adjectives", "Articles"],
+  "L'inglese moderno ha perso quasi tutte le desinenze; solo i pronomi personali cambiano forma per il caso.", *EG,
+  "Today, only personal pronouns (such as I, me, my) still change their form to show grammatical case.")
+E("eng-337", "Vocabulary", 3, "Which word classes are «open», readily accepting new words?", "Nouns, verbs, adjectives and adverbs", ["Pronouns and prepositions", "Articles and conjunctions", "Determiners only"],
+  "Classi aperte accolgono parole nuove (es. celebutante); quelle chiuse, come i pronomi, raramente.", *EG,
+  "Nouns, verbs, adjectives, and adverbs are open classes")
+E("eng-338", "Vocabulary", 4, "How many English word classes do linguists generally accept?", "Nine", ["Four", "Six", "Twelve"],
+  "Nouns, verbs, adjectives, adverbs, pronouns, prepositions, conjunctions, determiners, exclamations.", *EG,
+  "Linguists generally accept nine English word classes")
+E("eng-339", "Vocabulary", 3, "Which suffix forms the noun «sisterhood»?", "-hood", ["-ness", "-ship", "-dom"],
+  "Molti suffissi formano nomi da altre parole: -age (shrinkage), -hood (sisterhood).", *EG,
+  "-hood (sisterhood)")
+E("eng-340", "Adjectives", 4, "What is the usual order of elements in an English noun phrase?", "Determiner + pre-modifiers + noun + post-modifiers", ["Noun + determiner + adjectives", "Adjectives + noun + determiner", "Post-modifiers + noun + determiner"],
+  "Es. «that rather attractive young college student to whom you were talking».", *EG,
+  "Determiner + Pre-modifiers + NOUN + Postmodifiers/Complement")
+E("eng-341", "Adjectives", 4, "In «the young college student», why does «young» come before «college»?", "Adjectival modifiers usually come before noun adjuncts", ["Because it is shorter", "Because it is a verb", "There is no rule"],
+  "Gli aggettivi precedono i nomi usati come modificatori (noun adjuncts).", *EG,
+  "Adjectival modifiers usually come before noun adjuncts.")
+E("eng-342", "Subject-verb agreement", 4, "«The government were…»: using a plural verb with a collective noun is more common in:", "British English", ["American English", "Australian English only", "Old English only"],
+  "È una forma di «synesis» (accordo a senso), più comune nell'inglese britannico che in quello americano.", *EG,
+  "This is a form of synesis, and is more common in British than American English.")
+E("eng-343", "Pronouns", 4, "When did grammatical gender (masculine, feminine, neuter for all nouns) disappear from English?", "During the Middle English period", ["In the 20th century", "Never: it still exists", "After Shakespeare"],
+  "Il genere grammaticale dell'inglese antico cadde in disuso nel periodo del Middle English.", *EG,
+  "fell out of use during the Middle English period")
+E("eng-344", "Pronouns", 3, "For which objects are feminine pronouns (she) sometimes used in English?", "Ships and nation-states", ["Tables and chairs", "Trees", "Numbers"],
+  "Per gli oggetti si usa «it», ma «she» si usa talvolta per navi (e più raramente aerei) e Stati.", *EG,
+  "feminine pronouns are sometimes used when referring to ships")
+E("eng-345", "Articles", 3, "What does «the homeless» mean?", "Homeless people in general (plural)", ["One homeless person", "A homeless shelter", "The house of someone"],
+  "The + aggettivo indica una categoria di persone ed è plurale: the homeless, the English.", *EG,
+  "phrases formed by the determiner the with an adjective, as in the homeless")
+E("eng-346", "Vocabulary", 4, "In «that president, Abraham Lincoln», the two phrases are in:", "apposition", ["coordination", "subordination", "inversion"],
+  "Apposizione: due sintagmi consecutivi che si riferiscono alla stessa cosa.", *EG,
+  "where two consecutive phrases refer to the same thing")
+E("eng-347", "Countable and uncountable", 3, "In «This is a good wine», how is «wine» used?", "As a countable noun", ["As an uncountable noun", "As a verb", "As an adjective"],
+  "Alcuni nomi sono sia numerabili sia non numerabili: «wine» (vino come sostanza / un tipo di vino).", *EG,
+  "Some nouns can function both as countable and as uncountable such as \"wine\"")
+E("eng-348", "Vocabulary", 3, "Which pair contains an abstract noun?", "laptop / prejudice", ["book / laptop", "cat / grass", "frog / milk"],
+  "Nomi concreti (book, laptop) e astratti (embarrassment, prejudice).", *EG,
+  "concrete and abstract nouns (book, laptop vs embarrassment, prejudice)")
+E("eng-349", "Vocabulary", 3, "Which of these is a proper noun?", "China", ["frog", "milk", "city"],
+  "Nomi propri (Cyrus, China) e comuni (frog, milk).", *EG,
+  "proper and common nouns (Cyrus, China vs frog, milk)")
+E("eng-350", "Possessive", 4, "To which word does the possessive -'s attach in «the man you saw yesterday's sister»?", "To the last word of the noun phrase", ["Always to «man»", "To «sister»", "To «you»"],
+  "Il possessivo si applica all'intero sintagma nominale e si attacca all'ultima parola.", *EG,
+  "the man you saw yesterday's sister")

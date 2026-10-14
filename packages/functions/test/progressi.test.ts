@@ -1,7 +1,11 @@
 import { aggiornaProgresso, bitAcceso, candidatePerSelezione, contaBit, numeroDomanda } from "@imieiconcorsi/core/progressi";
 import { describe, expect, it } from "vitest";
 
+// Test dei progressi nelle banche dati (bitmap di domande fatte, sbagliate e preferite).
+
+/** Id di una domanda di banca dati dal suo numero, es. 42 → "n00042". */
 const id = (n: number) => `n${String(n).padStart(5, "0")}`;
+/** Elenco di `quante` domande numerate da 1. */
 const domande = (quante: number) => Array.from({ length: quante }, (_, i) => ({ id: id(i + 1) }));
 
 describe("progressi nelle banche dati", () => {

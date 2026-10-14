@@ -108,6 +108,7 @@ function RispostaAdmin({ richiesta, onFatto }: { richiesta: RichiestaAdmin; onFa
   const [errore, setErrore] = useState<string>();
   const percorso = `/admin/richieste/${encodeURIComponent(richiesta.userId)}/${richiesta.id}`;
 
+  // Risponde alla richiesta e/o ne cambia lo stato; true se è andata.
   async function invia(body: { testo?: string; stato?: StatoRichiesta }) {
     setErrore(undefined);
     try {
@@ -120,6 +121,7 @@ function RispostaAdmin({ richiesta, onFatto }: { richiesta: RichiestaAdmin; onFa
     }
   }
 
+  // Cambia solo lo stato, senza messaggio.
   async function soloStato(nuovo: StatoRichiesta) {
     setCambio(true);
     await invia({ stato: nuovo });

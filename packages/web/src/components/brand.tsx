@@ -9,6 +9,7 @@ import {
   Landmark,
   Languages,
   Monitor,
+  Newspaper,
   Puzzle,
   Scale,
   type LucideIcon,
@@ -45,6 +46,7 @@ const ICONE: Record<MateriaApi["icona"], LucideIcon> = {
   briefcase: Briefcase,
   gavel: Gavel,
   globe: Globe,
+  newspaper: Newspaper,
   calculator: Calculator,
   languages: Languages,
 };
@@ -61,6 +63,7 @@ export const COLORI_MATERIA: Record<string, string> = {
   "diritto-lavoro": "bg-orange-50 text-orange-600",
   "diritto-penale": "bg-red-50 text-red-600",
   geografia: "bg-lime-50 text-lime-700",
+  attualita: "bg-yellow-50 text-yellow-700",
   matematica: "bg-cyan-50 text-cyan-600",
   inglese: "bg-fuchsia-50 text-fuchsia-600",
 };

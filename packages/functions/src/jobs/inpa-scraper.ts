@@ -22,6 +22,7 @@ const MAX_PAGINE_CHIUSI_RECENTI = 20;
 /** Storico: si smette di leggere pagine quando alla Lambda resta meno di così. */
 const MARGINE_MS = 90_000;
 
+/** Data breve per i log e le email, es. "13/10/2026"; "—" se manca. */
 const dataBreve = (iso?: string) =>
   iso ? new Intl.DateTimeFormat("it-IT", { day: "2-digit", month: "2-digit", year: "numeric" }).format(new Date(iso)) : "—";
 
@@ -128,6 +129,7 @@ async function avvisaBancheDati(nuovi: Concorso[]) {
  * MESI_DOPO_SCADENZA mesi, a blocchi; la risposta dice da che pagina continuare.
  */
 export const handler = async (event: { storico?: { daPagina?: number } } = {}, context?: Context) => {
+  // Millisecondi che restano prima del timeout della Lambda.
   const tempoRimasto = () => context?.getRemainingTimeInMillis() ?? Infinity;
 
   if (event.storico) {

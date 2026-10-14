@@ -25,6 +25,7 @@ export function Disiscrivi() {
     }
   }, [u, t]);
 
+  // Conferma la disiscrizione dagli avvisi via email con la firma del link.
   async function conferma() {
     setStato("in-corso");
     try {

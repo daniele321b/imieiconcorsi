@@ -1335,3 +1335,254 @@ A("pen-300", "Illecito amministrativo", 4, "Se l'esistenza di un reato dipende d
 A("pen-301", "Illecito amministrativo", 4, "Le sanzioni amministrative accessorie si applicano mentre è pendente il giudizio di opposizione?",
   "No, non sono applicabili fino alla sua definizione", ["Sì, sempre", "Solo se superiori a un mese", "Solo per le violazioni stradali"],
   "Art. 20 della L. 689/1981.", "art. 20", "non sono applicabili fino a che è pendente il giudizio di opposizione")
+
+# ── Verso 350: parte speciale del codice penale, codice di procedura penale e voci Wikipedia
+#    «Reato» e «Diritto penale» (CC BY-SA 4.0, solo per i fatti).
+WREATO = "Wikipedia_Reato.txt"
+WDP = "Wikipedia_Diritto-penale.txt"
+WP = lambda voce: f"Wikipedia, «{voce}» (CC BY-SA 4.0)"
+
+P("pen-302", "Ordine pubblico", 3, "Chi pubblicamente istiga a commettere uno o più delitti è punito:",
+  "Per il solo fatto dell'istigazione, con la reclusione da uno a cinque anni", ["Solo se il delitto viene poi commesso", "Solo con una sanzione amministrativa", "Solo se l'istigazione è scritta"],
+  "Art. 414 c.p.: chi pubblicamente istiga a commettere reati è punito per il solo fatto dell'istigazione; per i delitti, reclusione da uno a cinque anni.",
+  "art. 414", "è punito, per il solo fatto dell'istigazione")
+
+P("pen-303", "Incolumità pubblica", 4, "Nel delitto di strage, quale pena si applica se è cagionata la morte di una sola persona?",
+  "L'ergastolo", ["La reclusione da 5 a 10 anni", "La reclusione non inferiore a 15 anni", "La multa"],
+  "Art. 422 c.p.: chi, al fine di uccidere, compie atti che mettono in pericolo la pubblica incolumità è punito con l'ergastolo se muore anche una sola persona; negli altri casi reclusione non inferiore a quindici anni.",
+  "art. 422", "Se è cagionata la morte di una sola persona, si applica l'ergastolo")
+
+P("pen-304", "Incolumità pubblica", 4, "Nel crollo di costruzioni doloso (art. 434 c.p.), come cambia la pena se il crollo avviene davvero?",
+  "Sale alla reclusione da tre a dodici anni", ["Resta da uno a cinque anni", "Diventa l'ergastolo", "Diventa una sanzione amministrativa"],
+  "Art. 434 c.p.: il fatto diretto a cagionare il crollo, se ne deriva pericolo, è punito da uno a cinque anni; se il crollo o il disastro avviene, da tre a dodici anni.",
+  "art. 434", "La pena è della reclusione da tre a dodici anni se il crollo o il disastro avviene")
+
+P("pen-305", "Falsità", 4, "Chi, senza aver concorso nella falsità, fa uso di un atto falso, con quale pena è punito?",
+  "Con le pene previste per la falsità, ridotte di un terzo", ["Con la stessa pena di chi ha falsificato", "Non è punibile", "Con la pena raddoppiata"],
+  "Art. 489 c.p.: chi, senza essere concorso nella falsità, fa uso di un atto falso soggiace alle pene degli articoli precedenti ridotte di un terzo.",
+  "art. 489", "fa uso di un atto falso soggiace alle pene stabilite negli articoli precedenti, ridotte di un terzo")
+
+P("pen-306", "Falsità", 3, "Chi si attribuisce un falso nome per procurarsi un vantaggio, inducendo taluno in errore, commette:",
+  "Sostituzione di persona", ["Truffa aggravata", "Falso ideologico", "Calunnia"],
+  "Art. 494 c.p.: commette sostituzione di persona chi, per un vantaggio o per recare danno, induce taluno in errore attribuendo a sé o ad altri un falso nome, stato o qualità.",
+  "art. 494", "attribuendo a sé o ad altri un falso nome")
+
+P("pen-307", "Reati contro la persona", 4, "Gli atti osceni in luogo pubblico sono, di regola, ancora reato?",
+  "No, sono puniti con sanzione amministrativa, salvo vicino a luoghi frequentati da minori", ["Sì, sempre con la reclusione", "No, non sono più puniti in alcun modo", "Sì, ma solo se commessi di notte"],
+  "Art. 527 c.p.: chi compie atti osceni in luogo pubblico è soggetto a sanzione amministrativa pecuniaria; resta la reclusione se il fatto avviene vicino a luoghi frequentati da minori con pericolo che assistano.",
+  "art. 527", "è soggetto alla sanzione amministrativa pecuniaria da euro 5.000 a euro 30.000")
+
+P("pen-308", "Reati contro la persona", 3, "Chi, già sposato con effetti civili, contrae un altro matrimonio con effetti civili commette:",
+  "Bigamia, punita con la reclusione da uno a cinque anni", ["Un illecito solo civile", "Adulterio", "Falso in atto pubblico soltanto"],
+  "Art. 556 c.p.: chi, legato da matrimonio con effetti civili, ne contrae un altro è punito con la reclusione da uno a cinque anni; così anche il non coniugato che sposa una persona già sposata.",
+  "art. 556", "essendo legato da matrimonio avente effetti civili, ne contrae un altro")
+
+P("pen-309", "Reati contro la persona", 3, "Quale reato commette chi si sottrae agli obblighi di assistenza inerenti alla responsabilità genitoriale o alla qualità di coniuge?",
+  "Violazione degli obblighi di assistenza familiare", ["Abbandono di persone minori", "Maltrattamenti in famiglia", "Sottrazione di minore"],
+  "Art. 570 c.p.: chi, abbandonando il domicilio o con condotta contraria all'ordine delle famiglie, si sottrae agli obblighi di assistenza familiare è punito.",
+  "art. 570", "si sottrae agli obblighi di assistenza inerenti alla")
+
+P("pen-310", "Reati contro la persona", 3, "Con quale pena è punito chi maltratta una persona della famiglia o convivente (art. 572 c.p.)?",
+  "Reclusione da tre a sette anni", ["Multa fino a 1.000 euro", "Reclusione fino a un anno", "Reclusione da dieci a vent'anni"],
+  "Art. 572 c.p.: chi maltratta una persona della famiglia o comunque convivente, o sottoposta alla sua autorità, è punito con la reclusione da tre a sette anni.",
+  "art. 572", "è punito con la reclusione da tre a sette anni")
+
+P("pen-311", "Reati contro la persona", 4, "In quale caso l'omicidio è punito con l'ergastolo secondo l'art. 576 c.p.?",
+  "Se è commesso contro l'ascendente o il discendente con premeditazione", ["Se è commesso per legittima difesa", "Se è colposo", "Se la vittima è un estraneo, in ogni caso"],
+  "Art. 576 c.p.: si applica l'ergastolo, tra l'altro, se l'omicidio è commesso contro ascendente o discendente con mezzo venefico, insidioso o con premeditazione.",
+  "art. 576", "quando è adoperato un mezzo venefico o un altro mezzo insidioso ovvero quando vi è premeditazione")
+
+P("pen-312", "Reati contro la persona", 4, "Nella rissa, cosa accade alla pena se taluno rimane ucciso o ferito?",
+  "Per il solo fatto della partecipazione, reclusione da sei mesi a sei anni", ["Rispondono di omicidio tutti i partecipanti", "Nulla cambia", "Si applica solo una sanzione amministrativa"],
+  "Art. 588 c.p.: se nella rissa qualcuno muore o riporta lesioni, per il solo fatto della partecipazione la pena è la reclusione da sei mesi a sei anni.",
+  "art. 588", "per il solo fatto della partecipazione alla rissa, è della reclusione da sei mesi a sei anni")
+
+P("pen-313", "Reati contro la persona", 3, "Chi trova abbandonato un minore di dieci anni e omette di avvisare l'Autorità commette:",
+  "Omissione di soccorso", ["Abbandono di minore", "Sequestro di persona", "Nessun reato"],
+  "Art. 593 c.p.: è punito chi, trovando abbandonato o smarrito un fanciullo minore degli anni dieci o un incapace, omette di darne immediato avviso all'Autorità.",
+  "art. 593", "minore degli anni dieci")
+
+P("pen-314", "Reati contro la persona", 4, "Come si procede per la minaccia semplice (non grave) dell'art. 612 c.p.?",
+  "A querela della persona offesa, con la multa", ["D'ufficio, con la reclusione", "Solo su denuncia della polizia", "Non è reato"],
+  "Art. 612 c.p.: chi minaccia ad altri un ingiusto danno è punito, a querela della persona offesa, con la multa fino a 1.032 euro; se grave, reclusione fino a un anno.",
+  "art. 612", "è punito, a querela della persona offesa, con la multa fino a euro 1.032")
+
+P("pen-315", "Reati contro la persona", 4, "Quale reato commette chi, con violenze o minacce gravi, cagiona acute sofferenze fisiche a una persona privata della libertà e affidata alla sua custodia?",
+  "Tortura (art. 613-bis c.p.)", ["Lesioni lievi", "Abuso d'ufficio", "Violenza privata"],
+  "Art. 613-bis c.p.: la tortura punisce chi, con violenze o minacce gravi o con crudeltà, cagiona acute sofferenze o un trauma psichico a persona privata della libertà o affidata alla sua custodia.",
+  "art. 613-bis", "cagiona acute sofferenze fisiche o un verificabile trauma psichico")
+
+P("pen-316", "Reati contro la persona", 3, "Chi apre e legge una lettera chiusa a lui non diretta commette:",
+  "Violazione di corrispondenza", ["Furto", "Diffamazione", "Accesso abusivo a sistema informatico"],
+  "Art. 616 c.p.: punisce chi prende cognizione del contenuto di una corrispondenza chiusa, a lui non diretta, o la sottrae, distrae o distrugge.",
+  "art. 616", "Chiunque prende cognizione del contenuto di una corrispondenza chiusa, a lui non diretta")
+
+P("pen-317", "Reati contro il patrimonio", 3, "Quale tra queste è una circostanza aggravante del furto (art. 625 c.p.)?",
+  "Il fatto commesso con destrezza", ["Il valore modesto della cosa", "La restituzione del bene", "La confessione"],
+  "Art. 625 c.p.: aggravano il furto, tra l'altro, la violenza sulle cose o il mezzo fraudolento, il porto di armi, la destrezza, il fatto commesso da tre o più persone.",
+  "art. 625", "se il fatto è commesso con destrezza")
+
+P("pen-318", "Reati contro il patrimonio", 4, "Chi rimuove o altera i termini di un immobile altrui per appropriarsene commette:",
+  "Usurpazione", ["Invasione di terreni", "Furto", "Danneggiamento"],
+  "Art. 631 c.p.: commette usurpazione chi, per appropriarsi in tutto o in parte dell'altrui cosa immobile, ne rimuove o altera i termini; si procede a querela.",
+  "art. 631", "dell'altrui cosa immobile, ne rimuove o altera i termini")
+
+P("pen-319", "Reati contro il patrimonio", 4, "Quando si procede d'ufficio per l'invasione di terreni o edifici?",
+  "Se il fatto è commesso da più di cinque persone", ["Sempre", "Mai: solo a querela", "Solo se l'edificio è privato"],
+  "Art. 633 c.p.: l'invasione è punita a querela; la pena aumenta e si procede d'ufficio, tra l'altro, se il fatto è commesso da più di cinque persone.",
+  "art. 633", "d'ufficio se il fatto è commesso da più di cinque persone")
+
+P("pen-320", "Reati contro il patrimonio", 4, "Nell'insolvenza fraudolenta, cosa estingue il reato?",
+  "L'adempimento dell'obbligazione prima della condanna", ["Il pentimento dichiarato", "La prescrizione di un anno", "Il fallimento del debitore"],
+  "Art. 641 c.p.: chi, dissimulando l'insolvenza, contrae un'obbligazione col proposito di non adempierla è punito a querela; l'adempimento prima della condanna estingue il reato.",
+  "art. 641", "L'adempimento dell'obbligazione avvenuto prima della condanna estingue il reato")
+
+P("pen-321", "Reati contro il patrimonio", 4, "Chi, abusando dello stato d'infermità psichica di una persona, la induce a compiere un atto dannoso commette:",
+  "Circonvenzione di persone incapaci", ["Truffa semplice", "Estorsione", "Appropriazione indebita"],
+  "Art. 643 c.p.: punisce chi, per profitto, abusa dei bisogni, delle passioni o dell'inesperienza di un minore, o dell'infermità psichica di una persona, inducendola a un atto dannoso.",
+  "art. 643", "abusando dello stato d'infermità o deficienza psichica di una persona")
+
+P("pen-322", "Reati contro il patrimonio", 3, "Con quale pena detentiva è punita l'usura (art. 644 c.p.)?",
+  "Reclusione da due a dieci anni, oltre alla multa", ["Reclusione fino a un anno", "Solo la multa", "Arresto fino a tre mesi"],
+  "Art. 644 c.p.: chi si fa dare o promettere interessi o vantaggi usurari è punito con la reclusione da due a dieci anni e con la multa da 5.000 a 30.000 euro.",
+  "art. 644", "è punito con la reclusione da due a dieci anni e con la multa da euro 5.000 a euro 30.000")
+
+P("pen-323", "Reati contro la PA", 4, "Chi offende l'onore di un Corpo politico, amministrativo o giudiziario al suo cospetto commette:",
+  "Oltraggio a un Corpo politico, amministrativo o giudiziario", ["Diffamazione semplice", "Resistenza a pubblico ufficiale", "Vilipendio della Repubblica"],
+  "Art. 342 c.p.: punisce con la multa chi offende l'onore o il prestigio di un Corpo politico, amministrativo o giudiziario al cospetto del Corpo stesso.",
+  "art. 342", "Chiunque offende l'onore o il prestigio di un Corpo politico, amministrativo o giudiziario")
+
+Q("pen-324", "Soggetti", 4, "Per quale motivo, tra gli altri, il giudice può essere ricusato dalle parti?",
+  "Se ha manifestato indebitamente il proprio convincimento sui fatti prima della sentenza", ["Se è troppo giovane", "Se non condivide le tesi della difesa", "Se ha già giudicato altri imputati per reati diversi"],
+  "Art. 37 c.p.p.: il giudice può essere ricusato nei casi di astensione e se, nell'esercizio delle funzioni e prima della sentenza, ha manifestato indebitamente il proprio convincimento sui fatti.",
+  "art. 37", "egli ha manifestato indebitamente il proprio convincimento sui fatti oggetto dell'imputazione")
+
+Q("pen-325", "Soggetti", 3, "In nome di chi è pronunciata la sentenza penale?",
+  "In nome del popolo italiano", ["In nome del Presidente della Repubblica", "In nome della legge", "In nome dello Stato"],
+  "Art. 125, c. 2 c.p.p.: la sentenza è pronunciata in nome del popolo italiano; sentenze e ordinanze sono motivate a pena di nullità.",
+  "art. 125", "La sentenza è pronunciata in nome del popolo italiano")
+
+Q("pen-326", "Prove", 3, "A quali condizioni l'esistenza di un fatto può essere desunta da indizi?",
+  "Se gli indizi sono gravi, precisi e concordanti", ["Se sono almeno tre", "Mai", "Se lo chiede il pubblico ministero"],
+  "Art. 192, c. 2 c.p.p.: l'esistenza di un fatto non può essere desunta da indizi a meno che questi siano gravi, precisi e concordanti.",
+  "art. 192", "a meno che questi siano gravi, precisi e concordanti")
+
+Q("pen-327", "Prove", 4, "Il testimone può deporre sulla moralità dell'imputato?",
+  "No, salvo fatti specifici utili a qualificarne la personalità in relazione al reato", ["Sì, sempre", "Solo se è un familiare", "Solo nel rito abbreviato"],
+  "Art. 194 c.p.p.: il testimone è esaminato sui fatti oggetto di prova e non può deporre sulla moralità dell'imputato, salvo fatti specifici rilevanti per personalità e pericolosità.",
+  "art. 194", "Non può deporre sulla moralità dell'imputato")
+
+Q("pen-328", "Prove", 4, "Quando è ammessa la perizia nel processo penale?",
+  "Quando servono specifiche competenze tecniche, scientifiche o artistiche", ["Sempre, su richiesta di qualsiasi parte", "Per stabilire il carattere dell'imputato", "Solo in Cassazione"],
+  "Art. 220 c.p.p.: la perizia è ammessa quando occorrono indagini o valutazioni che richiedono specifiche competenze tecniche, scientifiche o artistiche.",
+  "art. 220", "La perizia è ammessa quando occorre svolgere indagini o acquisire dati o valutazioni che richiedono specifiche competenze tecniche")
+
+Q("pen-329", "Prove", 5, "Sono ammesse perizie per stabilire la tendenza a delinquere o il carattere dell'imputato, ai fini del giudizio?",
+  "No, non sono ammesse", ["Sì, sempre", "Solo per i reati gravi", "Solo con il consenso dell'imputato"],
+  "Art. 220, c. 2 c.p.p.: salvo che per l'esecuzione della pena o della misura di sicurezza, non sono ammesse perizie su abitualità, professionalità, tendenza a delinquere, carattere e personalità.",
+  "art. 220", "non sono ammesse perizie per stabilire l'abitualità o la professionalità nel reato")
+
+Q("pen-330", "Misure cautelari", 4, "Chi ha diritto a un'equa riparazione per la custodia cautelare subita?",
+  "Chi è stato prosciolto con sentenza irrevocabile, ad esempio perché il fatto non sussiste", ["Chiunque sia stato arrestato, in ogni caso", "Solo chi è stato condannato", "Nessuno: non è previsto"],
+  "Art. 314 c.p.p.: chi è prosciolto con sentenza irrevocabile (fatto non sussiste, non commesso, non costituisce reato) ha diritto a un'equa riparazione, se non vi ha dato causa per dolo o colpa grave.",
+  "art. 314", "ha diritto a un'equa riparazione per la custodia cautelare subita")
+
+Q("pen-331", "Soggetti", 4, "Entro quando può avvenire, di regola, la costituzione di parte civile?",
+  "Per l'udienza preliminare, prima che siano ultimati gli accertamenti sulla costituzione delle parti", ["Fino alla sentenza di appello", "Solo durante le indagini", "Entro 10 giorni dal fatto"],
+  "Art. 79 c.p.p.: la costituzione di parte civile può avvenire per l'udienza preliminare, prima che siano ultimati gli accertamenti sulla costituzione delle parti; i termini sono a pena di decadenza.",
+  "art. 79", "La costituzione di parte civile può avvenire per l'udienza preliminare")
+
+Q("pen-332", "Soggetti", 3, "Chi non può essere ammesso nell'aula di udienza penale?",
+  "Chi non ha compiuto diciotto anni", ["I giornalisti", "I parenti dell'imputato", "Gli studenti di giurisprudenza maggiorenni"],
+  "Art. 471 c.p.p.: l'udienza è pubblica a pena di nullità; non sono ammessi i minori di diciotto anni, le persone sottoposte a misure di prevenzione e chi appare ubriaco o in squilibrio mentale.",
+  "art. 471", "Non sono ammessi nell'aula di udienza coloro che non hanno compiuto gli anni diciotto")
+
+Q("pen-333", "Soggetti", 3, "Quale criterio deve seguire il giudice per pronunciare una sentenza di condanna?",
+  "La colpevolezza dell'imputato al di là di ogni ragionevole dubbio", ["La semplice probabilità della colpevolezza", "Il convincimento del pubblico ministero", "La confessione, sempre necessaria"],
+  "Art. 533 c.p.p.: il giudice pronuncia condanna se l'imputato risulta colpevole del reato contestato al di là di ogni ragionevole dubbio.",
+  "art. 533", "al di là di ogni ragionevole dubbio")
+
+Q("pen-334", "Impugnazioni", 4, "Quando può essere chiesta la revisione di una sentenza di condanna irrevocabile?",
+  "In ogni tempo, a favore del condannato, nei casi di legge", ["Entro sei mesi dalla condanna", "Solo se la pena non è ancora eseguita", "Solo su richiesta del pubblico ministero contro il condannato"],
+  "Art. 629 c.p.p.: la revisione è ammessa in ogni tempo a favore dei condannati, anche se la pena è già stata eseguita o è estinta.",
+  "art. 629", "È ammessa in ogni tempo a favore dei condannati")
+
+Q("pen-335", "Impugnazioni", 5, "Contro le sentenze di condanna, quando può appellare il pubblico ministero?",
+  "Solo se modificano il titolo del reato, escludono un'aggravante ad effetto speciale o stabiliscono una pena di specie diversa", ["Sempre", "Mai", "Solo per i reati contravvenzionali"],
+  "Art. 593 c.p.p.: l'imputato può appellare contro le condanne; il PM solo quando modificano il titolo del reato, escludono un'aggravante ad effetto speciale o applicano una pena di specie diversa.",
+  "art. 593", "solo quando modificano il titolo del reato")
+
+D("pen-336", "Reato", 3, "Secondo la teoria della tripartizione, quali sono gli elementi del reato?",
+  "Fatto tipico, antigiuridico, colpevole", ["Azione, evento, pena", "Dolo, colpa, preterintenzione", "Precetto, sanzione, processo"],
+  "Per alcuni autori il reato si scompone in elemento oggettivo e soggettivo (bipartizione); per altri in fatto tipico, antigiuridico, colpevole (tripartizione).",
+  WP("Reato"), WREATO, "in fatto tipico, antigiuridico, colpevole (teoria della tripartizione)")
+
+D("pen-337", "Reato", 3, "Come si chiama il reato che può essere commesso solo da chi ha una determinata qualifica, come il peculato?",
+  "Reato proprio", ["Reato comune", "Reato plurioffensivo", "Reato abituale"],
+  "Il reato comune può essere commesso da chiunque; il reato proprio solo da chi riveste una qualifica, come il pubblico ufficiale nel peculato o il perito nella falsa perizia.",
+  WP("Reato"), WREATO, "il reato proprio può invece essere commesso soltanto da colui che rivesta una determinata qualifica")
+
+D("pen-338", "Reato", 4, "Da quale codice risale la distinzione tra delitti e contravvenzioni, poi accolta dal Codice Zanardelli e dal Codice Rocco?",
+  "Dal codice toscano del 1853", ["Dal codice napoleonico del 1810", "Dal codice sardo del 1859", "Dalla Costituzione del 1948"],
+  "La divisione tra delitti e contravvenzioni risale al codice toscano del 1853 ed è stata accettata dal Codice Zanardelli del 1889 e dal Codice Rocco del 1930.",
+  WP("Reato"), WREATO, "Tale divisione risale al codice toscano del 1853")
+
+D("pen-339", "Reato", 4, "Per quale categoria di reati è configurabile il tentativo?",
+  "Solo per i delitti", ["Solo per le contravvenzioni", "Per entrambe", "Per nessuna delle due"],
+  "Il tentativo è configurabile esclusivamente per i delitti (delitto tentato); solo le contravvenzioni possono estinguersi per oblazione.",
+  WP("Reato"), WREATO, "il tentativo è configurabile esclusivamente per i delitti")
+
+D("pen-340", "Reato", 4, "Quale causa di estinzione riguarda soltanto le contravvenzioni?",
+  "L'oblazione", ["La prescrizione", "L'amnistia", "La morte del reo"],
+  "Tra le differenze pratiche tra delitti e contravvenzioni: solo le contravvenzioni possono estinguersi per oblazione.",
+  WP("Reato"), WREATO, "solo le contravvenzioni possono estinguersi per oblazione")
+
+D("pen-341", "Reato", 4, "Per le contravvenzioni, a quale titolo si risponde, di regola?",
+  "Indifferentemente per dolo o per colpa", ["Solo per dolo", "Solo per colpa", "Solo per preterintenzione"],
+  "Per i delitti si risponde a titolo di dolo e, solo se previsto, di colpa; per le contravvenzioni si risponde indifferentemente per dolo o per colpa.",
+  WP("Reato"), WREATO, "per le contravvenzioni si risponde indifferentemente per dolo o per colpa")
+
+D("pen-342", "Reato", 5, "Quale atto del 1986 stabilisce criteri orientativi per la scelta tra delitti e contravvenzioni?",
+  "La Circolare del Presidente del Consiglio dei ministri del 5 febbraio 1986", ["Una sentenza della Corte costituzionale", "La legge 689 del 1981", "Un decreto del Ministro della giustizia"],
+  "La Circolare del Presidente del Consiglio dei ministri del 5 febbraio 1986 stabilisce criteri orientativi per la scelta tra delitti e contravvenzioni.",
+  WP("Reato"), WREATO, "La Circolare del Presidente del Consiglio dei ministri del 5 febbraio 1986")
+
+D("pen-343", "Reato", 3, "Perché i Paesi democratici hanno adottato una nozione «formale» e non «sostanziale» di reato?",
+  "Perché la nozione sostanziale elide la certezza del diritto e le garanzie dei cittadini", ["Perché è più severa", "Perché lo impone l'ONU", "Perché la nozione formale non prevede pene"],
+  "La concezione sostanziale punirebbe le condotte socialmente pericolose anche se non previste dalla legge: elide la certezza del diritto e le garanzie, per questo si adotta la nozione formale.",
+  WP("Reato"), WREATO, "Tale concezione tuttavia elide la certezza del diritto e le garanzie per i cittadini")
+
+D("pen-344", "Reato", 4, "In quante categorie classifica i reati la legge penale francese?",
+  "Tre: contravvenzioni, delitti e crimini", ["Due: delitti e contravvenzioni", "Quattro", "Una sola"],
+  "Nella legge penale francese i reati sono classificati in tre categorie secondo la gravità: contravvenzioni, reati (delitti) e crimini; l'Italia ha un sistema binario.",
+  WP("Reato"), WREATO, "i reati sono classificati in tre categorie, secondo la loro gravità")
+
+D("pen-345", "Principi", 2, "Di quale ramo del diritto fa parte il diritto penale?",
+  "Del diritto pubblico", ["Del diritto privato", "Del diritto commerciale", "Del diritto canonico"],
+  "Il diritto penale è la parte del diritto pubblico che prevede sanzioni penali per le condotte qualificate come reato.",
+  WP("Diritto penale"), WDP, "Il diritto penale è quella parte del diritto pubblico")
+
+D("pen-346", "Principi", 3, "Può un regolamento ministeriale creare un nuovo reato?",
+  "No, può solo integrare la legge penale con specificazioni tecniche", ["Sì, sempre", "Sì, se lo approva il Consiglio di Stato", "Sì, per i reati contravvenzionali"],
+  "Per la riserva di legge solo la legge e gli atti con forza di legge creano reati; una fonte secondaria può solo integrare la legge penale con specificazioni tecniche (es. elenco delle sostanze stupefacenti).",
+  WP("Diritto penale"), WDP, "Una fonte di rango secondario (come un regolamento ministeriale) è valida solo per c.d integrare il contenuto della legge penale")
+
+D("pen-347", "Principi", 3, "Quali due aspetti comprende il principio di tassatività della norma penale?",
+  "Determinatezza della fattispecie e divieto di analogia", ["Riserva di legge e irretroattività", "Colpevolezza e offensività", "Precetto e sanzione"],
+  "Il principio di tassatività si divide nel principio di determinatezza della fattispecie e nel divieto di analogia in materia penale.",
+  WP("Diritto penale"), WDP, "si divide nel c.d. principio di determinatezza della fattispecie penale")
+
+D("pen-348", "Principi", 3, "Da quali due parti è composta la norma penale?",
+  "Precetto e sanzione", ["Fatto e diritto", "Dolo e colpa", "Azione ed evento"],
+  "La norma penale è composta dal precetto, che proibisce un comportamento, e dalla sanzione, che prevede le conseguenze della violazione.",
+  WP("Diritto penale"), WDP, "La norma penale è quindi composta da due parte")
+
+D("pen-349", "Principi", 5, "Come si chiamano i criteri della Corte EDU per stabilire se una sanzione formalmente amministrativa è in realtà penale?",
+  "Criteri Engel", ["Criteri Öztürk", "Criteri di Strasburgo-Lussemburgo", "Criteri Beccaria"],
+  "La Corte di Strasburgo ha riconosciuto natura sostanzialmente penale a sanzioni formalmente amministrative in base ai cosiddetti criteri Engel (sentenza Engel c. Paesi Bassi, 1976).",
+  WP("Diritto penale"), WDP, "criteri Engel")
+
+D("pen-350", "Principi", 3, "Quali principi costituiscono complessivamente il principio di legalità in materia penale?",
+  "Riserva di legge, irretroattività e tassatività", ["Uguaglianza, solidarietà e lavoro", "Proporzionalità, sussidiarietà e adeguatezza", "Pubblicità, oralità e immediatezza"],
+  "Il principio di riserva di legge, quello di irretroattività e quello di tassatività costituiscono complessivamente il principio di legalità in materia penale.",
+  WP("Diritto penale"), WDP, "costituiscono complessivamente il c.d. principio di legalità in materia penale")

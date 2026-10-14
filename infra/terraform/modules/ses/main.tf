@@ -12,6 +12,7 @@ locals {
   mail_from   = local.con_dominio ? "mail.${var.domain}" : null
 }
 
+# Regione corrente, per i record DKIM e MAIL FROM (endpoint SES della regione).
 data "aws_region" "current" {}
 
 # Indirizzo mittente (senza dominio va verificato cliccando il link che arriva per email).
@@ -143,6 +144,7 @@ resource "aws_kms_key" "notifiche" {
   })
 }
 
+# Nome leggibile della chiave, per ritrovarla in console.
 resource "aws_kms_alias" "notifiche" {
   name          = "alias/${var.name}-ses-notifiche"
   target_key_id = aws_kms_key.notifiche.key_id

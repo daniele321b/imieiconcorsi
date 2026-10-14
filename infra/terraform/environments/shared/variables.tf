@@ -1,3 +1,5 @@
+# Variabili delle risorse condivise (dominio, mittente SES).
+
 variable "aws_region" {
   description = "Regione AWS delle risorse condivise"
   type        = string

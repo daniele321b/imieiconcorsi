@@ -24,6 +24,8 @@ export interface Elemento {
   x: number;
   y: number;
   larghezza: number;
+  /** Altezza del testo: gli esponenti sono più bassi del resto (colonne.ts) */
+  altezza?: number;
 }
 
 /** Una riga della tabella: numero, domanda e risposta esatta. */
@@ -181,6 +183,7 @@ export function alternativeRelazioni(domanda: string, risposta: string, seme: nu
   // Sicuramente a > b: c'è una catena a > … > b.
   const sopra = (a: string, b: string, visti = new Set<string>()): boolean =>
     [...(maggioreDi.get(a) ?? [])].some((c) => c === b || (!visti.has(c) && (visti.add(c), sopra(c, b, visti))));
+  // Vero o falso per una relazione "A > B", undefined se non si deduce dalle relazioni lette.
   const vale = (s: string) => {
     const [, a, op, b] = s.match(/^([A-Z])\s*([<>])\s*([A-Z])$/)!;
     const [alto, basso] = op === ">" ? [a!, b!] : [b!, a!];
@@ -223,6 +226,7 @@ function partiCoppia(r: string, f: string): [string, string] | undefined {
   const m = f === "xy" ? r.match(/^X\s*=\s*(.+?);\s*Y\s*=\s*(.+)$/i) : f === "coppia" ? r.match(/^(.+?)\s+\/\s+(.+)$/) : null;
   return m && !m[2]!.includes(" / ") ? [m[1]!.trim(), m[2]!.trim()] : undefined;
 }
+/** Ricompone una coppia nella forma del file ("X = a; Y = b" oppure "a / b"). */
 const componiCoppia = ([a, b]: [string, string], f: string) => (f === "xy" ? `X = ${a}; Y = ${b}` : `${a} / ${b}`);
 
 /**
@@ -234,6 +238,7 @@ const componiCoppia = ([a, b]: [string, string], f: string) => (f === "xy" ? `X 
  */
 function alternativeCoppie(giusta: [string, string], altre: [string, string][], vere: Set<string>, f: string, seme: number): string[] {
   const gia = new Set([normale(componiCoppia(giusta, f))]);
+  // Coppia accettabile come alternativa: parti diverse, non vera, non già usata.
   const buona = (c: [string, string]) => {
     const n = normale(componiCoppia(c, f));
     return normale(c[0]) !== normale(c[1]) && !vere.has(n) && !gia.has(n);
@@ -285,6 +290,7 @@ export function domandeDallaTabella(righe: RigaTabella[]): Estrazione {
   const valide: RigaTabella[] = [];
   const visti = new Set<string>();
   for (const r of righe) {
+    // Mette la riga tra le scartate, con il motivo.
     const scarta = (motivo: string) => risultato.scartate.push({ numero: r.numero, motivo });
     if (r.domanda.length < 3) { scarta("testo della domanda mancante"); continue; }
     if (!r.risposta) { scarta("risposta esatta mancante"); continue; }
@@ -298,6 +304,7 @@ export function domandeDallaTabella(righe: RigaTabella[]): Estrazione {
 
   // Indici delle risposte: per famiglia di domanda + forma, per sezione + forma, per forma.
   const indice = new Map<string, string[]>();
+  // Aggiunge una risposta all'indice sotto la chiave `k`.
   const aggiungi = (k: string, risposta: string) => {
     const lista = indice.get(k);
     if (lista) lista.push(risposta);
@@ -314,6 +321,7 @@ export function domandeDallaTabella(righe: RigaTabella[]): Estrazione {
 
   // Tutte le coppie del file (per non usarne una vera come alternativa).
   const vere = new Set(valide.filter((r) => partiCoppia(r.risposta, forma(r.risposta))).map((r) => normale(r.risposta)));
+  // Chiavi dell'indice per una riga, dalla più specifica alla più generica.
   const chiavi = (r: RigaTabella, f: string) => [`st|${r.sezione}|${famiglia(r.domanda, 3)}|${struttura(r.domanda)}|${f}`, `f3|${r.sezione}|${famiglia(r.domanda, 3)}|${f}`, `f2|${r.sezione}|${famiglia(r.domanda, 2)}|${f}`, `s|${r.sezione}|${f}`, `t|${f}`];
 
   for (const r of valide) {
@@ -338,6 +346,7 @@ export function domandeDallaTabella(righe: RigaTabella[]): Estrazione {
       // Prima le coppie che somigliano alla giusta: nomi propri con nomi propri ("Geppetto;
       // Pinocchio" con "Eva; Genesi"), parole comuni con parole comuni.
       const maiuscola = (t: string) => /^[A-ZÀ-Ú]/.test(t);
+      // Quanto una coppia somiglia a quella giusta (nomi propri al posto di nomi propri): 0, 1 o 2.
       const somiglia = (c: [string, string]) => Number(maiuscola(c[0]) === maiuscola(coppia[0])) + Number(maiuscola(c[1]) === maiuscola(coppia[1]));
       const ordinate = [...altre.values()].sort((a, b) => somiglia(b) - somiglia(a));
       const migliori = ordinate.filter((c) => somiglia(c) === somiglia(ordinate[0]!));

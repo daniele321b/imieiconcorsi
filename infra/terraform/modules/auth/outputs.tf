@@ -1,13 +1,18 @@
+# Uscite del modulo login, lette dagli ambienti.
+
 output "user_pool_id" {
-  value = aws_cognito_user_pool.main.id
+  description = "Id dello user pool"
+  value       = aws_cognito_user_pool.main.id
 }
 
 output "client_id" {
-  value = aws_cognito_user_pool_client.web.id
+  description = "Id del client web (usato dal sito)"
+  value       = aws_cognito_user_pool_client.web.id
 }
 
 output "issuer" {
-  value = "https://cognito-idp.${var.aws_region}.amazonaws.com/${aws_cognito_user_pool.main.id}"
+  description = "Emittente dei token, per l'authorizer JWT dell'API"
+  value       = "https://cognito-idp.${var.aws_region}.amazonaws.com/${aws_cognito_user_pool.main.id}"
 }
 
 output "domain" {
@@ -21,9 +26,11 @@ output "idp_redirect_uri" {
 }
 
 output "social_providers" {
-  value = concat(local.google_enabled ? ["google"] : [], local.facebook_enabled ? ["facebook"] : [])
+  description = "Login social attivi (google, facebook)"
+  value       = concat(local.google_enabled ? ["google"] : [], local.facebook_enabled ? ["facebook"] : [])
 }
 
 output "user_pool_arn" {
-  value = aws_cognito_user_pool.main.arn
+  description = "ARN dello user pool (per i permessi IAM)"
+  value       = aws_cognito_user_pool.main.arn
 }

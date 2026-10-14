@@ -119,8 +119,13 @@ export function Studio() {
 
       <p className="mx-auto mt-10 max-w-3xl text-center text-xs leading-relaxed text-slate-400">
         Le domande sono scritte dalla redazione a partire da libri di testo e fonti online: MatematicaC3 e Matematica Dolce
-        (CC BY / CC BY-SA), appunti di L. Ghio (CC BY-SA), voci di Wikipedia (CC BY-SA 4.0), dati ISTAT (CC BY 4.0) e testi di
-        legge ufficiali su Normattiva.{data?.versione && <> Banca domande {data.versione}.</>}
+        (CC BY / CC BY-SA), appunti di L. Ghio (CC BY-SA), voci di Wikipedia (CC BY-SA 4.0), dati ISTAT (CC BY 4.0), testi di
+        legge ufficiali su Normattiva, il CCNL Funzioni Locali (ARAN) e pubblicazioni di Senato, Camera dei deputati, AgID
+        (DigComp 2.2), ITTIG-Cnr e Accademia della Crusca, oltre al manuale «College ESL Writers» (GALILEO). Dalle fonti con
+        licenza non commerciale o senza opere derivate prendiamo solo fatti e regole, con domande scritte da noi. Parte
+        delle domande di geografia, italiano, matematica e attualità viene dalle banche dati ministeriali «1° livello»,
+        riportate così come sono.
+        {data?.versione && <> Banca domande {data.versione}.</>}
       </p>
     </div>
   );

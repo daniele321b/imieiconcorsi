@@ -9,6 +9,7 @@ export function useAvviaSessione() {
   const [inCorso, setInCorso] = useState<string>();
   const [errore, setErrore] = useState<ApiError>();
 
+  // Crea la sessione sul server e la apre; `chiave` indica quale pulsante è in attesa.
   async function avvia(input: NuovaSessione, chiave: string = input.tipo) {
     setInCorso(chiave);
     setErrore(undefined);

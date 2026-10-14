@@ -3,6 +3,8 @@ import { describe, expect, it } from "vitest";
 import { eFuoriTema, FUORI_TEMA, minutoCorrente, SISTEMA_TUTOR, sogliaSuperata, spesaMicroUsd } from "../src/ai/logic";
 import { limiteRichieste } from "../src/richieste/handler";
 
+// Test dei limiti del tutor AI (spesa, fuori tema, soglie) e del limite alle richieste di assistenza.
+
 describe("limiti dell'AI", () => {
   it("la spesa si stima in milionesimi di dollaro dai token", () => {
     // 1 milione di token in ingresso costa PREZZI_AI_USD.ingresso dollari.
@@ -49,6 +51,7 @@ describe("limiti dell'AI", () => {
 
 describe("richieste di assistenza", () => {
   const ora = new Date("2026-10-09T10:00:00Z");
+  // Richiesta di prova con stato e data di creazione.
   const r = (stato: "aperta" | "in-lavorazione" | "chiusa", creataIl = "2026-10-01T10:00:00Z") => ({ stato, creataIl });
 
   it("si può scrivere se non si è al limite", () => {

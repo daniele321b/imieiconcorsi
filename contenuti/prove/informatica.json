@@ -1498,5 +1498,255 @@
     "id": "inf-300",
     "file": "norma_DLgs82-2005_CAD.txt",
     "frase": "È realizzata presso l'AgID una piattaforma per la consultazione pubblica"
+  },
+  {
+    "id": "inf-301",
+    "file": "AgID_DigComp-2.2-italiano.txt",
+    "frase": "combinazione di 21 competenze"
+  },
+  {
+    "id": "inf-302",
+    "file": "AgID_DigComp-2.2-italiano.txt",
+    "frase": "raggruppate in cinque aree principali"
+  },
+  {
+    "id": "inf-303",
+    "file": "AgID_DigComp-2.2-italiano.txt",
+    "frase": "Dal 2016, le cinque aree sono"
+  },
+  {
+    "id": "inf-304",
+    "file": "AgID_DigComp-2.2-italiano.txt",
+    "frase": "Nel 2013 è uscito il primo quadro di riferimento DigComp"
+  },
+  {
+    "id": "inf-305",
+    "file": "AgID_DigComp-2.2-italiano.txt",
+    "frase": "Gli otto livelli di padronanza si ispirano alla struttura e al"
+  },
+  {
+    "id": "inf-306",
+    "file": "AgID_DigComp-2.2-italiano.txt",
+    "frase": "rapporto Science for Policy del Joint Research Centre (JRC)"
+  },
+  {
+    "id": "inf-307",
+    "file": "AgID_DigComp-2.2-italiano.txt",
+    "frase": "fornisce più di 250 nuovi esempi"
+  },
+  {
+    "id": "inf-308",
+    "file": "AgID_DigComp-2.2-italiano.txt",
+    "frase": "2.5. Netiquette"
+  },
+  {
+    "id": "inf-309",
+    "file": "AgID_DigComp-2.2-italiano.txt",
+    "frase": "4.4. Proteggere l'ambiente"
+  },
+  {
+    "id": "inf-310",
+    "file": "AgID_DigComp-2.2-italiano.txt",
+    "frase": "3.3. Copyright e licenze"
+  },
+  {
+    "id": "inf-311",
+    "file": "AgID_DigComp-2.2-italiano.txt",
+    "frase": "\"bolle di filtraggio\" (filter bubbles)"
+  },
+  {
+    "id": "inf-312",
+    "file": "AgID_DigComp-2.2-italiano.txt",
+    "frase": "al fine di controllare la propria \"impronta digitale\""
+  },
+  {
+    "id": "inf-313",
+    "file": "AgID_DigComp-2.2-italiano.txt",
+    "frase": "attivare l'autenticazione a due fattori quando disponibile"
+  },
+  {
+    "id": "inf-314",
+    "file": "AgID_DigComp-2.2-italiano.txt",
+    "frase": "si riferisce al bullismo perpetrato con l'uso di tecnologie digitali"
+  },
+  {
+    "id": "inf-315",
+    "file": "AgID_DigComp-2.2-italiano.txt",
+    "frase": "navigazione privata e cancellazione dei cookie"
+  },
+  {
+    "id": "inf-316",
+    "file": "AgID_DigComp-2.2-italiano.txt",
+    "frase": "misure di protezione tecniche, in inglese TPM"
+  },
+  {
+    "id": "inf-317",
+    "file": "AgID_DigComp-2.2-italiano.txt",
+    "frase": "esistono archivi di dati aperti in cui chiunque può ottenere dati"
+  },
+  {
+    "id": "inf-318",
+    "file": "Wikipedia_Intelligenza-artificiale.txt",
+    "frase": "quando l'impiego delle unità di elaborazione grafica (GPU) per addestrare reti neurali"
+  },
+  {
+    "id": "inf-319",
+    "file": "Wikipedia_Intelligenza-artificiale.txt",
+    "frase": "IA debole (o ristretta), che rappresenta il 100% dei sistemi AI oggi esistenti"
+  },
+  {
+    "id": "inf-320",
+    "file": "Wikipedia_Intelligenza-artificiale.txt",
+    "frase": "Nel 1943 McCulloch e Pitts crearono ciò che viene ritenuto il primo lavoro"
+  },
+  {
+    "id": "inf-321",
+    "file": "Wikipedia_Intelligenza-artificiale.txt",
+    "frase": "crearono la prima rete neurale artificiale, conosciuta con il nome di \"SNARC\""
+  },
+  {
+    "id": "inf-322",
+    "file": "Wikipedia_Intelligenza-artificiale.txt",
+    "frase": "conosciuto con il nome di \"Logic Theorist\""
+  },
+  {
+    "id": "inf-323",
+    "file": "Wikipedia_Intelligenza-artificiale.txt",
+    "frase": "McCarthy introdusse l'espressione \"intelligenza artificiale\""
+  },
+  {
+    "id": "inf-324",
+    "file": "Wikipedia_Intelligenza-artificiale.txt",
+    "frase": "Nel 1936 Alan Turing nel suo articolo On Computable Numbers"
+  },
+  {
+    "id": "inf-325",
+    "file": "Wikipedia_Intelligenza-artificiale.txt",
+    "frase": "quali il ragionamento, l'apprendimento, la pianificazione e la creatività"
+  },
+  {
+    "id": "inf-326",
+    "file": "Wikipedia_Intelligenza-artificiale.txt",
+    "frase": "viene spesso usato in modo improprio per indicare la sola intelligenza artificiale generativa"
+  },
+  {
+    "id": "inf-327",
+    "file": "Wikipedia_Intelligenza-artificiale.txt",
+    "frase": "General Problem Solver, o GPS"
+  },
+  {
+    "id": "inf-328",
+    "file": "Wikipedia_Intelligenza-artificiale.txt",
+    "frase": "nel 2014, Stephen Hawking"
+  },
+  {
+    "id": "inf-329",
+    "file": "Wikipedia_Software-libero.txt",
+    "frase": "Nel 1989, Richard Stallman, ideò anche la GNU General Public License (GNU-GPL), una licenza Copyleft"
+  },
+  {
+    "id": "inf-330",
+    "file": "Wikipedia_Software-libero.txt",
+    "frase": "l'obbligo verso coloro che modificano di farlo con la stessa licenza del software di partenza"
+  },
+  {
+    "id": "inf-331",
+    "file": "Wikipedia_Software-libero.txt",
+    "frase": "(GNU's Not Unix)"
+  },
+  {
+    "id": "inf-332",
+    "file": "Wikipedia_Software-libero.txt",
+    "frase": "Bayh-Dole Act"
+  },
+  {
+    "id": "inf-333",
+    "file": "Wikipedia_Backup.txt",
+    "frase": "Un'altra possibilità di programmazione è \"su evento\""
+  },
+  {
+    "id": "inf-334",
+    "file": "Wikipedia_Backup.txt",
+    "frase": "occorre accertare che il job ottenuto sia corretto"
+  },
+  {
+    "id": "inf-335",
+    "file": "Wikipedia_Backup.txt",
+    "frase": "Per gli apparati il backup si applica pure alla configurazione"
+  },
+  {
+    "id": "inf-336",
+    "file": "Wikipedia_Backup.txt",
+    "frase": "attraverso gli agent"
+  },
+  {
+    "id": "inf-337",
+    "file": "norma_DLgs196-2003_privacy.txt",
+    "frase": "conservati dal fornitore per ventiquattro mesi dalla data della comunicazione"
+  },
+  {
+    "id": "inf-338",
+    "file": "norma_DLgs196-2003_privacy.txt",
+    "frase": "sono conservati dal fornitore per dodici mesi dalla data della comunicazione"
+  },
+  {
+    "id": "inf-339",
+    "file": "norma_DLgs196-2003_privacy.txt",
+    "frase": "eletti due dalla Camera dei deputati e due dal Senato della Repubblica con voto limitato"
+  },
+  {
+    "id": "inf-340",
+    "file": "norma_DLgs196-2003_privacy.txt",
+    "frase": "La presentazione del reclamo al Garante rende improponibile un'ulteriore domanda dinanzi all'autorità giudiziaria"
+  },
+  {
+    "id": "inf-341",
+    "file": "norma_DLgs196-2003_privacy.txt",
+    "frase": "da una norma di legge o ((...)) di regolamento ((o da atti amministrativi generali))"
+  },
+  {
+    "id": "inf-342",
+    "file": "norma_DLgs196-2003_privacy.txt",
+    "frase": "è consentito con il consenso del contraente o utente"
+  },
+  {
+    "id": "inf-343",
+    "file": "norma_DLgs196-2003_privacy.txt",
+    "frase": "siano attribuiti a persone fisiche, espressamente designate, che operano sotto la loro autorità"
+  },
+  {
+    "id": "inf-344",
+    "file": "norma_DLgs196-2003_privacy.txt",
+    "frase": "è punito con la reclusione da sei mesi a un anno e sei mesi"
+  },
+  {
+    "id": "inf-345",
+    "file": "Ghio_Appunti-calcolatori-elettronici.txt",
+    "frase": "L'architettura Harvard si differenzia dall'architettura di Von Neumann per la separazione della memoria dati e della memoria codice"
+  },
+  {
+    "id": "inf-346",
+    "file": "Ghio_Appunti-calcolatori-elettronici.txt",
+    "frase": "Nel RAID 0, i dati vengono distribuiti su strisce (strip)"
+  },
+  {
+    "id": "inf-347",
+    "file": "Ghio_Appunti-calcolatori-elettronici.txt",
+    "frase": "le periferiche e la memoria sono mappate in un unico spazio di indirizzamento"
+  },
+  {
+    "id": "inf-348",
+    "file": "Ghio_Appunti-calcolatori-elettronici.txt",
+    "frase": "a ogni colpo di clock completano più di un'istruzione"
+  },
+  {
+    "id": "inf-349",
+    "file": "Ghio_Appunti-calcolatori-elettronici.txt",
+    "frase": "I dischi ottici hanno un'organizzazione Constant Linear Velocity (CLV)"
+  },
+  {
+    "id": "inf-350",
+    "file": "Ghio_Appunti-calcolatori-elettronici.txt",
+    "frase": "Le memorie EEPROM possono essere riprogrammate senza raggi ultra-violetti"
   }
 ]

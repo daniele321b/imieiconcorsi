@@ -29,8 +29,10 @@ export function Contatti() {
   const [invio, setInvio] = useState(false);
   const [inviato, setInviato] = useState(false);
   const [errore, setErrore] = useState<string>();
+  // Cambia solo i campi indicati del modulo.
   const set = (parziale: Partial<typeof dati>) => setDati((d) => ({ ...d, ...parziale }));
 
+  // Invia il modulo contatti.
   async function invia(e: React.FormEvent) {
     e.preventDefault();
     setInvio(true);

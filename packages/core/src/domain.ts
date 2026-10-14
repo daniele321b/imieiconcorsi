@@ -31,6 +31,7 @@ export const MATERIE = [
   { id: "italiano", nome: "Italiano", icona: "book-open" },
   { id: "storia", nome: "Storia", icona: "hourglass" },
   { id: "geografia", nome: "Geografia", icona: "globe" },
+  { id: "attualita", nome: "Attualità e cultura generale", icona: "newspaper" },
   { id: "logica", nome: "Logica", icona: "puzzle" },
   { id: "matematica", nome: "Matematica", icona: "calculator" },
   { id: "informatica", nome: "Informatica", icona: "monitor" },
@@ -154,6 +155,7 @@ const LISTINO = {
   pro: { mensile: 14.99, trimestrale: 29.99, annuale: 69.99 },
 } as const;
 
+/** Prezzi di un piano dal listino; con PREZZI_DI_PROVA tutto a 0,50 € per provare i pagamenti. */
 const prezzo = (piano: keyof typeof LISTINO) =>
   PREZZI_DI_PROVA ? { mensile: 0.5, trimestrale: 0.5, annuale: 0.5 } : { ...LISTINO[piano] };
 
@@ -174,7 +176,6 @@ export const PIANI: Record<PianoId, Piano> = {
       `Banche dati ufficiali: ${USI_BANCHE_DATI_FREE} utilizzi a settimana`,
       "Sessioni di studio da 10 domande",
       "1 simulazione a settimana",
-      "Con pubblicità ogni 5 domande",
     ],
     limiti: { concorsiSeguiti: 1, simulazioniSettimana: 1, domandePerSessioneStudio: 10, domandePerSimulazione: SIMULAZIONE_STANDARD, bancheDati: false, usiBancheDatiSettimana: USI_BANCHE_DATI_FREE, ai: false, gettoniAi: 0, pubblicita: true },
   },
@@ -298,7 +299,7 @@ export interface Richiesta {
 // ── Documenti legali ─────────────────────────────────────────────────────────
 
 /** Versione di Termini e Informativa: cambia quando cambiano i testi (pagine /termini, /privacy). */
-export const VERSIONE_TERMINI = "2026-10-10";
+export const VERSIONE_TERMINI = "2026-10-13";
 
 // ── Gruppi Cognito: piano e ruolo stanno qui, non nel database ──────────────
 
@@ -318,6 +319,21 @@ export function pianoDaGruppi(gruppi: readonly string[]): PianoId {
  * Profilo nel database (tabella users). Solo dati di studio, identificati da un id
  * anonimo: email e nome stanno solo in Cognito.
  */
+/**
+ * Da dove arriva un iscritto: i parametri UTM del primo link nostro che ha aperto prima di
+ * iscriversi (core/provenienza.ts). Solo etichette di campagna, nessun identificativo di clic.
+ */
+export interface Provenienza {
+  /** utm_source: instagram, facebook, tiktok… */
+  fonte: string;
+  /** utm_medium: social, paid… */
+  mezzo?: string;
+  /** utm_campaign: bio, lancio… */
+  campagna?: string;
+  /** utm_content: quale post o annuncio */
+  contenuto?: string;
+}
+
 export interface Profilo {
   /** sub di Cognito */
   userId: string;
@@ -354,6 +370,8 @@ export interface Profilo {
   };
   /** Codici sconto già usati: ognuno vale una volta per utente. */
   codiciUsati?: string[];
+  /** Da quale link dei social o degli annunci è arrivato (parametri UTM): si salva solo quando nasce il profilo. */
+  provenienza?: Provenienza;
   /** Codice "invita un amico" di questo utente (tabella codici, tipo invito) */
   codiceInvito?: string;
   /** userId di chi l'ha invitato (si può indicare solo prima del primo acquisto) */
@@ -465,8 +483,10 @@ export interface BancaDati {
   /**
    * Come è indicata la risposta giusta nel PDF (auto = prova tutti i modi). "risposta" = tabella
    * con la sola risposta esatta: le alternative si ricavano (functions/src/banche-dati/tabella.ts).
+   * "colonne" = tabella con risposta esatta ed errate in colonna (functions/src/banche-dati/colonne.ts).
+   * "lettera" = tabella con le risposte a)-d) in colonna e la lettera della giusta (functions/src/banche-dati/lettere.ts).
    */
-  formato: "auto" | "indicata" | "segnata" | "chiave" | "prima" | "risposta";
+  formato: "auto" | "indicata" | "segnata" | "chiave" | "prima" | "risposta" | "colonne" | "lettera";
   /**
    * Ordine delle risposte agli utenti. Assente o "mescolate": ordine casuale fisso per domanda,
    * così non si impara la lettera (in molti PDF la giusta è sempre la A). "pdf": come nel file.

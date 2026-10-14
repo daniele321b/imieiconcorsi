@@ -12,6 +12,7 @@ const ALFABETO = "ABCDEFGHJKMNPQRSTUVWXYZ23456789";
 
 /** Codice casuale leggibile, es. "K7MQ-2XRT". */
 export function generaCodice(casuale: () => number = Math.random) {
+  // Quattro caratteri a caso dall'alfabeto senza simboli ambigui.
   const pezzo = () => Array.from({ length: 4 }, () => ALFABETO[Math.floor(casuale() * ALFABETO.length)]).join("");
   return `${pezzo()}-${pezzo()}`;
 }

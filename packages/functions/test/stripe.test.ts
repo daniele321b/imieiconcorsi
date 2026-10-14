@@ -3,6 +3,8 @@ import { PIANI, PREZZI_DI_PROVA } from "@imieiconcorsi/core/domain";
 import { describe, expect, it } from "vitest";
 import { firmaWebhookValida, formEncode, MINIMO_STRIPE } from "../src/billing/stripe";
 
+// Test dell'integrazione Stripe: firma dei webhook, parametri e prezzi minimi.
+
 describe("firma dei webhook Stripe", () => {
   const segreto = "whsec_prova";
   const corpo = '{"type":"checkout.session.completed"}';

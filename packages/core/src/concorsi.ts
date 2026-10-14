@@ -40,7 +40,9 @@ export function ordinaConcorsi<T extends Ordinabile>(concorsi: readonly T[], ord
     if (!veraA || !veraB) return veraA ? -1 : veraB ? 1 : 0;
     return chiusoA ? veraA.localeCompare(veraB) : veraB.localeCompare(veraA);
   };
+  // Nome con cui si ordina un bando: figura, o titolo se manca.
   const nome = (c: T) => conMaiuscola(c.figura || c.titolo || "");
+  // Confronto alfabetico italiano, senza badare a maiuscole e accenti.
   const alfabetico = (x: string, y: string) => x.localeCompare(y, "it", { sensitivity: "base" });
   const confronta: Record<Ordinamento, (a: T, b: T) => number> = {
     scadenza: perScadenza,
@@ -243,7 +245,9 @@ const dataNome = new Intl.DateTimeFormat("it-IT", { day: "numeric", month: "long
  */
 export function nomiDistinti<T extends Pick<Concorso, "id" | "ente" | "titolo" | "figura" | "pubblicatoIl" | "scadenza">>(lista: readonly T[]) {
   const nomi = new Map(lista.map((c) => [c.id, nomeConcorso(c)]));
+  // Stesso ente e stesso nome: bandi che l'utente non saprebbe distinguere.
   const chiave = (c: T) => `${c.ente.toLowerCase()}|${nomi.get(c.id)}`;
+  // Bandi che condividono la chiave con almeno un altro.
   const doppi = (perChiave: (c: T) => string) => {
     const conta = new Map<string, number>();
     for (const c of lista) conta.set(perChiave(c), (conta.get(perChiave(c)) ?? 0) + 1);

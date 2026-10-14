@@ -1367,3 +1367,811 @@ GR("ita-300", "Verbi", 3, "In «vedo gli uccelli volare», l'infinito sostituisc
 GR("ita-301", "Morfologia", 3, "Qual è il plurale di «l'auto»?",
   "le auto", ["le auti", "gli auti", "le autos"],
   "I sostantivi accorciati (auto da automobile) sono invariabili.", "l'auto, le auto")
+
+# ── Verso 350: la lingua degli atti amministrativi, dalla «Guida alla redazione degli atti
+#    amministrativi» di ITTIG-Cnr e Accademia della Crusca (2011, CC BY-ND 2.5 IT).
+CRU = "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt"
+FCRU = "ITTIG-Cnr e Accademia della Crusca, «Guida alla redazione degli atti amministrativi» (2011)"
+def K(id, arg, liv, testo, giusta, sbagliate, spieg, frase):
+    D(id, arg, liv, testo, giusta, sbagliate, spieg, FCRU, CRU, frase)
+SA = "Scrittura amministrativa"
+
+K("ita-302", SA, 2, "Come devono essere i periodi di un atto amministrativo secondo la Guida ITTIG-Crusca?",
+  "Brevi e chiari, con frasi preferibilmente semplici", ["Lunghi e articolati, per essere completi", "Ricchi di incisi tra parentesi", "Scritti al congiuntivo"],
+  "Regola 2: formulare periodi brevi e chiari, usare preferibilmente frasi semplici, con poche subordinate.",
+  "Formulare periodi brevi e chiari.")
+K("ita-303", SA, 3, "Quale ordine delle parole raccomanda la Guida nelle frasi degli atti amministrativi?",
+  "Soggetto, verbo, oggetto diretto, oggetto indiretto", ["Verbo, soggetto, oggetto", "Oggetto indiretto, soggetto, verbo", "Nessun ordine: è indifferente"],
+  "Es.: «l'utente consegna il modulo Y al responsabile della procedura»; non si inseriscono elementi tra soggetto e verbo.",
+  "l'ordine soggetto-verbooggetto diretto-oggetto indiretto")
+K("ita-304", SA, 3, "Nel periodo, dove va collocata preferibilmente la frase principale?",
+  "Prima delle subordinate", ["Dopo tutte le subordinate", "Tra parentesi", "In una nota"],
+  "La frase principale precede, preferibilmente, le subordinate, che devono essere poche; gli incisi vanno evitati.",
+  "Nei periodi la frase principale precede, preferibilmente, le frasi subordinate")
+K("ita-305", SA, 3, "Perché la Guida consiglia di limitare gli incisi?",
+  "Costringono il lettore a memorizzare troppi elementi prima di capire il periodo", ["Perché sono errori grammaticali", "Perché allungano la stampa", "Perché sono vietati dalla legge"],
+  "Gli incisi e le frasi tra parentesi costringono il lettore a memorizzare troppi elementi prima di dare un senso al periodo.",
+  "Evitare, se possibile, gli incisi.")
+K("ita-306", SA, 3, "Quali frasi implicite la Guida invita a evitare in particolare?",
+  "Quelle con il verbo al gerundio", ["Quelle con il verbo all'indicativo", "Quelle con il soggetto espresso", "Quelle brevi"],
+  "Regola 3: preferire le frasi esplicite alle implicite, evitando in particolare le frasi con il gerundio, che possono essere ambigue.",
+  "Evitare in particolare le frasi con il verbo al gerundio.")
+K("ita-307", SA, 2, "A cosa servono connettivi come «dunque», «inoltre», «successivamente» in un testo?",
+  "A rendere espliciti i nessi logici tra le frasi", ["Ad allungare il testo", "A sostituire la punteggiatura", "A indicare il destinatario"],
+  "Avverbi e congiunzioni usati come connettivi testuali esplicitano i legami logico-grammaticali tra le frasi e danno coerenza e coesione al testo.",
+  "Esplicitare i nessi logici tra le frasi con congiunzioni o avverbi testuali.")
+K("ita-308", SA, 4, "In un atto, «A e B» esprime una relazione in cui la conseguenza si realizza:",
+  "Solo quando si avverano tutti gli elementi", ["Quando se ne avvera almeno uno", "Quando se ne avvera uno solo", "Mai"],
+  "La congiunzione «e» è riservata alle relazioni congiuntive: la fattispecie si realizza quando tutti gli elementi correlati si avverano.",
+  "La congiunzione e è riservata alle relazioni congiuntive")
+K("ita-309", SA, 3, "Quale formulazione la Guida invita a evitare, sostituendola con l'elencazione esplicita dei casi?",
+  "«e/o»", ["«oppure»", "«se»", "«soltanto»"],
+  "In particolare va evitata la formulazione «e/o», sostituibile con l'elenco esplicito dei casi in cui la relazione si realizza e non si realizza.",
+  "evitare la formulazione e/o")
+K("ita-310", SA, 4, "Con quali avverbi si esplicita il carattere tassativo di un'enumerazione?",
+  "Soltanto, esclusivamente, unicamente", ["In particolare, tra l'altro", "Inoltre, altresì", "Ad esempio, come"],
+  "Il carattere tassativo si esprime con soltanto, esclusivamente, unicamente; quello esemplificativo con in particolare, tra l'altro.",
+  "Il carattere tassativo di una enumerazione si esplicita attraverso l'uso di avverbi quali soltanto, esclusivamente, unicamente.")
+K("ita-311", SA, 4, "Con quali locuzioni si esplicita il carattere esemplificativo di un'enumerazione?",
+  "In particolare, tra l'altro", ["Soltanto, unicamente", "Esclusivamente", "Né… né"],
+  "Il carattere esemplificativo di un'enumerazione si esplicita con locuzioni come «in particolare», «tra l'altro».",
+  "Il carattere esemplificativo di una enumerazione si esplicita attraverso l'uso di locuzioni quali in particolare, tra l'altro.")
+K("ita-312", SA, 3, "Nella protasi del periodo ipotetico, quale congiunzione preferisce la Guida?",
+  "«Se», più semplice di «nel caso in cui» o «qualora»", ["«Qualora»", "«Nel caso in cui»", "«Ove»"],
+  "Esempio: «Se il bilancio non viene approvato» e non «nel caso in cui il bilancio non venga approvato».",
+  "preferire la congiunzione se ad altre più complesse")
+K("ita-313", SA, 4, "Quando la conseguenza giuridica può derivare solo da quel caso specifico, come va introdotta la protasi?",
+  "Con «solo se» o espressioni equivalenti", ["Con «se» semplice", "Con «qualora»", "Con «anche se»"],
+  "La protasi è introdotta da «se» quando la conseguenza può derivare anche da altri casi; da «solo se» quando deriva solo da quel caso.",
+  "questa è introdotta da solo se")
+K("ita-314", SA, 2, "Tra «è vietato l'ingresso» e «l'ingresso non è autorizzato», cosa preferisce la Guida?",
+  "La frase affermativa «è vietato l'ingresso»", ["La frase negativa, più cortese", "Indifferentemente l'una o l'altra", "Nessuna delle due"],
+  "Le frasi affermative sono più brevi, semplici e inequivoche; la negazione può far pensare a interpretazioni possibiliste.",
+  "Preferire, quando è possibile, le frasi affermative a quelle negative.")
+K("ita-315", SA, 2, "Cosa raccomanda la Guida riguardo alla doppia negazione (es. «non si può non esprimere»)?",
+  "Di evitarla, perché rende la frase complessa e ambigua", ["Di usarla per enfasi", "Di usarla solo nelle delibere", "Di preferirla alla frase affermativa"],
+  "La doppia negazione appesantisce la frase e aumenta il rischio di interpretazioni errate: meglio «si deve esprimere».",
+  "Evitare le frasi con la doppia negazione.")
+K("ita-316", "Verbi", 3, "Quale modo verbale la Guida preferisce al congiuntivo nelle costruzioni degli atti?",
+  "L'indicativo", ["Il condizionale", "Il gerundio", "L'infinito"],
+  "Regola 8: preferire costruzioni con l'indicativo: «se si verifica» e non «nel caso in cui si verifichi».",
+  "Preferire costruzioni sintattiche che richiedono l'indicativo al posto del congiuntivo.")
+K("ita-317", "Verbi", 4, "In «Il sindaco provvede alle nomine», che valore ha l'indicativo presente?",
+  "Valore prescrittivo: equivale a «deve provvedere»", ["Valore descrittivo di un'abitudine", "Valore ipotetico", "Valore passato"],
+  "L'indicativo presente può avere valore prescrittivo al posto di dovere + infinito.",
+  "L'indicativo presente può essere usato con valore prescrittivo al posto del costrutto dovere + infinito.")
+K("ita-318", SA, 4, "Cos'è la «nominalizzazione», da evitare negli atti?",
+  "Preferire il nome al verbo come portatore di significato", ["Usare troppi nomi propri", "Scrivere i nomi in maiuscolo", "Elencare i nomi dei destinatari"],
+  "Es.: invece di «Il pagamento si effettua allo sportello» scrivere «Si paga allo sportello».",
+  "la nominalizzazione che consiste nel preferire il nome al verbo come portatore di significato")
+K("ita-319", SA, 2, "Secondo la Guida, invece di «apporre la firma» è meglio scrivere:",
+  "Firmare", ["Sottoscrivere in calce", "Procedere alla sottoscrizione", "Effettuare la firma"],
+  "Vanno evitate le perifrasi come «apporre la firma» al posto del semplice «firmare».",
+  "le perifrasi come apporre la firma anziché firmare")
+K("ita-320", SA, 3, "Al posto di «trattasi», cosa suggerisce la Guida?",
+  "«Si tratta»", ["«Trattasi di»", "«Tratta»", "«È trattato»"],
+  "Va evitata l'enclisi del -si in stereotipi come trattasi e dicasi, ai quali sono preferibili «si tratta» e «si dica».",
+  "stereotipi come trattasi e dicasi ai quali sono preferibili si tratta e si dica")
+K("ita-321", "Verbi", 4, "Come si esprime di regola un obbligo in un atto, secondo la Guida?",
+  "Con l'indicativo presente, senza il verbo «dovere»", ["Sempre con «deve»", "Con il condizionale «dovrebbe»", "Con l'imperativo"],
+  "Es.: «La ditta attiva i seguenti provvedimenti» e non «La ditta deve attivare…»: l'indicativo presente ha già valore imperativo.",
+  "non usare di regola il verbo dovere per indicare l'obbligatorietà di una disposizione")
+K("ita-322", "Verbi", 3, "Per cosa si può usare il verbo «potere» negli atti?",
+  "Per indicare una facoltà, non un obbligo", ["Per indicare un obbligo", "Per indicare un divieto assoluto", "Mai"],
+  "Il verbo potere si usa per indicare una facoltà; se l'ufficio è tenuto a fare qualcosa si scrive «rilascia», non «può rilasciare».",
+  "È possibile usare il verbo potere per indicare una facoltà")
+K("ita-323", "Verbi", 2, "Quale forma del verbo la Guida invita a usare quando è possibile?",
+  "La forma attiva", ["La forma passiva", "La forma impersonale", "La forma riflessiva"],
+  "Regola 10: usare quando è possibile la forma attiva; passivo e impersonale solo quando non si può o non serve indicare chi agisce.",
+  "Usare quando è possibile la forma attiva del verbo.")
+K("ita-324", SA, 4, "Perché un'amministrazione scrive «Si prega di non fumare» con l'impersonale?",
+  "Per creare un distacco con il destinatario e non essere troppo diretta nel divieto", ["Perché il fumo è consentito", "Perché manca il soggetto per errore", "Perché è obbligatorio per legge"],
+  "L'impersonale può servire quando l'amministrazione vuole creare un distacco tra sé e il destinatario, ad esempio nell'esprimere un divieto.",
+  "quando l'amministrazione vuole creare un distacco tra sé e il")
+K("ita-325", SA, 3, "Se un pronome («esso», «questi») rende ambiguo il testo, cosa conviene fare?",
+  "Ripetere il nome a cui ci si riferisce", ["Usare un altro pronome", "Toglierlo e lasciare la frase incompleta", "Metterlo tra parentesi"],
+  "È preferibile ripetere gli elementi già introdotti piuttosto che usare pronomi che possono rendere ambigua la comprensione.",
+  "È preferibile ripetere elementi che sono già stati introdotti")
+K("ita-326", SA, 4, "Quante parole contiene, secondo le stime citate dalla Guida, il vocabolario di base dell'italiano?",
+  "Da 7.000 a 10.000", ["Circa 500", "Circa 50.000", "Oltre 200.000"],
+  "I dizionari dell'uso registrano 90-120.000 parole, il vocabolario comune circa la metà, il vocabolario di base da 7.000 a 10.000: sono quelle da preferire.",
+  "Il vocabolario di base della lingua italiana contiene, a seconda delle valutazioni, da 7.000 a 10.000 parole")
+K("ita-327", SA, 2, "Quale parola, più comune, la Guida preferisce a «obliterare»?",
+  "Timbrare", ["Annullare", "Vidimare", "Convalidare"],
+  "Bisogna evitare le parole ricercate: «timbrare» e non «obliterare»; «impedimento» e non «condizione ostativa».",
+  "evitando quelle ricercate (timbrare e non obliterare)")
+K("ita-328", SA, 2, "Secondo la Guida, quale parola è meglio usare al posto di «nominativo»?",
+  "Nome", ["Nominale", "Denominazione", "Intestatario"],
+  "Il linguaggio burocratico preferisce parole astratte e lunghe: meglio «problema» e non «problematica», «nome» e non «nominativo».",
+  "È opportuno non usare problematica al posto di problema e nominativo al posto di nome.")
+K("ita-329", SA, 4, "«Porre in essere» al posto di «realizzare» è un esempio di:",
+  "Tecnicismo collaterale", ["Tecnicismo specifico necessario", "Forestierismo", "Neologismo"],
+  "I tecnicismi collaterali non rispondono a necessità comunicative ma a uno stile ricercato (procedere all'escussione per interrogare; porre in essere per realizzare).",
+  "porre in essere per realizzare")
+K("ita-330", SA, 5, "Quanti tecnicismi davvero necessari ci sono in media in un testo amministrativo, secondo la Guida?",
+  "Meno di cinque su cento parole", ["Circa la metà delle parole", "Almeno venti su cento", "Nessuno"],
+  "In un testo di servizio o amministrativo i tecnicismi necessari sono in media meno di cinque su cento; vanno spiegati almeno la prima volta.",
+  "in media sono meno di cinque su cento")
+K("ita-331", SA, 3, "Quali di queste parole, arcaiche, la Guida invita a evitare negli atti?",
+  "All'uopo, testé, altresì", ["Quindi, perciò, inoltre", "Se, quando, mentre", "Firmare, pagare, consegnare"],
+  "Vanno limitati arcaismi e latinismi come all'uopo, testé, altresì, nonché, il pronome «Ella», la formula «addì», «de iure», «de facto».",
+  "all'uopo, testé, altresì, nonché")
+K("ita-332", SA, 2, "Quale parola italiana la Guida suggerisce al posto di «meeting»?",
+  "Riunione", ["Incontro di staff", "Convention", "Briefing"],
+  "Meglio evitare forestierismi come project manager (capo progetto), meeting (riunione), planning (piano), staff (personale).",
+  "meeting per riunione")
+K("ita-333", "Morfologia", 3, "Come si comporta al plurale una parola straniera entrata stabilmente nell'italiano (es. «computer»)?",
+  "È invariabile: i computer", ["Prende la -s: i computers", "Prende la -i: i computeri", "Non si può usare al plurale"],
+  "Regola 16: la parola straniera assunta stabilmente nella lingua italiana è invariabile.",
+  "La parola straniera assunta stabilmente nella lingua italiana è invariabile.")
+K("ita-334", "Morfologia", 3, "Quale forma la Guida considera non grammaticale?",
+  "La sindaco", ["La sindaca", "La presidente", "L'assessora"],
+  "Tutti i nomi di mestiere e ruolo possono avere il femminile (sindaca, assessora, segretaria generale); è da evitare l'articolo femminile con la forma maschile.",
+  "l'uso dell'articolo femminile seguito dalla forma maschile, es. la sindaco")
+K("ita-335", SA, 4, "Con destinatari non definiti, quale formulazione suggerisce la Guida al posto di «il/la responsabile»?",
+  "«La persona responsabile»", ["«Il responsabile» soltanto", "«Il/la/le responsabile/i»", "«Responsabile (m/f)»"],
+  "Per destinatari non definiti si usano formulazioni che non specificano il genere: la persona responsabile, la direzione, chi è incaricato di…",
+  "la persona responsabile anziché il/la responsabile")
+K("ita-336", SA, 3, "Per evitare ripetizioni, è bene alternare termini diversi per lo stesso concetto in un atto?",
+  "No: si usa sempre lo stesso termine, anche a costo di ripetersi", ["Sì, per uno stile più elegante", "Sì, ma solo nelle delibere", "Sì, usando sinonimi stranieri"],
+  "Regola 18: usare sempre il medesimo termine per uno stesso concetto; alternare termini diversi genera confusione e ambiguità.",
+  "Usare sempre il medesimo termine per esprimere uno stesso concetto")
+K("ita-337", "Ortografia", 3, "Come si introduce una sigla la prima volta che compare in un testo?",
+  "Con l'espressione per intero seguita dalla sigla tra parentesi tonde", ["Solo con la sigla", "Con la sigla in grassetto", "In nota a piè di pagina"],
+  "La prima volta si scrive l'espressione per intero con la sigla tra parentesi; poi basta la sigla, salvo sigle molto note.",
+  "farla precedere dall'espressione per intero e racchiuderla tra parentesi tonde")
+K("ita-338", "Ortografia", 4, "Perché l'abbreviazione «ca» (circa) non vuole il punto?",
+  "Perché riporta la lettera iniziale e quella finale della parola", ["Perché è una sigla", "Perché è latina", "Per errore: il punto ci vuole sempre"],
+  "Le abbreviazioni vogliono il punto, tranne quando riportano iniziale e finale (ca per circa) o chiudono la frase.",
+  "se la parola abbreviata riporta la lettera iniziale e finale (ca per circa)")
+K("ita-339", "Ortografia", 4, "Come si forma il plurale di alcune abbreviazioni, ad esempio di «vol.» (volume)?",
+  "Raddoppiando la lettera finale: voll.", ["Aggiungendo la -s: vols.", "Aggiungendo -i: voli.", "Non hanno plurale"],
+  "In molte abbreviazioni la forma è unica; in certi casi il plurale si esprime raddoppiando iniziali o finali (voll. per volumi).",
+  "voll. per volumi")
+K("ita-340", "Ortografia", 2, "Come si scrivono di norma sigle e acronimi come INPS o ONU?",
+  "In maiuscolo e senza punti tra le lettere", ["Con i punti: I.N.P.S.", "In minuscolo", "In corsivo con i punti"],
+  "Le lettere di sigle e acronimi non sono generalmente seguite dal punto e sono scritte maiuscole, salvo sigle entrate nel lessico comune (vip, radar).",
+  "Le lettere di sigle e acronimi non sono generalmente seguite dal punto e sono scritte sempre maiuscole")
+K("ita-341", "Ortografia", 4, "Perché si scrive «lo SNALS» anche se la sigla sta per «il Sindacato autonomo…»?",
+  "Perché l'articolo segue la struttura fonetica della sigla", ["Per un errore diffuso", "Perché le sigle sono femminili", "Perché SNALS è una parola straniera"],
+  "Di regola l'articolo segue genere e numero della denominazione completa, ma con sigle che iniziano per consonante può seguire la pronuncia: lo SNALS.",
+  "lo SNALS")
+K("ita-342", "Ortografia", 3, "Quale di queste parole va scritta con la maiuscola?",
+  "Novecento (il secolo)", ["ottobre", "lunedì", "piazza (nell'indirizzo)"],
+  "Hanno la maiuscola, tra l'altro, i nomi dei secoli e dei decenni (il Novecento, gli anni Venti); mesi, giorni e «via», «piazza» mai.",
+  "il Novecento, gli anni Venti")
+K("ita-343", "Ortografia", 4, "Perché si scrive «i Romani» con la maiuscola parlando dell'antichità?",
+  "Per distinguere il popolo antico da quello moderno (i romani)", ["Perché tutti i popoli vogliono la maiuscola", "Per rispetto", "Non va mai con la maiuscola"],
+  "Ha la maiuscola il nome di un popolo antico (i Romani) per distinguerlo dal moderno (i romani).",
+  "di un popolo antico (es. i Romani) per distinguerlo dal moderno (es. i romani)")
+K("ita-344", "Ortografia", 3, "Quando si scioglie la sigla UE, come si scrive correttamente?",
+  "Maiuscola solo sulla prima parola (Unione europea)", ["Maiuscola su entrambe le parole", "Tutto in minuscolo", "Tutto in maiuscolo come la sigla"],
+  "Le sigle sono tutte maiuscole (UE), ma sciolte hanno la maiuscola solo sulla prima parola: Unione europea.",
+  "quando la sigla viene sciolta ha la maiuscola solo il primo nome della serie (es. Unione europea)")
+K("ita-345", "Ortografia", 4, "Quando «comune» si scrive con la minuscola?",
+  "Quando è usato come nome comune («abito nel comune di Prato»)", ["Sempre", "Mai", "Solo nelle delibere"],
+  "Il termine generico è minuscolo (abito nel comune di Prato); la maiuscola va quando indica la denominazione ufficiale (il Comune di Prato ha deliberato…).",
+  "abito nel comune di Prato")
+K("ita-346", "Ortografia", 4, "Oggi, per titoli come «sindaco» o «professore» seguiti dal nome, cosa si preferisce?",
+  "La minuscola: il sindaco Mario Rossi", ["La maiuscola: il Sindaco Mario Rossi", "Tutto maiuscolo", "L'abbreviazione puntata"],
+  "Un tempo si abbondava con le maiuscole; oggi si preferiscono le minuscole per titoli e appellativi, salvo quando il titolo indica l'organo nell'esercizio delle funzioni.",
+  "oggi si preferiscono piuttosto le minuscole")
+K("ita-347", "Ortografia", 4, "Nei nomi di organi composti da più parole, quali iniziali vanno in maiuscolo di regola?",
+  "Solo quella della prima parola (es. Consiglio comunale)", ["Quelle di tutte le parole", "Nessuna", "Solo quella dell'ultima parola"],
+  "Regola 21: nei nomi di organi o enti composti di regola solo la prima parola ha l'iniziale maiuscola (Consiglio comunale, Ufficio di presidenza).",
+  "Consiglio comunale, Ufficio di presidenza")
+K("ita-348", "Ortografia", 3, "In quale lingua tutti i sostantivi si scrivono con l'iniziale maiuscola?",
+  "In tedesco", ["In inglese", "In francese", "In spagnolo"],
+  "Per le parole straniere si seguono le regole di ogni lingua: in tedesco tutti i sostantivi hanno la maiuscola.",
+  "tutti i sostantivi si scrivono con l'iniziale maiuscola")
+K("ita-349", "Punteggiatura", 3, "Rispetto al punto fermo, il punto e virgola è:",
+  "Un segno più debole, usato quando il legame tra le frasi è più forte", ["Un segno più forte", "Del tutto equivalente", "Un segno che chiude il testo"],
+  "Il punto e virgola divide una frase dalla successiva ma è più debole del punto: si usa quando il legame logico tra le due frasi è più forte, e negli elenchi.",
+  "ma è un segno più debole del punto fermo")
+K("ita-350", "Punteggiatura", 4, "Perché in una lettera si può scrivere «Le comunichiamo… Sua domanda» con la maiuscola?",
+  "Per distinguere il destinatario da altre persone citate e disambiguare il testo", ["Perché è obbligatorio in ogni testo", "Per errore di battitura", "Perché i pronomi vogliono sempre la maiuscola"],
+  "La maiuscola dei pronomi e possessivi di cortesia è consigliabile nei contesti formali e serve a distinguere il destinatario da altri soggetti.",
+  "permette infatti di disambiguare il testo")
+
+# ── Banca dati ministeriale «1° Livello – Italiano» (italiano.pdf): domande riportate così come sono,
+#    la risposta esatta è la A) del PDF. Generato con scripts/domande/da_banca_ministeriale.py.
+D("ita-351", "Sintassi", 2, "Completare la frase \"…..aspettare che lei arrivasse\":",
+  "Ho dovuto", ["avremmo", "abbiamo", "andiamo ad"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1: la risposta esatta è «Ho dovuto».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1", "italiano.txt", "Completare la frase \"…..aspettare che lei arrivasse\":")
+D("ita-352", "Morfologia", 2, "La \"congiunzione avversativa\":",
+  "esprime una contrapposizione tra due elementi di una stessa frase o tra due frasi indipendenti", ["esprime una conclusione", "introduce un chiarimento nell'ambito della frase o tra frasi indipendenti", "unisce due elementi della stessa importanza"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 15: la risposta esatta è «esprime una contrapposizione tra due elementi di una stessa frase o tra due frasi indipendenti».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 15", "italiano.txt", "La \"congiunzione avversativa\":")
+D("ita-353", "Lessico", 2, "Tra i seguenti nomi indicare quello di forma promiscua:",
+  "giraffa", ["capra", "compare", "montone"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 30: la risposta esatta è «giraffa».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 30", "italiano.txt", "Tra i seguenti nomi indicare quello di forma promiscua:")
+D("ita-354", "Morfologia", 2, "Indicare quale tra questi non è un avverbio derivato:",
+  "forte", ["fortemente", "fortissimamente", "penzoloni"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 44: la risposta esatta è «forte».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 44", "italiano.txt", "Indicare quale tra questi non è un avverbio derivato:")
+D("ita-355", "Lessico", 2, "In quale delle seguenti frasi il \"si\" non è impersonale?",
+  "Si pettina e si lava spesso", ["Si va a spasso", "Si nota un interesse", "Si gareggerà a lungo"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 59: la risposta esatta è «Si pettina e si lava spesso».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 59", "italiano.txt", "In quale delle seguenti frasi il \"si\" non è impersonale?")
+D("ita-356", "Sintassi", 2, "Completare la frase \"Ho visto Giovanni e … ho chiesto le informazioni che mi servivano\":",
+  "gli", ["le", "glieli", "ti"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 73: la risposta esatta è «gli».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 73", "italiano.txt", "Completare la frase \"Ho visto Giovanni e … ho chiesto le informazioni che mi servivano\":")
+D("ita-357", "Sintassi", 2, "\"Ritengo che abbiano preso delle decisioni sensate.\" In questa frase \"sensate\" è:",
+  "attributo del complemento oggetto partitivo", ["complemento di fine", "attributo del complemento di specificazione", "complemento di modo"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 87: la risposta esatta è «attributo del complemento oggetto partitivo».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 87", "italiano.txt", "\"Ritengo che abbiano preso delle decisioni sensate.\" In questa frase \"sensate\" è:")
+D("ita-358", "Ortografia", 2, "Indicare il plurale di \"manoscritto\":",
+  "manoscritti", ["maniscritto", "maniscritti", "manoscritte"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 103: la risposta esatta è «manoscritti».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 103", "italiano.txt", "Indicare il plurale di \"manoscritto\":")
+D("ita-359", "Sintassi", 2, "Completare la frase \"L'esame………..sostenuto ieri\":",
+  "è stato", ["ha stato", "ha avuto", "sarà"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 120: la risposta esatta è «è stato».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 120", "italiano.txt", "Completare la frase \"L'esame………..sostenuto ieri\":")
+D("ita-360", "Morfologia", 2, "Indicare in quale delle seguenti frasi vi è una congiunzione coordinante avversativa:",
+  "non vuole ma non si oppone", ["fa sempre come vuole lui", "non viene né telefona", "venne quando poté"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 135: la risposta esatta è «non vuole ma non si oppone».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 135", "italiano.txt", "Indicare in quale delle seguenti frasi vi è una congiunzione coordinante avversativa:")
+D("ita-361", "Morfologia", 2, "Indicare tra i seguenti il nome collettivo:",
+  "fogliame", ["pirata", "penisola", "pecore"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 149: la risposta esatta è «fogliame».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 149", "italiano.txt", "Indicare tra i seguenti il nome collettivo:")
+D("ita-362", "Ortografia", 2, "Individuare l'errore:",
+  "un'articolo", ["un uomo", "un'attività", "un'anima"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 164: la risposta esatta è «un'articolo».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 164", "italiano.txt", "Individuare l'errore:")
+D("ita-363", "Ortografia", 2, "Quale delle seguenti proposizione presenta un errore?",
+  "Laura pensa sempre a sé.", ["Ognuno pensi per sé.", "Se ne andò.", "Quel negozio ha tanti bellissimi aspirapolvere."],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 178: la risposta esatta è «Laura pensa sempre a sé.».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 178", "italiano.txt", "Quale delle seguenti proposizione presenta un errore?")
+D("ita-364", "Ortografia", 2, "Qual è il modo corretto di dividere in sillabe la parola \"córrere\"?",
+  "cór-re-re", ["có-rre-re", "cór-rer-e", "cór-rere"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 214: la risposta esatta è «cór-re-re».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 214", "italiano.txt", "Qual è il modo corretto di dividere in sillabe la parola \"córrere\"?")
+D("ita-365", "Sintassi", 2, "Completare correttamente la frase \"Quando è partito questa mattina, Giovanni ha detto che…..non appena gli fosse stato possibile\" con il tempo e il modo richiesti dalla proposizione reggente:",
+  "sarebbe rientrato", ["rientrò", "rientra", "avrebbe rientrato"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 230: la risposta esatta è «sarebbe rientrato».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 230", "italiano.txt", "Completare correttamente la frase \"Quando è partito questa mattina, Giovanni ha detto che…..non appena gli fosse stato possibile\" con il tempo e il modo richiesti dalla proposizione reggente:")
+D("ita-366", "Lessico", 2, "Secondo un modo di dire della lingua italiana ha \"il coltello dalla parte del manico\" chi…",
+  "è in una posizione di forza, decisamente favorevole", ["si attacca con un'insistenza inopportuna e molesta", "non vede l'evidenza", "consegue due risultati con una sola azione"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 244: la risposta esatta è «è in una posizione di forza, decisamente favorevole».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 244", "italiano.txt", "Secondo un modo di dire della lingua italiana ha \"il coltello dalla parte del manico\" chi…")
+D("ita-367", "Verbi", 2, "Nella frase \"In quel momento non potevo prometterti niente\" il verbo \"potere\" ha funzione…",
+  "servile", ["ausiliare", "fraseologica", "copulativa"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 258: la risposta esatta è «servile».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 258", "italiano.txt", "Nella frase \"In quel momento non potevo prometterti niente\" il verbo \"potere\" ha funzione…")
+D("ita-368", "Sintassi", 2, "Nell'espressione \"Chiesi a mia figlia come si trovasse in un Paese di cui non conosceva la lingua\" la proposizione \"come si trovasse in un Paese\" è…",
+  "subordinata di 1° grado", ["coordinata alla principale", "principale", "subordinata di 2° grado"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 273: la risposta esatta è «subordinata di 1° grado».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 273", "italiano.txt", "Nell'espressione \"Chiesi a mia figlia come si trovasse in un Paese di cui non conosceva la lingua\" la proposizione \"come si trovasse in un Paese\" è…")
+D("ita-369", "Sintassi", 2, "Completare con un aggettivo indefinito la frase \"Ogni tanto in tram si trovano … persone molto maleducate\".",
+  "certe", ["quelle", "tali", "codeste"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 287: la risposta esatta è «certe».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 287", "italiano.txt", "Completare con un aggettivo indefinito la frase \"Ogni tanto in tram si trovano … persone molto maleducate\".")
+D("ita-370", "Sintassi", 2, "Nella frase \"In Italia si mangia bene\" la particella \"si\" è un pronome…",
+  "impersonale", ["personale", "riflessivo", "reciproco"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 301: la risposta esatta è «impersonale».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 301", "italiano.txt", "Nella frase \"In Italia si mangia bene\" la particella \"si\" è un pronome…")
+D("ita-371", "Sintassi", 2, "Sostituire l'aggettivo \"brutto\" con uno più appropriato nella frase \"Per come sono andate le cose, è un brutto inizio\".",
+  "preoccupante", ["inopportuno", "pacifico", "aggressivo"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 315: la risposta esatta è «preoccupante».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 315", "italiano.txt", "Sostituire l'aggettivo \"brutto\" con uno più appropriato nella frase \"Per come sono andate le cose, è un brutto inizio\".")
+D("ita-372", "Sintassi", 2, "Nella frase \"Giovanni ci rimase male, perché aveva cercato di soddisfarvi\" la locuzione \"perché\" assume funzione di congiunzione…",
+  "subordinante causale", ["subordinante finale", "subordinante consecutiva", "locuzione prepositiva"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 329: la risposta esatta è «subordinante causale».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 329", "italiano.txt", "Nella frase \"Giovanni ci rimase male, perché aveva cercato di soddisfarvi\" la locuzione \"perché\" assume funzione di congiunzione…")
+D("ita-373", "Morfologia", 2, "L'aggettivo determinativo \"quello\" indica esseri o cose …",
+  "lontani da chi parla e da chi ascolta", ["con la stessa identità", "vicini a chi parla", "vicini a chi ascolta"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 343: la risposta esatta è «lontani da chi parla e da chi ascolta».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 343", "italiano.txt", "L'aggettivo determinativo \"quello\" indica esseri o cose …")
+D("ita-374", "Verbi", 2, "I nomi composti da una forma verbale e da un sostantivo singolare femminile formano in genere il plurale cambiando la desinenza…",
+  "di nessuno dei due elementi", ["del secondo elemento", "del primo elemento", "di entrambi gli elementi"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 358: la risposta esatta è «di nessuno dei due elementi».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 358", "italiano.txt", "I nomi composti da una forma verbale e da un sostantivo singolare femminile formano in genere il plurale cambiando la desinenza…")
+D("ita-375", "Verbi", 2, "Nella frase \"Permesso, posso entrare?\" il verbo \"potere\" ha funzione…",
+  "servile", ["ausiliare", "predicativa", "fraseologica"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 374: la risposta esatta è «servile».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 374", "italiano.txt", "Nella frase \"Permesso, posso entrare?\" il verbo \"potere\" ha funzione…")
+D("ita-376", "Verbi", 2, "Nella frase \"Non si guardano neppure in faccia\" il verbo riflessivo è…",
+  "reciproco", ["proprio", "apparente", "intransitivo"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 388: la risposta esatta è «reciproco».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 388", "italiano.txt", "Nella frase \"Non si guardano neppure in faccia\" il verbo riflessivo è…")
+D("ita-377", "Lessico", 2, "Trovare un sinonimo comune per: bozza e piccola.",
+  "Minuta", ["Bolla", "Grossa", "Stampa"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 402: la risposta esatta è «Minuta».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 402", "italiano.txt", "Trovare un sinonimo comune per: bozza e piccola.")
+D("ita-378", "Sintassi", 2, "Quale delle seguenti frasi contiene un complemento di causa efficiente?",
+  "L'uomo rimase stordito dal colpo ricevuto", ["È un bellissimo romanzo", "Potete uscire per la ricreazione, ad eccezione di chi deve finire il compito", "Mi piace il calore dell'estate"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 417: la risposta esatta è «L'uomo rimase stordito dal colpo ricevuto».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 417", "italiano.txt", "Quale delle seguenti frasi contiene un complemento di causa efficiente?")
+D("ita-379", "Lessico", 2, "Vetro è un termine…",
+  "primitivo", ["derivato", "alterato", "difettivo"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 431: la risposta esatta è «primitivo».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 431", "italiano.txt", "Vetro è un termine…")
+D("ita-380", "Verbi", 2, "Nella frase \"Dopo aver raccontato la sua brutta esperienza ed il pericolo corso, Piero si mise a piangere\" il verbo \"mettersi\" ha funzione…",
+  "fraseologica", ["ausiliare", "copulativa", "servile"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 445: la risposta esatta è «fraseologica».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 445", "italiano.txt", "Nella frase \"Dopo aver raccontato la sua brutta esperienza ed il pericolo corso, Piero si mise a piangere\" il verbo \"mettersi\" ha funzione…")
+D("ita-381", "Lessico", 2, "Quale tra le seguenti coppie di sostantivi presenta un falso cambiamento di genere?",
+  "Cavalletto – cavalletta", ["Contadino – contadina", "Cameriere – cameriera", "Cugino – cugina"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 459: la risposta esatta è «Cavalletto – cavalletta».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 459", "italiano.txt", "Quale tra le seguenti coppie di sostantivi presenta un falso cambiamento di genere?")
+D("ita-382", "Sintassi", 2, "Si completi la seguente affermazione scegliendo la risposta corretta: le proposizioni subordinate relative o attributive sono quelle che…",
+  "hanno funzione analoga a quella di un'apposizione nelle frasi semplici.", ["esprimono la causa di quanto detto nella reggente.", "esprimono la condizione affinché si verifichi quanto detto nella reggente.", "hanno una protasi e una apodosi."],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 473: la risposta esatta è «hanno funzione analoga a quella di un'apposizione nelle frasi semplici.».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 473", "italiano.txt", "Si completi la seguente affermazione scegliendo la risposta corretta: le proposizioni subordinate relative o attributive sono quelle che…")
+D("ita-383", "Sintassi", 2, "Completare con un aggettivo dimostrativo la frase \"Ti ricordi …volta che abbiamo perso il treno: quanto abbiamo riso!\".",
+  "quella", ["questa", "codesta", "una"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 487: la risposta esatta è «quella».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 487", "italiano.txt", "Completare con un aggettivo dimostrativo la frase \"Ti ricordi …volta che abbiamo perso il treno: quanto abbiamo riso!\".")
+D("ita-384", "Ortografia", 2, "I nomi maschili che al singolare terminano in -co e in -go, se hanno accentuazione piana, in genere formano il plurale in…",
+  "chi, ghi", ["ci, gi", "ce, ge", "che, ghe"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 502: la risposta esatta è «chi, ghi».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 502", "italiano.txt", "I nomi maschili che al singolare terminano in -co e in -go, se hanno accentuazione piana, in genere formano il plurale in…")
+D("ita-385", "Verbi", 2, "Sostituire il verbo \"dare\" con uno più appropriato nella frase \"L'incasso della festa è stato dato all'ospedale\".",
+  "devoluto", ["portato", "conferito", "trasmesso"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 516: la risposta esatta è «devoluto».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 516", "italiano.txt", "Sostituire il verbo \"dare\" con uno più appropriato nella frase \"L'incasso della festa è stato dato all'ospedale\".")
+D("ita-386", "Sintassi", 2, "Sostituire l'aggettivo \"brillante\" con uno più appropriato nella frase \"E' un giovane molto brillante\".",
+  "arguto", ["accigliato", "spontaneo", "elegante"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 531: la risposta esatta è «arguto».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 531", "italiano.txt", "Sostituire l'aggettivo \"brillante\" con uno più appropriato nella frase \"E' un giovane molto brillante\".")
+D("ita-387", "Verbi", 2, "Il futuro anteriore del verbo \"elìdere\" è…",
+  "io avrò eliso", ["io avessi eliso", "io elidessi", "io avrei eliso"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 545: la risposta esatta è «io avrò eliso».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 545", "italiano.txt", "Il futuro anteriore del verbo \"elìdere\" è…")
+D("ita-388", "Sintassi", 2, "Trasformare in concessiva esplicita la frase \"Pur essendo arrivati tutti, la riunione non potrà iniziare\".",
+  "Malgrado siano tutti arrivati, la riunione non potrà iniziare\"", ["Sono tutti arrivati ma la riunione non potrà iniziare\"", "Nonostante l'arrivo di tutti, la riunione non potrà iniziare", "Sono tutti arrivati ma la riunione non può iniziare"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 559: la risposta esatta è «Malgrado siano tutti arrivati, la riunione non potrà iniziare\"».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 559", "italiano.txt", "Trasformare in concessiva esplicita la frase \"Pur essendo arrivati tutti, la riunione non potrà iniziare\".")
+D("ita-389", "Lessico", 2, "Nel linguaggio comune si usa dire che una persona \"aspetta la manna dal cielo\" per intendere che…",
+  "resta inerte, inoperosa, aspettando la buona fortuna o l'iniziativa altrui", ["si trova di fronte a una realtà inaspettata", "si trova di fronte a qualcuno capace di tenere testa alla prepotenza o alle maggiori capacità", "particolare"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 573: la risposta esatta è «resta inerte, inoperosa, aspettando la buona fortuna o l'iniziativa altrui».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 573", "italiano.txt", "Nel linguaggio comune si usa dire che una persona \"aspetta la manna dal cielo\" per intendere che…")
+D("ita-390", "Sintassi", 2, "Sostituire l'aggettivo \"cattivo\" con uno più appropriato nella frase \"Porto cattive notizie\".",
+  "spiacevoli", ["nocivo", "povere", "meschine"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 587: la risposta esatta è «spiacevoli».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 587", "italiano.txt", "Sostituire l'aggettivo \"cattivo\" con uno più appropriato nella frase \"Porto cattive notizie\".")
+D("ita-391", "Lessico", 2, "Il prefissoide \"acro-\" indica…",
+  "alto, posto all'estremità", ["piccolo", "oscuro, misterioso", "che si oppone a qualcosa"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 601: la risposta esatta è «alto, posto all'estremità».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 601", "italiano.txt", "Il prefissoide \"acro-\" indica…")
+D("ita-392", "Sintassi", 2, "Inserire la particella pronominale nella frase \"E' un argomento triste per lui, non …parlare\"",
+  "gliene", ["ce ne", "lo ne", "ce lo"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 616: la risposta esatta è «gliene».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 616", "italiano.txt", "Inserire la particella pronominale nella frase \"E' un argomento triste per lui, non …parlare\"")
+D("ita-393", "Sintassi", 2, "Nell'espressione \"Mentre tu guardi la TV, vado da Franca per restituirle i pattini che mi ha prestato perché potessi partecipare alla gara\" la proposizione \"perché potessi partecipare alla gara\" è…",
+  "subordinata di 3° grado", ["subordinata di 1° grado", "subordinata di 2° grado oggettiva esplicita", "subordinata di 2°grado relativa oggettiva"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 630: la risposta esatta è «subordinata di 3° grado».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 630", "italiano.txt", "Nell'espressione \"Mentre tu guardi la TV, vado da Franca per restituirle i pattini che mi ha prestato perché potessi partecipare alla gara\" la proposizione \"perché potessi partecipare alla gara\" è…")
+D("ita-394", "Lessico", 2, "Non può assumere lo stesso significato degli altri tre il termine…",
+  "cantina", ["lucernario", "abbaino", "soffitta"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 644: la risposta esatta è «cantina».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 644", "italiano.txt", "Non può assumere lo stesso significato degli altri tre il termine…")
+D("ita-395", "Sintassi", 2, "Completare con un aggettivo dimostrativo la frase \"… parole sono molto efficaci\".",
+  "queste", ["le sue", "alcune tue", "altre"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 659: la risposta esatta è «queste».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 659", "italiano.txt", "Completare con un aggettivo dimostrativo la frase \"… parole sono molto efficaci\".")
+D("ita-396", "Morfologia", 2, "Quale tra le seguenti parole perde la \"i\" al plurale?",
+  "spiaggia", ["farmacia", "bugia", "battigia"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 673: la risposta esatta è «spiaggia».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 673", "italiano.txt", "Quale tra le seguenti parole perde la \"i\" al plurale?")
+D("ita-397", "Sintassi", 2, "Che funzione ha la particella \"vi\" nella frase \"Vi offrirò un pranzo per ringraziarvi dell'interessamento\"?",
+  "Complemento di termine", ["Avverbio di luogo", "Complemento oggetto", "Articolo"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 687: la risposta esatta è «Complemento di termine».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 687", "italiano.txt", "Che funzione ha la particella \"vi\" nella frase \"Vi offrirò un pranzo per ringraziarvi dell'interessamento\"?")
+D("ita-398", "Sintassi", 2, "Completare con una proposizione coordinata avversativa la frase\"Era rimasto male per il comportamento di Luca,…\"",
+  "tuttavia lo perdonò", ["e gli tolse il saluto", "come se l'avesse schiaffeggiato", "infatti lo aveva offeso"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 703: la risposta esatta è «tuttavia lo perdonò».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 703", "italiano.txt", "Completare con una proposizione coordinata avversativa la frase\"Era rimasto male per il comportamento di Luca,…\"")
+D("ita-399", "Sintassi", 2, "Trasformare in esplicita la proposizione \"I primi giorni dopo aver smesso di fumare rappresentano il periodo più difficile\".",
+  "I primi giorni dopo che si è smesso di fumare rappresentano il periodo più difficile", ["I primi giorni dopo lo smettere di fumare rappresentano il periodo più difficile", "Una volta smesso di fumare, i primi giorni rappresentano il periodo più difficile", "I primi giorni dopo smesso di fumare rappresentano il periodo più difficile"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 717: la risposta esatta è «I primi giorni dopo che si è smesso di fumare rappresentano il periodo più difficile».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 717", "italiano.txt", "Trasformare in esplicita la proposizione \"I primi giorni dopo aver smesso di fumare rappresentano il periodo più difficile\".")
+D("ita-400", "Sintassi", 2, "Quale dei seguenti periodi contiene una proposizione subordinata avversativa?",
+  "Credi di avere ragione, mentre invece hai torto", ["Vado a casa perché ho una fame da lupo", "Come pensavo, oggi non c'è il mercato", "Con questo caldo è difficile uscire presto"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 731: la risposta esatta è «Credi di avere ragione, mentre invece hai torto».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 731", "italiano.txt", "Quale dei seguenti periodi contiene una proposizione subordinata avversativa?")
+D("ita-401", "Sintassi", 2, "Nella frase \"Non importa dove hai perso le chiavi, provvedi subito a sostituire la serratura attuale con una di sicurezza \" che funzione logica svolge l'espressione \"di sicurezza\"?",
+  "Complemento di fine o scopo", ["Complemento di specificazione", "Complemento di mezzo", "Complemento di modo"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 745: la risposta esatta è «Complemento di fine o scopo».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 745", "italiano.txt", "Nella frase \"Non importa dove hai perso le chiavi, provvedi subito a sostituire la serratura attuale con una di sicurezza \" che funzione logica svolge l'espressione \"di sicurezza\"?")
+D("ita-402", "Sintassi", 2, "Nella frase \"Meno male che c'è la luce del lampione\" troviamo un complemento...",
+  "di specificazione", ["di mezzo", "di causa efficiente", "di materia"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 773: la risposta esatta è «di specificazione».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 773", "italiano.txt", "Nella frase \"Meno male che c'è la luce del lampione\" troviamo un complemento...")
+D("ita-403", "Lessico", 2, "Tra le seguenti coppie di sostantivi quale non è legata da una relazione di derivazione né di alterazione?",
+  "Tifo-tifone", ["Casa–casetta", "Scena–scenetta", "Maglia–maglione"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 788: la risposta esatta è «Tifo-tifone».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 788", "italiano.txt", "Tra le seguenti coppie di sostantivi quale non è legata da una relazione di derivazione né di alterazione?")
+D("ita-404", "Sintassi", 2, "Nell'espressione \"Ho telefonato a Mariella per salutarla e invitarla allo spettacolo che si terrà sabato al solito teatro, ma ho dovuto lasciarle un messaggio perché non era in casa.\" la proposizione \"e invitarla allo spettacolo\" è…",
+  "coordinata alla subordinata di 1° grado implicita", ["subordinata di 1° grado implicita", "subordinata di 2° grado", "coordinata alla principale"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 803: la risposta esatta è «coordinata alla subordinata di 1° grado implicita».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 803", "italiano.txt", "Nell'espressione \"Ho telefonato a Mariella per salutarla e invitarla allo spettacolo che si terrà sabato al solito teatro, ma ho dovuto lasciarle un messaggio perché non era in casa.\" la proposizione \"e invitarla allo spettacolo\" è…")
+D("ita-405", "Morfologia", 2, "È un aggettivo indefinito che varia sia nel genere che nel numero…",
+  "parecchio", ["qualche", "ciascuno", "qualsiasi"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 818: la risposta esatta è «parecchio».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 818", "italiano.txt", "È un aggettivo indefinito che varia sia nel genere che nel numero…")
+D("ita-406", "Sintassi", 2, "Completare con una proposizione temporale la frase \"Me ne sono andato via …\".",
+  "dopo avere salutato tutti i presenti", ["come ogni volta che sento quei discorsi", "sebbene avessi deciso di restare fino alla fine", "per non prendere la pioggia"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 832: la risposta esatta è «dopo avere salutato tutti i presenti».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 832", "italiano.txt", "Completare con una proposizione temporale la frase \"Me ne sono andato via …\".")
+D("ita-407", "Verbi", 2, "Nella frase \"Perché non ti prepari una tisana?\" il verbo riflessivo è…",
+  "apparente", ["reciproco", "intransitivo", "proprio"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 846: la risposta esatta è «apparente».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 846", "italiano.txt", "Nella frase \"Perché non ti prepari una tisana?\" il verbo riflessivo è…")
+D("ita-408", "Verbi", 2, "Sostituire il verbo \"dire\" con uno più appropriato nella frase \"Finalmente Carlo ci ha detto il motivo della sua reazione\".",
+  "spiegato", ["mostrato", "inserito", "procurato"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 860: la risposta esatta è «spiegato».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 860", "italiano.txt", "Sostituire il verbo \"dire\" con uno più appropriato nella frase \"Finalmente Carlo ci ha detto il motivo della sua reazione\".")
+D("ita-409", "Sintassi", 2, "Completare la frase \"Mentre Marco giocava a pallone ____arrivò un calcio negli stinchi\".",
+  "gli", ["le", "loro", "gliene"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 874: la risposta esatta è «gli».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 874", "italiano.txt", "Completare la frase \"Mentre Marco giocava a pallone ____arrivò un calcio negli stinchi\".")
+D("ita-410", "Morfologia", 2, "Indicare il nome collettivo appropriato che indica un insieme di alberi:",
+  "bosco", ["abeti", "fogliame", "larici"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 889: la risposta esatta è «bosco».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 889", "italiano.txt", "Indicare il nome collettivo appropriato che indica un insieme di alberi:")
+D("ita-411", "Morfologia", 2, "Indicare tra i seguenti il nome difettivo:",
+  "pazienza", ["alfabeto", "casa", "cadavere"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 903: la risposta esatta è «pazienza».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 903", "italiano.txt", "Indicare tra i seguenti il nome difettivo:")
+D("ita-412", "Sintassi", 2, "Completare la frase \" Michelangelo è morto ____ novant'anni\":",
+  "a", ["dal", "per", "con"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 917: la risposta esatta è «a».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 917", "italiano.txt", "Completare la frase \" Michelangelo è morto ____ novant'anni\":")
+D("ita-413", "Lessico", 2, "Indicare il significato di \"di cui\" nella frase \"Le persone di cui ci siamo fidati ci hanno ingannati.\"",
+  "delle quali", ["della quale", "dalle quali", "del quale"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 931: la risposta esatta è «delle quali».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 931", "italiano.txt", "Indicare il significato di \"di cui\" nella frase \"Le persone di cui ci siamo fidati ci hanno ingannati.\"")
+D("ita-414", "Lessico", 2, "Indicare un sinonimo di \"Acquistare\":",
+  "comprare", ["mangiare", "apprendere", "indicare"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 946: la risposta esatta è «comprare».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 946", "italiano.txt", "Indicare un sinonimo di \"Acquistare\":")
+D("ita-415", "Lessico", 2, "Indicare un contrario di \"minimo\":",
+  "massimo", ["basso", "alto", "minore"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 960: la risposta esatta è «massimo».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 960", "italiano.txt", "Indicare un contrario di \"minimo\":")
+D("ita-416", "Verbi", 2, "La III persona singolare dell'imperfetto congiuntivo del verbo sapere è:",
+  "sapesse", ["sappia", "abbia saputo", "sapessi"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 974: la risposta esatta è «sapesse».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 974", "italiano.txt", "La III persona singolare dell'imperfetto congiuntivo del verbo sapere è:")
+D("ita-417", "Sintassi", 2, "Completare la frase \"È necessario che gli studenti ____in orario in modo che _____assistere a tutta la lezione.\":",
+  "arrivino, possano", ["possano, arrivino", "arrivano, possano", "arriverà, potevano"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 988: la risposta esatta è «arrivino, possano».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 988", "italiano.txt", "Completare la frase \"È necessario che gli studenti ____in orario in modo che _____assistere a tutta la lezione.\":")
+D("ita-418", "Sintassi", 2, "\"Correvano verso la stazione per non perdere il treno.\" In questa frase \"correvano\" è:",
+  "predicato verbale", ["predicato nominale", "complemento di modo", "copula"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1002: la risposta esatta è «predicato verbale».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1002", "italiano.txt", "\"Correvano verso la stazione per non perdere il treno.\" In questa frase \"correvano\" è:")
+D("ita-419", "Sintassi", 2, "\"Sono tante le persone che mi hanno consigliato.\" In questa frase \"mi\" è:",
+  "complemento di termine", ["complemento oggetto", "predicato verbale", "soggetto"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1016: la risposta esatta è «complemento di termine».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1016", "italiano.txt", "\"Sono tante le persone che mi hanno consigliato.\" In questa frase \"mi\" è:")
+D("ita-420", "Sintassi", 2, "\"Sono stati raggiunti da Giuseppe in montagna.\" In questa frase il predicato è costituito da:",
+  "un verbo transitivo in forma passiva", ["un verbo intransitivo", "un verbo transitivo in forma attiva", "un verbo ausiliare"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1031: la risposta esatta è «un verbo transitivo in forma passiva».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1031", "italiano.txt", "\"Sono stati raggiunti da Giuseppe in montagna.\" In questa frase il predicato è costituito da:")
+D("ita-421", "Sintassi", 2, "\"Carlo sta studiando tantissimo, con l'obiettivo di prendere un bel voto.\" In questa frase è contenuta una proposizione:",
+  "finale", ["temporale", "relativa", "causale"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1050: la risposta esatta è «finale».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1050", "italiano.txt", "\"Carlo sta studiando tantissimo, con l'obiettivo di prendere un bel voto.\" In questa frase è contenuta una proposizione:")
+D("ita-422", "Verbi", 2, "Indicare il gerundio passato del verbo rodere:",
+  "avendo roso", ["rodendo", "roso", "rodente"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1064: la risposta esatta è «avendo roso».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1064", "italiano.txt", "Indicare il gerundio passato del verbo rodere:")
+D("ita-423", "Ortografia", 2, "Individuare l'errore:",
+  "un'ospite", ["un uccello", "gli Spagnoli", "Francesi"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1078: la risposta esatta è «un'ospite».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1078", "italiano.txt", "Individuare l'errore:")
+D("ita-424", "Morfologia", 2, "Quale tra le seguenti congiunzioni non è avversativa?",
+  "dunque", ["Anzi", "invece", "ma"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1126: la risposta esatta è «dunque».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1126", "italiano.txt", "Quale tra le seguenti congiunzioni non è avversativa?")
+D("ita-425", "Sintassi", 2, "Completare con il pronome personale adatto la frase \"Volete questi dischi?... presto volentieri.\" :",
+  "ve li", ["me lo", "te li", "me li"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1140: la risposta esatta è «ve li».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1140", "italiano.txt", "Completare con il pronome personale adatto la frase \"Volete questi dischi?... presto volentieri.\" :")
+D("ita-426", "Sintassi", 2, "La frase \"I padroni pagano il salario agli operai\" contiene un complemento:",
+  "di termine", ["di luogo", "di modo", "di tempo"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1163: la risposta esatta è «di termine».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1163", "italiano.txt", "La frase \"I padroni pagano il salario agli operai\" contiene un complemento:")
+D("ita-427", "Sintassi", 2, "Nella frase \"Fu morso da un piccolo cane di razza\" l'attributo è:",
+  "piccolo", ["morso", "cane", "razza"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1177: la risposta esatta è «piccolo».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1177", "italiano.txt", "Nella frase \"Fu morso da un piccolo cane di razza\" l'attributo è:")
+D("ita-428", "Sintassi", 2, "Nella frase \" La casa fu demolita dal terremoto di ieri\" il predicato nominale è:",
+  "la frase non ha il predicato nominale", ["fu", "fu demolita", "demolita"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1191: la risposta esatta è «la frase non ha il predicato nominale».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1191", "italiano.txt", "Nella frase \" La casa fu demolita dal terremoto di ieri\" il predicato nominale è:")
+D("ita-429", "Sintassi", 2, "Completare la frase \"La casa … abito è in collina\":",
+  "dove", ["di dove", "per dove", "da dove"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1205: la risposta esatta è «dove».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1205", "italiano.txt", "Completare la frase \"La casa … abito è in collina\":")
+D("ita-430", "Lessico", 2, "Quale tra le seguenti parole ha lo stesso significato di \"bollita\" e \"innamoramento\"?",
+  "Cotta", ["Infinita", "Tempesta", "Calda"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1241: la risposta esatta è «Cotta».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1241", "italiano.txt", "Quale tra le seguenti parole ha lo stesso significato di \"bollita\" e \"innamoramento\"?")
+D("ita-431", "Sintassi", 2, "Completare la frase \"... che… in Francia? \"",
+  "Sapevate; sono nato", ["Sapevo; sono nato", "Sapevate; nascevo", "Sapreste; nascevo"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1255: la risposta esatta è «Sapevate; sono nato».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1255", "italiano.txt", "Completare la frase \"... che… in Francia? \"")
+D("ita-432", "Sintassi", 2, "Completare la frase \"Si preoccupano se non … a casa. \"",
+  "telefono", ["telefonavo", "telefonassi", "telefonerei"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1269: la risposta esatta è «telefono».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1269", "italiano.txt", "Completare la frase \"Si preoccupano se non … a casa. \"")
+D("ita-433", "Sintassi", 2, "Completare con la forma riflessiva corretta la frase \"Dopo aver lavorato, Luca … le mani\":",
+  "si era lavato", ["mi aveva lavato", "si aveva lavato", "ci aveva lavato"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1284: la risposta esatta è «si era lavato».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1284", "italiano.txt", "Completare con la forma riflessiva corretta la frase \"Dopo aver lavorato, Luca … le mani\":")
+D("ita-434", "Sintassi", 2, "Completare con la forma riflessiva corretta la frase \"Anna … lentamente alla madre.\"",
+  "si era avvicinata", ["vi avrei avvicinato", "ti avrebbe avvicinato", "mi avrebbe avvicinato"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1298: la risposta esatta è «si era avvicinata».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1298", "italiano.txt", "Completare con la forma riflessiva corretta la frase \"Anna … lentamente alla madre.\"")
+D("ita-435", "Sintassi", 2, "Completare la frase \"Se è vero che ieri gli … sicuramente oggi lui ti richiamerà.\"",
+  "hai telefonato", ["Avresti telefonato", "telefonerai", "telefoneresti"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1312: la risposta esatta è «hai telefonato».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1312", "italiano.txt", "Completare la frase \"Se è vero che ieri gli … sicuramente oggi lui ti richiamerà.\"")
+D("ita-436", "Lessico", 2, "Individuare quale tra i seguenti termini è il contrario di \"gracile\".",
+  "Robusto", ["Riconoscente", "Abbondante", "Ristretto"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1326: la risposta esatta è «Robusto».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1326", "italiano.txt", "Individuare quale tra i seguenti termini è il contrario di \"gracile\".")
+D("ita-437", "Ortografia", 2, "Individuare il termine scritto in modo errato.",
+  "Freccie", ["Camice", "Marce", "Frange"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1341: la risposta esatta è «Freccie».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1341", "italiano.txt", "Individuare il termine scritto in modo errato.")
+D("ita-438", "Lessico", 2, "Il contrario di \"mozzare \"è:",
+  "congiungere", ["rompere", "stroncare", "stabilire"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1356: la risposta esatta è «congiungere».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1356", "italiano.txt", "Il contrario di \"mozzare \"è:")
+D("ita-439", "Verbi", 2, "La prima persona singolare del passato remoto del verbo \"elidere\" è:",
+  "elisi", ["elisei", "elidi", "eliddi"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1371: la risposta esatta è «elisi».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1371", "italiano.txt", "La prima persona singolare del passato remoto del verbo \"elidere\" è:")
+D("ita-440", "Sintassi", 2, "Completare con la forma riflessiva corretta la frase \"I fratelli … abbracciarono.\"",
+  "si", ["mi", "vi", "ti"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1386: la risposta esatta è «si».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1386", "italiano.txt", "Completare con la forma riflessiva corretta la frase \"I fratelli … abbracciarono.\"")
+D("ita-441", "Sintassi", 2, "Completare la frase \"Se facesse del bel tempo loro … subito a sciare.\"",
+  "Andrebbero", ["Andrà", "Andassero", "Andremo"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1400: la risposta esatta è «Andrebbero».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1400", "italiano.txt", "Completare la frase \"Se facesse del bel tempo loro … subito a sciare.\"")
+D("ita-442", "Ortografia", 2, "Individuare il termine che NON è scritto correttamente.",
+  "Acredito", ["Avallare", "Assediare", "Arrosto"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1414: la risposta esatta è «Acredito».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1414", "italiano.txt", "Individuare il termine che NON è scritto correttamente.")
+D("ita-443", "Sintassi", 2, "Quale subordinata contiene la proposizione: \"Il nostro ospite giunto tre giorni fa è appena ripartito\"?",
+  "Relativa.", ["Oggettiva.", "Interrogativa indiretta.", "Finale."],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1430: la risposta esatta è «Relativa.».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1430", "italiano.txt", "Quale subordinata contiene la proposizione: \"Il nostro ospite giunto tre giorni fa è appena ripartito\"?")
+D("ita-444", "Punteggiatura", 2, "Dal punto di vista grammaticale, quale tra le seguenti frasi proposte è corretta?",
+  "L'analisi micro e macroeconomica non dà risultati incoraggianti", ["La propenzione al risparmio degli italiani è in calo", "Il peggio si raggiunge sul versante delli investimenti", "L'atitudine al consumo non cresce"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1444: la risposta esatta è «L'analisi micro e macroeconomica non dà risultati incoraggianti».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1444", "italiano.txt", "Dal punto di vista grammaticale, quale tra le seguenti frasi proposte è corretta?")
+D("ita-445", "Sintassi", 2, "Nella frase \"Mimmo tornò a Milano, subito dopo aver lasciato la Francia\" il periodo \"subito dopo aver lasciato la Francia\" che tipo di proposizione subordinata è?",
+  "Temporale", ["Dichiarativa", "Interrogativa indiretta", "Soggettiva"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1459: la risposta esatta è «Temporale».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1459", "italiano.txt", "Nella frase \"Mimmo tornò a Milano, subito dopo aver lasciato la Francia\" il periodo \"subito dopo aver lasciato la Francia\" che tipo di proposizione subordinata è?")
+D("ita-446", "Morfologia", 2, "Indicare quale dei seguenti nomi, posti al femminile, è errato:",
+  "pittora", ["impostora", "scrittrice", "avvocatessa"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1490: la risposta esatta è «pittora».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1490", "italiano.txt", "Indicare quale dei seguenti nomi, posti al femminile, è errato:")
+D("ita-447", "Morfologia", 2, "Indicare quale dei seguenti aggettivi non è qualificativo:",
+  "questo", ["triangolare", "spazioso", "blu"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1505: la risposta esatta è «questo».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1505", "italiano.txt", "Indicare quale dei seguenti aggettivi non è qualificativo:")
+D("ita-448", "Lessico", 2, "Paolo pensa di…..sempre ragione:",
+  "avere", ["avete", "abbia", "essere"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1520: la risposta esatta è «avere».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1520", "italiano.txt", "Paolo pensa di…..sempre ragione:")
+D("ita-449", "Ortografia", 2, "Indicare la frase scritta correttamente:",
+  "parlammo ancora a lungo e lui, quando se ne andò, mi salutò con calore", ["parlammo, ancora, a lungo, e lui, quando, se ne andò, mi salutò con calore", "parlammo ancora a lungo e lui, quando, se, ne andò, mi, salutò con calore", "parlammo ancora, a, lungo e lui, quando se ne andò, mi salutò con calore"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1534: la risposta esatta è «parlammo ancora a lungo e lui, quando se ne andò, mi salutò con calore».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1534", "italiano.txt", "Indicare la frase scritta correttamente:")
+D("ita-450", "Lessico", 2, "Quale è fra questi un simbolo che coinvolge un senso?",
+  "Segno visivo", ["Segno naturale", "Segno effettuale", "Segno concreto"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1548: la risposta esatta è «Segno visivo».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1548", "italiano.txt", "Quale è fra questi un simbolo che coinvolge un senso?")
+D("ita-451", "Lessico", 2, "Come può essere definito un ricevente?",
+  "Decodificatore", ["Interpretatore", "Referente", "Uditore"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1562: la risposta esatta è «Decodificatore».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1562", "italiano.txt", "Come può essere definito un ricevente?")
+D("ita-452", "Lessico", 2, "La lingua in cui è formulato il messaggio di una e-mail può essere definita:",
+  "codice", ["canale", "mezzo", "referente"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1577: la risposta esatta è «codice».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1577", "italiano.txt", "La lingua in cui è formulato il messaggio di una e-mail può essere definita:")
+D("ita-453", "Lessico", 2, "I testi non letterari:",
+  "sono utilizzati per scopi legati alla vita di tutti i giorni", ["non hanno una utilità pratica", "non servono a dare informazioni", "servono ad intrattenere e a divertire"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1591: la risposta esatta è «sono utilizzati per scopi legati alla vita di tutti i giorni».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1591", "italiano.txt", "I testi non letterari:")
+D("ita-454", "Lessico", 2, "Che cos'è l'intreccio?",
+  "un racconto nel quale gli eventi sono ordinati secondo un ordine narrativo e non logico o cronologico", ["è l'insieme degli eventi narrati nel testo nella loro successione temporale", "l'elenco degli avvenimenti come si sono realmente succeduti nel tempo", "è l'ordine della storia"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1606: la risposta esatta è «un racconto nel quale gli eventi sono ordinati secondo un ordine narrativo e non logico o cronologico».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1606", "italiano.txt", "Che cos'è l'intreccio?")
+D("ita-455", "Lessico", 2, "Quale significato ha il termine essenziale?",
+  "fondamentale", ["qualità", "talentuoso", "veritiero"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1621: la risposta esatta è «fondamentale».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1621", "italiano.txt", "Quale significato ha il termine essenziale?")
+D("ita-456", "Lessico", 2, "Quale tra questi non è un sinonimo di docente?",
+  "divulgatore", ["professore", "maestro", "insegnante"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1635: la risposta esatta è «divulgatore».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1635", "italiano.txt", "Quale tra questi non è un sinonimo di docente?")
+D("ita-457", "Lessico", 2, "Uno tra questi termini non ha lo stesso significato di sommerso. Quale?",
+  "sommesso", ["immerso", "nascosto", "affondato"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1649: la risposta esatta è «sommesso».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1649", "italiano.txt", "Uno tra questi termini non ha lo stesso significato di sommerso. Quale?")
+D("ita-458", "Sintassi", 2, "Si individui la frase con il predicato nominale:",
+  "Cleopatra divenne l'amante di Cesare", ["le modelle sfilano con abiti colorati", "stava per scatenarsi una tempesta di sabbia", "all'improvviso si udirono degli strani rumori"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1665: la risposta esatta è «Cleopatra divenne l'amante di Cesare».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1665", "italiano.txt", "Si individui la frase con il predicato nominale:")
+D("ita-459", "Sintassi", 2, "Tra queste affermazioni, quale non si riferisce al predicato nominale?",
+  "esprime un'azione compiuta dal soggetto che ricade sul soggetto stesso", ["è formato dal verbo essere più un nome o un aggettivo", "si può formare anche con un verbo copulativo", "il verbo essere svolge la funzione di copula"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1679: la risposta esatta è «esprime un'azione compiuta dal soggetto che ricade sul soggetto stesso».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1679", "italiano.txt", "Tra queste affermazioni, quale non si riferisce al predicato nominale?")
+D("ita-460", "Lessico", 2, "In quale di queste frasi non è presente una apposizione:",
+  "ho cucinato anche per la mia famiglia", ["La capitale d'Italia è Roma, città ricca di storia", "quel simpaticone di tuo fratello ha combinato un nuovo danno", "sono stata nel Sahara, deserto immenso"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1693: la risposta esatta è «ho cucinato anche per la mia famiglia».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1693", "italiano.txt", "In quale di queste frasi non è presente una apposizione:")
+D("ita-461", "Sintassi", 2, "Nella frase:\" Udivamo un rullare di tamburi\" che tipo di complemento è \"un rullare\"?",
+  "complemento oggetto", ["complemento di specificazione", "complemento di termine", "complemento di modo o maniera"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1707: la risposta esatta è «complemento oggetto».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1707", "italiano.txt", "Nella frase:\" Udivamo un rullare di tamburi\" che tipo di complemento è \"un rullare\"?")
+D("ita-462", "Sintassi", 2, "Nella frase: \"Mi piace questo di te\" che tipo di complemento è \"di te\"?",
+  "complemento di specificazione", ["complemento di modo o maniera", "complemento oggetto", "complemento di termine"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1721: la risposta esatta è «complemento di specificazione».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1721", "italiano.txt", "Nella frase: \"Mi piace questo di te\" che tipo di complemento è \"di te\"?")
+D("ita-463", "Sintassi", 2, "La proposizione subordinata:",
+  "dipende da altre proposizioni", ["da sola ha senso compiuto", "può anche essere detta indipendente", "non dipende dalla principale"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1735: la risposta esatta è «dipende da altre proposizioni».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1735", "italiano.txt", "La proposizione subordinata:")
+D("ita-464", "Sintassi", 2, "Che tipo di proposizione è:\"Non verrò a scuola con te\"?",
+  "enunciativa", ["interrogativa", "dubitativa", "esclamativa"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1751: la risposta esatta è «enunciativa».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1751", "italiano.txt", "Che tipo di proposizione è:\"Non verrò a scuola con te\"?")
+D("ita-465", "Sintassi", 2, "La proposizione \"Con chi posso uscire?\" può essere definita:",
+  "dubitativa", ["interrogativa", "enunciativa", "esclamativa"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1766: la risposta esatta è «dubitativa».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1766", "italiano.txt", "La proposizione \"Con chi posso uscire?\" può essere definita:")
+D("ita-466", "Lessico", 2, "Si scelga il sinonimo di \"scialbo\" tra quelli proposti:",
+  "sbiadito", ["sgraziato", "bugiardo", "finto"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1780: la risposta esatta è «sbiadito».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1780", "italiano.txt", "Si scelga il sinonimo di \"scialbo\" tra quelli proposti:")
+D("ita-467", "Lessico", 2, "Il termine \"franco\" può avere diversi significati. Quale tra questi è sbagliato?",
+  "goffo", ["libero", "sincero", "disinvolto"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1796: la risposta esatta è «goffo».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1796", "italiano.txt", "Il termine \"franco\" può avere diversi significati. Quale tra questi è sbagliato?")
+D("ita-468", "Sintassi", 2, "Quante proposizioni subordinate compaiono nel seguente periodo: \"Prendo il motorino perché è tardi e Lucia mia aspetta da un'ora\"?",
+  "2", ["3", "1", "nessuna"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1814: la risposta esatta è «2».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1814", "italiano.txt", "Quante proposizioni subordinate compaiono nel seguente periodo: \"Prendo il motorino perché è tardi e Lucia mia aspetta da un'ora\"?")
+D("ita-469", "Morfologia", 2, "Trova, fra questi, l'articolo partitivo:",
+  "Dei, delle", ["Gli, le", "Un , una", "Degli, le"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1828: la risposta esatta è «Dei, delle».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1828", "italiano.txt", "Trova, fra questi, l'articolo partitivo:")
+D("ita-470", "Sintassi", 2, "Nella frase \" Ho mangiato del buon pane\" , che tipo di articolo troviamo?",
+  "Partitivo", ["Determinativo", "Indeterminativo", "Interrogativo"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1842: la risposta esatta è «Partitivo».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1842", "italiano.txt", "Nella frase \" Ho mangiato del buon pane\" , che tipo di articolo troviamo?")
+D("ita-471", "Lessico", 2, "La parola \"papà\" in grammatica che genere è?",
+  "Indipendente", ["Maschile", "Promiscuo", "Neutro"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1856: la risposta esatta è «Indipendente».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1856", "italiano.txt", "La parola \"papà\" in grammatica che genere è?")
+D("ita-472", "Morfologia", 2, "Quale fra questi è un nome concreto ?",
+  "Aiuola", ["Pensiero", "Sguardo", "Nessuno"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1870: la risposta esatta è «Aiuola».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1870", "italiano.txt", "Quale fra questi è un nome concreto ?")
+D("ita-473", "Morfologia", 2, "Quale fra questi nomi hanno lo stesso genere al maschile e al femminile?",
+  "Pantera", ["Gatto", "Asino", "Nessuno"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1885: la risposta esatta è «Pantera».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1885", "italiano.txt", "Quale fra questi nomi hanno lo stesso genere al maschile e al femminile?")
+D("ita-474", "Lessico", 2, "Quali fra questi suffissi sono diminutivi?",
+  "-icino, -etto, -icello", ["-etto, -uccio, -olo", "-iciattolo, -ucolo, -astro", "-astro, -etto, -olo"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1899: la risposta esatta è «-icino, -etto, -icello».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1899", "italiano.txt", "Quali fra questi suffissi sono diminutivi?")
+D("ita-475", "Lessico", 2, "Nello schema narrativo di un racconto che cos'è la situazione iniziale?",
+  "l'inizio della vicenda", ["il fatto o la situazione che stanno alla base della vicenda", "l'avvenimento che ha caratterizzato la vicenda e ne ha indirizzato lo sviluppo verso situazioni non previste nella situazione iniziale", "la conclusione della vicenda"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1913: la risposta esatta è «l'inizio della vicenda».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1913", "italiano.txt", "Nello schema narrativo di un racconto che cos'è la situazione iniziale?")
+D("ita-476", "Sintassi", 2, "Una di queste affermazioni non si riferisce all'analisi grammaticale. Quale?",
+  "scompone le sequenze in sintagmi con lo scopo di definire le loro funzioni logiche", ["scompone le sequenze in singole parole con lo scopo di classificarle secondo le nove categorie", "procedimento per riconoscere la categoria grammaticale di ogni parola in funzione del contesto nel quale è usata", "consiste nel riconoscere le varie parti del discorso"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1927: la risposta esatta è «scompone le sequenze in sintagmi con lo scopo di definire le loro funzioni logiche».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1927", "italiano.txt", "Una di queste affermazioni non si riferisce all'analisi grammaticale. Quale?")
+D("ita-477", "Lessico", 2, "Le parole dei personaggi in un racconto possono essere riferite attraverso diverse modalità. Quale di queste non esiste?",
+  "discorso analitico", ["monologo", "discorso diretto", "soliloquio"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1942: la risposta esatta è «discorso analitico».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1942", "italiano.txt", "Le parole dei personaggi in un racconto possono essere riferite attraverso diverse modalità. Quale di queste non esiste?")
+D("ita-478", "Sintassi", 2, "Quanti attributi puoi individuare nella seguente frase: \"Il piccolo Marco appartiene a una famiglia bene\"?",
+  "2", ["1", "3", "nessuno"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1956: la risposta esatta è «2».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1956", "italiano.txt", "Quanti attributi puoi individuare nella seguente frase: \"Il piccolo Marco appartiene a una famiglia bene\"?")
+D("ita-479", "Verbi", 2, "Quale tra queste voci verbali è al modo condizionale?",
+  "potrei", ["possa", "dormi!", "avevi portato"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1970: la risposta esatta è «potrei».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1970", "italiano.txt", "Quale tra queste voci verbali è al modo condizionale?")
+D("ita-480", "Verbi", 2, "Il verbo che compare nella frase: \"La balena emerge\" è:",
+  "intransitivo", ["passivo", "impersonale", "transitivo"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1984: la risposta esatta è «intransitivo».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1984", "italiano.txt", "Il verbo che compare nella frase: \"La balena emerge\" è:")
+D("ita-481", "Verbi", 2, "La voce verbale \"discussi\":",
+  "è un participio passato", ["è un participio presente", "non esiste", "è un condizionale"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 1998: la risposta esatta è «è un participio passato».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 1998", "italiano.txt", "La voce verbale \"discussi\":")
+D("ita-482", "Ortografia", 2, "La definizione \"Insieme di norme e di usi che regolano la corretta scrittura delle parole\" si riferisce a:",
+  "ortografia", ["grammatica", "coesione", "coerenza"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 2012: la risposta esatta è «ortografia».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 2012", "italiano.txt", "La definizione \"Insieme di norme e di usi che regolano la corretta scrittura delle parole\" si riferisce a:")
+D("ita-483", "Sintassi", 2, "In quale di queste frasi è presente un complemento di mezzo?",
+  "Grazie alla mia insegnante ho trovato lavoro", ["Dovete studiare in vista della maturità", "Muoio di fame", "Ho perso per colpa tua"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 2026: la risposta esatta è «Grazie alla mia insegnante ho trovato lavoro».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 2026", "italiano.txt", "In quale di queste frasi è presente un complemento di mezzo?")
+D("ita-484", "Lessico", 2, "Un testo informativo quale funzione può avere?",
+  "esporre", ["persuadere", "esprimere sentimenti", "stabilire il contatto tra emittente e destinatario"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 2040: la risposta esatta è «esporre».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 2040", "italiano.txt", "Un testo informativo quale funzione può avere?")
+D("ita-485", "Lessico", 2, "Il messaggio \"Come sei elegante!\" quale funzione ha?",
+  "espressiva", ["informativa", "poetica", "fatica"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 2054: la risposta esatta è «espressiva».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 2054", "italiano.txt", "Il messaggio \"Come sei elegante!\" quale funzione ha?")
+D("ita-486", "Sintassi", 2, "Che tipo di subordinata troviamo nella frase: \"Dimmi se hai fatto colazione\"?",
+  "interrogativa diretta", ["modale", "finale", "consecutiva"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 2069: la risposta esatta è «interrogativa diretta».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 2069", "italiano.txt", "Che tipo di subordinata troviamo nella frase: \"Dimmi se hai fatto colazione\"?")
+D("ita-487", "Sintassi", 2, "Che tipo di complemento di luogo troviamo nella frase: \"Mi ha mandato al diavolo\"?",
+  "moto a luogo", ["moto da luogo", "stato in luogo", "moto per luogo"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 2083: la risposta esatta è «moto a luogo».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 2083", "italiano.txt", "Che tipo di complemento di luogo troviamo nella frase: \"Mi ha mandato al diavolo\"?")
+D("ita-488", "Lessico", 2, "Una persona che fotografa avvenimenti per conto di giornali o agenzie è:",
+  "un fotoreporter", ["un titolista", "uno speaker", "un commentatore"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 2099: la risposta esatta è «un fotoreporter».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 2099", "italiano.txt", "Una persona che fotografa avvenimenti per conto di giornali o agenzie è:")
+D("ita-489", "Lessico", 2, "Nell'ambito giornalistico, chi è un corrispondente?",
+  "un giornalista che svolge il proprio lavoro lontano dalla redazione centrale", ["un giornalista specializzato nel fare titoli", "colui che legge le notizie", "un giornalista che lavora stabilmente negli uffici in cui si realizza un giornale"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 2113: la risposta esatta è «un giornalista che svolge il proprio lavoro lontano dalla redazione centrale».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 2113", "italiano.txt", "Nell'ambito giornalistico, chi è un corrispondente?")
+D("ita-490", "Lessico", 2, "Quale di queste coppie di termini è rispettivamente un sinonimo e un contrario di \"furbo\"?",
+  "avveduto/ingenuo", ["astuto/sagace", "ingenuo/sincero", "birbone/abile"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 2127: la risposta esatta è «avveduto/ingenuo».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 2127", "italiano.txt", "Quale di queste coppie di termini è rispettivamente un sinonimo e un contrario di \"furbo\"?")
+D("ita-491", "Morfologia", 2, "Di che tipo può essere l'aggettivo determinativo?",
+  "Dimostrativo", ["Qualificativo", "Derivato", "Di modo"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 2141: la risposta esatta è «Dimostrativo».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 2141", "italiano.txt", "Di che tipo può essere l'aggettivo determinativo?")
+D("ita-492", "Morfologia", 2, "Qual è fra questi l'aggettivo possessivo?",
+  "Mio", ["Questo", "Qualche", "Cinque"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 2155: la risposta esatta è «Mio».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 2155", "italiano.txt", "Qual è fra questi l'aggettivo possessivo?")
+D("ita-493", "Morfologia", 2, "Come si definiscono gli aggettivi con una unica forma per entrambi i generi?",
+  "Invariabili", ["Unici", "Neutri", "Maschili"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 2169: la risposta esatta è «Invariabili».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 2169", "italiano.txt", "Come si definiscono gli aggettivi con una unica forma per entrambi i generi?")
+D("ita-494", "Morfologia", 2, "Come si definisce un prefisso derivato da un nome abbreviato?",
+  "Prefissoide", ["Suffissoide", "Avverbioide", "Derivato"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 2183: la risposta esatta è «Prefissoide».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 2183", "italiano.txt", "Come si definisce un prefisso derivato da un nome abbreviato?")
+D("ita-495", "Sintassi", 2, "Nella frase \"il cappotto rosa è molto costoso\" che grado d'intensità è l'aggettivo costoso?",
+  "Superlativo", ["Comparativo", "Positivo", "Assoluto"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 2198: la risposta esatta è «Superlativo».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 2198", "italiano.txt", "Nella frase \"il cappotto rosa è molto costoso\" che grado d'intensità è l'aggettivo costoso?")
+D("ita-496", "Morfologia", 2, "Nessuno, che tipo di aggettivo è?",
+  "Indefinito", ["Dimostrativo", "Numerale", "Possessivo"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 2213: la risposta esatta è «Indefinito».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 2213", "italiano.txt", "Nessuno, che tipo di aggettivo è?")
+D("ita-497", "Morfologia", 2, "Quale fra questi aggettivi numerali è di tipo frazionario?",
+  "Mezzo", ["Sei", "Terzo", "Doppio"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 2227: la risposta esatta è «Mezzo».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 2227", "italiano.txt", "Quale fra questi aggettivi numerali è di tipo frazionario?")
+D("ita-498", "Morfologia", 2, "Come può essere l'aggettivo superlativo?",
+  "Assoluto o relativo", ["Quantità o qualità", "Maggioranza o Minoranza", "Interrogativo"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 2242: la risposta esatta è «Assoluto o relativo».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 2242", "italiano.txt", "Come può essere l'aggettivo superlativo?")
+D("ita-499", "Sintassi", 2, "Nella frase \"vorrei mangiare qualcosa\" , il pronome \"qualcosa\" che tipo di pronome è?",
+  "Indefinito", ["Complemento", "Possessivo", "Relativo"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 2256: la risposta esatta è «Indefinito».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 2256", "italiano.txt", "Nella frase \"vorrei mangiare qualcosa\" , il pronome \"qualcosa\" che tipo di pronome è?")
+D("ita-500", "Morfologia", 2, "Riconosci I tre pronomi indefiniti:",
+  "Qualcuno, nessuno, molti", ["Io, tu, egli", "Questo, Codesto, Quello", "Che , il quale, la quale"],
+  "Banca dati ministeriale (1° livello, Italiano), domanda n. 2270: la risposta esatta è «Qualcuno, nessuno, molti».",
+  "Banca dati ministeriale, 1° livello – Italiano, n. 2270", "italiano.txt", "Riconosci I tre pronomi indefiniti:")

@@ -1503,5 +1503,1000 @@
     "id": "ita-301",
     "file": "Wikipedia_Grammatica-italiana.txt",
     "frase": "l'auto, le auto"
+  },
+  {
+    "id": "ita-302",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "Formulare periodi brevi e chiari."
+  },
+  {
+    "id": "ita-303",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "l'ordine soggetto-verbooggetto diretto-oggetto indiretto"
+  },
+  {
+    "id": "ita-304",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "Nei periodi la frase principale precede, preferibilmente, le frasi subordinate"
+  },
+  {
+    "id": "ita-305",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "Evitare, se possibile, gli incisi."
+  },
+  {
+    "id": "ita-306",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "Evitare in particolare le frasi con il verbo al gerundio."
+  },
+  {
+    "id": "ita-307",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "Esplicitare i nessi logici tra le frasi con congiunzioni o avverbi testuali."
+  },
+  {
+    "id": "ita-308",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "La congiunzione e è riservata alle relazioni congiuntive"
+  },
+  {
+    "id": "ita-309",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "evitare la formulazione e/o"
+  },
+  {
+    "id": "ita-310",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "Il carattere tassativo di una enumerazione si esplicita attraverso l'uso di avverbi quali soltanto, esclusivamente, unicamente."
+  },
+  {
+    "id": "ita-311",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "Il carattere esemplificativo di una enumerazione si esplicita attraverso l'uso di locuzioni quali in particolare, tra l'altro."
+  },
+  {
+    "id": "ita-312",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "preferire la congiunzione se ad altre più complesse"
+  },
+  {
+    "id": "ita-313",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "questa è introdotta da solo se"
+  },
+  {
+    "id": "ita-314",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "Preferire, quando è possibile, le frasi affermative a quelle negative."
+  },
+  {
+    "id": "ita-315",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "Evitare le frasi con la doppia negazione."
+  },
+  {
+    "id": "ita-316",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "Preferire costruzioni sintattiche che richiedono l'indicativo al posto del congiuntivo."
+  },
+  {
+    "id": "ita-317",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "L'indicativo presente può essere usato con valore prescrittivo al posto del costrutto dovere + infinito."
+  },
+  {
+    "id": "ita-318",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "la nominalizzazione che consiste nel preferire il nome al verbo come portatore di significato"
+  },
+  {
+    "id": "ita-319",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "le perifrasi come apporre la firma anziché firmare"
+  },
+  {
+    "id": "ita-320",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "stereotipi come trattasi e dicasi ai quali sono preferibili si tratta e si dica"
+  },
+  {
+    "id": "ita-321",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "non usare di regola il verbo dovere per indicare l'obbligatorietà di una disposizione"
+  },
+  {
+    "id": "ita-322",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "È possibile usare il verbo potere per indicare una facoltà"
+  },
+  {
+    "id": "ita-323",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "Usare quando è possibile la forma attiva del verbo."
+  },
+  {
+    "id": "ita-324",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "quando l'amministrazione vuole creare un distacco tra sé e il"
+  },
+  {
+    "id": "ita-325",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "È preferibile ripetere elementi che sono già stati introdotti"
+  },
+  {
+    "id": "ita-326",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "Il vocabolario di base della lingua italiana contiene, a seconda delle valutazioni, da 7.000 a 10.000 parole"
+  },
+  {
+    "id": "ita-327",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "evitando quelle ricercate (timbrare e non obliterare)"
+  },
+  {
+    "id": "ita-328",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "È opportuno non usare problematica al posto di problema e nominativo al posto di nome."
+  },
+  {
+    "id": "ita-329",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "porre in essere per realizzare"
+  },
+  {
+    "id": "ita-330",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "in media sono meno di cinque su cento"
+  },
+  {
+    "id": "ita-331",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "all'uopo, testé, altresì, nonché"
+  },
+  {
+    "id": "ita-332",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "meeting per riunione"
+  },
+  {
+    "id": "ita-333",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "La parola straniera assunta stabilmente nella lingua italiana è invariabile."
+  },
+  {
+    "id": "ita-334",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "l'uso dell'articolo femminile seguito dalla forma maschile, es. la sindaco"
+  },
+  {
+    "id": "ita-335",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "la persona responsabile anziché il/la responsabile"
+  },
+  {
+    "id": "ita-336",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "Usare sempre il medesimo termine per esprimere uno stesso concetto"
+  },
+  {
+    "id": "ita-337",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "farla precedere dall'espressione per intero e racchiuderla tra parentesi tonde"
+  },
+  {
+    "id": "ita-338",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "se la parola abbreviata riporta la lettera iniziale e finale (ca per circa)"
+  },
+  {
+    "id": "ita-339",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "voll. per volumi"
+  },
+  {
+    "id": "ita-340",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "Le lettere di sigle e acronimi non sono generalmente seguite dal punto e sono scritte sempre maiuscole"
+  },
+  {
+    "id": "ita-341",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "lo SNALS"
+  },
+  {
+    "id": "ita-342",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "il Novecento, gli anni Venti"
+  },
+  {
+    "id": "ita-343",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "di un popolo antico (es. i Romani) per distinguerlo dal moderno (es. i romani)"
+  },
+  {
+    "id": "ita-344",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "quando la sigla viene sciolta ha la maiuscola solo il primo nome della serie (es. Unione europea)"
+  },
+  {
+    "id": "ita-345",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "abito nel comune di Prato"
+  },
+  {
+    "id": "ita-346",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "oggi si preferiscono piuttosto le minuscole"
+  },
+  {
+    "id": "ita-347",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "Consiglio comunale, Ufficio di presidenza"
+  },
+  {
+    "id": "ita-348",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "tutti i sostantivi si scrivono con l'iniziale maiuscola"
+  },
+  {
+    "id": "ita-349",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "ma è un segno più debole del punto fermo"
+  },
+  {
+    "id": "ita-350",
+    "file": "ITTIG-Crusca_Guida-redazione-atti-amministrativi.txt",
+    "frase": "permette infatti di disambiguare il testo"
+  },
+  {
+    "id": "ita-351",
+    "file": "italiano.txt",
+    "frase": "Completare la frase \"…..aspettare che lei arrivasse\":"
+  },
+  {
+    "id": "ita-352",
+    "file": "italiano.txt",
+    "frase": "La \"congiunzione avversativa\":"
+  },
+  {
+    "id": "ita-353",
+    "file": "italiano.txt",
+    "frase": "Tra i seguenti nomi indicare quello di forma promiscua:"
+  },
+  {
+    "id": "ita-354",
+    "file": "italiano.txt",
+    "frase": "Indicare quale tra questi non è un avverbio derivato:"
+  },
+  {
+    "id": "ita-355",
+    "file": "italiano.txt",
+    "frase": "In quale delle seguenti frasi il \"si\" non è impersonale?"
+  },
+  {
+    "id": "ita-356",
+    "file": "italiano.txt",
+    "frase": "Completare la frase \"Ho visto Giovanni e … ho chiesto le informazioni che mi servivano\":"
+  },
+  {
+    "id": "ita-357",
+    "file": "italiano.txt",
+    "frase": "\"Ritengo che abbiano preso delle decisioni sensate.\" In questa frase \"sensate\" è:"
+  },
+  {
+    "id": "ita-358",
+    "file": "italiano.txt",
+    "frase": "Indicare il plurale di \"manoscritto\":"
+  },
+  {
+    "id": "ita-359",
+    "file": "italiano.txt",
+    "frase": "Completare la frase \"L'esame………..sostenuto ieri\":"
+  },
+  {
+    "id": "ita-360",
+    "file": "italiano.txt",
+    "frase": "Indicare in quale delle seguenti frasi vi è una congiunzione coordinante avversativa:"
+  },
+  {
+    "id": "ita-361",
+    "file": "italiano.txt",
+    "frase": "Indicare tra i seguenti il nome collettivo:"
+  },
+  {
+    "id": "ita-362",
+    "file": "italiano.txt",
+    "frase": "Individuare l'errore:"
+  },
+  {
+    "id": "ita-363",
+    "file": "italiano.txt",
+    "frase": "Quale delle seguenti proposizione presenta un errore?"
+  },
+  {
+    "id": "ita-364",
+    "file": "italiano.txt",
+    "frase": "Qual è il modo corretto di dividere in sillabe la parola \"córrere\"?"
+  },
+  {
+    "id": "ita-365",
+    "file": "italiano.txt",
+    "frase": "Completare correttamente la frase \"Quando è partito questa mattina, Giovanni ha detto che…..non appena gli fosse stato possibile\" con il tempo e il modo richiesti dalla proposizione reggente:"
+  },
+  {
+    "id": "ita-366",
+    "file": "italiano.txt",
+    "frase": "Secondo un modo di dire della lingua italiana ha \"il coltello dalla parte del manico\" chi…"
+  },
+  {
+    "id": "ita-367",
+    "file": "italiano.txt",
+    "frase": "Nella frase \"In quel momento non potevo prometterti niente\" il verbo \"potere\" ha funzione…"
+  },
+  {
+    "id": "ita-368",
+    "file": "italiano.txt",
+    "frase": "Nell'espressione \"Chiesi a mia figlia come si trovasse in un Paese di cui non conosceva la lingua\" la proposizione \"come si trovasse in un Paese\" è…"
+  },
+  {
+    "id": "ita-369",
+    "file": "italiano.txt",
+    "frase": "Completare con un aggettivo indefinito la frase \"Ogni tanto in tram si trovano … persone molto maleducate\"."
+  },
+  {
+    "id": "ita-370",
+    "file": "italiano.txt",
+    "frase": "Nella frase \"In Italia si mangia bene\" la particella \"si\" è un pronome…"
+  },
+  {
+    "id": "ita-371",
+    "file": "italiano.txt",
+    "frase": "Sostituire l'aggettivo \"brutto\" con uno più appropriato nella frase \"Per come sono andate le cose, è un brutto inizio\"."
+  },
+  {
+    "id": "ita-372",
+    "file": "italiano.txt",
+    "frase": "Nella frase \"Giovanni ci rimase male, perché aveva cercato di soddisfarvi\" la locuzione \"perché\" assume funzione di congiunzione…"
+  },
+  {
+    "id": "ita-373",
+    "file": "italiano.txt",
+    "frase": "L'aggettivo determinativo \"quello\" indica esseri o cose …"
+  },
+  {
+    "id": "ita-374",
+    "file": "italiano.txt",
+    "frase": "I nomi composti da una forma verbale e da un sostantivo singolare femminile formano in genere il plurale cambiando la desinenza…"
+  },
+  {
+    "id": "ita-375",
+    "file": "italiano.txt",
+    "frase": "Nella frase \"Permesso, posso entrare?\" il verbo \"potere\" ha funzione…"
+  },
+  {
+    "id": "ita-376",
+    "file": "italiano.txt",
+    "frase": "Nella frase \"Non si guardano neppure in faccia\" il verbo riflessivo è…"
+  },
+  {
+    "id": "ita-377",
+    "file": "italiano.txt",
+    "frase": "Trovare un sinonimo comune per: bozza e piccola."
+  },
+  {
+    "id": "ita-378",
+    "file": "italiano.txt",
+    "frase": "Quale delle seguenti frasi contiene un complemento di causa efficiente?"
+  },
+  {
+    "id": "ita-379",
+    "file": "italiano.txt",
+    "frase": "Vetro è un termine…"
+  },
+  {
+    "id": "ita-380",
+    "file": "italiano.txt",
+    "frase": "Nella frase \"Dopo aver raccontato la sua brutta esperienza ed il pericolo corso, Piero si mise a piangere\" il verbo \"mettersi\" ha funzione…"
+  },
+  {
+    "id": "ita-381",
+    "file": "italiano.txt",
+    "frase": "Quale tra le seguenti coppie di sostantivi presenta un falso cambiamento di genere?"
+  },
+  {
+    "id": "ita-382",
+    "file": "italiano.txt",
+    "frase": "Si completi la seguente affermazione scegliendo la risposta corretta: le proposizioni subordinate relative o attributive sono quelle che…"
+  },
+  {
+    "id": "ita-383",
+    "file": "italiano.txt",
+    "frase": "Completare con un aggettivo dimostrativo la frase \"Ti ricordi …volta che abbiamo perso il treno: quanto abbiamo riso!\"."
+  },
+  {
+    "id": "ita-384",
+    "file": "italiano.txt",
+    "frase": "I nomi maschili che al singolare terminano in -co e in -go, se hanno accentuazione piana, in genere formano il plurale in…"
+  },
+  {
+    "id": "ita-385",
+    "file": "italiano.txt",
+    "frase": "Sostituire il verbo \"dare\" con uno più appropriato nella frase \"L'incasso della festa è stato dato all'ospedale\"."
+  },
+  {
+    "id": "ita-386",
+    "file": "italiano.txt",
+    "frase": "Sostituire l'aggettivo \"brillante\" con uno più appropriato nella frase \"E' un giovane molto brillante\"."
+  },
+  {
+    "id": "ita-387",
+    "file": "italiano.txt",
+    "frase": "Il futuro anteriore del verbo \"elìdere\" è…"
+  },
+  {
+    "id": "ita-388",
+    "file": "italiano.txt",
+    "frase": "Trasformare in concessiva esplicita la frase \"Pur essendo arrivati tutti, la riunione non potrà iniziare\"."
+  },
+  {
+    "id": "ita-389",
+    "file": "italiano.txt",
+    "frase": "Nel linguaggio comune si usa dire che una persona \"aspetta la manna dal cielo\" per intendere che…"
+  },
+  {
+    "id": "ita-390",
+    "file": "italiano.txt",
+    "frase": "Sostituire l'aggettivo \"cattivo\" con uno più appropriato nella frase \"Porto cattive notizie\"."
+  },
+  {
+    "id": "ita-391",
+    "file": "italiano.txt",
+    "frase": "Il prefissoide \"acro-\" indica…"
+  },
+  {
+    "id": "ita-392",
+    "file": "italiano.txt",
+    "frase": "Inserire la particella pronominale nella frase \"E' un argomento triste per lui, non …parlare\""
+  },
+  {
+    "id": "ita-393",
+    "file": "italiano.txt",
+    "frase": "Nell'espressione \"Mentre tu guardi la TV, vado da Franca per restituirle i pattini che mi ha prestato perché potessi partecipare alla gara\" la proposizione \"perché potessi partecipare alla gara\" è…"
+  },
+  {
+    "id": "ita-394",
+    "file": "italiano.txt",
+    "frase": "Non può assumere lo stesso significato degli altri tre il termine…"
+  },
+  {
+    "id": "ita-395",
+    "file": "italiano.txt",
+    "frase": "Completare con un aggettivo dimostrativo la frase \"… parole sono molto efficaci\"."
+  },
+  {
+    "id": "ita-396",
+    "file": "italiano.txt",
+    "frase": "Quale tra le seguenti parole perde la \"i\" al plurale?"
+  },
+  {
+    "id": "ita-397",
+    "file": "italiano.txt",
+    "frase": "Che funzione ha la particella \"vi\" nella frase \"Vi offrirò un pranzo per ringraziarvi dell'interessamento\"?"
+  },
+  {
+    "id": "ita-398",
+    "file": "italiano.txt",
+    "frase": "Completare con una proposizione coordinata avversativa la frase\"Era rimasto male per il comportamento di Luca,…\""
+  },
+  {
+    "id": "ita-399",
+    "file": "italiano.txt",
+    "frase": "Trasformare in esplicita la proposizione \"I primi giorni dopo aver smesso di fumare rappresentano il periodo più difficile\"."
+  },
+  {
+    "id": "ita-400",
+    "file": "italiano.txt",
+    "frase": "Quale dei seguenti periodi contiene una proposizione subordinata avversativa?"
+  },
+  {
+    "id": "ita-401",
+    "file": "italiano.txt",
+    "frase": "Nella frase \"Non importa dove hai perso le chiavi, provvedi subito a sostituire la serratura attuale con una di sicurezza \" che funzione logica svolge l'espressione \"di sicurezza\"?"
+  },
+  {
+    "id": "ita-402",
+    "file": "italiano.txt",
+    "frase": "Nella frase \"Meno male che c'è la luce del lampione\" troviamo un complemento..."
+  },
+  {
+    "id": "ita-403",
+    "file": "italiano.txt",
+    "frase": "Tra le seguenti coppie di sostantivi quale non è legata da una relazione di derivazione né di alterazione?"
+  },
+  {
+    "id": "ita-404",
+    "file": "italiano.txt",
+    "frase": "Nell'espressione \"Ho telefonato a Mariella per salutarla e invitarla allo spettacolo che si terrà sabato al solito teatro, ma ho dovuto lasciarle un messaggio perché non era in casa.\" la proposizione \"e invitarla allo spettacolo\" è…"
+  },
+  {
+    "id": "ita-405",
+    "file": "italiano.txt",
+    "frase": "È un aggettivo indefinito che varia sia nel genere che nel numero…"
+  },
+  {
+    "id": "ita-406",
+    "file": "italiano.txt",
+    "frase": "Completare con una proposizione temporale la frase \"Me ne sono andato via …\"."
+  },
+  {
+    "id": "ita-407",
+    "file": "italiano.txt",
+    "frase": "Nella frase \"Perché non ti prepari una tisana?\" il verbo riflessivo è…"
+  },
+  {
+    "id": "ita-408",
+    "file": "italiano.txt",
+    "frase": "Sostituire il verbo \"dire\" con uno più appropriato nella frase \"Finalmente Carlo ci ha detto il motivo della sua reazione\"."
+  },
+  {
+    "id": "ita-409",
+    "file": "italiano.txt",
+    "frase": "Completare la frase \"Mentre Marco giocava a pallone ____arrivò un calcio negli stinchi\"."
+  },
+  {
+    "id": "ita-410",
+    "file": "italiano.txt",
+    "frase": "Indicare il nome collettivo appropriato che indica un insieme di alberi:"
+  },
+  {
+    "id": "ita-411",
+    "file": "italiano.txt",
+    "frase": "Indicare tra i seguenti il nome difettivo:"
+  },
+  {
+    "id": "ita-412",
+    "file": "italiano.txt",
+    "frase": "Completare la frase \" Michelangelo è morto ____ novant'anni\":"
+  },
+  {
+    "id": "ita-413",
+    "file": "italiano.txt",
+    "frase": "Indicare il significato di \"di cui\" nella frase \"Le persone di cui ci siamo fidati ci hanno ingannati.\""
+  },
+  {
+    "id": "ita-414",
+    "file": "italiano.txt",
+    "frase": "Indicare un sinonimo di \"Acquistare\":"
+  },
+  {
+    "id": "ita-415",
+    "file": "italiano.txt",
+    "frase": "Indicare un contrario di \"minimo\":"
+  },
+  {
+    "id": "ita-416",
+    "file": "italiano.txt",
+    "frase": "La III persona singolare dell'imperfetto congiuntivo del verbo sapere è:"
+  },
+  {
+    "id": "ita-417",
+    "file": "italiano.txt",
+    "frase": "Completare la frase \"È necessario che gli studenti ____in orario in modo che _____assistere a tutta la lezione.\":"
+  },
+  {
+    "id": "ita-418",
+    "file": "italiano.txt",
+    "frase": "\"Correvano verso la stazione per non perdere il treno.\" In questa frase \"correvano\" è:"
+  },
+  {
+    "id": "ita-419",
+    "file": "italiano.txt",
+    "frase": "\"Sono tante le persone che mi hanno consigliato.\" In questa frase \"mi\" è:"
+  },
+  {
+    "id": "ita-420",
+    "file": "italiano.txt",
+    "frase": "\"Sono stati raggiunti da Giuseppe in montagna.\" In questa frase il predicato è costituito da:"
+  },
+  {
+    "id": "ita-421",
+    "file": "italiano.txt",
+    "frase": "\"Carlo sta studiando tantissimo, con l'obiettivo di prendere un bel voto.\" In questa frase è contenuta una proposizione:"
+  },
+  {
+    "id": "ita-422",
+    "file": "italiano.txt",
+    "frase": "Indicare il gerundio passato del verbo rodere:"
+  },
+  {
+    "id": "ita-423",
+    "file": "italiano.txt",
+    "frase": "Individuare l'errore:"
+  },
+  {
+    "id": "ita-424",
+    "file": "italiano.txt",
+    "frase": "Quale tra le seguenti congiunzioni non è avversativa?"
+  },
+  {
+    "id": "ita-425",
+    "file": "italiano.txt",
+    "frase": "Completare con il pronome personale adatto la frase \"Volete questi dischi?... presto volentieri.\" :"
+  },
+  {
+    "id": "ita-426",
+    "file": "italiano.txt",
+    "frase": "La frase \"I padroni pagano il salario agli operai\" contiene un complemento:"
+  },
+  {
+    "id": "ita-427",
+    "file": "italiano.txt",
+    "frase": "Nella frase \"Fu morso da un piccolo cane di razza\" l'attributo è:"
+  },
+  {
+    "id": "ita-428",
+    "file": "italiano.txt",
+    "frase": "Nella frase \" La casa fu demolita dal terremoto di ieri\" il predicato nominale è:"
+  },
+  {
+    "id": "ita-429",
+    "file": "italiano.txt",
+    "frase": "Completare la frase \"La casa … abito è in collina\":"
+  },
+  {
+    "id": "ita-430",
+    "file": "italiano.txt",
+    "frase": "Quale tra le seguenti parole ha lo stesso significato di \"bollita\" e \"innamoramento\"?"
+  },
+  {
+    "id": "ita-431",
+    "file": "italiano.txt",
+    "frase": "Completare la frase \"... che… in Francia? \""
+  },
+  {
+    "id": "ita-432",
+    "file": "italiano.txt",
+    "frase": "Completare la frase \"Si preoccupano se non … a casa. \""
+  },
+  {
+    "id": "ita-433",
+    "file": "italiano.txt",
+    "frase": "Completare con la forma riflessiva corretta la frase \"Dopo aver lavorato, Luca … le mani\":"
+  },
+  {
+    "id": "ita-434",
+    "file": "italiano.txt",
+    "frase": "Completare con la forma riflessiva corretta la frase \"Anna … lentamente alla madre.\""
+  },
+  {
+    "id": "ita-435",
+    "file": "italiano.txt",
+    "frase": "Completare la frase \"Se è vero che ieri gli … sicuramente oggi lui ti richiamerà.\""
+  },
+  {
+    "id": "ita-436",
+    "file": "italiano.txt",
+    "frase": "Individuare quale tra i seguenti termini è il contrario di \"gracile\"."
+  },
+  {
+    "id": "ita-437",
+    "file": "italiano.txt",
+    "frase": "Individuare il termine scritto in modo errato."
+  },
+  {
+    "id": "ita-438",
+    "file": "italiano.txt",
+    "frase": "Il contrario di \"mozzare \"è:"
+  },
+  {
+    "id": "ita-439",
+    "file": "italiano.txt",
+    "frase": "La prima persona singolare del passato remoto del verbo \"elidere\" è:"
+  },
+  {
+    "id": "ita-440",
+    "file": "italiano.txt",
+    "frase": "Completare con la forma riflessiva corretta la frase \"I fratelli … abbracciarono.\""
+  },
+  {
+    "id": "ita-441",
+    "file": "italiano.txt",
+    "frase": "Completare la frase \"Se facesse del bel tempo loro … subito a sciare.\""
+  },
+  {
+    "id": "ita-442",
+    "file": "italiano.txt",
+    "frase": "Individuare il termine che NON è scritto correttamente."
+  },
+  {
+    "id": "ita-443",
+    "file": "italiano.txt",
+    "frase": "Quale subordinata contiene la proposizione: \"Il nostro ospite giunto tre giorni fa è appena ripartito\"?"
+  },
+  {
+    "id": "ita-444",
+    "file": "italiano.txt",
+    "frase": "Dal punto di vista grammaticale, quale tra le seguenti frasi proposte è corretta?"
+  },
+  {
+    "id": "ita-445",
+    "file": "italiano.txt",
+    "frase": "Nella frase \"Mimmo tornò a Milano, subito dopo aver lasciato la Francia\" il periodo \"subito dopo aver lasciato la Francia\" che tipo di proposizione subordinata è?"
+  },
+  {
+    "id": "ita-446",
+    "file": "italiano.txt",
+    "frase": "Indicare quale dei seguenti nomi, posti al femminile, è errato:"
+  },
+  {
+    "id": "ita-447",
+    "file": "italiano.txt",
+    "frase": "Indicare quale dei seguenti aggettivi non è qualificativo:"
+  },
+  {
+    "id": "ita-448",
+    "file": "italiano.txt",
+    "frase": "Paolo pensa di…..sempre ragione:"
+  },
+  {
+    "id": "ita-449",
+    "file": "italiano.txt",
+    "frase": "Indicare la frase scritta correttamente:"
+  },
+  {
+    "id": "ita-450",
+    "file": "italiano.txt",
+    "frase": "Quale è fra questi un simbolo che coinvolge un senso?"
+  },
+  {
+    "id": "ita-451",
+    "file": "italiano.txt",
+    "frase": "Come può essere definito un ricevente?"
+  },
+  {
+    "id": "ita-452",
+    "file": "italiano.txt",
+    "frase": "La lingua in cui è formulato il messaggio di una e-mail può essere definita:"
+  },
+  {
+    "id": "ita-453",
+    "file": "italiano.txt",
+    "frase": "I testi non letterari:"
+  },
+  {
+    "id": "ita-454",
+    "file": "italiano.txt",
+    "frase": "Che cos'è l'intreccio?"
+  },
+  {
+    "id": "ita-455",
+    "file": "italiano.txt",
+    "frase": "Quale significato ha il termine essenziale?"
+  },
+  {
+    "id": "ita-456",
+    "file": "italiano.txt",
+    "frase": "Quale tra questi non è un sinonimo di docente?"
+  },
+  {
+    "id": "ita-457",
+    "file": "italiano.txt",
+    "frase": "Uno tra questi termini non ha lo stesso significato di sommerso. Quale?"
+  },
+  {
+    "id": "ita-458",
+    "file": "italiano.txt",
+    "frase": "Si individui la frase con il predicato nominale:"
+  },
+  {
+    "id": "ita-459",
+    "file": "italiano.txt",
+    "frase": "Tra queste affermazioni, quale non si riferisce al predicato nominale?"
+  },
+  {
+    "id": "ita-460",
+    "file": "italiano.txt",
+    "frase": "In quale di queste frasi non è presente una apposizione:"
+  },
+  {
+    "id": "ita-461",
+    "file": "italiano.txt",
+    "frase": "Nella frase:\" Udivamo un rullare di tamburi\" che tipo di complemento è \"un rullare\"?"
+  },
+  {
+    "id": "ita-462",
+    "file": "italiano.txt",
+    "frase": "Nella frase: \"Mi piace questo di te\" che tipo di complemento è \"di te\"?"
+  },
+  {
+    "id": "ita-463",
+    "file": "italiano.txt",
+    "frase": "La proposizione subordinata:"
+  },
+  {
+    "id": "ita-464",
+    "file": "italiano.txt",
+    "frase": "Che tipo di proposizione è:\"Non verrò a scuola con te\"?"
+  },
+  {
+    "id": "ita-465",
+    "file": "italiano.txt",
+    "frase": "La proposizione \"Con chi posso uscire?\" può essere definita:"
+  },
+  {
+    "id": "ita-466",
+    "file": "italiano.txt",
+    "frase": "Si scelga il sinonimo di \"scialbo\" tra quelli proposti:"
+  },
+  {
+    "id": "ita-467",
+    "file": "italiano.txt",
+    "frase": "Il termine \"franco\" può avere diversi significati. Quale tra questi è sbagliato?"
+  },
+  {
+    "id": "ita-468",
+    "file": "italiano.txt",
+    "frase": "Quante proposizioni subordinate compaiono nel seguente periodo: \"Prendo il motorino perché è tardi e Lucia mia aspetta da un'ora\"?"
+  },
+  {
+    "id": "ita-469",
+    "file": "italiano.txt",
+    "frase": "Trova, fra questi, l'articolo partitivo:"
+  },
+  {
+    "id": "ita-470",
+    "file": "italiano.txt",
+    "frase": "Nella frase \" Ho mangiato del buon pane\" , che tipo di articolo troviamo?"
+  },
+  {
+    "id": "ita-471",
+    "file": "italiano.txt",
+    "frase": "La parola \"papà\" in grammatica che genere è?"
+  },
+  {
+    "id": "ita-472",
+    "file": "italiano.txt",
+    "frase": "Quale fra questi è un nome concreto ?"
+  },
+  {
+    "id": "ita-473",
+    "file": "italiano.txt",
+    "frase": "Quale fra questi nomi hanno lo stesso genere al maschile e al femminile?"
+  },
+  {
+    "id": "ita-474",
+    "file": "italiano.txt",
+    "frase": "Quali fra questi suffissi sono diminutivi?"
+  },
+  {
+    "id": "ita-475",
+    "file": "italiano.txt",
+    "frase": "Nello schema narrativo di un racconto che cos'è la situazione iniziale?"
+  },
+  {
+    "id": "ita-476",
+    "file": "italiano.txt",
+    "frase": "Una di queste affermazioni non si riferisce all'analisi grammaticale. Quale?"
+  },
+  {
+    "id": "ita-477",
+    "file": "italiano.txt",
+    "frase": "Le parole dei personaggi in un racconto possono essere riferite attraverso diverse modalità. Quale di queste non esiste?"
+  },
+  {
+    "id": "ita-478",
+    "file": "italiano.txt",
+    "frase": "Quanti attributi puoi individuare nella seguente frase: \"Il piccolo Marco appartiene a una famiglia bene\"?"
+  },
+  {
+    "id": "ita-479",
+    "file": "italiano.txt",
+    "frase": "Quale tra queste voci verbali è al modo condizionale?"
+  },
+  {
+    "id": "ita-480",
+    "file": "italiano.txt",
+    "frase": "Il verbo che compare nella frase: \"La balena emerge\" è:"
+  },
+  {
+    "id": "ita-481",
+    "file": "italiano.txt",
+    "frase": "La voce verbale \"discussi\":"
+  },
+  {
+    "id": "ita-482",
+    "file": "italiano.txt",
+    "frase": "La definizione \"Insieme di norme e di usi che regolano la corretta scrittura delle parole\" si riferisce a:"
+  },
+  {
+    "id": "ita-483",
+    "file": "italiano.txt",
+    "frase": "In quale di queste frasi è presente un complemento di mezzo?"
+  },
+  {
+    "id": "ita-484",
+    "file": "italiano.txt",
+    "frase": "Un testo informativo quale funzione può avere?"
+  },
+  {
+    "id": "ita-485",
+    "file": "italiano.txt",
+    "frase": "Il messaggio \"Come sei elegante!\" quale funzione ha?"
+  },
+  {
+    "id": "ita-486",
+    "file": "italiano.txt",
+    "frase": "Che tipo di subordinata troviamo nella frase: \"Dimmi se hai fatto colazione\"?"
+  },
+  {
+    "id": "ita-487",
+    "file": "italiano.txt",
+    "frase": "Che tipo di complemento di luogo troviamo nella frase: \"Mi ha mandato al diavolo\"?"
+  },
+  {
+    "id": "ita-488",
+    "file": "italiano.txt",
+    "frase": "Una persona che fotografa avvenimenti per conto di giornali o agenzie è:"
+  },
+  {
+    "id": "ita-489",
+    "file": "italiano.txt",
+    "frase": "Nell'ambito giornalistico, chi è un corrispondente?"
+  },
+  {
+    "id": "ita-490",
+    "file": "italiano.txt",
+    "frase": "Quale di queste coppie di termini è rispettivamente un sinonimo e un contrario di \"furbo\"?"
+  },
+  {
+    "id": "ita-491",
+    "file": "italiano.txt",
+    "frase": "Di che tipo può essere l'aggettivo determinativo?"
+  },
+  {
+    "id": "ita-492",
+    "file": "italiano.txt",
+    "frase": "Qual è fra questi l'aggettivo possessivo?"
+  },
+  {
+    "id": "ita-493",
+    "file": "italiano.txt",
+    "frase": "Come si definiscono gli aggettivi con una unica forma per entrambi i generi?"
+  },
+  {
+    "id": "ita-494",
+    "file": "italiano.txt",
+    "frase": "Come si definisce un prefisso derivato da un nome abbreviato?"
+  },
+  {
+    "id": "ita-495",
+    "file": "italiano.txt",
+    "frase": "Nella frase \"il cappotto rosa è molto costoso\" che grado d'intensità è l'aggettivo costoso?"
+  },
+  {
+    "id": "ita-496",
+    "file": "italiano.txt",
+    "frase": "Nessuno, che tipo di aggettivo è?"
+  },
+  {
+    "id": "ita-497",
+    "file": "italiano.txt",
+    "frase": "Quale fra questi aggettivi numerali è di tipo frazionario?"
+  },
+  {
+    "id": "ita-498",
+    "file": "italiano.txt",
+    "frase": "Come può essere l'aggettivo superlativo?"
+  },
+  {
+    "id": "ita-499",
+    "file": "italiano.txt",
+    "frase": "Nella frase \"vorrei mangiare qualcosa\" , il pronome \"qualcosa\" che tipo di pronome è?"
+  },
+  {
+    "id": "ita-500",
+    "file": "italiano.txt",
+    "frase": "Riconosci I tre pronomi indefiniti:"
   }
 ]

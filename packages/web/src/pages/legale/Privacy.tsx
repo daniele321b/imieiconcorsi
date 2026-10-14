@@ -19,7 +19,7 @@ export function Privacy() {
 
       <h2>Titolare del trattamento</h2>
       <p>
-        <Titolare />. Per qualsiasi richiesta sulla privacy scrivici <ComeContattarci />: rispondiamo entro 30 giorni.
+        Il titolare del trattamento è <Titolare />. Per qualsiasi richiesta sulla privacy scrivici <ComeContattarci />: rispondiamo entro 30 giorni.
       </p>
 
       <h2>Quali dati trattiamo</h2>
@@ -46,6 +46,11 @@ export function Privacy() {
           <strong>Inviti:</strong> se ti iscrivi con il link di un amico, salviamo quale account ti ha invitato (identificativo
           anonimo), per dargli il premio quando compri un piano. Per lo stesso motivo lui vede quanti amici si sono iscritti e
           hanno comprato, non chi sono.
+        </li>
+        <li>
+          <strong>Provenienza:</strong> se ti iscrivi dopo aver aperto un nostro link sui social o un nostro annuncio, salviamo
+          nel profilo il nome della campagna scritto nel link (per esempio «instagram, bio»). Non riceviamo nulla dai social e
+          non salviamo identificativi del clic. Ci serve solo a contare quanti iscritti arrivano da ogni canale.
         </li>
         <li>
           <strong>Concorsi seguiti:</strong> teniamo lo storico dei concorsi che hai seguito (nome e giorno), che vedi nel profilo.
@@ -110,6 +115,10 @@ export function Privacy() {
         <li>
           Sicurezza e prevenzione degli abusi (per esempio non accettiamo indirizzi email temporanei): legittimo interesse,
           art. 6.1.f GDPR.
+        </li>
+        <li>
+          Provenienza degli iscritti: legittimo interesse, art. 6.1.f GDPR, a sapere quali canali di promozione funzionano; si
+          guardano solo i totali per canale e il dato si cancella con l'account.
         </li>
         <li>Parere sull'app: tuo consenso, art. 6.1.a GDPR; puoi cancellarlo con l'account.</li>
         <li>Obblighi fiscali e contabili sui pagamenti: obbligo di legge, art. 6.1.c GDPR.</li>

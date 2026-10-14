@@ -20,6 +20,7 @@ function seme(testo: string) {
   return h || 1;
 }
 
+/** Permutazione di 0..n-1 sempre uguale per la stessa chiave (xorshift dal seme della chiave). */
 function mescolaStabile(n: number, chiave: string) {
   const out = Array.from({ length: n }, (_, i) => i);
   let x = seme(chiave);

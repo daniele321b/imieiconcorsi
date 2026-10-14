@@ -144,6 +144,7 @@ async function progressiDellUtente(userId: string) {
   );
 }
 
+/** La scrittura condizionata non è andata (la condizione era falsa). */
 const condizioneFallita = (err: unknown) => err instanceof Error && err.name === "ConditionalCheckFailedException";
 
 /** I campi della riga dei progressi che una modifica può cambiare. */
@@ -594,6 +595,7 @@ export const handler = service({
         materie.set(m.materia, acc);
       }
     }
+    // Percentuale di risposte giuste, arrotondata (0 senza risposte).
     const percentuale = (v: { corrette: number; totale: number }) => (v.totale ? Math.round((v.corrette / v.totale) * 100) : 0);
 
     return {

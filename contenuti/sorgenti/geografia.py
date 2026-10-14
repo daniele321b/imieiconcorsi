@@ -1373,3 +1373,855 @@ D("geo-300", "Isole", 4, "Quale superficie complessiva hanno le isole italiane?"
 D("geo-301", "Unione europea", 4, "Con quante entità indipendenti confina l'Unione europea?",
   "21", ["7", "40", "12"],
   "Le frontiere esterne misurano 14.647 km; la costa dell'UE è la seconda al mondo per lunghezza dopo il Canada.", W("Unione europea"), UE, "L'Unione europea confina con 21 entità indipendenti")
+
+# ── Verso 350: continenti (Europa, America, Oceania, Asia, Africa), Vesuvio e stretto di Messina.
+WE, WAM, WOC, WAS, WAF = W("Europa"), W("America"), W("Oceania"), W("Asia"), W("Africa")
+WVE, WST = W("Vesuvio"), W("Stretto di Messina")
+
+D("geo-302", "Europa", 3, "Tra quali città si estende l'istmo ponto-baltico, lungo circa 1200 km?",
+  "Da Odessa, sul mar Nero, a Danzica, sul Baltico", ["Da Lisbona a Mosca", "Da Trieste ad Amburgo", "Da Istanbul a San Pietroburgo"],
+  "L'istmo ponto-baltico, che separa la parte continentale da quella peninsulare d'Europa, è una linea di circa 1200 km da Odessa a Danzica.",
+  WE, EUR, "che va da Odessa, sul mar Nero, a Danzica, sul Baltico")
+
+D("geo-303", "Europa", 3, "Che posto occupa l'Europa tra i continenti per densità di popolazione?",
+  "Il secondo", ["Il primo", "L'ultimo", "Il quinto"],
+  "L'Europa è uno dei continenti più piccoli (circa 10 milioni di km²) ma è il secondo per densità di popolazione, grazie al clima temperato.",
+  WE, EUR, "il continente europeo è il secondo per densità di popolazione")
+
+D("geo-304", "Europa", 4, "In quale città si trova il centro esatto dell'emisfero continentale, al cui centro è situata l'Europa?",
+  "Nantes, in Francia", ["Vienna, in Austria", "Praga, in Repubblica Ceca", "Varsavia, in Polonia"],
+  "L'Europa si trova al centro dell'emisfero continentale; il centro esatto dell'emisfero si trova a Nantes, in Francia.",
+  WE, EUR, "si trova a Nantes, in Francia")
+
+D("geo-305", "Europa", 3, "Perché Napoli ha una temperatura media annua molto più alta di New York, quasi alla stessa latitudine?",
+  "Per l'azione mitigatrice del Mar Mediterraneo", ["Perché Napoli è più a sud di 10 gradi", "Per la vicinanza delle Alpi", "Per la presenza del Vesuvio"],
+  "Il Mediterraneo mitiga il clima delle coste meridionali europee: a Napoli la media annua è di 21,9 °C, a New York di 13 °C.",
+  WE, EUR, "la temperatura media durante tutto l'anno a Napoli è di 21,9 °C")
+
+D("geo-306", "Europa", 5, "Quale sovrana russa definì ufficialmente nel 1730 il confine tra Europa e Asia sulla base dei lavori di von Strahlenberg?",
+  "La zarina Anna I", ["Caterina II", "Elisabetta I", "Maria Teodorovna"],
+  "La linea di von Strahlenberg deriva da quella definita ufficialmente nel 1730 dalla zarina di Russia Anna I, sulla base dei lavori del geografo svedese Philip Johan von Strahlenberg.",
+  WE, EUR, "fin dal 1730 dalla zarina di Russia Anna I")
+
+D("geo-307", "Europa", 3, "L'Islanda è considerata parte dell'Europa?",
+  "Sì: il confine occidentale è dato dall'Oceano Atlantico, includendo l'Islanda", ["No, fa parte dell'America", "No, è un continente a sé", "Solo dal 1994"],
+  "Ad ovest il confine d'Europa è dato dall'Oceano Atlantico, includendo l'Islanda all'interno dell'Europa.",
+  WE, EUR, "includendo l'Islanda all'interno dell'Europa")
+
+D("geo-308", "Europa", 4, "Perché le Sporadi orientali e il Dodecaneso sono considerati europei, pur essendo vicini all'Anatolia?",
+  "Per motivi storico-culturali", ["Perché sono più vicini all'Europa", "Perché sono vulcanici", "Perché appartengono all'Unione europea dal 1957"],
+  "Le isole dell'Egeo vicine all'Anatolia ricadrebbero fisicamente in Asia, ma sono considerate europee per motivi storico-culturali.",
+  WE, EUR, "sono considerate appartenenti all'Europa per motivi storico-culturali")
+
+D("geo-309", "Europa", 4, "Da dove a dove si estende il cosiddetto «spartiacque europeo»?",
+  "Da Gibilterra alla costa nord-occidentale del Mar Caspio", ["Dalle Alpi agli Urali", "Dal Portogallo alla Finlandia", "Dal Mar Baltico al Mar Nero"],
+  "Il principale spartiacque europeo separa i bacini atlantico-baltico-artici da quelli mediterraneo-pontici e si estende da Gibilterra alla costa nord-occidentale del Caspio.",
+  WE, EUR, "si estende da ovest ad est, andando da Gibilterra fino alla costa nord-occidentale del Mar Caspio")
+
+D("geo-310", "Europa", 3, "In quale Paese dell'Europa occidentale vaste pianure si trovano sotto il livello del mare?",
+  "Nei Paesi Bassi", ["In Portogallo", "In Irlanda", "In Svizzera"],
+  "Alcune pianure europee sono sotto il livello del mare: a occidente quella dei Paesi Bassi, a oriente la Depressione caspica e quella del Kuma-Manyč.",
+  WE, EUR, "verso occidente quella dei Paesi Bassi")
+
+D("geo-311", "Europa", 2, "Perché l'Europa è detta talvolta «Vecchio continente»?",
+  "In contrapposizione al nuovo continente, l'America, dopo l'arrivo di Colombo", ["Perché ha le montagne più antiche", "Perché è il continente più popolato", "Perché è stato il primo a emergere dal mare"],
+  "Dopo l'arrivo di Cristoforo Colombo in America, l'Europa è detta Vecchio continente in contrapposizione al nuovo continente.",
+  WE, EUR, "l'Europa è detta a volte anche Vecchio continente")
+
+D("geo-312", "Europa", 4, "Secondo una diffusa ipotesi etimologica greca, cosa significherebbe «Europa»?",
+  "Ampio sguardo", ["Terra del tramonto", "Terra dei boschi", "Grande isola"],
+  "Una diffusa ipotesi fa derivare il termine da eurus (largo, ampio) e ops (occhio, sguardo): «ampio sguardo», per la vastità delle terre a nord dell'Egeo.",
+  WE, EUR, "esso avrebbe il significato di \"ampio sguardo\"")
+
+D("geo-313", "Europa", 4, "In quale catena montuosa della Gran Bretagna si trova la massima altezza dell'isola, 1345 m?",
+  "Nei Monti Grampiani", ["Nei Pirenei", "Nelle Alpi Scandinave", "Nei Vosgi"],
+  "Nelle terre più settentrionali d'Europa si trovano i Monti Pennini e i Monti Grampiani, in Gran Bretagna (massima altezza 1345 m).",
+  WE, EUR, "Monti Grampiani, in Gran Bretagna (massima altezza 1345 m)")
+
+D("geo-314", "Continenti", 3, "Quale cartografo tedesco diede per primo al continente il nome «America»?",
+  "Martin Waldseemüller", ["Gerardo Mercatore", "Abraham Ortelius", "Martin Behaim"],
+  "Le lettere di Amerigo Vespucci portarono il cartografo tedesco Martin Waldseemüller a chiamare il continente America, dal nome latinizzato Americus.",
+  WAM, AME, "cartografo tedesco Martin Waldseemüller a nominare il continente America")
+
+D("geo-315", "Continenti", 4, "Come si chiama lo scambio di specie viventi avvenuto quando America del Nord e del Sud si unirono, tre milioni di anni fa?",
+  "Grande scambio americano", ["Scambio colombiano", "Deriva di Wegener", "Grande migrazione beringiana"],
+  "Quando le due Americhe si unirono, tre milioni di anni fa, avvenne il grande scambio americano, che diffuse specie come il puma, l'istrice e il colibrì.",
+  WAM, AME, "si verificò il cosiddetto grande scambio americano")
+
+D("geo-316", "Continenti", 3, "Quali grandi bacini fluviali dominano il lato orientale dell'America?",
+  "Rio delle Amazzoni, Mississippi e Río de la Plata", ["Nilo, Congo e Niger", "Volga, Danubio e Reno", "Gange, Indo e Mekong"],
+  "Il lato orientale dell'America è dominato da grandi bacini fluviali, come il Rio delle Amazzoni, il Mississippi e il Río de la Plata.",
+  WAM, AME, "come il Rio delle Amazzoni, il Mississippi, e il Río de la Plata")
+
+D("geo-317", "Continenti", 3, "Quanto si estende l'America in direzione nord-sud?",
+  "Circa 14.000 km", ["Circa 5.000 km", "Circa 30.000 km", "Circa 8.000 km"],
+  "L'estensione dell'America secondo l'orientamento nord-sud è di 14000 km.",
+  WAM, AME, "L'estensione è di 14000 km")
+
+D("geo-318", "Continenti", 4, "Chi furono probabilmente i primi europei a giungere in America, sull'isola di Terranova?",
+  "I vichinghi", ["I Fenici", "I Romani", "I Portoghesi di Vasco da Gama"],
+  "Si ritiene possibile che i primi europei a giungere in America siano stati i vichinghi, sbarcati a Terranova e forse sulle coste del Canada.",
+  WAM, AME, "possano in realtà essere stati dei vichinghi, sbarcati sull'isola di Terranova")
+
+D("geo-319", "Continenti", 4, "Quale gruppo etnico è il primo in Argentina?",
+  "Quello di origine italiana", ["Quello di origine spagnola", "Quello di origine tedesca", "Quello dei nativi americani"],
+  "In Argentina gli italiani rappresentano il primo gruppo etnico del Paese, con circa trenta milioni di cittadini di origine italiana.",
+  WAM, AME, "gli italiani rappresentano il primo gruppo etnico del paese sudamericano")
+
+D("geo-320", "Continenti", 4, "Chi coniò il termine «Oceania», in una mappa del 1814?",
+  "Il cartografo francese Adrien-Hubert Brué", ["James Cook", "Abel Tasman", "Charles Darwin"],
+  "Il termine Oceania fu coniato dal cartografo Adrien-Hubert Brué per la mappa che pubblicò nel 1814.",
+  WOC, OCN, "fu coniato dal cartografo Adrien-Hubert Brué")
+
+D("geo-321", "Continenti", 3, "Che posto occupa l'Oceania tra i continenti abitati per popolazione?",
+  "L'ultimo, con circa 40 milioni di abitanti", ["Il primo", "Il terzo", "Il secondo"],
+  "Con circa 40 milioni di abitanti, di cui 24 in Australia, l'Oceania è all'ultimo posto tra i continenti abitati.",
+  WOC, OCN, "è all'ultimo posto tra i continenti abitati")
+
+D("geo-322", "Oceani", 4, "Perché il polo oceanico dell'inaccessibilità, nel Pacifico, è chiamato «punto Nemo»?",
+  "In onore del personaggio di Giulio Verne", ["Dal nome di un esploratore norvegese", "Perché in latino significa «nessuno»", "Dal nome di una nave affondata"],
+  "Il polo oceanico dell'inaccessibilità, all'estremità orientale dell'Oceania, è detto punto Nemo in onore del personaggio di Giulio Verne.",
+  WOC, OCN, "in onore del personaggio di Giulio Verne")
+
+D("geo-323", "Continenti", 5, "Chi coniò nel 1756 il termine «Australasia», e cosa significa?",
+  "Charles de Brosses; significa «Asia meridionale»", ["James Cook; significa «terra del sud»", "Magellano; significa «isole dell'est»", "Darwin; significa «terra nuova»"],
+  "Il termine Australasia fu coniato nel 1756 da Charles de Brosses; deriva dal latino e significa «Asia meridionale».",
+  WOC, OCN, "è stato coniato nel 1756 da Charles de Brosses")
+
+D("geo-324", "Continenti", 5, "Quale suddivisione dell'Oceania proposero nel 1974 Andrew Pawley e Roger Green?",
+  "In Oceania vicina e Oceania lontana", ["In Polinesia e Micronesia soltanto", "In Australia e Nuova Zelanda", "In Oceania nord e sud"],
+  "Nel 1974 Pawley e Green proposero due sole regioni: Oceania vicina, con isole visibili tra loro e popolamento più antico, e Oceania lontana.",
+  WOC, OCN, "in due sole regioni: Oceania vicina e Oceania lontana")
+
+D("geo-325", "Continenti", 3, "Perché l'Australia non è considerata un'isola?",
+  "Per le sue dimensioni è considerata una massa continentale", ["Perché è unita all'Asia", "Perché non è circondata dal mare", "Perché è sotto il livello del mare"],
+  "La maggior parte delle terre emerse dell'Oceania appartiene all'Australia, che per le sue dimensioni è considerata una massa continentale e non un'isola.",
+  WOC, OCN, "viene considerata una massa continentale e non un'isola")
+
+D("geo-326", "Continenti", 3, "Quali sono gli unici due continenti bagnati da tre oceani?",
+  "Asia e Antartide", ["Africa e America", "Europa e Oceania", "America e Asia"],
+  "L'Asia è il solo continente, insieme all'Antartide, a essere bagnato da tre oceani: Atlantico, Indiano e Pacifico.",
+  WAS, ASI, "è il solo continente, insieme all'Antartide, ad essere bagnato da tre oceani")
+
+D("geo-327", "Continenti", 4, "Quanto è largo lo stretto di Bering?",
+  "Circa 92 km", ["Circa 3 km", "Circa 500 km", "Circa 1.200 km"],
+  "L'Asia è separata dall'America settentrionale dallo stretto di Bering, largo 92 km.",
+  WAS, ASI, "è separata dall'America settentrionale dallo stretto di Bering (largo 92 km)")
+
+D("geo-328", "Continenti", 5, "Dove si trova il punto delle terre emerse più lontano dal mare?",
+  "Nel deserto Gurbantünggüt, nello Xinjiang (Cina)", ["Nel Sahara, in Ciad", "In Mongolia, nel Gobi", "In Siberia, presso il lago Bajkal"],
+  "In Asia si trova il punto terrestre più lontano dal mare: nel deserto Gurbantünggüt nello Xinjiang, a 2645 km dall'oceano più vicino.",
+  WAS, ASI, "nel Deserto Gurbantünggüt nello Xinjiang (Cina)")
+
+D("geo-329", "Continenti", 4, "Quale linea indica convenzionalmente il confine tra Asia e Oceania?",
+  "La linea di Lydekker", ["La linea di von Strahlenberg", "La linea Maginot", "La linea del cambiamento di data"],
+  "Il confine marittimo tra Asia e Oceania è convenzionale: la linea di Lydekker lascia l'Arcipelago Malese in Asia e la Nuova Guinea in Oceania.",
+  WAS, ASI, "la Linea di Lydekker")
+
+D("geo-330", "Continenti", 4, "Quanto è lungo l'istmo di Suez, unico confine terrestre tra Asia e Africa?",
+  "161 km", ["20 km", "600 km", "1.200 km"],
+  "Anche con l'Africa l'Asia ha una breve parte di confine terrestre: l'istmo di Suez, di 161 km.",
+  WAS, ASI, "l'Istmo di Suez, di 161 km")
+
+D("geo-331", "Continenti", 4, "Quale monte, alto 5165 m, si trova sull'Acrocoro Armeno?",
+  "Il monte Ararat", ["L'Elbrus", "Il K2", "Il Kilimangiaro"],
+  "La fascia montuosa asiatica comprende l'Acrocoro Armeno, che raggiunge i 5165 m con il monte Ararat.",
+  WAS, ASI, "raggiunge i 5165 m con il monte Ararat")
+
+D("geo-332", "Continenti", 4, "Come si chiama il tavolato della penisola indiana, orlato dai Ghati occidentali e orientali?",
+  "Deccan", ["Pamir", "Tibet", "Hanhai"],
+  "Il tavolato indiano (Deccan) è orlato lungo le coste dai Ghati Occidentali e Orientali ed è separato dai sistemi centrali dal bassopiano indogangetico.",
+  WAS, ASI, "il tavolato indiano (Deccan) è orlato lungo le coste da rilievi")
+
+D("geo-333", "Continenti", 3, "Quale cintura, lungo cui si allineano molti vulcani, caratterizza le isole dell'Asia orientale?",
+  "La cintura di fuoco pacifica", ["La dorsale medio-atlantica", "La Rift Valley", "La faglia di Sant'Andrea"],
+  "Le isole dell'Asia orientale hanno molti vulcani (116 attivi tra le Curili e il Giappone), allineati lungo la cintura di fuoco pacifica.",
+  WAS, ASI, "allineati secondo la cosiddetta cintura di fuoco pacifica")
+
+D("geo-334", "Continenti", 3, "Qual è lo Stato più piccolo dell'Africa sulla terraferma?",
+  "Il Gambia", ["Le Seychelles", "Il Lesotho", "Gibuti"],
+  "Lo Stato più grande è l'Algeria, il più piccolo sono le Seychelles (arcipelago); sulla terraferma il più piccolo è il Gambia.",
+  WAF, AFR, "Lo Stato più piccolo sulla terraferma è invece il Gambia")
+
+D("geo-335", "Continenti", 4, "Qual è la distanza minima tra Africa e America?",
+  "Circa 4000 km, tra Capo Verde e Fortaleza, in Brasile", ["Circa 1000 km", "Circa 10.000 km", "Circa 400 km"],
+  "La distanza minima dell'Africa dal continente americano è di circa 4000 km, da Santo Antão (Capo Verde) a Fortaleza (Brasile).",
+  WAF, AFR, "La distanza minima dal continente americano è di circa 4000 km")
+
+D("geo-336", "Continenti", 4, "Qual è la seconda montagna più alta dell'Africa, vulcano spento di 5199 m?",
+  "Il Monte Kenya (Kirinyaga)", ["Il Monte Camerun", "Il Ruwenzori", "L'Atlante"],
+  "Le maggiori altitudini africane sono presso la Rift Valley: Kilimangiaro (5895 m), Kirinyaga o Monte Kenya (5199 m), Ruwenzori (5110 m).",
+  WAF, AFR, "del Kirinyaga o Monte Kenya (5199 m di altitudine)")
+
+D("geo-337", "Continenti", 3, "Come si chiama l'area semi-arida in cui sfuma il Sahara verso sud?",
+  "Sahel", ["Maghreb", "Kalahari", "Namib"],
+  "A meridione il Sahara sfuma in un'area pianeggiante semi-arida chiamata Sahel.",
+  WAF, AFR, "A meridione il Sahara sfuma in un'area pianeggiante semi-arida chiamata Sahel")
+
+D("geo-338", "Continenti", 4, "Quale isola, presso la costa della Tanzania, è la maggiore del versante orientale africano dopo il Madagascar?",
+  "Zanzibar", ["Mauritius", "Socotra", "Riunione"],
+  "Presso la costa della Tanzania si trova l'isola di Zanzibar, la maggiore del versante orientale dopo il Madagascar.",
+  WAF, AFR, "Presso la costa della Tanzania si trova l'isola di Zanzibar")
+
+D("geo-339", "Continenti", 4, "Come sono, in proporzione alla superficie, le coste dell'Africa rispetto a quelle europee?",
+  "Molto meno sviluppate: circa 26.000 km contro i 32.000 dell'Europa, tre volte più piccola", ["Molto più frastagliate", "Uguali", "Più lunghe del doppio"],
+  "Lo sviluppo costiero africano è modesto, circa 26000 km, mentre l'Europa, con superficie tre volte inferiore, ha circa 32000 km di coste.",
+  WAF, AFR, "di circa 26000 km (l'Europa, con una superficie tre volte inferiore, ha circa 32000 km di coste)")
+
+D("geo-340", "Continenti", 3, "Secondo l'etimologia più diffusa, cosa significherebbe «Africa»?",
+  "Terra degli Afri", ["Terra senza freddo", "Terra del sole", "Terra delle spezie"],
+  "Il termine Africa significherebbe «terra degli Afri», il nome latino dato ad alcune genti del Nord Africa.",
+  WAF, AFR, "significherebbe \"terra degli Afri\"")
+
+D("geo-341", "Continenti", 4, "Per quale caratteristica climatica l'Africa detiene un primato tra i continenti?",
+  "La più grande area con clima arido e caldo", ["La più grande area con clima polare", "Le maggiori precipitazioni annue", "La temperatura media più bassa"],
+  "L'Africa è il continente con la più grande area interessata dal clima arido e caldo (BWh secondo Köppen).",
+  WAF, AFR, "È il continente con la più grande area interessata dal clima arido e caldo")
+
+D("geo-342", "Vulcani", 2, "In che anno è avvenuta l'ultima eruzione del Vesuvio?",
+  "Nel 1944", ["Nel 79 d.C.", "Nel 1631", "Nel 1980"],
+  "Il Vesuvio è un vulcano esplosivo, la cui ultima eruzione ebbe luogo nel 1944; da allora è considerato quiescente.",
+  WVE, VES, "la cui ultima eruzione ebbe luogo nel 1944")
+
+D("geo-343", "Vulcani", 3, "Quanto è alto il Vesuvio?",
+  "Circa 1281 m", ["Circa 3300 m", "Circa 800 m", "Circa 2000 m"],
+  "Con un'altezza, al 2010, di 1281 m, il Vesuvio sorge all'interno di una parziale caldera di circa 4 km di diametro.",
+  WVE, VES, "Con un'altezza, al 2010, di 1281 m")
+
+D("geo-344", "Vulcani", 4, "Da chi prendono nome le eruzioni «pliniane»?",
+  "Da Plinio il Vecchio e Plinio il Giovane, testimoni dell'eruzione del 79 d.C.", ["Da un vulcano islandese", "Dal geologo Plinius del Settecento", "Dalla città di Plinia, vicino a Napoli"],
+  "Le eruzioni più violente sono dette pliniane dai nomi di Plinio il Vecchio, che morì nell'eruzione del 79 d.C., e di Plinio il Giovane, che la raccontò.",
+  WVE, VES, "sono chiamate eruzioni pliniane (dai nomi di Plinio il Vecchio e Plinio il Giovane")
+
+D("geo-345", "Vulcani", 4, "In quale anno è stato istituito il Parco nazionale del Vesuvio?",
+  "Nel 1995", ["Nel 1922", "Nel 1970", "Nel 2010"],
+  "Il Vesuvio si trova nel territorio dell'omonimo parco nazionale istituito nel 1995.",
+  WVE, VES, "nel territorio dell'omonimo parco nazionale istituito nel 1995")
+
+D("geo-346", "Vulcani", 4, "Perché il complesso Somma-Vesuvio è classificato come «vulcano a recinto»?",
+  "Perché il cono attuale sorge dentro la caldera del più antico Monte Somma", ["Perché è circondato da un muro costruito dai Romani", "Perché ha due crateri gemelli", "Perché è sottomarino"],
+  "Il cono del Vesuvio si è formato dentro la caldera del Monte Somma dopo il crollo del 79: per questo il complesso è un «vulcano a recinto» e il cono interno è detto Gran Cono.",
+  WVE, VES, "è classificato come \"vulcano a recinto\"")
+
+D("geo-347", "Vulcani", 3, "Come si chiama l'area a più alto rischio, individuata per legge, in caso di eruzione del Vesuvio?",
+  "Zona rossa", ["Zona gialla", "Zona franca", "Area vesuviana protetta"],
+  "Per la pericolosità del Vesuvio alcune leggi hanno individuato una zona a rischio, detta zona rossa, con un piano di emergenza della Protezione civile.",
+  WVE, VES, "detta zona rossa")
+
+D("geo-348", "Mari e stretti", 4, "Che profondità ha la «sella» sottomarina nel punto più stretto dello stretto di Messina?",
+  "Tra 80 e 120 m", ["Circa 2000 m", "Circa 500 m", "Meno di 10 m"],
+  "Lungo la congiungente Ganzirri-punta Pezzo corrisponde a livello del fondo una sella sottomarina con le minori profondità (80-120 m).",
+  WST, STR, "una \"sella\" sottomarina ove si riscontrano le minori profondità (80–120 m)")
+
+D("geo-349", "Mari e stretti", 5, "Lontano dallo stretto di Messina, come si confrontano le acque del Tirreno e dello Ionio?",
+  "Il Tirreno è più caldo e meno salato dello Ionio", ["Il Tirreno è più freddo e più salato", "Hanno identica temperatura e salinità", "Lo Ionio è più caldo e meno salato"],
+  "In aree marine lontane dallo stretto, il mar Tirreno è più caldo e meno salato del mar Ionio.",
+  WST, STR, "il mar Tirreno è più caldo e meno salato del mar Ionio")
+
+D("geo-350", "Mari e stretti", 4, "Con quale nome latino era noto lo stretto di Messina dopo l'antichità?",
+  "Fretum Siculum", ["Mare Nostrum", "Fretum Gaditanum", "Sinus Tarentinus"],
+  "Noto nell'antichità come Stretto di Scilla e Cariddi, in seguito fu chiamato Fretum Siculum e poi Faro di Messina.",
+  WST, STR, "in seguito fu noto come Fretum Siculum")
+
+# ── Banca dati ministeriale «1° Livello – Geografia» (geografia.pdf): domande riportate così come sono,
+#    la risposta esatta è la A) del PDF. Generato con scripts/domande/da_banca_ministeriale.py.
+D("geo-351", "Regioni", 2, "Qual è il capoluogo della Regione Lombardia?",
+  "Milano", ["Torino", "Alessandria", "Genova"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1: la risposta esatta è «Milano».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1", "geografia.txt", "Qual è il capoluogo della Regione Lombardia?")
+D("geo-352", "Regioni", 2, "La \"Masuria\" è una regione compresa in quale nazione?",
+  "Polonia", ["Romania", "Rep.Ceca", "Lituania"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 9: la risposta esatta è «Polonia».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 9", "geografia.txt", "La \"Masuria\" è una regione compresa in quale nazione?")
+D("geo-353", "Confini", 2, "Vi è una nazione fra le seguenti che non confina con la Thailandia?",
+  "Inghilterra", ["Cambogia", "Malesia", "Laos"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 17: la risposta esatta è «Inghilterra».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 17", "geografia.txt", "Vi è una nazione fra le seguenti che non confina con la Thailandia?")
+D("geo-354", "Regioni", 2, "Quale delle seguenti Regioni d'Italia è bagnata dal Mar Tirreno?",
+  "Sicilia", ["Puglia", "Molise", "Friuli Venezia Giulia"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 25: la risposta esatta è «Sicilia».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 25", "geografia.txt", "Quale delle seguenti Regioni d'Italia è bagnata dal Mar Tirreno?")
+D("geo-355", "Oceani", 2, "Quale dei seguenti Stati è bagnato dall'Oceano Pacifico?",
+  "Messico", ["India", "Afghanistan", "Francia"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 33: la risposta esatta è «Messico».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 33", "geografia.txt", "Quale dei seguenti Stati è bagnato dall'Oceano Pacifico?")
+D("geo-356", "Capitali", 2, "La capitale della Bolivia è:",
+  "Sucre", ["Lima", "Brasilia", "Buenos Aires"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 41: la risposta esatta è «Sucre».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 41", "geografia.txt", "La capitale della Bolivia è:")
+D("geo-357", "Ambiente", 2, "La foresta tropicale più estesa al mondo è:",
+  "la foresta Amazzonica", ["la foresta Africana", "la foresta Nera", "la foresta Indiana"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 50: la risposta esatta è «la foresta Amazzonica».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 50", "geografia.txt", "La foresta tropicale più estesa al mondo è:")
+D("geo-358", "Fiumi", 2, "In quale delle seguenti nazioni d'Europa non scorre il Fiume Reno?",
+  "Russia", ["Paesi Bassi", "Germania", "Svizzera"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 59: la risposta esatta è «Russia».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 59", "geografia.txt", "In quale delle seguenti nazioni d'Europa non scorre il Fiume Reno?")
+D("geo-359", "Regioni", 2, "In quale delle seguenti regioni d'Italia scorre il fiume Brenta?",
+  "Veneto", ["Sardegna", "Molise", "Toscana"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 68: la risposta esatta è «Veneto».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 68", "geografia.txt", "In quale delle seguenti regioni d'Italia scorre il fiume Brenta?")
+D("geo-360", "Fiumi", 2, "Tra i seguenti, l'unico fiume che sfocia nel Mar Mediterraneo è:",
+  "l'Ebro", ["la Senna", "la Loira", "il Volga"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 77: la risposta esatta è «l'Ebro».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 77", "geografia.txt", "Tra i seguenti, l'unico fiume che sfocia nel Mar Mediterraneo è:")
+D("geo-361", "Continenti", 2, "L'Agro Pontino si trova:",
+  "nel Lazio", ["in Abruzzo", "nel Molise", "in Campania"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 86: la risposta esatta è «nel Lazio».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 86", "geografia.txt", "L'Agro Pontino si trova:")
+D("geo-362", "Fiumi", 2, "Quale fiume bagna la città di Varsavia?",
+  "Il fiume Vistola", ["Il fiume Oder", "Il fiume Elba", "Il fiume Volga"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 95: la risposta esatta è «Il fiume Vistola».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 95", "geografia.txt", "Quale fiume bagna la città di Varsavia?")
+D("geo-363", "Europa", 2, "In quale nazione Europea si trova la città di Coriza?",
+  "Albania", ["Norvegia", "Francia", "Grecia"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 104: la risposta esatta è «Albania».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 104", "geografia.txt", "In quale nazione Europea si trova la città di Coriza?")
+D("geo-364", "Mari e stretti", 2, "Quali dei seguenti Stati Europei non ha alcuno sbocco sul mare:",
+  "Svizzera", ["Spagna", "Italia", "Norvegia"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 112: la risposta esatta è «Svizzera».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 112", "geografia.txt", "Quali dei seguenti Stati Europei non ha alcuno sbocco sul mare:")
+D("geo-365", "Continenti", 2, "Vicino a quale città si trova Ischia?",
+  "A Napoli", ["A Salerno", "A Firenze", "A Reggio Calabria"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 120: la risposta esatta è «A Napoli».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 120", "geografia.txt", "Vicino a quale città si trova Ischia?")
+D("geo-366", "Isole", 2, "Indicare quale delle seguenti isole si trova in Europa:",
+  "Tilos", ["Portorico", "Giappone", "Jamaica"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 129: la risposta esatta è «Tilos».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 129", "geografia.txt", "Indicare quale delle seguenti isole si trova in Europa:")
+D("geo-367", "Europa", 2, "In quale nazione Europea si trova Praga?",
+  "Repubblica Ceca", ["Paesi Bassi", "Austria", "Svezia"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 146: la risposta esatta è «Repubblica Ceca».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 146", "geografia.txt", "In quale nazione Europea si trova Praga?")
+D("geo-368", "Capitali", 2, "Qual è la capitale dello Stato della Guyana?",
+  "Georgetown", ["Belmopan", "Bridgetown", "Castries"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 155: la risposta esatta è «Georgetown».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 155", "geografia.txt", "Qual è la capitale dello Stato della Guyana?")
+D("geo-369", "Regioni", 2, "In quale regione d'Italia si trova Alessandria?",
+  "Piemonte", ["Abruzzo", "Lombardia", "Liguria"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 163: la risposta esatta è «Piemonte».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 163", "geografia.txt", "In quale regione d'Italia si trova Alessandria?")
+D("geo-370", "Europa", 2, "In quale nazione Europea si trova Bucarest?",
+  "Romania", ["Germania", "Lituania", "Slovenia"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 172: la risposta esatta è «Romania».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 172", "geografia.txt", "In quale nazione Europea si trova Bucarest?")
+D("geo-371", "Continenti", 2, "Quale dei seguenti Stati fa parte degli Stati Uniti d'America?",
+  "Alabama", ["Brasile", "Uruguay", "Canada"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 180: la risposta esatta è «Alabama».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 180", "geografia.txt", "Quale dei seguenti Stati fa parte degli Stati Uniti d'America?")
+D("geo-372", "Regioni", 2, "In quale provincia italiana si trova il Lago di Albano?",
+  "Roma", ["Viterbo", "Trapani", "Cosenza"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 189: la risposta esatta è «Roma».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 189", "geografia.txt", "In quale provincia italiana si trova il Lago di Albano?")
+D("geo-373", "Regioni", 2, "In quale regione d'Italia si trova Viterbo?",
+  "Lazio", ["Calabria", "Trentino Alto Adige", "Toscana"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 205: la risposta esatta è «Lazio».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 205", "geografia.txt", "In quale regione d'Italia si trova Viterbo?")
+D("geo-374", "Oceani", 2, "Quale dei seguenti Stati degli Stati Uniti d'America si affaccia sull'Oceano Atlantico?",
+  "South Carolina", ["Vermont", "West Virginia", "Wisconsin"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 213: la risposta esatta è «South Carolina».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 213", "geografia.txt", "Quale dei seguenti Stati degli Stati Uniti d'America si affaccia sull'Oceano Atlantico?")
+D("geo-375", "Regioni", 2, "La foresta vergine è presente in regioni caratterizzate da un clima:",
+  "caldo e umido", ["freddo", "freddo e umido", "caldo e secco"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 222: la risposta esatta è «caldo e umido».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 222", "geografia.txt", "La foresta vergine è presente in regioni caratterizzate da un clima:")
+D("geo-376", "Montagne", 2, "Le Alpi Graie interessano:",
+  "Francia/Italia/Svizzera", ["Italia/Spagna/Francia", "Spagna/Francia/Portogallo", "Spagna/Francia"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 230: la risposta esatta è «Francia/Italia/Svizzera».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 230", "geografia.txt", "Le Alpi Graie interessano:")
+D("geo-377", "Isole", 2, "Le Isole Mauritius si trovano nell'Oceano:",
+  "Oceano Indiano", ["Oceano Pacifico", "Oceano Atlantico", "Mar Mediterraneo"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 238: la risposta esatta è «Oceano Indiano».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 238", "geografia.txt", "Le Isole Mauritius si trovano nell'Oceano:")
+D("geo-378", "Capitali", 2, "Qual è la capitale dello Stato del Honduras?",
+  "Tegucigalba", ["San Josè", "San Salvador", "Belmopan"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 246: la risposta esatta è «Tegucigalba».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 246", "geografia.txt", "Qual è la capitale dello Stato del Honduras?")
+D("geo-379", "Europa", 2, "In quale nazione Europea si trova Amsterdam?",
+  "Paesi Bassi", ["Italia", "Finlandia", "Irlanda"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 262: la risposta esatta è «Paesi Bassi».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 262", "geografia.txt", "In quale nazione Europea si trova Amsterdam?")
+D("geo-380", "Continenti", 2, "Dove si trova la Patagonia?",
+  "Tra Cile e Argentina", ["Tra Bolivia e Colombia", "Tra Perù e Bolivia", "Tra Cile e Brasile"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 281: la risposta esatta è «Tra Cile e Argentina».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 281", "geografia.txt", "Dove si trova la Patagonia?")
+D("geo-381", "Montagne", 2, "Il Monte Rosa si trova nelle Alpi:",
+  "Pennine", ["Giulie", "Graie", "Cozie"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 297: la risposta esatta è «Pennine».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 297", "geografia.txt", "Il Monte Rosa si trova nelle Alpi:")
+D("geo-382", "Regioni", 2, "Parte del territorio relativo alla Provincia di Cosenza si affaccia sul Mar:",
+  "Tirreno", ["Adriatico", "Ligure", "Caspio"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 313: la risposta esatta è «Tirreno».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 313", "geografia.txt", "Parte del territorio relativo alla Provincia di Cosenza si affaccia sul Mar:")
+D("geo-383", "Continenti", 2, "Dove possiamo trovare le montagne del Chianti?",
+  "Tra Firenze e Siena", ["Tra Napoli e Salerno", "Tra Roma e Latina", "Tra Lucca e Viareggio"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 321: la risposta esatta è «Tra Firenze e Siena».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 321", "geografia.txt", "Dove possiamo trovare le montagne del Chianti?")
+D("geo-384", "Capitali", 2, "Qual è la capitale dello Stato del Nicaragua?",
+  "Managua", ["San Josè", "San Salvador", "Belmopan"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 332: la risposta esatta è «Managua».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 332", "geografia.txt", "Qual è la capitale dello Stato del Nicaragua?")
+D("geo-385", "Regioni", 2, "Dove si trovano le regioni Basche?",
+  "Tra la Spagna e la Francia", ["Tra la Germania e la Francia", "Tra l'Austria e la Svizzera", "Tra l'Italia e la Svizzera"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 340: la risposta esatta è «Tra la Spagna e la Francia».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 340", "geografia.txt", "Dove si trovano le regioni Basche?")
+D("geo-386", "Continenti", 2, "In quale continente si trova lo stato del Mali?",
+  "Africa", ["Oceania", "Asia", "Sud America"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 349: la risposta esatta è «Africa».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 349", "geografia.txt", "In quale continente si trova lo stato del Mali?")
+D("geo-387", "Europa", 2, "Il Valico internazionale del Colle della Maddalena collega l'Italia con:",
+  "la Francia", ["la Serbia", "l'Austria", "la Svizzera"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 357: la risposta esatta è «la Francia».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 357", "geografia.txt", "Il Valico internazionale del Colle della Maddalena collega l'Italia con:")
+D("geo-388", "Oceani", 2, "Di quale oceano fa parte il Mar Arabico?",
+  "Oceano Indiano", ["Oceano Pacifico", "Oceano Atlantico", "Oceano Artico"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 366: la risposta esatta è «Oceano Indiano».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 366", "geografia.txt", "Di quale oceano fa parte il Mar Arabico?")
+D("geo-389", "Continenti", 2, "Il Partenone si trova a…",
+  "Atene", ["Mosca", "Barcellona", "Pechino"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 374: la risposta esatta è «Atene».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 374", "geografia.txt", "Il Partenone si trova a…")
+D("geo-390", "Continenti", 2, "La città di Petra si trova in…",
+  "Giordania", ["Cambogia", "Bolivia", "Polinesia Francese"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 383: la risposta esatta è «Giordania».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 383", "geografia.txt", "La città di Petra si trova in…")
+D("geo-391", "Continenti", 2, "L'aeroporto Marcello Arlotta serve la città di…",
+  "Taranto", ["Savona", "Roma", "Rimini"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 392: la risposta esatta è «Taranto».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 392", "geografia.txt", "L'aeroporto Marcello Arlotta serve la città di…")
+D("geo-392", "Continenti", 2, "Quale dei seguenti paesi ha come lingua ufficiale l'inglese?",
+  "Lesotho", ["Colombia", "Ciad", "Capo Verde"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 400: la risposta esatta è «Lesotho».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 400", "geografia.txt", "Quale dei seguenti paesi ha come lingua ufficiale l'inglese?")
+D("geo-393", "Regioni", 2, "La SS 172 dei Trulli va da…",
+  "Casamassima a Taranto", ["Marina di Orosei a Macomer", "Trapani a Siracusa", "Paola a Crotone"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 409: la risposta esatta è «Casamassima a Taranto».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 409", "geografia.txt", "La SS 172 dei Trulli va da…")
+D("geo-394", "Continenti", 2, "La città proibita si trova a…",
+  "Pechino", ["Sydney", "Mosca", "Barcellona"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 419: la risposta esatta è «Pechino».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 419", "geografia.txt", "La città proibita si trova a…")
+D("geo-395", "Regioni", 2, "La SS 87 Sannitica va da…",
+  "Benevento a Termoli", ["Vicenza a Portogruaro", "Messina a Trapani", "Catania a Palermo"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 437: la risposta esatta è «Benevento a Termoli».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 437", "geografia.txt", "La SS 87 Sannitica va da…")
+D("geo-396", "Continenti", 2, "Un Verlano viene da…",
+  "Giovo (TN)", ["Vergiate (VA)", "Vermezzo (MI)", "Pietralunga (PG)"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 446: la risposta esatta è «Giovo (TN)».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 446", "geografia.txt", "Un Verlano viene da…")
+D("geo-397", "Continenti", 2, "Il Dong è la valuta in uso in …",
+  "Vietnam", ["Uzbekistan", "Uganda", "Tonga"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 456: la risposta esatta è «Vietnam».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 456", "geografia.txt", "Il Dong è la valuta in uso in …")
+D("geo-398", "Continenti", 2, "Quale delle seguenti città è più vicina all'equatore?",
+  "Caracas (Venezuela)", ["Città del Messico (Messico)", "Nassau (Bahamas)", "Manila (Filippine)"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 465: la risposta esatta è «Caracas (Venezuela)».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 465", "geografia.txt", "Quale delle seguenti città è più vicina all'equatore?")
+D("geo-399", "Regioni", 2, "Gli abitanti di Asti (AT) sono…",
+  "astigiani", ["astini", "astesi", "astiani"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 474: la risposta esatta è «astigiani».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 474", "geografia.txt", "Gli abitanti di Asti (AT) sono…")
+D("geo-400", "Continenti", 2, "Quale paese ha la bandiera composta da tre bande verticali di uguali dimensioni, dall'inferitura, verde, bianca e arancione?",
+  "Irlanda", ["Paesi Bassi", "Niger", "Guinea"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 482: la risposta esatta è «Irlanda».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 482", "geografia.txt", "Quale paese ha la bandiera composta da tre bande verticali di uguali dimensioni, dall'inferitura, verde, bianca e arancione?")
+D("geo-401", "Continenti", 2, "L'aeroporto Birgi serve la città di…",
+  "Trapani", ["Taranto", "Savona", "Roma"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 491: la risposta esatta è «Trapani».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 491", "geografia.txt", "L'aeroporto Birgi serve la città di…")
+D("geo-402", "Isole", 2, "Fa parte delle Isole Borromee…",
+  "Isola Madre", ["Chioggia", "Isola di Ponza", "Scoglio d'Africa"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 500: la risposta esatta è «Isola Madre».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 500", "geografia.txt", "Fa parte delle Isole Borromee…")
+D("geo-403", "Continenti", 2, "Quale delle seguenti capitali si trova ad altitudine maggiore?",
+  "Tblisi", ["Vienna", "Lussemburgo", "Skopje"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 510: la risposta esatta è «Tblisi».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 510", "geografia.txt", "Quale delle seguenti capitali si trova ad altitudine maggiore?")
+D("geo-404", "Continenti", 2, "L'aeroporto Luigi Ridolfi serve la città di…",
+  "Forlì", ["Firenze", "Crotone", "Cagliari"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 520: la risposta esatta è «Forlì».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 520", "geografia.txt", "L'aeroporto Luigi Ridolfi serve la città di…")
+D("geo-405", "Fiumi", 2, "Il fiume Calore Irpino, lungo circa 108 km, scorre in…",
+  "Campania", ["Marche", "Abruzzo", "Molise"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 530: la risposta esatta è «Campania».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 530", "geografia.txt", "Il fiume Calore Irpino, lungo circa 108 km, scorre in…")
+D("geo-406", "Continenti", 2, "L'Opera House si trova a…",
+  "Sydney", ["Barcellona", "Londra", "Mosca"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 539: la risposta esatta è «Sydney».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 539", "geografia.txt", "L'Opera House si trova a…")
+D("geo-407", "Fiumi", 2, "Il fiume Aterno, lungo circa 145 km, scorre in…",
+  "Abruzzo", ["Basilicata", "Campania", "Emilia-Romagna"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 548: la risposta esatta è «Abruzzo».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 548", "geografia.txt", "Il fiume Aterno, lungo circa 145 km, scorre in…")
+D("geo-408", "Isole", 2, "Nelle Isole Galápagos si parla…",
+  "spagnolo", ["francese", "olandese", "portoghese"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 557: la risposta esatta è «spagnolo».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 557", "geografia.txt", "Nelle Isole Galápagos si parla…")
+D("geo-409", "Regioni", 2, "La ex SS 11 (ora SP 11) Padana Superiore va da…",
+  "Torino a Venezia", ["Padova ad Otranto", "Genova al confine con la Svizzera (presso Chiasso)", "Genova a Piacenza"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 567: la risposta esatta è «Torino a Venezia».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 567", "geografia.txt", "La ex SS 11 (ora SP 11) Padana Superiore va da…")
+D("geo-410", "Montagne", 2, "Il Monte Ortles (3.902 m) si trova nelle…",
+  "Alpi Retiche", ["Alpi Carniche", "Alpi Giulie", "Prealpi Trivenete"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 575: la risposta esatta è «Alpi Retiche».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 575", "geografia.txt", "Il Monte Ortles (3.902 m) si trova nelle…")
+D("geo-411", "Continenti", 2, "Un Graisano viene da…",
+  "Grado (GO)", ["Giovo (TN)", "Gragnano (NA)", "Gravina di Catania (CT)"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 584: la risposta esatta è «Grado (GO)».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 584", "geografia.txt", "Un Graisano viene da…")
+D("geo-412", "Regioni", 2, "Gli abitanti di Ivrea (TO) sono…",
+  "eporediesi", ["eporedini", "iveesi", "eporedi"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 592: la risposta esatta è «eporediesi».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 592", "geografia.txt", "Gli abitanti di Ivrea (TO) sono…")
+D("geo-413", "Capitali", 2, "Di quale paese è capitale Ulan Bator?",
+  "Mongolia", ["Madagascar", "Zambia", "Kirghizistan"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 601: la risposta esatta è «Mongolia».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 601", "geografia.txt", "Di quale paese è capitale Ulan Bator?")
+D("geo-414", "Popolazione", 2, "La città di Shenyang, di 4.101.197 abitanti, si trova in…",
+  "Cina", ["Corea del Nord", "Corea del Sud", "Bangladesh"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 611: la risposta esatta è «Cina».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 611", "geografia.txt", "La città di Shenyang, di 4.101.197 abitanti, si trova in…")
+D("geo-415", "Continenti", 2, "Di quale paese è la bandiera rossa con al centro un cerchio bianco, con al suo interno un mezzaluna ed una stella entrambe rosse?",
+  "Tunisia", ["Vietnam", "Marocco", "Turchia"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 629: la risposta esatta è «Tunisia».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 629", "geografia.txt", "Di quale paese è la bandiera rossa con al centro un cerchio bianco, con al suo interno un mezzaluna ed una stella entrambe rosse?")
+D("geo-416", "Continenti", 2, "In quale dei seguenti paesi si parla la lingua tigrigna?",
+  "Eritrea", ["Tajikistan", "Tanzania", "Messico"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 638: la risposta esatta è «Eritrea».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 638", "geografia.txt", "In quale dei seguenti paesi si parla la lingua tigrigna?")
+D("geo-417", "Continenti", 2, "Quale paese ha la bandiera composta da tre bande verticali di uguali dimensioni, le esterne rosse e la centrale bianca?",
+  "Perù", ["Botswana", "Nigeria", "Gabon"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 667: la risposta esatta è «Perù».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 667", "geografia.txt", "Quale paese ha la bandiera composta da tre bande verticali di uguali dimensioni, le esterne rosse e la centrale bianca?")
+D("geo-418", "Regioni", 2, "Gli abitanti di Barletta (BT) sono…",
+  "barlettani", ["barlettesi", "barlettini", "barlesi"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 677: la risposta esatta è «barlettani».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 677", "geografia.txt", "Gli abitanti di Barletta (BT) sono…")
+D("geo-419", "Isole", 2, "Fa parte delle Isole Ciclopi…",
+  "l'Isola Lachea", ["l'Isola di Panarea", "l'Isola di Lampedusa", "l'Isola di Favignana"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 686: la risposta esatta è «l'Isola Lachea».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 686", "geografia.txt", "Fa parte delle Isole Ciclopi…")
+D("geo-420", "Continenti", 2, "La Concarena (2.549 m) si trova nelle…",
+  "Alpi e Prealpi Bergamasche", ["Prealpi Trivenete", "Dolomiti", "Alpi Marittime"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 694: la risposta esatta è «Alpi e Prealpi Bergamasche».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 694", "geografia.txt", "La Concarena (2.549 m) si trova nelle…")
+D("geo-421", "Confini", 2, "La Macedonia non confina con…",
+  "Romania", ["Bulgaria", "Albania", "Grecia"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 702: la risposta esatta è «Romania».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 702", "geografia.txt", "La Macedonia non confina con…")
+D("geo-422", "Laghi", 2, "Il lago Vostok, dalla superficie di oltre 15.000 km², si trova in…",
+  "Antartide", ["Canada", "Cina", "Stati Uniti"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 711: la risposta esatta è «Antartide».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 711", "geografia.txt", "Il lago Vostok, dalla superficie di oltre 15.000 km², si trova in…")
+D("geo-423", "Continenti", 2, "La città di San Paolo si trova in…",
+  "Brasile", ["Argentina", "Colombia", "Cile"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 727: la risposta esatta è «Brasile».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 727", "geografia.txt", "La città di San Paolo si trova in…")
+D("geo-424", "Regioni", 2, "Gli abitanti di Imperia (IM) sono…",
+  "imperiesi", ["imperiani", "imperini", "impersi"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 736: la risposta esatta è «imperiesi».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 736", "geografia.txt", "Gli abitanti di Imperia (IM) sono…")
+D("geo-425", "Europa", 2, "Quale delle seguenti città italiane si trova ad altitudine maggiore?",
+  "L'Aquila", ["Brescia", "Udine", "Asti"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 745: la risposta esatta è «L'Aquila».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 745", "geografia.txt", "Quale delle seguenti città italiane si trova ad altitudine maggiore?")
+D("geo-426", "Regioni", 2, "La SS 4 Via Salaria va da…",
+  "Roma ad Ascoli Piceno", ["Roma a Caianello", "Torino a Venezia", "Padova ad Otranto"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 755: la risposta esatta è «Roma ad Ascoli Piceno».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 755", "geografia.txt", "La SS 4 Via Salaria va da…")
+D("geo-427", "Isole", 2, "Fa parte delle Isole Eolie…",
+  "Isola di Stromboli", ["Isola di Ustica", "Isola di Pantelleria", "Isola di Lampedusa"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 763: la risposta esatta è «Isola di Stromboli».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 763", "geografia.txt", "Fa parte delle Isole Eolie…")
+D("geo-428", "Continenti", 2, "Un Eretìno viene da…",
+  "Monterotondo (RM)", ["Rieti (RI)", "Erice (TP)", "Erba (CO)"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 773: la risposta esatta è «Monterotondo (RM)».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 773", "geografia.txt", "Un Eretìno viene da…")
+D("geo-429", "Continenti", 2, "Lo Shekel è la valuta in uso in …",
+  "Israele", ["Lesotho", "Madagascar", "Mauritania"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 781: la risposta esatta è «Israele».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 781", "geografia.txt", "Lo Shekel è la valuta in uso in …")
+D("geo-430", "Continenti", 2, "Quale delle seguenti lingue è parlata a Macao?",
+  "portoghese", ["inglese", "francese", "olandese"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 790: la risposta esatta è «portoghese».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 790", "geografia.txt", "Quale delle seguenti lingue è parlata a Macao?")
+D("geo-431", "Continenti", 2, "Il Lari è la valuta in uso in …",
+  "Georgia", ["Guatemala", "Indonesia", "Kenya"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 799: la risposta esatta è «Georgia».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 799", "geografia.txt", "Il Lari è la valuta in uso in …")
+D("geo-432", "Montagne", 2, "Il Monte Canin (2.587 m) si trova nelle…",
+  "Alpi Giulie", ["Alpi Cozie", "Alpi Pusteresi", "Alpi Carniche"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 807: la risposta esatta è «Alpi Giulie».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 807", "geografia.txt", "Il Monte Canin (2.587 m) si trova nelle…")
+D("geo-433", "Isole", 2, "Fa parte delle Isole Egadi…",
+  "l'Isola di Marettimo", ["l'Isola di Vulcano", "l'Isola di Panarea", "l'Isola Grande"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 815: la risposta esatta è «l'Isola di Marettimo».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 815", "geografia.txt", "Fa parte delle Isole Egadi…")
+D("geo-434", "Continenti", 2, "Dove si trova Legnano?",
+  "In Lombardia", ["In Valle d'Aosta", "In Emilia Romagna", "In Piemonte"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 824: la risposta esatta è «In Lombardia».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 824", "geografia.txt", "Dove si trova Legnano?")
+D("geo-435", "Regioni", 2, "In quale regione si trova la città di Soverato?",
+  "Calabria", ["Puglia", "Sicilia", "Campania"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 833: la risposta esatta è «Calabria».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 833", "geografia.txt", "In quale regione si trova la città di Soverato?")
+D("geo-436", "Fiumi", 2, "Quale tra i seguenti è un affluente del Rio delle Amazzoni?",
+  "Rio Purus", ["Colne", "Vazuza", "Missouri"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 842: la risposta esatta è «Rio Purus».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 842", "geografia.txt", "Quale tra i seguenti è un affluente del Rio delle Amazzoni?")
+D("geo-437", "Continenti", 2, "Cosa rappresenta il moto ondoso?",
+  "Il movimento più evidente del mare", ["Le correnti marine attive in tutto gli oceani", "L'altezza delle onde in una determinata condizione atmosferica", "Una successione di stati di mare"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 850: la risposta esatta è «Il movimento più evidente del mare».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 850", "geografia.txt", "Cosa rappresenta il moto ondoso?")
+D("geo-438", "Ambiente", 2, "Quali sono gli elementi del clima?",
+  "Temperatura, pressione, venti, umidità e precipitazioni", ["Altitudine, latitudine, vicinanza al mare e attività umane inquinanti", "Latitudine, vegetazione, durata e numero delle stagioni", "Altitudine, correnti, fasi lunari, disboscamento e attività umane inquinanti"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 859: la risposta esatta è «Temperatura, pressione, venti, umidità e precipitazioni».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 859", "geografia.txt", "Quali sono gli elementi del clima?")
+D("geo-439", "Continenti", 2, "I \"Colli Euganei\" si trovano…",
+  "in Veneto", ["in Puglia", "in Calabria", "nel Lazio"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 868: la risposta esatta è «in Veneto».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 868", "geografia.txt", "I \"Colli Euganei\" si trovano…")
+D("geo-440", "Continenti", 2, "Quanto è estesa la Pianura Padana?",
+  "Circa 47.000 km2", ["Circa 77.000 km2", "Circa 105.000 km2", "Circa 133.000 km2"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 876: la risposta esatta è «Circa 47.000 km2».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 876", "geografia.txt", "Quanto è estesa la Pianura Padana?")
+D("geo-441", "Continenti", 2, "Che cosa è la \"lanca\"?",
+  "È il braccio morto di un fiume, generalmente paludoso", ["È una regione interessata da fenomeni geotermici", "È la costa delle regioni artiche", "È il fondale di un lago"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 884: la risposta esatta è «È il braccio morto di un fiume, generalmente paludoso».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 884", "geografia.txt", "Che cosa è la \"lanca\"?")
+D("geo-442", "Laghi", 2, "\"Zona di terra che chiude una laguna\" è una definizione di:",
+  "Lido", ["Fiordo", "Golfo", "Costa frastagliata"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 892: la risposta esatta è «Lido».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 892", "geografia.txt", "\"Zona di terra che chiude una laguna\" è una definizione di:")
+D("geo-443", "Continenti", 2, "La Biogeografia…",
+  "studia la diffusione degli essere viventi siano essi vegetali o animali", ["studia la distribuzione e localizzazione delle acque sulla superficie terrestre", "analizza i rapporti intercorrenti fra ambiente naturale e società umane", "studia la geografia delle epoche passate"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 900: la risposta esatta è «studia la diffusione degli essere viventi siano essi vegetali o animali».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 900", "geografia.txt", "La Biogeografia…")
+D("geo-444", "Regioni", 2, "In quale delle seguenti regioni si possono trovare lo Dolomiti?",
+  "Veneto", ["Lombardia", "Piemonte", "Liguria"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 908: la risposta esatta è «Veneto».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 908", "geografia.txt", "In quale delle seguenti regioni si possono trovare lo Dolomiti?")
+D("geo-445", "Continenti", 2, "La città polacca di Danzica si affaccia sul…",
+  "Mar Baltico", ["Mar del Nord", "Golfo di Botnia", "Non ha sbocchi sul mare"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 920: la risposta esatta è «Mar Baltico».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 920", "geografia.txt", "La città polacca di Danzica si affaccia sul…")
+D("geo-446", "Continenti", 2, "Dove si trova il Kilimangiaro?",
+  "Tanzania", ["Kenia", "Uganda", "Mozambico"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 929: la risposta esatta è «Tanzania».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 929", "geografia.txt", "Dove si trova il Kilimangiaro?")
+D("geo-447", "Ambiente", 2, "Il Deserto di Accona si trova in:",
+  "Toscana", ["Sardegna", "Corsica", "Liguria"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 937: la risposta esatta è «Toscana».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 937", "geografia.txt", "Il Deserto di Accona si trova in:")
+D("geo-448", "Continenti", 2, "Quale tra le seguenti è ancora una colonia britannica?",
+  "Gibilterra", ["Hong Kong", "India", "Nuova Caledonia"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 950: la risposta esatta è «Gibilterra».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 950", "geografia.txt", "Quale tra le seguenti è ancora una colonia britannica?")
+D("geo-449", "Continenti", 2, "Di quale Paese fa parte la città di Salonicco?",
+  "Grecia", ["Macedonia", "Turchia", "Bulgaria"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 958: la risposta esatta è «Grecia».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 958", "geografia.txt", "Di quale Paese fa parte la città di Salonicco?")
+D("geo-450", "Continenti", 2, "La città di Basilea si trova in:",
+  "Svizzera", ["Portogallo", "Spagna", "Germania"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 966: la risposta esatta è «Svizzera».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 966", "geografia.txt", "La città di Basilea si trova in:")
+D("geo-451", "Continenti", 2, "Dove si trova il Pireo?",
+  "Vicino Atene", ["Vicino Corinto", "Vicino Rodi", "Vicino Tebe"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 975: la risposta esatta è «Vicino Atene».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 975", "geografia.txt", "Dove si trova il Pireo?")
+D("geo-452", "Europa", 2, "In quale nazione Europea si trova la città di Salisburgo?",
+  "Austria", ["Norvegia", "Francia", "Croazia"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 983: la risposta esatta è «Austria».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 983", "geografia.txt", "In quale nazione Europea si trova la città di Salisburgo?")
+D("geo-453", "Continenti", 2, "La città di Delft si trova in:",
+  "Olanda", ["Danimarca", "Belgio", "Lussemburgo"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 991: la risposta esatta è «Olanda».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 991", "geografia.txt", "La città di Delft si trova in:")
+D("geo-454", "Continenti", 2, "Cosa si intende per fiordo?",
+  "Un braccio di mare che si insinua per la costa, anche per diversi chilometri", ["Una depressione artificiale che ne consente l'allagamento da parte del mare", "Un tipo di erosione costiera", "Il letto di un ghiacciaio"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1000: la risposta esatta è «Un braccio di mare che si insinua per la costa, anche per diversi chilometri».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1000", "geografia.txt", "Cosa si intende per fiordo?")
+D("geo-455", "Capitali", 2, "La capitale del Liechtenstein è:",
+  "Vaduz", ["Berna", "Zurigo", "Copenaghen"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1008: la risposta esatta è «Vaduz».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1008", "geografia.txt", "La capitale del Liechtenstein è:")
+D("geo-456", "Continenti", 2, "La città di Delhi si trova in:",
+  "India", ["Indonesia", "Iran", "Thailandia"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1016: la risposta esatta è «India».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1016", "geografia.txt", "La città di Delhi si trova in:")
+D("geo-457", "Capitali", 2, "Qual è la capitale dello Stato della Colombia?",
+  "Bogotà", ["Fort de France", "Belmopan", "Castries"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1024: la risposta esatta è «Bogotà».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1024", "geografia.txt", "Qual è la capitale dello Stato della Colombia?")
+D("geo-458", "Continenti", 2, "Quale è la cascata più alta tra le seguenti?",
+  "Salto Angel", ["Iguazo", "Niagara", "Tugela"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1032: la risposta esatta è «Salto Angel».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1032", "geografia.txt", "Quale è la cascata più alta tra le seguenti?")
+D("geo-459", "Confini", 2, "Quale tra le seguenti nazioni non confina con la Thailandia?",
+  "Russia", ["Cambogia", "Malesia", "Laos"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1040: la risposta esatta è «Russia».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1040", "geografia.txt", "Quale tra le seguenti nazioni non confina con la Thailandia?")
+D("geo-460", "Capitali", 2, "Qual è la capitale degli Stati Uniti d'America?",
+  "Washington DC", ["Ottawa", "Nuuk", "Hamilton"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1049: la risposta esatta è «Washington DC».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1049", "geografia.txt", "Qual è la capitale degli Stati Uniti d'America?")
+D("geo-461", "Continenti", 2, "La Norvegia è una:",
+  "Monarchia costituzionale", ["Monarchia assoluta", "Repubblica federale", "Monarchia parlamentare"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1057: la risposta esatta è «Monarchia costituzionale».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1057", "geografia.txt", "La Norvegia è una:")
+D("geo-462", "Regioni", 2, "In quale regione d'Italia si trova Cosenza?",
+  "Calabria", ["Marche", "Veneto", "Lombardia"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1091: la risposta esatta è «Calabria».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1091", "geografia.txt", "In quale regione d'Italia si trova Cosenza?")
+D("geo-463", "Continenti", 2, "Se mi trovo davanti alla Sagrada Familia in quale città spagnola mi trovo?",
+  "A Barcellona", ["A Madrid", "A Pamplona", "A Valencia"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1099: la risposta esatta è «A Barcellona».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1099", "geografia.txt", "Se mi trovo davanti alla Sagrada Familia in quale città spagnola mi trovo?")
+D("geo-464", "Continenti", 2, "Quale di queste città non si trova in Portogallo?",
+  "Aragona", ["Sintra", "Coimbra", "Vila Nova de Gaia"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1108: la risposta esatta è «Aragona».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1108", "geografia.txt", "Quale di queste città non si trova in Portogallo?")
+D("geo-465", "Continenti", 2, "La Salzkammergut è..",
+  "una regione austriaca", ["una pietanza tedesca", "un ballo tipico", "una zona del Tirolo"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1117: la risposta esatta è «una regione austriaca».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1117", "geografia.txt", "La Salzkammergut è..")
+D("geo-466", "Isole", 2, "Le isole Frisone si trovano..",
+  "in Germania", ["in Irlanda", "in Scozia", "in Gran Bretagna"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1125: la risposta esatta è «in Germania».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1125", "geografia.txt", "Le isole Frisone si trovano..")
+D("geo-467", "Isole", 2, "Dove si trovano le isole Orcadi?",
+  "in Scozia", ["in Irlanda", "in Norvegia", "in Finlandia"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1134: la risposta esatta è «in Scozia».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1134", "geografia.txt", "Dove si trovano le isole Orcadi?")
+D("geo-468", "Continenti", 2, "Quale di queste città non si trova in Danimarca?",
+  "Oslo", ["Alborg", "Arhus", "Odense"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1143: la risposta esatta è «Oslo».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1143", "geografia.txt", "Quale di queste città non si trova in Danimarca?")
+D("geo-469", "Continenti", 2, "Qual è la moneta corrente in Brasile?",
+  "Real", ["Peso brasiliano", "Dollaro brasiliano", "Còrdoba oro"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1151: la risposta esatta è «Real».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1151", "geografia.txt", "Qual è la moneta corrente in Brasile?")
+D("geo-470", "Isole", 2, "Quale tra questi Stati della Penisola Arabica ha come forma di Governo una Repubblica?",
+  "Yemen", ["Kuwait", "Qatar", "Emirati Arabi Uniti"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1159: la risposta esatta è «Yemen».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1159", "geografia.txt", "Quale tra questi Stati della Penisola Arabica ha come forma di Governo una Repubblica?")
+D("geo-471", "Continenti", 2, "Cos'è il Permafrost?",
+  "Suolo perennemente gelato", ["Materiale impermeabile usato per gli indumenti degli alpinisti", "Il periodo dell'anno in cui lo strato superficiale del ghiaccio Artico si scioglie", "Un prodotto usato in agricoltura per proteggere le colture dalle gelate"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1168: la risposta esatta è «Suolo perennemente gelato».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1168", "geografia.txt", "Cos'è il Permafrost?")
+D("geo-472", "Continenti", 2, "Il Circolo Polare Artico..",
+  "Attraversa l'estremo emisfero Nord del nostro pianeta", ["si trova all'emisfero Sud del nostro pianeta", "Si estende da Capo Adare (Mare di Ross) alla Terra di Coats (Mare di Weddel)", "Attraversa la Baia di Hudson"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1179: la risposta esatta è «Attraversa l'estremo emisfero Nord del nostro pianeta».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1179", "geografia.txt", "Il Circolo Polare Artico..")
+D("geo-473", "Continenti", 2, "Cosa sono I carotaggi?",
+  "Prelievi di roccia o di ghiacci", ["Particolari imbarcazioni usate per attraversare I ghiacci artici", "Imbracature usate dagli alpinisti", "Un attrezzo agricolo"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1187: la risposta esatta è «Prelievi di roccia o di ghiacci».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1187", "geografia.txt", "Cosa sono I carotaggi?")
+D("geo-474", "Isole", 2, "La penisola di Crimea..",
+  "si distacca a sud dell'Ucraina", ["Si distacca a sud della Russia", "Si distacca a nord della Polonia", "Si distacca a nord della Russia"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1196: la risposta esatta è «si distacca a sud dell'Ucraina».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1196", "geografia.txt", "La penisola di Crimea..")
+D("geo-475", "Continenti", 2, "Qual è l'ordinamento politico della Svezia?",
+  "Monarchia costituzionale", ["Repubblica federale", "Repubblica parlamentare", "Coprincipato"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1204: la risposta esatta è «Monarchia costituzionale».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1204", "geografia.txt", "Qual è l'ordinamento politico della Svezia?")
+D("geo-476", "Continenti", 2, "Cosa contraddistingue la Finlandia dagli altri Paesi Scandinavi?",
+  "La presenza di migliaia di laghi", ["L'intensa attività vulcanica", "I fiordi", "È attraversata dalle Alpi Scandinave"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1212: la risposta esatta è «La presenza di migliaia di laghi».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1212", "geografia.txt", "Cosa contraddistingue la Finlandia dagli altri Paesi Scandinavi?")
+D("geo-477", "Continenti", 2, "Se sto visitando il celebre Museo dell'Ermitage, in quale città mi trovo?",
+  "San Pietroburgo", ["Mosca", "Bratislava", "Budapest"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1222: la risposta esatta è «San Pietroburgo».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1222", "geografia.txt", "Se sto visitando il celebre Museo dell'Ermitage, in quale città mi trovo?")
+D("geo-478", "Continenti", 2, "La moneta in uso in Romania è:",
+  "Leu", ["Euro", "Corona", "Fiorino"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1230: la risposta esatta è «Leu».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1230", "geografia.txt", "La moneta in uso in Romania è:")
+D("geo-479", "Continenti", 2, "Se passeggio per le vie di Dubrovnik, mi trovo..",
+  "in Croazia", ["in Slovenia", "in Bulgaria", "in Polonia"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1239: la risposta esatta è «in Croazia».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1239", "geografia.txt", "Se passeggio per le vie di Dubrovnik, mi trovo..")
+D("geo-480", "Isole", 2, "Quale di questi non è un arcipelago greco?",
+  "Azzorre", ["Sporadi", "Cicladi", "Ionie"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1247: la risposta esatta è «Azzorre».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1247", "geografia.txt", "Quale di questi non è un arcipelago greco?")
+D("geo-481", "Continenti", 2, "Qual è la moneta corrente in Slovenia?",
+  "Euro", ["Kuna", "Marco", "Lira"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1257: la risposta esatta è «Euro».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1257", "geografia.txt", "Qual è la moneta corrente in Slovenia?")
+D("geo-482", "Continenti", 2, "Qual è/sono la/e lingua/e ufficiale/i a Malta?",
+  "Inglese e Maltese", ["Greco", "Inglese", "Maltese"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1266: la risposta esatta è «Inglese e Maltese».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1266", "geografia.txt", "Qual è/sono la/e lingua/e ufficiale/i a Malta?")
+D("geo-483", "Isole", 2, "Itaca fa parte delle isole..",
+  "Ionie", ["Cicladi", "Sporadi Settentrionali", "Ebridi"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1276: la risposta esatta è «Ionie».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1276", "geografia.txt", "Itaca fa parte delle isole..")
+D("geo-484", "Continenti", 2, "La banchisa è..",
+  "lo strato di ghiaccio che ricopre il Mar Glaciale Artico", ["una zona deputata al carico di merci e passeggeri", "una roccia", "un minerale"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1285: la risposta esatta è «lo strato di ghiaccio che ricopre il Mar Glaciale Artico».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1285", "geografia.txt", "La banchisa è..")
+D("geo-485", "Continenti", 2, "Quale tra queste non è un ONG (Organizzazioni Non Governative)",
+  "FAO", ["Emergency", "WWF", "Amnesty International"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1295: la risposta esatta è «FAO».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1295", "geografia.txt", "Quale tra queste non è un ONG (Organizzazioni Non Governative)")
+D("geo-486", "Continenti", 2, "Quale di questi Stati non fa parte dell'Asia Centrale?",
+  "Arabia Saudita", ["Afghanistan", "Armenia", "Kazakistan"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1304: la risposta esatta è «Arabia Saudita».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1304", "geografia.txt", "Quale di questi Stati non fa parte dell'Asia Centrale?")
+D("geo-487", "Continenti", 2, "Cos'è il Sarawat?",
+  "Una lunga catena montuosa dell'Arabia Saudita", ["Un importante porto arabo", "Un arcipelago del Mar Rosso", "Un dialetto arabo"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1313: la risposta esatta è «Una lunga catena montuosa dell'Arabia Saudita».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1313", "geografia.txt", "Cos'è il Sarawat?")
+D("geo-488", "Continenti", 2, "La \"Steppa della Fame\" è..",
+  "una vasta regione del Kazakistan", ["una vasta regione del turkmenistan", "una vasta regione dell'Afghanistan", "un nome inventato"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1323: la risposta esatta è «una vasta regione del Kazakistan».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1323", "geografia.txt", "La \"Steppa della Fame\" è..")
+D("geo-489", "Montagne", 2, "Quale di questi Stati confina con la catena dell'Himalaya?",
+  "Nepal", ["Pakistan", "Thailandia", "Cambogia"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1331: la risposta esatta è «Nepal».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1331", "geografia.txt", "Quale di questi Stati confina con la catena dell'Himalaya?")
+D("geo-490", "Continenti", 2, "Quale tra queste religioni è la più praticata in India?",
+  "Induismo", ["Buddismo", "Islam", "Cristiana"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1340: la risposta esatta è «Induismo».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1340", "geografia.txt", "Quale tra queste religioni è la più praticata in India?")
+D("geo-491", "Continenti", 2, "Quale di questi Stati non fa parte del Sud-Est Asiatico?",
+  "Maldive", ["Malesia", "Filippine", "Thailandia"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1350: la risposta esatta è «Maldive».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1350", "geografia.txt", "Quale di questi Stati non fa parte del Sud-Est Asiatico?")
+D("geo-492", "Mari e stretti", 2, "Lo stretto di Malacca..",
+  "divide la penisola di Malacca dall'isola di Sumatra", ["divide la penisola di Malacca dallo Sri Lanka", "è uno stretto che mette in comunicazione il Mar Rosso e il Mar Arabico", "divide la penisola di Malacca da Taiwan"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1358: la risposta esatta è «divide la penisola di Malacca dall'isola di Sumatra».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1358", "geografia.txt", "Lo stretto di Malacca..")
+D("geo-493", "Continenti", 2, "La religione maggioritaria in Indonesia è:",
+  "l'Islamismo", ["il Buddismo", "l'Induismo", "il Cattolicesimo"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1366: la risposta esatta è «l'Islamismo».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1366", "geografia.txt", "La religione maggioritaria in Indonesia è:")
+D("geo-494", "Capitali", 2, "Qual è la capitale della Corea del Nord?",
+  "Pyongyang", ["Seoul", "Canton", "Taipei"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1374: la risposta esatta è «Pyongyang».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1374", "geografia.txt", "Qual è la capitale della Corea del Nord?")
+D("geo-495", "Continenti", 2, "Quale di questi Stati dell'Estremo Oriente è al primo posto assoluto nel campo della robotica?",
+  "Giappone", ["Cina", "Taiwan", "Corea del Sud"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1383: la risposta esatta è «Giappone».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1383", "geografia.txt", "Quale di questi Stati dell'Estremo Oriente è al primo posto assoluto nel campo della robotica?")
+D("geo-496", "Continenti", 2, "Zanzibar si trova:",
+  "Nell'Oceano Indiano, difronte alla Tanzania", ["sotto il Sud Africa", "Nell'Oceano Atlantico, difronte all'Angola", "nel Mar Mediterraneo, difronte alla Libia"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1392: la risposta esatta è «Nell'Oceano Indiano, difronte alla Tanzania».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1392", "geografia.txt", "Zanzibar si trova:")
+D("geo-497", "Continenti", 2, "Il Sahel è una vasta pianura..",
+  "africana", ["araba", "asiatica", "europea"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1400: la risposta esatta è «africana».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1400", "geografia.txt", "Il Sahel è una vasta pianura..")
+D("geo-498", "Ambiente", 2, "Il Deserto della Nubia si trova:",
+  "in Africa", ["in Asia", "in Australia", "in Europa"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1408: la risposta esatta è «in Africa».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1408", "geografia.txt", "Il Deserto della Nubia si trova:")
+D("geo-499", "Continenti", 2, "La moneta corrente in Egitto è:",
+  "Lira egiziana", ["Euro", "Naira", "Franco"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1418: la risposta esatta è «Lira egiziana».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1418", "geografia.txt", "La moneta corrente in Egitto è:")
+D("geo-500", "Ambiente", 2, "Dove si registra il più alto tasso di deforestazione al mondo?",
+  "Africa", ["Asia", "Australia", "Europa"],
+  "Banca dati ministeriale (1° livello, Geografia), domanda n. 1427: la risposta esatta è «Africa».",
+  "Banca dati ministeriale, 1° livello – Geografia, n. 1427", "geografia.txt", "Dove si registra il più alto tasso di deforestazione al mondo?")

@@ -8,6 +8,7 @@ import { createBrowserRouter, Navigate, Outlet, RouterProvider, ScrollRestoratio
 import { AuthProvider } from "./lib/auth";
 import { caricaConfig } from "./lib/config";
 import { ricordaInvito } from "./lib/invito";
+import { ricordaProvenienza } from "./lib/provenienza";
 import { Admin } from "./pages/app/Admin";
 import { AdminBancheDati } from "./pages/app/AdminBancheDati";
 import { AdminPagamenti } from "./pages/app/AdminPagamenti";
@@ -115,8 +116,10 @@ function Radice() {
 }
 
 const root = createRoot(document.getElementById("root")!);
-// Arrivati da un link "invita un amico": il codice serve dopo la registrazione.
+// Arrivati da un link "invita un amico" o da un link dei social con i parametri UTM:
+// codice e provenienza servono dopo la registrazione.
 ricordaInvito();
+ricordaProvenienza();
 
 caricaConfig()
   .then(() =>

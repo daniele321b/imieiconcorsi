@@ -16,6 +16,7 @@ export function FeedbackApp() {
   const [esito, setEsito] = useState<{ tone: "success" | "error"; testo: string }>();
   const bloccatoFino = feedbackModificabileDal(utente.feedback);
 
+  // Salva voto e commento sull'app e ringrazia.
   async function invia() {
     setInvio(true);
     setEsito(undefined);

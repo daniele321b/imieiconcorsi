@@ -34,6 +34,7 @@ export function Assistenza() {
 
   const richieste = data?.richieste ?? [];
 
+  // Cambia una richiesta dell'elenco senza ricaricarlo.
   function aggiorna(id: string, modifica: (r: RichiestaApi) => RichiestaApi) {
     setData((d) => d && { richieste: d.richieste.map((r) => (r.id === id ? modifica(r) : r)) });
   }
@@ -47,6 +48,7 @@ export function Assistenza() {
     void api(`/me/richieste/${r.id}/letta`, { method: "PUT" }).catch(() => {});
   }
 
+  // Richiesta appena creata: in cima all'elenco e già aperta.
   function creata(r: RichiestaApi) {
     setData((d) => ({ richieste: [r, ...(d?.richieste ?? [])] }));
     setNuova(false);
@@ -133,6 +135,7 @@ export function Assistenza() {
 function RispostaUtente({ richiesta, onInviato }: { richiesta: RichiestaApi; onInviato: (r: Partial<RichiestaApi>) => void }) {
   const [errore, setErrore] = useState<string>();
 
+  // Aggiunge un messaggio alla richiesta e lo mostra subito.
   async function invia(testo: string) {
     setErrore(undefined);
     try {
@@ -185,6 +188,7 @@ function NuovaRichiestaForm({
     setTipo(nuovo);
   }
 
+  // Crea una nuova richiesta di assistenza.
   async function invia() {
     if (!tipo) return;
     setInvio(true);

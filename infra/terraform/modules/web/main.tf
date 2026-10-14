@@ -14,6 +14,7 @@ terraform {
   }
 }
 
+# Con un dominio proprio servono certificato e record DNS.
 locals {
   con_dominio = var.domain_name != null
 }
@@ -148,6 +149,7 @@ locals {
   ])
 }
 
+# Intestazioni di sicurezza su ogni risposta del sito (HSTS, CSP, anti-frame, niente sniffing).
 resource "aws_cloudfront_response_headers_policy" "sicurezza" {
   name    = "${var.name}-sicurezza"
   comment = "Intestazioni di sicurezza di ${var.name} (HSTS, CSP, anti-frame)"

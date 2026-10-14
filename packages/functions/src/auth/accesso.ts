@@ -18,6 +18,7 @@ const METODI: Record<string, string> = {
   TokenGeneration_HostedAuth: "Google o Facebook",
 };
 
+/** Registra il login (accesso e ultimo accesso sul profilo) e restituisce sempre l'evento, anche se fallisce. */
 export const handler = async (event: PreTokenGenerationTriggerEvent) => {
   const metodo = METODI[event.triggerSource];
   const userId = event.request.userAttributes.sub;

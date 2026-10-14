@@ -56,7 +56,7 @@ scripts/deploy.sh all         # terraform chiede "yes" due volte (shared e dev);
 5. import dei bandi da inPA
 6. stampa degli indirizzi
 
-La banca domande (almeno 300 domande per ognuna delle 12 materie) la carica l'import dopo `infra`.
+La banca domande (13 materie, 5.150 domande) la carica l'import dopo `infra`.
 
 **Dopo il primo `all`:**
 1. Apri l'email di AWS ("Amazon Web Services – Email Address Verification
@@ -82,7 +82,9 @@ Registrati con la tua email: arriva un codice a 6 cifre (controlla anche lo
 spam). Con email e password si registrano solo indirizzi dei provider diffusi
 (Gmail, Outlook/Hotmail, Yahoo, iCloud, Libero, Virgilio, Alice/TIM…): le
 caselle usa e getta vengono rifiutate. L'elenco è in
-`packages/core/src/registrazione.ts`; con Google o Facebook si entra sempre. Poi: onboarding → Concorsi → Segui → Studio o Simulazione. Il cambio di
+`packages/core/src/registrazione.ts` e resta interno: il modulo non lo mostra e a chi usa un
+altro dominio compare solo un errore generico («Questo indirizzo email non è accettato…»);
+con Google o Facebook si entra sempre. Poi: onboarding → Concorsi → Segui → Studio o Simulazione. Il cambio di
 piano in "Piani" è gratuito e immediato (modalità di prova), con scadenza a 30 o
 365 giorni.
 
@@ -158,6 +160,16 @@ minuto. Conta chi usa davvero l'app (ogni azione con l'accesso fatto, admin escl
 ha solo una scheda aperta: ogni Lambda dell'API segna l'utente nella tabella `attivita` al
 massimo una volta al minuto, con un'impronta anonima (`core/attivita.ts`). Si conta dal giorno
 del primo deploy di questa funzione.
+
+**Provenienza iscritti.** Sotto gli utenti attivi: quanti nuovi iscritti negli ultimi 7 e
+30 giorni e in tutto, per fonte, mezzo, campagna e contenuto. Si basa sui link con i parametri
+UTM che mettiamo nelle bio e negli annunci, per esempio
+`https://imieiconcorsi.it/?utm_source=instagram&utm_medium=social&utm_campaign=bio`
+(per un annuncio aggiungi `&utm_content=annuncio-a` per distinguerlo dagli altri). Il sito
+ricorda il primo link aperto fino all'iscrizione (massimo 30 giorni) e lo salva nel profilo
+quando nasce, una volta sola (`core/provenienza.ts`); chi si iscrive senza link è «diretto».
+Nella scheda di ogni utente compare anche «da instagram / bio». Usa solo minuscole, cifre e
+trattini nei valori: il resto viene tolto.
 
 **Accessi.** A ogni login (email e password, Google o Facebook) Cognito registra data, ora e modo
 nella tabella `accessi` (si cancellano da soli dopo 12 mesi). Nel pannello, per ogni utente:
@@ -242,15 +254,22 @@ Poi:
 scripts/deploy.sh ses-status       # colonna richiesta_uscita
 scripts/deploy.sh ses-production   # se non c'è nessuna richiesta: la invia con il testo già pronto
 ```
-Se `richiesta_uscita` è **DENIED** (il caso di Fleet Audit, stesso account e
-stessa regione) da comando non si può rifare: console AWS → **Support Center** →
-apri il caso (numero in `caso_supporto`) → **Reply**, e incolla:
+`ses-production` scrive i dati della richiesta sull'account (sito, descrizione) e apre
+l'esame. Controlla sempre con `ses-status` che il sito sia `https://imieiconcorsi.it`: fino al
+14 ottobre 2026 sull'account c'era ancora la richiesta di Fleet Audit (sito
+`dev.fleetaudit.it`, non più raggiungibile), e le richieste di rivalutazione finivano su quella.
+
+Se `richiesta_uscita` è **DENIED** da comando non si può rifare. Apri un caso **nuovo**
+(non rispondere a quelli vecchi): console AWS → **Support Center** → **Create case** →
+**Account and billing** oppure **Service limit increase** → servizio **SES Sending Limits**,
+regione **Europe (Milan)**, tipo di email **Transactional**, sito `https://imieiconcorsi.it`,
+e incolla:
 
 > Hello,
 >
-> We would like to ask for a re-evaluation of Amazon SES production access in eu-south-1 (Europe - Milan) for this account. The earlier request (for another small app on this account, Fleet Audit) was declined on 28 September 2026. This request is for the transactional emails of iMieiConcorsi (https://imieiconcorsi.it).
+> We would like to ask for Amazon SES production access in eu-south-1 (Europe - Milan) for the transactional emails of iMieiConcorsi (https://imieiconcorsi.it).
 >
-> Since the previous review we have:
+> How we send:
 > 1. Set up SNS notifications for every bounce, complaint and rejection, delivered by email to the account owner, and enabled suppression of bounced and complaining addresses in our configuration set and at account level.
 > 2. Added one-click unsubscribe (RFC 8058 List-Unsubscribe and List-Unsubscribe-Post headers) and a visible unsubscribe link to every recurring email. Recurring emails also slow down and then stop automatically for users who do not open them.
 > 3. Authenticated the sending domain imieiconcorsi.it with Easy DKIM, a custom MAIL FROM domain (mail.imieiconcorsi.it, SPF) and DMARC.
@@ -285,11 +304,12 @@ scripts/deploy.sh shared      # terraform chiede "yes"; il tester riceve l'email
 
 Senza account si vedono: home, **Chi siamo**, **Prezzi**, **Domande frequenti**, **Contatti**,
 **Le nostre email** (tutte le email che mandiamo e come smettere), **Privacy**, **Cookie**,
-**Termini**, **Eliminazione dei dati** (link nel piè di pagina; le prime tre anche in cima
-alla home). Servono agli utenti e a chi valuta il servizio (AWS per SES, Stripe, Google e Meta).
+**Termini**, **Eliminazione dei dati**. Nel piè di pagina, su due righe: Chi siamo, Prezzi,
+Domande frequenti, Contatti; sotto Privacy, Cookie, Termini. Le nostre email ed Eliminazione dei
+dati si raggiungono da Privacy e Domande frequenti (indirizzi dati ad AWS e Meta). Servono agli utenti e a chi valuta il servizio (AWS per SES, Stripe, Google e Meta).
 
-- **Gestore**: per ora "iMieiConcorsi, progetto in fase di avvio". Quando la società è
-  costituita, compila `ragioneSociale`, `sede` e `partitaIva` in
+- **Gestore**: per ora le pagine non parlano di società, dicono solo "iMieiConcorsi
+  (imieiconcorsi.it)". Quando ci sarà, compila `ragioneSociale`, `sede` e `partitaIva` in
   `packages/web/src/lib/legale.ts`: le pagine li mostrano da sole. Servono per legge prima di
   accettare pagamenti veri (Stripe live).
 - **Contatti**: il modulo della pagina Contatti funziona senza account e ti arriva per email
@@ -300,9 +320,26 @@ alla home). Servono agli utenti e a chi valuta il servizio (AWS per SES, Stripe,
 
 ## Banca domande (piano Free)
 
-Oggi c'è la **v2**: almeno 300 domande per ognuna delle 12 materie (3.605 in
-tutto), scritte da libri di testo e fonti online. Le fonti sono elencate in fondo
-alla pagina Studio, insieme alla versione della banca.
+Oggi c'è la **v4**: 13 materie, 5.150 domande in tutto. Ci sono 500 domande per
+geografia, italiano, matematica e attualità e cultura generale, 350 per le altre.
+Le domande sono scritte da libri di testo e fonti online. Le 150 domande in più di
+geografia, italiano e matematica e le 500 di attualità vengono invece dalle banche
+dati ministeriali «1° Livello» in `contenuti/libri/`, riportate così come sono.
+Le fonti sono elencate in fondo alla pagina Studio, insieme alla versione della banca.
+
+**Domande da una banca dati ministeriale.** Metti il PDF in
+`contenuti/libri/<materia>/`, poi:
+```bash
+python3 scripts/domande/da_banca_ministeriale.py <materia> <file.pdf> <quante> <primo-id> >> contenuti/sorgenti/<materia>.py
+```
+Lo script prende la risposta A) del PDF come giusta. Sceglie le domande lungo
+tutto il file e salta:
+- quelle con figure;
+- quelle con dati superati, come popolazioni o satelliti;
+- i doppioni con le domande già presenti.
+
+Le domande sbagliate nel PDF si escludono per numero in `ESCLUDI`, dentro lo
+script. Rileggi sempre il blocco aggiunto prima di generare.
 
 **Nuova versione (v2, v3…).** Le domande restano in `contenuti/sorgenti/` (si
 correggono, si aggiungono, si tolgono); la versione si cambia in un punto solo:
@@ -377,6 +414,22 @@ l'ente la pubblica:
    nulla a che fare con…", "Non attinente…": un'alternativa presa a caso sarebbe giusta
    anche lei) e quelle che citano parole che il file non riporta. Agli utenti la
    spiegazione dice che le alternative sono ricavate.
+   **PDF a tabella con esatta ed errate in colonna** (es. Polizia penitenziaria, Ministero
+   della Giustizia: "Id | Livello | Quesito | Risp_esatta | Risp_errata_1-3"): formato
+   **Tabella esatta ed errate** (anche "Automatico" lo riconosce e lo preferisce alla
+   "Solo risposta esatta"). Le colonne vengono dall'intestazione ripetuta in ogni pagina,
+   anche con le pagine in orizzontale. Il titolo "… BANCA DATI ARITMETICA" diventa la
+   sezione e le copertine delle materie si saltano. Gli esponenti tornano a posto
+   (4a², 10⁻⁶). I pedici scritti come testo normale nel PDF restano come sono ("x2=-2").
+   Scartate solo le righe con due risposte uguali nel PDF.
+   **PDF a tabella con la lettera della giusta** (es. Guardia di Finanza, "Materiale
+   testologico": "TSUYB00000076 | domanda | a) | b) | c) | d) | b", senza riga di
+   intestazione): formato **Tabella con lettera giusta** (anche "Automatico" lo riconosce).
+   Le colonne vengono dalle risposte "a)", "b)"… che stanno sempre alla stessa x. Il numero
+   della domanda è la parte numerica del codice e il titolo in cima alle pagine si salta.
+   Le divisioni in sillabe ("Au- to- re") e i trattini restano come nel PDF.
+   Attenzione: questi PDF portano scritto "VIETATA LA PUBBLICAZIONE, LA RIPRODUZIONE E LA
+   DIVULGAZIONE". Prima di pubblicarli nell'app verifica di poterlo fare.
 5. **Pubblica**: la banca dati compare nella sezione **Banche dati** dell'app
    (per comparto, con l'elenco dei concorsi per cui vale) e **in ogni concorso
    collegato**: nella pagina del concorso il riquadro "Banca dati ufficiale" con
@@ -445,8 +498,8 @@ quali domande (nuove, da ripassare, preferite, tutte), quante, e il pulsante per
 dopo l'invio **Torna alla domanda** lo chiude e si riprende dallo stesso punto. La segnalazione
 finisce in Assistenza come le altre richieste.
 
-**Bandi con le domande chiuse.** Nella ricerca, **Filtri → Stato del bando**:
-"Aperti" (predefinito), "Aperti e chiusi" o "Solo chiusi". I chiusi sono i bandi
+**Bandi con le domande chiuse.** Nella ricerca, accanto alla barra e prima
+dell'ordinamento: **Tutti** (predefinito), **Aperti** o **Chiusi**. I chiusi sono i bandi
 scaduti da meno di 24 mesi: chi ha già fatto domanda continua a prepararsi.
 Quando un concorso è davvero finito, dalla sua pagina (da admin) **Segna come
 concluso** e sparisce anche da lì.

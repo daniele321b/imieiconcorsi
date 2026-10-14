@@ -20,15 +20,18 @@ provider "aws" {
 }
 
 variable "aws_region" {
-  type    = string
-  default = "eu-south-1"
+  description = "Regione del bucket di stato"
+  type        = string
+  default     = "eu-south-1"
 }
 
 variable "project_name" {
-  type    = string
-  default = "imieiconcorsi"
+  description = "Prefisso del nome del bucket"
+  type        = string
+  default     = "imieiconcorsi"
 }
 
+# Id dell'account, per un nome di bucket unico.
 data "aws_caller_identity" "current" {}
 
 # Il bucket dello stato di Terraform (protetto dalla cancellazione).
@@ -85,5 +88,6 @@ resource "aws_s3_bucket_policy" "state" {
 }
 
 output "state_bucket_name" {
-  value = aws_s3_bucket.state.id
+  description = "Bucket da passare a terraform init degli ambienti"
+  value       = aws_s3_bucket.state.id
 }

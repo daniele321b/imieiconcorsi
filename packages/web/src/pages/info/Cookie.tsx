@@ -3,7 +3,7 @@ import { LegalePagina } from "../legale/LegalePagina";
 import { ComeContattarci } from "../legale/parti";
 
 // Pagina pubblica /cookie: cosa salva il sito nel browser. Deve restare allineata alle chiavi
-// usate nel codice (lib/ordineRisposte.ts, lib/invito.ts, lib/bandi.ts, pages/app/Sessione.tsx,
+// usate nel codice (lib/ordineRisposte.ts, lib/invito.ts, lib/provenienza.ts, lib/bandi.ts, lib/statoSessione.ts, pages/app/Sessione.tsx,
 // pages/app/BancaDatiConsulta.tsx, pages/AuthCallback.tsx) e ad Amplify (token di accesso).
 // Se un giorno arrivano statistiche o pubblicità di terzi serve il banner del consenso.
 
@@ -24,9 +24,19 @@ const VOCI: { nome: string; cosa: string; durata: string }[] = [
     durata: "Finché non la cambi",
   },
   {
+    nome: "Ricerca dei bandi",
+    cosa: "Filtri, ordine e testo della ricerca dei bandi, per ritrovarli uguali quando torni all'elenco dopo aver aperto un bando.",
+    durata: "Fino alla chiusura della scheda",
+  },
+  {
     nome: "Codice invito",
     cosa: "Il codice dell'amico che ti ha invitato, se apri il suo link, fino a quando completi l'iscrizione.",
     durata: "Fino all'iscrizione",
+  },
+  {
+    nome: "Campagna di provenienza",
+    cosa: "Se arrivi da un nostro link sui social o da un nostro annuncio, il nome della campagna scritto nel link (per esempio «instagram, bio»), finché ti iscrivi. Nessun identificativo tuo o del clic.",
+    durata: "Fino all'iscrizione, al massimo 30 giorni",
   },
   {
     nome: "Accesso con Google o Facebook",

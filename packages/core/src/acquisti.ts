@@ -34,6 +34,7 @@ export type EsitoAcquisto =
       giorniConvertiti?: number;
     };
 
+/** Data in italiano per i messaggi, es. "10 ottobre 2026". */
 const dataIt = (iso: string) => new Intl.DateTimeFormat("it-IT", { day: "numeric", month: "long", year: "numeric", timeZone: "Europe/Rome" }).format(new Date(iso));
 
 /** Esito dell'acquisto di `nuovo` per chi ha `attuale`, calcolato all'istante `ora`. */
@@ -43,7 +44,9 @@ export function esitoAcquisto(attuale: PianoAttuale, nuovo: { piano: "medium" | 
   const fine = attuale.scadenza ? Date.parse(attuale.scadenza) : undefined;
   const senzaScadenza = attuale.piano !== "free" && !attuale.scadenza;
   const attivo = attuale.piano !== "free" && (senzaScadenza || (fine !== undefined && fine > adesso));
+  // Data ISO a `giorniInPiu` giorni da `base`.
   const da = (base: number, giorniInPiu: number) => new Date(base + giorniInPiu * GIORNO).toISOString();
+  // Nome del piano da mostrare all'utente.
   const nome = (p: PianoId) => PIANI[p].nome;
 
   if (!attivo) return { consentito: true, tipo: "nuovo", scadenza: da(adesso, giorni) };

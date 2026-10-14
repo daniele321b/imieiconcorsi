@@ -3,6 +3,8 @@ import { parseGruppi } from "@imieiconcorsi/core/http";
 import { describe, expect, it } from "vitest";
 import { azionePerAbbonato } from "../src/jobs/scadenze-logic";
 
+// Test di gruppi Cognito → piano e delle azioni sugli abbonamenti in scadenza.
+
 describe("parseGruppi", () => {
   it.each([
     ["[admin pro]", ["admin", "pro"]],
@@ -30,6 +32,7 @@ describe("pianoDaGruppi", () => {
 
 describe("azionePerAbbonato", () => {
   const oggi = new Date("2026-10-10T05:00:00Z");
+  // Data ISO a `giorni` giorni da oggi (negativi = nel passato).
   const tra = (giorni: number) => new Date(oggi.getTime() + giorni * 86_400_000).toISOString();
 
   it("senza scadenza non fa nulla (piano dato a mano dall'admin)", () => {
