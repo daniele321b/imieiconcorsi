@@ -19,3 +19,8 @@ output "distribution_id" {
   description = "Id della distribuzione CloudFront (per invalidare la cache)"
   value       = aws_cloudfront_distribution.web.id
 }
+
+output "manutenzione_kvs_arn" {
+  description = "ARN della KeyValueStore della manutenzione (scripts/deploy.sh manutenzione)"
+  value       = aws_cloudfront_key_value_store.manutenzione.arn
+}

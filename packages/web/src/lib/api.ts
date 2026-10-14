@@ -50,6 +50,8 @@ export async function api<T>(path: string, init: { method?: string; body?: unkno
     body: init.body !== undefined ? JSON.stringify(init.body) : undefined,
   });
   const data = await res.json().catch(() => ({}));
+  // Manutenzione accesa mentre l'app era aperta (docs/MANUTENZIONE.md): ricaricando si vede la pagina apposita.
+  if (res.status === 503 && data.code === "MANUTENZIONE") window.location.reload();
   if (!res.ok) throw new ApiError(res.status, data.error ?? "Errore di comunicazione con il server", data.code);
   return data as T;
 }

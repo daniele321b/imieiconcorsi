@@ -191,20 +191,38 @@ resource "aws_cloudfront_response_headers_policy" "sicurezza" {
   }
 }
 
-# Sito a pagina unica: un indirizzo come /app/profilo serve index.html (decide React).
-resource "aws_cloudfront_function" "spa" {
-  name    = "${var.name}-spa"
-  runtime = "cloudfront-js-2.0"
-  publish = true
-  code    = file("${path.module}/functions/spa.js")
+# Interruttore della manutenzione (docs/MANUTENZIONE.md): chiavi "attiva", "messaggio" e "accesso",
+# scritte da scripts/deploy.sh manutenzione. Le chiavi non stanno in Terraform, così un deploy
+# durante la manutenzione non la spegne; chiave assente = manutenzione spenta.
+resource "aws_cloudfront_key_value_store" "manutenzione" {
+  name    = "${var.name}-manutenzione"
+  comment = "Manutenzione di ${var.name}: attiva=si chiude sito e API"
 }
 
-# Toglie /api dall'indirizzo prima di passarlo all'API Gateway.
+locals {
+  # Id della KeyValueStore (ultima parte dell'ARN), da scrivere nel codice delle funzioni.
+  kvs_id = element(split("/", aws_cloudfront_key_value_store.manutenzione.arn), 1)
+  # Controllo della manutenzione, in cima a entrambe le funzioni.
+  codice_manutenzione = replace(file("${path.module}/functions/manutenzione.js"), "__KVS_ID__", local.kvs_id)
+}
+
+# Sito a pagina unica: un indirizzo come /app/profilo serve index.html (decide React).
+# Prima controlla la manutenzione.
+resource "aws_cloudfront_function" "spa" {
+  name                         = "${var.name}-spa"
+  runtime                      = "cloudfront-js-2.0"
+  publish                      = true
+  code                         = "${local.codice_manutenzione}\n${file("${path.module}/functions/spa.js")}"
+  key_value_store_associations = [aws_cloudfront_key_value_store.manutenzione.arn]
+}
+
+# Toglie /api dall'indirizzo prima di passarlo all'API Gateway. Prima controlla la manutenzione.
 resource "aws_cloudfront_function" "api_prefix" {
-  name    = "${var.name}-api-prefix"
-  runtime = "cloudfront-js-2.0"
-  publish = true
-  code    = file("${path.module}/functions/api-prefix.js")
+  name                         = "${var.name}-api-prefix"
+  runtime                      = "cloudfront-js-2.0"
+  publish                      = true
+  code                         = "${local.codice_manutenzione}\n${file("${path.module}/functions/api-prefix.js")}"
+  key_value_store_associations = [aws_cloudfront_key_value_store.manutenzione.arn]
 }
 
 # La distribuzione CloudFront: HTTPS, cache dei file statici, /api/* verso l'API Gateway.

@@ -130,6 +130,9 @@ file) è `LAMBDAS` in `scripts/deploy.sh`. Route e permessi in `environments/dev
 | `inpa.test.ts` | Comparto, conversione dei bandi, banca dati citata, materie |
 | `collega-account.test.ts` | Decisioni del trigger pre sign-up |
 | `domande.test.ts` | Validità dei file della banca statica |
+| `manutenzione.test.ts` | CloudFront Function di sito e API con la manutenzione: spenta, accesa, link di accesso, anteprima |
+| `colonne.test.ts` | Banche dati a tabella "Quesito \| esatta \| errate" (intestazione, esponenti, risposta attaccata alla domanda) |
+| `lettere.test.ts` | Banche dati a tabella "codice \| domanda \| a)-d) \| lettera giusta" |
 
 ---
 
@@ -264,7 +267,7 @@ main.tsx  (caricaConfig → AuthProvider → router)
 | `api/` | API Gateway HTTP, stage con limiti di richieste, authorizer JWT di Cognito, una Lambda + integrazione + route per servizio | Le route pubbliche hanno `authorization NONE` |
 | `auth/` | User pool Cognito, dominio per il login social, Google e Facebook (se configurati), client del sito, gruppi `medium`, `pro`, `admin` | Trigger pre sign-up collegato da `environments/dev` |
 | `data/` | Le 12 tabelle DynamoDB (vedi [ARCHITETTURA.md](ARCHITETTURA.md#5-i-dati-dynamodb)) | `outputs.tf` dà ARN, variabili d'ambiente e nomi |
-| `web/` | Bucket del sito, CloudFront (sito + `/api` + `/dati/bandi`), certificato e DNS, file del sito e `config.json`, regola che cancella le versioni vecchie della lista bandi | `functions/spa.js` e `functions/api-prefix.js` sono le CloudFront Function |
+| `web/` | Bucket del sito, CloudFront (sito + `/api` + `/dati/bandi`), certificato e DNS, file del sito e `config.json`, regola che cancella le versioni vecchie della lista bandi | `functions/spa.js` e `functions/api-prefix.js` sono le CloudFront Function; in cima a entrambe Terraform mette `functions/manutenzione.js` (pagina di manutenzione, interruttore nella KeyValueStore `<nome>-manutenzione`, vedi docs/MANUTENZIONE.md) |
 | `contenuti/` | Bucket dei contenuti (versionato), import della banca statica, estrazione delle banche dati, notifiche S3 → Lambda, CORS per il caricamento dei PDF | I file di `data/domande/` si caricano da qui |
 | `jobs/` | Una Lambda per job, ruolo dello Scheduler, orari in ora italiana con 2 tentativi | Elenco dei job in `environments/dev/main.tf` |
 | `ses/` | Identità del mittente e del dominio, record DNS, configuration set (soppressione di rimbalzi e spam), notifiche SNS | Usato da `environments/shared` |

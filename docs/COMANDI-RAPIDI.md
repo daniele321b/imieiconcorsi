@@ -773,6 +773,17 @@ pagina privacy (AdSense usa cookie di profilazione). Poi:
 scripts/deploy.sh infra       # terraform chiede "yes"
 ```
 
+## Manutenzione (sito chiuso per un problema)
+
+Pagina "Siamo in manutenzione" su sito pubblico, area privata e API, accesa e spenta in pochi
+secondi senza deploy. Procedura completa in [MANUTENZIONE.md](MANUTENZIONE.md).
+```bash
+ENVIRONMENT=prod scripts/deploy.sh manutenzione on "Torniamo entro le 18:00."   # chiude; stampa il tuo link di accesso
+ENVIRONMENT=prod scripts/deploy.sh manutenzione stato                           # accesa o spenta, messaggio, link
+ENVIRONMENT=prod scripts/deploy.sh manutenzione off                             # riapre
+scripts/deploy.sh manutenzione anteprima                                        # vedi la pagina senza chiudere il sito
+```
+
 ## 9. Smontare
 
 ```bash

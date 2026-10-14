@@ -60,3 +60,8 @@ output "dashboard_url" {
   description = "Dashboard CloudWatch dell'ambiente"
   value       = module.monitoraggio.dashboard_url
 }
+
+output "manutenzione_kvs_arn" {
+  description = "ARN della KeyValueStore della manutenzione: la usa scripts/deploy.sh manutenzione"
+  value       = module.web.manutenzione_kvs_arn
+}

@@ -20,6 +20,7 @@
 #   scripts/deploy.sh unisci-account EMAIL   # unisce gli account doppi (email + Facebook/Google) creati prima del trigger
 #   scripts/deploy.sh genera-domande [MAT]   # data/domande/<materia>.json da contenuti/sorgenti (vuoto = tutte)
 #   scripts/deploy.sh verifica-domande       # ogni domanda ha la sua frase-prova nel PDF della fonte
+#   scripts/deploy.sh manutenzione on ["msg"] # pagina di manutenzione su sito, area privata e API (off | stato | anteprima)
 #   scripts/deploy.sh urls                   # indirizzi: sito, pannello admin, API, redirect URI Google/Facebook
 #   scripts/deploy.sh status                 # quanti bandi e domande ci sono nelle tabelle
 #   scripts/deploy.sh ses-status             # SES: sandbox o produzione, indirizzi verificati
@@ -509,6 +510,77 @@ cmd_email_prova() {
     && ok "inviata: controlla anche lo spam"
 }
 
+# ------------------------------------------------------------- manutenzione ---
+# Pagina "Siamo in manutenzione" su sito, area privata e API (docs/MANUTENZIONE.md). L'interruttore
+# è la KeyValueStore di CloudFront dell'ambiente: si accende e si spegne in pochi secondi, senza deploy.
+
+# Comando della KeyValueStore (API globale di CloudFront: si chiama da us-east-1).
+kvs() { aws cloudfront-keyvaluestore "$@" --region us-east-1; }
+
+# Valore di una chiave della manutenzione; vuoto se non c'è.
+kvs_valore() { capture "<$2>" kvs get-key --kvs-arn "$1" --key "$2" --query Value --output text 2>/dev/null || true; }
+
+# Codice HTTP della home del sito (per vedere se la manutenzione è arrivata).
+codice_home() { capture "503" curl -s -o /dev/null -w '%{http_code}' -H 'cache-control: no-cache' "$1/?verifica=$(date +%s)"; }
+
+# Aspetta (al massimo un minuto) che la home risponda con il codice atteso.
+aspetta_home() {
+  local url="$1" atteso="$2" i codice=""
+  for i in $(seq 1 12); do
+    codice="$(codice_home "$url")"
+    [[ "$codice" == "$atteso" ]] && { ok "la home risponde ${codice}"; return 0; }
+    [[ "$DRY_RUN" == "1" ]] && return 0
+    sleep 5
+  done
+  warn "la home risponde ancora ${codice} (atteso ${atteso}): riprova con scripts/deploy.sh manutenzione stato tra un minuto"
+}
+
+# manutenzione on ["messaggio"] | off | stato | anteprima
+cmd_manutenzione() {
+  local azione="${1:-stato}" arn url etag codice messaggio
+  command -v jq >/dev/null 2>&1 || die "serve jq: brew install jq"
+  arn="$(tf_output manutenzione_kvs_arn)"
+  url="$(tf_output web_url)"
+  [[ -n "$arn" ]] || die "KeyValueStore della manutenzione non trovata: fai prima scripts/deploy.sh infra"
+  case "$azione" in
+    on)
+      messaggio="${2:-Stiamo aggiornando iMieiConcorsi. Torniamo il prima possibile.}"
+      [[ ${#messaggio} -le 300 ]] || die "messaggio troppo lungo (massimo 300 caratteri)"
+      avviso_prod "Accendo la manutenzione: sito, area privata e API rispondono 503 a tutti."
+      codice="$(capture "codice" openssl rand -hex 12)"
+      etag="$(capture "<etag>" kvs describe-key-value-store --kvs-arn "$arn" --query ETag --output text)"
+      bold "Manutenzione ACCESA (${ENVIRONMENT})"
+      run kvs update-keys --kvs-arn "$arn" --if-match "$etag" --puts "$(jq -cn --arg m "$messaggio" --arg c "$codice" \
+        '[{Key:"attiva",Value:"si"},{Key:"messaggio",Value:$m},{Key:"accesso",Value:$c}]')" >/dev/null
+      printf '  Messaggio:  %s\n' "$messaggio"
+      printf '  Per entrare tu (12 ore, solo questo browser): %s/?accesso=%s\n' "$url" "$codice"
+      aspetta_home "$url" 503
+      ;;
+    off)
+      avviso_prod "Spengo la manutenzione: il sito torna aperto a tutti."
+      etag="$(capture "<etag>" kvs describe-key-value-store --kvs-arn "$arn" --query ETag --output text)"
+      bold "Manutenzione SPENTA (${ENVIRONMENT})"
+      run kvs update-keys --kvs-arn "$arn" --if-match "$etag" --puts '[{"Key":"attiva","Value":"no"}]' >/dev/null
+      aspetta_home "$url" 200
+      ;;
+    stato)
+      bold "Manutenzione (${ENVIRONMENT})"
+      if [[ "$(kvs_valore "$arn" attiva)" == "si" ]]; then
+        printf '  Stato:      ACCESA\n  Messaggio:  %s\n' "$(kvs_valore "$arn" messaggio)"
+        printf '  Accesso:    %s/?accesso=%s\n' "$url" "$(kvs_valore "$arn" accesso)"
+      else
+        printf '  Stato:      spenta\n'
+      fi
+      printf '  La home ora risponde: %s\n' "$(codice_home "$url")"
+      ;;
+    anteprima)
+      bold "Anteprima della pagina (${ENVIRONMENT}): la vedi solo tu, il sito resta aperto"
+      printf '  %s/?manutenzione=anteprima\n' "$url"
+      ;;
+    *) die "uso: scripts/deploy.sh manutenzione on [\"messaggio\"] | off | stato | anteprima" ;;
+  esac
+}
+
 # ------------------------------------------------------------------ status ---
 
 cmd_urls() {
@@ -640,7 +712,7 @@ cmd_all() {
 }
 
 # Aiuto: le righe di commento in cima a questo file.
-usage() { sed -n '3,36p' "${BASH_SOURCE[0]}" | sed 's/^# \{0,1\}//'; }
+usage() { sed -n '3,37p' "${BASH_SOURCE[0]}" | sed 's/^# \{0,1\}//'; }
 
 # Smista il comando richiesto alla sua funzione.
 main() {
@@ -667,6 +739,7 @@ main() {
     ses-production) cmd_ses_production "$@" ;;
     email-prova) cmd_email_prova "$@" ;;
     destroy-shared) cmd_destroy_shared ;;
+    manutenzione) cmd_manutenzione "$@" ;;
     urls)      cmd_urls ;;
     status)    cmd_status ;;
     logs)      cmd_logs "$@" ;;
