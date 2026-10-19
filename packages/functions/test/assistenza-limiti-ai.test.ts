@@ -1,4 +1,4 @@
-import { PREZZI_AI_USD, TETTO_AI_UTENTE_USD } from "@imieiconcorsi/core/domain";
+import { GETTONI_AI_PRO, PREZZI_AI_USD, TETTO_AI_UTENTE_USD } from "@imieiconcorsi/core/domain";
 import { describe, expect, it } from "vitest";
 import { eFuoriTema, FUORI_TEMA, minutoCorrente, SISTEMA_TUTOR, sogliaSuperata, spesaMicroUsd } from "../src/ai/logic";
 import { limiteRichieste } from "../src/richieste/handler";
@@ -12,13 +12,14 @@ describe("limiti dell'AI", () => {
     // Una risposta tipica del tutor: frazioni di centesimo, arrotondate per eccesso.
     const tipica = spesaMicroUsd({ input_tokens: 1500, output_tokens: 400 });
     expect(tipica).toBe(Math.ceil(1500 * PREZZI_AI_USD.ingresso + 400 * PREZZI_AI_USD.uscita));
-    expect(tipica).toBeLessThan(10_000); // meno di un centesimo
+    expect(tipica).toBeLessThan(20_000); // meno di due centesimi (Sonnet 4.6)
   });
 
-  it("anche al massimo dei token, il tetto per utente vale centinaia di risposte", () => {
-    // Chat al limite: ~8 messaggi lunghi + domanda (~5.000 token) e 800 token di risposta.
+  it("il tetto per utente non blocca mai prima di aver finito i gettoni, anche con chat lunghe", () => {
+    // Chat al limite: ~8 messaggi lunghi + domanda (~5.000 token) e 800 token di risposta,
+    // per tutti i gettoni del mese (1 gettone a risposta).
     const peggiore = spesaMicroUsd({ input_tokens: 5000, output_tokens: 800 });
-    expect((TETTO_AI_UTENTE_USD * 1e6) / peggiore).toBeGreaterThan(250);
+    expect(peggiore * GETTONI_AI_PRO).toBeLessThan(TETTO_AI_UTENTE_USD * 1e6);
   });
 
   it("l'admin è avvisato una volta all'80% e una al 100% del tetto mensile", () => {

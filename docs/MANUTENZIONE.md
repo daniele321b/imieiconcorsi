@@ -75,6 +75,10 @@ I **webhook di Stripe** (`/api/pubblico/stripe/webhook`) ricevono 503. Stripe li
 solo per un massimo di 3 giorni, quindi i pagamenti fatti in quel periodo vengono registrati
 alla riapertura.
 
+**Allarme atteso.** La pagina risponde 503, quindi con la manutenzione accesa (anche per
+una prova) scatta l'allarme `imieiconcorsi-<ambiente>-cloudfront-5xx` e ti arriva l'email.
+È normale: torna OK da solo pochi minuti dopo lo spegnimento.
+
 **Un deploy non spegne la manutenzione.** Le chiavi non sono gestite da Terraform, quindi
 `scripts/deploy.sh infra` lascia l'interruttore com'è.
 

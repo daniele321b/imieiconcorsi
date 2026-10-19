@@ -87,22 +87,23 @@ variable "stripe_webhook_secret" {
 
 variable "ai_model" {
   description = <<-EOT
-    Profilo d'inferenza Bedrock del tutor AI. eu. = i dati restano in Europa.
-    Haiku 4.5 è il più economico (~0,3 cent a risposta); per risposte più ricche
-    si può passare a un modello più grande, a costo maggiore.
+    Profilo d'inferenza Bedrock del tutor AI. eu. = i dati restano in Europa (lo promette la
+    privacy: mai global.). Sonnet 4.6 (~1 cent a risposta) dal 19/10/2026: il profilo EU di
+    Haiku 4.5 (~0,3 cent) non rispondeva più. Cambiando modello aggiorna PREZZI_AI_USD.
   EOT
   type        = string
-  default     = "eu.anthropic.claude-haiku-4-5-20251001-v1:0"
+  default     = "eu.anthropic.claude-sonnet-4-6"
 }
 
 variable "ai_tetto_utente_usd" {
   description = <<-EOT
     Spesa AI massima al mese per utente, in dollari (stima dai token consumati). Oltre, il tutor
-    si ferma per quell'utente fino al mese dopo. Rete di sicurezza oltre ai gettoni: un utente Pro
-    che usa tutti i 300 gettoni spende di solito 1-2 dollari.
+    si ferma per quell'utente fino al mese dopo. Rete di sicurezza oltre ai gettoni: con Sonnet 4.6
+    un utente Pro che usa tutti i 150 gettoni spende 1,5-3 dollari, al massimo ~4,5 con chat lunghe;
+    5 non lo blocca mai prima di aver finito i gettoni.
   EOT
   type        = number
-  default     = 3
+  default     = 5
   validation {
     condition     = var.ai_tetto_utente_usd > 0
     error_message = "ai_tetto_utente_usd deve essere maggiore di zero."

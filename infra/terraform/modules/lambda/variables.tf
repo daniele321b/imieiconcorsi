@@ -46,6 +46,12 @@ variable "log_retention_days" {
   default     = 14
 }
 
+variable "reserved_concurrency" {
+  description = "Esecuzioni contemporanee massime riservate a questa funzione (null = nessun limite proprio)"
+  type        = number
+  default     = null
+}
+
 variable "policy_statements" {
   description = "Permessi IAM in più (es. Cognito, SES): lista di { Effect, Action, Resource }"
   type        = any

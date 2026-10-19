@@ -260,10 +260,29 @@ cmd_shared() {
   printf '  Stato:  scripts/deploy.sh ses-status\n'
 }
 
+# La build è più vecchia del codice? Stampa i file cambiati dopo (al massimo 3); vuoto = aggiornata.
+# $1 = file o cartella della build, poi le cartelle dei sorgenti.
+build_vecchia() {
+  local build="$1" riferimento
+  shift
+  # Il file più vecchio della build: se un sorgente è più nuovo, la build non lo contiene.
+  riferimento="$(find "$build" -type f -print0 2>/dev/null | xargs -0 ls -tr 2>/dev/null | head -1)"
+  [[ -n "$riferimento" ]] || return 0
+  find "$@" -type f \( -name '*.ts' -o -name '*.tsx' -o -name '*.css' -o -name '*.html' -o -name '*.json' \) \
+    -newer "$riferimento" 2>/dev/null | grep -v '/node_modules/' | head -3 || true
+}
+
 # infra: terraform init + apply dell'ambiente (chiede conferma).
 cmd_infra() {
+  local vecchie
   [[ "$DRY_RUN" == "1" || ( -d "$DIST_FUNCTIONS" && -f "${DIST_WEB}/index.html" ) ]] \
     || die "mancano le Lambda o il sito compilati: lancia prima  scripts/deploy.sh build"
+  # Una build vecchia caricherebbe il codice di prima (es. la rotta nuova senza la Lambda che la gestisce).
+  if [[ "$DRY_RUN" != "1" ]]; then
+    vecchie="$(build_vecchia "$DIST_FUNCTIONS" "${ROOT}/packages/functions/src" "${ROOT}/packages/core/src")"
+    vecchie+="$(build_vecchia "$DIST_WEB" "${ROOT}/packages/web/src" "${ROOT}/packages/web/index.html" "${ROOT}/packages/core/src")"
+    [[ -z "$vecchie" ]] || die "il codice è cambiato dopo l'ultima build (es. ${vecchie%%$'\n'*}): lancia prima  scripts/deploy.sh build"
+  fi
   avviso_prod "aggiorni la PRODUZIONE (https://${DOMAIN}): gli utenti vedono subito le modifiche"
   bold "terraform init + apply (${ENVIRONMENT})"
   tf_init
@@ -369,7 +388,7 @@ cmd_storico_bandi() {
 # sul caso d'uso nella console. Qui si prova una chiamata vera con lo stesso modello della Lambda.
 cmd_ai_prova() {
   local modello out
-  modello="$(capture "eu.anthropic.claude-haiku-4-5-20251001-v1:0" aws lambda get-function-configuration \
+  modello="$(capture "eu.anthropic.claude-sonnet-4-6" aws lambda get-function-configuration \
     --function-name "${NAME}-ai" --query 'Environment.Variables.AI_MODEL' --output text)"
   bold "Prova del tutor AI: ${modello} (${REGION})"
   out="$(mktemp)"
@@ -384,7 +403,7 @@ cmd_ai_prova() {
     if grep -qi "use case" "$out"; then
       printf '  Manca il modulo di Anthropic sul caso d'"'"'uso (una volta per account AWS, vale per tutte le regioni):\n'
       printf '    1. apri https://%s.console.aws.amazon.com/bedrock/home?region=%s#/model-catalog\n' "$REGION" "$REGION"
-      printf '    2. scegli Claude Haiku 4.5 -> "Submit use case details" (o "Request access")\n'
+      printf '    2. scegli Claude Sonnet 4.6 -> "Submit use case details" (o "Request access")\n'
       printf '    3. azienda e sito: iMieiConcorsi, https://%s; utenti: esterni (clienti); settore: Education\n' "$DOMAIN"
       printf '       caso d'"'"'uso: "Study tutor for Italian public-sector exam candidates: explains quiz answers and\n'
       printf '       generates practice questions. Paid users only, monthly usage limits."\n'

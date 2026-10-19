@@ -37,9 +37,14 @@ resource "aws_cognito_user_pool" "main" {
     email_message        = "Benvenuto su iMieiConcorsi! Il tuo codice di verifica è {####}"
   }
 
-  # Email di Cognito: massimo 50 al giorno, sufficiente per dev. Con più utenti si passa a SES.
+  # Email di Cognito (codice di verifica, recupero password). Con ses_source_arn passano da SES
+  # con il nostro mittente e il configuration set (rimbalzi e reclami); senza, dal servizio
+  # interno di Cognito: massimo 50 al giorno e mittente no-reply@verificationemail.com.
   email_configuration {
-    email_sending_account = "COGNITO_DEFAULT"
+    email_sending_account = var.ses_source_arn == null ? "COGNITO_DEFAULT" : "DEVELOPER"
+    source_arn            = var.ses_source_arn
+    from_email_address    = var.ses_source_arn == null ? null : var.email_mittente
+    configuration_set     = var.ses_source_arn == null ? null : var.ses_configuration_set
   }
 
   # Una persona = un account: collega i login social all'account con la stessa email.

@@ -9,7 +9,9 @@ import {
   DOMANDE_MIN,
   SIMULAZIONE_MAX,
   SIMULAZIONE_STANDARD,
+  chiudiPausa,
   concorsiDellaBanca,
+  tempoSessione,
   type BancaDati,
   type Concorso,
   type Domanda,
@@ -79,6 +81,8 @@ async function bancheDatiPubblicate() {
 const Consegna = z.object({
   risposte: z.array(z.number().int().min(0).max(9).nullable()).max(SIMULAZIONE_MAX),
 });
+/** Pausa (true) o ripresa (false) di una simulazione. */
+const Pausa = z.object({ pausa: z.boolean() });
 
 /** Domande di una materia della banca statica, o di una banca dati ufficiale (bd#<id>). */
 async function domandeDiMateria(materia: MateriaId | string) {
@@ -100,6 +104,14 @@ async function domandeDiMateria(materia: MateriaId | string) {
 }
 
 /** Una sessione dell'utente; 404 se non esiste. */
+/** La sessione è cambiata nel frattempo (un'altra scheda l'ha consegnata o messa in pausa). */
+function sessioneCambiata(err: unknown): never {
+  if (err instanceof Error && err.name === "ConditionalCheckFailedException") {
+    throw new HttpError(409, "La simulazione è cambiata in un'altra scheda: ricarica la pagina", "SESSIONE_CAMBIATA");
+  }
+  throw err;
+}
+
 async function getSessione(userId: string, id: string) {
   const res = await db.send(new GetCommand({ TableName: tables.attempts, Key: { userId, id } }));
   if (!res.Item) throw notFound("Sessione");
@@ -508,13 +520,16 @@ export const handler = service({
     const now = new Date();
     const domande = await domandeDellaSessione(sessione);
     const esito = calcolaEsito(domande, risposte, sessione.regole, sessione.tipo);
-    const aggiornata: Sessione = { ...sessione, stato: "consegnata", consegnataIl: now.toISOString(), risposte, esito };
+    // Consegnata durante una pausa: la pausa si chiude adesso e non conta nel tempo impiegato.
+    const { inPausaDal: _pausa, ...senzaPausa } = sessione;
+    const pause = sessione.inPausaDal ? chiudiPausa(sessione, now) : undefined;
+    const aggiornata: Sessione = { ...senzaPausa, ...pause, stato: "consegnata", consegnataIl: now.toISOString(), risposte, esito };
 
     await db.send(
       new UpdateCommand({
         TableName: tables.attempts,
         Key: { userId: ctx.userId, id: sessione.id },
-        UpdateExpression: "SET stato = :s, consegnataIl = :c, risposte = :r, esito = :e",
+        UpdateExpression: `SET stato = :s, consegnataIl = :c, risposte = :r, esito = :e${pause ? ", scadeIl = :scade, pausaMs = :pausa REMOVE inPausaDal" : ""}`,
         ConditionExpression: "stato = :inCorso",
         ExpressionAttributeValues: {
           ":s": "consegnata",
@@ -522,6 +537,7 @@ export const handler = service({
           ":r": risposte,
           ":e": esito,
           ":inCorso": "in-corso",
+          ...(pause ? { ":scade": pause.scadeIl, ":pausa": pause.pausaMs } : {}),
         },
       }),
     );
@@ -539,6 +555,51 @@ export const handler = service({
   },
 
   /** Salva (o toglie) una domanda della banca dati tra le preferite, per ritrovarla dopo. */
+  /**
+   * Pausa e ripresa di una simulazione in corso. In pausa il tempo è fermo (e la pagina nasconde
+   * la domanda); alla ripresa la scadenza si sposta in avanti della durata della pausa, così il
+   * tempo restante è lo stesso di prima anche ricaricando la pagina.
+   */
+  "POST /sessioni/{id}/pausa": async (ctx) => {
+    const { pausa } = ctx.body(Pausa);
+    const sessione = await getSessione(ctx.userId, ctx.params.id!);
+    if (sessione.tipo !== "simulazione" || sessione.stato !== "in-corso") {
+      throw new HttpError(409, "Si può mettere in pausa solo una simulazione in corso", "NON_IN_CORSO");
+    }
+    const ora = new Date();
+    // Già nello stato chiesto (doppio clic, due schede): niente da fare.
+    if (pausa === !!sessione.inPausaDal) return vista(sessione);
+    if (pausa && Date.parse(sessione.scadeIl!) <= ora.getTime()) throw new HttpError(409, "Il tempo è scaduto", "TEMPO_SCADUTO");
+
+    const chiave = { userId: ctx.userId, id: sessione.id };
+    let aggiornata: Sessione;
+    if (pausa) {
+      aggiornata = { ...sessione, inPausaDal: ora.toISOString() };
+      await db.send(
+        new UpdateCommand({
+          TableName: tables.attempts,
+          Key: chiave,
+          UpdateExpression: "SET inPausaDal = :p",
+          ConditionExpression: "stato = :inCorso AND attribute_not_exists(inPausaDal)",
+          ExpressionAttributeValues: { ":p": aggiornata.inPausaDal, ":inCorso": "in-corso" },
+        }),
+      ).catch(sessioneCambiata);
+    } else {
+      const { inPausaDal, ...senzaPausa } = sessione;
+      aggiornata = { ...senzaPausa, ...chiudiPausa(sessione, ora) };
+      await db.send(
+        new UpdateCommand({
+          TableName: tables.attempts,
+          Key: chiave,
+          UpdateExpression: "SET scadeIl = :s, pausaMs = :m REMOVE inPausaDal",
+          ConditionExpression: "stato = :inCorso AND inPausaDal = :da",
+          ExpressionAttributeValues: { ":s": aggiornata.scadeIl, ":m": aggiornata.pausaMs, ":inCorso": "in-corso", ":da": inPausaDal },
+        }),
+      ).catch(sessioneCambiata);
+    }
+    return vista(aggiornata);
+  },
+
   "PUT /me/progressi/{bancaId}/preferite/{numero}": async (ctx) => {
     const { preferita } = ctx.body(z.object({ preferita: z.boolean() }));
     const numero = Number(ctx.params.numero);
@@ -617,8 +678,8 @@ export const handler = service({
         concorsoId: s.concorsoId,
         data: s.consegnataIl!,
         percentuale: s.esito!.percentuale,
-        // Tempo impiegato (le simulazioni hanno un limite; lo studio no).
-        durataMs: Date.parse(s.consegnataIl!) - Date.parse(s.creataIl),
+        // Tempo impiegato senza le pause (le simulazioni hanno un limite; lo studio no).
+        durataMs: tempoSessione(s).impiegatoMs,
       })),
     };
   },

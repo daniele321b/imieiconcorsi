@@ -72,3 +72,21 @@ variable "accessi_lambda_arn" {
   type        = string
   default     = null
 }
+
+variable "ses_source_arn" {
+  description = "ARN dell'identità SES (dominio) da cui Cognito manda le sue email. null = servizio interno di Cognito (50 al giorno)."
+  type        = string
+  default     = null
+}
+
+variable "email_mittente" {
+  description = "Mittente delle email di Cognito con SES, es. \"iMieiConcorsi <noreply@imieiconcorsi.it>\""
+  type        = string
+  default     = null
+}
+
+variable "ses_configuration_set" {
+  description = "Configuration set SES delle email di Cognito (rimbalzi e reclami)"
+  type        = string
+  default     = null
+}

@@ -486,8 +486,11 @@ e nelle statistiche, le domande non fatte non contano.
 
 **Prove d'esame.** La simulazione ha un cronometro in alto: tempo rimasto in grande, tempo
 trascorso, barra del tempo e ritmo (quante domande sei indietro rispetto al tempo passato);
-negli ultimi 5 minuti diventa rosso. Lo studio mostra il tempo trascorso; i risultati il tempo
-impiegato. Domande: 30, 50 o 60 (nella banca dati 30 o 60); con **Medium e Pro** si può scrivere un altro
+negli ultimi 5 minuti diventa rosso. Accanto c'è **Pausa**: il tempo si ferma, la domanda si
+nasconde e si riprende con **Riprendi** dallo stesso punto e con lo stesso tempo, anche dopo aver
+ricaricato la pagina o cambiato dispositivo (il server sposta in avanti la scadenza,
+`POST /sessioni/{id}/pausa`). Le pause non contano nel tempo impiegato. Lo studio mostra il tempo
+trascorso; i risultati il tempo impiegato. Domande: 30, 50 o 60 (nella banca dati 30 o 60); con **Medium e Pro** si può scrivere un altro
 numero, da 5 a 100 (`SIMULAZIONE_MAX` in `domain.ts`, controllato anche dal server).
 
 **Banche dati (pagina utente).** Ogni scheda mostra titolo, domande e progressi; toccandola si
@@ -567,14 +570,18 @@ cambiare), i progressi su quella banca ripartono da zero.
 
 ## Tutor AI (piano Pro)
 
-Il tutor usa Claude Haiku 4.5 su Amazon Bedrock, profilo d'inferenza **EU** (i
-dati restano in Europa), pagato a consumo sulla bolletta AWS. Ogni utente Pro ha
-150 crediti AI al mese (nel codice "gettoni"): 1 per risposta del tutor, 3 per un allenamento da 5
-domande. Costo indicativo: ~0,3 centesimi a risposta, ~1,5 centesimi ad
-allenamento, quindi al massimo 1-2 € al mese per utente Pro.
+Il tutor usa Claude Sonnet 4.6 su Amazon Bedrock, profilo d'inferenza **EU** (i
+dati restano in Europa, come promette la privacy: mai i profili `global.`), pagato a
+consumo sulla bolletta AWS. Fino al 18/10/2026 era Claude Haiku 4.5, il cui profilo EU
+ha smesso di rispondere. Ogni utente Pro ha 150 crediti AI al mese (nel codice "gettoni"):
+1 per risposta del tutor, 3 per un allenamento da 5 domande. Costo indicativo: ~1 centesimo
+a risposta, ~5-6 centesimi ad allenamento, quindi al massimo 1,5-3 € al mese per utente Pro
+(il tetto per utente, 5 $, non blocca mai prima di aver finito i crediti). Con il tetto della piattaforma a 50 $ al mese,
+bastano 15-30 utenti Pro che usano tutti i crediti per fermare il tutor per tutti fino al
+mese dopo: alzalo con `ai_tetto_mensile_usd` quando crescono gli utenti Pro.
 
 **Prima volta (una volta per account AWS):** console AWS → Amazon Bedrock →
-Model catalog → **Claude Haiku 4.5** → compila il modulo sul caso d'uso di
+Model catalog → **Claude Sonnet 4.6** → compila il modulo sul caso d'uso di
 Anthropic. Poi:
 ```bash
 scripts/deploy.sh ai-prova    # una chiamata vera al modello: dice se risponde o cosa manca
@@ -588,7 +595,7 @@ modello aggiorna anche `PREZZI_AI_USD` (servono a stimare la spesa).
 | Limite | Valore | Dove si cambia |
 |---|---|---|
 | Crediti AI per utente | 150 al mese | `GETTONI_AI_PRO`, `COSTI_AI` (domain.ts) |
-| Spesa per utente | 3 $ al mese (stimata dai token) | `ai_tetto_utente_usd` (terraform.tfvars) |
+| Spesa per utente | 5 $ al mese (stimata dai token) | `ai_tetto_utente_usd` (terraform.tfvars) |
 | Ritmo | 6 richieste al minuto per utente | `AI_AL_MINUTO` (domain.ts) |
 | Spesa di tutta la piattaforma | 50 $ al mese: email all'80%, pausa al 100% | `ai_tetto_mensile_usd` (terraform.tfvars) |
 | Lunghezza | 800 token a risposta, ultimi 8 messaggi della chat | `MAX_TOKEN_*` (ai/handler.ts), `MAX_MESSAGGI` (ai/logic.ts) |
@@ -619,6 +626,8 @@ scripts/deploy.sh test        # test + controllo dei tipi
 scripts/deploy.sh build       # Lambda + sito
 scripts/deploy.sh infra       # terraform chiede "yes": aggiorna solo ciò che è cambiato
 ```
+`infra` si ferma se il codice è cambiato dopo l'ultima `build`: così non si carica una
+build vecchia (per esempio una rotta nuova senza la Lambda che la gestisce).
 
 Solo il frontend, in locale (si collega all'API e al login dell'ambiente dev):
 ```bash

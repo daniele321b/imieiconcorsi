@@ -149,7 +149,7 @@ def ambiente(env):
     s3web = p.icona("S3 sito<br>privato, solo da CloudFront", 720, 230, "s3", "storage")
     cognito = p.icona("Cognito user pool<br>login SRP, gruppi = piani<br>Google e Facebook (OAuth)", 930, 230, "cognito", "sicurezza")
     trigger = p.icona("Lambda trigger (2)<br>auth-pre-signup<br>auth-accessi", 1180, 230, "lambda", "calcolo")
-    bedrock = p.icona("Amazon Bedrock<br>Claude Haiku 4.5<br>(profilo EU, solo Pro)", 1600, 230, "bedrock", "ml")
+    bedrock = p.icona("Amazon Bedrock<br>Claude Sonnet 4.6<br>(profilo EU, solo Pro)", 1600, 230, "bedrock", "ml")
 
     apigw = p.icona("API Gateway HTTP<br>JWT Cognito<br>1.000 rich./s<br>picchi 2.000", 720, 430, "api_gateway", "integrazione")
     servizi = p.icona(

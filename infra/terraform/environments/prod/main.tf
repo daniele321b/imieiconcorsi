@@ -206,6 +206,11 @@ module "auth" {
   app_origins = [module.web.url]
   protezione  = true
 
+  # Email di Cognito (verifica, recupero password) da SES, con il nostro mittente (SES in produzione dal 19/10/2026).
+  ses_source_arn        = one([for a in local.shared.ses_identity_arns : a if endswith(a, "identity/${local.shared.domain}")])
+  email_mittente        = "iMieiConcorsi <${local.shared.ses_sender_email}>"
+  ses_configuration_set = local.shared.ses_configuration_set_name
+
   google_client_id     = var.google_client_id
   google_client_secret = var.google_client_secret
   facebook_app_id      = var.facebook_app_id
@@ -257,7 +262,7 @@ module "api" {
     study = {
       routes = [
         "GET /materie", "POST /sessioni", "GET /sessioni/{id}",
-        "POST /sessioni/{id}/consegna", "GET /me/statistiche", "GET /banche-dati", "GET /banche-dati/{id}/domande",
+        "POST /sessioni/{id}/consegna", "POST /sessioni/{id}/pausa", "GET /me/statistiche", "GET /banche-dati", "GET /banche-dati/{id}/domande",
         "DELETE /me/progressi/{bancaId}", "PUT /me/progressi/{bancaId}/preferite/{numero}",
       ]
       # Sul profilo: il contatore degli utilizzi settimanali delle banche dati (piano Free).

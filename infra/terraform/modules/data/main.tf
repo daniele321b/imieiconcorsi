@@ -68,6 +68,11 @@ resource "aws_dynamodb_table" "follows" {
     name = "concorsoId"
     type = "S"
   }
+
+  # Dati degli utenti: ripristinabili a qualsiasi istante degli ultimi 35 giorni.
+  point_in_time_recovery {
+    enabled = true
+  }
 }
 
 # Servizio studio: banca domande, partizionata per materia.
@@ -178,6 +183,11 @@ resource "aws_dynamodb_table" "banche_dati" {
     name = "id"
     type = "S"
   }
+
+  # Banche dati caricate e pubblicate dall'admin: ripristinabili come i dati degli utenti.
+  point_in_time_recovery {
+    enabled = true
+  }
 }
 
 # Richieste di assistenza degli utenti (una conversazione per richiesta). L'indice perStato
@@ -241,6 +251,11 @@ resource "aws_dynamodb_table" "progressi" {
   attribute {
     name = "bancaId"
     type = "S"
+  }
+
+  # Dati degli utenti: ripristinabili a qualsiasi istante degli ultimi 35 giorni.
+  point_in_time_recovery {
+    enabled = true
   }
 }
 

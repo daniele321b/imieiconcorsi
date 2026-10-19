@@ -33,8 +33,16 @@
 }
 
 @layer base {
+  /* La pagina non è mai più larga dello schermo (telefono): niente scorrimento laterale anche se
+     un testo o un riquadro sbordasse. "clip" e non "hidden": gli elementi sticky continuano a
+     funzionare. Le parole troppo lunghe (indirizzi web, codici) vanno a capo invece di sbordare. */
+  html,
+  body {
+    overflow-x: clip;
+  }
   body {
     @apply bg-slate-50 text-slate-900 antialiased;
+    overflow-wrap: break-word;
   }
   :focus-visible {
     @apply outline-2 outline-offset-2 outline-brand-500;

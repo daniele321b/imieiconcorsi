@@ -40,7 +40,7 @@ export function Landing() {
         />
       </div>
 
-      <div className="relative mx-auto grid min-h-screen max-w-7xl content-center items-center gap-10 px-4 py-8 sm:px-6 lg:grid-cols-[1.15fr_1fr] lg:gap-16 lg:px-8">
+      <div className="relative mx-auto grid min-h-screen grid-cols-1 max-w-7xl content-center items-center gap-10 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] lg:gap-16 lg:px-8">
         {/* Racconto */}
         <section className="animate-fade-up text-white">
           {/* Prezzi, Domande frequenti e Chi siamo sono nel piè di pagina. */}

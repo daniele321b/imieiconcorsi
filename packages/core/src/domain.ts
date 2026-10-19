@@ -106,25 +106,27 @@ export const DOMANDE_TRA_ANNUNCI = 5;
 
 /**
  * Quanti gettoni costa ogni azione AI. Il costo vero dipende dai token: una risposta del
- * tutor ne usa ~1.500, un allenamento da 5 domande ~5.000 (Claude Haiku 4.5 su Bedrock,
- * ~0,2 e ~1 centesimo). Con GETTONI_AI_PRO al mese un utente Pro costa al massimo ~0,5-1 €.
+ * tutor ne usa ~1.500, un allenamento da 5 domande ~5.000 (Claude Sonnet 4.6 su Bedrock,
+ * ~1 e ~5-6 centesimi). Con GETTONI_AI_PRO al mese un utente Pro costa al massimo ~1,5-3 €
+ * (il tetto per utente, TETTO_AI_UTENTE_USD, ferma comunque la spesa).
  */
 export const COSTI_AI = { tutor: 1, allenamento: 3 } as const;
 /** Gettoni AI al mese del piano Pro. */
 export const GETTONI_AI_PRO = 150;
 
 /**
- * Prezzi del modello in dollari per milione di token (Claude Haiku 4.5 su Bedrock, profilo EU),
- * arrotondati per eccesso: servono a stimare la spesa per i tetti qui sotto. Se cambi modello,
- * aggiorna anche questi.
+ * Prezzi del modello in dollari per milione di token (Claude Sonnet 4.6 su Bedrock, profilo EU:
+ * listino 3 $ / 15 $ più il 10% dei profili regionali), arrotondati per eccesso: servono a
+ * stimare la spesa per i tetti qui sotto. Se cambi modello (ai_model in Terraform), aggiorna
+ * anche questi. Con Haiku 4.5 erano 1,1 / 5,5.
  */
-export const PREZZI_AI_USD = { ingresso: 1.1, uscita: 5.5 } as const;
+export const PREZZI_AI_USD = { ingresso: 3.3, uscita: 16.5 } as const;
 /**
  * Tetti di spesa AI al mese, in dollari: per utente e per tutta la piattaforma. Sono una rete
  * di sicurezza oltre ai gettoni (contro abusi e bollette inattese): in dev si cambiano da
  * Terraform (ai_tetto_utente_usd, ai_tetto_mensile_usd), questi sono i valori di riserva.
  */
-export const TETTO_AI_UTENTE_USD = 3;
+export const TETTO_AI_UTENTE_USD = 5;
 /** Tetto di riserva per tutta la piattaforma (vedi sopra). */
 export const TETTO_AI_MESE_USD = 50;
 /** Richieste AI al minuto per utente (contro script e doppi clic a raffica). */
@@ -655,6 +657,34 @@ export interface Esito {
  * Sessione di studio o simulazione (tabella attempts: userId + id ordinabile per data).
  * Contiene solo le chiavi delle domande: il testo si rilegge dalla tabella questions.
  */
+/**
+ * Fine di una pausa della simulazione all'istante `ora`: la scadenza si sposta in avanti della
+ * durata della pausa e la pausa si somma a pausaMs. Senza pausa in corso, tutto resta com'è.
+ */
+export function chiudiPausa(s: Pick<Sessione, "scadeIl" | "inPausaDal" | "pausaMs">, ora: Date): { scadeIl?: string; pausaMs: number } {
+  if (!s.inPausaDal) return { scadeIl: s.scadeIl, pausaMs: s.pausaMs ?? 0 };
+  const durataPausa = Math.max(0, ora.getTime() - Date.parse(s.inPausaDal));
+  return {
+    scadeIl: s.scadeIl && new Date(Date.parse(s.scadeIl) + durataPausa).toISOString(),
+    pausaMs: (s.pausaMs ?? 0) + durataPausa,
+  };
+}
+
+/**
+ * Tempo di una sessione consegnata, senza le pause: impiegato (al massimo fino alla scadenza) e,
+ * per le simulazioni, quello che c'era a disposizione.
+ */
+export function tempoSessione(s: Pick<Sessione, "creataIl" | "consegnataIl" | "scadeIl" | "pausaMs">) {
+  const inizio = Date.parse(s.creataIl);
+  const consegna = Date.parse(s.consegnataIl ?? s.creataIl);
+  const fine = s.scadeIl ? Math.min(consegna, Date.parse(s.scadeIl)) : consegna;
+  const pause = s.pausaMs ?? 0;
+  return {
+    impiegatoMs: Math.max(0, fine - inizio - pause),
+    disponibileMs: s.scadeIl ? Date.parse(s.scadeIl) - inizio - pause : undefined,
+  };
+}
+
 export interface Sessione {
   userId: string;
   id: string;
@@ -665,8 +695,12 @@ export interface Sessione {
   stato: "in-corso" | "consegnata";
   regole: Regole;
   creataIl: string;
-  /** Solo simulazioni: termine per la consegna */
+  /** Solo simulazioni: termine per la consegna (si sposta in avanti dopo ogni pausa) */
   scadeIl?: string;
+  /** Simulazione in pausa da questo momento: il tempo è fermo finché non riprende */
+  inPausaDal?: string;
+  /** Millisecondi passati in pausa (pause concluse): non contano nel tempo impiegato */
+  pausaMs?: number;
   /**
    * Sessione sulle domande di una banca dati ufficiale. ordine = come l'utente ha scelto di
    * vedere le risposte (le sessioni di prima non ce l'hanno: restano come salvate).

@@ -116,9 +116,11 @@ di CloudFront.
 
 ## Email
 
-- **Codici di verifica del login:** li manda Cognito con il suo servizio di
-  default (massimo 50 al giorno, mittente `no-reply@verificationemail.com`).
-  Quando c'è il dominio si possono passare su SES.
+- **Codici di verifica del login e recupero password:** li manda Cognito
+  attraverso SES, con il mittente `iMieiConcorsi <noreply@imieiconcorsi.it>` e il
+  configuration set dei rimbalzi (`ses_source_arn` nel modulo `auth`, dal 19/10/2026,
+  quando SES è uscito dalla sandbox). Senza `ses_source_arn` si torna al servizio
+  interno di Cognito: massimo 50 al giorno, mittente `no-reply@verificationemail.com`.
 - **Email dell'app** (conferma d'acquisto, piano attivato o tornato Free,
   promemoria scadenze, avvisi admin): SES, configurato
   nell'ambiente **shared**, che dev legge con `terraform_remote_state`.

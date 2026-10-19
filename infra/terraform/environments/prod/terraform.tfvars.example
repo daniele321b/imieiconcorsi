@@ -25,11 +25,11 @@ adsense_slot   = ""
 stripe_secret_key     = ""   # sk_live_... (Dashboard Stripe, modalità live -> Developers -> API keys)
 stripe_webhook_secret = ""   # whsec_...  (Developers -> Webhooks -> endpoint di prod)
 
-# Tutor AI del piano Pro (Amazon Bedrock). Vuoto = Claude Haiku 4.5, profilo EU.
-# ai_model = "eu.anthropic.claude-haiku-4-5-20251001-v1:0"
+# Tutor AI del piano Pro (Amazon Bedrock). Vuoto = Claude Sonnet 4.6, profilo EU.
+# ai_model = "eu.anthropic.claude-sonnet-4-6"
 # Tetti di spesa del tutor AI al mese, in dollari: per utente e per tutta la piattaforma
 # (all'80% del secondo arriva un'email, al 100% l'AI va in pausa fino al mese dopo).
-# ai_tetto_utente_usd  = 3
+# ai_tetto_utente_usd  = 5
 # ai_tetto_mensile_usd = 50
 
 # Monitoraggio: gli allarmi arrivano ad admin_email (topic SNS imieiconcorsi-prod-monitoraggio).

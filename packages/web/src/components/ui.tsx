@@ -1,5 +1,6 @@
 import { AlertTriangle, CheckCircle2, ChevronDown, Eye, EyeOff, Info, Loader2, Sparkles, X } from "lucide-react";
 import { useEffect, useState, type ButtonHTMLAttributes, type InputHTMLAttributes, type ReactNode } from "react";
+import { createPortal } from "react-dom";
 import { Link } from "react-router";
 
 // Componenti grafici di base (Tailwind CSS), usati da tutte le pagine: pulsanti, schede,
@@ -211,22 +212,39 @@ export function PageHeader({ title, subtitle, actions }: { title: string; subtit
   );
 }
 
-/** Mostrato quando il server risponde LIMITE_PIANO. */
-/** Banner "funzione del piano superiore" con il link alla pagina Piani. */
+/**
+ * Banner "funzione del piano superiore" con il link alla pagina Piani: mostrato quando il server
+ * risponde LIMITE_PIANO. Da telefono si apre anche come popup: il banner sta in cima alla pagina
+ * e chi ha toccato un pulsante più in basso (es. "Segui" su un bando) non lo vedrebbe.
+ */
 export function UpgradeBanner({ message, onClose }: { message: string; onClose?: () => void }) {
+  // Il popup si apre a ogni nuovo errore (il banner rinasce) e, chiuso, lascia il banner.
+  const [popup, setPopup] = useState(true);
   return (
-    <div className="flex flex-wrap items-center gap-3 rounded-2xl bg-gradient-to-r from-brand-700 to-brand-500 p-4 text-white shadow-lg shadow-brand-600/20">
-      <Sparkles className="size-5 shrink-0 text-accent-300" />
-      <p className="flex-1 text-sm font-medium">{message}</p>
-      <ButtonLink to="/app/piani" variant="accent" size="sm">
-        Vedi i piani
-      </ButtonLink>
-      {onClose && (
-        <button onClick={onClose} aria-label="Chiudi" className="text-white/70 hover:text-white">
-          <X className="size-4" />
-        </button>
-      )}
-    </div>
+    <>
+      {/* Nel body: un riquadro animato (transform) intorno al banner chiuderebbe il popup dentro di sé. */}
+      {popup &&
+        createPortal(
+          <div className="sm:hidden">
+            <PremiumModal titolo="Limite del tuo piano" onClose={() => setPopup(false)}>
+              {message}
+            </PremiumModal>
+          </div>,
+          document.body,
+        )}
+      <div className="flex flex-wrap items-center gap-3 rounded-2xl bg-gradient-to-r from-brand-700 to-brand-500 p-4 text-white shadow-lg shadow-brand-600/20">
+        <Sparkles className="size-5 shrink-0 text-accent-300" />
+        <p className="flex-1 text-sm font-medium">{message}</p>
+        <ButtonLink to="/app/piani" variant="accent" size="sm">
+          Vedi i piani
+        </ButtonLink>
+        {onClose && (
+          <button onClick={onClose} aria-label="Chiudi" className="text-white/70 hover:text-white">
+            <X className="size-4" />
+          </button>
+        )}
+      </div>
+    </>
   );
 }
 

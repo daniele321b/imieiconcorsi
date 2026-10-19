@@ -35,7 +35,7 @@ EventBridge Scheduler (ora italiana)
   dom e mer 03:00 pulizia-bandi  toglie i bandi che inPA non elenca più
 
 S3 contenuti ──▶ import-domande (banca domande statica) · estrai-banca-dati (PDF ufficiali)
-Lambda ai ──▶ Amazon Bedrock (Claude Haiku 4.5, profilo EU)
+Lambda ai ──▶ Amazon Bedrock (Claude Sonnet 4.6, profilo EU)
 Lambda billing ◀──▶ Stripe Checkout (pagamenti) · SES (email) · CloudWatch + SNS (allarmi)
 ```
 
@@ -215,7 +215,7 @@ vengono letti. Chi non li apre passa al settimanale e poi in pausa (`jobs/avvisi
 finché non torna nell'app.
 
 ### Tutor AI (piano Pro)
-`POST /ai/tutor` e `POST /ai/allenamento` (`ai/handler.ts`) chiamano Claude Haiku 4.5 su
+`POST /ai/tutor` e `POST /ai/allenamento` (`ai/handler.ts`) chiamano Claude Sonnet 4.6 su
 Bedrock (profilo d'inferenza EU). Prima di ogni chiamata, in ordine: tetto di spesa della
 piattaforma (tabella `contatori`), ritmo (6 al minuto), gettoni (150 al mese) e tetto di
 spesa dell'utente; dopo, si registrano token e spesa stimata. Il tutor risponde solo su

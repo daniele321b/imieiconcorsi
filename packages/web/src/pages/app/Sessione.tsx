@@ -1,6 +1,6 @@
-import { DOMANDE_TRA_ANNUNCI, nomeMateria, PREFISSO_BANCA_DATI } from "@imieiconcorsi/core/domain";
+import { DOMANDE_TRA_ANNUNCI, nomeMateria, PREFISSO_BANCA_DATI, tempoSessione } from "@imieiconcorsi/core/domain";
 import { numeroDomanda } from "@imieiconcorsi/core/progressi";
-import { ArrowLeft, ArrowRight, CheckCircle2, ChevronDown, Flag, RotateCcw, Timer, Trophy, X, XCircle } from "lucide-react";
+import { ArrowLeft, ArrowRight, CheckCircle2, ChevronDown, Flag, Pause, Play, RotateCcw, Timer, Trophy, X, XCircle } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Link, useLocation, useNavigate, useParams } from "react-router";
 import { Pubblicita } from "../../components/Pubblicita";
@@ -71,7 +71,7 @@ function Sessione({ id }: { id: string }) {
   return sessione.tipo === "studio" ? (
     <StudioRunner sessione={sessione} onConsegnata={setSessione} />
   ) : (
-    <SimulazioneRunner sessione={sessione} onConsegnata={setSessione} />
+    <SimulazioneRunner sessione={sessione} onConsegnata={setSessione} onAggiornata={setSessione} />
   );
 }
 
@@ -101,27 +101,44 @@ function useConsegna(sessione: SessioneApi, onConsegnata: (s: SessioneApi) => vo
 
 // ── Cronometro ───────────────────────────────────────────────────────────────
 
-/** Millisecondi trascorsi da `inizio`, aggiornati ogni secondo. */
-function useTrascorso(inizio: string) {
+/** L'ora attuale in millisecondi, aggiornata ogni secondo. */
+function useOra() {
   const [ora, setOra] = useState(() => Date.now());
   useEffect(() => {
     const t = setInterval(() => setOra(Date.now()), 1000);
     return () => clearInterval(t);
   }, []);
-  return Math.max(0, ora - Date.parse(inizio));
+  return ora;
+}
+
+/** Millisecondi trascorsi da `inizio`, aggiornati ogni secondo. */
+function useTrascorso(inizio: string) {
+  return Math.max(0, useOra() - Date.parse(inizio));
+}
+
+/**
+ * Tempo della simulazione senza le pause: trascorso, a disposizione e rimasto. In pausa il tempo
+ * è fermo all'inizio della pausa; dopo ogni pausa il server sposta in avanti la scadenza.
+ */
+function useTempoProva(sessione: SessioneApi) {
+  const ora = useOra();
+  const pause = sessione.pausaMs ?? 0;
+  const adesso = sessione.inPausaDal ? Date.parse(sessione.inPausaDal) : ora;
+  const disponibile = Date.parse(sessione.scadeIl!) - Date.parse(sessione.creataIl) - pause;
+  const trascorso = Math.max(0, adesso - Date.parse(sessione.creataIl) - pause);
+  return { trascorso, disponibile, rimanente: Math.max(0, disponibile - trascorso), inPausa: !!sessione.inPausaDal };
 }
 
 /**
  * Cronometro della prova d'esame: tempo rimasto in grande, tempo trascorso, barra del tempo e
  * ritmo (risposte date rispetto al tempo passato: con un minuto a domanda si vede subito se si
- * è indietro). Rosso e lampeggiante negli ultimi 5 minuti.
+ * è indietro). Rosso e lampeggiante negli ultimi 5 minuti, ambra e fermo in pausa.
  */
-function CronometroProva({ inizio, fine, date, totale }: { inizio: string; fine: string; date: number; totale: number }) {
-  const trascorso = useTrascorso(inizio);
-  const durataTotale = Date.parse(fine) - Date.parse(inizio);
-  const rimanente = Math.max(0, durataTotale - trascorso);
-  const quota = Math.min(1, trascorso / durataTotale);
-  const pocoTempo = rimanente < 5 * 60_000;
+function CronometroProva({ sessione, date }: { sessione: SessioneApi; date: number }) {
+  const { trascorso, disponibile, rimanente, inPausa } = useTempoProva(sessione);
+  const totale = sessione.domande.length;
+  const quota = Math.min(1, trascorso / disponibile);
+  const pocoTempo = !inPausa && rimanente < 5 * 60_000;
   // Domande che "dovresti" aver fatto a questo punto, con il tempo diviso in parti uguali.
   const attese = Math.floor(quota * totale);
   const ritmo = date >= attese ? "in linea" : `${attese - date} ${attese - date === 1 ? "domanda" : "domande"} indietro`;
@@ -130,15 +147,15 @@ function CronometroProva({ inizio, fine, date, totale }: { inizio: string; fine:
       <span
         className={cx(
           "inline-flex items-center gap-1.5 rounded-full px-3 py-1 font-mono text-base font-bold tabular-nums",
-          pocoTempo ? "animate-pulse bg-rose-100 text-rose-700" : "bg-brand-950 text-white",
+          inPausa ? "bg-amber-100 text-amber-800" : pocoTempo ? "animate-pulse bg-rose-100 text-rose-700" : "bg-brand-950 text-white",
         )}
         role="timer"
-        aria-label={`Tempo rimasto ${durata(rimanente)}`}
+        aria-label={`Tempo rimasto ${durata(rimanente)}${inPausa ? ", in pausa" : ""}`}
       >
-        <Timer className="size-4" /> {durata(rimanente)}
+        {inPausa ? <Pause className="size-4" /> : <Timer className="size-4" />} {durata(rimanente)}
       </span>
       <span className="text-[11px] font-medium text-slate-500 tabular-nums">
-        trascorsi {durata(trascorso)} · ritmo {ritmo}
+        {inPausa ? "in pausa" : `trascorsi ${durata(trascorso)} · ritmo ${ritmo}`}
       </span>
       <span className="block h-1 w-28 overflow-hidden rounded-full bg-slate-200" aria-hidden>
         <span className={cx("block h-full rounded-full", pocoTempo ? "bg-rose-500" : "bg-brand-500")} style={{ width: `${quota * 100}%` }} />
@@ -336,14 +353,41 @@ function leggiBozza(id: string, n: number): Risposte {
   return Array.from({ length: n }, () => null);
 }
 
-/** Simulazione: timer, salto tra le domande, consegna (automatica allo scadere del tempo). */
-function SimulazioneRunner({ sessione, onConsegnata }: { sessione: SessioneApi; onConsegnata: (s: SessioneApi) => void }) {
+/**
+ * Simulazione: timer, pausa, salto tra le domande, consegna (automatica allo scadere del tempo).
+ * La pausa è salvata sul server (POST /sessioni/{id}/pausa): ricaricando la pagina resta in pausa.
+ */
+function SimulazioneRunner({
+  sessione,
+  onConsegnata,
+  onAggiornata,
+}: {
+  sessione: SessioneApi;
+  onConsegnata: (s: SessioneApi) => void;
+  /** La sessione con la pausa messa o tolta, come la restituisce il server */
+  onAggiornata: (s: SessioneApi) => void;
+}) {
   const [indice, setIndice] = useState(0);
   const [risposte, setRisposte] = useState<Risposte>(() => leggiBozza(sessione.id, sessione.domande.length));
-  const [rimanente, setRimanente] = useState(() => Date.parse(sessione.scadeIl!) - Date.now());
+  const { rimanente, inPausa } = useTempoProva(sessione);
   const [conferma, setConferma] = useState(false);
   const { consegna, inCorso, errore } = useConsegna(sessione, onConsegnata);
   const consegnata = useRef(false);
+  const [pausaInCorso, setPausaInCorso] = useState(false);
+  const [errorePausa, setErrorePausa] = useState<string>();
+
+  // Mette in pausa (true) o riprende (false): il server ferma il tempo e sposta la scadenza.
+  async function cambiaPausa(pausa: boolean) {
+    setPausaInCorso(true);
+    setErrorePausa(undefined);
+    try {
+      onAggiornata(await api<SessioneApi>(`/sessioni/${sessione.id}/pausa`, { method: "POST", body: { pausa } }));
+    } catch (err) {
+      setErrorePausa(err instanceof ApiError ? err.message : "Non riesco a cambiare la pausa: riprova.");
+    } finally {
+      setPausaInCorso(false);
+    }
+  }
 
   // Bozza nel browser: una ricarica della pagina non fa perdere le risposte.
   useEffect(() => {
@@ -352,70 +396,102 @@ function SimulazioneRunner({ sessione, onConsegnata }: { sessione: SessioneApi; 
     } catch {}
   }, [sessione.id, risposte]);
 
+  // Tempo scaduto: consegna automatica, una volta sola (in pausa il tempo è fermo).
   useEffect(() => {
-    const t = setInterval(() => setRimanente(Date.parse(sessione.scadeIl!) - Date.now()), 1000);
-    return () => clearInterval(t);
-  }, [sessione.scadeIl]);
-
-  // Tempo scaduto: consegna automatica, una volta sola.
-  useEffect(() => {
-    if (rimanente <= 0 && !consegnata.current) {
+    if (!inPausa && rimanente <= 0 && !consegnata.current) {
       consegnata.current = true;
       void consegna(risposte);
     }
-  }, [rimanente, risposte, consegna]);
+  }, [inPausa, rimanente, risposte, consegna]);
 
   const domanda = sessione.domande[indice];
   const date = risposte.filter((r) => r !== null).length;
 
   return (
-    <div className="grid gap-6 lg:grid-cols-[1fr_18rem]">
+    <div className="grid grid-cols-1 gap-6 lg:grid-cols-[minmax(0,1fr)_18rem]">
       <div>
         <div className="sticky top-16 z-10 -mx-4 mb-4 flex items-center justify-between gap-4 bg-slate-50/90 px-4 py-3 backdrop-blur sm:-mx-6 sm:px-6 lg:static lg:mx-0 lg:bg-transparent lg:p-0">
           <p className="text-sm font-semibold text-slate-600">
             Domanda {indice + 1}/{sessione.domande.length} · {nomeMateria(domanda.materia)}
           </p>
-          <CronometroProva inizio={sessione.creataIl} fine={sessione.scadeIl!} date={date} totale={sessione.domande.length} />
-        </div>
-
-        <NotaOrdineRisposte sessione={sessione} />
-        <Card key={indice} className="animate-fade-up p-6 sm:p-8">
-          <h2 className="text-xl font-bold text-slate-900">{domanda.testo}</h2>
-          <div className="mt-6 grid gap-3" role="radiogroup">
-            {domanda.opzioni.map((opzione, i) => (
-              <button
-                key={i}
-                role="radio"
-                aria-checked={risposte[indice] === i}
-                onClick={() => setRisposte((r) => r.map((v, j) => (j === indice ? (v === i ? null : i) : v)))}
-                className={cx(
-                  "flex items-center gap-3 rounded-xl p-4 text-left font-medium ring-1 transition",
-                  risposte[indice] === i ? "bg-brand-50 text-brand-900 ring-2 ring-brand-500" : "ring-slate-200 hover:bg-slate-50",
-                )}
-              >
-                <span
-                  className={cx(
-                    "grid size-7 shrink-0 place-items-center rounded-lg text-sm font-bold",
-                    risposte[indice] === i ? "bg-brand-600 text-white" : "bg-slate-100 text-slate-600",
-                  )}
-                >
-                  {String.fromCharCode(65 + i)}
-                </span>
-                {opzione}
-              </button>
-            ))}
+          <div className="flex shrink-0 items-start gap-2">
+            <CronometroProva sessione={sessione} date={date} />
+            <Button
+              variant="secondary"
+              size="sm"
+              className="h-9"
+              loading={pausaInCorso}
+              onClick={() => void cambiaPausa(!inPausa)}
+              aria-label={inPausa ? "Riprendi la simulazione" : "Metti in pausa la simulazione"}
+            >
+              {inPausa ? <Play className="size-4" /> : <Pause className="size-4" />}
+              <span className="hidden sm:inline">{inPausa ? "Riprendi" : "Pausa"}</span>
+            </Button>
           </div>
-          <p className="mt-4 text-xs text-slate-400">Clicca di nuovo una risposta per lasciarla in bianco.</p>
-        </Card>
-
-        <div className="mt-6 flex justify-between">
-          <Button variant="secondary" disabled={indice === 0} onClick={() => setIndice((i) => i - 1)}>
-            Precedente
-          </Button>
-          <Button disabled={indice === sessione.domande.length - 1} onClick={() => setIndice((i) => i + 1)}>
-            Successiva <ArrowRight className="size-4" />
-          </Button>
         </div>
+
+        {errorePausa && (
+          <Alert tone="error" onClose={() => setErrorePausa(undefined)}>
+            {errorePausa}
+          </Alert>
+        )}
+        <NotaOrdineRisposte sessione={sessione} />
+        {inPausa ? (
+          // In pausa la domanda è nascosta: si riprende da dove si era, con lo stesso tempo.
+          <Card className="animate-fade-up p-6 text-center sm:p-8">
+            <span className="mx-auto grid size-12 place-items-center rounded-2xl bg-amber-100 text-amber-700">
+              <Pause className="size-6" />
+            </span>
+            <h2 className="mt-4 text-xl font-bold text-slate-900">Simulazione in pausa</h2>
+            <p className="mt-2 text-sm text-slate-600">
+              Il tempo è fermo: quando riprendi hai ancora <strong>{durata(rimanente)}</strong>. La domanda resta nascosta fino
+              ad allora. Nella prova vera non si può fare pausa: usala per gli imprevisti.
+            </p>
+            <Button size="lg" className="mt-5" loading={pausaInCorso} onClick={() => void cambiaPausa(false)}>
+              <Play className="size-4" /> Riprendi
+            </Button>
+          </Card>
+        ) : (
+          <>
+            <Card key={indice} className="animate-fade-up p-6 sm:p-8">
+              <h2 className="text-xl font-bold text-slate-900">{domanda.testo}</h2>
+              <div className="mt-6 grid gap-3" role="radiogroup">
+                {domanda.opzioni.map((opzione, i) => (
+                  <button
+                    key={i}
+                    role="radio"
+                    aria-checked={risposte[indice] === i}
+                    onClick={() => setRisposte((r) => r.map((v, j) => (j === indice ? (v === i ? null : i) : v)))}
+                    className={cx(
+                      "flex items-center gap-3 rounded-xl p-4 text-left font-medium ring-1 transition",
+                      risposte[indice] === i ? "bg-brand-50 text-brand-900 ring-2 ring-brand-500" : "ring-slate-200 hover:bg-slate-50",
+                    )}
+                  >
+                    <span
+                      className={cx(
+                        "grid size-7 shrink-0 place-items-center rounded-lg text-sm font-bold",
+                        risposte[indice] === i ? "bg-brand-600 text-white" : "bg-slate-100 text-slate-600",
+                      )}
+                    >
+                      {String.fromCharCode(65 + i)}
+                    </span>
+                    {opzione}
+                  </button>
+                ))}
+              </div>
+              <p className="mt-4 text-xs text-slate-400">Clicca di nuovo una risposta per lasciarla in bianco.</p>
+            </Card>
+
+            <div className="mt-6 flex justify-between">
+              <Button variant="secondary" disabled={indice === 0} onClick={() => setIndice((i) => i - 1)}>
+                Precedente
+              </Button>
+              <Button disabled={indice === sessione.domande.length - 1} onClick={() => setIndice((i) => i + 1)}>
+                Successiva <ArrowRight className="size-4" />
+              </Button>
+            </div>
+          </>
+        )}
       </div>
 
       <aside className="space-y-4">
@@ -428,6 +504,7 @@ function SimulazioneRunner({ sessione, onConsegnata }: { sessione: SessioneApi; 
               <button
                 key={i}
                 onClick={() => setIndice(i)}
+                disabled={inPausa}
                 aria-label={`Vai alla domanda ${i + 1}`}
                 className={cx(
                   "aspect-square rounded-md text-xs font-bold transition",
@@ -510,16 +587,16 @@ function Risultati({ sessione }: { sessione: SessioneApi }) {
               Punteggio {esito.punteggio.toLocaleString("it-IT")} su {esito.massimo} · soglia {Math.round(sessione.regole.soglia * 100)}%
             </p>
           )}
+          {/* Tempo senza le pause della simulazione. */}
           {simulazione && sessione.consegnataIl && sessione.scadeIl && (
             <p className="mt-1 inline-flex items-center gap-1 text-sm opacity-80">
-              <Timer className="size-4" /> Tempo impiegato{" "}
-              {durata(Math.min(Date.parse(sessione.consegnataIl), Date.parse(sessione.scadeIl)) - Date.parse(sessione.creataIl))} su{" "}
-              {durata(Date.parse(sessione.scadeIl) - Date.parse(sessione.creataIl))}
+              <Timer className="size-4" /> Tempo impiegato {durata(tempoSessione(sessione).impiegatoMs)} su{" "}
+              {durata(tempoSessione(sessione).disponibileMs!)}
             </p>
           )}
           {!simulazione && sessione.consegnataIl && (
             <p className="mt-1 inline-flex items-center gap-1 text-sm opacity-80">
-              <Timer className="size-4" /> Tempo impiegato {durata(Date.parse(sessione.consegnataIl) - Date.parse(sessione.creataIl))}
+              <Timer className="size-4" /> Tempo impiegato {durata(tempoSessione(sessione).impiegatoMs)}
             </p>
           )}
         </div>

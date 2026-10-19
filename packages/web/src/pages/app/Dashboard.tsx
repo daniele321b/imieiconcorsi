@@ -78,7 +78,7 @@ export function Dashboard() {
           </Alert>
         ))}
 
-      <div className="grid gap-8 lg:grid-cols-[1.4fr_1fr]">
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)]">
         {/* Concorsi seguiti (min-w-0: sul telefono la colonna non si allarga oltre lo schermo) */}
         <section className="min-w-0">
           <div className="mb-4 flex items-center justify-between">

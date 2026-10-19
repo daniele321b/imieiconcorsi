@@ -65,14 +65,14 @@ file) è `LAMBDAS` in `scripts/deploy.sh`. Route e permessi in `environments/dev
 |---|---|
 | `profile/handler.ts` | `GET /me` (crea il profilo al primo accesso, conta le risposte dell'assistenza da leggere, riattiva gli avvisi), `PUT /me/profilo` (onboarding e profilo, accettazione dei Termini), `PUT /me/feedback`, `DELETE /me` (cancella tutti i dati dell'utente e l'account Cognito) |
 | `concorsi/handler.ts` | Bandi per comparto (aperti e chiusi), dettaglio (con titolo e domande della banca dati collegata), seguire/smettere (limite del piano), storico dei seguiti |
-| `study/handler.ts` | Materie, avvio e consegna delle sessioni (punteggio sul server), statistiche, banche dati: elenco con progressi, consultazione 20 domande per volta, azzeramento dei progressi |
+| `study/handler.ts` | Materie, avvio, pausa e consegna delle sessioni (punteggio sul server), statistiche, banche dati: elenco con progressi, consultazione 20 domande per volta, azzeramento dei progressi |
 | `study/logic.ts` | Puro: `selezionaDomande` (ripartizione tra materie, vicino al livello), `mescola`, `pubblica` (senza soluzione), `calcolaEsito` |
 | `study/usi.ts` | Utilizzi settimanali delle banche dati nel piano Free (3 a settimana) |
 | `billing/handler.ts` | Piani, acquisto (ordine + Stripe Checkout, o `mock`), verifica del codice sconto, storico dei pagamenti dell'utente, stato dell'ordine (chiede a Stripe se il webhook tarda), invito di un amico, **webhook di Stripe** |
 | `billing/ordini.ts` | Tabella `ordini`: salva, legge, `completaOrdine` (attiva il piano una volta sola con le regole di `acquisti.ts`, ricevuta via email, premio invito), `chiudiOrdine`, `inviaConferma` (la ricevuta) |
 | `billing/stripe.ts` | API REST di Stripe senza SDK: crea/legge la sessione di pagamento, firma del webhook |
 | `billing/inviti.ts` | "Invita un amico": codice personale, codice di chi ha invitato, premio di 30 giorni al primo acquisto dell'amico (massimo 12 l'anno) |
-| `ai/handler.ts` | Tutor e allenamento (Bedrock, Claude Haiku 4.5 EU) con tutte le protezioni: tetto della piattaforma, ritmo, gettoni, tetto per utente, fuori tema |
+| `ai/handler.ts` | Tutor e allenamento (Bedrock, Claude Sonnet 4.6 EU) con tutte le protezioni: tetto della piattaforma, ritmo, gettoni, tetto per utente, fuori tema |
 | `ai/logic.ts` | Puro: istruzioni del tutor (con il guardrail `[FUORI_TEMA]`) e dell'autore di domande, messaggi, controllo delle domande generate, punti deboli, stima della spesa |
 | `richieste/handler.ts` | Assistenza lato utente: elenco, nuova richiesta (limiti: 5 aperte, 10 al giorno), messaggi, "letta" |
 | `pubblico/handler.ts` | Route senza login, protette da firma: disiscrizione dagli avvisi, immagine "aperto" e link "clic" delle email |
@@ -131,6 +131,7 @@ file) è `LAMBDAS` in `scripts/deploy.sh`. Route e permessi in `environments/dev
 | `collega-account.test.ts` | Decisioni del trigger pre sign-up |
 | `domande.test.ts` | Validità dei file della banca statica |
 | `manutenzione.test.ts` | CloudFront Function di sito e API con la manutenzione: spenta, accesa, link di accesso, anteprima |
+| `pausa.test.ts` | Pausa delle simulazioni: scadenza spostata alla ripresa, tempo impiegato senza le pause |
 | `colonne.test.ts` | Banche dati a tabella "Quesito \| esatta \| errate" (intestazione, esponenti, risposta attaccata alla domanda) |
 | `lettere.test.ts` | Banche dati a tabella "codice \| domanda \| a)-d) \| lettera giusta" |
 

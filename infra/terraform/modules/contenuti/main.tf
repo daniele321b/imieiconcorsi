@@ -81,12 +81,15 @@ resource "aws_s3_bucket_lifecycle_configuration" "contenuti" {
 
 # Lambda che importa un file di domande nella tabella questions (functions/src/contenuti).
 module "import_domande" {
-  source       = "../lambda"
-  name         = "${var.name}-import-domande"
-  source_dir   = "${var.functions_dir}/import-domande"
-  timeout      = 300
-  environment  = merge(var.environment, { CONTENUTI_BUCKET = aws_s3_bucket.contenuti.id })
-  write_tables = [var.questions_table_arn]
+  source     = "../lambda"
+  name       = "${var.name}-import-domande"
+  source_dir = "${var.functions_dir}/import-domande"
+  timeout    = 300
+  # Al deploy parte un import per file (13 insieme): al massimo 2 alla volta, gli altri
+  # aspettano (S3 riprova da solo). Così l'import non toglie esecuzioni all'API.
+  reserved_concurrency = 2
+  environment          = merge(var.environment, { CONTENUTI_BUCKET = aws_s3_bucket.contenuti.id })
+  write_tables         = [var.questions_table_arn]
   policy_statements = [{
     Effect   = "Allow"
     Action   = ["s3:GetObject", "s3:ListBucket"]

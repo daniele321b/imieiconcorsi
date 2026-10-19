@@ -81,9 +81,14 @@ export function ConcorsoDettaglio() {
           </Badge>
           <Badge>{nomeComparto(concorso.comparto)}</Badge>
           {tipoProcedura(concorso.tipoProcedura) && <Badge>{tipoProcedura(concorso.tipoProcedura)}</Badge>}
+          {/* Alcuni bandi hanno decine di sedi: le prime tre e quante altre. */}
           {concorso.sedi.length > 0 && (
-            <Badge>
-              <MapPin className="size-3" /> {concorso.sedi.join(", ")}
+            <Badge className="max-w-full">
+              <MapPin className="size-3 shrink-0" />
+              <span className="min-w-0 break-words">
+                {concorso.sedi.slice(0, 3).join(", ")}
+                {concorso.sedi.length > 3 && ` e altre ${concorso.sedi.length - 3}`}
+              </span>
             </Badge>
           )}
           {concorso.posti ? (
@@ -144,7 +149,8 @@ export function ConcorsoDettaglio() {
         ))}
 
 
-      <div className="grid gap-6 lg:grid-cols-[1.4fr_1fr]">
+      {/* minmax(0, …) e grid-cols-1: un testo lungo (es. un indirizzo nel bando) va a capo, non allarga la pagina. */}
+      <div className="grid grid-cols-1 gap-6 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)]">
         <section className="space-y-4">
           {conBanca && (
             // Su telefono tutto in colonna: titolo e testo a tutta larghezza, poi i comandi.
@@ -244,7 +250,8 @@ export function ConcorsoDettaglio() {
           {concorso.descrizione && (
             <Card>
               <p className="mb-2 font-semibold">Dal bando</p>
-              <p className="text-sm leading-relaxed whitespace-pre-line text-slate-600">{concorso.descrizione}</p>
+              {/* Nei bandi ci sono indirizzi web lunghi centinaia di caratteri: vanno a capo ovunque. */}
+              <p className="text-sm leading-relaxed whitespace-pre-line text-slate-600 [overflow-wrap:anywhere]">{concorso.descrizione}</p>
             </Card>
           )}
         </section>

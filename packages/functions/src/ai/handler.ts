@@ -50,7 +50,7 @@ import {
 // 6. token massimi per risposta e messaggi della chat tagliati (MAX_TOKEN_*, MAX_MESSAGGI).
 
 const client = new AnthropicBedrock({ awsRegion: process.env.AWS_REGION, timeout: 25_000, maxRetries: 1 });
-/** es. eu.anthropic.claude-haiku-4-5-20251001-v1:0 (variabile ai_model in Terraform) */
+/** es. eu.anthropic.claude-sonnet-4-6 (variabile ai_model in Terraform) */
 const modello = () => env("AI_MODEL");
 
 const MAX_TOKEN_TUTOR = 800;

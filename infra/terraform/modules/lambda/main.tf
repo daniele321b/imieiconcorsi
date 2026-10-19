@@ -71,6 +71,8 @@ resource "aws_lambda_function" "this" {
   source_code_hash = data.archive_file.code.output_base64sha256
   timeout          = var.timeout
   memory_size      = var.memory_size
+  # -1 = nessuna riserva: la funzione usa le esecuzioni libere dell'account.
+  reserved_concurrent_executions = var.reserved_concurrency == null ? -1 : var.reserved_concurrency
 
   environment {
     variables = merge({ NODE_OPTIONS = "--enable-source-maps" }, var.environment)
