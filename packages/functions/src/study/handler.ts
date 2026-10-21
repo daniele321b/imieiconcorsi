@@ -112,6 +112,7 @@ function sessioneCambiata(err: unknown): never {
   throw err;
 }
 
+/** La sessione dell'utente (solo le sue: la chiave comprende userId), 404 se non c'è. */
 async function getSessione(userId: string, id: string) {
   const res = await db.send(new GetCommand({ TableName: tables.attempts, Key: { userId, id } }));
   if (!res.Item) throw notFound("Sessione");
@@ -600,6 +601,7 @@ export const handler = service({
     return vista(aggiornata);
   },
 
+  /** Stella "preferita" su una domanda di una banca dati: accesa o spenta, salvata nei progressi. */
   "PUT /me/progressi/{bancaId}/preferite/{numero}": async (ctx) => {
     const { preferita } = ctx.body(z.object({ preferita: z.boolean() }));
     const numero = Number(ctx.params.numero);

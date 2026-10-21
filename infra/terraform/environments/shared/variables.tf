@@ -35,3 +35,15 @@ variable "notifiche_email" {
   type        = string
   default     = null
 }
+
+variable "posta_alias" {
+  description = "Indirizzi di contatto che ricevono posta (parte prima della @): info per prod, info-dev per dev"
+  type        = list(string)
+  default     = ["info", "info-dev"]
+}
+
+variable "posta_inoltra_a" {
+  description = "Dove arriva la posta degli indirizzi di contatto (null = notifiche_email, o il primo di sandbox_recipients)"
+  type        = string
+  default     = null
+}

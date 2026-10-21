@@ -47,6 +47,8 @@ locals {
     social           = module.auth.social_providers
     # Annunci del piano Free: vuoto = annunci interni (promozione dei piani), senza cookie di terzi.
     pubblicita = { adsenseClient = var.adsense_client, adsenseSlot = var.adsense_slot }
+    # Indirizzo mostrato nelle pagine informative; la sua posta arriva all'admin (shared, modules/posta-in-arrivo).
+    emailContatti = "info@${local.shared.domain}"
   }
 
   # Permessi riusati da più Lambda: email con SES e avvisi all'admin sul topic SNS.

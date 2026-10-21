@@ -31,6 +31,7 @@ const STATI = [
   { id: "aperti", nome: "Aperti" },
   { id: "chiusi", nome: "Chiusi" },
 ] as const;
+/** Tutti, solo aperti o solo chiusi. */
 type StatoBandi = (typeof STATI)[number]["id"];
 /** Lo stato scelto, letto dai filtri (aperti/chiusi = false nasconde quel gruppo). */
 const statoDi = (f: FiltriConcorsi): StatoBandi => (f.aperti === false ? "chiusi" : f.chiusi === false ? "aperti" : "tutti");

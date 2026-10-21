@@ -4,7 +4,9 @@ import { describe, expect, it } from "vitest";
 // Pausa delle simulazioni (POST /sessioni/{id}/pausa): alla ripresa la scadenza si sposta in
 // avanti della pausa; il tempo impiegato non conta le pause.
 
+/** Minuti in millisecondi. */
 const minuti = (n: number) => n * 60_000;
+/** L'istante a `min` minuti dall'inizio della prova (19/10/2026 alle 10:00 UTC). */
 const alle = (min: number) => new Date(Date.parse("2026-10-19T10:00:00Z") + minuti(min));
 
 describe("pausa della simulazione", () => {

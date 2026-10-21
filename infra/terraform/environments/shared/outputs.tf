@@ -34,3 +34,8 @@ output "ses_dkim_records" {
   description = "Record DKIM creati nella hosted zone"
   value       = module.ses.dkim_records
 }
+
+output "indirizzi_contatto" {
+  description = "Indirizzi di contatto che ricevono posta e dove viene inoltrata"
+  value       = module.posta.indirizzi
+}

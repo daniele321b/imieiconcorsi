@@ -1,0 +1,17 @@
+<!-- Foto profilo di Instagram e Facebook: il simbolo del sito (la spunta gialla, come in
+     packages/web/public/favicon.svg) sul gradiente dei colori del marchio (brand-600 → brand-800).
+     I social la ritagliano in un cerchio: la spunta sta al centro, dentro la zona sicura.
+     Si esporta in PNG 1080×1080 (vedi README.md). -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <linearGradient id="sfondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4f46e5"/>
+      <stop offset="1" stop-color="#3730a3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1080" fill="url(#sfondo)"/>
+  <!-- Spunta del logo (griglia 32×32 del favicon), ingrandita e centrata. -->
+  <g transform="translate(540 548) scale(30) translate(-16 -16.5)">
+    <path d="M9 17.5l4.5 4.5L23 11" fill="none" stroke="#fbbf24" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

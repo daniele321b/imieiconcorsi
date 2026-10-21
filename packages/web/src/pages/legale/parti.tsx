@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { datiSocietari, LEGALE } from "../../lib/legale";
+import { datiSocietari, emailContatti, LEGALE } from "../../lib/legale";
 
 // Pezzi di testo comuni alle pagine pubbliche: chi gestisce il servizio e come contattarlo.
 
@@ -18,9 +18,10 @@ export function Titolare() {
 
 /** Come scriverci: l'email se c'è, sempre il modulo della pagina Contatti. */
 export function ComeContattarci() {
-  return LEGALE.email ? (
+  const email = emailContatti();
+  return email ? (
     <>
-      all'indirizzo <strong>{LEGALE.email}</strong> o con il modulo della pagina <Link to="/contatti">Contatti</Link>
+      all'indirizzo <a href={`mailto:${email}`}>{email}</a> o con il modulo della pagina <Link to="/contatti">Contatti</Link>
     </>
   ) : (
     <>

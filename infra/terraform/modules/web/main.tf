@@ -199,6 +199,7 @@ resource "aws_cloudfront_key_value_store" "manutenzione" {
   comment = "Manutenzione di ${var.name}: attiva=si chiude sito e API"
 }
 
+# Codice delle funzioni CloudFront con il controllo della manutenzione (vedi functions/manutenzione.js).
 locals {
   # Id della KeyValueStore (ultima parte dell'ARN), da scrivere nel codice delle funzioni.
   kvs_id = element(split("/", aws_cloudfront_key_value_store.manutenzione.arn), 1)

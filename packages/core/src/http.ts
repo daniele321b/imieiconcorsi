@@ -49,6 +49,7 @@ export interface Ctx {
   body<T>(schema: ZodType<T>): T;
 }
 
+/** Una route dell'API: riceve il contesto della richiesta e restituisce il corpo JSON della risposta. */
 type Route = (ctx: Ctx) => Promise<unknown>;
 
 /**

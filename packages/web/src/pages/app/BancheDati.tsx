@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Link } from "react-router";
 import { NumeroAMano } from "../../components/NumeroDomande";
 import { OrdineRisposte } from "../../components/OrdineRisposte";
+import { RichiediBancaDati } from "../../components/Richieste";
 import { Alert, Badge, Button, Card, EmptyState, PageHeader, ProgressBar, Spinner, UpgradeBanner, cx } from "../../components/ui";
 import { api, useApi } from "../../lib/api";
 import { useUtente } from "../../lib/auth";
@@ -110,6 +111,9 @@ export function BancheDati() {
           ))}
         </div>
       )}
+
+      {/* Chi non trova il suo concorso lo chiede da qui (richiesta "banca-dati" all'assistenza). */}
+      <RichiediBancaDati className="mt-10" />
     </div>
   );
 }

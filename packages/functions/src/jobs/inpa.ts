@@ -30,6 +30,7 @@ export interface InpaBando {
   entiRiferimento?: string[] | null;
 }
 
+/** Una pagina dei risultati della ricerca bandi di inPA (API paginata). */
 interface InpaPage {
   content: InpaBando[];
   last: boolean;

@@ -53,6 +53,7 @@ export const DomandaContesto = z.object({
   risposta: z.number().int().min(0).max(5).nullable().optional(),
   spiegazione: z.string().max(2000).optional(),
 });
+/** La domanda di studio su cui l'utente chiede al tutor (testo, opzioni, risposta giusta), già controllata. */
 export type DomandaContesto = z.infer<typeof DomandaContesto>;
 
 /** Messaggi del tutor: tengo gli ultimi MAX_MESSAGGI per contenere i token di ogni chiamata. */
@@ -143,6 +144,7 @@ export const DomandaGenerata = z.object({
   corretta: z.number().int().min(0).max(3),
   spiegazione: z.string().trim().min(10).max(1200),
 });
+/** Una domanda creata dal modello per l'allenamento, dopo il controllo dello schema. */
 export type DomandaGenerata = z.infer<typeof DomandaGenerata>;
 
 /** "Strumento" che il modello deve usare per restituire le domande in un formato controllabile. */

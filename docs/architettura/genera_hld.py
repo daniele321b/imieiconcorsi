@@ -10,6 +10,7 @@ Il file .drawio si apre con draw.io (app desktop o https://app.diagrams.net).
 import sys
 from xml.sax.saxutils import escape
 
+# Colori ufficiali delle categorie AWS (icone e bordi), come nella libreria AWS di draw.io.
 COLORI = {
     "rete": "#8C4FFF", "integrazione": "#E7157B", "calcolo": "#ED7100", "storage": "#7AA116",
     "db": "#C925D1", "sicurezza": "#DD344C", "ml": "#01A88D", "gestione": "#E7157B", "costi": "#7AA116",
@@ -17,16 +18,21 @@ COLORI = {
 
 
 class Pagina:
+    """Una pagina del file draw.io: raccoglie le celle (riquadri, icone, frecce) e le scrive in XML."""
+
     def __init__(self, nome):
+        """Pagina vuota con il nome che compare nella linguetta di draw.io (Dev, Prod, Shared)."""
         self.nome = nome
         self.celle = []
         self.n = 2
 
     def _id(self):
+        """Id unico della prossima cella (0 e 1 sono le radici che draw.io vuole sempre)."""
         self.n += 1
         return f"{self.nome}-{self.n}"
 
     def _cella(self, valore, stile, x, y, w, h, vertex=True, extra=""):
+        """Aggiunge una cella con testo (HTML), stile draw.io, posizione e misura; restituisce l'id."""
         i = self._id()
         v = escape(valore, {'"': "&quot;"})
         tipo = 'vertex="1"' if vertex else 'edge="1"'
@@ -37,6 +43,7 @@ class Pagina:
         return i
 
     def gruppo(self, testo, x, y, w, h, icona, colore, tratteggio=False, testo_colore=None):
+        """Riquadro di raggruppamento AWS (account, region) con l'icona del gruppo in alto a sinistra."""
         stile = (
             "points=[];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=13;fontStyle=1;"
             f"container=0;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.{icona};"
@@ -46,6 +53,7 @@ class Pagina:
         return self._cella(testo, stile, x, y, w, h)
 
     def riquadro(self, testo, x, y, w, h, fondo="#F5F5F5", bordo="#999999", tratteggio=False, size=11, align="left"):
+        """Riquadro di testo arrotondato: servizi esterni, note e spiegazioni."""
         stile = (
             f"rounded=1;whiteSpace=wrap;html=1;fillColor={fondo};strokeColor={bordo};fontSize={size};align={align};"
             f"verticalAlign=top;spacingLeft=8;spacingTop=4;arcSize=6;dashed={1 if tratteggio else 0};"
@@ -53,6 +61,7 @@ class Pagina:
         return self._cella(testo, stile, x, y, w, h)
 
     def icona(self, testo, x, y, icona, categoria, w=54, etichetta="sotto"):
+        """Icona di un servizio AWS (es. "lambda", "s3") colorata per categoria, con l'etichetta sotto, a destra o sopra."""
         pos = {
             "sotto": "verticalLabelPosition=bottom;verticalAlign=top;align=center;",
             "destra": "labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=4;",
@@ -67,6 +76,7 @@ class Pagina:
         return self._cella(testo, stile, x, y, w, w)
 
     def utenti(self, testo, x, y):
+        """Icona "utenti" (persone) per chi usa il sito o lancia i comandi."""
         stile = (
             "sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;"
             "verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;aspect=fixed;pointerEvents=1;"
@@ -75,10 +85,12 @@ class Pagina:
         return self._cella(testo, stile, x, y, 54, 54)
 
     def testo(self, testo, x, y, w, h, size=11, colore="#232F3E", grassetto=False):
+        """Testo libero senza bordo: titoli e legende."""
         stile = f"text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;fontSize={size};fontColor={colore};fontStyle={1 if grassetto else 0};"
         return self._cella(testo, stile, x, y, w, h)
 
     def freccia(self, da, a, etichetta="", tratteggio=False, colore="#545B64", uscita=None, ingresso=None, punti=()):
+        """Freccia tra due celle: uscita/ingresso = punto del bordo (0-1, 0-1), punti = angoli del percorso."""
         stile = (
             f"edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;html=1;endArrow=block;endFill=1;fontSize=10;"
             f"strokeColor={colore};fontColor=#232F3E;labelBackgroundColor=#FFFFFF;dashed={1 if tratteggio else 0};"
@@ -94,6 +106,7 @@ class Pagina:
         self.celle.append(f'<mxCell id="{i}" value="{v}" style="{stile}" edge="1" parent="1" source="{da}" target="{a}">{geo}</mxCell>')
 
     def xml(self):
+        """La pagina in formato draw.io (diagram > mxGraphModel > root)."""
         celle = "".join(self.celle)
         return (
             f'<diagram id="{self.nome}" name="{self.nome}"><mxGraphModel dx="1800" dy="1200" grid="1" gridSize="10" guides="1" '
@@ -103,14 +116,14 @@ class Pagina:
 
 
 def ambiente(env):
+    """Pagina di un ambiente (dev o prod): utenti e servizi esterni, CloudFront, API, Lambda, dati, job, email."""
     prod = env == "prod"
     nome = f"imieiconcorsi-{env}"
     dominio = "imieiconcorsi.it" if prod else "dev.imieiconcorsi.it"
     p = Pagina("Prod" if prod else "Dev")
 
     p.testo(
-        f"<b>iMieiConcorsi — ambiente {env.upper()}</b> (risorse <i>{nome}-…</i>) · https://{dominio}"
-        + (" · <font color='#DD344C'>congelato durante la revisione SES</font>" if prod else ""),
+        f"<b>iMieiConcorsi — ambiente {env.upper()}</b> (risorse <i>{nome}-…</i>) · https://{dominio}",
         20, 10, 1500, 30, size=16,
     )
 
@@ -130,7 +143,11 @@ def ambiente(env):
     # Globale
     r53 = p.icona("Route 53<br>zona imieiconcorsi.it", 300, 185, "route_53", "rete", etichetta="sopra")
     acm = p.icona("ACM<br>certificato HTTPS", 520, 185, "certificate_manager_3", "sicurezza", etichetta="sopra")
-    cf = p.icona(f"CloudFront<br>{dominio}<br>HTTPS, HSTS, CSP<br>funzioni: sito a pagina unica, /api", 420, 330, "cloudfront", "rete", w=64)
+    cf = p.icona(f"CloudFront<br>{dominio}<br>HTTPS, HSTS, CSP<br>funzioni: sito a pagina unica, /api,<br>pagina di manutenzione", 420, 330, "cloudfront", "rete", w=64)
+    kvs = p.riquadro(
+        f"<b>KeyValueStore</b><br>{nome}-manutenzione<br>attiva = si → pagina 503<br>(scripts/deploy.sh manutenzione)",
+        440, 580, 185, 65, fondo="#F3EEFF", bordo="#8C4FFF",
+    )
     if prod:
         waf = p.icona("AWS WAF<br>OWASP, input noti, IP malevoli<br>2.000 rich./5 min per IP<br>100 POST pubblici per IP", 300, 500, "waf", "sicurezza")
         p.freccia(waf, cf, "filtra", uscita=(0.5, 0), ingresso=(0, 0.85), punti=[(327, 384)])
@@ -147,7 +164,7 @@ def ambiente(env):
         690, 125, 620, 62, fondo="#FFF8E1", bordo="#F2B807",
     )
     s3web = p.icona("S3 sito<br>privato, solo da CloudFront", 720, 230, "s3", "storage")
-    cognito = p.icona("Cognito user pool<br>login SRP, gruppi = piani<br>Google e Facebook (OAuth)", 930, 230, "cognito", "sicurezza")
+    cognito = p.icona("Cognito user pool<br>login SRP, gruppi = piani<br>Google e Facebook (OAuth)<br>email dei codici da SES", 930, 230, "cognito", "sicurezza")
     trigger = p.icona("Lambda trigger (2)<br>auth-pre-signup<br>auth-accessi", 1180, 230, "lambda", "calcolo")
     bedrock = p.icona("Amazon Bedrock<br>Claude Sonnet 4.6<br>(profilo EU, solo Pro)", 1600, 230, "bedrock", "ml")
 
@@ -157,7 +174,7 @@ def ambiente(env):
         930, 420, "lambda", "calcolo", w=64,
     )
     dynamo = p.icona(
-        "<b>DynamoDB</b> (13 tabelle, on demand,<br>backup continuo" + (", protette)" if prod else ")")
+        "<b>DynamoDB</b> (13 tabelle, on demand,<br>backup continuo sui dati degli utenti" + (", protette)" if prod else ")")
         + "<br>users · concorsi · follows · questions<br>attempts · codici · ordini · banche-dati<br>richieste · progressi · contatori<br>accessi · attivita",
         1300, 420, "dynamodb", "db", w=64, etichetta="destra",
     )
@@ -165,17 +182,18 @@ def ambiente(env):
     scheduler = p.icona("EventBridge Scheduler<br>6:00 scraper · 6:15 scadenze<br>7:00 avvisi<br>dom e mer 3:00 pulizia", 720, 660, "eventbridge", "integrazione")
     jobs = p.icona("Lambda job (4)<br>inpa-scraper · pulizia-bandi<br>avvisi · scadenze", 930, 660, "lambda", "calcolo")
     s3cont = p.icona("S3 contenuti<br>domande, PDF banche dati<br>(PDF dall'admin con URL firmato)", 1300, 660, "s3", "storage")
-    cont = p.icona("Lambda contenuti (2)<br>import-domande<br>estrai-banca-dati", 1560, 660, "lambda", "calcolo")
+    cont = p.icona("Lambda contenuti (2)<br>import-domande (max 2 insieme)<br>estrai-banca-dati", 1560, 660, "lambda", "calcolo")
 
     sns = p.icona(f"SNS<br>{nome}-avvisi-admin<br>{nome}-monitoraggio", 720, 880, "sns", "integrazione")
     cw = p.icona("CloudWatch<br>allarmi, dashboard<br>log 14 giorni", 930, 880, "cloudwatch_2", "gestione")
-    ses = p.icona("SES (ambiente shared)<br>noreply@imieiconcorsi.it<br>configuration set", 1150, 880, "simple_email_service", "sicurezza", etichetta="destra")
+    ses = p.icona("SES (ambiente shared)<br>noreply@imieiconcorsi.it<br>configuration set<br>email dell'app e di Cognito", 1150, 880, "simple_email_service", "sicurezza", etichetta="destra")
 
     # Flussi
     p.freccia(utenti, r53, "DNS", uscita=(0.5, 0), ingresso=(0, 0.5), punti=[(117, 212)])
     p.freccia(utenti, cf, "HTTPS", uscita=(1, 0.5), ingresso=(0, 0.5))
     p.freccia(r53, cf, "alias", uscita=(0.5, 1), ingresso=(0.3, 0), punti=[(327, 290), (439, 290)])
     p.freccia(acm, cf, "", tratteggio=True, uscita=(0.5, 1), ingresso=(0.7, 0), punti=[(547, 290), (465, 290)])
+    p.freccia(kvs, cf, "interruttore", tratteggio=True, uscita=(0.85, 0), ingresso=(1, 0.9), punti=[(597, 388)])
     p.freccia(cf, s3web, "sito e bandi in cache", uscita=(1, 0.25), ingresso=(0, 0.5), punti=[(660, 346), (660, 257)])
     p.freccia(cf, apigw, "/api + segreto", uscita=(1, 0.75), ingresso=(0, 0.5), punti=[(690, 378), (690, 457)])
     p.freccia(apigw, cognito, "verifica token", tratteggio=True, uscita=(1, 0.2), ingresso=(0, 0.5), punti=[(860, 441), (860, 257)])
@@ -206,6 +224,7 @@ def ambiente(env):
 
 
 def shared():
+    """Pagina delle risorse comuni a dev e prod: zona DNS, SES con le sue notifiche e stato di Terraform."""
     p = Pagina("Shared")
     p.testo("<b>iMieiConcorsi — risorse comuni (ambiente SHARED e bootstrap)</b>, lette da dev e prod con terraform_remote_state", 20, 10, 1500, 30, size=16)
     utenti = p.utenti("Admin / sviluppatore<br>(scripts/deploy.sh)", 90, 560)
@@ -221,28 +240,37 @@ def shared():
         410, 220, "route_53", "rete",
     )
     ses = p.icona(
-        "<b>SES</b><br>dominio imieiconcorsi.it (DKIM)<br>mittente noreply@imieiconcorsi.it<br>"
+        "<b>SES</b><br>dominio imieiconcorsi.it (DKIM)<br>mittente noreply@imieiconcorsi.it<br>riceve info@ e info-dev@<br>"
         "configuration set imieiconcorsi<br>soppressione rimbalzi e reclami<br>(account e configuration set)<br>"
-        "sandbox: solo indirizzi verificati",
+        "in produzione: 50.000 email al giorno",
         720, 220, "simple_email_service", "sicurezza", etichetta="destra",
     )
     sns = p.icona("SNS imieiconcorsi-ses-notifiche<br>rimbalzi, reclami, rifiuti → email", 1160, 220, "sns", "integrazione")
-    stato = p.icona("S3 stato Terraform<br>(bootstrap, versionato, cifrato)<br>dev/ · prod/ · shared/", 720, 560, "s3", "storage")
+    s3posta = p.icona("S3 imieiconcorsi-posta<br>messaggi ricevuti<br>(30 giorni, privato)", 850, 640, "s3", "storage")
+    inoltro = p.icona("Lambda inoltro-posta<br>info@ e info-dev@ → admin<br>(Rispondi = mittente vero)", 1150, 640, "lambda", "calcolo")
+    mittenti = p.riquadro("<b>Chi scrive</b><br>a info@imieiconcorsi.it<br>o info-dev@", 35, 300, 180, 60, fondo="#E8F4FD", bordo="#147EBA")
+    stato = p.icona("S3 stato Terraform<br>(bootstrap, versionato, cifrato)<br>dev/ · prod/ · shared/", 680, 560, "s3", "storage")
     p.riquadro(
-        "Usano queste risorse:<br>• <b>dev</b> e <b>prod</b>: mittente SES, configuration set, zona DNS<br>"
+        "Usano queste risorse:<br>• <b>dev</b> e <b>prod</b>: mittente SES (anche per le email di Cognito), "
+        "configuration set, zona DNS<br>"
         "• lo stato di ogni ambiente sta nello stesso bucket (chiavi diverse)<br>"
-        "• nello stesso account e nella stessa zona ci sono anche identità di altre app (es. Fleet Audit)",
-        960, 540, 350, 120, fondo="#FFFFFF", bordo="#BBBBBB",
+        "• lo stesso account AWS ospita anche altre app, con risorse proprie",
+        960, 470, 350, 120, fondo="#FFFFFF", bordo="#BBBBBB",
     )
     p.freccia(r53, ses, "record DKIM / MAIL FROM", tratteggio=True, uscita=(1, 0.5), ingresso=(0, 0.5))
     p.freccia(ses, sns, "eventi", uscita=(0.5, 0), ingresso=(0.5, 0), punti=[(747, 190), (1187, 190)])
     p.freccia(sns, caselle, "email all'admin", uscita=(1, 0.5), ingresso=(1, 0.3), punti=[(1290, 247), (1290, 451)])
     p.freccia(ses, caselle, "email dell'app", uscita=(0.5, 1), ingresso=(1, 0.8), punti=[(747, 486)])
     p.freccia(utenti, stato, "terraform", tratteggio=True, uscita=(1, 0.5), ingresso=(0, 0.5))
+    p.freccia(mittenti, ses, "posta in arrivo (record MX)", uscita=(0.5, 0), ingresso=(0.25, 0), punti=[(125, 170), (733, 170)])
+    p.freccia(ses, s3posta, "antivirus, antispam", uscita=(0.75, 1), ingresso=(0.5, 0), punti=[(760, 620), (877, 620)])
+    p.freccia(s3posta, inoltro, "nuovo messaggio", uscita=(1, 0.5), ingresso=(0, 0.5))
+    p.freccia(inoltro, caselle, "inoltro all'admin", uscita=(1, 0.5), ingresso=(0, 0.5), punti=[(1300, 667), (1300, 770), (20, 770), (20, 465)])
     return p
 
 
 def main(uscita):
+    """Scrive il file draw.io con le tre pagine (Dev, Prod, Shared)."""
     pagine = [ambiente("dev"), ambiente("prod"), shared()]
     xml = '<mxfile host="app.diagrams.net" type="device">' + "".join(p.xml() for p in pagine) + "</mxfile>"
     with open(uscita, "w", encoding="utf-8") as f:

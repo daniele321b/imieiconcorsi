@@ -80,6 +80,11 @@ export function Privacy() {
           12 mesi. Per evitare invii automatici salviamo per 24 ore un'impronta cifrata del tuo indirizzo IP, non l'indirizzo.
         </li>
         <li>
+          <strong>Email al nostro indirizzo di contatto:</strong> se ci scrivi via email, il messaggio (mittente, oggetto, testo
+          e allegati) passa da Amazon SES nell'Unione Europea e ci viene inoltrato. Una copia resta in un archivio protetto per
+          30 giorni, poi si cancella da sola; le email con virus o spam vengono scartate.
+        </li>
+        <li>
           <strong>Accessi:</strong> data, ora e modo (email e password, oppure Google o Facebook) di ogni accesso al tuo
           account, per sicurezza e assistenza; si cancellano da soli dopo 12 mesi o subito se elimini l'account.
         </li>
@@ -139,7 +144,10 @@ export function Privacy() {
           Ordini e dati dei pagamenti, con email e nome dell'intestatario: 10 anni, come richiesto dalla legge per le scritture
           contabili (art. 2220 c.c.), anche dopo l'eliminazione dell'account. Non vengono usati per altro.
         </li>
-        <li>Log tecnici: 14 giorni. Registro degli accessi: 12 mesi. Conteggi di utilizzo (anonimi): fino a 400 giorni.</li>
+        <li>
+          Log tecnici: 14 giorni. Email ricevute all'indirizzo di contatto: 30 giorni. Registro degli accessi: 12 mesi. Conteggi di
+          utilizzo (anonimi): fino a 400 giorni.
+        </li>
       </ul>
 
       <h2>Dove sono e chi li tratta per noi</h2>

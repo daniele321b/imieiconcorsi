@@ -1,10 +1,10 @@
 import { TIPI_RICHIESTA, type StatoRichiesta, type TipoRichiesta } from "@imieiconcorsi/core/domain";
-import { ArrowLeft, CheckCircle2, Flag, Send } from "lucide-react";
-import { type ReactNode, useState } from "react";
+import { ArrowLeft, CheckCircle2, DatabaseZap, Flag, Send } from "lucide-react";
+import { type FormEvent, type ReactNode, useState } from "react";
 import { Link } from "react-router";
 import { api, ApiError, type ContestoRichiesta, type RichiestaApi } from "../lib/api";
 import { dataOra } from "../lib/format";
-import { Badge, Button, cx } from "./ui";
+import { Badge, Button, Card, Field, cx } from "./ui";
 
 // Pezzi comuni dell'assistenza: la usano la pagina dell'utente (/app/assistenza) e il
 // pannello admin (/admin/richieste).
@@ -113,6 +113,91 @@ export function SegnalaErrore({ contesto, className }: { contesto: ContestoRichi
         </>
       )}
     </div>
+  );
+}
+
+/**
+ * Mini modulo "Manca la banca dati del tuo concorso?" (pagina Banche dati): crea una richiesta
+ * di tipo "banca-dati" con il minimo che serve, il concorso o l'ente e, se c'è, il link. Arriva
+ * all'admin come le altre richieste (pannello Richieste ed email) e la risposta va in Assistenza.
+ */
+export function RichiediBancaDati({ className }: { className?: string }) {
+  const [concorso, setConcorso] = useState("");
+  const [link, setLink] = useState("");
+  const [invio, setInvio] = useState(false);
+  const [inviata, setInviata] = useState(false);
+  const [errore, setErrore] = useState<string>();
+
+  // Invia la richiesta nel formato della traccia "Aggiungere una banca dati" dell'assistenza.
+  async function invia(e: FormEvent) {
+    e.preventDefault();
+    setInvio(true);
+    setErrore(undefined);
+    try {
+      const testo = `Concorso o ente: ${concorso.trim()}\nLink alla banca dati o al bando: ${link.trim() || "non indicato"}`;
+      await api("/me/richieste", { method: "POST", body: { tipo: "banca-dati", testo } });
+      setInviata(true);
+      setConcorso("");
+      setLink("");
+    } catch (err) {
+      setErrore(err instanceof ApiError ? err.message : "Invio non riuscito: riprova.");
+    } finally {
+      setInvio(false);
+    }
+  }
+
+  return (
+    <Card className={cx("space-y-3", className)}>
+      <p className="flex items-center gap-2 font-semibold text-slate-900">
+        <DatabaseZap className="size-5 text-brand-600" /> Manca la banca dati del tuo concorso?
+      </p>
+      {inviata ? (
+        <div className="space-y-2 text-sm">
+          <p className="flex items-center gap-2 font-semibold text-emerald-700">
+            <CheckCircle2 className="size-4" /> Richiesta inviata, grazie!
+          </p>
+          <p className="text-slate-600">
+            Se l'ente l'ha pubblicata la carichiamo e ti rispondiamo in{" "}
+            <Link to="/app/assistenza" className="font-semibold text-brand-600 hover:underline">
+              Assistenza
+            </Link>
+            , con un'email.
+          </p>
+          <button type="button" onClick={() => setInviata(false)} className="font-semibold text-brand-600 hover:text-brand-700">
+            Chiedine un'altra
+          </button>
+        </div>
+      ) : (
+        <form onSubmit={(e) => void invia(e)} className="space-y-3">
+          <p className="text-sm text-slate-500">Dicci di quale concorso si tratta: la cerchiamo e, se l'ente l'ha pubblicata, la carichiamo.</p>
+          <div className="grid gap-3 sm:grid-cols-2">
+            <Field
+              label="Concorso o ente"
+              name="concorso"
+              value={concorso}
+              onChange={(e) => setConcorso(e.target.value)}
+              placeholder="es. Agenzia delle Entrate, funzionari 2026"
+              required
+              minLength={3}
+              maxLength={300}
+            />
+            <Field
+              label="Link (facoltativo)"
+              name="link"
+              type="url"
+              value={link}
+              onChange={(e) => setLink(e.target.value)}
+              placeholder="Banca dati o bando, se lo hai"
+              maxLength={1000}
+            />
+          </div>
+          {errore && <p className="text-sm text-rose-600">{errore}</p>}
+          <Button type="submit" size="sm" loading={invio} disabled={concorso.trim().length < 3}>
+            <Send className="size-4" /> Richiedi la banca dati
+          </Button>
+        </form>
+      )}
+    </Card>
   );
 }
 

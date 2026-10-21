@@ -16,6 +16,7 @@ export const COMPARTI = [
   { id: "universita", nome: "Università e ricerca", descrizione: "Atenei ed enti di ricerca" },
   { id: "altro", nome: "Altri enti", descrizione: "Tutti gli altri bandi pubblicati su inPA" },
 ] as const;
+/** Id di un comparto (enti-locali, sanita…): ricavato dall'elenco COMPARTI qui sopra. */
 export type CompartoId = (typeof COMPARTI)[number]["id"];
 /** Gli id dei comparti come tupla, per gli schemi zod (z.enum). */
 export const COMPARTO_IDS = COMPARTI.map((c) => c.id) as [CompartoId, ...CompartoId[]];
@@ -37,6 +38,7 @@ export const MATERIE = [
   { id: "informatica", nome: "Informatica", icona: "monitor" },
   { id: "inglese", nome: "Inglese", icona: "languages" },
 ] as const;
+/** Id di una materia della banca statica (italiano, logica…): ricavato da MATERIE. */
 export type MateriaId = (typeof MATERIE)[number]["id"];
 /** Gli id delle materie come tupla, per gli schemi zod (z.enum). */
 export const MATERIA_IDS = MATERIE.map((m) => m.id) as [MateriaId, ...MateriaId[]];
@@ -66,6 +68,7 @@ export const PERIODI = [
   { id: "trimestrale", nome: "90 giorni", giorni: 90, mesi: 3 },
   { id: "annuale", nome: "1 anno", giorni: 365, mesi: 12 },
 ] as const;
+/** Durata di un piano a pagamento (mensile, trimestrale, annuale): ricavata da PERIODI. */
 export type Periodo = (typeof PERIODI)[number]["id"];
 export const PERIODO_IDS = PERIODI.map((p) => p.id) as [Periodo, ...Periodo[]];
 /** Dettagli di una durata (nome, giorni, mesi). */
@@ -265,6 +268,7 @@ export const TIPI_RICHIESTA = [
   { id: "suggerimento", nome: "Suggerimento", modello: "" },
   { id: "altro", nome: "Altro", modello: "" },
 ] as const;
+/** Id di un tipo di richiesta all'assistenza (banca-dati, domanda-errata…). */
 export type TipoRichiesta = (typeof TIPI_RICHIESTA)[number]["id"];
 /** Gli id dei tipi come tupla, per lo schema zod della nuova richiesta. */
 export const TIPO_RICHIESTA_IDS = TIPI_RICHIESTA.map((t) => t.id) as [TipoRichiesta, ...TipoRichiesta[]];
@@ -336,6 +340,7 @@ export interface Provenienza {
   contenuto?: string;
 }
 
+/** Profilo dell'utente (tabella users): piano, interessi, livelli per materia, consensi. */
 export interface Profilo {
   /** sub di Cognito */
   userId: string;
@@ -456,6 +461,7 @@ export interface Concorso {
 
 /** Campi di un bando che l'admin può correggere. "figura" è il nome che si vede (l'anno si aggiunge da solo). */
 export const CAMPI_MODIFICABILI = ["figura", "titolo", "ente", "scadenza", "posti", "sedi", "comparto", "materie", "descrizione", "bancaDatiPrevista"] as const;
+/** Uno dei campi correggibili qui sopra, più "materieStimate" (togliendo la stima quando l'admin fissa le materie). */
 export type CampoModificabile = (typeof CAMPI_MODIFICABILI)[number] | "materieStimate";
 /** Le correzioni dell'admin a un bando. */
 export type ModificheConcorso = Partial<Pick<Concorso, CampoModificabile>>;
@@ -556,6 +562,7 @@ export interface ProgressoBanca {
 
 /** Quali domande di una banca dati proporre in una sessione. */
 export const SELEZIONI_BANCA = ["nuove", "sbagliate", "preferite", "tutte"] as const;
+/** Una delle selezioni qui sopra: nuove (mai fatte), sbagliate, preferite (stella), tutte. */
 export type SelezioneBanca = (typeof SELEZIONI_BANCA)[number];
 
 // ── Invita un amico ──────────────────────────────────────────────────────────
@@ -654,10 +661,6 @@ export interface Esito {
 }
 
 /**
- * Sessione di studio o simulazione (tabella attempts: userId + id ordinabile per data).
- * Contiene solo le chiavi delle domande: il testo si rilegge dalla tabella questions.
- */
-/**
  * Fine di una pausa della simulazione all'istante `ora`: la scadenza si sposta in avanti della
  * durata della pausa e la pausa si somma a pausaMs. Senza pausa in corso, tutto resta com'è.
  */
@@ -685,6 +688,10 @@ export function tempoSessione(s: Pick<Sessione, "creataIl" | "consegnataIl" | "s
   };
 }
 
+/**
+ * Sessione di studio o simulazione (tabella attempts: userId + id ordinabile per data).
+ * Contiene solo le chiavi delle domande: il testo si rilegge dalla tabella questions.
+ */
 export interface Sessione {
   userId: string;
   id: string;

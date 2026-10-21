@@ -27,6 +27,7 @@ interface DomandaConsulta {
   preferita: boolean;
 }
 
+/** Risposta di GET /banche-dati/{id}/domande: la banca, le domande della pagina e da dove riprendere. */
 interface PaginaConsulta {
   banca: { id: string; titolo: string; domande: number; indiceSezioni: { sezione: string; da: number; domande: number }[]; mescolate: boolean; alternativeRicavate?: boolean };
   domande: DomandaConsulta[];

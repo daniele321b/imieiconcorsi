@@ -6,7 +6,9 @@ import { describe, expect, it } from "vitest";
 // spa.js e api-prefix.js, come le unisce Terraform. Si eseguono con una KeyValueStore finta.
 const CARTELLA = join(__dirname, "../../../infra/terraform/modules/web/functions");
 
+/** Richiesta e risposta come le vede una CloudFront Function (solo i campi usati qui). */
 type Richiesta = { uri: string; querystring?: Record<string, { value: string }>; cookies?: Record<string, { value: string }> };
+/** Risposta della funzione: la richiesta da far proseguire o la risposta già pronta (503, 302). */
 type Risposta = { statusCode?: number; headers?: Record<string, { value: string }>; body?: { data: string }; cookies?: Record<string, { value: string }>; uri?: string };
 
 /** Il handler di una funzione, con le chiavi date nella KeyValueStore (chiave assente = errore, come CloudFront). */

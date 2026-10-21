@@ -98,10 +98,12 @@ def pulisci(t: str) -> str:
 
 
 def parole(t: str) -> set[str]:
+    """Parole di almeno 4 lettere, in minuscolo: servono a riconoscere i doppioni (somiglianza di Jaccard)."""
     return {w for w in re.findall(r"\w+", t.lower()) if len(w) > 3}
 
 
 def main():
+    """Legge gli argomenti, sceglie le domande buone lungo il file e stampa i blocchi D(...) su stdout."""
     materia, pdf, quante, primo = sys.argv[1], sys.argv[2], int(sys.argv[3]), int(sys.argv[4])
     prefisso = sys.argv[5] if len(sys.argv) > 5 else None
     testi = estrai(materia)  # crea la cache txt se manca
@@ -119,6 +121,7 @@ def main():
             prefisso = prefisso or d["id"].split("-")[0]
 
     def buona(x):
+        """La domanda regge da sola: testo e 4 risposte diverse, niente figure né dati superati, testo ritrovato nel PDF."""
         testo, opz = pulisci(x["testo"]), [pulisci(o) for o in x["opz"]]
         if len(testo) < 10 or any(not o for o in opz) or len({o.lower() for o in opz}) < 4:
             return False

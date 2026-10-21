@@ -16,7 +16,7 @@ Legenda: **→** "usa" o "chiama"; **⇢** "è usato da".
 | `package.json` | Workspace npm (`packages/*`), script `test` e `typecheck`. Le dipendenze le installa `scripts/deploy.sh` se mancano |
 | `tsconfig.base.json` | Opzioni TypeScript comuni ai tre pacchetti |
 | `README.md` | Presentazione e primi comandi |
-| `docs/` | Guide: questa mappa, [ARCHITETTURA.md](ARCHITETTURA.md), [COMANDI-RAPIDI.md](COMANDI-RAPIDI.md), [DEPLOY.md](DEPLOY.md), [LOGIN-SOCIAL.md](LOGIN-SOCIAL.md), [GUIDA-PAGAMENTI.md](GUIDA-PAGAMENTI.md), [GUIDA-GOOGLE-PAYPAL.md](GUIDA-GOOGLE-PAYPAL.md); `brand/` con logo e colori |
+| `docs/` | Guide: questa mappa, [ARCHITETTURA.md](ARCHITETTURA.md), [COMANDI-RAPIDI.md](COMANDI-RAPIDI.md), [DEPLOY.md](DEPLOY.md), [LOGIN-SOCIAL.md](LOGIN-SOCIAL.md), [GUIDA-PAGAMENTI.md](GUIDA-PAGAMENTI.md), [GUIDA-GOOGLE-PAYPAL.md](GUIDA-GOOGLE-PAYPAL.md); `brand/` con logo e colori, `brand/social/` con le foto profilo di Instagram e Facebook e la copertina di Facebook |
 | `data/domande/<materia>.json` | Banca domande statica, una materia per file (generata da `scripts/domande/genera.py`) |
 | `contenuti/` | Fonti della banca statica: `sorgenti/` (domande scritte in Python), `prove/` (frasi-prova), `fonti.csv`, `libri/` (PDF, fuori da git), `VERSIONE` |
 | `dist/functions/` | Lambda compilate da `scripts/deploy.sh build` (non si modifica a mano) |
@@ -83,6 +83,7 @@ file) è `LAMBDAS` in `scripts/deploy.sh`. Route e permessi in `environments/dev
 | File | Cosa fa |
 |---|---|
 | `banche-dati/estrai.ts` | Lambda lanciata dall'arrivo di un PDF su S3 (o dal pannello): testo con `unpdf`, domande con il parser, file JSON, riepilogo ed esempi, email all'admin |
+| `posta/inoltro.ts`, `posta/logic.ts` | Lambda `inoltro-posta` (ambiente shared): la posta per info@ e info-dev@ ricevuta da SES va all'admin, con il mittente riscritto sul nostro indirizzo e "Rispondi" al mittente vero |
 | `banche-dati/colonne.ts` | Puro: PDF a tabella "Id \| Livello \| Quesito \| Risp_esatta \| Risp_errata_1-3" (es. Polizia penitenziaria). Colonne dall'intestazione di ogni pagina, esponenti riattaccati, domanda e risposta divise se il PDF le unisce, sezione dal titolo "BANCA DATI …" |
 | `banche-dati/lettere.ts` | Puro: PDF a tabella senza intestazione "codice \| domanda \| a)-d) \| lettera giusta" (es. Guardia di Finanza). Colonne dalle risposte "a)", "b)"…, titolo di pagina saltato, trattini delle celle conservati |
 | `banche-dati/tabella.ts` | Puro: PDF a tabella con la sola risposta esatta (es. Carabinieri). Colonne dalle posizioni del testo, sezioni "Materia : …", alternative ricavate da domande simili (coppie incrociate, relazioni calcolate, numeri vicini), scarto delle domande al negativo |
@@ -132,6 +133,7 @@ file) è `LAMBDAS` in `scripts/deploy.sh`. Route e permessi in `environments/dev
 | `domande.test.ts` | Validità dei file della banca statica |
 | `manutenzione.test.ts` | CloudFront Function di sito e API con la manutenzione: spenta, accesa, link di accesso, anteprima |
 | `pausa.test.ts` | Pausa delle simulazioni: scadenza spostata alla ripresa, tempo impiegato senza le pause |
+| `posta.test.ts` | Inoltro della posta di info@: mittente riscritto, risposta al mittente vero, firme tolte, corpo identico, virus e spam scartati |
 | `colonne.test.ts` | Banche dati a tabella "Quesito \| esatta \| errate" (intestazione, esponenti, risposta attaccata alla domanda) |
 | `lettere.test.ts` | Banche dati a tabella "codice \| domanda \| a)-d) \| lettera giusta" |
 
@@ -272,6 +274,7 @@ main.tsx  (caricaConfig → AuthProvider → router)
 | `contenuti/` | Bucket dei contenuti (versionato), import della banca statica, estrazione delle banche dati, notifiche S3 → Lambda, CORS per il caricamento dei PDF | I file di `data/domande/` si caricano da qui |
 | `jobs/` | Una Lambda per job, ruolo dello Scheduler, orari in ora italiana con 2 tentativi | Elenco dei job in `environments/dev/main.tf` |
 | `ses/` | Identità del mittente e del dominio, record DNS, configuration set (soppressione di rimbalzi e spam), notifiche SNS | Usato da `environments/shared` |
+| `posta-in-arrivo/` | Posta in arrivo per info@ (prod) e info-dev@ (dev): record MX, regola di ricezione SES con antivirus e antispam, bucket privato (30 giorni), Lambda di inoltro all'admin. Usato da environments/shared | — |
 | `waf/` | Web ACL in us-east-1 per CloudFront: regole gestite AWS (Common, Known bad inputs, IP reputation) e limite di richieste per IP | Solo prod (`waf_attivo`) |
 | `monitoraggio/` | Topic SNS (anche in us-east-1), allarmi CloudWatch, budget, dashboard (`dashboard.tf`) | Riceve dall'ambiente le Lambda, le tabelle, i job e le soglie |
 

@@ -79,8 +79,9 @@ const spesaFinita = () =>
     "GETTONI_FINITI",
   );
 
-/** Tetti di spesa in milionesimi di dollaro: da Terraform, altrimenti i valori di riserva del dominio. */
+/** Tetto di spesa per utente in milionesimi di dollaro: da Terraform, altrimenti il valore di riserva del dominio. */
 const tettoUtente = () => Number(process.env.AI_TETTO_UTENTE_USD || TETTO_AI_UTENTE_USD) * 1e6;
+/** Tetto di spesa di tutta la piattaforma al mese, in milionesimi di dollaro (come sopra). */
 const tettoMese = () => Number(process.env.AI_TETTO_MENSILE_USD || TETTO_AI_MESE_USD) * 1e6;
 /** Riga della tabella contatori con la spesa AI di un mese. */
 const chiaveContatore = (mese: string) => `ai#${mese}`;

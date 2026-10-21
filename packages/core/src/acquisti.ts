@@ -21,6 +21,7 @@ export interface PianoAttuale {
   periodo?: Periodo;
 }
 
+/** Esito del controllo prima di un acquisto: non consentito (con il motivo) oppure che tipo di acquisto è e la nuova scadenza. */
 export type EsitoAcquisto =
   | { consentito: false; motivo: string }
   | {

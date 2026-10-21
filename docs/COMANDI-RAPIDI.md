@@ -241,6 +241,10 @@ scripts/deploy.sh ses-production   # usa https://imieiconcorsi.it; scrivi "si"; 
 ```
 ### Uscire dalla sandbox SES
 
+**Fatto il 19/10/2026:** accesso di produzione concesso (50.000 email al giorno, 14 al
+secondo). Da allora anche le email di Cognito (codici di verifica, recupero password) partono
+da SES. Questa sezione serve solo se si riparte da un account AWS nuovo.
+
 Prima di chiedere (AWS lo guarda):
 1. `scripts/deploy.sh shared` → arriva un'email di AWS "Subscription
    Confirmation": **clicca il link**. Da lì ogni rimbalzo o segnalazione di spam
@@ -299,6 +303,28 @@ Un nuovo tester in sandbox va aggiunto a `sandbox_recipients` in
 ```bash
 scripts/deploy.sh shared      # terraform chiede "yes"; il tester riceve l'email di verifica da cliccare
 ```
+
+## Indirizzi di contatto: info@ e info-dev@
+
+`info@imieiconcorsi.it` (prod) e `info-dev@imieiconcorsi.it` (dev) non sono caselle vere: la posta
+arriva a SES, che scarta virus e spam e la inoltra all'admin (`posta_inoltra_a` in
+`environments/shared`, se vuoto l'indirizzo delle notifiche). Ti arriva come "Mario Rossi tramite
+iMieiConcorsi <info@…>": premi **Rispondi** e la risposta va al mittente vero, dalla tua casella.
+Una copia di ogni messaggio resta 30 giorni nel bucket `imieiconcorsi-posta-<account>`, per
+ritrovarlo se l'inoltro non è arrivato. Le pagine del sito (Contatti, Privacy, Termini…) mostrano
+l'indirizzo del proprio ambiente, letto da `config.json` (`emailContatti`).
+
+Prima attivazione, o dopo una modifica al codice della posta:
+```bash
+scripts/deploy.sh build lambda    # compila anche inoltro-posta
+scripts/deploy.sh shared          # MX, regola di ricezione SES, bucket, Lambda (terraform chiede "yes")
+scripts/deploy.sh infra           # dev: emailContatti nel config.json
+ENVIRONMENT=prod scripts/deploy.sh infra
+```
+Prova: scrivi a info-dev@imieiconcorsi.it da un'altra casella; dopo qualche secondo deve
+arrivarti l'inoltro. Se non arriva: `aws logs tail /aws/lambda/imieiconcorsi-inoltro-posta --since 1h`
+(dice se è stato inoltrato o scartato come spam o virus). Un altro indirizzo (es. `privacy`) si
+aggiunge a `posta_alias` in `environments/shared/terraform.tfvars` e si rilancia `shared`.
 
 ## Pagine pubbliche e dati del gestore
 
@@ -496,6 +522,9 @@ numero, da 5 a 100 (`SIMULAZIONE_MAX` in `domain.ts`, controllato anche dal serv
 **Banche dati (pagina utente).** Ogni scheda mostra titolo, domande e progressi; toccandola si
 aprono le tre scelte **Consulta**, **Studia**, **Simulazione**. Scelto Studia o Simulazione:
 quali domande (nuove, da ripassare, preferite, tutte), quante, e il pulsante per iniziare.
+In fondo alla pagina c'è il riquadro **"Manca la banca dati del tuo concorso?"**: concorso o ente
+(obbligatorio) e link (facoltativo). Crea una richiesta "Aggiungere una banca dati" che ti arriva
+nel pannello Richieste e per email, come le altre; la risposta all'utente va in Assistenza.
 
 **Segnala un errore** (sotto le domande): si apre un riquadro lì sotto, senza cambiare pagina;
 dopo l'invio **Torna alla domanda** lo chiude e si riprende dallo stesso punto. La segnalazione
@@ -841,7 +870,8 @@ un avviso rosso e chiedono "si" (poi Terraform chiede "yes"). `local` funziona s
 4. Login social: su Google e Facebook aggiungi l'URI "Redirect Google/Facebook" stampato da
    `ENVIRONMENT=prod scripts/deploy.sh urls` (in prod il dominio Cognito è `imieiconcorsi-prod.auth…`).
 5. Email: finché SES è in sandbox arrivano solo agli indirizzi verificati. Prima di aprire
-   agli utenti serve l'accesso di produzione di SES (vedi [Uscire dalla sandbox SES](#uscire-dalla-sandbox-ses)).
+   agli utenti serve l'accesso di produzione di SES (vedi [Uscire dalla sandbox SES](#uscire-dalla-sandbox-ses)):
+   ottenuto il 19/10/2026.
 6. Conferma le email di AWS "Subscription Confirmation" di prod: allarmi
    (`imieiconcorsi-prod-monitoraggio`) e avvisi admin (`imieiconcorsi-prod-avvisi-admin`, ci
    arrivano anche i messaggi del modulo Contatti).

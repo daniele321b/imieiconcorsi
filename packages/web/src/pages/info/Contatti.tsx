@@ -4,7 +4,7 @@ import { Link } from "react-router";
 import { Button } from "../../components/ui";
 import { useAuth } from "../../lib/auth";
 import { config } from "../../lib/config";
-import { LEGALE } from "../../lib/legale";
+import { emailContatti } from "../../lib/legale";
 import { LegalePagina } from "../legale/LegalePagina";
 
 // Pagina pubblica /contatti: modulo che funziona senza account (POST /pubblico/contatto, il
@@ -78,9 +78,9 @@ export function Contatti() {
       </div>
 
       <h2>Scrivici</h2>
-      {LEGALE.email && (
+      {emailContatti() && (
         <p>
-          Puoi scrivere anche a <strong>{LEGALE.email}</strong>.
+          Puoi scrivere anche a <a href={`mailto:${emailContatti()}`}>{emailContatti()}</a>.
         </p>
       )}
       {inviato ? (

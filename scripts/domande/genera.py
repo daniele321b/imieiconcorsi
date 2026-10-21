@@ -17,6 +17,7 @@ domande, prove = [], []
 
 
 def D(id, argomento, livello, testo, giusta, sbagliate, spiegazione, fonte, file, frase):
+    """Una domanda del sorgente: controlla i vincoli, mette la giusta in una posizione a rotazione e la aggiunge ai file."""
     assert len(sbagliate) == 3, f"{id}: servono 3 risposte sbagliate"
     # Stessi vincoli di DomandaSchema (packages/core/src/domande.ts): meglio fermarsi qui che ai test.
     assert len(testo) >= 10 and len(spiegazione) >= 10, f"{id}: testo e spiegazione almeno 10 caratteri"

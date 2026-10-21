@@ -6,7 +6,7 @@
 #
 #   scripts/deploy.sh check                  # strumenti, credenziali, bucket di stato
 #   scripts/deploy.sh bootstrap              # crea il bucket dello stato Terraform (una volta sola)
-#   scripts/deploy.sh shared                 # risorse comuni a dev e prod: SES (una volta, poi solo se cambia)
+#   scripts/deploy.sh shared                 # risorse comuni a dev e prod: SES e posta di info@ (dopo build lambda)
 #   scripts/deploy.sh build [lambda|web]     # compila le Lambda (dist/functions) e il sito (packages/web/dist)
 #   scripts/deploy.sh infra                  # terraform init + apply dell'ambiente
 #   scripts/deploy.sh piano                  # solo il piano (non cambia nulla): riassunto + testo completo in un file
@@ -70,15 +70,20 @@ LAMBDAS=(
   "scadenze:jobs/scadenze.ts"
   "import-domande:contenuti/import-domande.ts"
   "estrai-banca-dati:banche-dati/estrai.ts"
+  "inoltro-posta:posta/inoltro.ts"
 )
 
 export AWS_DEFAULT_REGION="$REGION"
 
 # ------------------------------------------------------------------ utilità --
 
+# Messaggi a terminale: titolo in grassetto, fatto (verde), avviso (giallo), errore (rosso: esce).
 bold() { printf '\033[1m%s\033[0m\n' "$*"; }
+# Riga "fatto", con la spunta verde.
 ok()   { printf '  \033[32m✔\033[0m %s\n' "$*"; }
+# Riga di avviso, con il punto esclamativo giallo: si va avanti.
 warn() { printf '  \033[33m!\033[0m %s\n' "$*"; }
+# Errore in rosso su stderr: lo script si ferma.
 die()  { printf '\033[31mERRORE:\033[0m %s\n' "$*" >&2; exit 1; }
 
 # Esegue un comando; con DRY_RUN=1 lo stampa soltanto (prova a secco).
@@ -253,7 +258,13 @@ tf_init() {
 cmd_shared() {
   [[ "$DRY_RUN" == "1" || -f "${TF_SHARED}/terraform.tfvars" ]] \
     || die "manca ${TF_SHARED#"${ROOT}/"}/terraform.tfvars: copia terraform.tfvars.example e metti il tuo indirizzo in sandbox_recipients"
-  bold "Risorse comuni a dev e prod (dominio ${DOMAIN}, SES)"
+  # La posta in arrivo (info@, info-dev@) usa la Lambda inoltro-posta: serve compilata e aggiornata.
+  [[ "$DRY_RUN" == "1" || -f "${DIST_FUNCTIONS}/inoltro-posta/index.mjs" ]] \
+    || die "manca la Lambda inoltro-posta compilata: lancia prima  scripts/deploy.sh build lambda"
+  if [[ "$DRY_RUN" != "1" && -n "$(build_vecchia "$DIST_FUNCTIONS" "${ROOT}/packages/functions/src/posta")" ]]; then
+    die "il codice della posta è cambiato dopo l'ultima build: lancia prima  scripts/deploy.sh build lambda"
+  fi
+  bold "Risorse comuni a dev e prod (dominio ${DOMAIN}, SES, posta in arrivo)"
   tf_init "$TF_SHARED"
   run terraform -chdir="$TF_SHARED" apply
   printf "  Se è la prima volta: AWS manda un'email di conferma a ogni indirizzo da verificare. Clicca il link.\n"

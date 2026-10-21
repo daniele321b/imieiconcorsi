@@ -21,6 +21,8 @@ export interface AppConfig {
    * (promozione dei piani), che non usano cookie di terze parti.
    */
   pubblicita?: { adsenseClient?: string; adsenseSlot?: string };
+  /** Email di contatto dell'ambiente (info@ in prod, info-dev@ in dev): la mostrano le pagine informative */
+  emailContatti?: string;
 }
 
 /** Configurazione corrente: disponibile dopo caricaConfig(), cioè prima di mostrare il sito. */

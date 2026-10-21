@@ -12,8 +12,10 @@ export const ORDINAMENTI = [
   { id: "nome-az", nome: "Nome dalla A alla Z" },
   { id: "nome-za", nome: "Nome dalla Z alla A" },
 ] as const;
+/** Id di un ordinamento della ricerca dei bandi (scadenza, posti, nome…). */
 export type Ordinamento = (typeof ORDINAMENTI)[number]["id"];
 
+/** I campi di un bando che servono a ordinarlo (vanno bene anche i bandi della lista in cache). */
 type Ordinabile = Pick<Concorso, "scadenza" | "pubblicatoIl" | "posti"> & Partial<Pick<Concorso, "titolo" | "figura">>;
 
 /**
@@ -98,6 +100,7 @@ export const TIPI_BANDO = [
   { id: "tempo-determinato", nome: "Tempo determinato", re: /tempo determinato|\ba termine\b|supplenz|stagional/i },
   { id: "concorso", nome: "Concorsi", re: /./ },
 ] as const;
+/** Id di un tipo di bando (concorso, mobilità, avviso…), riconosciuto dal titolo con TIPI_BANDO. */
 export type TipoBando = (typeof TIPI_BANDO)[number]["id"];
 
 /** Tipo di un bando dal titolo e dalla figura cercata. */
@@ -130,6 +133,7 @@ export function senzaModificheAdmin(c: Concorso): Concorso {
   return out as unknown as Concorso;
 }
 
+/** Filtri della ricerca dei bandi (pannello Filtri e scelta Tutti/Aperti/Chiusi): assente = nessun filtro. */
 export interface FiltriConcorsi {
   /** Solo questi tipi di bando (assente o vuoto = tutti) */
   tipi?: TipoBando[];
@@ -150,6 +154,7 @@ export interface FiltriConcorsi {
   soloBancaDati?: boolean;
 }
 
+/** I campi di un bando che servono ai filtri. */
 type Filtrabile = Pick<Concorso, "scadenza" | "pubblicatoIl" | "posti" | "sedi" | "tipoProcedura" | "bancaDatiPrevista" | "bancaDati" | "titolo" | "figura">;
 
 const GIORNO = 86_400_000;
@@ -283,6 +288,7 @@ export function paroleChiave(testo: string) {
   );
 }
 
+/** I campi di un bando che servono a proporlo per una banca dati (somiglianza di titolo, comparto, anno). */
 type Collegabile = Pick<Concorso, "id" | "titolo" | "ente" | "figura" | "comparto" | "scadenza" | "bancaDatiPrevista" | "bancaDati">;
 
 /** Un concorso proposto per una banca dati: punti di somiglianza e se la proposta è forte. */

@@ -62,6 +62,8 @@ Esempio: l'utente segue un concorso (`PUT /me/concorsi/123`).
    (`lib/api.ts`), che aggiunge il token di Cognito preso da Amplify.
 2. **CloudFront** — l'indirizzo inizia con `/api`: una CloudFront Function toglie il
    prefisso e passa la richiesta all'API Gateway (stesso dominio del sito: niente CORS).
+   Prima controlla la **manutenzione** (`functions/manutenzione.js`, vedi sotto): se è accesa
+   risponde subito 503 e la richiesta non arriva all'API.
 3. **API Gateway** — l'authorizer JWT controlla il token; la route `PUT /me/concorsi/{id}`
    è collegata alla Lambda `imieiconcorsi-dev-concorsi` (vedi `services` in `environments/dev/main.tf`).
 4. **Lambda** — `service({...})` (`core/src/http.ts`) trova la funzione con la chiave
@@ -76,7 +78,10 @@ Esempio: l'utente segue un concorso (`PUT /me/concorsi/123`).
 
 Codici di errore usati dal sito per reagire: `LIMITE_PIANO` (invito al piano superiore),
 `GETTONI_FINITI`, `TROPPO_VELOCE`, `AI_IN_PAUSA`, `AI_NON_DISPONIBILE` (tutor AI),
-`NESSUNA_DOMANDA`, `CODICE_NON_VALIDO`, `SOLO_ADMIN`.
+`NESSUNA_DOMANDA`, `CODICE_NON_VALIDO`, `SOLO_ADMIN`, `MANUTENZIONE` (il sito ricarica la
+pagina e compare quella di manutenzione), `TEMPO_SCADUTO` e `SESSIONE_CAMBIATA` (pausa delle
+simulazioni). Da telefono l'`UpgradeBanner` si apre anche come popup, perché il banner in cima
+alla pagina non si vedrebbe.
 
 ## 4. Identità, piani e privacy
 
@@ -149,7 +154,9 @@ delle email, firma di Stripe per il webhook).
 `AuthCard` (home) → Amplify → Cognito (email/password con codice di verifica, oppure
 Google/Facebook sul dominio Cognito → ritorno su `/auth/callback`) → `AuthProvider`
 (`lib/auth.tsx`) chiama `GET /me` → se il profilo non è completo, `AppLayout` porta
-all'**onboarding** (comparti, livelli, avvisi, Termini).
+all'**onboarding** (comparti, livelli, avvisi, Termini). Le email di Cognito (codice di
+verifica, recupero password) partono da SES con il mittente `noreply@imieiconcorsi.it`
+(`ses_source_arn` nel modulo `auth`).
 
 ### Bandi
 1. Alle 06:00 `jobs/inpa-scraper.ts` legge da inPA tutti i bandi aperti e i chiusi
@@ -166,8 +173,13 @@ all'**onboarding** (comparti, livelli, avvisi, Termini).
    materie, vicine al livello dell'utente) e salva in `attempts` solo le loro chiavi.
 2. Il sito le riceve: in **studio** con soluzione e spiegazione; in **simulazione** senza
    (`pubblica()`), con il timer.
-3. `POST /sessioni/{id}/consegna` calcola il punteggio **sul server** (`calcolaEsito`:
+3. `POST /sessioni/{id}/pausa` mette in pausa o riprende una simulazione: in pausa
+   (`inPausaDal`) il tempo è fermo e la pagina nasconde la domanda; alla ripresa il server sposta
+   in avanti `scadeIl` della durata della pausa e la somma in `pausaMs` (`core/src/domain.ts →
+   chiudiPausa`). Così il tempo rimasto resta giusto anche ricaricando la pagina.
+4. `POST /sessioni/{id}/consegna` calcola il punteggio **sul server** (`calcolaEsito`:
    +1, −0,25, 0; si passa al 70%) e, se la sessione è su una banca dati, aggiorna i progressi.
+   Il tempo impiegato non conta le pause (`tempoSessione`).
 
 ### Banche dati ufficiali
 1. L'admin crea la banca (`POST /admin/banche-dati`) con i **concorsi da collegare** (anche più
@@ -177,7 +189,12 @@ all'**onboarding** (comparti, livelli, avvisi, Termini).
    link firmato.
 2. L'arrivo del PDF fa partire `banche-dati/estrai.ts`: testo con `unpdf`, domande con
    `banche-dati/parser.ts` (formati: risposta indicata, segnata, tabella delle soluzioni,
-   "sempre la prima"), file `banche-dati/<id>.json`, riepilogo ed esempi sul record, email all'admin.
+   "sempre la prima"). Le tabelle si leggono dalle posizioni del testo nella pagina, anche
+   ruotata: `tabella.ts` (solo la risposta esatta, le alternative si ricavano), `colonne.ts`
+   (Id | Livello | Quesito | Risp_esatta | Risp_errata, es. Polizia penitenziaria) e `lettere.ts`
+   (codice | domanda | a-d | lettera giusta, es. Guardia di Finanza). In automatico vince il modo
+   che trova più domande, e le alternative vere del PDF battono quelle ricavate. Il risultato va
+   nel file `banche-dati/<id>.json`, con riepilogo ed esempi sul record ed email all'admin.
 3. L'admin controlla gli esempi e **pubblica**: le domande vanno in `questions` con
    `materia = bd#<id>`; ogni concorso collegato riceve `bancaDatiId` (un concorso ha una sola banca
    dati) e mostra il link alla consultazione `/app/banche-dati/<id>`, anche come segno "Banca dati"
@@ -233,6 +250,22 @@ email all'utente e `daLeggere` sulla richiesta → `GET /me` restituisce `richie
 dell'API, throttling DynamoDB, 5xx di CloudFront, reputazione SES, job che non girano,
 budget) → topic SNS `imieiconcorsi-dev-monitoraggio` → email all'admin. Dashboard
 `imieiconcorsi-dev` in CloudWatch.
+
+### Posta in arrivo (info@, info-dev@)
+`environments/shared` → `modules/posta-in-arrivo`: record MX del dominio verso SES (Milano), una
+regola di ricezione con antivirus e antispam per gli alias, il messaggio salvato in un bucket
+privato (30 giorni) e la Lambda `inoltro-posta` (`functions/src/posta`) che lo rimanda all'admin.
+Il mittente diventa "<nome> tramite iMieiConcorsi <info@…>" con `Reply-To` al mittente vero:
+inoltrarlo a nome del mittente originale farebbe fallire SPF e DMARC. Il sito mostra l'indirizzo
+dell'ambiente da `config.json` (`emailContatti`, `lib/legale.ts → emailContatti`).
+
+### Manutenzione
+Per chiudere il sito quando c'è un problema: `scripts/deploy.sh manutenzione on "messaggio"`
+scrive `attiva = si` nella CloudFront KeyValueStore `<ambiente>-manutenzione`. Le due CloudFront
+Function (sito e `/api`) la leggono a ogni richiesta e rispondono con la pagina "Siamo in
+manutenzione" o con un JSON 503 `MANUTENZIONE`. L'admin entra con un link personale
+(`?accesso=<codice>`, cookie di 12 ore). Le chiavi non stanno in Terraform, quindi un deploy non
+spegne la manutenzione. La procedura completa è in [MANUTENZIONE.md](MANUTENZIONE.md).
 
 ## 8. Come si estende
 

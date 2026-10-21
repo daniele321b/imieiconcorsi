@@ -7,6 +7,7 @@ CACHE = ROOT / ".cache" / "testi"
 
 
 def normalizza(t: str) -> str:
+    """Testo confrontabile: forme Unicode unificate, parole spezzate a fine riga riunite, virgolette e spazi uniformi."""
     t = unicodedata.normalize("NFKC", t).replace("­", "")
     t = re.sub(r"(\w)-\s*\n\s*(\w)", r"\1\2", t)  # sillabazione a fine riga
     t = t.replace("’", "'").replace("“", '"').replace("”", '"').replace("«", '"').replace("»", '"')

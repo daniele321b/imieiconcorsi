@@ -12,6 +12,7 @@ import { data, dataBreve, euro } from "../../lib/format";
 
 type Stato = "pagato" | "in-attesa" | "scaduto" | "fallito";
 
+/** Un ordine come lo restituisce /admin/ordini: chi, quale piano, importo, stato e date. */
 interface OrdineAdmin {
   id: string;
   email?: string;
@@ -33,6 +34,7 @@ interface OrdineAdmin {
   stripeSessionId?: string;
 }
 
+/** Risposta di /admin/ordini: totali per il riepilogo in alto e la pagina di ordini richiesta. */
 interface RispostaOrdini {
   totali: { ordini: number; pagati: number; incassato: number; incassatoMese: number; perStato: Record<Stato, number> };
   ordini: OrdineAdmin[];

@@ -59,7 +59,7 @@ mai messa in cache (`Cache-Control: no-store`).
 | DynamoDB `users`, `concorsi`, `follows`, `questions`, `attempts`, `codici`, `ordini`, `banche-dati`, `richieste`, `progressi`, `contatori` | On demand; backup continuo sulle tabelle con dati non ricostruibili (utenti, sessioni, codici, ordini, richieste) |
 | EventBridge Scheduler | Lancia i job (6:00, 6:15, 7:00 e domenica e mercoledì alle 3:00), ora italiana |
 | CloudWatch + SNS + Budgets | Allarmi del monitoraggio, dashboard, budget mensile dell'account |
-| SES (ambiente shared, nome `imieiconcorsi`) | Mittente verificato e configuration set con soppressione automatica di rimbalzi e reclami. Parte in sandbox |
+| SES (ambiente shared, nome `imieiconcorsi`) | Mittente verificato e configuration set con soppressione automatica di rimbalzi e reclami. Un account nuovo parte in sandbox; questo è in produzione dal 19/10/2026 |
 | S3 `imieiconcorsi-tfstate-<account>` | Stato Terraform (creato da `bootstrap`, versionato e cifrato) |
 
 Costo indicativo dev: pochi centesimi al giorno con poco traffico. Non ci sono

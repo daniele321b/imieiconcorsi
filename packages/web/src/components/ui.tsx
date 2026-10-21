@@ -9,6 +9,7 @@ import { Link } from "react-router";
 /** Unisce classi CSS saltando quelle vuote o false: cx("a", cond && "b"). */
 export const cx = (...c: (string | false | null | undefined)[]) => c.filter(Boolean).join(" ");
 
+/** Stile dei pulsanti: principale (blu), secondario, senza sfondo, pericoloso (rosso), in evidenza (giallo). */
 type Variant = "primary" | "secondary" | "ghost" | "danger" | "accent";
 
 const VARIANTI: Record<Variant, string> = {
@@ -25,6 +26,7 @@ const SIZES = {
   lg: "h-12 px-6 text-base gap-2 rounded-xl",
 };
 
+/** Proprietà del pulsante: quelle di un <button> più stile, misura e attesa (loading). */
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: Variant;
   size?: keyof typeof SIZES;
@@ -96,6 +98,7 @@ export function Badge({ tone = "slate", className, children }: { tone?: keyof ty
   );
 }
 
+/** Proprietà del campo: quelle di un <input> più etichetta e suggerimento sotto. */
 interface FieldProps extends InputHTMLAttributes<HTMLInputElement> {
   label: string;
   hint?: string;
