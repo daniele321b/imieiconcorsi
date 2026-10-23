@@ -136,7 +136,7 @@ def ambiente(env):
     caselle = p.riquadro("<b>Caselle email</b><br>degli utenti e dell'admin", 35, 880, 180, 55, fondo="#FDEDEF", bordo="#DD344C")
 
     # Account e zone
-    p.gruppo("Account AWS (unico: dev, prod e shared; ospita anche altre app)", 250, 50, 1530, 1110, "group_account", "#CD2264")
+    p.gruppo("Account AWS (unico: dev, prod, preprod e shared; ospita anche altre app)", 250, 50, 1530, 1110, "group_account", "#CD2264")
     p.gruppo("Globale / us-east-1 (CloudFront e servizi collegati)", 275, 95, 370, 1040, "group_region", "#00A4A6", tratteggio=True, testo_colore="#147EBA")
     p.gruppo("Region eu-south-1 (Milano)", 670, 95, 1090, 1040, "group_region", "#00A4A6", tratteggio=True, testo_colore="#147EBA")
 
@@ -224,7 +224,7 @@ def ambiente(env):
 
 
 def shared():
-    """Pagina delle risorse comuni a dev e prod: zona DNS, SES con le sue notifiche e stato di Terraform."""
+    """Pagina delle risorse comuni a dev e prod (e preprod, quando esiste): zona DNS, SES con le sue notifiche e stato di Terraform."""
     p = Pagina("Shared")
     p.testo("<b>iMieiConcorsi — risorse comuni (ambiente SHARED e bootstrap)</b>, lette da dev e prod con terraform_remote_state", 20, 10, 1500, 30, size=16)
     utenti = p.utenti("Admin / sviluppatore<br>(scripts/deploy.sh)", 90, 560)
@@ -249,13 +249,14 @@ def shared():
     s3posta = p.icona("S3 imieiconcorsi-posta<br>messaggi ricevuti<br>(30 giorni, privato)", 850, 640, "s3", "storage")
     inoltro = p.icona("Lambda inoltro-posta<br>info@ e info-dev@ → admin<br>(Rispondi = mittente vero)", 1150, 640, "lambda", "calcolo")
     mittenti = p.riquadro("<b>Chi scrive</b><br>a info@imieiconcorsi.it<br>o info-dev@", 35, 300, 180, 60, fondo="#E8F4FD", bordo="#147EBA")
-    stato = p.icona("S3 stato Terraform<br>(bootstrap, versionato, cifrato)<br>dev/ · prod/ · shared/", 680, 560, "s3", "storage")
+    stato = p.icona("S3 stato Terraform<br>(bootstrap, versionato, cifrato)<br>dev/ · prod/ · preprod/ · shared/", 680, 560, "s3", "storage")
     p.riquadro(
         "Usano queste risorse:<br>• <b>dev</b> e <b>prod</b>: mittente SES (anche per le email di Cognito), "
         "configuration set, zona DNS<br>"
+        "• <b>preprod</b> (copia di prod su preprod.imieiconcorsi.it): le stesse, solo durante i test di carico<br>"
         "• lo stato di ogni ambiente sta nello stesso bucket (chiavi diverse)<br>"
         "• lo stesso account AWS ospita anche altre app, con risorse proprie",
-        960, 470, 350, 120, fondo="#FFFFFF", bordo="#BBBBBB",
+        960, 470, 350, 135, fondo="#FFFFFF", bordo="#BBBBBB",
     )
     p.freccia(r53, ses, "record DKIM / MAIL FROM", tratteggio=True, uscita=(1, 0.5), ingresso=(0, 0.5))
     p.freccia(ses, sns, "eventi", uscita=(0.5, 0), ingresso=(0.5, 0), punti=[(747, 190), (1187, 190)])

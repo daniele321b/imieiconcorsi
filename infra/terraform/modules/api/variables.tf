@@ -60,3 +60,13 @@ variable "write_tables_comuni" {
   type        = list(string)
   default     = []
 }
+
+variable "concorrenza_riservata" {
+  description = <<-EOT
+    Esecuzioni contemporanee riservate per servizio, es. { study = 200 }: sono anche il massimo
+    di quel servizio. Le sottrae al limite dell'account (1000, comune a tutti gli ambienti), così
+    un ambiente sotto carico (preprod) non lascia la produzione senza Lambda. Vuoto = nessun limite.
+  EOT
+  type        = map(number)
+  default     = {}
+}

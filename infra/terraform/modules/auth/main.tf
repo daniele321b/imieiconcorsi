@@ -159,7 +159,8 @@ resource "aws_cognito_user_pool_client" "web" {
   user_pool_id    = aws_cognito_user_pool.main.id
   generate_secret = false
 
-  explicit_auth_flows           = ["ALLOW_USER_SRP_AUTH", "ALLOW_REFRESH_TOKEN_AUTH"]
+  # Il sito usa SRP (la password non viaggia); in preprod anche la password diretta, per k6.
+  explicit_auth_flows           = concat(["ALLOW_USER_SRP_AUTH", "ALLOW_REFRESH_TOKEN_AUTH"], var.login_con_password ? ["ALLOW_USER_PASSWORD_AUTH"] : [])
   prevent_user_existence_errors = "ENABLED"
 
   allowed_oauth_flows_user_pool_client = true

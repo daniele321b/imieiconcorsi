@@ -16,7 +16,7 @@ Legenda: **→** "usa" o "chiama"; **⇢** "è usato da".
 | `package.json` | Workspace npm (`packages/*`), script `test` e `typecheck`. Le dipendenze le installa `scripts/deploy.sh` se mancano |
 | `tsconfig.base.json` | Opzioni TypeScript comuni ai tre pacchetti |
 | `README.md` | Presentazione e primi comandi |
-| `docs/` | Guide: questa mappa, [ARCHITETTURA.md](ARCHITETTURA.md), [COMANDI-RAPIDI.md](COMANDI-RAPIDI.md), [DEPLOY.md](DEPLOY.md), [LOGIN-SOCIAL.md](LOGIN-SOCIAL.md), [GUIDA-PAGAMENTI.md](GUIDA-PAGAMENTI.md), [GUIDA-GOOGLE-PAYPAL.md](GUIDA-GOOGLE-PAYPAL.md); `brand/` con logo e colori, `brand/social/` con le foto profilo di Instagram e Facebook e la copertina di Facebook |
+| `docs/` | Guide: questa mappa, [ARCHITETTURA.md](ARCHITETTURA.md), [COMANDI-RAPIDI.md](COMANDI-RAPIDI.md), [DEPLOY.md](DEPLOY.md), [LOGIN-SOCIAL.md](LOGIN-SOCIAL.md), [GUIDA-PAGAMENTI.md](GUIDA-PAGAMENTI.md), [GUIDA-GOOGLE-PAYPAL.md](GUIDA-GOOGLE-PAYPAL.md), [MANUTENZIONE.md](MANUTENZIONE.md), [TEST-DI-CARICO.md](TEST-DI-CARICO.md); `brand/` con logo e colori, `brand/social/` con le foto profilo di Instagram e Facebook e la copertina di Facebook |
 | `data/domande/<materia>.json` | Banca domande statica, una materia per file (generata da `scripts/domande/genera.py`) |
 | `contenuti/` | Fonti della banca statica: `sorgenti/` (domande scritte in Python), `prove/` (frasi-prova), `fonti.csv`, `libri/` (PDF, fuori da git), `VERSIONE` |
 | `dist/functions/` | Lambda compilate da `scripts/deploy.sh build` (non si modifica a mano) |
@@ -260,6 +260,7 @@ main.tsx  (caricaConfig → AuthProvider → router)
 | `environments/dev/terraform.tfvars.example` | Esempio commentato da copiare in `terraform.tfvars` (che non va in git) |
 | `environments/dev/outputs.tf` | Indirizzi (sito, API, redirect per Google/Facebook), nomi delle funzioni, `web_config`, topic e dashboard del monitoraggio |
 | `environments/prod/` | Copia di dev per la produzione: dominio radice, WAF, `protezione = true`, niente localhost, Stripe live. Le differenze sono elencate in testa al suo `main.tf`; ogni modifica a dev va riportata qui |
+| `environments/preprod/` | Copia di prod per i test di carico (`preprod.imieiconcorsi.it`): niente protezione, WAF con limiti per IP alti, concorrenza riservata alle Lambda dell'API, login con password per k6, pagamenti mock. Si crea per il test e si smonta (docs/TEST-DI-CARICO.md) |
 | `environments/*/backend.tf` | Dove sta lo stato (bucket S3, lock nativo) |
 
 ### Moduli
@@ -267,15 +268,15 @@ main.tsx  (caricaConfig → AuthProvider → router)
 | Modulo | Risorse | Note |
 |---|---|---|
 | `lambda/` | Zip del codice, log (14 giorni), ruolo IAM, permessi sulle tabelle, funzione Node 22 arm64 | Usato da `api`, `jobs`, `contenuti` e dal trigger di Cognito |
-| `api/` | API Gateway HTTP, stage con limiti di richieste, authorizer JWT di Cognito, una Lambda + integrazione + route per servizio | Le route pubbliche hanno `authorization NONE` |
-| `auth/` | User pool Cognito, dominio per il login social, Google e Facebook (se configurati), client del sito, gruppi `medium`, `pro`, `admin` | Trigger pre sign-up collegato da `environments/dev` |
+| `api/` | API Gateway HTTP, stage con limiti di richieste, authorizer JWT di Cognito, una Lambda + integrazione + route per servizio | Le route pubbliche hanno `authorization NONE`. `concorrenza_riservata` (solo preprod) mette un tetto alle Lambda dei servizi indicati |
+| `auth/` | User pool Cognito, dominio per il login social, Google e Facebook (se configurati), client del sito, gruppi `medium`, `pro`, `admin` | Trigger pre sign-up collegato da `environments/dev`. `login_con_password` (solo preprod) accetta la password diretta per k6 |
 | `data/` | Le 12 tabelle DynamoDB (vedi [ARCHITETTURA.md](ARCHITETTURA.md#5-i-dati-dynamodb)) | `outputs.tf` dà ARN, variabili d'ambiente e nomi |
 | `web/` | Bucket del sito, CloudFront (sito + `/api` + `/dati/bandi`), certificato e DNS, file del sito e `config.json`, regola che cancella le versioni vecchie della lista bandi | `functions/spa.js` e `functions/api-prefix.js` sono le CloudFront Function; in cima a entrambe Terraform mette `functions/manutenzione.js` (pagina di manutenzione, interruttore nella KeyValueStore `<nome>-manutenzione`, vedi docs/MANUTENZIONE.md) |
 | `contenuti/` | Bucket dei contenuti (versionato), import della banca statica, estrazione delle banche dati, notifiche S3 → Lambda, CORS per il caricamento dei PDF | I file di `data/domande/` si caricano da qui |
 | `jobs/` | Una Lambda per job, ruolo dello Scheduler, orari in ora italiana con 2 tentativi | Elenco dei job in `environments/dev/main.tf` |
 | `ses/` | Identità del mittente e del dominio, record DNS, configuration set (soppressione di rimbalzi e spam), notifiche SNS | Usato da `environments/shared` |
 | `posta-in-arrivo/` | Posta in arrivo per info@ (prod) e info-dev@ (dev): record MX, regola di ricezione SES con antivirus e antispam, bucket privato (30 giorni), Lambda di inoltro all'admin. Usato da environments/shared | — |
-| `waf/` | Web ACL in us-east-1 per CloudFront: regole gestite AWS (Common, Known bad inputs, IP reputation) e limite di richieste per IP | Solo prod (`waf_attivo`) |
+| `waf/` | Web ACL in us-east-1 per CloudFront: regole gestite AWS (Common, Known bad inputs, IP reputation) e limite di richieste per IP | Prod e preprod (`waf_attivo`); preprod con limiti per IP alti |
 | `monitoraggio/` | Topic SNS (anche in us-east-1), allarmi CloudWatch, budget, dashboard (`dashboard.tf`) | Riceve dall'ambiente le Lambda, le tabelle, i job e le soglie |
 
 ---
@@ -284,7 +285,9 @@ main.tsx  (caricaConfig → AuthProvider → router)
 
 | File | Cosa fa |
 |---|---|
-| `deploy.sh` | Tutti i comandi: `check`, `bootstrap`, `shared`, `build`, `infra`, `seed`, `job`, `storico-bandi`, `ai-prova`, `allarmi`, `allarme-prova`, `make-admin`, `unisci-account`, `genera-domande`, `verifica-domande`, `urls`, `status`, `ses-*`, `email-prova`, `logs`, `local`, `test`, `all`, `destroy`. L'elenco `LAMBDAS` dice quali Lambda compilare. `DRY_RUN=1` stampa i comandi senza eseguirli |
+| `deploy.sh` | Tutti i comandi: `check`, `bootstrap`, `shared`, `build`, `infra`, `seed`, `job`, `storico-bandi`, `ai-prova`, `allarmi`, `allarme-prova`, `make-admin`, `unisci-account`, `genera-domande`, `verifica-domande`, `urls`, `status`, `ses-*`, `email-prova`, `manutenzione`, `carico` (test di carico, solo preprod), `logs`, `local`, `test`, `all`, `destroy`. L'elenco `LAMBDAS` dice quali Lambda compilare. `DRY_RUN=1` stampa i comandi senza eseguirli |
+| `carico/preprod.mjs` | Prepara preprod per i test di carico: utenti di prova su Cognito (email del simulatore SES, uno su tre Medium), copia delle banche dati da dev. Lo lancia `deploy.sh carico` |
+| `carico/scenari.js` | Test di carico con k6: utenti finti anonimi e iscritti, scenari `fumo`, `carico`, `picco`, `rottura`, `resistenza`, soglie di successo (docs/TEST-DI-CARICO.md) |
 | `domande/genera.py` | Da `contenuti/sorgenti/<materia>.py` a `data/domande/<materia>.json` e alle frasi-prova |
 | `domande/verifica.py` | Controlla che ogni domanda abbia la sua frase-prova nel testo della fonte |
 | `domande/testi.py` | Testo dei PDF delle fonti (pdftotext) normalizzato |

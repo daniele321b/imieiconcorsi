@@ -90,3 +90,12 @@ variable "ses_configuration_set" {
   type        = string
   default     = null
 }
+
+variable "login_con_password" {
+  description = <<-EOT
+    Accetta anche il login con email e password in chiaro verso Cognito (USER_PASSWORD_AUTH), oltre
+    a SRP. Solo per preprod: lo usano i test di carico (k6 non sa fare SRP). Il sito non lo usa.
+  EOT
+  type        = bool
+  default     = false
+}

@@ -16,5 +16,6 @@ scripts/deploy.sh all
 - [docs/COMANDI-RAPIDI.md](docs/COMANDI-RAPIDI.md): i comandi pronti da copiare
 - [docs/DEPLOY.md](docs/DEPLOY.md): architettura e runbook
 - [docs/MANUTENZIONE.md](docs/MANUTENZIONE.md): chiudere il sito con la pagina di manutenzione quando c'è un problema
+- [docs/TEST-DI-CARICO.md](docs/TEST-DI-CARICO.md): ambiente preprod e test di carico con k6 (1.000 utenti contemporanei)
 - [docs/ARCHITETTURA.md](docs/ARCHITETTURA.md): guida per sviluppatori (flussi, dati, come aggiungere route, tabelle, job, pagine)
 - [docs/MAPPA-CODICE.md](docs/MAPPA-CODICE.md): cosa fa ogni file, componente e modulo Terraform

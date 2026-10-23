@@ -60,6 +60,8 @@ module "service" {
   read_tables       = each.value.read_tables
   policy_statements = jsondecode(each.value.policies)
   timeout           = each.value.timeout
+  # Solo dove l'ambiente lo chiede (preprod, test di carico): altrimenti nessun limite proprio.
+  reserved_concurrency = lookup(var.concorrenza_riservata, each.key, null)
 }
 
 # Collegamento API → Lambda del servizio (formato evento 2.0).

@@ -72,6 +72,8 @@ infra/terraform/
 ├── bootstrap/            bucket dello stato (una volta sola)
 ├── environments/shared/  risorse comuni a dev e prod: dominio (record email) e SES
 ├── environments/dev/     ambiente dev: backend, provider, collegamento dei moduli, domande demo
+├── environments/prod/    produzione: copia di dev con WAF, protezioni e dominio radice
+├── environments/preprod/ copia di prod per i test di carico (si crea e si smonta, docs/TEST-DI-CARICO.md)
 └── modules/
     ├── data/             tabelle DynamoDB
     ├── auth/             Cognito + gruppi medium, pro, admin
@@ -179,11 +181,11 @@ su tabelle DynamoDB, user pool Cognito e bucket (un `destroy` si ferma), login s
 localhost, email senza prefisso "[dev]", Stripe live. Stato in `prod/terraform.tfstate` nello
 stesso bucket. Comandi: [COMANDI-RAPIDI.md → Produzione](COMANDI-RAPIDI.md#10-produzione).
 
-Restano da fare prima del lancio: accesso di produzione di SES, test di carico a 1.000
-utenti in parallelo, dati del titolare nelle pagine legali (`packages/web/src/lib/legale.ts`)
-rivisti da un legale. L'API Gateway risponde anche al suo indirizzo diretto, senza passare
-dal WAF: per chiuderlo serve un'intestazione segreta aggiunta da CloudFront e controllata
-dalle Lambda (non ancora fatto).
+Restano da fare prima del lancio: il test di carico a 1.000 utenti in parallelo (pronto da
+lanciare: ambiente `preprod` e scenari k6, guida in [TEST-DI-CARICO.md](TEST-DI-CARICO.md)) e i
+dati del titolare nelle pagine legali (`packages/web/src/lib/legale.ts`) rivisti da un legale.
+Fatti: accesso di produzione di SES (19/10/2026) e chiusura dell'indirizzo diretto dell'API
+Gateway (intestazione segreta aggiunta da CloudFront e controllata dalle Lambda, `ORIGINE_SEGRETA`).
 
 ## Smontare
 

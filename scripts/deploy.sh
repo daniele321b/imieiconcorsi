@@ -21,6 +21,7 @@
 #   scripts/deploy.sh genera-domande [MAT]   # data/domande/<materia>.json da contenuti/sorgenti (vuoto = tutte)
 #   scripts/deploy.sh verifica-domande       # ogni domanda ha la sua frase-prova nel PDF della fonte
 #   scripts/deploy.sh manutenzione on ["msg"] # pagina di manutenzione su sito, area privata e API (off | stato | anteprima)
+#   scripts/deploy.sh carico AZIONE          # test di carico, solo ENVIRONMENT=preprod: prepara, avvia, comando, stato, pulisci
 #   scripts/deploy.sh urls                   # indirizzi: sito, pannello admin, API, redirect URI Google/Facebook
 #   scripts/deploy.sh status                 # quanti bandi e domande ci sono nelle tabelle
 #   scripts/deploy.sh ses-status             # SES: sandbox o produzione, indirizzi verificati
@@ -33,7 +34,7 @@
 #   scripts/deploy.sh destroy                # smonta l'ambiente (chiede conferma; shared resta)
 #   scripts/deploy.sh destroy-shared         # smonta le risorse comuni (SES) — solo se non serve più a nessun ambiente
 #
-# Variabili: AWS_PROFILE (opzionale), ENVIRONMENT (default dev), REGION (default
+# Variabili: AWS_PROFILE (opzionale), ENVIRONMENT (dev, preprod o prod; default dev), REGION (default
 # eu-south-1), DOMAIN (default imieiconcorsi.it), DRY_RUN=1 stampa i comandi senza eseguirli.
 
 set -euo pipefail
@@ -709,6 +710,169 @@ cmd_test() {
   run npm --prefix "$ROOT" run typecheck
 }
 
+# ------------------------------------------------------------ test di carico ---
+# Solo con ENVIRONMENT=preprod (environments/preprod). Guida completa: docs/TEST-DI-CARICO.md.
+# Password degli utenti di prova e risultati stanno in .carico/ alla radice del repo (non versionata).
+
+CARICO_DIR="${ROOT}/.carico"
+# Immagine Docker di k6, se k6 non è installato (brew install k6).
+K6_IMMAGINE="grafana/k6:2.3.0"
+
+# Ferma tutto se l'ambiente non è preprod: il test crea utenti e carico veri.
+solo_preprod() {
+  [[ "$ENVIRONMENT" == "preprod" ]] || die "i test di carico girano solo su preprod:  ENVIRONMENT=preprod scripts/deploy.sh carico $1"
+}
+
+# Password comune degli utenti di prova: generata la prima volta, poi sempre la stessa.
+password_carico() {
+  local file="${CARICO_DIR}/password"
+  if [[ ! -s "$file" ]]; then
+    mkdir -p "$CARICO_DIR"
+    # Maiuscola, minuscola e numero: la politica delle password di Cognito.
+    (umask 077 && printf 'Carico-%s-9A\n' "$(openssl rand -hex 10)" > "$file")
+  fi
+  tr -d '\n' < "$file"
+}
+
+# carico prepara [N]: N utenti di prova (di base 1000) e banche dati copiate da dev.
+carico_prepara() {
+  local n="${1:-1000}" da="${CARICO_BANCHE_DA:-dev}" bandi
+  [[ "$n" =~ ^[0-9]+$ ]] || die "uso: ENVIRONMENT=preprod scripts/deploy.sh carico prepara [NUMERO_UTENTI]"
+  node_deps
+  bold "Utenti di prova su preprod (${n})"
+  run env REGION="$REGION" USER_POOL_ID="$(tf_output user_pool_id)" PASSWORD="$(password_carico)" \
+    node "${ROOT}/scripts/carico/preprod.mjs" utenti "$n"
+  # k6 assegna gli utenti ai VU da 1 a N: gli serve sapere quanti sono.
+  [[ "$DRY_RUN" == "1" ]] || printf '%s\n' "$n" > "${CARICO_DIR}/utenti"
+  ok "password in .carico/password (la usa k6)"
+
+  bold "Banche dati da ${da} (solo lettura su ${da})"
+  run env REGION="$REGION" \
+    TABELLE_DA="{\"banche\":\"${PROJECT}-${da}-banche-dati\",\"questions\":\"${PROJECT}-${da}-questions\"}" \
+    TABELLE_A="{\"banche\":\"${NAME}-banche-dati\",\"questions\":\"${NAME}-questions\"}" \
+    node "${ROOT}/scripts/carico/preprod.mjs" copia-banche
+
+  # I bandi li porta lo scraper (seed); senza, le pagine dei bandi del test sarebbero vuote.
+  bandi="$(capture "1" aws dynamodb scan --table-name "${NAME}-concorsi" --limit 1 --no-paginate --query Count --output text 2>/dev/null || echo 0)"
+  if [[ "$bandi" == "0" ]]; then
+    warn "nessun bando in preprod: lancio lo scraper di inPA (qualche minuto)"
+    cmd_seed
+  else
+    ok "bandi già presenti"
+  fi
+  printf '  Prossimo passo:  ENVIRONMENT=preprod scripts/deploy.sh carico avvia fumo\n'
+}
+
+# Variabili di k6 (-e NOME=valore) per SCENARIO e VU, in K6_VARIABILI. Le CARICO_* facoltative
+# cambiano il comportamento degli utenti finti (docs/TEST-DI-CARICO.md).
+variabili_k6() {
+  local scenario="$1" vu="$2"
+  case "$scenario" in
+    fumo|carico|picco|resistenza|rottura) ;;
+    *) die "scenario: fumo, carico, picco, resistenza, rottura (docs/TEST-DI-CARICO.md)" ;;
+  esac
+  [[ "$vu" =~ ^[0-9]+$ ]] || die "uso: ENVIRONMENT=preprod scripts/deploy.sh carico avvia SCENARIO [UTENTI_CONTEMPORANEI]"
+  [[ -s "${CARICO_DIR}/password" || "$DRY_RUN" == "1" ]] || die "prima prepara gli utenti:  ENVIRONMENT=preprod scripts/deploy.sh carico prepara"
+  K6_VARIABILI=(
+    -e BASE_URL="$(tf_output web_url)" -e REGION="$REGION" -e CLIENT_ID="$(tf_output user_pool_client_id)"
+    -e PASSWORD="$(password_carico)" -e UTENTI="$(cat "${CARICO_DIR}/utenti" 2>/dev/null || echo 1000)"
+    -e SCENARIO="$scenario" -e VU="$vu"
+  )
+  [[ -z "${CARICO_RITMO:-}" ]] || K6_VARIABILI+=(-e RITMO="$CARICO_RITMO")
+  [[ -z "${CARICO_ANONIMI:-}" ]] || K6_VARIABILI+=(-e QUOTA_ANONIMI="$CARICO_ANONIMI")
+  [[ -z "${CARICO_RISORSE:-}" ]] || K6_VARIABILI+=(-e RISORSE="$CARICO_RISORSE")
+  return 0
+}
+
+# carico avvia [SCENARIO] [VU]: lancia k6 contro preprod; riepilogo e report HTML in .carico/risultati/.
+carico_avvia() {
+  local scenario="${1:-fumo}" vu="${2:-1000}" uscita web_url esito=0
+  variabili_k6 "$scenario" "$vu"
+  web_url="$(tf_output web_url)"
+  uscita="${CARICO_DIR}/risultati/$(date +%Y%m%d-%H%M)-${scenario}"
+  mkdir -p "$uscita"
+
+  [[ "$scenario" != "fumo" ]] || vu=5   # il fumo usa sempre 5 utenti (scenari.js)
+  bold "Test di carico \"${scenario}\" su ${web_url} (fino a ${vu} utenti contemporanei)"
+  printf '  Mentre gira: report dal vivo su http://localhost:5665 e dashboard CloudWatch:\n  %s\n' "$(tf_output dashboard_url)"
+  printf '  Per fermarlo: Ctrl+C (k6 chiude le visite in corso e scrive comunque il riepilogo).\n'
+  [[ "$scenario" == "fumo" ]] || confirm "Parte il carico vero su preprod. Avviare?" || die "annullato"
+
+  # Tante connessioni aperte insieme: più file aperti possibili per k6 (macOS di base ne dà 256).
+  ulimit -n 65535 2>/dev/null || ulimit -n 10240 2>/dev/null || true
+  if command -v k6 >/dev/null; then
+    K6_WEB_DASHBOARD=true K6_WEB_DASHBOARD_EXPORT="${uscita}/report.html" \
+      run k6 run "${K6_VARIABILI[@]}" -e OUT="$uscita" "${ROOT}/scripts/carico/scenari.js" || esito=$?
+  elif command -v docker >/dev/null; then
+    warn "k6 non è installato: uso Docker (${K6_IMMAGINE}). Per installarlo: brew install k6"
+    run docker run --rm -i --ulimit nofile=65535:65535 -p 5665:5665 \
+      -v "${ROOT}/scripts/carico:/scripts:ro" -v "${uscita}:/out" \
+      -e K6_WEB_DASHBOARD=true -e K6_WEB_DASHBOARD_HOST=0.0.0.0 -e K6_WEB_DASHBOARD_EXPORT=/out/report.html \
+      "$K6_IMMAGINE" run "${K6_VARIABILI[@]}" -e OUT=/out /scripts/scenari.js || esito=$?
+  else
+    die "serve k6:  brew install k6   (oppure Docker Desktop)"
+  fi
+
+  case "$esito" in
+    0)  ok "soglie rispettate: test PASSATO" ;;
+    99) warn "una o più soglie NON rispettate (righe con ✗ nel riepilogo): vedi docs/TEST-DI-CARICO.md, \"Leggere i risultati\"" ;;
+    *)  warn "k6 è uscito con codice ${esito} (interrotto, o errore dello script)" ;;
+  esac
+  ok "riepilogo e report: ${uscita#"${ROOT}/"}/ (apri report.html nel browser)"
+  printf '  Allarmi scattati:  ENVIRONMENT=preprod scripts/deploy.sh allarmi\n'
+}
+
+# carico comando [SCENARIO] [VU]: la riga di k6 completa, per lanciare il test da un'altra
+# macchina (es. un'istanza EC2 a Milano, se la rete di casa non basta). Contiene la password di prova.
+carico_comando() {
+  variabili_k6 "${1:-carico}" "${2:-1000}"
+  bold "Da lanciare dove c'è k6, con il file scripts/carico/scenari.js copiato accanto"
+  printf '  k6 run'
+  printf ' %q' "${K6_VARIABILI[@]}"
+  printf ' scenari.js\n'
+}
+
+# carico stato: concorrenza Lambda dell'account, utenti di prova, ultimi risultati.
+carico_stato() {
+  bold "Lambda dell'account (limite comune a dev, prod e preprod)"
+  run aws lambda get-account-settings \
+    --query '{limite:AccountLimit.ConcurrentExecutions,non_riservate:AccountLimit.UnreservedConcurrentExecutions}' --output table
+  bold "Concorrenza riservata alle Lambda di preprod"
+  local f
+  for f in profile concorsi study; do
+    # "None" = nessun tetto (la Lambda non è in concorrenza_riservata).
+    printf '  %-10s %s\n' "$f" "$(capture "<n>" aws lambda get-function-concurrency --function-name "${NAME}-${f}" \
+      --query ReservedConcurrentExecutions --output text 2>/dev/null || echo "-")"
+  done
+  bold "Utenti di prova"
+  printf '  %s (da carico prepara)\n' "$(cat "${CARICO_DIR}/utenti" 2>/dev/null || echo "nessuno")"
+  bold "Ultimi risultati"
+  ls -1t "${CARICO_DIR}/risultati" 2>/dev/null | head -5 | sed 's/^/  .carico\/risultati\//' || true
+}
+
+# carico pulisci: toglie gli utenti di prova (per rifare il test da zero senza smontare l'ambiente).
+carico_pulisci() {
+  confirm "Elimino gli utenti di prova da preprod?" || die "annullato"
+  node_deps
+  run env REGION="$REGION" USER_POOL_ID="$(tf_output user_pool_id)" node "${ROOT}/scripts/carico/preprod.mjs" elimina-utenti
+  rm -f "${CARICO_DIR}/utenti"
+  printf '  L'"'"'ambiente intero si smonta con:  ENVIRONMENT=preprod scripts/deploy.sh destroy\n'
+}
+
+cmd_carico() {
+  local azione="${1:-}"
+  [[ $# -gt 0 ]] && shift
+  solo_preprod "${azione:-prepara}"
+  case "$azione" in
+    prepara) carico_prepara "$@" ;;
+    avvia)   carico_avvia "$@" ;;
+    comando) carico_comando "$@" ;;
+    stato)   carico_stato ;;
+    pulisci) carico_pulisci ;;
+    *) die "uso: ENVIRONMENT=preprod scripts/deploy.sh carico prepara [N] | avvia [SCENARIO] [VU] | comando [SCENARIO] [VU] | stato | pulisci" ;;
+  esac
+}
+
 # ----------------------------------------------------------------- destroy ---
 
 cmd_destroy() {
@@ -742,7 +906,7 @@ cmd_all() {
 }
 
 # Aiuto: le righe di commento in cima a questo file.
-usage() { sed -n '3,37p' "${BASH_SOURCE[0]}" | sed 's/^# \{0,1\}//'; }
+usage() { sed -n '3,38p' "${BASH_SOURCE[0]}" | sed 's/^# \{0,1\}//'; }
 
 # Smista il comando richiesto alla sua funzione.
 main() {
@@ -770,6 +934,7 @@ main() {
     email-prova) cmd_email_prova "$@" ;;
     destroy-shared) cmd_destroy_shared ;;
     manutenzione) cmd_manutenzione "$@" ;;
+    carico)    cmd_carico "$@" ;;
     urls)      cmd_urls ;;
     status)    cmd_status ;;
     logs)      cmd_logs "$@" ;;

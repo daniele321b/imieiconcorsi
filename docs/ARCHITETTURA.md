@@ -46,7 +46,7 @@ Lambda billing ◀──▶ Stripe Checkout (pagamenti) · SES (email) · CloudW
 | `packages/core` | Modello dei dati e regole condivise (piani, limiti, filtri, sconti, ordine delle risposte, progressi) e i "mattoni" AWS comuni (DynamoDB, Cognito, email, `service()`) | Nelle Lambda; i file senza AWS anche nel browser |
 | `packages/functions` | Il backend: una cartella per servizio API, i job, l'estrazione delle banche dati, il trigger di Cognito. Test in `test/` | AWS Lambda (Node.js 22, arm64) |
 | `packages/web` | Il sito React (Vite + Tailwind + React Router + Amplify per il login) | Browser |
-| `infra/terraform` | Tutta l'infrastruttura: moduli riutilizzabili e gli ambienti `dev` e `prod` che li collegano (prod = copia di dev con WAF, protezioni e dominio radice) | `terraform apply` da `scripts/deploy.sh infra` (`ENVIRONMENT=prod` per prod) |
+| `infra/terraform` | Tutta l'infrastruttura: moduli riutilizzabili e gli ambienti `dev`, `prod` e `preprod` che li collegano (prod = copia di dev con WAF, protezioni e dominio radice; preprod = copia di prod per i test di carico, docs/TEST-DI-CARICO.md) | `terraform apply` da `scripts/deploy.sh infra` (`ENVIRONMENT=prod` per prod) |
 | `scripts/deploy.sh` | Un comando per ogni operazione (build, infra, job, log, prove) | Terminale |
 | `data/domande`, `contenuti/` | Banca domande statica (un JSON per materia) e le sue fonti | Caricati da Terraform su S3 |
 
@@ -276,7 +276,8 @@ spegne la manutenzione. La procedura completa è in [MANUTENZIONE.md](MANUTENZIO
 2. Aggiungi la stessa chiave (`"POST /me/qualcosa"`) a `routes` del servizio in
    `infra/terraform/environments/dev/main.tf` **e** `environments/prod/main.tf`, e i permessi
    sulle tabelle se servono. Ogni modifica a dev va riportata in prod (i due file sono uguali
-   tranne le differenze elencate in testa a quello di prod).
+   tranne le differenze elencate in testa a quello di prod), e prima di un test di carico anche
+   in `environments/preprod/main.tf`.
 3. Nel sito chiamala con `api()` o `useApi()` e aggiungi il tipo della risposta in `lib/api.ts`.
 4. `scripts/deploy.sh build && scripts/deploy.sh infra`.
 

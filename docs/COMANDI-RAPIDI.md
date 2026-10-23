@@ -18,6 +18,8 @@ Ambienti Terraform:
   `imieiconcorsi-dev-…`.
 - **prod**: su **https://imieiconcorsi.it**; risorse `imieiconcorsi-prod-…`. Stessi
   comandi di dev con `ENVIRONMENT=prod` davanti: vedi [Produzione](#10-produzione).
+- **preprod**: su **https://preprod.imieiconcorsi.it**, solo per i test di carico: copia di
+  prod che si crea per il test e si smonta subito dopo. Vedi [Test di carico](#test-di-carico-preprod).
 
 ## 1. Primo deploy
 
@@ -892,6 +894,26 @@ Log, job e allarmi di prod: `ENVIRONMENT=prod scripts/deploy.sh logs study`,
 Quando cambi `environments/dev/main.tf` (route, tabelle, job, permessi) riporta la stessa
 modifica in `environments/prod/main.tf`: i due file sono uguali tranne le differenze elencate
 in testa a quello di prod.
+
+## Test di carico (preprod)
+
+Guida completa (scenari, cosa guardare, come leggere i risultati): [TEST-DI-CARICO.md](TEST-DI-CARICO.md).
+
+```bash
+brew install k6                                                  # una volta (oppure Docker Desktop acceso)
+scripts/deploy.sh build
+ENVIRONMENT=preprod scripts/deploy.sh infra                      # crea preprod ("yes"; 15-20 minuti la prima volta)
+ENVIRONMENT=preprod scripts/deploy.sh carico prepara             # 1000 utenti di prova, banche dati da dev, bandi
+ENVIRONMENT=preprod scripts/deploy.sh carico avvia fumo          # 2 minuti, 5 utenti: funziona tutto? (i tempi non contano)
+ENVIRONMENT=preprod scripts/deploy.sh carico avvia carico 1000   # il test vero (~32 minuti); report dal vivo su http://localhost:5665
+ENVIRONMENT=preprod scripts/deploy.sh carico avvia picco 1000    # arrivo improvviso (~12 minuti)
+ENVIRONMENT=preprod scripts/deploy.sh carico avvia rottura 1000  # oltre 1000 finché non si rompe
+ENVIRONMENT=preprod scripts/deploy.sh carico stato               # Lambda dell'account, utenti di prova, ultimi risultati
+ENVIRONMENT=preprod scripts/deploy.sh destroy                    # alla fine: smonta tutto ("si", poi "yes")
+```
+
+Risultati (riepilogo e `report.html`) in `.carico/risultati/`. Le esecuzioni Lambda riservate a
+preprod (350 su 1000 dell'account) mancano a dev e prod finché preprod esiste: smontalo dopo il test.
 
 ## Prova a secco
 

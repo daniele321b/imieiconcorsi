@@ -1,0 +1,16 @@
+# PREPROD (test di carico, docs/TEST-DI-CARICO.md). Copia in terraform.tfvars (non versionato).
+# Tutto è facoltativo: senza file l'ambiente parte con i valori pensati per il test.
+
+# Allarmi e avvisi all'admin durante il test (topic SNS imieiconcorsi-preprod-…): utili per vedere
+# cosa scatta sotto carico, ma arrivano davvero. Vuoto = nessuna email (si guarda la dashboard).
+admin_email = ""
+
+# Limiti del WAF per IP in 5 minuti (in prod 2000 e 100). Alti perché k6 esce da un solo IP.
+# waf_richieste_per_ip           = 1000000
+# waf_richieste_pubbliche_per_ip = 100000
+# false = niente WAF (per confrontare i tempi con e senza).
+# waf_attivo = true
+
+# Esecuzioni contemporanee riservate alle Lambda più usate dal test. Si tolgono al limite
+# dell'account (1000) finché preprod esiste: non superare ~500 in tutto, prod deve restare servita.
+# concorrenza_riservata = { profile = 100, concorsi = 100, study = 150 }

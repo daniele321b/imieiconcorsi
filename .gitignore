@@ -6,3 +6,6 @@ contenuti/libri/**/*
 !contenuti/libri/**/
 !contenuti/libri/**/.gitkeep
 .cache/
+
+# Test di carico: password degli utenti di prova e risultati (scripts/deploy.sh carico)
+.carico/
